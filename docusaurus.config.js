@@ -134,7 +134,7 @@ const config = {
                 to: 'https://cloudmydc.com/advance-network',
               },
               {
-                value: 'Blog',
+                label: 'Blog',
                 to: 'https://cloudmydc.com/blog',
               },
             ],
@@ -171,25 +171,28 @@ const config = {
               {
                 label: 'sales@cloudmydc.com',
                 to: 'mailto:sales@cloudmydc.com',
+                className: 'footer_icon_svg_1',
               },
               {
                 label: 'support@cloudmydc.com',
-                to: 'mailto:support@cloudmydc.com'
-                , position: 'left'
+                to: 'mailto:support@cloudmydc.com',
+                className: 'footer_icon_svg_2',
               },
               {
                 label: '1-866-666-5679',
                 to: 'tel:1-866-666-5679',
+                className: 'footer_icon_svg_3',
               },
               {
                 label: '11501 Dublin Bvld, Suite#200 Dublin CA 94568',
                 to: 'https://maps.google.com?q=11501 Dublin Bvld, Suite#200 Dublin CA 94568',
+                className: 'footer_icon_svg_4',
               },
             ],
           },
         ],
         copyright: `
-          <div class="copyRight-container">
+          <div class="copyright_container">
             <div>
             Copyright © ${new Date().getFullYear()} <a href="https://cloudmydc.com">cloudmydc.com</a> | All rights reserved.
             </div>
