@@ -62,6 +62,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+      // customCss: [require.resolve('./src/css/custom-dark-theme.css')],
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'CloudMyDC',
@@ -91,14 +92,20 @@ const config = {
             items: [
               {
                 html: `
-                  <a target="_blank" rel="noopener noreferrer" href="https://vercel.com?utm_source=authjs&utm_campaign=oss">
-                    <img
-                      alt="Powered by Vercel"
-                      style="margin-top: 8px"
-                      width="250px"
-                      src='/img/footer/cmdc.png'
-                    />
-                  </a>`,
+                  <div>
+                    <a target="_blank" rel="noopener noreferrer" href="https://vercel.com?utm_source=authjs&utm_campaign=oss">
+                      <img
+                        alt="Powered by Vercel"
+                        style="margin-top: 8px"
+                        width="250px"
+                        src='/img/footer/cmdc.png'
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    social media icons
+                  </div>
+                  `,
               },
             ],
           },
@@ -127,7 +134,7 @@ const config = {
                 to: 'https://cloudmydc.com/advance-network',
               },
               {
-                label: 'Blog',
+                value: 'Blog',
                 to: 'https://cloudmydc.com/blog',
               },
             ],
@@ -181,7 +188,17 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://cloudmydc.com">cloudmydc.com</a> | All rights reserved.`,
+        copyright: `
+          <div class="copyRight-container">
+            <div>
+            Copyright © ${new Date().getFullYear()} <a href="https://cloudmydc.com">cloudmydc.com</a> | All rights reserved.
+            </div>
+            <div>
+              <a href="https://cloudmydc.com/privacy-policies">Privacy Policies</a>
+              <a href="https://cloudmydc.com/cookie-policies">Cookie Policies</a>
+            </div>
+          </div>
+        `,
       },
       prism: {
         theme: lightCodeTheme,

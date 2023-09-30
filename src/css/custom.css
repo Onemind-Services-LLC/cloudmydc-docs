@@ -49,3 +49,57 @@
   --ifm-color-primary-lightest: #0fe4f8;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Global CSS start here */
+a {
+  text-underline-offset: 4px;
+}
+
+/* Footer Section start here */
+.copyRight-container {
+  width: 100%;
+  /* color: #606770; */
+  color: var(--ifm-footer-link-color);
+  margin: 20px 0 0 0;
+  padding: 20px 0 0 0;
+  border-top: 1px solid #4A5568;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyRight-container div:nth-child(2) {
+  display: flex;
+  gap: 10px;
+}
+
+.copyRight-container a {
+  /* color: #606770; */
+  color: var(--ifm-footer-link-color);
+  transition: 0.1s ease-in-out;
+}
+
+.copyRight-container a:hover {
+  /* color: #013f72; */
+  color: var(--ifm-footer-link-hover-color);
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 998px) {
+
+  /* Footer Section start here */
+  .copyRight-container {
+    margin: 0;
+    padding: 10px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  /* Footer Section start here */
+  .copyRight-container {
+    flex-direction: column;
+    gap: 7px;
+  }
+}
