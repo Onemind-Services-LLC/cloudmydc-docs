@@ -55,12 +55,17 @@ a {
   text-underline-offset: 4px;
 }
 
+div[class^='announcementBar_'] {
+  background: repeating-linear-gradient(35deg, hsl(167 68% 85%), hsl(167 68% 85%) 20px, hsl(167 68% 95%) 10px, hsl(167 68% 95%) 40px);
+}
+
 /* Footer Section start here */
 .footer_icon_svg_1,
 .footer_icon_svg_2,
 .footer_icon_svg_3,
 .footer_icon_svg_4 {
   position: relative;
+  color: var(--ifm-footer-link-color);
   margin: 0 0 0 15px;
 }
 

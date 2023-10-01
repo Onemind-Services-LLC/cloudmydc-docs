@@ -7,26 +7,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Cloudmydc Docs',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Easy, accessible, affordable cloud for all Hyperconverged, production- ready OpenStack for service providers, enabling lower cost IaaS, PaaS and XaaS for businesses everywhere',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'cloudmydc-docs', // Usually your repo name.
+  organizationName: 'Onemind Services LLC',
+  projectName: 'cloudmydc-docs',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -64,6 +56,14 @@ const config = {
       // Replace with your project's social card
       // customCss: [require.resolve('./src/css/custom-dark-theme.css')],
       image: 'img/docusaurus-social-card.jpg',
+
+      announcementBar: {
+        id: 'important_announcement',
+        content:
+          '🚀 New feature alert: We have launched a new feature! Check it out in our latest blog posts.',
+        textColor: '#333',
+        isCloseable: true,
+      },
       navbar: {
         title: 'CloudMyDC',
         logo: {
@@ -79,7 +79,7 @@ const config = {
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Onemind-Services-LLC/cloudmydc-docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -145,7 +145,6 @@ const config = {
               {
                 label: 'Home',
                 to: 'https://cloudmydc.com/',
-                // to: '/docs/intro',
               },
               {
                 label: 'About us',
