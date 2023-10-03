@@ -1,5 +1,13 @@
 # TODO
+
 page ~ found
+
+# Search
+yarn build
+'''
+docker run -it --env-file=.env -e "CONFIG=$(cat /path/to/your/config.json | jq -r tostring)" algolia/docsearch-scraper
+'''
+
 # Contribute to CloudMyDC Docs
 
 Welcome to the [CloudMyDC docs](https://docs.cloudmydc.com/) repository. See the 

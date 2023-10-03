@@ -56,7 +56,13 @@ const config = {
       // Replace with your project's social card
       // customCss: [require.resolve('./src/css/custom-dark-theme.css')],
       image: 'img/docusaurus-social-card.jpg',
-
+      algolia: {
+        apiKey: 'd34b31960c127a6cbcc57d2e5a9f96c2',
+        indexName: 'vishal_sir_onemindservices',
+        contextualSearch: true,
+        placeholder: 'Search',
+        appId: 'HU6H0HSM3W',
+      },
       announcementBar: {
         id: 'important_announcement',
         content:
