@@ -137,6 +137,12 @@ div[class^='announcementBar_'] {
   cursor: pointer;
 }
 
+/* QuickStart Docs Start here */
+.image_center {
+  display: flex;
+  justify-content: center;
+}
+
 /* Responsive Styles */
 
 @media screen and (max-width: 998px) {
