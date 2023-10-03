@@ -123,6 +123,20 @@ div[class^='announcementBar_'] {
   color: var(--ifm-footer-link-hover-color);
 }
 
+/* social media icons in footer */
+.social_media_icons_container {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.social_media_icons_box {
+  width: 15px;
+  height: 15px;
+  color: var(--ifm-footer-link-color);
+  cursor: pointer;
+}
+
 /* Responsive Styles */
 
 @media screen and (max-width: 998px) {

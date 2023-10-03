@@ -3,20 +3,27 @@
 page ~ found
 
 # Search
+
 yarn build
 '''
 docker run -it --env-file=.env -e "CONFIG=$(cat /path/to/your/config.json | jq -r tostring)" algolia/docsearch-scraper
 '''
 
+# Icons
+
+'''
+https://www.flaticon.com/uicons/interface-icons
+'''
+
 # Contribute to CloudMyDC Docs
 
-Welcome to the [CloudMyDC docs](https://docs.cloudmydc.com/) repository. See the 
-[CloudMyDC software](https://github.com/Onemind-Services-LLC/cloudmydc-docs) repository if you have questions or 
+Welcome to the [CloudMyDC docs](https://docs.cloudmydc.com/) repository. See the
+[CloudMyDC software](https://github.com/Onemind-Services-LLC/cloudmydc-docs) repository if you have questions or
 requests for the CloudMyDC platform.
 
 ## Make a Suggestion
 
-You can suggest changes to the CloudMyDC docs in two ways: 
+You can suggest changes to the CloudMyDC docs in two ways:
 
 1. [Open an issue](https://github.com/Onemind-Services-LLC/cloudmydc-docs/issues/new/choose).
 2. Edit the docs in the way you see fit and open a pull request.
@@ -25,23 +32,23 @@ You can suggest changes to the CloudMyDC docs in two ways:
 
 To get started, [fork](https://github.com/Onemind-Services-LLC/cloudmydc-docs/fork) and clone the cloudmydc-docs repository.
 
-Our repository doesn't allow you to make changes directly to the `master` branch. Create a working branch and make pull 
+Our repository doesn't allow you to make changes directly to the `master` branch. Create a working branch and make pull
 requests from your fork to [Onemind-Services-LLC/cloudmydc-docs](https://github.com/Onemind-Services-LLC/cloudmydc-docs).
 
 For most updates, you'll need to edit a file in `/docs`.
 
-If a file is moved or renamed, you'll also need to edit the `sidebars.js` files for each version, and the list of 
+If a file is moved or renamed, you'll also need to edit the `sidebars.js` files for each version, and the list of
 redirects in `docusaurus.config.js`. See [Moving or Renaming Docs](./moving-or-renaming-docs.md).
 
 ### Navigate the Repo
 
-The file paths in the repo correspond to the URLs for pages on the docs website. The docs for the latest version of 
-CloudMyDC are located in `/docs`. Most index pages are found within the `/pages-for-subheaders` directory in `/docs`. 
+The file paths in the repo correspond to the URLs for pages on the docs website. The docs for the latest version of
+CloudMyDC are located in `/docs`. Most index pages are found within the `/pages-for-subheaders` directory in `/docs`.
 All images are in `/static/img` in the top level of the repo.
 
 ### Style & Formatting
 
-The docs are written in [Markdown](https://www.markdownguide.org/getting-started/). We refer to the Microsoft 
+The docs are written in [Markdown](https://www.markdownguide.org/getting-started/). We refer to the Microsoft
 [style guide](https://learn.microsoft.com/en-us/style-guide/welcome/) and use standard American English.
 
 Every docs page contain metadata in the first few lines:
@@ -52,8 +59,8 @@ title: Some Title
 ---
 ```
 
-The `title` is rendered as the page's headline. The site renderer wraps the `title` value in `H1` tags, which are 
-equivalent to `#` in Markdown syntax. This means that all subsequent headers on the page should be second level 
+The `title` is rendered as the page's headline. The site renderer wraps the `title` value in `H1` tags, which are
+equivalent to `#` in Markdown syntax. This means that all subsequent headers on the page should be second level
 (`##`) or more.
 
 ## Run the Docs Website
@@ -66,8 +73,8 @@ First, install Docusaurus 2:
 
 1. If you haven't already, install [Node](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/getting-started/install).
 2. Go into your local cloudmydc-docs folder.
-3. The CloudMyDC Docs repository already contains a yarn.lock file, which contains the dependencies you need to build 
-the website. Run `yarn` to install Docusaurus and associated dependencies.
+3. The CloudMyDC Docs repository already contains a yarn.lock file, which contains the dependencies you need to build
+   the website. Run `yarn` to install Docusaurus and associated dependencies.
 
 ### Start Site
 
@@ -75,10 +82,10 @@ the website. Run `yarn` to install Docusaurus and associated dependencies.
 yarn start
 ```
 
-This command starts a local development server for Docusaurus 2, and opens up a browser window. Most changes are 
+This command starts a local development server for Docusaurus 2, and opens up a browser window. Most changes are
 reflected live without having to restart the server.
 
-**Note:** The `yarn start` command won't include some important static site features. For example, switching between 
+**Note:** The `yarn start` command won't include some important static site features. For example, switching between
 languages from the site's dropdown menu is not available. If you need these features, use `yarn build`.
 
 ### Build Site
