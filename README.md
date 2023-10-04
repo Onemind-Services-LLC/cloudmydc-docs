@@ -15,6 +15,9 @@ docker run -it --env-file=.env -e "CONFIG=$(cat /path/to/your/config.json | jq -
 https://www.flaticon.com/uicons/interface-icons
 '''
 
+
+
+
 # Contribute to CloudMyDC Docs
 
 Welcome to the [CloudMyDC docs](https://docs.cloudmydc.com/) repository. See the
