@@ -24,6 +24,16 @@
   --ifm-color-primary-light: #01457d;
   --ifm-color-primary-lighter: #014883;
   --ifm-color-primary-lightest: #015294;
+
+  /* --table-bg-primary-t1: #F0FFFF;
+  --table-bg-primary-t2: #ADD8E6;
+  --table-bg-primary-t3: #41aade;
+  --table-color-primary: #ffffff; */
+  --table-bg-primary-t1: #F0FFFF;
+  --table-bg-primary-t2: #47c1ea;
+  --table-bg-primary-t3: rgb(70, 177, 231);
+  --table-color-primary: #ffffff;
+
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
@@ -47,6 +57,17 @@
   --ifm-color-primary-light: #07c6d8;
   --ifm-color-primary-lighter: #07cfe1;
   --ifm-color-primary-lightest: #0fe4f8;
+
+  /* --table-bg-primary-t1: #eeeeee;
+  --table-bg-primary-t2: #99ffff;
+  --table-bg-primary-t3: #66cccc;
+  --table-color-primary: #262626; */
+
+  --table-bg-primary-t1: #2b3035;
+  --table-bg-primary-t2: #212529;
+  --table-bg-primary-t3: #24292d;
+  --table-color-primary: #0fe4f8;
+
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
@@ -144,7 +165,6 @@ div[class^='announcementBar_'] {
 }
 
 /* Responsive Styles */
-
 @media screen and (max-width: 998px) {
 
   /* Footer Section start here */
