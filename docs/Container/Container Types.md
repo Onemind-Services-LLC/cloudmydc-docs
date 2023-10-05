@@ -3,11 +3,12 @@ sidebar_position: 1
 ---
 
 ## Container Types and Use Cases
+
 The PaaS combines two types of containers in a single platform. These containerization technologies are oriented to solve different problems, but platform orchestration inherits benefits of both implementations.
 
-- ***[System Containers](1)*** - one of the oldest container types, which is quite similar to virtual machines. It is a stateful, operating system centric solution that can run multiple processes. System containers are usually used for traditional or monolithic applications, as they allow to host architectures, tools, and configurations implemented for VMs. There are different implementations of system containers: LXC/LXD, OpenVZ/Virtuozzo, BSD jails, Linux vServer, and some others. The platform uses Virtuozzo solution.
+- **_[System Containers](https://cloudmydc.com/)_** - one of the oldest container types, which is quite similar to virtual machines. It is a stateful, operating system centric solution that can run multiple processes. System containers are usually used for traditional or monolithic applications, as they allow to host architectures, tools, and configurations implemented for VMs. There are different implementations of system containers: LXC/LXD, OpenVZ/Virtuozzo, BSD jails, Linux vServer, and some others. The platform uses Virtuozzo solution.
 
-- ***[Application Containers](1)*** - a relatively new container type, which commonly runs a single process inside. It is a stateless microservice-centric solution that is easily scalable horizontally. Application containers are the most suitable for immutable and ephemeral infrastructures. Several application container implementations are available at the market: Docker, containerd, CRI-O, and some others. The platform utilizes Docker as the most widely adopted technology for application contains.
+- **_[Application Containers](https://cloudmydc.com/)_** - a relatively new container type, which commonly runs a single process inside. It is a stateless microservice-centric solution that is easily scalable horizontally. Application containers are the most suitable for immutable and ephemeral infrastructures. Several application container implementations are available at the market: Docker, containerd, CRI-O, and some others. The platform utilizes Docker as the most widely adopted technology for application contains.
 
 <div style={{
     display:'flex',
@@ -25,16 +26,17 @@ Talking about containers nowadays, people often think of Docker technology, as i
 
 Within the platform, different container types can be used for various use cases:
 
-- [Certified Managed Containers](1)
-- [Virtual Private Servers (Elastic VPS)](1)
-- [Custom Docker Containers](1)
-- [Docker Engine CE (Docker Native)](1)
-- [Kubernetes Cluster](1)
+- [Certified Managed Containers](https://cloudmydc.com/)
+- [Virtual Private Servers (Elastic VPS)](https://cloudmydc.com/)
+- [Custom Docker Containers](https://cloudmydc.com/)
+- [Docker Engine CE (Docker Native)](https://cloudmydc.com/)
+- [Kubernetes Cluster](https://cloudmydc.com/)
 
 Below we will review each case in detail, as well as provide some hints on what options can be more appropriate for your project.
 
 ## Certified Managed Containers
-The most common and recommended choice for the platform customers is **certified containers**. The platform offers multiple pre-configured and managed [software stacks](1), that allow creation of flexible topologies with the required **application server** (*Java, PHP, Node.js, Ruby, Python, or Go*), **load balancer**, **databases**, etc.
+
+The most common and recommended choice for the platform customers is **certified containers**. The platform offers multiple pre-configured and managed [software stacks](https://cloudmydc.com/), that allow creation of flexible topologies with the required **application server** (_Java, PHP, Node.js, Ruby, Python, or Go_), **load balancer**, **databases**, etc.
 
 <div style={{
     display:'flex',
@@ -58,10 +60,11 @@ All of these certified containers are thoroughly tested and optimized specifical
 
 </div>
 
-Usually, these containers also benefit from additional integrations, such as automated configuration based on the resource ([cloudlet](1)) scaling limits, automated SSL certificates installation, application deployment automation, built-in [auto-clustering](1), managed delivery of security updates, and others.
+Usually, these containers also benefit from additional integrations, such as automated configuration based on the resource ([cloudlet](https://cloudmydc.com/)) scaling limits, automated SSL certificates installation, application deployment automation, built-in [auto-clustering](https://cloudmydc.com/), managed delivery of security updates, and others.
 
 ## Virtual Private Servers (Elastic VPS)
-The most straightforward example of a system container implementation is a ***virtual private server***. The platform offers **[Elastic VPS](1)** containers with the following pre-installed operating systems: CentOS, Ubuntu, and Debian. It is a pure OS-based container without any additional customization or software installed. It can be considered as the most suitable option for containerizing legacy applications as it requires minimal to no changes while migration from VMs.
+
+The most straightforward example of a system container implementation is a **_virtual private server_**. The platform offers **[Elastic VPS](https://cloudmydc.com/)** containers with the following pre-installed operating systems: CentOS, Ubuntu, and Debian. It is a pure OS-based container without any additional customization or software installed. It can be considered as the most suitable option for containerizing legacy applications as it requires minimal to no changes while migration from VMs.
 
 <div style={{
     display:'flex',
@@ -77,7 +80,7 @@ So, since it is practically “empty” after the installation, all the required
 
 ## Custom Docker Containers
 
-The **Custom Docker Container** is a Docker image (based on the [supported OS and architecture](1)) deployed inside the platform system container, which makes it compatible with the most (but not all) platform-distinguishing features, such as built-in vertical and horizontal scaling. In other words, the filesystem of your custom Docker image is unpacked inside the system container runtime.
+The **Custom Docker Container** is a Docker image (based on the [supported OS and architecture](https://cloudmydc.com/)) deployed inside the platform system container, which makes it compatible with the most (but not all) platform-distinguishing features, such as built-in vertical and horizontal scaling. In other words, the filesystem of your custom Docker image is unpacked inside the system container runtime.
 
 <div style={{
     display:'flex',
@@ -105,7 +108,6 @@ Compared to the certified managed containers, this option provides access to a w
 
 The platform provides support for the **Docker Engine Community Edition** that is running inside system containers but at the same time has full compatibility to the native Docker ecosystem.
 
-
 <div style={{
     display:'flex',
     justifyContent: 'center',
@@ -123,18 +125,19 @@ Such integration makes it possible to work with the core tools of Docker contain
 - **Docker Compose** - helps to assemble applications, that consist of multiple components where all the required configurations are declared within a single compose file
 - **Docker Swarm** - represents several independent Docker nodes, interconnected into a cluster
 
-The platform provides a pre-packaged version of the *Docker Engine CE solution* and *Docker Swarm Cluster* with integrated [auto-clustering](1).
+The platform provides a pre-packaged version of the _Docker Engine CE solution_ and _Docker Swarm Cluster_ with integrated [auto-clustering](https://cloudmydc.com/).
 
 ![Locale Dropdown](./img/ContainerTypes/09-docker-engine-ce-swarm-cluster.png)
 
 Read our dedicated blog post series for more details:
 
-- [Auto-Install Docker Engine and Connect It to Swarm Cluster](1)
-- [Docker Swarm Auto-Clustering and Scaling](1)
-- [Connecting to Docker Engine and Its Management](1)
-- [Deploying Services to Docker Swarm Cluster](1)
+- [Auto-Install Docker Engine and Connect It to Swarm Cluster](https://cloudmydc.com/)
+- [Docker Swarm Auto-Clustering and Scaling](https://cloudmydc.com/)
+- [Connecting to Docker Engine and Its Management](https://cloudmydc.com/)
+- [Deploying Services to Docker Swarm Cluster](https://cloudmydc.com/)
 
 ## Kubernetes Cluster
+
 Application containers can be run and managed with the help of Kubernetes orchestration tool. It is an open-source platform designed for deployment and management of fault-tolerant containerized applications. It can handle complex tasks of container orchestration, such as deployment, service discovery, rolling upgrades, self-healing, and security management.
 
 <div style={{
@@ -147,18 +150,18 @@ Application containers can be run and managed with the help of Kubernetes orches
 
 </div>
 
-[PaaS Kubernetes](1) implementation automates cluster installation, configuration, updates, and supplies multiple pre-integrated services (e.g. Weave CNI, CoreDNS, Traefik, etc.).
+[PaaS Kubernetes](https://cloudmydc.com/) implementation automates cluster installation, configuration, updates, and supplies multiple pre-integrated services (e.g. Weave CNI, CoreDNS, Traefik, etc.).
 
 ![Locale Dropdown](./img/ContainerTypes/11-kubernetes-cluster.png)
 
-In other words, we run Kubernetes with the help of platform orchestration providing maximum interoperability for projects that were designed for Kubernetes from the beginning. The major benefit of Kubernetes implementation is the advanced [pay-per-use](1) model that solves right-sizing problem and makes hosting of multiple containers more cost efficient.
+In other words, we run Kubernetes with the help of platform orchestration providing maximum interoperability for projects that were designed for Kubernetes from the beginning. The major benefit of Kubernetes implementation is the advanced [pay-per-use](https://cloudmydc.com/) model that solves right-sizing problem and makes hosting of multiple containers more cost efficient.
 
 Additional information on the Kubernetes Cluster can be viewed via the appropriate documentation sections:
 
-- [Kubernetes Overview](1)
-- [Kubernetes Cluster Access](1)
-- [Scaling Kubernetes on Application and Infrastructure Levels](1)
-- [Kubernetes Helm Integration](1)
-- [Kubernetes Volume Provisioner](1)
+- [Kubernetes Overview](https://cloudmydc.com/)
+- [Kubernetes Cluster Access](https://cloudmydc.com/)
+- [Scaling Kubernetes on Application and Infrastructure Levels](https://cloudmydc.com/)
+- [Kubernetes Helm Integration](https://cloudmydc.com/)
+- [Kubernetes Volume Provisioner](https://cloudmydc.com/)
 
 Now, you know about various container types available at the platform, as well as their specifics that can help to choose the most suitable option for your project needs.

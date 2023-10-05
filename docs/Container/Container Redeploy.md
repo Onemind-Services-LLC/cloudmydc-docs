@@ -4,22 +4,22 @@ sidebar_position: 3
 
 import obj from './ContainerRedeploy.json'
 
-The majority of Docker-based solutions (including platform-managed [stacks](1)) are continuously developed, delivering new product versions and fixes. Thus, it is recommended to regularly update your templates to their latest tags, i.e. releases.
+The majority of Docker-based solutions (including platform-managed [stacks](https://cloudmydc.com/)) are continuously developed, delivering new product versions and fixes. Thus, it is recommended to regularly update your templates to their latest tags, i.e. releases.
 
 Such an operation is called **redeploy** and has the following specifics when managed on the platform:
 
 - the custom user data and sensitive system files are preserved during the update:
 
-  - content of the **[volumes](1)** (default and custom ones)
-  - files listed in **[/etc/jelastic/redeploy.conf](1)** (specific configs of the stacks), which are required to ensure container operability
+  - content of the **[volumes](https://cloudmydc.com/)** (default and custom ones)
+  - files listed in **[/etc/jelastic/redeploy.conf](https://cloudmydc.com/)** (specific configs of the stacks), which are required to ensure container operability
   - **AutoFS and NFS** related configurations (_/etc/autofs.jelastic, /etc/auto.master, /etc/exports_)
   - **firewall configurations** (_/etc/sysconfig/iptables-custom, /etc/sysconfig/iptables4-jelastic, /etc/sysconfig/iptables6-jelastic, /etc/iptables/rules.v4_)
   - **SSH access data** (_/root/.ssh/authorized_keys, /root/.ssh/authorized_keys2, /root/.ssh/id_rsa_)
 
-- all the previously specified custom [configurations](1) (like run commands, links, variables, etc.) won’t be affected
-- if operating with [multiple](1) (horizontally scaled) instances, the update can be performed on containers one by one, i.e. implicitly with no downtime
+- all the previously specified custom [configurations](https://cloudmydc.com/) (like run commands, links, variables, etc.) won’t be affected
+- if operating with [multiple](https://cloudmydc.com/) (horizontally scaled) instances, the update can be performed on containers one by one, i.e. implicitly with no downtime
 
-In such a way, you are able to update your Docker-based container to a new tag (version) without affecting the application inside. With the platform, container redeployment can be performed in just a few clicks via the [dashboard UI](1) or easily automated [via API](1).
+In such a way, you are able to update your Docker-based container to a new tag (version) without affecting the application inside. With the platform, container redeployment can be performed in just a few clicks via the [dashboard UI](https://cloudmydc.com/) or easily automated [via API](https://cloudmydc.com/).
 
 :::danger Note
 
@@ -27,7 +27,7 @@ When working with the MySQL, MariaDB, or Percona databases, downgrading (i.e. re
 
 :::
 
-To learn about [saving or backing up custom data](1) during redeploy, refer to the appropriate section below.
+To learn about [saving or backing up custom data](https://cloudmydc.com/) during redeploy, refer to the appropriate section below.
 
 ## Update Container via Dashboard
 
@@ -57,8 +57,8 @@ The most straightforward and user-friendly way to redeploy a template tag is to 
 
 Also, you can adjust some additional options:
 
-- **Keep volumes data** - if enabled, data in the [volumes](1) will be protected from erasing and will remain available after redeploy
-- for [horizontally scaled](1) containers, you can choose between two deployment options:
+- **Keep volumes data** - if enabled, data in the [volumes](https://cloudmydc.com/) will be protected from erasing and will remain available after redeploy
+- for [horizontally scaled](https://cloudmydc.com/) containers, you can choose between two deployment options:
   - **Simultaneous deployment** - redeploys all nodes at once, which is comparatively quicker but causes a brief downtime of your application
   - **Sequential deployment with delay** - redeploys instances one-by-one with a specified delay between operations. This option ensures that there is always a running node to process incoming requests (i.e. no downtime)
 
@@ -84,15 +84,15 @@ Now, you know how to redeploy a container via the platform dashboard.
 
 ## Update Container via Platform API/CS/CLI
 
-The update process can be automated using [platform API](1), [Cloud Scripting](1), and [CLI](1) (command-line interface).
+The update process can be automated using [platform API](https://cloudmydc.com/), [Cloud Scripting](https://cloudmydc.com/), and [CLI](https://cloudmydc.com/) (command-line interface).
 
 :::tip Tip
 
-A detailed example on [container redeploy via CLI](1) is provided in the linked guide.
+A detailed example on [container redeploy via CLI](https://cloudmydc.com/) is provided in the linked guide.
 
 :::
 
-Container redeploy is performed with the **[environment.Control.RedeployContainer](1)**s method, which is managed with the following parameters:
+Container redeploy is performed with the **[environment.Control.RedeployContainer](https://cloudmydc.com/)**s method, which is managed with the following parameters:
 
 - **envName** - name of the environment, where container(s) should be redeployed
 
@@ -104,7 +104,7 @@ Container redeploy is performed with the **[environment.Control.RedeployContaine
 
 :::tip Tip
 
-A detailed example on [container redeploy via CLI](1) is provided in the linked guide.
+A detailed example on [container redeploy via CLI](https://cloudmydc.com/) is provided in the linked guide.
 
 :::
 
@@ -122,7 +122,7 @@ Since each instance within the platform represents an isolated container, it can
 
 ![Locale Dropdown](./img/ContainerRedeploy/06-redeploy-containers-api-method.png)
 
-The following constructions can be used to define container update within your [automation scripts](1):
+The following constructions can be used to define container update within your [automation scripts](https://cloudmydc.com/):
 
 1. Redeploying the whole layer of containers.
 
@@ -153,7 +153,7 @@ The following constructions can be used to define container update within your [
 
 Here:
 
-- **{nodeGroup}** - [environment layer (or node group)](1) where all containers should be updated
+- **{nodeGroup}** - [environment layer (or node group)](https://cloudmydc.com/) where all containers should be updated
 - **{myImage}** - name of the image to be deployed
 - **{newTag}** - the required version of the image above
 
@@ -188,7 +188,7 @@ Here, the **{nodeId}** value should be substituted with the ID number of the req
 
 ## Saving Custom Data during Container Redeploy
 
-Each [platform-managed container](1) is provided with a special **/etc/jelastic/redeploy.conf** file, storing a list of critical container configs. These settings are automatically preserved by the platform during the container redeploy. The file can be easily accessed via the [embedded file manager](1) through the Favorites shortcut.
+Each [platform-managed container](https://cloudmydc.com/) is provided with a special **/etc/jelastic/redeploy.conf** file, storing a list of critical container configs. These settings are automatically preserved by the platform during the container redeploy. The file can be easily accessed via the [embedded file manager](https://cloudmydc.com/) through the Favorites shortcut.
 
 <div style={{
     display:'flex',
@@ -200,7 +200,7 @@ Each [platform-managed container](1) is provided with a special **/etc/jelastic/
 
 </div>
 
-The **redeploy.conf** file is divided into two [system](1) and [custom](1) sections and can be used to [backup system files](1).
+The **redeploy.conf** file is divided into two [system](https://cloudmydc.com/) and [custom](https://cloudmydc.com/) sections and can be used to [backup system files](https://cloudmydc.com/).
 
 ## System Files and Folders
 
@@ -217,8 +217,8 @@ Here, container-specific configurations that are required for the correct redepl
 - **/etc/jelastic/redeploy.conf** - the current redeployment config itself (to store the list of required for saving files and directories during each further container redeploy)
 - **${home}/.bash_profile** - contains the default SSH shell settings (e.g. shell introduction message, the required configuration files to be fetched, etc.)
 - **/etc/sysconfig/iptables** - keeps the default firewall rules
-- **/etc/sysconfig/iptables-custom** - contains c[ustom firewall rules](1)
-- **/var/lib/jelastic/keys** - stores [uploaded SSH private keys](1), which are necessary to access the container via SSH and for interaction with other containers
+- **/etc/sysconfig/iptables-custom** - contains c[ustom firewall rules](https://cloudmydc.com/)
+- **/var/lib/jelastic/keys** - stores [uploaded SSH private keys](https://cloudmydc.com/), which are necessary to access the container via SSH and for interaction with other containers
 
 <u>
 Also, <b>redeploy.conf</b> for each particular node type include different stack-specific files.
@@ -230,7 +230,7 @@ Also, <b>redeploy.conf</b> for each particular node type include different stack
 
 :::danger Tip
 
-When providing “**custom files and folder**”, only add system configuration files that are required to ensure container operability during redeployment. Use [container volumes](1) for other cases (e.g. to keep your application data).
+When providing “**custom files and folder**”, only add system configuration files that are required to ensure container operability during redeployment. Use [container volumes](https://cloudmydc.com/) for other cases (e.g. to keep your application data).
 
 :::
 
@@ -269,15 +269,14 @@ To create a backup, you need to specify a path to the necessary file in **_redep
 
 This operation is available for files only (not directories).
 
-::: 
+:::
 After redeploy, the config from the old container can be easily recognized by the appropriate “backup” or “time stamp” extensions. They can be used for an instant rollback upon incompatibility with the new configs or for analysis of the changes.
 
-For example, all platform-managed PHP application servers create a backup for the ***/etc/php.ini*** config by default.
-
+For example, all platform-managed PHP application servers create a backup for the **_/etc/php.ini_** config by default.
 
 ![Locale Dropdown](./img/ContainerRedeploy/10-file-backup-via-redeploy-conf.png)
 
-After the container update, you’ll see new and previous versions of the ***php.ini*** or any other backed up files:
+After the container update, you’ll see new and previous versions of the **_php.ini_** or any other backed up files:
 
 - **{file_name}** - file from the redeployment target image (from the new tag)
 - **{file_name}.{time_stamp}** - backup version of the file created just before the redeploy operation (a separate file for each redeployment to a different tag)
@@ -285,6 +284,6 @@ After the container update, you’ll see new and previous versions of the ***php
 
 ![Locale Dropdown](./img/ContainerRedeploy/11-backup-file-successfully-created.png)
 
-This way, you can easily switch to the previously used settings by substituting the ***php.ini*** file with its backup (e.g. through the renaming or content copying).
+This way, you can easily switch to the previously used settings by substituting the **_php.ini_** file with its backup (e.g. through the renaming or content copying).
 
 Now, you know how to manage template versions (Docker tags) of the containers inside the platform.

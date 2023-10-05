@@ -2,15 +2,15 @@
 sidebar_position: 2
 ---
 
-At the **Variables** tab, you can view and manage a list of the [environment variables](1) for the current layer.
+At the **Variables** tab, you can view and manage a list of the [environment variables](https://cloudmydc.com/) for the current layer.
 
-In case of [container linking](1), variables from other nodes within the environment will be also displayed in the same tab with a special prefix. In addition, they can be edited on a fly, automatically applying changes to all source and target containers.
+In case of [container linking](https://cloudmydc.com/), variables from other nodes within the environment will be also displayed in the same tab with a special prefix. In addition, they can be edited on a fly, automatically applying changes to all source and target containers.
 
-1. To state a [custom variable](1), click the **Add** button and fill in the appeared cells with the required variable Name and Value.
+1. To state a [custom variable](https://cloudmydc.com/), click the **Add** button and fill in the appeared cells with the required variable Name and Value.
 
-:::danger Note 
+:::danger Note
 
-Variable names should only contain Latin letters, numbers, and underscore “_” characters.
+Variable names should only contain Latin letters, numbers, and underscore “\_” characters.
 add variable layer settings
 
 :::
@@ -21,9 +21,10 @@ Don’t forget to **Save** your variable.
 
 2. Beside adding, you can also **Edit** and **Remove** the already existing records (except some default ones) with the help of the same-named buttons.
 
-:::tip Tip 
+:::tip Tip
 
 Here are a few hints for speeding up the configuration process:
+
 - double clicking on a variable will immediately switch you to its editing
 - in case you need to remove several records, you can select them using the **Shift** or **Ctrl** buttons
 

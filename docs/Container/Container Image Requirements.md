@@ -7,8 +7,8 @@ import obj from './ContainerImageRequirements.json'
 Container Image Requirements
 Currently, the platform containers have the following requirements for the base image:
 
-- [Supported OS Distributions](1)
-- [Supported Architectures](1)
+- [Supported OS Distributions](https://cloudmydc.com/)
+- [Supported Architectures](https://cloudmydc.com/)
 
 ## Supported OS Distributions
 
@@ -109,8 +109,8 @@ The following Linux distributions are supported as a base of containers that cou
 :::danger Notes
 
 - Containers based on the **Debian 11** OS template are not supported on the platforms below the 6.0 version.
-- The **[almalinux-8-x86_64](1)** template is supported since the 8.2.4 platform version (kernel version 3.10.0-1160.80.1.vz7.191.4).
-- The **[almalinux-9-x86_64](1)** template is supported since the 8.3.1 platform version (kernel version 3.10.0-1160.80.1.vz7.191.4).
+- The **[almalinux-8-x86_64](https://cloudmydc.com/)** template is supported since the 8.2.4 platform version (kernel version 3.10.0-1160.80.1.vz7.191.4).
+- The **[almalinux-9-x86_64](https://cloudmydc.com/)** template is supported since the 8.3.1 platform version (kernel version 3.10.0-1160.80.1.vz7.191.4).
 
 :::
 
@@ -118,4 +118,4 @@ In order to run containers of another type, please, contact us to negotiate the 
 
 ## Supported Architectures
 
-Currently, only **_amd64_** image architecture is supported for [custom container deployment](1) (and [redeployment](1)).
+Currently, only **_amd64_** image architecture is supported for [custom container deployment](https://cloudmydc.com/) (and [redeployment](https://cloudmydc.com/)).

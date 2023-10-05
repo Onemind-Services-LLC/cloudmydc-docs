@@ -6,13 +6,13 @@ All of the instances in the environment (like databases, application servers, et
 
 Three main reasons why the platform provides individual role-based servers are:
 
-- [live migration](1)
-- [high availability](1)
-- [security](1)
+- [live migration](https://cloudmydc.com/)
+- [high availability](https://cloudmydc.com/)
+- [security](https://cloudmydc.com/)
 
 ## Isolated Containers Live Migration
 
-In some cases, as your application starts requesting more and ***more resources***, the physical server running your node might not be able to provide the required resources. In this case, the platform can perform a ***live migration*** of the node to another host within 30 seconds.
+In some cases, as your application starts requesting more and **_more resources_**, the physical server running your node might not be able to provide the required resources. In this case, the platform can perform a **_live migration_** of the node to another host within 30 seconds.
 
 <div style={{
     display:'flex',
@@ -24,11 +24,12 @@ In some cases, as your application starts requesting more and ***more resources*
 
 </div>
 
-During that migration, the application keeps working being [scaled vertically](1). As an application scales within a server, other applications can be migrated to another server to make room. Live migration allows platform to deliver all the needed resources for applications without restarting containers and causing application downtime. In addition, it can be used during maintenance or other planned downtime to perform automated evacuation of containers from a physical server.
+During that migration, the application keeps working being [scaled vertically](https://cloudmydc.com/). As an application scales within a server, other applications can be migrated to another server to make room. Live migration allows platform to deliver all the needed resources for applications without restarting containers and causing application downtime. In addition, it can be used during maintenance or other planned downtime to perform automated evacuation of containers from a physical server.
 
-Also, you can add **more instances** to your environment using [horizontal scaling](1), not having to worry if there is **enough space** on the host. The platform chooses the host with an appropriate amount of free space and relocates your server, in order to offer high-quality performance to each of your nodes.
+Also, you can add **more instances** to your environment using [horizontal scaling](https://cloudmydc.com/), not having to worry if there is **enough space** on the host. The platform chooses the host with an appropriate amount of free space and relocates your server, in order to offer high-quality performance to each of your nodes.
 
 ## High Availability for Applications
+
 The platform provides the **highest availability** by distributing containers of one environment evenly on different physical servers (Hardware nodes). This is done with the help of anti-affinity groups configured to specify that certain containers should never run on the same physical server.
 
 <div style={{
@@ -44,6 +45,7 @@ The platform provides the **highest availability** by distributing containers of
 As a result, the platform eliminates any risk of application downtime if one of the physical servers has any issues with performance.
 
 ## Security of Isolated Containers
+
 The platform uses the **virtualization** method to run multiple containers simultaneously on a single host. These containers are **fully isolated** with no risk of interfering with one another. If the security of any container at the hardware node is compromised, the rest of the containers are left unaffected.
 
 :::danger Note

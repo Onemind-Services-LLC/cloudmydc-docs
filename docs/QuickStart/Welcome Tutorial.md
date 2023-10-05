@@ -26,7 +26,7 @@ Hover over a particular point within the list to view an explanatory illustratio
 
 Hovering over any point reveals the corresponding illustration, while clicking on it redirects to the dedicated documentation page.
 
-2. The second **Build Your Application Topology** slide shows how to build your application topology using the platform components. Refer to the [Concept & Terminology](h) document for additional details.
+2. The second **Build Your Application Topology** slide shows how to build your application topology using the platform components. Refer to the [Concept & Terminology](https://cloudmydc.com/) document for additional details.
 
 ![Locale Dropdown](./img/WelcomeTutorial/03-tutorial-build-application-topology.png)
 
@@ -42,7 +42,7 @@ The maximal usage pricing is almost unreachable in practice (100% load on all no
 
 :::
 
-4. The last **Enjoy Pricing Advantages** slide helps to explain the efficiency of the platform [usage-based pricing](1) comparing to other cloud vendors' models.
+4. The last **Enjoy Pricing Advantages** slide helps to explain the efficiency of the platform [usage-based pricing](https://cloudmydc.com/) comparing to other cloud vendors' models.
 
 ![Locale Dropdown](./img/WelcomeTutorial/05-tutorial-paas-pricing-advantages.png)
 
@@ -66,17 +66,17 @@ You can hide the current hint or completely abandon the tutorial with the approp
 
 :::
 
-If needed, you can [set up your new environment](1) using all of the parameters available via topology wizard. However, you don’t need any specific configurations for this tutorial, so we recommend to follow the hint and click **Create** straightaway.
+If needed, you can [set up your new environment](https://cloudmydc.com/) using all of the parameters available via topology wizard. However, you don’t need any specific configurations for this tutorial, so we recommend to follow the hint and click **Create** straightaway.
 
-6. Wait a minute for your environment to be created. Meanwhile, you can track the process state in the [Tasks](1) panel.
+6. Wait a minute for your environment to be created. Meanwhile, you can track the process state in the [Tasks](https://cloudmydc.com/) panel.
 
 ![Locale Dropdown](./img/WelcomeTutorial/08-tutorial-tasks-panel.png)
 
-7. Once the operation is completed, tutorial automatically navigates you to the [deployment manager](1) section. Here, a button to deploy the default Hello World application will be highlighted. Click it to proceed.
+7. Once the operation is completed, tutorial automatically navigates you to the [deployment manager](https://cloudmydc.com/) section. Here, a button to deploy the default Hello World application will be highlighted. Click it to proceed.
 
 ![Locale Dropdown](./img/WelcomeTutorial/09-tutorial-deploy-default-application.png)
 
-8. Within the opened [deploy frame](1), select your just created Environment in the appropriate drop-down menu and click the **Deploy** button.
+8. Within the opened [deploy frame](https://cloudmydc.com/), select your just created Environment in the appropriate drop-down menu and click the **Deploy** button.
 
 <div style={{
     display:'flex',

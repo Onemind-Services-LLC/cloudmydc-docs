@@ -17,7 +17,7 @@ maxWidth: '30%',
 
 </span>
 
-[Docker solution](1) is designed for comfortable application distribution using fast and lightweight templates, which allows running your projects almost everywhere. Thus, it is a perfect technology for for those developers and sysadmins, who look for speeding up the application delivery workflow and avoiding the constant adjustment issues.
+[Docker solution](https://cloudmydc.com/) is designed for comfortable application distribution using fast and lightweight templates, which allows running your projects almost everywhere. Thus, it is a perfect technology for for those developers and sysadmins, who look for speeding up the application delivery workflow and avoiding the constant adjustment issues.
 
 </div>
 
@@ -25,13 +25,14 @@ In order to handle your own Docker image, the appropriate registry is needed. Th
 
 So, let’s discover how to get it at the platform in a matter of minutes through following the next steps:
 
-- [deploying private registry](1)
-- [adding image to registry](1)
+- [deploying private registry](https://cloudmydc.com/)
+- [adding image to registry](https://cloudmydc.com/)
 
-Subsequently, you’ll be able to easily deploy the added image from your [private registry](1) to the platform.
+Subsequently, you’ll be able to easily deploy the added image from your [private registry](https://cloudmydc.com/) to the platform.
 
 ## Deploy Private Registry
-The base template for the private registry can be found among other open-source images at Docker Hub. Thus, you can comfortably host it inside any preferable [PaaS installation](1) by creating the appropriate custom container:
+
+The base template for the private registry can be found among other open-source images at Docker Hub. Thus, you can comfortably host it inside any preferable [PaaS installation](https://cloudmydc.com/) by creating the appropriate custom container:
 
 1. Log in to your PaaS account and click the **New Environment** button at the top pane.
 
@@ -50,13 +51,13 @@ You can select the required tag for your Docker image at the top of this frame o
 
 Click **Next** to proceed.
 
-3. Provide all other [configurations](1) for the environment (disk limit, name, [region](1), etc.) up to your needs.
+3. Provide all other [configurations](https://cloudmydc.com/) for the environment (disk limit, name, [region](https://cloudmydc.com/), etc.) up to your needs.
 
 ![Locale Dropdown](./img/PrivateRegistryInsidePaaS/04-configure-environment.png)
 
 :::danger Note
 
-The instruction below is written for the [newest registry](1) versions (i.e. starting with **2.x** tag and higher). For [deprecated registries](1), the configuration & interaction flow may vary in details.
+The instruction below is written for the [newest registry](https://cloudmydc.com/) versions (i.e. starting with **2.x** tag and higher). For [deprecated registries](https://cloudmydc.com/), the configuration & interaction flow may vary in details.
 
 :::
 

@@ -9,7 +9,7 @@ The platform provides support for the **Docker Engine Community Edition** with f
 - **Docker Compose** - helps assemble applications consisting of multiple components with all the required configurations declared in a single compose file
 - **Docker Swarm** - represents several independent Docker nodes interconnected into a cluster
 
-1. **Docker Engine CE** is delivered as the pre-packaged solution available through the [platform Marketplace](1). Use the search field at the top or locate the package under the Dev & Admin Tools category:
+1. **Docker Engine CE** is delivered as the pre-packaged solution available through the [platform Marketplace](https://cloudmydc.com/). Use the search field at the top or locate the package under the Dev & Admin Tools category:
 
 <div style={{
     display:'flex',
@@ -18,11 +18,12 @@ The platform provides support for the **Docker Engine Community Edition** with f
 }}>
 
 ![Locale Dropdown](./img/DockerEngineDeployment/01-docker-engine-marketplace.png)
+
 </div>
 
 :::tip Tip
 
-You can also install **Docker Engine CE** via the topology wizard - search for the stack or locate manually in the *More > Extra* Services section.
+You can also install **Docker Engine CE** via the topology wizard - search for the stack or locate manually in the _More > Extra_ Services section.
 
 ![Locale Dropdown](./img/DockerEngineDeployment/02-docker-engine-in-wizard.png)
 
@@ -31,7 +32,7 @@ You can also install **Docker Engine CE** via the topology wizard - search for t
 2. In addition to the **Docker Version** selection, you can choose from several deployment options when installing from Marketplace:
 
 - **Create a clean standalone engine** - sets up a bare node with just a Docker daemon inside. If needed, you can additionally install **Portainer UI** - a web-based management tool
-- **Connect to an existing swarm cluster** - automatically includes this new Docker Engine into the existing [Docker Swarm](1) cluster (the appropriate cluster’s Join Token and Host IP are required)
+- **Connect to an existing swarm cluster** - automatically includes this new Docker Engine into the existing [Docker Swarm](https://cloudmydc.com/) cluster (the appropriate cluster’s Join Token and Host IP are required)
 - **Deploy containers from compose.yml** - automatically deploys an application from the linked custom repository
 
 <div style={{
@@ -46,9 +47,8 @@ You can also install **Docker Engine CE** via the topology wizard - search for t
 
 Confirm installation by providing general info (Environment, Display Name, Region) and clicking the **Install** button.
 
-
 :::tip Tip
 
-Learn more about **Docker Engine CE** [installation](1) and [management](1) via the relevant articles on our blog.
+Learn more about **Docker Engine CE** [installation](https://cloudmydc.com/) and [management](https://cloudmydc.com/) via the relevant articles on our blog.
 
 :::

@@ -134,9 +134,9 @@ Fixed
 
 ## SSH Gate Improvements
 
-[SSH Gate](1) component of the platform that helps connect to environments via SSH protocol. In the current 8.3.2 platform version, several improvements were applied to ensure the security and reliability of the process:
+[SSH Gate](https://cloudmydc.com/) component of the platform that helps connect to environments via SSH protocol. In the current 8.3.2 platform version, several improvements were applied to ensure the security and reliability of the process:
 
-- Implemented the correct processing of the new [OpenSSH extension](1) to the SSH protocol. The OpenSSH 8.5 and newer clients no longer require the “**UpdateHostkeys=no**” directive to connect the gate.
+- Implemented the correct processing of the new [OpenSSH extension](https://cloudmydc.com/) to the SSH protocol. The OpenSSH 8.5 and newer clients no longer require the “**UpdateHostkeys=no**” directive to connect the gate.
 - Removed support for the obsolete KEX (key exchange protocol) algorithms to ensure the security of the connection.
 - Fixed an error with the SSH Gate crash when connecting to a broken or poorly performing backend.
 
@@ -282,9 +282,9 @@ Table Table
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](1) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',

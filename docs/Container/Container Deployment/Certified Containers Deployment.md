@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-The platform offers the most popular [software stacks](1) as pre-configured and managed solutions for quick deployment and comfortable management. All of these certified containers are thoroughly tested and optimized specifically for use within the platform. Customizations include regular updates to the latest software version and additional integrations (such as auto-optimization based on the assigned resources, automated SSL certificates installation and application deployment, built-in [auto-clustering](1), etc.).
+The platform offers the most popular [software stacks](https://cloudmydc.com/) as pre-configured and managed solutions for quick deployment and comfortable management. All of these certified containers are thoroughly tested and optimized specifically for use within the platform. Customizations include regular updates to the latest software version and additional integrations (such as auto-optimization based on the assigned resources, automated SSL certificates installation and application deployment, built-in [auto-clustering](https://cloudmydc.com/), etc.).
 
-1. The deployment of certified containers is performed via the [topology wizard](1), which can be opened by clicking the **New Environment** button.
+1. The deployment of certified containers is performed via the [topology wizard](https://cloudmydc.com/), which can be opened by clicking the **New Environment** button.
 
 <div style={{
     display:'flex',
@@ -16,7 +16,7 @@ The platform offers the most popular [software stacks](1) as pre-configured and 
 
 </div>
 
-2. Within the opened window, switch to the tab with the preferred programming language (*Java, PHP, Ruby, .NET, Node.js, or Python*).
+2. Within the opened window, switch to the tab with the preferred programming language (_Java, PHP, Ruby, .NET, Node.js, or Python_).
 
 <div style={{
     display:'flex',
@@ -30,15 +30,14 @@ The platform offers the most popular [software stacks](1) as pre-configured and 
 
 3. Certified containers are added via the topology part on the left of the wizard. Here stacks are grouped by their purpose:
 
-- **[Load Balancers](1)** - stacks that operate as an entry point for the environment to distribute incoming requests and create even load on other nodes
-- **[Application Servers](1)** (compute nodes) - web servers that run your application
-- **[Databases](1)** (SQL & NoSQL) - database solutions to store and manage data
-- **[Cache Node](1)** - a Memcached object caching system for speeding up web applications through alleviating database load
-- **[Shared Storage](1)** - dedicated storage node with NFSv4 support, enlarged disk space, and optimized performance
-- **[Elastic VPS](1)** - virtual private servers on top of the CentOS, Ubuntu, Debian, and Windows OS
-- **[Build Node](1)** - a build automation tool for Java projects
+- **[Load Balancers](https://cloudmydc.com/)** - stacks that operate as an entry point for the environment to distribute incoming requests and create even load on other nodes
+- **[Application Servers](https://cloudmydc.com/)** (compute nodes) - web servers that run your application
+- **[Databases](https://cloudmydc.com/)** (SQL & NoSQL) - database solutions to store and manage data
+- **[Cache Node](https://cloudmydc.com/)** - a Memcached object caching system for speeding up web applications through alleviating database load
+- **[Shared Storage](https://cloudmydc.com/)** - dedicated storage node with NFSv4 support, enlarged disk space, and optimized performance
+- **[Elastic VPS](https://cloudmydc.com/)** - virtual private servers on top of the CentOS, Ubuntu, Debian, and Windows OS
+- **[Build Node](https://cloudmydc.com/)** - a build automation tool for Java projects
 - **Extra** (custom layers) - some extra services or any of the stacks mentioned above
-
 
 <div style={{
     display:'flex',
@@ -74,11 +73,11 @@ If you cannot find the required stack, you can check other categories (e.g. appl
 
 :::tip Tip
 
-If the required software is not available as a certified template, you can try installing it as a [custom container](1). Click the **Docker Image** option and search for the appropriate image on Docker Hub.
+If the required software is not available as a certified template, you can try installing it as a [custom container](https://cloudmydc.com/). Click the **Docker Image** option and search for the appropriate image on Docker Hub.
 
 :::
 
-5. You can [configure](1) added nodes (*vertical and horizontal scaling, disk limit, public IPs, etc.*) via the central part of the wizard. Certified containers can have additional options, e.g. [Auto-Clustering](1).
+5. You can [configure](https://cloudmydc.com/) added nodes (_vertical and horizontal scaling, disk limit, public IPs, etc._) via the central part of the wizard. Certified containers can have additional options, e.g. [Auto-Clustering](https://cloudmydc.com/).
 
 ![Locale Dropdown](./img/CertifiedContainersDeployment/05-environment-with-certified-containers.png)
 

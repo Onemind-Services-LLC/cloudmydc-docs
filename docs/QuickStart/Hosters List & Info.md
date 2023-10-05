@@ -132,7 +132,7 @@ import obj from './HostersList&Info.json'
 
 :::tip Tip
 
-For running native Docker containers, a platform should contain an [environment region](1) with [Virtuozzo 7](1) virtualization being integrated.
+For running native Docker containers, a platform should contain an [environment region](https://cloudmydc.com/) with [Virtuozzo 7](https://cloudmydc.com/) virtualization being integrated.
 
 :::
 

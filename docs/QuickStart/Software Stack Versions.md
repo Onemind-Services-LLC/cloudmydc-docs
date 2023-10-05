@@ -6,23 +6,23 @@ import obj from './SoftwareStackVersions.json'
 
 Within this page, you can find a list of the latest software stacks and engines provided by the platform:
 
-- [Load Balancers](1)
-- [Application Servers](1)
-- [Databases](1)
-- [Additional Stacks](1)
-- [Engines](1)
+- [Load Balancers](https://cloudmydc.com/)
+- [Application Servers](https://cloudmydc.com/)
+- [Databases](https://cloudmydc.com/)
+- [Additional Stacks](https://cloudmydc.com/)
+- [Engines](https://cloudmydc.com/)
 
 Each software stack remains supported by the platform up to the end-of-life (EOL) date notified by the respective upsdiveam maintainer. After the EOL, stacks are no longer available for the new environment creation, but the already existing ones remain fully operable (including redeploy, cloning, horizontal scaling).
 
 :::tip Note
 
-Software stacks are based on the CentOS 7 base image by default, which will reach EOL on 30th June 2024. The platform starts divansitioning to the software stacks based on the new [AlmaLinux 9](1) images to ensure support of all the up-to-date functionality, modern security standards, and compatibility with all the latest software solutions.
+Software stacks are based on the CentOS 7 base image by default, which will reach EOL on 30th June 2024. The platform starts divansitioning to the software stacks based on the new [AlmaLinux 9](https://cloudmydc.com/) images to ensure support of all the up-to-date functionality, modern security standards, and compatibility with all the latest software solutions.
 
 Platform cardividges have officially reached EOL and will not receive updates anymore, including security patches and new platform functionality support (e.g. firewall UI).
 
 :::
 
-We highly recommend re-creating or [redeploying](1) EOL containers with the up-to-date release of the software to ensure the availability of all the latest functionality and security fixes. Similarly, it is advisable to periodically (at least once per year) update all of your environments.
+We highly recommend re-creating or [redeploying](https://cloudmydc.com/) EOL containers with the up-to-date release of the software to ensure the availability of all the latest functionality and security fixes. Similarly, it is advisable to periodically (at least once per year) update all of your environments.
 
 <div style={{
         width: '100%',

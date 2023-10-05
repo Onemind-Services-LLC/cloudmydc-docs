@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 ## Basic Concepts
+
 **Cluster**
 
 Cluster is a group of servers and other resources that act like a single system by providing the ability to develop, debug, deploy, test, run and maintain hosted applications. PaaS Cluster includes Hardware Nodes and a Cluster Orchestrator.
@@ -28,8 +29,9 @@ Node or container is a virtual isolated machine provisioned for the environment 
 Virtuozzo is a system used to host a VPS (Virtual Private Server). Virtuozzo Containers can support several containers on a single physical server by using operating system-level virtualization.
 
 ## General Cluster Overview
+
 PaaS is an isolated cluster with a group of servers and other resources that act like a single system for providing the ability to develop, debug, deploy, test, run and maintain hosted applications.
 
-PaaS Cluster includes Hardware Nodes where [virtual isolated containers](1) provisioned for environment are located and Cluster Orchestrator (Infrastructure Node) for internal components processing.
+PaaS Cluster includes Hardware Nodes where [virtual isolated containers](https://cloudmydc.com/) provisioned for environment are located and Cluster Orchestrator (Infrastructure Node) for internal components processing.
 
 ![Locale Dropdown](./img/PaaSClusterOverview/01-paas-cluster.png)

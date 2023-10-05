@@ -128,11 +128,10 @@ Use the table below as a reference:
 
 :::
 
-
 Additional ports can be opened using:
 
-- **[endpoints](1)** - maps the container internal port to random external via the platform [Shared LB](1)
-- **[Public IP](1)** - provides a direct access to all ports of your container
+- **[endpoints](https://cloudmydc.com/)** - maps the container internal port to random external via the platform [Shared LB](https://cloudmydc.com/)
+- **[Public IP](https://cloudmydc.com/)** - provides a direct access to all ports of your container
 
 <div style={{
     display:'flex',
@@ -147,25 +146,26 @@ Additional ports can be opened using:
 Depending on the way chosen, just bind your service (application listener) to the received internal or external address.
 
 ## Ports Auto-Redirect
+
 The platform automatically redirects incoming requests to the application hosted within a container.
 
 During a node creation, the platform detects the ports which are listened on the TCP level. The commonly used for standard services (e.g. SSH, mail, databases, etc.) are automatically filtered. The first among the remaining ports becomes the container entry point so that all incoming requests are forwarded to it.
 
-This process is performed on each container launch, so the corresponding application becomes available over the embedded [Shared Load Balancer](1) just after being deployed, without any manual intervention required.
+This process is performed on each container launch, so the corresponding application becomes available over the embedded [Shared Load Balancer](https://cloudmydc.com/) just after being deployed, without any manual intervention required.
 
-However, in case you need to disable or adjust this functionality (e.g. if it exposes application admin panel), you can manually change the auto-redirect settings during the container creation. For that, switch to the [Variables](1) section, add the dedicated ***JELASTIC_EXPOSE*** parameter and set its value based on your needs:
+However, in case you need to disable or adjust this functionality (e.g. if it exposes application admin panel), you can manually change the auto-redirect settings during the container creation. For that, switch to the [Variables](https://cloudmydc.com/) section, add the dedicated **_JELASTIC_EXPOSE_** parameter and set its value based on your needs:
 
 - 0 or DISABLED or FALSE - to disable auto-redirect
 - a number within the 1-65535 range - to define a container port, which will receive the incoming traffic (i.e. where it will be redirected to)
 - if any other value is stated, the auto-redirect functionality will work as usual
 
-Alternatively, a comma-separated list of ports can be provided via the ***JELASTIC_PRIORITY_PORTS*** variable. The platform checks them one by one, configuring the entry point redirect to the first active service discovered. This option can speed up container startup time compared to the all ports analysis during the default auto-redirect flow.
+Alternatively, a comma-separated list of ports can be provided via the **_JELASTIC_PRIORITY_PORTS_** variable. The platform checks them one by one, configuring the entry point redirect to the first active service discovered. This option can speed up container startup time compared to the all ports analysis during the default auto-redirect flow.
 
 :::tip Note
 
-- if the exact port is specified via the ***JELASTIC_EXPOSE*** variable, the ***JELASTIC_PRIORITY_PORTS*** is ignored
-- if no services are discovered on the ***JELASTIC_PRIORITY_PORTS***, the default auto-redirect flow is called
-- when working with the **NodeJS** application server, an additional ***REDIRECT_EXCLUDE_PORTS*** variable can be used to manually exclude ports from the auto-redirect algorithm (i.e. port 80 won’t redirect to them)
+- if the exact port is specified via the **_JELASTIC_EXPOSE_** variable, the **_JELASTIC_PRIORITY_PORTS_** is ignored
+- if no services are discovered on the **_JELASTIC_PRIORITY_PORTS_**, the default auto-redirect flow is called
+- when working with the **NodeJS** application server, an additional **_REDIRECT_EXCLUDE_PORTS_** variable can be used to manually exclude ports from the auto-redirect algorithm (i.e. port 80 won’t redirect to them)
 
 :::
-To get even greater flexibility over the node accessibility, you can customize your [container firewall](1) settings.
+To get even greater flexibility over the node accessibility, you can customize your [container firewall](https://cloudmydc.com/) settings.

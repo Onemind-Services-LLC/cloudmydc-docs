@@ -3,6 +3,7 @@ sidebar_position: 5
 ---
 
 ## What are Application Containers
+
 An **application container** is a relatively new container type. It is an application, service, or even microservice centric solution that usually runs just a single process inside. As a result, application containers promote creating immutable and ephemeral infrastructure. If an application or service needs to be updated, a whole new container is built (with the required adjustments) from the appropriate image. Then, it is provisioned to replace the existing running container instance.
 
 <u>In the early days</u>, such complexity, as well as the <a href="/">lack of proper isolation</a> and incompatibilities of application containers with some technologies (like Java and database runtimes), had greatly impacted the adoption speed of application containers. Developers had to implement significant adjustments to ensure that their technologies and additional functionality can be run inside application containers correctly.
@@ -11,7 +12,7 @@ Also, as a stateless solution, application containers cannot natively save state
 
 <u>Nowadays</u>, a lot of supplementary tools are implemented for convenient utilization of services that use application containers. As a result, developers can benefit from the highly specialized units of application containers without the downside of complex management.
 
-Several application container implementations are actively developed: *Docker, CRI-O, containerd*, and some others. At the moment, the platform utilizes Docker as the most widely adopted technology for application containers. The platform provides comprehensive [deployment automation](1), [fast server provisioning](1), and [stateful data storing/processing tools](1) (sessions, logs, configs, etc.) for convenient utilization of application containers.
+Several application container implementations are actively developed: _Docker, CRI-O, containerd_, and some others. At the moment, the platform utilizes Docker as the most widely adopted technology for application containers. The platform provides comprehensive [deployment automation](https://cloudmydc.com/), [fast server provisioning](https://cloudmydc.com/), and [stateful data storing/processing tools](https://cloudmydc.com/) (sessions, logs, configs, etc.) for convenient utilization of application containers.
 
 <div style={{
     display:'flex',
@@ -23,4 +24,4 @@ Several application container implementations are actively developed: *Docker, C
 
 </div>
 
-However, some applications and technologies may still have problems while migrating to application containers (due to lack of proper isolation, statelessness, and single-process requirements). This is especially relevant for the complex application container orchestration tools like Kubernetes. In case of difficulties with migration, [system containers](1) can be considered a better-suited alternative for containerization.
+However, some applications and technologies may still have problems while migrating to application containers (due to lack of proper isolation, statelessness, and single-process requirements). This is especially relevant for the complex application container orchestration tools like Kubernetes. In case of difficulties with migration, [system containers](https://cloudmydc.com/) can be considered a better-suited alternative for containerization.
