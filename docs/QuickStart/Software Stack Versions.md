@@ -29,7 +29,7 @@ We highly recommend re-creating or [redeploying](1) EOL containers with the up-t
         margin: '0 0 5rem 0',
         borderRadius: '7px',
         overflow: 'hidden',
-    }} className="table_container">
+    }} >
     <div style={{
         width: '100%',
         padding: '20px',
@@ -113,7 +113,7 @@ We highly recommend re-creating or [redeploying](1) EOL containers with the up-t
         margin: '0 0 5rem 0',
         borderRadius: '7px',
         overflow: 'hidden',
-    }} className="table_container">
+    }} >
     <div style={{
         width: '100%',
         padding: '20px',
@@ -835,7 +835,7 @@ We highly recommend re-creating or [redeploying](1) EOL containers with the up-t
         margin: '0 0 5rem 0',
         borderRadius: '7px',
         overflow: 'hidden',
-    }} className="table_container">
+    }} >
     <div style={{
         width: '100%',
         padding: '20px',
@@ -1110,7 +1110,7 @@ We highly recommend re-creating or [redeploying](1) EOL containers with the up-t
         margin: '0 0 5rem 0',
         borderRadius: '7px',
         overflow: 'hidden',
-    }} className="table_container">
+    }} >
     <div style={{
         width: '100%',
         padding: '20px',
@@ -1533,7 +1533,7 @@ We highly recommend re-creating or [redeploying](1) EOL containers with the up-t
         margin: '0 0 5rem 0',
         borderRadius: '7px',
         overflow: 'hidden',
-    }} className="table_container">
+    }} >
     <div style={{
         width: '100%',
         padding: '20px',

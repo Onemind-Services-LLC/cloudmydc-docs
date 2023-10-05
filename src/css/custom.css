@@ -164,15 +164,6 @@ div[class^='announcementBar_'] {
   justify-content: center;
 }
 
-.table_container {
-  transform: translateY(0);
-  transition: 0.2s ease-in-out;
-}
-
-.table_container:hover {
-  transform: translateY(-5px);
-}
-
 /* Responsive Styles */
 @media screen and (max-width: 998px) {
 

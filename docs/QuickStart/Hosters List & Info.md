@@ -11,7 +11,7 @@ import obj from './HostersList&Info.json'
         margin: '0 0 5rem 0',
         borderRadius: '7px',
         overflow: 'hidden',
-    }} className="table_container">
+    }} >
     <div>
         <div style={{
             width: '100%',
@@ -143,7 +143,7 @@ For running native Docker containers, a platform should contain an [environment 
         margin: '0 0 5rem 0',
         borderRadius: '7px',
         overflow: 'hidden',
-    }} className="table_container">
+    }} >
     <div>
         <div style={{
             width: '100%',
