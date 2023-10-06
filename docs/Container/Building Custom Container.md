@@ -4,7 +4,7 @@ sidebar_position: 9
 
 import obj from './BuildingCustomContainer.json'
 
-With the platform, the process of preparing your own Docker image can be greatly simplified by building it on the basis of the already existing one (namely - on the top of the platform **CentOS 7** base template). This allows to skip all the steps, that are already accomplished within that “parent” template, and add the required adjustments only. We’ll consider this procedure on the example of preparing custom [WildFly](1) image - flexible and lightweight Java application server, which is a direct successor of the popular JBoss one.
+With the platform, the process of preparing your own Docker image can be greatly simplified by building it on the basis of the already existing one (namely - on the top of the platform **CentOS 7** base template). This allows to skip all the steps, that are already accomplished within that “parent” template, and add the required adjustments only. We’ll consider this procedure on the example of preparing custom [WildFly](https://cloudmydc.com/) image - flexible and lightweight Java application server, which is a direct successor of the popular JBoss one.
 
 <div style={{
     display:'flex',
@@ -16,24 +16,25 @@ With the platform, the process of preparing your own Docker image can be greatly
 
 </div>
 
-The most common way of building Docker images is composing a ***Dockerfile*** - special manifest, which allows achieving the additional automation through listing the desired commands into a simple text file, which will be read and executed by Docker daemon. In such a way, a new template will be created automatically basing on the comprised instructions (while otherwise, you need to call every necessary operation manually, one by one).
+The most common way of building Docker images is composing a **_Dockerfile_** - special manifest, which allows achieving the additional automation through listing the desired commands into a simple text file, which will be read and executed by Docker daemon. In such a way, a new template will be created automatically basing on the comprised instructions (while otherwise, you need to call every necessary operation manually, one by one).
 
 Below, we’ll consider all the specifics of a custom image running at our platform, and, as a result, you’ll get the ready-to-work dockerized version of the WildFly server right inside the platform.
 
 So, let’s walk through the required operations step-by-step:
 
-- [composing dockerfile](1)
-- [adding image to repository](1)
-- [deploying image at the platform](1)
+- [composing dockerfile](https://cloudmydc.com/)
+- [adding image to repository](https://cloudmydc.com/)
+- [deploying image at the platform](https://cloudmydc.com/)
 
 ## Composing Dockerfile
+
 To start with, create an empty text file - we’ll declare all the appropriate operations directly in it - and proceed with the following instructions.
 
 :::tip Note
 
-This sections is exploratory in its nature and includes just the required basis for your dockerfile preparation. However, if you’d like to dive into the specifics of the process and get more detailed guidance, you can examine the official [dockerfile references](1).
+This sections is exploratory in its nature and includes just the required basis for your dockerfile preparation. However, if you’d like to dive into the specifics of the process and get more detailed guidance, you can examine the official [dockerfile references](https://cloudmydc.com/).
 
-Also, you can [download](1) the already prepared dockerfile (with our WildFly image example) in advance and just look through this section for the performed actions explanations, skipping the manual file creation.
+Also, you can [download](https://cloudmydc.com/) the already prepared dockerfile (with our WildFly image example) in advance and just look through this section for the performed actions explanations, skipping the manual file creation.
 
 :::
 
@@ -65,7 +66,6 @@ Also, you can [download](1) the already prepared dockerfile (with our WildFly im
 
 2. Next, you can specify the general image information (like metadata or some internal variables), which will be required during the further configurations. Use the example below to set the needed values:
 
-
 <div style={{
     width: '100%',
     border: '1px solid #eee',
@@ -96,14 +96,13 @@ where:
 
 - **LABEL**- allows you to set image metadata via the appropriate key-value pairs (e.g. the author of the Docker image, its version, etc.)
 - **ENV**- sets the main environment variables, i.e.:
-   - *WILDFLY_VERSION* - version of WildFly to build; can be changed to another release if necessary (get the list of the currently [available versions](1))
-   - *ADMIN_USER* - the arbitrary administrator name for the subsequent accessing WildFly admin panel
-   - *ADMIN_PASSWORD*- the desired password for the specified user
+  - _WILDFLY_VERSION_ - version of WildFly to build; can be changed to another release if necessary (get the list of the currently [available versions](https://cloudmydc.com/))
+  - _ADMIN_USER_ - the arbitrary administrator name for the subsequent accessing WildFly admin panel
+  - _ADMIN_PASSWORD_- the desired password for the specified user
 
 3. Now, you can declare the required configurations using the shell commands - the RUN operator should be used for this purpose.
 
 First of all, you need to install the Java Development Kit (**OpenJDK** of the 8th version in our case) and the tar archiver (which will be used for decompressing the downloaded files):
-
 
 <div style={{
     width: '100%',
@@ -162,8 +161,7 @@ This command ends with calling the installed packages' general update.
 5. At this step, you need to create a symlink in order to shorten the path to the WildFly main directory and, as a result, to make it easily accessible:
 
 1
-RUN ln -s /opt/wildfly-$WILDFLY_VERSION /opt/wildfly
-6. Let’s proceed with creation of the main configuration file for our WildFly server and putting all the needed options to it:
+RUN ln -s /opt/wildfly-$WILDFLY_VERSION /opt/wildfly 6. Let’s proceed with creation of the main configuration file for our WildFly server and putting all the needed options to it:
 
 1
 2
@@ -176,42 +174,35 @@ RUN ln -s /opt/wildfly-$WILDFLY_VERSION /opt/wildfly
 9
 RUN echo -en "JAVA_HOME=\"/usr/lib/jvm/java\""'\n'\
 "JBOSS_HOME=\"/opt/wildfly\""'\n'\
-"JBOSS_USER=wildfly"'\n'\ 
-"JBOSS_MODE=standalone"'\n'\ 
+"JBOSS_USER=wildfly"'\n'\
+"JBOSS_MODE=standalone"'\n'\
 "JBOSS_CONFIG=standalone.xml"'\n'\
 "STARTUP_WAIT=60"'\n'\
 "SHUTDOWN_WAIT=60"'\n'\
 "JBOSS_CONSOLE_LOG=\"/var/log/wildfly/console.log\""'\n'\
-"JBOSS_OPTS=\"-b 0.0.0.0 -bmanagement=0.0.0.0 -Djboss.management.http.port=4949 -Djboss.management.https.port=4848\"" >> /etc/default/wildfly
-7. CentOS 7 is started using the Systemd initiation script by default, but WildFly server requires the more traditional SystemV Init one, thus you need to copy the default initscript to the /etc/init.d folder and edit the appropriate configs to avoid the systemd redirect:
+"JBOSS_OPTS=\"-b 0.0.0.0 -bmanagement=0.0.0.0 -Djboss.management.http.port=4949 -Djboss.management.https.port=4848\"" >> /etc/default/wildfly 7. CentOS 7 is started using the Systemd initiation script by default, but WildFly server requires the more traditional SystemV Init one, thus you need to copy the default initscript to the /etc/init.d folder and edit the appropriate configs to avoid the systemd redirect:
 
 1
 2
 RUN wget https://raw.githubusercontent.com/wildfly/wildfly-core/master/core-feature-pack/src/main/resources/content/docs/contrib/scripts/init.d/wildfly-init-redhat.sh -O /etc/rc.d/init.d/wildfly;  
-sed -i "/# Source function library/a\SYSTEMCTL_SKIP_REDIRECT=1" /etc/init.d/wildfly; chmod +x /etc/init.d/wildfly;
-8. Next, we’ll state WildFly to be run on container startup by adding the corresponding system user and changing files' ownership for him:
+sed -i "/# Source function library/a\SYSTEMCTL_SKIP_REDIRECT=1" /etc/init.d/wildfly; chmod +x /etc/init.d/wildfly; 8. Next, we’ll state WildFly to be run on container startup by adding the corresponding system user and changing files' ownership for him:
 
 1
 2
 RUN chkconfig --add wildfly; chkconfig wildfly on; mkdir -p /var/log/wildfly; adduser wildfly;  
-chown -R wildfly:wildfly /opt/wildfly-$WILDFLY_VERSION /opt/wildfly /var/log/wildfly;
-9. Also, let’s add the user credentials we’ve defined within the 1st instruction step for accessing the server’s admin panel:
+chown -R wildfly:wildfly /opt/wildfly-$WILDFLY_VERSION /opt/wildfly /var/log/wildfly; 9. Also, let’s add the user credentials we’ve defined within the 1st instruction step for accessing the server’s admin panel:
 
 1
-RUN /opt/wildfly/bin/add-user.sh --user $ADMIN_USER --password $ADMIN_PASSWORD --silent --enable
-10. Now, we can correct a link to the admin panel itself at the default index.html page by defining the corresponding redirect (as in case our image will be deployed to a container without the external IP attached, port 4949 and HTTP connection should be used here):
+RUN /opt/wildfly/bin/add-user.sh --user $ADMIN_USER --password $ADMIN_PASSWORD --silent --enable 10. Now, we can correct a link to the admin panel itself at the default index.html page by defining the corresponding redirect (as in case our image will be deployed to a container without the external IP attached, port 4949 and HTTP connection should be used here):
 
 1
-RUN sed -i "s/<a href=\"\/console\">/<a href=\"\/console\" onclick=\"javascript:event.target.port=4949;event.target.protocol=\'http:\';\">/" /opt/wildfly/welcome-content/index.html
-11. Add the English locale settings to the container.
+RUN sed -i "s/<a href=\"\/console\">/<a href=\"\/console\" onclick=\"javascript:event.target.port=4949;event.target.protocol=\'http:\';\">/" /opt/wildfly/welcome-content/index.html 11. Add the English locale settings to the container.
 
 1
-RUN localedef -i en_US -f UTF-8 en_US.UTF-8
-12. Another required action is to set our Docker image to listen to the required ports at the runtime. The EXPOSE instruction is intended for this:
+RUN localedef -i en_US -f UTF-8 en_US.UTF-8 12. Another required action is to set our Docker image to listen to the required ports at the runtime. The EXPOSE instruction is intended for this:
 
 1
-EXPOSE 22 80 443 8080 8743 9990 9993 8009 4848 4949
-13. Lastly, you need to set the ENTRYPOINT for defining a container to be run as executable. In our case, the bash shell should be specified:
+EXPOSE 22 80 443 8080 8743 9990 9993 8009 4848 4949 13. Lastly, you need to set the ENTRYPOINT for defining a container to be run as executable. In our case, the bash shell should be specified:
 
 1
 ENTRYPOINT ["/bin/bash"]
@@ -230,12 +221,10 @@ sudo docker build -t {image_name} {dockerfile_location}
 where
 
 {image_name} - image repository appellation; optionally, a version tag could be added after the “:” separator (e.g. jelastic/wildfly:latest)
-{dockerfile_location} - either local path or an URL to your dockerfile (could be set as “.” if the file is located in the current directory)
-2. You should receive the build success message with the ID of your new image alongside. To ensure it is available at your workstation, you can request the list of all local templates to be output with:
+{dockerfile_location} - either local path or an URL to your dockerfile (could be set as “.” if the file is located in the current directory) 2. You should receive the build success message with the ID of your new image alongside. To ensure it is available at your workstation, you can request the list of all local templates to be output with:
 
 1
-sudo docker images
-3. Finally, you need to push (upload) your image to a registry with the corresponding command:
+sudo docker images 3. Finally, you need to push (upload) your image to a registry with the corresponding command:
 
 1
 sudo docker push {image_name}

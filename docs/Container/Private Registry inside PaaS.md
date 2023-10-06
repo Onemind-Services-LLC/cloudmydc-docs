@@ -63,7 +63,7 @@ The instruction below is written for the [newest registry](https://cloudmydc.com
 
 Click **Create** and wait a minute for the environment to be configured.
 
-4. Now, you need to configure an entry point for external access. We’ll create one, leveraging the platform [endpoints](1) feature, in order to expose the container’s port 5000.
+4. Now, you need to configure an entry point for external access. We’ll create one, leveraging the platform [endpoints](https://cloudmydc.com/) feature, in order to expose the container’s port 5000.
 
 :::tip Note
 
@@ -73,22 +73,21 @@ Alternatively, you can attach and work over public IP (a paid option) without an
 
 ![Locale Dropdown](./img/PrivateRegistryInsidePaaS/05-add-endpoint.png)
 
-Click on the **Settings** button next to your environment, navigate to the ***Endpoints*** section, and Add a new endpoint. Within the opened frame, specify the desired parameters, stating the 5000 **Private Port** number within the same-named field.
+Click on the **Settings** button next to your environment, navigate to the **_Endpoints_** section, and Add a new endpoint. Within the opened frame, specify the desired parameters, stating the 5000 **Private Port** number within the same-named field.
 
 As a result, you should receive a record similar to the one shown in the image above. Now, you can start filling your registry with Docker images.
 
 ## Add Image to Registry
+
 In order to show how a Docker template can be added to your registry, we’ll take an existing image from the central Hub registry and push it to our private repository (however, you can use your own, i.e. locally composed, one).
 
 However, before that, you need to apply some slight adjustments to your local machine configs in order to be able to operate with it properly.
 
-1. To start with, [install](1) Docker CE (if you haven’t done this previously) according to the linked guide from the official website.
-
+1. To start with, [install](https://cloudmydc.com/) Docker CE (if you haven’t done this previously) according to the linked guide from the official website.
 
 :::tip Note
 
 Make sure the installed daemon version is 1.6.0 or higher (as registries usage is not compatible with its prior versions). The actual Docker daemon version can be checked by executing the following command at your terminal:
-
 
 <div style={{
     width: '100%',
@@ -118,9 +117,7 @@ Make sure the installed daemon version is 1.6.0 or higher (as registries usage i
 
 :::
 
-
 2. Next, choose any preferable image at Docker Hub, get it using the pull command and tag the received template so that it points to your private registry (or, in case of a local template usage, just skip the first command part).
-
 
 <div style={{
     width: '100%',
@@ -158,17 +155,16 @@ where:
 
 ![Locale Dropdown](./img/PrivateRegistryInsidePaaS/08-docker-pull-command.png)
 
-3. Now, you should pay attention to one more detail - while using a remote private registry, it’s required to secure interaction with it by means of TLS. For that, you need to place the corresponding [SSL certificate files](1) (i.e. server key and domain certificate), issued by a known CA, to your registry.
+3. Now, you should pay attention to one more detail - while using a remote private registry, it’s required to secure interaction with it by means of TLS. For that, you need to place the corresponding [SSL certificate files](https://cloudmydc.com/) (i.e. server key and domain certificate), issued by a known CA, to your registry.
 
 :::tip Tip
 
-A [self-signed](1) certificate can be applied as well - in this case, you’ll need to manually instruct your Docker daemon to [trust](1) it.
+A [self-signed](https://cloudmydc.com/) certificate can be applied as well - in this case, you’ll need to manually instruct your Docker daemon to [trust](https://cloudmydc.com/) it.
 
 :::
-However, for testing purposes, you can apply a relatively simpler configuration, that allows bypassing this requirement - run your registry in an [insecure mode](1), so all the communication will be performed over the plain HTTP (which, although, is <u>highly unrecommended</u> in confines of production usage).
+However, for testing purposes, you can apply a relatively simpler configuration, that allows bypassing this requirement - run your registry in an [insecure mode](https://cloudmydc.com/), so all the communication will be performed over the plain HTTP (which, although, is <u>highly unrecommended</u> in confines of production usage).
 
-For that, add the following line to the ***/etc/default/docker*** configuration file of your daemon (or the similar one according to your OS distribution), e.g. using the ***vim*** editor with sudo permissions:
-
+For that, add the following line to the **_/etc/default/docker_** configuration file of your daemon (or the similar one according to your OS distribution), e.g. using the **_vim_** editor with sudo permissions:
 
 <div style={{
     width: '100%',
@@ -200,7 +196,7 @@ Don’t forget to save the changes.
 
 :::danger Note
 
-In case of using self-signed certificates or insecure option, the same extra configurations will be required for being applied to every Docker daemon, which needs to access your registry. 
+In case of using self-signed certificates or insecure option, the same extra configurations will be required for being applied to every Docker daemon, which needs to access your registry.
 
 :::
 
@@ -247,9 +243,9 @@ In case of using self-signed certificates or insecure option, the same extra con
 
 That’s all! Shortly, your image will be uploaded to the registry (the exact time depends on image size and the internet connection speed) and will become available for use throughout the Internet.
 
-As a result, you can easily [deploy it within the platform](1) just in the similar way we’ve done this at the beginning of the instruction.
+As a result, you can easily [deploy it within the platform](https://cloudmydc.com/) just in the similar way we’ve done this at the beginning of the instruction.
 
-:::tip 
-In case you face any issues while deploying your own registry or adding an image to it, feel free to appeal for our technical experts' assistance at [Stackoverflow](1).
+:::tip
+In case you face any issues while deploying your own registry or adding an image to it, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://cloudmydc.com/).
 
 :::
