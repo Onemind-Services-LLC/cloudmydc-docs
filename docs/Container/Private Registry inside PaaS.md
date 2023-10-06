@@ -63,65 +63,193 @@ The instruction below is written for the [newest registry](https://cloudmydc.com
 
 Click **Create** and wait a minute for the environment to be configured.
 
-4. Now, you need to configure an entry point for external access. We’ll create one, leveraging the platform endpoints feature, in order to expose the container’s port 5000.
+4. Now, you need to configure an entry point for external access. We’ll create one, leveraging the platform [endpoints](1) feature, in order to expose the container’s port 5000.
 
-Note: Alternatively, you can attach and work over public IP (a paid option) without any additional configurations.
-add endpoint
+:::tip Note
 
-Click on the Settings button next to your environment, navigate to the Endpoints section, and Add a new endpoint. Within the opened frame, specify the desired parameters, stating the 5000 Private Port number within the same-named field.
+Alternatively, you can attach and work over public IP (a paid option) without any additional configurations.
+
+:::
+
+![Locale Dropdown](./img/PrivateRegistryInsidePaaS/05-add-endpoint.png)
+
+Click on the **Settings** button next to your environment, navigate to the ***Endpoints*** section, and Add a new endpoint. Within the opened frame, specify the desired parameters, stating the 5000 **Private Port** number within the same-named field.
 
 As a result, you should receive a record similar to the one shown in the image above. Now, you can start filling your registry with Docker images.
 
-Add Image to Registry
+## Add Image to Registry
 In order to show how a Docker template can be added to your registry, we’ll take an existing image from the central Hub registry and push it to our private repository (however, you can use your own, i.e. locally composed, one).
 
 However, before that, you need to apply some slight adjustments to your local machine configs in order to be able to operate with it properly.
 
-1. To start with, install Docker CE (if you haven’t done this previously) according to the linked guide from the official website.
+1. To start with, [install](1) Docker CE (if you haven’t done this previously) according to the linked guide from the official website.
 
-Note: Make sure the installed daemon version is 1.6.0 or higher (as registries usage is not compatible with its prior versions). The actual Docker daemon version can be checked by executing the following command at your terminal:
 
-1
-docker -v
-check Docker engine version
+:::tip Note
+
+Make sure the installed daemon version is 1.6.0 or higher (as registries usage is not compatible with its prior versions). The actual Docker daemon version can be checked by executing the following command at your terminal:
+
+
+<div style={{
+    width: '100%',
+    border: '1px solid #eee',
+    borderRadius: '7px',
+    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
+    overflow: 'hidden',
+    margin: '0 0 1rem 0',
+    background: 'white',
+}}>
+    <div style={{
+            display: "flex",
+        }}>
+        <div style={{ width: '5%', background: 'red',
+        padding: '10px 20px 10px 20px', color: 'white' }}>
+            1
+        </div>
+        <div style={{
+            padding: '10px 20px 5px 20px',
+        }}>
+            docker -v
+        </div>
+    </div>
+</div>
+
+![Locale Dropdown](./img/PrivateRegistryInsidePaaS/06-check-docker-engine-version.png)
+
+:::
+
 
 2. Next, choose any preferable image at Docker Hub, get it using the pull command and tag the received template so that it points to your private registry (or, in case of a local template usage, just skip the first command part).
 
-1
-docker pull {image} && docker tag {image} {entry_point}/{repository}
+
+<div style={{
+    width: '100%',
+    border: '1px solid #eee',
+    borderRadius: '7px',
+    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
+    overflow: 'hidden',
+    margin: '0 0 1rem 0',
+    background: 'white',
+}}>
+    <div style={{
+            display: "flex",
+        }}>
+        <div style={{ width: '5%', background: 'red',
+        padding: '10px 20px 10px 20px', color: 'white' }}>
+            1
+        </div>
+        <div style={{
+            padding: '10px 20px 5px 20px',
+        }}>
+            docker pull `{`image`}` && docker tag `{`image`}` `{`entry_point`}`/`{`repository`}`
+        </div>
+    </div>
+</div>
+
 where:
 
-{image} - a name of the Docker template you’d like to pull and tag (e.g. jelastic/haproxy)
+- **`{`image`}`** - a name of the Docker template you’d like to pull and tag (e.g. jelastic/haproxy)
 
-{entry_point} - private registry entry point, i.e. either endpoint (which was created at the end of the previous section) or external IP address. We’ll use the first one:endpoint URL
+- **`{`entry_point`}`** - private registry entry point, i.e. either endpoint (which was created at the end of the previous section) or external IP address. We’ll use the first one:
 
-{repository} - a name of a repository at your remote private registry (e.g. haproxy) for the image to be stored in
+![Locale Dropdown](./img/PrivateRegistryInsidePaaS/07-endpoint-url.png)
 
-docker pull command
+- **`{`repository`}`** - a name of a repository at your remote private registry (e.g. haproxy) for the image to be stored in
 
-3. Now, you should pay attention to one more detail - while using a remote private registry, it’s required to secure interaction with it by means of TLS. For that, you need to place the corresponding SSL certificate files (i.e. server key and domain certificate), issued by a known CA, to your registry.
+![Locale Dropdown](./img/PrivateRegistryInsidePaaS/08-docker-pull-command.png)
 
-Tip: A self-signed certificate can be applied as well - in this case, you’ll need to manually instruct your Docker daemon to trust it.
-However, for testing purposes, you can apply a relatively simpler configuration, that allows bypassing this requirement - run your registry in an insecure mode, so all the communication will be performed over the plain HTTP (which, although, is highly unrecommended in confines of production usage).
+3. Now, you should pay attention to one more detail - while using a remote private registry, it’s required to secure interaction with it by means of TLS. For that, you need to place the corresponding [SSL certificate files](1) (i.e. server key and domain certificate), issued by a known CA, to your registry.
 
-For that, add the following line to the /etc/default/docker configuration file of your daemon (or the similar one according to your OS distribution), e.g. using the vim editor with sudo permissions:
+:::tip Tip
 
-1
-DOCKER_OPTS="--insecure-registry {entry_point}"
-configure insecure registry
+A [self-signed](1) certificate can be applied as well - in this case, you’ll need to manually instruct your Docker daemon to [trust](1) it.
+
+:::
+However, for testing purposes, you can apply a relatively simpler configuration, that allows bypassing this requirement - run your registry in an [insecure mode](1), so all the communication will be performed over the plain HTTP (which, although, is <u>highly unrecommended</u> in confines of production usage).
+
+For that, add the following line to the ***/etc/default/docker*** configuration file of your daemon (or the similar one according to your OS distribution), e.g. using the ***vim*** editor with sudo permissions:
+
+
+<div style={{
+    width: '100%',
+    border: '1px solid #eee',
+    borderRadius: '7px',
+    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
+    overflow: 'hidden',
+    margin: '0 0 1rem 0',
+    background: 'white',
+}}>
+    <div style={{
+            display: "flex",
+        }}>
+        <div style={{ width: '5%', background: 'red',
+        padding: '10px 20px 10px 20px', color: 'white' }}>
+            1
+        </div>
+        <div style={{
+            padding: '10px 20px 5px 20px',
+        }}>
+            DOCKER_OPTS="--insecure-registry `{`entry_point`}`"
+        </div>
+    </div>
+</div>
+
+![Locale Dropdown](./img/PrivateRegistryInsidePaaS/09-configure-insecure-registry.png)
 
 Don’t forget to save the changes.
 
-Note: In case of using self-signed certificates or insecure option, the same extra configurations will be required for being applied to every Docker daemon, which needs to access your registry. 4. Now, you can restart your local Docker daemon and push the prepared image to your remote repository:
+:::danger Note
 
-1
-2
-sudo service docker restart
-docker push {entry_point}/{repository}
-docker restart push commands
+In case of using self-signed certificates or insecure option, the same extra configurations will be required for being applied to every Docker daemon, which needs to access your registry. 
+
+:::
+
+4. Now, you can restart your local Docker daemon and push the prepared image to your remote repository:
+
+<div style={{
+    width: '100%',
+    border: '1px solid #eee',
+    borderRadius: '7px',
+    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
+    overflow: 'hidden',
+    margin: '0 0 1rem 0',
+    background: 'white',
+}}>
+    <div style={{
+            display: "flex",
+        }}>
+        <div style={{ width: '5%', background: 'red',
+        padding: '10px 20px 10px 20px', color: 'white' }}>
+            1
+        </div>
+        <div style={{
+            padding: '10px 20px 5px 20px',
+        }}>
+            sudo service docker restart
+        </div>
+    </div>
+    <div style={{
+            display: "flex",
+        }}>
+        <div style={{ width: '5%', background: 'red',
+        padding: '10px 20px 10px 20px', color: 'white' }}>
+            2
+        </div>
+        <div style={{
+            padding: '10px 20px 5px 20px',
+        }}>
+            docker push `{`entry_point`}`/`{`repository`}`
+        </div>
+    </div>
+</div>
+
+![Locale Dropdown](./img/PrivateRegistryInsidePaaS/10-docker-restart-push-commands.png)
 
 That’s all! Shortly, your image will be uploaded to the registry (the exact time depends on image size and the internet connection speed) and will become available for use throughout the Internet.
 
-As a result, you can easily deploy it within the platform just in the similar way we’ve done this at the beginning of the instruction.
+As a result, you can easily [deploy it within the platform](1) just in the similar way we’ve done this at the beginning of the instruction.
 
-In case you face any issues while deploying your own registry or adding an image to it, feel free to appeal for our technical experts' assistance at Stackoverflow.
+:::tip 
+In case you face any issues while deploying your own registry or adding an image to it, feel free to appeal for our technical experts' assistance at [Stackoverflow](1).
+
+:::

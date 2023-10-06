@@ -1,0 +1,15 @@
+{
+  "data1": [
+    "LABEL maintainer='Virtuozzo'",
+    "ENV WILDFLY_VERSION 13.0.0.Final",
+    "",
+    "ENV ADMIN_USER jelastic",
+    "",
+    "ENV ADMIN_PASSWORD jelastic"
+  ],
+  "data2": [
+    "RUN cd /opt && curl -O https://download.jboss.org/wildfly/${WILDFLY_VERSION}/wildfly-${WILDFLY_VERSION}.tar.gz \\ ",
+    "&& $(which tar) xf wildfly-${WILDFLY_VERSION}.tar.gz   ",
+    "&& rm wildfly-${WILDFLY_VERSION}.tar.gz"
+  ]
+}
