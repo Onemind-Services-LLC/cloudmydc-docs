@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-_This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](1) feature description_.
+_This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](https://cloudmydc.com/) feature description_.
 
 A customer who originally created an environment becomes its **Owner** and can share it with other **Users**, specifying corresponding access rights for each of them.
 
@@ -50,7 +50,7 @@ share environment a375d2047848941da72832ea4018c58csettings button
 
 </div>
 
-3. After clicking the **Save** button, this user will receive an email notification about environment sharing and can proceed to [managing](1) it.
+3. After clicking the **Save** button, this user will receive an email notification about environment sharing and can proceed to [managing](https://cloudmydc.com/) it.
 
 ## Environment Sharing with an Unregistered Account
 
@@ -82,7 +82,6 @@ To share your environment with a user who is not registered with the platform, f
 
 3. Click the **Save** button. Firstly, you will see this user in the list with custom triangle signs ![Locale Dropdown](./img/ShareEnvironment/a375d2047848941da72832ea4018c58ctriangle-sign.png) which means that the invitation was sent. Then, this user will disappear from the list, as technically the environment is not shared with him yet.
 
-
 <div style={{
     display:'flex',
     justifyContent: 'center',
@@ -103,7 +102,7 @@ at this stage, the user is only registered and added to your collaboration, but 
 - Add the same **Email** of a user
 - State the permissions by ticking the **Change topology/SSH access** option
 - **Save** the settings
-A user will receive a notification about the shared environment.
+  A user will receive a notification about the shared environment.
 
 :::
 
@@ -111,9 +110,10 @@ Newly registered users will have **trial** status by default. As a result, the u
 
 Detailed info on your account limitations can be found at the **Balance > Quotas & Pricing > Account Limits** tab.
 
-Note: that these quotas can be customized by the hosting provider, e.g. such users can be provided with an “eternal” trial period and, in exchange, forbidden to create their own environments. Such environment sharing can be also performed via the **[account collaboration](1)** setting (follow the link to get more details).
+Note: that these quotas can be customized by the hosting provider, e.g. such users can be provided with an “eternal” trial period and, in exchange, forbidden to create their own environments. Such environment sharing can be also performed via the **[account collaboration](https://cloudmydc.com/)** setting (follow the link to get more details).
 
 ## Manage a Shared Environment
+
 To manage the environments shared by/with you, click the Settings button in the top right corner of the platform’s dashboard.
 
 <div style={{
@@ -129,8 +129,7 @@ To manage the environments shared by/with you, click the Settings button in the 
 Navigate to the **Account Management** or **Shared with Me** option (depending on your requirements) and manage the desired settings.
 
 - if you are the owner of the environment
-In the **Account Management** option, you can remove access to your environment for any user or limit the permissions by unticking the Change topology/SSH access option.share environment 
-
+  In the **Account Management** option, you can remove access to your environment for any user or limit the permissions by unticking the Change topology/SSH access option.share environment
 
 <div style={{
     display:'flex',
@@ -143,7 +142,7 @@ In the **Account Management** option, you can remove access to your environment 
 </div>
 
 - if you are the user of someone’s environment
-In the **Shared with Me** option, you can decline from using the shared environment.
+  In the **Shared with Me** option, you can decline from using the shared environment.
 
 <div style={{
     display:'flex',

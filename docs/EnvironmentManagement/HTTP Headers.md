@@ -4,7 +4,7 @@ sidebar_position: 5
 
 import obj from './HTTPHeaders.json'
 
-**[HTTP headers](1)** are the core part of the HTTP requests and responses. They pass additional information with an HTTP request or response (e.g. the client browser, requested page, server, and more).
+**[HTTP headers](https://cloudmydc.com/)** are the core part of the HTTP requests and responses. They pass additional information with an HTTP request or response (e.g. the client browser, requested page, server, and more).
 
 The main headers used with environments for deploying your applications:
 
@@ -105,8 +105,7 @@ Additional security headers are used for some specific stacks.
 
 :::
 
-The list of supported HTTP headers can vary based on the topology of the connected environment. Due to external access specifics (via [resolver/SLB](1) or [public IP](1)), there are four possible scenarios when working with the platform:
-
+The list of supported HTTP headers can vary based on the topology of the connected environment. Due to external access specifics (via [resolver/SLB](https://cloudmydc.com/) or [public IP](https://cloudmydc.com/)), there are four possible scenarios when working with the platform:
 
 <div style={{
         width: '100%',
@@ -183,6 +182,7 @@ Single application server
 }}>
 
 ![Locale Dropdown](./img/HTTPHeaders/01-slb-to-app-server.png)
+
 </div>
             <div style={{
                 wordBreak: 'break-all',
@@ -217,6 +217,7 @@ Load balancer with application servers
 }}>
 
 ![Locale Dropdown](./img/HTTPHeaders/02-slb-to-load-balancer.png)
+
 </div>
             <div style={{
                 wordBreak: 'break-all',
@@ -251,6 +252,7 @@ Application server with public IP
 }}>
 
 ![Locale Dropdown](./img/HTTPHeaders/03-public-ip-to-app-server.png)
+
 </div>
             <div style={{
                 wordBreak: 'break-all',
@@ -285,6 +287,7 @@ Load balancer with public IP and application servers
 }}>
 
 ![Locale Dropdown](./img/HTTPHeaders/04-public-ip-to-load-balancer.png)
+
 </div>
             <div style={{
                 wordBreak: 'break-all',
@@ -296,16 +299,17 @@ host x-real-ip x-host x-forwarded-for x-uri x-forwarded-proto
     </div> 
 </div>
 
-
 ## Security Headers
+
 You can easily manage security headers by managing the appropriate configuration file. The path is different for different servers:
 
-- *Apache (PHP, Ruby, Python), MySQL, MariaDB*: ***/etc/httpd/conf.d/10-shared_headers.conf***
-- *NGINX (PHP, Ruby) and LEMP*: ***/etc/nginx/conf.d/headers/10-shared_headers.conf***
-- *LiteSpeed, LLSMP*: ***/var/www/conf/vhconf.xml*** (adjust via the admin panel only)
-- *Tomcat, TomEE*: ***/opt/tomcat/conf/web.xml***
+- _Apache (PHP, Ruby, Python), MySQL, MariaDB_: **_/etc/httpd/conf.d/10-shared_headers.conf_**
+- _NGINX (PHP, Ruby) and LEMP_: **_/etc/nginx/conf.d/headers/10-shared_headers.conf_**
+- _LiteSpeed, LLSMP_: **_/var/www/conf/vhconf.xml_** (adjust via the admin panel only)
+- _Tomcat, TomEE_: **_/opt/tomcat/conf/web.xml_**
 
 :::danger Notes
+
 - The headers processing for the Node.js, Golang, .NET, JavaEngine, and Springboot servers must be implemented manually in the user application.
 - For the Tomcat and TomEE stacks, only the following headers are enabled by default: **X-Content-Type-Options, X-Frame-Options, X-XSS-Protection**, and **Strict-Transport-Security** (for SSL). Other headers can be enabled manually, if needed.
 

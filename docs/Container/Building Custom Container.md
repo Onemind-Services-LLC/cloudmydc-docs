@@ -347,7 +347,7 @@ This command ends with calling the installed packages' general update.
         <div style={{
             padding: '10px 20px 5px 20px',
         }}>
-            RUN localedef -i en_US -f UTF-8 en_US.UTF-8 
+            RUN localedef -i en_US -f UTF-8 en_US.UTF-8
         </div>
     </div>
 </div> -->
@@ -374,7 +374,7 @@ This command ends with calling the installed packages' general update.
         <div style={{
             padding: '10px 20px 5px 20px',
         }}>
-            EXPOSE 22 80 443 8080 8743 9990 9993 8009 4848 4949 
+            EXPOSE 22 80 443 8080 8743 9990 9993 8009 4848 4949
         </div>
     </div>
 </div> -->
@@ -409,11 +409,12 @@ This command ends with calling the installed packages' general update.
 That’s all! Just don’t forget to save all the declared settings to get the ready-to-go dockerfile.
 
 ## Adding Image to Repository
+
 Once the proper dockerfile is prepared, you are ready to build your WildFly image on its base and, subsequently, push it to the repository.
 
 :::tip Note
 
-Before starting, ensure you have the appropriate Docker CE version (according to the used OS type) [installed](1) for executing the below described commands at the currently used machine.
+Before starting, ensure you have the appropriate Docker CE version (according to the used OS type) [installed](https://cloudmydc.com/) for executing the below described commands at the currently used machine.
 
 :::
 

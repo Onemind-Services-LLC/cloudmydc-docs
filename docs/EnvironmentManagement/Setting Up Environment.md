@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-The first step of any application hosting is a creation of the [environment](1) with the required isolated containers. The platform provides a powerful and intuitive UI to create and configure environments up to your specific needs. This document will guide you through all the needed steps, giving an extended explanation of available specifics and features.
+The first step of any application hosting is a creation of the [environment](https://cloudmydc.com/) with the required isolated containers. The platform provides a powerful and intuitive UI to create and configure environments up to your specific needs. This document will guide you through all the needed steps, giving an extended explanation of available specifics and features.
 
 1. Log in to the platform dashboard and click the **New Environment** button in the upper-left corner.
 
@@ -18,10 +18,10 @@ The first step of any application hosting is a creation of the [environment](1) 
 
 2. Within the opened **_topology wizard_** dialog, you can set up all the necessary customizations. We recommend performing adjustments in the following order:
 
-- [choose programming language](1) or specialized deployment solution (Docker Engine or Kubernetes Cluster)
-- [set up topology](1) by adding required software stacks
-- [configure nodes](1) resources and specifics
-  review estimations, name the environment and [confirm the creation](1)
+- [choose programming language](https://cloudmydc.com/) or specialized deployment solution (Docker Engine or Kubernetes Cluster)
+- [set up topology](https://cloudmydc.com/) by adding required software stacks
+- [configure nodes](https://cloudmydc.com/) resources and specifics
+  review estimations, name the environment and [confirm the creation](https://cloudmydc.com/)
 
 ![Locale Dropdown](./img/SettingUpEnvironment/02-configure-environment-via-wizard.png)
 
@@ -31,23 +31,23 @@ Below, we’ll review each of these points in detail, providing explanations on 
 
 As the first step of your environment creation, you need to select the deployment solution required for your project. PaaS is an extremely versatile platform that supports multiple options for application development and hosting thus it suits even the most demanding clients.
 
-1. The most common and recommended choice (unless you are pursuing a specific application/architecture) is **certified containers**. These [stacks](1) are specifically configured and managed by the platform (e.g. version updates, security patches). By default, they support all platform features (scaling, automated deployment, redeploy, SSL, etc.) for the most smooth and convenient hosting and development.
+1. The most common and recommended choice (unless you are pursuing a specific application/architecture) is **certified containers**. These [stacks](https://cloudmydc.com/) are specifically configured and managed by the platform (e.g. version updates, security patches). By default, they support all platform features (scaling, automated deployment, redeploy, SSL, etc.) for the most smooth and convenient hosting and development.
 
 ![Locale Dropdown](./img/SettingUpEnvironment/03-environment-programming-languages-in-wizard.png)
 
 Click on the tab with the required programming language (Java, PHP, Ruby, .NET, Node.js, or Python) tab to proceed with the platform certified containers.
 
-2. The other deployment options are available via the Custom tab. All the variants listed below utilize the basic platform’s [system container](1) (so-called OS container), which makes them compatible with the most (but not all) of the platform-distinguishing features (e.g. vertical and horizontal scaling).
+2. The other deployment options are available via the Custom tab. All the variants listed below utilize the basic platform’s [system container](https://cloudmydc.com/) (so-called OS container), which makes them compatible with the most (but not all) of the platform-distinguishing features (e.g. vertical and horizontal scaling).
 
 ![Locale Dropdown](./img/SettingUpEnvironment/04-topology-wizard-docker-tab.png)
 
-- **Custom Container Images** - any Docker image (based on the [supported OS](1)) deployed into the system container. Compared to the **managed containers**, this option provides access to a greater variety of solutions, search the entire Docker Hub registry or use your private repository. However, the software operability and compatibility with the platform cannot be guaranteed as the content is managed by respective image maintainers. It’s recommended to build custom container images based on [platform certified images](1) using [FROM instruction](1).
+- **Custom Container Images** - any Docker image (based on the [supported OS](https://cloudmydc.com/)) deployed into the system container. Compared to the **managed containers**, this option provides access to a greater variety of solutions, search the entire Docker Hub registry or use your private repository. However, the software operability and compatibility with the platform cannot be guaranteed as the content is managed by respective image maintainers. It’s recommended to build custom container images based on [platform certified images](https://cloudmydc.com/) using [FROM instruction](https://cloudmydc.com/).
 
-- **Docker Engine** - a [Docker Engine CE](1) deployed into the system container. It provides access to all the Docker native functionality, including deployment, scaling, and management of multiple [application containers](1) inside.
+- **Docker Engine** - a [Docker Engine CE](https://cloudmydc.com/) deployed into the system container. It provides access to all the Docker native functionality, including deployment, scaling, and management of multiple [application containers](https://cloudmydc.com/) inside.
 
-- **Kubernetes Cluster** - ready-to-go _[Kubernetes cluster](1)_ with a preconfigured control plane and worker nodes created based on the system containers. The deployment, scaling, and orchestration of the microservices inside are handled by Kubernetes control units, while the platform scales and manages control plane and worker nodes.
+- **Kubernetes Cluster** - ready-to-go _[Kubernetes cluster](https://cloudmydc.com/)_ with a preconfigured control plane and worker nodes created based on the system containers. The deployment, scaling, and orchestration of the microservices inside are handled by Kubernetes control units, while the platform scales and manages control plane and worker nodes.
 
-3. Also, it is recommended to select the preferred [region](1) (if available) before proceeding further.
+3. Also, it is recommended to select the preferred [region](https://cloudmydc.com/) (if available) before proceeding further.
 
 <div style={{
     display:'flex',
@@ -61,15 +61,15 @@ Click on the tab with the required programming language (Java, PHP, Ruby, .NET, 
 
 ## Configuring Topology
 
-You can configure environment topology ([layers](1) structure) via the left part of the wizard. Сonsider it as a constructor that helps you to create your environment. Here, the following blocks are available:
+You can configure environment topology ([layers](https://cloudmydc.com/) structure) via the left part of the wizard. Сonsider it as a constructor that helps you to create your environment. Here, the following blocks are available:
 
-- **[Load Balancers](1)** - stacks that operate as an entry point for the environment to distribute incoming request and create even load on other nodes
-- **[Application Servers](1)** (compute nodes) - web servers that run your application
-- **[Databases](1)** (SQL & NoSQL) - database solutions to store and manage data
-- **[Cache Node](1)** - a Memcached object caching system for speeding up web applications through alleviating database load
-- **[Shared Storage](1)** - dedicated storage node with NFSv4 support, enlarged disk space and optimized performance
-- **[Elastic VPS](1)** - virtual private servers on top of the CentOS, Ubuntu, Debian, and Windows OS
-- **[Build Node](1)** - a build automation tool for Java projects
+- **[Load Balancers](https://cloudmydc.com/)** - stacks that operate as an entry point for the environment to distribute incoming request and create even load on other nodes
+- **[Application Servers](https://cloudmydc.com/)** (compute nodes) - web servers that run your application
+- **[Databases](https://cloudmydc.com/)** (SQL & NoSQL) - database solutions to store and manage data
+- **[Cache Node](https://cloudmydc.com/)** - a Memcached object caching system for speeding up web applications through alleviating database load
+- **[Shared Storage](https://cloudmydc.com/)** - dedicated storage node with NFSv4 support, enlarged disk space and optimized performance
+- **[Elastic VPS](https://cloudmydc.com/)** - virtual private servers on top of the CentOS, Ubuntu, Debian, and Windows OS
+- **[Build Node](https://cloudmydc.com/)** - a build automation tool for Java projects
 - **Extra** (custom layers) - any of the stacks mentioned above
 
 <div style={{
@@ -98,7 +98,7 @@ The sequence of blocks displayed above is the default order. However, you can mi
 
 :::
 
-1. The platform offers a number of the most popular options for each of these sections based on the default role. If you want to add a [stack](1) of a different role, click the **More** option at the bottom of the list. Also, you can use **Search** to quickly find any platform-managed stack.
+1. The platform offers a number of the most popular options for each of these sections based on the default role. If you want to add a [stack](https://cloudmydc.com/) of a different role, click the **More** option at the bottom of the list. Also, you can use **Search** to quickly find any platform-managed stack.
 
 <div style={{
     display:'flex',
@@ -118,9 +118,9 @@ If you cannot find a required software solution, you can add it as a custom cont
 
 2. An **SSL** protection can be configured for your environment via the same-named section. Here, two options are available:
 
-- **[Built-In SSL](1)** - enables an already trusted SSL certificate, avoiding any additional checks and saving your time on the certificate validation. However, it is applied to the default environment domain name only (i.e. with the hoster’s domain at the end) and does not work if [public IP](1) is attached to your servers.
+- **[Built-In SSL](https://cloudmydc.com/)** - enables an already trusted SSL certificate, avoiding any additional checks and saving your time on the certificate validation. However, it is applied to the default environment domain name only (i.e. with the hoster’s domain at the end) and does not work if [public IP](https://cloudmydc.com/) is attached to your servers.
 
-- **[Custom SSL](1)** - shows the pre-conditions of using your custom SSL certificates for the environment. Click the **Enable** button to automatically fulfill the requirements (e.g. enable Public IP) and refer to the linked instruction for further guidance.
+- **[Custom SSL](https://cloudmydc.com/)** - shows the pre-conditions of using your custom SSL certificates for the environment. Click the **Enable** button to automatically fulfill the requirements (e.g. enable Public IP) and refer to the linked instruction for further guidance.
 
 :::tip Tip
 Also, you can apply the Let’s Encrypt SSL add-on after the environment creation to automatically issue and integrate a free SSL certificate.
@@ -153,7 +153,7 @@ Once you are done with the topology structure, you can adjust each particular la
 
 </div>
 
-2. Configure the [automatic vertical scaling](1) by setting the number of reserved and dynamic [cloudlets](1) (1 cloudlet = **128 MiB** of RAM and **400 MHz** of CPU) for the nodes within the layer.
+2. Configure the [automatic vertical scaling](https://cloudmydc.com/) by setting the number of reserved and dynamic [cloudlets](https://cloudmydc.com/) (1 cloudlet = **128 MiB** of RAM and **400 MHz** of CPU) for the nodes within the layer.
 
 <div style={{
     display:'flex',
@@ -167,7 +167,7 @@ Once you are done with the topology structure, you can adjust each particular la
 
 Think of it as a minimum and maximum CPU & RAM capacities per server. It is worth mentioning that no matter how high the scaling limit is, only actually consumed resources are charged. This helps to overcome load spikes and, at the same time, not to overpay for unused memory or processor.
 
-3. The [Horizontal Scaling](1) part allows defining a number of nodes within the layer and choosing a preferred scaling mode (stateful or stateless).
+3. The [Horizontal Scaling](https://cloudmydc.com/) part allows defining a number of nodes within the layer and choosing a preferred scaling mode (stateful or stateless).
 
 <div style={{
     display:'flex',
@@ -179,11 +179,11 @@ Think of it as a minimum and maximum CPU & RAM capacities per server. It is wort
 
 </div>
 
-You can use the drop-down lists to change stack and engine type/versions (if needed, expand and start typing to **Search**). In case of adjusting an existing environment, these lists will redirect to the [container redeploy](1) dialog in order to apply changes.
+You can use the drop-down lists to change stack and engine type/versions (if needed, expand and start typing to **Search**). In case of adjusting an existing environment, these lists will redirect to the [container redeploy](https://cloudmydc.com/) dialog in order to apply changes.
 
 :::tip Tip
 
-Click on the gear icon (circled in the image below) for additional [management options](1) during scaling.
+Click on the gear icon (circled in the image below) for additional [management options](https://cloudmydc.com/) during scaling.
 
 <div style={{
     display:'flex',
@@ -211,20 +211,20 @@ Click on the gear icon (circled in the image below) for additional [management o
 
 The list may vary depending on the particular stack and account permissions:
 
-- **[Auto-Clustering](1)** - automatic clusterization for some platform certified templates. Additional fields can appear after activation, e.g. scheme selection (_master-slave, master-master, or galera_) for the database cluster.
-- **Disk Limit** - an amount of disk space reserved per node. The dedicated [Shared Storage](1) containers are usually provided with enlarged storage capacity.
+- **[Auto-Clustering](https://cloudmydc.com/)** - automatic clusterization for some platform certified templates. Additional fields can appear after activation, e.g. scheme selection (_master-slave, master-master, or galera_) for the database cluster.
+- **Disk Limit** - an amount of disk space reserved per node. The dedicated [Shared Storage](https://cloudmydc.com/) containers are usually provided with enlarged storage capacity.
 - **Sequential restart delay** - a delay between the restart operation completion on one node and start on the other. It is used to avoid downtime, ensuring that at least one server is active. You can set it to “-1” for the simultaneous restart of all nodes within the layer.
-- **[High-Availability](1)** (deprecated option, it is recommended redeploying to the latest version of the stack and using the Auto-Clustering feature instead) - automated session replication for the Tomcat and TomEE application servers
-- **[Access via SLB](1)**- blocks access to the nodes of the layer via the platform Shared Load Balancer
-- **[Public IPv4/IPv6](1)** - attach the specified number of external IP addresses to each node within the layer
+- **[High-Availability](https://cloudmydc.com/)** (deprecated option, it is recommended redeploying to the latest version of the stack and using the Auto-Clustering feature instead) - automated session replication for the Tomcat and TomEE application servers
+- **[Access via SLB](https://cloudmydc.com/)**- blocks access to the nodes of the layer via the platform Shared Load Balancer
+- **[Public IPv4/IPv6](https://cloudmydc.com/)** - attach the specified number of external IP addresses to each node within the layer
 
 5. At the bottom of the section, you can find buttons to the container configuration tools:
 
-- **[Variables](1)** - review and manage a list of the [environment variables](1) for the current layer
-- **[Links](1)** - interconnect layers inside the environment
-- **[Volumes](1)** - manage a list of the data volumes to ensure files integrity during container lifecycle
-- **[Ports](1)** - view information about containers' ports
-- **[CMD / Entry Point](1)** - configure containers' Entry Point and Run Command
+- **[Variables](https://cloudmydc.com/)** - review and manage a list of the [environment variables](https://cloudmydc.com/) for the current layer
+- **[Links](https://cloudmydc.com/)** - interconnect layers inside the environment
+- **[Volumes](https://cloudmydc.com/)** - manage a list of the data volumes to ensure files integrity during container lifecycle
+- **[Ports](https://cloudmydc.com/)** - view information about containers' ports
+- **[CMD / Entry Point](https://cloudmydc.com/)** - configure containers' Entry Point and Run Command
 
 <div style={{
     display:'flex',
@@ -237,9 +237,10 @@ The list may vary depending on the particular stack and account permissions:
 </div>
 
 ## Reviewing and Confirming Environment Creation
+
 After all the configurations are done, you can review the amount of allocated resources and the estimated cost of the environment.
 
-1. The main resource measuring units in the platform are [cloudlets](1). Here, you can see the number of reserved ones and the scaling limit (dynamic) for the whole environment.
+1. The main resource measuring units in the platform are [cloudlets](https://cloudmydc.com/). Here, you can see the number of reserved ones and the scaling limit (dynamic) for the whole environment.
 
 <div style={{
     display:'flex',
@@ -253,10 +254,10 @@ After all the configurations are done, you can review the amount of allocated re
 
 For better analysis, the values are divided into the color-marked groups:
 
-- **[green](1)** - load balancers
-- **[blue](1)** - application servers
-- **[orange](1)** - databases and cache nodes
-- **[gray](1)** - all other stacks 
+- **[green](https://cloudmydc.com/)** - load balancers
+- **[blue](https://cloudmydc.com/)** - application servers
+- **[orange](https://cloudmydc.com/)** - databases and cache nodes
+- **[gray](https://cloudmydc.com/)** - all other stacks
 
 2. Next, you can view the **Estimated Cost** of your environment. The widget displays price using the same color-marking as above, and you can change the period - hourly, daily, or monthly.
 
@@ -287,7 +288,7 @@ Hover over the pricing widget to view extended details on the estimated cost cal
 
 :::
 
-If needed, you can click on the links under the widget for additional information on [how pricing works](1) and [what is charged at the platform](1).
+If needed, you can click on the links under the widget for additional information on [how pricing works](https://cloudmydc.com/) and [what is charged at the platform](https://cloudmydc.com/).
 
 3. Lastly, provide a name for your environment and click the **Create** button to proceed.
 
@@ -313,4 +314,4 @@ That’s all! In a few minutes, your new environment will appear on the dashboar
 
 </div>
 
-Now, you are ready for [application deployment](1) and further use of your cloud environment.
+Now, you are ready for [application deployment](https://cloudmydc.com/) and further use of your cloud environment.

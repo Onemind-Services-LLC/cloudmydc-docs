@@ -2,13 +2,13 @@
 sidebar_position: 3
 ---
 
-**Environment Sharing** is a particular case of the [account collaboration](1) feature - when you want to give access or some functionality of your account to other users. The only difference is that you need to share just a single environment.
+**Environment Sharing** is a particular case of the [account collaboration](https://cloudmydc.com/) feature - when you want to give access or some functionality of your account to other users. The only difference is that you need to share just a single environment.
 
 Check a quick summary of the feature for better understanding:
 
-- environment *owner* has complete control over the environment
-- collaborators can only perform actions allowed by the owner (through the assigned [roles](1))
-- only the *owner* is charged for the shared environment
+- environment _owner_ has complete control over the environment
+- collaborators can only perform actions allowed by the owner (through the assigned [roles](https://cloudmydc.com/))
+- only the _owner_ is charged for the shared environment
 
 In order to share an environment, select it and go to the **Settings > Collaboration** tab. Here, you can see a list of all existing collaborators (if any) that have access to the current environment.
 
@@ -53,7 +53,7 @@ When accessing this tab as a collaborator, you can only check your own role for 
 
 </div>
 
-- **Access Level** - shows the highest access level for the current environment. Hover over for more details. Information on the [access level algorithm](1) can be found upon hovering over the column header.
+- **Access Level** - shows the highest access level for the current environment. Hover over for more details. Information on the [access level algorithm](https://cloudmydc.com/) can be found upon hovering over the column header.
 
 <div style={{
     display:'flex',
@@ -65,12 +65,12 @@ When accessing this tab as a collaborator, you can only check your own role for 
 
 </div>
 
-- **Status** - provides the collaboration status of the member (*active, pending acceptance, left, suspended*). The icon color at the start of each record also represents status.
+- **Status** - provides the collaboration status of the member (_active, pending acceptance, left, suspended_). The icon color at the start of each record also represents status.
 
 2. Click the **Add** button at the top of the tools panel to provide <u>direct</u> access to the environment. Here, you need to provide the following data:
 
-- ***Member*** - select an existing collaboration member or click the **Invite Member** option to provide email addresses
-- ***Roles*** - choose at least one role from the list (if needed, click the **Create New Role** option to add a new one)
+- **_Member_** - select an existing collaboration member or click the **Invite Member** option to provide email addresses
+- **_Roles_** - choose at least one role from the list (if needed, click the **Create New Role** option to add a new one)
 
 <div style={{
     display:'flex',
@@ -84,7 +84,7 @@ When accessing this tab as a collaborator, you can only check your own role for 
 
 :::tip Tip
 
-When inviting a new member, the flow is similar to the one described in the **[Create Collaboration](1)** guide. The user receives an invitation email and can accept or reject it.
+When inviting a new member, the flow is similar to the one described in the **[Create Collaboration](https://cloudmydc.com/)** guide. The user receives an invitation email and can accept or reject it.
 
 <div style={{
     display:'flex',
