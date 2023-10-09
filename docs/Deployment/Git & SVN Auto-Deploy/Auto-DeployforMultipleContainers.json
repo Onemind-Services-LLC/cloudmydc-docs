@@ -1,0 +1,3 @@
+{
+    "data1" : "~/jelastic/environment/vcs/update --envName {env_name} --project {app_context}"
+}
