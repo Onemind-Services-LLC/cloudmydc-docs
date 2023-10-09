@@ -2,6 +2,8 @@
 sidebar_position: 9
 ---
 
+!incomplete
+
 import obj from './BuildingCustomContainer.json'
 
 With the platform, the process of preparing your own Docker image can be greatly simplified by building it on the basis of the already existing one (namely - on the top of the platform **CentOS 7** base template). This allows to skip all the steps, that are already accomplished within that “parent” template, and add the required adjustments only. We’ll consider this procedure on the example of preparing custom [WildFly](https://cloudmydc.com/) image - flexible and lightweight Java application server, which is a direct successor of the popular JBoss one.
@@ -160,59 +162,262 @@ This command ends with calling the installed packages' general update.
 
 5. At this step, you need to create a symlink in order to shorten the path to the WildFly main directory and, as a result, to make it easily accessible:
 
-1
-RUN ln -s /opt/wildfly-$WILDFLY_VERSION /opt/wildfly 6. Let’s proceed with creation of the main configuration file for our WildFly server and putting all the needed options to it:
+<div style={{
+    width: '100%',
+    border: '1px solid #eee',
+    borderRadius: '7px',
+    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
+    overflow: 'hidden',
+    margin: '0 0 1rem 0',
+    background: 'white',
+}}>
+    <div style={{
+            display: "flex",
+        }}>
+        <div style={{ width: '5%', background: 'red',
+        padding: '10px 20px 10px 20px', color: 'white' }}>
+            1
+        </div>
+        <div style={{
+            padding: '10px 20px 5px 20px',
+        }}>
+            RUN ln -s /opt/wildfly-$WILDFLY_VERSION /opt/wildfly
+        </div>
+    </div>
+</div>
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-RUN echo -en "JAVA_HOME=\"/usr/lib/jvm/java\""'\n'\
-"JBOSS_HOME=\"/opt/wildfly\""'\n'\
-"JBOSS_USER=wildfly"'\n'\
-"JBOSS_MODE=standalone"'\n'\
-"JBOSS_CONFIG=standalone.xml"'\n'\
-"STARTUP_WAIT=60"'\n'\
-"SHUTDOWN_WAIT=60"'\n'\
-"JBOSS_CONSOLE_LOG=\"/var/log/wildfly/console.log\""'\n'\
-"JBOSS_OPTS=\"-b 0.0.0.0 -bmanagement=0.0.0.0 -Djboss.management.http.port=4949 -Djboss.management.https.port=4848\"" >> /etc/default/wildfly 7. CentOS 7 is started using the Systemd initiation script by default, but WildFly server requires the more traditional SystemV Init one, thus you need to copy the default initscript to the /etc/init.d folder and edit the appropriate configs to avoid the systemd redirect:
+6. Let’s proceed with creation of the main configuration file for our WildFly server and putting all the needed options to it:
 
-1
-2
-RUN wget https://raw.githubusercontent.com/wildfly/wildfly-core/master/core-feature-pack/src/main/resources/content/docs/contrib/scripts/init.d/wildfly-init-redhat.sh -O /etc/rc.d/init.d/wildfly;  
-sed -i "/# Source function library/a\SYSTEMCTL_SKIP_REDIRECT=1" /etc/init.d/wildfly; chmod +x /etc/init.d/wildfly; 8. Next, we’ll state WildFly to be run on container startup by adding the corresponding system user and changing files' ownership for him:
+<div style={{
+    width: '100%',
+    border: '1px solid #eee',
+    borderRadius: '7px',
+    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
+    overflow: 'hidden',
+    margin: '0 0 1rem 0',
+    background: 'white',
+}}>
+    {obj.data3.map((item, idx) => {
+        return <div key={idx} style={{
+            display: "flex",
+        }}>
+        <div style={{ width: '5%', background: 'red',
+        padding: idx !== obj.data1.length -1 ? '10px 20px 5px 20px' : '10px 20px 10px 20px', color: 'white' }}>
+            {idx+1}
+        </div>
+        <div style={{
+            padding:  idx !== obj.data1.length -1 ? '10px 20px 5px 20px' : '10px 20px 10px 20px',
+        }}>
+            {item}
+        </div>
+    </div>
+    })}
+</div>
 
-1
-2
-RUN chkconfig --add wildfly; chkconfig wildfly on; mkdir -p /var/log/wildfly; adduser wildfly;  
-chown -R wildfly:wildfly /opt/wildfly-$WILDFLY_VERSION /opt/wildfly /var/log/wildfly; 9. Also, let’s add the user credentials we’ve defined within the 1st instruction step for accessing the server’s admin panel:
+7. CentOS 7 is started using the Systemd initiation script by default, but WildFly server requires the more traditional SystemV Init one, thus you need to copy the default initscript to the **/etc/init.d** folder and edit the appropriate configs to avoid the systemd redirect:
 
-1
-RUN /opt/wildfly/bin/add-user.sh --user $ADMIN_USER --password $ADMIN_PASSWORD --silent --enable 10. Now, we can correct a link to the admin panel itself at the default index.html page by defining the corresponding redirect (as in case our image will be deployed to a container without the external IP attached, port 4949 and HTTP connection should be used here):
+<div style={{
+    width: '100%',
+    border: '1px solid #eee',
+    borderRadius: '7px',
+    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
+    margin: '0 0 1rem 0',
+    background: 'white',
+        overflow: 'hidden',
+}}>
+    {obj.data4.map((item, idx) => {
+        return <div key={idx} style={{
+            display: "flex",
+        }}>
+        <div style={{ width: '5%', background: 'red',
+        padding: idx !== obj.data1.length -1 ? '10px 20px 5px 20px' : '10px 20px 10px 20px', color: 'white' }}>
+            {idx+1}
+        </div>
+        <div style={{
+            padding:  idx !== obj.data1.length -1 ? '10px 20px 5px 20px' : '10px 20px 10px 20px',
+        }} >
+            {item}
+        </div>
+    </div>
+    })}
+</div>
 
-1
-RUN sed -i "s/<a href=\"\/console\">/<a href=\"\/console\" onclick=\"javascript:event.target.port=4949;event.target.protocol=\'http:\';\">/" /opt/wildfly/welcome-content/index.html 11. Add the English locale settings to the container.
+8. Next, we’ll state WildFly to be run on container startup by adding the corresponding system user and changing files' ownership for him:
 
-1
-RUN localedef -i en_US -f UTF-8 en_US.UTF-8 12. Another required action is to set our Docker image to listen to the required ports at the runtime. The EXPOSE instruction is intended for this:
+<div style={{
+    width: '100%',
+    border: '1px solid #eee',
+    borderRadius: '7px',
+    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
+    margin: '0 0 1rem 0',
+    background: 'white',
+     overflow: 'hidden',
+}}>
+    {obj.data5.map((item, idx) => {
+        return <div key={idx} style={{
+            display: "flex",
+        }}>
+        <div style={{ width: '5%', background: 'red',
+        padding: idx !== obj.data1.length -1 ? '10px 20px 5px 20px' : '10px 20px 10px 20px', color: 'white' }}>
+            {idx+1}
+        </div>
+        <div style={{
+            padding:  idx !== obj.data1.length -1 ? '10px 20px 5px 20px' : '10px 20px 10px 20px',
+        }} >
+            {item}
+        </div>
+    </div>
+    })}
+</div>
 
-1
-EXPOSE 22 80 443 8080 8743 9990 9993 8009 4848 4949 13. Lastly, you need to set the ENTRYPOINT for defining a container to be run as executable. In our case, the bash shell should be specified:
+9. Also, let’s add the user credentials we’ve defined within the 1st instruction step for accessing the server’s admin panel:
 
-1
-ENTRYPOINT ["/bin/bash"]
+<!-- <div style={{
+    width: '100%',
+    border: '1px solid #eee',
+    borderRadius: '7px',
+    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
+    margin: '0 0 1rem 0',
+    background: 'white',
+    overflow: 'hidden',
+}}>
+    <div>
+        <div style={{
+            display: "flex",
+        }}>
+        <div style={{ width: '5%', background: 'red',
+        padding: '10px 20px 10px 20px', color: 'white' }}>
+            1
+        </div>
+        <div style={{
+            padding: '10px 20px 5px 20px',
+        }}>
+            RUN /opt/wildfly/bin/add-user.sh --user $ADMIN_USER --password $ADMIN_PASSWORD --silent --enable
+        </div>
+    </div>
+</div> -->
+
+10. Now, we can correct a link to the admin panel itself at the default index.html page by defining the corresponding redirect (as in case our image will be deployed to a container without the external IP attached, port 4949 and HTTP connection should be used here):
+
+<!-- <div style={{
+    width: '100%',
+    border: '1px solid #eee',
+    borderRadius: '7px',
+    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
+    margin: '0 0 1rem 0',
+    background: 'white',
+     overflow: 'hidden',
+}}>
+    {obj.data6.map((item, idx) => {
+        return <div key={idx} style={{
+            display: "flex",
+        }}>
+        <div style={{ width: '5%', background: 'red',
+        padding: idx !== obj.data1.length -1 ? '10px 20px 5px 20px' : '10px 20px 10px 20px', color: 'white' }}>
+            {idx+1}
+        </div>
+        <div style={{
+            padding:  idx !== obj.data1.length -1 ? '10px 20px 5px 20px' : '10px 20px 10px 20px',
+        }} >
+            {item}
+        </div>
+    </div>
+    })}
+</div> -->
+
+11. Add the English locale settings to the container.
+
+<!-- <div style={{
+    width: '100%',
+    border: '1px solid #eee',
+    borderRadius: '7px',
+    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
+    margin: '0 0 1rem 0',
+    background: 'white',
+    overflow: 'hidden',
+}}>
+    <div>
+        <div style={{
+            display: "flex",
+        }}>
+        <div style={{ width: '5%', background: 'red',
+        padding: '10px 20px 10px 20px', color: 'white' }}>
+            1
+        </div>
+        <div style={{
+            padding: '10px 20px 5px 20px',
+        }}>
+            RUN localedef -i en_US -f UTF-8 en_US.UTF-8 
+        </div>
+    </div>
+</div> -->
+
+12. Another required action is to set our Docker image to listen to the required ports at the runtime. The EXPOSE instruction is intended for this:
+
+<!-- <div style={{
+    width: '100%',
+    border: '1px solid #eee',
+    borderRadius: '7px',
+    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
+    margin: '0 0 1rem 0',
+    background: 'white',
+    overflow: 'hidden',
+}}>
+    <div>
+        <div style={{
+            display: "flex",
+        }}>
+        <div style={{ width: '5%', background: 'red',
+        padding: '10px 20px 10px 20px', color: 'white' }}>
+            1
+        </div>
+        <div style={{
+            padding: '10px 20px 5px 20px',
+        }}>
+            EXPOSE 22 80 443 8080 8743 9990 9993 8009 4848 4949 
+        </div>
+    </div>
+</div> -->
+
+13. Lastly, you need to set the ENTRYPOINT for defining a container to be run as executable. In our case, the bash shell should be specified:
+
+<!-- <div style={{
+    width: '100%',
+    border: '1px solid #eee',
+    borderRadius: '7px',
+    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
+    margin: '0 0 1rem 0',
+    background: 'white',
+    overflow: 'hidden',
+}}>
+    <div>
+        <div style={{
+            display: "flex",
+        }}>
+        <div style={{ width: '5%', background: 'red',
+        padding: '10px 20px 10px 20px', color: 'white' }}>
+            1
+        </div>
+        <div style={{
+            padding: '10px 20px 5px 20px',
+        }}>
+            ENTRYPOINT ["/ bin / bash"]
+        </div>
+    </div>
+</div> -->
+
 That’s all! Just don’t forget to save all the declared settings to get the ready-to-go dockerfile.
 
-Adding Image to Repository
+## Adding Image to Repository
 Once the proper dockerfile is prepared, you are ready to build your WildFly image on its base and, subsequently, push it to the repository.
 
-Note: Before starting, ensure you have the appropriate Docker CE version (according to the used OS type) installed for executing the below described commands at the currently used machine.
-So, follow the next steps to accomplish that:
+:::tip Note
+
+Before starting, ensure you have the appropriate Docker CE version (according to the used OS type) [installed](1) for executing the below described commands at the currently used machine.
+
+:::
+
+<!-- So, follow the next steps to accomplish that:
 
 1. Run the docker build command with the required parameters to create a new image locally:
 
@@ -269,4 +474,4 @@ As a result, you’ll see the default WildFly start page, which means everything
 
 custom WildFly home page
 
-Similarly to the described above, you can create any other preconfigured image due to your purposes and, consequently, easily run it within the platform!
+Similarly to the described above, you can create any other preconfigured image due to your purposes and, consequently, easily run it within the platform! -->
