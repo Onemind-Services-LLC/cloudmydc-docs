@@ -4,12 +4,13 @@ sidebar_position: 3
 
 Keeping an eye on the amount of resources your application consumes allows you to plan your budget and control an expenditure of funds. Below, we will describe how it is implemented in the platform:
 
-- [Estimated Environment Cost](1)
-- [Current Resource Usage](1)
-- [Statistic of Consumption](1)
-- [Billing History](1)
+- [Estimated Environment Cost](https://cloudmydc.com/)
+- [Current Resource Usage](https://cloudmydc.com/)
+- [Statistic of Consumption](https://cloudmydc.com/)
+- [Billing History](https://cloudmydc.com/)
 
 ## Estimated Environment Cost
+
 While creating or changing the environment, you operate with a dedicated wizard, which is divided into three main sections. The left part allows to set up the required topology. The second (central) one - to choose the number of nodes, allocate resources (**Reserved cloudlets** and **Scaling limit**) and enable options the **Disk Limit**, the **High Availability** and the usage of **Public IP**. Within the right panel, you can check an **Estimated Cost** of your environment in the from minimum to maximum format, show price per hour, day or month.
 
 :::tip Note
@@ -39,6 +40,7 @@ Here, you can see three columns:
 The displayed containers are grouped by layers to simplify perception and the total cost is shown at the bottom of the frame, providing an additional information on the received **Discount** and **Saved** money.
 
 ## Current Resource Usage
+
 In your dashboard, you can see a list of all of your environments. The right-hand column displays current resource **Usage**. You can see the amount of disk storage and cloudlets currently being used by the whole environment or, if you expand the environment context using the arrow ![Locale Dropdown](./img/MonitoringConsumedResources/02--arrow-icon.png) at the left, you can see the individual resource usage by each server within the environment.
 
 1. The first number (Storage icon ![Locale Dropdown](./img/MonitoringConsumedResources/03--storage-icon.png)) in the Usage column is the amount of **disk space** currently consumed.
@@ -68,7 +70,8 @@ In your dashboard, you can see a list of all of your environments. The right-han
 The cloudlet icon changes color to warn when you are currently near (![Locale Dropdown](./img/MonitoringConsumedResources/07--yellow-cloudlet-icon.png)) the configured Scaling Limit, or at ( ![Locale Dropdown](./img/MonitoringConsumedResources/08--red-cloudlet-icon.png)) the configured Scaling Limit.
 
 ## Statistics of Consumption
-You can also see the amount of consumed Disk, RAM (Memory), CPU and Network Bandwidth according to each container by clicking on the [Statistics](1) ![Locale Dropdown](./img/MonitoringConsumedResources/09--statistics-icon.png) button of the desired node.
+
+You can also see the amount of consumed Disk, RAM (Memory), CPU and Network Bandwidth according to each container by clicking on the [Statistics](https://cloudmydc.com/) ![Locale Dropdown](./img/MonitoringConsumedResources/09--statistics-icon.png) button of the desired node.
 
 <div style={{
     display:'flex',
@@ -80,13 +83,14 @@ You can also see the amount of consumed Disk, RAM (Memory), CPU and Network Band
 
 </div>
 
-Based on the received statistics, you can change limits of the automatic [vertical](1) and [horizontal](1) scaling for your environment. For example, you can choose the number of reserved cloudlets in accordance with the load on the graphs.
+Based on the received statistics, you can change limits of the automatic [vertical](https://cloudmydc.com/) and [horizontal](https://cloudmydc.com/) scaling for your environment. For example, you can choose the number of reserved cloudlets in accordance with the load on the graphs.
 
 ## Billing History
+
 An important tool for budget analysis is billing history tracking, which you can be found in the corresponding section at the platform dashboard and, consequently, be downloaded to your local machine.
 
 1. Use the **Billing history** ![Locale Dropdown](./img/MonitoringConsumedResources/11--billing-history-icon.png) button for your environment or navigate to **Balance > Billing history** item in the upper menu to review the charges applied for consumed resources. In the left panel, you can specify the desired start/end dates, and the time period interval to view the billing data for.
-The displayed data is grouped by environments, use the ![Locale Dropdown](./img/MonitoringConsumedResources/12--arrow-icon.png) icon on the right panel to expand the particular one and see the list of its nodes and their resource usage. Herewith, all the nodes are sorted in the alphabetical order and below a list of the additional paid options (if any) is shown, e.g. [Public IP](1) or [SSL](1).
+   The displayed data is grouped by environments, use the ![Locale Dropdown](./img/MonitoringConsumedResources/12--arrow-icon.png) icon on the right panel to expand the particular one and see the list of its nodes and their resource usage. Herewith, all the nodes are sorted in the alphabetical order and below a list of the additional paid options (if any) is shown, e.g. [Public IP](https://cloudmydc.com/) or [SSL](https://cloudmydc.com/).
 
 <div style={{
     display:'flex',
@@ -100,11 +104,11 @@ The displayed data is grouped by environments, use the ![Locale Dropdown](./img/
 
 You can see the following information regarding every environment node:
 
-- *Reserved Cloudlets*
-- *Dynamic Cloudlets*
-- *Paid Storage*
-- *Paid Traffic*
-- *Cost*
+- _Reserved Cloudlets_
+- _Dynamic Cloudlets_
+- _Paid Storage_
+- _Paid Traffic_
+- _Cost_
 
 :::tip Note
 

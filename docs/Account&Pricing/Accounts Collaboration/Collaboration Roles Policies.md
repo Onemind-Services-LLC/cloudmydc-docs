@@ -2,13 +2,13 @@
 sidebar_position: 2
 ---
 
-The defining characteristic of the platform’s [collaboration feature](1) is its extreme flexibility. It is ensured through the ***roles and policies*** mechanic, which provides an ability to share the exact instances and permissions needed for a particular use case. This guide covers all the specifics of roles and policies configuration and provision.
+The defining characteristic of the platform’s [collaboration feature](https://cloudmydc.com/) is its extreme flexibility. It is ensured through the **_roles and policies_** mechanic, which provides an ability to share the exact instances and permissions needed for a particular use case. This guide covers all the specifics of roles and policies configuration and provision.
 
 Let’s start by defining what roles and policies are:
 
 - **policies** are small API sets that allow specific operations
 - **roles** are a combination of policies that create the required range of actions
-At the platform dashboard, these entities can be found and managed at the account **Settings > Shared by Me** section.
+  At the platform dashboard, these entities can be found and managed at the account **Settings > Shared by Me** section.
 
 <div style={{
     display:'flex',
@@ -65,15 +65,16 @@ No longer needed roles can be removed with the same-named button at the tools pa
 
 3. You can create as many roles as you need. Here are some generic examples that can be configured by selecting the appropriate policies:
 
-- *viewer* - just view logs and files
-- *user* - simple actions like environment start/stop and containers restart
-- *developer* - access to most features with some restrictions (e.g. create, delete, migrate, clone environments, change environment groups, change owner)
-- *admin* - full access with the ability to create new environments, install JPS packages, and access via SSH
+- _viewer_ - just view logs and files
+- _user_ - simple actions like environment start/stop and containers restart
+- _developer_ - access to most features with some restrictions (e.g. create, delete, migrate, clone environments, change environment groups, change owner)
+- _admin_ - full access with the ability to create new environments, install JPS packages, and access via SSH
 
 Obviously, these are just examples to give you an idea of the feature possibilities. You can create your own roles to suit your specific use case the best.
 
 ## Roles Assigning Algorithm
-The platform utilizes a special *access level* algorithm when determining the exact roles for a specific environment. Based on the priority (from higher to lower), the three available access levels are ordered in the following way:
+
+The platform utilizes a special _access level_ algorithm when determining the exact roles for a specific environment. Based on the priority (from higher to lower), the three available access levels are ordered in the following way:
 
 - **direct** - roles assigned directly to the environment. The “direct” roles override any of the roles from the levels below.
 - **shared env groups** - mixed list of roles for all shared groups of the current environment. If a group does not have a specific role, the parent is checked. The nesting chain can be followed till the root Env Groups category (i.e. default role for all groups).
@@ -97,7 +98,7 @@ You can check the role and list of allowed policies for shared resources at the 
 
 </div>
 
-In order to check your roles for the specific [shared environment](1), go to its **Settings > Collaboration** section.
+In order to check your roles for the specific [shared environment](https://cloudmydc.com/), go to its **Settings > Collaboration** section.
 
 <div style={{
     display:'flex',
@@ -123,7 +124,7 @@ Let’s go through a few examples to better understand how roles are allocated.
 
 </div>
 
-Let’s determine the access level. The environment is not shared directly and is not a part of any shared env group. However, we have a ***base*** role (**Viewer**) assigned to all environments.
+Let’s determine the access level. The environment is not shared directly and is not a part of any shared env group. However, we have a **_base_** role (**Viewer**) assigned to all environments.
 
 <div style={{
     display:'flex',
@@ -135,7 +136,7 @@ Let’s determine the access level. The environment is not shared directly and i
 
 </div>
 
-*Result:* Environment has the **Viewer** role.
+_Result:_ Environment has the **Viewer** role.
 
 <u>Example 2:</u> Environment is shared with a **Viewer** role and belongs to the shared group with the **Admin** role. Environment is a part of the categories circled in the image below.
 
@@ -149,7 +150,7 @@ Let’s determine the access level. The environment is not shared directly and i
 
 </div>
 
-According to the algorithm, the environment has roles from two access levels: ***direct*** (**Viewer**) and ***shared env groups*** (**Admin**). However, only roles of the higher access level apply. The ***direct*** level has the highest priority, so roles of the ***shared env groups*** level are ignored.
+According to the algorithm, the environment has roles from two access levels: **_direct_** (**Viewer**) and **_shared env groups_** (**Admin**). However, only roles of the higher access level apply. The **_direct_** level has the highest priority, so roles of the **_shared env groups_** level are ignored.
 
 <div style={{
     display:'flex',
@@ -161,9 +162,9 @@ According to the algorithm, the environment has roles from two access levels: **
 
 </div>
 
-*Result:* Only the **Viewer** role is assigned.
+_Result:_ Only the **Viewer** role is assigned.
 
-<u>Example 3:</u> 
+<u>Example 3:</u>
 
 The target environment belongs to two groups. The first one has the **Developer** and **Accountant** role (and its parent has the Admin role), while the second one has no roles. The default role for all groups is - Viewer. Environment is a part of the groups circled in the image below.
 

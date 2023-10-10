@@ -3,7 +3,8 @@ sidebar_position: 3
 ---
 
 ## Collaboration Management (Deprecated)
-This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](1) feature description.
+
+This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](https://cloudmydc.com/) feature description.
 
 Full access to collaboration management is available only for its creator. The owner of this **primary account** can:
 
@@ -11,7 +12,7 @@ Full access to collaboration management is available only for its creator. The o
 - regulate the permissions of users within the collaboration
 - manage account billing
 
-A **user** added to the collaboration doesn’t have any special admin permissions for collaboration account management (only for [environments management](1)). This user can simply leave the collaboration when it is required.
+A **user** added to the collaboration doesn’t have any special admin permissions for collaboration account management (only for [environments management](https://cloudmydc.com/)). This user can simply leave the collaboration when it is required.
 
 To start managing your account collaboration, select the **Settings** button in the right top corner of your platform dashboard.
 
@@ -28,6 +29,7 @@ To start managing your account collaboration, select the **Settings** button in 
 The next steps depend on your type of account (primary or user).
 
 ## Primary Account
+
 If you are the owner of primary account, navigate to **Collaboration & Account Management**.
 Here, you will see a list of accounts added to the collaboration.
 
@@ -47,7 +49,7 @@ Using the buttons at the panel you can:
 - edit user’s Display name and permissions
 - delete a user from the collaboration
 
-1. The process of a new user **invitation** is described in the [Create Collaboration](1) document.
+1. The process of a new user **invitation** is described in the [Create Collaboration](https://cloudmydc.com/) document.
 
 2. To edit a user’s **Display name** and **permissions**, follow these steps:
 
@@ -120,6 +122,7 @@ A user will be notified about the exclusion from the collaboration via email. In
 In both cases, all of the environments created by a user on the primary account, will remain at this account and their creator won’t have access to them anymore.
 
 ## User Account
+
 You can be invited to one or even several collaborations. To see which accounts you have access to and their permissions, navigate to the **Collaboration & Shared with Me** section.
 
 <div style={{
@@ -134,11 +137,11 @@ You can be invited to one or even several collaborations. To see which accounts 
 
 1. Here, you can see the list of users (primary accounts), which included you in their collaborations. In addition, a separate **Allowed to create environments** column is displayed if you have permission to create environments on these accounts (green tick or prohibitory sign).
 
-2. You can edit the ***Display Name*** for any primary account you have access to:
+2. You can edit the **_Display Name_** for any primary account you have access to:
 
 - Choose the particular primary user
 - Click the **Edit Name** button in the panel above
-- Specify the ***Display Name*** for this account and **Save**.
+- Specify the **_Display Name_** for this account and **Save**.
 
 <div style={{
     display:'flex',

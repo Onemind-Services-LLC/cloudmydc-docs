@@ -2,20 +2,22 @@
 sidebar_position: 1
 ---
 
-- [What is charged?](1)
-- [Where can consumed resources be seen?](1)
-- [How much do resources cost?](1)
-- [How to decrease the consumption?](1)
+- [What is charged?](https://cloudmydc.com/)
+- [Where can consumed resources be seen?](https://cloudmydc.com/)
+- [How much do resources cost?](https://cloudmydc.com/)
+- [How to decrease the consumption?](https://cloudmydc.com/)
 
 ## What is Charged?
+
 Resource consumption for each environment is charged to the account owner on an hourly basis. There are 3 types of charges:
 
 - **Primary** - fees for the main platform resources (i.e. RAM & CPU), provided within cloudlets
 - **Provider-dependent** - the ones that can be either payable or not, according to the chosen hosting provider settings
 - **Optional extras** - charges for usage of some additional platform features
-Detailed information on each of these types of charges can be found in the [Charged Resources](1) document.
+  Detailed information on each of these types of charges can be found in the [Charged Resources](https://cloudmydc.com/) document.
 
 ## Where the Consumed Resources Can be Seen?
+
 The detailed information on the amount of consumed resources can be seen in the different places at your dashboard, for example:
 
 - pricing widget at the **environment wizard’s** right pane shows the approximate monthly spends, based on the stated amount of reserved cloudlets
@@ -23,10 +25,11 @@ The detailed information on the amount of consumed resources can be seen in the 
 - the total usage **Statistics** on all resources types (i.e. RAM, CPU, Storage and Network Bandwidth) can be seen via the appropriate section for the desired node/set of the same-type nodes
 - finally, the **Billing History** section provides any information on all the payable resources, consumed during the stated period, and their costs.
 
-The details on each of these options can be seen in the [Monitor Consumed Resources](1) document.
+The details on each of these options can be seen in the [Monitor Consumed Resources](https://cloudmydc.com/) document.
 
 ## How Much do Resources Cost?
-With the platform, you only pay for consumed resources. The resource pricing is set by your chosen hosting provider. You can find exact cost for each resource unit by going to your hoster’s [Pricing page](1).
+
+With the platform, you only pay for consumed resources. The resource pricing is set by your chosen hosting provider. You can find exact cost for each resource unit by going to your hoster’s [Pricing page](https://cloudmydc.com/).
 
 The prices can also be seen inside your platform dashboard.
 
@@ -42,11 +45,12 @@ Navigate to **Balance > Quotas & Pricing** menu item. Here you’ll see a set of
 
 </div>
 
-Choose the one you are interested in to see the pricing and discount scale offered by your hosting provider. You can find more information about pricing and discount systems in the [Pricing System](1) and [Automatic Discounts](1) documents.
+Choose the one you are interested in to see the pricing and discount scale offered by your hosting provider. You can find more information about pricing and discount systems in the [Pricing System](https://cloudmydc.com/) and [Automatic Discounts](https://cloudmydc.com/) documents.
 
 Note that the various software stacks are provided free of charge in the platform. You only pay for the resources consumed but not for the software itself.
 
 ## How to Decrease the Consumption?
+
 To decrease your spends you can stop your environment when it is not needed. For example, if you happen to be using your environment as a test or dev one and you don’t use it on nights and weekends - you don’t have to pay for the resources that you don’t use.
 
 <div style={{
@@ -65,5 +69,5 @@ You are going to pay only for **disk space** that you use and for **public IP** 
 
 Follow the links to get acquainted with useful tips on consuming platform resources in a smart way:
 
-- [Save Your Cloud Money!](1)
-- [How to Manage the Application Lifecycle in PaaS](1)
+- [Save Your Cloud Money!](https://cloudmydc.com/)
+- [How to Manage the Application Lifecycle in PaaS](https://cloudmydc.com/)

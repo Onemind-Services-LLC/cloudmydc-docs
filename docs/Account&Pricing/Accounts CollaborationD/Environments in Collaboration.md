@@ -3,7 +3,8 @@ sidebar_position: 4
 ---
 
 ## Environments in Collaboration (Deprecated)
-*This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](1) feature description.*
+
+_This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](https://cloudmydc.com/) feature description._
 
 Within a collaboration, there is the possibility to create, share and manage environments available at the primary account. The permissions for performing appropriate actions differ based on the type of account you have - primary or user.
 
@@ -21,11 +22,12 @@ A member of collaboration with the user account can:
 
 And now, let’s see how to perform all of these actions within collaboration:
 
-- [Create environment](1)
-- [Share environment](1)
-- [Use shared environment](1)
+- [Create environment](https://cloudmydc.com/)
+- [Share environment](https://cloudmydc.com/)
+- [Use shared environment](https://cloudmydc.com/)
 
 ## Create a New Environment in Collaboration
+
 You can create a new environment in a collaboration account in two cases:
 
 - if you are a primary account owner
@@ -41,7 +43,7 @@ You can create a new environment in a collaboration account in two cases:
 
 </div>
 
-In the first case (when you own the **primary account**), the environment is created the usual way, as it is described in the [Setting Up Environment](1) document.
+In the first case (when you own the **primary account**), the environment is created the usual way, as it is described in the [Setting Up Environment](https://cloudmydc.com/) document.
 
 When you are a **user with permission** to create an environment, then this process is slightly different. Let’s consider the steps in this case:
 
@@ -100,8 +102,7 @@ that a primary account is billing by default, so you won’t meet any restrictio
 </div>
 
 4. The newly created environment will appear at your dashboard.
-It will be marked as shared with this custom icon. ![Locale Dropdown](./img/EnvironmentsInCollaboration/8bfe76c532583fbfb4eab0886326ab31icon.png)
-
+   It will be marked as shared with this custom icon. ![Locale Dropdown](./img/EnvironmentsInCollaboration/8bfe76c532583fbfb4eab0886326ab31icon.png)
 
 A new **Owner** status column will appear, with the primary account email stated.
 
@@ -116,9 +117,10 @@ A new **Owner** status column will appear, with the primary account email stated
 </div>
 
 5. Now, you can start working with the created environment as if with your own.
-The only restriction is that you cannot clone it. This action can be performed only by a primary account.
+   The only restriction is that you cannot clone it. This action can be performed only by a primary account.
 
 ## NOTE
+
 - Primary account owner receives the email notification about all environments created and can fully manage them, e.g. modify topology, configurations, clone, delete environment etc.
 - You can view the extended information on the environment’s creation: **owner** (you or primary user), **creator** (anyone from the collaboration) and **date/time** when it was created.
 
@@ -144,6 +146,7 @@ To do this, click the **Settings** button next to the desired environment and na
 </div>
 
 ## Share Environment with Collaboration Users
+
 A **Primary account** owner can make the necessary environment available for other users in collaboration and define the level of access to each environment.
 
 1. Navigate to **Settings > Collaboration >; Account Management** and choose the user in the member’s list.
@@ -164,7 +167,7 @@ A **Primary account** owner can make the necessary environment available for oth
 
 In the opened panel, you can choose all environments or a particular one to be shared.
 
-You can also tick the ***Change topology / SSH access*** checkbox in order to give such permissions. Select **Save**.
+You can also tick the **_Change topology / SSH access_** checkbox in order to give such permissions. Select **Save**.
 
 <div style={{
     display:'flex',
@@ -188,7 +191,7 @@ You can also tick the ***Change topology / SSH access*** checkbox in order to gi
 
 </div>
 
-5. The permissions to edit topology or access an environment via SSH can be removed by selecting the **Edit** button for a particular environment and unticking the ***Change topology / SSH access*** option.
+5. The permissions to edit topology or access an environment via SSH can be removed by selecting the **Edit** button for a particular environment and unticking the **_Change topology / SSH access_** option.
 
 <div style={{
     display:'flex',
@@ -225,6 +228,7 @@ You can also tick the ***Change topology / SSH access*** checkbox in order to gi
 After that, the chosen environment won’t be displayed at user’s dashboard and a user will receive an email notification.
 
 ## Use Shared Environments
+
 Being a member of an account collaboration, you can have access to all or to separate environments available at the primary account. They will be shown at your dashboard alongside your own environments.
 
 You can work with shared environments as with your own, being able to deploy applications, change configurations, read log files, view statistics and so on. The only exception is that you cannot clone environments (this can only be done by the primary account).
@@ -233,9 +237,9 @@ The primary account owner can also grant you the permission to change the enviro
 
 Shared environments are marked in the list with this custom icon ![Locale Dropdown](./img/EnvironmentsInCollaboration/8bfe76c532583fbfb4eab0886326ab31icon.png)
 
-An additional ***Owner*** column appears in the panel of environments' statuses. It shows the owners of the listed environments:
+An additional **_Owner_** column appears in the panel of environments' statuses. It shows the owners of the listed environments:
 
-- *me sign* for your environments
+- _me sign_ for your environments
 - emails for primary accounts
 
 <div style={{

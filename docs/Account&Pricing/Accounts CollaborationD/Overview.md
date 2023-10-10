@@ -3,7 +3,8 @@ sidebar_position: 1
 ---
 
 ## Account Collaboration (Deprecated)
-This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](1) feature description.
+
+This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](https://cloudmydc.com/) feature description.
 
 Developing and releasing superior products in large companies always depends on efficient collaboration, i.e. properly organized interaction between all members of the team. In order to greatly facilitate the process of joint development, PaaS provides an account sharing feature.
 

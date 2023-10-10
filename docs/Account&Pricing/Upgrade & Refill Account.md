@@ -2,11 +2,11 @@
 sidebar_position: 11
 ---
 
-After the initial trial period, if you are satisfied with our product and wish to continue to use the platform, your account should be upgraded to the [billing](1) one. The conversion will additionally remove any limitations and provide access to all of the available functionality.
+After the initial trial period, if you are satisfied with our product and wish to continue to use the platform, your account should be upgraded to the [billing](https://cloudmydc.com/) one. The conversion will additionally remove any limitations and provide access to all of the available functionality.
 
 :::tip Tip
 
-If you don’t have an account yet, choose the most suitable [service provider](1) for you (based on the geolocation, performance, support quality, etc.) and sign up for a free trial.
+If you don’t have an account yet, choose the most suitable [service provider](https://cloudmydc.com/) for you (based on the geolocation, performance, support quality, etc.) and sign up for a free trial.
 
 The platform will automatically send the confirmation email, so just follow the provided instructions (an additional captcha or SMS verification may be required).
 
@@ -26,7 +26,7 @@ The platform will automatically send the confirmation email, so just follow the 
 
 Also, you can expand this menu for additional information on the trial limitations, pricing, and recent resource usage.
 
-2. Within the opened window, you need to provide the requested personal data and to accept the [Terms of Service](1) agreement in order to create your billing account.
+2. Within the opened window, you need to provide the requested personal data and to accept the [Terms of Service](https://cloudmydc.com/) agreement in order to create your billing account.
 
 <div style={{
     display:'flex',
@@ -87,15 +87,15 @@ Click the **Submit Payment** button and fulfill the invoice via the chosen payme
 
 6. Also, you can automate the process with the help of the auto-refill option (**Balance > Configure auto-refill**). Here, specify payment sum/method and additionally select the refill condition:
 
-- *Weekly (every Monday)*
-- *Monthly (1st of each month)*
-- *Balance less than the specified sum*
+- _Weekly (every Monday)_
+- _Monthly (1st of each month)_
+- _Balance less than the specified sum_
 
 :::tip Note
 
 The auto-refill feature is not supported by some billing systems (i.e. this option may not be available for your particular hosting provider) and payment methods (e.g. PayPal or bank transfer).
 
-::: 
+:::
 
 <div style={{
     display:'flex',
@@ -110,4 +110,3 @@ The auto-refill feature is not supported by some billing systems (i.e. this opti
 Click **Confirm** to enable auto-refill for the account.
 
 Now, you know how to convert to billing and how to keep your account active with a regular balance refill.
-
