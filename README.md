@@ -17,6 +17,33 @@ https://www.flaticon.com/uicons/interface-icons
 
 
 
+<!-- Template -->
+<div style={{
+    display: 'grid',
+    gridTemplateColumns: '0.15fr 1fr',
+    gap: '10px'
+}}>
+<div style={{
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'cetner',
+}}>
+
+![Locale Dropdown](./img/WindowsRDAccess/01-windows-rdp-access.png)
+
+</div>
+
+<div>
+
+All the Windows-based nodes at the platform provide the embedded **Remote Desktop Protocol** support, which allows you to connect to the virtual desktop of your Windows machine and perform any required server configurations through it.
+
+In order to ensure the maximum convenience while using the Windows hosting services, our platform is equipped with the integrated RDP tool - **Guacamole**. It represents a clientless remote desktop gateway, which is run from within the web-browser by virtue of HTML5 and does not require any additional plugins or client software installed.
+
+</div>
+
+</div>
+
+
 
 # Contribute to CloudMyDC Docs
 
