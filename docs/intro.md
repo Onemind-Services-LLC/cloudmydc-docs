@@ -13,8 +13,8 @@ sidebar_position: 1
 - Application Setting 👍
 - Deployment Tools 👍
 - Java 👍
+- PHP 👍
 
-- PHP ❌
 - Node.js ❌
 - Ruby ❌
 - Python ❌
@@ -154,7 +154,7 @@ module.exports = {
 };
 ```
 
--------------------------------------------- Image --------------------------------------------
+-------------------------------------------- Image [how to find image is used] --------------------------------------------
 
 <div style={{
     display:'flex',
@@ -581,3 +581,6 @@ this is something that i like to do in my free time
 ------------------------------------- Additional Tutorial -------------------------------------
 
 HTML -> `https://youtube.com/playlist?list=PL0b6OzIxLPbxStBQ21C2toa5uQMqHEoRT&si=JTK6h9g4Skq6FfKK`
+
+Video Not Completed
+!incomplete
