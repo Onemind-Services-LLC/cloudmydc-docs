@@ -2,6 +2,35 @@
 sidebar_position: 1
 ---
 
+# Tasks TODO List
+
+- QuickStart ✅
+- Platform Overview ✅
+- Container ✅
+- Environment Management ✅
+- Deployment ✅
+- Application Setting ❌
+- Deployment Tools ❌
+- Java ❌
+- PHP ❌
+- Node.js ❌
+- Ruby ❌
+- Python ❌
+- Go Lang ❌
+- Window & .NET ❌
+- Databases ❌
+- Load Balancers ❌
+- Kubernetes Hosting ❌
+- Wordpress as a service ❌
+- Elastic VPS ✅
+- Data Storage Container ✅
+- Memcached ✅
+- Account & Pricing ✅
+
+
+install node.js
+
+remove auto save
 # Tutorial Intro
 
 Let's discover **Docusaurus in less than 5 minutes Bro**.
