@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 ## Configuration File Manager
+
 The platform configuration manager is a powerful tool, which allows to take control over all of the files within the particular container. This allows to easily and quickly apply some common configurations to your nodes through the comfortable GUI right in your browser, without the necessity to establish [SSH connection](https://cloudmydc.com/), that may be required for some complex operations.
 
 In order to open the configuration manager, hover over the required node and click **the Config** button (the one with a wrench icon).
@@ -27,27 +28,28 @@ Herein the following sections are available:
 - **Mount Points** - list of folders, that are physically stored on the remote node but can be used at a current node (learn how you can [mount data](https://cloudmydc.com/) at the platform)
 - **Exports** - list of folders, which are shared with other nodes, i.e. these files are stored locally, but are also available at the remote instances (find out more at the dedicated [storage exports](https://cloudmydc.com/) documentation page)
 - **Favorites** - files and folders you’ve marked as favorites so that you have a quick and simple access to them
-Further down this guide, we’ll consider the basics of configuration manager usage, that are applicable for any platform container. However, if you require to find out the configuration specifics for a particular node type, select one of the following docs:
+  Further down this guide, we’ll consider the basics of configuration manager usage, that are applicable for any platform container. However, if you require to find out the configuration specifics for a particular node type, select one of the following docs:
 
-- [Docker Container Configuration](1)
-- [Java Application Server Configuration](1)
-- [PHP Application Server Configuration](1)
-- [Ruby Application Server Configuration](1)
-- [Database Configuration](1)
-- [NGINX Balancer Configuration](1)
-- [Memcached Configuration](1)
-- [Maven Configuration](1)
+- [Docker Container Configuration](https://cloudmydc.com/)
+- [Java Application Server Configuration](https://cloudmydc.com/)
+- [PHP Application Server Configuration](https://cloudmydc.com/)
+- [Ruby Application Server Configuration](https://cloudmydc.com/)
+- [Database Configuration](https://cloudmydc.com/)
+- [NGINX Balancer Configuration](https://cloudmydc.com/)
+- [Memcached Configuration](https://cloudmydc.com/)
+- [Maven Configuration](https://cloudmydc.com/)
 
 ## Working with File Manager
+
 The platform in-build file manager gives an easy and convenient access to your container files and allows to perform the majority of common operations right through the dashboard.
 
-:::tip 
+:::tip
 
 You can also connect to a container via SSH in order to get even more possibilities for its management.
 
 :::
 
-1. When switching to the ***Root*** section of the config manager, you’ll see the file system tree in the right-hand part, with the path string and the **Actions for the current directory** expandable list in the tools pane above. These options provide the following functionality:
+1. When switching to the **_Root_** section of the config manager, you’ll see the file system tree in the right-hand part, with the path string and the **Actions for the current directory** expandable list in the tools pane above. These options provide the following functionality:
 
 - easily switch between directories within the path by clicking on any of the intermediate folder. Also, you can specify the target location manually by typing it in the appropriate input field, which appears upon clicking on the empty space wherever at the path bar
 
@@ -70,8 +72,8 @@ You can also connect to a container via SSH in order to get even more possibilit
 }}>
 
 ![Locale Dropdown](./img/ConfigurationFileManager/3.png)
-</div>
 
+</div>
 
 2. Below the tools panel, you can see the files tree, intended for a simple navigation between them and displaying of additional information on the comprised files.
 
@@ -82,8 +84,8 @@ You can also connect to a container via SSH in order to get even more possibilit
 }}>
 
 ![Locale Dropdown](./img/ConfigurationFileManager/4.png)
-</div>
 
+</div>
 
 Within its columns, the following data is presented:
 
@@ -107,14 +109,15 @@ Only the regular file type can be edited via the Config manager.
 }}>
 
 ![Locale Dropdown](./img/ConfigurationFileManager/5.png)
+
 </div>
 
 Moreover, to simplify the operation of files management and editing, the appropriate **Search** option can be used, available by means of the same-named button at the top panel.
 
 Just type the required piece of text to find and highlight all matches throughout your file. Use the additional options to narrow the search results even further:
 
-- *Match Case* - allows to perform a case sensitive search
-- *Regex* - enables [regular expressions](1) for the search conditions specification
+- _Match Case_ - allows to perform a case sensitive search
+- _Regex_ - enables [regular expressions](https://cloudmydc.com/) for the search conditions specification
 
 4. After you’ve finished file edits, don’t forget to **Save** changes you’ve made with a corresponding button at the top. Herewith, in case you are working with a layer of multiple nodes, you’ll be additionally asked whether it’s required to save the made changes only for the current instance or for all instances.
 
@@ -125,6 +128,7 @@ Just type the required piece of text to find and highlight all matches throughou
 }}>
 
 ![Locale Dropdown](./img/ConfigurationFileManager/6.png)
+
 </div>
 
 :::tip Tip
@@ -142,6 +146,7 @@ While saving the made changes in any config file, the confirmation pop-up will a
 }}>
 
 ![Locale Dropdown](./img/ConfigurationFileManager/7.png)
+
 </div>
 
 :::tip Note
