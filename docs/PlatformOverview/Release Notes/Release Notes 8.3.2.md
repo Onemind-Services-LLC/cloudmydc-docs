@@ -24,7 +24,7 @@ In this document, you will find all of the new features, enhancements and visibl
         justifyContent: 'flex-start',
     }}>
 
-![Locale Dropdown](./img/RN8.3.2/download.png)
+![Locale Dropdown](./img/ReleaseNotes8.3.2/download.png)
 
 Changed
 
@@ -86,7 +86,7 @@ Changed
         justifyContent: 'flex-start',
     }}>
 
-![Locale Dropdown](<./img/RN8.3.2/download%20(1).png>)
+![Locale Dropdown](<./img/ReleaseNotes8.3.2/download%20(1).png>)
 
 Fixed
 

@@ -5,25 +5,25 @@ sidebar_position: 1
 # Tasks TODO List
 
 - QuickStart ✅
-- Platform Overview ✅
 - Container ✅
 - Environment Management ✅
 - Deployment ✅
 
+- Platform Overview / Release 👍
 - Application Setting 👍
 - Deployment Tools 👍
 - Java 👍
 - PHP 👍
+- Node.js 👍
+- Ruby 👍
+- Python 👍
+- Go Lang 👍
+- Window & .NET 👍
+- Databases 👍
+- Load Balancers 👍
+- Kubernetes Hosting 👍
+- Wordpress as a service 👍
 
-- Node.js ❌
-- Ruby ❌
-- Python ❌
-- Go Lang ❌
-- Window & .NET ❌
-- Databases ❌
-- Load Balancers ❌
-- Kubernetes Hosting ❌
-- Wordpress as a service ❌
 - Elastic VPS ✅
 - Data Storage Container ✅
 - Memcached ✅
