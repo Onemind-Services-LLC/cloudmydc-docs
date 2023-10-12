@@ -1,0 +1,5 @@
+---
+sidebar_position: 1
+---
+
+DIRECTLY RE-DIRECTING TO WEBSITE OR INTERNAL PAGE

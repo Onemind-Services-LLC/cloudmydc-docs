@@ -29,6 +29,14 @@ sidebar_position: 1
 - Memcached ✅
 - Account & Pricing ✅
 
+---------------------------------- Project Running Command -----------------------------
+
+nvm use v20.7.0
+<br/>
+yarn
+<br/>
+yarn start
+
 ------------------------------------- Heading -------------------------------------
 
 # this is content [No Short Link]
@@ -46,7 +54,7 @@ sidebar_position: 1
 ------------------------------------- Bold Text -------------------------------------
 <br/>
 
-Let's discover _Docusaurus0_.
+Let's discover *pikachu*.
 
 <br/>
 
@@ -54,15 +62,7 @@ Let's discover **Docusaurus1**.
 
 <br/>
 
-Let's discover <b>Docusaurus2</b>.
-
-<br/>
-
-Let's discover **_Docusaurus3_**.
-
-<br/>
-
-Let's discover **_Docusaurus4_**.
+Let's discover ***DINNER***.
 
 ------------------------------------- Link | Anchor Tag -------------------------------------
 <br/>
@@ -75,7 +75,7 @@ Let's discover **[Docusaurus1](https://cloudmydc.com/)**.
 
 <br/>
 
-Let's discover **_[Docusaurus1](https://cloudmydc.com/)_**.
+Let's discover ***[Docusaurus1](https://cloudmydc.com/)***.
 
 <br/>
 
@@ -109,6 +109,14 @@ Let's discover \***\*[Docusaurus1](https://cloudmydc.com/)\*\***.
 </div>
 
 ```bash
+
+alsdfjlkasdjf
+aslkdfjaslkdjf
+asdlkfjasdflk
+
+```
+
+```bash
 write code here
 
 #include "bits/stdc++.h"
@@ -122,7 +130,9 @@ void main() {
 
 **2 Method**
 
-```md title="docs/hello.md" {1-4}
+```md title="docs/hello.md" {2-6}
+
+
 ---
 sidebar_label: "Hi!"
 sidebar_position: 3
@@ -135,6 +145,8 @@ using namespace std;
 void main() {
 cout<<"OnemindService LLC";
 }
+
+
 ```
 
 **3 Method**
@@ -162,6 +174,7 @@ module.exports = {
     margin: '0 0 1rem 0'
 }}>
 
+<!-- ![Locale Dropdown](./img/FILE_NAME/IMAGE_NAME) -->
 ![Locale Dropdown](./QuickStart/img/DashboardGuide/01-paas-main-buttons.png)
 
 </div>
@@ -171,7 +184,7 @@ module.exports = {
 
 The `npm run start`
 
-Open `docs/intro.md` (this page) and edit some lines.
+Open `docs/intro.md` (this page) and `edit` some lines.
 
 --------------------------------------- Image Container -------------------------------------
 
@@ -230,7 +243,7 @@ Gitblit is one of the most popular tools for managing, viewing and serving your 
                 wordBreak: 'break-all',
                 borderRight: '1px solid var(--ifm-toc-border-color)',
             }}>
-                Hoster
+                Header1
             </div>
             <div style={{
                 display: 'flex', 
@@ -240,7 +253,7 @@ Gitblit is one of the most popular tools for managing, viewing and serving your 
                 borderRight: '1px solid var(--ifm-toc-border-color)',
                 wordBreak: 'break-all'
             }}>
-               CNAME
+               Header2
             </div>
             <div style={{
                 display: 'flex', 
@@ -250,7 +263,7 @@ Gitblit is one of the most popular tools for managing, viewing and serving your 
                 borderRight: '1px solid var(--ifm-toc-border-color)',
                 wordBreak: 'break-all'
             }}>
-                A Record
+                Header3
             </div> 
         </div>
         <div style={{
@@ -270,7 +283,7 @@ Gitblit is one of the most popular tools for managing, viewing and serving your 
                 justifyContent: 'flex-start',
                 wordBreak: 'break-all',
                 padding: '20px',
-            }}>content1</div>
+            }}>asljdflkasdjf</div>
             <div style={{
                 padding: '20px',
                 wordBreak: 'break-all'
@@ -583,4 +596,7 @@ this is something that i like to do in my free time
 HTML -> `https://youtube.com/playlist?list=PL0b6OzIxLPbxStBQ21C2toa5uQMqHEoRT&si=JTK6h9g4Skq6FfKK`
 
 Video Not Completed
-!incomplete
+
+code problem -> !incomplete
+
+video problem -> !video incomplete
