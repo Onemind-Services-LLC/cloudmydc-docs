@@ -1,0 +1,5 @@
+---
+sidebar_position: 7
+---
+
+DIRECTLY REDIRECTING TO ANOTHER PAGE OR WEBSITE
