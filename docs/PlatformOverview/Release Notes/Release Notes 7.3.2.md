@@ -140,14 +140,15 @@ Fixed
 </div>
 
 ## SSH Gate Cryptography Update
-In the current 7.3.2 release, the platform **[SSH Gate](1)** components were updated to support new public key algorithms and the latest SSH versions. The list of changes includes the following improvements:
+
+In the current 7.3.2 release, the platform **[SSH Gate](https://cloudmydc.com/)** components were updated to support new public key algorithms and the latest SSH versions. The list of changes includes the following improvements:
 
 - support for RSA SHA-2 host key signatures
 - the server-sig-algs extension support
 - handshake using the ssh-rsa keys signed using the ssh-rsa-sha2-256 (ssh-rsa-sha2-512) algorithm
 - added key exchange method using Curve25519 and Curve448 (curve25519-sha256 only)
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -279,12 +280,12 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
 </div>
 
 ## Software Stack Versions
+
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](1) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
-
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -297,8 +298,8 @@ The most accurate and up-to-date list of the certified [software stack versions]
 </div>
 
 ## Bug Fixes
-In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.3 release:
 
+In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.3 release:
 
 <div style={{
         width: '100%',

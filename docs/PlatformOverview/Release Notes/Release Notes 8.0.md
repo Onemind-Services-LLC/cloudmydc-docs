@@ -137,9 +137,10 @@ Fixed
 </div>
 
 ## AutoFS Downgrade
-**AutoFS** is a file system tool to automate [directories mounting](1) operations and to achieve the “as-needed” approach. With this directory mounting method, shared folders are mounted only upon access and automatically unmounted after a period of inactivity. The main focus of the implementation is better network efficiency compared to static mounts.
 
-However, some performance issues were detected with the latest AutoFS versions. As a result, it was forcibly downgraded to the stable ***AutoFS 5.1.6*** version for all containers on the platform. The platform will restore regular updates to the newest release as soon as the problem is resolved.
+**AutoFS** is a file system tool to automate [directories mounting](https://cloudmydc.com/) operations and to achieve the “as-needed” approach. With this directory mounting method, shared folders are mounted only upon access and automatically unmounted after a period of inactivity. The main focus of the implementation is better network efficiency compared to static mounts.
+
+However, some performance issues were detected with the latest AutoFS versions. As a result, it was forcibly downgraded to the stable **_AutoFS 5.1.6_** version for all containers on the platform. The platform will restore regular updates to the newest release as soon as the problem is resolved.
 
 <div style={{
         display: 'flex',
@@ -273,12 +274,12 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
 </div>
 
 ## Software Stack Versions
+
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](1) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
-
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -291,8 +292,8 @@ The most accurate and up-to-date list of the certified [software stack versions]
 </div>
 
 ## Bug Fixes
-In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.3 release:
 
+In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.3 release:
 
 <div style={{
         width: '100%',

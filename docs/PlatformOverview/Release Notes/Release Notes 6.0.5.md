@@ -138,7 +138,7 @@ Fixed
 
 ## Beta Label Removal for MongoDB/PostgreSQL Auto-Clustering
 
-the platform’s **_[Auto-Clustering](1)_** feature helps users automatically set up a production-ready cluster for some of the most popular software stacks. Such an option has been provided for MongoDB and PostgreSQL databases for quite some time and receives positive feedback without any major issues. As a result, starting with the present 6.0.5 PaaS release, we are removing the “beta” UI label next to the Auto-Clustering option for these stacks.
+the platform’s **_[Auto-Clustering](https://cloudmydc.com/)_** feature helps users automatically set up a production-ready cluster for some of the most popular software stacks. Such an option has been provided for MongoDB and PostgreSQL databases for quite some time and receives positive feedback without any major issues. As a result, starting with the present 6.0.5 PaaS release, we are removing the “beta” UI label next to the Auto-Clustering option for these stacks.
 
 <div style={{
     display:'flex',
@@ -150,7 +150,7 @@ the platform’s **_[Auto-Clustering](1)_** feature helps users automatically se
 
 </div>
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -285,9 +285,9 @@ Below, you can find the fixes that were implemented in the PaaS 6.0.5 release an
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](1) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',

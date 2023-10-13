@@ -199,24 +199,24 @@ Fixed
 </div>
 
 ## Send Message API with IP Authorization
+
 In the current 7.1 PaaS release, two new API methods were implemented for sending email notifications from the container to its owner. These methods provide automatic authentication based on the container IP address so that user session (password and login) is not required. Such implementation significantly simplifies notification of the container owner based on the events inside the node, which allows automating various scenarios that previously were difficult in realization.
 
 Both new methods are part of the **environment > node** service:
 
-
-- ***SendEvent*** - sends a predefined event using IP authorization
+- **_SendEvent_** - sends a predefined event using IP authorization
   - **eventName** - the name of the required event; currently, the following values are supported:
-    - *SEND_NOTIFICATION* - sends an email notification to the node owner
-    - *OOM_KILLER* - sends a message after OOM Killer invocation
-    - *CUSTOM_NODE_EVENT* - a user-defined custom event
+    - _SEND_NOTIFICATION_ - sends an email notification to the node owner
+    - _OOM_KILLER_ - sends a message after OOM Killer invocation
+    - _CUSTOM_NODE_EVENT_ - a user-defined custom event
   - **params** - JSON object with parameters for Cloud Scripting
-- ***SendNotification*** - sends an email notification to the node owner using IP authorization
+- **_SendNotification_** - sends an email notification to the node owner using IP authorization
   - **name** - title of the message
   - **message** - body of the message
 
-The platform already utilizes these new methods to provide proper notification about changes in containers - for example, automatic notifications due to [smart recovery after the OOM error](1). Developers can benefit from the implementation by extending their custom packages with automatic notification of the container owner based on some specific condition.
+The platform already utilizes these new methods to provide proper notification about changes in containers - for example, automatic notifications due to [smart recovery after the OOM error](https://cloudmydc.com/). Developers can benefit from the implementation by extending their custom packages with automatic notification of the container owner based on some specific condition.
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -229,7 +229,8 @@ The platform already utilizes these new methods to provide proper notification a
 </div>
 
 ## Info for Environment Clone Dialog
-The **[Clone Environment](1)** is a powerful platform feature that allows you to create an identical copy of the existing environment. For example, it can be helpful during development to create a separate instance of the project where tuning and adjustments can be safely tested without affecting existing customers. However, when utilizing the feature, users should be aware that the IP addresses and hostnames of the clone will differ from the initial environment (i.e. manual re-adjustment of these values may be required). To ensure better awareness of the fact, such information was added to the ***Clone Environment*** dialog.
+
+The **[Clone Environment](https://cloudmydc.com/)** is a powerful platform feature that allows you to create an identical copy of the existing environment. For example, it can be helpful during development to create a separate instance of the project where tuning and adjustments can be safely tested without affecting existing customers. However, when utilizing the feature, users should be aware that the IP addresses and hostnames of the clone will differ from the initial environment (i.e. manual re-adjustment of these values may be required). To ensure better awareness of the fact, such information was added to the **_Clone Environment_** dialog.
 
 <div style={{
     display:'flex',
@@ -241,7 +242,7 @@ The **[Clone Environment](1)** is a powerful platform feature that allows you to
 
 </div>
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -254,14 +255,15 @@ The **[Clone Environment](1)** is a powerful platform feature that allows you to
 </div>
 
 ## API Changes
-Below, you can find a list of all changes to the public API in the 7.1 platform version (compared to the preceding [7.0](1) ones).
 
-Two new API methods were added to the **environment > node** service, implementing a simplified flow to [notify the container owner](1) (using IP authorization instead of user session):
+Below, you can find a list of all changes to the public API in the 7.1 platform version (compared to the preceding [7.0](https://cloudmydc.com/) ones).
 
-- ***SendEvent*** - sends a predefined notification based on the specific event inside a container
-- ***SendNotification*** - sends a custom email notification to the node owner
+Two new API methods were added to the **environment > node** service, implementing a simplified flow to [notify the container owner](https://cloudmydc.com/) (using IP authorization instead of user session):
 
-[More info](1)
+- **_SendEvent_** - sends a predefined notification based on the specific event inside a container
+- **_SendNotification_** - sends a custom email notification to the node owner
+
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -393,12 +395,12 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
 </div>
 
 ## Software Stack Versions
+
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](1) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
-
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -411,8 +413,8 @@ The most accurate and up-to-date list of the certified [software stack versions]
 </div>
 
 ## Bug Fixes
-In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.3 release:
 
+In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.3 release:
 
 <div style={{
         width: '100%',
@@ -518,7 +520,6 @@ In the table below, you can see the list of bug fixes applied to the platform st
         })}
     </div>
 </div>
-
 
 <div style={{
         width: '100%',

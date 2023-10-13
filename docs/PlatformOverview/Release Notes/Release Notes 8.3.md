@@ -238,7 +238,7 @@ Fixed
 
 ## AlmaLinux 9 Base OS Image
 
-Starting with the current 8.3 release, Virtuozzo Application Platform starts transitioning to the [software stacks](1) based on the new **_AlmaLinux 9_** images (from the previously used CentOS 7). Such a change ensures support of all the up-to-date functionality, modern security standards, and compatibility with all the latest software solutions.
+Starting with the current 8.3 release, Virtuozzo Application Platform starts transitioning to the [software stacks](https://cloudmydc.com/) based on the new **_AlmaLinux 9_** images (from the previously used CentOS 7). Such a change ensures support of all the up-to-date functionality, modern security standards, and compatibility with all the latest software solutions.
 
 The transition process will be gradual and non-intrusive. It follows the next points:
 
@@ -246,8 +246,8 @@ The transition process will be gradual and non-intrusive. It follows the next po
 - All the newly released stack versions will be based on AlmaLinux 9, so the whole pool of images will be seamlessly replaced with the new OS over time.
 - Updates for the CentOS 7 based images will still be provided in case of critical patches and security issues.
 - In the dashboard, tags based on the AlmaLinux 9 will be explicitly highlighted.
-- [Redeployment](1) from the CentOS 7 to the AlmaLinux 9 version of the stack can be performed without any setbacks. <u>However, downgrading back to CentOS 7 is not supported.</u>
-- The up-to-date list of the [software stacks](1) based on the AlmaLinux 9 image can be checked in the linked document.
+- [Redeployment](https://cloudmydc.com/) from the CentOS 7 to the AlmaLinux 9 version of the stack can be performed without any setbacks. <u>However, downgrading back to CentOS 7 is not supported.</u>
+- The up-to-date list of the [software stacks](https://cloudmydc.com/) based on the AlmaLinux 9 image can be checked in the linked document.
 
 <div style={{
     display:'flex',
@@ -259,11 +259,11 @@ The transition process will be gradual and non-intrusive. It follows the next po
 
 </div>
 
-Alongside the AlmaLinux 9 image implementation, some new functionality is introduced, including updated key generation (_rsa-sha2-256_ and _rsa-sha2-512_ signatures support), updated Guacamole ([Web SSH](1)) client, and **_[nftables](1)_** netfilter (replaces _iptables_). The _nftables_ solution is a new recommended choice for firewall rules management. It offers unified and consistent syntax (contrary to the _xtables_ utilities), high performance through maps and concatenations, and increased security as rules get translated into bytecode. At the same time, all the dashboard UI and API calls remain the same as before so that the management process is unchanged.
+Alongside the AlmaLinux 9 image implementation, some new functionality is introduced, including updated key generation (_rsa-sha2-256_ and _rsa-sha2-512_ signatures support), updated Guacamole ([Web SSH](https://cloudmydc.com/)) client, and **_[nftables](https://cloudmydc.com/)_** netfilter (replaces _iptables_). The _nftables_ solution is a new recommended choice for firewall rules management. It offers unified and consistent syntax (contrary to the _xtables_ utilities), high performance through maps and concatenations, and increased security as rules get translated into bytecode. At the same time, all the dashboard UI and API calls remain the same as before so that the management process is unchanged.
 
-Other stack-related changes include an updated list of [supported OS distributions](1), including **CentOS Stream 9** addition and **Debian 9** deprecation.
+Other stack-related changes include an updated list of [supported OS distributions](https://cloudmydc.com/), including **CentOS Stream 9** addition and **Debian 9** deprecation.
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -277,7 +277,7 @@ Other stack-related changes include an updated list of [supported OS distributio
 
 ## Subscription Improvements
 
-The recently implemented **[Subscription-Based Product](1)** solution was further improved in the current release to ensure the best experience for the customers. All the new changes are seamlessly integrated into the dedicated dashboard’s **_Subscription_** section.
+The recently implemented **[Subscription-Based Product](https://cloudmydc.com/)** solution was further improved in the current release to ensure the best experience for the customers. All the new changes are seamlessly integrated into the dedicated dashboard’s **_Subscription_** section.
 
 <div style={{
     display:'flex',
@@ -328,7 +328,7 @@ Lastly the ability to enable/disable **Auto Pay** option was implemented, allowi
 
 </div>
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -342,7 +342,7 @@ Lastly the ability to enable/disable **Auto Pay** option was implemented, allowi
 
 ## Action Initiator for Emails
 
-Virtuozzo Application Platform provides a powerful [collaboration functionality](1) that allows multiple users to work on the same account. However, with high participants number and active development, it may become difficult to track all the actions performed by individuals and create confusion on whether the account is compromised. In order to help the tracking efforts, the email notifications were extended with the “action initiator” data. Depending on the operation, it can be the email address of the collaboration member or a reference to the internal trigger (e.g., [automatic horizontal scaling](1)).
+Virtuozzo Application Platform provides a powerful [collaboration functionality](https://cloudmydc.com/) that allows multiple users to work on the same account. However, with high participants number and active development, it may become difficult to track all the actions performed by individuals and create confusion on whether the account is compromised. In order to help the tracking efforts, the email notifications were extended with the “action initiator” data. Depending on the operation, it can be the email address of the collaboration member or a reference to the internal trigger (e.g., [automatic horizontal scaling](https://cloudmydc.com/)).
 
 <div style={{
         display: 'flex',
@@ -356,14 +356,14 @@ Virtuozzo Application Platform provides a powerful [collaboration functionality]
 
 ## API Changes
 
-Below, you can find a list of all changes to the public API in the 8.3 platform version (compared to the preceding [8.2.2](1) ones):
+Below, you can find a list of all changes to the public API in the 8.3 platform version (compared to the preceding [8.2.2](https://cloudmydc.com/) ones):
 
-- Added new **_SetAutopay_**, **_MoveProduct_**, **_UpdateSubscription_**, **_UpcomingInvoice_**, and **_DiscardUpdateSubscription_** API methods due to [subscription](1) changes.
+- Added new **_SetAutopay_**, **_MoveProduct_**, **_UpdateSubscription_**, **_UpcomingInvoice_**, and **_DiscardUpdateSubscription_** API methods due to [subscription](https://cloudmydc.com/) changes.
 - Added a new **_invalidateSessions_** parameter to all the password reset methods, which allows terminating all active user sessions (except the current one).
 
 The API documentation’s complete review has started in order to provide a comprehensive description of all the methods and their parameters. Currently, most of the **_billing_** and **_environment_** services have been updated. You can expect complete coverage over the course of several future releases.
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -497,12 +497,12 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
 </div>
 
 ## Software Stack Versions
+
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](1) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
-
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -515,8 +515,8 @@ The most accurate and up-to-date list of the certified [software stack versions]
 </div>
 
 ## Bug Fixes
-In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.3 release:
 
+In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.3 release:
 
 <div style={{
         width: '100%',

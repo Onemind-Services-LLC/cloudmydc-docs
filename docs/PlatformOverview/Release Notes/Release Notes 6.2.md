@@ -140,9 +140,10 @@ Fixed
 </div>
 
 ## Debian 11 OS Template Update
-The OS template for the [recently implemented **Debian 11** stack](1) was updated in the current 6.2 PaaS release. The new OS template version provides even greater stability for the containers based on this image.
 
-[More info](1)
+The OS template for the [recently implemented **Debian 11** stack](https://cloudmydc.com/) was updated in the current 6.2 PaaS release. The new OS template version provides even greater stability for the containers based on this image.
+
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -276,12 +277,12 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
 </div>
 
 ## Software Stack Versions
+
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](1) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
-
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -294,8 +295,8 @@ The most accurate and up-to-date list of the certified [software stack versions]
 </div>
 
 ## Bug Fixes
-In the table below, you can see the list of bug fixes applied to the platform starting from PaaS 6.2 release:
 
+In the table below, you can see the list of bug fixes applied to the platform starting from PaaS 6.2 release:
 
 <div style={{
         width: '100%',

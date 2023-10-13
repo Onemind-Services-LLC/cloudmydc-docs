@@ -199,7 +199,8 @@ Fixed
 </div>
 
 ## Subscription Based Solutions
-The 8.2.2 version of the platform implements a native ability to offer products based on the subscription model. The flow is standard to the modern subscription services implementations – a one-time fee to get a designated product for a specified period. The solution gives you a fix-priced alternative to the default [usage-based model](1).
+
+The 8.2.2 version of the platform implements a native ability to offer products based on the subscription model. The flow is standard to the modern subscription services implementations – a one-time fee to get a designated product for a specified period. The solution gives you a fix-priced alternative to the default [usage-based model](https://cloudmydc.com/).
 
 :::danger
 
@@ -207,7 +208,7 @@ Note: This feature availability depends on the particular hosting provider’s s
 
 :::
 
-All the available subscriptions are available at the Marketplace under a new ***Subscription Plans*** section. Upon selecting, you’ll see several plans to choose from (e.g. offering a different quantity of resources, additional features, etc.). Click the **Buy** button for the preferred option to see the purchase dialog. You can pay monthly or annually, enable auto pay with your default payment method, and set the required number of product instances in your subscription.
+All the available subscriptions are available at the Marketplace under a new **_Subscription Plans_** section. Upon selecting, you’ll see several plans to choose from (e.g. offering a different quantity of resources, additional features, etc.). Click the **Buy** button for the preferred option to see the purchase dialog. You can pay monthly or annually, enable auto pay with your default payment method, and set the required number of product instances in your subscription.
 
 <div style={{
     display:'flex',
@@ -231,9 +232,9 @@ All the **Subscriptions** are added to the dedicated section in the account sett
 
 </div>
 
-Due to the concept of subscriptions, some actions are restricted for the installed instances (e.g. topology adjustment or environment cloning). Read more about subscriptions in the dedicated **[Subscription-Based Product](1)** document.
+Due to the concept of subscriptions, some actions are restricted for the installed instances (e.g. topology adjustment or environment cloning). Read more about subscriptions in the dedicated **[Subscription-Based Product](https://cloudmydc.com/)** document.
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -246,7 +247,8 @@ Due to the concept of subscriptions, some actions are restricted for the install
 </div>
 
 ## Refilling with 3DS Cards
-**3D Secure (3DS)** protocol adds an extra layer of payment authentication for additional fraud protection during an online transaction. If used, the cardholder is asked to provide proof of identity by entering a unique password, an SMS code, or a temporary PIN. 3DS can be mandatory in some regions (e.g. Europe due to the *Strong Customer Authentication regulation*) and optional in others (but still can be used to reduce fraud).
+
+**3D Secure (3DS)** protocol adds an extra layer of payment authentication for additional fraud protection during an online transaction. If used, the cardholder is asked to provide proof of identity by entering a unique password, an SMS code, or a temporary PIN. 3DS can be mandatory in some regions (e.g. Europe due to the _Strong Customer Authentication regulation_) and optional in others (but still can be used to reduce fraud).
 
 When refilling the account balance using the saved payment method with the 3DS, the platform will provide an explicit notification that the invoice was created, but the transaction should be completed through additional external authentication.
 
@@ -261,11 +263,12 @@ When refilling the account balance using the saved payment method with the 3DS, 
 </div>
 
 ## API Changes
-Below, you can find a list of all changes to the public API in the 8.2.2 platform version (compared to the preceding [8.0.2](1) ones):
 
-Added a new **[Billing > Subscriptions](1)** service with API methods to support the [subscriptions](1) feature
+Below, you can find a list of all changes to the public API in the 8.2.2 platform version (compared to the preceding [8.0.2](https://cloudmydc.com/) ones):
 
-[More info](1)
+Added a new **[Billing > Subscriptions](https://cloudmydc.com/)** service with API methods to support the [subscriptions](https://cloudmydc.com/) feature
+
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -397,12 +400,12 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
 </div>
 
 ## Software Stack Versions
+
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](1) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
-
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -415,8 +418,8 @@ The most accurate and up-to-date list of the certified [software stack versions]
 </div>
 
 ## Bug Fixes
-In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.2.2 release:
 
+In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.2.2 release:
 
 <div style={{
         width: '100%',

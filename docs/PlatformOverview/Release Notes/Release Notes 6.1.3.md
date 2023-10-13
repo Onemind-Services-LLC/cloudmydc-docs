@@ -183,9 +183,10 @@ Fixed
 </div>
 
 ## Debian 11 OS Template Support
-The platform implements support for the **Debian 11** “bullseye” OS templates on all the PaaS installations (available for all platforms starting with the PaaS 6.0 release). It is an LTS (Long Term Support) version with an estimated support period of five years. The new release provides a massive update of the default packages list, kernel support for the exFAT filesystem, and many other improvements, optimizations, and security fixes. For detailed information, refer to the official [Debian 11 release notes](1).
 
-Also, Debian 11 was added as an out-of-box [Elastic VPS](1) stack in the platform dashboard.
+The platform implements support for the **Debian 11** “bullseye” OS templates on all the PaaS installations (available for all platforms starting with the PaaS 6.0 release). It is an LTS (Long Term Support) version with an estimated support period of five years. The new release provides a massive update of the default packages list, kernel support for the exFAT filesystem, and many other improvements, optimizations, and security fixes. For detailed information, refer to the official [Debian 11 release notes](https://cloudmydc.com/).
+
+Also, Debian 11 was added as an out-of-box [Elastic VPS](https://cloudmydc.com/) stack in the platform dashboard.
 
 <div style={{
     display:'flex',
@@ -197,7 +198,7 @@ Also, Debian 11 was added as an out-of-box [Elastic VPS](1) stack in the platfor
 
 </div>
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -210,9 +211,10 @@ Also, Debian 11 was added as an out-of-box [Elastic VPS](1) stack in the platfor
 </div>
 
 ## Pop-Up Notifications for Interrupted OnBeforeInit Event
-In the current PaaS 6.1.3 release, the ability to show dashboard notifications for interrupted ***onBeforeInit*** events was implemented. Such a possibility will help JPS package and CS scripts developers to implement better UI/UX for their solutions.
 
-Add the following code to interrupt your ***onBeforeInit*** event with the dashboard notification:
+In the current PaaS 6.1.3 release, the ability to show dashboard notifications for interrupted **_onBeforeInit_** events was implemented. Such a possibility will help JPS package and CS scripts developers to implement better UI/UX for their solutions.
+
+Add the following code to interrupt your **_onBeforeInit_** event with the dashboard notification:
 
 ```bash
 return { type: "info|warning|error", message: "Your custom message." };
@@ -228,7 +230,7 @@ return { type: "info|warning|error", message: "Your custom message." };
 
 </div>
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -362,12 +364,12 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
 </div>
 
 ## Software Stack Versions
+
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](1) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
-
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -380,8 +382,8 @@ The most accurate and up-to-date list of the certified [software stack versions]
 </div>
 
 ## Bug Fixes
-In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.3 release:
 
+In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.3 release:
 
 <div style={{
         width: '100%',

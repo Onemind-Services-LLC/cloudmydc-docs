@@ -332,12 +332,13 @@ Fixed
 </div>
 
 ## Topology Wizard Improvements
-A major overhaul of the topology builder for the environment wizard was performed in the current 6.1 PaaS release. The main change is the implementation of the ability to search for the required [software stack](1) and add it to any layer. The standard approach recommends the following topology structure from top to bottom:
 
-- **load balancers** (*green blocks*)
-- **application servers** (*blue*)
-- **databases** (*orange*)
-- **extra** (*gray*)
+A major overhaul of the topology builder for the environment wizard was performed in the current 6.1 PaaS release. The main change is the implementation of the ability to search for the required [software stack](https://cloudmydc.com/) and add it to any layer. The standard approach recommends the following topology structure from top to bottom:
+
+- **load balancers** (_green blocks_)
+- **application servers** (_blue_)
+- **databases** (_orange_)
+- **extra** (_gray_)
 
 With the new change, the configuration of the custom topologies is significantly simplified. For example, you can easily add Kubernetes nodes into the application servers section in the middle of the wizard.
 
@@ -351,17 +352,17 @@ With the new change, the configuration of the custom topologies is significantly
 
 </div>
 
-Usually, when selecting a stack for a block ([layer](1)) in the topology wizard, users are provided with a list of recommended software for the specific role according to the block position. For now, a new “***More…***” option is added to the stack selection drop-down list to choose a template from any role. For example, you can easily add a database into the central block, which is commonly reserved for application servers.
+Usually, when selecting a stack for a block ([layer](https://cloudmydc.com/)) in the topology wizard, users are provided with a list of recommended software for the specific role according to the block position. For now, a new “**_More…_**” option is added to the stack selection drop-down list to choose a template from any role. For example, you can easily add a database into the central block, which is commonly reserved for application servers.
 
 In order to help locate the required stack quicker, the **Search** field can be accessed by clicking on the current stack name at the top of the list. Start typing to see the relevant results grouped by their role. Additionally, the search option was added for the engine/version field in the central part of the wizard when a particular stack is already selected.
 
 Other adjustments of the topology wizard include:
 
-- renamed the **Docker** tab to **Custom** (since different [container types](1) are available - Kubernetes, Docker Native, etc.), adjusted the corresponding icon and descriptions of the available options
-- added the default **Storage** block to the ***.NET*** tab
-- implemented ***tags search*** when working with custom containers based on the Docker images in topology wizard and during [container redeploy](1)
+- renamed the **Docker** tab to **Custom** (since different [container types](https://cloudmydc.com/) are available - Kubernetes, Docker Native, etc.), adjusted the corresponding icon and descriptions of the available options
+- added the default **Storage** block to the **_.NET_** tab
+- implemented **_tags search_** when working with custom containers based on the Docker images in topology wizard and during [container redeploy](https://cloudmydc.com/)
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -374,12 +375,12 @@ Other adjustments of the topology wizard include:
 </div>
 
 ## GlusterFS Native Client for Storage Cluster
-Starting with the 6.1 platform release, [Shared Storage Cluster](1) provides support of the **Gluster Native Client** for distributed shared (cloud) storage. Such a change allows connecting clients over the FUSE interface (in addition to the standard NFS).
+
+Starting with the 6.1 platform release, [Shared Storage Cluster](https://cloudmydc.com/) provides support of the **Gluster Native Client** for distributed shared (cloud) storage. Such a change allows connecting clients over the FUSE interface (in addition to the standard NFS).
 
 Compared to the **NFS** protocol, GlusterFS offers greater reliability. It operates with multiple servers and is recommended for cases that require high concurrency, high performance of the write operations, and failover recovery upon emergencies.
 
-Currently, only the Shared Storage Cluster can export data using GlusterFS (i.e. as a Gluster Native server). At the same time, any node (except *alpine-based* containers) can operate as a client and mount data via the GlusterFS protocol.
-
+Currently, only the Shared Storage Cluster can export data using GlusterFS (i.e. as a Gluster Native server). At the same time, any node (except _alpine-based_ containers) can operate as a client and mount data via the GlusterFS protocol.
 
 <div style={{
     display:'flex',
@@ -393,12 +394,12 @@ Currently, only the Shared Storage Cluster can export data using GlusterFS (i.e.
 
 When selecting a protocol, as a general rule, you choose NFS for better performance and Gluster Native for reliability:
 
-- **[NFS](1)** - straightforward file system protocol, designed for accelerated processing and high performance
-- **[Gluster Native](1)** (FUSE) - reliable file system protocol with automatic replication of the mounted data, designed for data backup and failover (requires less CPU/disk than NFS)
+- **[NFS](https://cloudmydc.com/)** - straightforward file system protocol, designed for accelerated processing and high performance
+- **[Gluster Native](https://cloudmydc.com/)** (FUSE) - reliable file system protocol with automatic replication of the mounted data, designed for data backup and failover (requires less CPU/disk than NFS)
 
-You can learn more about the [architecture implementation](1) of GlusterFS from the official documentation.
+You can learn more about the [architecture implementation](https://cloudmydc.com/) of GlusterFS from the official documentation.
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -410,17 +411,17 @@ You can learn more about the [architecture implementation](1) of GlusterFS from 
     </a>
 </div>
 
-
 ## Custom Domains Tab Improvements
-The platform provides a [Domain Binding](1) option that allows configuring custom domains for environments that are accessed via [Shared Load Balancer](1) (i.e. without public IP). The process is simple - you just need to create the appropriate CNAME or ANAME record for your domain and bind it to the environment via the platform dashboard.
+
+The platform provides a [Domain Binding](https://cloudmydc.com/) option that allows configuring custom domains for environments that are accessed via [Shared Load Balancer](https://cloudmydc.com/) (i.e. without public IP). The process is simple - you just need to create the appropriate CNAME or ANAME record for your domain and bind it to the environment via the platform dashboard.
 
 :::danger Note
 
-For environments that are accessed through the [public IP](1) (recommended for production), you don’t need to bind domains via the dashboard. Just configure **[A Record](1)** in your DNS panel to map a custom domain directly to the required IP address.
+For environments that are accessed through the [public IP](https://cloudmydc.com/) (recommended for production), you don’t need to bind domains via the dashboard. Just configure **[A Record](https://cloudmydc.com/)** in your DNS panel to map a custom domain directly to the required IP address.
 
 :::
 
-In order to clarify the process to users, the appropriate specifics and detailed steps were added to the ***Custom Domains*** tab. For further convenience, the exact environment domain that should be used for CNAME or ANAME records was placed in a separate field with a quick copy button. Another UI adjustment is that the form explicitly denotes if the current environment does not have any bound domains.
+In order to clarify the process to users, the appropriate specifics and detailed steps were added to the **_Custom Domains_** tab. For further convenience, the exact environment domain that should be used for CNAME or ANAME records was placed in a separate field with a quick copy button. Another UI adjustment is that the form explicitly denotes if the current environment does not have any bound domains.
 
 <div style={{
     display:'flex',
@@ -432,10 +433,9 @@ In order to clarify the process to users, the appropriate specifics and detailed
 
 </div>
 
-Additionally, the **[Swap Domains](1)** section was provided with a list of bound domains. As a result, you can view the list of the current and target environment domains (in the Domain Binding and Swap Domains subsections, respectively).
+Additionally, the **[Swap Domains](https://cloudmydc.com/)** section was provided with a list of bound domains. As a result, you can view the list of the current and target environment domains (in the Domain Binding and Swap Domains subsections, respectively).
 
-
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -446,15 +446,14 @@ Additionally, the **[Swap Domains](1)** section was provided with a list of boun
         Back to the top
     </a>
 </div>
-
 
 ## Apache PHP Redeployment Amendments
-Some adjustments were applied to the backups created via the [redeploy functionality](1) on the **Apache PHP** stacks. In addition to the latest backup (***{file_name}.backup***), the platform will create and keep a copy of the required config files for every redeployment to a different tag (***{file_name}.{time_stamp}***). Such an improvement allows you to track the changes better, simplifying analysis and rollback in case of necessity.
 
-Also, when redeploying to the same tag, the platform won’t overwrite the existing ***php.ini*** file.
+Some adjustments were applied to the backups created via the [redeploy functionality](https://cloudmydc.com/) on the **Apache PHP** stacks. In addition to the latest backup (**_{file_name}.backup_**), the platform will create and keep a copy of the required config files for every redeployment to a different tag (**_{file_name}.{time_stamp}_**). Such an improvement allows you to track the changes better, simplifying analysis and rollback in case of necessity.
 
+Also, when redeploying to the same tag, the platform won’t overwrite the existing **_php.ini_** file.
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -466,8 +465,8 @@ Also, when redeploying to the same tag, the platform won’t overwrite the exist
     </a>
 </div>
 
-
 ## Default File Permissions Adjustments
+
 Starting with the PaaS 6.1 release, file permissions for containers after an environment creation are adjusted to match the default values required for some of the most popular applications. For example, such a change ensures that cPanel can be deployed without additional configurations.
 
 <div style={{
@@ -481,6 +480,7 @@ Starting with the PaaS 6.1 release, file permissions for containers after an env
 </div>
 
 ## Keytool Utility for Java Containers
+
 In order to allow a straightforward use of the Java keytool utility, a small adjustment was made to the Java-based containers. Namely, the application was added to the sudoers file, which allows using keytool with the sudo rights and adjusting the container’s keystore even if it belongs to the root user.
 
 <div style={{
@@ -494,6 +494,7 @@ In order to allow a straightforward use of the Java keytool utility, a small adj
 </div>
 
 ## JEM Commands Validation
+
 JEM (Jelastic Environment Manager) is a platform component responsible for all operations with containers. It supports a list of commands that users can call to perform specific actions on the containers (e.g. jem service restart). In order to improve user experience with the module, error notification was added for the cases when an incorrect module or action is specified for the jem command.
 
 <div style={{
@@ -507,11 +508,12 @@ JEM (Jelastic Environment Manager) is a platform component responsible for all o
 </div>
 
 ## OnBeforeInit CS Event Improvements
-***[OnBeforeInit](1)*** is a Cloud Scripting event that is triggered before application installation. It is usually used to dynamically configure the installation form based on some specifics (e.g. account quotas). In the current 6.1 PaaS upgrade, the onBeforeInit event was improved to support placeholders, allowing validation of the collaborator account’s permissions. Such a change ensures that the JPS installation frame can be correctly customized when installing as a [collaborator](1).
 
-Additionally, a new trigger condition was added for the onBeforeInit event. For now, it is possible to implement some custom initialization actions upon clicking a [custom button](1).
+**_[OnBeforeInit](https://cloudmydc.com/)_** is a Cloud Scripting event that is triggered before application installation. It is usually used to dynamically configure the installation form based on some specifics (e.g. account quotas). In the current 6.1 PaaS upgrade, the onBeforeInit event was improved to support placeholders, allowing validation of the collaborator account’s permissions. Such a change ensures that the JPS installation frame can be correctly customized when installing as a [collaborator](https://cloudmydc.com/).
 
-[More info](1)
+Additionally, a new trigger condition was added for the onBeforeInit event. For now, it is possible to implement some custom initialization actions upon clicking a [custom button](https://cloudmydc.com/).
+
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -524,9 +526,10 @@ Additionally, a new trigger condition was added for the onBeforeInit event. For 
 </div>
 
 ## Debian 8 End-of-Life
-D**ebian 8 “Jessie”** software stack [LTS support](1) has officially ended. It will no longer get any updates and security fixes. In the current PaaS 6.1 release, this version was removed from the list of [supported OS templates](1) to ensure that users operate with reliable and secure stacks only. The platform restricts the creation of new Debian 8 containers, but all existing ones remain fully operable. However, we strongly recommend updating such instances to the 9th or 10th release versions via built-in [redeploy functionality](1).
 
-[More info](1)
+D**ebian 8 “Jessie”** software stack [LTS support](https://cloudmydc.com/) has officially ended. It will no longer get any updates and security fixes. In the current PaaS 6.1 release, this version was removed from the list of [supported OS templates](https://cloudmydc.com/) to ensure that users operate with reliable and secure stacks only. The platform restricts the creation of new Debian 8 containers, but all existing ones remain fully operable. However, we strongly recommend updating such instances to the 9th or 10th release versions via built-in [redeploy functionality](https://cloudmydc.com/).
+
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -539,6 +542,7 @@ D**ebian 8 “Jessie”** software stack [LTS support](1) has officially ended. 
 </div>
 
 ## VCS Deployment Errors Clarification
+
 In the current 6.1 platform version, error notifications for the failed VCS deployment operations were reviewed and adjusted to clarify the root cause of the issue or provide pointers for further troubleshooting. The new texts are aimed to help developers quicker resolve any problems related to the deployments from Git/SVN repositories.
 
 <div style={{
@@ -550,7 +554,6 @@ In the current 6.1 platform version, error notifications for the failed VCS depl
         Back to the top
     </a>
 </div>
-
 
 ## Fixes Compatible with Prior Versions
 
@@ -672,12 +675,12 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
 </div>
 
 ## Software Stack Versions
+
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](1) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
-
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -690,8 +693,8 @@ The most accurate and up-to-date list of the certified [software stack versions]
 </div>
 
 ## Bug Fixes
-In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.3 release:
 
+In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.3 release:
 
 <div style={{
         width: '100%',

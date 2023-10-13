@@ -3,6 +3,7 @@ sidebar_position: 16
 ---
 
 ---
+
 ## sidebar_position: 2
 
 import obj from './ReleaseNotes7.0.json'
@@ -189,7 +190,7 @@ Fixed
 
 The platform’s **_account collaboration_** feature is a powerful tool that allows multiple users to work on the same project. The core idea is straightforward - you can share your environment with other accounts on the platform. Additionally, different permissions can be provided to the collaboration members to cover various use cases.
 
-In the current 7.0 upgrade, the feature received a major rework, mainly focusing on extending its flexibility. Two focal points are **roles and policies** mechanics for advanced permission management and **integration with [environment groups](1)** to better organize shared components. All the features are wrapped in a new comprehensive UI:
+In the current 7.0 upgrade, the feature received a major rework, mainly focusing on extending its flexibility. Two focal points are **roles and policies** mechanics for advanced permission management and **integration with [environment groups](https://cloudmydc.com/)** to better organize shared components. All the features are wrapped in a new comprehensive UI:
 
 - **Shared by Me** - collaboration options for the primary account, it has three tabs:
   - **Members** - manages a list of collaboration members (invite new users, suspend or remove existing ones, customize shared environments, groups, roles, etc.)
@@ -211,11 +212,11 @@ The new collaboration flow remains the same in principle but much more configura
 
 You can find information on even more changes to the collaboration feature (ability to temporarily suspend collaboration, role assigning algorithm, direct environment sharing, etc.) in the dedicated documentation:
 
-- [Collaboration Overview](1)
-- [Collaboration Roles & Policies](1)
-- [Create Collaboration](1)
-- [Collaboration User Experience](1)
-- [Share Environment](1)
+- [Collaboration Overview](https://cloudmydc.com/)
+- [Collaboration Roles & Policies](https://cloudmydc.com/)
+- [Create Collaboration](https://cloudmydc.com/)
+- [Collaboration User Experience](https://cloudmydc.com/)
+- [Share Environment](https://cloudmydc.com/)
 
 :::danger Note
 
@@ -223,7 +224,7 @@ During the upgrade, the platform automatically generates configurations equivale
 
 :::
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -237,31 +238,31 @@ During the upgrade, the platform automatically generates configurations equivale
 
 ## API Changes
 
-Below, you can find a list of all changes to the public API in the 7.0 platform version (compared to the preceding [6.3](1) ones):
+Below, you can find a list of all changes to the public API in the 7.0 platform version (compared to the preceding [6.3](https://cloudmydc.com/) ones):
 
 - in the **users** namespace:
-  - added a new **[collaboration](1)** service
-  - removed methods from the **[account](1)** service: _SetLinkedUserDisplayName_, _SetOwnerUserDisplayName_, _ConfirmLinkRequest_, _UnlinkLinkedUser_, _UnlinkOwnerUser_, _GetLinkedUsers_, _GetOwnerUsers_, _GetLinkedUsersByLogin_, _GetOwnerUsersByLogin_, _GetPayerQuotas_, _HazelcastPartitionsTest_, _LinkUsers_, _SetLinkedUserRole_, _SetLinkedUserDisplayName_, _SetOwnerUserDisplayName_, _ConfirmLinkRequest_, _UnlinkLinkedUser_, _UnlinkOwnerUser_, _GetLinkedUsers_, _GetOwnerUsers_, _SendLinkRequest_, _LinkUsersInner_
+  - added a new **[collaboration](https://cloudmydc.com/)** service
+  - removed methods from the **[account](https://cloudmydc.com/)** service: _SetLinkedUserDisplayName_, _SetOwnerUserDisplayName_, _ConfirmLinkRequest_, _UnlinkLinkedUser_, _UnlinkOwnerUser_, _GetLinkedUsers_, _GetOwnerUsers_, _GetLinkedUsersByLogin_, _GetOwnerUsersByLogin_, _GetPayerQuotas_, _HazelcastPartitionsTest_, _LinkUsers_, _SetLinkedUserRole_, _SetLinkedUserDisplayName_, _SetOwnerUserDisplayName_, _ConfirmLinkRequest_, _UnlinkLinkedUser_, _UnlinkOwnerUser_, _GetLinkedUsers_, _GetOwnerUsers_, _SendLinkRequest_, _LinkUsersInner_
 - in the **marketplace** namespace:
-  - added new **[favorite](1)**, **[installation](1)**, and **[app services](1)**
-  - added the **_GetAppInfo_** and **_GetAppSettings_** methods to the **[jps](1)** service
-  - removed the **_AttachAddon_** and **_DetachAddon_** methods from the **[jps](1)** service
-  - added **_ReadLog_** and **_ClearLog_** methods to the [console](1) service
-- in the **environment > [control](1)** service:
+  - added new **[favorite](https://cloudmydc.com/)**, **[installation](https://cloudmydc.com/)**, and **[app services](https://cloudmydc.com/)**
+  - added the **_GetAppInfo_** and **_GetAppSettings_** methods to the **[jps](https://cloudmydc.com/)** service
+  - removed the **_AttachAddon_** and **_DetachAddon_** methods from the **[jps](https://cloudmydc.com/)** service
+  - added **_ReadLog_** and **_ClearLog_** methods to the [console](https://cloudmydc.com/) service
+- in the **environment > [control](https://cloudmydc.com/)** service:
   - added new **_GetSSHAccessInfo_**, **_GetEndpoints_**, and **_Exports_** methods
   - added the **_ownerUid_** optional parameter for the **_CreateEnvironment_**, **_GetTemplates_**, and **_GetEnvs_** methods
   - added the **_envGroups_** optional parameter for the **_CreateEnvironment_** method
   - merged the **_envGroup_** parameter with the envGroups one and made mandatory for the **_AttachEnvGroup_**, **_DetachEnvGroup_**, and **_SetEnvGroup_** methods
   - added the **_lazy_** optional parameter for the **_GetEnvInfo_** method
-- in the **environment > [group](1)** service:
+- in the **environment > [group](https://cloudmydc.com/)** service:
   - added new **_SetEnv_** and **_SetIsolationEnabled_** methods
   - added the **_ownerUid_** optional parameter for the **_AttachEnv_**, **_DetachEnv_**, **_CreateGroup_**, **_EditGroup_**, **_RemoveGroup_**, and **_GetGroups_** methods
   - merged the **_envGroup_** parameter with the envGroups one and made mandatory for the **_AttachEnv_**, and **_DetachEnv_** methods
   - added the **_targetAppid_** optional parameter for the **_GetGroups_** method
-- added a new **environment > [export](1)** service
-- added new methods to the **environment > [trigger](1)** service: _AddAutoScalingTrigger_, _EditAutoScalingTrigger_, _SetAutoScalingTriggerEnabled_, _GetAutoScalingTriggers_, _DeleteAutoScalingTrigger_, _AutoScalingHistory_, _AddLoadAlertTrigger_, _EditLoadAlertTrigger_, _SetLoadAlertTriggerEnabled_, _GetLoadAlertTriggers_, _DeleteLoadAlertTrigger_, _LoadAlertHistory_
+- added a new **environment > [export](https://cloudmydc.com/)** service
+- added new methods to the **environment > [trigger](https://cloudmydc.com/)** service: _AddAutoScalingTrigger_, _EditAutoScalingTrigger_, _SetAutoScalingTriggerEnabled_, _GetAutoScalingTriggers_, _DeleteAutoScalingTrigger_, _AutoScalingHistory_, _AddLoadAlertTrigger_, _EditLoadAlertTrigger_, _SetLoadAlertTriggerEnabled_, _GetLoadAlertTriggers_, _DeleteLoadAlertTrigger_, _LoadAlertHistory_
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -396,9 +397,9 @@ PaaS 7.0
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](1) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',

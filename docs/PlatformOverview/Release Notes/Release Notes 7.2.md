@@ -217,6 +217,7 @@ Fixed
 </div>
 
 ## Platform Rebranding
+
 Continuing the smooth integration of the PaaS (formerly known as Jelastic) with the Virtuozzo family, the platform name was changed to **Vitruozzo Application Platform**. The appropriate changes are integrated into the platform dashboard default images, labeling, documentation references, Hello World application, etc.
 
 <div style={{
@@ -240,7 +241,8 @@ Continuing the smooth integration of the PaaS (formerly known as Jelastic) with 
 </div>
 
 ## Collaboration Policy for Custom Commands
-In order to extend the capabilities of the [account collaboration](1) feature even further and ensure the possibility of providing full access to the shared account, a new **Execute CMD** policy was added. If included in the collaboration role, it allows members to execute custom CMD commands on the shared environments. This permission may be required when installing some complex JPS solutions.
+
+In order to extend the capabilities of the [account collaboration](https://cloudmydc.com/) feature even further and ensure the possibility of providing full access to the shared account, a new **Execute CMD** policy was added. If included in the collaboration role, it allows members to execute custom CMD commands on the shared environments. This permission may be required when installing some complex JPS solutions.
 
 <div style={{
     display:'flex',
@@ -263,7 +265,8 @@ In order to extend the capabilities of the [account collaboration](1) feature ev
 </div>
 
 ## Environment Selection Field Adjustment
-In the current Virtuozzo Application Platform 7.2 release, the dashboard’s combo-boxes for environment selection were improved. For now, the displayed items provide better clarity by showing both the [custom alias](1) (if specified) and the environment name. Such implementation uniquely identifies the provided options and helps avoid possible confusion when several environments have similar aliases.
+
+In the current Virtuozzo Application Platform 7.2 release, the dashboard’s combo-boxes for environment selection were improved. For now, the displayed items provide better clarity by showing both the [custom alias](https://cloudmydc.com/) (if specified) and the environment name. Such implementation uniquely identifies the provided options and helps avoid possible confusion when several environments have similar aliases.
 
 <div style={{
     display:'flex',
@@ -286,15 +289,16 @@ In the current Virtuozzo Application Platform 7.2 release, the dashboard’s com
 </div>
 
 ## CentOS Stream 8 OS Support
-Virtuozzo Application Platform supports the most popular [operating system templates](1), which allows using multiple different solutions from Docker Hub as [custom containers](1). Due to the recent CentOS Linux 8 end of life, the recommended alternative template was added to the platform – **CentOS Stream 8**. You can find a [comparison of these two versions](1) in the official documentation.
+
+Virtuozzo Application Platform supports the most popular [operating system templates](https://cloudmydc.com/), which allows using multiple different solutions from Docker Hub as [custom containers](https://cloudmydc.com/). Due to the recent CentOS Linux 8 end of life, the recommended alternative template was added to the platform – **CentOS Stream 8**. You can find a [comparison of these two versions](https://cloudmydc.com/) in the official documentation.
 
 :::tip Note
 
-Do not confuse OS templates (base image for containers) support with container templates ([stacks](1)).
+Do not confuse OS templates (base image for containers) support with container templates ([stacks](https://cloudmydc.com/)).
 
 :::
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -426,12 +430,12 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
 </div>
 
 ## Software Stack Versions
+
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](1) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
-
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -444,8 +448,8 @@ The most accurate and up-to-date list of the certified [software stack versions]
 </div>
 
 ## Bug Fixes
-In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 7.2 release:
 
+In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 7.2 release:
 
 <div style={{
         width: '100%',

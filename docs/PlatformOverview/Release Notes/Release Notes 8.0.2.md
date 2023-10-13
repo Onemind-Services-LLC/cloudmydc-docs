@@ -221,7 +221,8 @@ Fixed
 </div>
 
 ## SSH Key Types Support
-The ***ECDSA*** key type is rapidly gaining popularity as an alternative to the standard RSA keys. As a result of such a growing demand, the platform implements support of this new SSH key type in the current 8.0.2 PaaS version. Additionally, the deprecated ***ssh-dss*** (DSA) public key algorithm is now explicitly forbidden instead of just being recommended against. The platform will show a warning about insufficient security level when trying to add a DSA key. However, the already existing keys will not be affected in any way.
+
+The **_ECDSA_** key type is rapidly gaining popularity as an alternative to the standard RSA keys. As a result of such a growing demand, the platform implements support of this new SSH key type in the current 8.0.2 PaaS version. Additionally, the deprecated **_ssh-dss_** (DSA) public key algorithm is now explicitly forbidden instead of just being recommended against. The platform will show a warning about insufficient security level when trying to add a DSA key. However, the already existing keys will not be affected in any way.
 
 Currently, the platform supports the following SSH key types:
 
@@ -229,7 +230,7 @@ Currently, the platform supports the following SSH key types:
 - EdDSA
 - RSA
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -242,7 +243,8 @@ Currently, the platform supports the following SSH key types:
 </div>
 
 ## Extended Environment Metadata
-Each environment on the platform has its common information stored via the dedicated JSON file. Such implementation simplifies various internal processes by allowing PaaS to get the required data quickly. Additionally, this data is utilized during the [environment export](1) operation. In the current platform upgrade, environments’ metadata was extended with a JSON field for various additional information (e.g. *ProjectName* or *ProjectScope*).
+
+Each environment on the platform has its common information stored via the dedicated JSON file. Such implementation simplifies various internal processes by allowing PaaS to get the required data quickly. Additionally, this data is utilized during the [environment export](https://cloudmydc.com/) operation. In the current platform upgrade, environments’ metadata was extended with a JSON field for various additional information (e.g. _ProjectName_ or _ProjectScope_).
 
 <div style={{
         display: 'flex',
@@ -255,11 +257,12 @@ Each environment on the platform has its common information stored via the dedic
 </div>
 
 ## Custom Data in Cloud Scripting Response
-[Cloud Scripting](1) is a platform-dedicated programming language developed for application packaging, operation automation, and complex CI/CD flows integration. This powerful automation tool implements popular solutions such as the Let’s Encrypt add-on or various [auto-clusters](1). It can also be utilized by platform end-users to automate their own operations.
+
+[Cloud Scripting](https://cloudmydc.com/) is a platform-dedicated programming language developed for application packaging, operation automation, and complex CI/CD flows integration. This powerful automation tool implements popular solutions such as the Let’s Encrypt add-on or various [auto-clusters](https://cloudmydc.com/). It can also be utilized by platform end-users to automate their own operations.
 
 In the current 8.0.2 PaaS release, the ability to return custom data with the API request response was implemented. For example, it is used to add information on the skipped domains to the Let’s Encrypt add-on installation response.
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -272,7 +275,8 @@ In the current 8.0.2 PaaS release, the ability to return custom data with the AP
 </div>
 
 ## SSL Installation Error Description
-The platform offers multiple ways of working with the [SSL](1) security protocol for establishing an encrypted connection between environments and the web. However, sometimes the certificate installation fails without providing a user with a clear description of the issue. In order to help our customers, the non-descriptive “SSL installed with Error!” message was replaced with a more detailed response that is based on the actually occurred problem.
+
+The platform offers multiple ways of working with the [SSL](https://cloudmydc.com/) security protocol for establishing an encrypted connection between environments and the web. However, sometimes the certificate installation fails without providing a user with a clear description of the issue. In order to help our customers, the non-descriptive “SSL installed with Error!” message was replaced with a more detailed response that is based on the actually occurred problem.
 
 <div style={{
         display: 'flex',
@@ -285,11 +289,12 @@ The platform offers multiple ways of working with the [SSL](1) security protocol
 </div>
 
 ## API Changes
-Below, you can find a list of all changes to the public API in the 8.0.2 platform version (compared to the preceding [7.3](1) ones):
 
-added new methods to the **[environment > control](1)** service that allow adding and managing custom data in the environment – ***AddEnvProperty***, ***RemoveEnvProperty***, ***ApplyEnvProperty***, ***GetEnvProperty***
+Below, you can find a list of all changes to the public API in the 8.0.2 platform version (compared to the preceding [7.3](https://cloudmydc.com/) ones):
 
-[More info](1)
+added new methods to the **[environment > control](https://cloudmydc.com/)** service that allow adding and managing custom data in the environment – **_AddEnvProperty_**, **_RemoveEnvProperty_**, **_ApplyEnvProperty_**, **_GetEnvProperty_**
+
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -421,12 +426,12 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
 </div>
 
 ## Software Stack Versions
+
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](1) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
-
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',

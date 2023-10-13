@@ -352,13 +352,13 @@ Fixed
 
 ## Windows VMs Support
 
-Starting with the PaaS 6.0 release, [Windows VM](1) support is implemented for the platforms. The feature availability depends on each particular service hosting provider as it requires additional configurations in order to be set up on a platform.
+Starting with the PaaS 6.0 release, [Windows VM](https://cloudmydc.com/) support is implemented for the platforms. The feature availability depends on each particular service hosting provider as it requires additional configurations in order to be set up on a platform.
 
 VM hosting at the platform is provided in a familiar way to the regular containers. Windows VM instances can be added via the topology wizard under the VPS section. However, there are a few peculiarities for virtual machines:
 
 - a small VM label is displayed on the stack image for better clarity
 - only fixed resources based on the several predefined plans (licenses) are available; the exact sizes and prices can vary for different platforms
-- the _[horizontal scaling](1)_ and IPv6 options are not available in the current implementation
+- the _[horizontal scaling](https://cloudmydc.com/)_ and IPv6 options are not available in the current implementation
 
 <div style={{
     display:'flex',
@@ -374,8 +374,8 @@ Virtual machines are visually highlighted in the dashboard via the dedicated VM 
 
 - Add-Ons - installs available pluggable modules (e.g. Env Start/Stop Scheduler)
 - Restart Node(s) - restarts a VM
-- Statistics - shows real-time and historical VM’s [resource consumption](1)
-- Remote Desktop - provides [RDP-related functionality](1) for Windows VM
+- Statistics - shows real-time and historical VM’s [resource consumption](https://cloudmydc.com/)
+- Remote Desktop - provides [RDP-related functionality](https://cloudmydc.com/) for Windows VM
 - Additionally - lists additional options (if any)
 
 <div style={{
@@ -390,7 +390,7 @@ Virtual machines are visually highlighted in the dashboard via the dedicated VM 
 
 Regardless of the actual consumption, VM Resources (vCPU and Memory) cost is always fixed, predefined by resource plan (license). Disk, Network, and Options are billed separately, just as for containers.
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -416,7 +416,7 @@ Tomcat and TomEE application servers provide support for the **_hot deploy_** fe
 
 </div>
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -430,7 +430,7 @@ Tomcat and TomEE application servers provide support for the **_hot deploy_** fe
 
 ## Non-Downgradable Software Stacks
 
-The platform provides out-of-the-box support for multiple [software stacks](1) to build topologies that meet the most demanding users' requirements. Moreover, most of the stacks have at least a few releases to choose from. These versions can be freely switched at any time due to the **[Containers Redeploy](1)** feature.
+The platform provides out-of-the-box support for multiple [software stacks](https://cloudmydc.com/) to build topologies that meet the most demanding users' requirements. Moreover, most of the stacks have at least a few releases to choose from. These versions can be freely switched at any time due to the **[Containers Redeploy](https://cloudmydc.com/)** feature.
 
 However, not all of the software solutions provide backward compatibility. If there are substantial differences between the releases, downgrading a software version can result in unforeseen problems. In the current PaaS 6.0 upgrade, all the stacks were analyzed to locate those vulnerable to the issue and explicitly restricted from downgrading during the redevelopment process.
 
@@ -465,9 +465,9 @@ Currently, redeployment to the lower version is forbidden on the following stack
 
 ## CentOS 6 End-of-Life
 
-**CentOS 6** software stack support has officially reached its [end-of-life](1). It will no longer get any updates and security fixes. In order to ensure that users operate with reliable and secure stacks only, CentOS 6 was removed from the list of [supported OS templates](1) on the platform. After the 6.0 upgrade, the creation of the new containers based on the CentOS 6 will not be possible, while any existing instance will remain fully operable. However, we strictly recommend updating to the 7th or 8th release versions via built-in [redeploy functionality](1).
+**CentOS 6** software stack support has officially reached its [end-of-life](https://cloudmydc.com/). It will no longer get any updates and security fixes. In order to ensure that users operate with reliable and secure stacks only, CentOS 6 was removed from the list of [supported OS templates](https://cloudmydc.com/) on the platform. After the 6.0 upgrade, the creation of the new containers based on the CentOS 6 will not be possible, while any existing instance will remain fully operable. However, we strictly recommend updating to the 7th or 8th release versions via built-in [redeploy functionality](https://cloudmydc.com/).
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -481,7 +481,7 @@ Currently, redeployment to the lower version is forbidden on the following stack
 
 ## Traffic Distributor Package Update
 
-**[Traffic Distributor](1)** is a package powered by the platform, which helps control traffic flow between environments. It is an easy-to-manage solution suitable for multiple use cases and hosting scenarios (Blue-Green Deploy, Failover Protection, A/B Testing). In the present 6.0 PaaS upgrade, PaaS team integrated the ability to choose between proxying traffic to backends over SSL or without it. The corresponding **HTTPS** config within the **_Traffic Distributor_** package UI is shown in the image below:
+**[Traffic Distributor](https://cloudmydc.com/)** is a package powered by the platform, which helps control traffic flow between environments. It is an easy-to-manage solution suitable for multiple use cases and hosting scenarios (Blue-Green Deploy, Failover Protection, A/B Testing). In the present 6.0 PaaS upgrade, PaaS team integrated the ability to choose between proxying traffic to backends over SSL or without it. The corresponding **HTTPS** config within the **_Traffic Distributor_** package UI is shown in the image below:
 
 <div style={{
     display:'flex',
@@ -495,7 +495,7 @@ Currently, redeployment to the lower version is forbidden on the following stack
 
 Also, the default value for the **_proxy_connect_timeout_** setting in Traffic Distributor was increased to 60 seconds to reduce the number of reconfigurations due to the false-positive backend failures. However, upon selecting the Failover routing method, this parameter is automatically changed to the 20 seconds value.
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -509,7 +509,7 @@ Also, the default value for the **_proxy_connect_timeout_** setting in Traffic D
 
 ## Extended Logs in Tasks Manager
 
-Dashboard’s [tasks manager](1) provides all the vital information on the account activities. It helps developers with troubleshooting, issues analysis, and action tracking. In the current 6.0 PaaS release, the tasks manager was improved by providing additional **_log_** information for errors. This log field is present in the response of some error messages and contains valuable data for debugging.
+Dashboard’s [tasks manager](https://cloudmydc.com/) provides all the vital information on the account activities. It helps developers with troubleshooting, issues analysis, and action tracking. In the current 6.0 PaaS release, the tasks manager was improved by providing additional **_log_** information for errors. This log field is present in the response of some error messages and contains valuable data for debugging.
 
 <div style={{
         display: 'flex',
@@ -537,7 +537,7 @@ The platform has two types of the “No free disk space” error. The first one 
 
 ## Binding Busy Domain Error Clarification
 
-In the current PaaS 6.0 upgrade, a validation message for the binding of a [custom domain](1) that is already used by some other environment on the platform was improved. For now, instead of a general error, it explicitly notifies that the specified domain is already in use. Moreover, if an external domain belongs to the same account, the error message will point to the appropriate environment.
+In the current PaaS 6.0 upgrade, a validation message for the binding of a [custom domain](https://cloudmydc.com/) that is already used by some other environment on the platform was improved. For now, instead of a general error, it explicitly notifies that the specified domain is already in use. Moreover, if an external domain belongs to the same account, the error message will point to the appropriate environment.
 
 <div style={{
     display:'flex',
@@ -575,7 +575,7 @@ Logrotate is a standard UNIX rotation and compression tool for log files. The pl
 
 ## Extended Target Node Filtering in Cloud Scripting
 
-The **_[targetNodes](1)_** parameter is an optional config for the JPS add-on solutions that defines environments suitable for installation. In the current PaaS 6.0 release, its functionality was extended with an additional **guestOSType** filter, which lists the suitable OS templates for the add-on installation. The possible values are:
+The **_[targetNodes](https://cloudmydc.com/)_** parameter is an optional config for the JPS add-on solutions that defines environments suitable for installation. In the current PaaS 6.0 release, its functionality was extended with an additional **guestOSType** filter, which lists the suitable OS templates for the add-on installation. The possible values are:
 
 - _LINUX_
 - _WINDOWS2008_
@@ -585,7 +585,7 @@ The **_[targetNodes](1)_** parameter is an optional config for the JPS add-on so
 
 For example, this parameter can be used to hide unnecessary (not supported) add-ons for the Windows-based nodes and vice versa.
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -599,7 +599,7 @@ For example, this parameter can be used to hide unnecessary (not supported) add-
 
 ## API Changes
 
-Below, you can find a list of all changes to the public API in the 6.0 platform version (compared to the preceding [5.9.8](1) ones):
+Below, you can find a list of all changes to the public API in the 6.0 platform version (compared to the preceding [5.9.8](https://cloudmydc.com/) ones):
 
 - added new **_Get_**, **_SetSLBAccessEnabled_**, **_SetOptions_**, and **_ApplyData_** methods to the **_nodegroup_** service
 - added a new **_GetNodeTags_** method to the **control** service
@@ -608,7 +608,7 @@ Below, you can find a list of all changes to the public API in the 6.0 platform 
 
 Also, all the deprecated methods were explicitly marked in the API documentation.
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -743,9 +743,9 @@ Below, you can find the fixes that were implemented in the PaaS 6.0 release and 
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](1) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',

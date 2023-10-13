@@ -256,7 +256,8 @@ Fixed
 </div>
 
 ## Dashboard Performance Optimization
-One of the major benefits the platform is renowned for is a versatile and robust user interface ([dashboard](1)). It provides users with all the necessary tools to track and manage all hosted resources. However, when working with a large number of environments on the account (over 100), the drop in the dashboard’s performance can be noted. In order to resolve the issue and improve customers' experience, several internal optimizations were applied in the 7.3 platform release to boost the operation speed when working with a lot of environments.
+
+One of the major benefits the platform is renowned for is a versatile and robust user interface ([dashboard](https://cloudmydc.com/)). It provides users with all the necessary tools to track and manage all hosted resources. However, when working with a large number of environments on the account (over 100), the drop in the dashboard’s performance can be noted. In order to resolve the issue and improve customers' experience, several internal optimizations were applied in the 7.3 platform release to boost the operation speed when working with a lot of environments.
 
 Among the applied changes, the most notable are:
 
@@ -275,11 +276,12 @@ Among the applied changes, the most notable are:
 </div>
 
 ## Platform Optimizations
+
 Below you can find a number of optimizations implemented in the current 7.3 release to boost performance and enhance the user experience when working with the platform:
 
 - Optimized SSL certificate requests to prevent a vast number of queries to the platform database. It results in a faster response of the hosted services in case of multiple simultaneous requests.
-- Improved the security of some platform cookies with the additional “*HttpOnly*” and “*Secure*” flags.
-- Changed the error code for the “*limit_conn*” problem from ***503*** to ***429***. The new code better corresponds to the generally accepted rule of code interpreting (i.e. *4xx* - client error; *5xx* - server error).
+- Improved the security of some platform cookies with the additional “_HttpOnly_” and “_Secure_” flags.
+- Changed the error code for the “_limit_conn_” problem from **_503_** to **_429_**. The new code better corresponds to the generally accepted rule of code interpreting (i.e. _4xx_ - client error; _5xx_ - server error).
 
 <div style={{
         display: 'flex',
@@ -292,7 +294,8 @@ Below you can find a number of optimizations implemented in the current 7.3 rele
 </div>
 
 ## Ubuntu 22 Support
-The platform introduces support of the latest Long Term Support release for one of the world’s most popular Linux distributions - ***Ubuntu 22.04*** LTS (Jammy Jellyfish). The update integrates the base [operating system template](1) (for custom Docker containers) and adds the Ubuntu 22.04 VPS stack. Moreover, the distribution support is automatically available for all platform versions since the 6.0.2 release via the appropriate patches.
+
+The platform introduces support of the latest Long Term Support release for one of the world’s most popular Linux distributions - **_Ubuntu 22.04_** LTS (Jammy Jellyfish). The update integrates the base [operating system template](https://cloudmydc.com/) (for custom Docker containers) and adds the Ubuntu 22.04 VPS stack. Moreover, the distribution support is automatically available for all platform versions since the 6.0.2 release via the appropriate patches.
 
 <div style={{
     display:'flex',
@@ -304,7 +307,7 @@ The platform introduces support of the latest Long Term Support release for one 
 
 </div>
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -317,7 +320,8 @@ The platform introduces support of the latest Long Term Support release for one 
 </div>
 
 ## Show Logs Button in Dashboard Notifications
-In the current 7.3 platform release, the ability to display the **Show Logs** button within the *‘warning’* and *‘error’* dashboard notification was implemented. Previously, such functionality was available for the *‘info’* notifications only. The implementation allows custom package developers to handle errors more naturally. Namely, the log file may contain additional information on the occurred issue and even some suggested resolution steps.
+
+In the current 7.3 platform release, the ability to display the **Show Logs** button within the _‘warning’_ and _‘error’_ dashboard notification was implemented. Previously, such functionality was available for the _‘info’_ notifications only. The implementation allows custom package developers to handle errors more naturally. Namely, the log file may contain additional information on the occurred issue and even some suggested resolution steps.
 
 <div style={{
         display: 'flex',
@@ -330,15 +334,16 @@ In the current 7.3 platform release, the ability to display the **Show Logs** bu
 </div>
 
 ## API to Move Public IPs
-The new ***MoveExtIP*** API method allows moving external IP addresses from the source node to the target node. It complements the existing [SwapExtIps](1) API, making the management of existing public IPs more flexible. Additionally, the new method supports nodes with multiple IPs and can manage them in a single API call.
 
-The following parameters should be specified for the ***MoveExtIP*** method:
+The new **_MoveExtIP_** API method allows moving external IP addresses from the source node to the target node. It complements the existing [SwapExtIps](https://cloudmydc.com/) API, making the management of existing public IPs more flexible. Additionally, the new method supports nodes with multiple IPs and can manage them in a single API call.
+
+The following parameters should be specified for the **_MoveExtIP_** method:
 
 - **envName** - source environment name
 - **session** - user session or personal access token
 - **sourceNodeId** - source node ID (from the source environment)
 - **targetNodeId** - target node ID
-- **ips** - a comma- or semicolon-separated list of IP addresses that should be transferred (use “*” to move all the source node external IP addresses)
+- **ips** - a comma- or semicolon-separated list of IP addresses that should be transferred (use “\*” to move all the source node external IP addresses)
 
 :::tip Tip
 
@@ -346,7 +351,7 @@ The UI implementation of moving public IPs will be provided in future releases.
 
 :::
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -359,12 +364,13 @@ The UI implementation of moving public IPs will be provided in future releases.
 </div>
 
 ## API Changes
-Below, you can find a list of all changes to the public API in the 7.3 platform version (compared to the preceding [7.1](1) ones):
 
-- Implemented a new ***MoveExtIP*** API method (the **binder** service) that can [move external IP addresses](1) between containers and can operate with multiple IPs
-- Added a new ***GetBasicEnvsInfo*** API method (the **control** service) to improve the [dashboard loading speed](1)
+Below, you can find a list of all changes to the public API in the 7.3 platform version (compared to the preceding [7.1](https://cloudmydc.com/) ones):
 
-[More info](1)
+- Implemented a new **_MoveExtIP_** API method (the **binder** service) that can [move external IP addresses](https://cloudmydc.com/) between containers and can operate with multiple IPs
+- Added a new **_GetBasicEnvsInfo_** API method (the **control** service) to improve the [dashboard loading speed](https://cloudmydc.com/)
+
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -496,12 +502,12 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
 </div>
 
 ## Software Stack Versions
+
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](1) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
-
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -514,8 +520,8 @@ The most accurate and up-to-date list of the certified [software stack versions]
 </div>
 
 ## Bug Fixes
-In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 7.3 release:
 
+In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 7.3 release:
 
 <div style={{
         width: '100%',

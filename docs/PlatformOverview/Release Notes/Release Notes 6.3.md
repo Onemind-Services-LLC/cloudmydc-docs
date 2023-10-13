@@ -218,12 +218,12 @@ Fixed
 </div>
 
 ## Password Policy
+
 User accounts security is one of the top priorities for the platform. In the current 6.3 platform upgrade, a stricter password policy was implemented to ensure our customers' safety. The new default requirements are:
 
 - the minimum length of 10 characters
 - at least one symbol for each of the following categories: numbers, lowercase and uppercase letters, special characters
 - must not repeat any of the previous passwords
-
 
 <div style={{
     display:'flex',
@@ -235,7 +235,7 @@ User accounts security is one of the top priorities for the platform. In the cur
 
 </div>
 
-Also, account passwords remain valid for 180 days and must be [reset](1) after the expiration.
+Also, account passwords remain valid for 180 days and must be [reset](https://cloudmydc.com/) after the expiration.
 
 As an additional security measure, five consecutive unsuccessful attempts to log in will cause a temporary (15 minutes) lock for the corresponding IP address. The locked user can try again after the defined period or can reset the password.
 
@@ -243,9 +243,9 @@ As an additional security measure, five consecutive unsuccessful attempts to log
 
 All the above-described values and criteria are part of the platform’s new default policy, which can be modified for each particular platform by the respective service hosting providers.
 
-::: 
+:::
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -258,9 +258,10 @@ All the above-described values and criteria are part of the platform’s new def
 </div>
 
 ## Inbound Ports Variable
-**JELASTIC_PORTS** is a special [variable](1) that is used during the platform containers creation to define which custom ports should be opened in the [container’s firewall](1). In order to make the purpose of the variable intuitive, it was renamed to ***OPEN_INBOUND_PORTS*** in the current 6.3 platform release. Both values are supported to ensure backward compatibility, but all the new containers will be created with the ***OPEN_INBOUND_PORTS*** variant by default.
 
-[More info](1)
+**JELASTIC_PORTS** is a special [variable](https://cloudmydc.com/) that is used during the platform containers creation to define which custom ports should be opened in the [container’s firewall](https://cloudmydc.com/). In order to make the purpose of the variable intuitive, it was renamed to **_OPEN_INBOUND_PORTS_** in the current 6.3 platform release. Both values are supported to ensure backward compatibility, but all the new containers will be created with the **_OPEN_INBOUND_PORTS_** variant by default.
+
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -273,9 +274,10 @@ All the above-described values and criteria are part of the platform’s new def
 </div>
 
 ## Non-Zero Error Codes for CLI
-[Platform CLI](1) is a platform’s management and automation tool that allows handling the vast majority of the platform operations remotely. Usually, the CLI commands return zero code, while the response provides the actual results of the API method call. Starting with the 6.3 release, a new ***jelastic.non_zero_exit_code*** parameter can be added to the CLI configuration file (located at ***~/.config/jelastic/jelastic.properties*** by default). It defines if the CLI command should respond with zero code as usual (*false* - default value) or with a non-zero code when the executed API method returns an error (true).
 
-[More info](1)
+[Platform CLI](https://cloudmydc.com/) is a platform’s management and automation tool that allows handling the vast majority of the platform operations remotely. Usually, the CLI commands return zero code, while the response provides the actual results of the API method call. Starting with the 6.3 release, a new **_jelastic.non_zero_exit_code_** parameter can be added to the CLI configuration file (located at **_~/.config/jelastic/jelastic.properties_** by default). It defines if the CLI command should respond with zero code as usual (_false_ - default value) or with a non-zero code when the executed API method returns an error (true).
+
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -288,14 +290,15 @@ All the above-described values and criteria are part of the platform’s new def
 </div>
 
 ## API Changes
-Starting with the current platform release, PaaS provides a source file with all the supported public API in the **[OpenAPI Specification](1)** standard. You can download it in the YAML or JSON format by clicking on the appropriate link below:
 
-- [YAML](1)
-- [JSON](1)
+Starting with the current platform release, PaaS provides a source file with all the supported public API in the **[OpenAPI Specification](https://cloudmydc.com/)** standard. You can download it in the YAML or JSON format by clicking on the appropriate link below:
 
-You can integrate these files with any tool that supports OpenAPI standards (for example, [Swagger tools](1)) to generate clients based on the required programming language, build documentation, etc.
+- [YAML](https://cloudmydc.com/)
+- [JSON](https://cloudmydc.com/)
 
-[More info](1)
+You can integrate these files with any tool that supports OpenAPI standards (for example, [Swagger tools](https://cloudmydc.com/)) to generate clients based on the required programming language, build documentation, etc.
+
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -432,9 +435,9 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](1) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',

@@ -10,7 +10,7 @@ _This document is preliminary and subject to change._
 
 In this document, you will find all of the new features, enhancements and visible changes included to the **Virtuozzo PaaS 8.1** release.
 
-Current version is mostly focused on the platform internal optimization, security improvements, and features for the hosting service providers. System administrators can learn more at the [PaaS release notes for operations](1).
+Current version is mostly focused on the platform internal optimization, security improvements, and features for the hosting service providers. System administrators can learn more at the [PaaS release notes for operations](https://cloudmydc.com/).
 
 <hr/>
 
@@ -242,12 +242,12 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
 </div>
 
 ## Software Stack Versions
+
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](1) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
-
-[More info](1)
+[More info](https://cloudmydc.com/)
 
 <div style={{
         display: 'flex',
@@ -260,8 +260,8 @@ The most accurate and up-to-date list of the certified [software stack versions]
 </div>
 
 ## Bug Fixes
-In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.3 release:
 
+In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.3 release:
 
 <div style={{
         width: '100%',
