@@ -1,0 +1,186 @@
+{
+  "data1": [
+    {
+      "JE": "JE-57110",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs during the Spring Boot Thin/Fat Jar Builder JPS packages installation"
+    },
+    {
+      "JE": "JE-57686",
+      "CompatibleFrom": "3.3",
+      "Desc": "Cyclos packages from the Marketplace cannot be installed due to the Java 11 requirement in the latest Cyclos versions"
+    },
+    {
+      "JE": "JE-57712",
+      "CompatibleFrom": "3.3",
+      "Desc": "The settings-custom configuration file is ignored during the initial installation of the Let’s Encrypt add-on"
+    },
+    {
+      "JE": "JE-57941",
+      "CompatibleFrom": "3.3",
+      "Desc": "The webroot value should remain false for the old Let’s Encrypt add-ons during the upgrade"
+    },
+    {
+      "JE": "JE-49964",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Incorrect permissions for the /etc/phpMyAdmin file on some MySQL/MariaDB/Percona tags"
+    },
+    {
+      "JE": "JE-50715",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when restarting NGINX PHP after redeploying to the older version"
+    },
+    {
+      "JE": "JE-53694",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The passwordless access to databases should be disabled"
+    },
+    {
+      "JE": "JE-54764",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when restarting Apache PHP after redeploying to the older version"
+    },
+    {
+      "JE": "JE-56628",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The mysqld service should not be running on the Apache PHP servers by default"
+    },
+    {
+      "JE": "JE-57180",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The 'RuntimeError: Your version of SQLite is too old' error page is opened by default when accessing the Ruby-based environments"
+    },
+    {
+      "JE": "JE-57737",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "GraalVM Java engine is installed when creating Maven with OpenJDK 8 via API"
+    },
+    {
+      "JE": "JE-57819",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "HAProxy restart fails with the missing /usr/sbin/haproxy directory error"
+    },
+    {
+      "JE": "JE-52216",
+      "CompatibleFrom": "5.3",
+      "Desc": "An error occurs when building an application using the native-image tool on the GraalVM-based Java nodes"
+    },
+    {
+      "JE": "JE-52149",
+      "CompatibleFrom": "5.3.2",
+      "Desc": "Empty firewall rules on the WildFly application server after creation"
+    },
+    {
+      "JE": "JE-57477",
+      "CompatibleFrom": "5.3.2",
+      "Desc": "An error occurs when installing WildFly Cluster from the Marketplace"
+    },
+    {
+      "JE": "JE-52779",
+      "CompatibleFrom": "5.3.2",
+      "Desc": "The $WEBROOT environment variable is missing on the WildFly application server"
+    },
+    {
+      "JE": "JE-54962",
+      "CompatibleFrom": "5.4",
+      "Desc": "The autofs process on the client node crashes during the storage restart"
+    },
+    {
+      "JE": "JE-57937",
+      "CompatibleFrom": "5.4",
+      "Desc": "Kubernetes Cluster cannot be installed from the container types hint in the topology wizard"
+    },
+    {
+      "JE": "JE-56667",
+      "CompatibleFrom": "5.7.2",
+      "Desc": "An error occurs when restarting nodes with the 'jem service restart' command"
+    },
+    {
+      "JE": "JE-55922",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "The REDIS_ENABLED environment is ignored when restarting LiteSpeed (LLSMP) application server via the 'jem service restart' command"
+    },
+    {
+      "JE": "JE-56040",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "The 'jem service reload' command should work on the Litespeed ADC without sudo permissions"
+    },
+    {
+      "JE": "JE-56188",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "Mounts from the GlusterFS-cluster have incorrect parameters"
+    },
+    {
+      "JE": "JE-54512",
+      "CompatibleFrom": "5.8.1",
+      "Desc": "Jenkins auto-cluster creation via API fails if the account’s cloudlets limit is lower than the recommended value in the package"
+    },
+    {
+      "JE": "JE-54889",
+      "CompatibleFrom": "5.8.1",
+      "Desc": "The /etc/sysconfig/jenkins file permissions are changed after enabling custom SSL for the environment with Jenkins node(s)"
+    },
+    {
+      "JE": "JE-55045",
+      "CompatibleFrom": "5.9.2",
+      "Desc": "An error occurs when disabling custom SSL on the Jetty node"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-56648",
+      "AffectedVersions": "6.0.1",
+      "Desc": "Abnormal memory usage and RDP connection failure on the Windows VM nodes after migration"
+    },
+    {
+      "JE": "JE-56847",
+      "AffectedVersions": "-",
+      "Desc": "Multiple abandoned sessions in the containers"
+    },
+    {
+      "JE": "JE-56996",
+      "AffectedVersions": "6.0.1",
+      "Desc": "Incorrect minimum cloudlets number for the Marketplace packages with SQL database nodes"
+    },
+    {
+      "JE": "JE-57648",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when creating an environment via the JPS package"
+    },
+    {
+      "JE": "JE-57708",
+      "AffectedVersions": "3.3",
+      "Desc": "An error occurs during the Jitsi package installation"
+    },
+    {
+      "JE": "JE-57727",
+      "AffectedVersions": "-",
+      "Desc": "Kubernetes Cluster 1.18.6 installation fails on the platforms below the 5.9.3 version"
+    },
+    {
+      "JE": "JE-57761",
+      "AffectedVersions": "-",
+      "Desc": "Docker tags for some repositories cannot be fetched"
+    },
+    {
+      "JE": "JE-57769",
+      "AffectedVersions": "6.0.1",
+      "Desc": "An error occurs when increasing disk space for the Windows VM nodes"
+    },
+    {
+      "JE": "JE-57825",
+      "AffectedVersions": "6.0.1",
+      "Desc": "Old disk space value is displayed in the topology wizard after increasing disk size for the Windows VM node"
+    },
+    {
+      "JE": "JE-57834",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when trying to create Windows VM via the topology wizard"
+    },
+    {
+      "JE": "JE-57934",
+      "AffectedVersions": "-",
+      "Desc": "The disk cost is colored incorrectly in the estimated price widget of the topology wizard"
+    }
+  ]
+}

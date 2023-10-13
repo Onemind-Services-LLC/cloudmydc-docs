@@ -1,0 +1,71 @@
+{
+  "data1": [
+    {
+      "JE": "JE-29125",
+      "CompatibleFrom": "any",
+      "Desc": "The PaaS account can be refilled twice via a single WHMCS order"
+    },
+    {
+      "JE": "JE-60157",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when installing the Liferay package from the platform Marketplace"
+    },
+    {
+      "JE": "JE-60195",
+      "CompatibleFrom": "3.3",
+      "Desc": "The Nexus Repository Manager package from the platform Marketplace is not working after the installation"
+    },
+    {
+      "JE": "JE-59899",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when connecting to the Ruby-based container via SSH"
+    },
+    {
+      "JE": "JE-55656",
+      "CompatibleFrom": "5.4",
+      "Desc": "The Jira Software installation from the platform Marketplace should be restricted for accounts without public IP permissions"
+    },
+    {
+      "JE": "JE-56521",
+      "CompatibleFrom": "5.4",
+      "Desc": "Custom data and settings are missing on the Docker Engine CE package after redeploy"
+    },
+    {
+      "JE": "JE-60364",
+      "CompatibleFrom": "5.4",
+      "Desc": "An error occurs when accessing the Portainer admin panel of the Docker Swarm package"
+    },
+    {
+      "JE": "JE-53679",
+      "CompatibleFrom": "5.7",
+      "Desc": "The OpenFaaS installation from the platform Marketplace should be restricted for accounts with insufficient limits"
+    },
+    {
+      "JE": "JE-60198",
+      "CompatibleFrom": "5.7",
+      "Desc": "An error occurs when installing the Magento CE 1.9.4.x cluster from the platform Marketplace"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-60308",
+      "AffectedVersions": "-",
+      "Desc": "The 'Contact Support' SSO link from the platform dashboard to the WHMCS portal is not working"
+    },
+    {
+      "JE": "JE-60361",
+      "AffectedVersions": "6.0.4",
+      "Desc": "Incorrect primary IP after migration if a node has both IPv4 and IPv6 public addresses"
+    },
+    {
+      "JE": "JE-60362",
+      "AffectedVersions": "5.3",
+      "Desc": "Migration fails if an environment has nodes with and without IPv6 addresses"
+    },
+    {
+      "JE": "JE-60369",
+      "AffectedVersions": "-",
+      "Desc": "The reconfiguration add-on for the Traffic Distributor solution is not working"
+    }
+  ]
+}

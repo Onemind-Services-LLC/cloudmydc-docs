@@ -1,0 +1,468 @@
+{
+  "data1": [
+    {
+      "JE": "JE-46279",
+      "CompatibleFrom": "any",
+      "Desc": "An error occurs when installing the Minio Cluster package from the Marketplace"
+    },
+    {
+      "JE": "JE-57935",
+      "CompatibleFrom": "any",
+      "Desc": "Errors and warnings during the LiteSpeed and LLSMP stacks restart are displayed incorrectly"
+    },
+    {
+      "JE": "JE-58694",
+      "CompatibleFrom": "any",
+      "Desc": "When using the prepackaged Jitsi application, all users are disconnected upon any user being kicked or if the moderator leaves"
+    },
+    {
+      "JE": "JE-58696",
+      "CompatibleFrom": "any",
+      "Desc": "When using the prepackaged Jitsi application, audio and video are not working in conferences with multiple users"
+    },
+    {
+      "JE": "JE-61742",
+      "CompatibleFrom": "any",
+      "Desc": "An error occurs when installing the IOTA Nodes application"
+    },
+    {
+      "JE": "JE-59897",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when installing the Liferay prepackaged application from the Marketplace"
+    },
+    {
+      "JE": "JE-60685",
+      "CompatibleFrom": "3.3",
+      "Desc": "The prepackaged Odoo application is down after the application server restart"
+    },
+    {
+      "JE": "JE-61879",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when installing the BitNinja add-on on the LEMP stack"
+    },
+    {
+      "JE": "JE-61887",
+      "CompatibleFrom": "3.3",
+      "Desc": "Credentials are displayed in one line in the success pop-up for the IOTA Nodes application"
+    },
+    {
+      "JE": "JE-61951",
+      "CompatibleFrom": "3.3",
+      "Desc": "The BitNinja add-on is not supported on some templates"
+    },
+    {
+      "JE": "JE-60272",
+      "CompatibleFrom": "5.0",
+      "Desc": "An error occurs when installing the JMeter JPS package"
+    },
+    {
+      "JE": "JE-61334",
+      "CompatibleFrom": "5.0",
+      "Desc": "Incorrect credentials are sent via email for the OpenVPN application from the Marketplace"
+    },
+    {
+      "JE": "JE-46294",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The Elytron subsystem is unavailable on the WildFly nodes after creation"
+    },
+    {
+      "JE": "JE-47222",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The HTTP/2 is not supported on some versions of the Apache PHP application servers"
+    },
+    {
+      "JE": "JE-48295",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The /var/lib/jelastic/backup directory is missing on the MongoDB database containers"
+    },
+    {
+      "JE": "JE-49577",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The yum install command is not working on the MongoDB database containers"
+    },
+    {
+      "JE": "JE-49762",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Errors in logs after restarting the MongoDB database containers"
+    },
+    {
+      "JE": "JE-50064",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The Let’s Encrypt add-on installation breaks symlinks in the Python application servers"
+    },
+    {
+      "JE": "JE-50130",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The Node.js restart hangs if called during the add project operation"
+    },
+    {
+      "JE": "JE-50413",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Incorrect response for the jem service start/stop/restart/reload commands on the VPS nodes"
+    },
+    {
+      "JE": "JE-50463",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Incorrect template version in the metainf.conf file for the NGINX PHP servers"
+    },
+    {
+      "JE": "JE-50472",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Incorrect path for the backup shortcut on the MongoDB nodes"
+    },
+    {
+      "JE": "JE-50633",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Empty template version in the metainf.conf file for the Percona servers"
+    },
+    {
+      "JE": "JE-50709",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The JavaEngine server based on OpenJDK 14 is down after deploying an application"
+    },
+    {
+      "JE": "JE-50890",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Warnings about the deprecated ssl directive are present in the NGINX load balancer logs"
+    },
+    {
+      "JE": "JE-50935",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Incorrect access permissions to the /var/log/redis/redis.log file on the PHP-based application servers"
+    },
+    {
+      "JE": "JE-52064",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Incorrect regex for deleting upstreams from load balances"
+    },
+    {
+      "JE": "JE-52160",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "GlusterFS cluster is not operable after downgrading (redeploying to a lower version)"
+    },
+    {
+      "JE": "JE-53278",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Jetty servers are not accessible after installing the Let’s Encrypt add-on"
+    },
+    {
+      "JE": "JE-55725",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Incorrect permissions for the /usr/java directory on the JavaEngine stack with the Dragonwell JDK"
+    },
+    {
+      "JE": "JE-56570",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Invalid mbstring module configuration options in the php.ini file"
+    },
+    {
+      "JE": "JE-56705",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Incorrect error message for the unsuccessful Storage node restart"
+    },
+    {
+      "JE": "JE-56927",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when installing the GitLab package from the Marketplace"
+    },
+    {
+      "JE": "JE-57013",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The /var/log/haproxy/haproxy.log file is not rotated via logrotate on the HAProxy stack"
+    },
+    {
+      "JE": "JE-57468",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when disabling SSL on the Varnish stack"
+    },
+    {
+      "JE": "JE-57764",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when adding new nodes to the MySQL cluster"
+    },
+    {
+      "JE": "JE-57994",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The Ruby application is down if installing Let’s Encrypt after removing the FTP add-on"
+    },
+    {
+      "JE": "JE-58326",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when deploying an application on the GlassFish stack"
+    },
+    {
+      "JE": "JE-58733",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The btmp and wtmp files are not rotated via logrotate on the CentOS VPS stack"
+    },
+    {
+      "JE": "JE-59396",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Incorrect repository details on the NGINX PHP stacks"
+    },
+    {
+      "JE": "JE-59914",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The “cannot change locale” error occurs when connecting to the node via the SSH gate"
+    },
+    {
+      "JE": "JE-60016",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Custom SSL is unavailable on the Varnish nodes after redeploy"
+    },
+    {
+      "JE": "JE-60446",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Password information is missing in the email for the cloned PostgreSQL Cluster environment"
+    },
+    {
+      "JE": "JE-60662",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Incorrect permissions for the /etc/logrotate.d/nginx file on the NGINX load balancer stack"
+    },
+    {
+      "JE": "JE-61807",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when deploying an application to the Apache Ruby stack"
+    },
+    {
+      "JE": "JE-52987",
+      "CompatibleFrom": "5.3.2",
+      "Desc": "Some instances of the WildFly auto-cluster clone are broken"
+    },
+    {
+      "JE": "JE-52990",
+      "CompatibleFrom": "5.3.2",
+      "Desc": "Removed worker instances are displayed in the WildFly DAS node"
+    },
+    {
+      "JE": "JE-53722",
+      "CompatibleFrom": "5.3.2",
+      "Desc": "Auto-clustering is not properly removed when deleting all WildFly nodes from the topology"
+    },
+    {
+      "JE": "JE-54454",
+      "CompatibleFrom": "5.3.2",
+      "Desc": "An error occurs when undeploying application from WildFly Cluster after removing the public IP address"
+    },
+    {
+      "JE": "JE-55418",
+      "CompatibleFrom": "5.3.2",
+      "Desc": "The WildFly application is down when enabling auto-clustering after redeployment from the old version to the one with the feature support."
+    },
+    {
+      "JE": "JE-57872",
+      "CompatibleFrom": "5.3.2",
+      "Desc": "An error occurs when restarting WildFly nodes after adjusting the STANDALONE_MODE_CONFIG variable"
+    },
+    {
+      "JE": "JE-60691",
+      "CompatibleFrom": "5.3.2",
+      "Desc": "An error occurs when installing the WildFly Cluster prepackaged solution from the Marketplace"
+    },
+    {
+      "JE": "JE-61605",
+      "CompatibleFrom": "5.3.2",
+      "Desc": "An error occurs when deploying an application to the WildFly stack with JDK 17"
+    },
+    {
+      "JE": "JE-61959",
+      "CompatibleFrom": "5.4",
+      "Desc": "An error occurs when installing the MySQL Cluster package from the Marketplace"
+    },
+    {
+      "JE": "JE-51972",
+      "CompatibleFrom": "5.5",
+      "Desc": "Payara Cluster servers are down after restarting the environment"
+    },
+    {
+      "JE": "JE-52337",
+      "CompatibleFrom": "5.7",
+      "Desc": "An error occurs when cloning an environment with the WildFly auto-cluster"
+    },
+    {
+      "JE": "JE-53610",
+      "CompatibleFrom": "5.7",
+      "Desc": "An error occurs if removing worker nodes while logged into the WildFly DAS admin panel"
+    },
+    {
+      "JE": "JE-53691",
+      "CompatibleFrom": "5.7",
+      "Desc": "After environment migration, instances are displayed as stopped or broken in the WildFly DAS admin panel"
+    },
+    {
+      "JE": "JE-54530",
+      "CompatibleFrom": "5.7",
+      "Desc": "The maximum number of environments on the account should be verified when installing the Magento Standalone package"
+    },
+    {
+      "JE": "JE-50427",
+      "CompatibleFrom": "5.7.2",
+      "Desc": "The 404 Not Found error is displayed for the LLSMP applications deployed to the non-root context"
+    },
+    {
+      "JE": "JE-50842",
+      "CompatibleFrom": "5.7.2",
+      "Desc": "Warnings in the phpMyAdmin panel for the LLSMP stack"
+    },
+    {
+      "JE": "JE-50924",
+      "CompatibleFrom": "5.7.2",
+      "Desc": "Errors in the admin panel after the LiteSpeed/LLSMP node creation"
+    },
+    {
+      "JE": "JE-51141",
+      "CompatibleFrom": "5.7.2",
+      "Desc": "The phpMyAdmin folder is not available via FTP on the LEMP/LLSMP nodes"
+    },
+    {
+      "JE": "JE-57337",
+      "CompatibleFrom": "5.7.2",
+      "Desc": "The firewall is not working on the LiteSpeed ADC stack"
+    },
+    {
+      "JE": "JE-55672",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "The GlusterFS Replication add-on should not be removable after configuring GlusterFS Cluster"
+    },
+    {
+      "JE": "JE-57739",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "LiteSpeed ADC admin panel is not available via IPv6"
+    },
+    {
+      "JE": "JE-58575",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "The force_kill function works incorrectly on the LiteSpeed ADC stack"
+    },
+    {
+      "JE": "JE-62173",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "An error occurs when installing the TimeZone add-on on the Ubuntu and Debian VPS stacks"
+    },
+    {
+      "JE": "JE-52065",
+      "CompatibleFrom": "5.8",
+      "Desc": "Two controller nodes are added to the Extra layer when creating WildFly auto-cluster via the topology wizard"
+    },
+    {
+      "JE": "JE-52988",
+      "CompatibleFrom": "5.8",
+      "Desc": "The dashboard should display a button to access the WildFly DAS admin panel on the layer level (not for a separate node)"
+    },
+    {
+      "JE": "JE-54090",
+      "CompatibleFrom": "5.8",
+      "Desc": "An error occurs when creating the WildFly auto-cluster"
+    },
+    {
+      "JE": "JE-56167",
+      "CompatibleFrom": "5.8",
+      "Desc": "An error occurs when installing the Jenkins instance via the topology wizard"
+    },
+    {
+      "JE": "JE-61169",
+      "CompatibleFrom": "5.8",
+      "Desc": "Unclear UI for the Elastic Beats add-on installation frame"
+    },
+    {
+      "JE": "JE-61170",
+      "CompatibleFrom": "5.8",
+      "Desc": "Errors in CS logs after the Elastic Beats add-on installation"
+    },
+    {
+      "JE": "JE-61177",
+      "CompatibleFrom": "5.8",
+      "Desc": "Incorrect permissions for the /etc/heartbeat folder after the Elastic Beats add-on installation"
+    },
+    {
+      "JE": "JE-61846",
+      "CompatibleFrom": "5.8",
+      "Desc": "After the Elastic Beats add-on deletion, the /etc/heartbeat folder is not entirely removed"
+    },
+    {
+      "JE": "JE-61641",
+      "CompatibleFrom": "7.0",
+      "Desc": "An error occurs when installing the CDN add-on"
+    },
+    {
+      "JE": "JE-61765",
+      "CompatibleFrom": "7.0",
+      "Desc": "If installed by a collaborator, the Open Liberty application is created without the Storage node"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-43124",
+      "AffectedVersions": "5.5",
+      "Desc": "The disk IOPS value is not calculated on the containers"
+    },
+    {
+      "JE": "JE-45740",
+      "AffectedVersions": "-",
+      "Desc": "The sendmail application is not available in containers"
+    },
+    {
+      "JE": "JE-50964",
+      "AffectedVersions": "5.8",
+      "Desc": "The redeploy operation should check for enough disk space inside the container"
+    },
+    {
+      "JE": "JE-51106",
+      "AffectedVersions": "5.8",
+      "Desc": "Exports records and iptables rules are not removed when unmounting a folder with the '+' symbol in the path"
+    },
+    {
+      "JE": "JE-52664",
+      "AffectedVersions": "-",
+      "Desc": "The site cannot be reached after the FTP add-on installation on the GlassFish/Payara containers"
+    },
+    {
+      "JE": "JE-55234",
+      "AffectedVersions": "5.9.4",
+      "Desc": "An error occurs when redeploying the Ubuntu VPS 10.04 container"
+    },
+    {
+      "JE": "JE-59950",
+      "AffectedVersions": "-",
+      "Desc": "An incorrect launcher is used for entrypoint commands in custom containers"
+    },
+    {
+      "JE": "JE-60719",
+      "AffectedVersions": "6.3",
+      "Desc": "An error occurs when transferring an environment to a user outside of the collaboration"
+    },
+    {
+      "JE": "JE-60795",
+      "AffectedVersions": "7.0",
+      "Desc": "An error occurs when transferring an environment to a user in a 'pending acceptance' collaboration status"
+    },
+    {
+      "JE": "JE-61892",
+      "AffectedVersions": "-",
+      "Desc": "Invalid pgrep option error occurs when creating containers"
+    },
+    {
+      "JE": "JE-61942",
+      "AffectedVersions": "-",
+      "Desc": "An unhandled error occurs when deploying a damaged archive to the PHP environment"
+    },
+    {
+      "JE": "JE-62156",
+      "AffectedVersions": "7.0",
+      "Desc": "Incorrect wizard behavior when adding a template that does not correspond with the selected layer"
+    }
+  ],
+  "data3": [
+    {
+      "JE": "JE-62378",
+      "AffectedVersions": "7.0",
+      "Desc": "The “`” character is not properly escaped when defined in the container variables"
+    },
+    {
+      "JE": "JE-62393",
+      "AffectedVersions": "-",
+      "Desc": "Permissions issue when installing JPS to the owner account as a collaboration member"
+    }
+  ]
+}

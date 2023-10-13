@@ -1,0 +1,91 @@
+{
+  "data1": [
+    {
+      "JE": "JE-58049",
+      "CompatibleFrom": "3.3",
+      "Desc": "Rate limit error for custom domains should be handled during the Let’s Encrypt add-on installation"
+    },
+    {
+      "JE": "JE-58154",
+      "CompatibleFrom": "3.3",
+      "Desc": "A test SSL certificate is provided for the GitLab application when reconfiguring the Let’s Encrypt add-on to a new domain"
+    },
+    {
+      "JE": "JE-53826",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Incorrect admin console link on the home page of the WildFly cluster if the environment name includes non-English characters"
+    },
+    {
+      "JE": "JE-56791",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Version-specific configs are missing on the WildFly 20 and 21 application servers"
+    },
+    {
+      "JE": "JE-57152",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when redeploying the Ruby application server to a lower version"
+    },
+    {
+      "JE": "JE-57741",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The Node-RED Dev application is inaccessible after deployment from the Marketplace"
+    },
+    {
+      "JE": "JE-58773",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when trying to clone an environment with a Tomcat cluster"
+    },
+    {
+      "JE": "JE-58804",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Typo in the resource name in the ssl.upstreams.inc configuration file on the NGINX load balancer"
+    },
+    {
+      "JE": "JE-52157",
+      "CompatibleFrom": "5.3.2",
+      "Desc": "An error occurs when switching to the Runtime tab in the WildFly 17 and 18 admin panel"
+    },
+    {
+      "JE": "JE-58544",
+      "CompatibleFrom": "5.4",
+      "Desc": "The 'jem vcs update' error occurs on the Golang application server when deploying some applications"
+    },
+    {
+      "JE": "JE-55261",
+      "CompatibleFrom": "5.7",
+      "Desc": "The administration panel for the WildFly 21 cluster is inaccessible via the DAS node on the PaaS 5.7 platforms"
+    },
+    {
+      "JE": "JE-57639",
+      "CompatibleFrom": "5.7",
+      "Desc": "Webhook of the Git-Push-Deploy add-on fails to trigger project updates"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-58281",
+      "AffectedVersions": "5.9.3",
+      "Desc": "Iptables rules are not removed on the Ubuntu VPS after disabling the firewall via the dashboard"
+    },
+    {
+      "JE": "JE-58284",
+      "AffectedVersions": "6.0.2",
+      "Desc": "Duplicate iptables entries in firewall after the Ubuntu VPS redeploy"
+    },
+    {
+      "JE": "JE-58682",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs during environment migration between regions"
+    },
+    {
+      "JE": "JE-58716",
+      "AffectedVersions": "-",
+      "Desc": "Custom firewall rules are added incorrectly on the Ubuntu VPS nodes"
+    },
+    {
+      "JE": "JE-58839",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when trying to access the container file manager via the dashboard"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+    "data1":[
+      {
+        "JE": "JE-60375",
+        "CompatibleFrom": "any",
+        "Desc": "An invalid SSL certificate is issued when installing the Docker Swarm application with the Portainer option enabled"
+      },
+      {
+        "JE": "JE-62024",
+        "CompatibleFrom": "any",
+        "Desc": "The file-sync add-on does not work with the LLSMP stack"
+      },
+      {
+        "JE": "JE-62554",
+        "CompatibleFrom": "any",
+        "Desc": "WildFly Cluster nodes are not displayed in the admin panel of the controller node"
+      },
+      {
+        "JE": "JE-62881",
+        "CompatibleFrom": "any",
+        "Desc": "An error occurs when installing OpenSearch for the Magento or Magento Cluster application"
+      },
+      {
+        "JE": "JE-63203",
+        "CompatibleFrom": "any",
+        "Desc": "An error occurs when installing the Magento or Magento Cluster application from the Marketplace"
+      },
+      {
+        "JE": "JE-63204",
+        "CompatibleFrom": "any",
+        "Desc": "An error occurs when installing the IOTA application from the Marketplace"
+      },
+      {
+        "JE": "JE-57124",
+        "CompatibleFrom": "3.3",
+        "Desc": "The Eclipse Vert.x Thin Jar Builder application does not work after installation from the Marketplace"
+      },
+      {
+        "JE": "JE-60130",
+        "CompatibleFrom": "3.3",
+        "Desc": "The Rocket.Chat application does not work after restarting the environment"
+      },
+      {
+        "JE": "JE-60291",
+        "CompatibleFrom": "3.3",
+        "Desc": "The PrestaShop application does not work with the platform’s Built-In SSL feature"
+      },
+      {
+        "JE": "JE-60583",
+        "CompatibleFrom": "3.3",
+        "Desc": "An error occurs when installing the Eclipse Che package from the Marketplace"
+      },
+      {
+        "JE": "JE-61972",
+        "CompatibleFrom": "3.3",
+        "Desc": "An error occurs when installing the Let’s Encrypt add-on with a domain that has a redirect"
+      },
+      {
+        "JE": "JE-62363",
+        "CompatibleFrom": "3.3",
+        "Desc": "Cron tasks on all nodes of the layer should be cleaned up upon the Let’s Encrypt add-on removal"
+      },
+      {
+        "JE": "JE-62499",
+        "CompatibleFrom": "3.3",
+        "Desc": "Let’s Encrypt certificate update operation cannot be performed by the collaboration member"
+      },
+      {
+        "JE": "JE-63271",
+        "CompatibleFrom": "3.3",
+        "Desc": "An error occurs when installing the Drupal application from the Marketplace"
+      },
+      {
+        "JE": "JE-62684",
+        "CompatibleFrom": "5.3",
+        "Desc": "The Open Liberty application does not work in the Kubernetes Cluster"
+      },
+      {
+        "JE": "JE-60417",
+        "CompatibleFrom": "5.7",
+        "Desc": "The Galera Cluster application does not work after restarting the environment"
+      },
+      {
+        "JE": "JE-59951",
+        "CompatibleFrom": "5.9.2",
+        "Desc": "An error occurs when installing the Jira package from the Marketplace"
+      }
+    ],
+    "data2" : [
+      {
+        "JE": "JE-33215",
+        "AffectedVersions": "5.2",
+        "Desc": "An error occurs when backing up the containers during the dashboard operation"
+      },
+      {
+        "JE": "JE-40710",
+        "AffectedVersions": "5.2",
+        "Desc": "Incorrect permissions for some authentication configuration files in containers"
+      },
+      {
+        "JE": "JE-50464",
+        "AffectedVersions": "5.7.8",
+        "Desc": "Directory mounts are missing after container redeployment to the alpine-based image"
+      },
+      {
+        "JE": "JE-51538",
+        "AffectedVersions": "-",
+        "Desc": "Slow response of the GetEnvs API method for environments with many external domains"
+      },
+      {
+        "JE": "JE-62454",
+        "AffectedVersions": "7.0",
+        "Desc": "Incorrect escaping for special characters in the environment variables"
+      },
+      {
+        "JE": "JE-62724",
+        "AffectedVersions": "-",
+        "Desc": "Password authentication should be disabled when connecting over SSH"
+      },
+      {
+        "JE": "JE-62906",
+        "AffectedVersions": "-",
+        "Desc": "The autofs service start is delayed after the container restart"
+      },
+      {
+        "JE": "JE-62934",
+        "AffectedVersions": "-",
+        "Desc": "An error occurs when creating nodes based on the httpd:2.4-alpine image"
+      },
+      {
+        "JE": "JE-62943",
+        "AffectedVersions": "-",
+        "Desc": "An error occurs if the manually created firewall set has the same name as any of the system ones"
+      },
+      {
+        "JE": "JE-62946",
+        "AffectedVersions": "-",
+        "Desc": "Insufficient permissions to attach/detach add-ons are provided via the Containers > Add-Ons collaboration policy"
+      },
+      {
+        "JE": "JE-62983",
+        "AffectedVersions": "-",
+        "Desc": "The platform CLI is not supported on the Java 8 engine"
+      },
+      {
+        "JE": "JE-63031",
+        "AffectedVersions": "-",
+        "Desc": "Mandatory appid parameters are marked as optional in the API documentation"
+      },
+      {
+        "JE": "JE-63049",
+        "AffectedVersions": "-",
+        "Desc": "Unhandled error for the getTemplates API when an unknown type is specified in parameters"
+      },
+      {
+        "JE": "JE-63094",
+        "AffectedVersions": "-",
+        "Desc": "The NullPointerException error occurs when executing some API methods"
+      },
+      {
+        "JE": "JE-63487",
+        "AffectedVersions": "-",
+        "Desc": "The GetStat and GetSumStat API methods return excessive data"
+      },
+      {
+        "JE": "JE-63538",
+        "AffectedVersions": "-",
+        "Desc": "Incorrect escaping in the names of the collaboration environment groups"
+      },
+      {
+        "JE": "JE-63540",
+        "AffectedVersions": "-",
+        "Desc": "The list of collaboration members is not sorted"
+      },
+      {
+        "JE": "JE-63586",
+        "AffectedVersions": "-",
+        "Desc": "Incorrect dashboard fonts when working on the Linux OS"
+      }
+    ]
+
+}

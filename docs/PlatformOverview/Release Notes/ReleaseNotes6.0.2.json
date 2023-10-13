@@ -1,0 +1,51 @@
+{
+  "data1": [
+    {
+      "JE": "JE-56734",
+      "CompatibleFrom": "3.3",
+      "Desc": "Incorrect value for the mbstring.encoding_translation parameter for the Drupal application after installation from the Marketplace"
+    },
+    {
+      "JE": "JE-56670",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Apache PHP application server fails after redeployment to a different major PHP version"
+    },
+    {
+      "JE": "JE-54752",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The variablesparser.sh script should be installed during the Java Memory Agent add-on installation"
+    },
+    {
+      "JE": "JE-50132",
+      "CompatibleFrom": "5.7",
+      "Desc": "Cannot bind-address 0.0.0.0 on the Galera MySQL/MariaDB Cluster package"
+    },
+    {
+      "JE": "JE-56221",
+      "CompatibleFrom": "5.7",
+      "Desc": "The setupWP.sh configuration file should be kept during the WordPress Cluster redeploy"
+    },
+    {
+      "JE": "JE-57563",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "The content of the /var/lib/glusterd/ folder should be preserved during the GlusterFS Cluster configuration"
+    },
+    {
+      "JE": "JE-57125",
+      "CompatibleFrom": "5.8.1",
+      "Desc": "The Open Liberty application does not work after installation from the Marketplace"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-57584",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when creating an environment with public IPv6"
+    },
+    {
+      "JE": "JE-57482",
+      "AffectedVersions": "6.0",
+      "Desc": "The 'Destination NFS server is not reachable' error occurs when creating a mount point to a non-Storage node"
+    }
+  ]
+}

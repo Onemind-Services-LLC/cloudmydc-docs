@@ -1,0 +1,35 @@
+{
+    "data1": [
+      {
+        "JE": "JE-55647",
+        "CompatibleFrom": "3.3",
+        "Desc": "An error occurs when connecting a Docker CE container to the existing Swarm cluster"
+      },
+      {
+        "JE": "JE-64407",
+        "CompatibleFrom": "3.3",
+        "Desc": "Incorrect permissions and file structure errors occur when installing the Plesk application from the Marketplace"
+      },
+      {
+        "JE": "JE-64223",
+        "CompatibleFrom": "5.0",
+        "Desc": "The deploy and undeploy hooks of the Let’s Encrypt add-on don’t work with file paths"
+      },
+      {
+        "JE": "JE-61943",
+        "CompatibleFrom": "5.0.5",
+        "Desc": "Access from the Internet is allowed by the firewall rule configured between Node.js and the load balancer node"
+      },
+      {
+        "JE": "JE-61808",
+        "CompatibleFrom": "5.7.4",
+        "Desc": "An error occurs when cloning an environment with the GlusterFS cluster in the extra layer"
+      },
+      {
+        "JE": "JE-64270",
+        "CompatibleFrom": "5.8",
+        "Desc": "An error occurs when installing the Jenkins DevOps Pack application from the Marketplace"
+      }
+    ]
+
+}

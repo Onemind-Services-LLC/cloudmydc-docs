@@ -1,0 +1,19 @@
+{
+    "data1": [
+      {
+        "JE": "JE-65526",
+        "CompatibleFrom": "any",
+        "Desc": "An error occurs when creating Magento Cluster from the platform Marketplace"
+      },
+      {
+        "JE": "JE-65859",
+        "CompatibleFrom": "3.3",
+        "Desc": "Some Let’s Encrypt processes are not removed after uninstalling the add-on"
+      },
+      {
+        "JE": "JE-65546",
+        "CompatibleFrom": "5.7.4",
+        "Desc": "The “SSL Service Unavailable” error occurs when accessing the LiteSpeed ADC admin panel"
+      }
+    ]
+}

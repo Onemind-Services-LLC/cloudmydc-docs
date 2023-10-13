@@ -1,0 +1,81 @@
+{
+  "data1": [
+    {
+      "JE": "JE-56979",
+      "CompatibleFrom": "3.3",
+      "Desc": "Cyclos 4.14 and higher should be installed based on the Java 11 engine due to the updated requirements of the application"
+    },
+    {
+      "JE": "JE-57555",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when trying to update the New Relic add-on on the PHP environment"
+    },
+    {
+      "JE": "JE-58449",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when installing GitBlit from the Marketplace"
+    },
+    {
+      "JE": "JE-49402",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The '504 application down' error occurs after deployment for some Apache Ruby server versions"
+    },
+    {
+      "JE": "JE-57945",
+      "CompatibleFrom": "5.3.2",
+      "Desc": "The WildFly service is not added to the chkconfig config"
+    },
+    {
+      "JE": "JE-52035",
+      "CompatibleFrom": "5.7",
+      "Desc": "The Node-RED Dev installation from Marketplace should be restricted on accounts without endpoints permissions"
+    },
+    {
+      "JE": "JE-58275",
+      "CompatibleFrom": "5.7",
+      "Desc": "The Rocket.Chat installation must be restricted for accounts with less than three nodes allowed per layer"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-52815",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when creating a new environment"
+    },
+    {
+      "JE": "JE-57847",
+      "AffectedVersions": "-",
+      "Desc": "Containers become inaccessible after unsuccessful firewall rules loading"
+    },
+    {
+      "JE": "JE-58259",
+      "AffectedVersions": "6.0",
+      "Desc": "An error occurs when redeploying Ubuntu-based images"
+    },
+    {
+      "JE": "JE-58309",
+      "AffectedVersions": "6.0",
+      "Desc": "OOM killer alerts should be enabled on containers by default"
+    },
+    {
+      "JE": "JE-58374",
+      "AffectedVersions": "-",
+      "Desc": "The multi-select field is displayed incorrectly within the showIf block for Cloud Scripting"
+    },
+    {
+      "JE": "JE-58400",
+      "AffectedVersions": "-",
+      "Desc": "Email notification about OOM killer alert is not sent for custom Docker containers"
+    },
+    {
+      "JE": "JE-58484",
+      "AffectedVersions": "-",
+      "Desc": "Default values should be restored for the Cloud Scripting setting if the appropriate element becomes hidden on UI"
+    },
+    {
+      "JE": "JE-58537",
+      "AffectedVersions": "any",
+      "Desc": "The High-Availability and Auto-Clustering features can be enabled simultaneously for Tomcat/TomEE"
+    }
+  ]
+}

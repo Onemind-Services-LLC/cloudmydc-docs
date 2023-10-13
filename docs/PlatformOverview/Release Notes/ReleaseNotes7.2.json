@@ -1,0 +1,156 @@
+{
+  "data1": [
+    {
+      "JE": "JE-51420",
+      "CompatibleFrom": "any",
+      "Desc": "The project is not updated by the Git-Push-Deploy add-on if the VCS auto-deploy option is disabled"
+    },
+    {
+      "JE": "JE-59566",
+      "CompatibleFrom": "any",
+      "Desc": "An error occurs when installing the IOTA Node application from the Marketplace"
+    },
+    {
+      "JE": "JE-62033",
+      "CompatibleFrom": "any",
+      "Desc": "The File Synchronization add-on does not support LiteSpeed and LLSMP stacks"
+    },
+    {
+      "JE": "JE-58866",
+      "CompatibleFrom": "3.3",
+      "Desc": "Redundant information in the error message if the Let’s Encrypt add-on installation fails"
+    },
+    {
+      "JE": "JE-62184",
+      "CompatibleFrom": "3.3",
+      "Desc": "The WAF module for the BitNinja add-on does not work on the nodes without a public IP"
+    },
+    {
+      "JE": "JE-62385",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when installing both BitNinja and Let’s Encrypt add-ons"
+    },
+    {
+      "JE": "JE-60123",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Errors in the opensearch-cluster.log file after the OpenSearch Cluster package installation"
+    },
+    {
+      "JE": "JE-61060",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when connecting from the Apache Python application server to the PostgreSQL database"
+    },
+    {
+      "JE": "JE-61650",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Problems with the installation of some RPM packages on the old MariaDB versions"
+    },
+    {
+      "JE": "JE-62374",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when restarting Tomcat, TomEE, WildFly, and Apache Python nodes"
+    },
+    {
+      "JE": "JE-62560",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Nodes added via horizontal scaling are not included in the MinIO Cluster"
+    },
+    {
+      "JE": "JE-47553",
+      "CompatibleFrom": "5.3",
+      "Desc": "An error occurs when establishing a connection from the WildFly admin panel to the database"
+    },
+    {
+      "JE": "JE-60286",
+      "CompatibleFrom": "5.4",
+      "Desc": "The sendmail process is not started within the Debian VPS container"
+    },
+    {
+      "JE": "JE-59471",
+      "CompatibleFrom": "5.7",
+      "Desc": "Database credentials are missing in the email when cloning an environment with the MySQL/MariaDB auto-cluster"
+    },
+    {
+      "JE": "JE-59918",
+      "CompatibleFrom": "5.7",
+      "Desc": "Data mounts are absent on the new WordPress Cluster nodes after horizontal scaling"
+    },
+    {
+      "JE": "JE-60860",
+      "CompatibleFrom": "5.7",
+      "Desc": "The gd library is missing for the WordPress packages based on the LiteSpeed application server"
+    },
+    {
+      "JE": "JE-58719",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "An error occurs when changing the permalinks option for the WordPress Cluster on the LiteSpeed server with WAF enabled"
+    },
+    {
+      "JE": "JE-61925",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "After the GlusterFS cluster redeployment, nodes added via horizontal scaling are not included in the cluster"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-62364",
+      "AffectedVersions": "-",
+      "Desc": "The file manager tab in the dashboard does not automatically become operable after the layer restart operation is finished"
+    },
+    {
+      "JE": "JE-62457",
+      "AffectedVersions": "7.0.2",
+      "Desc": "A collaboration member with full rights cannot download from the shared environment via the dashboard’s file manager"
+    },
+    {
+      "JE": "JE-62608",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when starting the openrc-jelinit service on the alpine-based containers"
+    },
+    {
+      "JE": "JE-62610",
+      "AffectedVersions": "7.0.2",
+      "Desc": "An error occurs when exporting billing history from the dashboard"
+    },
+    {
+      "JE": "JE-62615",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect escaping for the “!” symbol in the environment variable value provided via the dashboard"
+    },
+    {
+      "JE": "JE-62617",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when trying to install an add-on from the Marketplace on the account without any environments"
+    },
+    {
+      "JE": "JE-62636",
+      "AffectedVersions": "-",
+      "Desc": "Duplicated records in the configuration file after container redeployment failure"
+    },
+    {
+      "JE": "JE-62650",
+      "AffectedVersions": "7.0",
+      "Desc": "Default placeholders are not replaced in the collaboration emails"
+    },
+    {
+      "JE": "JE-62664",
+      "AffectedVersions": "-",
+      "Desc": "If billing history is downloaded for the specific environment and not the whole account, the filename should contain the appropriate environment name"
+    },
+    {
+      "JE": "JE-62726",
+      "AffectedVersions": "7.1.2",
+      "Desc": "An error occurs when loading variables or redeploying a container if the first variable in the configs is empty"
+    },
+    {
+      "JE": "JE-62729",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs after the Spring Boot Thin Jar Builder package installation"
+    },
+    {
+      "JE": "JE-62804",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when a collaboration member with the ‘Cost Estimation / Billing History’ policy tries to download billing history for the shared environment"
+    }
+  ]
+}

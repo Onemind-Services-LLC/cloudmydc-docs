@@ -1,0 +1,56 @@
+{
+  "data1": [
+    {
+      "JE": "JE-58066",
+      "CompatibleFrom": "3.3",
+      "Desc": "Same error description in the emails for the Let’s Encrypt SSL installation, configuration, and certificate update actions"
+    },
+    {
+      "JE": "JE-60859",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when installing the New Relic APM add-on on the LLSMP stack"
+    },
+    {
+      "JE": "JE-63103",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when installing the Docker Engine and Docker Swarm packages with the Portainer option enabled"
+    },
+    {
+      "JE": "JE-63279",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs after restarting an environment with the Liferay application from the platform Marketplace"
+    },
+    {
+      "JE": "JE-63726",
+      "CompatibleFrom": "3.3",
+      "Desc": "The java.orig process works incorrectly in the Liferay application from the platform Marketplace"
+    },
+    {
+      "JE": "JE-63927",
+      "CompatibleFrom": "3.3",
+      "Desc": "OOM error triggers during the installation of the Liferay application from the platform Marketplace"
+    },
+    {
+      "JE": "JE-63625",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Incorrect max open files limit for some of the software stacks"
+    },
+    {
+      "JE": "JE-63873",
+      "CompatibleFrom": "5.8",
+      "Desc": "Oversized t_tracked_actions data volume when installing the Backup add-on for WordPress"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-63799",
+      "AffectedVersions": "7.3",
+      "Desc": "An error occurs when editing the automatic horizontal scaling triggers"
+    },
+    {
+      "JE": "JE-64201",
+      "AffectedVersions": "-",
+      "Desc": "The post-install actions fail on the images based on the Ubuntu 21.04 OS template"
+    }
+  ]
+}

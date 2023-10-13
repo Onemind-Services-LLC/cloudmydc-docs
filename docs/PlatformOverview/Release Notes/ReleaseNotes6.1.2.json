@@ -1,0 +1,89 @@
+{
+  "data1": [
+    {
+      "JE": "JE-57809",
+      "CompatibleFrom": "any",
+      "Desc": "An error occurs when trying to install the Jira application from the Marketplace"
+    },
+    {
+      "JE": "JE-57862",
+      "CompatibleFrom": "3.3",
+      "Desc": "The Mattermost application is not working after the container redeploy"
+    },
+    {
+      "JE": "JE-58546",
+      "CompatibleFrom": "3.3",
+      "Desc": "An incorrect admin panel URL is provided for the PrestaShop application in the after-installation window and email"
+    },
+    {
+      "JE": "JE-58763",
+      "CompatibleFrom": "3.3",
+      "Desc": "Time zone is restored to the default value after redeploying an environment with the TimeZone add-on"
+    },
+    {
+      "JE": "JE-59331",
+      "CompatibleFrom": "3.3",
+      "Desc": "Incorrect regex for parsing acme logs in the Let’s Encrypt add-on"
+    },
+    {
+      "JE": "JE-59441",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when trying to deploy the New Relic APM add-on on the LLSMP application server"
+    },
+    {
+      "JE": "JE-51628",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when enabling the sodium.so extension on the PHP application servers"
+    },
+    {
+      "JE": "JE-58654",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when creating the MySQL / MariaDB cluster"
+    },
+    {
+      "JE": "JE-58819",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The binlog_expire_logs_seconds option is missing in the MySQL node configs"
+    },
+    {
+      "JE": "JE-59179",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when trying to create MySQL 5.7.34 node"
+    },
+    {
+      "JE": "JE-59261",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when configuring the MySQL / MariaDB auto-cluster"
+    },
+    {
+      "JE": "JE-59389",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when resetting a password on the MySQL / MariaDB cluster"
+    },
+    {
+      "JE": "JE-59520",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when trying to stop or restart a Varnish node with the removed varnish.pid file"
+    },
+    {
+      "JE": "JE-59443",
+      "CompatibleFrom": "5.7",
+      "Desc": "An error occurs during the Multi-Region WordPress Cluster installation"
+    },
+    {
+      "JE": "JE-59496",
+      "CompatibleFrom": "5.7",
+      "Desc": "An error occurs when creating an environment with the Ubuntu VPS node"
+    },
+    {
+      "JE": "JE-59509",
+      "CompatibleFrom": "5.8",
+      "Desc": "An error occurs when simultaneously scaling vertically and horizontally the Tomcat / TomEE cluster"
+    },
+    {
+      "JE": "JE-59276",
+      "CompatibleFrom": "5.9.2",
+      "Desc": "The Git-Push-Deploy add-on installation fails if the repository URL is provided without '.git' at the end"
+    }
+  ]
+}

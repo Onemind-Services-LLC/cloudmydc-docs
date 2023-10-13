@@ -1,0 +1,426 @@
+{
+  "data1": [
+    {
+      "JE": "JE-55031",
+      "CompatibleFrom": "3.3",
+      "Desc": "The Eclipse Che package installation should be restricted on accounts with insufficient quotas"
+    },
+    {
+      "JE": "JE-55647",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when creating the Docker CE package from the Marketplace with the “connect to Swarm” option"
+    },
+    {
+      "JE": "JE-57711",
+      "CompatibleFrom": "3.3",
+      "Desc": "IPv4 is attached during the Let’s Encrypt add-on installation when IPv6 is already present"
+    },
+    {
+      "JE": "JE-59734",
+      "CompatibleFrom": "3.3",
+      "Desc": "Mixed content error for the Cyclos 4 Cluster package after enabling SSL"
+    },
+    {
+      "JE": "JE-59858",
+      "CompatibleFrom": "3.3",
+      "Desc": "Incorrect permissions after the Fail2Ban add-on installation"
+    },
+    {
+      "JE": "JE-60154",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when installing the Odoo CE 9/10 package from the Marketplace"
+    },
+    {
+      "JE": "JE-60186",
+      "CompatibleFrom": "3.3",
+      "Desc": "Incorrect HTTPS redirect behavior after installing Let’s Encrypt add-on with invalid custom domain"
+    },
+    {
+      "JE": "JE-60410",
+      "CompatibleFrom": "3.3",
+      "Desc": "Errors in logs after the Odoo CE creation"
+    },
+    {
+      "JE": "JE-60549",
+      "CompatibleFrom": "3.3",
+      "Desc": "The DjangoCMS package from the Marketplace does not work after redeploying application server nodes"
+    },
+    {
+      "JE": "JE-60725",
+      "CompatibleFrom": "3.3",
+      "Desc": "The New Relic add-on does not work after redeploying the node"
+    },
+    {
+      "JE": "JE-61468",
+      "CompatibleFrom": "3.3",
+      "Desc": "The Odoo package from the Marketplace does not work after restarting the environment"
+    },
+    {
+      "JE": "JE-54042",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Errors in logs after the WildFly Cluster creation"
+    },
+    {
+      "JE": "JE-61190",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when installing the PgAdmin4 from the JPS Collection repository"
+    },
+    {
+      "JE": "JE-47038",
+      "CompatibleFrom": "5.3.2",
+      "Desc": "Magento Cluster automatic horizontal scaling should be based on the CPU triggers"
+    },
+    {
+      "JE": "JE-59122",
+      "CompatibleFrom": "5.3.2",
+      "Desc": "An error occurs when undeploying an application on the WildFly node after detaching a public IP"
+    },
+    {
+      "JE": "JE-60399",
+      "CompatibleFrom": "5.4",
+      "Desc": "The manifest ID is missing for the Magento package in the Marketplace"
+    },
+    {
+      "JE": "JE-55868",
+      "CompatibleFrom": "5.7",
+      "Desc": "The libsodium extension is missing on nodes after the Magento Cluster installation"
+    },
+    {
+      "JE": "JE-59830",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "Smart memory auto-configuration is not applied to the LLSMP stack after decreasing the number of cloudlets"
+    },
+    {
+      "JE": "JE-59882",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "The WAF setting is not adjusted according to the same-named variable on the LiteSpeed server"
+    },
+    {
+      "JE": "JE-60943",
+      "CompatibleFrom": "6.0",
+      "Desc": "An error occurs when creating WordPress Cluster with PHP 8.1"
+    },
+    {
+      "JE": "JE-61186",
+      "CompatibleFrom": "6.0",
+      "Desc": "An error occurs when creating WordPress Multiregional with PHP 8.1"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-15188",
+      "AffectedVersions": "2.0",
+      "Desc": "Unclear error message when several collaborators simultaneously remove the same context"
+    },
+    {
+      "JE": "JE-20364",
+      "AffectedVersions": "3.1",
+      "Desc": "An error occurs when a collaborator tries to delete a manifest of the exported environment"
+    },
+    {
+      "JE": "JE-20365",
+      "AffectedVersions": "3.1",
+      "Desc": "An error occurs when a collaborator tries to download a manifest of the exported environment"
+    },
+    {
+      "JE": "JE-21912",
+      "AffectedVersions": "-",
+      "Desc": "Email records cannot be edited or removed after sharing environments"
+    },
+    {
+      "JE": "JE-33081",
+      "AffectedVersions": "5.2",
+      "Desc": "An environment status is not updating when a collaboration user is selected in settings"
+    },
+    {
+      "JE": "JE-33988",
+      "AffectedVersions": "-",
+      "Desc": "Collaborators can create mounts from the shared environments"
+    },
+    {
+      "JE": "JE-36817",
+      "AffectedVersions": "5.2",
+      "Desc": "Some changes are missing when several collaborators are managing an environment simultaneously"
+    },
+    {
+      "JE": "JE-36840",
+      "AffectedVersions": "5.0.5",
+      "Desc": "An error occurs when a collaborator tries to add an endpoint to the shared environment"
+    },
+    {
+      "JE": "JE-37700",
+      "AffectedVersions": "5.4",
+      "Desc": "Collaborators can add shared environments to personal environment groups"
+    },
+    {
+      "JE": "JE-37704",
+      "AffectedVersions": "5.4",
+      "Desc": "Incorrect pop-up notification is displayed in the dashboard when a collaborator deploys a project via Maven"
+    },
+    {
+      "JE": "JE-39150",
+      "AffectedVersions": "5.4",
+      "Desc": "Collaborator with the Viewer access can edit /etc/exports on the Shared Storage node"
+    },
+    {
+      "JE": "JE-44203",
+      "AffectedVersions": "-",
+      "Desc": "Some dashboard icons are missing for the collaborators with the Viewer access"
+    },
+    {
+      "JE": "JE-44981",
+      "AffectedVersions": "5.5.4",
+      "Desc": "New environment creation should be restricted for collaborators if the maximum number of allowed environments is reached on the target account"
+    },
+    {
+      "JE": "JE-45277",
+      "AffectedVersions": "-",
+      "Desc": "When several different invitations are sent, only environments from one invitation are available for the collaborator"
+    },
+    {
+      "JE": "JE-46738",
+      "AffectedVersions": "5.6.9",
+      "Desc": "An error occurs when a collaborator tries to add an endpoint to the shared environment"
+    },
+    {
+      "JE": "JE-47077",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when trying to add yourself as a collaborator"
+    },
+    {
+      "JE": "JE-47133",
+      "AffectedVersions": "-",
+      "Desc": "Some links to documentation are absent in the dashboard for collaborators with the Viewer access"
+    },
+    {
+      "JE": "JE-47563",
+      "AffectedVersions": "-",
+      "Desc": "Collaborators cannot create an environment with built-in SSL when the primary account has the appropriate permissions"
+    },
+    {
+      "JE": "JE-47812",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when a collaborator tries to delete the environment of the inactive owner"
+    },
+    {
+      "JE": "JE-48393",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect validation in the Branch field when deploying from Git"
+    },
+    {
+      "JE": "JE-48868",
+      "AffectedVersions": "-",
+      "Desc": "When a collaborator installs complex packages, some emails are not sent to the environment owner"
+    },
+    {
+      "JE": "JE-48936",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when an owner tries to download or delete the manifest of the environment exported by a collaborator"
+    },
+    {
+      "JE": "JE-49291",
+      "AffectedVersions": "-",
+      "Desc": "Collaborators cannot create environments in regions available for the owner only"
+    },
+    {
+      "JE": "JE-50467",
+      "AffectedVersions": "5.7",
+      "Desc": "Collaborators cannot manage built-in SSL on the shared environments if the appropriate permission is not available (but enabled for the primary account)"
+    },
+    {
+      "JE": "JE-50596",
+      "AffectedVersions": "5.7",
+      "Desc": "Collaboration permissions are not updated till the dashboard reload"
+    },
+    {
+      "JE": "JE-50600",
+      "AffectedVersions": "5.7",
+      "Desc": "An error occurs when simultaneously sharing the environment and changing its owner to the same user"
+    },
+    {
+      "JE": "JE-50754",
+      "AffectedVersions": "5.7",
+      "Desc": "An error occurs when several collaborators try to delete the same domain simultaneously"
+    },
+    {
+      "JE": "JE-50755",
+      "AffectedVersions": "5.7",
+      "Desc": "The list of bound domains is only updated on the dashboard reload for collaborators"
+    },
+    {
+      "JE": "JE-50988",
+      "AffectedVersions": "5.7",
+      "Desc": "An error occurs when several collaborators simultaneously delete the same public IP"
+    },
+    {
+      "JE": "JE-50990",
+      "AffectedVersions": "5.7",
+      "Desc": "An error occurs when a collaborator with the Viewer access tries to swap domains for shared environments"
+    },
+    {
+      "JE": "JE-51933",
+      "AffectedVersions": "5.7",
+      "Desc": "When sharing environments shared with you, they are not displayed in the Shared by Me tab"
+    },
+    {
+      "JE": "JE-52136",
+      "AffectedVersions": "5.7",
+      "Desc": "The environment owner cannot change the permissions of the sub-collaborators"
+    },
+    {
+      "JE": "JE-52487",
+      "AffectedVersions": "-",
+      "Desc": "The sshd process is not starting on the alpine-based containers after the restart"
+    },
+    {
+      "JE": "JE-52595",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when a collaborator tries to remove the add-on installed by the owner"
+    },
+    {
+      "JE": "JE-52781",
+      "AffectedVersions": "-",
+      "Desc": "Active tasks are not displayed for the owner when a collaborator installs an environment with auto-clustering"
+    },
+    {
+      "JE": "JE-52784",
+      "AffectedVersions": "-",
+      "Desc": "The collaborators cannot see actions (in the Tasks manager) performed by the owner"
+    },
+    {
+      "JE": "JE-52789",
+      "AffectedVersions": "5.8.2",
+      "Desc": "A hint with an email address of the action initiator is not displayed for collaborators in the Tasks panel upon hovering over"
+    },
+    {
+      "JE": "JE-54012",
+      "AffectedVersions": "-",
+      "Desc": "Collaborators cannot filter by regions of the shared environments if these regions are not available for them"
+    },
+    {
+      "JE": "JE-55002",
+      "AffectedVersions": "-",
+      "Desc": "The platform welcome tutorial is not displayed for the new users registered through the collaboration invite email"
+    },
+    {
+      "JE": "JE-55004",
+      "AffectedVersions": "-",
+      "Desc": "Not all environment settings are displayed for the collaborators with the Viewer access"
+    },
+    {
+      "JE": "JE-55046",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect behavior when trying to share environments to the account that recently left the collaboration"
+    },
+    {
+      "JE": "JE-57413",
+      "AffectedVersions": "-",
+      "Desc": "The environment topology wizard is not opening for the owner after recent topology changes made by the collaborator"
+    },
+    {
+      "JE": "JE-57451",
+      "AffectedVersions": "-",
+      "Desc": "A user is absent in the environment owner selection list if that account cannot have more environments"
+    },
+    {
+      "JE": "JE-57452",
+      "AffectedVersions": "-",
+      "Desc": "The notification about the inability to create an environment on the selected account should disappear when switching to a different user"
+    },
+    {
+      "JE": "JE-57910",
+      "AffectedVersions": "-",
+      "Desc": "The “empty package” error appears during the archive deployment, but the application is deployed successfully"
+    },
+    {
+      "JE": "JE-57969",
+      "AffectedVersions": "-",
+      "Desc": "K8s Cluster environment is stuck in the “Applying settings” status when adding a Shared Storage node via add-on"
+    },
+    {
+      "JE": "JE-58087",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs during the “aftercreate” configuration of the custom Dockers based on the Debian and Ubuntu OS templates"
+    },
+    {
+      "JE": "JE-58456",
+      "AffectedVersions": "5.7.6",
+      "Desc": "The built-in Web SSH client in the dashboard is not working for the custom Dockers based on the Alpine OS template"
+    },
+    {
+      "JE": "JE-58527",
+      "AffectedVersions": "-",
+      "Desc": "Collaborators' changes to the shared environment topology are reverted if managed simultaneously with the owner"
+    },
+    {
+      "JE": "JE-58816",
+      "AffectedVersions": "any",
+      "Desc": "An error occurs when a collaborator tries to enable a firewall for the shared environment (but the owner does not have the required permissions)"
+    },
+    {
+      "JE": "JE-58906",
+      "AffectedVersions": "-",
+      "Desc": "Collaborator email address is not displayed in the Tasks panel upon hovering over"
+    },
+    {
+      "JE": "JE-59202",
+      "AffectedVersions": "6.1",
+      "Desc": "An error occurs when a user with a disabled Docker tab tries to add nodes from extra services in the wizard"
+    },
+    {
+      "JE": "JE-59207",
+      "AffectedVersions": "6.0",
+      "Desc": "The email address of the environment owner is not displayed in the topology wizard for collaborators with the Viewer access"
+    },
+    {
+      "JE": "JE-59397",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs if bashrc returns the additional output"
+    },
+    {
+      "JE": "JE-59405",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when a collaborator tries to add a Windows VM node to the shared environment"
+    },
+    {
+      "JE": "JE-59450",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when accepting a collaboration invite while already logged in as a different account"
+    },
+    {
+      "JE": "JE-60841",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when trying to connect to the alpine-based container via SSH"
+    },
+    {
+      "JE": "JE-60852",
+      "AffectedVersions": "-",
+      "Desc": "The dead unfsd service appears after mounting a folder on the Apache instance in the application server layer"
+    },
+    {
+      "JE": "JE-60882",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when connecting to the alpine-based container via SSH over IPv6"
+    },
+    {
+      "JE": "JE-60991",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when trying to open the SFTP / Direct SSH Access tab from the node settings in the dashboard"
+    },
+    {
+      "JE": "JE-61062",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when a collaborator tries to clone a shared environment of the deactivated user"
+    },
+    {
+      "JE": "JE-61063",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when a collaborator tries to adjust auto horizontal scaling rules of the shared environment of the deactivated user"
+    },
+    {
+      "JE": "JE-61089",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when a collaborator tries to deploy a Java project with the Maven build node"
+    }
+  ]
+}

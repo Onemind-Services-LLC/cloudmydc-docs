@@ -1,0 +1,86 @@
+{
+  "data1": [
+    {
+      "JE": "JE-62011",
+      "CompatibleFrom": "any",
+      "Desc": "The “blocked resources” issue occurs on the main page of the Jira application installed from the platform Marketplace"
+    },
+    {
+      "JE": "JE-63277",
+      "CompatibleFrom": "any",
+      "Desc": "An error occurs when installing the Jira application from the platform Marketplace"
+    },
+    {
+      "JE": "WP-110",
+      "CompatibleFrom": "any",
+      "Desc": "Custom configuration values are not preserved on the new LiteSpeed node when scaling in a stateful mode"
+    },
+    {
+      "JE": "JE-56296",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when reloading configs on Traffic Distributor for environments with non-Latin characters in names"
+    },
+    {
+      "JE": "JE-62380",
+      "CompatibleFrom": "3.3",
+      "Desc": "The Git-Push-Deploy add-on installed on the extra layer deploys the project to the application server layer"
+    },
+    {
+      "JE": "JE-62750",
+      "CompatibleFrom": "3.3",
+      "Desc": "Only one environment is displayed in the BitNinja dashboard after cloning an environment with the BitNinja add-on"
+    },
+    {
+      "JE": "JE-63608",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when opening the admin panel page for the DjangoCMS application installed from the platform Marketplace"
+    },
+    {
+      "JE": "JE-63919",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when installing the OwnCloud application from the platform Marketplace"
+    },
+    {
+      "JE": "JE-63972",
+      "CompatibleFrom": "3.3",
+      "Desc": "The outdated Docker image API tag version is used in the Jira, Eclipse Che, Plesk, and Odoo applications from the platform Marketplace"
+    },
+    {
+      "JE": "JE-63973",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when installing the OpenVPN application from the platform Marketplace"
+    },
+    {
+      "JE": "JE-61155",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Memory auto-configuration is not applied on the PHP-based stacks when decreasing cloudlets number"
+    },
+    {
+      "JE": "JE-63587",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The Gemfile.lock file is deleted when scaling the Ruby application server that is mounted with the Shared Storage node"
+    },
+    {
+      "JE": "JE-63696",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when changing the cloudlets number for the Apache PHP application server that is mounted with the Shared Storage node"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-63864",
+      "AffectedVersions": "-",
+      "Desc": "Isolation rules/sets generation is not interrupted upon failure"
+    },
+    {
+      "JE": "JE-63885",
+      "AffectedVersions": "7.3",
+      "Desc": "New users cannot register with SMS verification"
+    },
+    {
+      "JE": "SSHG-33",
+      "AffectedVersions": "-",
+      "Desc": "SSH Gate error notifications have links with the old platform domain"
+    }
+  ]
+}

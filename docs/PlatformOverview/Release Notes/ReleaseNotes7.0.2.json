@@ -1,0 +1,29 @@
+{
+  "data1": [{
+    "JE": "K8S-245",
+    "CompatibleFrom": "-",
+    "Desc": "Incorrect account quotas are checked when installing the Kubernetes Cluster package as a collaborator"
+  }],
+  "data2": [
+    {
+      "JE": "JE-43598",
+      "AffectedVersions": "5.5.2",
+      "Desc": "An unhandled error occurs when deploying an archive to the unsupported node type"
+    },
+    {
+      "JE": "JE-58087",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs during the custom containers 'aftercreate' configuration"
+    },
+    {
+      "JE": "JE-61583",
+      "AffectedVersions": "-",
+      "Desc": "Unstable connection when accessing to nodes via the Web SSH client"
+    },
+    {
+      "JE": "JE-61699",
+      "AffectedVersions": "6.3.2",
+      "Desc": "An error occurs when managing variables or redeploying containers if one of the environment variables is empty"
+    }
+  ]
+}
