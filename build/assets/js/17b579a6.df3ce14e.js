@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcloudmydc_docs=self.webpackChunkcloudmydc_docs||[]).push([[841],{85640:e=>{e.exports=JSON.parse('{"title":"PHP","slug":"/category/php","permalink":"/docs/category/php","navigation":{"previous":{"title":"Java Tutorials","permalink":"/docs/Java/Java Tutorials"},"next":{"title":"PHP Dev Center","permalink":"/docs/PHP/PHP Dev Center"}}}')}}]);
