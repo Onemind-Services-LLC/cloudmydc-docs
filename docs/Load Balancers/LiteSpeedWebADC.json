@@ -1,0 +1,28 @@
+{
+  "data1": [
+    {
+      "LicenseType": "Web ADC Small (default)",
+      "Workers": 1,
+      "PricingHour": 0.01,
+      "PricingMonth": 7.3
+    },
+    {
+      "LicenseType": "Web ADC Medium",
+      "Workers": 2,
+      "PricingHour": 0.02,
+      "PricingMonth": 14.6
+    },
+    {
+      "LicenseType": "Web ADC Large",
+      "Workers": 4,
+      "PricingHour": 0.04,
+      "PricingMonth": 29.2
+    },
+    {
+      "LicenseType": "Web ADC Ultimate",
+      "Workers": 8,
+      "PricingHour": 0.08,
+      "PricingMonth": 58.4
+    }
+  ]
+}

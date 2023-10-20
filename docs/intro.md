@@ -9,7 +9,6 @@ sidebar_position: 1
 - Environment Management ✅
 - Deployment ✅
 
-- Platform Overview / Release 👍
 - Application Setting 👍
 - Deployment Tools 👍
 - Java 👍
@@ -18,11 +17,12 @@ sidebar_position: 1
 - Ruby 👍
 - Python 👍
 - Go Lang 👍
-- Window & .NET 👍
 - Databases 👍
-- Load Balancers 👍
-- Kubernetes Hosting 👍
-- Wordpress as a service 👍
+
+- Window & .NET ✅
+- Kubernetes Hosting ✅
+- Load Balancers ✅
+- Wordpress as a service ✅
 
 - Elastic VPS ✅
 - Data Storage Container ✅
@@ -50,6 +50,10 @@ yarn start
 ------------------------------------- Extra Line -------------------------------------
 
 <br/>
+
+------------------------------------- Video Line -------------------------------------
+
+[![Locale Dropdown](Thumbnail](videoURL)
 
 ------------------------------------- Bold Text -------------------------------------
 <br/>

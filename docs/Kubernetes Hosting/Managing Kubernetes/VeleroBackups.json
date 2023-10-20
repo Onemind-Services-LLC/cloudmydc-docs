@@ -1,0 +1,24 @@
+{
+  "data1": [
+    {
+      "CharacterPeriod": "Minute",
+      "AcceptableValues": "0-59,*"
+    },
+    {
+      "CharacterPeriod": "Hour",
+      "AcceptableValues": "0-23,*"
+    },
+    {
+      "CharacterPeriod": "Day of Month",
+      "AcceptableValues": "1-31,*"
+    },
+    {
+      "CharacterPeriod": "Month",
+      "AcceptableValues": "1-12,*"
+    },
+    {
+      "CharacterPeriod": "Day of Week",
+      "AcceptableValues": "0-7,*"
+    }
+  ]
+}
