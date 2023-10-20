@@ -22,14 +22,14 @@ sidebar_position: 7
 </div>
 <div>
 
-In this post we’d like to show how to expose applications via a public [IP address](1) attached to one of the nodes of a Kubernetes cluster environment in Jelastic PaaS. It can be done in two possible ways - attaching IP to [Dedicated Load Balancer](1) or to K8s Worker node.
+In this post we’d like to show how to expose applications via a public [IP address](https://cloudmydc.com/) attached to one of the nodes of a Kubernetes cluster environment in Jelastic PaaS. It can be done in two possible ways - attaching IP to [Dedicated Load Balancer](https://cloudmydc.com/) or to K8s Worker node.
 
 </div>
 </div>
 
 ## Dedicated Load Balancer for Application Access
 
-1. First of all, [install the Kubernetes cluster](1) from Jelastic marketplace and deploy the application. As an example, we go with [Jakarta EE Cargo Tracker](1).
+1. First of all, [install the Kubernetes cluster](https://cloudmydc.com/) from Jelastic marketplace and deploy the application. As an example, we go with [Jakarta EE Cargo Tracker](https://cloudmydc.com/).
 
 2. Click **Change Environment Topology** next to your Kubernetes cluster. In the opened window add a Dedicated Load Balancer node and attach a public IP address to it.
 
@@ -43,7 +43,7 @@ In this post we’d like to show how to expose applications via a public [IP add
 
 </div>
 
-Here we use the NGINX load balancer node, but you can choose any other available ([HAProxy](1), [LS Web ADC](1), [Varnish](1)). Once the topology is changed it should look like as follows:
+Here we use the NGINX load balancer node, but you can choose any other available ([HAProxy](https://cloudmydc.com/), [LS Web ADC](https://cloudmydc.com/), [Varnish](https://cloudmydc.com/)). Once the topology is changed it should look like as follows:
 
 <div style={{
     display:'flex',
@@ -65,7 +65,7 @@ Here we use the NGINX load balancer node, but you can choose any other available
 
 </div>
 
-3. After that, create an [A record](1) for a [custom domain](1) using the IP address added at the previous step. For example **_cargo-tracker.jele.website_**.
+3. After that, create an [A record](https://cloudmydc.com/) for a [custom domain](https://cloudmydc.com/) using the IP address added at the previous step. For example **_cargo-tracker.jele.website_**.
 
 <div style={{
     display:'flex',
@@ -77,9 +77,9 @@ Here we use the NGINX load balancer node, but you can choose any other available
 
 </div>
 
-4. Now you may bind the custom domain to the K8s cluster and send a request to issue a trusted [Let’s Encrypt SSL certificate](1) to secure applications’ traffic.
+4. Now you may bind the custom domain to the K8s cluster and send a request to issue a trusted [Let’s Encrypt SSL certificate](https://cloudmydc.com/) to secure applications’ traffic.
 
-- Go to the load balancer [Add-Ons](1) and find **Let’s Encrypt Free SSL**.
+- Go to the load balancer [Add-Ons](https://cloudmydc.com/) and find **Let’s Encrypt Free SSL**.
 
 <div style={{
     display:'flex',
@@ -135,7 +135,7 @@ Let’s proceed on the same cluster with the Cargo Tracker application deployed.
 
 2. Create the A record for a custom domain mapping to the newly added IP address. Use a domain name different from that one used in the previous chapter. For example: **_cargo-tracker-worker.jele.website_**.
 
-3. Then, go to the add-ons of the Control Plane node and install [Certificate Manager](1). Along with a cert-manager controller there will be installed an NGINX ingress controller with LoadBalancer service type. It will hold the IP attached to the worker node, and will be serving the “nginx-cert” ingress class resources.
+3. Then, go to the add-ons of the Control Plane node and install [Certificate Manager](https://cloudmydc.com/). Along with a cert-manager controller there will be installed an NGINX ingress controller with LoadBalancer service type. It will hold the IP attached to the worker node, and will be serving the “nginx-cert” ingress class resources.
 
 <div style={{
     display:'flex',
@@ -159,11 +159,11 @@ Let’s proceed on the same cluster with the Cargo Tracker application deployed.
 
 </div>
 
-5. Upon installation, the add-on installs a test application ***helloworld-cert***. Let’s delete the resources it takes:
+5. Upon installation, the add-on installs a test application **_helloworld-cert_**. Let’s delete the resources it takes:
 
-***$ kubectl delete deploy hello-cert-manager***
-***$ kubectl delete svc hello-cert-manager***
-***$ kubectl delete ing helloworld-cert***
+**_$ kubectl delete deploy hello-cert-manager_**
+**_$ kubectl delete svc hello-cert-manager_**
+**_$ kubectl delete ing helloworld-cert_**
 
 <div style={{
     display:'flex',
@@ -175,7 +175,7 @@ Let’s proceed on the same cluster with the Cargo Tracker application deployed.
 
 </div>
 
-6. Finally, create an ingress resource ***cargo-tracker-worker*** that will terminate application SSL traffic and handle routing to the cargo-tracker service. For example ***cargo-tracker-worker-ingress.yaml***:
+6. Finally, create an ingress resource **_cargo-tracker-worker_** that will terminate application SSL traffic and handle routing to the cargo-tracker service. For example **_cargo-tracker-worker-ingress.yaml_**:
 
 ```bash
 apiVersion: networking.k8s.io/v1
@@ -190,7 +190,7 @@ kubernetes.io/tls-acme: "true"
 nginx.ingress.kubernetes.io/affinity: "cookie"
 nginx.ingress.kubernetes.io/affinity-mode: "persistent"
 nginx.ingress.kubernetes.io/session-cookie-expires: "172800"
-nginx.ingress.kubernetes.io/session-cookie-max-age: "172800"  
+nginx.ingress.kubernetes.io/session-cookie-max-age: "172800"
 spec:
 tls:
 
@@ -215,9 +215,8 @@ tls:
 
 Congratulations! You’ve successfully exposed your application in two different ways and thus, you should see two ingresses:
 
-- ***cargo-tracker*** - serves application traffic that flows via public IP address of dedicated load balancer
-- ***cargo-tracker-worker*** - serves application traffic that flows directly through the public IP address that is attached to the K8s worker node
-
+- **_cargo-tracker_** - serves application traffic that flows via public IP address of dedicated load balancer
+- **_cargo-tracker-worker_** - serves application traffic that flows directly through the public IP address that is attached to the K8s worker node
 
 <div style={{
     display:'flex',
@@ -229,4 +228,4 @@ Congratulations! You’ve successfully exposed your application in two different
 
 </div>
 
-Sure, in production you need only one ingress depending on the chosen implementation. Explore easy and scalable Kubernetes hosting with [Jelastic service providers worldwide](1).
+Sure, in production you need only one ingress depending on the chosen implementation. Explore easy and scalable Kubernetes hosting with [Jelastic service providers worldwide](https://cloudmydc.com/).

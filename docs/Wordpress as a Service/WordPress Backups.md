@@ -3,14 +3,14 @@ sidebar_position: 5
 ---
 
 ## WordPress Backups
-Virtuozzo Application Platform for WordPress provides a fully automated backup solution (based on the **[Restic](1)** software) for all the supported topologies. The platform lets you set up the process based on your needs via a clear and intuitive user interface.
+
+Virtuozzo Application Platform for WordPress provides a fully automated backup solution (based on the **[Restic](https://cloudmydc.com/)** software) for all the supported topologies. The platform lets you set up the process based on your needs via a clear and intuitive user interface.
 
 :::tip Tip
 
-Refer to the linked section if you are interested in the [backup process flow and specifics](1).
+Refer to the linked section if you are interested in the [backup process flow and specifics](https://cloudmydc.com/).
 
 :::
-
 
 The order of operation is the following:
 
@@ -37,7 +37,7 @@ Let’s go through the required steps in detail:
 - select the preferred backup storage option (tick the checkbox next to the name)
 - if needed, enable annual and auto pay options
 - set the number of storage nodes
-- Provide the *display name* and *domain*
+- Provide the _display name_ and _domain_
 - choose the required region (if available)
 
 <div style={{
@@ -96,15 +96,16 @@ Click **Install** to apply.
 </div>
 
 ## Backup Process Specifics
+
 Below, you can find information on the backup and restoration processes flow and specifics:
 
 - the backup storage node is mounted to the WordPress instances only during the backup and restore processes (and unmounted afterward)
-- during the backup operation, the ***Restic*** creates a snapshot that includes data from the **/var/www/webroot/ROOT** folder and the full database dump (made with the mysqldump utility)
+- during the backup operation, the **_Restic_** creates a snapshot that includes data from the **/var/www/webroot/ROOT** folder and the full database dump (made with the mysqldump utility)
 - backups on the storage node have timestamps to make them easier to manage during restoration; also, snapshots are automatically rotated based on the backup number configured by the user - only the specified number of the latest backups is kept
 - during the backup operation, the following directories are connected:
-   - on the backup storage node - all the backups are stored under the **/data** folder (every environment has its own subdirectory - **/data/${env.name}**)
-   - on the compute node (application server) layer - the **/opt/backup/** directory is used for backups
+  - on the backup storage node - all the backups are stored under the **/data** folder (every environment has its own subdirectory - **/data/${env.name}**)
+  - on the compute node (application server) layer - the **/opt/backup/** directory is used for backups
 - during the restoration operation, the following directories are connected:
-   - on the backup storage node - the **/data/${env.name}** directory with backups of the appropriate environment
-   - on the compute node (application server) layer - the **/tmp/restore** directory is used to store initially restored data
+  - on the backup storage node - the **/data/${env.name}** directory with backups of the appropriate environment
+  - on the compute node (application server) layer - the **/tmp/restore** directory is used to store initially restored data
 - once data from the snapshot is restored to the application server, the corresponding environment is temporarily stopped to perform database restoration and **webroot** folder substitution

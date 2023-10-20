@@ -3,6 +3,7 @@ sidebar_position: 3
 ---
 
 ## Windows Remote Desktop Access
+
 <div style={{
     display: 'grid',
     gridTemplateColumns: '0.5fr 1fr',
@@ -23,7 +24,7 @@ sidebar_position: 3
 
 All the Windows-based nodes at the platform provide the embedded **Remote Desktop Protocol** support, which allows you to connect to the virtual desktop of your Windows machine and perform any required server configurations through it.
 
-In order to ensure the maximum convenience while using the Windows hosting services, our platform is equipped with the integrated RDP tool - **Guacamole**. 
+In order to ensure the maximum convenience while using the Windows hosting services, our platform is equipped with the integrated RDP tool - **Guacamole**.
 
 </div>
 </div>
@@ -32,10 +33,11 @@ It represents a clientless remote desktop gateway, which is run from within the 
 
 Besides this default connection scenario, you can also use your preferred local remote desktop client. So, below we’ll describe both ways of the remote desktop connections' establishment in more details:
 
-- [RDP Connection via Web Client](1)
-- [RDP Connection via Local Client](1)
+- [RDP Connection via Web Client](https://cloudmydc.com/)
+- [RDP Connection via Local Client](https://cloudmydc.com/)
 
 ## RDP Connection via Web Client
+
 The required workflow for accessing the server’s desktop is similar for all Windows VM nodes. For instant access just after the node’s creation, you can use the direct one-time Guacamole link in the received email. Otherwise, the required operations should be performed through the dashboard.
 
 Let’s consider it on the example of the Windows VM server.
@@ -52,7 +54,7 @@ Let’s consider it on the example of the Windows VM server.
 
 </div>
 
-The other available options are required for connection via the [local RDP client](1):
+The other available options are required for connection via the [local RDP client](https://cloudmydc.com/):
 
 - **Reset RDP Password** to reset and resend Administrator credentials
 - **Info**, which displays short information on establishing the RDP connection manually
@@ -70,18 +72,20 @@ The other available options are required for connection via the [local RDP clien
 
 </div>
 
-Once the connection is established, you’ll see the **Server Manager** window opened. Now, you can start [managing your server](1).
+Once the connection is established, you’ll see the **Server Manager** window opened. Now, you can start [managing your server](https://cloudmydc.com/).
 
 ## RDP Connection via Local Client
-In case you prefer to work with a local remote desktop client, you’ll need to use the credentials from the email notification sent to you during the corresponding environment creation. The tools you may want to use are: *Remote Desktop* (for Windows), *KRDC*, *Remina* or *RDesktop* (for Linux), *Microsoft Remote Desktop* (for Mac OS X).
+
+In case you prefer to work with a local remote desktop client, you’ll need to use the credentials from the email notification sent to you during the corresponding environment creation. The tools you may want to use are: _Remote Desktop_ (for Windows), _KRDC_, _Remina_ or _RDesktop_ (for Linux), _Microsoft Remote Desktop_ (for Mac OS X).
 
 Below, we’ll describe the examples of working with the most common RDP clients for Windows and UNIX-based operating systems:
 
-- [For Windows](1)
-- [For Linux/MacOS/FreeBSD](1)
+- [For Windows](https://cloudmydc.com/)
+- [For Linux/MacOS/FreeBSD](https://cloudmydc.com/)
 
 ## For Windows
-1. Get the **[Microsoft Remote Desktop](1)** application and launch it.
+
+1. Get the **[Microsoft Remote Desktop](https://cloudmydc.com/)** application and launch it.
 2. Click **Add > PC** at the top of the opened window.
 
 <div style={{
@@ -94,11 +98,11 @@ Below, we’ll describe the examples of working with the most common RDP clients
 
 </div>
 
-3. Provide the RDP connection link ([endpoint](1)) into the **PC name** field.
+3. Provide the RDP connection link ([endpoint](https://cloudmydc.com/)) into the **PC name** field.
 
 :::danger Note
 
-If [public IP](1) is attached to the Windows VM node, it must be used instead of the endpoint.
+If [public IP](https://cloudmydc.com/) is attached to the Windows VM node, it must be used instead of the endpoint.
 
 :::
 
@@ -159,11 +163,12 @@ Click **Save** and adjust any additional setting, if needed.
 That’s all, your connection is saved under the **“Saved Desktops”** section. Click it to start a remote session.
 
 ## For Linux/MacOS/FreeBSD
-We’ve chosen the **rdesktop** utility as an example of the RD client, but you can use other ones (e.g. ***freerdp***). If you haven’t got this tool installed at your local computer, get it using the appropriate command according to your OS package manager (e.g.* yum -y install rdesktop or sudo apt-get install rdesktop*).
+
+We’ve chosen the **rdesktop** utility as an example of the RD client, but you can use other ones (e.g. **_freerdp_**). If you haven’t got this tool installed at your local computer, get it using the appropriate command according to your OS package manager (e.g._ yum -y install rdesktop or sudo apt-get install rdesktop_).
 
 :::danger Note
 
-In order to establish remote connection via the ***rdesktop*** tool, you need to disable the Network Level Authentication in the **Remote Desktop** configs of the Windows VM node.
+In order to establish remote connection via the **_rdesktop_** tool, you need to disable the Network Level Authentication in the **Remote Desktop** configs of the Windows VM node.
 
 <div style={{
     display:'flex',
@@ -175,7 +180,7 @@ In order to establish remote connection via the ***rdesktop*** tool, you need to
 
 </div>
 
-If you want to keep this setting enabled, you can use other tools, like ***freerdp***.
+If you want to keep this setting enabled, you can use other tools, like **_freerdp_**.
 
 :::
 
@@ -186,7 +191,8 @@ Then open your terminal emulator and follow the next steps:
 ```bash
 rdesktop {access_url}
 ```
-where ***{access_url}*** is a connection URL for RDP access (can be seen at the dashboard or inside the received email), specified without the protocol-defining part.
+
+where **_{access_url}_** is a connection URL for RDP access (can be seen at the dashboard or inside the received email), specified without the protocol-defining part.
 
 <div style={{
     display:'flex',

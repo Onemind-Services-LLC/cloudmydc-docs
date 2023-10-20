@@ -3,17 +3,19 @@ sidebar_position: 3
 ---
 
 ## WordPress Project Management
+
 All WordPress projects on the platform are provided with a dedicated page where you can view all the details, track monitoring data, deploy solutions, and perform other management operations.
 
 Below, we’ve grouped all the functionality available for projects in the WordPress dashboard into the following groups:
 
-- [Settings and Basic Actions](1)
-- [General Data](1)
-- [WordPress Plugins](1)
-- [Application Deployment](1)
-- [Environment Management](1)
+- [Settings and Basic Actions](https://cloudmydc.com/)
+- [General Data](https://cloudmydc.com/)
+- [WordPress Plugins](https://cloudmydc.com/)
+- [Application Deployment](https://cloudmydc.com/)
+- [Environment Management](https://cloudmydc.com/)
 
 ## Settings and Basic Actions
+
 1. At the top of the project window, you can see the list of basic environment actions – **Stop (Start), Restart**, and **Settings**.
 
 <div style={{
@@ -28,7 +30,7 @@ Below, we’ve grouped all the functionality available for projects in the WordP
 
 Just click the required button to perform the appropriate operation.
 
-2. The button with a gear icon will redirect you to the project **Settings** page, which has several sections, including an option to [delete the project](1) at the bottom.
+2. The button with a gear icon will redirect you to the project **Settings** page, which has several sections, including an option to [delete the project](https://cloudmydc.com/) at the bottom.
 
 <div style={{
     display:'flex',
@@ -40,7 +42,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-2.1. The **Custom Domains** section provides instruction and functionality for binding [custom domains](1) to your environment.
+2.1. The **Custom Domains** section provides instruction and functionality for binding [custom domains](https://cloudmydc.com/) to your environment.
 
 <div style={{
     display:'flex',
@@ -52,7 +54,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-2.2. The **SSL Installation** section allows issuing new or viewing existing certificates. You can use automatic *[Let’s Encrypt SSL](1)* or manually manage custom SSL for the project (you need to add custom domain first).
+2.2. The **SSL Installation** section allows issuing new or viewing existing certificates. You can use automatic _[Let’s Encrypt SSL](https://cloudmydc.com/)_ or manually manage custom SSL for the project (you need to add custom domain first).
 
 <div style={{
     display:'flex',
@@ -64,8 +66,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-2.3. The **Backup Storage** section enables automatic backups for your project based on the specified schedule (pre-defined, custom, or crontab). Additionally, you can select backup storage (add it via [account settings](1)) and set a number of latest backups to keep. Learn more about the [backup and restore process](1).
-
+2.3. The **Backup Storage** section enables automatic backups for your project based on the specified schedule (pre-defined, custom, or crontab). Additionally, you can select backup storage (add it via [account settings](https://cloudmydc.com/)) and set a number of latest backups to keep. Learn more about the [backup and restore process](https://cloudmydc.com/).
 
 <div style={{
     display:'flex',
@@ -89,7 +90,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-[Endpoints](1) create a direct connection (over raw TCP or UDP protocol) to one of the project nodes without the mandatory Public IP address. It can be used to set up remote access. For example, one of the most common use cases is gaining remote access to your database instance using a local database client.
+[Endpoints](https://cloudmydc.com/) create a direct connection (over raw TCP or UDP protocol) to one of the project nodes without the mandatory Public IP address. It can be used to set up remote access. For example, one of the most common use cases is gaining remote access to your database instance using a local database client.
 
 2.5. The **Subscription Plan** section shows subscription details of the current project and, depending on the hosting provider configurations, can provide the **Change Plan** option. It gives the ability to move the current project to a different plan within the same subscription.
 
@@ -103,7 +104,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-3. Next to the buttons mentioned above, you can find a drop-down list to switch between *[Production and Staging environments](1)* for your project.
+3. Next to the buttons mentioned above, you can find a drop-down list to switch between _[Production and Staging environments](https://cloudmydc.com/)_ for your project.
 
 <div style={{
     display:'flex',
@@ -116,7 +117,8 @@ Just click the required button to perform the appropriate operation.
 </div>
 
 ## General Data
-The project’s ***Overview*** section provides the most frequently needed data for your project.
+
+The project’s **_Overview_** section provides the most frequently needed data for your project.
 
 <div style={{
     display:'flex',
@@ -128,7 +130,7 @@ The project’s ***Overview*** section provides the most frequently needed data 
 
 </div>
 
-1. The icon at the start shows whether the project is clustered or standalone solution. The colored dot next to it indicates project status (*green* – active, *yellow* – in progress, *red* – stopped). The name that follows defines whether the environment is production or staging. Lastly, you can see the internal domain of the project.
+1. The icon at the start shows whether the project is clustered or standalone solution. The colored dot next to it indicates project status (_green_ – active, _yellow_ – in progress, _red_ – stopped). The name that follows defines whether the environment is production or staging. Lastly, you can see the internal domain of the project.
 
 <div style={{
     display:'flex',
@@ -140,7 +142,7 @@ The project’s ***Overview*** section provides the most frequently needed data 
 
 </div>
 
-You can click the **Edit Domain Name** button to [bind a custom external domain](1).
+You can click the **Edit Domain Name** button to [bind a custom external domain](https://cloudmydc.com/).
 
 <div style={{
     display:'flex',
@@ -164,7 +166,7 @@ You can click the **Edit Domain Name** button to [bind a custom external domain]
 
 </div>
 
-Learn more in the dedicated [Application Deployment](1) section.
+Learn more in the dedicated [Application Deployment](https://cloudmydc.com/) section.
 
 3. Below that, the platform displays the automatically detected **WordPress version** and provides a link to the WordPress admin panel.
 
@@ -202,7 +204,7 @@ Hower over to see the **Redeploy** option that allows updating the PHP version. 
 
 </div>
 
-We recommend performing regular redeployments to the latest version to ensure your project’s container is running the up-to-date operating system and software stacks with all the latest vulnerability fixes. However, be aware that the operation will cause a brief downtime for the project. You can read more on the **[Redeployment](1)** feature in the linked document.
+We recommend performing regular redeployments to the latest version to ensure your project’s container is running the up-to-date operating system and software stacks with all the latest vulnerability fixes. However, be aware that the operation will cause a brief downtime for the project. You can read more on the **[Redeployment](https://cloudmydc.com/)** feature in the linked document.
 
 5. Click the **Datacenter Info** to check the relevant information.
 
@@ -216,7 +218,7 @@ We recommend performing regular redeployments to the latest version to ensure yo
 
 </div>
 
-6. Click the **SSH/SFTP Info** to see how you can access your project via the [SSH](1) and [SFTP](1) protocols. The drop-down list allows viewing information for different nodes of the cluster.
+6. Click the **SSH/SFTP Info** to see how you can access your project via the [SSH](https://cloudmydc.com/) and [SFTP](https://cloudmydc.com/) protocols. The drop-down list allows viewing information for different nodes of the cluster.
 
 <div style={{
     display:'flex',
@@ -253,7 +255,8 @@ We recommend performing regular redeployments to the latest version to ensure yo
 </div>
 
 ## WordPress Plugins
-The ***Plugins*** section lists all the WordPress plugins installed for your project. The list is automatically updated upon switching to this tab, so you always have up-to-date data.
+
+The **_Plugins_** section lists all the WordPress plugins installed for your project. The list is automatically updated upon switching to this tab, so you always have up-to-date data.
 
 <div style={{
     display:'flex',
@@ -277,7 +280,7 @@ Here, you can hover over to view the plugin’s name and description. Use the to
 
 </div>
 
-In order to add new plugins, you need to connect to your project via the ***WordPress admin panel*** (an email with credentials was sent to you after the project creation).
+In order to add new plugins, you need to connect to your project via the **_WordPress admin panel_** (an email with credentials was sent to you after the project creation).
 
 <div style={{
     display:'flex',
@@ -289,9 +292,10 @@ In order to add new plugins, you need to connect to your project via the ***Word
 
 </div>
 
-Go to the **Plugins** tab within the admin panel and choose the required plugin from the marketplace (or upload your custom one). Learn more at the official WordPress documentation - check the **[Managing Plugins](1)** guide.
+Go to the **Plugins** tab within the admin panel and choose the required plugin from the marketplace (or upload your custom one). Learn more at the official WordPress documentation - check the **[Managing Plugins](https://cloudmydc.com/)** guide.
 
 ## Application Deployment
+
 The application deployment menu is located at the right part of the overview section. Usually, a **Default project** is deployed during a new WordPress project creation. It is a sample website of the “Hello World” blog to help new users get started. Eventually, you may want to switch to something more suitable for your specific needs.
 
 1. Only one application can be deployed at a time. So, any existing solution should be removed before deploying a new application. Expand the deployment menu and click the **Delete** option.
@@ -326,7 +330,7 @@ Confirm the action via pop-up.
 
 </div>
 
-3. Within the opened window, you can select the preferable Git repository from the list of ones added via the [account settings](1). Optionally, tick the “Check and auto-deploy updates (min)” checkbox and provide the preferred period to enable automatic updates of the deployed application (only upon some changes).
+3. Within the opened window, you can select the preferable Git repository from the list of ones added via the [account settings](https://cloudmydc.com/). Optionally, tick the “Check and auto-deploy updates (min)” checkbox and provide the preferred period to enable automatic updates of the deployed application (only upon some changes).
 
 <div style={{
     display:'flex',
@@ -383,6 +387,7 @@ Confirm the action via pop-up.
 </div>
 
 ## Environment Management
+
 The platform provides monitoring and file management options for your WordPress projects. Choose the required project and find the appropriate section at the bottom of the page.
 
 <div style={{
@@ -401,7 +406,7 @@ You can use the buttons to the right (circled in the image above) to respectivel
 - Split screen with the basic project information (the size of the section can be manually adjusted).
 - Minimize the section to a single line at the bottom of the page.
 
-1. The ***Statistics*** tab of the section provides detailed information on the project consumption and is updated in real-time. Hover over the graphs for detailed data for that moment.
+1. The **_Statistics_** tab of the section provides detailed information on the project consumption and is updated in real-time. Hover over the graphs for detailed data for that moment.
 
 <div style={{
     display:'flex',
@@ -416,19 +421,18 @@ You can use the buttons to the right (circled in the image above) to respectivel
 It is possible to adjust the displayed data using the tools panel:
 
 - **Scope** – node type to show statistics (only available for clustered solutions with multiple nodes)
-   - *bl* – load balancers (LiteSpeed ADC)
-   - *cp* – application servers (LiteSpeed)
-   - *nosql* – NoSQL databases (Redis)
-   - *sql* – SQL databases (MariaDB)
-   - *storage* – storage nodes (Shared Storage)
+  - _bl_ – load balancers (LiteSpeed ADC)
+  - _cp_ – application servers (LiteSpeed)
+  - _nosql_ – NoSQL databases (Redis)
+  - _sql_ – SQL databases (MariaDB)
+  - _storage_ – storage nodes (Shared Storage)
 - **Nodes** – all or a specific node within the selected scope
 - **Duration** – choose the required period (hour, day, or month)
 - **Interval** – select the preferred interval (depends on the Duration option)
 - **CPU, Memory, Network, Storage** – tick the data that should be displayed
 - **Auto Refresh** – click to enable/disable data tracking in real time
 
-2. On the ***File Management*** tab, you can see your application files and perform basic management. You can select the needed node for the clustered solutions via the appropriate **Nodes** list at the top.
-
+2. On the **_File Management_** tab, you can see your application files and perform basic management. You can select the needed node for the clustered solutions via the appropriate **Nodes** list at the top.
 
 <div style={{
     display:'flex',
@@ -466,4 +470,4 @@ The **Favorites** tab is used for quick access to the main configuration files o
 
 </div>
 
-For [more management options](1), connect via SSH or make adjustments via the database and WordPress admin panels.
+For [more management options](https://cloudmydc.com/), connect via SSH or make adjustments via the database and WordPress admin panels.

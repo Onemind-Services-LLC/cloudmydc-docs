@@ -30,6 +30,7 @@ Flexibility, accelerated development and delivery, improved scalability and high
 With Jelastic’s Kubernetes automation you can improve DevOps productivity and focus on your business aims rather than fighting infrastructure complexity. In this article, we will cover how to streamline the Kubernetes cluster lifecycle via delivering upgrades automatically.
 
 ## Kubernetes Cluster Versioning
+
 Before taking the decision regarding the upgrade, you can check a current version of your cluster using one of the following options:
 
 - via the dashboard next to the master and worker nodes
@@ -44,8 +45,8 @@ Before taking the decision regarding the upgrade, you can check a current versio
 
 </div>
 
-- via WebSSH client by issuing the command to get the [Kubernetes version](1)
-**kubectl version --short**
+- via WebSSH client by issuing the command to get the [Kubernetes version](https://cloudmydc.com/)
+  **kubectl version --short**
 
 <div style={{
     display:'flex',
@@ -57,7 +58,7 @@ Before taking the decision regarding the upgrade, you can check a current versio
 
 </div>
 
-Then compare the current cluster version with available auto-upgrade packages which are presented in the [Jelastic Kubernetes versions page](1).
+Then compare the current cluster version with available auto-upgrade packages which are presented in the [Jelastic Kubernetes versions page](https://cloudmydc.com/).
 
 <div style={{
     display:'flex',
@@ -80,10 +81,10 @@ Kubernetes cluster will become non-functional if you try upgrading manually to t
 :::
 
 ## Kubernetes Cluster Auto-Upgrade Add-On
+
 In order to automatically get the newer version, you need to use “**Cluster Upgrade**” add-on.
 
 1.Press **Add-Ons** on the Master node and click **Start Cluster Upgrade**.
-
 
 <div style={{
     display:'flex',
@@ -109,7 +110,7 @@ In order to automatically get the newer version, you need to use “**Cluster Up
 
 :::tip Note
 
-After you have upgraded Kubernetes to a newer version, you can’t downgrade it. Therefore, you should make sure that applications deployed on the cluster are compatible with the version you plan to activate. For this, spin up a development cluster and test new version's compatibility with your applications before doing the upgrade on production. 
+After you have upgraded Kubernetes to a newer version, you can’t downgrade it. Therefore, you should make sure that applications deployed on the cluster are compatible with the version you plan to activate. For this, spin up a development cluster and test new version's compatibility with your applications before doing the upgrade on production.
 
 :::
 
@@ -164,6 +165,7 @@ At the same time, you should keep in mind that zero downtime is dependent not on
 </div>
 
 ## Kubernetes Cluster Update Process
+
 Let’s check in more details how the update process is performed inside and what components are influenced. All these changes are done automatically by the platform so you just track the process and no interventions are required.
 
 Kubernetes cluster consists of master and worker nodes. The workloads that these two sets of nodes run are different. And components they consist of are also different.
@@ -378,7 +380,6 @@ Kubernetes cluster consists of master and worker nodes. The workloads that these
     </div> 
 </div>
 
- 
 The master node is actually a control plane that should be upgraded first, and then it’s the workers’ turn. The sequence of upgrade actions and accompanying ones taken in package manifest is outlined below:
 
 1. addon-upgrade-init
@@ -386,32 +387,32 @@ The master node is actually a control plane that should be upgraded first, and t
 - Instances tags validation
 - Display a notification in case upgrade is not possible
 - List formation of available versions
-- List formation of upgrade sequence 
+- List formation of upgrade sequence
 
 2. addon-upgrade-start
 
 - Call the kubernetes upgrade script
 - Display a notification about the start of the cluster upgrade
-- Run cluster upgrade manifest (upgrade.jps) 
+- Run cluster upgrade manifest (upgrade.jps)
 
 3. check-cluster-status
 
 - Cluster status check before updating
-- Validation of the API response, key components and nodes status readiness within the cluster. In case of inconsistency, the update procedure is terminated and the user is prompted to check the cluster status 
+- Validation of the API response, key components and nodes status readiness within the cluster. In case of inconsistency, the update procedure is terminated and the user is prompted to check the cluster status
 
 4. upgrade-configuration
 
 - Cluster reconfiguration
 - Jelastic K8s distribution components are detected and updated
 - The outdated cluster components are removed and new ones are installed
-- This block is specific for each version (its contents may change from version to version) 
+- This block is specific for each version (its contents may change from version to version)
 
 5. upgrade-masters-cluster (master)
 
 - Validation of the current k8sm configuration (control plane) in the cluster
 - Kubeadm installation for new K8s version, changing status of k8sm master to maintenance and cleaning the pods
 - Applying the configuration of the new version to the current instance
-- Upgrading the instance to the new version and withdrawing from the maintenance 
+- Upgrading the instance to the new version and withdrawing from the maintenance
 
 6. upgrade-masters-cluster (slave)
 
@@ -420,23 +421,23 @@ The master node is actually a control plane that should be upgraded first, and t
 - Kubeadm installation for new K8s version
 - Changing status of k8sm master to maintenance and cleaning the pods
 - Applying the configuration of the new version to the current instance, upgrading the instance to the new version
-- Withdrawing from the maintenance 
+- Withdrawing from the maintenance
 
 7. upgrade-jps-manifests
 
 - Main manifest update to the version declared in the kubernetes assembly
-- Add-on manifests update to the version declared in the kubernetes assembly 
+- Add-on manifests update to the version declared in the kubernetes assembly
 
 8. env.control.ApplyNodeGroupData [k8sm, cp]
 
-- Removing the limitation on redeploying k8sm and cp instances 
+- Removing the limitation on redeploying k8sm and cp instances
 
 9. upgrade-masters-redeploy (master)
 
 - Setting redeploy parameters for K8sm master
 - Redeploy to the new version tag
 - Start the instance initialization script to configure for the new version of Kubernetes
-- Service status validation, service restart 
+- Service status validation, service restart
 
 10. upgrade-masters-redeploy (slave)
 
@@ -444,16 +445,16 @@ The master node is actually a control plane that should be upgraded first, and t
 - Setting up parameters of redeploy
 - Redeploy to the new version tag
 - Start the instance initialization script to configure it for the new version of kubernetes.
-- Service status validation, service restart 
+- Service status validation, service restart
 
 11. upgrade-masters-post (master)
 
 - K8sm master. Post-configuration of the instance after upgrade
-- Preparation of an integration set to be used in worker instances 
+- Preparation of an integration set to be used in worker instances
 
 12. upgrade-masters-post (slave)
 
-- Executed sequentially on the remaining k8sm instances. Post-configuration of an instance after an upgrade 
+- Executed sequentially on the remaining k8sm instances. Post-configuration of an instance after an upgrade
 
 13. upgrade-workers
 
@@ -499,7 +500,7 @@ During the container redeploy the following directories and files are kept untou
 
 :::tip Note
 
-Starting from package version [1.18.14](1) users can add custom files and directories to the mentioned list of untouched ones changing file ***/etc/jelastic/redeploy.conf*** on the master node.
+Starting from package version [1.18.14](https://cloudmydc.com/) users can add custom files and directories to the mentioned list of untouched ones changing file **_/etc/jelastic/redeploy.conf_** on the master node.
 
 :::
 
@@ -509,4 +510,4 @@ In addition to the internal Kubernetes components, the platform updates the func
 - configuration files (e.g. kubernetes-dashboard.yaml, jelastic-values.yaml, etc.)
 - integrated add-ons
 
-So as a result, Kubernetes cluster is upgraded smoothly and with minimum manual intervention. Jelastic automation makes this process truly straightforward and helps to keep your cloud environment up to date. Try it yourself at one of [Jelastic Cloud](1) Providers.
+So as a result, Kubernetes cluster is upgraded smoothly and with minimum manual intervention. Jelastic automation makes this process truly straightforward and helps to keep your cloud environment up to date. Try it yourself at one of [Jelastic Cloud](https://cloudmydc.com/) Providers.

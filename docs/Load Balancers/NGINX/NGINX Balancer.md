@@ -6,11 +6,11 @@ sidebar_position: 1
 
 :::tip Tip
 
-The NGINX balancer stack is [HTTP/3](1) ready with the feature support enabled by default since the 1.16.1 release. However, a [public IP address](1) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
+The NGINX balancer stack is [HTTP/3](https://cloudmydc.com/) ready with the feature support enabled by default since the 1.16.1 release. However, a [public IP address](https://cloudmydc.com/) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
 
 :::
 
-**[NGINX](1)** is an open-source TCP/UDP, HTTP, and reverse proxy server. It is one of the most popular solutions for load balancing in the world, which provides customers with high performance and efficient resource usage. The modular architecture of NGINX ensures personalized customization that can support all of the customers' needs, including such features as:
+**[NGINX](https://cloudmydc.com/)** is an open-source TCP/UDP, HTTP, and reverse proxy server. It is one of the most popular solutions for load balancing in the world, which provides customers with high performance and efficient resource usage. The modular architecture of NGINX ensures personalized customization that can support all of the customers' needs, including such features as:
 
 - generic proxying of TCP and UDP
 - serving static files, auto-indexing
@@ -18,7 +18,7 @@ The NGINX balancer stack is [HTTP/3](1) ready with the feature support enabled b
 - 3xx-5xx error codes redirection
 - SSL and TLS SNI support
 - access control, fault tolerance, and more
-Load balancing with NGINX is suitable for most of the cases due to its scalability, security, reliability, and cost-efficiency. Creating a new NGINX-based load balancer is a straightforward process at the platform.
+  Load balancing with NGINX is suitable for most of the cases due to its scalability, security, reliability, and cost-efficiency. Creating a new NGINX-based load balancer is a straightforward process at the platform.
 
 1. Log in to the dashboard and click the **New Environment** button at the top-left corner.
 
@@ -44,7 +44,7 @@ Load balancing with NGINX is suitable for most of the cases due to its scalabili
 
 </div>
 
-Next, you need to set the desired configurations for your NGINX balancer ([cloudlets](1), disk space, [IP addresses](1), etc.), add any other needed stacks (e.g. application servers or databases), and click **Create**.
+Next, you need to set the desired configurations for your NGINX balancer ([cloudlets](https://cloudmydc.com/), disk space, [IP addresses](https://cloudmydc.com/), etc.), add any other needed stacks (e.g. application servers or databases), and click **Create**.
 
 3. Wait a moment for the platform to set up the environment for you.
 

@@ -22,18 +22,20 @@ sidebar_position: 10
 </div>
 <div>
 
-In the article “[Private GitLab Server Automatic Installation with Jelastic PaaS](1)” we looked at the GitLab installation, its initial setup, and the basics required for the project’s lifecycle (git project importing and docker registry accessing). And today we’ll move forward to the integration of GitLab with Kubernetes, as well as describe how to set up continuous integration and continuous deployment pipeline for your projects based on Java application sample.
+In the article “[Private GitLab Server Automatic Installation with Jelastic PaaS](https://cloudmydc.com/)” we looked at the GitLab installation, its initial setup, and the basics required for the project’s lifecycle (git project importing and docker registry accessing). And today we’ll move forward to the integration of GitLab with Kubernetes, as well as describe how to set up continuous integration and continuous deployment pipeline for your projects based on Java application sample.
 
 </div>
 </div>
 
 ## Prerequisites for Kubernetes Integration
+
 GitLab's ecosystem is enriched with a large number of features like:
 
 - the built-in continuous integration system (CI/CD) allows you to create a pipeline and control the lifecycle of the application’s deployment, from downloading the code to the repository, until it is uploaded to the production environment
-- with AutoDevOps, you can establish a CI/CD pipeline that automatically detects, builds, tests, and deploys your projects. Integrated with a [Kubernetes (K8S) cluster](1), it allows you to deploy applications with no provisioning of extra CI/CD resources or configurations required.
+- with AutoDevOps, you can establish a CI/CD pipeline that automatically detects, builds, tests, and deploys your projects. Integrated with a [Kubernetes (K8S) cluster](https://cloudmydc.com/), it allows you to deploy applications with no provisioning of extra CI/CD resources or configurations required.
 
 ## Kubernetes Integration Details
+
 Below we will cover the Kubernetes integration with GitLab in Jelastic PaaS as an endpoint of the pipeline. You will see how to get rid of boring integration routines required to add the K8S manually entering a lot of data:
 
 - Proper API URL. To identify access and permissions issues when adding a cluster, Kubernetes integration checks the availability of the API URL
@@ -55,7 +57,8 @@ All of them may be done with platform automation. Also, we will go through the s
 </div>
 
 ## Kubernetes and GitLab Installation
-Sign in to the Jelastic platform dashboard, go to the [Marketplace](1), find and install **DevOps Lab - GitLab Server** and **Kubernetes Cluster** applications one by one. The installation sequence is arbitrary. Note that the solution from this guide is available only for billing customers.
+
+Sign in to the Jelastic platform dashboard, go to the [Marketplace](https://cloudmydc.com/), find and install **DevOps Lab - GitLab Server** and **Kubernetes Cluster** applications one by one. The installation sequence is arbitrary. Note that the solution from this guide is available only for billing customers.
 
 <div style={{
     display:'flex',
@@ -67,7 +70,7 @@ Sign in to the Jelastic platform dashboard, go to the [Marketplace](1), find and
 
 </div>
 
-- If you are going to use a custom domain, activate the [Install Let’s Encrypt Certificates and Custom Domain Addon](1) option while installing the GitLab server.
+- If you are going to use a custom domain, activate the [Install Let’s Encrypt Certificates and Custom Domain Addon](https://cloudmydc.com/) option while installing the GitLab server.
 
 <div style={{
     display:'flex',
@@ -80,7 +83,6 @@ Sign in to the Jelastic platform dashboard, go to the [Marketplace](1), find and
 </div>
 
 - Kubernetes application can be installed with default parameters or based on your needs.
-
 
 <div style={{
     display:'flex',
@@ -105,6 +107,7 @@ When you finish both installations, the topologies should look as follows.
 </div>
 
 ## Kubernetes Integration with GitLab
+
 You can integrate Kubernetes with GitLab using "**Kubernetes GitLab Integration Add-On**".
 
 1. Open Add-Ons list next to the **Control Plane** node, find the required one and press the Configure button.
@@ -159,4 +162,4 @@ Now you may use GitLab pipelines to build and deploy projects to the Kubernetes 
 
 In the next article, we'll cover how to test Kubernetes and GitLab integration, as well as how to bind custom domain to the application running within this setup.
 
-Automate continuous integration and delivery of your applications using state-of-the-art solutions. Get your Kubernetes with GitLab CI/CD pipeline setup at one of [Jelastic cloud service providers](1). 
+Automate continuous integration and delivery of your applications using state-of-the-art solutions. Get your Kubernetes with GitLab CI/CD pipeline setup at one of [Jelastic cloud service providers](https://cloudmydc.com/).

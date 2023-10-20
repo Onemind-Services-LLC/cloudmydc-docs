@@ -8,7 +8,7 @@ import obj from './LiteSpeedWebADC.json'
 
 :::tip Tip
 
-The **LiteSpeed Web ADC** stack is [HTTP/3](1) ready with the feature support enabled by default. However, a [public IP address](1) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
+The **LiteSpeed Web ADC** stack is [HTTP/3](https://cloudmydc.com/) ready with the feature support enabled by default. However, a [public IP address](https://cloudmydc.com/) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
 
 :::
 
@@ -32,18 +32,18 @@ The **LiteSpeed Web ADC** stack is [HTTP/3](1) ready with the feature support en
 </div>
 <div>
 
-The **[LiteSpeed Web ADC](1)** (Application Delivery Controller) is a high-performance HTTP load balancing solution. It not just distributes traffic but also improves the speed and reliability of the services on the backend.
+The **[LiteSpeed Web ADC](https://cloudmydc.com/)** (Application Delivery Controller) is a high-performance HTTP load balancing solution. It not just distributes traffic but also improves the speed and reliability of the services on the backend.
 
 </div>
 </div>
 
 Such benefits are achieved through the implementation and support of the most innovative and efficient technologies required for load balancing, e.g. next-generation HTTP/3 (QUIC) transport protocol.
 
-LiteSpeed Web ADC is suitable for the projects of any scale, being able to handle everyday traffic and seasonal spikes alike. This balancer will surely get the most of your application due to its [numerous features](1).
+LiteSpeed Web ADC is suitable for the projects of any scale, being able to handle everyday traffic and seasonal spikes alike. This balancer will surely get the most of your application due to its [numerous features](https://cloudmydc.com/).
 
 :::danger Note
 
-Being a commercial software, LiteSpeed Web Server cannot be distributed freely, i.e. requires the license to be applied to the platform. If working with this application server, you’ll be charged an [additional fee](1) for usage of the license mentioned above.
+Being a commercial software, LiteSpeed Web Server cannot be distributed freely, i.e. requires the license to be applied to the platform. If working with this application server, you’ll be charged an [additional fee](https://cloudmydc.com/) for usage of the license mentioned above.
 
 :::
 
@@ -75,12 +75,12 @@ Get your own LiteSpeed Web ADC load balancer server at the platform by following
 
 :::tip Tip
 
-You can apply some customization to your LiteSpeed ADC by adjusting some of the [dedicated environment variables](1):
+You can apply some customization to your LiteSpeed ADC by adjusting some of the [dedicated environment variables](https://cloudmydc.com/):
 
 - **JELASTIC_AUTOCONFIG** - enables (enabled, by default) or disables (disabled) autoconfiguration of the LiteSpeed worker processes count based on the allocated RAM and number of CPU cores
 - **DEFAULT_CLUSTER** - selects the load balancing type for requests' proxying (HTTP, AJP, FCGI, LSAPI). If working with some custom backends, this logic can be disabled (0, disabled, false)
-- **WP_PROTECT** - configures an action for the [WordPress Brute Force Attack Protection](1) feature (off|on|drop|deny|throttle|captcha; off by default)
-- **WP_PROTECT_LIMIT** - sets a limit for the [WordPress Brute Force Attack Protection](1) feature (0|1|2-1000; 10 by default)
+- **WP_PROTECT** - configures an action for the [WordPress Brute Force Attack Protection](https://cloudmydc.com/) feature (off|on|drop|deny|throttle|captcha; off by default)
+- **WP_PROTECT_LIMIT** - sets a limit for the [WordPress Brute Force Attack Protection](https://cloudmydc.com/) feature (0|1|2-1000; 10 by default)
 
 <div style={{
     display:'flex',
@@ -124,7 +124,7 @@ Click **Create** to proceed.
 
 There are some specifics while working with the platform implementation of the LiteSpeed via the admin panel:
 
-- to ensure container stability, the [platform-native redeploy feature](1) should be used instead of the **Actions > Version Manager** functionality
+- to ensure container stability, the [platform-native redeploy feature](https://cloudmydc.com/) should be used instead of the **Actions > Version Manager** functionality
 
 <div style={{
     display:'flex',
@@ -150,7 +150,7 @@ There are some specifics while working with the platform implementation of the L
 
 :::
 
-In case you need to adjust any of the configuration files, you can work over the [dashboard file manager](1) or establish an [SSH connection](1).
+In case you need to adjust any of the configuration files, you can work over the [dashboard file manager](https://cloudmydc.com/) or establish an [SSH connection](https://cloudmydc.com/).
 
 ## License Pricing
 
@@ -159,7 +159,7 @@ The platform seamlessly integrates the cost of the LiteSpeed license in accordan
 - new licenses are issued for every newly-created container (e.g. during environment provisioning or horizontal scaling)
 - updated while changing available resource limits within each container
 - decommissioned while stopping the environment or scaling in
-  Based on your needs, you can select the required plan using a dedicated **_LiteSpeed License Manager_** add-on that is automatically installed on all the LiteSpeed-based nodes ([LS Web Server](1), LS ADC, [LLSMP](1)).
+  Based on your needs, you can select the required plan using a dedicated **_LiteSpeed License Manager_** add-on that is automatically installed on all the LiteSpeed-based nodes ([LS Web Server](https://cloudmydc.com/), LS ADC, [LLSMP](https://cloudmydc.com/)).
 
 <div style={{
     display:'flex',
@@ -171,7 +171,7 @@ The platform seamlessly integrates the cost of the LiteSpeed license in accordan
 
 </div>
 
-The add-on allows switching between plans by adjusting the number of **_Workers_** (processes to do general server work). Also, the **_LiteMage_** caching solution (with unlimited [publicly cached objects](1)) can be automatically configured for LiteSpeed ADC for an additional price of **149$** per month.
+The add-on allows switching between plans by adjusting the number of **_Workers_** (processes to do general server work). Also, the **_LiteMage_** caching solution (with unlimited [publicly cached objects](https://cloudmydc.com/)) can be automatically configured for LiteSpeed ADC for an additional price of **149$** per month.
 
 <div style={{
     display:'flex',
@@ -290,7 +290,7 @@ The license price is calculated dynamically based on the network traffic process
 
 :::danger Note
 
-The exact cost may vary slightly for the platforms with a currency other than USD; it depends on the conversion rate at the moment of the hourly billing event. All the account charges can be viewed via the **[Billing History](1)** in the dashboard.
+The exact cost may vary slightly for the platforms with a currency other than USD; it depends on the conversion rate at the moment of the hourly billing event. All the account charges can be viewed via the **[Billing History](https://cloudmydc.com/)** in the dashboard.
 
 <div style={{
     display:'flex',
@@ -310,6 +310,6 @@ When performing testing of the LiteSpeed Web ADC load balancer, you should take 
 
 1. By default, the load balancer operates in the **Stateful** mode, which tracks sessions associated with each back-end server (also called “Session Affinity”). It means that requests from a single source will always go to the same back-end server (unless it’s not working).
 
-2. If LiteSpeed ADC does not have its own [public IP](1), all the requests go through the platform’s [Shared Load Balancer](1). In such a case, ADC considers that the load comes from a single IP address (of the Shared Load Balancer).
+2. If LiteSpeed ADC does not have its own [public IP](https://cloudmydc.com/), all the requests go through the platform’s [Shared Load Balancer](https://cloudmydc.com/). In such a case, ADC considers that the load comes from a single IP address (of the Shared Load Balancer).
 
-As a result, for the proper testing of the <u>production cluster</u> with LiteSpeed ADC as a load balancer, you need to attach public IP and send requests from multiple sources. Alternatively, you can temporarily switch to the **Stateless** mode, which does not care about sessions (recommended during the <u>development/testing stages</u> only). Check out more about [LiteSpeed ADC testing](1) at the official documentation.
+As a result, for the proper testing of the <u>production cluster</u> with LiteSpeed ADC as a load balancer, you need to attach public IP and send requests from multiple sources. Alternatively, you can temporarily switch to the **Stateless** mode, which does not care about sessions (recommended during the <u>development/testing stages</u> only). Check out more about [LiteSpeed ADC testing](https://cloudmydc.com/) at the official documentation.

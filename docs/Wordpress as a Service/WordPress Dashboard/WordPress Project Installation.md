@@ -3,13 +3,15 @@ sidebar_position: 2
 ---
 
 ## WordPress Project Installation
+
 Virtuozzo Application Platform for WordPress provides a quick and automated installation procedure for the new project creation. The built-in production/staging functionality helps implement various DevOps integrations. Let’s see these processes in detail:
 
-- [Installing Project](1)
-- [Staging Project](1)
-- [Deleting Project](1)
+- [Installing Project](https://cloudmydc.com/)
+- [Staging Project](https://cloudmydc.com/)
+- [Deleting Project](https://cloudmydc.com/)
 
 ## Installing Project
+
 The platform has a simple yet powerful installation wizard that automates the creation of new WordPress projects based on your needs.
 
 1. Click the **Create New Project** button at the top-right corner of the dashboard.
@@ -67,8 +69,8 @@ Click **Continue** to proceed.
 - choose the base package for your project (tabs at the top)
 - use the toggle to switch between monthly and annual subscription
 - click **Select** for the tariff plan based on the price and resource limits:
-   - enable or disable the **Auto Pay** option for the required plan to make automatic charges using your default payment method
-   - set the required number of **Websites** (i.e. how many projects it will be possible to create under this subscription)
+  - enable or disable the **Auto Pay** option for the required plan to make automatic charges using your default payment method
+  - set the required number of **Websites** (i.e. how many projects it will be possible to create under this subscription)
 
 <div style={{
     display:'flex',
@@ -112,9 +114,10 @@ Click **Continue** to create your new subscription and add the project to with t
 
 </div>
 
-Now you can proceed to the [Project Management](1) guide.
+Now you can proceed to the [Project Management](https://cloudmydc.com/) guide.
 
 ## Staging Project
+
 If you want to create the development/staging pair for your project, the platform provides the built-in functionality to keep it organized (no need to create a separate project).
 
 1. A new project is considered “production” by default. In order to add a “staging” one, go to the required project and use the corresponding drop-down list (circled in the image below).
@@ -144,6 +147,7 @@ If you want to create the development/staging pair for your project, the platfor
 The platform will start the staging environment creation after the confirmation. Once it is ready, you can begin implementing your DevOps flow using the stage and production environments.
 
 ## Deleting Project
+
 In order to delete a project, you can choose the appropriate **Delete** option from the project’s menu on the home page.
 
 <div style={{
@@ -182,7 +186,7 @@ You’ll be asked to confirm the action by typing the project’s name.
 
 :::danger Note
 
-Deleting production will remove the whole project, while removing *[staging](1)* – only the corresponding environment (the production one will remain intact).
+Deleting production will remove the whole project, while removing _[staging](https://cloudmydc.com/)_ – only the corresponding environment (the production one will remain intact).
 
 :::
 

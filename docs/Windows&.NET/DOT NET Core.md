@@ -4,14 +4,14 @@ sidebar_position: 1
 
 ## .NET Core Application Server
 
-**[.NET Core](1)** is an open-source, cross-platform version of .NET for building websites, services, and console applications. Often it is used for cloud applications or refactoring large enterprise applications into microservices.
+**[.NET Core](https://cloudmydc.com/)** is an open-source, cross-platform version of .NET for building websites, services, and console applications. Often it is used for cloud applications or refactoring large enterprise applications into microservices.
 
 .NET Core consists of the following components:
 
-- **[.NET Core runtime](1)** - provides essential services (type system, assembly loading, garbage collector, etc.). [Framework libraries](1) provide primitive data types, app composition types, and fundamental utilities
-- **[ASP.NET Core runtime](1)** - provides a framework for building modern, cloud-based, internet-connected applications (_web apps_, _IoT apps_, and _mobile backends_)
-- **[.NET Core SDK](1)** and language compilers ([Roslyn](1) and [F#](1)) - allow the development of the .NET Core projects
-- **[dotnet command](1)** - launches .NET Core applications and CLI commands. It selects and hosts the runtime, provides an assembly loading policy, and launches apps and tools
+- **[.NET Core runtime](https://cloudmydc.com/)** - provides essential services (type system, assembly loading, garbage collector, etc.). [Framework libraries](https://cloudmydc.com/) provide primitive data types, app composition types, and fundamental utilities
+- **[ASP.NET Core runtime](https://cloudmydc.com/)** - provides a framework for building modern, cloud-based, internet-connected applications (_web apps_, _IoT apps_, and _mobile backends_)
+- **[.NET Core SDK](https://cloudmydc.com/)** and language compilers ([Roslyn](https://cloudmydc.com/) and [F#](https://cloudmydc.com/)) - allow the development of the .NET Core projects
+- **[dotnet command](https://cloudmydc.com/)** - launches .NET Core applications and CLI commands. It selects and hosts the runtime, provides an assembly loading policy, and launches apps and tools
 
 :::tip Notes
 
@@ -24,7 +24,7 @@ sidebar_position: 1
 
 1. Log in to the PaaS dashboard and click the **New Environment** button at the top-left corner.
 
-2. Within the opened [topology wizard](1), navigate to the **.NET** tab and select the **_.NET Core_** application server. Configure the other parameters (_[cloudlets](1)_,_disk limit_, _[public IPs](1)_, etc.) up to your needs.
+2. Within the opened [topology wizard](https://cloudmydc.com/), navigate to the **.NET** tab and select the **_.NET Core_** application server. Configure the other parameters (_[cloudlets](https://cloudmydc.com/)_,_disk limit_, _[public IPs](https://cloudmydc.com/)_, etc.) up to your needs.
 
 <div style={{
     display:'flex',
@@ -38,7 +38,7 @@ sidebar_position: 1
 
 Click **Create** to proceed.
 
-3. Your environment with the *.NET Core* server will be created in a few minutes.
+3. Your environment with the _.NET Core_ server will be created in a few minutes.
 
 <div style={{
     display:'flex',
@@ -53,9 +53,10 @@ Click **Create** to proceed.
 The application server operates in a separate container (node) - an isolated virtualized instance - provisioned for a software stack. The container has its own private IP and unique DNS record.
 
 ## Deploying Application to .NET Core Server
-The platform provides multiple options to automatically [deploy projects](1). In this example, we’ll add a simple .NET project stored on GitHub.
 
-1. Open the ***Git/SVN*** tab of the **[Deployment Manager](1)** to add a new repository.
+The platform provides multiple options to automatically [deploy projects](https://cloudmydc.com/). In this example, we’ll add a simple .NET project stored on GitHub.
+
+1. Open the **_Git/SVN_** tab of the **[Deployment Manager](https://cloudmydc.com/)** to add a new repository.
 
 <div style={{
     display:'flex',
@@ -69,7 +70,7 @@ The platform provides multiple options to automatically [deploy projects](1). In
 
 :::tip Tip
 
-If you are interested in [creating your own .NET application](1) follow the official documentation.
+If you are interested in [creating your own .NET application](https://cloudmydc.com/) follow the official documentation.
 
 :::
 
@@ -77,11 +78,11 @@ If you are interested in [creating your own .NET application](1) follow the offi
 
 :::tip Note
 
-.NET Core supports several specific [variables](1) that can help with application deployment:
+.NET Core supports several specific [variables](https://cloudmydc.com/) that can help with application deployment:
 
-- ***APP_NAME*** - points to the particular folder (if there are multiple applications in a single repository) or runs a specific ***.dll*** file in your project
-- ***ASPNETCORE_URLS*** - configures services to work with the specified URL
-- ***RUN_OPTION*** - provides additional ***dotnet run*** options for your project
+- **_APP_NAME_** - points to the particular folder (if there are multiple applications in a single repository) or runs a specific **_.dll_** file in your project
+- **_ASPNETCORE_URLS_** - configures services to work with the specified URL
+- **_RUN_OPTION_** - provides additional **_dotnet run_** options for your project
 
 <div style={{
     display:'flex',

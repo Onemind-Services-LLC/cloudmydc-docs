@@ -3,15 +3,17 @@ sidebar_position: 1
 ---
 
 ## WordPress Dashboard Overview
+
 Virtuozzo Application Platform for WordPress provides a dedicated dashboard designed and optimized specifically for WordPress hosting. It has a deep integration with the product, offering just enough diagnostic information and management options to perform all the most frequently required operations without cluttering the screen or overwhelming a customer.
 
 Below, we’ll provide an overview of the:
 
-- [WordPress Dashboard](1)
-- [Account Settings](1)
+- [WordPress Dashboard](https://cloudmydc.com/)
+- [Account Settings](https://cloudmydc.com/)
 
 ## WordPress Dashboard
-1. The starting home page lists all the projects on the account with easily distinguishable statuses (*green – active*, *yellow* – action in progress, *red* - stopped).
+
+1. The starting home page lists all the projects on the account with easily distinguishable statuses (_green – active_, _yellow_ – action in progress, _red_ - stopped).
 
 <div style={{
     display:'flex',
@@ -39,7 +41,7 @@ Below, we’ll provide an overview of the:
 
 </div>
 
-Additionally, at the top-right corner of the home page, you can see the **Create New Project** button. Learn more at the dedicated [WordPress Project Creation](1) guide.
+Additionally, at the top-right corner of the home page, you can see the **Create New Project** button. Learn more at the dedicated [WordPress Project Creation](https://cloudmydc.com/) guide.
 
 3. Each project has the following options available from the home page:
 
@@ -70,9 +72,10 @@ Additionally, at the top-right corner of the home page, you can see the **Create
 
 </div>
 
-Learn more at the [WordPress Project Management](1) guide.
+Learn more at the [WordPress Project Management](https://cloudmydc.com/) guide.
 
 ## Account Settings
+
 In the top-right corner of the dashboard, you can find a menu for managing your Virtuozzo Application Platform for WordPress account.
 
 1. The first part is informational. It shows the account email address and balance (can be manually refreshed if needed).
@@ -118,7 +121,6 @@ In the top-right corner of the dashboard, you can find a menu for managing your 
 
 </div>
 
-
 2.2. The **SSH Access Keys** tab allows the management of public and private SSH keys on the account. It also provides information on the connection to your account and projects via SSH.
 
 <div style={{
@@ -152,7 +154,7 @@ The platform supports the following key types:
 - EdDSA
 - RSA
 
-In the linked documents, you can learn more about [generating SSH keys](1) and [connecting via SSH Gate](1).
+In the linked documents, you can learn more about [generating SSH keys](https://cloudmydc.com/) and [connecting via SSH Gate](https://cloudmydc.com/).
 
 2.3. On the **Payment Methods** tab, you can view and manage your payment methods.
 
@@ -166,7 +168,7 @@ In the linked documents, you can learn more about [generating SSH keys](1) and [
 
 </div>
 
-:::danger Notes 
+:::danger Notes
 
 - Only one payment method can be set as default. The platform will automatically use it for auto pay operations (if enabled).
 - The default method cannot be removed. In order to delete, select (add) another one as default.
@@ -198,9 +200,9 @@ In the linked documents, you can learn more about [generating SSH keys](1) and [
 
 Use the drop-down menu at the bottom of each subscription to manage it:
 
-- **Edit Subscription** - opens the Edit Subscription dialog to change websites *Quantity*. The price per installation is calculated according to the remaining billing period.
-   - *Upon upgrade* (increasing number of installations), the platform will automatically generate an additional “update quantity” invoice.
-   - *In case of a downgrade* (no less than the number of installed websites), the platform will generate a refund invoice, and the account’s balance will be recharged.
+- **Edit Subscription** - opens the Edit Subscription dialog to change websites _Quantity_. The price per installation is calculated according to the remaining billing period.
+  - _Upon upgrade_ (increasing number of installations), the platform will automatically generate an additional “update quantity” invoice.
+  - _In case of a downgrade_ (no less than the number of installed websites), the platform will generate a refund invoice, and the account’s balance will be recharged.
 - **Disable/Enable Auto Pay** - changes the Auto Pay option state for the selected subscription
 - **Cancel Subscription** - terminates the subscription
 
@@ -216,11 +218,11 @@ Use the drop-down menu at the bottom of each subscription to manage it:
 
 3. The **System Settings** option will navigate you to the section with data related to projects management:
 
-- *SSL Certificates*
-- *Git Configuration*
-- *Backup Storage*
+- _SSL Certificates_
+- _Git Configuration_
+- _Backup Storage_
 
-3.1. The **SSL Certificates** tab manages SSL certificates on the account. It automatically lists all the [Let’s Encrypt certificates](1) issued for your projects and allows manually adding [custom SSL certificates](1) with the **Add SSL** button.
+  3.1. The **SSL Certificates** tab manages SSL certificates on the account. It automatically lists all the [Let’s Encrypt certificates](https://cloudmydc.com/) issued for your projects and allows manually adding [custom SSL certificates](https://cloudmydc.com/) with the **Add SSL** button.
 
 <div style={{
     display:'flex',
@@ -303,7 +305,7 @@ In order to add a new storage, click the **Add Backup** button and provide the f
 
 </div>
 
-Click **Add** when ready. Your new storage product will be created in a few minutes. Learn more about the [backup and restore process](1).
+Click **Add** when ready. Your new storage product will be created in a few minutes. Learn more about the [backup and restore process](https://cloudmydc.com/).
 
 4. The Language list allows changing the dashboard localization to the preferred language. The availability and exact options depend on the service hosting provider configurations.
 
@@ -324,6 +326,7 @@ Use the **Dark Mode** toggle to switch between dashboard’s light and dark them
 - Help Center
 - Terms Of Use
 - Privacy Policy
+
 6. The last **Log Out** option will end your current session with the Virtuozzo Application Platform for WordPress.
 
 You’ll need to log in again to continue your work with the dashboard.

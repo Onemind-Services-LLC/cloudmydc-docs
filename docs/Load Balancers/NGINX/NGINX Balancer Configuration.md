@@ -37,6 +37,7 @@ Back to the list
 </div>
 
 ## CONF.D
+
 With access to NGINX configs you can not only edit the existing files but also upload your own config files with custom settings to the **conf.d** folder.
 
 <div style={{
@@ -59,11 +60,12 @@ Back to the list
 </div>
 
 ## TCPMAPS
-The **tcpmaps** folder contains the ***mappings.xml*** file where you can set the redirection of the TCP balancing ports. There you need to specify the pair of ports: one to listen to and the other to redirect to.
 
-You can find more information in the [NGINX Load Balancing](1) and [TCP Load Balancing](1) documents.
+The **tcpmaps** folder contains the **_mappings.xml_** file where you can set the redirection of the TCP balancing ports. There you need to specify the pair of ports: one to listen to and the other to redirect to.
 
-To set [caching in NGINX](1) click on the link and follow the instruction.
+You can find more information in the [NGINX Load Balancing](https://cloudmydc.com/) and [TCP Load Balancing](https://cloudmydc.com/) documents.
+
+To set [caching in NGINX](https://cloudmydc.com/) click on the link and follow the instruction.
 
 <div style={{
     display:'flex',

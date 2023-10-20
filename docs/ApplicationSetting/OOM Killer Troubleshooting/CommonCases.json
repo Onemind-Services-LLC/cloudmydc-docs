@@ -1,0 +1,60 @@
+{
+    "data1": [
+      {
+        "Process": "adt",
+        "Resolution": "Restart container in order to restore the process"
+      },
+      {
+        "Process": "cron",
+        "Resolution": "Restart container in order to restore the process"
+      },
+      {
+        "Process": "crond",
+        "Resolution": "Restart container in order to restore the process"
+      },
+      {
+        "Process": "expect",
+        "Resolution": "Could be caused by git fetch, git pull or git gc processes (probably, due to the project big size or slow connection)"
+      },
+      {
+        "Process": "git",
+        "Resolution": "Initiate Update from GIT with the appropriate button next to your project in dashboard or just wait for the next auto-deploy being run (if enabled) to restore the git process automatically"
+      },
+      {
+        "Process": "git-remote-http",
+        "Resolution": "Could be caused by git fetch, git pull or git gc processes (probably, due to the project big size or slow connection)"
+      },
+      {
+        "Process": "gitlab-projects",
+        "Resolution": "Could be caused by git fetch, git pull or git gc processes (probably, due to the project big size or slow connection)"
+      },
+      {
+        "Process": "jem",
+        "Resolution": "Most likely, one of the latter operations you’ve performed via the platform dashboard (e.g. application deploy, SSL installation, engine change, etc.) haven’t been accomplished - just initiate it one more time"
+      },
+      {
+        "Process": "nscd",
+        "Resolution": "Restart container in order to restore the process"
+      },
+      {
+        "Process": "ssh",
+        "Resolution": "Restart container in order to restore the process"
+      },
+      {
+        "Process": "sshd",
+        "Resolution": "Restart container in order to restore the process"
+      },
+      {
+        "Process": "systemd",
+        "Resolution": "Restart container in order to restore the process"
+      },
+      {
+        "Process": "systemd-journal",
+        "Resolution": "Restart container in order to restore the process"
+      },
+      {
+        "Process": "taskrunner",
+        "Resolution": "Restart container in order to restore the process"
+      }
+    ]
+}

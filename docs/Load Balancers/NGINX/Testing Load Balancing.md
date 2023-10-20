@@ -3,9 +3,10 @@ sidebar_position: 4
 ---
 
 ## How to Test Load Balancing
-When your project becomes highly demanded and visited, you face a problem - necessity to increase your hardware productivity, as it should be able to handle and rapidly serve all the incoming users' requests. Adding more resources will temporarily improve the situation, saving your server from the failure, but won’t solve the root issue. And this results in the need to set up a [clustering solution](1) with an embedded automatic load balancing.
 
-Application cluster adjusting is quite easy with the platform - just add a few more application server instances to your environment [via the topology wizard](1). In addition, you’ll automatically get the NGINX-balancer server enabled in front of your project. It will be responsible for the even load distribution among the stated number of app server nodes, performed by virtue of the [load balancing](1).
+When your project becomes highly demanded and visited, you face a problem - necessity to increase your hardware productivity, as it should be able to handle and rapidly serve all the incoming users' requests. Adding more resources will temporarily improve the situation, saving your server from the failure, but won’t solve the root issue. And this results in the need to set up a [clustering solution](https://cloudmydc.com/) with an embedded automatic load balancing.
+
+Application cluster adjusting is quite easy with the platform - just add a few more application server instances to your environment [via the topology wizard](https://cloudmydc.com/). In addition, you’ll automatically get the NGINX-balancer server enabled in front of your project. It will be responsible for the even load distribution among the stated number of app server nodes, performed by virtue of the [load balancing](https://cloudmydc.com/).
 
 <div style={{
     display:'flex',
@@ -19,11 +20,12 @@ Application cluster adjusting is quite easy with the platform - just add a few m
 
 In such a way, your application performance grows significantly, increasing the number of requests that can be served at one time. As a nice bonus, you decrease the risks of app inaccessibility, since if one server fails, all the rest continue working.
 
-In order to prove this scheme is that efficient, we’ll show you how to perform the load balancing testing with the help of [ApacheBench (ab)](1) tool. It provides a number of possibilities for testing the servers' ability to cope with the increasing and changeable load. Though ab was designed for Apache installations testing, it can be used to benchmark any HTTP server.
+In order to prove this scheme is that efficient, we’ll show you how to perform the load balancing testing with the help of [ApacheBench (ab)](https://cloudmydc.com/) tool. It provides a number of possibilities for testing the servers' ability to cope with the increasing and changeable load. Though ab was designed for Apache installations testing, it can be used to benchmark any HTTP server.
 
 So, let’s get started and test it in real time.
 
 ## Create an Environment and Deploy the Application
+
 1. Log into the platform and click the **Create environment** button in the upper left corner of the dashboard.
 
 <div style={{
@@ -75,6 +77,7 @@ As we are going to test the **Apache PHP** server loading, select it and specify
 </div>
 
 ## Control Point Testing
+
 To analyze the results you’ll need something to compare them with, so let’s make a control point test, using the created environment with just a single application server node.
 
 As it was mentioned above, we’ll use the ApacheBench (ab) tool for these purposes. It can generate a single-threaded load by sending the stated number of concurrent requests to a server.
@@ -91,7 +94,7 @@ Wait until the installation is successfully completed.
 
 :::tip Note
 
-Detailed information about all the further used ab commands can be found by following [this link](1).
+Detailed information about all the further used ab commands can be found by following [this link](https://cloudmydc.com/).
 
 :::
 
@@ -101,8 +104,7 @@ Detailed information about all the further used ab commands can be found by foll
 ab -n 500 -c 10 -g res1.tsv {URL_to_your_env}
 ```
 
-Substitute the *{URL_to_your_env}* part with a link to your environment (e.g. *https://balancer.jelastic.com/* in our case). In order to get it, click the **Open in Browser** button next to your environment and copy the corresponding URL from the browser’s address bar.
-
+Substitute the _{URL_to_your_env}_ part with a link to your environment (e.g. *https://balancer.jelastic.com/* in our case). In order to get it, click the **Open in Browser** button next to your environment and copy the corresponding URL from the browser’s address bar.
 
 <div style={{
     display:'flex',
@@ -132,7 +134,6 @@ This test may take some time depending on the parameters you’ve set, therefore
 
 3. The created file with results should look like the image below:
 
-
 <div style={{
     display:'flex',
     justifyContent: 'center',
@@ -144,8 +145,8 @@ This test may take some time depending on the parameters you’ve set, therefore
 </div>
 
 ## Change the Environment Configuration
-1. Return to the platform dashboard and click **Change environment topology** for your balancer environment.
 
+1. Return to the platform dashboard and click **Change environment topology** for your balancer environment.
 
 <div style={{
     display:'flex',
@@ -183,7 +184,6 @@ Therefore, click the **Config** button next to the Nginx node.
 
 </div>
 
-
 4. Navigate to the **conf > nginx-jelastic.conf** file. It’s not editable, so copy all its content and paste it to the **nginx.conf** file (located in the same folder) instead of include /etc/nginx/nginx-jelastic.conf; line (circled at the following image).
 
 <div style={{
@@ -196,8 +196,7 @@ Therefore, click the **Config** button next to the Nginx node.
 
 </div>
 
-
-5. Then, find two mentions of the sticky path parameter in the code (in the *DEFAULT UPSTREAM* and *UPSTREAMS LIST* sections) and comment them as it is shown below.
+5. Then, find two mentions of the sticky path parameter in the code (in the _DEFAULT UPSTREAM_ and _UPSTREAMS LIST_ sections) and comment them as it is shown below.
 
 <div style={{
     display:'flex',
@@ -228,7 +227,8 @@ Don’t miss the closing curly braces after those sticky path strings, they shou
 </div>
 
 ## Testing Balancer and Compare Results
-Now let’s proceed directly to [load balancing](1) testing.
+
+Now let’s proceed directly to [load balancing](https://cloudmydc.com/) testing.
 
 1. Switch back to your terminal and run the **ab** testing again with the same parameters (except the file with results - specify another name for it, e.g. res2.tsv).
 
@@ -288,11 +288,11 @@ plot "/home/res1.tsv" every ::2 using 5 title 'single server' with lines, "/home
 
 This plot command will build 2 graphs (separated with comma in the command body). Let’s consider the used parameters in more detail:
 
-- *"/home/resN.tsv"* represents paths to the files with your testing results
-- *every ::2* operator defines that gnuplot will start building from the second row (i.e. the first row with headings will be skipped)
-- *using 5* means that the fifth time column (the total response time) will be used for graph building
-- *title ‘N’* option sets the particular graph name for the easier separation of the test results
-- *with lines* is used for our graph to be a solid line
+- _"/home/resN.tsv"_ represents paths to the files with your testing results
+- _every ::2_ operator defines that gnuplot will start building from the second row (i.e. the first row with headings will be skipped)
+- _using 5_ means that the fifth time column (the total response time) will be used for graph building
+- _title ‘N’_ option sets the particular graph name for the easier separation of the test results
+- _with lines_ is used for our graph to be a solid line
 
 <div style={{
     display:'flex',

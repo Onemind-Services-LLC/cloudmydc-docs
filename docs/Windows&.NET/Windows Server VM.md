@@ -3,16 +3,17 @@ sidebar_position: 2
 ---
 
 ## Windows Server VM
-The platform integrates support of the virtual machines (VMs), which allows offering Windows Server hosting. In this guide, we’ll show how to create a Windows VM server and the VMs hosting specifics compared to the regular containers used on the platform.
 
+The platform integrates support of the virtual machines (VMs), which allows offering Windows Server hosting. In this guide, we’ll show how to create a Windows VM server and the VMs hosting specifics compared to the regular containers used on the platform.
 
 :::danger Note
 
-The availability and version of the Window VMs (e.g., *Windows Server 2019* or *2022*) on the platform depends on the particular service hosting provider settings.
+The availability and version of the Window VMs (e.g., _Windows Server 2019_ or _2022_) on the platform depends on the particular service hosting provider settings.
 
 :::
 
 ## Creating Windows VM
+
 1. Click the **New Environment** button at the top of the dashboard to open the topology wizard. Expand the VPS section to locate the Windows server (the VM label helps separate the option from containers).
 
 <div style={{
@@ -27,7 +28,6 @@ The availability and version of the Window VMs (e.g., *Windows Server 2019* or *
 
 2. Only fixed resources are available for virtual machines, so when a VM is selected, the wizard’s central part is adjusted. Here, you can choose from several predefined plans using the slider. Hover over the price icon to view all the available tariffs for the VM.
 
-
 <div style={{
     display:'flex',
     justifyContent: 'center',
@@ -38,9 +38,9 @@ The availability and version of the Window VMs (e.g., *Windows Server 2019* or *
 
 </div>
 
-Also, note that the *[horizontal scaling](1)* and IPv6 options are not available for virtual machines.
+Also, note that the _[horizontal scaling](https://cloudmydc.com/)_ and IPv6 options are not available for virtual machines.
 
-3. If VM is added to the topology, an additional ***VM Resources*** line appears in the right part of the wizard (just below the cloudlets information for containers).
+3. If VM is added to the topology, an additional **_VM Resources_** line appears in the right part of the wizard (just below the cloudlets information for containers).
 
 <div style={{
     display:'flex',
@@ -55,7 +55,8 @@ Also, note that the *[horizontal scaling](1)* and IPv6 options are not available
 The cost of the VM Resources is always fixed regardless of the actual consumption of the VMs. Click **Create** to proceed with environment creation.
 
 ## Managing Windows VM
-1. VMs are highlighted with a dedicated ***VM*** label and custom icon in the **Usage** column (as the cloudlets-shaped one is not suitable).
+
+1. VMs are highlighted with a dedicated **_VM_** label and custom icon in the **Usage** column (as the cloudlets-shaped one is not suitable).
 
 <div style={{
     display:'flex',
@@ -69,8 +70,7 @@ The cost of the VM Resources is always fixed regardless of the actual consumptio
 
 :::tip Tip
 
-You can hover over the **Usage** column for a comprehensive overview of the current consumption or refer to the node **[Statistics](1)** for detailed analysis.
-
+You can hover over the **Usage** column for a comprehensive overview of the current consumption or refer to the node **[Statistics](https://cloudmydc.com/)** for detailed analysis.
 
 <div style={{
     display:'flex',
@@ -84,9 +84,9 @@ You can hover over the **Usage** column for a comprehensive overview of the curr
 
 :::
 
-2. Some [node’s function icons](1) for VM are a bit different compared to containers. The following options are available:
+2. Some [node’s function icons](https://cloudmydc.com/) for VM are a bit different compared to containers. The following options are available:
 
-- **Add-Ons** - installs available pluggable modules (e.g. *Env Start/Stop Scheduler*)
+- **Add-Ons** - installs available pluggable modules (e.g. _Env Start/Stop Scheduler_)
 - **Restart Node(s)** - restarts a VM
 - **Statistics** - shows real-time and historical VM’s resource consumption
 - **Remote Desktop** - connects via RDP using the web client and resets RDP password
@@ -104,7 +104,7 @@ You can hover over the **Usage** column for a comprehensive overview of the curr
 
 :::danger Note
 
-The **[clone](1)** and **[migration](1)** options are automatically disabled for environments with VMs.
+The **[clone](https://cloudmydc.com/)** and **[migration](https://cloudmydc.com/)** options are automatically disabled for environments with VMs.
 
 <div style={{
     display:'flex',
@@ -132,9 +132,9 @@ Let’s overview these options in detail.
 
 </div>
 
-4. All the actual configurations and application management are performed via RDP. Use the appropriate **** menu to:
+4. All the actual configurations and application management are performed via RDP. Use the appropriate \*\*\*\* menu to:
 
-- ***Open in BRemote Desktoprowser*** - connects to the Windows Server over the RDP using the Guacamole web client, which allows managing server directly in a browser
+- **_Open in BRemote Desktoprowser_** - connects to the Windows Server over the RDP using the Guacamole web client, which allows managing server directly in a browser
 - **Reset RDP Password** - resets and resends password of the Windows Administrator user
 - **Info** - displays a short instruction on the remote desktop connection via local RDP client
 - **RDP link** - shows a link for connection via local RDP client
@@ -151,7 +151,7 @@ Let’s overview these options in detail.
 
 5. In addition to the built-in web client, you can connect using any preferred local RDP application. Connect to VM based on its entry point:
 
-- If created <u>without external IP</u>, an [endpoint](1) is created automatically and can be used for RDP connectionWindows VM endpoint for RDP
+- If created <u>without external IP</u>, an [endpoint](https://cloudmydc.com/) is created automatically and can be used for RDP connectionWindows VM endpoint for RDP
 
 <div style={{
     display:'flex',
@@ -189,6 +189,4 @@ Use administrator credentials from email to authenticate and start managing your
 
 </div>
 
-
-That’s all you need to manage Windows VM in the platform. Refer to the official [Microsoft documentation](1) for information on the server management itself.
-
+That’s all you need to manage Windows VM in the platform. Refer to the official [Microsoft documentation](https://cloudmydc.com/) for information on the server management itself.

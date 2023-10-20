@@ -3,18 +3,20 @@ sidebar_position: 4
 ---
 
 ## Set Windows Roles and Features via Server Manager
-[Windows VM](1) provides a powerful GUI of Windows OS that can be accessed via [remote desktop protocol](1) (RDP). It allows connect to and manage your Windows instance remotely, for example:
 
-- via the [Guacamole](1) HTML5 tool directly in your browser
-- via the [local RD client](1) (the appropriate credentials for connection establishment can be found in the email, sent after environment creation)
+[Windows VM](https://cloudmydc.com/) provides a powerful GUI of Windows OS that can be accessed via [remote desktop protocol](https://cloudmydc.com/) (RDP). It allows connect to and manage your Windows instance remotely, for example:
+
+- via the [Guacamole](https://cloudmydc.com/) HTML5 tool directly in your browser
+- via the [local RD client](https://cloudmydc.com/) (the appropriate credentials for connection establishment can be found in the email, sent after environment creation)
 
 For configuring Windows virtual private server via RDP, the inbuilt Server Manager is used. Below we highlight some of the basic functionalities it provides :
 
-- [setting server roles](1)
-- [adding server features](1)
+- [setting server roles](https://cloudmydc.com/)
+- [adding server features](https://cloudmydc.com/)
 
 ## Set Windows VM Roles
-Once [connected](1) to the required node’s desktop, you’ll see the **Server Manager** tool opened. As an example, let’s add a new server role with the following steps.
+
+Once [connected](https://cloudmydc.com/) to the required node’s desktop, you’ll see the **Server Manager** tool opened. As an example, let’s add a new server role with the following steps.
 
 1. Click the **Add roles and features** link located on the manager’s main page.
 
@@ -71,6 +73,7 @@ Select the current one and navigate to the **Next** tab.
 We’ll add the **Web Server (IIS)** role as an example and proceed with managing its features in the next section.
 
 ## Add Features to Windows Server Roles
+
 Depending on the previously selected server role, you can activate some additional server features inherent for it.
 
 1. Upon a role selection, you’ll be displayed a pop up window with the list of non-obligatory role-dedicated management tools (you can enable or disable their installation with the check-box below).
@@ -113,7 +116,6 @@ Finish your configurations and click **Next**.
 
 </div>
 
-
 4. The installation will start automatically. You can wait until it is successfully finished or close the current window and continue working, while this process will be finished in the background.
 
 <div style={{
@@ -142,6 +144,6 @@ Also, you can always remove any custom role or feature with the help of the comp
 
 :::tip Tip
 
-If you’d like to learn more about the available Windows VM possibilities, refer to the [Windows Server 2008 R2](1) and [Windows Server 2012](1) official documentation.
+If you’d like to learn more about the available Windows VM possibilities, refer to the [Windows Server 2008 R2](https://cloudmydc.com/) and [Windows Server 2012](https://cloudmydc.com/) official documentation.
 
 :::

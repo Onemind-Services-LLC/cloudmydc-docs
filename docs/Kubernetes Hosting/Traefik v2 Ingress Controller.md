@@ -2,7 +2,6 @@
 sidebar_position: 6
 ---
 
-
 <div style={{
     display: 'grid',
     gridTemplateColumns: '0.7fr 1fr',
@@ -24,27 +23,28 @@ sidebar_position: 6
 <div>
 
 <!-- Content changes -->
+
 Jelastic Kubernetes cluster can be installed with NGINX, Traefik, or HAProxy ingress controllers. In this post, we will take a closer look at Traefik and its evolution in Jelastic Kubernetes Service (Jelastic KS).
 
 </div>
 </div>
-
 
 At the moment all issued Jelastic Kubernetes versions support Traefik v1, but commencing from K8s version 1.21.2, Traefik v2 will be used instead.
 
 A number of internal components of Traefik were conceptually redesigned moving from v1 to v2. Below we will cover some of them we consider more important.
 
 ## No Frontends and Backends
+
 The basic concepts such as frontend and backend have been replaced with a combination of routers, services, and middleware.
 With Traefik v1, it is considered the router replaces the frontend and the service takes over the backend role, whilst each router refers to a service.
 
 In order to increase flexibility tweaking the requests before they will be sent to the services, the middleware pieces were attached to the routers in Traefik v2. These middleware can be chained together to fit any scenario. Also, any router can then link to the desired middleware instance.
 
 ## Middleware
-There are a [number of middlewares available](1). Besides serving traditional ingresses for HTTP requests, separate middleware entities allow to modify the request parameters, the HTTP headers, some are responsible for redirects logic, other ones add authentication capabilities, etc.
+
+There are a [number of middlewares available](https://cloudmydc.com/). Besides serving traditional ingresses for HTTP requests, separate middleware entities allow to modify the request parameters, the HTTP headers, some are responsible for redirects logic, other ones add authentication capabilities, etc.
 
 Before the request will be sent to the service it can be modified with middleware(s) attached to a router.
-
 
 <div style={{
     display:'flex',
@@ -69,7 +69,6 @@ http:
           - "/foo"
 ```
 
-
 <div style={{
     display:'flex',
     justifyContent: 'center',
@@ -92,7 +91,7 @@ http:
           - "user2:$apr1$w70ASLDx$1UJmrFL/lVoltjmAz4UDH/"
 ```
 
-This middleware is an alternative to specifying credentials via [Kubernetes Secrets](1) and restricts access to the services:
+This middleware is an alternative to specifying credentials via [Kubernetes Secrets](https://cloudmydc.com/) and restricts access to the services:
 
 <div style={{
     display:'flex',
@@ -111,6 +110,7 @@ traefik.ingress.kubernetes.io/auth-type: "basic".
 ```
 
 ## Several Middlewares at a Time
+
 Middleware employment (as well as other routing components) is optional. Routing logic can use either several middlewares or none at all. For example, in the Ingress below one middleware handles authentication purposes, and another one strips a source path prefix.
 
 ```bash
@@ -122,8 +122,8 @@ metadata:
   namespace: kubernetes-monitoring
   annotations:
     kubernetes.io/ingress.class: traefik
-    traefik.ingress.kubernetes.io/router.middlewares: 
-       kubernetes-monitoring-alert-auth@kubernetescrd, 
+    traefik.ingress.kubernetes.io/router.middlewares:
+       kubernetes-monitoring-alert-auth@kubernetescrd,
        kubernetes-monitoring-alert-prefix@kubernetescrd
 spec:
   rules:
@@ -160,15 +160,15 @@ spec:
 
 ```
 
-
 ## Providers
-Traefik v2 introduces the concept of a [provider](1), which is an infrastructure component that provides information regarding routing to the Traefik. Once the Traefik detects any changes, it automatically updates the routes. The Kubernetes Ingress Traefik provider offers the traditional [Kubernetes ingress](1) controller functionality.
 
-Aside from the standard Ingress, Jelastic KS now supports an [IngressRoute](1) which is the Custom Resource Definition (CRD) implementation of a [Traefik HTTP router](1). This implementation improved accessibility to the K8s clusters without writing annotations. You can get familiar with an [example](1) of how to use IngressRoute in our K8s repository.
+Traefik v2 introduces the concept of a [provider](https://cloudmydc.com/), which is an infrastructure component that provides information regarding routing to the Traefik. Once the Traefik detects any changes, it automatically updates the routes. The Kubernetes Ingress Traefik provider offers the traditional [Kubernetes ingress](https://cloudmydc.com/) controller functionality.
+
+Aside from the standard Ingress, Jelastic KS now supports an [IngressRoute](https://cloudmydc.com/) which is the Custom Resource Definition (CRD) implementation of a [Traefik HTTP router](https://cloudmydc.com/). This implementation improved accessibility to the K8s clusters without writing annotations. You can get familiar with an [example](https://cloudmydc.com/) of how to use IngressRoute in our K8s repository.
 
 ## Services
-Among other features, Traefik v2 supports specific Services that are responsible for configuring how to reach the actual Kubernetes services that will ultimately handle incoming requests.
 
+Among other features, Traefik v2 supports specific Services that are responsible for configuring how to reach the actual Kubernetes services that will ultimately handle incoming requests.
 
 <div style={{
     display:'flex',
@@ -202,6 +202,6 @@ Also, Traefik offers a set of internal services. You can see an example in the c
 
 </div>
 
-These are only a few main changes in the new Traefik v2 which is implemented within [Jelastic Kubernetes v1.21.2+](1). You can check a full list in the official [documentation related to transition from Traefik v1 to v2](1).
+These are only a few main changes in the new Traefik v2 which is implemented within [Jelastic Kubernetes v1.21.2+](https://cloudmydc.com/). You can check a full list in the official [documentation related to transition from Traefik v1 to v2](https://cloudmydc.com/).
 
-Get started with [Kubernetes Service](1) that can be automatically deployed, scaled and updated using Jelastic PaaS and don’t forget to keep an eye on [new releases](1).
+Get started with [Kubernetes Service](https://cloudmydc.com/) that can be automatically deployed, scaled and updated using Jelastic PaaS and don’t forget to keep an eye on [new releases](https://cloudmydc.com/).

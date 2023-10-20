@@ -66,7 +66,7 @@ Now you have the installed and ready-to-work Haproxy load-balancer in front of y
 
 ## HAProxy Configurations
 
-As it was mentioned above, HAProxy is provided with the integrated admin panel, which can be accessed by clicking the **Open in Browser** button (![Locale Dropdown](./img/HAProxy/04-open-in-browser.png) ) and adding the ***/haproxy_adm_panel*** suffix to the environment URL in the browser address bar. After that, you just need to specify the balancer credentials (sent to you via email) in the appeared pop up authentication frame.
+As it was mentioned above, HAProxy is provided with the integrated admin panel, which can be accessed by clicking the **Open in Browser** button (![Locale Dropdown](./img/HAProxy/04-open-in-browser.png) ) and adding the **_/haproxy_adm_panel_** suffix to the environment URL in the browser address bar. After that, you just need to specify the balancer credentials (sent to you via email) in the appeared pop up authentication frame.
 
 <div style={{
     display:'flex',
@@ -82,7 +82,7 @@ In the opened page you can see the list of your HAProxy balancer(s) and servers 
 
 Besides that, you can specify some additional settings in the following ways:
 
-1. Through the dashboard by editing the ***conf > haproxy.conf*** main configuration file.
+1. Through the dashboard by editing the **_conf > haproxy.conf_** main configuration file.
 
 <div style={{
     display:'flex',
@@ -102,11 +102,11 @@ server webserver{n} {server_intenal_ip}:80 cookie S{n} check
 
 where the values inside the curly brackets should be substituted with your custom ones:
 
-- *{n}* - preferred identifier of the linking server
-- *{server_internal_ip}* - address of the required server, which can be found through selecting the Additionally button next to it
-Once these configurations are done, **Save** the made changes and **Restart** the load-balancer server to apply them.
+- _{n}_ - preferred identifier of the linking server
+- _{server_internal_ip}_ - address of the required server, which can be found through selecting the Additionally button next to it
+  Once these configurations are done, **Save** the made changes and **Restart** the load-balancer server to apply them.
 
-2. Through accessing the appropriate HAProxy node via the platform [SSH Gateway](1):
+2. Through accessing the appropriate HAProxy node via the platform [SSH Gateway](https://cloudmydc.com/):
 
 <div style={{
     display:'flex',

@@ -6,11 +6,11 @@ sidebar_position: 5
 
 :::tip Tip
 
-The Varnish stack is [HTTP/3](1) ready with the feature support enabled by default since the 5.2.x and 6.x.x versions. However, a [public IP address](1) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
+The Varnish stack is [HTTP/3](https://cloudmydc.com/) ready with the feature support enabled by default since the 5.2.x and 6.x.x versions. However, a [public IP address](https://cloudmydc.com/) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
 
 :::
 
-**Varnish** is a web-application accelerator also known as a caching HTTP reverse proxy for dynamic web-sites with high traffic. Unlike other proxy servers, it was initially designed to be focused exclusively on HTTP. Nevertheless, within the platform implementation, it is delivered in a bundle with the NGINX server (run on the 443rd port as a HTTPS proxy), that gives the ability to work with the secured data and the [Custom SSL](1) option in particular. In this case, after the incoming traffic decryption, NGINX redirects it directly to Varnish (run on the port 80) to be further processed.
+**Varnish** is a web-application accelerator also known as a caching HTTP reverse proxy for dynamic web-sites with high traffic. Unlike other proxy servers, it was initially designed to be focused exclusively on HTTP. Nevertheless, within the platform implementation, it is delivered in a bundle with the NGINX server (run on the 443rd port as a HTTPS proxy), that gives the ability to work with the secured data and the [Custom SSL](https://cloudmydc.com/) option in particular. In this case, after the incoming traffic decryption, NGINX redirects it directly to Varnish (run on the port 80) to be further processed.
 
 As an accelerator, Varnish only has basic load balancing support, which, however, still includes round robin and random redirector options, backend health-checking and more. But the emphasis is made on the speed, which is mainly achieved through the caching, that makes the web-site faster by offloading the static objects' delivery.
 
@@ -51,7 +51,7 @@ So, if you want to get Varnish as a load balancer for your environment, just com
 
 </div>
 
-Set any other required configurations (add app server(s) and other instances, state resources limits by means of cloudlets sliders, enable [external IP](1) for nodes, etc.). Then name your new environment (e.g. varnish) and proceed with the **Create** button.
+Set any other required configurations (add app server(s) and other instances, state resources limits by means of cloudlets sliders, enable [external IP](https://cloudmydc.com/) for nodes, etc.). Then name your new environment (e.g. varnish) and proceed with the **Create** button.
 
 4. In a couple of minutes your environment will be created.
 
@@ -68,8 +68,10 @@ Set any other required configurations (add app server(s) and other instances, st
 That’s all about Varnish installation! Now you can proceed to its configuration.
 
 ## Varnish Server Configurations
+
 The Varnish load-balancer can be adjusted according to your needs in one of the following ways:
-- through accessing the required server via the platform [SSH Gateway](1):
+
+- through accessing the required server via the platform [SSH Gateway](https://cloudmydc.com/):
 
 <div style={{
     display:'flex',
@@ -102,8 +104,9 @@ backend server_identifier { .host = "server_intenal_ip"; .port = "80"; }
 ```
 
 where the following values should be substituted with your custom ones:
-- *server_identifier* - any preferred name of the linking server
-- *server_internal_ip* - address of the required server, which can be found through selecting the **Additionally** button next to it
+
+- _server_identifier_ - any preferred name of the linking server
+- _server_internal_ip_ - address of the required server, which can be found through selecting the **Additionally** button next to it
 
 <div style={{
     display:'flex',
@@ -115,7 +118,7 @@ where the following values should be substituted with your custom ones:
 
 </div>
 
-After that, add another string a bit lower in the ***sub vcl_init*** section under the *new myclust = directors.hash();* line in the following format:
+After that, add another string a bit lower in the **_sub vcl_init_** section under the _new myclust = directors.hash();_ line in the following format:
 
 ```bash
 myclust.add_backend(server_identifier, 1);

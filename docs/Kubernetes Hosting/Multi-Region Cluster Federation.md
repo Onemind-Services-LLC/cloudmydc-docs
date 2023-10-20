@@ -22,7 +22,7 @@ sidebar_position: 8
 </div>
 <div>
 
-If you have multiple Kubernetes (K8s) clusters in different regions and need to run the same application across all of them, it is reasonable to use the so-called Kubernetes Cluster Federation or [KubeFed](1).
+If you have multiple Kubernetes (K8s) clusters in different regions and need to run the same application across all of them, it is reasonable to use the so-called Kubernetes Cluster Federation or [KubeFed](https://cloudmydc.com/).
 
 </div>
 </div>
@@ -35,7 +35,7 @@ In this article we’ll demonstrate how to set up Jelastic Kubernetes Services (
 
 ## Federation Prerequisites
 
-Supposedly within one Jelastic PaaS we have five clusters in different regions and we'd like to deploy applications to any of these clusters. One of them is a Host Cluster that acts as a Federation [Control Plane](1), it propagates and pushes configurations to the
+Supposedly within one Jelastic PaaS we have five clusters in different regions and we'd like to deploy applications to any of these clusters. One of them is a Host Cluster that acts as a Federation [Control Plane](https://cloudmydc.com/), it propagates and pushes configurations to the
 
 <div style={{
     display:'flex',
@@ -51,7 +51,7 @@ Thus we need to decide which payload we want to distribute, and which member clu
 
 So, let’s get down to business and create a Federation in Jelastic PaaS.
 
-Sing in your account and create two [Kubernetes clusters](1) in different [regions](1). Actually you may create as many as you need though, but here we create a **Host Cluster** and **Member Cluster 1** only. All of the actions below can be applied to any number of Member Clusters. So, deploy:
+Sing in your account and create two [Kubernetes clusters](https://cloudmydc.com/) in different [regions](https://cloudmydc.com/). Actually you may create as many as you need though, but here we create a **Host Cluster** and **Member Cluster 1** only. All of the actions below can be applied to any number of Member Clusters. So, deploy:
 
 - Federation Host Cluster: **_fedhost.vip.jelastic.cloud_**
 - Federation Member Cluster: **_member1.demo.jelastic.com_**
@@ -68,11 +68,11 @@ Sing in your account and create two [Kubernetes clusters](1) in different [regio
 
 ## Remote Access to the Clusters
 
-The next step is to establish [remote access to the clusters](1).
+The next step is to establish [remote access to the clusters](https://cloudmydc.com/).
 
-Log in the master node of the **Host Cluster** via [SSH](1) and start with the configuration. Some commands output will be shown to let you be sure you are doing right:
+Log in the master node of the **Host Cluster** via [SSH](https://cloudmydc.com/) and start with the configuration. Some commands output will be shown to let you be sure you are doing right:
 
-1. First, install the KubeFed chart with [helm](1) in **kube-federation-system** namespace :
+1. First, install the KubeFed chart with [helm](https://cloudmydc.com/) in **kube-federation-system** namespace :
    Add repository:
 
 ```bash
@@ -81,7 +81,7 @@ fedhost~$ helm repo add kubefed-charts
 
 ***https://raw.githubusercontent.com/kubernetes-sigs/kubefed/master/charts***
 
-Install the [latest version](1) available of **kubefed**. Here and below, we use 0.7.0 as the current version:
+Install the [latest version](https://cloudmydc.com/) available of **kubefed**. Here and below, we use 0.7.0 as the current version:
 
 ```bash
 fedhost~$ helm install kubefed kubefed-charts/kubefed --version 0.7.0 --namespace kube-federation-system --create-namespace
@@ -97,7 +97,7 @@ fedhost~$ helm install kubefed kubefed-charts/kubefed --version 0.7.0 --namespac
 
 </div>
 
-2. Download the latest version of [kubefedctl](1) command line tool as well and copy it to /usr/local/bin directory:
+2. Download the latest version of [kubefedctl](https://cloudmydc.com/) command line tool as well and copy it to /usr/local/bin directory:
 
 ```bash
 fedhost~$ wget
@@ -110,7 +110,7 @@ fedhost~$ tar xvf kubefedctl-0.7.0-linux-amd64.tgz
 fedhost~$ mv kubefedctl /usr/local/bin
 ```
 
-3. To let KubeFed federating deployments, it must be able to interact with all of selected **Member Clusters**. To get this, you can use the following [RBAC](1) config file to create the necessary role to ensure connection from the [Host Cluster](1). Log in the master node of the [Member Cluster](1) via SSH and create a configuration file for example [member1.yaml](1) and paste the content below into it.
+3. To let KubeFed federating deployments, it must be able to interact with all of selected **Member Clusters**. To get this, you can use the following [RBAC](https://cloudmydc.com/) config file to create the necessary role to ensure connection from the [Host Cluster](https://cloudmydc.com/). Log in the master node of the [Member Cluster](https://cloudmydc.com/) via SSH and create a configuration file for example [member1.yaml](https://cloudmydc.com/) and paste the content below into it.
 
 ```bash
 apiVersion: v1
@@ -249,7 +249,7 @@ fedhost~$ kubectl config set clusters.kubefed-remote-member1.certificate-authori
 
 :::tip Note
 
-When the Member Cluster is located on the different Jelastic platform the certificate will be invalid because the [Shared Load Balancer](1) with its own certificate is in front of the cluster. This certificate should be ignored during negotiation phase between Host Cluster and Member with a command for example:
+When the Member Cluster is located on the different Jelastic platform the certificate will be invalid because the [Shared Load Balancer](https://cloudmydc.com/) with its own certificate is in front of the cluster. This certificate should be ignored during negotiation phase between Host Cluster and Member with a command for example:
 
 ```bash
 fedhost~$ kubectl config set clusters.kubefed-remote-member1.insecure-skip-tls-verify true
@@ -340,4 +340,4 @@ fedhost~$ kubectl -n kube-federation-system get kubefedclusters
 
 </div>
 
-Congratulations! Now you are aware how to build Kubernetes Federation across multiple regions of [Jelastic PaaS service providers](1). The next step is to start federating the resources and we’ll cover this in more detail within our upcoming publication.
+Congratulations! Now you are aware how to build Kubernetes Federation across multiple regions of [Jelastic PaaS service providers](https://cloudmydc.com/). The next step is to start federating the resources and we’ll cover this in more detail within our upcoming publication.

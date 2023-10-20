@@ -6,7 +6,7 @@ import obj from './VeleroBackups.json'
 
 ## Kubernetes Cluster: Velero Backups
 
-**[Velero](1)** is an open-source backup and restoration tool for Kubernetes cluster disaster recovery. It also supports the migration of cluster resources and persistent volumes backup. Manual or scheduled backups to the external storage ensure your data safety and protection.
+**[Velero](https://cloudmydc.com/)** is an open-source backup and restoration tool for Kubernetes cluster disaster recovery. It also supports the migration of cluster resources and persistent volumes backup. Manual or scheduled backups to the external storage ensure your data safety and protection.
 
 You can leverage Velero to achieve the following tasks:
 
@@ -17,7 +17,7 @@ You can easily integrate Velero backups with the Kubernetes cluster on the platf
 
 1. Start by organizing the S3-compatible storage, which Velero will use to store your backups. For example, you can use _AWS S3_, _VHI S3_, or _MinIO cluster_.
 
-In our guide, we’ll proceed with the latter option so that you can have the whole setup under the same platform. You can install the **_[MinIO Cluster](1)_** at the platform in a few clicks using the Marketplace (follow the steps in the linked guide).
+In our guide, we’ll proceed with the latter option so that you can have the whole setup under the same platform. You can install the **_[MinIO Cluster](https://cloudmydc.com/)_** at the platform in a few clicks using the Marketplace (follow the steps in the linked guide).
 
 <div style={{
     display:'flex',
@@ -55,7 +55,7 @@ Waiting for the first server to format the disks.
 
 </div>
 
-3. Find the latest **_vmware-tanzu/velero_** [release](1) (_v1.8.1_ in our case), click the link in the Download section and copy the URL to the **_linux amd64_** archive.
+3. Find the latest **_vmware-tanzu/velero_** [release](https://cloudmydc.com/) (_v1.8.1_ in our case), click the link in the Download section and copy the URL to the **_linux amd64_** archive.
 
 <div style={{
     display:'flex',
@@ -73,7 +73,7 @@ In our example, we’ll upload the velero binary to the Kubernetes Cluster serve
 
 :::
 
-4. Connect to your Kubernetes Cluster control plane via SSH (e.g. [Web SSH](1)). Download the archive using the link from the previous step and extract the **_velero_** binary to the **_/usr/local/sbin_** directory.
+4. Connect to your Kubernetes Cluster control plane via SSH (e.g. [Web SSH](https://cloudmydc.com/)). Download the archive using the link from the previous step and extract the **_velero_** binary to the **_/usr/local/sbin_** directory.
 
 ```bash
 wget https://github.com/vmware-tanzu/velero/releases/download/v1.8.1/velero-v1.8.1-linux-amd64.tar.gz
@@ -138,7 +138,7 @@ velero install --provider aws --plugins velero/velero-plugin-for-aws:v1.4.1 --bu
 
 </div>
 
-We use AWS emulation to work with S3 and **_[restic](1)_** add-on since we have NFS storages for which we don’t have a native snapshot functionality.
+We use AWS emulation to work with S3 and **_[restic](https://cloudmydc.com/)_** add-on since we have NFS storages for which we don’t have a native snapshot functionality.
 
 7. Let’s deploy a test application with storage and mounts to test how Velero can perform backups. We’ll use the following example application:
 
@@ -196,7 +196,7 @@ exit
 
 :::danger Note
 
-Without the annotation, [PV and PVC](1) definitions are copied but not the data.
+Without the annotation, [PV and PVC](https://cloudmydc.com/) definitions are copied but not the data.
 
 :::
 
