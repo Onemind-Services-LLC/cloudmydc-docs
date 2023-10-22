@@ -23,77 +23,80 @@ export const FeatureList: FeatureItem[] = [
   {
     title: "Java",
     Svg: require("@site/static/img/home/java-active.svg").default,
-    url: "/404",
+    url: "/docs/Java/Java%20Dev%20Center",
   },
   {
     title: "PHP",
     Svg: require("@site/static/img/home/php-active.svg").default,
-    url: "/404",
+    url: "/docs/PHP/PHP%20Dev%20Center",
   },
   {
     title: "Node.js",
     Svg: require("@site/static/img/home/node-active.svg").default,
-    url: "/404",
+    url: "/docs/Nodejs/Node.js%20Dev%20Center",
   },
   {
     title: "Python",
     Svg: require("@site/static/img/home/python-active.svg").default,
-    url: "/404",
+    url: "/docs/Python/Python%20Dev%20Center",
   },
   {
     title: "Go Lang",
     Svg: require("@site/static/img/home/go-active.svg").default,
-    url: "/404",
+    url: "/docs/Go%20Lang/Go%20Dev%20Center",
   },
   {
     title: "Ruby",
     Svg: require("@site/static/img/home/ruby-active.svg").default,
-    url: "/404",
+    url: "/docs/Ruby/Ruby%20Dev%20Center",
   },
   {
     title: ".NET",
     Svg: require("@site/static/img/home/dotnet.svg").default,
-    url: "/404",
+    url: "/docs/Windows&.NET/DOT%20NET%20Core",
   },
   {
     title: "Containers",
     Svg: require("@site/static/img/home/container.svg").default,
-    url: "/404",
+    url: "/docs/Container/Container%20Types",
   },
   {
     title: "Kubernetes",
     Svg: require("@site/static/img/home/kubernetes-icon-b.svg").default,
-    url: "/404",
+    url: "/docs/Kubernetes%20Hosting/Kubernetes%20Cluster/Kubernetes%20Overview",
   },
   {
     title: "Databases",
     Svg: require("@site/static/img/home/databases.svg").default,
-    url: "/404",
+    url: "/docs/Database/Database%20Hosting/DB%20Hosting%20Overview",
   },
   {
     title: "Load Balancer",
     Svg: require("@site/static/img/home/lb-b.svg").default,
-    url: "/404",
+    url: "/docs/Load%20Balancers/Load%20Balancing",
   },
   {
     title: "Elastic VPS",
     Svg: require("@site/static/img/home/hosting-b.svg").default,
-    url: "/404",
+    url: "/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information",
   },
   {
     title: "Storage",
     Svg: require("@site/static/img/home/storage-b.svg").default,
-    url: "/404",
+    url: "/docs/Data%20Storage%20Container/Data%20Storage%20Overview",
   },
   {
     title: "Cache",
     Svg: require("@site/static/img/home/cache.svg").default,
-    url: "/404",
+    url: "/docs/Memcached/Memcached%20System",
   },
 ];
 
 export const QuickStartList: QuickStartItem[] = [
-  { title: "Getting Started", url: "/404" },
+  {
+    title: "Getting Started",
+    url: "/docs/QuickStart/Getting%20Started",
+  },
   { title: "Dashboard Guide", url: "/404" },
   { title: "Deployment Guide", url: "/404" },
   { title: "Database Сonnection", url: "/404" },

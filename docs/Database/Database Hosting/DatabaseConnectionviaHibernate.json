@@ -1,0 +1,3 @@
+{
+    "data1": "jdbc:mysql://mysql{node_id}.{your_env_name}.{hoster_domain}:3306/jelasticDb"
+}
