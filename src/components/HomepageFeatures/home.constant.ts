@@ -97,24 +97,57 @@ export const QuickStartList: QuickStartItem[] = [
     title: "Getting Started",
     url: "/docs/QuickStart/Getting%20Started",
   },
-  { title: "Dashboard Guide", url: "/404" },
-  { title: "Deployment Guide", url: "/404" },
-  { title: "Database Сonnection", url: "/404" },
-  { title: "Software Stack Versions", url: "/404" },
+  {
+    title: "Dashboard Guide",
+    url: "/docs/QuickStart/Dashboard%20Guide",
+  },
+  {
+    title: "Deployment Guide",
+    url: "/docs/Deployment/Deployment%20Guide",
+  },
+  {
+    title: "Database Сonnection",
+    url: "/docs/Database/Database%20Hosting/Database%20Connection%20Strings",
+  },
+  {
+    title: "Software Stack Versions",
+    url: "/docs/QuickStart/Software%20Stack%20Versions",
+  },
 ];
 
 export const RecommendedList: RecommendedItem[] = [
-  { title: "Automatic Vertical Scaling", url: "/404" },
-  { title: "Automatic Horizontal Scaling", url: "/404" },
-  { title: "Custom Domain Name", url: "/404" },
-  { title: "Traffic Distributor", url: "/404" },
-  { title: "Accounts Collaboration", url: "/404" },
+  {
+    title: "Automatic Vertical Scaling",
+    url: "/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling",
+  },
+  {
+    title: "Automatic Horizontal Scaling",
+    url: "/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling",
+  },
+  {
+    title: "Custom Domain Name",
+    url: "/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name",
+  },
+  {
+    title: "Traffic Distributor",
+    url: "/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Overview",
+  },
+  {
+    title: "Accounts Collaboration",
+    url: "/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview",
+  },
 ];
 
 export const GettingInfoList: GettingInfoItem[] = [
-  { title: "Release Notes", url: "/404" },
-  { title: "Platform API", url: "/404" },
-  { title: "Cloud Scripting", url: "/404" },
-  { title: "Platform CLI", url: "/404" },
-  { title: "Ops Docs", url: "/404" },
+  {
+    title: "Release Notes",
+    url: "/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3.2",
+  },
+  // { title: "Platform API", url: "#" },
+  { title: "Cloud Scripting", url: "https://docs.cloudscripting.com/" },
+  {
+    title: "Platform CLI",
+    url: "/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview",
+  },
+  // { title: "Ops Docs", url: "#" },
 ];
