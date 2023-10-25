@@ -2,8 +2,6 @@
 sidebar_position: 3
 ---
 
-##context code
-
 ## Multiple Domain Names on Tomcat Server
 
 Set up multiple domain names on the Tomcat server in order to increase the usability, efficiency and scalability of your application, as well as save your costs without having to configure separate instances. For this, make some minor adjustments within Tomcat configuration files as described below.

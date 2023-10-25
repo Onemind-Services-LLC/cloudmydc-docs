@@ -1,0 +1,76 @@
+{
+  "data1": [
+    {
+      "Folder": "etc",
+      "File": "php.ini",
+      "Path": "/etc"
+    },
+    {
+      "Folder": "conf.d",
+      "File": "modules.conf, aliases.conf, geoip.conf, mod_security.conf, php.conf, ssl.conf, welcome.conf",
+      "Path": "/etc/httpd/conf.d/"
+    },
+    {
+      "Folder": "conf",
+      "File": "httpd.conf",
+      "Path": "/etc/httpd/conf/"
+    },
+    {
+      "Folder": "webroot",
+      "File": "",
+      "Path": "/var/www/webroot"
+    },
+    {
+      "Folder": "cron",
+      "File": "apache",
+      "Path": "/var/spool/cron"
+    },
+    {
+      "Folder": "keys",
+      "File": "",
+      "Path": "/var/lib/jelastic/keys"
+    },
+    {
+      "Folder": "modules",
+      "File": "",
+      "Path": "/usr/lib64/php/modules"
+    }
+  ],
+  "data2": [
+    {
+      "Folder": "etc",
+      "File": "php-fpm.conf, php.ini",
+      "Path": "/etc"
+    },
+    {
+      "Folder": "conf.d",
+      "File": "virtual.conf, ssl.conf",
+      "Path": "/etc/nginx/conf.d"
+    },
+    {
+      "Folder": "conf",
+      "File": "nginx.conf",
+      "Path": "/etc/nginx"
+    },
+    {
+      "Folder": "webroot",
+      "File": "",
+      "Path": "/var/www/webroot"
+    },
+    {
+      "Folder": "cron",
+      "File": "nginx",
+      "Path": "/var/spool/cron"
+    },
+    {
+      "Folder": "keys",
+      "File": "",
+      "Path": "/var/lib/jelastic/keys"
+    },
+    {
+      "Folder": "modules",
+      "File": "",
+      "Path": "/usr/lib64/php/modules"
+    }
+  ]
+}

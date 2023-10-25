@@ -9,28 +9,9 @@ Sometimes, it may be required to move your application to another [environment r
 1. To start with, you have to get the list of regions which are available at a Platform.
    For that, the **_getregions_** command should be used, with the appropriate search filter being applied in order to shorten the output and simplify the perception:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           
-        </div>
-    </div>
-</div>
+```bash
+~/jelastic/environment/control/getregions | sed -rne '/(uniqueName|isEnabled|displayName)/{/Name/,/isEnabled/p}'
+```
 
 <div style={{
     display:'flex',
@@ -54,28 +35,9 @@ To make it more clear, the appropriate _uniqueName_ values are circled in the im
 
 2. It is also a good practice to check the migration possibility before running the operation itself. Use the appropriate simple **_CheckMigrationPossibility_** CLI method for this:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           
-        </div>
-    </div>
-</div>
+```bash
+~/jelastic/environment/control/checkmigrationpossibility --envName {env_name} --hardwareNodeGroup {region_id}
+```
 
 Here:
 
@@ -94,28 +56,9 @@ Here:
 
 3. Now you have all the required data to call the migration procedure:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           
-        </div>
-    </div>
-</div>
+```bash
+~/jelastic/environment/control/migrate --envName {env_name} --hardwareNodeGroup {region_id} --isOnline {true/false}
+```
 
 The only new parameter here is the _isOnline_ one, which can be set as **_{true/false}_** for using the [live](https://cloudmydc.com/) or [offline](https://cloudmydc.com/) migration mode correspondingly.
 

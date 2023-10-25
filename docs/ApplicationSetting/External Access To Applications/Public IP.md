@@ -60,7 +60,7 @@ Here, upon hovering over IPs, you can get access to the following functionality:
 - **Attach/Detach IP(s)** - allows adjusting a number of public IPs (both IPv4 and IPv6)
 - **Detach IP** - removes a particular address
 
-:::note
+:::tip Note
 
 - The public IP is a paid option, which is charged for every hour of its usage. The exact price is defined by your particular hosting service provider and can be found at the **[Quotas & Pricing](https://cloudmydc.com/) > Pricing > Options** frame of the dashboard.
 - If you have public IP enabled for any node in your environment, you can’t use the [swap domains](https://cloudmydc.com/) functionality for it. Consider utilizing the [swap Public IPs](https://cloudmydc.com/) API instead.

@@ -40,6 +40,8 @@ To realize the schema above we’ll come through the next steps:
 
 Also here is a video version of the same procedure:
 
+[![Locale Dropdown](./img/ApplicationLifecycleManagement/video1.jpg)](https://youtu.be/JLCBjkWY4s8)
+
 Let’s get started!
 
 ## Create the Production Environment
@@ -206,31 +208,12 @@ Let’s create one more environment with the database without a compute node. Th
 
 2. In the opened tab create a **_mydb.cfg_** file in the **/opt/glassfish3/temp** directory and add there all necessary configurations:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-2
-3
-4
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           
-        </div>
-    </div>
-</div>
+```bash
+host=jdbc:mysql://mysql{node_id}-{your_env_name}.{hoster_domain}/{db_name}
+username={get in the email}
+password={get in the email}
+driver=com.mysql.jdbc.Driver
+```
 
 <div style={{
     display:'flex',

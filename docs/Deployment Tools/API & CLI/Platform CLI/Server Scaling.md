@@ -2,32 +2,15 @@
 sidebar_position: 6
 ---
 
+##CONTEXT CODE
+
 ## CLI Tutorial: Server Scaling
 
 When the environment is already created, in some cases it may be required to change its topology - for example, to scale a particular server or the whole environment layer (using the [vertical](https://cloudmydc.com/) and/or [horizontal](https://cloudmydc.com/) scaling respectively) due to the changed incoming load. This may be accomplished with the corresponding **_changetopology_** CLI method:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           
-        </div>
-    </div>
-</div>
+```bash
+~/jelastic/environment/control/changetopology --envName {env_name} --env '{"engine" : "{engine_type}"}' --nodes ['{"nodeType" : "{node_type}","count" : {nodes_amount}, "fixedCloudlets" : {cloudlets_amount}, "flexibleCloudlets" : {cloudlets_amount}}, {"nodeType" : "{node_type}", "count" : {nodes_amount}, "fixedCloudlets" : {cloudlets_amount}, "flexibleCloudlets" :  {cloudlets_amount}}']
+```
 
 <div style={{
     display:'flex',

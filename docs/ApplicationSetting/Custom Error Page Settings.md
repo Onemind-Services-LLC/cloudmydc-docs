@@ -70,28 +70,10 @@ Now, you are able to specify all the required configurations.
 
 5. Find the **_server_** section of the pasted configs and substitute the default error_page settings with the following strings:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           
-        </div>
-    </div>
-</div>
+```bash
+error_page 403 404 500 502 503 504 /error.html;
+proxy_intercept_errors on;
+```
 
 <div style={{
     display:'flex',
@@ -105,28 +87,34 @@ Now, you are able to specify all the required configurations.
 
 6. Next, scroll a little bit lower and adjust the error page parameters within **location** subsections:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           
-        </div>
-    </div>
-</div>
+```bash
+location /error.html {
+    root   /etc/nginx/conf.d;
+    internal;
+}
+
+location / {
+    if ($cookie_SRVGROUP ~ group|common) {
+        proxy_pass http://$cookie_SRVGROUP;
+        error_page 403 404 500 502 503 504 = /error.html;
+    }
+    if ($cookie_SRVGROUP !~ group|common) {
+        add_header Set-Cookie "SRVGROUP=$group; path=/";
+    }
+    proxy_pass http://default_upstream;
+    add_header Set-Cookie "SRVGROUP=$group; path=/";
+}
+
+location @rescue {
+    proxy_pass http://$cookie_SRVGROUP;
+    error_page   500 502 503 504 = error.html;
+}
+
+location @recycle {
+    proxy_pass http://default_upstream;
+    add_header Set-Cookie "SRVGROUP=$group; path=/";
+}
+```
 
 <div style={{
     display:'flex',
@@ -140,31 +128,12 @@ Now, you are able to specify all the required configurations.
 
 7. In case of using [SSL](https://cloudmydc.com/) for your website (i.e. for connections over HTTPS), some additional configurations are required (otherwise go to the 9th step of this guide). Add the following lines to the **servers** section of the **_/etc/nginx/conf.d/ssl.conf_** file:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-2
-3
-4
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           
-        </div>
-    </div>
-</div>
+```bash
+proxy_intercept_errors on;
+location /error.html {
+                    root   /etc/nginx/conf.d;
+ }
+```
 
 <div style={{
     display:'flex',
@@ -178,32 +147,13 @@ Now, you are able to specify all the required configurations.
 
 8. Also, you need to adjust the **_/etc/nginx/conf.d/ssl.upstreams.inc_** file. Find the next condition and change it as follows:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-2
-3
-4
-5
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           
-        </div>
-    </div>
-</div>
+```bash
+if ($cookie_SRVGROUP ~ group|common) {
+                   proxy_pass http://$cookie_SRVGROUP;
+                   error_page 403 404 /error.html;
+                   error_page   500 502 503 504 = @resque;
+}
+```
 
 <div style={{
     display:'flex',

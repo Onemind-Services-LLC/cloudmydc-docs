@@ -2,8 +2,6 @@
 sidebar_position: 2
 ---
 
-##Link Issue
-
 ## Swap Domains
 
 While working with any project, you will eventually face the need to upgrade or modify it. Of course, before applying any changes in production, you should thoroughly test them. With the platform, this can be done in a separate environment, and once the new version is ready, you can just **swap domains** between these development/testing and production projects for an immediate version switch.

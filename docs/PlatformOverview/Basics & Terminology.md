@@ -20,7 +20,7 @@ Being informed about the basic components and how they interrelate, you can proc
 
 ## Cloudlet
 
-[Cloudlet](https://cloudmydc.com/) is the smallest platform infrastructure component. It is a special resource unit that equals to **128 MiB** of **RAM** and **400 MHz** of **CPU** power simultaneously. Such high granularity of resources allows the system to allocate the exactly required capacity for each instance in the environment. This ensures the truly fair [usage-based pricing](https://cloudmydc.com/), so that only the really consumed resources are being paid.
+[**Cloudlet**](https://cloudmydc.com/) is the smallest platform infrastructure component. It is a special resource unit that equals to ***128 MiB*** of **RAM** and ***400 MHz*** of **CPU** power simultaneously. Such high granularity of resources allows the system to allocate the exactly required capacity for each instance in the environment. This ensures the truly fair [usage-based pricing](https://cloudmydc.com/), so that only the really consumed resources are being paid.
 
 ![Locale Dropdown](./img/BasicsTerminology/01-cloudlet-resource-unit.png)
 

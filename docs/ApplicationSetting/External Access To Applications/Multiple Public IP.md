@@ -31,7 +31,7 @@ The platform supports assigning multiple [public IP](https://cloudmydc.com/) add
 
 For example, if hosting several web-sites on a single node, the multi-IP option allows to handle them as separate production-ready services due to the ability to apply dedicated [custom domain name](https://cloudmydc.com/) and [SSL certificate](https://cloudmydc.com/) to each of them. Also, this option can be helpful for operating network appliances (e.g. load balancers) with multiple IP addresses for each network.
 
-:::note
+:::tip Note
 
 Both Public IPv4 and IPv6 are paid options, charged separately (either for the same or different price) on hourly basis. The exact cost and allowed number of IPs per node/per environment can be seen within the **[Quotas & Pricing](https://cloudmydc.com/) > Account Limits** dashboard tab.
 
@@ -83,7 +83,7 @@ Also, you can **Copy to clipboard** and **Detach** each particular address using
 
 The **_Node Settings_** box displays the number of currently attached addresses with the **Apply** button dimmed until you make some changes.
 
-:::note
+:::tip Note
 
 The very first added Public IP of each type that is added to an instance is considered a **_primary_** one (is always displayed first within the IP list). It can be deleted only if no more assigned addresses of a same version have left at a node. This address is used for both incoming and outgoing traffic, whilst the rest of IPs can only receive it.
 
@@ -103,7 +103,7 @@ Also, all IP addresses, assigned to a container, are shown within environment to
 
 Here, all container external addresses are displayed within the **WAN IP** column (in the same order as at the dashboard, i.e. IPv4 > IPv6), whilst the **LAN IP** one contains its internal address.
 
-:::note
+:::tip Note
 
 In case the required type of the newly attached IP is not indicated explicitly (e.g. within [Cloud Scripting](https://cloudmydc.com/) solution or application/add-on package settings at [platform Marketplace](https://cloudmydc.com/)), the IPv4 is used by default.
 
@@ -130,7 +130,7 @@ This method is used with the following parameters:
 
 In order to increase or reduce the number of particular IPs (IPv4 or IPv6) on a destination container, you need to specify the **_count_** according to the number of the already assigned addresses.
 
-:::note
+:::tip Note
 
 The **_AttachExtIp_** and **_DetachExtIp_** methods, which were provided earlier to add and remove Public IP address respectively, are now deprecated but still can be used due to the backward compatibility.
 
@@ -151,6 +151,6 @@ This method is used with the following parameters:
 
 In order to swap all the Public IP addresses between the source and destination nodes, omit the **_sourceip_** and **_destip_** parameters.
 
-:::note
+:::tip Note
 
 he SwapExtIps method can be currently used only with Public IPv4.

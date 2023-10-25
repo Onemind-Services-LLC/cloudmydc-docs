@@ -4,8 +4,6 @@ sidebar_position: 8
 
 import obj from './ContainerDNSHostnames.json'
 
-##Table Insert
-
 ## DNS Hostnames for Direct Connection to Containers
 
 <div style={{
@@ -20,15 +18,11 @@ import obj from './ContainerDNSHostnames.json'
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/ContainerDNSHostnames/01-container-dns-hostnames.png)
 
 </div>
 </div>
 <div>
-
-<!-- Content changes -->
 
 Being able to easily connect to Cloud services is a criteria of great importance for all of the developers. In the platform, each newly created node is assigned a number of automatically generated hostnames, pointed to the appropriate server internal/[external](https://cloudmydc.com/) IP address.
 
@@ -224,41 +218,6 @@ Such supplementary prefixes are valid only within domains with a hyphen as a sep
         </div> 
     </div> 
 </div>
-
-<!--
-Cassandra 1/2
-cassandra${nodeId}-${envName}.${platformDomain}
-
-CouchDB
-couchdb${nodeId}-${envName}.${platformDomain}
-
-MariaDB 5/10
-mariadb${nodeId}-${envName}.${platformDomain}
-
-Memcached
-memcached${nodeId}-${envName}.${platformDomain}
-
-MongoDB 2/3
-mongodb${nodeId}-${envName}.${platformDomain}
-
-MSSQL
-mssql${nodeId}-${envName}.${platformDomain}
-
-MySQL 5.6/5.7
-mysql${nodeId}-${envName}.${platformDomain}
-
-Neo4j 1/2
-neo4j${nodeId}-${envName}.${platformDomain}
-
-OrientDB
-orientdb${nodeId}-${envName}.${platformDomain}
-
-PostgreSQL 8/9
-postgres${nodeId}-${envName}.${platformDomain}
-
-Redis
-redis${nodeId}-${envName}.${platformDomain}
--->
 
 All alternative domain strings, shown in the table above, can be utilized similarly to the [hostnames for specific containers](https://cloudmydc.com/).
 

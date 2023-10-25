@@ -1,0 +1,162 @@
+{
+  "data1": [
+    {
+      "Name": "region",
+      "Description": "Name of the required region - depends on hosting service provider settings.",
+      "TypeExample": "string",
+      "Value": "",
+      "Mandatory": "no"
+    },
+    {
+      "Name": "ishaenabled",
+      "Description": "Applicable only for Tomcat 6/7, Jetty6, TomEE, GlassFish3",
+      "TypeExample": "boolean",
+      "Value": "true, false",
+      "Mandatory": "no"
+    },
+    {
+      "Name": "engine",
+      "Description": "Programming language version",
+      "TypeExample": "string",
+      "Value": "java6, java7, java8, php5.3, php5.4, php5.5, etc.",
+      "Mandatory": "yes (except for Docker-based environments)"
+    },
+    {
+      "Name": "displayName",
+      "Description": "Environment alias",
+      "TypeExample": "string",
+      "Value": "my-env-alias",
+      "Mandatory": "no"
+    },
+    {
+      "Name": "sslstate",
+      "Description": "Built-In SSL",
+      "TypeExample": "boolean",
+      "Value": "true, false",
+      "Mandatory": "no"
+    },
+    {
+      "Name": "shortdomain",
+      "Description": "Name for the environment to be created",
+      "TypeExample": "string",
+      "Value": "my-cli-env",
+      "Mandatory": "yes"
+    }
+  ],
+  "data2": [
+    {
+      "Name": "extip",
+      "Description": "Public IP",
+      "TypeExample": "boolean",
+      "Value": "true, false",
+      "Mandatory": "no"
+    },
+    {
+      "Name": "count",
+      "Description": "Number of nodes",
+      "TypeExample": "integer",
+      "Value": "1, 2, 3, …",
+      "Mandatory": "no"
+    },
+    {
+      "Name": "fixedCloudlets",
+      "Description": "Number of fixed cloudlets",
+      "TypeExample": "integer",
+      "Value": "1, 2, 3, …",
+      "Mandatory": "yes"
+    },
+    {
+      "Name": "flexibleCloudlets",
+      "Description": "Number of flexible cloudlets",
+      "TypeExample": "integer",
+      "Value": "1, 2, 3, … but can not be less than fixedCloudlets",
+      "Mandatory": "yes"
+    },
+    {
+      "Name": "displayName",
+      "Description": "Node’s alias name",
+      "TypeExample": "string",
+      "Value": "my-node-alias",
+      "Mandatory": "no"
+    },
+    {
+      "Name": "nodeType",
+      "Description": "Type of the stack",
+      "TypeExample": "string",
+      "Value": "docker, tomcat6, tomcat7, tomee, mysql5, apache2, nginxphp, etc.",
+      "Mandatory": "yes"
+    },
+    {
+      "Name": "docker",
+      "Description": "List of Docker container settings",
+      "TypeExample": "array",
+      "Value": "check the corresponding section below",
+      "Mandatory": "only for docker nodeType"
+    }
+  ],
+  "data3": [
+    {
+      "Name": "cmd",
+      "Description": "Run command configuration",
+      "TypeExample": "string",
+      "Value": "run.sh",
+      "Mandatory": "no"
+    },
+    {
+      "Name": "image",
+      "Description": "Docker image name with a tag version (optionally)",
+      "TypeExample": "string",
+      "Value": "ubuntu, tutum/apache-php, jelastic/tomcat8:latest, etc.",
+      "Mandatory": "yes"
+    },
+    {
+      "Name": "nodeGroup",
+      "Description": "Environment layer the image should be placed in",
+      "TypeExample": "string",
+      "Value": "cp - application server, bl - load balancer, nosqldb - noSQL database, sqldb - SQL database, cache - cache node, storage - storage node",
+      "Mandatory": "no (if not specified, an image will be added to the Extra layer)"
+    },
+    {
+      "Name": "links",
+      "Description": "Linking parameters",
+      "TypeExample": "array",
+      "Value": "described within the expandable list below",
+      "Mandatory": "no"
+    },
+    {
+      "Name": "env",
+      "Description": "The list of environment variables",
+      "TypeExample": "object",
+      "Value": "described within the expandable list below",
+      "Mandatory": "no"
+    },
+    {
+      "Name": "registry",
+      "Description": "Credentials for the private registry",
+      "TypeExample": "array",
+      "Value": "described within the expandable list below",
+      "Mandatory": "no"
+    },
+    {
+      "Name": "volumes",
+      "Description": "List of local volumes",
+      "TypeExample": "array",
+      "Value": "described within the expandable list below",
+      "Mandatory": "no"
+    },
+    {
+      "Name": "volumeMounts",
+      "Description": "List of mounted data directories",
+      "TypeExample": "array",
+      "Value": "described within the expandable list below",
+      "Mandatory": "no"
+    },
+    {
+      "Name": "volumesFrom",
+      "Description": "List of nodes to copy the volume settings from",
+      "TypeExample": "array",
+      "Value": "described within the expandable list below",
+      "Mandatory": "no"
+    }
+  ]
+}

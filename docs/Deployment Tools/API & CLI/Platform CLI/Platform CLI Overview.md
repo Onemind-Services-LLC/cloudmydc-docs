@@ -26,28 +26,9 @@ Subsequently, you can dive deeper with the [platform CLI tutorials](https://clou
 
 In order to install the platform CLI at your local machine, you need to run just a single line of code via your terminal:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           curl -s ftp://ftp.jelastic.com/pub/cli/jelastic-cli-installer.sh | bash
-        </div>
-    </div>
-</div>
+```bash
+curl -s ftp://ftp.jelastic.com/pub/cli/jelastic-cli-installer.sh | bash
+```
 
 :::tip Notes:
 
@@ -86,28 +67,9 @@ If the entered data is correct, you’ll see the logo and version of the current
 
 The authentication can also be initiated manually. For example, if you need to switch the current session and log in as another user or at a different PaaS installation. Use the following command:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           
-        </div>
-    </div>
-</div>
+```bash
+~/jelastic/users/authentication/signin --login  {email} --password  {password} --platformUrl  {platformUrl}
+```
 
 Here, the values in braces should be substituted with the corresponding account parameters (described above).
 
@@ -131,28 +93,9 @@ By default, the CLI command is considered successfully executed even if the call
 
 3. In case you are new to our API and need details on its command-line interface structure, you can access the embedded help file:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           ~/jelastic/help
-        </div>
-    </div>
-</div>
+```bash
+~/jelastic/help
+```
 
 <div style={{
     display:'flex',
@@ -168,28 +111,9 @@ Here, you can see the hierarchical list of the available command types (methods)
 
 4. In order to get the list of all possible operations for a particular method, you can use a simple listing command for the appropriate directory, for example:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           ls ~/jelastic/environment/control
-        </div>
-    </div>
-</div>
+```bash
+ls ~/jelastic/environment/control
+```
 
 <div style={{
     display:'flex',
@@ -221,28 +145,9 @@ You can also check our [API documentation](https://cloudmydc.com/) for getting a
 
 However, if you need to save the response into a file (e.g. to use it in some automation tasks), this element may be redundant and corrupt JSON formatting. To hide the loading animation, append your command with the following argument:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           --silent true
-        </div>
-    </div>
-</div>
+```bash
+--silent true
+```
 
 In such a way, the received output can be immediately used by your automation scripts without any additional edits.
 

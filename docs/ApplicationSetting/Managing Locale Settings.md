@@ -2,8 +2,6 @@
 sidebar_position: 12
 ---
 
-##Context code
-
 ## Managing Locale Settings
 
 A **locale** is a set of language and cultural rules, which define preferences that you want to see in your interface and applications. It covers aspects such as language for messages, different character sets, lexicographic conventions, and so on. Below, we’ll overview how to view and change the locale settings on your containers.

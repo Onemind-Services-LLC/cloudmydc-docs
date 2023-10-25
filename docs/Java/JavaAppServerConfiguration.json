@@ -1,0 +1,160 @@
+{
+  "data1": [
+    {
+      "Folder": "conf",
+      "File": "catalina.policy, catalina.properties, context.xml, jaspic-providers.xml, jaspic-providers.xsd, jelastic-ha.xml, jelastic-ssl.xml, logging.properties, server.xml, tomcat-env.sh, tomcat-users.xml, tomcat-users.xsd, variables.conf, web.xml",
+      "Path": "/opt/tomcat/conf"
+    },
+    {
+      "Folder": "temp",
+      "File": "",
+      "Path": "/opt/tomcat/temp"
+    },
+    {
+      "Folder": "webapps",
+      "File": "",
+      "Path": "/opt/tomcat/webapps"
+    },
+    {
+      "Folder": "latest",
+      "File": "",
+      "Path": "/usr/java/latest"
+    },
+    {
+      "Folder": "lib",
+      "File": "",
+      "Path": "/opt/tomcat/lib"
+    },
+    {
+      "Folder": "cron",
+      "File": "tomcat",
+      "Path": "/var/spool/cron"
+    },
+    {
+      "Folder": "keys",
+      "File": "",
+      "Path": "/var/lib/jelastic/keys"
+    }
+  ],
+  "data2": [
+    {
+      "Folder": "server",
+      "File": "catalina.policy, server.xml, catalina.properties, tomcat-users.xml, context.xml, web.xml, variables.conf, logging.properties, tomee.xml, system.properties",
+      "Path": "/opt/tomcat/conf/"
+    },
+    {
+      "Folder": "home",
+      "File": "",
+      "Path": "/opt/tomcat/temp/"
+    },
+    {
+      "Folder": "webapps",
+      "File": "",
+      "Path": "/opt/tomcat/webapps/"
+    },
+    {
+      "Folder": "apps",
+      "File": "",
+      "Path": "/opt/tomcat/apps/"
+    },
+    {
+      "Folder": "JAVA_HOME",
+      "File": "",
+      "Path": "/usr/java/default/"
+    },
+    {
+      "Folder": "lib",
+      "File": "",
+      "Path": "/opt/tomcat/lib/"
+    },
+    {
+      "Folder": "cron",
+      "File": "tomcat",
+      "Path": "/var/spool/cron/"
+    },
+    {
+      "Folder": "keys",
+      "File": "",
+      "Path": "/var/lib/jelastic/keys/"
+    }
+  ],
+  "data3": [
+    {
+      "Folder": "server",
+      "File": "default-web.xml, domain.xml, domain.xml.bak, domain.xml.orig, local-password, logging.properties, logging.properties.orig, login.conf, server.policy, sun-acc.xml, wss-server-config-1.0.xml, wss-server-config-2.0.xml",
+      "Path": "/opt/glassfish3/glassfish/domains/, domain1/config"
+    },
+    {
+      "Folder": "gfcluster-config",
+      "File": "logging.properties",
+      "Path": "/opt/glassfish3/glassfish/domains/, domain1/config/gfcluster-config"
+    },
+    {
+      "Folder": "home",
+      "File": "",
+      "Path": "/opt/glassfish3/temp"
+    },
+    {
+      "Folder": "JAVA_HOME",
+      "File": "",
+      "Path": "/usr/java/latest"
+    },
+    {
+      "Folder": "server_lib",
+      "File": "",
+      "Path": "/opt/glassfish3/glassfish/lib/"
+    },
+    {
+      "Folder": "cron",
+      "File": "glassfish",
+      "Path": "/var/spool/cron"
+    },
+    {
+      "Folder": "keys",
+      "File": "",
+      "Path": "/var/lib/jelastic/keys"
+    }
+  ],
+  "data4": [
+    {
+      "Folder": "server",
+      "File": "jdbcRealm.properties, jetty-ajp.xml, jetty-bio.xml, jetty-jaas.xml, jetty-jmx.xml, jetty-logging.xml, jetty-plus.xml, jetty-rewrite.xml, jetty-setuid.xml, jetty-sslengine.xml, jetty-ssl.xml, jetty-stats.xml, jetty.xml, login.conf, login.properties, realm.properties, spnego.properties, variables.conf, webdefault.xml",
+      "Path": "/opt/jetty/etc"
+    },
+    {
+      "Folder": "home",
+      "File": "",
+      "Path": "/opt/jetty/home"
+    },
+    {
+      "Folder": "contexts",
+      "File": "",
+      "Path": "/opt/jetty/contexts/"
+    },
+    {
+      "Folder": "work",
+      "File": "",
+      "Path": "/opt/jetty/work"
+    },
+    {
+      "Folder": "JAVA_HOME",
+      "File": "",
+      "Path": "/usr/java/latest"
+    },
+    {
+      "Folder": "lib",
+      "File": "",
+      "Path": "/opt/jetty/lib"
+    },
+    {
+      "Folder": "cron",
+      "File": "jetty",
+      "Path": "/var/spool/cron"
+    },
+    {
+      "Folder": "keys",
+      "File": "",
+      "Path": "/var/lib/jelastic/keys"
+    }
+  ]
+}

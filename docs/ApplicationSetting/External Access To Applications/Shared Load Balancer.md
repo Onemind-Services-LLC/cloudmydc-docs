@@ -32,7 +32,7 @@ To ensure the platform’s high availability, it uses **several synchronized Sha
 
 As a result, there can be several entry points for users' environments, and the incoming load can be efficiently distributed.
 
-:::note
+:::tip Note
 
 We recommend using **SLB** for your **_dev_** and **_test_** environments. As for **_production_** environments, which are intended to handle high traffic, it is more appropriate to use your own [**public IP**](https://cloudmydc.com/) for getting and processing the requests. Also, it allows you to apply several additional options to your application, making it more secure (e.g. with [Custom SSL](https://cloudmydc.com/)) and responsive (through attaching [Custom Domain](https://cloudmydc.com/)).
 
@@ -97,7 +97,7 @@ The platform provides a predefined option to disable external access to environm
 
 </div>
 
-:::note
+:::tip Note
 
 The platform automatically disables **Access via SLB** for the layer after adding a **Public IP**. Such configs are recommended to provide the highest security level for your application. However, in case of necessity, you can re-enable _Access via SLB_ to use both options simultaneously.
 

@@ -10,28 +10,9 @@ Creation of environments via command line can come in handy for the variety of d
 
 - The most straightforward way to create a new environment with CLI is to declare the required parameters manually via the appropriate command. Simply execute the following **_createenvironment_** method with your custom parameters specified:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           
-        </div>
-    </div>
-</div>
+```bash
+~/jelastic/environment/control/createenvironment --env '{"shortdomain" : " {env_name}", "engine" : " {engine_type}"}' --nodes '[{"nodeType" : " {node_type}", "fixedCloudlets" :  {cloudlets_amount}, "flexibleCloudlets" :  {cloudlets_amount}}]'
+```
 
 In the example above, the highlighted placeholders should be substituted with the following data:
 
@@ -62,55 +43,29 @@ Pay attention that in the image above CLI responded with the _result_ property e
 
 For example, let’s create a simple JSON with the next environment topology:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           
-        </div>
-    </div>
-</div>
+```bash
+{
+  "env": {
+    "shortdomain": "{env_name}",
+    "engine": "{engine_type}"
+  },
+  "nodes": [
+    {
+      "nodeType": "{node_type}",
+      "fixedCloudlets": "{cloudlets_amount}",
+      "flexibleCloudlets": "{cloudlets_amount}"
+    }
+  ]
+}
+```
 
 Just don’t forget to change the highlighted parameters in the same way it was described within the previous step.
 
 Now, all you need to do in order to create an environment is to use the **_createenvironment_** method with just a single –myparams parameter, that includes path to your .json file as a value (or just its name if it’s located within the user’s home folder):
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           
-        </div>
-    </div>
-</div>
+```bash
+~/jelastic/environment/control/createenvironment --myparams {path_to_file}
+```
 
 In addition, you can redefine or add some of the settings (namely – _shortdomain_, _region_ and _displayName_) to the env section of your configuration file, by stating them inside square brackets within this method parameters. For example, with the optional – _shortdomain_ string (like in the image below) you can override the same-named setting from JSON, so the environment will be created with the same topology but under a different name.
 
@@ -126,28 +81,9 @@ In addition, you can redefine or add some of the settings (namely – _shortdoma
 
 2. Creation of a [Docker-based environment](https://cloudmydc.com/) is almost similar to the above described methods, but includes a few specific parameters. So, in order to get a Docker container using platform CLI, you need to execute the following line:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           
-        </div>
-    </div>
-</div>
+```bash
+~/jelastic/environment/control/createenvironment --env '{"shortdomain" : "{env_name}"}' --nodes '[{"nodeType" : "docker", "fixedCloudlets" : {cloudlets_amount}, "flexibleCloudlets" : {cloudlets_amount}, "docker" : {"image" : "{image_name}"}}]'
+```
 
 According to the command above, the _nodeType_ parameter needs to be stated in **_docker_** and the newly added **_{image_name}_** placeholder should be replaced with the address of Docker template you’d like to deploy (in the _server.com/images/image_name:tag_ format).
 

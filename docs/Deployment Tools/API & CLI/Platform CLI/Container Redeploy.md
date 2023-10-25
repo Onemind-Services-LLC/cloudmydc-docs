@@ -22,28 +22,9 @@ Here, you can get all the info on the environment - _layer names, node IDs, Dock
 
 2. Once you’ve got the container’s ID and layer (_nodeGroup name_), you can view the list of tags available for the image. We’ll use the **_GetContainerNodeTags_** method with environment name and node ID as parameters:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           
-        </div>
-    </div>
-</div>
+```bash
+~/jelastic/environment/control/getcontainernodetags --envName {envName} --nodeId {nodeId}
+```
 
 <div style={{
     display:'flex',
@@ -59,28 +40,9 @@ In our case, a list of tags for the _jelastic/redis_ image is displayed.
 
 3. Now, you have all the data required for container redeploy via CLI. Call the appropriate **_RedeployContainers_** method:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           
-        </div>
-    </div>
-</div>
+```bash
+~/jelastic/environment/control/redeploycontainers --envName {envName} [--nodeGroup {nodeGroup}] [--nodeId {nodeId}] --tag {tag} [--useExistingVolumes {useExistingVolumes}] [--login {login}] [--password {password}]
+```
 
 The following parameters are used:
 

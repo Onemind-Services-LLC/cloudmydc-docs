@@ -253,7 +253,7 @@ For more convenience, we provide the embedded list of predefined endpoint config
 
 Here you’ll find the **Public port** and **Access URL** actual values already displayed. You can use these parameters to perform the required operations - just click on a particular string to get the opportunity to easily copy it.
 
-:::note
+:::tip Note
 
 that for linking functionality to work properly with the [VPS](https://cloudmydc.com/) and [Docker®](https://cloudmydc.com/) containers, the corresponding private ports (stated during the endpoint addition) at these nodes should be opened by the owner manually.
 

@@ -1,0 +1,28 @@
+{
+  "data1": [
+    {
+      "Folder": "PROJECTS",
+      "Path": "/var/lib/jelastic/PROJECTS"
+    },
+    {
+      "Folder": "conf",
+      "Path": "/opt/maven/conf"
+    },
+    {
+      "Folder": "hooks",
+      "Path": "/var/lib/jelastic/hooks"
+    },
+    {
+      "Folder": "latest",
+      "Path": "/usr/java/latest"
+    },
+    {
+      "Folder": "keys",
+      "Path": "/var/lib/jelastic/keys"
+    },
+    {
+      "Folder": "vcs",
+      "Path": "/var/lib/jelastic/vcs"
+    }
+  ]
+}

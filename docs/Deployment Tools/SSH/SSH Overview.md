@@ -53,34 +53,15 @@ With SSH Gate, you can easily access:
 
 While accessing containers via SSH, a user receives all required permissions and additionally can manage the main services with **sudo** commands of the following kind (and others):
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-2
-3
-4
-5
-6
-7
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           
-        </div>
-    </div>
-</div>
+```bash
+sudo /etc/init.d/jetty start
+sudo /etc/init.d/mysql stop
+sudo /etc/init.d/tomcat restart
+sudo /etc/init.d/memcached status
+sudo /etc/init.d/mongod reload
+sudo /etc/init.d/nginx upgrade
+sudo /etc/init.d/httpd help
+```
 
 :::danger Note
 

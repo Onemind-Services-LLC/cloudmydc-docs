@@ -29,7 +29,7 @@ If you want to restrict access between the environments on a single account, it 
 
 Each node at the platform (excluding custom [Docker](https://cloudmydc.com/)- and [Windows](https://cloudmydc.com/)-based containers) is provisioned with a set of firewall rules, which can be reviewed and managed through an intuitive graphical user interface. The appropriate section can be accessed by clicking on the **Settings** button next to the required environment and selecting the **Firewall** menu item.
 
-:::note
+:::tip Note
 
 The availability of the Container Firewall UI depends on your particular hosting provider settings. If you don’t have this section, please contact your platform support and request feature activation for your account.
 
@@ -81,7 +81,7 @@ Here, rules are grouped by layers and have the next structure:
 
 - the default (stack-related) and user-added (either by an environment owner or collaborators) rules
 
-:::note
+:::tip Note
 
 Apply changes to the default rules only in case you know exactly what you are doing, since these records are required to ensure proper stack-specific functionality and to provide particular features support (e.g. to allow _SSH, HTTP, HTTPS_ or _FTP_ connections).
 
@@ -125,7 +125,7 @@ Here, **_{portN}_** is a particular port (_1234_) or range (_33062-34000_), whic
 
 </div>
 
-:::note
+:::tip Note
 
 Changes due to the **_OPEN_INBOUND_PORTS_** variable are applied just once during nodes' installation. Consequently, the [firewall rules](https://cloudmydc.com/) should be managed manually.
 
@@ -205,7 +205,7 @@ Access to your nodes can be controlled based on such request parameters as its s
 - [User Interface](https://cloudmydc.com/)
 - [SSH connection](https://cloudmydc.com/)
 
-:::note
+:::tip Note
 
 Before following this instruction, ensure that the appropriate container is provided with a [Public IP](https://cloudmydc.com/) address.
 
@@ -273,7 +273,7 @@ This way you can deny access to your containers from any IP address.
 
 Alternatively, you can configure firewall rules for your container via terminal when accessing the node through [SSH Gate](https://cloudmydc.com/).
 
-:::note
+:::tip Note
 
 Although most of the firewall configurations can be performed via the dedicated user interface, management via SSH is more flexible (for example, allows configuring NAT redirects). Herewith, such rules won’t be displayed in the UI list but will be of higher priority.
 
@@ -309,7 +309,7 @@ Here, the **_FIREWALL_ENABLED_** parameter should be equal to _“1”_. If not,
 
 </div>
 
-:::note
+:::tip Note
 
 The **_/etc/sysconfig/ip6tables-custom_** file should be used when working with the IPv6 rules.
 
