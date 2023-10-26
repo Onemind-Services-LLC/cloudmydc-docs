@@ -31,7 +31,7 @@ For performing necessary configurations for NGINX balancer the **_nginx.conf_** 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
 Back to the list
     </a>
 </div>
@@ -54,7 +54,7 @@ With access to NGINX configs you can not only edit the existing files but also u
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
 Back to the list
     </a>
 </div>
@@ -82,7 +82,7 @@ To set [caching in NGINX](https://cloudmydc.com/) click on the link and follow t
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
 Back to the list
     </a>
 </div>

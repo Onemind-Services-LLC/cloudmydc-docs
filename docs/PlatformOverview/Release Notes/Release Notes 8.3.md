@@ -4,11 +4,11 @@ sidebar_position: 2
 
 import obj from './ReleaseNotes8.3.json'
 
-## Virtuozzo Application Platform 8.3
+## CloudMyDc Application Platform 8.3
 
 _This document is preliminary and subject to change._
 
-In this document, you will find all of the new features, enhancements and visible changes included to the **Virtuozzo PaaS 8.3** release.
+In this document, you will find all of the new features, enhancements and visible changes included to the **CloudMyDc PaaS 8.3** release.
 
 <hr/>
 <div style={{
@@ -238,7 +238,7 @@ Fixed
 
 ## AlmaLinux 9 Base OS Image
 
-Starting with the current 8.3 release, Virtuozzo Application Platform starts transitioning to the [software stacks](https://cloudmydc.com/) based on the new **_AlmaLinux 9_** images (from the previously used CentOS 7). Such a change ensures support of all the up-to-date functionality, modern security standards, and compatibility with all the latest software solutions.
+Starting with the current 8.3 release, CloudMyDc Application Platform starts transitioning to the [software stacks](https://cloudmydc.com/) based on the new **_AlmaLinux 9_** images (from the previously used CentOS 7). Such a change ensures support of all the up-to-date functionality, modern security standards, and compatibility with all the latest software solutions.
 
 The transition process will be gradual and non-intrusive. It follows the next points:
 
@@ -270,7 +270,7 @@ Other stack-related changes include an updated list of [supported OS distributio
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -335,21 +335,21 @@ Lastly the ability to enable/disable **Auto Pay** option was implemented, allowi
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Action Initiator for Emails
 
-Virtuozzo Application Platform provides a powerful [collaboration functionality](https://cloudmydc.com/) that allows multiple users to work on the same account. However, with high participants number and active development, it may become difficult to track all the actions performed by individuals and create confusion on whether the account is compromised. In order to help the tracking efforts, the email notifications were extended with the “action initiator” data. Depending on the operation, it can be the email address of the collaboration member or a reference to the internal trigger (e.g., [automatic horizontal scaling](https://cloudmydc.com/)).
+CloudMyDc Application Platform provides a powerful [collaboration functionality](https://cloudmydc.com/) that allows multiple users to work on the same account. However, with high participants number and active development, it may become difficult to track all the actions performed by individuals and create confusion on whether the account is compromised. In order to help the tracking efforts, the email notifications were extended with the “action initiator” data. Depending on the operation, it can be the email address of the collaboration member or a reference to the internal trigger (e.g., [automatic horizontal scaling](https://cloudmydc.com/)).
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -370,14 +370,14 @@ The API documentation’s complete review has started in order to provide a comp
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Fixes Compatible with Prior Versions
 
-Below, you can find the fixes that were implemented in the Virtuozzo Application Platform 8.3 release and also integrated into previous platform versions by means of the appropriate patches.
+Below, you can find the fixes that were implemented in the CloudMyDc Application Platform 8.3 release and also integrated into previous platform versions by means of the appropriate patches.
 
 <div style={{
         width: '100%',
@@ -398,7 +398,7 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
         color: 'var(--table-color-primary)',
         background: 'var(--table-bg-primary-t3)'
     }}>
-        Virtuozzo Application Platform 8.3
+        CloudMyDc Application Platform 8.3
     </div>
     <div>
         <div style={{
@@ -491,14 +491,14 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Software Stack Versions
 
-The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
+The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
 The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
@@ -509,14 +509,14 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Bug Fixes
 
-In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.3 release:
+In the table below, you can see the list of bug fixes applied to the platform starting from CloudMyDc Application Platform 8.3 release:
 
 <div style={{
         width: '100%',
@@ -537,7 +537,7 @@ In the table below, you can see the list of bug fixes applied to the platform st
         color: 'var(--table-color-primary)',
         background: 'var(--table-bg-primary-t3)'
     }}>
-        Virtuozzo Application Platform 8.3
+        CloudMyDc Application Platform 8.3
     </div>
     <div>
         <div style={{

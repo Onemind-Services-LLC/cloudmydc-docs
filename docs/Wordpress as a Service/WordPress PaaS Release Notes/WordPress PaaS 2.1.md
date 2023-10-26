@@ -2,7 +2,6 @@
 sidebar_position: 1
 ---
 
-
 <div style={{
         display: 'flex',
         padding: '10px 0 10px 0',
@@ -147,10 +146,11 @@ Changed
 </div>
 
 ## Subscription Improvements
+
 Several improvements to the subscription management were implemented in the current 2.1 release to ensure the best experience for the customers. One of the most requested features - the possibility to update the number of websites for the existing subscriptions - was fully implemented. The option to **Edit Subscription** is available from the Your Account > Subscriptions menu. It allows increasing/decreasing Quantity based on the new requirements (the price per installation is calculated according to the remaining billing period):
 
 - Upon upgrade (increasing number of installations), the platform automatically generates an additional “update quantity” invoice.
-- *In case of a downgrade* (no less than the existing number of instances), the platform automatically generates a refund invoice and recharges the account’s balance.
+- _In case of a downgrade_ (no less than the existing number of instances), the platform automatically generates a refund invoice and recharges the account’s balance.
 
 <div style={{
     display:'flex',
@@ -183,16 +183,16 @@ Another major new feature is the ability to switch subscription plans within the
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Endpoints Support
+
 The **Endpoints** feature provides the ability to establish a direct connection (over raw TCP or UDP protocol) to the corresponding node without the mandatory Public IP address. It can be used to set up remote access to projects on the platform via local clients. For example, one of the most common endpoint use cases is gaining remote access to your database instance.
 
 You can find this new feature by selecting a specific project and navigating to the **Settings > Endpoints** section. Here, you can see and manage the list of existing endpoints (if any) and **Add** new ones.
-
 
 <div style={{
     display:'flex',
@@ -211,12 +211,13 @@ You can find this new feature by selecting a specific project and navigating to 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Account Information
+
 In the current 2.1 platform release, a new **User Information** section was added to the Your Account configurations. It allows personalize the account by providing account details in the dedicated form. Here you can specify the following information:
 
 - **First Name** of the account owner
@@ -243,13 +244,14 @@ In the current 2.1 platform release, a new **User Information** section was adde
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## UI Improvements
-The Virtuozzo Application Platform for WordPress dashboard is designed to provide the best user experience for the customers. In the current 2.1 platform upgrade, a direct link to the project’s WordPress admin panel was added directly to the dashboard, allowing quick access to the panel.
+
+The CloudMyDc Application Platform for WordPress dashboard is designed to provide the best user experience for the customers. In the current 2.1 platform upgrade, a direct link to the project’s WordPress admin panel was added directly to the dashboard, allowing quick access to the panel.
 
 <div style={{
     display:'flex',
@@ -268,13 +270,14 @@ Additionally, if the project has another admin panel (e.g., for the LiteSpeed se
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Dashboard Localization
-The Virtuozzo Application Platform for WordPress implements support for custom dashboard localizations (in addition to the default English one). However, the exact list of languages for each particular platform depends on the corresponding hosting provider’s settings. A new **Language** drop-down list will be displayed in the account settings menu if multiple options are available.
+
+The CloudMyDc Application Platform for WordPress implements support for custom dashboard localizations (in addition to the default English one). However, the exact list of languages for each particular platform depends on the corresponding hosting provider’s settings. A new **Language** drop-down list will be displayed in the account settings menu if multiple options are available.
 
 <div style={{
     display:'flex',

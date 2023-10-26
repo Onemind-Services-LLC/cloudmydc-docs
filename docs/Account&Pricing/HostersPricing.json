@@ -1,295 +1,294 @@
 {
-    "data1": [
-      {
-        "Hoster": "Aruba",
-        "Country": "🇮🇹",
-        "PricingPage": "https://www.arubacloud.com/jelastic-cloud-paas/jelastic-cloud.aspx"
-      },
-      {
-        "Hoster": "Axarnet",
-        "Country": "🇪🇸",
-        "PricingPage": "https://www.axarnet.es/jelastic"
-      },
-      {
-        "Hoster": "BasicCloud",
-        "Country": "🇳🇱",
-        "PricingPage": "https://www.basiccloud.nl/paas-to-please/pricing-calculator/"
-      },
-      {
-        "Hoster": "beebyte",
-        "Country": "🇸🇪",
-        "PricingPage": "https://www.beebyte.se/platform-as-a-service-paas/"
-      },
-      {
-        "Hoster": "CirrusGrid",
-        "Country": "🇲🇾",
-        "PricingPage": "https://www.qloud.my/cirrusgrid/"
-      },
-      {
-        "Hoster": "Click&Cloud",
-        "Country": "🇫🇷",
-        "PricingPage": "http://www.clicketcloud.com/tarif.html"
-      },
-      {
-        "Hoster": "CloudJiffy",
-        "Country": "🇮🇳",
-        "PricingPage": "https://www.cloudjiffy.com/"
-      },
-      {
-        "Hoster": "CloudKilat",
-        "Country": "🇮🇩",
-        "PricingPage": "https://www.kilatiron.com/"
-      },
-      {
-        "Hoster": "Cloudlets",
-        "Country": "🇦🇺",
-        "PricingPage": "https://cloudlets.com.au/pricing.html"
-      },
-      {
-        "Hoster": "Cloudlets.Zones",
-        "Country": "🇵🇱",
-        "PricingPage": "https://cloudlets.zone/"
-      },
-      {
-        "Hoster": "Cloudplatform",
-        "Country": "🇫🇮",
-        "PricingPage": "https://www.cloudplatform.fi/hinnat/"
-      },
-      {
-        "Hoster": "CloudSigma",
-        "Country": "🇨🇭",
-        "PricingPage": "https://www.cloudsigma.com/platform-as-a-service/"
-      },
-      {
-        "Hoster": "Dewacloud",
-        "Country": "🇮🇩",
-        "PricingPage": "https://www.dewacloud.com/"
-      },
-      {
-        "Hoster": "Diadem",
-        "Country": "🇮🇳",
-        "PricingPage": "https://diadem.in/jelastic-paas-india/"
-      },
-      {
-        "Hoster": "DOCKTERA",
-        "Country": "🇳🇱",
-        "PricingPage": "https://www.docktera.com/platforms/jelastic-paas/pay-as-you-use-pricing/"
-      },
-      {
-        "Hoster": "dogado",
-        "Country": "🇩🇪",
-        "PricingPage": "https://www.dogado.de/cloud-hosting/"
-      },
-      {
-        "Hoster": "DynaCentri",
-        "Country": "🇨🇦",
-        "PricingPage": "https://dynacentri.com/"
-      },
-      {
-        "Hoster": "eApps",
-        "Country": "🇺🇸",
-        "PricingPage": "http://paas.eapps.com/"
-      },
-      {
-        "Hoster": "Edge Cloud",
-        "Country": "🇵🇭",
-        "PricingPage": "https://www.edgecloud.com.ph/platform-as-a-service/"
-      },
-      {
-        "Hoster": "Elastic Cloud",
-        "Country": "🇺🇾",
-        "PricingPage": "https://minubeantel.uy/index.php?NAME_PATH=Elastic_Cloud"
-      },
-      {
-        "Hoster": "Elastx",
-        "Country": "🇸🇪",
-        "PricingPage": "http://elastx.com/start/easy-java-hosting/pricing-model"
-      },
-      {
-        "Hoster": "Fullhost",
-        "Country": "🇨🇦",
-        "PricingPage": "https://www.fullhost.com/cloud-paas/"
-      },
-      {
-        "Hoster": "GStacks",
-        "Country": "🇸🇬",
-        "PricingPage": "https://www.gstacks.com/"
-      },
-      {
-        "Hoster": "Hidora",
-        "Country": "🇨🇭",
-        "PricingPage": "https://hidora.io/"
-      },
-      {
-        "Hoster": "Hosteur",
-        "Country": "🇨🇭",
-        "PricingPage": "https://ragnarok.hosteur.com/"
-      },
-      {
-        "Hoster": "iNETsolutions.de",
-        "Country": "🇩🇪",
-        "PricingPage": "https://promo.web.inetsolutions.cloud/index_price.html"
-      },
-      {
-        "Hoster": "Infomaniak",
-        "Country": "🇨🇭",
-        "PricingPage": "https://www.infomaniak.com/en/jelastic"
-      },
-      {
-        "Hoster": "InterHost",
-        "Country": "🇧🇪",
-        "PricingPage": "https://www.interhostsolutions.be/hosting/cloud-hosting/"
-      },
-      {
-        "Hoster": "Keliweb",
-        "Country": "🇮🇹",
-        "PricingPage": "https://cloud.keliweb.it/en/cloud-applications/"
-      },
-      {
-        "Hoster": "Layershift",
-        "Country": "🇬🇧",
-        "PricingPage": "http://www.layershift.com/hosting/jelastic-paas#pricing"
-      },
-      {
-        "Hoster": "Libyan Spider",
-        "Country": "🇱🇾",
-        "PricingPage": "https://libyanspider.com/hosting/jelastic-paas/"
-      },
-      {
-        "Hoster": "Mamazala",
-        "Country": "🇿🇦",
-        "PricingPage": "https://mamazala.com/"
-      },
-      {
-        "Hoster": "MassiveGRID",
-        "Country": "🇬🇧",
-        "PricingPage": "https://www.massivegrid.com/platform-as-a-service"
-      },
-      {
-        "Hoster": "MightyBox",
-        "Country": "🇺🇸",
-        "PricingPage": "https://mightybox.io/pricing/"
-      },
-      {
-        "Hoster": "MIRhosting",
-        "Country": "🇳🇱",
-        "PricingPage": "https://mirhosting.com/cloud"
-      },
-      {
-        "Hoster": "Neen",
-        "Country": "🇮🇹",
-        "PricingPage": "http://www.neen.com/it/jelastic-paas"
-      },
-      {
-        "Hoster": "OXABOX",
-        "Country": "🇬🇧",
-        "PricingPage": "https://www.oxabox.com/cloud-solution/"
-      },
-      {
-        "Hoster": "Previder",
-        "Country": "🇳🇱",
-        "PricingPage": "https://www.previder.com/nl/cloud/paas"
-      },
-      {
-        "Hoster": "PrimeTel",
-        "Country": "🇨🇾",
-        "PricingPage": "https://primetel.com.cy/cloud-services"
-      },
-      {
-        "Hoster": "PS Internet Company",
-        "Country": "🇰🇿",
-        "PricingPage": "http://dnr.kz/jelastic/price"
-      },
-      {
-        "Hoster": "Rack Nation",
-        "Country": "🇨🇷",
-        "PricingPage": "https://www.racknation.cr/paas-jelastic-racknationcloud.php"
-      },
-      {
-        "Hoster": "Reclaim Cloud",
-        "Country": "🇺🇸",
-        "PricingPage": "https://reclaim.cloud/pricing/"
-      },
-      {
-        "Hoster": "Ruk-Com",
-        "Country": "🇹🇭",
-        "PricingPage": "https://hostings.ruk-com.in.th/"
-      },
-      {
-        "Hoster": "Savecore",
-        "Country": "🇸🇪",
-        "PricingPage": "https://savecore.se/future-operations/paas/priser-paas/"
-      },
-      {
-        "Hoster": "SaveInCloud",
-        "Country": "🇵🇾",
-        "PricingPage": "https://saveincloud.com/pt/preco-cloud/"
-      },
-      {
-        "Hoster": "Scaleforce",
-        "Country": "🇬🇧",
-        "PricingPage": "https://www.scaleforce.net/pricing/"
-      },
-      {
-        "Hoster": "SonikCloud",
-        "Country": "🇧🇷",
-        "PricingPage": "https://www.sonik.cloud/"
-      },
-      {
-        "Hoster": "TLine Cloud",
-        "Country": "🇲🇽",
-        "PricingPage": "https://point.tline.com/paas"
-      },
-      {
-        "Hoster": "Togglebox",
-        "Country": "🇺🇸",
-        "PricingPage": "https://www.togglebox.com/paas/"
-      },
-      {
-        "Hoster": "Trendhosting",
-        "Country": "🇨🇭",
-        "PricingPage": "https://www.trendhosting.ch/home/"
-      },
-      {
-        "Hoster": "UKHost4u",
-        "Country": "🇬🇧",
-        "PricingPage": "https://www.ukhost4u.com/cloud-solutions/"
-      },
-      {
-        "Hoster": "UniCloud",
-        "Country": "🇵🇱",
-        "PricingPage": "http://unicloud.pl/cennik/"
-      },
-      {
-        "Hoster": "Unispace Cloud",
-        "Country": "🇨🇿",
-        "PricingPage": "https://unispace.cloud/pricing/"
-      },
-      {
-        "Hoster": "United Cloud",
-        "Country": "🇩🇪",
-        "PricingPage": "https://www.united-cloud.com/produkte/jelastic-paas-fuer-entwickler.html"
-      },
-      {
-        "Hoster": "Valtti",
-        "Country": "🇫🇮",
-        "PricingPage": "https://www.virtuozzo.com/application-platform-partners/valtti/"
-      },
-      {
-        "Hoster": "VirtualCloud",
-        "Country": "🇧🇷",
-        "PricingPage": "https://www.virtualcloud.com.br/elastic/"
-      },
-      {
-        "Hoster": "WafaiCloud",
-        "Country": "🇸🇦",
-        "PricingPage": "https://wafaicloud.com/"
-      },
-      {
-        "Hoster": "Zeus Cloud",
-        "Country": "🇬🇧",
-        "PricingPage": "https://www.zeuscloud.co.uk/enterprise-cloud/paas-pricing-calculator"
-      }
-    ]
-
+  "data1": [
+    {
+      "Hoster": "Aruba",
+      "Country": "🇮🇹",
+      "PricingPage": "https://www.arubacloud.com/jelastic-cloud-paas/jelastic-cloud.aspx"
+    },
+    {
+      "Hoster": "Axarnet",
+      "Country": "🇪🇸",
+      "PricingPage": "https://www.axarnet.es/jelastic"
+    },
+    {
+      "Hoster": "BasicCloud",
+      "Country": "🇳🇱",
+      "PricingPage": "https://www.basiccloud.nl/paas-to-please/pricing-calculator/"
+    },
+    {
+      "Hoster": "beebyte",
+      "Country": "🇸🇪",
+      "PricingPage": "https://www.beebyte.se/platform-as-a-service-paas/"
+    },
+    {
+      "Hoster": "CirrusGrid",
+      "Country": "🇲🇾",
+      "PricingPage": "https://www.qloud.my/cirrusgrid/"
+    },
+    {
+      "Hoster": "Click&Cloud",
+      "Country": "🇫🇷",
+      "PricingPage": "http://www.clicketcloud.com/tarif.html"
+    },
+    {
+      "Hoster": "CloudJiffy",
+      "Country": "🇮🇳",
+      "PricingPage": "https://www.cloudjiffy.com/"
+    },
+    {
+      "Hoster": "CloudKilat",
+      "Country": "🇮🇩",
+      "PricingPage": "https://www.kilatiron.com/"
+    },
+    {
+      "Hoster": "Cloudlets",
+      "Country": "🇦🇺",
+      "PricingPage": "https://cloudlets.com.au/pricing.html"
+    },
+    {
+      "Hoster": "Cloudlets.Zones",
+      "Country": "🇵🇱",
+      "PricingPage": "https://cloudlets.zone/"
+    },
+    {
+      "Hoster": "Cloudplatform",
+      "Country": "🇫🇮",
+      "PricingPage": "https://www.cloudplatform.fi/hinnat/"
+    },
+    {
+      "Hoster": "CloudSigma",
+      "Country": "🇨🇭",
+      "PricingPage": "https://www.cloudsigma.com/platform-as-a-service/"
+    },
+    {
+      "Hoster": "Dewacloud",
+      "Country": "🇮🇩",
+      "PricingPage": "https://www.dewacloud.com/"
+    },
+    {
+      "Hoster": "Diadem",
+      "Country": "🇮🇳",
+      "PricingPage": "https://diadem.in/jelastic-paas-india/"
+    },
+    {
+      "Hoster": "DOCKTERA",
+      "Country": "🇳🇱",
+      "PricingPage": "https://www.docktera.com/platforms/jelastic-paas/pay-as-you-use-pricing/"
+    },
+    {
+      "Hoster": "dogado",
+      "Country": "🇩🇪",
+      "PricingPage": "https://www.dogado.de/cloud-hosting/"
+    },
+    {
+      "Hoster": "DynaCentri",
+      "Country": "🇨🇦",
+      "PricingPage": "https://dynacentri.com/"
+    },
+    {
+      "Hoster": "eApps",
+      "Country": "🇺🇸",
+      "PricingPage": "http://paas.eapps.com/"
+    },
+    {
+      "Hoster": "Edge Cloud",
+      "Country": "🇵🇭",
+      "PricingPage": "https://www.edgecloud.com.ph/platform-as-a-service/"
+    },
+    {
+      "Hoster": "Elastic Cloud",
+      "Country": "🇺🇾",
+      "PricingPage": "https://minubeantel.uy/index.php?NAME_PATH=Elastic_Cloud"
+    },
+    {
+      "Hoster": "Elastx",
+      "Country": "🇸🇪",
+      "PricingPage": "http://elastx.com/start/easy-java-hosting/pricing-model"
+    },
+    {
+      "Hoster": "Fullhost",
+      "Country": "🇨🇦",
+      "PricingPage": "https://www.fullhost.com/cloud-paas/"
+    },
+    {
+      "Hoster": "GStacks",
+      "Country": "🇸🇬",
+      "PricingPage": "https://www.gstacks.com/"
+    },
+    {
+      "Hoster": "Hidora",
+      "Country": "🇨🇭",
+      "PricingPage": "https://hidora.io/"
+    },
+    {
+      "Hoster": "Hosteur",
+      "Country": "🇨🇭",
+      "PricingPage": "https://ragnarok.hosteur.com/"
+    },
+    {
+      "Hoster": "iNETsolutions.de",
+      "Country": "🇩🇪",
+      "PricingPage": "https://promo.web.inetsolutions.cloud/index_price.html"
+    },
+    {
+      "Hoster": "Infomaniak",
+      "Country": "🇨🇭",
+      "PricingPage": "https://www.infomaniak.com/en/jelastic"
+    },
+    {
+      "Hoster": "InterHost",
+      "Country": "🇧🇪",
+      "PricingPage": "https://www.interhostsolutions.be/hosting/cloud-hosting/"
+    },
+    {
+      "Hoster": "Keliweb",
+      "Country": "🇮🇹",
+      "PricingPage": "https://cloud.keliweb.it/en/cloud-applications/"
+    },
+    {
+      "Hoster": "Layershift",
+      "Country": "🇬🇧",
+      "PricingPage": "http://www.layershift.com/hosting/jelastic-paas#pricing"
+    },
+    {
+      "Hoster": "Libyan Spider",
+      "Country": "🇱🇾",
+      "PricingPage": "https://libyanspider.com/hosting/jelastic-paas/"
+    },
+    {
+      "Hoster": "Mamazala",
+      "Country": "🇿🇦",
+      "PricingPage": "https://mamazala.com/"
+    },
+    {
+      "Hoster": "MassiveGRID",
+      "Country": "🇬🇧",
+      "PricingPage": "https://www.massivegrid.com/platform-as-a-service"
+    },
+    {
+      "Hoster": "MightyBox",
+      "Country": "🇺🇸",
+      "PricingPage": "https://mightybox.io/pricing/"
+    },
+    {
+      "Hoster": "MIRhosting",
+      "Country": "🇳🇱",
+      "PricingPage": "https://mirhosting.com/cloud"
+    },
+    {
+      "Hoster": "Neen",
+      "Country": "🇮🇹",
+      "PricingPage": "http://www.neen.com/it/jelastic-paas"
+    },
+    {
+      "Hoster": "OXABOX",
+      "Country": "🇬🇧",
+      "PricingPage": "https://www.oxabox.com/cloud-solution/"
+    },
+    {
+      "Hoster": "Previder",
+      "Country": "🇳🇱",
+      "PricingPage": "https://www.previder.com/nl/cloud/paas"
+    },
+    {
+      "Hoster": "PrimeTel",
+      "Country": "🇨🇾",
+      "PricingPage": "https://primetel.com.cy/cloud-services"
+    },
+    {
+      "Hoster": "PS Internet Company",
+      "Country": "🇰🇿",
+      "PricingPage": "http://dnr.kz/jelastic/price"
+    },
+    {
+      "Hoster": "Rack Nation",
+      "Country": "🇨🇷",
+      "PricingPage": "https://www.racknation.cr/paas-jelastic-racknationcloud.php"
+    },
+    {
+      "Hoster": "Reclaim Cloud",
+      "Country": "🇺🇸",
+      "PricingPage": "https://reclaim.cloud/pricing/"
+    },
+    {
+      "Hoster": "Ruk-Com",
+      "Country": "🇹🇭",
+      "PricingPage": "https://hostings.ruk-com.in.th/"
+    },
+    {
+      "Hoster": "Savecore",
+      "Country": "🇸🇪",
+      "PricingPage": "https://savecore.se/future-operations/paas/priser-paas/"
+    },
+    {
+      "Hoster": "SaveInCloud",
+      "Country": "🇵🇾",
+      "PricingPage": "https://saveincloud.com/pt/preco-cloud/"
+    },
+    {
+      "Hoster": "Scaleforce",
+      "Country": "🇬🇧",
+      "PricingPage": "https://www.scaleforce.net/pricing/"
+    },
+    {
+      "Hoster": "SonikCloud",
+      "Country": "🇧🇷",
+      "PricingPage": "https://www.sonik.cloud/"
+    },
+    {
+      "Hoster": "TLine Cloud",
+      "Country": "🇲🇽",
+      "PricingPage": "https://point.tline.com/paas"
+    },
+    {
+      "Hoster": "Togglebox",
+      "Country": "🇺🇸",
+      "PricingPage": "https://www.togglebox.com/paas/"
+    },
+    {
+      "Hoster": "Trendhosting",
+      "Country": "🇨🇭",
+      "PricingPage": "https://www.trendhosting.ch/home/"
+    },
+    {
+      "Hoster": "UKHost4u",
+      "Country": "🇬🇧",
+      "PricingPage": "https://www.ukhost4u.com/cloud-solutions/"
+    },
+    {
+      "Hoster": "UniCloud",
+      "Country": "🇵🇱",
+      "PricingPage": "http://unicloud.pl/cennik/"
+    },
+    {
+      "Hoster": "Unispace Cloud",
+      "Country": "🇨🇿",
+      "PricingPage": "https://unispace.cloud/pricing/"
+    },
+    {
+      "Hoster": "United Cloud",
+      "Country": "🇩🇪",
+      "PricingPage": "https://www.united-cloud.com/produkte/jelastic-paas-fuer-entwickler.html"
+    },
+    {
+      "Hoster": "Valtti",
+      "Country": "🇫🇮",
+      "PricingPage": "https://www.CloudMyDc.com/application-platform-partners/valtti/"
+    },
+    {
+      "Hoster": "VirtualCloud",
+      "Country": "🇧🇷",
+      "PricingPage": "https://www.virtualcloud.com.br/elastic/"
+    },
+    {
+      "Hoster": "WafaiCloud",
+      "Country": "🇸🇦",
+      "PricingPage": "https://wafaicloud.com/"
+    },
+    {
+      "Hoster": "Zeus Cloud",
+      "Country": "🇬🇧",
+      "PricingPage": "https://www.zeuscloud.co.uk/enterprise-cloud/paas-pricing-calculator"
+    }
+  ]
 }

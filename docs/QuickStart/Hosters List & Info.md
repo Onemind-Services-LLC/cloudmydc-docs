@@ -40,7 +40,7 @@ import obj from './HostersList&Info.json'
                 justifyContent: 'center',
                 padding: '20px',
                 borderRight: '1px solid var(--ifm-toc-border-color)',
-                wordBreak: 'break-all'
+                wordBreak: 'break-word'
             }}>
                Country
             </div>
@@ -50,7 +50,7 @@ import obj from './HostersList&Info.json'
                 justifyContent: 'center',
                 padding: '20px',
                 borderRight: '1px solid var(--ifm-toc-border-color)',
-                wordBreak: 'break-all'
+                wordBreak: 'break-word'
             }}>
                 Hoster Domain
             </div> 
@@ -60,7 +60,7 @@ import obj from './HostersList&Info.json'
                 justifyContent: 'center',
                 padding: '20px',
                 borderRight: '1px solid var(--ifm-toc-border-color)',
-                wordBreak: 'break-all'
+                wordBreak: 'break-word'
             }}>
                 User Environment Domain(s)
             </div>
@@ -70,7 +70,7 @@ import obj from './HostersList&Info.json'
                 justifyContent: 'center',
                 padding: '0 20px',
                 borderRight: '1px solid var(--ifm-toc-border-color)',
-                wordBreak: 'break-all'
+                wordBreak: 'break-word'
             }}>
                 Region(s) with Native Docker*
             </div>
@@ -94,9 +94,7 @@ import obj from './HostersList&Info.json'
                 wordBreak: 'break-all',
                 padding: '20px',
             }}>
-                <a href="/">
-                    {item.Hoster}
-                </a>
+                <i>{item.Hoster}</i>
             </div>
             <div style={{
                 display: 'flex', 
@@ -132,7 +130,7 @@ import obj from './HostersList&Info.json'
 
 :::tip Tip
 
-For running native Docker containers, a platform should contain an [environment region](https://cloudmydc.com/) with [Virtuozzo 7](https://cloudmydc.com/) virtualization being integrated.
+For running native Docker containers, a platform should contain an [environment region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) with [CloudMyDc 7](https://cloudmydc.com/) virtualization being integrated.
 
 :::
 

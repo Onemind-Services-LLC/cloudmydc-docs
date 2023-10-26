@@ -4,11 +4,11 @@ sidebar_position: 12
 
 import obj from './ReleaseNotes7.2.json'
 
-## Virtuozzo Application Platform 7.2
+## CloudMyDc Application Platform 7.2
 
 _This document is preliminary and subject to change._
 
-In this document, you will find all of the new features, enhancements and visible changes included to the **Virtuozzo PaaS 7.2** release.
+In this document, you will find all of the new features, enhancements and visible changes included to the **CloudMyDc PaaS 7.2** release.
 
 <hr/>
 <div style={{
@@ -39,7 +39,7 @@ New
                 fontSize: '23px',
                 fontWeight: '500',
         }}>Platform Rebranding</h3>
-            <p>Updated the PaaS name (formerly known as Jelastic) to Virtuozzo Application Platform</p>
+            <p>Updated the PaaS name (formerly known as Jelastic) to CloudMyDc Application Platform</p>
             <div style={{
             display: 'flex',
             flexDirection: 'row-reverse',
@@ -218,7 +218,7 @@ Fixed
 
 ## Platform Rebranding
 
-Continuing the smooth integration of the PaaS (formerly known as Jelastic) with the Virtuozzo family, the platform name was changed to **Vitruozzo Application Platform**. The appropriate changes are integrated into the platform dashboard default images, labeling, documentation references, Hello World application, etc.
+Continuing the smooth integration of the PaaS (formerly known as Jelastic) with the CloudMyDc family, the platform name was changed to **Vitruozzo Application Platform**. The appropriate changes are integrated into the platform dashboard default images, labeling, documentation references, Hello World application, etc.
 
 <div style={{
     display:'flex',
@@ -235,7 +235,7 @@ Continuing the smooth integration of the PaaS (formerly known as Jelastic) with 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -259,14 +259,14 @@ In order to extend the capabilities of the [account collaboration](https://cloud
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Environment Selection Field Adjustment
 
-In the current Virtuozzo Application Platform 7.2 release, the dashboard’s combo-boxes for environment selection were improved. For now, the displayed items provide better clarity by showing both the [custom alias](https://cloudmydc.com/) (if specified) and the environment name. Such implementation uniquely identifies the provided options and helps avoid possible confusion when several environments have similar aliases.
+In the current CloudMyDc Application Platform 7.2 release, the dashboard’s combo-boxes for environment selection were improved. For now, the displayed items provide better clarity by showing both the [custom alias](https://cloudmydc.com/) (if specified) and the environment name. Such implementation uniquely identifies the provided options and helps avoid possible confusion when several environments have similar aliases.
 
 <div style={{
     display:'flex',
@@ -283,14 +283,14 @@ In the current Virtuozzo Application Platform 7.2 release, the dashboard’s com
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## CentOS Stream 8 OS Support
 
-Virtuozzo Application Platform supports the most popular [operating system templates](https://cloudmydc.com/), which allows using multiple different solutions from Docker Hub as [custom containers](https://cloudmydc.com/). Due to the recent CentOS Linux 8 end of life, the recommended alternative template was added to the platform – **CentOS Stream 8**. You can find a [comparison of these two versions](https://cloudmydc.com/) in the official documentation.
+CloudMyDc Application Platform supports the most popular [operating system templates](https://cloudmydc.com/), which allows using multiple different solutions from Docker Hub as [custom containers](https://cloudmydc.com/). Due to the recent CentOS Linux 8 end of life, the recommended alternative template was added to the platform – **CentOS Stream 8**. You can find a [comparison of these two versions](https://cloudmydc.com/) in the official documentation.
 
 :::tip Note
 
@@ -305,14 +305,14 @@ Do not confuse OS templates (base image for containers) support with container t
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Fixes Compatible with Prior Versions
 
-Below, you can find the fixes that were implemented in the Virtuozzo Application Platform 7.2 release and also integrated into previous platform versions by means of the appropriate patches.
+Below, you can find the fixes that were implemented in the CloudMyDc Application Platform 7.2 release and also integrated into previous platform versions by means of the appropriate patches.
 
 <div style={{
         width: '100%',
@@ -333,7 +333,7 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
         color: 'var(--table-color-primary)',
         background: 'var(--table-bg-primary-t3)'
     }}>
-        Virtuozzo Application Platform 7.2
+        CloudMyDc Application Platform 7.2
     </div>
     <div>
         <div style={{
@@ -424,14 +424,14 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Software Stack Versions
 
-The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
+The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
 The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
@@ -442,14 +442,14 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Bug Fixes
 
-In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 7.2 release:
+In the table below, you can see the list of bug fixes applied to the platform starting from CloudMyDc Application Platform 7.2 release:
 
 <div style={{
         width: '100%',
@@ -470,7 +470,7 @@ In the table below, you can see the list of bug fixes applied to the platform st
         color: 'var(--table-color-primary)',
         background: 'var(--table-bg-primary-t3)'
     }}>
-        Virtuozzo Application Platform 7.2
+        CloudMyDc Application Platform 7.2
     </div>
     <div>
         <div style={{

@@ -2,11 +2,11 @@
 sidebar_position: 4
 ---
 
-## Virtuozzo Application Platform 8.2.4
+## CloudMyDc Application Platform 8.2.4
 
 _This document is preliminary and subject to change._
 
-In this document, you will find all of the new features, enhancements and visible changes included to the **Virtuozzo PaaS 8.2.4** release.
+In this document, you will find all of the new features, enhancements and visible changes included to the **CloudMyDc PaaS 8.2.4** release.
 
 <hr/>
 
@@ -106,7 +106,7 @@ Starting with the current 8.2.4 PaaS release, the alternative OS template for th
 
 :::danger
 
-Note: Virtuozzo Application Platform no longer supports the previously used _CentOS Stream 8_ operating system template.
+Note: CloudMyDc Application Platform no longer supports the previously used _CentOS Stream 8_ operating system template.
 
 :::
 
@@ -117,14 +117,14 @@ Note: Virtuozzo Application Platform no longer supports the previously used _Cen
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Software Stack Versions
 
-The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
+The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
 The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
@@ -135,7 +135,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

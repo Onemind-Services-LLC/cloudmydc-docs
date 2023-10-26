@@ -64,7 +64,7 @@ Based on these peculiarities, the platform recommends (and applies by default) t
 
 ## Horizontal Scaling Specifics
 
-The maximum number of the same-type servers within a single environment layer depends on a particular hosting provider settings (usually this limit stands for 16 nodes). You can check the exact value within the **_Quotas & Pricing > [Account Limits](https://www.virtuozzo.com/application-platform-docs/quotas-system/)_** information frame.
+The maximum number of the same-type servers within a single environment layer depends on a particular hosting provider settings (usually this limit stands for 16 nodes). You can check the exact value within the **_Quotas & Pricing > [Account Limits](https://www.CloudMyDc.com/application-platform-docs/quotas-system/)_** information frame.
 
 All newly added servers are created at different hardware nodes, providing advanced reliability and high-availability.
 

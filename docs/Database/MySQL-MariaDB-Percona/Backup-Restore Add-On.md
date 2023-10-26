@@ -4,7 +4,7 @@ sidebar_position: 3
 
 ## Database Backup/Restore Add-On
 
-**[Database Backup](https://cloudmydc.com/)** add-on is compatible with all the MySQL-based (MySQL/MariaDB/Percona), PostgreSQL, and Redis databases in the Virtuozzo Application Platform. It works in tandem with [Backup Storage](https://cloudmydc.com/) to help users automatically create and store database backups at the remote storage.
+**[Database Backup](https://cloudmydc.com/)** add-on is compatible with all the MySQL-based (MySQL/MariaDB/Percona), PostgreSQL, and Redis databases in the CloudMyDc Application Platform. It works in tandem with [Backup Storage](https://cloudmydc.com/) to help users automatically create and store database backups at the remote storage.
 
 :::danger Note
 

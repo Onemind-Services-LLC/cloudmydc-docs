@@ -24,9 +24,9 @@ Environment is a collection of isolated virtual containers that provides all the
 
 Node or container is a virtual isolated machine provisioned for the environment and stored on the particular hardware node.
 
-**Virtuozzo**
+**CloudMyDc**
 
-Virtuozzo is a system used to host a VPS (Virtual Private Server). Virtuozzo Containers can support several containers on a single physical server by using operating system-level virtualization.
+CloudMyDc is a system used to host a VPS (Virtual Private Server). CloudMyDc Containers can support several containers on a single physical server by using operating system-level virtualization.
 
 ## General Cluster Overview
 

@@ -4,7 +4,7 @@ sidebar_position: 4
 
 ## SSL/TLS Encryption in Transit for Redis
 
-The Virtuozzo-certified Redis database is provided with a built-in add-on that implements **_“encryption in transit”_**. The functionality ensures data protection with SSL/TLS encrypted connection while it moves between servers. After the add-on installation, support for a secure connection is configured on a separate port 6380, while maintaining the default port 6379 to accept unencrypted connections for backward compatibility (if needed, it can be disabled via settings).
+The CloudMyDc-certified Redis database is provided with a built-in add-on that implements **_“encryption in transit”_**. The functionality ensures data protection with SSL/TLS encrypted connection while it moves between servers. After the add-on installation, support for a secure connection is configured on a separate port 6380, while maintaining the default port 6379 to accept unencrypted connections for backward compatibility (if needed, it can be disabled via settings).
 
 ## Add-On Installation
 

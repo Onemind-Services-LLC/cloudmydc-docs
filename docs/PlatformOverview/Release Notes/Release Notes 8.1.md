@@ -4,11 +4,11 @@ sidebar_position: 7
 
 import obj from './ReleaseNotes8.1.json'
 
-## Virtuozzo Application Platform 8.1
+## CloudMyDc Application Platform 8.1
 
 _This document is preliminary and subject to change._
 
-In this document, you will find all of the new features, enhancements and visible changes included to the **Virtuozzo PaaS 8.1** release.
+In this document, you will find all of the new features, enhancements and visible changes included to the **CloudMyDc PaaS 8.1** release.
 
 Current version is mostly focused on the platform internal optimization, security improvements, and features for the hosting service providers. System administrators can learn more at the [PaaS release notes for operations](https://cloudmydc.com/).
 
@@ -124,7 +124,7 @@ Fixed
 
 ## Fixes Compatible with Prior Versions
 
-Below, you can find the fixes that were implemented in the Virtuozzo Application Platform 8.3 release and also integrated into previous platform versions by means of the appropriate patches.
+Below, you can find the fixes that were implemented in the CloudMyDc Application Platform 8.3 release and also integrated into previous platform versions by means of the appropriate patches.
 
 <div style={{
         width: '100%',
@@ -145,7 +145,7 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
         color: 'var(--table-color-primary)',
         background: 'var(--table-bg-primary-t3)'
     }}>
-        Virtuozzo Application Platform 8.3
+        CloudMyDc Application Platform 8.3
     </div>
     <div>
         <div style={{
@@ -236,14 +236,14 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Software Stack Versions
 
-The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
+The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
 The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
 
@@ -254,14 +254,14 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#virtuozzo-application-platform-83">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Bug Fixes
 
-In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.3 release:
+In the table below, you can see the list of bug fixes applied to the platform starting from CloudMyDc Application Platform 8.3 release:
 
 <div style={{
         width: '100%',
@@ -282,7 +282,7 @@ In the table below, you can see the list of bug fixes applied to the platform st
         color: 'var(--table-color-primary)',
         background: 'var(--table-bg-primary-t3)'
     }}>
-        Virtuozzo Application Platform 8.3
+        CloudMyDc Application Platform 8.3
     </div>
     <div>
         <div style={{
