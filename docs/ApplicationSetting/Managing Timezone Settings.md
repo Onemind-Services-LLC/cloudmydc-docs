@@ -98,7 +98,7 @@ The timezone rules within Java compute nodes are delivered by means of the dedic
 
 Despite the fact the newest TZdata package edition is integrated into a node during its creation, after some time it becomes outdated due to periodical changing of the intrinsic data. Thus, old containers may require the corresponding updating from time to time (particularly, in order not to be recreated each time this is needed). For that, a special embedded **TZUpdater** tool is used, intended for keeping your timezone data accurate and up-to-date. It is fairly simple to use and can be run with a single-line command; you just need to:
 
-1. Connect to your Java environment via SSH, e.g. using the embedded [Web SSH](https://cloudmydc.com/) client:
+1. Connect to your Java environment via SSH, e.g. using the embedded [Web SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH) client:
 
 <div style={{
     display:'flex',

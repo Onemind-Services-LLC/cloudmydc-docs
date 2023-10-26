@@ -249,7 +249,7 @@ fedhost~$ kubectl config set clusters.kubefed-remote-member1.certificate-authori
 
 :::tip Note
 
-When the Member Cluster is located on the different Jelastic platform the certificate will be invalid because the [Shared Load Balancer](https://cloudmydc.com/) with its own certificate is in front of the cluster. This certificate should be ignored during negotiation phase between Host Cluster and Member with a command for example:
+When the Member Cluster is located on the different Jelastic platform the certificate will be invalid because the [Shared Load Balancer](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) with its own certificate is in front of the cluster. This certificate should be ignored during negotiation phase between Host Cluster and Member with a command for example:
 
 ```bash
 fedhost~$ kubectl config set clusters.kubefed-remote-member1.insecure-skip-tls-verify true

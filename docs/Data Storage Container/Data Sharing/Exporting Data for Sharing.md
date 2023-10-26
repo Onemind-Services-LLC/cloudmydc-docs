@@ -32,7 +32,7 @@ In case you need to [export data externally](https://cloudmydc.com/) (i.e. to th
 
 :::
 
-1. Open the [configuration manager](https://cloudmydc.com/) for your storage (i.e. where files are physically located), switch to the **_Exports_** section, and click the **Export** button at the top pane.
+1. Open the [Configuration Manager](http://localhost:3000/docs/Container/Container%20Configuration/Configuration%20Tools#configuration-file-manager) for your storage (i.e. where files are physically located), switch to the **_Exports_** section, and click the **Export** button at the top pane.
 
 <div style={{
     display:'flex',
@@ -98,7 +98,7 @@ The same form can be accessed directly from the node’s [file manager](https://
 
 </div>
 
-That’s all! During the operation, the appropriate [mount point](https://cloudmydc.com/) on the target node(s) is configured automatically by the platform so that you can immediately start working with your shared data without any additional steps required.
+That’s all! During the operation, the appropriate [SSH Gateway](http://localhost:3000/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) on the target node(s) is configured automatically by the platform so that you can immediately start working with your shared data without any additional steps required.
 
 ## Managing Exports
 
@@ -187,6 +187,6 @@ If working in the confines of your PaaS account, all of the required export conf
 
 :::tip Note
 
-If you face any issues while exporting data for sharing, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://cloudmydc.com/).
+If you face any issues while exporting data for sharing, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://stackoverflow.com/questions/tagged/jelastic).
 
 :::

@@ -101,7 +101,7 @@ Within the **Apps** section, use the search box to find the Auto Scalable Couchb
 
 </div>
 
-Also, select a preferable hardware _[Region](https://cloudmydc.com/)_ (if several ones are available) and click **Install**. 3. Once cluster deployment is completed, you’ll be provided with credentials for its administrating in the appeared pop-up and, at the same time, via dedicated email notification.
+Also, select a preferable hardware _[region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region)_ (if several ones are available) and click **Install**. 3. Once cluster deployment is completed, you’ll be provided with credentials for its administrating in the appeared pop-up and, at the same time, via dedicated email notification.
 
 <div style={{
     display:'flex',
@@ -134,6 +134,6 @@ At the opened start page, you’ll see a general Cluster Overview, composed of t
 Now, when the cluster is up and running, it can serve your application as a highly available and elastic data storage - the details on setting up a proper interaction between them will be considered in one of the forthcoming articles. Thus, keep track on Jelastic blog updates whilst exploring the efficiency of the above described clustered Couchbase DB solution by your own with a free 2-week trial period at one of our partner's [Cloud Platforms](https://cloudmydc.com/).
 
 :::tip Tip
-Have any questions on scalable Couchbase cluster deployment to Jelastic in one click? Feel free to submit them within the comments below or get in touch with our technical experts at [Stackoverflow](https://cloudmydc.com/).
+Have any questions on scalable Couchbase cluster deployment to Jelastic in one click? Feel free to submit them within the comments below or get in touch with our technical experts at [Stackoverflow](https://stackoverflow.com/questions/tagged/jelastic).
 
 :::

@@ -48,7 +48,7 @@ Also, the platorm keeps the same IPs and hostnames for each container after any 
 
 To make the above more evident, let’s consider a few simple steps needed to deploy a project at the platform:
 
-1. Create an environment via comprehensive topology wizard with a wide range of pre-configured [software stacks](https://cloudmydc.com/) (i.e. application servers, databases, load balancers, cache and build nodes).
+1. Create an environment via comprehensive topology wizard with a wide range of pre-configured [software stacks](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions) (i.e. application servers, databases, load balancers, cache and build nodes).
 
 <div style={{
     display:'flex',

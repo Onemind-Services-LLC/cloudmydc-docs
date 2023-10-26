@@ -20,7 +20,7 @@ The platform allows automatically configure NFS volume provisioner during [insta
 
 :::tip Tip
 
-The platform implementation of the NFS volume provisioner for the Kubernetes Cluster package uses a dedicated [Shared Storage Container](https://cloudmydc.com/). You can find it in the environment topology.
+The platform implementation of the NFS volume provisioner for the Kubernetes Cluster package uses a dedicated [Shared Storage Container](http://localhost:3000/docs/Data%20Storage%20Container/Data%20Storage%20Overview). You can find it in the environment topology.
 
 <div style={{
     display:'flex',

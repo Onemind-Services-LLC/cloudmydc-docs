@@ -128,7 +128,7 @@ Using the links at the end of the frame, you can learn how to:
 - perform [A/B Testing](https://cloudmydc.com/)
 - [Inject Distributor](https://cloudmydc.com/) into running project
 - bind [Custom Domain](https://cloudmydc.com/)
-- enable [Custom SSL](https://cloudmydc.com/)
+- enable [Custom SSL](http://localhost:3000/docs/ApplicationSetting/SSL/Custom%20SSL)
 
 ## Traffic Distributor Reconfiguration
 

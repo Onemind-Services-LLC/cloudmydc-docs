@@ -43,7 +43,7 @@ The development topology is not recommended for production projects as it cannot
   - _Remote API Access_ - check if you plan on using the kubectl command-line tool or some other remote clients
 - **Environment** - provide a name for your environment
 - **Display Name** - specify an [alias](https://cloudmydc.com/)
-- **Region** - choose a [region](https://cloudmydc.com/) (if available)
+- **Region** - choose a [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) (if available)
 
 <div style={{
     display:'flex',

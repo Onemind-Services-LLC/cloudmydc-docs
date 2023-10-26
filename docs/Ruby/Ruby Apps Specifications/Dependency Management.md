@@ -30,7 +30,7 @@ Also, if your application uses any special (non-public) dependencies, you need t
 
 :::danger Note
 
-When [redeploying](https://cloudmydc.com/) a Ruby environment, ensure that a new engine version is correctly covered in the Gemfile. Otherwise, you’ll get a discrepancy error after the process.
+When [SSH Gateway](http://localhost:3000/docs/Container/Container%20Redeploy) a Ruby environment, ensure that a new engine version is correctly covered in the Gemfile. Otherwise, you’ll get a discrepancy error after the process.
 
 We recommend using a non-strict Ruby version declaration in your **_Gemfile_**, for example **_ruby “~> 2.6.0”_**. Such a flexible form prevents you from interrupting your deployment or CI process while being able to upgrade your Ruby version.
 

@@ -90,7 +90,7 @@ Now, you can add new features, customize settings, apply updates, etc. All witho
 
 - [Deployment Guide](https://cloudmydc.com/)
 - [SSH Access](https://cloudmydc.com/)
-- [Configuration File Manager](https://cloudmydc.com/)
+- [configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager)
 
 <div style={{
     display:'flex',
@@ -183,6 +183,6 @@ You can check custom domains bound to the current environment in the _Domain Bin
 
 :::tip
 
-If you experience any problems with a domain swap, you can appeal to our technical experts' assistance at [Stackoverflow](https://cloudmydc.com/).
+If you experience any problems with a domain swap, you can appeal to our technical experts' assistance at [Stackoverflow](https://stackoverflow.com/questions/tagged/jelastic).
 
 :::

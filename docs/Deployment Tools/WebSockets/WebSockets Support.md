@@ -12,7 +12,7 @@ You can achieve the following benefits using WebSockets:
 - Streaming through proxies and firewalls, both upstream and downstream at once
 - Backward compatibility with the pre-WebSocket world, by switching from the HTTP connection to WebSockets
 
-The platform provides you with an advanced and complemented WebSockets support by means of integrating this technology to the [Shared Load Balancer](https://cloudmydc.com/) and [NGINX-balancer node](https://cloudmydc.com/), so you can use it even without external IP address attached to your app server.
+The platform provides you with an advanced and complemented WebSockets support by means of integrating this technology to the [Shared Load Balancer](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) and [NGINX-balancer node](https://cloudmydc.com/), so you can use it even without external IP address attached to your app server.
 
 The easiest way to activate the WebSockets support is to place an NGINX balancer in front of your application, making it the entry point of the environment and getting rid of any additional configurations. Over and above, this server can also be used for easily overriding the default settings with your custom ones, e.g. changing the listeners' port numbers.
 

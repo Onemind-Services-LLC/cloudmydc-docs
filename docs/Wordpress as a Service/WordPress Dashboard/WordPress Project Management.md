@@ -90,7 +90,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-[Endpoints](https://cloudmydc.com/) create a direct connection (over raw TCP or UDP protocol) to one of the project nodes without the mandatory Public IP address. It can be used to set up remote access. For example, one of the most common use cases is gaining remote access to your database instance using a local database client.
+[endpoints](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints) create a direct connection (over raw TCP or UDP protocol) to one of the project nodes without the mandatory Public IP address. It can be used to set up remote access. For example, one of the most common use cases is gaining remote access to your database instance using a local database client.
 
 2.5. The **Subscription Plan** section shows subscription details of the current project and, depending on the hosting provider configurations, can provide the **Change Plan** option. It gives the ability to move the current project to a different plan within the same subscription.
 
@@ -204,7 +204,7 @@ Hower over to see the **Redeploy** option that allows updating the PHP version. 
 
 </div>
 
-We recommend performing regular redeployments to the latest version to ensure your project’s container is running the up-to-date operating system and software stacks with all the latest vulnerability fixes. However, be aware that the operation will cause a brief downtime for the project. You can read more on the **[Redeployment](https://cloudmydc.com/)** feature in the linked document.
+We recommend performing regular redeployments to the latest version to ensure your project’s container is running the up-to-date operating system and software stacks with all the latest vulnerability fixes. However, be aware that the operation will cause a brief downtime for the project. You can read more on the **[redeployment](http://localhost:3000/docs/Container/Container%20Redeploy)** feature in the linked document.
 
 5. Click the **Datacenter Info** to check the relevant information.
 

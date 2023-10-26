@@ -53,6 +53,6 @@ In all of these cases, your application servers' containers will be redeployed o
 
 :::tip Note
 
-If you’ve faced any issues while configuring auto-update for your VCS project or still have some questions left, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://cloudmydc.com/).
+If you’ve faced any issues while configuring auto-update for your VCS project or still have some questions left, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://stackoverflow.com/questions/tagged/jelastic).
 
 :::

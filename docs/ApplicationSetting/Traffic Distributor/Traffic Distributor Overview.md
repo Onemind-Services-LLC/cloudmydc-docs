@@ -119,7 +119,7 @@ All you need to do to get your own Traffic Distributor is to fill in the form wi
 
 </div>
 
-Before the installation, you can choose an entry point - i.e. requests will be processed through either [Shared Load Balancer](https://cloudmydc.com/) or [public IP](https://cloudmydc.com/) address(es).
+Before the installation, you can choose an entry point - i.e. requests will be processed through either [Shared Load Balancer](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) or [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address(es).
 
 :::tip Tip
 

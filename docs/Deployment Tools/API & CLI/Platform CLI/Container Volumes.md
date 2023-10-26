@@ -194,6 +194,6 @@ In such a way, using these CLI methods, you can easily take control over your co
 
 :::tip TIP
 
-If you face any issues while working with platform CLI, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://cloudmydc.com/).
+If you face any issues while working with platform CLI, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://stackoverflow.com/questions/tagged/jelastic).
 
 :::

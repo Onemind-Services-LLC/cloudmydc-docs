@@ -74,7 +74,7 @@ Within a wide variety of software stacks, the platform supports a pure [Java Eng
 - [Spring Boot](https://cloudmydc.com/)
 - [Tomcat9](https://cloudmydc.com/)
 - [TomEE](https://cloudmydc.com/)
-- [WildFly](https://cloudmydc.com/)
+- [WildFly](https://www.wildfly.org/)
 
 Read the documentation below for additional information on Java servers specifics within the platform:
 
@@ -97,7 +97,7 @@ To host a Java application, you need to create an appropriate environment. Just 
 
 </div>
 
-All added servers represent [fully isolated containers](https://cloudmydc.com/), located on different hosts for more availability, while isolation eliminates the risks of interfering with one another. You can attach the [public IP](https://cloudmydc.com/) address to any of these servers for being accessed directly. Otherwise (i.e. if using default settings), the incoming requests sent to your application will be proxied by [Shared Load Balancer](https://cloudmydc.com/).
+All added servers represent [fully isolated containers](https://cloudmydc.com/), located on different hosts for more availability, while isolation eliminates the risks of interfering with one another. You can attach the [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address to any of these servers for being accessed directly. Otherwise (i.e. if using default settings), the incoming requests sent to your application will be proxied by [Shared Load Balancer](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer).
 
 ## Java Application Deployment
 
@@ -135,7 +135,7 @@ You can bind a [custom domain](https://cloudmydc.com/) name to your application�
 - **_CNAME redirect_** if using _Shared Load Balancer_; is recommended for **_dev_** and **test** environments
 - **DNS A Record** if using _public IP_; can handle high traffic load and is suitable for **production** environments
 
-Also, with the help of the [swapping domains](https://cloudmydc.com/) feature or the **SwapExtIps** [API](https://cloudmydc.com/)/[CLI](https://cloudmydc.com/) method, you can upgrade and modify your application with zero downtime (i.e. your users won’t notice any interruption).
+Also, with the help of the [swapping domains](https://cloudmydc.com/) feature or the **SwapExtIps** [API](https://cloudmydc.com/)/[CLI](http://localhost:3000/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview) method, you can upgrade and modify your application with zero downtime (i.e. your users won’t notice any interruption).
 
 <div style={{
     display:'flex',

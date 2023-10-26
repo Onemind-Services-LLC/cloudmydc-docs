@@ -101,7 +101,7 @@ Below, we’ll describe the examples of working with the most common RDP clients
 
 :::danger Note
 
-If [public IP](https://cloudmydc.com/) is attached to the Windows VM node, it <u>must</u> be used instead of the endpoint.
+If [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) is attached to the Windows VM node, it <u>must</u> be used instead of the endpoint.
 
 :::
 

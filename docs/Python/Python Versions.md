@@ -46,7 +46,7 @@ These can be selected during a new [environment creation](https://cloudmydc.com/
 
 </div>
 
-Adjust any other settings (e.g. [cloudlets limits](https://cloudmydc.com/), [public IPs](https://cloudmydc.com/), [region](https://cloudmydc.com/), etc.), provide environment name and click **Create**.
+Adjust any other settings (e.g. [cloudlets limits](https://cloudmydc.com/), [public IPs](https://cloudmydc.com/), [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), etc.), provide environment name and click **Create**.
 
 ## Change Python Version
 

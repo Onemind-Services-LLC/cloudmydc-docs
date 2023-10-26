@@ -7,9 +7,9 @@ The **Volumes** tab contains the list of mounted at the current container data v
 
 ![Locale Dropdown](./img/Volumes/01--volumes-layer-settings.png)
 
-Storing data within volumes allows different internal operations (e.g. [redeploying](https://cloudmydc.com/) the container to another tag version) to be performed without affecting or losing the data. Such volume content preservation provides a high level of integrity for your data.
+Storing data within volumes allows different internal operations (e.g. [SSH Gateway](http://localhost:3000/docs/Container/Container%20Redeploy) the container to another tag version) to be performed without affecting or losing the data. Such volume content preservation provides a high level of integrity for your data.
 
-Below, we’ll consider how to add a custom volume for your container and types of [data mounting](https://cloudmydc.com/) the platform provides - at a **Local Filesystem**, separate dedicated **Data Container**, layer **Master Container** or **External NFS Server**.
+Below, we’ll consider how to add a custom volume for your container and types of [data mounting](http://localhost:3000/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) the platform provides - at a **Local Filesystem**, separate dedicated **Data Container**, layer **Master Container** or **External NFS Server**.
 
 ## Operating Custom Volumes
 
@@ -19,7 +19,7 @@ Beside that, you have an ability to mount and manage your custom volumes, placed
 
 1. Select the **Add** button above the list to see four tabs, named in accordance to the types of volumes you are able to create:
 
-- **[Local Filesystem](https://cloudmydc.com/)** - the specified directory will be used as a local storage, intended to persist the data independently of the current container lifecycle (as well as by any other node)
+- **[Local Filesystem](http://localhost:3000/docs/Data%20Storage%20Container/Use%20Cases/Local%20Filesystem)** - the specified directory will be used as a local storage, intended to persist the data independently of the current container lifecycle (as well as by any other node)
 
 <div style={{
     display:'flex',
@@ -31,7 +31,7 @@ Beside that, you have an ability to mount and manage your custom volumes, placed
 
 </div>
 
-- **[Data Container](https://cloudmydc.com/)** - this type of volume allows to mount data from any other layer within your accountadd data container volume
+- **[Data Container](http://localhost:3000/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points)** - this type of volume allows to mount data from any other layer within your accountadd data container volume
 
 <div style={{
     display:'flex',
@@ -43,7 +43,7 @@ Beside that, you have an ability to mount and manage your custom volumes, placed
 
 </div>
 
-- **[Master Container](https://cloudmydc.com/)** - data, stored within such volume, is physically placed at the initially created node of the layer (so-called “master node”) and is automatically shared with all of the rest instances within this layer.
+- **[Master Container](http://localhost:3000/docs/Data%20Storage%20Container/Use%20Cases/Master%20Container)** - data, stored within such volume, is physically placed at the initially created node of the layer (so-called “master node”) and is automatically shared with all of the rest instances within this layer.
 
 <div style={{
     display:'flex',
@@ -55,7 +55,7 @@ Beside that, you have an ability to mount and manage your custom volumes, placed
 
 </div>
 
-- **[External Server](https://cloudmydc.com/)** - this option is intended to mount data from the external NFS server (either your custom third-party storage or [container at another platform](https://cloudmydc.com/))
+- **[External Server](http://localhost:3000/docs/Data%20Storage%20Container/Use%20Cases/External%20Server)** - this option is intended to mount data from the external NFS server (either your custom third-party storage or [container at another platform](http://localhost:3000/docs/Data%20Storage%20Container/External%20NFS%20Server%20Configuration))
 
 <div style={{
     display:'flex',
@@ -91,7 +91,7 @@ Do not forget to **Apply** the changes you’ve made.
 
 - before deletion, make sure the appropriate volume does not contain any substantial data, as it will be permanently removed
 - the predefined (i.e. default) volumes can’t be deleted (whilst still being available for editing)
-- if you want to remove volume but keep the [mount point](https://cloudmydc.com/), untick the Unmount path checkbox
+- if you want to remove volume but keep the [SSH Gateway](http://localhost:3000/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points), untick the Unmount path checkbox
 
 :::
 

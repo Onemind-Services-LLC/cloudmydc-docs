@@ -222,6 +222,6 @@ That’s it! In such a way, you can configure a set of tunable triggers to ensur
 
 :::tip
 
-In case you have any questions, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://cloudmydc.com/).
+In case you have any questions, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://stackoverflow.com/questions/tagged/jelastic).
 
 :::

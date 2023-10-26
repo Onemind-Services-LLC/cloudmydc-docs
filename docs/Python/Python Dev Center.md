@@ -47,7 +47,7 @@ Through this article, you’ll get acquainted with the main tools and features a
 
 To start hosting your Python application at the platform, you need to [create](https://cloudmydc.com/) the appropriate environment via the powerful _topology wizard_ (accessible through the **New Environment** button at the dashboard’s top panel).
 
-Switch to the **_Python_** language tab and select the desired engine version. _Apache Python_ application server is automatically added in a bundle with the _mod_wsgi_ module. Specify resource limits and nodes' count, as well as add extra [software stacks](https://cloudmydc.com/) or options (e.g. Public IPs) if required.
+Switch to the **_Python_** language tab and select the desired engine version. _Apache Python_ application server is automatically added in a bundle with the _mod_wsgi_ module. Specify resource limits and nodes' count, as well as add extra [software stacks](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions) or options (e.g. Public IPs) if required.
 
 :::tip Note
 
@@ -136,7 +136,7 @@ Check examples of the Python-based application hosting on the platform:
 
 In order to successfully deploy and run a Python application, some additional modules or other packages may be required to be installed. It is a common practice to run Python web applications in isolated [**_virtual environments_**](https://cloudmydc.com/), for example using the virtual environment tool, which allows managing projects independently and without the administrator privileges.
 
-1. Connect to the Python environment [via SSH](https://cloudmydc.com/) (using either a _local_ or built-in _Web SSH_ client) to create and start a new virtual environment. Run the following commands:
+1. Connect to the Python environment [via SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) (using either a _local_ or built-in _Web SSH_ client) to create and start a new virtual environment. Run the following commands:
 
 ```bash
 virtualenv {appName}
@@ -174,7 +174,7 @@ If needed, the default domain name of your Python application can be replaced wi
 - **CNAME redirect** if using _Shared Load Balancer_; is recommended for **_dev_** and **_test_** environments
 - **DNS A Record** if using _public IP_; can handle high traffic load and is suitable for **_production_** environments
 
-In addition, the platform allows switching traffic between two environments quickly and without downtime (e.g. to seamlessly redirect customers to the newer application version) using the [swap domains](https://cloudmydc.com/) functionality or with the help of the **_SwapExtIps_** [API](https://cloudmydc.com/)/[CLI](https://cloudmydc.com/) method.
+In addition, the platform allows switching traffic between two environments quickly and without downtime (e.g. to seamlessly redirect customers to the newer application version) using the [swap domains](https://cloudmydc.com/) functionality or with the help of the **_SwapExtIps_** [API](https://cloudmydc.com/)/[CLI](http://localhost:3000/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview) method.
 
 <div style={{
     display:'flex',

@@ -318,7 +318,7 @@ Below, we’ll provide an example of a packaged solution installation.
 
 3. Based on the particular package, you may need to provide some additional data to customize the solution up to your needs. For example, it could be the preferable nodes count or specific option availability.
 
-For a detailed overview of the [WordPress Standalone Hosting](https://cloudmydc.com/) peculiarities, refer to the linked article on our blog. In general, the basic settings (i.e. required by any application) are environment name, [alias](https://cloudmydc.com/), and, if available, [region](https://cloudmydc.com/).
+For a detailed overview of the [WordPress Standalone Hosting](https://cloudmydc.com/) peculiarities, refer to the linked article on our blog. In general, the basic settings (i.e. required by any application) are environment name, [alias](https://cloudmydc.com/), and, if available, [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region).
 
 <div style={{
     display:'flex',

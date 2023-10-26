@@ -62,7 +62,7 @@ The scaling will be performed according to the following conditions by default:
 
 :::
 
-- **Enable External IP Addresses for cluster nodes** - assigns [public IP](https://cloudmydc.com/) to each node and reconfigures cluster to work via public IP only
+- **Enable External IP Addresses for cluster nodes** - assigns [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) to each node and reconfigures cluster to work via public IP only
 - **Environment** - provides environment name
 - **Display Name** - sets the preferred environment [alias](https://cloudmydc.com/)
 - **Region** - selects the [environment region](https://cloudmydc.com/) from the list of available ones

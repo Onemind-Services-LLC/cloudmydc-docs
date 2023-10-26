@@ -73,7 +73,7 @@ The **_Openj9_** Java engine <u>_does not_</u> support the GCs listed above. The
 
 By default Jelastic PaaS uses G1 GC for JVM 8+ versions. For lower versions it employs the ParNew GC. Also, for JVM versions below 12 Jelastic attaches [jelastic-gc-agent.jar](https://cloudmydc.com/) which enables vertical scaling for older releases.
 
-For JVM 12+ versions, the platform provides [integrated vertical scaling](https://cloudmydc.com/) to ensure G1 triggering with the following pre-set container [variables](https://cloudmydc.com/):
+For JVM 12+ versions, the platform provides [integrated vertical scaling](https://cloudmydc.com/) to ensure G1 triggering with the following pre-set container [Variables](http://localhost:3000/docs/Container/Container%20Configuration/Variables):
 
 - **G1PERIODIC_GC_INTERVAL=3000**
 
@@ -154,7 +154,7 @@ You can set a custom GC parameter based on your application requirements via E[n
 
 Alternatively, all these parameters can be passed to Java process via **variables.conf** in the container.
 
-All of the paths to config, executable or log files can differ based on the Java server you use and can be accessed via [Configuration File Manager](https://cloudmydc.com/) or [SSH](https://cloudmydc.com/).
+All of the paths to config, executable or log files can differ based on the Java server you use and can be accessed via [configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager) or [SSH](https://cloudmydc.com/).
 
 <div style={{
         width: '100%',

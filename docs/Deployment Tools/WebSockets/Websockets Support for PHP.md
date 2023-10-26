@@ -6,7 +6,7 @@ sidebar_position: 3
 
 **WebSockets** is a widely spread client-server technology, which allows you to implement the instant messages exchanging within your application. This is achieved through establishing the continuous full-duplex TCP-based connection between server and client’s browser. Using such communication channels results in a very low connection latency and rapid interaction, simultaneously ensuring streaming through proxies and firewalls, both upstream and downstream at once.
 
-The platform provides you with an advanced and complemented WebSockets support by means of integrating this technology to the [Shared Load Balancer](https://cloudmydc.com/) and [NGINX-balancer node](https://cloudmydc.com/), so you can use it even without external IP address attached to your server. This is gained by proxying the variety of ports, used by your WebSockets apps, to a single one - 80 for HTTP and 443 for HTTPS.
+The platform provides you with an advanced and complemented WebSockets support by means of integrating this technology to the [Shared Load Balancer](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) and [NGINX-balancer node](https://cloudmydc.com/), so you can use it even without external IP address attached to your server. This is gained by proxying the variety of ports, used by your WebSockets apps, to a single one - 80 for HTTP and 443 for HTTPS.
 
 The easiest way to configure the WebSockets support for your app is to place an **NGINX balancer** in front of it (the detailed instruction can be found in the corresponding [document](https://cloudmydc.com/)). Nevertheless, sometimes such a method may contradict your requirements for some reason, while an application still needs this technology to be implemented. For such cases, the platform ensures the full WebSockets support within the available application servers, including both **Apache** (intended to serve PHP, Ruby and Python apps) and **NGINX** (for PHP and Ruby apps).
 
@@ -93,9 +93,9 @@ So it’s time to configure your application server.
 Find the **_httpd.conf_** file inside the **_conf_** directory and uncomment the next strings at the very end of it (approximately at the 962nd line).
 
 ```bash
-<Location /ws>  
-   ProxyPass ws://127.0.0.1:<PORT>  
-   ProxyPassReverse ws://127.0.0.1:<PORT>  
+<Location /ws>
+   ProxyPass ws://127.0.0.1:<PORT>
+   ProxyPassReverse ws://127.0.0.1:<PORT>
 </Location>
 ```
 
@@ -120,19 +120,17 @@ Make sure it appears the same as the image below.
 Find the _#Websocket support_ section inside the **_nginx.conf_** file (located within the **conf** directory) and uncomment the following lines:
 
 ```bash
-upstream websocket {  
-    server 127.0.0.1:<PORT>;  
- }  
-&hellip;  
-location /ws {  
-        proxy_pass http://websocket;  
-        proxy_http_version 1.1;  
-        proxy_set_header Upgrade $http_upgrade;  
-        proxy_set_header Connection "Upgrade";  
+upstream websocket {
+    server 127.0.0.1:<PORT>;
+ }
+&hellip;
+location /ws {
+        proxy_pass http://websocket;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "Upgrade";
     }
 ```
-
-
 
 Then substitute the <b>< PORT ></b> value with the corresponding port number (i.e. which is listened by your WebSockets application) and **Save** the performed changes.
 
@@ -148,13 +146,13 @@ Then substitute the <b>< PORT ></b> value with the corresponding port number (i.
 
 3. That’s all the server configurations you need to do, so the only thing left is to configure your deployed application. For that, access your application’s configuration file, which is responsible for WebSockets settings, and adjust the **ws** path it contains according to the next format:
 
-***ws://{env_domain}{path_to_ws_file}***
+**_ws://{env_domain}{path_to_ws_file}_**
 
 where
 
-- ***{env_url}*** should be substituted with your environment domain (can be seen under the environment name at the dashboard, apache-websockets.jelastic.com in our case)
-- ***{path_to_ws_file}*** needs to be changed according to the path to the file, that should be accessed upon establishing the WebSockets connection.
-It should look similar to the image below:
+- **_{env_url}_** should be substituted with your environment domain (can be seen under the environment name at the dashboard, apache-websockets.jelastic.com in our case)
+- **_{path_to_ws_file}_** needs to be changed according to the path to the file, that should be accessed upon establishing the WebSockets connection.
+  It should look similar to the image below:
 
 <div style={{
     display:'flex',

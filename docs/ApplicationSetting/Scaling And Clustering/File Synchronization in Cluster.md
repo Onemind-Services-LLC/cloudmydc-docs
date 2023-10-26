@@ -225,7 +225,7 @@ Here, specify whether file synchronization should run within _One_ environment (
 
 In order to implement synchronization between two different environments, the add-on should be installed to web-servers in both of them (selecting another environment within the appropriate drop-down list each time) with the chosen Two _environments synchronization_ option. Here, the following additional parameters should be specified:
 
-- **2nd environment IP** - address of any application server node within the second environment (you can use internal IP for the case both environments are run on the same Platform and hardware [region](https://cloudmydc.com/); otherwise, external IP address is required)
+- **2nd environment IP** - address of any application server node within the second environment (you can use internal IP for the case both environments are run on the same Platform and hardware [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region); otherwise, external IP address is required)
 - **Password** - optional box to set a password on synchronization (should be stated the same on both instances)
 
 <div style={{
@@ -302,6 +302,6 @@ Hopefully, this instruction was helpful for you.
 
 :::tip
 
-Have any questions on file synchronization between application servers? Feel free to get in touch with our technical experts at [Stackoverflow](https://cloudmydc.com/).
+Have any questions on file synchronization between application servers? Feel free to get in touch with our technical experts at [Stackoverflow](https://stackoverflow.com/questions/tagged/jelastic).
 
 :::

@@ -419,7 +419,7 @@ You can change the password of FTP-addon, installed at your environment. Using c
 
 Your FTP password can be changed via SSH following the next steps:
 
-1. [Generate](https://cloudmydc.com/) an SSH key and [add](https://cloudmydc.com/) it to your dashboard.
+1. [generate](http://localhost:3000/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) an SSH key and [add](https://cloudmydc.com/) it to your dashboard.
 
 2. [Access](https://cloudmydc.com/) a necessary container with the installed FTP-addon via SSH.
 

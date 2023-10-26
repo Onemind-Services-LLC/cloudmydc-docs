@@ -76,7 +76,7 @@ Log into the opened admin panel using credentials from the above-mentioned email
 
 </div>
 
-5. Return to dashboard and click the **Config** button next to the application server (Tomcat, in our case) to access [configuration file manager](https://cloudmydc.com/).
+5. Return to dashboard and click the **Config** button next to the application server (Tomcat, in our case) to access [configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager).
 
 <div style={{
     display:'flex',

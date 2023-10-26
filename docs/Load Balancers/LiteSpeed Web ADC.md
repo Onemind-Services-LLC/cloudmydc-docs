@@ -310,6 +310,6 @@ When performing testing of the LiteSpeed Web ADC load balancer, you should take 
 
 1. By default, the load balancer operates in the **Stateful** mode, which tracks sessions associated with each back-end server (also called “Session Affinity”). It means that requests from a single source will always go to the same back-end server (unless it’s not working).
 
-2. If LiteSpeed ADC does not have its own [public IP](https://cloudmydc.com/), all the requests go through the platform’s [Shared Load Balancer](https://cloudmydc.com/). In such a case, ADC considers that the load comes from a single IP address (of the Shared Load Balancer).
+2. If LiteSpeed ADC does not have its own [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP), all the requests go through the platform’s [Shared Load Balancer](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer). In such a case, ADC considers that the load comes from a single IP address (of the Shared Load Balancer).
 
 As a result, for the proper testing of the <u>production cluster</u> with LiteSpeed ADC as a load balancer, you need to attach public IP and send requests from multiple sources. Alternatively, you can temporarily switch to the **Stateless** mode, which does not care about sessions (recommended during the <u>development/testing stages</u> only). Check out more about [LiteSpeed ADC testing](https://cloudmydc.com/) at the official documentation.

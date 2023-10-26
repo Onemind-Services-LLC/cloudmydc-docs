@@ -124,7 +124,7 @@ While scaling different types of stacks, consider the following specifics:
 
 - upon scaling the application server instance, the load balancer node will be automatically added to the environment topology
 - if enabling the [high-availability](https://cloudmydc.com/) option for application server, the obligatory required NGINX load balancer cannot be scaled horizontally (if several nodes of NGINX were available before, they will be automatically downscaled to a single instance)
-- upon scaling VPS nodes, each one is provided with a separate [public IP](https://cloudmydc.com/) address attached
+- upon scaling VPS nodes, each one is provided with a separate [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address attached
 - [Maven](https://cloudmydc.com/) is the only node, which cannot be scaled horizontally (as there is no point in such operation)
 
 Now, you know how easy it is to horizontally scale instances in the platform and aware of the operation specifics. Also, feel free to configure an [automatic nodes scaling](https://cloudmydc.com/) to smoothly overcome high load spikes without overpaying for unused resources.

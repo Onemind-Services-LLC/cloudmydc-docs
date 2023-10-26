@@ -26,7 +26,7 @@ This way, each internal connection between nodes on the platform needs to pass t
 
 :::tip Tip
 
-Additionally, the connectivity of nodes can be restricted by the [container firewall](https://cloudmydc.com/) rules, which represent a more flexible solution that is suitable for both internal and external access management.
+Additionally, the connectivity of nodes can be restricted by the [container firewall](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall) rules, which represent a more flexible solution that is suitable for both internal and external access management.
 
 :::
 
@@ -53,7 +53,7 @@ While managing Network Isolation, you should consider the following peculiaritie
 - isolation can be enabled for the top-level group only (i.e. not for [subgroups](https://cloudmydc.com/))
 - environment groups with enabled isolation are provided with a custom shield icon (![Locale Dropdown](./img/EnvironmentIsolation/03-isolated-group-icon.png) ) for better recognition
 - [shared environments](https://cloudmydc.com/) can not be included into isolated groups by collaborators
-- this feature is not suitable to limit the access to your containers from outside of the platform (e.g. via [public IP](https://cloudmydc.com/))
+- this feature is not suitable to limit the access to your containers from outside of the platform (e.g. via [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP))
 
 ## Using Network Isolation
 

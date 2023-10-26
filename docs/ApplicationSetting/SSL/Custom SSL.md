@@ -8,7 +8,7 @@ sidebar_position: 3
 
 In addition to the [Built-In SSL](https://cloudmydc.com/) and Let’s [Encrypt SSL](https://cloudmydc.com/), the platform provides the ability to upload and use **custom SSL certificates** for your environments. The platform supports the following certificate types:
 
-- [Self-signed](https://cloudmydc.com/)
+- [self-signed](http://localhost:3000/docs/ApplicationSetting/SSL/Self-Signed%20Custom%20SSL)
 - Wildcard
 - Multi-Domain
 - Extended validation single domain
@@ -116,6 +116,7 @@ When the installation process is completed, proceed to generation of the require
 ```bash
 openssl genrsa -out {filename} {length}
 ```
+
 where
 
 **_{filename}_** - name of the output key file with **.key** extension (e.g. _server.key_)

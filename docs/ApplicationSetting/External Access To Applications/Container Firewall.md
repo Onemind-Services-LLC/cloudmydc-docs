@@ -2,9 +2,6 @@
 sidebar_position: 4
 ---
 
-!Link incomplete
-!Content code incomeplete
-
 ## Container Firewall Rules Management
 
 The platform **Container Firewall** feature provides a possibility to control your nodes availability both from inside and outside of the PaaS. It analyzes various parameters (e.g. incoming request source, protocol, target node port, etc.) to flexibly manage access to your containers through setting the necessary connection rules.
@@ -207,7 +204,7 @@ Access to your nodes can be controlled based on such request parameters as its s
 
 :::tip Note
 
-Before following this instruction, ensure that the appropriate container is provided with a [Public IP](https://cloudmydc.com/) address.
+Before following this instruction, ensure that the appropriate container is provided with a [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address.
 
 :::
 

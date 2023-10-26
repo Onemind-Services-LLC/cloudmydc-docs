@@ -32,7 +32,7 @@ In the opened **Account settings** window, the **SSH Keys > SSH Connect** tab wi
 
 :::tip Tip
 
-Within the right part of the section you can establish [Web SSH](https://cloudmydc.com/) connection to any node directly in browser.
+Within the right part of the section you can establish [Web SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH) connection to any node directly in browser.
 
 :::
 

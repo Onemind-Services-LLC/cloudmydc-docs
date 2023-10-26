@@ -120,7 +120,7 @@ var path = url.parse(req.url).pathname;
 console.log("The HTTPS server has started at: " + serverUrl);
 ```
 
-4. Run your application via [Web SSH](https://cloudmydc.com/). In our example, we use the **_forever_** [process manager](https://cloudmydc.com/) (sudo is needed to listen on the privileged port 443).
+4. Run your application via [Web SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH). In our example, we use the **_forever_** [process manager](https://cloudmydc.com/) (sudo is needed to listen on the privileged port 443).
 
 ```bash
 cd /home/jelastic/ROOT
@@ -181,11 +181,10 @@ deployHook: /path/to/your/file.sh
 
 Ensure that your script file is executable (**chmod +x {fileName}**). For example, the script content can be the following:
 
-
 ```bash
 #!/bin/bash
  echo "This is example of deployHook script" >> /tmp/testFile
- ```
+```
 
 Also, you can configure the update hook via API using the **_deployHook_** parameter. See [Let’s Encrypt SSL](https://cloudmydc.com/) article for more details.
 

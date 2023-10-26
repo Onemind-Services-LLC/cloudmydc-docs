@@ -44,7 +44,7 @@ Adjust the rest options (cloudlet limits, number of server instances and name fo
 
 :::danger Note
 
-Working with **VPS** presupposes usage of [external IP](https://cloudmydc.com/) addresses (one per instance), which are automatically attached to the corresponding container(s).
+Working with **VPS** presupposes usage of [external IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) addresses (one per instance), which are automatically attached to the corresponding container(s).
 
 :::
 

@@ -224,5 +224,5 @@ Here, we just log the end of our deployment.
 As you can see, our scripts have worked as intended, providing the deployment start / end time and ensuring it is protected during redeploy operation.
 
 :::tip
-If you face any issues while working with hooks, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://cloudmydc.com/).
+If you face any issues while working with hooks, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://stackoverflow.com/questions/tagged/jelastic).
 :::

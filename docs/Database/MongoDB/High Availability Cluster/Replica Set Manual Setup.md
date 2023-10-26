@@ -3,6 +3,7 @@ sidebar_position: 2
 ---
 
 ## MongoDB Replication and Automated Failover. Configuration Guide
+
 Replica set is a term used for defining a database cluster of multiple nodes with the replication and an automated failover configured between them. Such a structure usually requires an odd number of members, either with Arbiter node or not, to ensure the correct PRIMARY database election. This selected DB will process all the incoming write operations, storing the information about them within its oplog, where they can be accessed and replicated by every SECONDARY replica member for being applied to their data sets. In such a way, all servers will represent the same content and ensure its availability.
 
 <div style={{
@@ -20,6 +21,7 @@ In case some unexpected issue occurs, causing the primary database downtime (e.g
 Thus, here is a simple instruction, that will show you how to create and configure a MongoDB replica set with three members – such a complexion is considered to ensure enough margin of information safety and sufficient out-turn to handle the required amount of I/O operations, for most of the commonly used applications. Below we’ll discover how to prepare the appropriate environment, set an authentication between DB nodes, configure the replication itself and make sure everything is tuned properly.
 
 ## Create an Environment
+
 To start with, you’ll need at least three MongoDB nodes in order to configure a replica set, so let’s [create such an environment](https://cloudmydc.com/). In this example, we’ll allocate MongoDB instances of the 4.0.10 version within a single environment.
 
 <div style={{
@@ -32,12 +34,13 @@ To start with, you’ll need at least three MongoDB nodes in order to configure 
 
 </div>
 
-If required, change the **Environment Name** and destination [Region](https://cloudmydc.com/). Once installation is completed you have to take care about security of nodes communication with the help of authentication key file.
+If required, change the **Environment Name** and destination [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region). Once installation is completed you have to take care about security of nodes communication with the help of authentication key file.
 
 ## Add Authentication Key File
+
 Authentication is an important security assurance process that forces each member of the replica set to identify itself during the inner communication by means of a special unique authentication key file. So let’s generate your own in order to protect the data inside your DBs from illegal access:
 
-1. Log into one of database nodes via [Web SSH](https://cloudmydc.com/).
+1. Log into one of database nodes via [Web SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH).
 
 <div style={{
     display:'flex',
@@ -51,7 +54,7 @@ Authentication is an important security assurance process that forces each membe
 
 2. Use your own key file or generate one with [openssl](https://cloudmydc.com/) (key size in bytes, e.g. 741, and name for instance my.key) with a command:
 
-***openssl rand -base64 741 > my.key***
+**_openssl rand -base64 741 > my.key_**
 
 3. Now you have to distribute just created key file across all MongoDB instances:
 
@@ -67,7 +70,7 @@ Authentication is an important security assurance process that forces each membe
 
 </div>
 
-In the opened configuration tab, find the ***my.key*** file under the path: ***/home/jelastic/my.key*** and open it. Then copy its content into the clipboard.
+In the opened configuration tab, find the **_my.key_** file under the path: **_/home/jelastic/my.key_** and open it. Then copy its content into the clipboard.
 
 <div style={{
     display:'flex',
@@ -79,7 +82,7 @@ In the opened configuration tab, find the ***my.key*** file under the path: ***/
 
 </div>
 
-In the **keys** directory (the full path is ***/var/lib/jelastic/keys***), create the file the MongoDB instances will be using to authenticate each other e.g. **mongo-set.key**.
+In the **keys** directory (the full path is **_/var/lib/jelastic/keys_**), create the file the MongoDB instances will be using to authenticate each other e.g. **mongo-set.key**.
 
 <div style={{
     display:'flex',
@@ -104,13 +107,14 @@ Paste the clipboard content into it and apply changes by Save for all instances.
 </div>
 
 ## Configure the MongoDB Replication
+
 Since the security, as one of the main data management principles, is ensured, you can finally proceed to the replica set configuration itself.
 
 1. Switch to the **mongod.conf** file inside the **etc** folder within the same configuration tab for MongoDB nodes. Scroll down to the **replication** section, then uncomment it and add the following string specifying the unique name for your replica set (db-replication, as an example):
 
-***replSetName: db-replication***
+**_replSetName: db-replication_**
 
-2. Add parameter **keyFile** in **security** section which should specify the path to your key file (which in our case is ***/var/lib/jelastic/keys/mongo-set.key***).
+2. Add parameter **keyFile** in **security** section which should specify the path to your key file (which in our case is **_/var/lib/jelastic/keys/mongo-set.key_**).
 
 <div style={{
     display:'flex',
@@ -162,7 +166,7 @@ After the PRIMARY database is elected, other replica set members will become ina
 
 6. Access the database, which should be replicated, with the appropriate admin user credentials:
 
-*mongo -u **{user}** -p **{password} {DB_name}***
+\*mongo -u **{user}** -p **{password} {DB_name}\***
 
 <div style={{
     display:'flex',
@@ -188,14 +192,14 @@ In case the new election has occurred the admin user credentials to log into a n
 
 7. Once the connection is established, execute the next lines in order to define parameters for the current MongoDB node and initiate your replica set:
 
-*config = {_id : "**{replica_set}**", members : [{_id : 0, host:"**{current_db_ip}**:27017"},]}*
+_config = {\_id : "**{replica_set}**", members : [{_id : 0, host:"**{current_db_ip}**:27017"},]}_
 
 rs.initiate()
 
 Obviously, the values in brackets should be substituted with the appropriate data, namely:
 
-- ***{replica_set}*** – name of your replicating database group, specified at the beginning of this section (db-replication in our case)
-- ***{current_db_ip}*** – IP address of the chosen database container
+- **_{replica_set}_** – name of your replicating database group, specified at the beginning of this section (db-replication in our case)
+- **_{current_db_ip}_** – IP address of the chosen database container
 
 <div style={{
     display:'flex',
@@ -209,7 +213,7 @@ Obviously, the values in brackets should be substituted with the appropriate dat
 
 In our example:
 
-***config = {_id : "db-replication", members : [{_id : 0, host:"172.25.2.119:27017"},]}***
+**_config = {\_id : "db-replication", members : [{_id : 0, host:"172.25.2.119:27017"},]}_**
 
 <div style={{
     display:'flex',
@@ -221,7 +225,7 @@ In our example:
 
 </div>
 
-***rs.initiate()***
+**_rs.initiate()_**
 
 <div style={{
     display:'flex',
@@ -233,9 +237,10 @@ In our example:
 
 </div>
 
-8. Execute the following command for the remaining databases where ***{db_ip}*** is IP address of each database:
+8. Execute the following command for the remaining databases where **_{db_ip}_** is IP address of each database:
 
-*rs.add("**{db_ip}**:27017")*
+_rs.add("**{db_ip}**:27017")_
+
 <div style={{
     display:'flex',
     justifyContent: 'center',
@@ -259,13 +264,14 @@ In our example:
 </div>
 
 ## ReplicaSet Arbiter
+
 Replication is more reliable if it has an odd number of members in replica set. In case, you have created an even number of members (nodes), it would be better to add an **Arbiter** node which maintains a quorum by responding to heartbeat and election requests from other replica set participants:
 
 - Arbiter doesn’t not store data in it, and it just have to vote in elections when any node fails
 - Arbiter is a lightweight process, so it does not consume a lot of resources
 - Arbiter simply exchanges user credentials between a set of replicas that are encrypted
 - It is recommended to run the Arbiter on a separate node to achieve high availability
-Let’s add an extra Arbiter node to our replica set:
+  Let’s add an extra Arbiter node to our replica set:
 
 1. Scale out database cluster horizontally with one node:
 
@@ -294,9 +300,9 @@ Let’s add an extra Arbiter node to our replica set:
 3. Change **mongod.conf**:
 
 - uncomment the **replication** section and add **replSetName** (e.g. replSetName: db-replication)
-- add **keyFile** parameter to **security** section (***/var/lib/jelastic/keys/mongo-set.key***, in our case)
-4. Restart newly added node to apply configuration parameters.
+- add **keyFile** parameter to **security** section (**_/var/lib/jelastic/keys/mongo-set.key_**, in our case)
 
+4. Restart newly added node to apply configuration parameters.
 
 <div style={{
     display:'flex',
@@ -318,7 +324,7 @@ Do not restart all the nodes since it will cause a new PRIMARY election unless y
 
 <!-- *rs.addArb("**{db_ip}**:27017")* -->
 
-Where ***{db_ip}*** is IP address of a newly added node.
+Where **_{db_ip}_** is IP address of a newly added node.
 
 <div style={{
     display:'flex',
@@ -345,6 +351,7 @@ Where ***{db_ip}*** is IP address of a newly added node.
 As you can see the newly added node acts as Arbiter of **db-replication** ensuring a quorum in any situation.
 
 ## Database Cluster Availability Testing
+
 Our configured advanced MongoDB cluster allows you to connect and perform different operations with it remotely. As an example, let’s get its actual state by connecting and executing a few check up commands by means of a simple PHP applet.
 
 Obviously, you’ll need an application server for that (e.g. Apache), so either add one to your environment (as we did) or just create it within a separate environment.
@@ -383,7 +390,7 @@ Obviously, you’ll need an application server for that (e.g. Apache), so either
 
 </div>
 
-3. Navigate to the ***/var/www/webroot/ROOT*** directory, open the **index.php** file and paste the following code instead of its default content:
+3. Navigate to the **_/var/www/webroot/ROOT_** directory, open the **index.php** file and paste the following code instead of its default content:
 
 ```bash
 <?php
@@ -404,12 +411,11 @@ Obviously, you’ll need an application server for that (e.g. Apache), so either
 
 where the following values should be substituted with the corresponding data:
 
-- ***{replica_set_name}*** – your replica set name
-- ***{db_username}*** – admin user of the chosen primary database (admin, by default)
-- ***{db_password}*** – the above-specified user’s password
-- ***{NodeID}*** – identification number of the corresponding node, that can be found at the Jelastic dashboard
-- ***{environment_domain}*** - environment domain that can be found at the Jelastic dashboard
-
+- **_{replica_set_name}_** – your replica set name
+- **_{db_username}_** – admin user of the chosen primary database (admin, by default)
+- **_{db_password}_** – the above-specified user’s password
+- **_{NodeID}_** – identification number of the corresponding node, that can be found at the Jelastic dashboard
+- **_{environment_domain}_** - environment domain that can be found at the Jelastic dashboard
 
 <div style={{
     display:'flex',
@@ -502,6 +508,6 @@ In the next block of the output, a full information about the replica set hosts 
 - **host** – a particular database’ IP address
 - **port** – current replication member port
 - **["is_primary"]** and **["is_secondary"]** - the parameters indicating the status of the server (correspondent values for the chosen primary MongoDB server are true, false and for two other MongoDB servers - false, true respectively)
-In addition, you can start and stop any of your database nodes and refresh this page to track the changes. In such a way, you can make sure that your MongoDB cluster is available and works as intended, and thus can be applied for any real case right now!
+  In addition, you can start and stop any of your database nodes and refresh this page to track the changes. In such a way, you can make sure that your MongoDB cluster is available and works as intended, and thus can be applied for any real case right now!
 
 Get your own highly-available MongoDB replica set with Jelastic PaaS, simply sign up for a [free trial at one of the service providers](https://cloudmydc.com/) and follow the instructions.

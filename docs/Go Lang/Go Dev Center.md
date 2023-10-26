@@ -88,7 +88,7 @@ You can choose the preferred version during environment creation and change it l
 
 After environment creation, you can [deploy](https://cloudmydc.com/) your Go project from the Git repository (the deployment from application archive will be implemented in the upcoming platform release).
 
-It is possible to customize the deployment process by providing or adjusting the following container [variables](https://cloudmydc.com/):
+It is possible to customize the deployment process by providing or adjusting the following container [Variables](http://localhost:3000/docs/Container/Container%20Configuration/Variables):
 
 - **_GO_RUN_** - sets a name of the executable binary file (if not specified, the deployment script will try to locate one based on the Git project name)
 - **_GOPATH_** - defines the deployment folder (_/home/jelastic/webapp_, by default)
@@ -143,7 +143,7 @@ Additionally, you can easily [swap domains](https://cloudmydc.com/) to redirect 
 
 :::tip Tip
 
-For the access via public IP, the traffic can be redirected to another environment with the help of the [**_SwapExtIps_**](https://cloudmydc.com/) API method (also, available via [CLI](https://cloudmydc.com/)).
+For the access via public IP, the traffic can be redirected to another environment with the help of the [**_SwapExtIps_**](https://cloudmydc.com/) API method (also, available via [CLI](http://localhost:3000/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview)).
 
 :::
 

@@ -13,7 +13,7 @@ In the current tutorial we’ll overview how to install a sample of Java console
 
 ## Install Java to VPS
 
-In order to install Java to your VPS container, carry out the next steps, while being connected over SSH protocol by means of [SSH Gate](https://cloudmydc.com/) or [public IP](https://cloudmydc.com/).
+In order to install Java to your VPS container, carry out the next steps, while being connected over SSH protocol by means of [SSH Gate](https://cloudmydc.com/) or [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP).
 
 1. Enter the following command to initiate Java package download.
 

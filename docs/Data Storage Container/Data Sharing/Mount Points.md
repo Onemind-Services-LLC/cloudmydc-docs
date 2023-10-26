@@ -15,7 +15,7 @@ sidebar_position: 1
 
 <div>
 
-**Mount points** is a data-sharing functionality between instances inside of the same account. It is initiated <u>from the client</u> and creates a connection that allows accessing and operating <u>data on the server</u> as if it were local files. The platform provides a comfortable UI for this operation directly in the built-in [Configuration Manager](https://cloudmydc.com/). Just in a few clicks, define remote directories that are physically located on other nodes but should be accessible at the current container.
+**Mount points** is a data-sharing functionality between instances inside of the same account. It is initiated <u>from the client</u> and creates a connection that allows accessing and operating <u>data on the server</u> as if it were local files. The platform provides a comfortable UI for this operation directly in the built-in [Configuration Manager](http://localhost:3000/docs/Container/Container%20Configuration/Configuration%20Tools#configuration-file-manager). Just in a few clicks, define remote directories that are physically located on other nodes but should be accessible at the current container.
 
 </div>
 
@@ -94,7 +94,7 @@ Click **Add** to proceed.
 
 :::tip Note
 
-If not a dedicated [Shared Storage Container](https://cloudmydc.com/) has been chosen as a data container, a brief one-time delay (up to a few minutes) may occur due to the required NFS software installation.
+If not a dedicated [Shared Storage Container](http://localhost:3000/docs/Data%20Storage%20Container/Data%20Storage%20Overview) has been chosen as a data container, a brief one-time delay (up to a few minutes) may occur due to the required NFS software installation.
 
 :::
 

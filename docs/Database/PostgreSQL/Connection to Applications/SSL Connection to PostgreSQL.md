@@ -40,9 +40,9 @@ Obviously, for this tutorial we’ll use an environment with PostgreSQL database
 
 In case you haven’t performed similar operation before, you need to:
 
-- [generate](https://cloudmydc.com/) an SSH keypair
-- [add your public SSH key](https://cloudmydc.com/) to the dashboard
-- [access your account](https://cloudmydc.com/) via SSH protocol
+- [generate](http://localhost:3000/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) an SSH keypair
+- [add your public SSH key](http://localhost:3000/docs/Deployment%20Tools/SSH/Add%20SSH%20Key) to the dashboard
+- [access your account](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) via SSH protocol
 
 :::
 
@@ -67,7 +67,7 @@ Within this tutorial, we’ll briefly consider how you can generate them by your
 :::tip Tips
 
 - we won’t explain commands parameters in details here, but if you’d like to know more, just refer to the [Self-Signed Custom SSL](https://cloudmydc.com/) page in our documentation or check the official [OpenSSL](https://cloudmydc.com/) site for the full list of available actions
-- you can also use [custom SSL](https://cloudmydc.com/) certificate similarly to the described below (follow the Generate a Custom SSL Certificate section of the linked guide to get such). In this latter case, you can skip the generation instruction and jump directly to the [6th step](https://cloudmydc.com/) of this instruction
+- you can also use [Custom SSL](http://localhost:3000/docs/ApplicationSetting/SSL/Custom%20SSL) certificate similarly to the described below (follow the Generate a Custom SSL Certificate section of the linked guide to get such). In this latter case, you can skip the generation instruction and jump directly to the [6th step](https://cloudmydc.com/) of this instruction
 
 :::
 
@@ -411,7 +411,7 @@ Don’t forget to remove keys from the **tmp** directory on your DB server after
 
 Eventually, after server and client configurations are done, you are ready to establish the connection. In our case, we’ll use the **[pgAdmin 3](https://cloudmydc.com/)** tool as an example, so get this application (or any other preferred one) installed beforehand.
 
-1. In order to connect to the DB server via SSL, you need either [public IP](https://cloudmydc.com/) or [endpoint](https://cloudmydc.com/) being attached for your PostgreSQL database container.
+1. In order to connect to the DB server via SSL, you need either [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) or [endpoint](https://cloudmydc.com/) being attached for your PostgreSQL database container.
 
 We’ll consider the latter case - access environment **Settings**, switch to the **_Endpoints_** section and **Add** new endpoint with the same-named button at the top pane.
 
@@ -464,6 +464,6 @@ Now you can connect your application to database (use the [Connect to Database](
 
 :::tip Tip
 
-If you face any issues while configuring your SSL connection, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://cloudmydc.com/).
+If you face any issues while configuring your SSL connection, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://stackoverflow.com/questions/tagged/jelastic).
 
 :::

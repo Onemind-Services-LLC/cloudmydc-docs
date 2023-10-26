@@ -49,7 +49,7 @@ To create a new Shared Storage Container, enable the corresponding **_Storage_**
 
 </div>
 
-In the middle part of the wizard, you can provide additional configurations for your Shared Storage. The exact amount of provided storage space can be adjusted via the Disk Limit field. The platform can automatically configure a [reliable storage cluster](https://cloudmydc.com/) (instead of separate nodes) if you enable the **_Auto-Clustering_** switcher. Also, in case of necessity, [public IP](https://cloudmydc.com/) addresses can be attached to the nodes (both IPv4 and IPv6).
+In the middle part of the wizard, you can provide additional configurations for your Shared Storage. The exact amount of provided storage space can be adjusted via the Disk Limit field. The platform can automatically configure a [reliable storage cluster](https://cloudmydc.com/) (instead of separate nodes) if you enable the **_Auto-Clustering_** switcher. Also, in case of necessity, [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) addresses can be attached to the nodes (both IPv4 and IPv6).
 
 :::tip Tip
 
@@ -57,7 +57,7 @@ Since this container type was specially developed to be used as a data storage s
 
 - although RAM & CPU are not the primary resources of the storage, they are still consumed by the node due to operating over networks (the particular amount depends on load)
 - if the maximum value of disk space per storage node is not enough, please contact your hosting provider’s support team and request the corresponding account limit enlargement
-- node pricing mainly depends on the amount of disk space in use (not the limit) and external network traffic (check these resources cost at **[Quotas & Pricing](https://cloudmydc.com/)\*\***> Pricing > Disk Space** or **Traffic\*\*)
+- node pricing mainly depends on the amount of disk space in use (not the limit) and external network traffic (check these resources cost at **[Quotas & Pricing](http://localhost:3000/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-much-do-resources-cost)\*\***> Pricing > Disk Space** or **Traffic\*\*)
 
 Click **Create** when ready.
 
@@ -124,7 +124,7 @@ Some general examples of the storage usage are described in the [Dedicated Stora
 
 Right after creation, you can immediately proceed to the container configuration. Below, we’ll show several basic actions that may be useful for you to get started:
 
-1. For the most common operations with your storage, the built-in [configuration file manager](https://cloudmydc.com/) can be used. For more complex management, you may prefer to work with some third-party tool (use the connection details from the **SFTP / SSH Gate** tab circled in the image below).
+1. For the most common operations with your storage, the built-in [configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager) can be used. For more complex management, you may prefer to work with some third-party tool (use the connection details from the **SFTP / SSH Gate** tab circled in the image below).
 
 <div style={{
     display:'flex',
@@ -154,7 +154,7 @@ For files sharing with other instances within the platform or external servers, 
 
 </div>
 
-3. If you want to use your Shared Storage Container as an external server (i.e. not only within the current PaaS installation) - enable the [public IP](https://cloudmydc.com/) option to make it accessible from outside. Follow instructions in the dedicated [NFS server configurations](https://cloudmydc.com/) guide.
+3. If you want to use your Shared Storage Container as an external server (i.e. not only within the current PaaS installation) - enable the [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) option to make it accessible from outside. Follow instructions in the dedicated [NFS server configurations](https://cloudmydc.com/) guide.
 
 <div style={{
     display:'flex',
@@ -200,6 +200,6 @@ That’s all! For now, as you know the main points on your Shared Storage Contai
 
 :::tip Note
 
-If you experience any problem with Shared Storage Container deployment, configuration or usage, feel free to appeal to our technical expert’s assistance at [Stackoverflow](https://cloudmydc.com/).
+If you experience any problem with Shared Storage Container deployment, configuration or usage, feel free to appeal to our technical expert’s assistance at [Stackoverflow](https://stackoverflow.com/questions/tagged/jelastic).
 
 :::

@@ -89,7 +89,7 @@ Some of the topology specifics of the MongoDB cluster are listed below:
 
 :::
 
-Configure other parameters up to your needs ([public IPs](https://cloudmydc.com/), [region](https://cloudmydc.com/), etc.) and click **Create**.
+Configure other parameters up to your needs ([public IPs](https://cloudmydc.com/), [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), etc.) and click **Create**.
 
 2. Wait a minute for the platform to configure the cluster for you.
 
@@ -160,7 +160,7 @@ If you need to read from the secondaries you have to customize your application 
 
 </div>
 
-5. Also, you can connect to your database via the mongo shell directly in your terminal (for example, using the built-in **[Web SSH](https://cloudmydc.com/)** option).
+5. Also, you can connect to your database via the mongo shell directly in your terminal (for example, using the built-in **[Web SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)** option).
 
 \*mongo -u **{user}** -p **{password} {DB_name}\***
 

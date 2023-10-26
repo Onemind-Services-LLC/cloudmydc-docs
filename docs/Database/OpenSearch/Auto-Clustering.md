@@ -177,7 +177,7 @@ These settings can also be edited for the already installed add-on using the **C
 
 ## OpenSearch Cluster Installation
 
-The OpenSearch Cluster creation at the platform is a straightforward and fully automated process that can be performed directly from the [topology wizard](https://cloudmydc.com/).
+The OpenSearch Cluster creation at the platform is a straightforward and fully automated process that can be performed directly from the [topology wizard](http://localhost:3000/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment).
 
 Select the **OpenSearch** stack at the NoSQL database section.
 

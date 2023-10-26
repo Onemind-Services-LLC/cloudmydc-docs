@@ -17,7 +17,7 @@ maxWidth: '30%',
 
 </span>
 
-[Docker solution](https://cloudmydc.com/) is designed for comfortable application distribution using fast and lightweight templates, which allows running your projects almost everywhere. Thus, it is a perfect technology for for those developers and sysadmins, who look for speeding up the application delivery workflow and avoiding the constant adjustment issues.
+[Docker solution](https://www.docker.com/why-docker/) is designed for comfortable application distribution using fast and lightweight templates, which allows running your projects almost everywhere. Thus, it is a perfect technology for for those developers and sysadmins, who look for speeding up the application delivery workflow and avoiding the constant adjustment issues.
 
 </div>
 
@@ -25,10 +25,10 @@ In order to handle your own Docker image, the appropriate registry is needed. Th
 
 So, let’s discover how to get it at the platform in a matter of minutes through following the next steps:
 
-- [deploying private registry](https://cloudmydc.com/)
-- [adding image to registry](https://cloudmydc.com/)
+- [deploying private registry](http://localhost:3000/docs/Container/Private%20Registry%20inside%20PaaS#deploy-private-registry)
+- [adding image to registry](http://localhost:3000/docs/Container/Private%20Registry%20inside%20PaaS#add-image-to-registry)
 
-Subsequently, you’ll be able to easily deploy the added image from your [private registry](https://cloudmydc.com/) to the platform.
+Subsequently, you’ll be able to easily deploy the added image from your [private registry](http://localhost:3000/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) to the platform.
 
 ## Deploy Private Registry
 
@@ -51,23 +51,23 @@ You can select the required tag for your Docker image at the top of this frame o
 
 Click **Next** to proceed.
 
-3. Provide all other [configurations](https://cloudmydc.com/) for the environment (disk limit, name, [region](https://cloudmydc.com/), etc.) up to your needs.
+3. Provide all other [configurations](http://localhost:3000/docs/EnvironmentManagement/Setting%20Up%20Environment) for the environment (disk limit, name, [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), etc.) up to your needs.
 
 ![Locale Dropdown](./img/PrivateRegistryInsidePaaS/04-configure-environment.png)
 
 :::danger Note
 
-The instruction below is written for the [newest registry](https://cloudmydc.com/) versions (i.e. starting with **2.x** tag and higher). For [deprecated registries](https://cloudmydc.com/), the configuration & interaction flow may vary in details.
+The instruction below is written for the [newest registry](https://github.com/distribution/distribution) versions (i.e. starting with **2.x** tag and higher). For [deprecated registries](https://github.com/docker-archive/docker-registry), the configuration & interaction flow may vary in details.
 
 :::
 
 Click **Create** and wait a minute for the environment to be configured.
 
-4. Now, you need to configure an entry point for external access. We’ll create one, leveraging the platform [endpoints](https://cloudmydc.com/) feature, in order to expose the container’s port 5000.
+4. Now, you need to configure an entry point for external access. We’ll create one, leveraging the platform [endpoints](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints) feature, in order to expose the container’s port 5000.
 
 :::tip Note
 
-Alternatively, you can attach and work over public IP (a paid option) without any additional configurations.
+Alternatively, you can attach and work over [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) (a paid option) without any additional configurations.
 
 :::
 
@@ -83,35 +83,15 @@ In order to show how a Docker template can be added to your registry, we’ll ta
 
 However, before that, you need to apply some slight adjustments to your local machine configs in order to be able to operate with it properly.
 
-1. To start with, [install](https://cloudmydc.com/) Docker CE (if you haven’t done this previously) according to the linked guide from the official website.
+1. To start with, [install](https://docs.docker.com/get-docker/) Docker CE (if you haven’t done this previously) according to the linked guide from the official website.
 
 :::tip Note
 
 Make sure the installed daemon version is 1.6.0 or higher (as registries usage is not compatible with its prior versions). The actual Docker daemon version can be checked by executing the following command at your terminal:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-    background: 'white',
-}}>
-    <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 10px 20px', color: 'white' }}>
-            1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-            docker -v
-        </div>
-    </div>
-</div>
+```bash
+docker -v
+```
 
 ![Locale Dropdown](./img/PrivateRegistryInsidePaaS/06-check-docker-engine-version.png)
 
@@ -119,29 +99,9 @@ Make sure the installed daemon version is 1.6.0 or higher (as registries usage i
 
 2. Next, choose any preferable image at Docker Hub, get it using the pull command and tag the received template so that it points to your private registry (or, in case of a local template usage, just skip the first command part).
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-    background: 'white',
-}}>
-    <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 10px 20px', color: 'white' }}>
-            1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-            docker pull `{`image`}` && docker tag `{`image`}` `{`entry_point`}`/`{`repository`}`
-        </div>
-    </div>
-</div>
+```bash
+docker pull  {image} && docker tag  {image}  {entry_point}/{repository}
+```
 
 where:
 
@@ -155,40 +115,20 @@ where:
 
 ![Locale Dropdown](./img/PrivateRegistryInsidePaaS/08-docker-pull-command.png)
 
-3. Now, you should pay attention to one more detail - while using a remote private registry, it’s required to secure interaction with it by means of TLS. For that, you need to place the corresponding [SSL certificate files](https://cloudmydc.com/) (i.e. server key and domain certificate), issued by a known CA, to your registry.
+3. Now, you should pay attention to one more detail - while using a remote private registry, it’s required to secure interaction with it by means of TLS. For that, you need to place the corresponding [SSL certificate files](https://docs.docker.com/registry/#running-a-domain-registry) (i.e. server key and domain certificate), issued by a known CA, to your registry.
 
 :::tip Tip
 
-A [self-signed](https://cloudmydc.com/) certificate can be applied as well - in this case, you’ll need to manually instruct your Docker daemon to [trust](https://cloudmydc.com/) it.
+A [self-signed](http://localhost:3000/docs/ApplicationSetting/SSL/Self-Signed%20Custom%20SSL) certificate can be applied as well - in this case, you’ll need to manually instruct your Docker daemon to [trust](https://docs.docker.com/registry/#docker-still-complains-about-the-certificate-when-using-authentication) it.
 
 :::
-However, for testing purposes, you can apply a relatively simpler configuration, that allows bypassing this requirement - run your registry in an [insecure mode](https://cloudmydc.com/), so all the communication will be performed over the plain HTTP (which, although, is <u>highly unrecommended</u> in confines of production usage).
+However, for testing purposes, you can apply a relatively simpler configuration, that allows bypassing this requirement - run your registry in an [insecure mode](https://docs.docker.com/registry/#deploying-a-plain-http-registry), so all the communication will be performed over the plain HTTP (which, although, is <u>highly unrecommended</u> in confines of production usage).
 
 For that, add the following line to the **_/etc/default/docker_** configuration file of your daemon (or the similar one according to your OS distribution), e.g. using the **_vim_** editor with sudo permissions:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-    background: 'white',
-}}>
-    <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 10px 20px', color: 'white' }}>
-            1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-            DOCKER_OPTS="--insecure-registry `{`entry_point`}`"
-        </div>
-    </div>
-</div>
+```bash
+DOCKER_OPTS="--insecure-registry  {entry_point}"
+```
 
 ![Locale Dropdown](./img/PrivateRegistryInsidePaaS/09-configure-insecure-registry.png)
 
@@ -202,50 +142,18 @@ In case of using self-signed certificates or insecure option, the same extra con
 
 4. Now, you can restart your local Docker daemon and push the prepared image to your remote repository:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-    background: 'white',
-}}>
-    <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 10px 20px', color: 'white' }}>
-            1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-            sudo service docker restart
-        </div>
-    </div>
-    <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 10px 20px', color: 'white' }}>
-            2
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-            docker push `{`entry_point`}`/`{`repository`}`
-        </div>
-    </div>
-</div>
+```bash
+sudo service docker restart
+docker push  {entry_point}/{repository}
+```
 
 ![Locale Dropdown](./img/PrivateRegistryInsidePaaS/10-docker-restart-push-commands.png)
 
 That’s all! Shortly, your image will be uploaded to the registry (the exact time depends on image size and the internet connection speed) and will become available for use throughout the Internet.
 
-As a result, you can easily [deploy it within the platform](https://cloudmydc.com/) just in the similar way we’ve done this at the beginning of the instruction.
+As a result, you can easily [deploy it within the platform](http://localhost:3000/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) just in the similar way we’ve done this at the beginning of the instruction.
 
 :::tip
-In case you face any issues while deploying your own registry or adding an image to it, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://cloudmydc.com/).
+In case you face any issues while deploying your own registry or adding an image to it, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://stackoverflow.com/questions/tagged/jelastic).
 
 :::

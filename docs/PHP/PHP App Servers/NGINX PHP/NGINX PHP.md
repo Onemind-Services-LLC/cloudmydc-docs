@@ -90,7 +90,7 @@ While using NGINX as an application server, there are some restrictions on the s
 
 </div>
 
-2. Within the opened [configuration file manager](https://cloudmydc.com/), locate and adjust the **_/etc/nginx/nginx.conf_** file by adding the following string to the http section:
+2. Within the opened [configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager), locate and adjust the **_/etc/nginx/nginx.conf_** file by adding the following string to the http section:
 
 _client_max_body_size 50m;_
 
@@ -108,7 +108,7 @@ You can set any required value instead of the _50MB_ used in the example above.
 
 :::danger Note
 
-Regardless of the setting above, if working via the platform inbuilt file manager, you are limited to the upload size of 150MB (may vary based on the hosting provider settings). To operate larger files, you need to attach [public IP](https://cloudmydc.com/) and use own manager (for example, you can utilize the [FTP add-on](https://cloudmydc.com/)).
+Regardless of the setting above, if working via the platform inbuilt file manager, you are limited to the upload size of 150MB (may vary based on the hosting provider settings). To operate larger files, you need to attach [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) and use own manager (for example, you can utilize the [FTP add-on](https://cloudmydc.com/)).
 
 :::
 

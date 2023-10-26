@@ -40,12 +40,12 @@ To set up your VPS inside the platform, follow the next steps.
 
 :::tip Note
 
-When enabling **VPS** of any type, you’ll automatically get the **[Public IP](https://cloudmydc.com/)** address(es) attached to the corresponding node (one per instance).
+When enabling **VPS** of any type, you’ll automatically get the **[public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)** address(es) attached to the corresponding node (one per instance).
 Nevertheless, in case of strict necessity, you can contact your hosting provider and request the option of running VPS with the internal IP only (e.g. when a special application infrastructure, which is partially inaccessible from outside, is required).
 
 :::
 
-Specify cloudlet limits for this node, [scale](https://cloudmydc.com/) it out (if required), select the preferred [region](https://cloudmydc.com/) (if several of them are available), type the name of the environment and click on **Create**.
+Specify cloudlet limits for this node, [scale](https://cloudmydc.com/) it out (if required), select the preferred [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) (if several of them are available), type the name of the environment and click on **Create**.
 
 3. In a couple of minutes, your new environment with the chosen virtual server will appear at the dashboard. You’ll also receive an email notification with its administration data (i.e. login/password credentials, attached Public IP and access URL).
 
@@ -108,7 +108,7 @@ The configurations on the Windows VPS can be applied via the [RDP](https://cloud
 
 ## File Manager
 
-The in-built **[configuration file manager](https://cloudmydc.com/)** is designed to manage (create/delete, upload/download, edit) files inside your container, as well as setup [mount points](https://cloudmydc.com/) and manage [exported data](https://cloudmydc.com/).
+The in-built **[configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager)** is designed to manage (create/delete, upload/download, edit) files inside your container, as well as setup [mount points](https://cloudmydc.com/) and manage [exported data](https://cloudmydc.com/).
 
 <div style={{
     display:'flex',

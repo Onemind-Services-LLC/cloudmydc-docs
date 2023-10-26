@@ -132,7 +132,7 @@ Now, click the **Swap** button and confirm this action within the pop-up to appl
 
 ## Swap Public IPs
 
-The easiest way to pass public IP from p*rimary-env* (i.e. the one your custom domain is attached to) to Traffic Distributor is by using the corresponding **External Addresses Swap** functionality, available through platform [API](https://cloudmydc.com/) and [CLI](https://cloudmydc.com/).
+The easiest way to pass public IP from p*rimary-env* (i.e. the one your custom domain is attached to) to Traffic Distributor is by using the corresponding **External Addresses Swap** functionality, available through platform [API](https://cloudmydc.com/) and [CLI](http://localhost:3000/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview).
 
 It allows performing the required configurations in a single command, sparing you from the manual A _Record_ reconfiguration.
 
@@ -159,6 +159,6 @@ If you prefer to work **via GUI**, you need to go to your domain registrar and m
 
 :::
 
-3. After the application entrypoint address is changed, you can detach [public IP](https://cloudmydc.com/) from the initial _primary-env_ (if no longer required for direct access) so that you do not pay for the unused option.
+3. After the application entrypoint address is changed, you can detach [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) from the initial _primary-env_ (if no longer required for direct access) so that you do not pay for the unused option.
 
 That’s it! Now, all incoming traffic for your custom domain will be processed by the Traffic Distributor solution, which, in its turn, will route it according to the set traffic ratio between application backends.

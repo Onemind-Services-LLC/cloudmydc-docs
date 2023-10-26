@@ -31,7 +31,7 @@ Below, we’ll review each of these points in detail, providing explanations on 
 
 As the first step of your environment creation, you need to select the deployment solution required for your project. PaaS is an extremely versatile platform that supports multiple options for application development and hosting thus it suits even the most demanding clients.
 
-1. The most common and recommended choice (unless you are pursuing a specific application/architecture) is **certified containers**. These [stacks](https://cloudmydc.com/) are specifically configured and managed by the platform (e.g. version updates, security patches). By default, they support all platform features (scaling, automated deployment, redeploy, SSL, etc.) for the most smooth and convenient hosting and development.
+1. The most common and recommended choice (unless you are pursuing a specific application/architecture) is **certified containers**. These [stacks](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions) are specifically configured and managed by the platform (e.g. version updates, security patches). By default, they support all platform features (scaling, automated deployment, redeploy, SSL, etc.) for the most smooth and convenient hosting and development.
 
 ![Locale Dropdown](./img/SettingUpEnvironment/03-environment-programming-languages-in-wizard.png)
 
@@ -47,7 +47,7 @@ Click on the tab with the required programming language (Java, PHP, Ruby, .NET, 
 
 - **Kubernetes Cluster** - ready-to-go _[Kubernetes cluster](https://cloudmydc.com/)_ with a preconfigured control plane and worker nodes created based on the system containers. The deployment, scaling, and orchestration of the microservices inside are handled by Kubernetes control units, while the platform scales and manages control plane and worker nodes.
 
-3. Also, it is recommended to select the preferred [region](https://cloudmydc.com/) (if available) before proceeding further.
+3. Also, it is recommended to select the preferred [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) (if available) before proceeding further.
 
 <div style={{
     display:'flex',
@@ -118,9 +118,9 @@ If you cannot find a required software solution, you can add it as a custom cont
 
 2. An **SSL** protection can be configured for your environment via the same-named section. Here, two options are available:
 
-- **[Built-In SSL](https://cloudmydc.com/)** - enables an already trusted SSL certificate, avoiding any additional checks and saving your time on the certificate validation. However, it is applied to the default environment domain name only (i.e. with the hoster’s domain at the end) and does not work if [public IP](https://cloudmydc.com/) is attached to your servers.
+- **[Built-In SSL](https://cloudmydc.com/)** - enables an already trusted SSL certificate, avoiding any additional checks and saving your time on the certificate validation. However, it is applied to the default environment domain name only (i.e. with the hoster’s domain at the end) and does not work if [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) is attached to your servers.
 
-- **[Custom SSL](https://cloudmydc.com/)** - shows the pre-conditions of using your custom SSL certificates for the environment. Click the **Enable** button to automatically fulfill the requirements (e.g. enable Public IP) and refer to the linked instruction for further guidance.
+- **[Custom SSL](http://localhost:3000/docs/ApplicationSetting/SSL/Custom%20SSL)** - shows the pre-conditions of using your custom SSL certificates for the environment. Click the **Enable** button to automatically fulfill the requirements (e.g. enable Public IP) and refer to the linked instruction for further guidance.
 
 :::tip Tip
 Also, you can apply the Let’s Encrypt SSL add-on after the environment creation to automatically issue and integrate a free SSL certificate.
@@ -220,10 +220,10 @@ The list may vary depending on the particular stack and account permissions:
 
 5. At the bottom of the section, you can find buttons to the container configuration tools:
 
-- **[Variables](https://cloudmydc.com/)** - review and manage a list of the [environment variables](https://cloudmydc.com/) for the current layer
-- **[Links](https://cloudmydc.com/)** - interconnect layers inside the environment
-- **[Volumes](https://cloudmydc.com/)** - manage a list of the data volumes to ensure files integrity during container lifecycle
-- **[Ports](https://cloudmydc.com/)** - view information about containers' ports
+- **[Variables](http://localhost:3000/docs/Container/Container%20Configuration/Variables)** - review and manage a list of the [environment variables](http://localhost:3000/docs/Container/Container%20Configuration/Variables) for the current layer
+- **[Links](http://localhost:3000/docs/Container/Container%20Configuration/Links)** - interconnect layers inside the environment
+- **[Volumes](http://localhost:3000/docs/Container/Container%20Configuration/Volumes)** - manage a list of the data volumes to ensure files integrity during container lifecycle
+- **[Ports](http://localhost:3000/docs/Container/Container%20Configuration/Ports)** - view information about containers' ports
 - **[CMD / Entry Point](https://cloudmydc.com/)** - configure containers' Entry Point and Run Command
 
 <div style={{

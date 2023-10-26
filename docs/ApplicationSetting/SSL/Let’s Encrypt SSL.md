@@ -24,7 +24,7 @@ A general trend of moving Web to HTTPS implies the complete automation of custom
 
 The key advantage of this solution is a unique out-of-box integration with the most popular load balancer and application server stacks. In such a way, it gives a possibility to freely secure the majority of existing applications that are run in Jelastic.
 
-Being provisioned as an add-on, this solution can be easily installed on top of any container with the [Custom SSL](https://cloudmydc.com/) support enabled, namely the following servers (the list is constantly extended):
+Being provisioned as an add-on, this solution can be easily installed on top of any container with the [Custom SSL](http://localhost:3000/docs/ApplicationSetting/SSL/Custom%20SSL) support enabled, namely the following servers (the list is constantly extended):
 
 - Load Balancers - NGINX, Apache LB, HAProxy, Varnish
 - Java application servers - Tomcat, TomEE, GlassFish, Payara, Jetty
@@ -109,7 +109,7 @@ Finally, click on **Install** to initiate installation of the appropriate SSL ce
 
 :::tip Note
 
-that the add-on requires [Public IP](https://cloudmydc.com/) address for proper work. So in case, the environment entry point does not have such, it will be automatically attached during installation (be aware that Public IP is a paid option - the cost can be found within the [Quotas & Pricing](https://cloudmydc.com/) frame).
+that the add-on requires [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address for proper work. So in case, the environment entry point does not have such, it will be automatically attached during installation (be aware that Public IP is a paid option - the cost can be found within the [Quotas & Pricing](http://localhost:3000/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-much-do-resources-cost) frame).
 
 :::
 

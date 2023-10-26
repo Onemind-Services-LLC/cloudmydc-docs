@@ -169,6 +169,6 @@ In such a way, you can configure a set of alerts and to be sure that the platfor
 
 :::tip
 
-In case you have any questions left on configuring alert notifications or just need more detailed information on this functionality, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://cloudmydc.com/).
+In case you have any questions left on configuring alert notifications or just need more detailed information on this functionality, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://stackoverflow.com/questions/tagged/jelastic).
 
 :::

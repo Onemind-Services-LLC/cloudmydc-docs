@@ -14,7 +14,7 @@ The latter solution is mainly aimed for the platform installations on top of the
 
 ## Configure Custom SSL via SLB
 
-The feature is designed to give an ability to set up Custom SSL certificates without obligatory [external IP](https://cloudmydc.com/) attached to the entry point of the environment. As the first step of this approach, a private key, the domain certificate and, optionally, intermediate certificate are uploaded to the platform database. Next, the data is synced across the cluster of [Shared Load Balancers](https://cloudmydc.com/). The selection between the SSL certificates on SLB is performed over SNI.
+The feature is designed to give an ability to set up Custom SSL certificates without obligatory [external IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) attached to the entry point of the environment. As the first step of this approach, a private key, the domain certificate and, optionally, intermediate certificate are uploaded to the platform database. Next, the data is synced across the cluster of [Shared Load Balancers](https://cloudmydc.com/). The selection between the SSL certificates on SLB is performed over SNI.
 
 [Server Name Indication](https://cloudmydc.com/) (SNI) is an extension to the TLS protocol, which ensures that clients send a name of the domain they request. SNI allows server to provide a certificate with the correct domain even in the case when a full list of hostnames cannot be known in advance.
 

@@ -105,7 +105,7 @@ Additional security headers are used for some specific stacks.
 
 :::
 
-The list of supported HTTP headers can vary based on the topology of the connected environment. Due to external access specifics (via [resolver/SLB](https://cloudmydc.com/) or [public IP](https://cloudmydc.com/)), there are four possible scenarios when working with the platform:
+The list of supported HTTP headers can vary based on the topology of the connected environment. Due to external access specifics (via [resolver/SLB](https://cloudmydc.com/) or [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)), there are four possible scenarios when working with the platform:
 
 <div style={{
         width: '100%',

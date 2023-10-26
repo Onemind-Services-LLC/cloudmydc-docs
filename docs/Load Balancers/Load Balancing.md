@@ -18,7 +18,7 @@ Load balancing is a process of traffic navigation and workload distribution acro
 
 :::danger Note
 
-The platform provides load balancing on application (this document) and infrastructure layers (described in the **_[Shared Load Balancer](https://cloudmydc.com/)_** document). The former handles requests inside environments and the latter - from outside the platform to environments (except the direct connections via _[public IP](https://cloudmydc.com/)_).
+The platform provides load balancing on application (this document) and infrastructure layers (described in the **_[Shared Load Balancer](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer)_** document). The former handles requests inside environments and the latter - from outside the platform to environments (except the direct connections via _[public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)_).
 
 :::
 

@@ -24,7 +24,7 @@ sidebar_position: 1
 
 1. Log in to the PaaS dashboard and click the **New Environment** button at the top-left corner.
 
-2. Within the opened [topology wizard](https://cloudmydc.com/), navigate to the **.NET** tab and select the **_.NET Core_** application server. Configure the other parameters (_[cloudlets](https://cloudmydc.com/)_,_disk limit_, _[public IPs](https://cloudmydc.com/)_, etc.) up to your needs.
+2. Within the opened [topology wizard](http://localhost:3000/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment), navigate to the **.NET** tab and select the **_.NET Core_** application server. Configure the other parameters (_[cloudlets](https://cloudmydc.com/)_,_disk limit_, _[public IPs](https://cloudmydc.com/)_, etc.) up to your needs.
 
 <div style={{
     display:'flex',
@@ -78,7 +78,7 @@ If you are interested in [creating your own .NET application](https://cloudmydc.
 
 :::tip Note
 
-.NET Core supports several specific [variables](https://cloudmydc.com/) that can help with application deployment:
+.NET Core supports several specific [Variables](http://localhost:3000/docs/Container/Container%20Configuration/Variables) that can help with application deployment:
 
 - **_APP_NAME_** - points to the particular folder (if there are multiple applications in a single repository) or runs a specific **_.dll_** file in your project
 - **_ASPNETCORE_URLS_** - configures services to work with the specified URL

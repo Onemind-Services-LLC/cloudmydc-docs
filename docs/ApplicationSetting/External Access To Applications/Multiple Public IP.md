@@ -24,7 +24,7 @@ sidebar_position: 3
 </div>
 <div>
 
-The platform supports assigning multiple [public IP](https://cloudmydc.com/) addresses (of both IPv4 and IPv6 revisions) to a single container. Herewith, the assigned IPs could be either of one of the versions or both of them simultaneously.
+The platform supports assigning multiple [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) addresses (of both IPv4 and IPv6 revisions) to a single container. Herewith, the assigned IPs could be either of one of the versions or both of them simultaneously.
 
 </div>
 </div>
@@ -33,7 +33,7 @@ For example, if hosting several web-sites on a single node, the multi-IP option 
 
 :::tip Note
 
-Both Public IPv4 and IPv6 are paid options, charged separately (either for the same or different price) on hourly basis. The exact cost and allowed number of IPs per node/per environment can be seen within the **[Quotas & Pricing](https://cloudmydc.com/) > Account Limits** dashboard tab.
+Both Public IPv4 and IPv6 are paid options, charged separately (either for the same or different price) on hourly basis. The exact cost and allowed number of IPs per node/per environment can be seen within the **[Quotas & Pricing](http://localhost:3000/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-much-do-resources-cost) > Account Limits** dashboard tab.
 
 :::
 

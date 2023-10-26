@@ -123,7 +123,7 @@ There are [various types of DNS records](https://cloudmydc.com/), which can be u
 
 :::tip Note
 
-The **_CNAME/ANAME_** DNS records can be used with [Shared Load Balancer](https://cloudmydc.com/) (i.e. without public IP). However, for the production environments, it is recommended to attach [public IP](https://cloudmydc.com/) and configure **_A Record_**.
+The **_CNAME/ANAME_** DNS records can be used with [Shared Load Balancer](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) (i.e. without public IP). However, for the production environments, it is recommended to attach [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) and configure **_A Record_**.
 
 In case of a _Private Cloud_ setup, when the platform owner controls all the environments, the Shared Load Balancer limitations can be disabled, making the CNAME usage a production-ready option.
 
@@ -214,7 +214,7 @@ Any DNS changes you make can take up to 48 hours to be reflected throughout the 
 
 Check the following general rules and examples:
 
-- use **A Record** if your environment is working over [public IP](https://cloudmydc.com/)
+- use **A Record** if your environment is working over [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)
 
 _name1.mydomain.com > 111.111.111.111_
 

@@ -20,7 +20,7 @@ The platform solves such elasticity problems through the implementation of the s
 
 The distinctive features of the Elastic VPS stacks are:
 
-- **insulation** - each given VPS represents an entirely independent instance, which is accessible only via the dedicated [public IP](https://cloudmydc.com/), so any other account on the hardware cannot influence it
+- **insulation** - each given VPS represents an entirely independent instance, which is accessible only via the dedicated [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP), so any other account on the hardware cannot influence it
 - **full control** - it is possible to manage your virtual server in any preferred way due to the provided root permissions
 - **scalability** - the server can be automatically scaled vertically and horizontally by setting the resource limits and specific triggers
 - **cost-effectiveness** - VPS is a relatively cheap solution (comparing to the cost of purchase and maintenance of a real dedicated physical server) and due to the platform [usage-based pricing](/docs/Account&Pricing/Pricing%20Model%20Overview) model

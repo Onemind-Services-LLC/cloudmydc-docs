@@ -30,7 +30,7 @@ Currently, automatic conversion of the existing standalone storage into the Glus
 
 </div>
 
-3. Connect to your initial (source) Storage node via [SSH](https://cloudmydc.com/), e.g. using the built-in **Web SSH** client. Run the following command to [generate](https://cloudmydc.com/) a keypair that will be used to interconnect two storages:
+3. Connect to your initial (source) Storage node via [SSH](https://cloudmydc.com/), e.g. using the built-in **Web SSH** client. Run the following command to [generate](http://localhost:3000/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) a keypair that will be used to interconnect two storages:
 
 ```bash
 ssh-keygen -f ~/.ssh/storage

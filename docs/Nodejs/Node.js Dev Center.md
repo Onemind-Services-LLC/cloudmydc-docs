@@ -30,7 +30,7 @@ Use the table of content below to find required information within the guide qui
 
 ## Node.js Environment Hosting
 
-To run your Node.js application, you need to [set up](https://cloudmydc.com/) the appropriate environment using the powerful and intuitive **Topology Wizard**. Switch to the **_Node.js_** tab, select the required engine version for your application server and add any other [software stack](https://cloudmydc.com/) required. If needed, adjust other parameters, such as cloudlets and nodes count, Public IPv4 and IPv6, etc.
+To run your Node.js application, you need to [set up](https://cloudmydc.com/) the appropriate environment using the powerful and intuitive **Topology Wizard**. Switch to the **_Node.js_** tab, select the required engine version for your application server and add any other [software stack](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions) required. If needed, adjust other parameters, such as cloudlets and nodes count, Public IPv4 and IPv6, etc.
 
 <div style={{
     display:'flex',
@@ -135,7 +135,7 @@ By default, the npm package manager is used for the NodeJS application servers, 
 - [**_forever_**](https://cloudmydc.com/) - allows running your Node.js processes continuously and automatically restarting them upon failure
 - [**_supervisor_**](https://cloudmydc.com/) - monitors running applications for changes and automatically restarts required ones to keep them up-to-date
 
-Users can choose the necessary process manager during container [redeployment](https://cloudmydc.com/) or by adjusting the **_PROCESS_MANAGER_** [variable](https://cloudmydc.com/) (using _forever_, _npm_, _pm2_, or _supervisor_ as value, container restart is needed to apply new options).
+Users can choose the necessary process manager during container [redeployment](http://localhost:3000/docs/Container/Container%20Redeploy) or by adjusting the **_PROCESS_MANAGER_** [variable](https://cloudmydc.com/) (using _forever_, _npm_, _pm2_, or _supervisor_ as value, container restart is needed to apply new options).
 
 ## Domains Management
 
@@ -144,7 +144,7 @@ Your Node.js application can be easily supplemented with the [custom domain](htt
 - **CNAME redirect** if using Shared Load Balancer; is recommended for **_dev_** and **_test_** environments
 - **DNS A Record** if using Public IP; can handle high traffic load and is suitable for **_production_** environments
 
-Also, you can quickly switch traffic between your environments (e.g. to redirect customers to the newer application version without downtime) by utilizing the [swap domains](https://cloudmydc.com/) functionality or with the help of the **_SwapExtIps_** [API](https://cloudmydc.com/)/[CLI](https://cloudmydc.com/) method.
+Also, you can quickly switch traffic between your environments (e.g. to redirect customers to the newer application version without downtime) by utilizing the [swap domains](https://cloudmydc.com/) functionality or with the help of the **_SwapExtIps_** [API](https://cloudmydc.com/)/[CLI](http://localhost:3000/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview) method.
 
 <div style={{
     display:'flex',

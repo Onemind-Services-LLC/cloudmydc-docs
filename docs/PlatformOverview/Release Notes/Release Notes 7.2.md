@@ -294,7 +294,7 @@ CloudMyDc Application Platform supports the most popular [operating system templ
 
 :::tip Note
 
-Do not confuse OS templates (base image for containers) support with container templates ([stacks](https://cloudmydc.com/)).
+Do not confuse OS templates (base image for containers) support with container templates ([stacks](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions)).
 
 :::
 

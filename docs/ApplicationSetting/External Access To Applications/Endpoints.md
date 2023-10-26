@@ -30,7 +30,7 @@ The **Endpoints** feature at the platform refers to the possibility of TCP/UDP p
 
 </div>
 </div>
-This is achieved through providing the ability to establish the direct connection (over either raw TCP or UDP protocol) to the corresponding node, without the mandatory [Public IP](https://cloudmydc.com/) address attached.
+This is achieved through providing the ability to establish the direct connection (over either raw TCP or UDP protocol) to the corresponding node, without the mandatory [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address attached.
 
 Such linking can be used to enable a great variety of different tasks, like remote database management, direct apps' [deployment from IDE](https://cloudmydc.com/) (for _IIS_), running multiple project copies on a single instance, accessing a server’s admin panel with no external address bound, etc.
 

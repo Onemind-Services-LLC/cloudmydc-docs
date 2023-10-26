@@ -50,7 +50,7 @@ In this article, we’ll go through the distinctive features of the [Ruby](https
 
 The platform provides a powerful and intuitive topology wizard to [set up](https://cloudmydc.com/) the hosting of a new environment.
 
-Switch to the _Ruby_ language tab, select the required application server and engine version, add any other [software stack](https://cloudmydc.com/) required. If needed, adjust other parameters, such as cloudlets (RAM and CPU), disk space, public IPv4/IPv6, node count, etc.
+Switch to the _Ruby_ language tab, select the required application server and engine version, add any other [software stack](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions) required. If needed, adjust other parameters, such as cloudlets (RAM and CPU), disk space, public IPv4/IPv6, node count, etc.
 
 :::tip Note
 
@@ -246,10 +246,10 @@ The process is simple, access the environment **Settings > Monitoring > Auto Hor
 
 In addition, hosting at the PaaS allows using other built-in tools and features, for example:
 
-- [Built-in](https://cloudmydc.com/) or [Custom SSL](https://cloudmydc.com/)
+- [Built-in](https://cloudmydc.com/) or [Custom SSL](http://localhost:3000/docs/ApplicationSetting/SSL/Custom%20SSL)
 - [Public IPv4 and IPv6](https://cloudmydc.com/)
-- A wide range of complementary [software stacks](https://cloudmydc.com/), including SQL and NoSQL databases
-- [Container firewalls](https://cloudmydc.com/), [endpoints](https://cloudmydc.com/) and [environment network isolation](https://cloudmydc.com/)
+- A wide range of complementary [software stacks](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions), including SQL and NoSQL databases
+- [Container firewalls](https://cloudmydc.com/), [endpoints](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints) and [environment network isolation](https://cloudmydc.com/)
 - [User-friendly UI](https://cloudmydc.com/) and [SSH access](https://cloudmydc.com/)
 - [Open API](https://cloudmydc.com/) and [Cloud Scripting](https://cloudmydc.com/) for automation
 - [Pay-per-use pricing model](https://cloudmydc.com/)

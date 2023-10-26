@@ -26,7 +26,7 @@ During diagnostic, the add-on checks the following:
 
 In order to perform the required recovery operations, the add-on applies the following adjustments to the database cluster during the installation:
 
-A replica user is added to perform the validation of the clusters. Also, this user is used in the ProxySQL configuration. The credentials can be viewed via the dedicated [environment variables](https://cloudmydc.com/):
+A replica user is added to perform the validation of the clusters. Also, this user is used in the ProxySQL configuration. The credentials can be viewed via the dedicated [environment variables](http://localhost:3000/docs/Container/Container%20Configuration/Variables):
 
 - **REPLICA_USER**: repl-xxxxxx
 - **REPLICA_PSWD**: xxxxxxxxxxxx
