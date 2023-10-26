@@ -4,7 +4,7 @@ sidebar_position: 2
 
 ## Public IP
 
-The platform provides users with [Shared Load Balancer](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) (SLB) as a default single entry point for all of the hosted applications, located on the hardware nodes. However, for the production environments, it is recommended receiving and processing the requests via **Public IP** address(es) that form a direct connection between the Internet and a specific container. Compared to the access over SLB, such approach ensures more secure and effective interaction.
+The platform provides users with [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) (SLB) as a default single entry point for all of the hosted applications, located on the hardware nodes. However, for the production environments, it is recommended receiving and processing the requests via **Public IP** address(es) that form a direct connection between the Internet and a specific container. Compared to the access over SLB, such approach ensures more secure and effective interaction.
 
 <div style={{
     display:'flex',
@@ -16,7 +16,7 @@ The platform provides users with [Shared Load Balancer](http://localhost:3000/do
 
 </div>
 
-Public IP can be attached to any software stack in your environment (except, [Memcached](https://cloudmydc.com/) node), representing a more stable solution with less risk to be affected by other applications. Also, it opens access to such features as [FTP add-on](https://cloudmydc.com/), [Custom SSL](http://localhost:3000/docs/ApplicationSetting/SSL/Custom%20SSL), [remote debugging](https://cloudmydc.com/) from IDE, [WebSockets](https://cloudmydc.com/), etc.
+Public IP can be attached to any software stack in your environment (except, [Memcached](https://cloudmydc.com/) node), representing a more stable solution with less risk to be affected by other applications. Also, it opens access to such features as [FTP add-on](https://cloudmydc.com/), [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL), [remote debugging](https://cloudmydc.com/) from IDE, [WebSockets](https://cloudmydc.com/), etc.
 
 The platform supports two versions of the [Internet Protocol](https://cloudmydc.com/):
 
@@ -37,8 +37,8 @@ In order to bind an external IP address to the required node, you need to enable
 
 :::danger notes
 
-- Enabling Public IPv4 turns off the [Access via SLB](https://cloudmydc.com/) option by default. It may cause a temporary (a few minutes) disruption in environment access due to the DNS cache.
-- In case of attaching external IPs for the [horizontally scaled](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) nodes, each container within the layer will be supplied with its own set of addresses.
+- Enabling Public IPv4 turns off the [Access via SLB](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) option by default. It may cause a temporary (a few minutes) disruption in environment access due to the DNS cache.
+- In case of attaching external IPs for the [horizontally scaled](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) nodes, each container within the layer will be supplied with its own set of addresses.
 
 :::
 
@@ -62,8 +62,8 @@ Here, upon hovering over IPs, you can get access to the following functionality:
 
 :::tip Note
 
-- The public IP is a paid option, which is charged for every hour of its usage. The exact price is defined by your particular hosting service provider and can be found at the **[Quotas & Pricing](http://localhost:3000/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-much-do-resources-cost) > Pricing > Options** frame of the dashboard.
-- If you have public IP enabled for any node in your environment, you can’t use the [swap domains](https://cloudmydc.com/) functionality for it. Consider utilizing the [swap Public IPs](https://cloudmydc.com/) API instead.
+- The public IP is a paid option, which is charged for every hour of its usage. The exact price is defined by your particular hosting service provider and can be found at the **[Quotas & Pricing](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-much-do-resources-cost) > Pricing > Options** frame of the dashboard.
+- If you have public IP enabled for any node in your environment, you can’t use the [swap domains](/docs/ApplicationSetting/Domain%20Name%20Management/Swap%20Domains) functionality for it. Consider utilizing the [swap Public IPs](https://cloudmydc.com/) API instead.
 - If working with [multiple public IPs](https://cloudmydc.com/), the very first external address attached (of each IPv4 and IPv6 types) is considered a **_primary_** one and can only be deleted last. It is used for both incoming and outgoing traffic, while the rest of IPs can only receive it.
 
 :::

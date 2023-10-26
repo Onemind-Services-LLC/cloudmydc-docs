@@ -4,7 +4,7 @@ sidebar_position: 6
 
 ## Self-Signed Custom SSL Certificates
 
-One of the ways to secure your application is to use SSL-encrypted (Secure Sockets Layer) connection. With the platform, you can use both [Built-In SSL](https://cloudmydc.com/) and [Custom SSL](http://localhost:3000/docs/ApplicationSetting/SSL/Custom%20SSL) certificates.
+One of the ways to secure your application is to use SSL-encrypted (Secure Sockets Layer) connection. With the platform, you can use both [Built-In SSL](/docs/ApplicationSetting/SSL/Built-In%20SSL) and [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL) certificates.
 
 Herewith, all custom SSL certificates require to be signed, and usually, this is done by the Certificate Authority (CA) companies (e.g. [Let’s Encrypt](https://cloudmydc.com/)). In this case, your certificate becomes reliable after signing, so others can trust it and any connection to your site or application is performed without issues.
 
@@ -315,14 +315,14 @@ Great! Now you have the self-signed SSL certificate for your application.
 
 ## Elastic VPS
 
-You also have the possibility to create your self-signed certificate using the [Elastic VPS](https://cloudmydc.com/) server. For that you need to:
+You also have the possibility to create your self-signed certificate using the [Elastic VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information) server. For that you need to:
 
 - create an environment with Elastic VPS inside
-- connect to it in a preferred way (using [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) or via [SSH Gateway](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Overview))
+- connect to it in a preferred way (using [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) or via [SSH Gateway](/docs/Deployment%20Tools/SSH/SSH%20Overview))
 - access the OpenSSL shell with the corresponding **_openssl_** command
 - create a self-signed certificate following the [Linux/MacOS/FreeBSD](https://cloudmydc.com/) section of this guide (the only difference is all the commands should be executed without the **_openssl_** word at their beginning, as you are already inside the OpenSSL shell)
 
-Once the generation process is finished, you need to download the created certificate files (e.g. via [configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager)) to apply them to the necessary environment afterward.
+Once the generation process is finished, you need to download the created certificate files (e.g. via [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager)) to apply them to the necessary environment afterward.
 
 ## Attach Certificates
 

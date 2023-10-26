@@ -33,7 +33,7 @@ sidebar_position: 2
 
 It supports a plenty of mail transfer protocols (such as SMTP, ESMTP and others), being designed to route emails over the Internet and internal networks.
 
-The platform delivers Sendmail included to all of the application servers' builds (except the [IIS](https://cloudmydc.com/) ones) by default. However, the ability to run this service in a container depends on a particular hosting providers' settings - at some platforms, it could be available only in case of a bound [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address presence. So, let’s consider how to:
+The platform delivers Sendmail included to all of the application servers' builds (except the [IIS](https://cloudmydc.com/) ones) by default. However, the ability to run this service in a container depends on a particular hosting providers' settings - at some platforms, it could be available only in case of a bound [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address presence. So, let’s consider how to:
 
 - [check the Sendmail availability](https://cloudmydc.com/)
 - [enable Sendmail in case it is not run](https://cloudmydc.com/)
@@ -57,14 +57,14 @@ In order to discover whether your hosting service provider allows to run Sendmai
 
 - or check this manually in a few simple steps for any of your app server containers, following the instruction below:
 
-1. Connect to your account via the platform [SSH Gateway](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Overview).
+1. Connect to your account via the platform [SSH Gateway](/docs/Deployment%20Tools/SSH/SSH%20Overview).
 
 :::tip
 
 In case you haven’t performed similar operations before, you need to:
 
-- [generate](http://localhost:3000/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) an SSH keypair
-- [add your public SSH key](http://localhost:3000/docs/Deployment%20Tools/SSH/Add%20SSH%20Key) to the dashboard
+- [generate](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) an SSH keypair
+- [add your public SSH key](/docs/Deployment%20Tools/SSH/Add%20SSH%20Key) to the dashboard
 - [establish the connection](https://cloudmydc.com/) over SSH protocol
 
 :::
@@ -85,7 +85,7 @@ Otherwise, i.e. in case the appropriate line is absent, proceed to the next sect
 
 ## Enable Sendmail
 
-The easiest way to launch Sendmail is to enable [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) for your application server via the topology wizard (either while [environment creation](https://cloudmydc.com/), or, for the already running environment, it can be accessed with the help of the **Change environment topology** button).
+The easiest way to launch Sendmail is to enable [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) for your application server via the topology wizard (either while [environment creation](https://cloudmydc.com/), or, for the already running environment, it can be accessed with the help of the **Change environment topology** button).
 
 Then just turn on the corresponding switcher at the App Server layer and confirm the changes with the **Apply** button at the bottom right corner of the wizard frame.
 
@@ -111,7 +111,7 @@ As an option, you can appeal to your hoster’s Support team and negotiate getti
 
 You can discover how Sendmail is working by sending a simple test email. This can be accomplished right from the command line - for that:
 
-1. Connect to your application server (with the Sendmail service already running) [via SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Overview).
+1. Connect to your application server (with the Sendmail service already running) [via SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview).
 
 2. Execute the following line of code in order to send a letter:
 

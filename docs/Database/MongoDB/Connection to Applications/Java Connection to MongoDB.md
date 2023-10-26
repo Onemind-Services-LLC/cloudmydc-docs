@@ -196,7 +196,7 @@ public class MongoManager {
 }
 ```
 
-2. Any application can be deployed using either platform [Deployment Manager](https://cloudmydc.com/) (with a local file/URL as a source) or [Maven](https://cloudmydc.com/) (for deployment from GIT/SVN).
+2. Any application can be deployed using either platform [Deployment Manager](https://cloudmydc.com/) (with a local file/URL as a source) or [Maven](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven) (for deployment from GIT/SVN).
 
 For testing, you can try our ready-to-use [mongoclient.war](https://cloudmydc.com/) project, which already contains the appropriate connector driver (or download its [sources](https://cloudmydc.com/) and adjust it in any preferred way).
 

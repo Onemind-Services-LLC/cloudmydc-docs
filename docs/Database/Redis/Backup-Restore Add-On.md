@@ -16,7 +16,7 @@ When updating (redeploying) the PostgreSQL instance, it is <u>highly recommended
 
 Before starting the add-on installation, you need to create a dedicated storage instance to keep all the backup data.
 
-1. If you don’t have one, it can be created in a few minutes using the dedicated **Backup Storage** package in the [platform Marketplace](https://cloudmydc.com/).
+1. If you don’t have one, it can be created in a few minutes using the dedicated **Backup Storage** package in the [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace).
 
 <div style={{
     display:'flex',

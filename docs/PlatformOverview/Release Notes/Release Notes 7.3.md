@@ -257,7 +257,7 @@ Fixed
 
 ## Dashboard Performance Optimization
 
-One of the major benefits the platform is renowned for is a versatile and robust user interface ([dashboard](http://localhost:3000/docs/QuickStart/Dashboard%20Guide)). It provides users with all the necessary tools to track and manage all hosted resources. However, when working with a large number of environments on the account (over 100), the drop in the dashboard’s performance can be noted. In order to resolve the issue and improve customers' experience, several internal optimizations were applied in the 7.3 platform release to boost the operation speed when working with a lot of environments.
+One of the major benefits the platform is renowned for is a versatile and robust user interface ([dashboard](/docs/QuickStart/Dashboard%20Guide)). It provides users with all the necessary tools to track and manage all hosted resources. However, when working with a large number of environments on the account (over 100), the drop in the dashboard’s performance can be noted. In order to resolve the issue and improve customers' experience, several internal optimizations were applied in the 7.3 platform release to boost the operation speed when working with a lot of environments.
 
 Among the applied changes, the most notable are:
 

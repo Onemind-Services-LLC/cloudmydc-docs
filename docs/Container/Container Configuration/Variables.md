@@ -2,11 +2,11 @@
 sidebar_position: 2
 ---
 
-At the **Variables** tab, you can view and manage a list of the [environment variables](http://localhost:3000/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables) for the current layer.
+At the **Variables** tab, you can view and manage a list of the [environment variables](/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables) for the current layer.
 
-In case of [CLI client](http://localhost:3000/docs/Container/Container%20Configuration/Links), variables from other nodes within the environment will be also displayed in the same tab with a special prefix. In addition, they can be edited on a fly, automatically applying changes to all source and target containers.
+In case of [CLI client](/docs/Container/Container%20Configuration/Links), variables from other nodes within the environment will be also displayed in the same tab with a special prefix. In addition, they can be edited on a fly, automatically applying changes to all source and target containers.
 
-1. To state a [custom variable](http://localhost:3000/docs/EnvironmentManagement/EnvironmentVariables/Custom%20Environment%20Variables), click the **Add** button and fill in the appeared cells with the required variable Name and Value.
+1. To state a [custom variable](/docs/EnvironmentManagement/EnvironmentVariables/Custom%20Environment%20Variables), click the **Add** button and fill in the appeared cells with the required variable Name and Value.
 
 :::danger Note
 

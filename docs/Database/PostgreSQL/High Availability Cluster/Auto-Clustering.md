@@ -75,7 +75,7 @@ When finished, you’ll be shown the appropriate notification with data for Post
 
 PostgreSQL database cluster can be enabled via the embedded **Auto-Clustering** feature at the dashboard. It provides more customization options compared to the marketplace option while still automating all the configuration processes.
 
-1. Open a new environment [topology wizard](http://localhost:3000/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment), pick the **_PostgreSQL_** database software stack and just turn on a dedicated **Auto-Clustering** switch. If needed, you can enable Pgpool-II load balancer for your cluster.
+1. Open a new environment [topology wizard](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment), pick the **_PostgreSQL_** database software stack and just turn on a dedicated **Auto-Clustering** switch. If needed, you can enable Pgpool-II load balancer for your cluster.
 
 <div style={{
     display:'flex',

@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Kubernetes provides multiple options to deploy applications. One of the most common methods is to use the **[Helm](https://cloudmydc.com/)** package manager. If you are looking to run a popular or any relatively known solution in your Kubernetes cluster, most likely it can be found as a preconfigured package that can be installed in a matter of minutes. Helm helps you install Kubernetes applications from remote repositories as well as create local Helm charts.
 
-Helm is available on all control plane nodes of the **Kubernetes Cluster** by default and requires no additional configuration. Just connect to the node (e.g. via [Web SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)), and you can start working with Helm. The package manager version is automatically updated during the [Kubernetes Cluster upgrades](https://cloudmydc.com/).
+Helm is available on all control plane nodes of the **Kubernetes Cluster** by default and requires no additional configuration. Just connect to the node (e.g. via [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)), and you can start working with Helm. The package manager version is automatically updated during the [Kubernetes Cluster upgrades](https://cloudmydc.com/).
 
 Helm works with three big concepts:
 

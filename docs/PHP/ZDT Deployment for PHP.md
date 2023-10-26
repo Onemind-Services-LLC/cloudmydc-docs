@@ -136,7 +136,7 @@ As normal, the application is ready to handle requests just after the deployment
 
 If navigating inside the _ROOT_ directory, circled above, the content of the currently used application version will be viewed, i.e. it is changed each time the symlink is switched.
 
-This can be clearly seen if entering your application server’s container [via SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) and executing the long format file-listing command for your **webroot** folder, i.e.:
+This can be clearly seen if entering your application server’s container [via SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) and executing the long format file-listing command for your **webroot** folder, i.e.:
 
 <div style={{
     width: '100%',

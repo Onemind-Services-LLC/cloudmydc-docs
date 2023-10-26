@@ -58,7 +58,7 @@ Herewith, the placeholders should be replaced with the next values:
 
 </div>
 
-- **_${envName}_** - environment name (not an [alias](https://cloudmydc.com/)), specified during its creation
+- **_${envName}_** - environment name (not an [alias](/docs/EnvironmentManagement/Environment%20Aliases)), specified during its creation
 - **_${platformDomain}_** - domain name of a PaaS installation [hosting service provider](https://cloudmydc.com/)
 
 Both variants can be used for refering to the nodes from inside or outside of the platform (i.e. allowing to establish both internal and external connections).
@@ -272,14 +272,14 @@ All the newly created Docker containers and dockerized platform-managed stacks a
 - **_node${nodeId}_** - alias to refer to a container in confines of a single environment
 - **_${nodeGroup}_** - alias to refer to a layer in confines of a single environment
 
-Utilizing such short hostnames in server configuration files, application source code and [SSH](https://cloudmydc.com/) console (within often used commands like _ping, host, dig_, etc.) makes operating with Dockerized stacks via Platform internal network much more convenient. Additionally, such approach enables painless [environment migration](https://cloudmydc.com/) to another h[ardware region](https://cloudmydc.com/) through eliminating the necessity to adjust your application code due to the changed server location.
+Utilizing such short hostnames in server configuration files, application source code and [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview) console (within often used commands like _ping, host, dig_, etc.) makes operating with Dockerized stacks via Platform internal network much more convenient. Additionally, such approach enables painless [environment migration](https://cloudmydc.com/) to another h[ardware region](https://cloudmydc.com/) through eliminating the necessity to adjust your application code due to the changed server location.
 
 ## Hostnames for Linked Containers
 
 Upon [linking](https://cloudmydc.com/) two Docker-based environment layers, a set of dedicated DNS records are automatically added to the global platform database. This allows to refer to the nodes within a _target_ layer from the _source_ ones (but not vice versa) when working in confines of these two layers using the following hostname aliases:
 
 - **${linkAlias}** - to refer to a random node within a target layer; an exact node to respond is chosen by means of the Round-Robin algorithm - this ensures even load distribution
-- **_${linkAlias}_${N}_** - to access a particular container within a target layer
+- **_${linkAlias}_${N}\_** - to access a particular container within a target layer
 
 Here, the appropriate placeholders are to be substituted with:
 
@@ -305,7 +305,7 @@ For example, if there are three containers on a layer - with the _123, 124_ (mas
 
 :::tip Tip
 
-By appending an environment domain to the alias **_${linkAlias}.${envName}.${platformDomain}_**, the corresponding linked layer name can be resolved and accessed externally, i.e. from anywhere over the Internet. And by **_${linkAlias}_${N}_** corresponding container of a linked layer can be resolved internally only, within the linked layers network.
+By appending an environment domain to the alias **_${linkAlias}.${envName}.${platformDomain}_**, the corresponding linked layer name can be resolved and accessed externally, i.e. from anywhere over the Internet. And by **_${linkAlias}_${N}\_** corresponding container of a linked layer can be resolved internally only, within the linked layers network.
 
 :::
 

@@ -24,7 +24,7 @@ Locating instances within a single environment is just an example, you can estab
 
 :::
 
-2. After environment creation, access your application server via SSH Gate, e.g. by pressing the **[Web SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)** button.
+2. After environment creation, access your application server via SSH Gate, e.g. by pressing the **[Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)** button.
 
 <div style={{
     display:'flex',

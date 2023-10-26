@@ -98,7 +98,7 @@ The project created with this option can be automatically uploaded to the [Deplo
 
 - **Edit project** - opens a form to edit data specified in the project addition frame described in the previous step
 
-- **Config** - opens the build project folder within the [configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager)
+- **Config** - opens the build project folder within the [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager)
 
 - **Log** - opens the Log section for issues troubleshooting and analysis
 

@@ -186,7 +186,7 @@ Fixed
 
 The platform implements support for the **Debian 11** “bullseye” OS templates on all the PaaS installations (available for all platforms starting with the PaaS 6.0 release). It is an LTS (Long Term Support) version with an estimated support period of five years. The new release provides a massive update of the default packages list, kernel support for the exFAT filesystem, and many other improvements, optimizations, and security fixes. For detailed information, refer to the official [Debian 11 release notes](https://cloudmydc.com/).
 
-Also, Debian 11 was added as an out-of-box [Elastic VPS](https://cloudmydc.com/) stack in the platform dashboard.
+Also, Debian 11 was added as an out-of-box [Elastic VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information) stack in the platform dashboard.
 
 <div style={{
     display:'flex',

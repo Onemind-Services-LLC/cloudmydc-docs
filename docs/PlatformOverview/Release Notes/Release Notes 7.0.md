@@ -214,7 +214,7 @@ You can find information on even more changes to the collaboration feature (abil
 
 - [Collaboration Overview](https://cloudmydc.com/)
 - [Collaboration Roles & Policies](https://cloudmydc.com/)
-- [Create Collaboration](https://cloudmydc.com/)
+- [Create Collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Create%20Collaboration)
 - [Collaboration User Experience](https://cloudmydc.com/)
 - [Share Environment](https://cloudmydc.com/)
 
@@ -241,7 +241,7 @@ During the upgrade, the platform automatically generates configurations equivale
 Below, you can find a list of all changes to the public API in the 7.0 platform version (compared to the preceding [6.3](https://cloudmydc.com/) ones):
 
 - in the **users** namespace:
-  - added a new **[collaboration](https://cloudmydc.com/)** service
+  - added a new **[collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview)** service
   - removed methods from the **[account](https://cloudmydc.com/)** service: _SetLinkedUserDisplayName_, _SetOwnerUserDisplayName_, _ConfirmLinkRequest_, _UnlinkLinkedUser_, _UnlinkOwnerUser_, _GetLinkedUsers_, _GetOwnerUsers_, _GetLinkedUsersByLogin_, _GetOwnerUsersByLogin_, _GetPayerQuotas_, _HazelcastPartitionsTest_, _LinkUsers_, _SetLinkedUserRole_, _SetLinkedUserDisplayName_, _SetOwnerUserDisplayName_, _ConfirmLinkRequest_, _UnlinkLinkedUser_, _UnlinkOwnerUser_, _GetLinkedUsers_, _GetOwnerUsers_, _SendLinkRequest_, _LinkUsersInner_
 - in the **marketplace** namespace:
   - added new **[favorite](https://cloudmydc.com/)**, **[installation](https://cloudmydc.com/)**, and **[app services](https://cloudmydc.com/)**

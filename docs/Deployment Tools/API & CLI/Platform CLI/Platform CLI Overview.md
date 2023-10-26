@@ -4,7 +4,7 @@ sidebar_position: 1
 
 ## Platform CLI Overview
 
-The platform command-line interface (**CLI**) is designed to simplify interaction with your Cloud Platform account, allowing you to execute required commands via your local machine’s terminal. It can handle the vast majority of available operations remotely, complementing the wide stack of capabilities provided via the [dashboard](http://localhost:3000/docs/QuickStart/Dashboard%20Guide) and [platform API](https://cloudmydc.com/).
+The platform command-line interface (**CLI**) is designed to simplify interaction with your Cloud Platform account, allowing you to execute required commands via your local machine’s terminal. It can handle the vast majority of available operations remotely, complementing the wide stack of capabilities provided via the [dashboard](/docs/QuickStart/Dashboard%20Guide) and [platform API](https://cloudmydc.com/).
 
 <div style={{
     display:'flex',
@@ -168,8 +168,8 @@ Ensuring the full-functional remote management, platform CLI works with all type
 - [environment cloning](https://cloudmydc.com/)
 - [environment migration](https://cloudmydc.com/)
 - [server scaling](https://cloudmydc.com/)
-- [container redeploy](https://cloudmydc.com/)
-- [container volumes](http://localhost:3000/docs/Container/Container%20Configuration/Volumes)
+- [container redeploy](/docs/Container/Container%20Redeploy)
+- [container volumes](/docs/Container/Container%20Configuration/Volumes)
 - [mount points](https://cloudmydc.com/)
 - [VCS projects deployment](https://cloudmydc.com/)
 - [swap Public IPs](https://cloudmydc.com/)

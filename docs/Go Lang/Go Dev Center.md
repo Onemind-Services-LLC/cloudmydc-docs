@@ -22,7 +22,7 @@ In this guide, you’ll get acquainted with the distinctive features of the Go h
 - [Golang Versioning](https://cloudmydc.com/)
 - [Go Application Deployment](https://cloudmydc.com/)
 - [Domains Management](https://cloudmydc.com/)
-- [Automatic Vertical Scaling](https://cloudmydc.com/)
+- [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling)
 - [Manual Horizontal Scaling](https://cloudmydc.com/)
 - [Automatic Horizontal Scaling](https://cloudmydc.com/)
 
@@ -72,7 +72,7 @@ The up-to-date list of the releases available on the platform is provided via th
 
 :::
 
-You can choose the preferred version during environment creation and change it later through [container redeploy](https://cloudmydc.com/). Herewith, all the custom data inside the node(s) will be saved, which, for example, allows to easily upgrade your software version upon the new stack template release.
+You can choose the preferred version during environment creation and change it later through [container redeploy](/docs/Container/Container%20Redeploy). Herewith, all the custom data inside the node(s) will be saved, which, for example, allows to easily upgrade your software version upon the new stack template release.
 
 <div style={{
     display:'flex',
@@ -88,7 +88,7 @@ You can choose the preferred version during environment creation and change it l
 
 After environment creation, you can [deploy](https://cloudmydc.com/) your Go project from the Git repository (the deployment from application archive will be implemented in the upcoming platform release).
 
-It is possible to customize the deployment process by providing or adjusting the following container [Variables](http://localhost:3000/docs/Container/Container%20Configuration/Variables):
+It is possible to customize the deployment process by providing or adjusting the following container [Variables](/docs/Container/Container%20Configuration/Variables):
 
 - **_GO_RUN_** - sets a name of the executable binary file (if not specified, the deployment script will try to locate one based on the Git project name)
 - **_GOPATH_** - defines the deployment folder (_/home/jelastic/webapp_, by default)
@@ -129,7 +129,7 @@ With the platform you can easily bind an [external (custom) domain](https://clou
 - **CNAME redirect** if using _Shared Load Balancer_; is recommended for **_dev_** and **_test_** environments
 - **DNS A Record** if using _public IP_; can handle high traffic load and is suitable for **_production_** environments
 
-Additionally, you can easily [swap domains](https://cloudmydc.com/) to redirect traffic from one environment to another (e.g. to switch to the newer application version without downtime).
+Additionally, you can easily [swap domains](/docs/ApplicationSetting/Domain%20Name%20Management/Swap%20Domains) to redirect traffic from one environment to another (e.g. to switch to the newer application version without downtime).
 
 <div style={{
     display:'flex',
@@ -143,7 +143,7 @@ Additionally, you can easily [swap domains](https://cloudmydc.com/) to redirect 
 
 :::tip Tip
 
-For the access via public IP, the traffic can be redirected to another environment with the help of the [**_SwapExtIps_**](https://cloudmydc.com/) API method (also, available via [CLI](http://localhost:3000/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview)).
+For the access via public IP, the traffic can be redirected to another environment with the help of the [**_SwapExtIps_**](https://cloudmydc.com/) API method (also, available via [CLI](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview)).
 
 :::
 
@@ -151,7 +151,7 @@ For the access via public IP, the traffic can be redirected to another environme
 
 Automatic vertical scaling is ensured by the platform’s ability to dynamically provide the resources (RAM and CPU) for a server within predefined limits according to its current demands, with no manual intervention required. This feature guarantees you [never overpay for unused resources](https://cloudmydc.com/) and saves your time due to eliminating the necessity of handling the load-related adjustments or architectural changes.
 
-The scaling process is handled by platform automatically, you just need to specify the lower and upper [cloudlets](https://cloudmydc.com/) limit (each one equals to _128 MiB_ of RAM and _400 MHz_ of CPU) for your Go server through the topology wizard:
+The scaling process is handled by platform automatically, you just need to specify the lower and upper [cloudlets](/docs/PlatformOverview/Cloudlet) limit (each one equals to _128 MiB_ of RAM and _400 MHz_ of CPU) for your Go server through the topology wizard:
 
 <div style={{
     display:'flex',
@@ -163,7 +163,7 @@ The scaling process is handled by platform automatically, you just need to speci
 
 </div>
 
-Your application will work within these limits reducing resource consumption when the load is down or increasing them when the load is up. Thus, you only pay for the resources that are actually consumed. For more information, please refer to the [automatic vertical scaling](https://cloudmydc.com/) documentation.
+Your application will work within these limits reducing resource consumption when the load is down or increasing them when the load is up. Thus, you only pay for the resources that are actually consumed. For more information, please refer to the [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling) documentation.
 
 ## Manual Horizontal Scaling
 
@@ -181,7 +181,7 @@ Extra Golang servers can be easily added via the topology wizard during environm
 
 The maximum number of the same-type servers within a single environment layer depends on a particular hosting provider settings (usually this limit stands for 16 nodes and can be enlarged by sending the appropriate request to support).
 
-Also, you can notice that upon Golang server scaling, the [load balancing](https://cloudmydc.com/) node is automatically added to environment topology (required for the proper requests distribution). Find more details about manual [horizontal scaling](https://cloudmydc.com/) in the documentation.
+Also, you can notice that upon Golang server scaling, the [load balancing](https://cloudmydc.com/) node is automatically added to environment topology (required for the proper requests distribution). Find more details about manual [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) in the documentation.
 
 ## Automatic Horizontal Scaling
 

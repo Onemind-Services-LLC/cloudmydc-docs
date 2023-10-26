@@ -31,7 +31,7 @@ One of the most common problems you can face upon your project growth is the nec
 </div>
 </div>
 
-So, in order to ease these problems' resolution, the platform offers a completely free and easy-to-use solution based on the automatically configured load balancer. It is delivered as a special **_Traffic Distributor_** add-on, which is available for quick one-click installation through [platform Marketplace](https://cloudmydc.com/) and provides smart traffic routing based on your requirements.
+So, in order to ease these problems' resolution, the platform offers a completely free and easy-to-use solution based on the automatically configured load balancer. It is delivered as a special **_Traffic Distributor_** add-on, which is available for quick one-click installation through [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) and provides smart traffic routing based on your requirements.
 
 <div style={{
     display:'flex',
@@ -119,7 +119,7 @@ All you need to do to get your own Traffic Distributor is to fill in the form wi
 
 </div>
 
-Before the installation, you can choose an entry point - i.e. requests will be processed through either [Shared Load Balancer](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) or [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address(es).
+Before the installation, you can choose an entry point - i.e. requests will be processed through either [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) or [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address(es).
 
 :::tip Tip
 
@@ -127,4 +127,4 @@ Traffic Distributor works using standard _HTTP_ and _HTTPS_ protocols and is als
 
 :::
 
-In such a way, you can get an extremely flexible Traffic Distributor tool that can help you in accomplishing various goals. From simple scenarios of even servers' loading to more complex ones like applying [blue-green deployment](https://cloudmydc.com/) to install app updates with zero downtime, performing [ongoing A/B testing](https://cloudmydc.com/), applying [advanced failover protection](https://cloudmydc.com/), etc.
+In such a way, you can get an extremely flexible Traffic Distributor tool that can help you in accomplishing various goals. From simple scenarios of even servers' loading to more complex ones like applying [blue-green deployment](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/Blue-Green%20Deploy) to install app updates with zero downtime, performing [ongoing A/B testing](https://cloudmydc.com/), applying [advanced failover protection](https://cloudmydc.com/), etc.

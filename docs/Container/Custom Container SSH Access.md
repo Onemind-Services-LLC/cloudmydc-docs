@@ -10,9 +10,9 @@ Since custom containers don’t have the embedded GUI for their management, the 
 
 With the PaaS, the majority of the required configurations can be performed directly through the dashboard without the necessity to use SSH, thanks to the following tools:
 
-- [Container Configurations](http://localhost:3000/docs/Container/Container%20Configuration/Configuration%20Tools) - allows to customize the main container settings (like variables, volumes, linking, run options, opened ports, etc.)
-- [Configuration Manager](http://localhost:3000/docs/Container/Container%20Configuration/Configuration%20Tools#configuration-file-manager) - provides the full root access to the container’s file system, allowing to operate with all of the comprised files
-  In addition, you can leverage the platform-dedicated [CLI client](http://localhost:3000/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview), which provides the advanced remote management for all types of environments and nodes and allows to automate your app’s lifecycle via scripts.
+- [Container Configurations](/docs/Container/Container%20Configuration/Configuration%20Tools) - allows to customize the main container settings (like variables, volumes, linking, run options, opened ports, etc.)
+- [Configuration Manager](/docs/Container/Container%20Configuration/Configuration%20Tools#configuration-file-manager) - provides the full root access to the container’s file system, allowing to operate with all of the comprised files
+  In addition, you can leverage the platform-dedicated [CLI client](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview), which provides the advanced remote management for all types of environments and nodes and allows to automate your app’s lifecycle via scripts.
 
 :::
 
@@ -20,11 +20,11 @@ SSH connection to a container can be established in two ways:
 
 - through the SSH Gateway as for any other environment. The flow will be the following:
 
-  - [generate](http://localhost:3000/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) an SSH keypair
-  - [add your public SSH key](http://localhost:3000/docs/Deployment%20Tools/SSH/Add%20SSH%20Key) to the dashboard
-  - [access your account](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) via SSH protocol
+  - [generate](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) an SSH keypair
+  - [add your public SSH key](/docs/Deployment%20Tools/SSH/Add%20SSH%20Key) to the dashboard
+  - [access your account](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) via SSH protocol
 
-- or, if you don’t want to use SSH keys, you need to attach the [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address to the required node and perform the next steps:
+- or, if you don’t want to use SSH keys, you need to attach the [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address to the required node and perform the next steps:
 
   - open your **terminal** emulator
   - enter the **_ssh [username]@[hostname]_** string, where the **username** is your login, and hostname is the Public IP address (you receive these credentials via email everytime a new container is created or added to the environment)

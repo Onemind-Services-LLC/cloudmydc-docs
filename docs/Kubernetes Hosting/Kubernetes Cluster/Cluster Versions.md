@@ -27,7 +27,7 @@ By hosting a Kubernetes Cluster at the platform, you can get the following benef
 
 :::tip Tip
 
-More specifics and in-depth description with use case examples are provided in the appropriate **[Kubernetes Cluster](https://cloudmydc.com/)** article on our blog.
+More specifics and in-depth description with use case examples are provided in the appropriate **[environment](/docs/Kubernetes%20Hosting/Kubernetes%20Cluster/Kubernetes%20Overview)** article on our blog.
 
 :::
 
@@ -35,7 +35,7 @@ Below, we’ll overview all of the Kubernetes Cluster versions and describe impl
 
 ## K8s Package Change Log
 
-You can check the source code of the **_[Kubernetes Cluster](https://cloudmydc.com/)_** package at GitHub. You can overview changes in each of the versions by clicking on the required record in the list below.
+You can check the source code of the **_[environment](/docs/Kubernetes%20Hosting/Kubernetes%20Cluster/Kubernetes%20Overview)_** package at GitHub. You can overview changes in each of the versions by clicking on the required record in the list below.
 
 :::danger Note
 

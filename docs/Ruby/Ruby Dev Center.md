@@ -42,7 +42,7 @@ In this article, we’ll go through the distinctive features of the [Ruby](https
 - [Ruby Dependency Management](https://cloudmydc.com/)
 - [Ruby Post Deploy Configuration](https://cloudmydc.com/)
 - [Domains Management](https://cloudmydc.com/)
-- [Automatic Vertical Scaling](https://cloudmydc.com/)
+- [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling)
 - [Manual Horizontal Scaling](https://cloudmydc.com/)
 - [Automatic Horizontal Scaling](https://cloudmydc.com/)
 
@@ -50,7 +50,7 @@ In this article, we’ll go through the distinctive features of the [Ruby](https
 
 The platform provides a powerful and intuitive topology wizard to [set up](https://cloudmydc.com/) the hosting of a new environment.
 
-Switch to the _Ruby_ language tab, select the required application server and engine version, add any other [software stack](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions) required. If needed, adjust other parameters, such as cloudlets (RAM and CPU), disk space, public IPv4/IPv6, node count, etc.
+Switch to the _Ruby_ language tab, select the required application server and engine version, add any other [software stack](/docs/QuickStart/Software%20Stack%20Versions) required. If needed, adjust other parameters, such as cloudlets (RAM and CPU), disk space, public IPv4/IPv6, node count, etc.
 
 :::tip Note
 
@@ -163,7 +163,7 @@ You can provide a [custom domain](https://cloudmydc.com/) name for your Ruby app
 - **CNAME redirect** if using _Shared Load Balancer_; is recommended for **_dev_** and **_test_** environments
 - **DNS A Record** if using _public IP_; can handle high traffic load and is suitable for **_production_** environments
 
-To switch traffic from one environment to another (e.g. to redirect customers to the newer application version without downtime), the [swap domains](https://cloudmydc.com/) functionality should be used. It is also available as the **_SwapExtIps_** [API/CLI](https://cloudmydc.com/) method.
+To switch traffic from one environment to another (e.g. to redirect customers to the newer application version without downtime), the [swap domains](/docs/ApplicationSetting/Domain%20Name%20Management/Swap%20Domains) functionality should be used. It is also available as the **_SwapExtIps_** [API/CLI](https://cloudmydc.com/) method.
 
 <div style={{
     display:'flex',
@@ -177,7 +177,7 @@ To switch traffic from one environment to another (e.g. to redirect customers to
 
 ## Automatic Vertical Scaling
 
-One of the key-features of the platform is dynamic provisioning of the exact amount of resources (RAM and CPU) required by your nodes according to the current load with no manual intervention. Just set the required [cloudlets](https://cloudmydc.com/) limit (_128 MiB_ of RAM and _400 MHz_ of CPU each) for your Ruby application server and everything else will be handled by the platform automatically.
+One of the key-features of the platform is dynamic provisioning of the exact amount of resources (RAM and CPU) required by your nodes according to the current load with no manual intervention. Just set the required [cloudlets](/docs/PlatformOverview/Cloudlet) limit (_128 MiB_ of RAM and _400 MHz_ of CPU each) for your Ruby application server and everything else will be handled by the platform automatically.
 
 <div style={{
     display:'flex',
@@ -201,11 +201,11 @@ As a result, you automatically benefit on a truly user-oriented [**_Pay-per-Use_
 
 </div>
 
-Refer to the [automatic vertical scaling](https://cloudmydc.com/) documentation for additional information.
+Refer to the [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling) documentation for additional information.
 
 ## Manual Horizontal Scaling
 
-[Horizontal scaling](https://cloudmydc.com/) with the platform is as simple as selecting the required number of nodes via the corresponding section in the topology wizard. Additionally, you can choose between two scaling modes:
+[Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) with the platform is as simple as selecting the required number of nodes via the corresponding section in the topology wizard. Additionally, you can choose between two scaling modes:
 
 - **_Stateless_** - simultaneously creates all new nodes from the base image template
 - **_Stateful_** - sequentially copies file system of the master container into the new nodes
@@ -246,10 +246,10 @@ The process is simple, access the environment **Settings > Monitoring > Auto Hor
 
 In addition, hosting at the PaaS allows using other built-in tools and features, for example:
 
-- [Built-in](https://cloudmydc.com/) or [Custom SSL](http://localhost:3000/docs/ApplicationSetting/SSL/Custom%20SSL)
+- [Built-in](https://cloudmydc.com/) or [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL)
 - [Public IPv4 and IPv6](https://cloudmydc.com/)
-- A wide range of complementary [software stacks](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions), including SQL and NoSQL databases
-- [Container firewalls](https://cloudmydc.com/), [endpoints](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints) and [environment network isolation](https://cloudmydc.com/)
+- A wide range of complementary [software stacks](/docs/QuickStart/Software%20Stack%20Versions), including SQL and NoSQL databases
+- [Container firewalls](https://cloudmydc.com/), [endpoints](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints) and [environment network isolation](https://cloudmydc.com/)
 - [User-friendly UI](https://cloudmydc.com/) and [SSH access](https://cloudmydc.com/)
 - [Open API](https://cloudmydc.com/) and [Cloud Scripting](https://cloudmydc.com/) for automation
 - [Pay-per-use pricing model](https://cloudmydc.com/)

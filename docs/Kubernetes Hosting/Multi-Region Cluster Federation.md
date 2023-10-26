@@ -70,7 +70,7 @@ Sing in your account and create two [Kubernetes clusters](https://cloudmydc.com/
 
 The next step is to establish [remote access to the clusters](https://cloudmydc.com/).
 
-Log in the master node of the **Host Cluster** via [SSH](https://cloudmydc.com/) and start with the configuration. Some commands output will be shown to let you be sure you are doing right:
+Log in the master node of the **Host Cluster** via [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview) and start with the configuration. Some commands output will be shown to let you be sure you are doing right:
 
 1. First, install the KubeFed chart with [helm](https://cloudmydc.com/) in **kube-federation-system** namespace :
    Add repository:
@@ -249,7 +249,7 @@ fedhost~$ kubectl config set clusters.kubefed-remote-member1.certificate-authori
 
 :::tip Note
 
-When the Member Cluster is located on the different Jelastic platform the certificate will be invalid because the [Shared Load Balancer](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) with its own certificate is in front of the cluster. This certificate should be ignored during negotiation phase between Host Cluster and Member with a command for example:
+When the Member Cluster is located on the different Jelastic platform the certificate will be invalid because the [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) with its own certificate is in front of the cluster. This certificate should be ignored during negotiation phase between Host Cluster and Member with a command for example:
 
 ```bash
 fedhost~$ kubectl config set clusters.kubefed-remote-member1.insecure-skip-tls-verify true

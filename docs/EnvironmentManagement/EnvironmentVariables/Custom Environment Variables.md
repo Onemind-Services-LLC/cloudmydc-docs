@@ -4,13 +4,13 @@ sidebar_position: 3
 
 import obj from './CustomEnvVar.json'
 
-Environment variables represent a kind of placeholders, where you can store the frequently used parameters values or strings in order not to specify them manually in the code each time they are needed. There is a number of [default environment variables](https://cloudmydc.com/) which are preconfigured and can be used in your application code or even adjusted before node creation to apply some customization, making your work with the platform even more convenient.
+Environment variables represent a kind of placeholders, where you can store the frequently used parameters values or strings in order not to specify them manually in the code each time they are needed. There is a number of [default environment variables](/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables#default-environment-variables) which are preconfigured and can be used in your application code or even adjusted before node creation to apply some customization, making your work with the platform even more convenient.
 
 In this guide, we’ll describe the most common ways of adding your custom variables for any node within the platform:
 
-- [via a dedicated variables section of the dashboard](https://cloudmydc.com/)
-- [using the shell configuration files](https://cloudmydc.com/)
-- [through the variables.conf file (for Java only)](https://cloudmydc.com/)
+- [via a dedicated variables section of the dashboard](/docs/EnvironmentManagement/EnvironmentVariables/Custom%20Environment%20Variables#customize-environment-variables-via-ui)
+- [using the shell configuration files](/docs/EnvironmentManagement/EnvironmentVariables/Custom%20Environment%20Variables#set-up-environment-variables-via-shell-configs)
+- [through the variables.conf file (for Java only)](/docs/EnvironmentManagement/EnvironmentVariables/Custom%20Environment%20Variables#adjust-java-environment-variables-via-configuration-manager)
 
 ## Customize Environment Variables via UI
 
@@ -54,7 +54,7 @@ You are able to provide your custom variables using the shell config files:
 - **_~/.bashrc_** is executed for each new bash instance
   In order to help you with maintaining these files, the platform automatically include the sources of the .**_bashrc_** config within **_.bash_profile_**. In such a way, you can provide custom variables through the former file only:
 
-1. Establish [SSH connection](https://cloudmydc.com/) to your container. For example, we’ll use the embedded **Web SSH** client:
+1. Establish [SSH connection](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) to your container. For example, we’ll use the embedded **Web SSH** client:
 
 <div style={{
     display:'flex',
@@ -68,28 +68,9 @@ You are able to provide your custom variables using the shell config files:
 
 2. Create or adjust the .bashrc file within the home directory by adding your custom variables in the following format:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-    <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding:'10px 20px 5px 20px', color: 'white' }}>
-        1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-            {obj.data1}
-        </div>
-    </div>
-</div>
+```bash
+export {var_name}= {var_value}
+```
 
 where
 
@@ -108,30 +89,10 @@ where
 
 3. Now, each new bash instance will be provided with your custom variables. To force new settings appliance for the current session, just refresh the sources with the command shown below. Next, verify new variables availability:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-    {obj.data2.map((item, idx) => {
-        return <div key={idx} style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding:'10px 20px 5px 20px', color: 'white' }}>
-            {idx+1}
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-            {item}
-        </div>
-    </div>
-    })}
-</div>
+```bash
+source ~/.bashrc
+echo $ {var_name}
+```
 
 <div style={{
     display:'flex',
@@ -149,7 +110,7 @@ As you can see, the changes were successfully applied.
 
 The following simple workflow is identical for all of the platform-managed Java application servers.
 
-1. Click the **Config** button for your application server to access container [file manager](https://cloudmydc.com/).
+1. Click the **Config** button for your application server to access container [file manager](/docs/ApplicationSetting/Configuration%20File%20Manager).
 
 <div style={{
     display:'flex',
@@ -170,7 +131,7 @@ The following simple workflow is identical for all of the platform-managed Java 
 - **Payara** - /opt/payara/glassfish/domains/domain1/config/variables.conf
 - **WildFly** - /opt/wildfly/conf/variables.conf
 
-3. Here, you can provide your custom variables (each one should be separated by space or start from a new line) or [adjust Java options](https://cloudmydc.com/) for your application. For example:
+3. Here, you can provide your custom variables (each one should be separated by space or start from a new line) or [adjust Java options](/docs/EnvironmentManagement/EnvironmentVariables/Java%20Options%20and%20Arguments) for your application. For example:
 
 **-Dvar1=value1 -Dvar2=value2** <br/>
 **-Dmy.var3=/my/value**

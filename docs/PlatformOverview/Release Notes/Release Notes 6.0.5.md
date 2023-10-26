@@ -138,7 +138,7 @@ Fixed
 
 ## Beta Label Removal for MongoDB/PostgreSQL Auto-Clustering
 
-the platform’s **_[Auto-Clustering](https://cloudmydc.com/)_** feature helps users automatically set up a production-ready cluster for some of the most popular software stacks. Such an option has been provided for MongoDB and PostgreSQL databases for quite some time and receives positive feedback without any major issues. As a result, starting with the present 6.0.5 PaaS release, we are removing the “beta” UI label next to the Auto-Clustering option for these stacks.
+the platform’s **_[Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances)_** feature helps users automatically set up a production-ready cluster for some of the most popular software stacks. Such an option has been provided for MongoDB and PostgreSQL databases for quite some time and receives positive feedback without any major issues. As a result, starting with the present 6.0.5 PaaS release, we are removing the “beta” UI label next to the Auto-Clustering option for these stacks.
 
 <div style={{
     display:'flex',

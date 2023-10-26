@@ -34,7 +34,7 @@ Use the table of content below to find required information within the guide qui
 - [Java Environment Creation](https://cloudmydc.com/)
 - [Java Application Deployment](https://cloudmydc.com/)
 - [Domains Management](https://cloudmydc.com/)
-- [Automatic Vertical Scaling](https://cloudmydc.com/)
+- [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling)
 - [Horizontal Scaling: Manual and Automatic](https://cloudmydc.com/)
 - [Java Clusterization](https://cloudmydc.com/)
 - [Database Connection to Java Application](https://cloudmydc.com/)
@@ -97,7 +97,7 @@ To host a Java application, you need to create an appropriate environment. Just 
 
 </div>
 
-All added servers represent [fully isolated containers](https://cloudmydc.com/), located on different hosts for more availability, while isolation eliminates the risks of interfering with one another. You can attach the [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address to any of these servers for being accessed directly. Otherwise (i.e. if using default settings), the incoming requests sent to your application will be proxied by [Shared Load Balancer](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer).
+All added servers represent [fully isolated containers](https://cloudmydc.com/), located on different hosts for more availability, while isolation eliminates the risks of interfering with one another. You can attach the [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address to any of these servers for being accessed directly. Otherwise (i.e. if using default settings), the incoming requests sent to your application will be proxied by [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer).
 
 ## Java Application Deployment
 
@@ -107,7 +107,7 @@ The following deployment methods are supported:
 
 - via the application **_archive_** - _.war, .zip, .jar,_ and _.ear_ archives
 - from the GIT/SVN remote **_repository_**, using the Maven build node
-- using **_plugins_** - _[Ant Task](https://cloudmydc.com/), [Eclipse, IntelliJ IDEA](https://cloudmydc.com/), [Maven](https://cloudmydc.com/)_ and _[NetBeans](https://cloudmydc.com/)_
+- using **_plugins_** - _[Ant Task](https://cloudmydc.com/), [Eclipse, IntelliJ IDEA](https://cloudmydc.com/), [Maven](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven)_ and _[NetBeans](https://cloudmydc.com/)_
 
 <div style={{
     display:'flex',
@@ -135,7 +135,7 @@ You can bind a [custom domain](https://cloudmydc.com/) name to your application�
 - **_CNAME redirect_** if using _Shared Load Balancer_; is recommended for **_dev_** and **test** environments
 - **DNS A Record** if using _public IP_; can handle high traffic load and is suitable for **production** environments
 
-Also, with the help of the [swapping domains](https://cloudmydc.com/) feature or the **SwapExtIps** [API](https://cloudmydc.com/)/[CLI](http://localhost:3000/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview) method, you can upgrade and modify your application with zero downtime (i.e. your users won’t notice any interruption).
+Also, with the help of the [swapping domains](https://cloudmydc.com/) feature or the **SwapExtIps** [API](https://cloudmydc.com/)/[CLI](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview) method, you can upgrade and modify your application with zero downtime (i.e. your users won’t notice any interruption).
 
 <div style={{
     display:'flex',
@@ -199,7 +199,7 @@ In case your application becomes highly popular and a single node is not enough,
 
 Click the **+/-** buttons within the _Horizontal Scaling_ section of the topology wizard to set the required number of nodes (load balancer will be added automatically).
 
-Also, you can adjust the preferred [scaling mode](https://cloudmydc.com/):
+Also, you can adjust the preferred [scaling mode](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling):
 
 - **_Stateless_** - simultaneously creates all of the new nodes from the base image template
 - **_Stateful_** - sequentially copies file system of the master container into the new nodes

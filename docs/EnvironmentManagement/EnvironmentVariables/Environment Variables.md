@@ -6,15 +6,17 @@ import obj from './EnvironmentVariables.json'
 
 **Environment variables** are used to store the values of the frequently used parameters that are provided to a software program at runtime. The utilization of such placeholders makes your application more portable and flexible.
 
-The most common use of variables is to make quick adjustments to specific values that are utilized multiple times in your application code. Follow the linked guide if you need to create such [custom environment variables](https://cloudmydc.com/) for your project.
+The most common use of variables is to make quick adjustments to specific values that are utilized multiple times in your application code. Follow the linked guide if you need to create such [custom environment variables](/docs/EnvironmentManagement/EnvironmentVariables/Custom%20Environment%20Variables) for your project.
 
 Another use case for variables is to configure the application through the set of predefined values (enable/disable features, change behavior, etc.). The platform supplements most of the certified software stacks with a number of default variables, which can be used by developers to help with application hosting.
 
 ## Default Environment Variables
 
-<u>
+<!-- <u> -->
+
 Click this abstract to view a full list of default variables used within the platform containers.
-</u>
+
+<!-- </u> -->
 
 Or use the categorized groups below to narrow the search.
 
@@ -27,7 +29,7 @@ changes to the container; however, it may break some internal logic.
 
 :::
 
-There are a number of options that can be used with all of the [platform-managed stacks](https://cloudmydc.com/):
+There are a number of options that can be used with all of the [platform-managed stacks](/docs/QuickStart/Software%20Stack%20Versions):
 
 <div style={{
         width: '100%',

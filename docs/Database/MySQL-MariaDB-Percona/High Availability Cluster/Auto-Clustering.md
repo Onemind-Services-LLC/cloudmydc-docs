@@ -19,7 +19,7 @@ Database clusterization is an obligatory requirement for highly loaded productio
 The implemented solution provides a set of benefits:
 
 - **high availability with pre-configured replication options** - Primary-Secondary, Primary-Primary, Galera, XtraDB
-- **scalability and autodiscovery** – new nodes, added during [horizontal scaling](https://cloudmydc.com/), are connected to the cluster with all required adjustments being applied automatically
+- **scalability and autodiscovery** – new nodes, added during [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling), are connected to the cluster with all required adjustments being applied automatically
 - **efficient load balancing** – each cluster is supplemented with two ProxySQL nodes for load balancing with automatic splitting of read/write requests
 - **automated failover** – the database nodes that are temporarily unavailable or have high latency are automatically excluded from the cluster and re-added once the connection is restored
 

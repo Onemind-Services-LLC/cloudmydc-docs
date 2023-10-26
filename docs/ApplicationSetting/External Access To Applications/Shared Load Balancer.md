@@ -4,7 +4,7 @@ sidebar_position: 1
 
 ## Shared Load Balancer
 
-The platform utilizes several **Shared Load Balancer** (SLB) infrastructure components to process all incoming requests (except direct connections via [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)) sent to the hosted environments. SLB is an **NGINX proxy server** that connects the client-side (browser, for example) and your applications deployed to the platform.
+The platform utilizes several **Shared Load Balancer** (SLB) infrastructure components to process all incoming requests (except direct connections via [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)) sent to the hosted environments. SLB is an **NGINX proxy server** that connects the client-side (browser, for example) and your applications deployed to the platform.
 
 <div style={{
     display:'flex',
@@ -34,7 +34,7 @@ As a result, there can be several entry points for users' environments, and the 
 
 :::tip Note
 
-We recommend using **SLB** for your **_dev_** and **_test_** environments. As for **_production_** environments, which are intended to handle high traffic, it is more appropriate to use your own [**public IP**](https://cloudmydc.com/) for getting and processing the requests. Also, it allows you to apply several additional options to your application, making it more secure (e.g. with [Custom SSL](http://localhost:3000/docs/ApplicationSetting/SSL/Custom%20SSL)) and responsive (through attaching [Custom Domain](https://cloudmydc.com/)).
+We recommend using **SLB** for your **_dev_** and **_test_** environments. As for **_production_** environments, which are intended to handle high traffic, it is more appropriate to use your own [**public IP**](https://cloudmydc.com/) for getting and processing the requests. Also, it allows you to apply several additional options to your application, making it more secure (e.g. with [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL)) and responsive (through attaching [Custom Domain](https://cloudmydc.com/)).
 
 <div style={{
     display:'flex',
@@ -114,7 +114,7 @@ You can manually **_disable_** the Access via SLB feature:
 - nodes are inaccessible from the Shared Load Balancer - layer is isolated from the SLB
 - the pages accessible via the **Open in Browser** button in the dashboard return the 403 Forbidden error instead of the intended service
 - nodes' links are excluded from the emails
-- access via [SSH](https://cloudmydc.com/) and through [endpoints](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints) is **_not affected_**
+- access via [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview) and through [endpoints](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints) is **_not affected_**
 
 For better visibility, layers with the disabled SLB access are provided with the appropriate label in the dashboard.
 
@@ -146,4 +146,4 @@ Below, we’ve prepared some of the most frequent use case examples for the feat
 - forbid access via SLB to nodes with public IP address attached and custom domain configured
 - configure topology that allows connection via environment load balancer but prohibits access via direct URL to containers
 
-In general, you can use the _Access via SLB_ option for your **_development_** and **_testing_** environments. However, we recommend disabling the feature for the application in **_production_** and using [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) with a [custom domain](https://cloudmydc.com/) instead.
+In general, you can use the _Access via SLB_ option for your **_development_** and **_testing_** environments. However, we recommend disabling the feature for the application in **_production_** and using [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) with a [custom domain](https://cloudmydc.com/) instead.

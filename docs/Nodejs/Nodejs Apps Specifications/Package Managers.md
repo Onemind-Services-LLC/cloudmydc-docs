@@ -66,7 +66,7 @@ There are two ways to install necessary Node.js packages with _npm_:
 
 [Yarn](https://cloudmydc.com/) is a recently released package manager, which is already highly popular due to its speed, reliability and convenience. Yarn operates the same NodeJS **_package.json_** file as in npm, so no changes are required for the existing applications.
 
-You can use the following list of commands to work with Yarn, while connected over [SSH](https://cloudmydc.com/):
+You can use the following list of commands to work with Yarn, while connected over [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview):
 
 - **_yarn_** or **_yarn install_** - to get all dependencies package for the project
 - **_yarn remove {package}_** - to remove the specified package

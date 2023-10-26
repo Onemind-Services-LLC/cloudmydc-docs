@@ -89,7 +89,7 @@ With the considered prepackaged solution for one-click installation, the process
 
 </div>
 
-Within the **Apps** section, use the search box to find the Auto Scalable Couchbase Cluster package and select **Install**. 2. In the opened frame, set a number of Nodes in Cluster to be created (considering that this value will be set as a minimal cluster size and can’t be decreased due to auto-scaling). Then type an Environment name, and, optionally, alternative Display Name ([alias](https://cloudmydc.com/)) for it.
+Within the **Apps** section, use the search box to find the Auto Scalable Couchbase Cluster package and select **Install**. 2. In the opened frame, set a number of Nodes in Cluster to be created (considering that this value will be set as a minimal cluster size and can’t be decreased due to auto-scaling). Then type an Environment name, and, optionally, alternative Display Name ([alias](/docs/EnvironmentManagement/Environment%20Aliases)) for it.
 
 <div style={{
     display:'flex',
@@ -101,7 +101,7 @@ Within the **Apps** section, use the search box to find the Auto Scalable Couchb
 
 </div>
 
-Also, select a preferable hardware _[region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region)_ (if several ones are available) and click **Install**. 3. Once cluster deployment is completed, you’ll be provided with credentials for its administrating in the appeared pop-up and, at the same time, via dedicated email notification.
+Also, select a preferable hardware _[region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region)_ (if several ones are available) and click **Install**. 3. Once cluster deployment is completed, you’ll be provided with credentials for its administrating in the appeared pop-up and, at the same time, via dedicated email notification.
 
 <div style={{
     display:'flex',

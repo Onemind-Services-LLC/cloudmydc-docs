@@ -38,7 +38,7 @@ Follow the next steps to add a custom Java agent into a container:
 
 </div>
 
-2. In the opened [configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager), you can **Upload** your Java agent **.jar** file to any preferable location. Use the **Actions** list at the top panel (for the current folder) or the context menu when hovering over the particular directory.
+2. In the opened [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager), you can **Upload** your Java agent **.jar** file to any preferable location. Use the **Actions** list at the top panel (for the current folder) or the context menu when hovering over the particular directory.
 
 <div style={{
     display:'flex',

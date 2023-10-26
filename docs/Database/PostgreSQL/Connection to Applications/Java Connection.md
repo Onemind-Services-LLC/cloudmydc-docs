@@ -30,7 +30,7 @@ PostgreSQL is a powerful, open source SQL database with the object-relational st
 
 </div>
 
-3. Click the **Config** button next to your application server (Tomcat in our case) to access the [configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager) and create a new **_mydb.cfg_** file in the **/opt/tomcat/temp** folder.
+3. Click the **Config** button next to your application server (Tomcat in our case) to access the [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) and create a new **_mydb.cfg_** file in the **/opt/tomcat/temp** folder.
 
 <div style={{
     display:'flex',

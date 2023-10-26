@@ -4,7 +4,7 @@ sidebar_position: 5
 
 import obj from './QuotasSystem.json'
 
-While working with the platform, you can notice some features being completely or partially restricted (e.g. [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) option or number of [cloudlets](https://cloudmydc.com/) per container) by your particular service hosting provider. In most cases, such limitations are provided for trial accounts only, so [upgrading](https://cloudmydc.com/) will automatically unlock access to all of the platform functionality.
+While working with the platform, you can notice some features being completely or partially restricted (e.g. [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) option or number of [cloudlets](/docs/PlatformOverview/Cloudlet) per container) by your particular service hosting provider. In most cases, such limitations are provided for trial accounts only, so [upgrading](https://cloudmydc.com/) will automatically unlock access to all of the platform functionality.
 
 :::tip Note
 If you still require some quotas enlargement after account conversion, please, contact your hosting service provider to get an assistance.

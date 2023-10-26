@@ -22,9 +22,9 @@ Below, we’ll consider all the specifics of a custom image running at our platf
 
 So, let’s walk through the required operations step-by-step:
 
-- [composing dockerfile](http://localhost:3000/docs/Container/Building%20Custom%20Container#composing-dockerfile)
-- [adding image to repository](http://localhost:3000/docs/Container/Building%20Custom%20Container#adding-image-to-repository)
-- [deploying image at the platform](http://localhost:3000/docs/Container/Building%20Custom%20Container#deploying-image-at-platform)
+- [composing dockerfile](/docs/Container/Building%20Custom%20Container#composing-dockerfile)
+- [adding image to repository](/docs/Container/Building%20Custom%20Container#adding-image-to-repository)
+- [deploying image at the platform](/docs/Container/Building%20Custom%20Container#deploying-image-at-platform)
 
 ## Composing Dockerfile
 
@@ -76,8 +76,8 @@ This command ends with calling the installed packages' general update.
 4. Next, let’s declare a few additional operations for downloading the WildFly source code from the official website and extracting it to the **/opt** folder.
 
 ```bash
-RUN cd /opt && curl -O https://download.jboss.org/wildfly/${WILDFLY_VERSION}/wildfly-${WILDFLY_VERSION}.tar.gz \  
-&& $(which tar) xf wildfly-${WILDFLY_VERSION}.tar.gz \  
+RUN cd /opt && curl -O https://download.jboss.org/wildfly/${WILDFLY_VERSION}/wildfly-${WILDFLY_VERSION}.tar.gz \
+&& $(which tar) xf wildfly-${WILDFLY_VERSION}.tar.gz \
 && rm wildfly-${WILDFLY_VERSION}.tar.gz
 ```
 
@@ -92,8 +92,8 @@ RUN ln -s /opt/wildfly-$WILDFLY_VERSION /opt/wildfly
 ```bash
 RUN echo -en "JAVA_HOME=\"/usr/lib/jvm/java\""'\n'\
 "JBOSS_HOME=\"/opt/wildfly\""'\n'\
-"JBOSS_USER=wildfly"'\n'\ 
-"JBOSS_MODE=standalone"'\n'\ 
+"JBOSS_USER=wildfly"'\n'\
+"JBOSS_MODE=standalone"'\n'\
 "JBOSS_CONFIG=standalone.xml"'\n'\
 "STARTUP_WAIT=60"'\n'\
 "SHUTDOWN_WAIT=60"'\n'\
@@ -104,14 +104,14 @@ RUN echo -en "JAVA_HOME=\"/usr/lib/jvm/java\""'\n'\
 7. CentOS 7 is started using the Systemd initiation script by default, but WildFly server requires the more traditional SystemV Init one, thus you need to copy the default initscript to the **/etc/init.d** folder and edit the appropriate configs to avoid the systemd redirect:
 
 ```bash
-RUN wget https://raw.githubusercontent.com/wildfly/wildfly-core/master/core-feature-pack/src/main/resources/content/docs/contrib/scripts/init.d/wildfly-init-redhat.sh -O /etc/rc.d/init.d/wildfly;  
+RUN wget https://raw.githubusercontent.com/wildfly/wildfly-core/master/core-feature-pack/src/main/resources/content/docs/contrib/scripts/init.d/wildfly-init-redhat.sh -O /etc/rc.d/init.d/wildfly;
 sed -i "/# Source function library/a\SYSTEMCTL_SKIP_REDIRECT=1" /etc/init.d/wildfly; chmod +x /etc/init.d/wildfly;
 ```
 
 8. Next, we’ll state WildFly to be run on container startup by adding the corresponding system user and changing files' ownership for him:
 
 ```bash
-RUN chkconfig --add wildfly; chkconfig wildfly on; mkdir -p /var/log/wildfly; adduser wildfly;  
+RUN chkconfig --add wildfly; chkconfig wildfly on; mkdir -p /var/log/wildfly; adduser wildfly;
 chown -R wildfly:wildfly /opt/wildfly-$WILDFLY_VERSION /opt/wildfly /var/log/wildfly;
 ```
 
@@ -121,13 +121,13 @@ chown -R wildfly:wildfly /opt/wildfly-$WILDFLY_VERSION /opt/wildfly /var/log/wil
 RUN /opt/wildfly/bin/add-user.sh --user $ADMIN_USER --password $ADMIN_PASSWORD --silent --enable
 ```
 
-10. Now, we can correct a link to the admin panel itself at the default index.html page by defining the corresponding redirect (as in case our image will be deployed to a container without the [external IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) attached, port 4949 and HTTP connection should be used here):
+10. Now, we can correct a link to the admin panel itself at the default index.html page by defining the corresponding redirect (as in case our image will be deployed to a container without the [external IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) attached, port 4949 and HTTP connection should be used here):
 
 ```bash
 RUN sed -i "s/<a href=\"\/console\">/<a href=\"\/console\" onclick=\"javascript:event.target.port=4949;event.target.protocol=\'http:\';\">/" /opt/wildfly/welcome-content/index.html
 ```
 
-11. Add the English [locale settings](http://localhost:3000/docs/ApplicationSetting/Managing%20Locale%20Settings) to the container.
+11. Add the English [locale settings](/docs/ApplicationSetting/Managing%20Locale%20Settings) to the container.
 
 ```bash
 RUN localedef -i en_US -f UTF-8 en_US.UTF-8
@@ -194,7 +194,7 @@ You can log into the registry in advance using the corresponding docker login co
 
 ## Deploying Image at Platform
 
-As soon as your image is successfully stored at the repository, it becomes available for usage at the platform and can be added to an environment through the dedicated Docker board integrated to the [topology wizard](http://localhost:3000/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) dashboard sections.
+As soon as your image is successfully stored at the repository, it becomes available for usage at the platform and can be added to an environment through the dedicated Docker board integrated to the [topology wizard](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) dashboard sections.
 
 So, select the **New Environment** button at the top of the dashboard, move to the **_Docker_** tab within the opened environment wizard and click on the Select Image button.
 
@@ -242,7 +242,7 @@ We use the public Docker Hub repository, located within the central Registry Hub
 
 </div>
 
-Set the rest of the necessary [configurations](http://localhost:3000/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) on your own (the details on the available options can be read in the linked guide) and finish the environment creation.
+Set the rest of the necessary [configurations](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) on your own (the details on the available options can be read in the linked guide) and finish the environment creation.
 
 4. Once your environment with the appropriate image inside appears on the dashboard, it can be accessed using the corresponding **Open in Browser** button:
 

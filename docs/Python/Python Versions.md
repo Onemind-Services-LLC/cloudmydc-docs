@@ -46,11 +46,11 @@ These can be selected during a new [environment creation](https://cloudmydc.com/
 
 </div>
 
-Adjust any other settings (e.g. [cloudlets limits](https://cloudmydc.com/), [public IPs](https://cloudmydc.com/), [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), etc.), provide environment name and click **Create**.
+Adjust any other settings (e.g. [cloudlets limits](https://cloudmydc.com/), [public IPs](https://cloudmydc.com/), [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), etc.), provide environment name and click **Create**.
 
 ## Change Python Version
 
-The version of the existing Python instances can be changed with the [container redeploy](https://cloudmydc.com/) feature.
+The version of the existing Python instances can be changed with the [container redeploy](/docs/Container/Container%20Redeploy) feature.
 
 1. The appropriate dialog can be accessed in the following ways:
 

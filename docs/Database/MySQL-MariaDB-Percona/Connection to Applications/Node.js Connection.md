@@ -18,7 +18,7 @@ sidebar_position: 4
 
 </div>
 
-2. Access your NodeJS server via SSH, e.g. with embedded [Web SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH) client.
+2. Access your NodeJS server via SSH, e.g. with embedded [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH) client.
 
 <div style={{
     display:'flex',

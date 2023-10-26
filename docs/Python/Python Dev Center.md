@@ -38,7 +38,7 @@ Through this article, you’ll get acquainted with the main tools and features a
 - [Python Application Deployment](https://cloudmydc.com/)
 - [Python Packages/Modules Management](https://cloudmydc.com/)
 - [Domains Management](https://cloudmydc.com/)
-- [Automatic Vertical Scaling](https://cloudmydc.com/)
+- [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling)
 - [Manual Horizontal Scaling](https://cloudmydc.com/)
 - [Automatic Horizontal Scaling](https://cloudmydc.com/)
 - [Database Connection to PHP Application](https://cloudmydc.com/)
@@ -47,7 +47,7 @@ Through this article, you’ll get acquainted with the main tools and features a
 
 To start hosting your Python application at the platform, you need to [create](https://cloudmydc.com/) the appropriate environment via the powerful _topology wizard_ (accessible through the **New Environment** button at the dashboard’s top panel).
 
-Switch to the **_Python_** language tab and select the desired engine version. _Apache Python_ application server is automatically added in a bundle with the _mod_wsgi_ module. Specify resource limits and nodes' count, as well as add extra [software stacks](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions) or options (e.g. Public IPs) if required.
+Switch to the **_Python_** language tab and select the desired engine version. _Apache Python_ application server is automatically added in a bundle with the _mod_wsgi_ module. Specify resource limits and nodes' count, as well as add extra [software stacks](/docs/QuickStart/Software%20Stack%20Versions) or options (e.g. Public IPs) if required.
 
 :::tip Note
 
@@ -136,7 +136,7 @@ Check examples of the Python-based application hosting on the platform:
 
 In order to successfully deploy and run a Python application, some additional modules or other packages may be required to be installed. It is a common practice to run Python web applications in isolated [**_virtual environments_**](https://cloudmydc.com/), for example using the virtual environment tool, which allows managing projects independently and without the administrator privileges.
 
-1. Connect to the Python environment [via SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) (using either a _local_ or built-in _Web SSH_ client) to create and start a new virtual environment. Run the following commands:
+1. Connect to the Python environment [via SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) (using either a _local_ or built-in _Web SSH_ client) to create and start a new virtual environment. Run the following commands:
 
 ```bash
 virtualenv {appName}
@@ -174,7 +174,7 @@ If needed, the default domain name of your Python application can be replaced wi
 - **CNAME redirect** if using _Shared Load Balancer_; is recommended for **_dev_** and **_test_** environments
 - **DNS A Record** if using _public IP_; can handle high traffic load and is suitable for **_production_** environments
 
-In addition, the platform allows switching traffic between two environments quickly and without downtime (e.g. to seamlessly redirect customers to the newer application version) using the [swap domains](https://cloudmydc.com/) functionality or with the help of the **_SwapExtIps_** [API](https://cloudmydc.com/)/[CLI](http://localhost:3000/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview) method.
+In addition, the platform allows switching traffic between two environments quickly and without downtime (e.g. to seamlessly redirect customers to the newer application version) using the [swap domains](/docs/ApplicationSetting/Domain%20Name%20Management/Swap%20Domains) functionality or with the help of the **_SwapExtIps_** [API](https://cloudmydc.com/)/[CLI](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview) method.
 
 <div style={{
     display:'flex',
@@ -190,7 +190,7 @@ In addition, the platform allows switching traffic between two environments quic
 
 Automatic vertical scaling implemented by the platform provides the exact amount of resources (RAM and CPU) that your application currently requires. As a result, you don’t need to waste your time continuously making load-related adjustments. And in combination with the [Pay-as-You-Use](https://cloudmydc.com/) pricing model, it ensures you never overpay for unused resources.
 
-Just set the upper [cloudlets](https://cloudmydc.com/) limit (each one equals _128 MiB_ of RAM and _400 MHz_ of CPU) for your Python application server. Everything else will be handled by the platform automatically.
+Just set the upper [cloudlets](/docs/PlatformOverview/Cloudlet) limit (each one equals _128 MiB_ of RAM and _400 MHz_ of CPU) for your Python application server. Everything else will be handled by the platform automatically.
 
 <div style={{
     display:'flex',
@@ -202,11 +202,11 @@ Just set the upper [cloudlets](https://cloudmydc.com/) limit (each one equals _1
 
 </div>
 
-Refer to the [automatic vertical scaling](https://cloudmydc.com/) guide for additional details.
+Refer to the [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling) guide for additional details.
 
 ## Manual Horizontal Scaling
 
-Horizontal scaling of the Python servers is no different from scaling any other instance at the platform - just specify the required number of nodes with the **+/-** buttons in the central part of the topology wizard. If needed, choose the preferred [scaling mode](https://cloudmydc.com/):
+Horizontal scaling of the Python servers is no different from scaling any other instance at the platform - just specify the required number of nodes with the **+/-** buttons in the central part of the topology wizard. If needed, choose the preferred [scaling mode](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling):
 
 - **_Stateless_** - simultaneously creates all of the new nodes from the base image template
 - **_Stateful_** - sequentially copies file system of the master container into the new nodes
@@ -223,7 +223,7 @@ Horizontal scaling of the Python servers is no different from scaling any other 
 
 :::tip Tip
 
-For the proper request distribution, a [load balancer](https://cloudmydc.com/) instance is automatically added to the environment upon Python server scaling. Refer to the [horizontal scaling](https://cloudmydc.com/) documentation for more specifications.
+For the proper request distribution, a [load balancer](https://cloudmydc.com/) instance is automatically added to the environment upon Python server scaling. Refer to the [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) documentation for more specifications.
 
 :::
 

@@ -4,7 +4,7 @@ sidebar_position: 5
 
 import obj from './HTTPHeaders.json'
 
-**[HTTP headers](https://cloudmydc.com/)** are the core part of the HTTP requests and responses. They pass additional information with an HTTP request or response (e.g. the client browser, requested page, server, and more).
+**[HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)** are the core part of the HTTP requests and responses. They pass additional information with an HTTP request or response (e.g. the client browser, requested page, server, and more).
 
 The main headers used with environments for deploying your applications:
 
@@ -76,7 +76,7 @@ The main headers used with environments for deploying your applications:
                 wordBreak: 'break-all',
                 padding: '20px',
             }}>
-                {item.required ? <a href="#">
+                {item.required ? <a href={item.url}>
                     {item.field}
                 </a> : 
                 item.field
@@ -101,11 +101,11 @@ The main headers used with environments for deploying your applications:
 
 :::tip Tip
 
-Additional security headers are used for some specific stacks.
+Additional [security headers](/docs/EnvironmentManagement/HTTP%20Headers#security-headers) are used for some specific stacks.
 
 :::
 
-The list of supported HTTP headers can vary based on the topology of the connected environment. Due to external access specifics (via [resolver/SLB](https://cloudmydc.com/) or [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)), there are four possible scenarios when working with the platform:
+The list of supported HTTP headers can vary based on the topology of the connected environment. Due to external access specifics (via [resolver/SLB](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) or [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)), there are four possible scenarios when working with the platform:
 
 <div style={{
         width: '100%',
@@ -389,7 +389,9 @@ The following additional HTTP headers are used on the above-listed stacks by def
                 wordBreak: 'break-all',
                 padding: '20px',
             }}>
+            <a href={item.url}>
                 {item.Header}
+            </a> 
             </div>
             <div style={{
                 padding: '20px',

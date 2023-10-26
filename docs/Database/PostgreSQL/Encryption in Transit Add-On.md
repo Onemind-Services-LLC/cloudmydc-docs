@@ -202,7 +202,7 @@ The available configuration options are straightforward:
 
 :::tip Tip
 
-You can use an [endpoint](https://cloudmydc.com/) or [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) as your database entry point for external connection. Let’s check the endpoint example (to the Pgpool-II node for the cluster):
+You can use an [endpoint](https://cloudmydc.com/) or [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) as your database entry point for external connection. Let’s check the endpoint example (to the Pgpool-II node for the cluster):
 
 <div style={{
     display:'flex',

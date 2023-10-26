@@ -7,8 +7,8 @@ import obj from './ContainerImageRequirements.json'
 Container Image Requirements
 Currently, the platform containers have the following requirements for the base image:
 
-- [Supported OS Distributions](http://localhost:3000/docs/Container/Container%20Image%20Requirements#supported-os-distributions)
-- [Supported Architectures](http://localhost:3000/docs/Container/Container%20Image%20Requirements#supported-architectures)
+- [Supported OS Distributions](/docs/Container/Container%20Image%20Requirements#supported-os-distributions)
+- [Supported Architectures](/docs/Container/Container%20Image%20Requirements#supported-architectures)
 
 ## Supported OS Distributions
 
@@ -109,8 +109,8 @@ The following Linux distributions are supported as a base of containers that cou
 :::danger Notes
 
 - Containers based on the **Debian 11** OS template are not supported on the platforms below the 6.0 version.
-- The **[almalinux-8-x86_64](http://localhost:3000/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.2.4)** template is supported since the 8.2.4 platform version (kernel version 3.10.0-1160.80.1.vz7.191.4).
-- The **[almalinux-9-x86_64](http://localhost:3000/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#almalinux-9-base-os-image)** template is supported since the 8.3.1 platform version (kernel version 3.10.0-1160.80.1.vz7.191.4).
+- The **[almalinux-8-x86_64](/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.2.4)** template is supported since the 8.2.4 platform version (kernel version 3.10.0-1160.80.1.vz7.191.4).
+- The **[almalinux-9-x86_64](/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#almalinux-9-base-os-image)** template is supported since the 8.3.1 platform version (kernel version 3.10.0-1160.80.1.vz7.191.4).
 
 :::
 
@@ -118,4 +118,4 @@ In order to run containers of another type, please, [contact us](https://cloudmy
 
 ## Supported Architectures
 
-Currently, only **_amd64_** image architecture is supported for [custom container deployment](http://localhost:3000/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) (and [redeployment](http://localhost:3000/docs/Container/Container%20Redeploy)).
+Currently, only **_amd64_** image architecture is supported for [custom container deployment](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) (and [redeployment](/docs/Container/Container%20Redeploy)).

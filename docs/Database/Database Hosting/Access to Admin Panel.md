@@ -25,7 +25,7 @@ By default, all connections to phpMyAdmin are allowed and, if you want to change
 
 Let’s move through it step-by-step:
 
-1. To change the default behavior, which allows all connections, you need to comment/remove the appropriate line, as it is shown in the image below (e.g. using the [file configuration manager](https://cloudmydc.com/) or via [Web SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)):
+1. To change the default behavior, which allows all connections, you need to comment/remove the appropriate line, as it is shown in the image below (e.g. using the [file configuration manager](https://cloudmydc.com/) or via [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)):
 
 <div style={{
     display:'flex',
@@ -39,7 +39,7 @@ Let’s move through it step-by-step:
 
 2. Next, list the allowed IPs, which should be specified in the following format (you can uncomment the provided templates and specify the correct IP address):
 
-- if your database node has _[public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)_
+- if your database node has _[public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)_
 
 ```bash
 Require ip {ipAddress}

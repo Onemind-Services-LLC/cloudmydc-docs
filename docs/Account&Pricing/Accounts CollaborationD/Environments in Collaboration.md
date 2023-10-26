@@ -4,7 +4,7 @@ sidebar_position: 4
 
 ## Environments in Collaboration (Deprecated)
 
-_This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](https://cloudmydc.com/) feature description._
+_This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview) feature description._
 
 Within a collaboration, there is the possibility to create, share and manage environments available at the primary account. The permissions for performing appropriate actions differ based on the type of account you have - primary or user.
 

@@ -42,7 +42,7 @@ composer install
 
 You are automatically provided with the latest version of Composer during the node creation. However, if a newer version of Composer is released, you can easily get it without the necessity of recreating a whole container. Follow the next steps to install the latest composer version into your PHP container:
 
-1. Connect to the appropriate node via SSH. For example, using the built-in [Web SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH).
+1. Connect to the appropriate node via SSH. For example, using the built-in [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH).
 
 <div style={{
     display:'flex',

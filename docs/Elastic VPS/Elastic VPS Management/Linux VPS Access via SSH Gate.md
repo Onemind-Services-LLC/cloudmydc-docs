@@ -12,7 +12,7 @@ For the Windows VPS management, utilize the [remote desktop protocol](https://cl
 
 The process of [SSH access](https://cloudmydc.com/) to the Elastic VPS nodes is the same as for any other container on the platform but provides full root access.
 
-- [Web SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)
+- [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)
 
 A one-click connection to your VPS container from the platform dashboard without any configuration required.
 
@@ -34,8 +34,8 @@ An SSH connection to VPS from the console on your local machine. Access is based
 
 If you haven’t established a connection via SSH Gate before, you’ll need to perform the following steps beforehand:
 
-- [generate](http://localhost:3000/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) an SSH key pair
-- [add your public SSH key](http://localhost:3000/docs/Deployment%20Tools/SSH/Add%20SSH%20Key) to the dashboard
+- [generate](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) an SSH key pair
+- [add your public SSH key](/docs/Deployment%20Tools/SSH/Add%20SSH%20Key) to the dashboard
 
 <div style={{
     display:'flex',

@@ -76,7 +76,7 @@ Log into the opened admin panel using credentials from the above-mentioned email
 
 </div>
 
-5. Return to dashboard and click the **Config** button next to the application server (Tomcat, in our case) to access [configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager).
+5. Return to dashboard and click the **Config** button next to the application server (Tomcat, in our case) to access [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager).
 
 <div style={{
     display:'flex',
@@ -319,7 +319,7 @@ You’ll see that the newly created table appeared with the name {date-time of c
 
 The platform also lets you extend your MariaDB/MySQL servers functionality by following the appropriate instructions in our documentation:
 
-- set up the preferred database replication type with embedded [Auto-Clustering](https://cloudmydc.com/) feature in order to get the increased DB performance and data loss protection
+- set up the preferred database replication type with embedded [Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances) feature in order to get the increased DB performance and data loss protection
 - adjust [Backups Scheduling](https://cloudmydc.com/) for ensuring safety of the information inside your DBs in the case of unexpected server failure
 - see the [Remote Access](https://cloudmydc.com/) instruction and learn how to access your database remotely via the preferred desktop MySQL client
 - use the [Dump Files Import/Export](https://cloudmydc.com/) guide to find out how to manually backup and restore your data from the previously created dumps

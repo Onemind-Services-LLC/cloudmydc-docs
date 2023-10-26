@@ -44,7 +44,7 @@ The NGINX balancer stack is [HTTP/3](https://cloudmydc.com/) ready with the feat
 
 </div>
 
-Next, you need to set the desired configurations for your NGINX balancer ([cloudlets](https://cloudmydc.com/), disk space, [IP addresses](https://cloudmydc.com/), etc.), add any other needed stacks (e.g. application servers or databases), and click **Create**.
+Next, you need to set the desired configurations for your NGINX balancer ([cloudlets](/docs/PlatformOverview/Cloudlet), disk space, [IP addresses](https://cloudmydc.com/), etc.), add any other needed stacks (e.g. application servers or databases), and click **Create**.
 
 3. Wait a moment for the platform to set up the environment for you.
 

@@ -59,7 +59,7 @@ Both topologies provide out-of-box high availability and failover capabilities f
 - **Version** - select the preferred Redis version
 - **Environment** - provide a name for [grouping](https://cloudmydc.com/) your database cluster environments
 - **Create separate environment group** – tick to [isolate](https://cloudmydc.com/) the environment group
-- **Enable External IP Addresses for cluster nodes** – tick to add [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) to the cluster nodes (three IPs per region), which is required if the Redis client is located outside the platform
+- **Enable External IP Addresses for cluster nodes** – tick to add [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) to the cluster nodes (three IPs per region), which is required if the Redis client is located outside the platform
 - **Topology** – choose either **_Maximum Performance_** or **_Maximum Reliability_** topology (details can be found in the [Cluster Topology](https://cloudmydc.com/) section above)
 - **Regions** - select platform regions where the cluster environments will be deployed. For the **_Maximum Reliability_** topology, the first region will host primary servers and other - secondary databases (replicas)
 

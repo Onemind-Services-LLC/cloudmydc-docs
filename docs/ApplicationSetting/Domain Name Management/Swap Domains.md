@@ -90,7 +90,7 @@ Now, you can add new features, customize settings, apply updates, etc. All witho
 
 - [Deployment Guide](https://cloudmydc.com/)
 - [SSH Access](https://cloudmydc.com/)
-- [configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager)
+- [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager)
 
 <div style={{
     display:'flex',

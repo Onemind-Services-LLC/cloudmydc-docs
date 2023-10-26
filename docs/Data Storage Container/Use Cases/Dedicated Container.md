@@ -6,7 +6,7 @@ sidebar_position: 4
 
 For more complex and loaded applications, it is worth to centralize your shared data within a single container to get more simple and flexible exports' management (including access permission control - e.g. read-only for one node type and read-write for another).
 
-In confines of the platform, a [Shared Storage Container](http://localhost:3000/docs/Data%20Storage%20Container/Data%20Storage%20Overview) is recommended to be used for sharing files across multiple layers or even environments of a single account. It is specially optimized for data storing (i.e. is focused on performance and provides the enlarged disk space amount).
+In confines of the platform, a [Shared Storage Container](/docs/Data%20Storage%20Container/Data%20Storage%20Overview) is recommended to be used for sharing files across multiple layers or even environments of a single account. It is specially optimized for data storing (i.e. is focused on performance and provides the enlarged disk space amount).
 
 <div style={{
     display:'flex',

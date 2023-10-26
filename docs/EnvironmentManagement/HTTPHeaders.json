@@ -4,18 +4,21 @@
       "field": "host",
       "description": "Specifies the host and port number of the resource (server) being requested.",
       "value": "{envName}.{platformDomain}",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Host",
       "required": true
     },
     {
       "field": "x-forwarded-proto",
       "description": "Identifies the protocol (HTTP or HTTPS) that connects to your proxy or load balancer.",
       "value": "http/https",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-Proto",
       "required": true
     },
     {
       "field": "x-forwarded-for",
       "description": "Identifies the originating IP addresses of a client connecting to a web server through an HTTP proxy or load balancer.",
       "value": "xx.xx.xx.xx, xx.xx.xx.xx IP or IPs chain (if a request goes through multiple proxies)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For",
       "required": true
     },
     {
@@ -69,63 +72,74 @@
     {
       "Header": "Cross-Origin-Embedder-Policy",
       "Description": "Allows the server to declare an embedded policy for the given document.",
-      "Value": "unsafe-none"
+      "Value": "unsafe-none",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy"
     },
     {
       "Header": "Cross-Origin-Opener-Policy",
       "Description": "Prevents other domains from opening/controlling a window.",
-      "Value": "same-origin-allow-popups"
+      "Value": "same-origin-allow-popups",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy"
     },
     {
       "Header": "Cross-Origin-Resource-Policy",
       "Description": "Prevents other domains from reading the response of the resources to which this header is applied.",
-      "Value": "same-origin"
+      "Value": "same-origin",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Resource-Policy"
     },
     {
       "Header": "Content-Security-Policy",
       "Description": "Controls resources the user agent is allowed to load for a given page. Disabled by default.",
-      "Value": "frame-ancestors 'self';frame-src 'self';"
+      "Value": "frame-ancestors 'self';frame-src 'self';",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy"
     },
     {
       "Header": "Expect-CT (only with SSL enabled)",
       "Description": "Allows sites to enforce the Certificate Transparency requirements, which prevents the use of miss issued certificates for the site (i.e requires that any certificate for that site appears in public CT logs).",
-      "Value": "max-age=3600, enforce"
+      "Value": "max-age=3600, enforce",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expect-CT"
     },
     {
       "Header": "Permissions-Policy",
       "Description": "Provides a mechanism to allow and deny the use of browser features in its frames and embedded iframes.",
-      "Value": "payment=(self) geolocation=(self)"
+      "Value": "payment=(self) geolocation=(self)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy"
     },
     {
       "Header": "Strict-Transport-Security (only with SSL enabled)",
       "Description": "Forces communication using HTTPS instead of HTTP.",
-      "Value": "max-age=5; includeSubDomains"
+      "Value": "max-age=5; includeSubDomains",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security"
     },
     {
       "Header": "X-Content-Type-Options",
       "Description": "Disables MIME sniffing and forces the browser to use the type given in Content-Type.",
-      "Value": "nosniff"
+      "Value": "nosniff",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options"
     },
     {
       "Header": "X-Frame-Options",
       "Description": "Indicates whether a browser should be allowed to render a page in a <frame>, <iframe>, <embed>, or <object>.",
-      "Value": "SAMEORIGIN"
+      "Value": "SAMEORIGIN",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options"
     },
     {
       "Header": "X-Permitted-Cross-Domain-Policies",
       "Description": "Specifies if a cross-domain policy file (crossdomain.xml) is allowed. The file may define a policy to permit clients to handle data across domains that would otherwise be restricted due to the Same-Origin Policy.",
-      "Value": "none"
+      "Value": "none",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#security"
     },
     {
       "Header": "Referrer-Policy",
       "Description": "Controls how much referrer information (sent via the Referer header) should be included with requests.",
-      "Value": "strict-origin-when-cross-origin (default)"
+      "Value": "strict-origin-when-cross-origin (default)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy"
     },
     {
       "Header": "X-XSS-Protection",
       "Description": "Enables cross-site scripting filtering.",
-      "Value": "1; mode=block"
+      "Value": "1; mode=block",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#security"
     }
   ]
-
 }

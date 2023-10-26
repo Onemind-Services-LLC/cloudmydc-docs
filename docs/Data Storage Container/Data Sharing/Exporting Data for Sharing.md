@@ -32,7 +32,7 @@ In case you need to [export data externally](https://cloudmydc.com/) (i.e. to th
 
 :::
 
-1. Open the [Configuration Manager](http://localhost:3000/docs/Container/Container%20Configuration/Configuration%20Tools#configuration-file-manager) for your storage (i.e. where files are physically located), switch to the **_Exports_** section, and click the **Export** button at the top pane.
+1. Open the [Configuration Manager](/docs/Container/Container%20Configuration/Configuration%20Tools#configuration-file-manager) for your storage (i.e. where files are physically located), switch to the **_Exports_** section, and click the **Export** button at the top pane.
 
 <div style={{
     display:'flex',
@@ -69,7 +69,7 @@ Click **Add** to proceed.
 
 :::tip Tip
 
-The same form can be accessed directly from the node’s [file manager](https://cloudmydc.com/), using the appropriate
+The same form can be accessed directly from the node’s [file manager](/docs/ApplicationSetting/Configuration%20File%20Manager), using the appropriate
 **Export** option in the folder’s context menu:
 
 <div style={{
@@ -98,7 +98,7 @@ The same form can be accessed directly from the node’s [file manager](https://
 
 </div>
 
-That’s all! During the operation, the appropriate [SSH Gateway](http://localhost:3000/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) on the target node(s) is configured automatically by the platform so that you can immediately start working with your shared data without any additional steps required.
+That’s all! During the operation, the appropriate [SSH Gateway](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) on the target node(s) is configured automatically by the platform so that you can immediately start working with your shared data without any additional steps required.
 
 ## Managing Exports
 
@@ -183,7 +183,7 @@ If working in the confines of your PaaS account, all of the required export conf
 
 - you can **Refresh** the list with the same-named button to get the most recent shares state
 - the **Documentation** button on the far right of the panel redirects to the current documentation page
-  For any additional configuration, you can use the built-in [file manager](https://cloudmydc.com/) or connect to a node over [SSH](https://cloudmydc.com/).
+  For any additional configuration, you can use the built-in [file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) or connect to a node over [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview).
 
 :::tip Note
 

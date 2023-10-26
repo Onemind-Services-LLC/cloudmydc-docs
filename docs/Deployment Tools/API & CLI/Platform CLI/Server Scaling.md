@@ -28,7 +28,7 @@ As for the rest of options, in this example we use the following ones:
 
 - **_{engine_type}_** - engine the instances of the chosen environment are powered by (an obligatory string)
 - **_{node_type}_** - stack type identifier, according to the [list](https://cloudmydc.com/)
-- **_{nodes_amount}_** - amount of nodes to be set (applies [horizontal scaling](https://cloudmydc.com/))
+- **_{nodes_amount}_** - amount of nodes to be set (applies [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling))
 - **_{cloudlets_amount}_** - number of fixed (_fixedCloudlets_) and/or flexible (_flexibleCloudlets_) cloudlets to be allocated for the specified node type (applies [vertical scaling](https://cloudmydc.com/))
 
 :::danger Note

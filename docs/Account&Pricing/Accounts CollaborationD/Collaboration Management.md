@@ -4,7 +4,7 @@ sidebar_position: 3
 
 ## Collaboration Management (Deprecated)
 
-This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](https://cloudmydc.com/) feature description.
+This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview) feature description.
 
 Full access to collaboration management is available only for its creator. The owner of this **primary account** can:
 
@@ -49,7 +49,7 @@ Using the buttons at the panel you can:
 - edit user’s Display name and permissions
 - delete a user from the collaboration
 
-1. The process of a new user **invitation** is described in the [Create Collaboration](https://cloudmydc.com/) document.
+1. The process of a new user **invitation** is described in the [Create Collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Create%20Collaboration) document.
 
 2. To edit a user’s **Display name** and **permissions**, follow these steps:
 

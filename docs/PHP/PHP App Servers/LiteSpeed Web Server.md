@@ -101,7 +101,7 @@ You may want to adjust some [dedicated environment variables](https://cloudmydc.
 
 :::
 
-Configure any other required parameters ([cloudlets](https://cloudmydc.com/), disk space, [regions](https://cloudmydc.com/), etc.) and proceed with the **Create** button.
+Configure any other required parameters ([cloudlets](/docs/PlatformOverview/Cloudlet), disk space, [regions](https://cloudmydc.com/), etc.) and proceed with the **Create** button.
 
 3. After creation, you can view the default _phpinfo_ data on the server by clicking **Open in Browser** next to your LiteSpeed server:
 
@@ -323,7 +323,6 @@ Add-on allows choosing the LiteSpeed plan by specifying the required limits for:
         })}
     </div> 
 </div>
-
 
 Additionally, the add-on can automatically configure a **LiteMage Cache** extension for your server - a popular, fast, full page caching solution that caches dynamic pages as static files. Just turn on the appropriate setting within the add-on frame and choose the required plan (determines the number of [publicly cached objects](https://cloudmydc.com/)) in the appeared **Options** field:
 

@@ -4,7 +4,7 @@ sidebar_position: 5
 
 ## Database Cluster Recovery Add-On
 
-The platform has several popular out-of-box clustering options for the MariaDB/MySQL databases, which can be automatically implemented via the [auto-clustering](https://cloudmydc.com/) feature. Such database clusters offer an advanced high availability and auto-scalability while remaining accessible to any user through automation.
+The platform has several popular out-of-box clustering options for the MariaDB/MySQL databases, which can be automatically implemented via the [Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances) feature. Such database clusters offer an advanced high availability and auto-scalability while remaining accessible to any user through automation.
 
 In order to make the solution even more alluring, the platform offers a free diagnostic and recovery add-on to help with database maintenance. Currently, the **Database Cluster Recovery** add-on supports the following database clusters:
 
@@ -26,7 +26,7 @@ During diagnostic, the add-on checks the following:
 
 In order to perform the required recovery operations, the add-on applies the following adjustments to the database cluster during the installation:
 
-A replica user is added to perform the validation of the clusters. Also, this user is used in the ProxySQL configuration. The credentials can be viewed via the dedicated [environment variables](http://localhost:3000/docs/Container/Container%20Configuration/Variables):
+A replica user is added to perform the validation of the clusters. Also, this user is used in the ProxySQL configuration. The credentials can be viewed via the dedicated [environment variables](/docs/Container/Container%20Configuration/Variables):
 
 - **REPLICA_USER**: repl-xxxxxx
 - **REPLICA_PSWD**: xxxxxxxxxxxx

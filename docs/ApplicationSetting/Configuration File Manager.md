@@ -4,7 +4,7 @@ sidebar_position: 1
 
 ## Configuration File Manager
 
-The platform configuration manager is a powerful tool, which allows to take control over all of the files within the particular container. This allows to easily and quickly apply some common configurations to your nodes through the comfortable GUI right in your browser, without the necessity to establish [SSH connection](https://cloudmydc.com/), that may be required for some complex operations.
+The platform configuration manager is a powerful tool, which allows to take control over all of the files within the particular container. This allows to easily and quickly apply some common configurations to your nodes through the comfortable GUI right in your browser, without the necessity to establish [SSH connection](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview), that may be required for some complex operations.
 
 In order to open the configuration manager, hover over the required node and click **the Config** button (the one with a wrench icon).
 

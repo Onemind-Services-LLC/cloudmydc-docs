@@ -15,7 +15,7 @@ Any platform-managed container can receive mounts over the fourth version of the
 
 :::
 
-- **_[Auto-Clustering](https://cloudmydc.com/)_** option automatically configures a reliable storage cluster, ensuring data safety. In case of failure of one or several nodes, the AutoFS client automatically switches to the working instances on the next read/write operation attempt.
+- **_[Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances)_** option automatically configures a reliable storage cluster, ensuring data safety. In case of failure of one or several nodes, the AutoFS client automatically switches to the working instances on the next read/write operation attempt.
 - **_Enlarged Disk Space_** compared to other common-purposed nodes is provided for Shared Storage Container, allowing to work with bigger data volumes. The particular value depends on your service provider’s settings and can vary based on the account type.
 - **_Optimized Performance_** due to all the necessary software being preinstalled (e.g. NFS & RPC for NFSv4, _[GlusterFS](https://cloudmydc.com/)_ for auto-clustering) and the default features of the platform (elastic vertical and horizontal scaling, efficient pay-as-you-use pricing model, comfortable UI with file exports and mount points support, etc.)
 
@@ -49,7 +49,7 @@ To create a new Shared Storage Container, enable the corresponding **_Storage_**
 
 </div>
 
-In the middle part of the wizard, you can provide additional configurations for your Shared Storage. The exact amount of provided storage space can be adjusted via the Disk Limit field. The platform can automatically configure a [reliable storage cluster](https://cloudmydc.com/) (instead of separate nodes) if you enable the **_Auto-Clustering_** switcher. Also, in case of necessity, [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) addresses can be attached to the nodes (both IPv4 and IPv6).
+In the middle part of the wizard, you can provide additional configurations for your Shared Storage. The exact amount of provided storage space can be adjusted via the Disk Limit field. The platform can automatically configure a [reliable storage cluster](https://cloudmydc.com/) (instead of separate nodes) if you enable the **_Auto-Clustering_** switcher. Also, in case of necessity, [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) addresses can be attached to the nodes (both IPv4 and IPv6).
 
 :::tip Tip
 
@@ -57,13 +57,13 @@ Since this container type was specially developed to be used as a data storage s
 
 - although RAM & CPU are not the primary resources of the storage, they are still consumed by the node due to operating over networks (the particular amount depends on load)
 - if the maximum value of disk space per storage node is not enough, please contact your hosting provider’s support team and request the corresponding account limit enlargement
-- node pricing mainly depends on the amount of disk space in use (not the limit) and external network traffic (check these resources cost at **[Quotas & Pricing](http://localhost:3000/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-much-do-resources-cost)\*\***> Pricing > Disk Space** or **Traffic\*\*)
+- node pricing mainly depends on the amount of disk space in use (not the limit) and external network traffic (check these resources cost at **[Quotas & Pricing](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-much-do-resources-cost)\*\***> Pricing > Disk Space** or **Traffic\*\*)
 
 Click **Create** when ready.
 
 ## Shared Storage Auto-Cluster
 
-Upon enabling **[Auto-Clustering](https://cloudmydc.com/)** switcher for the Shared Storage Container in topology wizard, the platform automatically configures a replicated volume (replicates files across bricks in the volume). Such a solution is implemented based on the pre-installed _[GlusterFS](https://cloudmydc.com/)_ RPM packages and is intended for environments where high-reliability is critical.
+Upon enabling **[Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances)** switcher for the Shared Storage Container in topology wizard, the platform automatically configures a replicated volume (replicates files across bricks in the volume). Such a solution is implemented based on the pre-installed _[GlusterFS](https://cloudmydc.com/)_ RPM packages and is intended for environments where high-reliability is critical.
 
 <div style={{
     display:'flex',
@@ -80,7 +80,7 @@ Upon enabling **[Auto-Clustering](https://cloudmydc.com/)** switcher for the Sha
 Consider the following specifics:
 
 - Currently, automatic conversion of the existing standalone storage into the GlusterFS cluster is not supported. Follow the manual [migration guide](https://cloudmydc.com/).
-- Shared Storage auto-clustering requires the latest [CloudMyDc 7](https://cloudmydc.com/) virtualization used on the [environment region](https://cloudmydc.com/) (depends on your hosting provider)
+- Shared Storage auto-clustering requires the latest [CloudMyDc 7](https://cloudmydc.com/) virtualization used on the [environment region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) (depends on your hosting provider)
 - storage auto-cluster requires 3 or more nodes and cannot be disabled after creation
 - scaling is performed with two nodes step to maintain working quorum
 
@@ -124,7 +124,7 @@ Some general examples of the storage usage are described in the [Dedicated Stora
 
 Right after creation, you can immediately proceed to the container configuration. Below, we’ll show several basic actions that may be useful for you to get started:
 
-1. For the most common operations with your storage, the built-in [configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager) can be used. For more complex management, you may prefer to work with some third-party tool (use the connection details from the **SFTP / SSH Gate** tab circled in the image below).
+1. For the most common operations with your storage, the built-in [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) can be used. For more complex management, you may prefer to work with some third-party tool (use the connection details from the **SFTP / SSH Gate** tab circled in the image below).
 
 <div style={{
     display:'flex',
@@ -154,7 +154,7 @@ For files sharing with other instances within the platform or external servers, 
 
 </div>
 
-3. If you want to use your Shared Storage Container as an external server (i.e. not only within the current PaaS installation) - enable the [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) option to make it accessible from outside. Follow instructions in the dedicated [NFS server configurations](https://cloudmydc.com/) guide.
+3. If you want to use your Shared Storage Container as an external server (i.e. not only within the current PaaS installation) - enable the [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) option to make it accessible from outside. Follow instructions in the dedicated [NFS server configurations](https://cloudmydc.com/) guide.
 
 <div style={{
     display:'flex',

@@ -11,7 +11,7 @@ Below, we’ve grouped all the functionality available for projects in the WordP
 - [Settings and Basic Actions](https://cloudmydc.com/)
 - [General Data](https://cloudmydc.com/)
 - [WordPress Plugins](https://cloudmydc.com/)
-- [Application Deployment](https://cloudmydc.com/)
+- [application deployment](/docs/Deployment/Deployment%20Guide)
 - [Environment Management](https://cloudmydc.com/)
 
 ## Settings and Basic Actions
@@ -90,7 +90,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-[endpoints](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints) create a direct connection (over raw TCP or UDP protocol) to one of the project nodes without the mandatory Public IP address. It can be used to set up remote access. For example, one of the most common use cases is gaining remote access to your database instance using a local database client.
+[endpoints](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints) create a direct connection (over raw TCP or UDP protocol) to one of the project nodes without the mandatory Public IP address. It can be used to set up remote access. For example, one of the most common use cases is gaining remote access to your database instance using a local database client.
 
 2.5. The **Subscription Plan** section shows subscription details of the current project and, depending on the hosting provider configurations, can provide the **Change Plan** option. It gives the ability to move the current project to a different plan within the same subscription.
 
@@ -166,7 +166,7 @@ You can click the **Edit Domain Name** button to [bind a custom external domain]
 
 </div>
 
-Learn more in the dedicated [Application Deployment](https://cloudmydc.com/) section.
+Learn more in the dedicated [application deployment](/docs/Deployment/Deployment%20Guide) section.
 
 3. Below that, the platform displays the automatically detected **WordPress version** and provides a link to the WordPress admin panel.
 
@@ -204,7 +204,7 @@ Hower over to see the **Redeploy** option that allows updating the PHP version. 
 
 </div>
 
-We recommend performing regular redeployments to the latest version to ensure your project’s container is running the up-to-date operating system and software stacks with all the latest vulnerability fixes. However, be aware that the operation will cause a brief downtime for the project. You can read more on the **[redeployment](http://localhost:3000/docs/Container/Container%20Redeploy)** feature in the linked document.
+We recommend performing regular redeployments to the latest version to ensure your project’s container is running the up-to-date operating system and software stacks with all the latest vulnerability fixes. However, be aware that the operation will cause a brief downtime for the project. You can read more on the **[redeployment](/docs/Container/Container%20Redeploy)** feature in the linked document.
 
 5. Click the **Datacenter Info** to check the relevant information.
 
@@ -218,7 +218,7 @@ We recommend performing regular redeployments to the latest version to ensure yo
 
 </div>
 
-6. Click the **SSH/SFTP Info** to see how you can access your project via the [SSH](https://cloudmydc.com/) and [SFTP](https://cloudmydc.com/) protocols. The drop-down list allows viewing information for different nodes of the cluster.
+6. Click the **SSH/SFTP Info** to see how you can access your project via the [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview) and [SFTP](https://cloudmydc.com/) protocols. The drop-down list allows viewing information for different nodes of the cluster.
 
 <div style={{
     display:'flex',

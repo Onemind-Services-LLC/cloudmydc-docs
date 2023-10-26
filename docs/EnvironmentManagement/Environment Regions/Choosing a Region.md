@@ -11,14 +11,14 @@ Despite the pretty simple concept, such an approach can bring a variety of advan
 - _geographical location_ - for getting a better response time and broader services' distribution
 - _quality & capacity_ - for adjusting the hosting conditions up to the current needs, e.g. cheaper hardware - for development and testing, a more superior one - for production
 - _cost_ - for choosing the most affordable pricing policy based on the budget available
-  Herewith, alongside selecting the desired hardware set during a new environment creation, the already running project can be subsequently moved to another location. If needed, this can be done in a few clicks - see more details in the [Migration between Environment Regions](https://cloudmydc.com/) document.
+  Herewith, alongside selecting the desired hardware set during a new environment creation, the already running project can be subsequently moved to another location. If needed, this can be done in a few clicks - see more details in the [Migration between Environment Regions](/docs/EnvironmentManagement/Environment%20Regions/Migration%20between%20Regions) document.
 
 In such a way, you receive impressive flexibility for the organization of your application’s lifecycle and its dissemination policy.
 
 So, read the complete guidance on managing environment regions for your applications below and get the maximum efficiency of this significant feature - find out how to:
 
-- [select an environment region](https://cloudmydc.com/)
-- [view details about regions](https://cloudmydc.com/)
+- [select an environment region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#select-environment-region)
+- [view details about regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#view-details-about-regions)
 
 ## Select Environment Region
 
@@ -36,7 +36,7 @@ In case your service hosting provider offers multiple environment regions, you c
 
 </div>
 
-- **_[platform Marketplace](https://cloudmydc.com/)_**
+- **_[platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace)_**
 
 <div style={{
     display:'flex',
@@ -48,7 +48,7 @@ In case your service hosting provider offers multiple environment regions, you c
 
 </div>
 
-- **_environment [import](https://cloudmydc.com/)_**
+- **_environment [import](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import)_**
 
 <div style={{
     display:'flex',
@@ -60,7 +60,7 @@ In case your service hosting provider offers multiple environment regions, you c
 
 </div>
 
-The only exception is the operation of [cloning](https://cloudmydc.com/) - in this case, a new environment is created in the same hardware region automatically. However, it can be easily moved to the desired location manually, with the help of the [migration](https://cloudmydc.com/) option.
+The only exception is the operation of [cloning](/docs/EnvironmentManagement/Cloning%20Environment) - in this case, a new environment is created in the same hardware region automatically. However, it can be easily moved to the desired location manually, with the help of the [migration](/docs/EnvironmentManagement/Environment%20Regions/Migration%20between%20Regions) option.
 
 :::tip Note
 
@@ -69,7 +69,7 @@ The only exception is the operation of [cloning](https://cloudmydc.com/) - in th
 
 :::
 
-Choose any of the provided regions (it is recommended to [find out the details](https://cloudmydc.com/) on each of them beforehand) to place your environment there automatically. After creation, you’ll see your new environment appeared at the dashboard being supplied with a special tiny icon assigned for the region:
+Choose any of the provided regions (it is recommended to [find out the details](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) on each of them beforehand) to place your environment there automatically. After creation, you’ll see your new environment appeared at the dashboard being supplied with a special tiny icon assigned for the region:
 
 <div style={{
     display:'flex',
@@ -113,7 +113,7 @@ We recommend to getting acquainted with the specifics of each available region i
 
 Here, the detailed info on the provided regions can be found, e.g. a general description with the list of supplied parameters and included features. However, depending on your hosting provider’s settings, this link can lead to a separate site or document page.
 
-- Pricing section of the same frame, the details on the _[charged resources](https://cloudmydc.com/)_ (RAM/CPU, Disk Space, Traffic and Options tabs) and licensing costs (the Software tab) for every region can be viewed - use the drop-down list at the top to switch between them
+- Pricing section of the same frame, the details on the _[charged resources](/docs/Account&Pricing/Resource%20Charging/Charged%20Resources)_ (RAM/CPU, Disk Space, Traffic and Options tabs) and licensing costs (the Software tab) for every region can be viewed - use the drop-down list at the top to switch between them
 
 <div style={{
     display:'flex',
@@ -125,4 +125,4 @@ Here, the detailed info on the provided regions can be found, e.g. a general des
 
 </div>
 
-If more information on a particular region is required, please contact your hosting provider to get the appropriate assistance. Also, in case you’ve discovered some other location suits your application more, you can easily [migrate](https://cloudmydc.com/) it and benefit from the new conditions.
+If more information on a particular region is required, please contact your hosting provider to get the appropriate assistance. Also, in case you’ve discovered some other location suits your application more, you can easily [migrate](/docs/EnvironmentManagement/Environment%20Regions/Migration%20between%20Regions) it and benefit from the new conditions.

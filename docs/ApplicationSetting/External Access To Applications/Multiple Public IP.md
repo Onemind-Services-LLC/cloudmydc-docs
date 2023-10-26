@@ -24,7 +24,7 @@ sidebar_position: 3
 </div>
 <div>
 
-The platform supports assigning multiple [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) addresses (of both IPv4 and IPv6 revisions) to a single container. Herewith, the assigned IPs could be either of one of the versions or both of them simultaneously.
+The platform supports assigning multiple [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) addresses (of both IPv4 and IPv6 revisions) to a single container. Herewith, the assigned IPs could be either of one of the versions or both of them simultaneously.
 
 </div>
 </div>
@@ -33,7 +33,7 @@ For example, if hosting several web-sites on a single node, the multi-IP option 
 
 :::tip Note
 
-Both Public IPv4 and IPv6 are paid options, charged separately (either for the same or different price) on hourly basis. The exact cost and allowed number of IPs per node/per environment can be seen within the **[Quotas & Pricing](http://localhost:3000/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-much-do-resources-cost) > Account Limits** dashboard tab.
+Both Public IPv4 and IPv6 are paid options, charged separately (either for the same or different price) on hourly basis. The exact cost and allowed number of IPs per node/per environment can be seen within the **[Quotas & Pricing](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-much-do-resources-cost) > Account Limits** dashboard tab.
 
 :::
 
@@ -105,7 +105,7 @@ Here, all container external addresses are displayed within the **WAN IP** colum
 
 :::tip Note
 
-In case the required type of the newly attached IP is not indicated explicitly (e.g. within [Cloud Scripting](https://cloudmydc.com/) solution or application/add-on package settings at [platform Marketplace](https://cloudmydc.com/)), the IPv4 is used by default.
+In case the required type of the newly attached IP is not indicated explicitly (e.g. within [Cloud Scripting](https://cloudmydc.com/) solution or application/add-on package settings at [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace)), the IPv4 is used by default.
 
 :::
 

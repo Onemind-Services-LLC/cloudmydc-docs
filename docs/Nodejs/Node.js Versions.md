@@ -64,7 +64,7 @@ A Node.js process manager helps to control your application lifecycle, providing
 - **_forever_** - manages node processes (i.e. service start, stop, restart) to save services alive through keeping them run continuously
 - **_pm2_** - provides you with multiple special options (like monitoring, load balancing, deployment, etc.), allowing to manage your application more effectively
 
-Specify the remaining server and environment parameters (e.g. cloudlet limits, [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), environment name, etc.) and click the **Create** button in the bottom right frame corner.
+Specify the remaining server and environment parameters (e.g. cloudlet limits, [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), environment name, etc.) and click the **Create** button in the bottom right frame corner.
 
 ## Change Node.js Version
 
@@ -111,7 +111,7 @@ In the opened frame, select to edit your Nodejs server version or tag (i.e. clic
 2. Within the opened R**_edeploy container(s)_** dialog, re-configure the following options:
 
 - **_Tag_** - provides a choice of needed Node.js version and preferred process manager
-- **_Keep volumes data_** - allows saving data in [Volumes](http://localhost:3000/docs/Container/Container%20Configuration/Volumes)
+- **_Keep volumes data_** - allows saving data in [Volumes](/docs/Container/Container%20Configuration/Volumes)
 - **_Simultaneous_** or **_Sequential deployment with delay_** (for [scaled servers](https://cloudmydc.com/) only) - defines whether all containers within a layer should be redeployed at once or one-by-one, to avoid downtime
 
 <div style={{

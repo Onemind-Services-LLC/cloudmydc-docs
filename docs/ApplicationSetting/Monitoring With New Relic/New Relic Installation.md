@@ -71,7 +71,7 @@ The currently supported Java application servers are **Tomcat**, **TomEE**, and 
 
 The New Relic APM agent is also available at the [JPS Collection](https://cloudmydc.com/), alongside with the number of other useful JPS solutions the platform provides.
 
-You can [import](https://cloudmydc.com/) and integrate any of them using the link to _manifest.jps_ file within the appropriate repository.
+You can [import](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import) and integrate any of them using the link to _manifest.jps_ file within the appropriate repository.
 
 :::
 
@@ -107,7 +107,7 @@ Here, the following data should be specified within the appropriate fields:
 
 The **_License key_** field at add-on installation frame contains the key mask by default. You can complete the installation leaving it unchanged, but, obviously, you won’t be able to explore the gathered statistics (because of the absence of the bound New Relic account).
 
-Nevertheless, you can specify this parameter later within the New Relic add-on settings by means of the platform [Configuration Manager](http://localhost:3000/docs/Container/Container%20Configuration/Configuration%20Tools#configuration-file-manager).The paths for the required file are:
+Nevertheless, you can specify this parameter later within the New Relic add-on settings by means of the platform [Configuration Manager](/docs/Container/Container%20Configuration/Configuration%20Tools#configuration-file-manager).The paths for the required file are:
 
 - for **Java** app servers:
   - **TomEE**,**Tomcat** - _/opt/tomcat/lib/newrelic/newrelic.yml_

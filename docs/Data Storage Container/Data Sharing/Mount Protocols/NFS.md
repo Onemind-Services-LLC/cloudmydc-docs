@@ -6,7 +6,7 @@ sidebar_position: 1
 
 NFS is a client-server application, which means that the NFS server should be installed on the host that provides shared disk space and NFS clients on the servers that gain access to the shared files.
 
-The platform provides NFS support out-of-the-box for all containers (both client and server). The platform fully supports the third version of the protocol on all certified stacks. The fourth version is supported as a client only. NFSv4 server is implemented on the dedicated **[Shared Storage Container](http://localhost:3000/docs/Data%20Storage%20Container/Data%20Storage%20Overview)**:
+The platform provides NFS support out-of-the-box for all containers (both client and server). The platform fully supports the third version of the protocol on all certified stacks. The fourth version is supported as a client only. NFSv4 server is implemented on the dedicated **[Shared Storage Container](/docs/Data%20Storage%20Container/Data%20Storage%20Overview)**:
 
 - **all containers** (except alpine-based nodes) - NFSv3 (client and server) and NFSv4 (client only)
 - **Shared Storage** - NFSv3 (client and server) and NFSv4 (client and server)

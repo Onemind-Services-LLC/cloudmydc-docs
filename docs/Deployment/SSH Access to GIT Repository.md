@@ -351,7 +351,7 @@ For Java-based environments, you need to additionally select a [build node](http
 
 When all the data is entered, click **Deploy** to proceed and wait until your project is successfully deployed.
 
-3. You can ensure your project files are now available. Open the **[configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager)** for your environment, go to the **webroot** directory, and check a folder named after the specified context (**ROOT** by default) inside.
+3. You can ensure your project files are now available. Open the **[configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager)** for your environment, go to the **webroot** directory, and check a folder named after the specified context (**ROOT** by default) inside.
 
 <div style={{
     display:'flex',

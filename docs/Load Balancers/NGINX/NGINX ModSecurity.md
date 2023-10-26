@@ -79,7 +79,7 @@ Also, if needed, you can upload your custom rules as <b><i>\*.conf</i></b> files
 
 Now, your application is protected with ModSecurity.
 
-5. You can verify that it is loaded by executing the **_nginx -V_** command on the node (e.g. via [Web SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)) and looking for the ModSecurity module in the list.
+5. You can verify that it is loaded by executing the **_nginx -V_** command on the node (e.g. via [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)) and looking for the ModSecurity module in the list.
 
 <div style={{
     display:'flex',

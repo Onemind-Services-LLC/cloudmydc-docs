@@ -90,7 +90,7 @@ Based on the received statistics, you can change limits of the automatic [vertic
 An important tool for budget analysis is billing history tracking, which you can be found in the corresponding section at the platform dashboard and, consequently, be downloaded to your local machine.
 
 1. Use the **Billing history** ![Locale Dropdown](./img/MonitoringConsumedResources/11--billing-history-icon.png) button for your environment or navigate to **Balance > Billing history** item in the upper menu to review the charges applied for consumed resources. In the left panel, you can specify the desired start/end dates, and the time period interval to view the billing data for.
-   The displayed data is grouped by environments, use the ![Locale Dropdown](./img/MonitoringConsumedResources/12--arrow-icon.png) icon on the right panel to expand the particular one and see the list of its nodes and their resource usage. Herewith, all the nodes are sorted in the alphabetical order and below a list of the additional paid options (if any) is shown, e.g. [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) or [SSL](https://cloudmydc.com/).
+   The displayed data is grouped by environments, use the ![Locale Dropdown](./img/MonitoringConsumedResources/12--arrow-icon.png) icon on the right panel to expand the particular one and see the list of its nodes and their resource usage. Herewith, all the nodes are sorted in the alphabetical order and below a list of the additional paid options (if any) is shown, e.g. [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) or [SSL](https://cloudmydc.com/).
 
 <div style={{
     display:'flex',

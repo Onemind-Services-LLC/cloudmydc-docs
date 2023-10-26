@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-In order to create your own [collaboration](https://cloudmydc.com/), you just need a billing PaaS account (**primary account**) that will invite additional customers/users (**collaboration members**). You can perform most collaboration-related operations via the dedicated section at the account settings panel.
+In order to create your own [collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview), you just need a billing PaaS account (**primary account**) that will invite additional customers/users (**collaboration members**). You can perform most collaboration-related operations via the dedicated section at the account settings panel.
 
 Click the **Settings** button in the top-right corner of the dashboard.
 

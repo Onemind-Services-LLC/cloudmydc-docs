@@ -13,24 +13,24 @@ sidebar_position: 4
 </div>
 
 <div>
-    Sooner or later, every developer faces the necessity to branch the application he is working on, e.g. to try out new functionality before actually implementing it into production. For such cases, the platform provides a special option - **environment cloning**, which allows creating a complete copy of an already existing project in just a couple of clicks.
+    Sooner or later, every developer faces the necessity to branch the application he is working on, e.g. to try out new functionality before actually implementing it into production. For such cases, the platform provides a special option - <b>environment cloning</b>, which allows creating a complete copy of an already existing project in just a couple of clicks.
 </div>
 
 </div>
 
-Also, if talking about more complex and sophisticated projects (which implies the involvement of the whole development team), multiple copies of your application (dedicated to a specific task) are recommended. The most common application [lifecycle](https://cloudmydc.com/) implementation involves the following stages:
+Also, if talking about more complex and sophisticated projects (which implies the involvement of the whole development team), multiple copies of your application (dedicated to a specific task) are recommended. The most common application [lifecycle](/docs/ApplicationSetting/Application%20Lifecycle%20Management) implementation involves the following stages:
 
 - **development** - for developers to create and modify features
 - **testing** - for quality assurance to discover and analyze possible issues
 - **production** - the latest actual application version, provisioned for end-customers use
 
-Below, we’ll provide information on [how to make an environment copy](https://cloudmydc.com/) and [some common use cases](https://cloudmydc.com/).
+Below, we’ll provide information on [how to make an environment copy](/docs/EnvironmentManagement/Cloning%20Environment#how-to-clone-environment) and [some common use cases](/docs/EnvironmentManagement/Cloning%20Environment#common-use-cases).
 
 :::tip
 **Take into consideration** the following specific points of environment cloning at the platform:
 
-- based on the layer [scaling mode](https://cloudmydc.com/), cloned containers will be either created from the appropriate base image (_stateless_) or copied from the master container (_stateful_)
-- you may experience a short-term freeze on source containers due to memory state migration to the cloned nodes (the implementation specifics is similar to [live migration](https://cloudmydc.com/))
+- based on the layer [scaling mode](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling), cloned containers will be either created from the appropriate base image (_stateless_) or copied from the master container (_stateful_)
+- you may experience a short-term freeze on source containers due to memory state migration to the cloned nodes (the implementation specifics is similar to live migration)
 - while cloning a Windows-based environment, containers will be temporarily stopped, so be ready for a short downtime
 
 :::
@@ -71,7 +71,7 @@ For some specific cases, additional adjustments are required to make your enviro
 
 - nodes' IP addresses and hostnames will differ from the initial ones and, in case of being “hardcoded” within config files, should be re-adjusted manually
 - if you’ve faced a problem when cloning a massive environment (i.e. with more than 1TB of data being stored in containers), please contact your hosting provider for assistance
-- an environment in [collaboration](https://cloudmydc.com/) can be cloned only by its owner; herewith, the created copy won’t be available to collaborators by default
+- an environment in [collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview) can be cloned only by its owner; herewith, the created copy won’t be available to collaborators by default
 
 :::
 
@@ -84,8 +84,8 @@ Now, you can re-configure it, deploy new application versions, and apply any top
 Consequently, you can use your environment in the following ways:
 
 - rename (change internal domain) your environment
-- [swap domains](https://cloudmydc.com/) to redirect your clients to the upgraded project
-- implement [blue-green deployment](https://cloudmydc.com/) to allow so-called “invisible” updates, which will not cause any downtime for your application
+- [swap domains](/docs/ApplicationSetting/Domain%20Name%20Management/Swap%20Domains) to redirect your clients to the upgraded project
+- implement [blue-green deployment](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/Blue-Green%20Deploy) to allow so-called “invisible” updates, which will not cause any downtime for your application
 
 <div style={{
     display:'flex',
@@ -97,7 +97,7 @@ Consequently, you can use your environment in the following ways:
 
 </div>
 
-- perform applications [A/B testing](https://cloudmydc.com/) (i.e. compare different versions) to designate which one provides better user appeal
+- perform applications [A/B testing](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/A-B%20Testing) (i.e. compare different versions) to designate which one provides better user appeal
 
 <div style={{
     display:'flex',
@@ -109,7 +109,7 @@ Consequently, you can use your environment in the following ways:
 
 </div>
 
-achieve advanced _[failover protection](https://cloudmydc.com/)_ of your application
+achieve advanced _[failover protection](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/Failover%20Protection)_ of your application
 
 <div style={{
     display:'flex',
@@ -121,7 +121,7 @@ achieve advanced _[failover protection](https://cloudmydc.com/)_ of your applica
 
 </div>
 
-- configure data storing from several environments in a single [Dedicated Storage Container](https://cloudmydc.com/) to utilize disk space more efficiently
+- configure data storing from several environments in a single [Dedicated Storage Container](/docs/Data%20Storage%20Container/Use%20Cases/Dedicated%20Container) to utilize disk space more efficiently
 - clone environment to create a “snapshot” of the whole setup
 - you can configure replication or synchronization of data from the production to clone, ensuring that data on your testing/staging environment remains actual
 

@@ -200,11 +200,11 @@ Subsequently, if meeting the necessity to **Edit** any default or custom rule, y
 Access to your nodes can be controlled based on such request parameters as its source node’s IP address, connection protocol, port and so on. In the guide below, we’ll consider a simple example of blocking access to a container for a particular IP address, applied via either:
 
 - [User Interface](https://cloudmydc.com/)
-- [SSH connection](https://cloudmydc.com/)
+- [SSH connection](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview)
 
 :::tip Note
 
-Before following this instruction, ensure that the appropriate container is provided with a [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address.
+Before following this instruction, ensure that the appropriate container is provided with a [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address.
 
 :::
 

@@ -4,7 +4,7 @@ sidebar_position: 3
 
 ## Kubernetes Cluster: Package Installation
 
-The **Kubernetes Cluster** solution is available for automatic installation via [platform Marketplace](https://cloudmydc.com/) under the Clusters category (or use Search to locate). Note that this clustered solution is available for billing customers only.
+The **Kubernetes Cluster** solution is available for automatic installation via [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) under the Clusters category (or use Search to locate). Note that this clustered solution is available for billing customers only.
 
 <div style={{
     display:'flex',
@@ -42,8 +42,8 @@ The development topology is not recommended for production projects as it cannot
   - _Jaeger Tracing Tools_ - tick to install Jaeger tracing system for monitoring and troubleshooting
   - _Remote API Access_ - check if you plan on using the kubectl command-line tool or some other remote clients
 - **Environment** - provide a name for your environment
-- **Display Name** - specify an [alias](https://cloudmydc.com/)
-- **Region** - choose a [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) (if available)
+- **Display Name** - specify an [alias](/docs/EnvironmentManagement/Environment%20Aliases)
+- **Region** - choose a [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) (if available)
 
 <div style={{
     display:'flex',

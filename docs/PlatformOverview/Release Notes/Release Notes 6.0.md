@@ -358,7 +358,7 @@ VM hosting at the platform is provided in a familiar way to the regular containe
 
 - a small VM label is displayed on the stack image for better clarity
 - only fixed resources based on the several predefined plans (licenses) are available; the exact sizes and prices can vary for different platforms
-- the _[horizontal scaling](https://cloudmydc.com/)_ and IPv6 options are not available in the current implementation
+- the _[Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling)_ and IPv6 options are not available in the current implementation
 
 <div style={{
     display:'flex',
@@ -430,7 +430,7 @@ Tomcat and TomEE application servers provide support for the **_hot deploy_** fe
 
 ## Non-Downgradable Software Stacks
 
-The platform provides out-of-the-box support for multiple [software stacks](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions) to build topologies that meet the most demanding users' requirements. Moreover, most of the stacks have at least a few releases to choose from. These versions can be freely switched at any time due to the **[Containers Redeploy](https://cloudmydc.com/)** feature.
+The platform provides out-of-the-box support for multiple [software stacks](/docs/QuickStart/Software%20Stack%20Versions) to build topologies that meet the most demanding users' requirements. Moreover, most of the stacks have at least a few releases to choose from. These versions can be freely switched at any time due to the **[Containers Redeploy](https://cloudmydc.com/)** feature.
 
 However, not all of the software solutions provide backward compatibility. If there are substantial differences between the releases, downgrading a software version can result in unforeseen problems. In the current PaaS 6.0 upgrade, all the stacks were analyzed to locate those vulnerable to the issue and explicitly restricted from downgrading during the redevelopment process.
 

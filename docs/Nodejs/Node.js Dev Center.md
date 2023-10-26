@@ -24,13 +24,13 @@ Use the table of content below to find required information within the guide qui
 - [Node.js Package Managers](https://cloudmydc.com/)
 - [Node.js Process Managers](https://cloudmydc.com/)
 - [Domains Management](https://cloudmydc.com/)
-- [Automatic Vertical Scaling](https://cloudmydc.com/)
+- [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling)
 - [Manual Horizontal Scaling](https://cloudmydc.com/)
 - [Automatic Horizontal Scaling](https://cloudmydc.com/)
 
 ## Node.js Environment Hosting
 
-To run your Node.js application, you need to [set up](https://cloudmydc.com/) the appropriate environment using the powerful and intuitive **Topology Wizard**. Switch to the **_Node.js_** tab, select the required engine version for your application server and add any other [software stack](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions) required. If needed, adjust other parameters, such as cloudlets and nodes count, Public IPv4 and IPv6, etc.
+To run your Node.js application, you need to [set up](https://cloudmydc.com/) the appropriate environment using the powerful and intuitive **Topology Wizard**. Switch to the **_Node.js_** tab, select the required engine version for your application server and add any other [software stack](/docs/QuickStart/Software%20Stack%20Versions) required. If needed, adjust other parameters, such as cloudlets and nodes count, Public IPv4 and IPv6, etc.
 
 <div style={{
     display:'flex',
@@ -135,7 +135,7 @@ By default, the npm package manager is used for the NodeJS application servers, 
 - [**_forever_**](https://cloudmydc.com/) - allows running your Node.js processes continuously and automatically restarting them upon failure
 - [**_supervisor_**](https://cloudmydc.com/) - monitors running applications for changes and automatically restarts required ones to keep them up-to-date
 
-Users can choose the necessary process manager during container [redeployment](http://localhost:3000/docs/Container/Container%20Redeploy) or by adjusting the **_PROCESS_MANAGER_** [variable](https://cloudmydc.com/) (using _forever_, _npm_, _pm2_, or _supervisor_ as value, container restart is needed to apply new options).
+Users can choose the necessary process manager during container [redeployment](/docs/Container/Container%20Redeploy) or by adjusting the **_PROCESS_MANAGER_** [variable](https://cloudmydc.com/) (using _forever_, _npm_, _pm2_, or _supervisor_ as value, container restart is needed to apply new options).
 
 ## Domains Management
 
@@ -144,7 +144,7 @@ Your Node.js application can be easily supplemented with the [custom domain](htt
 - **CNAME redirect** if using Shared Load Balancer; is recommended for **_dev_** and **_test_** environments
 - **DNS A Record** if using Public IP; can handle high traffic load and is suitable for **_production_** environments
 
-Also, you can quickly switch traffic between your environments (e.g. to redirect customers to the newer application version without downtime) by utilizing the [swap domains](https://cloudmydc.com/) functionality or with the help of the **_SwapExtIps_** [API](https://cloudmydc.com/)/[CLI](http://localhost:3000/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview) method.
+Also, you can quickly switch traffic between your environments (e.g. to redirect customers to the newer application version without downtime) by utilizing the [swap domains](/docs/ApplicationSetting/Domain%20Name%20Management/Swap%20Domains) functionality or with the help of the **_SwapExtIps_** [API](https://cloudmydc.com/)/[CLI](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview) method.
 
 <div style={{
     display:'flex',
@@ -160,7 +160,7 @@ Also, you can quickly switch traffic between your environments (e.g. to redirect
 
 The platform dynamically provides the exact amount of resources (RAM and CPU) required by your nodes according to the current load with no manual intervention required. As a result, you [never overpay for unused resources](https://cloudmydc.com/) and save your time as the platform eliminates the need to handle the load-related adjustments or architectural changes.
 
-You just need to set the upper [cloudlets](https://cloudmydc.com/) limit (each one equals to _128 MiB_ of RAM and _400 MHz_ of CPU) for your NodeJS application server and everything else will be handled by platform automatically.
+You just need to set the upper [cloudlets](/docs/PlatformOverview/Cloudlet) limit (each one equals to _128 MiB_ of RAM and _400 MHz_ of CPU) for your NodeJS application server and everything else will be handled by platform automatically.
 
 <div style={{
     display:'flex',
@@ -172,7 +172,7 @@ You just need to set the upper [cloudlets](https://cloudmydc.com/) limit (each o
 
 </div>
 
-Refer to the [automatic vertical scaling](https://cloudmydc.com/) documentation for more information.
+Refer to the [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling) documentation for more information.
 
 ## Manual Horizontal Scaling
 
@@ -193,7 +193,7 @@ To scale out/in NodeJS application servers, you need to access the topology wiza
 
 The maximum number of the same-type servers within a single environment layer depends on a particular hosting provider settings (usually this limit stands for 16 nodes and can be enlarged by sending the appropriate request to support).
 
-Also, for the proper requests distribution, a [load balancer](https://cloudmydc.com/) instance is automatically added upon NodeJS server scaling. Refer to the [horizontal scaling](https://cloudmydc.com/) documentation for more details.
+Also, for the proper requests distribution, a [load balancer](https://cloudmydc.com/) instance is automatically added upon NodeJS server scaling. Refer to the [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) documentation for more details.
 
 ## Automatic Horizontal Scaling
 

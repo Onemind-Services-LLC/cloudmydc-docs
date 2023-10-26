@@ -40,12 +40,12 @@ To set up your VPS inside the platform, follow the next steps.
 
 :::tip Note
 
-When enabling **VPS** of any type, you’ll automatically get the **[public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)** address(es) attached to the corresponding node (one per instance).
+When enabling **VPS** of any type, you’ll automatically get the **[public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)** address(es) attached to the corresponding node (one per instance).
 Nevertheless, in case of strict necessity, you can contact your hosting provider and request the option of running VPS with the internal IP only (e.g. when a special application infrastructure, which is partially inaccessible from outside, is required).
 
 :::
 
-Specify cloudlet limits for this node, [scale](https://cloudmydc.com/) it out (if required), select the preferred [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) (if several of them are available), type the name of the environment and click on **Create**.
+Specify cloudlet limits for this node, [scale](https://cloudmydc.com/) it out (if required), select the preferred [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) (if several of them are available), type the name of the environment and click on **Create**.
 
 3. In a couple of minutes, your new environment with the chosen virtual server will appear at the dashboard. You’ll also receive an email notification with its administration data (i.e. login/password credentials, attached Public IP and access URL).
 
@@ -65,7 +65,7 @@ Also, you can view the Public IP address directly in the dashboard. If you’ve 
 
 The flexibility of VPS hosting in the platform is achieved due to automatic scaling, both vertical and horizontal, that is easily tuned during environment topology creation and configuration.
 
-**[Automatic vertical scaling](https://cloudmydc.com/)** is ensured by systems ability to provide the required resources due to load. Herewith, you can choose the scalability limits for your server, which prevents outages during unexpected load spikes and at the optimize hosting costs.
+**[automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling)** is ensured by systems ability to provide the required resources due to load. Herewith, you can choose the scalability limits for your server, which prevents outages during unexpected load spikes and at the optimize hosting costs.
 
 To scale your environment, you need to increase/decrease the maximum number of available resources (cloudlets) by adjusting the cloudlet sliders in the Vertical Scaling per Node section.
 
@@ -79,7 +79,7 @@ To scale your environment, you need to increase/decrease the maximum number of a
 
 </div>
 
-The platform **[horizontal scaling](https://cloudmydc.com/)** functionality allows to easily adjust the number of servers in your environment using the appropriate “**-**” and “**+**” buttons. Herewith, you can select the preferred scaling mode:
+The platform **[Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling)** functionality allows to easily adjust the number of servers in your environment using the appropriate “**-**” and “**+**” buttons. Herewith, you can select the preferred scaling mode:
 
 - **_Stateless_** - simultaneously creates all new nodes from the base image template
 - **_Stateful_** - sequentially copies file system of the master container into the new nodes
@@ -108,7 +108,7 @@ The configurations on the Windows VPS can be applied via the [RDP](https://cloud
 
 ## File Manager
 
-The in-built **[configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager)** is designed to manage (create/delete, upload/download, edit) files inside your container, as well as setup [mount points](https://cloudmydc.com/) and manage [exported data](https://cloudmydc.com/).
+The in-built **[configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager)** is designed to manage (create/delete, upload/download, edit) files inside your container, as well as setup [mount points](https://cloudmydc.com/) and manage [exported data](https://cloudmydc.com/).
 
 <div style={{
     display:'flex',
