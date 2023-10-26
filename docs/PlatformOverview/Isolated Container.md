@@ -6,9 +6,9 @@ All of the instances in the environment (like databases, application servers, et
 
 Three main reasons why the platform provides individual role-based servers are:
 
-- [live migration](https://cloudmydc.com/)
-- [high availability](https://cloudmydc.com/)
-- [security](https://cloudmydc.com/)
+- [live migration](/docs/PlatformOverview/Isolated%20Container#isolated-containers-live-migration)
+- [high availability](/docs/PlatformOverview/Isolated%20Container#high-availability-for-applications)
+- [security](/docs/PlatformOverview/Isolated%20Container#security-of-isolated-containers)
 
 ## Isolated Containers Live Migration
 
@@ -24,9 +24,9 @@ In some cases, as your application starts requesting more and **_more resources_
 
 </div>
 
-During that migration, the application keeps working being [scaled vertically](https://cloudmydc.com/). As an application scales within a server, other applications can be migrated to another server to make room. Live migration allows platform to deliver all the needed resources for applications without restarting containers and causing application downtime. In addition, it can be used during maintenance or other planned downtime to perform automated evacuation of containers from a physical server.
+During that migration, the application keeps working being [scaled vertically](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling). As an application scales within a server, other applications can be migrated to another server to make room. Live migration allows platform to deliver all the needed resources for applications without restarting containers and causing application downtime. In addition, it can be used during maintenance or other planned downtime to perform automated evacuation of containers from a physical server.
 
-Also, you can add **more instances** to your environment using [horizontal scaling](https://cloudmydc.com/), not having to worry if there is **enough space** on the host. The platform chooses the host with an appropriate amount of free space and relocates your server, in order to offer high-quality performance to each of your nodes.
+Also, you can add **more instances** to your environment using [horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling), not having to worry if there is **enough space** on the host. The platform chooses the host with an appropriate amount of free space and relocates your server, in order to offer high-quality performance to each of your nodes.
 
 ## High Availability for Applications
 
@@ -50,6 +50,6 @@ The platform uses the **virtualization** method to run multiple containers simul
 
 :::danger Note
 
-Since each instance within the platform represents an isolated container, it can’t be reached from another node with a simple localhost:port_number or 127.0.0.1:port_number reference - the corresponding container hostname or private/public IP address should be used instead (for example, this could be required to interconnect your application with a database instance).
+Since each instance within the platform represents an isolated container, it can’t be reached from another node with a simple localhost:port_number or 127.0.0.1:port_number reference - the corresponding container hostname or private/[public](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) IP address should be used instead (for example, this could be required to interconnect your application with a database instance).
 
 :::

@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+## Release Notes 8.3.2
+
 import obj from './ReleaseNotes8.3.2.json'
 
 This document is preliminary and subject to change.
@@ -42,7 +44,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3.2#ssh-gate-improvements">
                     Learn More >>
                 </a>
             </div>
@@ -55,13 +57,13 @@ Changed
             <h3 style={{
                 fontSize: '23px',
                 fontWeight: '500',
-        }}>SSH Gate Improvements</h3>
-            <p>Provided a number of updates and improvements to enhance SSH Gate security, reliability, and usability</p>
+        }}>Software Stack Versions</h3>
+            <p>Actualized list of supported OS templates and software stack versions</p>
             <div style={{
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3.2#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -98,13 +100,13 @@ Fixed
             <h3 style={{
                 fontSize: '23px',
                 fontWeight: '500',
-        }}>SSH Gate Improvements</h3>
-            <p>Provided a number of updates and improvements to enhance SSH Gate security, reliability, and usability</p>
+        }}>Fixes Compatible with Prior Versions</h3>
+            <p>Bug fixes implemented in the current release and integrated into the previous platform versions through the appropriate patches</p>
             <div style={{
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3.2#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -117,13 +119,13 @@ Fixed
             <h3 style={{
                 fontSize: '23px',
                 fontWeight: '500',
-        }}>SSH Gate Improvements</h3>
-            <p>Provided a number of updates and improvements to enhance SSH Gate security, reliability, and usability</p>
+        }}>Bug Fixes</h3>
+            <p>List of fixes applied to the platform starting from the current release</p>
             <div style={{
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3.2#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -134,9 +136,9 @@ Fixed
 
 ## SSH Gate Improvements
 
-[SSH Gate](https://cloudmydc.com/) component of the platform that helps connect to environments via SSH protocol. In the current 8.3.2 platform version, several improvements were applied to ensure the security and reliability of the process:
+[SSH Gate](/docs/Deployment%20Tools/SSH/SSH%20Overview) component of the platform that helps connect to environments via SSH protocol. In the current 8.3.2 platform version, several improvements were applied to ensure the security and reliability of the process:
 
-- Implemented the correct processing of the new [OpenSSH extension](https://cloudmydc.com/) to the SSH protocol. The OpenSSH 8.5 and newer clients no longer require the “**UpdateHostkeys=no**” directive to connect the gate.
+- Implemented the correct processing of the new [OpenSSH extension](https://github.com/openssh/openssh-portable/blob/V_9_1/PROTOCOL#L288) to the SSH protocol. The OpenSSH 8.5 and newer clients no longer require the “**UpdateHostkeys=no**” directive to connect the gate.
 - Removed support for the obsolete KEX (key exchange protocol) algorithms to ensure the security of the connection.
 - Fixed an error with the SSH Gate crash when connecting to a broken or poorly performing backend.
 
@@ -145,7 +147,7 @@ Fixed
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3.2#release-notes-832">
         Back to the top
     </a>
 </div>
@@ -154,21 +156,9 @@ Fixed
 
 Below, you can find the fixes that were implemented in the CloudMyDc Application Platform 8.3.2 release and also integrated into previous platform versions by means of the appropriate patches.
 
-Table Table
-
-<div style={{
-        display: 'flex',
-        flexDirection: 'row-reverse',
-        padding: '10px 0',
-    }}>
-    <a href="">
-        Back to the top
-    </a>
-</div>
-
 <div style={{
         width: '100%',
-        margin: '0 0 5rem 0',
+        margin: '0 0 1rem 0',
         borderRadius: '7px',
         overflow: 'hidden',
     }} >
@@ -273,7 +263,7 @@ Table Table
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3.2#release-notes-832">
         Back to the top
     </a>
 </div>
@@ -282,16 +272,16 @@ Table Table
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/QuickStart/Software%20Stack%20Versions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="">
+   <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3.2#release-notes-832">
         Back to the top
     </a>
 </div>
@@ -409,7 +399,7 @@ In the table below, you can see the list of bug fixes applied to the platform st
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="">
+    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3.2#release-notes-832">
         Back to the top
     </a>
 </div>
