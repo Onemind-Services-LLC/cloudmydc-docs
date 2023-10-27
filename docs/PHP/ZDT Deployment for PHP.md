@@ -56,9 +56,9 @@ The availability of this functionality depends on your hosting provider’s sett
 
 Below, we’ll explore this mechanism in more detail by describing:
 
-- [ZDT deployment workflow](https://cloudmydc.com/)
-- [how ZDT functionality is ensured at the platform](https://cloudmydc.com/)
-- [atomic and classic deployment modes comparison](https://cloudmydc.com/)
+- [ZDT deployment workflow](/docs/PHP/ZDT%20Deployment%20for%20PHP)
+- [how ZDT functionality is ensured at the platform](/docs/PHP/ZDT%20Deployment%20for%20PHP)
+- [atomic and classic deployment modes comparison](/docs/PHP/ZDT%20Deployment%20for%20PHP)
 
 So, let’s go on!
 
@@ -66,7 +66,7 @@ So, let’s go on!
 
 First of all, we’ll consider more specifically how the above described PHP zero-downtime deployment mechanism actually works on the platform - let’s examine all of these processes step-by-step with a real example.
 
-1. To start with, you’ll need a PHP environment (either a [new](https://cloudmydc.com/) or the already existing one) - we’ll use Apache for this example:
+1. To start with, you’ll need a PHP environment (either a [new](/docs/EnvironmentManagement/Setting%20Up%20Environment) or the already existing one) - we’ll use Apache for this example:
 
 <div style={{
     display:'flex',
@@ -78,7 +78,7 @@ First of all, we’ll consider more specifically how the above described PHP zer
 
 </div>
 
-2. Next, proceed to the [deployment](https://cloudmydc.com/) of the required application. During this procedure, you need to tick the corresponding checkbox at the appropriate confirmation frame (depending on the project source type used) in order to enable the ZDT deployment option:
+2. Next, proceed to the [deployment](/docs/Deployment/Deployment%20Guide) of the required application. During this procedure, you need to tick the corresponding checkbox at the appropriate confirmation frame (depending on the project source type used) in order to enable the ZDT deployment option:
 
 - for deployment via local file or direct URL
 
@@ -113,7 +113,7 @@ While performing this for the first time for the already existing application, d
 :::tip Note:
 
 - **_Enable zero-downtime deployment_** flag becomes active only when deploying to the **ROOT** context of your PHP application server. Otherwise, the classic method will be used
-- while working with VCS repos, the chosen deployment mode will be remembered and used for all further [auto-updates](https://cloudmydc.com/) of this application until you change it manually
+- while working with VCS repos, the chosen deployment mode will be remembered and used for all further [auto-updates](docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview) of this application until you change it manually
 - generally, we recommend not to use the “hard-coded” absolute paths in your app’s code and configs while using the atomic deployment feature, for ensuring it remains operative regardless of the project’s directory name
 
 :::
@@ -254,7 +254,7 @@ This value can be easily changed to your custom one if needed (just do not forge
 
 :::
 
-For more information on this module’s specifics, visit its source [page](https://cloudmydc.com/).
+For more information on this module’s specifics, visit its source [page](https://github.com/etsy/mod_realdoc).
 
 - **NGINX-PHP**
 

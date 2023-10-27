@@ -4,7 +4,7 @@ sidebar_position: 1
 
 ## PHP Developer’s Center
 
-PHP is considered one of the easiest to use server-side scripting languages. Its usage for websites (top 10 million by Alexa rank) is steadily growing and currently reached [78.9%](https://cloudmydc.com/). The PHP engine’s popularity is also proven by the platform customers as almost every second server is run on top of PHP according to our internal statistics.
+PHP is considered one of the easiest to use server-side scripting languages. Its usage for websites (top 10 million by Alexa rank) is steadily growing and currently reached [78.9%](https://w3techs.com/technologies/history_overview/programming_language). The PHP engine’s popularity is also proven by the platform customers as almost every second server is run on top of PHP according to our internal statistics.
 
 Let’s take a journey to PHP cloud hosting within the platform, its chief peculiarities, winning points, and rich possibilities provided for the efficient running of applications.
 
@@ -20,17 +20,17 @@ Let’s take a journey to PHP cloud hosting within the platform, its chief pecul
 
 Use the table of content below to find required information within the guide quicker:
 
-- [PHP Versions](https://cloudmydc.com/)
-- [PHP Application Servers](https://cloudmydc.com/)
-- [PHP Application Deployment](https://cloudmydc.com/)
-- [Domains Management](https://cloudmydc.com/)
+- [PHP Versions](/docs/PHP/PHP%20Dev%20Center#php-versions)
+- [PHP Application Servers](/docs/PHP/PHP%20Dev%20Center#php-application-servers)
+- [PHP Application Deployment](/docs/PHP/PHP%20Dev%20Center#php-application-deployment)
+- [Domains Management](/docs/PHP/PHP%20Dev%20Center#domains-management)
 - [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling)
-- [Manual Horizontal Scaling](https://cloudmydc.com/)
-- [Automatic Horizontal Scaling](https://cloudmydc.com/)
-- [PHP Clustering](https://cloudmydc.com/)
-- [Database Connection to PHP Application](https://cloudmydc.com/)
-- [Modules and Accelerators](https://cloudmydc.com/)
-- [PHP Security](https://cloudmydc.com/)
+- [Manual Horizontal Scaling](docs/PHP/PHP%20Dev%20Center#manual-horizontal-scaling)
+- [Automatic Horizontal Scaling](/docs/PHP/PHP%20Dev%20Center#automatic-horizontal-scaling)
+- [PHP Clustering](/docs/PHP/PHP%20Dev%20Center#php-clustering)
+- [Database Connection to PHP Application](/docs/PHP/PHP%20Dev%20Center#database-connection-to-php-application)
+- [Modules and Accelerators](/docs/PHP/PHP%20Dev%20Center#modules-and-accelerators)
+- [PHP Security](/docs/PHP/PHP%20Dev%20Center#php-security)
 
 ## PHP Versions
 
@@ -42,11 +42,11 @@ Keeping the pace with technology evolution, the platform supports the latest PHP
 
 :::tip Tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](https://cloudmydc.com/) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](https://www.virtuozzo.com/application-platform-docs/software-stacks-versions/#engines) document.
 
 :::
 
-You can choose the engine version you need while environment creation and easily switch between them afterward via intuitive [platform UI](https://cloudmydc.com/).
+You can choose the engine version you need while environment creation and easily switch between them afterward via intuitive [platform UI](https://www.virtuozzo.com/application-platform-docs/php-versions/).
 
 <div style={{
     display:'flex',
@@ -62,10 +62,10 @@ You can choose the engine version you need while environment creation and easily
 
 Two PHP application servers are provided by default and supported by the platform (e.g. version updates or security patches are added by PaaS team to the templates):
 
-- [Apache](https://cloudmydc.com/)
-- [NGINX](https://cloudmydc.com/)
+- [Apache](https://www.virtuozzo.com/application-platform-docs/apache-php/)
+- [NGINX](https://www.virtuozzo.com/application-platform-docs/nginx-php/)
 
-To see in detail how these servers can be configured, and find out the list of editable config files for each of them, refer to the document [PHP App Server Configuration](https://cloudmydc.com/).
+To see in detail how these servers can be configured, and find out the list of editable config files for each of them, refer to the document [PHP App Server Configuration](https://www.virtuozzo.com/application-platform-docs/php-application-server-config/).
 
 <div style={{
     display:'flex',
@@ -79,9 +79,9 @@ To see in detail how these servers can be configured, and find out the list of e
 
 ## PHP Application Deployment
 
-[Zero downtime deployment](https://cloudmydc.com/) provides the ability to run any cloud-native or legacy application. In order to deliver your PHP projects to the created environment within the platform, you can choose one of the available [deployment options](https://cloudmydc.com/): via Archive/URL, GIT/SVN, Bitbucket project, etc.
+[Zero downtime deployment](https://www.virtuozzo.com/application-platform-docs/php-zero-downtime-deploy/) provides the ability to run any cloud-native or legacy application. In order to deliver your PHP projects to the created environment within the platform, you can choose one of the available [deployment options](https://www.virtuozzo.com/application-platform-docs/deployment-guide/): via Archive/URL, GIT/SVN, Bitbucket project, etc.
 
-Besides, you can configure an automatic periodic re-deployment from the repository (it is performed only if new code changes appear).
+Besides, you can configure an [automatic periodic re-deployment]("https://www.virtuozzo.com/application-platform-docs/git-svn-auto-deploy/") from the repository (it is performed only if new code changes appear).
 
 <div style={{
     display:'flex',
@@ -93,13 +93,13 @@ Besides, you can configure an automatic periodic re-deployment from the reposito
 
 </div>
 
-Also, all platform-certified PHP nodes are provided with the pre-installed [**Composer**](https://cloudmydc.com/) dependency manager to quickly install all the required packages for the deployed project and keep them up-to-date.
+Also, all platform-certified PHP nodes are provided with the pre-installed [**Composer**](https://www.virtuozzo.com/application-platform-docs/php-composer/) dependency manager to quickly install all the required packages for the deployed project and keep them up-to-date.
 
 ## Domains Management
 
-For production purposes, you can bind an external domain name to your application instead of the default environment domain. Follow the appropriate [custom domains](https://cloudmydc.com/) instruction to learn how it can be done.
+For production purposes, you can bind an external domain name to your application instead of the default environment domain. Follow the appropriate [custom domains](https://www.virtuozzo.com/application-platform-docs/custom-domains/) instruction to learn how it can be done.
 
-With the help of the [swapping domains](https://cloudmydc.com/) feature, end-users of your application won’t experience any downtime when you, for example, deploy a new application version. You can stage your new application version in a test environment and consequently swap URLs with a production environment just in a few clicks.
+With the help of the [swapping domains](https://www.virtuozzo.com/application-platform-docs/swap-domains/) feature, end-users of your application won’t experience any downtime when you, for example, deploy a new application version. You can stage your new application version in a test environment and consequently swap URLs with a production environment just in a few clicks.
 
 <div style={{
     display:'flex',
@@ -111,11 +111,11 @@ With the help of the [swapping domains](https://cloudmydc.com/) feature, end-use
 
 </div>
 
-Using [multiple domains](https://cloudmydc.com/) on a single PHP server increases the application usability, efficiency, and scalability, simultaneously saving the costs on the necessity to set up separate instances.
+Using [multiple domains](https://www.virtuozzo.com/application-platform-docs/multiple-domains-php/) on a single PHP server increases the application usability, efficiency, and scalability, simultaneously saving the costs on the necessity to set up separate instances.
 
 ## Automatic Vertical Scaling
 
-Automatic vertical scaling is made possible by the platform ability to dynamically change the number of allocated resources (RAM and CPU) for a server according to its current demands, with no manual intervention required. This feature guarantees you [never overpay for unused resources](https://cloudmydc.com/) and saves your time due to eliminating the necessity of handling the load-related adjustments or architectural changes.
+Automatic vertical scaling is made possible by the platform ability to dynamically change the number of allocated resources (RAM and CPU) for a server according to its current demands, with no manual intervention required. This feature guarantees you [never overpay for unused resources](https://www.virtuozzo.com/company/blog/deceptive-cloud-efficiency-do-you-really-pay-as-you-use/) and saves your time due to eliminating the necessity of handling the load-related adjustments or architectural changes.
 
 In order to set up automatic resource consumption by your PHP server, open the environment topology wizard and specify the upper scaling limit of [cloudlets](/docs/PlatformOverview/Cloudlet) (each equals to 128 MiB and 400 MHz) with the slider located at the top:
 
@@ -147,9 +147,9 @@ For adding extra PHP servers manually, just click **Change Environment Topology*
 
 The maximum number of the same-type servers within a single environment layer depends on a particular hosting provider settings (usually, this limit stands for 16 nodes and can be adjusted by sending a request to support).
 
-Also, as you can see, when you add extra servers, [[load balancing]](https://cloudmydc.com/) is enabled automatically.
+Also, as you can see, when you add extra servers, [[load balancing]](https://www.virtuozzo.com/application-platform-docs/load-balancing/) is enabled automatically.
 
-Please, find more details about manual [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) in the documentation.
+Please, find more details about manual [Horizontal Scaling](https://www.virtuozzo.com/application-platform-docs/horizontal-scaling/) in the documentation.
 
 ## Automatic Horizontal Scaling
 
@@ -169,15 +169,15 @@ In this way, you can configure the triggers for specific stacks and resources (C
 
 </div>
 
-Please, find more details about [automatic horizontal scaling](https://cloudmydc.com/) in the corresponding document.
+Please, find more details about [automatic horizontal scaling](https://www.virtuozzo.com/application-platform-docs/automatic-horizontal-scaling/) in the corresponding document.
 
 ## PHP Clustering
 
-Implementing the [PHP sessions clustering](https://cloudmydc.com/) for your application can highly increase its availability and failover capabilities using the sticky sessions, run on several app server nodes. This mechanism is ensured by a Memcached node that should be added to your environment and used as storage for the processed sessions’ backups.
+Implementing the [PHP sessions clustering](https://www.virtuozzo.com/application-platform-docs/memcached-php-sessions/) for your application can highly increase its availability and failover capabilities using the sticky sessions, run on several app server nodes. This mechanism is ensured by a Memcached node that should be added to your environment and used as storage for the processed sessions’ backups.
 
-While scaling out PHP server with your deployed application, you get its exact copy with all the same configurations and files inside due to built-in [data synchronization](https://cloudmydc.com/).
+While scaling out PHP server with your deployed application, you get its exact copy with all the same configurations and files inside due to built-in [data synchronization](https://www.virtuozzo.com/application-platform-docs/data-synchronization/).
 
-Besides, the platform has pre-packaged auto-scalable [WordPress Cluster](https://cloudmydc.com/) and [Magento Cluster](https://cloudmydc.com/) available for one-click installation to ensure your service operability. Moreover, you can package any PHP application in this way to automate its clustered installation.
+Besides, the platform has pre-packaged auto-scalable [WordPress Cluster](https://github.com/jelastic-jps/wordpress-cluster) and [Magento Cluster](https://github.com/jelastic-jps/magento-cluster) available for one-click installation to ensure your service operability. Moreover, you can package any PHP application in this way to automate its clustered installation.
 
 <div style={{
     display:'flex',
@@ -193,36 +193,36 @@ Besides, the platform has pre-packaged auto-scalable [WordPress Cluster](https:/
 
 The platform provides a set of scalable and fully manageable database servers that you can easily install and operate within the PHP environment. To establish the connection, adjust your application following the instruction based on the database you require:
 
-- [MySQL/MariaDB Connection](https://cloudmydc.com/)
-- [PostgreSQL Connection](https://cloudmydc.com/)
-- [MongoDB Connection](https://cloudmydc.com/)
+- [MySQL/MariaDB Connection](https://www.virtuozzo.com/application-platform-docs/connection-to-mysql-php/)
+- [PostgreSQL Connection](https://www.virtuozzo.com/application-platform-docs/connection-to-postgresql-for-php/)
+- [MongoDB Connection](https://www.virtuozzo.com/application-platform-docs/connection-to-mongodb-for-php/)
 
 ## Modules and Accelerators
 
-While working with the platform, you can extend the functionality of the environment through setting different PHP extensions at the appropriate application servers. You can either select one of the default extensions and activate it, or upload your own custom one - both these operations are described in the [PHP Modules](https://cloudmydc.com/) instruction.
+While working with the platform, you can extend the functionality of the environment through setting different PHP extensions at the appropriate application servers. You can either select one of the default extensions and activate it, or upload your own custom one - both these operations are described in the [PHP Modules](https://www.virtuozzo.com/application-platform-docs/php-extensions/) instruction.
 
-As a separate kind of PHP extension, [PHP accelerators](https://cloudmydc.com/) can be determined. They are used for enlarging your application efficiency through caching the already compiled parts of PHP code, which can be quickly executed upon a user’s request.
+As a separate kind of PHP extension, [PHP accelerators](https://www.virtuozzo.com/application-platform-docs/php-accelerators/) can be determined. They are used for enlarging your application efficiency through caching the already compiled parts of PHP code, which can be quickly executed upon a user’s request.
 
-Apache PHP and NGINX servers include a particular [set of the inbuilt modules](https://cloudmydc.com/). In addition, there are a few separate tutorials on configuring the various modules:
+Apache PHP and NGINX servers include a particular [set of the inbuilt modules](https://www.virtuozzo.com/application-platform-docs/apache-nginx-modules/). In addition, there are a few separate tutorials on configuring the various modules:
 
-- [Adding Custom Apache Modules](https://cloudmydc.com/)
-- [Apache WebDav Module](https://cloudmydc.com/)
-- [Apache Statistics Module](https://cloudmydc.com/)
-- [NGINX WebDav Module](https://cloudmydc.com/)
-- [New Relic Monitoring](https://cloudmydc.com/)
+- [Adding Custom Apache Modules](https://www.virtuozzo.com/application-platform-docs/add-apache-modules/)
+- [Apache WebDav Module](https://www.virtuozzo.com/application-platform-docs/apache-webdav-module/)
+- [Apache Statistics Module](https://www.virtuozzo.com/application-platform-docs/apache-statistics-module/)
+- [NGINX WebDav Module](https://www.virtuozzo.com/application-platform-docs/nginx-webdav-module/)
+- [New Relic Monitoring](https://www.virtuozzo.com/application-platform-docs/new-relic-installation/)
 
 ## PHP Security
 
-[SSL / TLS](https://cloudmydc.com/) (Secure Sockets Layer / Transport Layer Security) is the industry standard security technology for establishing an encrypted connection between a web server and a browser. This technology is supported by the platform and ensures that all passed data remains private and confidential, i.e., it can’t be intercepted by a third party.
+[SSL / TLS](https://www.virtuozzo.com/application-platform-docs/secure-sockets-layer/) (Secure Sockets Layer / Transport Layer Security) is the industry standard security technology for establishing an encrypted connection between a web server and a browser. This technology is supported by the platform and ensures that all passed data remains private and confidential, i.e., it can’t be intercepted by a third party.
 
-Besides the common protection methods, security of your application can be increased through [customizing the main PHP configuration file](https://cloudmydc.com/), named **_php.ini_**. You can edit a number of default settings it contains or adds your own in accordance with the needs of your application.
+Besides the common protection methods, security of your application can be increased through [customizing the main PHP configuration file](https://www.virtuozzo.com/application-platform-docs/php-security-settings/), named **_php.ini_**. You can edit a number of default settings it contains or adds your own in accordance with the needs of your application.
 
 Additional configuration guidance is available for particular application servers:
 
-- [Apache Security Configurations](https://cloudmydc.com/)
-- [NGINX Security Configurations](https://cloudmydc.com/)
+- [Apache Security Configurations](https://www.virtuozzo.com/application-platform-docs/apache-security-configurations/)
+- [NGINX Security Configurations](https://www.virtuozzo.com/application-platform-docs/nginx-security-configurations/)
 
-One more way to ensure the application protection is using a container [firewall feature](https://cloudmydc.com/). It lets you control nodes' availability both from inside and outside of the platform.
+One more way to ensure the application protection is using a  [ container firewall feature](https://www.virtuozzo.com/application-platform-docs/custom-firewall/). It lets you control nodes' availability both from inside and outside of the platform.
 
 <div style={{
     display:'flex',
