@@ -20,7 +20,7 @@ import obj from './DeployingAppsViaGitblit.json'
 
 <div>
 
-[Gitblit](https://cloudmydc.com/) is one of the most popular tools for managing, viewing and serving your repositories within Git - a widely spread VCS (version control system) for software elaboration. Mainly, Gitblit is designed for small workgroups, which work with centralized repositories, and supports the variety of remarkable features, such as access control, repository’s content displayment via web, multiple repositories management, ability to be integrated with other Git-management solutions etc.
+[Gitblit](https://www.gitblit.com/) is one of the most popular tools for managing, viewing and serving your repositories within Git - a widely spread VCS (version control system) for software elaboration. Mainly, Gitblit is designed for small workgroups, which work with centralized repositories, and supports the variety of remarkable features, such as access control, repository’s content displayment via web, multiple repositories management, ability to be integrated with other Git-management solutions etc.
 
 </div>
 
@@ -28,11 +28,11 @@ import obj from './DeployingAppsViaGitblit.json'
 
 So, let’s find out how to host Gitblit at the platform and, subsequently, simplify your apps management with its help. You can automatically get a preconfigured ready-to-work **Gitblit** instance up and running within minutes using our one-click installation widget:
 
-Just click **Get it hosted now** and type your email address in order to launch Gitblit and get the ability to proceed directly to the [repository creation](https://cloudmydc.com/) guide section, skipping the steps of manual installation.
+Just click **Get it hosted now** and type your email address in order to launch Gitblit and get the ability to proceed directly to the [repository creation](/docs/Deployment/Deploying%20Apps%20via%20Gitblit#create-a-gitblit-repository) guide section, skipping the steps of manual installation.
 
 :::tip Note
 
-The full list of applications, available for one-click installation, can be found at our [Marketplace page](https://cloudmydc.com/) or within the [corresponding](https://cloudmydc.com/) section at the dashboard.
+The full list of applications, available for one-click installation, can be found at our [Marketplace page](https://cloudmydc.com/pricing) or within the [corresponding](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) section at the dashboard.
 
 :::
 
@@ -195,103 +195,27 @@ Click **create** at the bottom of a page when ready.
 
 - first, initialize your local repository (i.e. create a folder to store your projects' files locally):
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-    <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding:  '10px 20px 5px 20px', color: 'white' }}>
-            1
-        </div>
-        <div style={{
-            padding:  '10px 20px 5px 20px',
-        }}>
+```bash
 git init
-        </div>
-    </div>
-</div>
+```
 
 define the files your project should consists of (just as an example, we’ll add the **_README_** file to it)
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-    <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding:  '10px 20px 5px 20px', color: 'white' }}>
-            1
-        </div>
-        <div style={{
-            padding:  '10px 20px 5px 20px',
-        }}>
+```bash
 git add README.md
-        </div>
-    </div>
-</div>
+```
 
 save these changes at the local repo with a commit message (e.g. mark it as a _first commit_)
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-    <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding:  '10px 20px 5px 20px', color: 'white' }}>
-            1
-        </div>
-        <div style={{
-            padding:  '10px 20px 5px 20px',
-        }}>
+```bash
 git commit -m "first commit"
-        </div>
-    </div>
-</div>
+```
 
 specify the previously created GitBlit repository as a remote one for your local Git repo
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-    <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding:  '10px 20px 5px 20px', color: 'white' }}>
-            1
-        </div>
-        <div style={{
-            padding:  '10px 20px 5px 20px',
-        }}>
-            {obj.data1}
-        </div>
-    </div>
-</div>
+```bash
+git remote add  {name}  {repo_url}
+```
 
 where:
 
@@ -310,28 +234,9 @@ where:
 
 - finally, push your local project to the **Gitblit** repository:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-    <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding:  '10px 20px 5px 20px', color: 'white' }}>
-            1
-        </div>
-        <div style={{
-            padding:  '10px 20px 5px 20px',
-        }}>
-            {obj.data2}
-        </div>
-    </div>
-</div>
+```bash
+git push -u  {name}  {branch}
+```
 
 where:
 
@@ -370,11 +275,11 @@ Now, let’s discover how to deploy your project from a Gitblit repository into 
 
 that the extra Maven node is required for Java projects only, while for the rest of engines build is performed automatically, while adding a project to application server. Refer to the appropriate document below in case you need details on how to accomplish this:
 
-- [Maven for Deploy via Git/SVN](https://cloudmydc.com/)
-- [Deploy PHP Projects via Git/SVN](https://cloudmydc.com/)
-- [Deploy Ruby Project via Git/SVN](https://cloudmydc.com/)
-- [Deploy Python Projects via Git/SVN](https://cloudmydc.com/)
-- [Deploy Node.js Project via Git/SVN ](https://cloudmydc.com/)
+- [Maven for Deploy via Git/SVN](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven)
+- [Deploy PHP Projects via Git/SVN](/docs/Deployment/Deployment%20Guide)
+- [Deploy Ruby Project via Git/SVN](/docs/Deployment/Deployment%20Guide)
+- [Deploy Python Projects via Git/SVN](/docs/Deployment/Deployment%20Guide)
+- [Deploy Node.js Project via Git/SVN ](/docs/Deployment/Deployment%20Guide)
 
 :::
 

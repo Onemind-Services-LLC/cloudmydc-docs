@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-With the platform, you can easily [deploy your application](https://cloudmydc.com/) from any remote public or private GIT/SVN repository for each of the supported programming languages: Java, PHP, Ruby, Python, and Node.js.
+With the platform, you can easily [deploy your application](/docs/Deployment/Deployment%20Guide) from any remote public or private GIT/SVN repository for each of the supported programming languages: Java, PHP, Ruby, Python, and Node.js.
 
 In order to achieve more security, you can also access your private GIT repositories via SSH and easily clone and update your applications from them. In addition, this gives you the ability to work with those repositories, which are located at the private servers, instead of common web-based hosting services for projects like GitHub, GitLab, Bitbucket, etc.
 
@@ -18,17 +18,17 @@ In order to achieve more security, you can also access your private GIT reposito
 
 For accessing your private GIT repository using the secured SSH protocol, follow the simple steps below:
 
-1. Generate SSH Keychain
-2. Add Private SSH Key to Platform Account
-3. Add Public SSH Key to Git Account
-   - GitHub
-   - GitLab
-   - Bitbucket
-4. Deploy Project via SSH
+1. [Generate SSH Keychain](/docs/Deployment/SSH%20Access%20to%20GIT%20Repository#generate-ssh-keychain)
+2. [Add Private SSH Key to Platform Account](/docs/Deployment/SSH%20Access%20to%20GIT%20Repository#add-private-ssh-key-to-platform-account)
+3. [Add Public SSH Key to Git Account](/docs/Deployment/SSH%20Access%20to%20GIT%20Repository#add-public-ssh-key-to-git-account)
+   - [GitHub](/docs/Deployment/SSH%20Access%20to%20GIT%20Repository#github)
+   - [GitLab](/docs/Deployment/SSH%20Access%20to%20GIT%20Repository#gitlab)
+   - [Bitbucket](/docs/Deployment/SSH%20Access%20to%20GIT%20Repository#bitbucket)
+4. [Deploy Project via SSH](/docs/Deployment/SSH%20Access%20to%20GIT%20Repository#deploy-project-via-ssh)
 
 ## Generate SSH Keychain
 
-To start with, you need to create an SSH key pair (i.e. two related keys: private and public) for binding your GIT repository to the PaaS account. Follow the **[Generate SSH Key](https://cloudmydc.com/)** instruction if you’ve never generated a keychain before.
+To start with, you need to create an SSH key pair (i.e. two related keys: private and public) for binding your GIT repository to the PaaS account. Follow the **[Generate SSH Key](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key)** instruction if you’ve never generated a keychain before.
 
 :::danger Note: Your keys <u>must not</u> contain password protection (passphrase) in order to be used for establishing a connection between the platform and GIT accounts.
 
@@ -102,9 +102,9 @@ If your GIT repository is located at the remote private server, just upload the 
 
 In case you are using some web-based projects' hosting service, follow the corresponding detailed step-by-step guide below. As an example, we’ll pay attention to the three most popular services:
 
-- GitHub
-- GitLab
-- Bitbucket
+- [GitHub](/docs/Deployment/SSH%20Access%20to%20GIT%20Repository#github)
+- [GitLab](/docs/Deployment/SSH%20Access%20to%20GIT%20Repository#gitlab)
+- [Bitbucket](/docs/Deployment/SSH%20Access%20to%20GIT%20Repository#bitbucket)
 
 ## GitHub
 
@@ -292,7 +292,7 @@ Click the **Add key** button.
 
 Finally, now you can proceed to your project’s deployment via the secured connection.
 
-1. Go to the **_[Deployment Manager](https://cloudmydc.com/)_** at the bottom of the dashboard and click **Add repo**. Provide the following information within the opened form:
+1. Go to the **_[Deployment Manager](/docs/Deployment/Deployment%20Manager#git--svn-projects)_** at the bottom of the dashboard and click **Add repo**. Provide the following information within the opened form:
 
 - **Name** - the name of your application (no spaces and special symbols are allowed)
 - **URL** - the appropriate **_git_** URL to the repository
@@ -334,10 +334,10 @@ For Java-based environments, you need to additionally select a [build node](http
 :::
 
 - **Path** - type the context you would like your application to be deployed to (or leave the default one)
-- **[Hooks](https://cloudmydc.com/)** - add pre- and post-deployment operations (if needed)
-- **Check and auto-deploy updates** - enables [automatic periodic updates](https://cloudmydc.com/) of your project from the repository (performed only there are code changes) with a set interval
+- **[Hooks](/docs/Deployment/Deployment%20Hooks)** - add pre- and post-deployment operations (if needed)
+- **Check and auto-deploy updates** - enables [automatic periodic updates](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview) of your project from the repository (performed only there are code changes) with a set interval
 - **Auto-resolve conflicts **- prevents the merge conflict, the “git reset –hard” command will be called during each subsequent project update (contradictory files will be updated according to its repository version, discarding the locally made changes)
-- **Enable [zero-downtime deployment](https://cloudmydc.com/)** - adjusts the deployment flow to avoid application downtime (for PHP servers only)
+- **Enable [zero-downtime deployment](/docs/PHP/ZDT%20Deployment%20for%20PHP)** - adjusts the deployment flow to avoid application downtime (for PHP servers only)
 
 <div style={{
     display:'flex',

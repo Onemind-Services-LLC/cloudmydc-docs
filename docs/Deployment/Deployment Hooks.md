@@ -15,7 +15,7 @@ sidebar_position: 7
 
 <div>
 
-[Gitblit](https://cloudmydc.com/) is one of the most popular tools for managing, viewing and serving your repositories within Git - a widely spread VCS (version control system) for software elaboration. Mainly, Gitblit is designed for small workgroups, which work with centralized repositories, and supports the variety of remarkable features, such as access control, repository’s content displayment via web, multiple repositories management, ability to be integrated with other Git-management solutions etc.
+[Gitblit](https://en.wikipedia.org/wiki/Webhook) is one of the most popular tools for managing, viewing and serving your repositories within Git - a widely spread VCS (version control system) for software elaboration. Mainly, Gitblit is designed for small workgroups, which work with centralized repositories, and supports the variety of remarkable features, such as access control, repository’s content displayment via web, multiple repositories management, ability to be integrated with other Git-management solutions etc.
 
 </div>
 
@@ -25,8 +25,8 @@ sidebar_position: 7
 
 So below we’ll examine how to operate with hooks at the platform and will overview several common use cases with step-by-step instructions this functionality can come in handy for:
 
-- [Hooks Management](https://cloudmydc.com/)
-- [Hooks Use Cases](https://cloudmydc.com/)
+- [Hooks Management](/docs/Deployment/Deployment%20Hooks#hooks-management)
+- [Hooks Use Cases](/docs/Deployment/Deployment%20Hooks#hooks-use-cases)
 
 ## Hooks Management
 
