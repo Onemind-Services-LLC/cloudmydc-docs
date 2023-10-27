@@ -48,7 +48,7 @@ We’ve [tested different kinds of Garbage Collectors](https://cloudmydc.com/) (
 Jelastic supports the following GCs:
 
 - **_G1 GC (-XX:+UseG1GC)_** is a default GC in Jelastic PaaS. The Garbage-First (G1) is a server-style Garbage Collector for multiprocessor machines with a large amount of memory. The heap is partitioned into fixed-sized regions and G1 tracks the live data in those regions. When Garbage Collection is required, it collects from the regions with less live data first.
-- **_Shenandoah GC (-XX:+UseShenandoahGC)_** is a concurrent garbage collector for the JVM. Concurrent means that the GC tries to perform most of the activities in parallel without interrupting application performance. Such parallelism makes “stop-the-world” (STW) pauses extremely short that is the most required task for each GC. Another inherent advantage is an efficient work with small and large heaps with no impact on STW pauses' length. The Shenandoah GC uses an additional [**_-XX:ShenandoahGCHeuristics=compact_**](https://cloudmydc.com/) option.
+- **_Shenandoah GC (-XX:+UseShenandoahGC)_** is a concurrent garbage collector for the JVM. Concurrent means that the GC tries to perform most of the activities in parallel without interrupting application performance. Such parallelism makes “stop-the-world” (STW) pauses extremely short that is the most required task for each GC. Another inherent advantage is an efficient work with small and large heaps with no impact on STW pauses' length. The Shenandoah GC uses an additional [**_-XX:ShenandoahGCHeuristics=compact_**](https://wiki.openjdk.org/display/shenandoah/Main#Main-Heuristics) option.
 - **_ZGC (-XX:+UseZGC)_** is low latency scalable garbage collector. Designed for use with applications that require a large heap and low latency. It uses a bunch of one generation and performs most (but not all) garbage collection in parallel with uninterrupted application work. This greatly limits the impact of garbage collection on your application response time. The ZGC uses an additional **_-XX:ZCollectionInterval=$ZCOLLECTION_INTERVAL_** option to set the maximum interval (in seconds) between two GC cycles (can be redefined via the **_ZCOLLECTION_INTERVAL_** [variable](https://cloudmydc.com/)).
 - **_Epsilon GC (-XX:+UseEpsilonGC)_** is a passive GC that handles memory allocation and doesn't clear it when objects are no longer used. When your application exhausts the Java heap, the JVM goes down. So, EpsilonGC prolongs an application life until the memory will run out and dumps the memory, that can be useful for application memory usage debugging, as well as measuring and managing application performance.
 - Parallel
@@ -62,16 +62,16 @@ Jelastic supports the following GCs:
 
 The **_Openj9_** Java engine <u>_does not_</u> support the GCs listed above. The following options are available for the Openj9 instances instead:
 
-- [-XX:+IdleTuningCompactOnIdle](https://cloudmydc.com/)
-- [-XX:+IdleTuningGcOnIdle](https://cloudmydc.com/)
-- [-XX:IdleTuningMinIdleWaitTime=180](https://cloudmydc.com/)
-- [-Xjit:waitTimeToEnterDeepIdleMode=500000](https://cloudmydc.com/)
+- [-XX:+IdleTuningCompactOnIdle](https://eclipse.dev/openj9/docs/xxidletuningcompactonidle/)
+- [-XX:+IdleTuningGcOnIdle](https://eclipse.dev/openj9/docs/xxidletuninggconidle/)
+- [-XX:IdleTuningMinIdleWaitTime=180](https://eclipse.dev/openj9/docs/xxidletuningminidlewaittime/)
+- [-Xjit:waitTimeToEnterDeepIdleMode=500000](https://eclipse.dev/openj9/docs/xjit/)
 
 :::
 
 ## Default JVM Options in Jelastic PaaS
 
-By default Jelastic PaaS uses G1 GC for JVM 8+ versions. For lower versions it employs the ParNew GC. Also, for JVM versions below 12 Jelastic attaches [jelastic-gc-agent.jar](https://cloudmydc.com/) which enables vertical scaling for older releases.
+By default Jelastic PaaS uses G1 GC for JVM 8+ versions. For lower versions it employs the ParNew GC. Also, for JVM versions below 12 Jelastic attaches [jelastic-gc-agent.jar](https://github.com/jelastic-jps/java-memory-agent) which enables vertical scaling for older releases.
 
 For JVM 12+ versions, the platform provides [integrated vertical scaling](https://cloudmydc.com/) to ensure G1 triggering with the following pre-set container [Variables](/docs/Container/Container%20Configuration/Variables):
 
@@ -117,13 +117,13 @@ If JVM version is higher than 12, the platform additionally configures the follo
 
   15 minutes should pass since any previous garbage collection pause
 
-For more details, you can review the following script that manages [automatic configuration of the Java options](https://cloudmydc.com/).
+For more details, you can review the following script that manages [automatic configuration of the Java options](https://github.com/jelastic-jps/java-memory-agent/blob/master/scripts/memoryConfig.sh).
 
 ## Customization of GC Settings in Jelastic PaaS
 
 If you believe that customization of default settings can improve performance or memory consumption, you can tune them according to the requirements of your application. We recommend customizing these configurations only if you fully understand the impact of such changes on your application behaviour.
 
-You can set a custom GC parameter based on your application requirements via E[nvironment Variables](https://cloudmydc.com/) (please do not mix them with Java options).
+You can set a custom GC parameter based on your application requirements via E[nvironment Variables](/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables) (please do not mix them with Java options).
 
 <div style={{
     display:'flex',
@@ -135,7 +135,7 @@ You can set a custom GC parameter based on your application requirements via E[n
 
 </div>
 
-- **\_JAVA_OPTIONS and JAVA_TOOL_OPTIONS** - please [read more about these options](https://cloudmydc.com/).
+- **\_JAVA_OPTIONS and JAVA_TOOL_OPTIONS** - please [read more about these options](https://stackoverflow.com/questions/28327620/difference-between-java-options-java-tool-options-and-java-opts).
   Java options can be used for changing default GC type, for example:
   _\_JAVA_OPTIONS="-XX:+UseShenandoahGC"_
 - **GC_DEF** - type of Garbage Collector, for example GC_DEF=G1GC

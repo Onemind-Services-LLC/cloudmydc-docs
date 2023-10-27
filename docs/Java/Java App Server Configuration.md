@@ -44,23 +44,23 @@ if you create/rename a file or folder in the Configuration manager, this will be
 
 Below you will see the list of the configuration files available for editing in the Java application servers:
 
-- [Tomcat](https://cloudmydc.com/)
-- [TomEE](https://cloudmydc.com/)
-- [GlassFish](https://cloudmydc.com/)
-- [Jetty](https://cloudmydc.com/)
+- [Tomcat](/docs/Java/Java%20App%20Server%20Configuration#tomcat)
+- [TomEE](/docs/Java/Java%20App%20Server%20Configuration#tomee)
+- [GlassFish](/docs/Java/Java%20App%20Server%20Configuration#glassfish)
+- [Jetty](/docs/Java/Java%20App%20Server%20Configuration#jetty)
 
 To get more information on which settings can be changed in the provided config folders, use the appropriate descriptions:
 
-- [server](https://cloudmydc.com/)
-- [home](https://cloudmydc.com/)
-- [webapps/work](https://cloudmydc.com/)
-- [JAVA_HOME](https://cloudmydc.com/)
-- [lib](https://cloudmydc.com/)
-- [cron](https://cloudmydc.com/)
-- [keys](https://cloudmydc.com/)
-- [contexts](https://cloudmydc.com/)
-- [server_lib](https://cloudmydc.com/)
-- [apps](https://cloudmydc.com/)
+- [server](docs/Java/Java%20App%20Server%20Configuration#server)
+- [home](/docs/Java/Java%20App%20Server%20Configuration#home)
+- [webapps/work](/docs/Java/Java%20App%20Server%20Configuration#webapps--work)
+- [JAVA_HOME](/docs/Java/Java%20App%20Server%20Configuration#java_home)
+- [lib](/docs/Java/Java%20App%20Server%20Configuration#lib)
+- [cron](/docs/Java/Java%20App%20Server%20Configuration#cron)
+- [keys](/docs/Java/Java%20App%20Server%20Configuration#keys)
+- [contexts](/docs/Java/Java%20App%20Server%20Configuration#contexts)
+- [server_lib](/docs/Java/Java%20App%20Server%20Configuration#server_lib)
+- [apps](/docs/Java/Java%20App%20Server%20Configuration#apps)
 
 ## SERVER
 
@@ -70,7 +70,7 @@ Using the following config files, you can perform the actions listed below (thes
 
 **_<u>context.xml</u>_**
 
-- configure [session replication via Memcached](https://cloudmydc.com/)
+- configure [session replication via Memcached](/docs/Memcached/Session%20Replication%20via%20Memcached)
 
   **_<u>web.xml</u>_**
 
@@ -172,6 +172,8 @@ The **JAVA_HOME** folder contains the java config files and libs. Here, you can 
 ## LIB
 
 The **lib** folder is used for storing default and uploading custom **jar** libraries.
+
+
 
 <div style={{
     display:'flex',

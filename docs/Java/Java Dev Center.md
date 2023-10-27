@@ -29,63 +29,63 @@ Currently multilingual, the platform was initially created as pure Java Cloud an
 
 Use the table of content below to find required information within the guide quicker:
 
-- [Java Versions](https://cloudmydc.com/)
-- [Java Application Servers](https://cloudmydc.com/)
-- [Java Environment Creation](https://cloudmydc.com/)
-- [Java Application Deployment](https://cloudmydc.com/)
-- [Domains Management](https://cloudmydc.com/)
+- [Java Versions](/docs/Java/Java%20Dev%20Center#java-versions)
+- [Java Application Servers](/docs/Java/Java%20Dev%20Center#java-application-servers)
+- [Java Environment Creation](/docs/Java/Java%20Dev%20Center#java-environment-creation)
+- [Java Application Deployment](/docs/Java/Java%20Dev%20Center#java-application-deployment)
+- [Domains Management](/docs/Java/Java%20Dev%20Center#domains-management)
 - [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling)
-- [Horizontal Scaling: Manual and Automatic](https://cloudmydc.com/)
-- [Java Clusterization](https://cloudmydc.com/)
-- [Database Connection to Java Application](https://cloudmydc.com/)
+- [Horizontal Scaling: Manual and Automatic](/docs/Java/Java%20Dev%20Center#horizontal-scaling-manual-and-automatic)
+- [Java Clusterization](/docs/Java/Java%20Dev%20Center#java-clusterization)
+- [Database Connection to Java Application](docs/Java/Java%20Dev%20Center#database-connection-to-java-application)
 
 ## Java Versions
 
 Currently (at the time of this writing), the following Java versions and distributions are available:
 
-- **AdoptOpenJDK**: 8.0.312; 11.0.13; 13.0.2; 14.0.2; 15.0.2; 16.0.2
-- **Alibaba Dragonwell**: 8.11.12
-- **Amazon Corretto**: 8.382.05.1; 11.0.20.9.1; 15.0.2.7.1; 16.0.2.7.1; 17.0.8.8.1; 18.0.2.9.1; 19.0.2.7.1; 20.0.2.10.1
-- **Eclipse OpenJ9**: 0.11.0 (8u192-b12; 11.0.1); 0.15.1 (8u222-b10; 11.0.4); 0.17.0 (8u232-b09; 11.0.5; 13.0.1); 0.18.1(8u242-b08; 11.0.6; 13.0.2) 0.20.0 (8u252-b09; 11.0.7); 0.21.0 (8u262-b10; 8u265-b01; 11.0.8; 14.0.2); 0.22.0 (15.0.0); 0.23.0 (8u272-b10; 11.0.9); 0.24.0 (8u282-b08; 11.0.10); 0.25.0-16; 0.26.0 (8u292-b10; 11.0.11); 0.27.0 (8u302-b08; 11.0.12); 0.29.0 (8u312-b07; 11.0.13); 0.30.0 (8u322-b06; 11.0.14); 0.32.0 (8u332-b09; 11.0.15); 0.33.1 (8u345-b01; 11.0.16); 0.35.0 (8u352-b08; 11.0.17); 0.36.1 (8u362-b09; 11.0.18); 0.38.0 (8u372-b07; 11.0.19)
-- **Eclipse Temurin**: 8.0.382; 11.0.20; 17.0.8; 18.0.2.1; 19.0.2; 20.0.2
-- **GraalVM CE** (currently, for Java Engine and Maven only): 19.3.1; 20.2.0; 21.3.0; 22.3.3
-- **Liberica JDK**: 8.0.322; 11.0.14; 13.0.2; 14.0.2; 15.0.0; 16.0.0; 17.0.2
-- **Oracle JDK Dev**: 7.0_79; 8.0_202; 11.0.2
+- **[AdoptOpenJDK](https://adoptium.net/)**: 8.0.312; 11.0.13; 13.0.2; 14.0.2; 15.0.2; 16.0.2
+- **[Alibaba Dragonwell](https://dragonwell-jdk.io/#/index)**: 8.11.12
+- **[Amazon Corretto](https://aws.amazon.com/corretto/?filtered-posts.sort-by=item.additionalFields.createdDate&filtered-posts.sort-order=desc)**: 8.382.05.1; 11.0.20.9.1; 15.0.2.7.1; 16.0.2.7.1; 17.0.8.8.1; 18.0.2.9.1; 19.0.2.7.1; 20.0.2.10.1
+- **[Eclipse OpenJ9](https://eclipse.dev/openj9/)**: 0.11.0 (8u192-b12; 11.0.1); 0.15.1 (8u222-b10; 11.0.4); 0.17.0 (8u232-b09; 11.0.5; 13.0.1); 0.18.1(8u242-b08; 11.0.6; 13.0.2) 0.20.0 (8u252-b09; 11.0.7); 0.21.0 (8u262-b10; 8u265-b01; 11.0.8; 14.0.2); 0.22.0 (15.0.0); 0.23.0 (8u272-b10; 11.0.9); 0.24.0 (8u282-b08; 11.0.10); 0.25.0-16; 0.26.0 (8u292-b10; 11.0.11); 0.27.0 (8u302-b08; 11.0.12); 0.29.0 (8u312-b07; 11.0.13); 0.30.0 (8u322-b06; 11.0.14); 0.32.0 (8u332-b09; 11.0.15); 0.33.1 (8u345-b01; 11.0.16); 0.35.0 (8u352-b08; 11.0.17); 0.36.1 (8u362-b09; 11.0.18); 0.38.0 (8u372-b07; 11.0.19)
+- **[Eclipse Temurin](https://projects.eclipse.org/projects/adoptium.temurin)**: 8.0.382; 11.0.20; 17.0.8; 18.0.2.1; 19.0.2; 20.0.2
+- **[GraalVM CE](https://projects.eclipse.org/projects/adoptium.temurin)** (currently, for Java Engine and Maven only): 19.3.1; 20.2.0; 21.3.0; 22.3.3
+- **[Liberica JDK](https://bell-sw.com/)**: 8.0.322; 11.0.14; 13.0.2; 14.0.2; 15.0.0; 16.0.0; 17.0.2
+- **[Oracle JDK Dev](https://jdk.java.net/)**: 7.0_79; 8.0_202; 11.0.2
 - Oracle OpenJDK: 7.0.261; 8.0.382; 11.0.20; 13.0.2; 14.0.2; 15.0.2; 16.0.2; 17.0.2; 18.0.2.1; 19.0.2; 20.0.2; 21; 22.ea-b18
-- **Zulu Community**: 7.0.352; 8.0.382; 11.0.20.1; 13.0.9; 14.0.2; 15.0.10; 16.0.2; 17.0.8.1; 18.0.2.1; 19.0.2; 20.0.2
+- **[Zulu Community](https://www.azul.com/downloads/#zulu)**: 7.0.352; 8.0.382; 11.0.20.1; 13.0.9; 14.0.2; 15.0.10; 16.0.2; 17.0.8.1; 18.0.2.1; 19.0.2; 20.0.2
 
 The _6th, 9th, 10th_, and _12th_ Java versions cannot be created within the new environments anymore due to end-of-life of the respective releases. However, the already existing instances remain fully operable (including redeploy, cloning, horizontal scaling).
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](https://cloudmydc.com/) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/QuickStart/Software%20Stack%20Versions#engines) document.
 
 :::
 
-You can choose the preferred version while creating an environment, or change it later. These procedures are described in the [Java Versions](https://cloudmydc.com/) document.
+You can choose the preferred version while creating an environment, or change it later. These procedures are described in the [Java Versions](/docs/Java/Java%20Versions) document.
 
 ## Java Application Servers
 
-Within a wide variety of software stacks, the platform supports a pure [Java Engine](https://cloudmydc.com/) and the following Java application servers:
+Within a wide variety of software stacks, the platform supports a pure [Java Engine](/docs/Java/Java%20App%20Servers/Java%20Engine%20Server) and the following Java application servers:
 
-- [GlassFish](https://cloudmydc.com/)
-- [Jetty](https://cloudmydc.com/)
+- [GlassFish](/docs/Java/Java%20App%20Servers/GlassFish/GlassFish%20Server)
+- [Jetty](docs/Java/Java%20App%20Servers/Jetty/Jetty%20Server)
 - [Payara](https://cloudmydc.com/)
 - [Spring Boot](https://cloudmydc.com/)
-- [Tomcat9](https://cloudmydc.com/)
-- [TomEE](https://cloudmydc.com/)
-- [WildFly](https://www.wildfly.org/)
+- [Tomcat9](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat%20Server)
+- [TomEE](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/TomEE%20Server)
+- [WildFly](www.virtuozzo.com/application-platform-docs/wildfly/)
 
 Read the documentation below for additional information on Java servers specifics within the platform:
 
-- [Java App Server Configuration](https://cloudmydc.com/)
+- [Java App Server Configuration](/docs/Java/Java%20App%20Server%20Configuration)
 - [Java Garbage Collection](https://cloudmydc.com/)
 - [Java Agent](https://cloudmydc.com/)
-- [Java Tutorials](https://cloudmydc.com/)
+- [Java Tutorials](/docs/Java/Java%20Apps%20Specifications/Java%20Agent)
 
 ## Java Environment Creation
 
-To host a Java application, you need to create an appropriate environment. Just open the [**topology wizard**](https://cloudmydc.com/) in your PaaS dashboard, navigate to the **Java** language tab, pick the desired Java application server, databases, and other stacks. If needed, customize settings (such as cloudlets, disk space, region, etc.) and click **Create**.
+To host a Java application, you need to create an appropriate environment. Just open the [**topology wizard**](/docs/EnvironmentManagement/Setting%20Up%20Environment) in your PaaS dashboard, navigate to the **Java** language tab, pick the desired Java application server, databases, and other stacks. If needed, customize settings (such as cloudlets, disk space, region, etc.) and click **Create**.
 
 <div style={{
     display:'flex',
@@ -97,7 +97,7 @@ To host a Java application, you need to create an appropriate environment. Just 
 
 </div>
 
-All added servers represent [fully isolated containers](https://cloudmydc.com/), located on different hosts for more availability, while isolation eliminates the risks of interfering with one another. You can attach the [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address to any of these servers for being accessed directly. Otherwise (i.e. if using default settings), the incoming requests sent to your application will be proxied by [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer).
+All added servers represent [fully isolated containers](/docs/PlatformOverview/Isolated%20Container), located on different hosts for more availability, while isolation eliminates the risks of interfering with one another. You can attach the [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address to any of these servers for being accessed directly. Otherwise (i.e. if using default settings), the incoming requests sent to your application will be proxied by [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer).
 
 ## Java Application Deployment
 
@@ -107,7 +107,7 @@ The following deployment methods are supported:
 
 - via the application **_archive_** - _.war, .zip, .jar,_ and _.ear_ archives
 - from the GIT/SVN remote **_repository_**, using the Maven build node
-- using **_plugins_** - _[Ant Task](https://cloudmydc.com/), [Eclipse, IntelliJ IDEA](https://cloudmydc.com/), [Maven](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven)_ and _[NetBeans](https://cloudmydc.com/)_
+- using **_plugins_** - _[Ant Task](/docs/Deployment%20Tools/Plugins/Ant%20Task), [Eclipse, IntelliJ IDEA](https://cloudmydc.com/), [Maven](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven)_ and _[NetBeans](/docs/Deployment%20Tools/Plugins/NetBeans%20Plugin/NetBeans%20Plugin%20Overview/)_
 
 <div style={{
     display:'flex',
@@ -121,12 +121,12 @@ The following deployment methods are supported:
 
 You can read the appropriate documents to learn more about the deployment of the Java applications:
 
-- [Deployment Guide](https://cloudmydc.com/)
-- [Maven Build Node](https://cloudmydc.com/)
-- [Auto-Deploy Overview](https://cloudmydc.com/)
-- [Deployment Hooks](https://cloudmydc.com/)
+- [Deployment Guide](/docs/Deployment/Deployment%20Guide)
+- [Maven Build Node](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven)
+- [Auto-Deploy Overview](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview)
+- [Deployment Hooks](/docs/Deployment/Deployment%20Hooks)
 
-There are also separate instructions for managing your projects via [Gitblit](https://cloudmydc.com/) and [WebDAV](https://cloudmydc.com/).
+There are also separate instructions for managing your projects via [Gitblit](/docs/Deployment/Deploying%20Apps%20via%20Gitblit) and [WebDAV](/docs/Deployment%20Tools/Remote%20Access%20via%20WebDAV).
 
 ## Domains Management
 
@@ -151,15 +151,15 @@ Also, with the help of the [swapping domains](https://cloudmydc.com/) feature or
 
 The platform allows using multiple domains within a single environment to increase its usability, efficiency, and scalability, while simultaneously saving your costs by avoiding a need to set up separate instances for different apps. Check the appropriate examples below:
 
-- [Multiple Domains with Public IP](https://cloudmydc.com/)
-- [Multiple Domains for Tomcat](https://cloudmydc.com/)
-- [Multiple Domains for GlassFish](https://cloudmydc.com/)
+- [Multiple Domains with Public IP](/docs/ApplicationSetting/Domain%20Name%20Management/Multiple%20Domains%20with%20Public%20IP)
+- [Multiple Domains for Tomcat](/docs/ApplicationSetting/Domain%20Name%20Management/Multiple%20Domain%20for%20Tomcat)
+- [Multiple Domains for GlassFish](/docs/ApplicationSetting/Domain%20Name%20Management/Multiple%20Domains%20For%20GlassFish)
 
 :::
 
 ## Automatic Vertical Scaling
 
-The platform dynamically provides the number of cloudlets (i.e. RAM and CPU resources), which are required by your application to handle the current load. Just specify the maximum limit, and everything else will be performed by the platform automatically - no manual intervention required. This feature is called [**_atuomatic vertical scaling_**](https://cloudmydc.com/) and ensures that you never overpay for unused capacities without experiencing a resource shortage.
+The platform dynamically provides the number of cloudlets (i.e. RAM and CPU resources), which are required by your application to handle the current load. Just specify the maximum limit, and everything else will be performed by the platform automatically - no manual intervention required. This feature is called [**_atuomatic vertical scaling_**](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling) and ensures that you never overpay for unused capacities without experiencing a resource shortage.
 
 <div style={{
     display:'flex',
@@ -185,7 +185,7 @@ To set or change the vertical scaling limit, just use the appropriate slider wit
 
 ## Horizontal Scaling: Manual and Automatic
 
-In case your application becomes highly popular and a single node is not enough, feel free to scale it [horizontally](https://cloudmydc.com/). In order to ensure even more reliability and high-availability, all the newly added nodes are created on the different hardware nodes.
+In case your application becomes highly popular and a single node is not enough, feel free to scale it [horizontally](docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling). In order to ensure even more reliability and high-availability, all the newly added nodes are created on the different hardware nodes.
 
 <div style={{
     display:'flex',
@@ -206,7 +206,7 @@ Also, you can adjust the preferred [scaling mode](/docs/ApplicationSetting/Scali
 
 Horizontal scaling can be performed not only manually but also automatically based on the current load on the node, which is monitored through the tunable triggers.
 
-Within the **Settings > Monitoring > [Auto Horizontal Scaling](https://cloudmydc.com/)** section, you can adjust the scaling conditions due to your needs, i.e. the lower/upper limit (percentage) for the specified resource type during a certain period. If the load stays out of the set limits, the nodes removal/addition process will be called automatically.
+Within the **Settings > Monitoring > [Auto Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling)** section, you can adjust the scaling conditions due to your needs, i.e. the lower/upper limit (percentage) for the specified resource type during a certain period. If the load stays out of the set limits, the nodes removal/addition process will be called automatically.
 
 There are five different types of resources, which are monitored by triggers:
 
@@ -232,7 +232,7 @@ The trigger starts monitoring the resource consumption immediately after additio
 
 The embedded application server clustering feature provides replication of sessions between pairs of nodes and eliminates the necessity of additional software or Memcached usage for increasing application availability.
 
-The platform provides automated session replication between _Tomcat_ and _TomEE servers_ with the help of multicast to gain web application high availability within the Java cluster. This [**High-Availability**](https://cloudmydc.com/) feature can be enabled in the wizard during environment creation or topology tuning.
+The platform provides automated session replication between _Tomcat_ and _TomEE servers_ with the help of multicast to gain web application high availability within the Java cluster. This [**High-Availability**](docs/ApplicationSetting/Scaling%20And%20Clustering/Session%20Replication%20for%20HA) feature can be enabled in the wizard during environment creation or topology tuning.
 
 <div style={{
     display:'flex',
@@ -244,7 +244,7 @@ The platform provides automated session replication between _Tomcat_ and _TomEE 
 
 </div>
 
-The newer modern [**Auto-Clustering**](https://cloudmydc.com/) solution is provided for the _GlassFish, Payara,_ and _WildFly_ stacks:
+The newer modern [**Auto-Clustering**](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances) solution is provided for the _GlassFish, Payara,_ and _WildFly_ stacks:
 
 - [Out-of-Box GlassFish & Payara Clustering0](https://cloudmydc.com/)
 - [WildFly Automatic Micro Clustering and Scaling](https://cloudmydc.com/)
@@ -263,8 +263,8 @@ The newer modern [**Auto-Clustering**](https://cloudmydc.com/) solution is provi
 
 A set of scalable and fully manageable database servers can be easily installed within the Java environment. To establish the connection, adjust your application following the instruction based on the database you require:
 
-- [MySQL and MariaDB Connection](https://cloudmydc.com/)
+- [MySQL and MariaDB Connection](/docs/Database/MySQL-MariaDB-Percona/Connection%20to%20Applications/Java%20Connection)
 - [PostgreSQL Connection](https://cloudmydc.com/)
-- [MongoDB Connection](https://cloudmydc.com/)
+- [MongoDB Connection](/docs/Database/MySQL-MariaDB-Percona/Connection%20to%20Applications/Java%20Connection)
 
 The platform provides high-quality Java hosting with improved availability, redundancy, and scalability strengths for your application.
