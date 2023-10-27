@@ -26,12 +26,12 @@ sidebar_position: 8
 
 <!-- Content changes -->
 
-[**Composer**](https://cloudmydc.com/) is one of PHP’s most popular dependency management tools inspired by the node’s [npm](https://cloudmydc.com/) and ruby’s [bundler](https://cloudmydc.com/). It will smartly manage all the required libraries and packages for your application. Running on a per-project basis, **Composer** determines which versions of which packages your project depends on and installs them in a working directory. Moreover, this tool provides the [autoload](https://cloudmydc.com/) feature to keep your packages up-to-date.
+[**Composer**](https://getcomposer.org/) is one of PHP’s most popular dependency management tools inspired by the node’s [npm](https://www.npmjs.com/) and ruby’s [bundler](https://bundler.io/). It will smartly manage all the required libraries and packages for your application. Running on a per-project basis, **Composer** determines which versions of which packages your project depends on and installs them in a working directory. Moreover, this tool provides the [autoload](https://getcomposer.org/doc/04-schema.md#autoload) feature to keep your packages up-to-date.
 
 </div>
 </div>
 
-The **Composer** is integrated into all PHP application servers (_Apache, NGINX, LiteSpeed, LEMP_, and _LSSMP_) by default. It is installed to the **/usr/local/bin** folder, which is added to the PATH variable, making Composer operable from anywhere on the node via the _composer_ shortcut (e.g. _composer about_). Additionally, if the project has a **_composer.json_** file, Composer can manage dependencies directly during the installation using the _Post-Deploy_ [hook script](https://cloudmydc.com/). All you need to do is move to your project directory and run the _composer install_ command:
+The **Composer** is integrated into all PHP application servers (_Apache, NGINX, LiteSpeed, LEMP_, and _LSSMP_) by default. It is installed to the **/usr/local/bin** folder, which is added to the PATH variable, making Composer operable from anywhere on the node via the _composer_ shortcut (e.g. _composer about_). Additionally, if the project has a **_composer.json_** file, Composer can manage dependencies directly during the installation using the _Post-Deploy_ [hook script](/docs/Deployment/Deployment%20Hooks). All you need to do is move to your project directory and run the _composer install_ command:
 
 ```bash
 cd $WEBROOT/{project_name}
