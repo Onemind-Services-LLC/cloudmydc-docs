@@ -1,8 +1,8 @@
 ---
 sidebar_position: 5
 ---
-
-The platform provides [Session Replication](https://cloudmydc.com/) between instances of web-servers with a help of multicast. But also you can use **Session Replication via Memcached**.
+## anchor 42
+The platform provides [Session Replication](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Session%20Replication%20for%20HA) between instances of web-servers with a help of multicast. But also you can use **Session Replication via Memcached**.
 
 To use memcached for session replication follow this instruction.
 
@@ -36,9 +36,11 @@ To use memcached for session replication follow this instruction.
 
 ## Configure application server
 
-1. Download .jar file of [Memcached session manager](https://cloudmydc.com/). As the example we used [memcached-session-manager-1.6.2](https://cloudmydc.com/) .
+1. Download .jar file of [Memcached session manager](https://code.google.com/archive/p/memcached-session-manager/). As the example we used [memcached-session-manager-1.6.2](https://code.google.com/archive/p/memcached-session-manager/) .
 
-Also download [memcached-session-manager-tc7-1.6.2.jar](https://cloudmydc.com/), [spymemcached-2.8.4.jar](https://cloudmydc.com/), [msm-kryo-serializer-1.6.1.jar](https://cloudmydc.com/), [kryo-1.03.jar](https://cloudmydc.com/), [reflectasm-0.9.jar](https://cloudmydc.com/), [kryo-serializers.jar](https://cloudmydc.com/), [joda-time.jar](https://cloudmydc.com/) and [minlog-1.2.jar](https://cloudmydc.com/).
+Also download [memcached-session-manager-tc7-1.6.2.jar](https://code.google.com/archive/p/memcached-session-manager/downloads), [spymemcached-2.8.4.jar](https://code.google.com/archive/p/spymemcached/downloads), [msm-kryo-serializer-1.6.1.jar](https://code.google.com/archive/p/memcached-session-manager/downloads), [kryo-1.03.jar](https://code.google.com/archive/p/memcached-session-manager/downloads), [reflectasm-0.9.jar](https://code.google.com/archive/p/memcached-session-manager/downloads), [kryo-serializers.jar](https://mvnrepository.com/artifact/de.javakaffee/kryo-serializers), 
+[joda-time.jar](https://cloudmydc.com/)
+ and [minlog-1.2.jar](https://code.google.com/archive/p/memcached-session-manager/downloads).
 
 2. Click **Config** for Tomcat.
 
@@ -82,7 +84,7 @@ Also download [memcached-session-manager-tc7-1.6.2.jar](https://cloudmydc.com/),
 </Context>
 ```
 
-You can use any other [serialization strategy](https://cloudmydc.com/) according to your needs, in our case we use [Kryo](https://cloudmydc.com/), an extremely fast binary serialization library.
+You can use any other [serialization strategy](https://code.google.com/archive/p/memcached-session-manager/wikis/SerializationStrategies.wiki) according to your needs, in our case we use [Kryo](https://code.google.com/archive/p/kryo/), an extremely fast binary serialization library.
 
 <div style={{
     display:'flex',
