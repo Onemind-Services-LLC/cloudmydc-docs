@@ -276,7 +276,7 @@ Utilizing such short hostnames in server configuration files, application source
 
 ## Hostnames for Linked Containers
 
-Upon [linking](https://cloudmydc.com/) two Docker-based environment layers, a set of dedicated DNS records are automatically added to the global platform database. This allows to refer to the nodes within a _target_ layer from the _source_ ones (but not vice versa) when working in confines of these two layers using the following hostname aliases:
+Upon [linking](https://cloudmydc.com/) two Docker-based environment layers, a set of dedicated DNS records are automatically added to the global platform database. This allows to refer to the nodes within a _target_ layer from the _source_ ones (but not vice versa) when working in confines of these two layers using the following hostname aliases: 
 
 - **${linkAlias}** - to refer to a random node within a target layer; an exact node to respond is chosen by means of the Round-Robin algorithm - this ensures even load distribution
 - **_${linkAlias}_${N}_** - to access a particular container within a target layer
