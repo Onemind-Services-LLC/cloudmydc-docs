@@ -4,7 +4,7 @@ sidebar_position: 3
 
 ## A/B Testing with TD
 
-Each commercial web-site or application has the embedded options of product purchase, sign up, conversion to paid version, subscription, etc. The amount of such actions, initiated by end-users (which, if being measured in percents, is called [_conversion rate_](https://cloudmydc.com/)), is highly dependent on app’s visual appeal, advertising texts and other marketing ploys used. Comparison of different application versions, aimed to designate which app version is better in confines of user’s conversion rate, is named [A/B testing](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/A-B%20Testing). Such procedure can help you to find out the best combination of attractions and other product characteristics, that will allow to receive the highest revenue.
+Each commercial web-site or application has the embedded options of product purchase, sign up, conversion to paid version, subscription, etc. The amount of such actions, initiated by end-users (which, if being measured in percents, is called [_conversion rate_](https://cloudmydc.com/)), is highly dependent on app’s visual appeal, advertising texts and other marketing ploys used. Comparison of different application versions, aimed to designate which app version is better in confines of user’s conversion rate, is named [A/B testing](https://cloudmydc.com/). Such procedure can help you to find out the best combination of attractions and other product characteristics, that will allow to receive the highest revenue.
 
 With the help of [Traffic Distributor](https://cloudmydc.com/), you can easily apply such kind of testing to your projects - find the details below.
 
@@ -48,6 +48,6 @@ The obligatory points here are:
 
 :::tip Tip
 
-After you’ve revealed which app version is better, consider to follow the [Inject Traffic Distributor](https://cloudmydc.com/) guide to start using it in a bundle with Traffic Distributor for achieving high availability and [failover protection](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/Failover%20Protection).
+After you’ve revealed which app version is better, consider to follow the [Inject Traffic Distributor](https://cloudmydc.com/) guide to start using it in a bundle with Traffic Distributor for achieving high availability and [failover protection](https://cloudmydc.com/).
 
 :::

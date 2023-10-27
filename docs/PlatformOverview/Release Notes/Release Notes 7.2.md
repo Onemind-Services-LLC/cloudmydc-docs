@@ -242,7 +242,7 @@ Continuing the smooth integration of the PaaS (formerly known as Jelastic) with 
 
 ## Collaboration Policy for Custom Commands
 
-In order to extend the capabilities of the [account collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview) feature even further and ensure the possibility of providing full access to the shared account, a new **Execute CMD** policy was added. If included in the collaboration role, it allows members to execute custom CMD commands on the shared environments. This permission may be required when installing some complex JPS solutions.
+In order to extend the capabilities of the [account collaboration](https://cloudmydc.com/) feature even further and ensure the possibility of providing full access to the shared account, a new **Execute CMD** policy was added. If included in the collaboration role, it allows members to execute custom CMD commands on the shared environments. This permission may be required when installing some complex JPS solutions.
 
 <div style={{
     display:'flex',
@@ -294,7 +294,7 @@ CloudMyDc Application Platform supports the most popular [operating system templ
 
 :::tip Note
 
-Do not confuse OS templates (base image for containers) support with container templates ([stacks](/docs/QuickStart/Software%20Stack%20Versions)).
+Do not confuse OS templates (base image for containers) support with container templates ([stacks](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions)).
 
 :::
 

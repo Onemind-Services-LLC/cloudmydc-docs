@@ -59,7 +59,7 @@ In the opened page, use credentials from the email to log in and start applying 
 
 :::tip Tip
 
-For containers without [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address attached, the database admin console is available via https:// by default.
+For containers without [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address attached, the database admin console is available via https:// by default.
 
 :::
 

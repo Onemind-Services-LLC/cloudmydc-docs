@@ -99,7 +99,7 @@ Within the LEMP/LLSMP container, you can establish the client connection to the 
 
 Read the linked guide to learn more about [PHP connection to MariaDB](https://cloudmydc.com/).
 
-2. Several [environment variables](/docs/Container/Container%20Configuration/Variables) can be used to manage your LEMP/LLSMP container:
+2. Several [environment variables](http://localhost:3000/docs/Container/Container%20Configuration/Variables) can be used to manage your LEMP/LLSMP container:
 
 - **_ADMINPANEL_ENABLED_** - allows (_true_, by default) or forbids (_false_) access to phpMyAdmin console for the integrated MariaDB database server
 - **_REDIS_ENABLED_** - enables (_true_, by default) or disables (_false_) object caching with Redis
@@ -133,11 +133,11 @@ LLSMP has additional variables (e.g. _WAF, WP_PROTECT, WP_PROTECT_LIMIT_) specif
 
 3. Obviously, all the benefits of the regular platform containers are available for the LEMP and LLSMP stacks as well. For example:
 
-- [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling)
+- [automatic vertical scaling](https://cloudmydc.com/)
 - [usage-based pricing](/docs/Account&Pricing/Pricing%20Model%20Overview)
 - [SSH access](https://cloudmydc.com/)
-- [container firewall](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall)
-- [container redeploy](/docs/Container/Container%20Redeploy)
+- [container firewall](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall)
+- [container redeploy](https://cloudmydc.com/)
 - [statistics monitoring](https://cloudmydc.com/)
 - [deployment automation](https://cloudmydc.com/)
 - and even more at [Platform Documentation](https://cloudmydc.com/)

@@ -10,7 +10,7 @@ The Varnish stack is [HTTP/3](https://cloudmydc.com/) ready with the feature sup
 
 :::
 
-**Varnish** is a web-application accelerator also known as a caching HTTP reverse proxy for dynamic web-sites with high traffic. Unlike other proxy servers, it was initially designed to be focused exclusively on HTTP. Nevertheless, within the platform implementation, it is delivered in a bundle with the NGINX server (run on the 443rd port as a HTTPS proxy), that gives the ability to work with the secured data and the [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL) option in particular. In this case, after the incoming traffic decryption, NGINX redirects it directly to Varnish (run on the port 80) to be further processed.
+**Varnish** is a web-application accelerator also known as a caching HTTP reverse proxy for dynamic web-sites with high traffic. Unlike other proxy servers, it was initially designed to be focused exclusively on HTTP. Nevertheless, within the platform implementation, it is delivered in a bundle with the NGINX server (run on the 443rd port as a HTTPS proxy), that gives the ability to work with the secured data and the [Custom SSL](http://localhost:3000/docs/ApplicationSetting/SSL/Custom%20SSL) option in particular. In this case, after the incoming traffic decryption, NGINX redirects it directly to Varnish (run on the port 80) to be further processed.
 
 As an accelerator, Varnish only has basic load balancing support, which, however, still includes round robin and random redirector options, backend health-checking and more. But the emphasis is made on the speed, which is mainly achieved through the caching, that makes the web-site faster by offloading the static objects' delivery.
 
@@ -51,7 +51,7 @@ So, if you want to get Varnish as a load balancer for your environment, just com
 
 </div>
 
-Set any other required configurations (add app server(s) and other instances, state resources limits by means of cloudlets sliders, enable [external IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) for nodes, etc.). Then name your new environment (e.g. varnish) and proceed with the **Create** button.
+Set any other required configurations (add app server(s) and other instances, state resources limits by means of cloudlets sliders, enable [external IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) for nodes, etc.). Then name your new environment (e.g. varnish) and proceed with the **Create** button.
 
 4. In a couple of minutes your environment will be created.
 
@@ -71,7 +71,7 @@ That’s all about Varnish installation! Now you can proceed to its configuratio
 
 The Varnish load-balancer can be adjusted according to your needs in one of the following ways:
 
-- through accessing the required server via the platform [SSH Gateway](/docs/Deployment%20Tools/SSH/SSH%20Overview):
+- through accessing the required server via the platform [SSH Gateway](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Overview):
 
 <div style={{
     display:'flex',

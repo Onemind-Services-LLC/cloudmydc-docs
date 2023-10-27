@@ -136,7 +136,7 @@ To remove the add-on from the layer (including custom configs and generated SSL 
 
 ## Secure Connection to MySQL/MariaDB/Percona
 
-1. The “**encryption in transit**” (**_server-side encryption_**) functionality works immediately after the add-on’s installation. You can check it by connecting to the database using the credentials from the email. For remote connection, you can add [endpoint](https://cloudmydc.com/) or [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP):
+1. The “**encryption in transit**” (**_server-side encryption_**) functionality works immediately after the add-on’s installation. You can check it by connecting to the database using the credentials from the email. For remote connection, you can add [endpoint](https://cloudmydc.com/) or [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP):
 
 <div style={{
     display:'flex',

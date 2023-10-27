@@ -15,7 +15,7 @@ sidebar_position: 1
 
 <div>
 
-**Mount points** is a data-sharing functionality between instances inside of the same account. It is initiated <u>from the client</u> and creates a connection that allows accessing and operating <u>data on the server</u> as if it were local files. The platform provides a comfortable UI for this operation directly in the built-in [Configuration Manager](/docs/Container/Container%20Configuration/Configuration%20Tools#configuration-file-manager). Just in a few clicks, define remote directories that are physically located on other nodes but should be accessible at the current container.
+**Mount points** is a data-sharing functionality between instances inside of the same account. It is initiated <u>from the client</u> and creates a connection that allows accessing and operating <u>data on the server</u> as if it were local files. The platform provides a comfortable UI for this operation directly in the built-in [Configuration Manager](http://localhost:3000/docs/Container/Container%20Configuration/Configuration%20Tools#configuration-file-manager). Just in a few clicks, define remote directories that are physically located on other nodes but should be accessible at the current container.
 
 </div>
 
@@ -94,7 +94,7 @@ Click **Add** to proceed.
 
 :::tip Note
 
-If not a dedicated [Shared Storage Container](/docs/Data%20Storage%20Container/Data%20Storage%20Overview) has been chosen as a data container, a brief one-time delay (up to a few minutes) may occur due to the required NFS software installation.
+If not a dedicated [Shared Storage Container](http://localhost:3000/docs/Data%20Storage%20Container/Data%20Storage%20Overview) has been chosen as a data container, a brief one-time delay (up to a few minutes) may occur due to the required NFS software installation.
 
 :::
 
@@ -128,7 +128,7 @@ Based on the mount configurations, the remote content can be editable from the c
 
 **Take into consideration** that in order to be editable (i.e. if clients are granted RW rights), the folder on the server should have the appropriate permissions for the client’s user (the default user names may vary for different servers - e.g. root and jelastic).
 
-If needed, connect to your storage server via [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview) and execute the following commands to adjust the rights:
+If needed, connect to your storage server via [SSH](https://cloudmydc.com/) and execute the following commands to adjust the rights:
 
 ```bash
 chown {uid}:{gid} {path}

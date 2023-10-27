@@ -4,7 +4,7 @@ sidebar_position: 2
 
 ## Environment Migration between Regions
 
-Within the confines of the multiple **[environment regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region)** approach, the initially chosen location of the project can be easily changed using the migration option (obviously, if you have an access to several environment regions). It represents an extremely powerful tool, that can help you to benefit in both cost and productivity - as an example, you can choose cheaper hardware for the development/testing stages and subsequently migrate your production-ready application to the hardware with the best parameters, just before the release.
+Within the confines of the multiple **[environment regions](https://cloudmydc.com/)** approach, the initially chosen location of the project can be easily changed using the migration option (obviously, if you have an access to several environment regions). It represents an extremely powerful tool, that can help you to benefit in both cost and productivity - as an example, you can choose cheaper hardware for the development/testing stages and subsequently migrate your production-ready application to the hardware with the best parameters, just before the release.
 
 <div style={{
     display:'flex',
@@ -68,8 +68,8 @@ Pricing policy in different environment regions can vary based on their paramete
 
 Just lower down the tab the **_Live migration_** section is placed, either with the special switcher shown or providing some additional info, depending on the chosen target region. Here you can define which migration type (among the two provided ones) should be used:
 
-- **[live migration](/docs/EnvironmentManagement/Environment%20Regions/Migration%20between%20Regions#live-migration)** - available only between the environment regions, marked with the special LM label within the list (usually, only for regions within the same datacenter)
-- **[offline migration](/docs/EnvironmentManagement/Environment%20Regions/Migration%20between%20Regions#offline-migration)** - can be used for any environment regions
+- **[live migration](https://cloudmydc.com/)** - available only between the environment regions, marked with the special LM label within the list (usually, only for regions within the same datacenter)
+- **[offline migration](https://cloudmydc.com/)** - can be used for any environment regions
 
 <div style={{
     display:'flex',
@@ -117,13 +117,13 @@ If choosing this type of migration, the environment relocation will be performed
 
 :::tip Note
 
-Although the benefits of live (online) migration are evident, keep in mind that it is not suitable for all cases. We strongly recommend that you avoid using containers live migration for:
+Although the benefits of [live (online) migration](https://cloudmydc.com/) are evident, keep in mind that it is not suitable for all cases. We strongly recommend that you avoid using containers live migration for:
 
 - _environments/containers under high load - unexpected downtime with the “502 - environment stopped_” error (usually brief, under 10 seconds)
-- _active database containers, [Big Data](https://en.wikipedia.org/wiki/Big_data)_ - possible corruption or loss of the currently processed data due to the nature of online migration and freezes of network connections/disk IO related operations during the migration process
+- _active database containers, [Big Data](https://cloudmydc.com/)_ - possible corruption or loss of the currently processed data due to the nature of online migration and freezes of network connections/disk IO related operations during the migration process
 
 :::
-If the [offline mode](/docs/EnvironmentManagement/Environment%20Regions/Migration%20between%20Regions#offline-migration) is needed - just turn off the corresponding switcher.
+If the [offline mode](https://cloudmydc.com/) is needed - just turn off the corresponding switcher.
 
 <div style={{
     display:'flex',

@@ -33,7 +33,7 @@ Here, the following parameters should be specified:
 
 :::danger Notes:
 
-- Before using the **_SwapExtIps_** CLI method, please make sure that the source and destination nodes (environments) are running and belong to the same [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region).
+- Before using the **_SwapExtIps_** CLI method, please make sure that the source and destination nodes (environments) are running and belong to the same [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region).
 - <u>Before the PaaS 5.8 release</u>, this method does not support IPv6 and works with IPv4 only.
 - <u>Before the PaaS 6.0 release</u>, IP swap fails if an environment has a [bound](https://cloudmydc.com/) custom domain.
 - The process may cause short-term unavailability of the corresponding Public IP address(es) (up to 10 seconds).

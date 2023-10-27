@@ -11,7 +11,7 @@ You can import and export dump files to MongoDB in two ways:
 
 :::tip Note
 
-If you would like to use MongoDB client, you need to have **[public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)** feature enabled in your MongoDB node.
+If you would like to use MongoDB client, you need to have **[public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)** feature enabled in your MongoDB node.
 
 :::
 

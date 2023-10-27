@@ -25,7 +25,7 @@ Just update your code, make a commit and all the changes in your VCS project wil
 
 ## Preparing a Project
 
-1. First of all, prepare an [environment](/docs/PlatformOverview/Basics%20&%20Terminology#environment) for further addition of the intended project with the code from Git/SVN.
+1. First of all, prepare an [environment](https://cloudmydc.com/) for further addition of the intended project with the code from Git/SVN.
 
 :::tip Note
 

@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-The the platform’s **Environment Import** feature allows executing the **_.json, .jps, .yml, .yaml_**, or **_.cs_** files on the platform to automatically install and configure projects according to the declared settings. Being initially designed to deploy the previously [exported](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Export) environment copies (e.g. to transfer an application from another PaaS installation), it can also be used to install your own solutions, declared via JSON, or integrate any ready-to-go package from [JPS Collection](https://github.com/jelastic-jps).
+The the platform’s **Environment Import** feature allows executing the **_.json, .jps, .yml, .yaml_**, or **_.cs_** files on the platform to automatically install and configure projects according to the declared settings. Being initially designed to deploy the previously [exported](https://cloudmydc.com/) environment copies (e.g. to transfer an application from another PaaS installation), it can also be used to install your own solutions, declared via JSON, or integrate any ready-to-go package from [JPS Collection](https://cloudmydc.com/).
 
 So, let’s consider how to work with the platform import functionality in detail on the example of the exported environment.
 
@@ -50,7 +50,7 @@ For your exported environment to work correctly, it should be migrated to the Pa
 
 </div>
 
-- **JPS** - the built-in editor to either insert and edit code or to compose your own solution from scratch (refer to the [JPS deployment and troubleshooting](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import#jps-deployment--troubleshooting) section below for more information)
+- **JPS** - the built-in editor to either insert and edit code or to compose your own solution from scratch (refer to the [JPS deployment and troubleshooting](https://cloudmydc.com/) section below for more information)
 
 <div style={{
     display:'flex',
@@ -64,7 +64,7 @@ For your exported environment to work correctly, it should be migrated to the Pa
 
 :::tip Tip
 
-The **_Examples_** link next to these tabs redirects to the [JPS Collection](https://github.com/jelastic-jps) at GitHub, which stores multiple open-source samples of the ready-to-go packages. You can import any of them by fetching manifest.jps via the tabs above or examine files and scripts to create your own solution.
+The **_Examples_** link next to these tabs redirects to the [JPS Collection](https://cloudmydc.com/) at GitHub, which stores multiple open-source samples of the ready-to-go packages. You can import any of them by fetching manifest.jps via the tabs above or examine files and scripts to create your own solution.
 
 :::
 
@@ -85,8 +85,8 @@ To proceed, click the **Import** button in the bottom-right corner of the needed
 Within the fields inside, you need to specify the following parameters:
 
 - **Environment** - domain name for your new environment
-- **Display Name** - environment [alias](/docs/EnvironmentManagement/Environment%20Aliases) to be displayed at the dashboard instead of its domain (optional)
-- **Region** - [environment region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) to host the solution (if several ones are available)
+- **Display Name** - environment [alias](https://cloudmydc.com/) to be displayed at the dashboard instead of its domain (optional)
+- **Region** - [environment region](https://cloudmydc.com/) to host the solution (if several ones are available)
 
 Click **Import** when ready.
 
@@ -128,7 +128,7 @@ That’s all! This way, you can automatically install any required solution to t
 
 ## JPS Deployment & Troubleshooting
 
-The **Import > JPS** option is most frequently used by developers who create [JPS packages](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview) (e.g. for automation of the common tasks or implementation of complex CI/CD flows). Also, it is an excellent tool for the quick tuning and testing of the packages.
+The **Import > JPS** option is most frequently used by developers who create [JPS packages](https://cloudmydc.com/) (e.g. for automation of the common tasks or implementation of complex CI/CD flows). Also, it is an excellent tool for the quick tuning and testing of the packages.
 
 1. Once added into this editor, your code will be automatically parsed for errors. If detected, they will be marked with the red cross icon before the corresponding line (hover over for some additional information on the issue). Besides, your code is safely retained in your browser’s local storage, so you can freely close the whole Import frame (e.g. to perform some other operations at the dashboard) and return to coding later on.
 
@@ -148,7 +148,7 @@ The **Import > JPS** option is most frequently used by developers who create [JP
 - **_Wrap lines_** - brakes lines when they reach a frame border
 - **_Search_** - locates the needed information, with additional options to narrow the search results even further:
   - Match case - enables a case sensitive search
-  - Regex - uses [regular expressions](https://en.wikipedia.org/wiki/Regular_expression) for the search conditions specification
+  - Regex - uses [regular expressions](https://cloudmydc.com/) for the search conditions specification
 - **_View Logs_** - opens a console to track your code execution
 
 <div style={{

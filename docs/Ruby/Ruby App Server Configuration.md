@@ -33,7 +33,7 @@ The **Passenger** module is used for all newly created Ruby environments by defa
 
 </div>
 
-2. Within the opened [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) panel, navigate to the **/etc/nginx/** **_nginx.conf_** file. Find the **_include app_servers_** strings:
+2. Within the opened [configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager) panel, navigate to the **/etc/nginx/** **_nginx.conf_** file. Find the **_include app_servers_** strings:
 
 - _include app_servers/nginx-unicorn.conf_
 - _include app_servers/nginx-puma.conf_

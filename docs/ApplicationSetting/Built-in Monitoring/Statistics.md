@@ -27,7 +27,7 @@ In the opened tab you’ll find the statistics on all the types of consumed reso
 - **Network** - internal and external traffic (in _MB_)
 - **Disk** - stored data amount (in _MB_) and I/O operations amount (in _IOPS_)
 
-The _RAM_ and _CPU_ limits depend on the number of [cloudlets](/docs/PlatformOverview/Cloudlet). The Disk can be set within the allowed range, while _Network_ and _IOPS limits_ are defined by your hosting provider. Also, be aware that _Network_ is limited not by the total usage but by the amount of external traffic per second (_Mbps_).
+The _RAM_ and _CPU_ limits depend on the number of [cloudlets](https://cloudmydc.com/). The Disk can be set within the allowed range, while _Network_ and _IOPS limits_ are defined by your hosting provider. Also, be aware that _Network_ is limited not by the total usage but by the amount of external traffic per second (_Mbps_).
 
 You can further analyze the presented statistics by varying the _Interval_ and _Duration_ settings and enabling/disabling the particular sections at the top tools panel:
 

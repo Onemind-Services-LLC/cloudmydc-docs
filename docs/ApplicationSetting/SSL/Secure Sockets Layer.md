@@ -16,7 +16,7 @@ The platform gives you an opportunity to choose between three available SSL solu
 
 :::danger note
 
-This solution is not compatible with [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address attached to your servers and is applied to the default environment domain name only (i.e. with the hoster’s domain at the end).
+This solution is not compatible with [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address attached to your servers and is applied to the default environment domain name only (i.e. with the hoster’s domain at the end).
 
 :::
 

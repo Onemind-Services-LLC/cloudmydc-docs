@@ -73,7 +73,7 @@ The **_Openj9_** Java engine <u>_does not_</u> support the GCs listed above. The
 
 By default Jelastic PaaS uses G1 GC for JVM 8+ versions. For lower versions it employs the ParNew GC. Also, for JVM versions below 12 Jelastic attaches [jelastic-gc-agent.jar](https://cloudmydc.com/) which enables vertical scaling for older releases.
 
-For JVM 12+ versions, the platform provides [integrated vertical scaling](https://cloudmydc.com/) to ensure G1 triggering with the following pre-set container [Variables](/docs/Container/Container%20Configuration/Variables):
+For JVM 12+ versions, the platform provides [integrated vertical scaling](https://cloudmydc.com/) to ensure G1 triggering with the following pre-set container [Variables](http://localhost:3000/docs/Container/Container%20Configuration/Variables):
 
 - **G1PERIODIC_GC_INTERVAL=3000**
 
@@ -148,13 +148,13 @@ You can set a custom GC parameter based on your application requirements via E[n
 - **GC_SYS_LOAD_THRESHOLD_RATE** (for openJDK 12/13 only) - custom multiplier to flexibly adjust the G1PeriodicGCSystemLoadThreshold value (0.3 by default), for example G1PERIODIC_GC_SYS_LOAD_THRESHOLD_RATE=0.3
 - **FULL_GC_AGENT_DEBUG** - enables (true) or disables (false) the debug mode to track the Java GC processes in the logs, for example, FULL_GC_AGENT_DEBUG=true
 - **FULL_GC_PERIOD** - Sets the interval (in seconds) between the full GC calls; 900 by default, i.e. 15 minutes, for example FULL_GC_PERIOD=900
-- **MAXPERMSIZE**- automatically defined only for those Java containers, which run JVM version lower than 8th and with an allocated amount of RAM > _800 MiB_. In all other cases (i.e. if container scaling limit is less than 7 [cloudlets](/docs/PlatformOverview/Cloudlet) or it uses Java 8) this parameter is omitted. The actual value of the _MaxPermSize_ setting is calculated based on _Xmx_ memory amount divided by ten, but cannot be set greater than maximum of _256 MiB_. For example, MAXPERMSIZE=163
+- **MAXPERMSIZE**- automatically defined only for those Java containers, which run JVM version lower than 8th and with an allocated amount of RAM > _800 MiB_. In all other cases (i.e. if container scaling limit is less than 7 [cloudlets](https://cloudmydc.com/) or it uses Java 8) this parameter is omitted. The actual value of the _MaxPermSize_ setting is calculated based on _Xmx_ memory amount divided by ten, but cannot be set greater than maximum of _256 MiB_. For example, MAXPERMSIZE=163
 - **XMINF_DEF-** this parameter controls the minimum free space in the heap and instructs the JVM to expand the heap, if after performing garbage collection it does not have at least _XMINF_DEF_ value of free space. For example, -XMINF_DEF=0.1
 - **XMAXF_DEF** - this parameter controls how the heap is expanded and instructs the JVM to compact the heap if the amount of free space exceeds _XMAXF_DEF_ value. For example, XMAXF_DEF=0.3
 
 Alternatively, all these parameters can be passed to Java process via **variables.conf** in the container.
 
-All of the paths to config, executable or log files can differ based on the Java server you use and can be accessed via [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) or [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview).
+All of the paths to config, executable or log files can differ based on the Java server you use and can be accessed via [configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager) or [SSH](https://cloudmydc.com/).
 
 <div style={{
         width: '100%',

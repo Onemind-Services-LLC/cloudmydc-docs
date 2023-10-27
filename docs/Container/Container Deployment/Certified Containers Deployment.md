@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-The platform offers the most popular [software stacks](/docs/QuickStart/Software%20Stack%20Versions) as pre-configured and managed solutions for quick deployment and comfortable management. All of these certified containers are thoroughly tested and optimized specifically for use within the platform. Customizations include regular updates to the latest software version and additional integrations (such as auto-optimization based on the assigned resources, automated SSL certificates installation and application deployment, built-in [auto-clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances), etc.).
+The platform offers the most popular [software stacks](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions) as pre-configured and managed solutions for quick deployment and comfortable management. All of these certified containers are thoroughly tested and optimized specifically for use within the platform. Customizations include regular updates to the latest software version and additional integrations (such as auto-optimization based on the assigned resources, automated SSL certificates installation and application deployment, built-in [auto-clustering](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances), etc.).
 
-1. The deployment of certified containers is performed via the [topology wizard](/docs/EnvironmentManagement/Setting%20Up%20Environment), which can be opened by clicking the **New Environment** button.
+1. The deployment of certified containers is performed via the [topology wizard](http://localhost:3000/docs/EnvironmentManagement/Setting%20Up%20Environment), which can be opened by clicking the **New Environment** button.
 
 <div style={{
     display:'flex',
@@ -30,13 +30,13 @@ The platform offers the most popular [software stacks](/docs/QuickStart/Software
 
 3. Certified containers are added via the topology part on the left of the wizard. Here stacks are grouped by their purpose:
 
-- **[Load Balancers](/docs/Load%20Balancers/Load%20Balancing)** - stacks that operate as an entry point for the environment to distribute incoming requests and create even load on other nodes
-- **[Application Servers](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat%20Server)** (compute nodes) - web servers that run your application
-- **[Databases](/docs/Database/Database%20Hosting/DB%20Hosting%20Overview)** (SQL & NoSQL) - database solutions to store and manage data
-- **[Cache Node](/docs/Memcached/Memcached%20System)** - a Memcached object caching system for speeding up web applications through alleviating database load
-- **[Shared Storage](/docs/Data%20Storage%20Container/Shared%20Storage%20Container)** - dedicated storage node with NFSv4 support, enlarged disk space, and optimized performance
-- **[Elastic VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information)** - virtual private servers on top of the CentOS, Ubuntu, Debian, and Windows OS
-- **[Build Node](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven)** - a build automation tool for Java projects
+- **[Load Balancers](http://localhost:3000/docs/Load%20Balancers/Load%20Balancing)** - stacks that operate as an entry point for the environment to distribute incoming requests and create even load on other nodes
+- **[Application Servers](http://localhost:3000/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat%20Server)** (compute nodes) - web servers that run your application
+- **[Databases](http://localhost:3000/docs/Database/Database%20Hosting/DB%20Hosting%20Overview)** (SQL & NoSQL) - database solutions to store and manage data
+- **[Cache Node](http://localhost:3000/docs/Memcached/Memcached%20System)** - a Memcached object caching system for speeding up web applications through alleviating database load
+- **[Shared Storage](http://localhost:3000/docs/Data%20Storage%20Container/Shared%20Storage%20Container)** - dedicated storage node with NFSv4 support, enlarged disk space, and optimized performance
+- **[Elastic VPS](http://localhost:3000/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information)** - virtual private servers on top of the CentOS, Ubuntu, Debian, and Windows OS
+- **[Build Node](http://localhost:3000/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven)** - a build automation tool for Java projects
 - **Extra** (custom layers) - some extra services or any of the stacks mentioned above
 
 <div style={{
@@ -73,11 +73,11 @@ If you cannot find the required stack, you can check other categories (e.g. appl
 
 :::tip Tip
 
-If the required software is not available as a certified template, you can try installing it as a [custom container](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment). Click the **Docker Image** option and search for the appropriate image on Docker Hub.
+If the required software is not available as a certified template, you can try installing it as a [custom container](http://localhost:3000/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment). Click the **Docker Image** option and search for the appropriate image on Docker Hub.
 
 :::
 
-5. You can [configure](/docs/EnvironmentManagement/Setting%20Up%20Environment) added nodes (_vertical and horizontal scaling, disk limit, public IPs, etc._) via the central part of the wizard. Certified containers can have additional options, e.g. [Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances).
+5. You can [configure](http://localhost:3000/docs/EnvironmentManagement/Setting%20Up%20Environment) added nodes (_vertical and horizontal scaling, disk limit, public IPs, etc._) via the central part of the wizard. Certified containers can have additional options, e.g. [Auto-Clustering](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances).
 
 ![Locale Dropdown](./img/CertifiedContainersDeployment/05-environment-with-certified-containers.png)
 

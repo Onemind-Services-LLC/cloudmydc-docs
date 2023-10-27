@@ -42,7 +42,7 @@ You can choose the version you need while environment creation and easily [switc
 
 </div>
 
-Specify the resource limits, select the preferred [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), type your environment name (or leave the default one) and click the **Create** button.
+Specify the resource limits, select the preferred [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), type your environment name (or leave the default one) and click the **Create** button.
 
 :::tip Tip
 

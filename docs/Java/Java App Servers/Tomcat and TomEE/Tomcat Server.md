@@ -114,7 +114,7 @@ For the manual adjustment of the existing Tomcat server(s), click **Change Envir
 
 Automatic vertical scaling is possible due to the platform’s ability to dynamically change allocated resources (RAM and CPU) for a server. Adjustment is performed automatically, according to the Tomcat server’s current demands. This feature guarantees you [never overpay for unused resources](https://cloudmydc.com/) and saves your time by eliminating the necessity of manual handling of the load-related adjustments.
 
-In order to set up automatic resource provisioning for your Tomcat server, open the environment topology wizard and specify the upper scaling limit in [cloudlets](/docs/PlatformOverview/Cloudlet) (128 MiB and 400 MHz each):
+In order to set up automatic resource provisioning for your Tomcat server, open the environment topology wizard and specify the upper scaling limit in [cloudlets](https://cloudmydc.com/) (128 MiB and 400 MHz each):
 
 <div style={{
     display:'flex',
@@ -126,7 +126,7 @@ In order to set up automatic resource provisioning for your Tomcat server, open 
 
 </div>
 
-Your application will work within these limits reducing resource allocation when the load goes down and increasing when it goes up. Thus, you only pay for the resources that are actually consumed. For more information, please refer to the documentation about [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling).
+Your application will work within these limits reducing resource allocation when the load goes down and increasing when it goes up. Thus, you only pay for the resources that are actually consumed. For more information, please refer to the documentation about [automatic vertical scaling](https://cloudmydc.com/).
 
 ## Manual Horizontal Scaling
 
@@ -161,7 +161,7 @@ The maximum number of the same-type servers within a single environment layer de
 
 Upon scaling out a single node, NGINX (you can manually switch to another one) load balancing is added automatically. [Load Balancer](https://cloudmydc.com/) represents a frontend that receives all the incoming requests and evenly distributes them between backends (application servers).
 
-Please, find more details about manual [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) in the documentation.
+Please, find more details about manual [horizontal scaling](https://cloudmydc.com/) in the documentation.
 
 ## Automatic Horizontal Scaling
 
@@ -326,7 +326,7 @@ This chapter will cover some settings and features that help optimize your work 
 
 ## Environment Variables
 
-In order to make your application more portable and flexible, you can use **environment variables** instead of specifying the required values in the application code each time. The platform provides you with many Tomcat [default environment variables](/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables#default-environment-variables) for the most common stack data. You can also add [custom environment variables](/docs/EnvironmentManagement/EnvironmentVariables/Custom%20Environment%20Variables) for your Tomcat node to make its management even more convenient.
+In order to make your application more portable and flexible, you can use **environment variables** instead of specifying the required values in the application code each time. The platform provides you with many Tomcat [default environment variables](https://cloudmydc.com/) for the most common stack data. You can also add [custom environment variables](https://cloudmydc.com/) for your Tomcat node to make its management even more convenient.
 
 ## Configuration Files
 

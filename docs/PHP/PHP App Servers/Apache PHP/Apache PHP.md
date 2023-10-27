@@ -37,7 +37,7 @@ To get your _Apache PHP_ server, follow the steps below:
 
 </div>
 
-2. Within the opened _topology wizard_, switch to the **PHP** tab and select **_Apache_** as your application server. Set other configurations up to your needs (e.g. [cloudlets limit](https://cloudmydc.com/), [public IPs](https://cloudmydc.com/), [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), etc.).
+2. Within the opened _topology wizard_, switch to the **PHP** tab and select **_Apache_** as your application server. Set other configurations up to your needs (e.g. [cloudlets limit](https://cloudmydc.com/), [public IPs](https://cloudmydc.com/), [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), etc.).
 
 <div style={{
     display:'flex',
@@ -87,7 +87,7 @@ Apache PHP has some main configuration files that you may want to adjust to cust
 
 As an example, we’ll show how you can change the size of the files, which can be uploaded to your application.
 
-1. Click the **Config** button for your Apache server to access the [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager):
+1. Click the **Config** button for your Apache server to access the [configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager):
 
 <div style={{
     display:'flex',
@@ -116,7 +116,7 @@ As an example, we’ll show how you can change the size of the files, which can 
 
 :::danger Note
 
-Regardless of these settings, the maximum file size that can be uploaded via the platform file manager from the local machine is _150MB_ (may vary based on the hosting provider settings). To operate larger files, use the **URL** option or attach [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) and use your own manager (for example, [FTP add-on](https://cloudmydc.com/)).
+Regardless of these settings, the maximum file size that can be uploaded via the platform file manager from the local machine is _150MB_ (may vary based on the hosting provider settings). To operate larger files, use the **URL** option or attach [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) and use your own manager (for example, [FTP add-on](https://cloudmydc.com/)).
 
 <div style={{
     display:'flex',

@@ -26,7 +26,7 @@ Due to continuous community contribution, CentOS offers enterprise-level stabili
 
 ## CentOS VPS Hosting
 
-So, to effortlessly set up your own CentOS [Elastic VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information) inside the platform, log in to your PaaS account and access environment topology wizard.
+So, to effortlessly set up your own CentOS [Elastic VPS](https://cloudmydc.com/) inside the platform, log in to your PaaS account and access environment topology wizard.
 
 The appropriate instance (i.e. **_CentOS 6.8_** or **_CentOS 7.2_**) can be found within the appropriate VPS section at the bottom left wizard corner (for the detailed installation guidance, refer to the [VPS Configuration](https://cloudmydc.com/) page).
 

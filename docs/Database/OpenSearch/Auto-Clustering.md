@@ -177,7 +177,7 @@ These settings can also be edited for the already installed add-on using the **C
 
 ## OpenSearch Cluster Installation
 
-The OpenSearch Cluster creation at the platform is a straightforward and fully automated process that can be performed directly from the [topology wizard](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment).
+The OpenSearch Cluster creation at the platform is a straightforward and fully automated process that can be performed directly from the [topology wizard](http://localhost:3000/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment).
 
 Select the **OpenSearch** stack at the NoSQL database section.
 
@@ -191,7 +191,7 @@ Select the **OpenSearch** stack at the NoSQL database section.
 
 </div>
 
-The stack is automatically configured as a cluster due to the [Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances) feature. Also, you have additional options to add the **OpenSearch Dashboards** and **Logstash** components.
+The stack is automatically configured as a cluster due to the [auto-clustering](https://cloudmydc.com/) feature. Also, you have additional options to add the **OpenSearch Dashboards** and **Logstash** components.
 
 ## OpenSearch vs Elasticsearch Performance
 

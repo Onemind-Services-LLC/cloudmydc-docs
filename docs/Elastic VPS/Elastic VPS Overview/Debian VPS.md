@@ -22,7 +22,7 @@ sidebar_position: 4
 
 </div>
 
-The platform delivers Debian with all the benefits of [Elastic VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information) (security guarantees, cost efficiency, root permissions, etc.).
+The platform delivers Debian with all the benefits of [Elastic VPS](https://cloudmydc.com/) (security guarantees, cost efficiency, root permissions, etc.).
 
 ## Debian VPS Hosting
 
@@ -46,6 +46,6 @@ Elastic VPS instances require public IP addresses (one per node) by default.
 
 :::
 
-Adjust other options up to your needs ([vertical](https://cloudmydc.com/) and [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling), disk limit, etc.) and click the **Create** button.
+Adjust other options up to your needs ([vertical](https://cloudmydc.com/) and [horizontal scaling](https://cloudmydc.com/), disk limit, etc.) and click the **Create** button.
 
 In a moment, your fully isolated virtual server with Debian operating system will be ready to work, allowing you to proceed with the required software and services installation.

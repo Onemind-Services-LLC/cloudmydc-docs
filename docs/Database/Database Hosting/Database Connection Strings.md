@@ -10,7 +10,7 @@ All instances, created inside the platform, are operated as independent containe
 
 - [CNAME](https://cloudmydc.com/) of database, e.g. _node{node_id}-{environment_name}.{hoster_domain}_
 - Private IP address
-- [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address (if attached)
+- [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address (if attached)
 
 :::danger Note
 

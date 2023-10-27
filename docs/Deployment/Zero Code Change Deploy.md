@@ -48,7 +48,7 @@ Also, the platorm keeps the same IPs and hostnames for each container after any 
 
 To make the above more evident, let’s consider a few simple steps needed to deploy a project at the platform:
 
-1. Create an environment via comprehensive topology wizard with a wide range of pre-configured [software stacks](/docs/QuickStart/Software%20Stack%20Versions) (i.e. application servers, databases, load balancers, cache and build nodes).
+1. Create an environment via comprehensive topology wizard with a wide range of pre-configured [software stacks](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions) (i.e. application servers, databases, load balancers, cache and build nodes).
 
 <div style={{
     display:'flex',
@@ -67,6 +67,6 @@ When the appropriate environment is created, you can [deploy your application](h
 - fetch sources from GIT/SVN repository (additionally, you can set up automatic update)
 - use integrated plugins (Maven, Eclipse, NetBeans, IntelliJ IDEA)
 
-After the process initiation, regardless of the selected deployment type, all the configurations (e.g. connecting to load balancer, memory usage tuning, enabling SSL or IP if needed, etc.) will be handled by the system automatically. There is no need to modify application source code - the only customization you may need to apply is to adjust some custom application settings due to a new location (e.g. IP addresses or domain names - all the appropriate server configs are always available for editing directly through the platform dashboard with the embedded [file manager](/docs/ApplicationSetting/Configuration%20File%20Manager)).
+After the process initiation, regardless of the selected deployment type, all the configurations (e.g. connecting to load balancer, memory usage tuning, enabling SSL or IP if needed, etc.) will be handled by the system automatically. There is no need to modify application source code - the only customization you may need to apply is to adjust some custom application settings due to a new location (e.g. IP addresses or domain names - all the appropriate server configs are always available for editing directly through the platform dashboard with the embedded [File Manager](https://cloudmydc.com/)).
 
 This way you can easily migrate any application to PaaS from other Cloud, VPS or VM without special code adjustment required.

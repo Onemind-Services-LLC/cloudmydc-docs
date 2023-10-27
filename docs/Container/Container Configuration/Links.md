@@ -5,7 +5,7 @@ sidebar_position: 3
 Links
 The **Links** section is intended to establish connection between the containers placed at different layers of a single environment.
 
-After such connection is set, a container will be able to work with [environment variables](/docs/Container/Container%20Configuration/Variables) of the linked image (herewith, the imported properties can be recognized by a specified prefix). Below, we’ll provide a step-by-step example of containers linking.
+After such connection is set, a container will be able to work with [environment variables](http://localhost:3000/docs/Container/Container%20Configuration/Variables) of the linked image (herewith, the imported properties can be recognized by a specified prefix). Below, we’ll provide a step-by-step example of containers linking.
 
 1. Click the **Add** button and fill in the appeared fields:
 
@@ -18,7 +18,7 @@ After such connection is set, a container will be able to work with [environment
 
 Upon linking containers, the platform also adds the corresponding DNS record (with the name identical to the used alias) to the platform DB. In such a way, you can refer to a particular container from inside of these two environment layers not just over its IP address or NodeID, but also specifying the assigned alias with counter, i.e. {alias_name}**\_N**.
 
-For example, after linking with DB alias, you can ping specific containers at the appropriate layer as “db_1”, “db_2”, etc while working with platform internal network via [SSH Gateway](/docs/Deployment%20Tools/SSH/SSH%20Overview). Herewith, if using common layer alias (i.e. without counter, “db” in our case), the system will use Round-Robin algorithm to choose any container within the defined node group.
+For example, after linking with DB alias, you can ping specific containers at the appropriate layer as “db_1”, “db_2”, etc while working with platform internal network via [SSH Gateway](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Overview). Herewith, if using common layer alias (i.e. without counter, “db” in our case), the system will use Round-Robin algorithm to choose any container within the defined node group.
 
 :::
 
@@ -35,4 +35,4 @@ For example, after linking with DB alias, you can ping specific containers at th
 
 ![Locale Dropdown](./img/Links/02--edit-remove-linking-layer-settings.png)
 
-When updates are applied, you can check the results by switching to the [Variables](/docs/Container/Container%20Configuration/Variables) section (where the newly imported parameters will be listed).
+When updates are applied, you can check the results by switching to the [Variables](http://localhost:3000/docs/Container/Container%20Configuration/Variables) section (where the newly imported parameters will be listed).
