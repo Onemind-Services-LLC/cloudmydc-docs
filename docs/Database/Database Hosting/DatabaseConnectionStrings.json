@@ -1,0 +1,46 @@
+{
+  "data1": [
+    {
+      "DBType": "MySQL",
+      "ConnectionCode": "String URL = \"jdbc:mysql://node{node_id}-{environment_name}.{hoster_domain}/{dbname}\"; DriverManager.getConnection(URL, user_name, user_password);"
+    },
+    {
+      "DBType": "MySQL Auto-Cluster",
+      "ConnectionCode": "String URL = \"jdbc:mysql://proxy.{environment_name}.{hoster_domain}:3306/{dbname}\"; DriverManager.getConnection(URL, user_name, user_password);"
+    },
+    {
+      "DBType": "MariaDB Auto-Cluster",
+      "ConnectionCode": "String URL = \"jdbc:mariadb://proxy.{environment_name}.{hoster_domain}:3306/{dbname}?usePipelineAuth=false\"; DriverManager.getConnection(URL, user_name, user_password);"
+    },
+    {
+      "DBType": "PostgreSQL",
+      "ConnectionCode": "String URL = \"jdbc:postgresql://node{node_id}-{environment_name}.{hoster_domain}/{dbname}\"; DriverManager.getConnection(URL, user_name, user_password);"
+    },
+    {
+      "DBType": "MongoDB",
+      "ConnectionCode": "Mongo m = new Mongo(\"node{node_id}-{environment_name}.{hoster_domain}\"); DB db = m.getDB(\"{database_name}\"); if (db.authenticate(user_name, user_password.toCharArray())) { System.out.println(\"Connected!\"); }"
+    },
+    {
+      "DBType": "CouchDB",
+      "ConnectionCode": "String host = \"node{node_id}-{environment_name}.{hoster_domain}\"; int port = 80; String username = \"username\"; String password = \"password\"; Session dbSession = new Session(host, port, username, password);"
+    }
+  ],
+  "data2": [
+    {
+      "DBType": "MySQL",
+      "ConnectionCode": "mysql_connect(‘HOST’, ‘USERNAME’, ‘PASSWORD’)"
+    },
+    {
+      "DBType": "MariaDB",
+      "ConnectionCode": "mysql_connect(‘HOST’, ‘USERNAME’, ‘PASSWORD’)"
+    },
+    {
+      "DBType": "MongoDB",
+      "ConnectionCode": "Mongo(“hostaddress”, array(“username” => “username”, “password” => “password”))"
+    },
+    {
+      "DBType": "PostgreSQL",
+      "ConnectionCode": "pg_connect(“host=host_address port=5432 dbname=postgres user=webadmin password=password”)"
+    }
+  ]
+}

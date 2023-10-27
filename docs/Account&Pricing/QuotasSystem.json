@@ -1,0 +1,23 @@
+{
+    "data1": [
+      "Maximum number of environments that you can create",
+      "Maximum number of nodes per environment",
+      "Maximum number of nodes per node group (layer)",
+      "Maximum size of the server in cloudlets (128 MiB RAM and 400 MHz CPU)",
+      "Maximum available disk space per node",
+      "Maximum available disk space per storage node",
+      "External network bandwidth",
+      "Option to set up high-availability cluster",
+      "Public IPv4 addresses",
+      "Maximum number of Public IPv4 addresses per environment",
+      "Maximum number of Public IPv4 addresses per node",
+      "Public IPv6 addresses",
+      "Maximum number of Public IPv6 addresses per environment",
+      "Maximum number of Public IPv6 addresses per node",
+      "The period during which you can use your trial account",
+      "The minimal amount of money in the account, which allows you to create environment",
+      "Built-in SSL",
+      "Custom domains"
+    ]
+
+}

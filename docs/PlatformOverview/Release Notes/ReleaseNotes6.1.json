@@ -1,0 +1,321 @@
+{
+  "data1": [
+    {
+      "JE": "JE-59234",
+      "CompatibleFrom": "any",
+      "Desc": "An error occurs when enabling Tomcat/TomEE auto-cluster in the Extra layer of the topology wizard"
+    },
+    {
+      "JE": "JE-58510",
+      "CompatibleFrom": "3.3",
+      "Desc": "New Relic add-on works incorrectly on some PHP 7 and PHP 8 nodes"
+    },
+    {
+      "JE": "JE-59431",
+      "CompatibleFrom": "3.3",
+      "Desc": "The GitBlit application is not working after installation from the Marketplace"
+    },
+    {
+      "JE": "JE-59350",
+      "CompatibleFrom": "5.7",
+      "Desc": "An error occurs when installing the WordPress Cluster from the Marketplace"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-36371",
+      "AffectedVersions": "5.4",
+      "Desc": "During the node deletion, all firewall rules that use this node as a source should be removed as well"
+    },
+    {
+      "JE": "JE-38724",
+      "AffectedVersions": "5.4",
+      "Desc": "Incorrect min/max values for cloudlets and storage are returned via the getExtendedAccountBillingHistoryByPeriod API method"
+    },
+    {
+      "JE": "JE-44833",
+      "AffectedVersions": "5.5",
+      "Desc": "During deletion of the last node in the layer, all the corresponding add-ons should be removed as well"
+    },
+    {
+      "JE": "JE-45438",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs after deploying a different project into the existing context"
+    },
+    {
+      "JE": "JE-46669",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs during the frequent scaling out and scaling in of the application server layer"
+    },
+    {
+      "JE": "JE-47681",
+      "AffectedVersions": "-",
+      "Desc": "The Cloud Scripting checkboxlist field does not work"
+    },
+    {
+      "JE": "JE-47744",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when trying to remove a node after it was simultaneously mounted and scaled up"
+    },
+    {
+      "JE": "JE-48220",
+      "AffectedVersions": "-",
+      "Desc": "Environment isolation breaks if the same environment is in the isolated and non-isolated groups simultaneously"
+    },
+    {
+      "JE": "JE-48665",
+      "AffectedVersions": "-",
+      "Desc": "The topology wizard should display a warning if the account quotas are less than the selected node minimum requirements"
+    },
+    {
+      "JE": "JE-49905",
+      "AffectedVersions": "-",
+      "Desc": "Consequent application deployments fail on the Tomcat/TomEE nodes if the unpackWARs value is false in the server.xml config"
+    },
+    {
+      "JE": "JE-50028",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect size of the drop-down list for the deployment window if some elements have long names"
+    },
+    {
+      "JE": "JE-51451",
+      "AffectedVersions": "5.8",
+      "Desc": "The 'keyboard' icon in the Web SSH section of the dashboard should be converted to SVG format"
+    },
+    {
+      "JE": "JE-51875",
+      "AffectedVersions": "5.8",
+      "Desc": "The minimum requirements warnings are missing in the topology wizard if the auto-cluster was created via the Import functionality"
+    },
+    {
+      "JE": "JE-51885",
+      "AffectedVersions": "5.8",
+      "Desc": "The 'alert' icon in the account activation form should be converted to SVG format"
+    },
+    {
+      "JE": "JE-51952",
+      "AffectedVersions": "5.8",
+      "Desc": "An error occurs when trying to install JPS without the fixedCloudlets value for the nodes in the Extra layer"
+    },
+    {
+      "JE": "JE-52616",
+      "AffectedVersions": "5.8",
+      "Desc": "The warning about removing a layer disappears in the topology wizard after switching to the different programming language tab"
+    },
+    {
+      "JE": "JE-53445",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect OS detection for some custom Docker containers"
+    },
+    {
+      "JE": "JE-53457",
+      "AffectedVersions": "-",
+      "Desc": "Some elements are displayed incorrectly when moving the topology wizard window"
+    },
+    {
+      "JE": "JE-53752",
+      "AffectedVersions": "5.7.6",
+      "Desc": "An unnecessary warning about IP change is displayed when migrating environment between regions of the same hardware server"
+    },
+    {
+      "JE": "JE-54034",
+      "AffectedVersions": "5.4",
+      "Desc": "An error occurs when trying to install a custom Docker image with alternative repositories (that use HTTPS link) but without the built-in HTTPS driver"
+    },
+    {
+      "JE": "JE-54271",
+      "AffectedVersions": "5.9",
+      "Desc": "An error occurs when trying to change topology after removing the application server layer with the WildFly auto-cluster"
+    },
+    {
+      "JE": "JE-54981",
+      "AffectedVersions": "-",
+      "Desc": "The Cloud Scripting displayName and envDisplayName fields should override the environment display name on UI"
+    },
+    {
+      "JE": "JE-55030",
+      "AffectedVersions": "-",
+      "Desc": "Typo in the Remmina RDP client name in the RDP connection information window in the dashboard"
+    },
+    {
+      "JE": "JE-55835",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect firewall rules for the isolated environments"
+    },
+    {
+      "JE": "JE-55889",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when cloning an environment with active mounts"
+    },
+    {
+      "JE": "JE-56266",
+      "AffectedVersions": "6.0",
+      "Desc": "Incorrect registry credentials are used when creating a container"
+    },
+    {
+      "JE": "JE-56848",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs during the container after-creation setup"
+    },
+    {
+      "JE": "JE-57037",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs during the firewall rules management"
+    },
+    {
+      "JE": "JE-57082",
+      "AffectedVersions": "6.0",
+      "Desc": "The Export feature works incorrectly for the Windows VM nodes"
+    },
+    {
+      "JE": "JE-57218",
+      "AffectedVersions": "-",
+      "Desc": "Imported environments with Windows VM nodes have incorrect VM group icons"
+    },
+    {
+      "JE": "JE-57272",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect image on the 502 application down error page"
+    },
+    {
+      "JE": "JE-57343",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect list of container volumes during the first redeploy if they were added via the CS script"
+    },
+    {
+      "JE": "JE-57564",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when creating a mount point without shared storage"
+    },
+    {
+      "JE": "JE-57846",
+      "AffectedVersions": "-",
+      "Desc": "An error should be reported when the container cannot adjust firewall rules"
+    },
+    {
+      "JE": "JE-57874",
+      "AffectedVersions": "5.8",
+      "Desc": "An error occurs when creating NoSQL containers"
+    },
+    {
+      "JE": "JE-57919",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when trying to resend environment transfer requests that have already expired"
+    },
+    {
+      "JE": "JE-57968",
+      "AffectedVersions": "-",
+      "Desc": "A load balancer is added to the Kubernetes environment if worker nodes are scaled by collaborator"
+    },
+    {
+      "JE": "JE-57976",
+      "AffectedVersions": "-",
+      "Desc": "The SwapExtIps API method should be restricted for the stopped environments"
+    },
+    {
+      "JE": "JE-58012",
+      "AffectedVersions": "-",
+      "Desc": "Redundant firewall adjustment call on the nodes during the environment start"
+    },
+    {
+      "JE": "JE-58076",
+      "AffectedVersions": "-",
+      "Desc": "The deployed VCS project is not changed after adjusting the repository link and updating the project"
+    },
+    {
+      "JE": "JE-58391",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when using the dashboard Search functionality"
+    },
+    {
+      "JE": "JE-58394",
+      "AffectedVersions": "6.0.2",
+      "Desc": "The change topology is not working for the environments with outdated (disabled by the service hosting provider) stacks"
+    },
+    {
+      "JE": "JE-58500",
+      "AffectedVersions": "any",
+      "Desc": "An error occurs when trying to add a public IP to the Windows VM that already has an external IP address"
+    },
+    {
+      "JE": "JE-58571",
+      "AffectedVersions": "6.0",
+      "Desc": "An error occurs when trying to redeploy from the latest tag that was removed from the repository"
+    },
+    {
+      "JE": "JE-58592",
+      "AffectedVersions": "-",
+      "Desc": "The billing users in the POST group should not be deactivated after the invoice expiration if the balance remains positive"
+    },
+    {
+      "JE": "JE-58619",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs during the environment creation"
+    },
+    {
+      "JE": "JE-58718",
+      "AffectedVersions": "5.9.2",
+      "Desc": "Invalid add-ons cannot be removed even with the force flag"
+    },
+    {
+      "JE": "JE-58756",
+      "AffectedVersions": "-",
+      "Desc": "Existing environment cannot be managed if the corresponding region becomes unavailable for the user"
+    },
+    {
+      "JE": "JE-58919",
+      "AffectedVersions": "-",
+      "Desc": "Duplicated JEM calls when creating VPS nodes"
+    },
+    {
+      "JE": "JE-58947",
+      "AffectedVersions": "-",
+      "Desc": "The Red Hat base image cannot be created"
+    },
+    {
+      "JE": "JE-58950",
+      "AffectedVersions": "any",
+      "Desc": "Some TomEE tags are missing the auto-clustering option in the topology wizard"
+    },
+    {
+      "JE": "JE-59007",
+      "AffectedVersions": "-",
+      "Desc": "Custom domain names should be validated and encoded before being bound to the environment"
+    },
+    {
+      "JE": "JE-59025",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect credentials are sent for the Minio node created in the Extra layer"
+    },
+    {
+      "JE": "JE-59169",
+      "AffectedVersions": "-",
+      "Desc": "Duplicated requests are sent when making any call with the client lib and the followRedirect flag is enabled"
+    },
+    {
+      "JE": "JE-59206",
+      "AffectedVersions": "-",
+      "Desc": "Primary public IP should be switched to the remaining external IP address (if any) after the swap"
+    },
+    {
+      "JE": "JE-59226",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect isolation is configured for the default 'My First Project' environment group"
+    },
+    {
+      "JE": "JE-59323",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when cloning an environment with mounts to the GlusterFS cluster"
+    },
+    {
+      "JE": "JE-59359",
+      "AffectedVersions": "6.0",
+      "Desc": "The hostname of the cloned environment is not changed after migration to a different region"
+    },
+    {
+      "JE": "JE-59408",
+      "AffectedVersions": "any",
+      "Desc": "An error occurs during the node creation"
+    }
+  ]
+}

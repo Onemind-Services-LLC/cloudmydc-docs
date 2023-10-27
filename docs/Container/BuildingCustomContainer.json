@@ -1,0 +1,37 @@
+{
+  "data1": [
+    "LABEL maintainer='CloudMyDc'",
+    "ENV WILDFLY_VERSION 13.0.0.Final",
+    "",
+    "ENV ADMIN_USER jelastic",
+    "",
+    "ENV ADMIN_PASSWORD jelastic"
+  ],
+  "data2": [
+    "RUN cd /opt && curl -O https://download.jboss.org/wildfly/${WILDFLY_VERSION}/wildfly-${WILDFLY_VERSION}.tar.gz \\ ",
+    "&& $(which tar) xf wildfly-${WILDFLY_VERSION}.tar.gz   ",
+    "&& rm wildfly-${WILDFLY_VERSION}.tar.gz"
+  ],
+  "data3": [
+    "RUN echo -en \"JAVA_HOME=\\\"/usr/lib/jvm/java\\\"\"\n",
+    "\"JBOSS_HOME=\\\"/opt/wildfly\\\"\"\n",
+    "\"JBOSS_USER=wildfly\"\n",
+    "\"JBOSS_MODE=standalone\"\n",
+    "\"JBOSS_CONFIG=standalone.xml\"\n",
+    "\"STARTUP_WAIT=60\"\n",
+    "\"SHUTDOWN_WAIT=60\"\n",
+    "\"JBOSS_CONSOLE_LOG=\\\"/var/log/wildfly/console.log\\\"\"\n",
+    "\"JBOSS_OPTS=\\\"-b 0.0.0.0 -bmanagement=0.0.0.0 -Djboss.management.http.port=4949 -Djboss.management.https.port=4848\\\" >> /etc/default/wildfly\""
+  ],
+  "data4": [
+    "RUN wget https://raw.githubusercontent.com/wildfly/wildfly-core/master/core-feature-pack/src/main/resources/content/docs/contrib/scripts/init.d/wildfly-init-redhat.sh -O /etc/rc.d/init.d/wildfly;",
+    "sed -i \"/# Source function library/a\\SYSTEMCTL_SKIP_REDIRECT=1\" /etc/init.d/wildfly; chmod +x /etc/init.d/wildfly;"
+  ],
+  "data5": [
+    "RUN chkconfig --add wildfly; chkconfig wildfly on; mkdir -p /var/log/wildfly; adduser wildfly;",
+    "chown -R wildfly:wildfly /opt/wildfly-$WILDFLY_VERSION /opt/wildfly /var/log/wildfly;"
+  ],
+  "data6": [
+    "RUN sed -i \"s/<a href=\\\"\\/console\\\">/<a href=\\\"\\/console\\\" onclick=\\\"javascript:event.target.port=4949;event.target.protocol='http:';\\\">/\" /opt/wildfly/welcome-content/index.html"
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "data1": [
+    {
+      "JE": "JE-46524",
+      "CompatibleFrom": "3.3",
+      "Desc": "The 'Can’t read SSL certificate result:0' error occurs during the Let’s Encrypt add-on installation"
+    },
+    {
+      "JE": "JE-56808",
+      "CompatibleFrom": "3.3",
+      "Desc": "The Mattermost Chat Service application does not work after installation from the Marketplace"
+    },
+    {
+      "JE": "JE-56836",
+      "CompatibleFrom": "3.3",
+      "Desc": "Incorrect CSS styles for the Dokuwiki application from the Marketplace"
+    },
+    {
+      "JE": "JE-57107",
+      "CompatibleFrom": "3.3",
+      "Desc": "The Plesk application does not work after installation from the Marketplace"
+    },
+    {
+      "JE": "JE-57192",
+      "CompatibleFrom": "3.3",
+      "Desc": "The Ghost application does not work after installation from the Marketplace"
+    },
+    {
+      "JE": "JE-51924",
+      "CompatibleFrom": "5.0",
+      "Desc": "The MySQL/MariaDB Cluster package installation should be restricted on accounts with insufficient quotas"
+    },
+    {
+      "JE": "JE-51882",
+      "CompatibleFrom": "5.4",
+      "Desc": "Incorrect Add ProxySQL switcher state in the wizard for MySQL/MariaDB Cluster installed from the Marketplace"
+    },
+    {
+      "JE": "JE-54350",
+      "CompatibleFrom": "5.4",
+      "Desc": "The minimum number of nodes for the MySQL/MariaDB Cluster package should be validated"
+    },
+    {
+      "JE": "JE-56429",
+      "CompatibleFrom": "5.4",
+      "Desc": "An error occurs during the optimization.sh script execution on the LiteSpeed compute node of the WordPress Cluster package"
+    },
+    {
+      "JE": "JE-44501",
+      "CompatibleFrom": "5.7",
+      "Desc": "Incorrect permissions for the /var/lib/proxysql/proxysql.log file on the ProxySQL node of the MySQL Cluster package"
+    },
+    {
+      "JE": "JE-53193",
+      "CompatibleFrom": "5.7",
+      "Desc": "An error occurs during the Magento Cluster package installation due to incorrect stack tags"
+    },
+    {
+      "JE": "JE-53195",
+      "CompatibleFrom": "5.7",
+      "Desc": "An error occurs during the WordPress Cluster package installation due to incorrect stack tags"
+    },
+    {
+      "JE": "JE-53763",
+      "CompatibleFrom": "5.7",
+      "Desc": "Missing description for the add-ons installed during the WordPress Cluster package installation"
+    },
+    {
+      "JE": "JE-54980",
+      "CompatibleFrom": "5.7",
+      "Desc": "The Strict-Transport-Security support for the test SSL certificate in the WordPress Cluster package should be disabled"
+    },
+    {
+      "JE": "JE-55902",
+      "CompatibleFrom": "5.7",
+      "Desc": "LiteSpeed-related options are displayed incorrectly in the WordPress Standalone package installation window"
+    },
+    {
+      "JE": "JE-57121",
+      "CompatibleFrom": "5.9.1",
+      "Desc": "The TimeZone Change add-on installation fails on the Ubuntu 20 VPS"
+    },
+    {
+      "JE": "JE-55026",
+      "CompatibleFrom": "5.9.2",
+      "Desc": "Some redundant services are started on the Ubuntu 20.04 nodes after reboot"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-44112",
+      "AffectedVersions": "-",
+      "Desc": "The autofs mounts are not available for the systemd-based containers at the start"
+    },
+    {
+      "JE": "JE-44165",
+      "AffectedVersions": "-",
+      "Desc": "Different description for the same error on the Shared Storage node"
+    },
+    {
+      "JE": "JE-44377",
+      "AffectedVersions": "-",
+      "Desc": "Unhandled error when adding a mount point to the Shared Storage node"
+    },
+    {
+      "JE": "JE-47032",
+      "AffectedVersions": "-",
+      "Desc": "Unhandled error when creating a mount point with the unfsd process stopped"
+    },
+    {
+      "JE": "JE-49956",
+      "AffectedVersions": "5.7.6",
+      "Desc": "An error occurs when adding a load balancer node with public IP to application server with public IP and bound custom domain"
+    },
+    {
+      "JE": "JE-50494",
+      "AffectedVersions": "-",
+      "Desc": "FTP connection using 'old' credentials can be established after the FTP add-on re-installation"
+    },
+    {
+      "JE": "JE-50828",
+      "AffectedVersions": "-",
+      "Desc": "Project update on the Golang servers fails for the password-protected repositories"
+    },
+    {
+      "JE": "JE-51077",
+      "AffectedVersions": "5.7",
+      "Desc": "The vsftpd service is still enabled on node after the FTP add-on removal"
+    },
+    {
+      "JE": "JE-51747",
+      "AffectedVersions": "5.8.1",
+      "Desc": "Container is stopped after the unsuccessful redeploy"
+    },
+    {
+      "JE": "JE-51825",
+      "AffectedVersions": "5.8.1",
+      "Desc": "The 'Wrong cloudlets counts' error occurs when installing custom cluster with nodes in the extra layer"
+    },
+    {
+      "JE": "JE-51945",
+      "AffectedVersions": "5.8.1",
+      "Desc": "Account activation SMS cannot be re-sent on the same number during the registration"
+    },
+    {
+      "JE": "JE-52044",
+      "AffectedVersions": "-",
+      "Desc": "Warnings about deprecated parameters in logs after the Ruby server restart"
+    },
+    {
+      "JE": "JE-52063",
+      "AffectedVersions": "5.7",
+      "Desc": "Incorrect permissions for the /etc/autofs.conf configuration file on the Shared Storage node"
+    },
+    {
+      "JE": "JE-52166",
+      "AffectedVersions": "5.8.1",
+      "Desc": "Unhandled error when enabling firewall for containers with incorrectly configured /etc/sysconfig/iptables-custom file"
+    },
+    {
+      "JE": "JE-52561",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect steps order in the two-factor authentication email"
+    },
+    {
+      "JE": "JE-52902",
+      "AffectedVersions": "5.6",
+      "Desc": "Incorrect CLI and platform versions comparison"
+    },
+    {
+      "JE": "JE-54255",
+      "AffectedVersions": "5.9.2",
+      "Desc": "Unhandled error when container cannot remove temporary locations during redeploy"
+    },
+    {
+      "JE": "JE-54680",
+      "AffectedVersions": "any",
+      "Desc": "The execution of the SwapExtIps API/CLI method between different regions should be validated"
+    },
+    {
+      "JE": "JE-54785",
+      "AffectedVersions": "5.9.2",
+      "Desc": "If HTTP to HTTPS redirect is enabled on the platform, it should work in the client libs as well"
+    },
+    {
+      "JE": "JE-54874",
+      "AffectedVersions": "5.9.2",
+      "Desc": "Web SSH console does not react on the keyboard inputs"
+    },
+    {
+      "JE": "JE-55003",
+      "AffectedVersions": "any",
+      "Desc": "FTP add-on should not be available for the Memcached nodes"
+    },
+    {
+      "JE": "JE-55025",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when creating a mount point from the Ubuntu-based VPS to a compute node"
+    },
+    {
+      "JE": "JE-55027",
+      "AffectedVersions": "5.9.5",
+      "Desc": "SSH connection to the Ubuntu-based VPS fails after container redeploy"
+    },
+    {
+      "JE": "JE-55090",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when creating a mount point from the Ubuntu-based VPS to a compute node"
+    },
+    {
+      "JE": "JE-55115",
+      "AffectedVersions": "5.9.3",
+      "Desc": "SSH connection to the CentOS 7 container cannot be established"
+    },
+    {
+      "JE": "JE-55132",
+      "AffectedVersions": "-",
+      "Desc": "Some redundant services are started on the Ubuntu 20.04 nodes after reboot"
+    },
+    {
+      "JE": "JE-55149",
+      "AffectedVersions": "-",
+      "Desc": "The 'Tag is not allowed' error occurs during the container redeploy"
+    },
+    {
+      "JE": "JE-55230",
+      "AffectedVersions": "5.9.2",
+      "Desc": "Custom containers from the private Google container repository cannot be added"
+    },
+    {
+      "JE": "JE-55339",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect permissions for the /var/lib/jelastic/overrides folder on the Tomcat node"
+    },
+    {
+      "JE": "JE-55379",
+      "AffectedVersions": "5.9.5",
+      "Desc": "NFS mounts are missing on the non-master nodes of a layer"
+    },
+    {
+      "JE": "JE-55478",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect validation during environment migration between regions"
+    },
+    {
+      "JE": "JE-55590",
+      "AffectedVersions": "-",
+      "Desc": "Zero downtime deployment option does not work with VCS projects on the LiteSpeed application servers"
+    },
+    {
+      "JE": "JE-55598",
+      "AffectedVersions": "5.9.4",
+      "Desc": "Bound custom domain is not released after the appropriate environment deletion"
+    },
+    {
+      "JE": "JE-55617",
+      "AffectedVersions": "5.8.1",
+      "Desc": "Mount point cannot be removed on the Shared Storage node after restart"
+    },
+    {
+      "JE": "JE-55629",
+      "AffectedVersions": "any",
+      "Desc": "Incorrect tags sorting in the node redeploy window"
+    },
+    {
+      "JE": "JE-55707",
+      "AffectedVersions": "-",
+      "Desc": "Zero downtime deployment option does not work with VCS projects on the LEMP application servers"
+    },
+    {
+      "JE": "JE-55776",
+      "AffectedVersions": "5.8.1",
+      "Desc": "Project cannot be deployed into environment with application server in the extra layer"
+    },
+    {
+      "JE": "JE-55815",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs if node's home directory is a symlink"
+    },
+    {
+      "JE": "JE-55915",
+      "AffectedVersions": "-",
+      "Desc": "Internal network routes are missing after environment migration"
+    },
+    {
+      "JE": "JE-55943",
+      "AffectedVersions": "5.9.6",
+      "Desc": "NFS mounts do not work on the containers based on CentOS 6"
+    },
+    {
+      "JE": "JE-55962",
+      "AffectedVersions": "-",
+      "Desc": "The latest tag for custom containers disappears after its selection from the list"
+    },
+    {
+      "JE": "JE-56126",
+      "AffectedVersions": "5.9.3",
+      "Desc": "Container redeploy fails due to incorrect container status validation"
+    },
+    {
+      "JE": "JE-56145",
+      "AffectedVersions": "5.9.4",
+      "Desc": "An error occurs when adding nodes to the Shared Storage cluster"
+    },
+    {
+      "JE": "JE-56166",
+      "AffectedVersions": "any",
+      "Desc": "An error occurs when trying to deploy VCS project with submodules"
+    },
+    {
+      "JE": "JE-56278",
+      "AffectedVersions": "5.9.6",
+      "Desc": "Environment billing history does not work with custom localization"
+    },
+    {
+      "JE": "JE-56311",
+      "AffectedVersions": "-",
+      "Desc": "The Let's Encrypt add-on cannot be installed if the environment has an entry alias"
+    },
+    {
+      "JE": "JE-56414",
+      "AffectedVersions": "5.8.5",
+      "Desc": "An error occurs during the container redeploy"
+    },
+    {
+      "JE": "JE-56497",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect node's count validation in clusters"
+    },
+    {
+      "JE": "JE-56498",
+      "AffectedVersions": "-",
+      "Desc": "The Apply button in topology wizard should be disabled if there are validation warnings"
+    },
+    {
+      "JE": "JE-56556",
+      "AffectedVersions": "-",
+      "Desc": "List of shared environments in the collaboration email should be provided with the appropriate aliases"
+    },
+    {
+      "JE": "JE-56574",
+      "AffectedVersions": "5.9.6",
+      "Desc": "The password reset form should be in the same language as set in the dashboard"
+    },
+    {
+      "JE": "JE-56579",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect Disk Limit slider behavior when set below the minimum value"
+    },
+    {
+      "JE": "JE-56642",
+      "AffectedVersions": "5.9.6",
+      "Desc": "An error occurs when adding a large number of VPS nodes simultaneously"
+    },
+    {
+      "JE": "JE-57217",
+      "AffectedVersions": "5.9.6",
+      "Desc": "An order is created by the auto-refill option for the removed users"
+    },
+    {
+      "JE": "JE-57299",
+      "AffectedVersions": "any",
+      "Desc": "Emails are displayed incorrectly in Dark Mode on the iPhone/MacOS"
+    },
+    {
+      "JE": "JE-57437",
+      "AffectedVersions": "-",
+      "Desc": "Transfer of an environment without VM nodes fails due to the target account not having a VM nodes support"
+    }
+  ]
+}

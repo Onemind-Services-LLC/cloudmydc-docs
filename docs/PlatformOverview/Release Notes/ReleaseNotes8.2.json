@@ -1,0 +1,166 @@
+{
+  "data1": [
+    {
+      "JE": "JE-64745",
+      "CompatibleFrom": "any",
+      "Desc": "An error occurs when installing the Spring Boot Fat Jar Builder application package from the platform Marketplace"
+    },
+    {
+      "JE": "JE-64955",
+      "CompatibleFrom": "any",
+      "Desc": "An error occurs when installing some WordPress plugins on the LiteSpeed and LLSMP servers"
+    },
+    {
+      "JE": "JE-65165",
+      "CompatibleFrom": "any",
+      "Desc": "The 'ERR_TOO_MANY_REDIRECTS' error occurs when accessing the admin panel for the WordPress Cluster based on the NGINX server"
+    },
+    {
+      "JE": "JE-64833",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when installing the osTicket application package based on PHP 8.2 from the platform Marketplace"
+    },
+    {
+      "JE": "JE-52335",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when deploying a stack on Docker Swarm from the YAML file that is not in the root directory"
+    },
+    {
+      "JE": "JE-58868",
+      "CompatibleFrom": "3.3",
+      "Desc": "All the 'incorrect domain' errors for the Let’s Encrypt add-on should have the error coded"
+    },
+    {
+      "JE": "JE-60560",
+      "CompatibleFrom": "3.3",
+      "Desc": "Missing description for the Let’s Encrypt error related to network issues"
+    },
+    {
+      "JE": "JE-64794",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when installing Eclipse Che from the ‘release candidate’ image version"
+    },
+    {
+      "JE": "JE-65224",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when accessing the Jitsi application after installation from the platform Marketplace"
+    },
+    {
+      "JE": "JE-65452",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when installing the Eclipse Che 7.0.0-RC-1.1 application version from the platform Marketplace"
+    },
+    {
+      "JE": "JE-65545",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when accessing the IOTA application after installation from the platform Marketplace"
+    },
+    {
+      "JE": "JE-49507",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The httpd service fails on the Apache nodes if the pid file is missing during the container’s start/stop/restart"
+    },
+    {
+      "JE": "JE-59151",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Cloned LiteSpeed ADC balancer has backends from the original environment listed in the configs"
+    },
+    {
+      "JE": "JE-60325",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The workerProcesses value is not updated in the lslbd_config.xml file if changed via the add-on"
+    },
+    {
+      "JE": "JE-64529",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Access to the /home/jelastic home folder is not granted after the FTP add-on installation on the Spring Boot server"
+    },
+    {
+      "JE": "JE-65397",
+      "CompatibleFrom": "5.4",
+      "Desc": "The Varnish load balancer node is not started after the redeployment"
+    },
+    {
+      "JE": "JE-60553",
+      "CompatibleFrom": "5.7",
+      "Desc": "An error occurs when installing Multi-Regional WordPress Cluster"
+    },
+    {
+      "JE": "JE-61492",
+      "CompatibleFrom": "5.7.2",
+      "Desc": "The self-signed SSL certificate is not generated after the LiteSpeed ADC balancer creation"
+    },
+    {
+      "JE": "JE-59090",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "The lsrestart.log file has an incorrect owner on the LiteSpeed and LLSMP servers"
+    },
+    {
+      "JE": "JE-59478",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "Incorrect values in the /etc/jelastic/metainf.conf file on the LLSMP server"
+    },
+    {
+      "JE": "JE-59515",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "The skip-networking option is missing when resetting the MariaDB password on the LEMP/LLSMP servers"
+    },
+    {
+      "JE": "JE-60211",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "The license key registration attempts should be enumerated in LiteSpeed WS and ADC server logs"
+    },
+    {
+      "JE": "JE-60629",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "An error occurs when reloading the LLSMP server with the 'jem service reload' command"
+    },
+    {
+      "JE": "JE-65020",
+      "CompatibleFrom": "5.8",
+      "Desc": "An error occurs when restoring from the WordPress backup after the backup storage node is changed"
+    },
+    {
+      "JE": "JE-65589",
+      "CompatibleFrom": "5.8",
+      "Desc": "An error occurs when accessing the Jenkins application after redeployment from the version based on Java 11 to Java 17"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-65170",
+      "AffectedVersions": "8.2",
+      "Desc": "An error occurs when mounting files from some custom Docker containers"
+    },
+    {
+      "JE": "JE-65227",
+      "AffectedVersions": "-",
+      "Desc": "Errors are logged during projects auto-deploy on containers with enabled sendmail functionality"
+    },
+    {
+      "JE": "JE-65272",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when executing some commands that include a file download operation"
+    },
+    {
+      "JE": "JE-65325",
+      "AffectedVersions": "-",
+      "Desc": "Custom Docker containers cannot be created from images that use the OCI manifest schema"
+    },
+    {
+      "JE": "JE-65414",
+      "AffectedVersions": "-",
+      "Desc": "A scroll slider appears in the environment configuration settings panel even if there is enough space to fit the content"
+    },
+    {
+      "JE": "JE-65499",
+      "AffectedVersions": "-",
+      "Desc": "The shared files owner is changed to root when resetting a password for the FTP add-on on the Shared Storage node"
+    },
+    {
+      "JE": "JE-65625",
+      "AffectedVersions": "7.2",
+      "Desc": "The URL_DOCS_OOM_KILLER_TROUBLESHOOTING placeholder is not replaced with a link in emails"
+    }
+  ]
+}

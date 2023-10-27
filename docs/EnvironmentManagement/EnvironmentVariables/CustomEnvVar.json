@@ -1,0 +1,4 @@
+{
+  "data1": "export  {var_name}= {var_value}",
+  "data2": ["source ~/.bashrc", "echo $ {var_name}"]
+}

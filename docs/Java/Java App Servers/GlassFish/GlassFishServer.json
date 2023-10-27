@@ -1,0 +1,64 @@
+{
+  "data1": [
+    {
+      "ServletContainersConfiguration": "1 GF",
+      "Idle": 530,
+      "WithlaunchedAdminPanel": 800
+    },
+    {
+      "ServletContainersConfiguration": "1 GF",
+      "Idle": 540,
+      "WithlaunchedAdminPanel": 820
+    },
+    {
+      "ServletContainersConfiguration": "2 GF (HA off)",
+      "Idle": 820,
+      "WithlaunchedAdminPanel": 980
+    },
+    {
+      "ServletContainersConfiguration": "2 GF (HA off)",
+      "Idle": 830,
+      "WithlaunchedAdminPanel": 1000
+    },
+    {
+      "ServletContainersConfiguration": "3 GF",
+      "Idle": 1050,
+      "WithlaunchedAdminPanel": 1210
+    },
+    {
+      "ServletContainersConfiguration": "3 GF",
+      "Idle": 1060,
+      "WithlaunchedAdminPanel": 1220
+    },
+    {
+      "ServletContainersConfiguration": "4 GF (HA off)",
+      "Idle": 1430,
+      "WithlaunchedAdminPanel": 1560
+    },
+    {
+      "ServletContainersConfiguration": "4 GF (HA off)",
+      "Idle": 1450,
+      "WithlaunchedAdminPanel": 1580
+    },
+    {
+      "ServletContainersConfiguration": "2 GF (HA on)",
+      "Idle": 830,
+      "WithlaunchedAdminPanel": 1030
+    },
+    {
+      "ServletContainersConfiguration": "2 GF (HA on)",
+      "Idle": 850,
+      "WithlaunchedAdminPanel": 1050
+    },
+    {
+      "ServletContainersConfiguration": "4 GF (HA on)",
+      "Idle": 1360,
+      "WithlaunchedAdminPanel": 1590
+    },
+    {
+      "ServletContainersConfiguration": "4 GF (HA on)",
+      "Idle": 1380,
+      "WithlaunchedAdminPanel": 1610
+    }
+  ]
+}

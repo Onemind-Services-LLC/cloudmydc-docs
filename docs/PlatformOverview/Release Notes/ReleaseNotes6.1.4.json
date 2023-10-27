@@ -1,0 +1,61 @@
+{
+  "data1": [
+    {
+      "JE": "JE-60026",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when redeploying old HAProxy containers to the newer version due to an outdated option in the haproxy.cfg config"
+    },
+    {
+      "JE": "JE-56956",
+      "CompatibleFrom": "5.4",
+      "Desc": "Some redundant network services are started after the Debian VPS reboot"
+    },
+    {
+      "JE": "JE-59344",
+      "CompatibleFrom": "5.4",
+      "Desc": ".NET Core application servers should have a possibility to provide additional run options for the deployed applications"
+    },
+    {
+      "JE": "JE-59778", 
+      "CompatibleFrom": "5.7",
+      "Desc": "Incorrect access rights for the Golang projects built manually"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-32057",
+      "AffectedVersions": "-",
+      "Desc": "Some add-ons should be able to receive the same data (usually, the submit button is disabled when there is no change in the provided data)"
+    },
+    {
+      "JE": "JE-52718",
+      "AffectedVersions": "-",
+      "Desc": "Container linking is wholly removed after down-scaling one of the linked layers"
+    },
+    {
+      "JE": "JE-58834",
+      "AffectedVersions": "5.9.2",
+      "Desc": "Incorrect node sorting in the JPS installation windows"
+    },
+    {
+      "JE": "JE-59555",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs after the gitlab/gitlab-ce custom image creation due to the failure of the post-install configurations"
+    },
+    {
+      "JE": "JE-59912",
+      "AffectedVersions": "6.1.3",
+      "Desc": "An empty dialog is displayed when managing installed add-ons"
+    },
+    {
+      "JE": "JE-59956",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs after the creation of the custom containers based on the Debian 9 OS template"
+    },
+    {
+      "JE": "JE-59957",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs after the Ubuntu 16.04 custom image creation due to the failure of the post-install configurations"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "data1": [
+    {
+      "JE": "JE-57936",
+      "CompatibleFrom": "3.3",
+      "Desc": "The 'Eclipse Vert.x Fat Jar Builder' application in Marketplace does not work on the platforms below the 6.0.3 version"
+    },
+    {
+      "JE": "JE-56783",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "HTTP2 doesn’t work through the Shared Load Balancer for some templates"
+    },
+    {
+      "JE": "JE-58086",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The fuzzyrpm repository should be skipped if it is unavailable during the Let’s Encrypt add-on installation"
+    },
+    {
+      "JE": "JE-58054",
+      "CompatibleFrom": "5.3",
+      "Desc": "The home directory on the certified DockerCE template should be added to the Favorites shortcuts in the dashboard"
+    },
+    {
+      "JE": "JE-48968",
+      "CompatibleFrom": "5.4",
+      "Desc": "An error occurs on the GlassFish node after redeployment"
+    },
+    {
+      "JE": "JE-58256",
+      "CompatibleFrom": "5.4",
+      "Desc": "SQL-service is inactive after stopping and starting an environment with the Galera cluster"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-46792",
+      "AffectedVersions": "-",
+      "Desc": "JPS installation fails due to the onInstall and container aftercreate operations conflict"
+    },
+    {
+      "JE": "JE-57838",
+      "AffectedVersions": "-",
+      "Desc": "Kubernetes Cluster installation fails due to the Java exception error"
+    },
+    {
+      "JE": "JE-57966",
+      "AffectedVersions": "-",
+      "Desc": "Firewall state cannot be changed (enabled/disabled) on the Ubuntu-based VPS nodes"
+    },
+    {
+      "JE": "JE-58045",
+      "AffectedVersions": "6.0",
+      "Desc": "Firewall rules should be backed up and tested before the appliance"
+    },
+    {
+      "JE": "JE-58052",
+      "AffectedVersions": "-",
+      "Desc": "Region icons are not displayed during the JPS package installation"
+    },
+    {
+      "JE": "JE-58055",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when installing applications from the Marketplace"
+    },
+    {
+      "JE": "JE-58071",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect CSS for the list field tooltips in some packages at the Marketplace"
+    },
+    {
+      "JE": "JE-58093",
+      "AffectedVersions": "-",
+      "Desc": "Links in the list field tooltips of the topology wizard are not clickable"
+    },
+    {
+      "JE": "JE-58094",
+      "AffectedVersions": "-",
+      "Desc": "The list field tooltip is broken when used with the <a> HTML tag"
+    },
+    {
+      "JE": "JE-58259",
+      "AffectedVersions": "6.0",
+      "Desc": "Container redeployment fails if a symlink is added to the persistent files"
+    },
+    {
+      "JE": "JE-58262",
+      "AffectedVersions": "5.3",
+      "Desc": "Incorrect IP address sequence for containers with public IP after environment migration to the different region"
+    }
+  ]
+}

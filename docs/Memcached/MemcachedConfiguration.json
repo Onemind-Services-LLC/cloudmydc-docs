@@ -1,0 +1,6 @@
+{
+  "data1": [
+    { "Folder": "conf", "File": "memcached", "Path": "/etc/sysconfig" },
+    { "Folder": "keys", "File": "", "Path": "/var/lib/jelastic/keys" }
+  ]
+}

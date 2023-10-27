@@ -1,0 +1,70 @@
+{
+    "data1":[
+      {
+        "VariableName": "SOFTWARE_VERSION",
+        "Editable": "-",
+        "Description": "A version of the specified software (stack, engine, template, module, etc.)"
+      },
+      {
+        "VariableName": "CLONE_ON_SCALE",
+        "Editable": "+",
+        "Description": "Defines if new nodes upon horizontal scaling should be clones of a layer’s master (true) or created from scratch (false)"
+      },
+      {
+        "VariableName": "DOCKER_EXPOSED_PORT",
+        "Editable": "-",
+        "Description": "Lists ports from the EXPOSE directive of the image’s dockerfile, which were opened via container firewall during the environment creation."
+      },
+      {
+        "VariableName": "JELASTIC_EXPOSE",
+        "Editable": "+",
+        "Description": "Manages the auto-redirect functionality state with an ability to define the required port manually."
+      },
+      {
+        "VariableName": "MASTER_HOST",
+        "Editable": "-",
+        "Description": "A short hostname for a master node within a layer."
+      },
+      {
+        "VariableName": "MASTER_ID",
+        "Editable": "-",
+        "Description": "A unique node identifier of a master node within a layer."
+      },
+      {
+        "VariableName": "MASTER_IP",
+        "Editable": "-",
+        "Description": "An internal IP address of a master node within a layer."
+      },
+      {
+        "VariableName": "ON_ENV_INSTALL",
+        "Editable": "+ (before env creation)",
+        "Description": "A script (or link to it) to be executed after environment creation."
+      },
+      {
+        "VariableName": "OPEN_INBOUND_PORTS (JELASTIC_PORTS)",
+        "Editable": "+ (before env creation)",
+        "Description": "Specifies custom ports, which should be opened in the firewall during container creation."
+      },
+      {
+        "VariableName": "PATH",
+        "Editable": "-",
+        "Description": "A default shell variable, with a list of paths to directories with executable programs."
+      },
+      {
+        "VariableName": "STACK_NAME",
+        "Editable": "-",
+        "Description": "The name of the current stack."
+      },
+      {
+        "VariableName": "STACK_PATH",
+        "Editable": "-",
+        "Description": "The home directory of the stack."
+      },
+      {
+        "VariableName": "STACK_USER",
+        "Editable": "-",
+        "Description": "The name of the stack’s default user."
+      }
+    ]
+
+}

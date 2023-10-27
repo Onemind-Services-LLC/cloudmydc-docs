@@ -1,0 +1,26 @@
+{
+  "data1": [
+    {
+      "JE": "JE-59249",
+      "CompatibleFrom": "3.3",
+      "Desc": "One of the Tomcat instances of the Cyclos 4 PRO Cluster package returns a 404 error"
+    },
+    {
+      "JE": "JE-59709",
+      "CompatibleFrom": "3.3",
+      "Desc": "The Cyclos 4 PRO Cluster package returns a 404 error after enabling built-in SSL for the environment"
+    },
+    {
+      "JE": "JE-59618",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs after the Couchbase Cluster creation from the Marketplace"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-59795",
+      "AffectedVersions": "-",
+      "Desc": "Custom Docker images based on the Debian OS template are not updated before packages installation"
+    }
+  ]
+}

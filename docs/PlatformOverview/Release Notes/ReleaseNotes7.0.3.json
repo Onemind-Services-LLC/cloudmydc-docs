@@ -1,0 +1,31 @@
+{
+  "data1": [
+    {
+      "JE": "JE-62351",
+      "CompatibleFrom": "any",
+      "Desc": "Worker nodes of the Couchbase CE Cluster are down after the package installation"
+    },
+    {
+      "JE": "JE-60134",
+      "CompatibleFrom": "3.3",
+      "Desc": "Incorrect Content-Security-Policy header in the NGINX configurations of the WebMail Lite package"
+    },
+    {
+      "JE": "JE-60834",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when installing the Plesk package"
+    },
+    {
+      "JE": "JE-62379",
+      "CompatibleFrom": "5.3",
+      "Desc": "Worker nodes of the Couchbase CE Cluster are down after the environment restart"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-62393",
+      "AffectedVersions": "-",
+      "Desc": "Permissions issue when installing JPS to the owner account as a collaboration member"
+    }
+  ]
+}

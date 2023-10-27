@@ -1,0 +1,12 @@
+{
+  "arr1": [
+    "api: environment.control.RedeployContainers",
+    "nodeGroup: {nodeGroup}",
+    "tag: {myImage}:{newTag}"
+  ],
+  "arr2": [
+    "api: environment.control.RedeployContainers",
+    "nodeId: {nodeId}",
+    "tag: {myImage}:{newTag}"
+  ]
+}

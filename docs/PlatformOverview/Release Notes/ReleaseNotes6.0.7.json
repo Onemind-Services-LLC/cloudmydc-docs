@@ -1,0 +1,136 @@
+{
+  "data1": [
+    {
+      "JE": "JE-58921",
+      "CompatibleFrom": "any",
+      "Desc": "The Plesk application doesn’t work after deployment from the Marketplace"
+    },
+    {
+      "JE": "JE-47128",
+      "CompatibleFrom": "3.3",
+      "Desc": "The CDN add-ons cost on the reselling platforms is calculated based on the parent installation currency"
+    },
+    {
+      "JE": "JE-52308",
+      "CompatibleFrom": "3.3",
+      "Desc": "Some PHP-based applications in the Marketplace utilize outdated PHP engine versions"
+    },
+    {
+      "JE": "JE-56785",
+      "CompatibleFrom": "3.3",
+      "Desc": "Only part of the error text is displayed in the email when installing the Let’s Encrypt add-on with an incorrect domain name"
+    },
+    {
+      "JE": "JE-57958",
+      "CompatibleFrom": "3.3",
+      "Desc": "The Let’s Encrypt add-on installation fails if any active yum repo is unavailable"
+    },
+    {
+      "JE": "JE-58785",
+      "CompatibleFrom": "3.3",
+      "Desc": "The Let’s Encrypt add-on cannot be installed on the load balancer layer if the settings-custom config is used"
+    },
+    {
+      "JE": "JE-58836",
+      "CompatibleFrom": "3.3",
+      "Desc": "Incorrect regex expression for generating certificates with the Let’s Encrypt add-on"
+    },
+    {
+      "JE": "JE-58873",
+      "CompatibleFrom": "3.3",
+      "Desc": "Unhandled error when updating the Let’s Encrypt add-on with incorrect domain configured"
+    },
+    {
+      "JE": "JE-59060",
+      "CompatibleFrom": "3.3",
+      "Desc": "SSL chain issue after installing the Let’s Encrypt add-on for the NGINX load balancer"
+    },
+    {
+      "JE": "JE-58910",
+      "CompatibleFrom": "5.0",
+      "Desc": "An error occurs when trying to install the Minio application from the Marketplace"
+    },
+    {
+      "JE": "JE-56628",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The mysqld process is running by default on the Apache PHP stacks"
+    },
+    {
+      "JE": "JE-56670",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Apache PHP containers become inaccessible after redeployment from the 8th to 7th PHP version"
+    },
+    {
+      "JE": "JE-56736",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Insufficient permissions to run the “nginx -t” command on the NGINX-based containers"
+    },
+    {
+      "JE": "JE-57152",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs during the Ruby-based stacks redeployment"
+    },
+    {
+      "JE": "JE-57737",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The Maven build node is installed with the GraalVM Java engine when the OpenJDK 8 one is selected"
+    },
+    {
+      "JE": "JE-58804",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Typo in the resource name in the ssl.upstreams.inc configuration file on the NGINX load balancer"
+    },
+    {
+      "JE": "JE-58913",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The Cyclos 4 Cluster application becomes inaccessible in a few minutes after deployment from the Marketplace"
+    },
+    {
+      "JE": "JE-59012",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The GitBlit application is inaccessible after deployment from the Marketplace"
+    },
+    {
+      "JE": "JE-59015",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The Alfresco application is inaccessible after deployment from the Marketplace"
+    },
+    {
+      "JE": "JE-59017",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The xWiki application is inaccessible after deployment from the Marketplace"
+    },
+    {
+      "JE": "JE-59018",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The Liferay application is inaccessible after deployment from the Marketplace"
+    },
+    {
+      "JE": "JE-59026",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "An error occurs when trying to install the OpenCMS application from the Marketplace"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-57387",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect JSON response for the 'permission denied' error in the container’s file manager"
+    },
+    {
+      "JE": "JE-59125",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when trying to fetch Volumes for custom Docker containers with credentials"
+    },
+    {
+      "JE": "JE-59134",
+      "AffectedVersions": "6.0.2",
+      "Desc": "An error occurs when trying to open the Custom tab of the topology wizard as a collaborator"
+    },
+    {
+      "JE": "JE-59243",
+      "AffectedVersions": "-",
+      "Desc": "The Tomcat auto-cluster cannot be created due to incorrect firewall rules"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "data1": [
+    {
+      "Distribution": "AlmaLinux",
+      "Version": "almalinux 9",
+      "VZTemplate": "almalinux-9-x86_64"
+    },
+    {
+      "Distribution": "Alpine",
+      "Version": "alpine 3",
+      "VZTemplate": "alpine-3.x-x86_64"
+    },
+    {
+      "Distribution": "CentOS",
+      "Version": "centos 7",
+      "VZTemplate": "centos-7-x86_64"
+    },
+    {
+      "Distribution": "CentOS",
+      "Version": "centos 8",
+      "VZTemplate": "almalinux-8-x86_64"
+    },
+    {
+      "Distribution": "Debian",
+      "Version": "debian 10",
+      "VZTemplate": "debian-10.0-x86_64"
+    },
+    {
+      "Distribution": "Debian",
+      "Version": "debian 11*",
+      "VZTemplate": "debian-11.0-x86_64"
+    },
+    {
+      "Distribution": "RHEL",
+      "Version": "RHEL 7",
+      "VZTemplate": "centos-7-x86_64"
+    },
+    {
+      "Distribution": "Ubuntu",
+      "Version": "ubuntu 16.04",
+      "VZTemplate": "ubuntu-16.04-x86_64"
+    },
+    {
+      "Distribution": "Ubuntu",
+      "Version": "ubuntu 18.04",
+      "VZTemplate": "ubuntu-18.04-x86_64"
+    },
+    {
+      "Distribution": "Ubuntu",
+      "Version": "ubuntu 20.04",
+      "VZTemplate": "ubuntu-20.04-x86_64"
+    },
+    {
+      "Distribution": "Ubuntu",
+      "Version": "ubuntu 22.04",
+      "VZTemplate": "ubuntu-22.04-x86_64"
+    }
+  ]
+}

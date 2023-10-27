@@ -1,0 +1,107 @@
+{
+  "data1": [
+    {
+      "JE": "JE-60410",
+      "CompatibleFrom": "3.3",
+      "Desc": "Multiple errors in log files after the Odoo CE package installation from the platform Marketplace"
+    },
+    {
+      "JE": "JE-60549",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs after redeploying the compute node of the DjangoCMS package installed from the platform Marketplace"
+    },
+    {
+      "JE": "JE-59122",
+      "CompatibleFrom": "5.3.2",
+      "Desc": "An error occurs when removing a deployed application from the WildFly node after removing public IP"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-46964",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect error handling for issues with the 'jem docker getenv' and 'jem docker getruncmd' commands"
+    },
+    {
+      "JE": "JE-48918",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect firewall rules handling on the Memcached node when scaling compute nodes"
+    },
+    {
+      "JE": "JE-52338",
+      "AffectedVersions": "-",
+      "Desc": "An environment domain cannot temporarily be resolved after attaching an external IPv6 address"
+    },
+    {
+      "JE": "JE-52387",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when retrieving an environment variable with value in the JSON format"
+    },
+    {
+      "JE": "JE-57036",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when deploying an application if the archive contains the '/' absolute path"
+    },
+    {
+      "JE": "JE-57256",
+      "AffectedVersions": "5.9.6",
+      "Desc": "JPS installations with the addNodes action are visually stuck in the dashboard despite being completed successfully"
+    },
+    {
+      "JE": "JE-59190",
+      "AffectedVersions": "-",
+      "Desc": "Unnecessary systemd units in the Ubuntu VPS"
+    },
+    {
+      "JE": "JE-59264",
+      "AffectedVersions": "-",
+      "Desc": "A custom 'Sequential deployment with delay' value is reset to default for the subsequent deployments"
+    },
+    {
+      "JE": "JE-59432",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect localization in some emails when installing complex packages with multiple email notifications"
+    },
+    {
+      "JE": "JE-59516",
+      "AffectedVersions": "-",
+      "Desc": "Network routes are missing after redeploying containers with multiple public IP addresses"
+    },
+    {
+      "JE": "JE-59537",
+      "AffectedVersions": "-",
+      "Desc": "The environment delete action is stuck if any previous action is not finished yet"
+    },
+    {
+      "JE": "JE-59581",
+      "AffectedVersions": "5.9.1",
+      "Desc": "Incorrect public IP count validation when adding new IP addresses"
+    },
+    {
+      "JE": "JE-59655",
+      "AffectedVersions": "-",
+      "Desc": "The strict-transport-security header should be removed from the 50x error pages"
+    },
+    {
+      "JE": "JE-60200",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when sending a GET request with the 'Content-Type=application/json' header and API access token"
+    },
+    {
+      "JE": "JE-60294",
+      "AffectedVersions": "6.0.6",
+      "Desc": "The OSTEMPLATE variable should be updated if the base OS was changed during the container redeploy"
+    },
+    {
+      "JE": "JE-60524",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when redeploying a Debian 11 node that operates as an NFS server (exports data)"
+    },
+    {
+      "JE": "JE-60770",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when refilling the account balance if the sum is too big"
+    }
+  ]
+
+}

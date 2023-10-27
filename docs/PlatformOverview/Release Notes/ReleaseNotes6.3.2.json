@@ -1,0 +1,37 @@
+{
+  "data1": [
+    {
+      "JE": "JE-60688",
+      "CompatibleFrom": "3.3",
+      "Desc": "The Mattermost application does not work (the '502 Server is Down' error) after installing from the platform Marketplace"
+    },
+    {
+      "JE": "JE-60768",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Outdated repositories are listed in the old tags of the NGINX-based nodes"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-59816",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs during environment creation"
+    },
+    {
+      "JE": "JE-60420",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when executing scripts via launcher on the GlassFish nodes"
+    },
+    {
+      "JE": "JE-60956",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect PaaS version value in the downloadable OpenAPI files"
+    },
+    {
+      "JE": "JE-61053",
+      "AffectedVersions": "6.3",
+      "Desc": "Custom environment variables are not set on the images based on the alpine OS template"
+    }
+  ]
+
+}

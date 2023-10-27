@@ -1,0 +1,46 @@
+{
+  "data1": [
+    {
+      "JE": "JE-59734",
+      "CompatibleFrom": "3.3",
+      "Desc": "A lot of resources are blocked (mixed content) when operating Cyclos 4 Cluster with SSL enabled"
+    },
+    {
+      "JE": "JE-59858",
+      "CompatibleFrom": "3.3",
+      "Desc": "Incorrect permissions after the Fail2Ban add-on installation"
+    },
+    {
+      "JE": "JE-60154",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when installing the Odoo CE 9 or 10 packages from the platform Marketplace"
+    },
+    {
+      "JE": "JE-54042",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Errors present in log files after the WildFly Cluster installation"
+    },
+    {
+      "JE": "JE-60399",
+      "CompatibleFrom": "5.4",
+      "Desc": "Application ID is missing for the Magento package in the platform Marketplace"
+    },
+    {
+      "JE": "JE-59830",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "Memory auto-configuration is not applied for the LLSMP stack when decreasing the cloudlets count"
+    },
+    {
+      "JE": "JE-59882",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "The WAF environment variable does not adjust the Web Application Firewall setting on the LiteSpeed server"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-60442",
+      "AffectedVersions": "any",
+      "Desc": "The onBefore- and onAfterAddNode CS events do not work with nodes in extra layers"
+    }
+  ]
+}

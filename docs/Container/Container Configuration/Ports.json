@@ -1,0 +1,46 @@
+{
+    "data1": [
+      {
+        "PortOnSLB": "80, 8080, 8086",
+        "BackendPort": "80",
+        "FrontendSSL": "no",
+        "BackendSSL": "no"
+      },
+      {
+        "PortOnSLB": "4848",
+        "BackendPort": "4848",
+        "FrontendSSL": "yes",
+        "BackendSSL": "yes"
+      },
+      {
+        "PortOnSLB": "8443",
+        "BackendPort": "8443",
+        "FrontendSSL": "yes",
+        "BackendSSL": "yes"
+      },
+      {
+        "PortOnSLB": "4901-4910",
+        "BackendPort": "4901-4910",
+        "FrontendSSL": "yes",
+        "BackendSSL": "yes"
+      },
+      {
+        "PortOnSLB": "443",
+        "BackendPort": "80",
+        "FrontendSSL": "yes",
+        "BackendSSL": "no"
+      },
+      {
+        "PortOnSLB": "4949",
+        "BackendPort": "4949",
+        "FrontendSSL": "yes",
+        "BackendSSL": "no"
+      },
+      {
+        "PortOnSLB": "7979",
+        "BackendPort": "7979",
+        "FrontendSSL": "yes",
+        "BackendSSL": "no"
+      }
+    ]
+}

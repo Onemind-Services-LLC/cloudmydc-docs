@@ -1,0 +1,37 @@
+{
+  "LoadBalancers": [
+    {
+      "NameLinkToTags": "Apache Balancer",
+      "LatestSupportedVersion": "2.4.57"
+    },
+    {
+      "NameLinkToTags": "HAProxy",
+      "LatestSupportedVersion": "2.2.31; 2.3.10; 2.4.24; 2.5.14; 2.6.15; 2.7.10; 2.8.3"
+    },
+    {
+      "NameLinkToTags": "EOL",
+      "LatestSupportedVersion": "1.8.14; 1.9.7; 2.0.10; 2.1.7"
+    },
+    {
+      "NameLinkToTags": "LiteSpeed Web ADC (HTTP/3 ready)",
+      "LatestSupportedVersion": "2.4; 2.5.1; 2.6.1; 2.7; 3.0.3; 3.1.7"
+    },
+    {
+      "NameLinkToTags": "NGINX Balancer (HTTP/3 ready)",
+      "LatestSupportedVersion": "1.16.1; 1.18.0; 1.20.2; 1.22.1; 1.24.0"
+    },
+    {
+      "NameLinkToTags": "EOL",
+      "LatestSupportedVersion": "1.10.3; 1.12.2; 1.14.2"
+    },
+    {
+      "NameLinkToTags": "Varnish (HTTP/3 ready)",
+      "LatestSupportedVersion": "6.0.11; 7.0.3; 7.1.2; 7.2.1; 7.3.0; 7.4.1"
+    },
+    {
+      "NameLinkToTags": "EOL",
+      "LatestSupportedVersion": "4.1.8; 5.2.1; 6.1.1; 6.2.1; 6.3.2; 6.4.0; 6.5.1; 6.6.1"
+    }
+  ]
+
+}

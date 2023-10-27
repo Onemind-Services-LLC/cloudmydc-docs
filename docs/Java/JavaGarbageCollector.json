@@ -1,0 +1,36 @@
+{
+  "data1": [
+    {
+      "JavaApplicationServerName": "Tomcat/TomEE",
+      "PathToVariablesConf": "/opt/tomcat/conf/variables.conf"
+    },
+    {
+      "JavaApplicationServerName": "GlassFish",
+      "PathToVariablesConf": "/opt/glassfish/glassfish/domains/domain1/config/variables.conf"
+    },
+    {
+      "JavaApplicationServerName": "Spring Boot",
+      "PathToVariablesConf": "/home/jelastic/conf/variables.conf"
+    },
+    {
+      "JavaApplicationServerName": "WildFly",
+      "PathToVariablesConf": "/opt/wildfly/conf/variables.conf"
+    },
+    {
+      "JavaApplicationServerName": "Payara",
+      "PathToVariablesConf": "/opt/payara/glassfish/domains/domain1/config/variables.conf"
+    },
+    {
+      "JavaApplicationServerName": "SmartFoxServer",
+      "PathToVariablesConf": "/opt/repo/versions/2X/SmartFoxServer_2X/SFS2X/config/variables.conf"
+    },
+    {
+      "JavaApplicationServerName": "Java Engine",
+      "PathToVariablesConf": "/home/jelastic/conf/variables.conf"
+    },
+    {
+      "JavaApplicationServerName": "Jetty",
+      "PathToVariablesConf": "/opt/jetty/etc/variables.conf"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "data1": [
+    {
+      "LicensePlanName": "FREE Starter",
+      "DomainLimit": "1",
+      "Workers": "1",
+      "RAMLimit": "2 (16)",
+      "Pricing": "free of charge"
+    },
+    {
+      "LicensePlanName": "Site Owner",
+      "DomainLimit": "5",
+      "Workers": "1",
+      "RAMLimit": "8 (64)",
+      "Pricing": "0.014$ per hour (10$ per month)"
+    },
+    {
+      "LicensePlanName": "Site Owner Plus",
+      "DomainLimit": "5",
+      "Workers": "1",
+      "RAMLimit": "Unlimited",
+      "Pricing": "0.022$ per hour (16$ per month)"
+    },
+    {
+      "LicensePlanName": "Web Host Lite",
+      "DomainLimit": "Unlimited",
+      "Workers": "1",
+      "RAMLimit": "8 (64)",
+      "Pricing": "0.036$ per hour (26$ per month)"
+    },
+    {
+      "LicensePlanName": "Web Host Essential",
+      "DomainLimit": "Unlimited",
+      "Workers": "1",
+      "RAMLimit": "Unlimited",
+      "Pricing": "0.049$ per hour (36$ per month)"
+    },
+    {
+      "LicensePlanName": "Web Host Professional",
+      "DomainLimit": "Unlimited",
+      "Workers": "2",
+      "RAMLimit": "Unlimited",
+      "Pricing": "0.060$ per hour (44$ per month)"
+    },
+    {
+      "LicensePlanName": "Web Host Enterprise",
+      "DomainLimit": "Unlimited",
+      "Workers": "4",
+      "RAMLimit": "Unlimited",
+      "Pricing": "0.082$ per hour (60$ per month)"
+    },
+    {
+      "LicensePlanName": "Web Host Elite",
+      "DomainLimit": "Unlimited",
+      "Workers": "8+",
+      "RAMLimit": "Unlimited",
+      "Pricing": "0.126$ per hour (92$ per month)"
+    }
+  ]
+}

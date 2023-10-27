@@ -1,0 +1,39 @@
+{
+  "data1": [
+    {
+      "Unit": "C",
+      "Meaning": "Country",
+      "Example": "GB"
+    },
+    {
+      "Unit": "ST",
+      "Meaning": "State",
+      "Example": "London"
+    },
+    {
+      "Unit": "L",
+      "Meaning": "Location",
+      "Example": "London"
+    },
+    {
+      "Unit": "O",
+      "Meaning": "Organization",
+      "Example": "Global Security"
+    },
+    {
+      "Unit": "OU",
+      "Meaning": "Organizational Unit",
+      "Example": "IT Department"
+    },
+    {
+      "Unit": "CN",
+      "Meaning": "Common Name",
+      "Example": "example.com"
+    },
+    {
+      "Unit": "emailAddress",
+      "Meaning": "Email",
+      "Example": "email@example.com"
+    }
+  ]
+}

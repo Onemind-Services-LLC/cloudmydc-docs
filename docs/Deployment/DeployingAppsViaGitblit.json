@@ -1,0 +1,4 @@
+{
+    "data1": "git remote add {name} {repo_url}",
+    "data2": "git push -u {name} {branch}"
+}

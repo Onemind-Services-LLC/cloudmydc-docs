@@ -1,0 +1,40 @@
+{
+    "BugFixes": [
+      {
+        "JE": "JE-66810",
+        "AffectedVersions": "8.3",
+        "Desc": "When refreshing the invoices list, the invoice status is not updated after being paid via the Stripe billing system"
+      },
+      {
+        "JE": "JE-66816",
+        "AffectedVersions": "8.3",
+        "Desc": "The purchased subscription’s service plan cannot be updated if removed by the service hosting provider"
+      },
+      {
+        "JE": "JE-66922",
+        "AffectedVersions": "8.3",
+        "Desc": "The clustered solution is not updated when migrated to a different subscription service plan"
+      },
+      {
+        "JE": "JE-66944",
+        "AffectedVersions": "8.3",
+        "Desc": "The enable/disable Auto Pay option is available for the canceled subscriptions"
+      },
+      {
+        "JE": "JE-66954",
+        "AffectedVersions": "7.1",
+        "Desc": "An error occurs during the post-installation configuration of the gitlab/gitlab-ce Docker container"
+      },
+      {
+        "JE": "JE-66972",
+        "AffectedVersions": "8.3",
+        "Desc": "Incorrect validation for the passphrase when confirming the subscription migration"
+      },
+      {
+        "JE": "JE-66994",
+        "AffectedVersions": "8.3",
+        "Desc": "Incorrect full account limits are displayed in the dashboard’s Quotas & Pricing window"
+      }
+    ]
+
+}
