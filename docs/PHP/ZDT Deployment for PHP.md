@@ -113,7 +113,7 @@ While performing this for the first time for the already existing application, d
 :::tip Note:
 
 - **_Enable zero-downtime deployment_** flag becomes active only when deploying to the **ROOT** context of your PHP application server. Otherwise, the classic method will be used
-- while working with VCS repos, the chosen deployment mode will be remembered and used for all further [auto-updates](docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview) of this application until you change it manually
+- while working with VCS repos, the chosen deployment mode will be remembered and used for all further [auto-updates](https://cloudmydc.com) of this application until you change it manually
 - generally, we recommend not to use the “hard-coded” absolute paths in your app’s code and configs while using the atomic deployment feature, for ensuring it remains operative regardless of the project’s directory name
 
 :::
