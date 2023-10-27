@@ -28,8 +28,8 @@ And in order to ensure the best experience while leveraging this feature, a dedi
 
 With Data Storage Container you get a variety of opportunities to improve your projects' filesystem structure, make it more reliable and configurable. To get to know more, switch to the documents linked below, where we consider in details which types of storage are available at the platform and for what kind of data they suit the most:
 
-- [Local filesystem](https://cloudmydc.com/)
-- [Master container](https://cloudmydc.com/)
-- [Compound container](https://cloudmydc.com/)
-- [Dedicated container](https://cloudmydc.com/)
-- [External server](https://cloudmydc.com/)
+- [Local filesystem]( /docs/Data%20Storage%20Container/Use%20Cases/Local%20Filesystem)
+- [Master container]( /docs/Data%20Storage%20Container/Use%20Cases/Master%20Container)
+- [Compound container]( /docs/Data%20Storage%20Container/Use%20Cases/Compound%20Container)
+- [Dedicated container]( /docs/Data%20Storage%20Container/Use%20Cases/Dedicated%20Container)
+- [External server]( /docs/Data%20Storage%20Container/Use%20Cases/External%20Server)

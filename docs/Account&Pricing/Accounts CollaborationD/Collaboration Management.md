@@ -12,7 +12,7 @@ Full access to collaboration management is available only for its creator. The o
 - regulate the permissions of users within the collaboration
 - manage account billing
 
-A **user** added to the collaboration doesn’t have any special admin permissions for collaboration account management (only for [environments management](https://cloudmydc.com/)). This user can simply leave the collaboration when it is required.
+A **user** added to the collaboration doesn’t have any special admin permissions for collaboration account management (only for [environments management](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20User%20Experience)). This user can simply leave the collaboration when it is required.
 
 To start managing your account collaboration, select the **Settings** button in the right top corner of your platform dashboard.
 

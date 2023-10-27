@@ -22,9 +22,9 @@ A member of collaboration with the user account can:
 
 And now, let’s see how to perform all of these actions within collaboration:
 
-- [Create environment](https://cloudmydc.com/)
-- [Share environment](https://cloudmydc.com/)
-- [Use shared environment](https://cloudmydc.com/)
+- [Create environment](/docs/Account&Pricing/Accounts%20CollaborationD/Environments%20in%20Collaboration#create-a-new-environment-in-collaboration)
+- [Share environment](/docs/Account&Pricing/Accounts%20CollaborationD/Environments%20in%20Collaboration#share-environment-with-collaboration-users)
+- [Use shared environment](/docs/Account&Pricing/Accounts%20CollaborationD/Environments%20in%20Collaboration#use-shared-environments)
 
 ## Create a New Environment in Collaboration
 
@@ -43,7 +43,7 @@ You can create a new environment in a collaboration account in two cases:
 
 </div>
 
-In the first case (when you own the **primary account**), the environment is created the usual way, as it is described in the [Setting Up Environment](https://cloudmydc.com/) document.
+In the first case (when you own the **primary account**), the environment is created the usual way, as it is described in the [Setting Up Environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) document.
 
 When you are a **user with permission** to create an environment, then this process is slightly different. Let’s consider the steps in this case:
 

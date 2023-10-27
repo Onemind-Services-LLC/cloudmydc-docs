@@ -8,8 +8,8 @@ This step-by-step instruction shows you how to convert and refill your account i
 
 At the moment OBAS system is used by **[Layershift](https://cloudmydc.com/)**, **[Cloudplatform](https://cloudmydc.com/)**, **[Elastx](https://cloudmydc.com/)**, **[DOCKTERA](https://cloudmydc.com/)** and **[Axarnet](https://cloudmydc.com/)**.
 
-- [Conversion](https://cloudmydc.com/)
-- [Refilling](https://cloudmydc.com/)
+- [Conversion](https://hostbillapp.com/feature/jelastic/)
+- [Refilling](/docs/Account&Pricing/Billing%20Systems/OBA%20Billing%20System#refilling)
 
 ## Conversion
 

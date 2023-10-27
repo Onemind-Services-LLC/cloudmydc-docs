@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-The defining characteristic of the platform’s [collaboration feature](https://cloudmydc.com/) is its extreme flexibility. It is ensured through the **_roles and policies_** mechanic, which provides an ability to share the exact instances and permissions needed for a particular use case. This guide covers all the specifics of roles and policies configuration and provision.
+The defining characteristic of the platform’s [collaboration feature](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview) is its extreme flexibility. It is ensured through the **_roles and policies_** mechanic, which provides an ability to share the exact instances and permissions needed for a particular use case. This guide covers all the specifics of roles and policies configuration and provision.
 
 Let’s start by defining what roles and policies are:
 
@@ -98,7 +98,7 @@ You can check the role and list of allowed policies for shared resources at the 
 
 </div>
 
-In order to check your roles for the specific [shared environment](https://cloudmydc.com/), go to its **Settings > Collaboration** section.
+In order to check your roles for the specific [shared environment](/docs/EnvironmentManagement/Share%20Environment), go to its **Settings > Collaboration** section.
 
 <div style={{
     display:'flex',
