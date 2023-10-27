@@ -36,8 +36,8 @@ Within the opened **User Settings** sections, you have the following two collabo
 
 Now, follow the instructions below to set up a collaboration:
 
-- [sent collaboration invite](https://cloudmydc.com/) (as primary account)
-- [accept collaboration invite](https://cloudmydc.com/) (as collaboration member)
+- [sent collaboration invite](/docs/Account&Pricing/Accounts%20Collaboration/Create%20Collaboration#send-collaboration-invite) (as primary account)
+- [accept collaboration invite](/docs/Account&Pricing/Accounts%20Collaboration/Create%20Collaboration#accept-collaboration-invite) (as collaboration member)
 
 ## Send Collaboration Invite
 
@@ -62,7 +62,7 @@ Provide the following information within the **_Add Role_** dialog:
 
 </div>
 
-You can learn more about **[Roles & Policies](https://cloudmydc.com/)** at the dedicated guide.
+You can learn more about **[Roles & Policies](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Roles%20Policies)** at the dedicated guide.
 
 2. On the **_Members_** tab, click the **Invite** button.
 
@@ -88,9 +88,9 @@ Fill in the fields of the opened **_Invite Member_** dialog:
 - you can provide different roles for each (sub-)component
 - hover over a role in the list to see a hint with all included policies
 - if needed, you can **_Create New Role_** without closing the invite form
-- you can manage [environment group](https://cloudmydc.com/) structure directly in the invite form - hover over the group and click the gear icon to select the required option (**Add**, **Edit**, **Remove**)
+- you can manage [environment group](/docs/EnvironmentManagement/Environment%20Groups/Overview) structure directly in the invite form - hover over the group and click the gear icon to select the required option (**Add**, **Edit**, **Remove**)
 - to provide an ability to create environments at the account root (i.e. without any group), share the whole Environments category with a role that grants the appropriate permission
-- if you need to [share a single environment](https://cloudmydc.com/), it can be done from the appropriate environment configs
+- if you need to [share a single environment](/docs/EnvironmentManagement/Share%20Environment), it can be done from the appropriate environment configs
 
 ::: 3. The invited member will appear in the list in the **_pending acceptance_** state.
 
@@ -104,7 +104,7 @@ Fill in the fields of the opened **_Invite Member_** dialog:
 
 </div>
 
-Now, you wait for the member to [accept the invitation](https://cloudmydc.com/). Any change to the invitation will be displayed at the **Members** tab. Also, you’ll get the appropriate email notification about the user’s decision.
+Now, you wait for the member to [accept the invitation](/docs/Account&Pricing/Accounts%20Collaboration/Create%20Collaboration#accept-collaboration-invite). Any change to the invitation will be displayed at the **Members** tab. Also, you’ll get the appropriate email notification about the user’s decision.
 
 4. If needed, you can select a collaboration member to perform the necessary adjustments:
 
@@ -147,7 +147,7 @@ For convenience, terminated collaborations (including the case of members leavin
 
 ## Accept Collaboration Invite
 
-Wait for the primary account to [send a collaboration](https://cloudmydc.com/) invite for you.
+Wait for the primary account to [send a collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Create%20Collaboration#send-collaboration-invite) invite for you.
 
 1. Check your email inbox for the invite. It should look as follows:
 

@@ -2,10 +2,10 @@
 sidebar_position: 1
 ---
 
-- [What is charged?](https://cloudmydc.com/)
-- [Where can consumed resources be seen?](https://cloudmydc.com/)
-- [How much do resources cost?](https://cloudmydc.com/)
-- [How to decrease the consumption?](https://cloudmydc.com/)
+- [What is charged?](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#what-is-charged)
+- [Where can consumed resources be seen?](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#where-the-consumed-resources-can-be-seen)
+- [How much do resources cost?](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-much-do-resources-cost)
+- [How to decrease the consumption?](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-to-decrease-the-consumption)
 
 ## What is Charged?
 
@@ -14,7 +14,7 @@ Resource consumption for each environment is charged to the account owner on an 
 - **Primary** - fees for the main platform resources (i.e. RAM & CPU), provided within cloudlets
 - **Provider-dependent** - the ones that can be either payable or not, according to the chosen hosting provider settings
 - **Optional extras** - charges for usage of some additional platform features
-  Detailed information on each of these types of charges can be found in the [Charged Resources](https://cloudmydc.com/) document.
+  Detailed information on each of these types of charges can be found in the [Charged Resources](/docs/Account&Pricing/Resource%20Charging/Charged%20Resources) document.
 
 ## Where the Consumed Resources Can be Seen?
 
@@ -25,11 +25,11 @@ The detailed information on the amount of consumed resources can be seen in the 
 - the total usage **Statistics** on all resources types (i.e. RAM, CPU, Storage and Network Bandwidth) can be seen via the appropriate section for the desired node/set of the same-type nodes
 - finally, the **Billing History** section provides any information on all the payable resources, consumed during the stated period, and their costs.
 
-The details on each of these options can be seen in the [Monitor Consumed Resources](https://cloudmydc.com/) document.
+The details on each of these options can be seen in the [Monitor Consumed Resources](/docs/Account&Pricing/Resource%20Charging/Monitoring%20Consumed%20Resources) document.
 
 ## How Much do Resources Cost?
 
-With the platform, you only pay for consumed resources. The resource pricing is set by your chosen hosting provider. You can find exact cost for each resource unit by going to your hoster’s [Pricing page](https://cloudmydc.com/).
+With the platform, you only pay for consumed resources. The resource pricing is set by your chosen hosting provider. You can find exact cost for each resource unit by going to your hoster’s [Pricing page](/docs/Account&Pricing/Hosters%20Pricing).
 
 The prices can also be seen inside your platform dashboard.
 
@@ -45,7 +45,7 @@ Navigate to **Balance > Quotas & Pricing** menu item. Here you’ll see a set of
 
 </div>
 
-Choose the one you are interested in to see the pricing and discount scale offered by your hosting provider. You can find more information about pricing and discount systems in the [Pricing System](https://cloudmydc.com/) and [Automatic Discounts](https://cloudmydc.com/) documents.
+Choose the one you are interested in to see the pricing and discount scale offered by your hosting provider. You can find more information about pricing and discount systems in the [Pricing System](/docs/Account&Pricing/Pricing%20Model%20Overview) and [Automatic Discounts](/docs/Account&Pricing/Automatic%20Discounts) documents.
 
 Note that the various software stacks are provided free of charge in the platform. You only pay for the resources consumed but not for the software itself.
 
@@ -70,4 +70,4 @@ You are going to pay only for **disk space** that you use and for **public IP** 
 Follow the links to get acquainted with useful tips on consuming platform resources in a smart way:
 
 - [Save Your Cloud Money!](https://cloudmydc.com/)
-- [How to Manage the Application Lifecycle in PaaS](https://cloudmydc.com/)
+- [How to Manage the Application Lifecycle in PaaS](/docs/ApplicationSetting/Application%20Lifecycle%20Management)

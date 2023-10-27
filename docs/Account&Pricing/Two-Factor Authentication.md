@@ -1,7 +1,7 @@
 ---
 sidebar_position: 6
 ---
-
+## anchor 27
 <div style={{
     display: 'grid',
     gridTemplateColumns: '0.23fr 1fr',
@@ -21,10 +21,10 @@ The platform allows configuring a **two-factor authentication** (2FA) to add an 
 
 Below, we’ll go step-by-step on the two-factor authentication feature management:
 
-- [enable 2FA](https://cloudmydc.com/)
-- [manage recovery codes](https://cloudmydc.com/)
-- [deactivate 2FA](https://cloudmydc.com/)
-- [working with API](https://cloudmydc.com/)
+- [enable 2FA](/docs/Account&Pricing/Two-Factor%20Authentication#enable-two-factor-authentication)
+- [manage recovery codes](/docs/Account&Pricing/Two-Factor%20Authentication#manage-recovery-codes)
+- [deactivate 2FA](/docs/Account&Pricing/Two-Factor%20Authentication#disable-two-factor-authentication)
+- [working with API](/docs/Account&Pricing/Two-Factor%20Authentication#using-api-with-two-factor-authentication)
 
 ## Enable Two-Factor Authentication
 
@@ -56,7 +56,7 @@ In order to secure your account with the 2FA follow the next steps:
 
 You need to confirm your password via the appeared pop-up to proceed.
 
-3. Next, you need to interconnect your PaaS account with the [Google Authenticator](https://cloudmydc.com/) application on your mobile phone (if needed, follow the linked guide to help you with installation). Open the app on your device and add the account by either scanning the displayed QR code or manually typing the provided data.
+3. Next, you need to interconnect your PaaS account with the [Google Authenticator](https://support.google.com/accounts/answer/1066447) application on your mobile phone (if needed, follow the linked guide to help you with installation). Open the app on your device and add the account by either scanning the displayed QR code or manually typing the provided data.
 
 <div style={{
     display:'flex',
@@ -190,4 +190,4 @@ That’s it! Your account is now accessible with just the login/password credent
 
 In order to get a valid session for the [API requests](https://cloudmydc.com/) on accounts with enabled 2FA, you need to call an additional **_Verify2FACode_** method after the **_SignIn_** one. In such a way, you’ll be able to provide a six-digit authentication code from the appropriate application on your device.
 
-To avoid such complexity, it is recommended generating and using [personal access tokens](https://cloudmydc.com/) in your API requests and custom automation scripts.
+To avoid such complexity, it is recommended generating and using [personal access tokens](/docs/Account&Pricing/Personal%20Access%20Tokens) in your API requests and custom automation scripts.

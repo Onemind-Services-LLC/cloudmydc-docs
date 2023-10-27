@@ -4,13 +4,13 @@ sidebar_position: 1
 
 ## Account Management
 
-- [Sign Up: How to Create an Account](https://cloudmydc.com/)
-- [Sign In to the Dashboard](https://cloudmydc.com/)
-- [Sign out](https://cloudmydc.com/)
+- [Sign Up: How to Create an Account](/docs/Account&Pricing/Account%20Registration#sign-up)
+- [Sign In to the Dashboard](/docs/Account&Pricing/Account%20Registration#sign-in)
+- [Sign out](/docs/Account&Pricing/Account%20Registration#sign-out)
 
 :::tip Tip
 
-If you need to [reset or change password](https://cloudmydc.com/) for your platform account check out the linked guide.
+If you need to [reset or change password](/docs/Account&Pricing/Account%20Password%20Reset) for your platform account check out the linked guide.
 
 :::
 
@@ -20,7 +20,7 @@ The PaaS is offered across multiple platforms worldwide, so if you don’t have 
 
 :::tip Tip
 
-Check out our **[Getting Started](https://cloudmydc.com/)** guide for general information on how to create a new account.
+Check out our **[Getting Started](/docs/QuickStart/Getting%20Started)** guide for general information on how to create a new account.
 
 :::
 
@@ -57,7 +57,7 @@ Also, you can register directly from the main website.
 
 Specify the desired password for your account and confirm it within the appropriate fields.
 
-According to your hosting provider’s settings, this activation form can also contain either [captcha](https://cloudmydc.com/) or [mobile number verification](https://cloudmydc.com/) widget:
+According to your hosting provider’s settings, this activation form can also contain either [captcha](/docs/Account&Pricing/Account%20Registration#captcha-verification) or [mobile number verification](/docs/Account&Pricing/Account%20Registration#mobile-number-verification) widget:
 
 ## Captcha Verification
 
@@ -123,7 +123,7 @@ Once all the required data is entered, press the **Continue** button. You’ll b
 
 In order to sign in to a PaaS account, you need to open the dashboard of the appropriate provider:
 
-- Following a direct link of the following structure: https://app.{[hoster_domain](https://cloudmydc.com/)}/
+- Following a direct link of the following structure: hoster_domain
 - Click the required hosting provider from the list at [website](https://cloudmydc.com/):
 
 <div style={{

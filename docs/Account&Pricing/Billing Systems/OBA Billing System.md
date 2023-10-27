@@ -50,7 +50,7 @@ Select the payment method (**Diners, MasterCard, Visa, Check/cash,** or **Paypal
 
 </div>
 
-1. <u>If you choose <a href="https://cloudmydc.com/"><i>Diners</i></a> as payment method.</u>
+1. <u>If you choose <b><i>Diners</i></b> as payment method.</u>
 
 Diners is a special payment type for **OBA** users.
 
