@@ -4,8 +4,8 @@ sidebar_position: 2
 
 The **Deployment Manager** is located at the bottom of the dashboard and is used to store applications to simplify their subsequent deployment into your environments. There are two subsections to provide support for the following deployment types:
 
-- **[Archive](https://cloudmydc.com/)** - stores the application packages, which can be uploaded from your local machine or any external link
-- **[Git / SVN](https://cloudmydc.com/)** - saves the link to your project within the remote Git / SVN repository and the appropriate access credentials (if needed)
+- **[Archive](/docs/Deployment/Deployment%20Manager#application-archives)** - stores the application packages, which can be uploaded from your local machine or any external link
+- **[Git / SVN](/docs/Deployment/Deployment%20Manager#git--svn-projects)** - saves the link to your project within the remote Git / SVN repository and the appropriate access credentials (if needed)
 
 ## Application Archives
 
@@ -58,7 +58,7 @@ Fill in the **Comment** field (if required) and **Upload**.
 
 </div>
 
-Within the opened frame you can [configure deployment](https://cloudmydc.com/) up to your needs.
+Within the opened frame you can [configure deployment](/docs/Deployment/Deployment%20Guide) up to your needs.
 
 4. The no longer required archives can be removed by selecting them with the appropriate checkboxes before the name and clicking the **Delete** button at the top panel.
 
@@ -99,7 +99,7 @@ Now, you know how the archive tab of the Deployment Manager works and can use it
 
 :::danger Note
 
-If your repository is protected with two-factor authentication, you need to use the appropriate access token (e.g. for GitHub or GitLab) instead of your password.
+If your repository is protected with two-factor authentication, you need to use the appropriate access token (e.g. for [GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) or [GitLab](https://docs.gitlab.com/ee/user/project/deploy_tokens/)) instead of your password.
 
 <div style={{
     display:'flex',
@@ -130,7 +130,7 @@ Additionally, you can manage the scope of provided permissions during the access
 
 </div>
 
-You can just **Add** this project into Deployment Manager or **Add + Deploy** to immediately initiate [deployment](https://cloudmydc.com/) of this application.
+You can just **Add** this project into Deployment Manager or **Add + Deploy** to immediately initiate [deployment](/docs/Deployment/Deployment%20Guide) of this application.
 
 3. Hover over the Git / SVN project in Deployment Manager to access the **Deploy** to, **Edit** and **Delete** options.
 

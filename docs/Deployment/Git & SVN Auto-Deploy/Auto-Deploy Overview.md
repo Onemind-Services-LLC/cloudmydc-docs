@@ -25,7 +25,7 @@ Just update your code, make a commit and all the changes in your VCS project wil
 
 ## Preparing a Project
 
-1. First of all, prepare an [environment](/docs/PlatformOverview/Basics%20&%20Terminology#environment) for further addition of the intended project with the code from Git/SVN.
+1. First of all, prepare an [environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) for further addition of the intended project with the code from Git/SVN.
 
 :::tip Note
 
@@ -63,7 +63,7 @@ Also, in case of a Maven build node usage, you need to additionally specify the 
 
 :::tip Tip
 
-If you need more detailed information on these options, refer to the relevant [Deployment Guide](https://cloudmydc.com/) instruction and [Maven for Deploy via Git/SVN](https://cloudmydc.com/) for Java engine specifics.
+If you need more detailed information on these options, refer to the relevant [Deployment Guide](/docs/Deployment/Deployment%20Guide) instruction and [Maven for Deploy via Git/SVN](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven) for Java engine specifics.
 
 :::
 
@@ -90,7 +90,7 @@ As you can easily guess from the option name, it is stated in minutes. Thus, if 
 :::danger Notes
 
 - if the verification interval is smaller than the time needed to build and deploy the project, the next task will wait in a queue until these operations are completed
-- in case your application server layer contains several nodes, please also consider the details on their update sequence
+- in case your application server layer contains several nodes, please also consider the [details](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20for%20Multiple%20Containers) on their update sequence
 
 :::
 
@@ -104,7 +104,7 @@ This frame also includes a number of additional settings, which may come in hand
 
 - **Checkout now** option (present for non-Java languages) is used to indicate whether you’d like to deploy your project immediately after its addition or postpone this operation (for being either initiated manually later or performed automatically during the first further checkout by the enabled auto deploy feature).
 - The **Auto resolve conflict** option is also active by default and represents an analogue of the git reset –hard command. It is used to prevent the occurrence of merge conflicts during subsequent project updates, which can take place if the same file was modified in both the remote repository and your project, hosted at the platform. If such an issue arises, this contradictory file will be updated according to its repository version (which is considered as the correct one), discarding the locally made changes. We recommend not to disable this option unless you know exactly what you are doing.
-- The **Enable [zero-downtime deployment](https://cloudmydc.com/)** option (currently available for PHP only) allows to continuously deploy the updates of applications, located at the ROOT context, without any interruptions in application work. Herewith, if enabled, your choice will be remembered and used during all the ensuing auto-updates.
+- The **Enable [zero-downtime deployment](/docs/PHP/ZDT%20Deployment%20for%20PHP)** option (currently available for PHP only) allows to continuously deploy the updates of applications, located at the ROOT context, without any interruptions in application work. Herewith, if enabled, your choice will be remembered and used during all the ensuing auto-updates.
 
 :::
 

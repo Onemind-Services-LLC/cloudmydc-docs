@@ -4,10 +4,10 @@ sidebar_position: 3
 
 The platform supports various ways of the applications automatic deployment, allowing to choose the most suitable option, which will suit your specific needs:
 
-- **Dashboard** - corresponds to [deployment via archive](https://cloudmydc.com/) (provided either as local file or URL)
-- **VCS** - allows to [deploy from your VCS](https://cloudmydc.com/) repository (e.g. Git, SVN, Bitbucket)
-- **Hub Registry** - creates a custom container with your application based on the Docker image stored at your _[public](https://cloudmydc.com/)_ or _[private](https://cloudmydc.com/)_ registry
-- **Plugins** - deploys a project using one of the popular software development tools (_[Ant Task](https://cloudmydc.com/)_, _[Eclipse](https://cloudmydc.com/)_, _[Intellij IDEA](https://cloudmydc.com/)_, _[Maven](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven)_ or _[NetBeans](https://cloudmydc.com/)_), which provides integration with platform
+- **Dashboard** - corresponds to [deployment via archive](/docs/Deployment/Deployment%20Guide#archive-deployment-configurations) (provided either as local file or URL)
+- **VCS** - allows to [deploy from your VCS](/docs/Deployment/Deployment%20Guide#git--svn-deployment-configurations) repository (e.g. Git, SVN, Bitbucket)
+- **Hub Registry** - creates a custom container with your application based on the Docker image stored at your _[public](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment)_ or _[private](https://www.virtuozzo.com/application-platform-docs/custom-containers-deployment/)_ registry
+- **Plugins** - deploys a project using one of the popular software development tools (_[Ant Task](/docs/Deployment%20Tools/Plugins/Ant%20Task)_, _[Eclipse](/docs/Deployment%20Tools/Plugins/Eclipse%20Plugin/Eclipse%20Plugin%20Manual)_, _[Intellij IDEA](/docs/Deployment%20Tools/Plugins/IDEA%20Plugin)_, _[Maven](/docs/Deployment%20Tools/Plugins/Maven%20Plugin)_ or _[NetBeans](/docs/Deployment%20Tools/Plugins/NetBeans%20Plugin/NetBeans%20Plugin%20Overview)_), which provides integration with platform
 
 <div style={{
     display:'flex',
@@ -19,7 +19,7 @@ The platform supports various ways of the applications automatic deployment, all
 
 </div>
 
-For more information on the last two options, use the appropriate links, while in this guide we’ll describe deployment via archive and VCS repository. They can be called either from **[Deployment Manager](https://cloudmydc.com/)** or by hovering over the **_Deployments_** record, which is provided for all application servers, and clicking one of the appropriate buttons.
+For more information on the last two options, use the appropriate links, while in this guide we’ll describe deployment via archive and VCS repository. They can be called either from **[Deployment Manager](/docs/Deployment/Deployment%20Manager)** or by hovering over the **_Deployments_** record, which is provided for all application servers, and clicking one of the appropriate buttons.
 
 <div style={{
     display:'flex',
@@ -35,8 +35,8 @@ The first two icons (Local file and URL) corresponds to deployment via archive a
 
 :::tip Notes
 
-- the VCS deployment type for Java application servers is performed with a help of the [Maven build node](https://cloudmydc.com/), refer to the linked guide for additional details
-- [.NET deployment process](https://cloudmydc.com/) for the Windows-based IIS application server is different from the standardized flow described in this guide
+- the VCS deployment type for Java application servers is performed with a help of the [Maven build node](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven), refer to the linked guide for additional details
+- [.NET deployment process](/docs/Windows&.NET/DOT%20NET%20Core) for the Windows-based IIS application server is different from the standardized flow described in this guide
 
 :::
 
@@ -49,9 +49,9 @@ Below, we’ve provided a detailed description for all the possible options with
 - **Local file** (or **URL**) - points to the archive file to be deployed (is automatically selected, when installing from Deployment Manager)
 - **Environment** - selects a target environment with the application server (is automatically selected, when installing from application server)
 - **Path** - sets the desired custom context; herewith, the available options may be limited due to the used programming language specifics (e.g. Python and Node.js have a single predefined deployment path only)
-- **Hooks** - applies the provided [scripts](https://cloudmydc.com/) either before or after deployment process
-- **Deploy Strategy** (for deployments into [scaled server](https://cloudmydc.com/)) - allows to choose between relatively quicker Simultaneous deployment variant, which causes a brief downtime, and the Sequential deployment with delay option to perform deployment on servers one-by-one with a set delay between operations, which ensures application uptime
-- **Enable zero-downtime deployment** (for PHP servers only) - adjusts (if option is ticked) the deployment flow to [avoid application downtime](https://cloudmydc.com/)
+- **Hooks** - applies the provided [scripts](/docs/Deployment/Deployment%20Hooks) either before or after deployment process
+- **Deploy Strategy** (for deployments into [scaled server](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling)) - allows to choose between relatively quicker Simultaneous deployment variant, which causes a brief downtime, and the Sequential deployment with delay option to perform deployment on servers one-by-one with a set delay between operations, which ensures application uptime
+- **Enable zero-downtime deployment** (for PHP servers only) - adjusts (if option is ticked) the deployment flow to [avoid application downtime](/docs/PHP/ZDT%20Deployment%20for%20PHP)
 
 <div style={{
     display:'flex',
@@ -75,12 +75,12 @@ Below, we’ve provided a detailed description for all the possible options with
 - **Branch** - defines the used repository branch (master by default)
 - **Environment** - selects a target environment with the application server (is automatically selected, when installing from application server)
 - **Path** - sets the desired custom context; herewith, the available options may be limited due to the used programming language specifics (e.g. Python and Node.js have a single predefined deployment path only)
-- **Build** (for Java application deployments) - allows to choose the existing [Maven build node](https://cloudmydc.com/) (or add one into the target environment) and, if required, to select repository Working Directory
-- **Hooks** - applies the provided [scripts](https://cloudmydc.com/) either before or after deployment process
-- **Deploy Strategy** (for deployments into [scaled server](https://cloudmydc.com/)) - allows to choose between relatively quicker Simultaneous deployment variant, which causes a brief downtime, and the Sequential deployment with delay option to perform deployment on servers one-by-one with a set delay between operations, which ensures application uptime
-- **Check and auto-deploy updates** - enables periodical check ups for code changes in your repository (with configurable frequency); if any, project [automatic deployment](https://cloudmydc.com/) is initiated
+- **Build** (for Java application deployments) - allows to choose the existing [Maven build node](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven) (or add one into the target environment) and, if required, to select repository Working Directory
+- **Hooks** - applies the provided [scripts](/docs/Deployment/Deployment%20Hooks) either before or after deployment process
+- **Deploy Strategy** (for deployments into [scaled server](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling)) - allows to choose between relatively quicker Simultaneous deployment variant, which causes a brief downtime, and the Sequential deployment with delay option to perform deployment on servers one-by-one with a set delay between operations, which ensures application uptime
+- **Check and auto-deploy updates** - enables periodical check ups for code changes in your repository (with configurable frequency); if any, project [automatic deployment](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview) is initiated
 - **Auto-resolve conflicts** - prevents the occurrence of merge conflicts by updating the contradictory files to the repository version (i.e. locally made changes are discarded)
-- **Enable zero-downtime deployment** (for PHP servers only) - adjusts the deployment flow to [avoid application downtime](https://cloudmydc.com/)
+- **Enable zero-downtime deployment** (for PHP servers only) - adjusts the deployment flow to [avoid application downtime](/docs/PHP/ZDT%20Deployment%20for%20PHP)
 
 <div style={{
     display:'flex',
@@ -94,7 +94,7 @@ Below, we’ve provided a detailed description for all the possible options with
 
 Click **Deploy** to initiate the process.
 
-In a few minutes your application will be successfully deployed. Now, you can access it with the **Open in Browser** button, analyzed via [Logs](https://cloudmydc.com/) or managed with [file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) / via [SSH access](https://cloudmydc.com/).
+In a few minutes your application will be successfully deployed. Now, you can access it with the **Open in Browser** button, analyzed via [Logs](/docs/ApplicationSetting/Built-in%20Monitoring/Log%20Files) or managed with [file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) / via [SSH access](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview).
 
 ## Editing Git / SVN Projects
 
@@ -124,7 +124,7 @@ Within the opened frame, you can edit the same parameters described above for th
 
 :::tip Note
 
-If access credentials to the project’s repository were changed, you need to provide new ones at the platform to continue working with this project. First, edit authentication for the repository at the **[Deployment Manager](https://cloudmydc.com/)**.
+If access credentials to the project’s repository were changed, you need to provide new ones at the platform to continue working with this project. First, edit authentication for the repository at the **[Deployment Manager](/docs/Deployment/Deployment%20Manager)**.
 
 <div style={{
     display:'flex',
