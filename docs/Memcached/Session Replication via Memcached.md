@@ -3,7 +3,7 @@ sidebar_position: 5
 ---
 ## anchor 42
 
-The platform provides [Session Replication](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Session%20Replication%20for%20HA) between instances of web-servers with a help of multicast. But also you can use **Session Replication via Memcached**.
+The platform provides [Session Replication]( /docs/ApplicationSetting/Scaling%20And%20Clustering/Session%20Replication%20for%20HA) between instances of web-servers with a help of multicast. But also you can use **Session Replication via Memcached**.
 
 To use memcached for session replication follow this instruction.
 
