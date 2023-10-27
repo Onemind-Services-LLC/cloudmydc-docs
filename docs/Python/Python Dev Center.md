@@ -223,7 +223,7 @@ Horizontal scaling of the Python servers is no different from scaling any other 
 
 :::tip Tip
 
-For the proper request distribution, a [load balancer](https://cloudmydc.com/) instance is automatically added to the environment upon Python server scaling. Refer to the [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) documentation for more specifications.
+For the proper request distribution, a [load balancer](/docs/Load%20Balancers/Load%20Balancing) instance is automatically added to the environment upon Python server scaling. Refer to the [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) documentation for more specifications.
 
 :::
 

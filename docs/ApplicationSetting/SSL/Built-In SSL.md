@@ -26,7 +26,7 @@ So, to get the **built-in SSL certificate**, perform the following simple steps:
 
 </div>
 
-2. In the opened topology wizard, [set up your environment](https://cloudmydc.com/) up to your needs, then switch to the **SSL** section at the top-left part of the frame and enable the built-in SSL with the appropriate switcher.
+2. In the opened topology wizard, [set up your environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) up to your needs, then switch to the **SSL** section at the top-left part of the frame and enable the built-in SSL with the appropriate switcher.
 
 <div style={{
     display:'flex',

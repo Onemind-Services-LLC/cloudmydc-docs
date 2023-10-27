@@ -14,8 +14,8 @@ Starting with PaaS 4.6 version, each of the newly created containers is delivere
 
 :::
 
-- [Create Alert](https://cloudmydc.com/)
-- [Triggers Execution History](https://cloudmydc.com/)
+- [Create Alert](/docs/ApplicationSetting/Built-in%20Monitoring/Load%20Alerts#create-alert)
+- [Triggers Execution History](/docs/ApplicationSetting/Built-in%20Monitoring/Load%20Alerts#triggers-execution-history)
 
 ## Create Alert
 
@@ -108,7 +108,7 @@ After you’ve stated all the preferable configurations, click **Add** button.
 
 :::tip Note
 
-That if an environment is [shared](https://cloudmydc.com/) with other users, they will also receive the same preconfigured load notifications via their emails.
+That if an environment is [shared](/docs/EnvironmentManagement/Share%20Environment) with other users, they will also receive the same preconfigured load notifications via their emails.
 
 :::
 
@@ -118,7 +118,7 @@ In this way, you can set up a number of different triggers for any existing node
 
 You can view the history of triggers' executions for the nodes of a particular environment within its settings.
 
-1. Navigate to the **Monitoring > Events History** section. The **_Load Alerts_** notification **Type** will be chosen automatically (whilst the second option in the appropriate list is devoted to [auto horizontal scaling](https://cloudmydc.com/) history).
+1. Navigate to the **Monitoring > Events History** section. The **_Load Alerts_** notification **Type** will be chosen automatically (whilst the second option in the appropriate list is devoted to [auto horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling) history).
 
 <div style={{
     display:'flex',

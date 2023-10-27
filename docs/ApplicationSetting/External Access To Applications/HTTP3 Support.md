@@ -6,16 +6,16 @@ sidebar_position: 6
 
 **_HTTP/3_** (formerly known as _“HTTP over QUIC"_) is the to-become third major version of the Hypertext Transfer Protocol family. Featurewise, it is very similar to HTTP/2 but offers some significant advantages due to changes to the underlying method of utilization. Namely, the HTTP/3 is built on **_QUIC_** transport protocol, which works over UDP instead of TCP.
 
-Currently, HTTP/3 is already provided by some solutions (e.g. *LiteSpeed and *NGINX\*) and is adopted by the platform through the latest releases of the following stacks:
+Currently, HTTP/3 is already provided by some solutions (e.g. *LiteSpeed and *NGINX\*) and is [adopted by the platform](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support) through the latest releases of the following stacks:
 
-- **_load balancers:_** [LiteSpeed Web ADC](https://cloudmydc.com/), [Varnish](https://cloudmydc.com/), [NGINX](https://cloudmydc.com/)
-- **_application servers:_** [LiteSpeed WS](https://cloudmydc.com/), [LLSMP & LEMP](https://cloudmydc.com/), [NGINX PHP](https://cloudmydc.com/), [NGINX Ruby](https://cloudmydc.com/)
+- **_load balancers:_** [LiteSpeed Web ADC](/docs/Load%20Balancers/LiteSpeed%20Web%20ADC), [Varnish](/docs/Load%20Balancers/Varnish), [NGINX](/docs/Load%20Balancers/NGINX/NGINX%20Balancer)
+- **_application servers:_** [LiteSpeed WS](/docs/PHP/PHP%20App%20Servers/LiteSpeed%20Web%20Server), [LLSMP & LEMP](/docs/PHP/PHP%20App%20Servers/LEMP%20&%20LLSMP), [NGINX PHP](/docs/PHP/PHP%20App%20Servers/NGINX%20PHP/), [NGINX Ruby](/docs/Ruby/NGINX%20Ruby)
 
 Below, you can check the:
 
-- [technical preconditions of the HTTP/3 implementation](https://cloudmydc.com/)
-- [benefits of the HTTP/3 (QUIC)](https://cloudmydc.com/)
-- [integration in the platform](https://cloudmydc.com/)
+- [technical preconditions of the HTTP/3 implementation](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support#technical-implementation-specificspreconditions)
+- [benefits of the HTTP/3 (QUIC)](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support#http3-quic-key-features)
+- [integration in the platform](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support#http3-support-implementation)
 
 ## Technical Implementation Specifics/Preconditions
 
@@ -30,7 +30,7 @@ Below, we’ve provided some examples of the limitations provided by TCP:
 
 :::
 
-UDP suffers no such limitations and is just as widespread as TCP, which allows achieving improvements without significant changes to the existing operating systems and devices firmware. Thus, HTTP/3 has adopted the QUIC transport protocol (initially developed by Google), which is based on UDP, provides [significant benefits](https://cloudmydc.com/). Also, being already in use by prominent internet companies such as Google and Facebook, the efficiency and reliability of the QUIC solution cannot be denied.
+UDP suffers no such limitations and is just as widespread as TCP, which allows achieving improvements without significant changes to the existing operating systems and devices firmware. Thus, HTTP/3 has adopted the QUIC transport protocol (initially developed by Google), which is based on UDP, provides [significant benefits](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support#http3-quic-key-features). Also, being already in use by prominent internet companies such as Google and Facebook, the efficiency and reliability of the QUIC solution cannot be denied.
 
 ## HTTP/3 (QUIC) Key Features
 
@@ -54,22 +54,22 @@ Generally, HTTP/3 aims to provide faster and more reliable connections, which wi
 
 ## HTTP/3 Support Implementation
 
-The support for the HTTP/3 (QUIC) protocol is still in its earliest implementation stages. However, it is already provided by some solutions (e.g. [LiteSpeed](https://cloudmydc.com/)) and is in development by others.
+The support for the HTTP/3 (QUIC) protocol is still in its earliest implementation stages. However, it is already provided by some solutions (e.g. [LiteSpeed](https://www.litespeedtech.com/latest-techs/litespeed-is-first)) and is in development by others.
 
 Below, you can view the most accurate list of the software stacks at the platform that provide HTTP/3 support by default:
 
 - **_load balancers_**
-  - [_LiteSpeed Web ADC_](https://cloudmydc.com/): all versions
-  - [_Varnish_](https://cloudmydc.com/): _5.2.x, 6.x.x_ versions and above
-  - [_NGINX_](https://cloudmydc.com/): since the _1.16.1_ release
+  - [_LiteSpeed Web ADC_](/docs/Load%20Balancers/LiteSpeed%20Web%20ADC): all versions
+  - [_Varnish_](/docs/Load%20Balancers/Varnish): _5.2.x, 6.x.x_ versions and above
+  - [_NGINX_](/docs/Load%20Balancers/NGINX/NGINX%20Balancer): since the _1.16.1_ release
 - **_application servers_**
-  - [_LiteSpeed WS_](https://cloudmydc.com/): all versions
-  - [LLSMP](https://cloudmydc.com/): all versions
-  - [_LEMP_](https://cloudmydc.com/): since the _1.16.1_ release
-  - [_NGINX PHP_](https://cloudmydc.com/): since the _1.16.1_ release for PHP _7.2.26, 7.3.13, 7.4.1_ versions and above
-  - [_NGINX Ruby_](https://cloudmydc.com/): since the _1.16.1_ release for Ruby _2.4.9, 2.5.7, 2.6.5, 2.7.0_ versions and above
+  - [_LiteSpeed WS_](/docs/PHP/PHP%20App%20Servers/LiteSpeed%20Web%20Server): all versions
+  - [LLSMP](/docs/PHP/PHP%20App%20Servers/LEMP%20&%20LLSMP): all versions
+  - [_LEMP_](/docs/PHP/PHP%20App%20Servers/LEMP%20&%20LLSMP): since the _1.16.1_ release
+  - [_NGINX PHP_](/docs/PHP/PHP%20App%20Servers/NGINX%20PHP/): since the _1.16.1_ release for PHP _7.2.26, 7.3.13, 7.4.1_ versions and above
+  - [_NGINX Ruby_](/docs/Ruby/NGINX%20Ruby): since the _1.16.1_ release for Ruby _2.4.9, 2.5.7, 2.6.5, 2.7.0_ versions and above
 
-Just [create an environment](https://cloudmydc.com/) topology that includes any of the application servers or load balancers mentioned above.
+Just [create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) topology that includes any of the application servers or load balancers mentioned above.
 
 <div style={{
     display:'flex',
@@ -85,6 +85,6 @@ Herewith, you’ll need to additionally attach a [public IP](/docs/ApplicationSe
 
 :::danger note
 
-As of the client-side, the HTTP/3 (QUIC) support is currently enabled by default in _Chromium_, can be configured in _Chrome_ (chrome://flags), and is not [yet implemented](https://cloudmydc.com/) by the Firefox browser.
+As of the client-side, the HTTP/3 (QUIC) support is currently enabled by default in _Chromium_, can be configured in _Chrome_ (chrome://flags), and is not [yet implemented](https://bugzilla.mozilla.org/show_bug.cgi?id=1158011) by the Firefox browser.
 
 :::

@@ -66,8 +66,8 @@ The newly added instances can be synchronized with the first added node. To achi
 
 - You need to use file manager while deploying your application to achieve the effect of synchronization.
 - No further data configurations and changes are synchronized, just the initial.
-- Also, you can synchronize your data with a help of WebDav module. See the detailed information on activating and using [WebDav module](https://cloudmydc.com/) at the platform.
+- Also, you can synchronize your data with a help of WebDav module. See the detailed information on activating and using [WebDav module](/docs/PHP/PHP%20App%20Servers/Apache%20PHP/Apache%20WebDav%20Module) at the platform.
 - If it is needed to synchronize something in already existing environment, you can scale it in to a single node and then up to a needed number of instances. Also, you can use WebDAV module or perform manual synchronization via [Configuration Manager](/docs/Container/Container%20Configuration/Configuration%20Tools#configuration-file-manager).
-- You can use the initial (master) node of the layer as your [storage server](https://cloudmydc.com/) for sharing data within the whole layer.
+- You can use the initial (master) node of the layer as your [storage server](/docs/Data%20Storage%20Container/Use%20Cases/Master%20Container) for sharing data within the whole layer.
 
 :::

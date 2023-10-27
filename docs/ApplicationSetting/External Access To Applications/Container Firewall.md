@@ -18,13 +18,13 @@ The platform **Container Firewall** feature provides a possibility to control yo
 
 :::tip
 
-If you want to restrict access between the environments on a single account, it can be automatically configured via the [Network Isolation](https://cloudmydc.com/) feature.
+If you want to restrict access between the environments on a single account, it can be automatically configured via the [Network Isolation](/docs/EnvironmentManagement/Environment%20Isolation) feature.
 
 :::
 
 ## Container Firewall Management via Platform UI
 
-Each node at the platform (excluding custom [Docker](https://cloudmydc.com/)- and [Windows](https://cloudmydc.com/)-based containers) is provisioned with a set of firewall rules, which can be reviewed and managed through an intuitive graphical user interface. The appropriate section can be accessed by clicking on the **Settings** button next to the required environment and selecting the **Firewall** menu item.
+Each node at the platform (excluding custom [Docker](/docs/Container/Container%20Types)- and [Windows](/docs/Windows&.NET/DOT%20NET%20Core)-based containers) is provisioned with a set of firewall rules, which can be reviewed and managed through an intuitive graphical user interface. The appropriate section can be accessed by clicking on the **Settings** button next to the required environment and selecting the **Firewall** menu item.
 
 :::tip Note
 
@@ -54,7 +54,7 @@ When you create a new container, the platform automatically fills the _Inbound_ 
 
 :::tip
 
-These rules are automatically fetched based on the **_EXPOSE_** ports from the same-named variable in the [image’s dockerfile](https://cloudmydc.com/), check the linked guide for more details on building Docker images for the platform.
+These rules are automatically fetched based on the **_EXPOSE_** ports from the same-named variable in the [image’s dockerfile](/docs/Container/Building%20Custom%20Container), check the linked guide for more details on building Docker images for the platform.
 
 :::
 
@@ -90,9 +90,9 @@ While working with the container (e.g. adding mount points, installing FTP add-o
 
 ## Adding Container Default Rules
 
-If needed (e.g. for the [automation solutions](https://cloudmydc.com/)), you can use the **_OPEN_INBOUND_PORTS_** [environment variable](https://cloudmydc.com/) to define custom ports, which should be opened via container firewall during the appropriate nodes' creation.
+If needed (e.g. for the [automation solutions](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview)), you can use the **_OPEN_INBOUND_PORTS_** [environment variable](/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables) to define custom ports, which should be opened via container firewall during the appropriate nodes' creation.
 
-1. Click **New Environment** in the dashboard, select the required software stack, and navigate to the [**Variables**](https://cloudmydc.com/) configuration frame.
+1. Click **New Environment** in the dashboard, select the required software stack, and navigate to the [**Variables**](/docs/Container/Container%20Configuration/Variables) configuration frame.
 
 <div style={{
     display:'flex',
@@ -124,7 +124,7 @@ Here, **_{portN}_** is a particular port (_1234_) or range (_33062-34000_), whic
 
 :::tip Note
 
-Changes due to the **_OPEN_INBOUND_PORTS_** variable are applied just once during nodes' installation. Consequently, the [firewall rules](https://cloudmydc.com/) should be managed manually.
+Changes due to the **_OPEN_INBOUND_PORTS_** variable are applied just once during nodes' installation. Consequently, the [firewall rules](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall) should be managed manually.
 
 :::
 
@@ -142,7 +142,7 @@ Changes due to the **_OPEN_INBOUND_PORTS_** variable are applied just once durin
 
 :::tip
 
-Below, you can check an example on how to set this variable via [Cloud Scripting](https://cloudmydc.com/):
+Below, you can check an example on how to set this variable via [Cloud Scripting](https://docs.cloudscripting.com/creating-manifest/basic-configs/#environment-variables):
 
 ```bash
 jpsType: install
@@ -199,8 +199,8 @@ Subsequently, if meeting the necessity to **Edit** any default or custom rule, y
 
 Access to your nodes can be controlled based on such request parameters as its source node’s IP address, connection protocol, port and so on. In the guide below, we’ll consider a simple example of blocking access to a container for a particular IP address, applied via either:
 
-- [User Interface](https://cloudmydc.com/)
-- [SSH connection](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview)
+- [User Interface](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall#restrict-access-via-user-interface)
+- [SSH connection](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall#restrict-access-via-ssh)
 
 :::tip Note
 
@@ -208,7 +208,7 @@ Before following this instruction, ensure that the appropriate container is prov
 
 :::
 
-Also, when preparing some container lifecycle automation solution, you may need to apply the required firewall changes via [platform API](https://cloudmydc.com/) - examine the list of the appropriate methods within the linked reference.
+Also, when preparing some container lifecycle automation solution, you may need to apply the required firewall changes via [platform API](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall) - examine the list of the appropriate methods within the linked reference.
 
 ## Restrict Access via User Interface
 
@@ -268,7 +268,7 @@ This way you can deny access to your containers from any IP address.
 
 ## Restrict Access via SSH
 
-Alternatively, you can configure firewall rules for your container via terminal when accessing the node through [SSH Gate](https://cloudmydc.com/).
+Alternatively, you can configure firewall rules for your container via terminal when accessing the node through [SSH Gate](/docs/Deployment%20Tools/SSH/SSH%20Overview).
 
 :::tip Note
 
@@ -276,7 +276,7 @@ Although most of the firewall configurations can be performed via the dedicated 
 
 :::
 
-1. The simplest way to access node via SSH is to call the appropriate Web SSH option directly from the platform dashboard - click the same-named button next to the required node. Once connected, check the /**_etc/jelastic/metainf.conf_** file to ensure that container firewall is turned on:
+1. The simplest way to access node via SSH is to call the appropriate [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH) option directly from the platform dashboard - click the same-named button next to the required node. Once connected, check the /**_etc/jelastic/metainf.conf_** file to ensure that container firewall is turned on:
 
 ```bash
 cat /etc/jelastic/metainf.conf
@@ -359,7 +359,7 @@ sudo jem firewall list {table} {options}
 Here:
 
 - **{table}** - specifies the target iptable (filter, nat, mangle, raw)
-- **{options}** - lists [iptable parameters](https://cloudmydc.com/), which should be applied
+- **{options}** - lists [iptable parameters](https://linux.die.net/man/8/iptables), which should be applied
 
 <div style={{
     display:'flex',
@@ -375,7 +375,7 @@ Your custom rule is placed after the default ones, denying access to your node f
 
 ## Setting Rules via Platform API
 
-In some cases (e.g. for custom scripts, automatizations, etc.), you may need to configure firewall rules through the code. To do this, you can use the appropriate methods from the **environment > Security** section in the [platform API](https://cloudmydc.com/) documentation:
+In some cases (e.g. for custom scripts, automatizations, etc.), you may need to configure firewall rules through the code. To do this, you can use the appropriate methods from the **environment > Security** section in the platform API documentation:
 
 - **_AddRule_** - creates a new rule
 - **_AddRules_** - adds several rules

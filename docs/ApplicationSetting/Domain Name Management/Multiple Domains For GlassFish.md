@@ -34,7 +34,7 @@ To run multiple domains for your Java site on GlassFish server just follow the n
 
 </div>
 
-4. After that you need to add a CNAME record or set an A Record, as it is described in [Custom Domains](https://cloudmydc.com/) document.
+4. After that you need to add a CNAME record or set an A Record, as it is described in [Custom Domains](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) document.
 
 5. For binding your custom domain names click the **Settings** button next to your environment and choose the Custom domains setting. Then enter your domains in the appropriate field (we will use _myapplication.com_ and _myapplication.org_ as examples) and click **Bind** button.
 

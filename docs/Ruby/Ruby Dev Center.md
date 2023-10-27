@@ -158,7 +158,7 @@ The file should contain a list of commands (each one from a new line) that will 
 
 ## Domains Management
 
-You can provide a [custom domain](https://cloudmydc.com/) name for your Ruby application to be used instead of the default one. Based on the environment topology, you should use:
+You can provide a [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) name for your Ruby application to be used instead of the default one. Based on the environment topology, you should use:
 
 - **CNAME redirect** if using _Shared Load Balancer_; is recommended for **_dev_** and **_test_** environments
 - **DNS A Record** if using _public IP_; can handle high traffic load and is suitable for **_production_** environments
@@ -222,7 +222,7 @@ Refer to the [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And
 
 :::tip Note
 
-For the proper distribution of requests, a [load balancer](https://cloudmydc.com/) instance is automatically added upon Ruby server scaling.
+For the proper distribution of requests, a [load balancer](/docs/Load%20Balancers/Load%20Balancing) instance is automatically added upon Ruby server scaling.
 
 :::
 

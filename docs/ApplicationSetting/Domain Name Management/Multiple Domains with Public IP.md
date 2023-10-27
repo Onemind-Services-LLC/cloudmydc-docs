@@ -32,7 +32,7 @@ _In order to use a domain name for your application, you need to register it or 
 
 </div>
 
-3. In the **Environment Topology** dialog, pick your application server (for example, [Tomcat](https://cloudmydc.com/)), switch on **Public IPv4** for your server and type your environment name, for example, _multibinding_.
+3. In the **Environment Topology** dialog, pick your application server (for example, [Tomcat](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat%20Server)), switch on **Public IPv4** for your server and type your environment name, for example, _multibinding_.
 
 <div style={{
     display:'flex',
