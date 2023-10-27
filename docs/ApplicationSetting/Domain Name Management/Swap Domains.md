@@ -10,7 +10,7 @@ So, by utilizing this functionality, you can skip the steps of rolling out updat
 
 :::danger Note
 
-The _Swap Domains_ feature operates with the [bound domains](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-bind-domain-to-environment) only. If you need to swap URLs for environments with public IP as an entry point (attached to the application server or load balancer), use the [swap external IPs method](http://localhost:3000/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Swap%20Public%20IPs) or adjust appropriate records in your domain registrar.
+The _Swap Domains_ feature operates with the [bound domains](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-bind-domain-to-environment) only. If you need to swap URLs for environments with public IP as an entry point (attached to the application server or load balancer), use the [swap external IPs method](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Swap%20Public%20IPs) or adjust appropriate records in your domain registrar.
 
 :::
 
@@ -32,7 +32,7 @@ So, let’s see how this works.
 
 :::danger Note
 
-This environment should have a [bound custom domain](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-bind-domain-to-environment) (e.g. _production.com_) that you will consequently swap with a different environment.
+This environment should have a [bound custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-bind-domain-to-environment) (e.g. _production.com_) that you will consequently swap with a different environment.
 
 <div style={{
     display:'flex',
@@ -58,7 +58,7 @@ This environment should have a [bound custom domain](http://localhost:3000/docs/
 
 </div>
 
-3. [Clone this environment](http://localhost:3000/docs/EnvironmentManagement/Cloning%20Environment) to automatically create its identical copy including, all deployed packages, databases, etc. Let’s name it _testing_.
+3. [Clone this environment](/docs/EnvironmentManagement/Cloning%20Environment) to automatically create its identical copy including, all deployed packages, databases, etc. Let’s name it _testing_.
 
 <div style={{
     display:'flex',
@@ -88,8 +88,8 @@ Now, you can add new features, customize settings, apply updates, etc. All witho
 
 1. Make the needed changes (either directly via the dashboard or by deploying the new project version) to the cloned environment. The following documentation guides can help you with your project adjustments:
 
-- [Deployment Guide](http://localhost:3000/docs/Deployment/Deployment%20Guide)
-- [SSH Access](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Overview)
+- [Deployment Guide](/docs/Deployment/Deployment%20Guide)
+- [SSH Access](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview)
 - [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager)
 
 <div style={{
@@ -116,7 +116,7 @@ Now, you can add new features, customize settings, apply updates, etc. All witho
 
 :::tip Note
 
-The **Swap Domain** functionality will work even if only one environment has a bound domain. However, for more thorough testing, you can [bind a custom domain](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-bind-domain-to-environment) to your cloned environment as well.
+The **Swap Domain** functionality will work even if only one environment has a bound domain. However, for more thorough testing, you can [bind a custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-bind-domain-to-environment) to your cloned environment as well.
 
 <div style={{
     display:'flex',

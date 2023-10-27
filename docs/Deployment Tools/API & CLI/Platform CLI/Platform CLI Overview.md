@@ -165,7 +165,7 @@ Ensuring the full-functional remote management, platform CLI works with all type
 
 - [environment creation](https://cloudmydc.com/)
 - [environment start/stop](https://cloudmydc.com/)
-- [environment cloning](https://cloudmydc.com/)
+- [environment cloning](/docs/EnvironmentManagement/Cloning%20Environment)
 - [environment migration](https://cloudmydc.com/)
 - [server scaling](https://cloudmydc.com/)
 - [container redeploy](/docs/Container/Container%20Redeploy)

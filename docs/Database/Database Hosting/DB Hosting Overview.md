@@ -106,7 +106,7 @@ where
 
 :::tip Note
 
-In case your hosting provider platform has several [environment regions](https://cloudmydc.com/) to choose, the _{hoster_domain}_ value for your environment can differ from the general platform’s one.
+In case your hosting provider platform has several [environment regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) to choose, the _{hoster_domain}_ value for your environment can differ from the general platform’s one.
 
 :::
 

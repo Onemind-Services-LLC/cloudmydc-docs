@@ -6,7 +6,7 @@ sidebar_position: 1
 
 The platform utilizes several **Shared Load Balancer** (SLB) infrastructure components to process all incoming requests (except direct connections via [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)) sent to the hosted environments. SLB is an **NGINX proxy server** that connects the client-side (browser, for example) and your applications deployed to the platform.
 
-<div style={{
+<div style={{ 
     display:'flex',
     justifyContent: 'center',
     margin: '0 0 1rem 0'
@@ -34,7 +34,7 @@ As a result, there can be several entry points for users' environments, and the 
 
 :::tip Note
 
-We recommend using **SLB** for your **_dev_** and **_test_** environments. As for **_production_** environments, which are intended to handle high traffic, it is more appropriate to use your own [**public IP**](https://cloudmydc.com/) for getting and processing the requests. Also, it allows you to apply several additional options to your application, making it more secure (e.g. with [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL)) and responsive (through attaching [Custom Domain](https://cloudmydc.com/)).
+We recommend using **SLB** for your **_dev_** and **_test_** environments. As for **_production_** environments, which are intended to handle high traffic, it is more appropriate to use your own [**public IP**](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) for getting and processing the requests. Also, it allows you to apply several additional options to your application, making it more secure (e.g. with [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL)) and responsive (through attaching [Custom Domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name)).
 
 <div style={{
     display:'flex',
@@ -50,36 +50,17 @@ We recommend using **SLB** for your **_dev_** and **_test_** environments. As fo
 
 ## Backend Health Check with Shared Load Balancer
 
-The platform **Shared Load Balancer** performs constant servers' health checkups, utilizing the [NGINX upstream check module](https://cloudmydc.com/) with the following settings for that:
+The platform **Shared Load Balancer** performs constant servers' health checkups, utilizing the [NGINX upstream check module](https://github.com/yaoweibin/nginx_upstream_check_module) with the following settings for that:
 
-<div style={{
-    width: '100%',
-    border: '1px solid #eee',
-    borderRadius: '7px',
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-    overflow: 'hidden',
-    margin: '0 0 1rem 0',
-}}>
-        <div style={{
-            display: "flex",
-        }}>
-        <div style={{ width: '5%', background: 'red',
-        padding: '10px 20px 5px 20px', color: 'white' }}>
-          1
-        </div>
-        <div style={{
-            padding: '10px 20px 5px 20px',
-        }}>
-           check interval=15000 rise=2 fall=3 timeout=2000 default_down=false;
-        </div>
-    </div>
-</div>
+```bash
+    check interval=15000 rise=2 fall=3 timeout=2000 default_down=false;
+```
 
 In such a way, all containers are considered “up” after SLB starts. Then the system verifies nodes' availability every 15 seconds. If no response is received from a container within 2 seconds, such checkup is regarded as failed. Three consecutive fails mark a node as “down” and two successful checks in a row - as “up”.
 
 :::tip
 
-If an environment has several backends (application servers), the [dedicated load balancer nodes](https://cloudmydc.com/) are automatically added to manage traffic and perform health checks.
+If an environment has several backends (application servers), the [dedicated load balancer nodes](/docs/Load%20Balancers/Load%20Balancing) are automatically added to manage traffic and perform health checks.
 
 :::
 
@@ -146,4 +127,4 @@ Below, we’ve prepared some of the most frequent use case examples for the feat
 - forbid access via SLB to nodes with public IP address attached and custom domain configured
 - configure topology that allows connection via environment load balancer but prohibits access via direct URL to containers
 
-In general, you can use the _Access via SLB_ option for your **_development_** and **_testing_** environments. However, we recommend disabling the feature for the application in **_production_** and using [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) with a [custom domain](https://cloudmydc.com/) instead.
+In general, you can use the _Access via SLB_ option for your **_development_** and **_testing_** environments. However, we recommend disabling the feature for the application in **_production_** and using [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) with a [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) instead.

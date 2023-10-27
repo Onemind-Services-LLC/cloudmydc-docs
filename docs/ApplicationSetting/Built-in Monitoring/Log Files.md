@@ -20,21 +20,17 @@ So, to view your node’s logs, follow these steps:
     margin: '0 0 1rem 0'
 }}>
 
-<!-- ![Locale Dropdown](./img/FILE_NAME/IMAGE_NAME) -->
-
 ![Locale Dropdown](./img/LogFiles/1-log.png)
 
 </div>
 
-3. The logs tab will appear at the bottom of your dashboard. If your environment contains several [nodes of the same type](https://cloudmydc.com/), you can choose the one you want to see the logs for in the drop-down list.
+3. The logs tab will appear at the bottom of your dashboard. If your environment contains several [nodes of the same type](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling), you can choose the one you want to see the logs for in the drop-down list.
 
 <div style={{
     display:'flex',
     justifyContent: 'center',
     margin: '0 0 1rem 0'
 }}>
-
-<!-- ![Locale Dropdown](./img/FILE_NAME/IMAGE_NAME) -->
 
 ![Locale Dropdown](./img/LogFiles/2-select-node.png)
 
@@ -54,8 +50,6 @@ If some issue happens you can disable _Auto refresh_ to concentrate on that info
     margin: '0 0 1rem 0'
 }}>
 
-<!-- ![Locale Dropdown](./img/FILE_NAME/IMAGE_NAME) -->
-
 ![Locale Dropdown](./img/LogFiles/3-auto-refresh.png)
 
 </div>
@@ -72,13 +66,11 @@ In just the same way, you can enable the _Auto refresh_ option again.
     margin: '0 0 1rem 0'
 }}>
 
-<!-- ![Locale Dropdown](./img/FILE_NAME/IMAGE_NAME) -->
-
 ![Locale Dropdown](./img/LogFiles/4-delete.png)
 
 </div>
 
-5. Logs can also be downloaded via FTP. To learn more about the FTP module’s installation and usage, see the [FTP/FTPS Support](https://cloudmydc.com/) document.
+5. Logs can also be downloaded via FTP. To learn more about the FTP module’s installation and usage, see the [FTP/FTPS Support](/docs/Deployment%20Tools/FTP-FTPS%20Support) document.
 
 6. Here is a list of available log files you can view depending on the node:
 
@@ -153,15 +145,13 @@ In just the same way, you can enable the _Auto refresh_ option again.
 
 :::tip Tip
 
-If you use the remote [GIT/SVN](https://cloudmydc.com/) repository for deploying your application, a new **vcs_update** pull log file is added to your [Maven](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven) node (for Java) or [Apache](https://cloudmydc.com/)/[NGINX](https://cloudmydc.com/) application server (for PHP), which contains the information on your project’s building and deploying.
+If you use the remote [GIT/SVN](/docs/Deployment/Deployment%20Guide) repository for deploying your application, a new **vcs_update** pull log file is added to your [Maven](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven) node (for Java) or [Apache](/docs/PHP/PHP%20App%20Servers/Apache%20PHP/)/[NGINX](/docs/PHP/PHP%20App%20Servers/NGINX%20PHP/) application server (for PHP), which contains the information on your project’s building and deploying.
 
 <div style={{
     display:'flex',
     justifyContent: 'center',
     margin: '0 0 1rem 0'
 }}>
-
-<!-- ![Locale Dropdown](./img/FILE_NAME/IMAGE_NAME) -->
 
 ![Locale Dropdown](./img/LogFiles/5-vcsupdate.png)
 

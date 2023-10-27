@@ -159,7 +159,7 @@ Also, based on your needs, you can select one of the two scaling modes for the l
 
 The maximum number of the same-type servers within a single environment layer depends on a particular hosting provider settings (usually, this limit stands for 16 nodes and can be adjusted by sending a request to support). You can check the exact value within the **Quotas & Pricing > [Account Limits](https://cloudmydc.com/)** information frame.
 
-Upon scaling out a single node, NGINX (you can manually switch to another one) load balancing is added automatically. [Load Balancer](https://cloudmydc.com/) represents a frontend that receives all the incoming requests and evenly distributes them between backends (application servers).
+Upon scaling out a single node, NGINX (you can manually switch to another one) load balancing is added automatically. [load balancer](/docs/Load%20Balancers/Load%20Balancing) represents a frontend that receives all the incoming requests and evenly distributes them between backends (application servers).
 
 Please, find more details about manual [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) in the documentation.
 

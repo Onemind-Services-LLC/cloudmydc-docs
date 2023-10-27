@@ -139,7 +139,7 @@ Users can choose the necessary process manager during container [redeployment](/
 
 ## Domains Management
 
-Your Node.js application can be easily supplemented with the [custom domain](https://cloudmydc.com/) name to be used instead of the default one. There are two options based on your environment topology:
+Your Node.js application can be easily supplemented with the [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) name to be used instead of the default one. There are two options based on your environment topology:
 
 - **CNAME redirect** if using Shared Load Balancer; is recommended for **_dev_** and **_test_** environments
 - **DNS A Record** if using Public IP; can handle high traffic load and is suitable for **_production_** environments
@@ -193,7 +193,7 @@ To scale out/in NodeJS application servers, you need to access the topology wiza
 
 The maximum number of the same-type servers within a single environment layer depends on a particular hosting provider settings (usually this limit stands for 16 nodes and can be enlarged by sending the appropriate request to support).
 
-Also, for the proper requests distribution, a [load balancer](https://cloudmydc.com/) instance is automatically added upon NodeJS server scaling. Refer to the [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) documentation for more details.
+Also, for the proper requests distribution, a [load balancer](/docs/Load%20Balancers/Load%20Balancing) instance is automatically added upon NodeJS server scaling. Refer to the [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) documentation for more details.
 
 ## Automatic Horizontal Scaling
 

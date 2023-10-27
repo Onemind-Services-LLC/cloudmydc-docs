@@ -8,18 +8,18 @@ The platform provides an on-demand automatic cauterization for some of the manag
 
 Below, we’ll consider the following points:
 
-- [supported stacks](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#templates-with-supported-auto-clustering) (with cauterization specifics)
-- [auto-clustering management](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#auto-clustering-management)
-- [cloud scripting usage](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#setting-up-auto-clusterization-with-cloud-scripting)
+- [supported stacks](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#templates-with-supported-auto-clustering) (with cauterization specifics)
+- [auto-clustering management](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#auto-clustering-management)
+- [cloud scripting usage](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#setting-up-auto-clusterization-with-cloud-scripting)
 
 ## Templates with Supported Auto-Clustering
 
 Currently, the following templates support the newly added clustering feature (with even more stacks to be added in the future):
 
-- **application servers** - [\_Tomcat/TomEE](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#tomcattomee), [GlassFish](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#glassfish), [Payara](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#payara), [Jenkins](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#jenkins), [WildFly](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#wildfly)
-- **SQL databases** - [MySQL](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#mysql), [MariaDB](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#mariadb), [Percona](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#percona), [PostgreSQL](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#postgresql)
-- **NoSQL database**- [Couchbase](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#couchbase), [MongoDB](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#mongodb), [Redis](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#redis), [OpenSearch](https://cloudmydc.com/)
-- **storage server** - [Shared Storage Container](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#shared-storage-container)
+- **application servers** - [\_Tomcat/TomEE](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#tomcattomee), [GlassFish](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#glassfish), [Payara](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#payara), [Jenkins](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#jenkins), [WildFly](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#wildfly)
+- **SQL databases** - [MySQL](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#mysql), [MariaDB](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#mariadb), [Percona](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#percona), [PostgreSQL](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#postgresql)
+- **NoSQL database**- [Couchbase](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#couchbase), [MongoDB](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#mongodb), [Redis](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#redis), [OpenSearch](https://cloudmydc.com/)
+- **storage server** - [Shared Storage Container](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#shared-storage-container)
 
 :::tip
 
@@ -50,7 +50,7 @@ The **Auto-Clustering** feature for Tomcat and TomEE is available since the foll
 
 </div>
 
-[Learn More »](http://localhost:3000/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat%20Server)
+[Learn More »](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat%20Server)
 
 ## GlassFish
 
@@ -300,7 +300,7 @@ Automatization for a distributed implementation of Redis Cluster - an open-sourc
 
 </div>
 
-[Learn More »](http://localhost:3000/docs/Database/Redis/High%20Availability%20Cluster/Auto-Clustering)
+[Learn More »](/docs/Database/Redis/High%20Availability%20Cluster/Auto-Clustering)
 
 ## OpenSearch
 
@@ -316,7 +316,7 @@ Automatic clusterization of a community-driven, open-source search engine that p
 
 </div>
 
-[Learn More »](http://localhost:3000/docs/Database/OpenSearch/Auto-Clustering)
+[Learn More »](/docs/Database/OpenSearch/Auto-Clustering)
 
 ## Shared Storage Container
 
@@ -332,11 +332,11 @@ Automatically configured, reliable storage cluster (replicated volume) based on 
 
 </div>
 
-[Learn More »](http://localhost:3000/docs/Data%20Storage%20Container/Shared%20Storage%20Container)
+[Learn More »](/docs/Data%20Storage%20Container/Shared%20Storage%20Container)
 
 ## Auto-Clustering Management
 
-1. The **Auto-Clustering** feature can be enabled for the node group through the same-named switcher in the central part of the topology wizard (if available for the [selected stack](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances)).
+1. The **Auto-Clustering** feature can be enabled for the node group through the same-named switcher in the central part of the topology wizard (if available for the [selected stack](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances)).
 
 <div style={{
     display:'flex',
@@ -418,7 +418,7 @@ Additional info on the various database cluster types can be viewed by hovering 
 
 :::
 
-3. The other settings can be [configured](http://localhost:3000/docs/EnvironmentManagement/Setting%20Up%20Environment) just as for any regular environment.
+3. The other settings can be [configured](/docs/EnvironmentManagement/Setting%20Up%20Environment) just as for any regular environment.
 
 <div style={{
     display:'flex',
@@ -454,7 +454,7 @@ For example, you can use this info for debugging while developing packaged solut
 
 ## Setting Up Auto-Clusterization with Cloud Scripting
 
-In order to define auto-clustering settings in your [JPS solutions](http://localhost:3000/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview), a new **_cluster_** property can be used. For example:
+In order to define auto-clustering settings in your [JPS solutions](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview), a new **_cluster_** property can be used. For example:
 
 1. Enable or disable auto-clustering for the specific layer.
 

@@ -130,7 +130,7 @@ There are also separate instructions for managing your projects via [Gitblit](ht
 
 ## Domains Management
 
-You can bind a [custom domain](https://cloudmydc.com/) name to your application’s URL and use it instead of the default environment domain:
+You can bind a [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) name to your application’s URL and use it instead of the default environment domain:
 
 - **_CNAME redirect_** if using _Shared Load Balancer_; is recommended for **_dev_** and **test** environments
 - **DNS A Record** if using _public IP_; can handle high traffic load and is suitable for **production** environments
@@ -206,7 +206,7 @@ Also, you can adjust the preferred [scaling mode](/docs/ApplicationSetting/Scali
 
 Horizontal scaling can be performed not only manually but also automatically based on the current load on the node, which is monitored through the tunable triggers.
 
-Within the **Settings > Monitoring > [Auto Horizontal Scaling](https://cloudmydc.com/)** section, you can adjust the scaling conditions due to your needs, i.e. the lower/upper limit (percentage) for the specified resource type during a certain period. If the load stays out of the set limits, the nodes removal/addition process will be called automatically.
+Within the **Settings > Monitoring > [auto horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling)** section, you can adjust the scaling conditions due to your needs, i.e. the lower/upper limit (percentage) for the specified resource type during a certain period. If the load stays out of the set limits, the nodes removal/addition process will be called automatically.
 
 There are five different types of resources, which are monitored by triggers:
 

@@ -74,7 +74,7 @@ The highlighted data should be changed to the appropriate values:
 Alternatively to the _“sourceNodeId”_ parameter, you can also use:
 
 - _“sourceNodeGroup”_ - defines [environment layer](https://cloudmydc.com/), which master node will be used as a source for mount operation
-- _“sourceHost”_ - external IP or [custom domain](https://cloudmydc.com/) name of the data storage server (including [external one](https://cloudmydc.com/))
+- _“sourceHost”_ - external IP or [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) name of the data storage server (including [external one](https://cloudmydc.com/))
 
 :::
 

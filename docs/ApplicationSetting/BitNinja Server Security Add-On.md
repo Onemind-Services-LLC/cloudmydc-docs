@@ -4,7 +4,7 @@ sidebar_position: 11
 
 ## BitNinja Server Security Add-On
 
-[**BitNinja**](https://cloudmydc.com/) is an easy-to-use, security-as-a-service server defense tool. It protects your server from hackers, botnets, attackers, and malicious activities with minimal effort and maintenance required from your side.
+[**BitNinja**](https://bitninja.com/) is an easy-to-use, security-as-a-service server defense tool. It protects your server from hackers, botnets, attackers, and malicious activities with minimal effort and maintenance required from your side.
 
 All the servers protected by BitNinja collect and exchange information about attacks with each other, accumulating a knowledge base (known as **Defense Network**). Detected attacks and blocked IPs are immediately reported to all protected servers worldwide, creating an even harder shield against attacks.
 
@@ -12,9 +12,9 @@ In the platform, you can protect your servers with BitNinja security in a few cl
 
 ## BitNinja Installation
 
-The [**BitNinja**](https://cloudmydc.com/) add-on is available for all certified nodes at the platform (except [VPS](https://cloudmydc.com/)).
+The [**BitNinja**](https://github.com/jelastic-jps/bitninja) add-on is available for all certified nodes at the platform (except [VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information)).
 
-1. Open the [Marketplace](http://localhost:3000/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) in the platform dashboard and search for the **_BitNinja Service_** package or find it in the **Add-Ons** section. Hover over and click **Install** to proceed.
+1. Open the [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) in the platform dashboard and search for the **_BitNinja Service_** package or find it in the **Add-Ons** section. Hover over and click **Install** to proceed.
 
 <div style={{
     display:'flex',
@@ -44,11 +44,11 @@ Also, you can install the solution from the **Add-Ons** panel for a specific env
 
 2. In the opened window, choose the target environment and layer through the appropriate fields. BitNinja add-on provides a varying set of features (modules) based on the selected layer:
 
-- **Load Balancer** - [I*P Reputation*](https://cloudmydc.com/), [_Web Application Firewall_](https://cloudmydc.com/), [_DOS Detection_](https://cloudmydc.com/), [_Port Honeypot_](https://cloudmydc.com/)
-- **Application Server** - [_IP Reputation_](https://cloudmydc.com/), [_Proxy Filter_](https://cloudmydc.com/), F[_TP Captcha_](https://cloudmydc.com/), [_SMTP Captcha_](https://cloudmydc.com/), [_Malware Detection_](https://cloudmydc.com/), [_Web Application Firewall_](https://cloudmydc.com/), [_Defense Robot_](https://cloudmydc.com/)
-- **Database** - [_IP Reputation_](https://cloudmydc.com/)
-- **Shared Storage** - [_IP Reputation_](https://cloudmydc.com/), [_Proxy Filter_](https://cloudmydc.com/), [_FTP Captcha_](https://cloudmydc.com/), [_SMTP Captcha_](https://cloudmydc.com/), [_Malware Detection_](https://cloudmydc.com/)
-- **Build Node** - [_IP Reputation_](https://cloudmydc.com/), [_Malware Detection_](https://cloudmydc.com/)
+- **Load Balancer** - [_IP Reputation_](https://doc.bitninja.io/docs/ip%20filter/ip_reputation/), [_Web Application Firewall_](https://doc.bitninja.io/docs/modules/waf2/), [_DOS Detection_](https://doc.bitninja.io/docs/modules/dosdetection/), [_Port Honeypot_](https://doc.bitninja.io/docs/modules/port_honeypot/)
+- **Application Server** - [_IP Reputation_](https://doc.bitninja.io/docs/ip%20filter/ip_reputation/), [_Proxy Filter_](https://doc.bitninja.io/docs/modules/proxyfilter/), [_FTP Captcha_](https://doc.bitninja.io/docs/modules/captchaftp/), [_SMTP Captcha_](https://doc.bitninja.io/docs/modules/captchasmtp/), [_Malware Detection_](https://doc.bitninja.io/docs/modules/malware-detection/), [_Web Application Firewall_](https://doc.bitninja.io/docs/modules/waf2/), [_Defense Robot_](https://doc.bitninja.io/docs/modules/defenserobot/)
+- **Database** - [_IP Reputation_](https://doc.bitninja.io/docs/ip%20filter/ip_reputation/)
+- **Shared Storage** - [_IP Reputation_](https://doc.bitninja.io/docs/ip%20filter/ip_reputation/), [_Proxy Filter_](https://doc.bitninja.io/docs/modules/proxyfilter/), [_FTP Captcha_](https://doc.bitninja.io/docs/modules/captchaftp/), [_SMTP Captcha_](https://doc.bitninja.io/docs/modules/captchasmtp/), [_Malware Detection_](https://doc.bitninja.io/docs/modules/malware-detection/)
+- **Build Node** - [_IP Reputation_](https://doc.bitninja.io/docs/ip%20filter/ip_reputation/), [_Malware Detection_](https://doc.bitninja.io/docs/modules/malware-detection/)
 
 :::tip Note
 
@@ -68,7 +68,7 @@ All features (modules) are available and can be enabled on all layers. The list 
 
 :::danger Note
 
-As proprietary software, the add-on usage requires a license. You can learn all the [license pricing](https://cloudmydc.com/) specifics in the dedicated section below.
+As proprietary software, the add-on usage requires a license. You can learn all the [license pricing](/docs/ApplicationSetting/BitNinja%20Server%20Security%20Add-On#license-pricing) specifics in the dedicated section below.
 
 :::
 
@@ -104,11 +104,11 @@ The platform seamlessly integrates the cost of the BitNinja license under the fa
 - each newly-created container on the layer (horizontal scaling) is provided with a dedicated license
 - licenses are decommissioned for stopped and removed containers
 
-Each license is charged based on the [1 hosted user](https://cloudmydc.com/) plan, which currently is **10$** per month (or approximately 0.014$ per hour).
+Each license is charged based on the [1 hosted user](https://bitninja.com/pricing/) plan, which currently is **10$** per month (or approximately 0.014$ per hour).
 
 :::danger Note
 
-The exact cost may vary slightly for the platforms with a currency other than USD; it depends on the conversion rate at the moment of the hourly billing event. You can track all the account charges via the [**Billing History**](https://cloudmydc.com/) in the dashboard.
+The exact cost may vary slightly for the platforms with a currency other than USD; it depends on the conversion rate at the moment of the hourly billing event. You can track all the account charges via the [**Billing History**](/docs/Account&Pricing/Resource%20Charging/Monitoring%20Consumed%20Resources#billing-history) in the dashboard.
 
 :::
 

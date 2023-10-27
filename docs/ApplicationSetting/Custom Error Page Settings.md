@@ -126,7 +126,7 @@ location @recycle {
 
 </div>
 
-7. In case of using [SSL](https://cloudmydc.com/) for your website (i.e. for connections over HTTPS), some additional configurations are required (otherwise go to the 9th step of this guide). Add the following lines to the **servers** section of the **_/etc/nginx/conf.d/ssl.conf_** file:
+7. In case of using [SSL](/docs/ApplicationSetting/SSL/Secure%20Sockets%20Layer) for your website (i.e. for connections over HTTPS), some additional configurations are required (otherwise go to the 9th step of this guide). Add the following lines to the **servers** section of the **_/etc/nginx/conf.d/ssl.conf_** file:
 
 ```bash
 proxy_intercept_errors on;

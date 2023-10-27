@@ -24,18 +24,18 @@ import obj from './ContainerDNSHostnames.json'
 </div>
 <div>
 
-Being able to easily connect to Cloud services is a criteria of great importance for all of the developers. In the platform, each newly created node is assigned a number of automatically generated hostnames, pointed to the appropriate server internal/[external](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) IP address.
+Being able to easily connect to Cloud services is a criteria of great importance for all of the developers. In the platform, each newly created node is assigned a number of automatically generated hostnames, pointed to the appropriate server internal/[external](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) IP address.
 
 </div>
 </div>
 
-Depending on a type of the created node, the set of hostnames for it could differ. Thus, below we’ll consider the possible ways to refer to a particular node, hosted at the platform, either from inside (i.e. when managing it via [SSH Gate](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Overview)) or outside of the Cloud:
+Depending on a type of the created node, the set of hostnames for it could differ. Thus, below we’ll consider the possible ways to refer to a particular node, hosted at the platform, either from inside (i.e. when managing it via [SSH Gate](/docs/Deployment%20Tools/SSH/SSH%20Overview)) or outside of the Cloud:
 
-- [Hostnames for Specific Containers](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#hostnames-for-specific-containers)
-- [Supplementary Hostnames for Particular Node Types](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#supplementary-hostnames-for-particular-node-types)
-- [Hostnames for Specific Layers](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#hostnames-for-specific-layers)
-- [Short Hostnames for Containers within One Environment](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#short-hostnames-for-containers-within-one-environment)
-- [Hostnames for Linked Containers](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#hostnames-for-linked-containers)
+- [Hostnames for Specific Containers](/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#hostnames-for-specific-containers)
+- [Supplementary Hostnames for Particular Node Types](/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#supplementary-hostnames-for-particular-node-types)
+- [Hostnames for Specific Layers](/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#hostnames-for-specific-layers)
+- [Short Hostnames for Containers within One Environment](/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#short-hostnames-for-containers-within-one-environment)
+- [Hostnames for Linked Containers](/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#hostnames-for-linked-containers)
 
 ## Hostnames for Specific Containers
 
@@ -58,8 +58,8 @@ Herewith, the placeholders should be replaced with the next values:
 
 </div>
 
-- **_${envName}_** - environment name (not an [alias](http://localhost:3000/docs/EnvironmentManagement/Environment%20Aliases)), specified during its creation
-- **_${platformDomain}_** - domain name of a PaaS installation [hosting service provider](http://localhost:3000/docs/QuickStart/Hosters%20List%20&%20Info)
+- **_${envName}_** - environment name (not an [alias](/docs/EnvironmentManagement/Environment%20Aliases)), specified during its creation
+- **_${platformDomain}_** - domain name of a PaaS installation [hosting service provider](/docs/QuickStart/Hosters%20List%20&%20Info)
 
 Both variants can be used for refering to the nodes from inside or outside of the platform (i.e. allowing to establish both internal and external connections).
 
@@ -219,7 +219,7 @@ Such supplementary prefixes are valid only within domains with a hyphen as a sep
     </div> 
 </div>
 
-All alternative domain strings, shown in the table above, can be utilized similarly to the [hostnames for specific containers](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#hostnames-for-specific-layers).
+All alternative domain strings, shown in the table above, can be utilized similarly to the [hostnames for specific containers](/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#hostnames-for-specific-layers).
 
 ## Hostnames for Specific Layers
 
@@ -259,7 +259,7 @@ For example, this command can be used to get an application servers list for any
 
 :::tip Tip
 
-In order to get a list of containers for the current environment, just a [short hostname](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#short-hostnames-for-containers-within-one-environment) can be used.
+In order to get a list of containers for the current environment, just a [short hostname](/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#short-hostnames-for-containers-within-one-environment) can be used.
 
 :::
 
@@ -272,11 +272,11 @@ All the newly created Docker containers and dockerized platform-managed stacks a
 - **_node${nodeId}_** - alias to refer to a container in confines of a single environment
 - **_${nodeGroup}_** - alias to refer to a layer in confines of a single environment
 
-Utilizing such short hostnames in server configuration files, application source code and [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview) console (within often used commands like _ping, host, dig_, etc.) makes operating with Dockerized stacks via Platform internal network much more convenient. Additionally, such approach enables painless [environment migration](https://cloudmydc.com/) to another h[ardware region](https://cloudmydc.com/) through eliminating the necessity to adjust your application code due to the changed server location.
+Utilizing such short hostnames in server configuration files, application source code and [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview) console (within often used commands like _ping, host, dig_, etc.) makes operating with Dockerized stacks via Platform internal network much more convenient. Additionally, such approach enables painless [environment migration](/docs/EnvironmentManagement/Environment%20Regions/Migration%20between%20Regions) to another [hardware region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) through eliminating the necessity to adjust your application code due to the changed server location.
 
 ## Hostnames for Linked Containers
 
-Upon [linking](https://cloudmydc.com/) two Docker-based environment layers, a set of dedicated DNS records are automatically added to the global platform database. This allows to refer to the nodes within a _target_ layer from the _source_ ones (but not vice versa) when working in confines of these two layers using the following hostname aliases:
+Upon [linking](/docs/Container/Container%20Configuration/Links) two Docker-based environment layers, a set of dedicated DNS records are automatically added to the global platform database. This allows to refer to the nodes within a _target_ layer from the _source_ ones (but not vice versa) when working in confines of these two layers using the following hostname aliases:
 
 - **${linkAlias}** - to refer to a random node within a target layer; an exact node to respond is chosen by means of the Round-Robin algorithm - this ensures even load distribution
 - **_${linkAlias}_${N}\_** - to access a particular container within a target layer

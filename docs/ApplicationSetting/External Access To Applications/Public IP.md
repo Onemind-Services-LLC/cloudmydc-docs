@@ -16,14 +16,14 @@ The platform provides users with [Shared Load Balancer](/docs/ApplicationSetting
 
 </div>
 
-Public IP can be attached to any software stack in your environment (except, [Memcached](https://cloudmydc.com/) node), representing a more stable solution with less risk to be affected by other applications. Also, it opens access to such features as [FTP add-on](https://cloudmydc.com/), [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL), [remote debugging](https://cloudmydc.com/) from IDE, [WebSockets](https://cloudmydc.com/), etc.
+Public IP can be attached to any software stack in your environment (except, [Memcached](/docs/Memcached/Memcached%20System) node), representing a more stable solution with less risk to be affected by other applications. Also, it opens access to such features as [FTP add-on](/docs/Deployment%20Tools/FTP-FTPS%20Support), [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL), [remote debugging](/docs/ApplicationSetting/Remote%20Debugging) from IDE, [WebSockets](/docs/Deployment%20Tools/WebSockets/WebSockets%20Support), etc.
 
-The platform supports two versions of the [Internet Protocol](https://cloudmydc.com/):
+The platform supports two versions of the [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol):
 
 - **_Internet Protocol version 4 (IPv4)_** is the fourth revision in the development of the IP and the first version of the protocol to be widely deployed
 - **_Internet Protocol version 6 (IPv6)_** is the most recent IP version, which is an evolutionary upgrade of IPv4 and is designed to fulfill the need of more addresses, provide better multicast routing and simplify processing by routers
 
-In order to bind an external IP address to the required node, you need to enable (or [set the required number](https://cloudmydc.com/) of) _Public IPv4 / Public IPv6_ within the central part of the **topology wizard** window.
+In order to bind an external IP address to the required node, you need to enable (or [set the required number](/docs/ApplicationSetting/External%20Access%20To%20Applications/Multiple%20Public%20IP) of) _Public IPv4 / Public IPv6_ within the central part of the **topology wizard** window.
 
 <div style={{
     display:'flex',
@@ -63,7 +63,7 @@ Here, upon hovering over IPs, you can get access to the following functionality:
 :::tip Note
 
 - The public IP is a paid option, which is charged for every hour of its usage. The exact price is defined by your particular hosting service provider and can be found at the **[Quotas & Pricing](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-much-do-resources-cost) > Pricing > Options** frame of the dashboard.
-- If you have public IP enabled for any node in your environment, you can’t use the [swap domains](/docs/ApplicationSetting/Domain%20Name%20Management/Swap%20Domains) functionality for it. Consider utilizing the [swap Public IPs](https://cloudmydc.com/) API instead.
-- If working with [multiple public IPs](https://cloudmydc.com/), the very first external address attached (of each IPv4 and IPv6 types) is considered a **_primary_** one and can only be deleted last. It is used for both incoming and outgoing traffic, while the rest of IPs can only receive it.
+- If you have public IP enabled for any node in your environment, you can’t use the [swap domains](/docs/ApplicationSetting/Domain%20Name%20Management/Swap%20Domains) functionality for it. Consider utilizing the [swap Public IPs](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Swap%20Public%20IPs) API instead.
+- If working with [multiple public IPs](/docs/ApplicationSetting/External%20Access%20To%20Applications/Multiple%20Public%20IP), the very first external address attached (of each IPv4 and IPv6 types) is considered a **_primary_** one and can only be deleted last. It is used for both incoming and outgoing traffic, while the rest of IPs can only receive it.
 
 :::

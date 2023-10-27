@@ -6,7 +6,7 @@ sidebar_position: 1
 
 **MariaDB**, **MySQL**, and **Percona** are highly popular open source databases, used by developers all over the world. In this instruction we’ll show you how to connect your Java application to these databases, standalone server and [clustered solution](https://cloudmydc.com/).
 
-1. Log into your PaaS account and [create an environment](https://cloudmydc.com/) with the **MariaDB** (or **MySQL**) database server (available within the **_SQL_** wizard section):
+1. Log into your PaaS account and [Create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with the **MariaDB** (or **MySQL**) database server (available within the **_SQL_** wizard section):
 
 - for standalone database server
 

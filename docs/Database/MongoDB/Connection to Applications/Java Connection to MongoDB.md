@@ -9,7 +9,7 @@ sidebar_position: 1
 ## Create Environment
 
 1. Log in to your PaaS account.
-2. [Create an environment](https://cloudmydc.com/) with **MongoDB** instance (available within the NoSQL section). The preferred application server for your app to be deployed to can be located in the same or separate environment (as an example, we’ve added Tomcat 7):
+2. [Create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with **MongoDB** instance (available within the NoSQL section). The preferred application server for your app to be deployed to can be located in the same or separate environment (as an example, we’ve added Tomcat 7):
 
 <div style={{
     display:'flex',

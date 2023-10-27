@@ -83,7 +83,7 @@ If GlusterFS cluster is selected as a **Server**, you can also choose the prefer
 
 - **_External Server_**
 
-  - **NFS Server** - external IP of the data storage server or its [custom domain](https://cloudmydc.com/) name
+  - **NFS Server** - external IP of the data storage server or its [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) name
   - **Remote Path** - exported files location on NFS server
 
 - **Mount to all nodes** - switcher to set the same mounts to be added for all nodes within a layer, including those that could be added in the future (automatically enabled for the **Master Container** type)
