@@ -2,26 +2,24 @@
 sidebar_position: 6
 ---
 
-!Content Code
-
 ## Auto-Clustering of Instances via Topology Wizard
 
-The platform provides an on-demand automatic clusterization for some of the managed templates. Such automation significantly simplifies and speeds up the creation of a reliable production-ready cluster for your project.
+The platform provides an on-demand automatic cauterization for some of the managed templates. Such automation significantly simplifies and speeds up the creation of a reliable production-ready cluster for your project.
 
 Below, we’ll consider the following points:
 
-- [supported stacks](https://cloudmydc.com/) (with clusterization specifics)
-- [auto-clustering management](https://cloudmydc.com/)
-- [cloud scripting usage](https://cloudmydc.com/)
+- [supported stacks](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#templates-with-supported-auto-clustering) (with cauterization specifics)
+- [auto-clustering management](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#auto-clustering-management)
+- [cloud scripting usage](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#setting-up-auto-clusterization-with-cloud-scripting)
 
 ## Templates with Supported Auto-Clustering
 
 Currently, the following templates support the newly added clustering feature (with even more stacks to be added in the future):
 
-- **application servers** - [_Tomcat/TomEE, GlassFish, Payara, Jenkins, WildFly_](https://cloudmydc.com/)
-- **SQL databases** - [_MySQL, MariaDB, Percona, PostgreSQL_](https://cloudmydc.com/)
-- **NoSQL database**- [_Couchbase, MongoDB, Redis, OpenSearch_](https://cloudmydc.com/)
-- **storage server** - [_Shared Storage Container_](https://cloudmydc.com/)
+- **application servers** - [\_Tomcat/TomEE](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#tomcattomee), [GlassFish](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#glassfish), [Payara](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#payara), [Jenkins](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#jenkins), [WildFly](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#wildfly)
+- **SQL databases** - [MySQL](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#mysql), [MariaDB](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#mariadb), [Percona](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#percona), [PostgreSQL](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#postgresql)
+- **NoSQL database**- [Couchbase](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#couchbase), [MongoDB](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#mongodb), [Redis](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#redis), [OpenSearch](https://cloudmydc.com/)
+- **storage server** - [Shared Storage Container](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#shared-storage-container)
 
 :::tip
 
@@ -52,7 +50,7 @@ The **Auto-Clustering** feature for Tomcat and TomEE is available since the foll
 
 </div>
 
-[Learn More »](https://cloudmydc.com/)
+[Learn More »](http://localhost:3000/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat%20Server)
 
 ## GlassFish
 
@@ -68,8 +66,6 @@ Interconnection of the GlassFish servers with pre-configured session replication
 
 </div>
 
-[Learn More »](https://cloudmydc.com/)
-
 ## Payara
 
 Interconnection of the Payara servers with pre-configured session replication and load balancing.
@@ -83,8 +79,6 @@ Interconnection of the Payara servers with pre-configured session replication an
 ![Locale Dropdown](./img/Auto-ClusteringofInstances/02-payara-cluster-scheme.svg)
 
 </div>
-
-[Learn More »](https://cloudmydc.com/)
 
 ## Jenkins
 
@@ -100,8 +94,6 @@ A master Jenkins node in the master-slave mode with auto-scalable Java Engine wo
 
 </div>
 
-[Learn More »](https://cloudmydc.com/)
-
 ## WildFly
 
 WildFly nodes in _Domain Mode_ with enabled clustering to get high availability and guarantee the continuous performance of a deployed Java EE application.
@@ -115,8 +107,6 @@ WildFly nodes in _Domain Mode_ with enabled clustering to get high availability 
 ![Locale Dropdown](./img/Auto-ClusteringofInstances/04-wildfly-cluster-scheme.svg)
 
 </div>
-
-[Learn More »](https://cloudmydc.com/)
 
 ## MySQL
 
@@ -152,7 +142,8 @@ Pre-configured replication with two interconnected primary databases. During the
 ![Locale Dropdown](./img/Auto-ClusteringofInstances/06-mysql-cluster-primary-secondary-scheme-1.svg)
 
 </div>
-[Learn More »](https://cloudmydc.com/)
+
+[Learn More »](https://github.com/jelastic-jps/mysql-cluster)
 
 ## MariaDB
 
@@ -188,7 +179,7 @@ Based on your requirements, you can select **Scheme** of the following types:
 
 </div>
 
-- Galera Cluster
+- **Galera** Cluster
   All servers can accept updates even if being issued concurrently.
 
 <div style={{
@@ -201,7 +192,7 @@ Based on your requirements, you can select **Scheme** of the following types:
 
 </div>
 
-[Learn More »](https://cloudmydc.com/)
+[Learn More »](https://github.com/jelastic-jps/mysql-cluster)
 
 ## Percona
 
@@ -235,7 +226,7 @@ Based on your requirements, you can select **Scheme** of the following types:
 
 </div>
 
-## XtraDB Cluster
+- **XtraDB** Cluster
 
 A database clustering solution that ensures high availability, prevents downtime and data loss, and provides linear scalability for a growing environment.
 
@@ -249,7 +240,7 @@ A database clustering solution that ensures high availability, prevents downtime
 
 </div>
 
-[Learn More »](https://cloudmydc.com/)
+[Learn More »](https://github.com/jelastic-jps/mysql-cluster)
 
 ## PostgreSQL
 
@@ -265,8 +256,6 @@ Pre-configured PostgreSQL database cluster with asynchronous primary-secondary r
 
 </div>
 
-[Learn More »](https://cloudmydc.com/)
-
 ## Couchbase
 
 Automatically interconnected Couchbase servers with the pre-configured auto-scaling and rebalancing to provide a single highly available data storing system.
@@ -281,7 +270,7 @@ Automatically interconnected Couchbase servers with the pre-configured auto-scal
 
 </div>
 
-[Learn More »](https://cloudmydc.com/)
+[Learn More »](https://github.com/jelastic-jps/couchbase)
 
 ## MongoDB
 
@@ -297,8 +286,6 @@ Automatic configuration of a highly-available and reliable MongoDB replica set w
 
 </div>
 
-[Learn More »](https://cloudmydc.com/)
-
 ## Redis
 
 Automatization for a distributed implementation of Redis Cluster - an open-source, in-memory data structure store. It is usually used for caching, data storing, as a message broker, and for other tasks. The provided topology consists of at least three Primary servers, each with a Secondary node to ensure the read load distribution and auto-recovery if the Primary goes down.
@@ -313,7 +300,7 @@ Automatization for a distributed implementation of Redis Cluster - an open-sourc
 
 </div>
 
-[Learn More »](https://cloudmydc.com/)
+[Learn More »](http://localhost:3000/docs/Database/Redis/High%20Availability%20Cluster/Auto-Clustering)
 
 ## OpenSearch
 
@@ -329,7 +316,7 @@ Automatic clusterization of a community-driven, open-source search engine that p
 
 </div>
 
-[Learn More »](https://cloudmydc.com/)
+[Learn More »](http://localhost:3000/docs/Database/OpenSearch/Auto-Clustering)
 
 ## Shared Storage Container
 
@@ -345,11 +332,11 @@ Automatically configured, reliable storage cluster (replicated volume) based on 
 
 </div>
 
-[Learn More »](https://cloudmydc.com/)
+[Learn More »](http://localhost:3000/docs/Data%20Storage%20Container/Shared%20Storage%20Container)
 
 ## Auto-Clustering Management
 
-1. The **Auto-Clustering** feature can be enabled for the node group through the same-named switcher in the central part of the topology wizard (if available for the [selected stack](https://cloudmydc.com/)).
+1. The **Auto-Clustering** feature can be enabled for the node group through the same-named switcher in the central part of the topology wizard (if available for the [selected stack](http://localhost:3000/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances)).
 
 <div style={{
     display:'flex',
@@ -431,7 +418,7 @@ Additional info on the various database cluster types can be viewed by hovering 
 
 :::
 
-3. The other settings can be [configured](https://cloudmydc.com/) just as for any regular environment.
+3. The other settings can be [configured](http://localhost:3000/docs/EnvironmentManagement/Setting%20Up%20Environment) just as for any regular environment.
 
 <div style={{
     display:'flex',
@@ -451,7 +438,7 @@ After being configured, auto-clustering cannot be disabled from the topology wiz
 
 4. If needed, you can track the cluster configuration logs via the platform console:
 
-https://app.{platformDomain}/console
+`https://app.{platformDomain}/console`
 
 <div style={{
     display:'flex',
@@ -467,7 +454,7 @@ For example, you can use this info for debugging while developing packaged solut
 
 ## Setting Up Auto-Clusterization with Cloud Scripting
 
-In order to define auto-clustering settings in your [JPS solutions](https://cloudmydc.com/), a new **_cluster_** property can be used. For example:
+In order to define auto-clustering settings in your [JPS solutions](http://localhost:3000/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview), a new **_cluster_** property can be used. For example:
 
 1. Enable or disable auto-clustering for the specific layer.
 

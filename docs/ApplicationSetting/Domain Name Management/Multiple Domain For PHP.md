@@ -34,7 +34,7 @@ In some seconds your environment will appear on the platform dashboard.
 
 </div>
 
-4. You need to have the names in DNS, resolving to your IP address. So, buy domain names for your environment. It can be done in two ways: by adding CNAME record or by setting A Records. You can read more [here](https://cloudmydc.com/).
+4. You need to have the names in DNS, resolving to your IP address. So, buy domain names for your environment. It can be done in two ways: by adding CNAME record or by setting A Records. You can read more [here](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name).
 
 5. After that click the **Settings** button for your environment and bind your domains. As an example we use the following URLs: _mydomain.com_ and _myseconddomain.com_.
 

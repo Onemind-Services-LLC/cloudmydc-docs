@@ -4,7 +4,7 @@ sidebar_position: 1
 
 ## Configuration File Manager
 
-The platform configuration manager is a powerful tool, which allows to take control over all of the files within the particular container. This allows to easily and quickly apply some common configurations to your nodes through the comfortable GUI right in your browser, without the necessity to establish [SSH connection](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview), that may be required for some complex operations.
+The platform configuration manager is a powerful tool, which allows to take control over all of the files within the particular container. This allows to easily and quickly apply some common configurations to your nodes through the comfortable GUI right in your browser, without the necessity to establish [SSH connection](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Overview), that may be required for some complex operations.
 
 In order to open the configuration manager, hover over the required node and click **the Config** button (the one with a wrench icon).
 
@@ -25,19 +25,19 @@ config manager tab
 Herein the following sections are available:
 
 - **Root** (File Manager) - gives you an access to the container’s local filesystem, where you can manage different settings within configuration files of your app
-- **Mount Points** - list of folders, that are physically stored on the remote node but can be used at a current node (learn how you can [mount data](https://cloudmydc.com/) at the platform)
-- **Exports** - list of folders, which are shared with other nodes, i.e. these files are stored locally, but are also available at the remote instances (find out more at the dedicated [storage exports](https://cloudmydc.com/) documentation page)
+- **Mount Points** - list of folders, that are physically stored on the remote node but can be used at a current node (learn how you can [mount data](http://localhost:3000/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) at the platform)
+- **Exports** - list of folders, which are shared with other nodes, i.e. these files are stored locally, but are also available at the remote instances (find out more at the dedicated [storage exports](http://localhost:3000/docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing) documentation page)
 - **Favorites** - files and folders you’ve marked as favorites so that you have a quick and simple access to them
   Further down this guide, we’ll consider the basics of configuration manager usage, that are applicable for any platform container. However, if you require to find out the configuration specifics for a particular node type, select one of the following docs:
 
-- [Docker Container Configuration](https://cloudmydc.com/)
-- [Java Application Server Configuration](https://cloudmydc.com/)
-- [PHP Application Server Configuration](https://cloudmydc.com/)
-- [Ruby Application Server Configuration](https://cloudmydc.com/)
-- [Database Configuration](https://cloudmydc.com/)
-- [NGINX Balancer Configuration](https://cloudmydc.com/)
-- [Memcached Configuration](https://cloudmydc.com/)
-- [Maven Configuration](https://cloudmydc.com/)
+- [Docker Container Configuration](http://localhost:3000/docs/Container/Container%20Configuration/Configuration%20Tools)
+- [Java Application Server Configuration](http://localhost:3000/docs/Java/Java%20App%20Server%20Configuration)
+- [PHP Application Server Configuration](http://localhost:3000/docs/PHP/PHP%20App%20Server%20Configuration)
+- [Ruby Application Server Configuration](http://localhost:3000/docs/Ruby/Ruby%20App%20Server%20Configuration)
+- [Database Configuration](http://localhost:3000/docs/Database/Database%20Hosting/Database%20Configuration%20Files)
+- [NGINX Balancer Configuration](http://localhost:3000/docs/Load%20Balancers/NGINX/NGINX%20Balancer%20Configuration)
+- [Memcached Configuration](http://localhost:3000/docs/Memcached/Memcached%20Configuration)
+- [Maven Configuration](http://localhost:3000/docs/Java/Build%20Node/Maven%20Configuration)
 
 ## Working with File Manager
 
@@ -45,7 +45,7 @@ The platform in-build file manager gives an easy and convenient access to your c
 
 :::tip
 
-You can also connect to a container via SSH in order to get even more possibilities for its management.
+You can also connect to a container via [SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) in order to get even more possibilities for its management.
 
 :::
 
@@ -117,7 +117,7 @@ Moreover, to simplify the operation of files management and editing, the appropr
 Just type the required piece of text to find and highlight all matches throughout your file. Use the additional options to narrow the search results even further:
 
 - _Match Case_ - allows to perform a case sensitive search
-- _Regex_ - enables [regular expressions](https://cloudmydc.com/) for the search conditions specification
+- _Regex_ - enables [regular expressions](https://en.wikipedia.org/wiki/Regular_expression) for the search conditions specification
 
 4. After you’ve finished file edits, don’t forget to **Save** changes you’ve made with a corresponding button at the top. Herewith, in case you are working with a layer of multiple nodes, you’ll be additionally asked whether it’s required to save the made changes only for the current instance or for all instances.
 

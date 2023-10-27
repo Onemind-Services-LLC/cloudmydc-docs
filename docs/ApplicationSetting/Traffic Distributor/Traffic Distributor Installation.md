@@ -4,7 +4,7 @@ sidebar_position: 3
 
 ## Traffic Distributor Installation
 
-The process of [Traffic Distributor](https://cloudmydc.com/) installation is fairly simple with the PaaS - being specially packed for the [Marketplace](https://cloudmydc.com/), it can be created in a few clicks and start working in just a matter of minutes. Herewith, the configurability of the solution is great, so let’s walk through the installation steps below to learn about all of the available functionality and hidden nuances.
+The process of [Traffic Distributor](https://cloudmydc.com/) installation is fairly simple with the PaaS - being specially packed for the [Marketplace](http://localhost:3000/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace), it can be created in a few clicks and start working in just a matter of minutes. Herewith, the configurability of the solution is great, so let’s walk through the installation steps below to learn about all of the available functionality and hidden nuances.
 
 :::tip Note
 

@@ -14,7 +14,7 @@ In the platform, you can protect your servers with BitNinja security in a few cl
 
 The [**BitNinja**](https://cloudmydc.com/) add-on is available for all certified nodes at the platform (except [VPS](https://cloudmydc.com/)).
 
-1. Open the [Marketplace](https://cloudmydc.com/) in the platform dashboard and search for the **_BitNinja Service_** package or find it in the **Add-Ons** section. Hover over and click **Install** to proceed.
+1. Open the [Marketplace](http://localhost:3000/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) in the platform dashboard and search for the **_BitNinja Service_** package or find it in the **Add-Ons** section. Hover over and click **Install** to proceed.
 
 <div style={{
     display:'flex',

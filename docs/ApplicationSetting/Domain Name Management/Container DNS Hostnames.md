@@ -24,18 +24,18 @@ import obj from './ContainerDNSHostnames.json'
 </div>
 <div>
 
-Being able to easily connect to Cloud services is a criteria of great importance for all of the developers. In the platform, each newly created node is assigned a number of automatically generated hostnames, pointed to the appropriate server internal/[external](https://cloudmydc.com/) IP address.
+Being able to easily connect to Cloud services is a criteria of great importance for all of the developers. In the platform, each newly created node is assigned a number of automatically generated hostnames, pointed to the appropriate server internal/[external](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) IP address.
 
 </div>
 </div>
 
-Depending on a type of the created node, the set of hostnames for it could differ. Thus, below we’ll consider the possible ways to refer to a particular node, hosted at the platform, either from inside (i.e. when managing it via [SSH Gate](https://cloudmydc.com/)) or outside of the Cloud:
+Depending on a type of the created node, the set of hostnames for it could differ. Thus, below we’ll consider the possible ways to refer to a particular node, hosted at the platform, either from inside (i.e. when managing it via [SSH Gate](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Overview)) or outside of the Cloud:
 
-- [Hostnames for Specific Containers](https://cloudmydc.com/)
-- [Supplementary Hostnames for Particular Node Types](https://cloudmydc.com/)
-- [Hostnames for Specific Layers](https://cloudmydc.com/)
-- [Short Hostnames for Containers within One Environment](https://cloudmydc.com/)
-- [Hostnames for Linked Containers](https://cloudmydc.com/)
+- [Hostnames for Specific Containers](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#hostnames-for-specific-containers)
+- [Supplementary Hostnames for Particular Node Types](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#supplementary-hostnames-for-particular-node-types)
+- [Hostnames for Specific Layers](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#hostnames-for-specific-layers)
+- [Short Hostnames for Containers within One Environment](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#short-hostnames-for-containers-within-one-environment)
+- [Hostnames for Linked Containers](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#hostnames-for-linked-containers)
 
 ## Hostnames for Specific Containers
 
@@ -58,8 +58,8 @@ Herewith, the placeholders should be replaced with the next values:
 
 </div>
 
-- **_${envName}_** - environment name (not an [alias](/docs/EnvironmentManagement/Environment%20Aliases)), specified during its creation
-- **_${platformDomain}_** - domain name of a PaaS installation [hosting service provider](https://cloudmydc.com/)
+- **_${envName}_** - environment name (not an [alias](http://localhost:3000/docs/EnvironmentManagement/Environment%20Aliases)), specified during its creation
+- **_${platformDomain}_** - domain name of a PaaS installation [hosting service provider](http://localhost:3000/docs/QuickStart/Hosters%20List%20&%20Info)
 
 Both variants can be used for refering to the nodes from inside or outside of the platform (i.e. allowing to establish both internal and external connections).
 
@@ -219,7 +219,7 @@ Such supplementary prefixes are valid only within domains with a hyphen as a sep
     </div> 
 </div>
 
-All alternative domain strings, shown in the table above, can be utilized similarly to the [hostnames for specific containers](https://cloudmydc.com/).
+All alternative domain strings, shown in the table above, can be utilized similarly to the [hostnames for specific containers](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#hostnames-for-specific-layers).
 
 ## Hostnames for Specific Layers
 
@@ -227,11 +227,11 @@ For the new environments, you can get all internal IP addresses of containers wi
 
 - **_${nodeGroup}.${envName}.${platformDomain}_**
 
-Here, **_${nodeGroup}_** placeholder is a name of a particular layer the required container belongs to. By default, layers are named in accordance with the appropriate [_nodeGroup_](https://cloudmydc.com/) specific role.
+Here, **_${nodeGroup}_** placeholder is a name of a particular layer the required container belongs to. By default, layers are named in accordance with the appropriate nodeGroup specific role.
 
 :::tip Note
 
-Node groups added via the [_extra layers_](https://cloudmydc.com/) in the topology wizard are named in the same way, but with the appropriate **_${N}_** index. Herewith, the default layers in topology wizard (e.g. _bl, cp, sqldb,_ etc.) are considered as the first index, so the enumeration in extra layers starts with the second one, e.g. _cp2, cp3, cp4_, … (except of the _extra, extra2, extra3_, …). For example:
+Node groups added via the extra layers in the topology wizard are named in the same way, but with the appropriate **_${N}_** index. Herewith, the default layers in topology wizard (e.g. _bl, cp, sqldb,_ etc.) are considered as the first index, so the enumeration in extra layers starts with the second one, e.g. _cp2, cp3, cp4_, … (except of the _extra, extra2, extra3_, …). For example:
 
 <div style={{
     display:'flex',
@@ -259,7 +259,7 @@ For example, this command can be used to get an application servers list for any
 
 :::tip Tip
 
-In order to get a list of containers for the current environment, just a [short hostname](https://cloudmydc.com/) can be used.
+In order to get a list of containers for the current environment, just a [short hostname](http://localhost:3000/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#short-hostnames-for-containers-within-one-environment) can be used.
 
 :::
 

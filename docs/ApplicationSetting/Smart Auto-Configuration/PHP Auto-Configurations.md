@@ -8,14 +8,14 @@ The platform dynamic resources organization complements the basic PHP one to bri
 
 The type of basic requests' handling and dispatching system varies for different PHP application servers, so the directives they use are different too. However, the functionality of such parameters could be similar. To learn more about these directives for a particular application server, navigate to the corresponding section below:
 
-- [Apache PHP](https://cloudmydc.com/)
-- [NGINX PHP](https://cloudmydc.com/)
+- [Apache PHP](http://localhost:3000/docs/ApplicationSetting/Smart%20Auto-Configuration/PHP%20Auto-Configurations#apache-php-auto-adjustable-settings)
+- [NGINX PHP](http://localhost:3000/docs/ApplicationSetting/Smart%20Auto-Configuration/PHP%20Auto-Configurations#nginx-php-auto-adjustable-settings)
 
-Besides that, you can learn [How the Auto Configuration Works](https://cloudmydc.com/) or, if you want to redefine the values manually, proceed to the [How to Disable the Automatic Optimization](https://cloudmydc.com/) section of this guide.
+Besides that, you can learn [How the Auto Configuration Works](http://localhost:3000/docs/ApplicationSetting/Smart%20Auto-Configuration/PHP%20Auto-Configurations#how-the-php-auto-configuration-works) or, if you want to redefine the values manually, proceed to the [How to Disable the Automatic Optimization](http://localhost:3000/docs/ApplicationSetting/Smart%20Auto-Configuration/PHP%20Auto-Configurations#disable-automatic-optimization) section of this guide.
 
 ## Apache PHP Auto Adjustable Settings
 
-Dynamic requests handling in Apache PHP is implemented with the help of the **_prefork_** Multi-Processing Module (MPM), which helps to reveal full server potential. The MPM directives are listed in the main Apache **_/etc/httpd/conf/_** [**_httpd.conf_**](https://cloudmydc.com/) configuration file.
+Dynamic requests handling in Apache PHP is implemented with the help of the **_prefork_** Multi-Processing Module (MPM), which helps to reveal full server potential. The MPM directives are listed in the main Apache **_/etc/httpd/conf/_** [**_httpd.conf_**](http://localhost:3000/docs/PHP/PHP%20App%20Server%20Configuration) configuration file.
 
 <div style={{
     display:'flex',
@@ -27,7 +27,7 @@ Dynamic requests handling in Apache PHP is implemented with the help of the **_p
 
 </div>
 
-Here is a complete list of parameters, which the platform configures for the [**_prefork_**](https://cloudmydc.com/) module:
+Here is a complete list of parameters, which the platform configures for the [**_prefork_**](https://httpd.apache.org/docs/2.4/mod/prefork.html) module:
 
 - **_StartServers_** - sets the number of child server processes created on startup.
 - M**_inSpareServers (MaxSpareServers)_** - defines the minimum (maximum) number of server processes that are kept spare
@@ -65,11 +65,11 @@ If you’d like to state your custom value for these directives, be aware that i
 
 :::
 
-You may also be interested in [How the Auto Configuration Works](https://cloudmydc.com/) or how to [Disable the Automatic Optimization](https://cloudmydc.com/) to set your custom values for these directives.
+You may also be interested in [How the Auto Configuration Works](http://localhost:3000/docs/ApplicationSetting/Smart%20Auto-Configuration/PHP%20Auto-Configurations#how-the-php-auto-configuration-works) or how to [Disable the Automatic Optimization](http://localhost:3000/docs/ApplicationSetting/Smart%20Auto-Configuration/PHP%20Auto-Configurations#disable-automatic-optimization) to set your custom values for these directives.
 
 ## NGINX PHP Auto Adjustable Settings
 
-Request handling in the NGINX PHP application server is managed by _FastCGI Process Manager (FPM)_, which can be configured via the **_/etc/_** [**_php-fpm.conf_**](https://cloudmydc.com/) file. It is automatically added to the _favorites_ list in the [container file manager](https://cloudmydc.com/) for quick access:
+Request handling in the NGINX PHP application server is managed by _FastCGI Process Manager (FPM)_, which can be configured via the **_/etc/_** [**_php-fpm.conf_**](https://www.php.net/manual/en/install.fpm.configuration.php) file. It is automatically added to the _favorites_ list in the [container file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager) for quick access:
 
 <div style={{
     display:'flex',
@@ -89,7 +89,7 @@ The FPM works in the **_ondemand_** mode (the **_pm_** directive) by default. It
 
 The exact value depends on the capacity of the CPU provided by your particular hosting provider and the number of allocated cloudlets for your container. In such a way, cloudlets count enlargement results in the automatic growth of the **_pm.max_children_** parameter.
 
-This directive can be defined explicitly without [disabling the automatic optimization](https://cloudmydc.com/) through the appropriate **_PHPFPM_MAX_CHILDREN_** [variable](https://cloudmydc.com/).
+This directive can be defined explicitly without [disabling the automatic optimization](http://localhost:3000/docs/ApplicationSetting/Smart%20Auto-Configuration/PHP%20Auto-Configurations#disable-automatic-optimization) through the appropriate **_PHPFPM_MAX_CHILDREN_** [variable](http://localhost:3000/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables).
 
 :::
 
@@ -105,7 +105,7 @@ This directive can be defined explicitly without [disabling the automatic optimi
 
 </div>
 
-If needed, you can [Disable the Automatic Optimization](https://cloudmydc.com/) to change the FPM mode and adjust other directives (be aware that incorrect values can cause your NGINX PHP server instability).
+If needed, you can [Disable the Automatic Optimization](http://localhost:3000/docs/ApplicationSetting/Smart%20Auto-Configuration/PHP%20Auto-Configurations) to change the FPM mode and adjust other directives (be aware that incorrect values can cause your NGINX PHP server instability).
 
 Also, to gain advanced performance, the PHP FPM listener utilizes the UNIX domain socket instead of the common TCP one. Such a solution is better suited for the communications within the same host, allowing to skip some checks and operations (like routing).
 
@@ -113,7 +113,7 @@ Also, to gain advanced performance, the PHP FPM listener utilizes the UNIX domai
 
 You can check how the parameters mentioned above are changed based on the allocated resources. We’ll consider it on the Apache PHP server example:
 
-1. [Create](https://cloudmydc.com/) a new PHP environment with the **Apache PHP** application server inside (if you don’t have one).
+1. [Create](http://localhost:3000/docs/EnvironmentManagement/Setting%20Up%20Environment) a new PHP environment with the **Apache PHP** application server inside (if you don’t have one).
 
 Then, click the **Config** button for this node and find the **_prefork_** module configs in the **_/etc/httpd/conf/httpd.conf_** file.
 
@@ -153,7 +153,7 @@ Inappropriate directive values may cause your server instability, so it is **not
 
 :::
 
-If you want to manually change any of the auto-configured settings, you need to set the **_JELASTIC_AUTOCONFIG_** [environment variable](https://cloudmydc.com/) to _false_.
+If you want to manually change any of the auto-configured settings, you need to set the **_JELASTIC_AUTOCONFIG_** [environment variable](http://localhost:3000/docs/Container/Container%20Configuration/Variables) to _false_.
 
 <div style={{
     display:'flex',
