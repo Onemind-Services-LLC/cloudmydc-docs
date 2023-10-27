@@ -4,15 +4,15 @@ sidebar_position: 3
 
 ## Add SSH Key
 
-When you have your [SSH key generated](https://cloudmydc.com/), you can add it to your PaaS account.
+When you have your [SSH key generated]( /docs/Deployment%20Tools/SSH/Generate%20SSH%20Key), you can add it to your PaaS account.
 
 :::tip
 
-In order to manage private SSH keys intended for authentication at your GIT account, follow the corresponding instruction within the [SSH Access to GIT Repository](https://cloudmydc.com/) guide.
+In order to manage private SSH keys intended for authentication at your GIT account, follow the corresponding instruction within the [SSH Access to GIT Repository]( /docs/Deployment/SSH%20Access%20to%20GIT%20Repository) guide.
 
 :::
 
-For adding a public SSH key, which subsequently can be used for gaining [SSH access](https://cloudmydc.com/) to your PaaS account, proceed to the steps below:
+For adding a public SSH key, which subsequently can be used for gaining [SSH access]( /docs/Deployment%20Tools/SSH/SSH%20Access/Overview) to your PaaS account, proceed to the steps below:
 
 1. Open the platform dashboard and navigate to the upper toolbar.
 

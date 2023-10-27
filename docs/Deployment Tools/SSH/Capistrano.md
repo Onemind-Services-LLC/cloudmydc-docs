@@ -9,7 +9,7 @@ Capistrano is an open-source tool for executing scripts at the remote servers. M
 Thus, in this instruction we will discover how to deploy a PHP application remotely, via the Capistrano tool. Initially you will need:
 
 - an already created PHP environment with Apache application server;
-- [SSH public key generated](https://cloudmydc.com/) and [added to your platform](https://cloudmydc.com/) dashboard;
+- [SSH public key generated]( /docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) and [added to your platform]( /docs/Deployment%20Tools/SSH/Add%20SSH%20Key) dashboard;
 - GIT repository with PHP application you would like to deploy (for now Capistrano 3 tool supports GIT VCS type only);
 - local copy of this project at your computer.
 
@@ -58,7 +58,7 @@ This will create new files and directories in your project:
 
 :::tip Tip:
 
-As an option, you can try the dedicated [_capistrano-jelastic_](https://cloudmydc.com/) gem, maintained by [_gerado-navarro_](https://cloudmydc.com/), for automating your Rails apps' deployment to the platform.
+As an option, you can try the dedicated [_capistrano-jelastic_](https://github.com/gerardo-navarro/capistrano-jelastic) gem, maintained by [_gerado-navarro_](https://github.com/gerardo-navarro), for automating your Rails apps' deployment to the platform.
 
 :::
 
