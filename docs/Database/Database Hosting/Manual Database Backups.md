@@ -126,7 +126,7 @@ If the backup operation is successful, you’ll see the appropriate **_bz2_** ar
 
 There are multiple options to download a file from a container:
 
-1. The most straightforward variant is to use the [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) directly in the dashboard.
+1. The most straightforward variant is to use the [configuration file manager](http://localhost:3000/docs/ApplicationSetting/Configuration%20File%20Manager) directly in the dashboard.
 
 <div style={{
     display:'flex',
@@ -158,7 +158,7 @@ The required access details can be viewed within the dashboard.
 
 :::danger Note
 
-A [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address is required for this option. If needed, it will be automatically attached to the node during add-on installation.
+A [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address is required for this option. If needed, it will be automatically attached to the node during add-on installation.
 
 :::
 

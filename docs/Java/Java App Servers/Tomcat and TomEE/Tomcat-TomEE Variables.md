@@ -4,7 +4,7 @@ sidebar_position: 3
 
 ## Custom Environment Variables for Java Application Servers
 
-Environment variables represent a kind of placeholders, where you can store the frequently used parameters' values or strings in order not to specify them manually in the code each time they are needed. There is a number of [default environment variables](/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables#default-environment-variables) which are preconfigured at the platform application servers and can be easily integrated into your app, hosted within these servers, to make your work with the platform even more convenient.
+Environment variables represent a kind of placeholders, where you can store the frequently used parameters' values or strings in order not to specify them manually in the code each time they are needed. There is a number of [default environment variables](https://cloudmydc.com/) which are preconfigured at the platform application servers and can be easily integrated into your app, hosted within these servers, to make your work with the platform even more convenient.
 
 The following guide will acquaint you with the details on how to add your custom environment variables to particular Java application servers:
 

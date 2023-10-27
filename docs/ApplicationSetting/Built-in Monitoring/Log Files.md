@@ -153,7 +153,7 @@ In just the same way, you can enable the _Auto refresh_ option again.
 
 :::tip Tip
 
-If you use the remote [GIT/SVN](https://cloudmydc.com/) repository for deploying your application, a new **vcs_update** pull log file is added to your [Maven](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven) node (for Java) or [Apache](https://cloudmydc.com/)/[NGINX](https://cloudmydc.com/) application server (for PHP), which contains the information on your project’s building and deploying.
+If you use the remote [GIT/SVN](https://cloudmydc.com/) repository for deploying your application, a new **vcs_update** pull log file is added to your [Maven](https://cloudmydc.com/) node (for Java) or [Apache](https://cloudmydc.com/)/[NGINX](https://cloudmydc.com/) application server (for PHP), which contains the information on your project’s building and deploying.
 
 <div style={{
     display:'flex',

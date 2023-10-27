@@ -7,7 +7,7 @@ The platform supports various ways of the applications automatic deployment, all
 - **Dashboard** - corresponds to [deployment via archive](https://cloudmydc.com/) (provided either as local file or URL)
 - **VCS** - allows to [deploy from your VCS](https://cloudmydc.com/) repository (e.g. Git, SVN, Bitbucket)
 - **Hub Registry** - creates a custom container with your application based on the Docker image stored at your _[public](https://cloudmydc.com/)_ or _[private](https://cloudmydc.com/)_ registry
-- **Plugins** - deploys a project using one of the popular software development tools (_[Ant Task](https://cloudmydc.com/)_, _[Eclipse](https://cloudmydc.com/)_, _[Intellij IDEA](https://cloudmydc.com/)_, _[Maven](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven)_ or _[NetBeans](https://cloudmydc.com/)_), which provides integration with platform
+- **Plugins** - deploys a project using one of the popular software development tools (_[Ant Task](https://cloudmydc.com/)_, _[Eclipse](https://cloudmydc.com/)_, _[Intellij IDEA](https://cloudmydc.com/)_, _[Maven](https://cloudmydc.com/)_ or _[NetBeans](https://cloudmydc.com/)_), which provides integration with platform
 
 <div style={{
     display:'flex',
@@ -94,7 +94,7 @@ Below, we’ve provided a detailed description for all the possible options with
 
 Click **Deploy** to initiate the process.
 
-In a few minutes your application will be successfully deployed. Now, you can access it with the **Open in Browser** button, analyzed via [Logs](https://cloudmydc.com/) or managed with [file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) / via [SSH access](https://cloudmydc.com/).
+In a few minutes your application will be successfully deployed. Now, you can access it with the **Open in Browser** button, analyzed via [Logs](https://cloudmydc.com/) or managed with [file manager](https://cloudmydc.com/) / via [SSH access](https://cloudmydc.com/).
 
 ## Editing Git / SVN Projects
 

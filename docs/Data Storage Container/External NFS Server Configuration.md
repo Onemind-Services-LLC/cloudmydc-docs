@@ -26,9 +26,9 @@ _both instances are inside of the same PaaS account_ - either [export data](http
 
 _one instance is outside of the platform_ - export data from external storage (described in this guide) <u>and</u> [mount external data](https://cloudmydc.com/) on the clients
 
-Below, we’ll consider the configurations required to export data from the platform [Shared Storage Container](/docs/Data%20Storage%20Container/Data%20Storage%20Overview) to the external instance. The described flow is suitable for any NFS-based storage server.
+Below, we’ll consider the configurations required to export data from the platform [Shared Storage Container](http://localhost:3000/docs/Data%20Storage%20Container/Data%20Storage%20Overview) to the external instance. The described flow is suitable for any NFS-based storage server.
 
-1. First of all, to share data over the Internet, it’s required to attach a [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address to your server:
+1. First of all, to share data over the Internet, it’s required to attach a [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address to your server:
 
 <div style={{
     display:'flex',
@@ -131,7 +131,7 @@ As a result, the export string would be similar to the following one:
 
 Don’t forget to **Save** the changes you’ve made.
 
-4. In order to apply new export settings, the corresponding **_exportfs_** command should be used (e.g. via [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)):
+4. In order to apply new export settings, the corresponding **_exportfs_** command should be used (e.g. via [Web SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)):
 
 ```bash
 exportfs -ra
@@ -180,7 +180,7 @@ iptables -I INPUT -p udp -m multiport --dports 111,2049,20048 -s {NFS_client} -j
 
 :::
 
-6. When granting the RW rights, ensure that the same users have equal access permissions to the shared folder on both NFS client and server. For example, different [stacks](/docs/QuickStart/Software%20Stack%20Versions) can use different users by default (e.g. root and jelastic).
+6. When granting the RW rights, ensure that the same users have equal access permissions to the shared folder on both NFS client and server. For example, different [stacks](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions) can use different users by default (e.g. root and jelastic).
 
 So, if needed, execute the following command on your storage server to adjust the rights:
 

@@ -6,9 +6,9 @@ sidebar_position: 3
 
 **SSL certificates** support gives a significant level of security for your domain names. With the platform, hosting of applications that need SSL becomes fairly easy.
 
-In addition to the [Built-In SSL](/docs/ApplicationSetting/SSL/Built-In%20SSL) and Let’s [Encrypt SSL](https://cloudmydc.com/), the platform provides the ability to upload and use **custom SSL certificates** for your environments. The platform supports the following certificate types:
+In addition to the [Built-In SSL](https://cloudmydc.com/) and Let’s [Encrypt SSL](https://cloudmydc.com/), the platform provides the ability to upload and use **custom SSL certificates** for your environments. The platform supports the following certificate types:
 
-- [self-signed](/docs/ApplicationSetting/SSL/Self-Signed%20Custom%20SSL)
+- [self-signed](http://localhost:3000/docs/ApplicationSetting/SSL/Self-Signed%20Custom%20SSL)
 - Wildcard
 - Multi-Domain
 - Extended validation single domain

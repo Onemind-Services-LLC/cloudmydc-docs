@@ -43,4 +43,4 @@ And within the instructions below, you can find out how to install the plugin, m
 
 - [Plugin Installation](https://cloudmydc.com/)
 - [Environment Management](https://cloudmydc.com/)
-- [application deployment](/docs/Deployment/Deployment%20Guide)
+- [Application Deployment](https://cloudmydc.com/)

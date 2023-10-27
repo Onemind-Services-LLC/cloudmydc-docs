@@ -13,7 +13,7 @@ Herewith, all the adjustable Maven server settings can be set and/or changed wit
 Herewith, all the adjustable Maven server settings can be set and/or changed with:
 
 - [configuration files](https://cloudmydc.com/)
-- [environment variables](/docs/Container/Container%20Configuration/Variables)
+- [environment variables](http://localhost:3000/docs/Container/Container%20Configuration/Variables)
 
 ## Maven Configuration Files
 

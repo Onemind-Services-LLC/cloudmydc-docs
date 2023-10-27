@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-_This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview) feature description_.
+_This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](https://cloudmydc.com/) feature description_.
 
 A customer who originally created an environment becomes its **Owner** and can share it with other **Users**, specifying corresponding access rights for each of them.
 
@@ -50,7 +50,7 @@ share environment a375d2047848941da72832ea4018c58csettings button
 
 </div>
 
-3. After clicking the **Save** button, this user will receive an email notification about environment sharing and can proceed to [managing](/docs/EnvironmentManagement/Share%20Environment%20Deprecated#manage-a-shared-environment) it.
+3. After clicking the **Save** button, this user will receive an email notification about environment sharing and can proceed to [managing](https://cloudmydc.com/) it.
 
 ## Environment Sharing with an Unregistered Account
 
@@ -110,7 +110,7 @@ Newly registered users will have **trial** status by default. As a result, the u
 
 Detailed info on your account limitations can be found at the **Balance > Quotas & Pricing > Account Limits** tab.
 
-Note: that these quotas can be customized by the hosting provider, e.g. such users can be provided with an “eternal” trial period and, in exchange, forbidden to create their own environments. Such environment sharing can be also performed via the **[account collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview)** setting (follow the link to get more details).
+Note: that these quotas can be customized by the hosting provider, e.g. such users can be provided with an “eternal” trial period and, in exchange, forbidden to create their own environments. Such environment sharing can be also performed via the **[account collaboration](https://cloudmydc.com/)** setting (follow the link to get more details).
 
 ## Manage a Shared Environment
 

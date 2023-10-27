@@ -69,11 +69,11 @@ _[https://raw.githubusercontent.com/hasura/graphql-engine/master/install-manifes
 
 :::danger Note
 
-The installation requires a [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP), which is a paid option available for billing users only.
+The installation requires a [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP), which is a paid option available for billing users only.
 
 :::
 
-Configure the remaining Environment, [Display Name](https://cloudmydc.com/), [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) (if available) fields up to your needs, and click **Install**.
+Configure the remaining Environment, [Display Name](https://cloudmydc.com/), [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) (if available) fields up to your needs, and click **Install**.
 
 4. After a successful installation, you can access the Hasura console to ensure that everything works properly.
 
@@ -95,7 +95,7 @@ That’s it! Now, you can provide **Data** for your database via the same-named 
 
 In case you already have a database, you can connect to it with the Hasura GraphQL engine.
 
-1. Create a clean standalone **_Docker Engine CE_** via [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace).
+1. Create a clean standalone **_Docker Engine CE_** via [platform Marketplace](https://cloudmydc.com/).
 
 <div style={{
     display:'flex',
@@ -107,7 +107,7 @@ In case you already have a database, you can connect to it with the Hasura Graph
 
 </div>
 
-2. After creation connect to the container via [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH) and create a file with the following content (e.g. **_nano docker-run.sh_**):
+2. After creation connect to the container via [Web SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH) and create a file with the following content (e.g. **_nano docker-run.sh_**):
 
 ```bash
 docker run -d --restart=always -p 80:8080 \

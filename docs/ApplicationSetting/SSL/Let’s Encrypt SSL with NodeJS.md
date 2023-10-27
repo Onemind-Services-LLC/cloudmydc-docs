@@ -10,7 +10,7 @@ The platform automates SSL certificate binding for most software stacks when wor
 
 As an alternative, you can place a [load balancer](https://cloudmydc.com/) node in front of your Node.js server to act as a reverse proxy. The _Let’s Encrypt_ SSL add-on can be installed on such a balancer, benefiting from out-of-box automation.
 
-Such an approach is preferable for larger projects that want to utilize the [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) feature as it will require a load balancer node anyway.
+Such an approach is preferable for larger projects that want to utilize the [horizontal scaling](https://cloudmydc.com/) feature as it will require a load balancer node anyway.
 
 :::
 
@@ -120,7 +120,7 @@ var path = url.parse(req.url).pathname;
 console.log("The HTTPS server has started at: " + serverUrl);
 ```
 
-4. Run your application via [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH). In our example, we use the **_forever_** [process manager](https://cloudmydc.com/) (sudo is needed to listen on the privileged port 443).
+4. Run your application via [Web SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH). In our example, we use the **_forever_** [process manager](https://cloudmydc.com/) (sudo is needed to listen on the privileged port 443).
 
 ```bash
 cd /home/jelastic/ROOT

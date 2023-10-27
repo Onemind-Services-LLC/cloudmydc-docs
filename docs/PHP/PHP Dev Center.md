@@ -24,7 +24,7 @@ Use the table of content below to find required information within the guide qui
 - [PHP Application Servers](https://cloudmydc.com/)
 - [PHP Application Deployment](https://cloudmydc.com/)
 - [Domains Management](https://cloudmydc.com/)
-- [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling)
+- [Automatic Vertical Scaling](https://cloudmydc.com/)
 - [Manual Horizontal Scaling](https://cloudmydc.com/)
 - [Automatic Horizontal Scaling](https://cloudmydc.com/)
 - [PHP Clustering](https://cloudmydc.com/)
@@ -117,7 +117,7 @@ Using [multiple domains](https://cloudmydc.com/) on a single PHP server increase
 
 Automatic vertical scaling is made possible by the platform ability to dynamically change the number of allocated resources (RAM and CPU) for a server according to its current demands, with no manual intervention required. This feature guarantees you [never overpay for unused resources](https://cloudmydc.com/) and saves your time due to eliminating the necessity of handling the load-related adjustments or architectural changes.
 
-In order to set up automatic resource consumption by your PHP server, open the environment topology wizard and specify the upper scaling limit of [cloudlets](/docs/PlatformOverview/Cloudlet) (each equals to 128 MiB and 400 MHz) with the slider located at the top:
+In order to set up automatic resource consumption by your PHP server, open the environment topology wizard and specify the upper scaling limit of [cloudlets](https://cloudmydc.com/) (each equals to 128 MiB and 400 MHz) with the slider located at the top:
 
 <div style={{
     display:'flex',
@@ -129,7 +129,7 @@ In order to set up automatic resource consumption by your PHP server, open the e
 
 </div>
 
-Your application will work within these limits reducing resource consumption when the load is down or increasing them when the load is up. Thus, you only pay for the resources that are actually consumed. For more information, please refer to the documentation about [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling).
+Your application will work within these limits reducing resource consumption when the load is down or increasing them when the load is up. Thus, you only pay for the resources that are actually consumed. For more information, please refer to the documentation about [automatic vertical scaling](https://cloudmydc.com/).
 
 ## Manual Horizontal Scaling
 
@@ -149,7 +149,7 @@ The maximum number of the same-type servers within a single environment layer de
 
 Also, as you can see, when you add extra servers, [[load balancing]](https://cloudmydc.com/) is enabled automatically.
 
-Please, find more details about manual [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) in the documentation.
+Please, find more details about manual [horizontal scaling](https://cloudmydc.com/) in the documentation.
 
 ## Automatic Horizontal Scaling
 

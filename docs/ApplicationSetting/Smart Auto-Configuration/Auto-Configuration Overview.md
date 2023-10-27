@@ -50,7 +50,7 @@ Smart OOM recovery works on containers with the **_JELASTIC_AUTOCONFIG_** enable
 
 If [OOM killer](https://cloudmydc.com/) actions make a container inoperable (due to some critical process being killed), we automatically restart this node and, due to smart recovery, decrease the **_innodb_buffer_pool_size_** parameter value. In case the situation occurs again, the mentioned reduction cycle is repeated.
 
-You may customize the [environment variables](/docs/Container/Container%20Configuration/Variables) to adjust system behavior related to the OOM kills issue:
+You may customize the [environment variables](http://localhost:3000/docs/Container/Container%20Configuration/Variables) to adjust system behavior related to the OOM kills issue:
 
 - **_OOM_DETECTION_DELTA_** - sets a period (two seconds by default) for the platform to analyze the **_/var/log/messages_** log after each service restart to decide if it was caused by OOM killer
 - **_OOM_ADJUSTMENT_** - defines a value in %, MB, GB (10% by default) that the current innodb_buffer_pool_size parameter should be reduced after each OOM-caused restart

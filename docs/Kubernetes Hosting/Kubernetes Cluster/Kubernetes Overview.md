@@ -17,7 +17,7 @@ Installation of a Kubernetes Cluster, as well as network and storage configurati
 - **_[K9s](https://cloudmydc.com/)_**, **_[kubectx](https://cloudmydc.com/)_**, **_[popeye](https://cloudmydc.com/)_**, and **_[stern](https://cloudmydc.com/)_** command-line utilities to efficiently manage your cluster
 - **_[Metrics server](https://cloudmydc.com/)_**, **_[Prometheus](https://cloudmydc.com/)_**, and **_[Grafana](https://cloudmydc.com/)_** for monitoring your cluster and applications health (optional)
 - **_[Jaeger](https://cloudmydc.com/)_** for monitoring and troubleshooting of the microservice-based distributed systems (optional, available since 1.15.5)
-  Besides K8s specific features, traditional platform features are available too, e.g. [vertical](https://cloudmydc.com/) and [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling).
+  Besides K8s specific features, traditional platform features are available too, e.g. [vertical](https://cloudmydc.com/) and [horizontal scaling](https://cloudmydc.com/).
 
 :::tip Tip
 

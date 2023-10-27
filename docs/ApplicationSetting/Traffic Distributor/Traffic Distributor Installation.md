@@ -98,7 +98,7 @@ Here, you need to add the required internal containers' port number to the appro
 :::
 
 - **_Environment_** - domain name for your environment (e.g. _traffic-distributor_)
-- **_Display Name_** - optionally, an [alias](/docs/EnvironmentManagement/Environment%20Aliases) to be shown for the environment (_Traffic Distributor_ by default)
+- **_Display Name_** - optionally, an [alias](https://cloudmydc.com/) to be shown for the environment (_Traffic Distributor_ by default)
 - **_Region_** - a drop-down list of the available [environment regions](https://cloudmydc.com/)
 
 When all of the required data is specified, click the **Install** button. The platform will do everything else automatically.
@@ -124,11 +124,11 @@ As Traffic Distributor loading depends only on the number of incoming requests, 
 Using the links at the end of the frame, you can learn how to:
 
 - apply [Blue-Green Deploy](https://cloudmydc.com/)
-- adopt [failover protection](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/Failover%20Protection)
-- perform [A/B testing](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/A-B%20Testing)
+- adopt [Failover Protection](https://cloudmydc.com/)
+- perform [A/B Testing](https://cloudmydc.com/)
 - [Inject Distributor](https://cloudmydc.com/) into running project
 - bind [Custom Domain](https://cloudmydc.com/)
-- enable [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL)
+- enable [Custom SSL](http://localhost:3000/docs/ApplicationSetting/SSL/Custom%20SSL)
 
 ## Traffic Distributor Reconfiguration
 

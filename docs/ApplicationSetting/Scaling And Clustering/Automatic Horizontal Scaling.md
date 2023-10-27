@@ -4,7 +4,7 @@ sidebar_position: 3
 
 ## Automatic Horizontal Scaling
 
-In addition to the inbuilt [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling), the platform can automatically scale nodes horizontally, changing the number of containers within a [layer](https://cloudmydc.com/) ([nodeGroup](https://cloudmydc.com/)) based on incoming load. Herewith, all instances within the same layer are evenly distributed across the available hardware sets (hosts) using the anti-affinity rules. Namely, when a new container is created, it is placed at the host with the least number of instances from the same layer and the lowest load mark, which ensures [reliability and high-availability](https://cloudmydc.com/) of the hosted projects.
+In addition to the inbuilt [automatic vertical scaling](https://cloudmydc.com/), the platform can automatically scale nodes horizontally, changing the number of containers within a [layer](https://cloudmydc.com/) ([nodeGroup](https://cloudmydc.com/)) based on incoming load. Herewith, all instances within the same layer are evenly distributed across the available hardware sets (hosts) using the anti-affinity rules. Namely, when a new container is created, it is placed at the host with the least number of instances from the same layer and the lowest load mark, which ensures [reliability and high-availability](https://cloudmydc.com/) of the hosted projects.
 
 <div style={{
     display:'flex',
@@ -83,7 +83,7 @@ Click **Add** to proceed.
 :::tip
 
 - the initial (master) node can be used as a [storage server](https://cloudmydc.com/) for sharing data within the whole layer, including nodes added through automatic horizontal scaling
-- the _CPU_ and _Memory_ limits are calculated based on the amount of the allocated [cloudlets](/docs/PlatformOverview/Cloudlet) (a special platform resource unit, which represents 400 MHz CPU and 128 MiB RAM simultaneously)
+- the _CPU_ and _Memory_ limits are calculated based on the amount of the allocated [cloudlets](https://cloudmydc.com/) (a special platform resource unit, which represents 400 MHz CPU and 128 MiB RAM simultaneously)
 
 :::
 
@@ -131,7 +131,7 @@ Both of them are configured similarly:
 - **Scale out (in) to** - the maximum (minimum) number of _nodes_ for the layer, that can be configured due to automatic horizontal scaling
 - **Scale by** - the _count_ of nodes that are to be added/removed at a time upon trigger’s execution
 
-When configuring a trigger, we recommend taking into consideration the [scaling mode](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) of the layer. For example, you should set lower loading percent in the **_Add Nodes_** trigger for the _stateful_ mode, as content cloning requires some time (especially for containers with a lot of data) and you can reach resources limit before a new node is created.
+When configuring a trigger, we recommend taking into consideration the [scaling mode](https://cloudmydc.com/) of the layer. For example, you should set lower loading percent in the **_Add Nodes_** trigger for the _stateful_ mode, as content cloning requires some time (especially for containers with a lot of data) and you can reach resources limit before a new node is created.
 
 6. You automatically receive an email notification on the configured auto horizontal scaling trigger activity by default; however, if needed, you can disable it with the appropriate **Send Email Notifications** switcher.
 

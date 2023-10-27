@@ -30,7 +30,7 @@ Currently, automatic conversion of the existing standalone storage into the Glus
 
 </div>
 
-3. Connect to your initial (source) Storage node via [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview), e.g. using the built-in **Web SSH** client. Run the following command to [generate](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) a keypair that will be used to interconnect two storages:
+3. Connect to your initial (source) Storage node via [SSH](https://cloudmydc.com/), e.g. using the built-in **Web SSH** client. Run the following command to [generate](http://localhost:3000/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) a keypair that will be used to interconnect two storages:
 
 ```bash
 ssh-keygen -f ~/.ssh/storage
@@ -64,7 +64,7 @@ cat  ~/.ssh/storage.pub
 
 Use the **Ctrl+Shift+С** or **Сmd+C** shortcut in the Web SSH panel to copy the key.
 
-4. Switch to your new Shared Storage node and connect to it via [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview) as well. Insert public key from the previous step to the **_~/.ssh/authorized_keys_** file using any preferred editor, for example:
+4. Switch to your new Shared Storage node and connect to it via [SSH](https://cloudmydc.com/) as well. Insert public key from the previous step to the **_~/.ssh/authorized_keys_** file using any preferred editor, for example:
 
 ```bash
 vim ~/.ssh/authorized_keys

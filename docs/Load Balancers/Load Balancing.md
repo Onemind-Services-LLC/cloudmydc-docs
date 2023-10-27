@@ -18,7 +18,7 @@ Load balancing is a process of traffic navigation and workload distribution acro
 
 :::danger Note
 
-The platform provides load balancing on application (this document) and infrastructure layers (described in the **_[Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer)_** document). The former handles requests inside environments and the latter - from outside the platform to environments (except the direct connections via _[public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)_).
+The platform provides load balancing on application (this document) and infrastructure layers (described in the **_[Shared Load Balancer](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer)_** document). The former handles requests inside environments and the latter - from outside the platform to environments (except the direct connections via _[public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)_).
 
 :::
 
@@ -47,4 +47,4 @@ probe = { .url = "/"; .timeout = 30s; .interval = 60s; .window = 5; .threshold =
 
 - **LiteSpeed ADC** - a TCP check is done by the internal IP every second with a one-second timeout (health check is implemented as a default functionality on the Worker Group level)
 
-Obviously, the default health check settings can be manually adjusted up to your needs (through either [file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) GUI or via [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview)). Use the official documentation as a reference - _[NGINX](https://cloudmydc.com/)_, _[HAProxy](https://cloudmydc.com/)_, _[Apache Balancer](https://cloudmydc.com/)_, _[Varnish](https://cloudmydc.com/)_, and _[LiteSpeed](https://cloudmydc.com/)_.
+Obviously, the default health check settings can be manually adjusted up to your needs (through either [file manager](https://cloudmydc.com/) GUI or via [SSH](https://cloudmydc.com/)). Use the official documentation as a reference - _[NGINX](https://cloudmydc.com/)_, _[HAProxy](https://cloudmydc.com/)_, _[Apache Balancer](https://cloudmydc.com/)_, _[Varnish](https://cloudmydc.com/)_, and _[LiteSpeed](https://cloudmydc.com/)_.

@@ -44,7 +44,7 @@ You can choose the required one during [environment creation](https://cloudmydc.
 
 </div>
 
-Configure any other desired customization (e.g. cloudlets limit, [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP), [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), etc.) and click **Create**.
+Configure any other desired customization (e.g. cloudlets limit, [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP), [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), etc.) and click **Create**.
 
 ## Change Ruby Version
 
@@ -79,7 +79,7 @@ For the already existing environments, you can change the Ruby version by [redep
 2. In the opened window, adjust the following settings:
 
 - **_Tag_** - allows choosing the needed Ruby version
-- **_Keep volumes data_** - saves data in [Volumes](/docs/Container/Container%20Configuration/Volumes)
+- **_Keep volumes data_** - saves data in [Volumes](http://localhost:3000/docs/Container/Container%20Configuration/Volumes)
 - **_Simultaneous_** or **_Sequential deployment with delay_** (for [scaled servers](https://cloudmydc.com/) only) - defines whether all containers within a layer should be redeployed at once or one-by-one, to avoid downtime
 
 <div style={{

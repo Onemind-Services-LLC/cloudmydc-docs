@@ -7,7 +7,7 @@ sidebar_position: 1
 Jelastic PaaS provides automatic clusterization for the **MongoDB** stack, which allows you to create a reliable [replica set](https://cloudmydc.com/) for your database with a single click. The implemented solution provides a set of benefits:
 
 - **redundancy and data high availability** - multiple copies of data on different database servers offer a high level of fault tolerance against the data loss
-- **scalability and autodiscovery** – new nodes, added during [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling), are connected to the cluster with all required adjustments being applied automatically
+- **scalability and autodiscovery** – new nodes, added during [horizontal scaling](https://cloudmydc.com/), are connected to the cluster with all required adjustments being applied automatically
 - **automated failover** – the database nodes that are temporarily unavailable or have high latency are automatically excluded from the cluster and re-added once the connection is restored
 
 <div style={{
@@ -50,7 +50,7 @@ Another important point is security and protection from undesired access. Herewi
 
 MongoDB utilizes the **_[WiredTiger](https://cloudmydc.com/)_** storage engine by default. It ensures a high performance (due to non-locking algorithms) and effective cost/resource utilization. The default options for WiredTiger are optimized to run a single mongod instance per server, which is also suitable for Jelastic PaaS containers. MongoDB utilizes both the WiredTiger internal cache and the filesystem cache. The internal cache size is 50% of total RAM minus 1 GB (but no less than 256 MB), while filesystem cache operates free memory that is not used by WiredTiger or other processes. For more information on WiredTiger configs, refer to the official MongoDB documentation.
 
-One more unique feature of the MongoDB auto-cluster is the automated detection of new nodes added through the [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) and their inclusion into the replica set without any manual actions. Similarly, nodes are excluded from the cluster while scaling in.
+One more unique feature of the MongoDB auto-cluster is the automated detection of new nodes added through the [horizontal scaling](https://cloudmydc.com/) and their inclusion into the replica set without any manual actions. Similarly, nodes are excluded from the cluster while scaling in.
 
 ## Enable Automatic Clustering for Databases
 
@@ -89,7 +89,7 @@ Some of the topology specifics of the MongoDB cluster are listed below:
 
 :::
 
-Configure other parameters up to your needs ([public IPs](https://cloudmydc.com/), [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), etc.) and click **Create**.
+Configure other parameters up to your needs ([public IPs](https://cloudmydc.com/), [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), etc.) and click **Create**.
 
 2. Wait a minute for the platform to configure the cluster for you.
 
@@ -160,7 +160,7 @@ If you need to read from the secondaries you have to customize your application 
 
 </div>
 
-5. Also, you can connect to your database via the mongo shell directly in your terminal (for example, using the built-in **[Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)** option).
+5. Also, you can connect to your database via the mongo shell directly in your terminal (for example, using the built-in **[Web SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)** option).
 
 \*mongo -u **{user}** -p **{password} {DB_name}\***
 

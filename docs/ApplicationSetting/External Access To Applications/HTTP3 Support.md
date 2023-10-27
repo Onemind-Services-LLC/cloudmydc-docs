@@ -81,7 +81,7 @@ Just [create an environment](https://cloudmydc.com/) topology that includes any 
 
 </div>
 
-Herewith, you’ll need to additionally attach a [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address to bypass the Shared Load Balancer and allow working directly with the server over HTTP/3.
+Herewith, you’ll need to additionally attach a [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address to bypass the Shared Load Balancer and allow working directly with the server over HTTP/3.
 
 :::danger note
 

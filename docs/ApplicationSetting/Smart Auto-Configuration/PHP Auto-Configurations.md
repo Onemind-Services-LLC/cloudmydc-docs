@@ -45,7 +45,7 @@ Here is a complete list of parameters, which the platform configures for the [**
 
 </div>
 
-Based on the allocated resources (i.e. a number of dynamic [cloudlets](/docs/PlatformOverview/Cloudlet) reserved for the Apache PHP server) and capacity of the CPU provided by your particular hosting provider, the platform automatically adjusts the **_ServerLimit_** and **_MaxRequestWorkers_** parameters:
+Based on the allocated resources (i.e. a number of dynamic [cloudlets](https://cloudmydc.com/) reserved for the Apache PHP server) and capacity of the CPU provided by your particular hosting provider, the platform automatically adjusts the **_ServerLimit_** and **_MaxRequestWorkers_** parameters:
 
 **_MaxRequestWorkers_** = **_ServerLimit_** = min( **_{containerRam}_** / 30MiB, **_{coresCount}_** \* 5 )
 

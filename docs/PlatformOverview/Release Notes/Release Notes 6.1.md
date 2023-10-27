@@ -333,7 +333,7 @@ Fixed
 
 ## Topology Wizard Improvements
 
-A major overhaul of the topology builder for the environment wizard was performed in the current 6.1 PaaS release. The main change is the implementation of the ability to search for the required [software stack](/docs/QuickStart/Software%20Stack%20Versions) and add it to any layer. The standard approach recommends the following topology structure from top to bottom:
+A major overhaul of the topology builder for the environment wizard was performed in the current 6.1 PaaS release. The main change is the implementation of the ability to search for the required [software stack](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions) and add it to any layer. The standard approach recommends the following topology structure from top to bottom:
 
 - **load balancers** (_green blocks_)
 - **application servers** (_blue_)
@@ -360,7 +360,7 @@ Other adjustments of the topology wizard include:
 
 - renamed the **Docker** tab to **Custom** (since different [container types](https://cloudmydc.com/) are available - Kubernetes, Docker Native, etc.), adjusted the corresponding icon and descriptions of the available options
 - added the default **Storage** block to the **_.NET_** tab
-- implemented **_tags search_** when working with custom containers based on the Docker images in topology wizard and during [container redeploy](/docs/Container/Container%20Redeploy)
+- implemented **_tags search_** when working with custom containers based on the Docker images in topology wizard and during [container redeploy](https://cloudmydc.com/)
 
 [More info](https://cloudmydc.com/)
 
@@ -413,11 +413,11 @@ You can learn more about the [architecture implementation](https://cloudmydc.com
 
 ## Custom Domains Tab Improvements
 
-The platform provides a [Domain Binding](https://cloudmydc.com/) option that allows configuring custom domains for environments that are accessed via [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) (i.e. without public IP). The process is simple - you just need to create the appropriate CNAME or ANAME record for your domain and bind it to the environment via the platform dashboard.
+The platform provides a [Domain Binding](https://cloudmydc.com/) option that allows configuring custom domains for environments that are accessed via [Shared Load Balancer](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) (i.e. without public IP). The process is simple - you just need to create the appropriate CNAME or ANAME record for your domain and bind it to the environment via the platform dashboard.
 
 :::danger Note
 
-For environments that are accessed through the [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) (recommended for production), you don’t need to bind domains via the dashboard. Just configure **[A Record](https://cloudmydc.com/)** in your DNS panel to map a custom domain directly to the required IP address.
+For environments that are accessed through the [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) (recommended for production), you don’t need to bind domains via the dashboard. Just configure **[A Record](https://cloudmydc.com/)** in your DNS panel to map a custom domain directly to the required IP address.
 
 :::
 
@@ -433,7 +433,7 @@ In order to clarify the process to users, the appropriate specifics and detailed
 
 </div>
 
-Additionally, the **[swap domains](/docs/ApplicationSetting/Domain%20Name%20Management/Swap%20Domains)** section was provided with a list of bound domains. As a result, you can view the list of the current and target environment domains (in the Domain Binding and Swap Domains subsections, respectively).
+Additionally, the **[Swap Domains](https://cloudmydc.com/)** section was provided with a list of bound domains. As a result, you can view the list of the current and target environment domains (in the Domain Binding and Swap Domains subsections, respectively).
 
 [More info](https://cloudmydc.com/)
 

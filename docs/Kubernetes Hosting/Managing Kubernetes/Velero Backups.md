@@ -73,7 +73,7 @@ In our example, we’ll upload the velero binary to the Kubernetes Cluster serve
 
 :::
 
-4. Connect to your Kubernetes Cluster control plane via SSH (e.g. [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)). Download the archive using the link from the previous step and extract the **_velero_** binary to the **_/usr/local/sbin_** directory.
+4. Connect to your Kubernetes Cluster control plane via SSH (e.g. [Web SSH](http://localhost:3000/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)). Download the archive using the link from the previous step and extract the **_velero_** binary to the **_/usr/local/sbin_** directory.
 
 ```bash
 wget https://github.com/vmware-tanzu/velero/releases/download/v1.8.1/velero-v1.8.1-linux-amd64.tar.gz

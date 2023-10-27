@@ -78,7 +78,7 @@ Manually provided nodePort value should be from the allowed range (30000-32767) 
 
 :::
 
-In case [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) is attached to the Kubernetes worker nodes, no additional actions are required.
+In case [public IP](http://localhost:3000/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) is attached to the Kubernetes worker nodes, no additional actions are required.
 
 Otherwise, the obtained port should be exposed from the platform side. Navigate to the Kubernetes environment **Settings > Endpoints** and click **Add**. In the opened frame, provide the following data:
 

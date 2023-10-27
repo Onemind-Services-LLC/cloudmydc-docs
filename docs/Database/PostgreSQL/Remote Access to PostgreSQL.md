@@ -105,7 +105,7 @@ If necessary do the same for the Slave node of the database cluster.
 
 ## Remote Connection to PostgreSQL
 
-Let’s create a new connection to the database using any desktop or web client. Here we use the **pgAdmin4** which is the most popular and feature-rich Open Source administration and development platform for PostgreSQL. You can get client software that meets your platform. See the download page to get the proper link ([https://www.pgadmin.org/download/](https://cloudmydc.com/)) or you may get familiar with this application in the platform by deploying it via [import](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import) of corresponding pgAdmin4 [manifest](https://cloudmydc.com/).
+Let’s create a new connection to the database using any desktop or web client. Here we use the **pgAdmin4** which is the most popular and feature-rich Open Source administration and development platform for PostgreSQL. You can get client software that meets your platform. See the download page to get the proper link ([https://www.pgadmin.org/download/](https://cloudmydc.com/)) or you may get familiar with this application in the platform by deploying it via [import](https://cloudmydc.com/) of corresponding pgAdmin4 [manifest](https://cloudmydc.com/).
 
 <div style={{
     display:'flex',

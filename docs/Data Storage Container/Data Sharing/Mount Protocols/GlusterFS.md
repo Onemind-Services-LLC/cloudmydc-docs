@@ -21,7 +21,7 @@ Gluster Native is recommended for topologies where data safety must be ensured t
 
 :::danger Note
 
-Do not confuse **_GlusterFS volumes_** with Docker **_[container volumes](/docs/Container/Container%20Configuration/Volumes)_** available on the platform.
+Do not confuse **_GlusterFS volumes_** with Docker **_[container volumes](http://localhost:3000/docs/Container/Container%20Configuration/Volumes)_** available on the platform.
 
 :::
 

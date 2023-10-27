@@ -8,7 +8,7 @@ sidebar_position: 13
 
 The platform provides a versatile pricing model, that can be adjusted to meet the requirements of the most demanding customers due to the number of awesome features:
 
-- The resources are provisioned with granular units - [cloudlets](/docs/PlatformOverview/Cloudlet) (128MiB of RAM and 400MHz of CPU). This allows to allocate exactly the needed amount of resources.
+- The resources are provisioned with granular units - [cloudlets](https://cloudmydc.com/) (128MiB of RAM and 400MHz of CPU). This allows to allocate exactly the needed amount of resources.
 - Fully automatic _[vertical](https://cloudmydc.com/)_ and _[horizontal](https://cloudmydc.com/)_ scaling assure that you’ll be provided only with the required capacities without overpaying for unused resources.
 - The system of _[automatic discounts](https://cloudmydc.com/)_ makes the platform usage even more beneficial when the volume of ordered resources grows.
 

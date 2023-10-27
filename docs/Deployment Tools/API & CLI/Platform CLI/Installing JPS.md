@@ -16,8 +16,8 @@ Here, the parameters in square brackets **_[ ]_** are optional:
 
 - **_jps_** - link to your [manifest file](https://cloudmydc.com/) or its body
 - specific settings for <u>jpsType: install</u> manifests (new environments):
-  - **_[displayName]_** - [alias](/docs/EnvironmentManagement/Environment%20Aliases) for the created environment
-  - **_[region]_** - unique name of a [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) (e.g. get it with the _GetRegions_ method), where an environment should be created
+  - **_[displayName]_** - [alias](https://cloudmydc.com/) for the created environment
+  - **_[region]_** - unique name of a [region](http://localhost:3000/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) (e.g. get it with the _GetRegions_ method), where an environment should be created
   - **_[envGroups]_** - list of [env groups](https://cloudmydc.com/) the created environment should be included to (specified as JSON array, e.g. [*“mygroup”, “group/subgroup”*])
 - specific settings for <u>jpsType: update</u> manifests (add-ons for existing environments):
   - **_[nodeGroup]_** - an environment layer the add-on should be applied to (_bl, cp, cache, sqldb, nosqldb, storage, vps, build_ or your custom one for [Docker containers](https://cloudmydc.com/))
