@@ -23,10 +23,10 @@ sidebar_position: 1
 
 :::tip Tip
 
-The same operation can be initiated <u>from the server</u>. It is called **[Exporting Data](https://cloudmydc.com/)** - learn more in the linked document.
+The same operation can be initiated <u>from the server</u>. It is called **[Exporting Data]( /docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing)** - learn more in the linked document.
 
 :::
-When creating a mount point, the platform supports two client protocols - **[NFS](https://cloudmydc.com/)** and **[GlusterFS Native](https://cloudmydc.com/)**. The first one is available for all containers on the platform and is relatively faster. In contrast, the second one is a unique feature of the [GlusterFS cluster](https://cloudmydc.com/), which is recommended for high concurrency, high performance of the write operations, and failover.
+When creating a mount point, the platform supports two client protocols - **[NFS]( /docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Protocols/NFS)** and **[GlusterFS Native]( /docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Protocols/GlusterFS)**. The first one is available for all containers on the platform and is relatively faster. In contrast, the second one is a unique feature of the [GlusterFS cluster]( /docs/Data%20Storage%20Container/Shared%20Storage%20Container#shared-storage-auto-cluster), which is recommended for high concurrency, high performance of the write operations, and failover.
 
 1. So, in order to mount data to a container, click the **Config** button next to the chosen container or layer. In the opened tab, switch to the **_Mount Points_** section within the menu to your left and click the **Mount** button.
 
@@ -72,7 +72,7 @@ When creating a mount point, the platform supports two client protocols - **[NFS
 
 :::tip Note
 
-If GlusterFS cluster is selected as a **Server**, you can also choose the preferred **Client Type** protocol for the mount. _[NFS](https://cloudmydc.com/)_ is recommended for the performance-oriented topologies, while _[Gluster Native](https://cloudmydc.com/)_ ensures data safety through backups and replication.
+If GlusterFS cluster is selected as a **Server**, you can also choose the preferred **Client Type** protocol for the mount. _[NFS]( /docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Protocols/NFS)_ is recommended for the performance-oriented topologies, while _[Gluster Native]( /docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Protocols/GlusterFS)_ ensures data safety through backups and replication.
 
 :::
 
@@ -83,7 +83,7 @@ If GlusterFS cluster is selected as a **Server**, you can also choose the prefer
 
 - **_External Server_**
 
-  - **NFS Server** - external IP of the data storage server or its [custom domain](https://cloudmydc.com/) name
+  - **NFS Server** - external IP of the data storage server or its [custom domain]( /docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) name
   - **Remote Path** - exported files location on NFS server
 
 - **Mount to all nodes** - switcher to set the same mounts to be added for all nodes within a layer, including those that could be added in the future (automatically enabled for the **Master Container** type)
@@ -151,4 +151,4 @@ Here:
 </div>
 :::
 
-The platform mount points provide a great number of [scenarios and possibilities](https://cloudmydc.com/) for advanced data structuration and control.
+The platform mount points provide a great number of [scenarios and possibilities]( /docs/Data%20Storage%20Container/Data%20Storage%20Overview) for advanced data structuration and control.
