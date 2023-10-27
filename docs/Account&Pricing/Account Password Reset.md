@@ -4,7 +4,7 @@ sidebar_position: 5
 
 The platform makes sure that account passwords are regularly updated through the automatic deprecation mechanism. By default, passwords expire after 180 days (with several heads-up notifications) and need to be renewed to restore access to the account.
 
-If you still retain access to your account, follow the [change password](https://cloudmydc.com/) flow. If you’ve forgotten your current password or it has already expired, the platform provides a reliable and secure flow to [reset your password](https://cloudmydc.com/).
+If you still retain access to your account, follow the [change password](/docs/Account&Pricing/Account%20Password%20Reset#change-password) flow. If you’ve forgotten your current password or it has already expired, the platform provides a reliable and secure flow to [reset your password](/docs/Account&Pricing/Account%20Password%20Reset#reset-password).
 
 ## Password Requirements
 
@@ -30,7 +30,7 @@ The exact requirements for each platform are defined by the appropriate service 
 
 :::
 
-Also, we recommend configuring **[Two-Factor Authentication](https://cloudmydc.com/)** for an additional layer of protection to drastically increase the account’s security.
+Also, we recommend configuring **[Two-Factor Authentication](/docs/Account&Pricing/Two-Factor%20Authentication)** for an additional layer of protection to drastically increase the account’s security.
 
 ## Change Password
 

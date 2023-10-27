@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-Once the [collaboration is established](https://cloudmydc.com/), its members can start working with shared environments. In this guide, we’ll go through all the peculiarities of the process.
+Once the [collaboration is established](/docs/Account&Pricing/Accounts%20Collaboration/Create%20Collaboration), its members can start working with shared environments. In this guide, we’ll go through all the peculiarities of the process.
 
 1. The shared environments can be easily distinguished from the regular ones via the dedicated icon and owner tag.
 
@@ -28,7 +28,7 @@ Once the [collaboration is established](https://cloudmydc.com/), its members can
 
 </div>
 
-3. At the **[Env Groups](https://cloudmydc.com/)** **> Shared with Me** tab, you can see the complete list of shared environments and groups.
+3. At the **[Env Groups](/docs/EnvironmentManagement/Environment%20Groups/Overview)** **> Shared with Me** tab, you can see the complete list of shared environments and groups.
 
 <div style={{
     display:'flex',
@@ -70,7 +70,7 @@ Also, the whole groups' tree can be seen when managing environment groups.
 
 </div>
 
-You can check the [role and list of allowed policies](https://cloudmydc.com/) for shared resources at the account **Settings > Shared with Me** section.
+You can check the [role and list of allowed policies](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Roles%20Policies) for shared resources at the account **Settings > Shared with Me** section.
 
 <div style={{
     display:'flex',
@@ -128,7 +128,7 @@ Here, you can select an account and group to create your environment.
 
 :::tip Tip
 
-If you have permission to install packages from the [Marketplace](https://cloudmydc.com/), the **_Owner_** field will be added to the installation window.
+If you have permission to install packages from the [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace), the **_Owner_** field will be added to the installation window.
 
 <div style={{
     display:'flex',
@@ -142,7 +142,7 @@ If you have permission to install packages from the [Marketplace](https://cloudm
 
 :::
 
-The limitations of the selected owner are automatically applied to the topology wizard or installation window (for [imported](https://cloudmydc.com/) and Marketplace packages).
+The limitations of the selected owner are automatically applied to the topology wizard or installation window (for [imported](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import) and Marketplace packages).
 
 <div style={{
     display:'flex',

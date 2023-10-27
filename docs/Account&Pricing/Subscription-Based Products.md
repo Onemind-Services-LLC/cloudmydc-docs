@@ -4,11 +4,11 @@ sidebar_position: 7
 
 _This feature availability depends on the particular hosting provider’s settings._
 
-The platform can offer some products based on the subscription model. The flow is standard to the modern subscription services implementations – a client is charged once and gets a designated product for a specified period. The solution gives you a fix-priced alternative to the default [usage-based model](https://cloudmydc.com/). Let’s see how it works.
+The platform can offer some products based on the subscription model. The flow is standard to the modern subscription services implementations – a client is charged once and gets a designated product for a specified period. The solution gives you a fix-priced alternative to the default [usage-based model](/docs/Account&Pricing/Pricing%20Model%20Overview). Let’s see how it works.
 
 ## Purchasing Subscription
 
-1. All products that are available for the user are displayed in the dedicated **_Subscription Plans_** tab of the [Marketplace](https://cloudmydc.com/).
+1. All products that are available for the user are displayed in the dedicated **_Subscription Plans_** tab of the [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace).
 
 <div style={{
     display:'flex',
@@ -54,7 +54,7 @@ Choose the required plan and click **Buy**.
 
 :::danger Note
 
-Although subscription environments are bought separately, they will still be stopped in case of [account deactivation](https://cloudmydc.com/).
+Although subscription environments are bought separately, they will still be stopped in case of [account deactivation](/docs/Account&Pricing/Account%20Statuses).
 
 :::
 
@@ -62,7 +62,7 @@ At the bottom of the frame, you can see the total sum of the configured subscrip
 
 4. An invoice will be generated immediately after clicking the **Subscribe & Pay** button.
 
-After that, your subscription will be added to the dedicated account section, where you can [manage all your subscriptions](https://cloudmydc.com/).
+After that, your subscription will be added to the dedicated account section, where you can [manage all your subscriptions](/docs/Account&Pricing/Subscription-Based%20Products#managing-subscriptions).
 
 :::tip Tip
 
@@ -124,7 +124,7 @@ The subscription table provides the following information:
 
 The buttons on the tools panel allow to:
 
-- **Buy** [new subscriptions](https://cloudmydc.com/), which will redirect to the appropriate Marketplace section (as described in the previous section).
+- **Buy** [new subscriptions](/docs/Account&Pricing/Subscription-Based%20Products#purchasing-subscription), which will redirect to the appropriate Marketplace section (as described in the previous section).
 - **Install** packages for the existing subscriptions.
 - **Edit** a subscription to change installation quantity and change the Auto Pay option.
 - **Refresh** information in the list.
