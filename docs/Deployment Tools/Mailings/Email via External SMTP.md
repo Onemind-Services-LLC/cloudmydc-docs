@@ -6,8 +6,8 @@ sidebar_position: 1
 
 **SMTP** (Simple Mail Transfer Protocol) is a standard for sending emails via Internet protocol (IP) networks. Communication between sender and receiver is performed via emanating command strings and delivering data using a reliable data stream channel, a TCP connection usually. In this tutorial we will show how to send emails via SMTP using PaaS PHP hosting. Here we present two ways of performing this settings:
 
-- [by using PHPMailer](https://cloudmydc.com/)
-- [by configuring a custom code of the form for email sending](https://cloudmydc.com/)
+- [by using PHPMailer](/docs/Deployment%20Tools/Mailings/Email%20via%20External%20SMTP#phpmailer-for-email-sending)
+- [by configuring a custom code of the form for email sending](/docs/Deployment%20Tools/Mailings/Email%20via%20External%20SMTP#using-custom-form-for-email-sending)
 
 ## PHPMailer for Email Sending
 
@@ -29,7 +29,7 @@ PHPMailer is a classic full-featured email sending class for PHP, compatible wit
 
 </div>
 
-4. Download the [PHPMailer script](https://cloudmydc.com/) (here we provide you with our custom version which excludes all extra settings and is targeted only on SMTP).
+4. Download the <a href="https://download.jelastic.com/public.php?service=files&amp;t=1c0e6f02fd2da054818b86182fc5747d&amp;download&amp;path=//phpmailer.test.tar.gz" target="_blank">PHPMailer script</a> (here we provide you with our custom version which excludes all extra settings and is targeted only on SMTP).
 
 5. Navigate to the **Deployment manager** and **Upload** the downloaded package to the platform dashboard.
 

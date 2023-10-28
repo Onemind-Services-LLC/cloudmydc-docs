@@ -6,7 +6,7 @@ import obj from './Marketplace.json'
 
 ## Marketplace
 
-Platform Marketplace is a library of the most popular and requested applications, which are configured and optimized in the most beneficial way via the platform [Packaging Standard]( /docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview). These packaged solutions can be installed automatically directly from the dashboard, skipping many steps of manual deployment and optimization.
+Platform Marketplace is a library of the most popular and requested applications, which are configured and optimized in the most beneficial way via the platform [Packaging Standard](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview). These packaged solutions can be installed automatically directly from the dashboard, skipping many steps of manual deployment and optimization.
 
 You can access the **Marketplace** via the appropriate button at the top-left corner of the dashboard.
 
@@ -276,7 +276,7 @@ For more solution examples refer to the [JPS Collection](https://github.com/jela
 
 _This feature availability depends on the particular hosting provider’s settings._
 
-The **Subscription Plans** section of the Marketplace lists all the products that are offered on a subscription-based basis (i.e. for a fixed price). You can learn more in the dedicated [Subscription-Based Products]( /docs/Account&Pricing/Subscription-Based%20Products) guide.
+The **Subscription Plans** section of the Marketplace lists all the products that are offered on a subscription-based basis (i.e. for a fixed price). You can learn more in the dedicated [Subscription-Based Products](/docs/Account&Pricing/Subscription-Based%20Products) guide.
 
 <div style={{
     display:'flex',
@@ -348,7 +348,7 @@ Click **Install** to continue.
 
 You can track the JPS package installation process in detail via the Cloud Scripting console. While logged into your dashboard account, add the **_/console_** suffix to URL:
 
-_https://app._[**_{platformDomain}_**]( /docs/QuickStart/Hosters%20List%20&%20Info)_/console_
+_https://app._[**_{platformDomain}_**](/docs/QuickStart/Hosters%20List%20&%20Info)_/console_
 
 <div style={{
     display:'flex',

@@ -6,7 +6,7 @@ sidebar_position: 2
 
 The **WebSocket protocol** was implemented to replace the existing bi-directional communication mechanisms that uses HTTP as a transport layer, as HTTP was not initially meant to be used for these purposes. This new technology ensures establishment of a single full-duplex TCP connection between client and server, where messages are instantly transmitted with little overhead, both upstream and downstream at once. At the same time, WebSockets technology is designed to work over the standard HTTP ports (80 and 443) and to support HTTP proxies and intermediaries, representing a trade-off between efficiency and reliability
 
-The platform provides you with an advanced and complemented WebSockets support by means of integrating this technology to the [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) and [NGINX balancer node](https://cloudmydc.com/), so you can use it even without external IP address attached to your server. The easiest way to configure the WebSockets support for your application is to place an NGINX balancer in front of it - the detailed workflow can be seen [here](https://cloudmydc.com/).
+The platform provides you with an advanced and complemented WebSockets support by means of integrating this technology to the [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) and [NGINX balancer node](/docs/Load%20Balancers/Load%20Balancing), so you can use it even without external IP address attached to your server. The easiest way to configure the WebSockets support for your application is to place an NGINX balancer in front of it - the detailed workflow can be seen [here](/docs/Deployment%20Tools/WebSockets/WebSockets%20Support).
 
 Nevertheless, if this method contradicts your requirements, the WebSockets protocol usage is also supported by all the **Java application servers**, provided at the platform. Herewith, implementation of WebSockets for Java is commonly performed through configuring your application itself and does not require any special server configurations, thus you are only limited by your current programming skills, persistence and imagination.
 
@@ -52,7 +52,7 @@ The only exception is **GlassFish**, as it requires some server-side configurati
 
 </div>
 
-5. Now, you can deploy your application, which requires the WebSockets protocol support, to your environment. This can be done via [local archive/URL](https://cloudmydc.com/), or, if you prefer to use the remote VCS repository, simply add the **Maven** node to your environment topology and follow this [guide](https://cloudmydc.com/).
+5. Now, you can deploy your application, which requires the WebSockets protocol support, to your environment. This can be done via [local archive/URL](/docs/Deployment/Deployment%20Guide), or, if you prefer to use the remote VCS repository, simply add the **Maven** node to your environment topology and follow this [guide](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven).
 
 As a result, your deployed application will be listed in the appropriate panel column:
 

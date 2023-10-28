@@ -1,9 +1,10 @@
 ---
 sidebar_position: 5
 ---
+
 ## anchor 42
 
-The platform provides [Session Replication]( /docs/ApplicationSetting/Scaling%20And%20Clustering/Session%20Replication%20for%20HA) between instances of web-servers with a help of multicast. But also you can use **Session Replication via Memcached**.
+The platform provides [Session Replication](/docs/ApplicationSetting/Scaling%20And%20Clustering/Session%20Replication%20for%20HA) between instances of web-servers with a help of multicast. But also you can use **Session Replication via Memcached**.
 
 To use memcached for session replication follow this instruction.
 
@@ -39,8 +40,8 @@ To use memcached for session replication follow this instruction.
 
 1. Download .jar file of [Memcached session manager](https://code.google.com/archive/p/memcached-session-manager/). As the example we used [memcached-session-manager-1.6.2](https://code.google.com/archive/p/memcached-session-manager/) .
 
-Also download [memcached-session-manager-tc7-1.6.2.jar](https://code.google.com/archive/p/memcached-session-manager/downloads), [spymemcached-2.8.4.jar](https://code.google.com/archive/p/spymemcached/downloads), [msm-kryo-serializer-1.6.1.jar](https://code.google.com/archive/p/memcached-session-manager/downloads), [kryo-1.03.jar](https://code.google.com/archive/p/memcached-session-manager/downloads), [reflectasm-0.9.jar](https://code.google.com/archive/p/memcached-session-manager/downloads), [kryo-serializers.jar](https://mvnrepository.com/artifact/de.javakaffee/kryo-serializers), <a href="https://repo1.maven.org/maven2/joda-time/joda-time/1.5.2/joda-time-1.5.2.jar" target="_blank" rel="nofollow noopener">joda-time.jar</a> 
- and [minlog-1.2.jar](https://code.google.com/archive/p/memcached-session-manager/downloads).
+Also download [memcached-session-manager-tc7-1.6.2.jar](https://code.google.com/archive/p/memcached-session-manager/downloads), [spymemcached-2.8.4.jar](https://code.google.com/archive/p/spymemcached/downloads), [msm-kryo-serializer-1.6.1.jar](https://code.google.com/archive/p/memcached-session-manager/downloads), [kryo-1.03.jar](https://code.google.com/archive/p/memcached-session-manager/downloads), [reflectasm-0.9.jar](https://code.google.com/archive/p/memcached-session-manager/downloads), [kryo-serializers.jar](https://mvnrepository.com/artifact/de.javakaffee/kryo-serializers), <a href="https://repo1.maven.org/maven2/joda-time/joda-time/1.5.2/joda-time-1.5.2.jar" target="_blank" rel="nofollow noopener">joda-time.jar</a>
+and [minlog-1.2.jar](https://code.google.com/archive/p/memcached-session-manager/downloads).
 
 2. Click **Config** for Tomcat.
 

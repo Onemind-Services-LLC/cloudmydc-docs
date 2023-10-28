@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 Storing Data in Local Filesystem
-This kind of storage is used to persist the data, which needs to be kept during container lifecycle, but is not required to be shared across other nodes. If drawing an analogy, basically it’s kind of a folder you create inside a server. Commonly, it’s not implied that the data such a folder contains should be kept during different maintenance processes. But in confines of [Docker Standard Support]( /docs/Container/Container%20Types) at the platform, creating a local volume in such a container represents an highly efficient way to protect your data (e.g. during the [redeploy]( /docs/Container/Container%20Redeploy) operation).
+This kind of storage is used to persist the data, which needs to be kept during container lifecycle, but is not required to be shared across other nodes. If drawing an analogy, basically it’s kind of a folder you create inside a server. Commonly, it’s not implied that the data such a folder contains should be kept during different maintenance processes. But in confines of [Docker Standard Support](/docs/Container/Container%20Types) at the platform, creating a local volume in such a container represents an highly efficient way to protect your data (e.g. during the [redeploy](/docs/Container/Container%20Redeploy) operation).
 
 <div style={{
     display:'flex',

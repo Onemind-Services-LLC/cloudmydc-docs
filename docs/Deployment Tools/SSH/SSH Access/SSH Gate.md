@@ -4,7 +4,7 @@ sidebar_position: 3
 
 ## Access via SSH Gate
 
-In order to establish connection via SSH Gate, you need to [generate SSH key pair]( /docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) and to [add public key]( /docs/Deployment%20Tools/SSH/Add%20SSH%20Key) to your account at the dashboard (if needed, read the linked step-by-step guides for assistance).
+In order to establish connection via SSH Gate, you need to [generate SSH key pair](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) and to [add public key](/docs/Deployment%20Tools/SSH/Add%20SSH%20Key) to your account at the dashboard (if needed, read the linked step-by-step guides for assistance).
 
 Next, get an SSH connection string for your account by clicking the **Settings** button at the top panel of the dashboard.
 
@@ -36,7 +36,7 @@ Within the right part of the section you can establish [Web SSH](/docs/Deploymen
 
 :::
 
-Now, you can access either [whole PaaS account]( /docs/Deployment%20Tools/SSH/SSH%20Access/SSH%20Gate#ssh-access-to-platform-account) or just a [particular container]( /docs/Deployment%20Tools/SSH/SSH%20Access/SSH%20Gate#direct-access-to-container) with your local SSH client.
+Now, you can access either [whole PaaS account](/docs/Deployment%20Tools/SSH/SSH%20Access/SSH%20Gate#ssh-access-to-platform-account) or just a [particular container](/docs/Deployment%20Tools/SSH/SSH%20Access/SSH%20Gate#direct-access-to-container) with your local SSH client.
 
 ## SSH Access to Platform Account
 
@@ -88,7 +88,7 @@ In order to add your private SSH key with PuTTY, download and run [Pageant](http
 
 :::
 
-1. Once connected, you will see a list of [environment groups]( /docs/EnvironmentManagement/Environment%20Groups/Overview) (with a number of containers within provided in brackets) and ungrouped environments available for your account. Select the required point by entering the appropriate number.
+1. Once connected, you will see a list of [environment groups](/docs/EnvironmentManagement/Environment%20Groups/Overview) (with a number of containers within provided in brackets) and ungrouped environments available for your account. Select the required point by entering the appropriate number.
 
 <div style={{
     display:'flex',
@@ -159,4 +159,4 @@ For example, in order to access the Tomcat container, which is shown in the imag
     </div>
 </div>
 
-Such a possibility can be useful for automatization scripts or for setting up application configurations (for example, [Capistrano]( /docs/Deployment%20Tools/SSH/Capistrano)).
+Such a possibility can be useful for automatization scripts or for setting up application configurations (for example, [Capistrano](/docs/Deployment%20Tools/SSH/Capistrano)).

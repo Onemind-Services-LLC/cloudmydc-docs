@@ -22,16 +22,16 @@ Here, the list of parameters can be divided into the following groups:
   - **_{url}_** - link to the appropriate repository
 
 - additional options (their activation is defined with the **_{true/false}_** values)
-  - _autoupdate_ - enables regular [autoupdate]( /docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview) of your deployed project; if activated, requires the additional **_{interval}_** parameter for setting the frequency of redeployments
+  - _autoupdate_ - enables regular [autoupdate](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview) of your deployed project; if activated, requires the additional **_{interval}_** parameter for setting the frequency of redeployments
   - _utoResolveConflict_ - switches on the corresponding same-named option
-  - _zdt_ - allows to activate [ZDT deployment]( /docs/PHP/ZDT%20Deployment%20for%20PHP) for PHP projects
+  - _zdt_ - allows to activate [ZDT deployment](/docs/PHP/ZDT%20Deployment%20for%20PHP) for PHP projects
 
 :::tip Note
 
 In case you need to connect to a private repository, the additional authentication parameters [*–login* ***{login}***] _[–password_ **_{password}_**] _[–keyId_ **_{keyId}_**] should be added to the main command. Here, you need to obligatory state the **_{login}_** option (to specify your VCS account login) and append one of the following settings depending on the desired (_password_ or _SSH key_) access types:
 
 - **_{password}_** - the corresponding VCS account password
-- **_{keyId}_** - name of the private SSH key you’ve specified while its addition to the dashboard; this allows to establish a [secure connection]( /docs/Deployment/SSH%20Access%20to%20GIT%20Repository) to the repo with the paired public SSH key is attached
+- **_{keyId}_** - name of the private SSH key you’ve specified while its addition to the dashboard; this allows to establish a [secure connection](/docs/Deployment/SSH%20Access%20to%20GIT%20Repository) to the repo with the paired public SSH key is attached
 
 :::
 

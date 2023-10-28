@@ -100,7 +100,7 @@ Here, the **_{NEW_STORAGE_IP}_** placeholder should be substituted with the inte
 
 Confirm connection by typing _“yes”_ when prompted. The operation may require some time that depends on the amount of copied data.
 
-6. [Remount]( /docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) application data from the initial to temporary storage.
+6. [Remount](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) application data from the initial to temporary storage.
 
 - click the **Config** button next to our application server and **Unmount** the current Shared Storage.
 

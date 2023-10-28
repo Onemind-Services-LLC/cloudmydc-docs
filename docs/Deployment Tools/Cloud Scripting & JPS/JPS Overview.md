@@ -18,7 +18,7 @@ sidebar_position: 2
 
 JPS package is based on JSON installation manifest. This file is used to describe processes of environment creation, application deployment and configuration, allocation of resources and setting scaling limits for each server within an environment.
 
-This technology allows to [automate complex CI/CD scenarios]( /docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview#application-cicd-automation-with-cloud-scripting) and easily distribute your ready-to-go solutions with [one-click installation widgets]( /docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview#widget-for-instant-application-deploy).
+This technology allows to [automate complex CI/CD scenarios](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview#application-cicd-automation-with-cloud-scripting) and easily distribute your ready-to-go solutions with [one-click installation widgets](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview#widget-for-instant-application-deploy).
 
 ## Application CI/CD Automation with Cloud Scripting
 
@@ -77,13 +77,13 @@ To install packaged application into the platform, a user needs to **initiate in
 
 Use the docs below to find out information on how to properly compose application manifest and create such installation widget:
 
-- [Application Manifest]( /docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Application%20Manifest)
+- [Application Manifest](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Application%20Manifest)
 - [Application Manifest Example](https://docs.cloudscripting.com/samples/)
 - [Placeholders](https://docs.cloudscripting.com/creating-manifest/placeholders/)
 - [JPS Collection](https://github.com/jelastic-jps)
 
 :::tip Note
 
-After packaging your own application due to our instructions, you can contact your hosting provider and negotiate adding your JPS to the set of solutions within [Marketplace]( /docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) at the dashboard. In such a way, your app will be available for automatic deploy to all users within your hosting platform.
+After packaging your own application due to our instructions, you can contact your hosting provider and negotiate adding your JPS to the set of solutions within [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) at the dashboard. In such a way, your app will be available for automatic deploy to all users within your hosting platform.
 
 :::

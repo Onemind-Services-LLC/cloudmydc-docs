@@ -6,13 +6,13 @@ sidebar_position: 1
 
 ## Ant Task Plugin
 
-**Apache Ant** is an open-source Java-based software tool for the build processes automation. It supplies many built-in tasks allowing to compile, assemble, test and run Java applications. Ant is an extremely flexible building tool, which does not force you to use any specific coding rules, directories layout, etc.
+**[Apache Ant](https://ant.apache.org/)** is an open-source Java-based software tool for the build processes automation. It supplies many built-in tasks allowing to compile, assemble, test and run Java applications. Ant is an extremely flexible building tool, which does not force you to use any specific coding rules, directories layout, etc.
 
 So, to deploy your Java applications into the platform with the help of Apache Ant, perform the following steps:
 
-1. Install the [_Apache Ant_](https://cloudmydc.com/) build tool and [_Ivy_](https://cloudmydc.com/) manager.
+1. Install the [_Apache Ant_](https://ant.apache.org/) build tool and [_Ivy_](https://ant.apache.org/ivy/) manager.
 
-2. To add the [Ant Task plugin](https://cloudmydc.com/) by the platform, build **_jar_** from the files in the linked repository and add it to the /lib-task folder of your Apache Ant.
+2. To add the [Ant Task plugin](https://github.com/jelastic/jelastic-ant-task) by the platform, build **_jar_** from the files in the linked repository and add it to the /lib-task folder of your Apache Ant.
 
 3. Add the **_ivy.xml_** file to your Java project to define tasks used in your build file and manage dependencies. For example:
 
