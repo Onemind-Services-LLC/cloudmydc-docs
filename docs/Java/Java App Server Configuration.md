@@ -74,25 +74,25 @@ Using the following config files, you can perform the actions listed below (thes
 
   **_<u>web.xml</u>_**
 
-- configure [remote access via WebDav](https://cloudmydc.com/)
+- configure [remote access via WebDav](docs/Deployment%20Tools/Remote%20Access%20via%20WebDAV)
 
   **_<u>server.xml</u>_**
 
-- enable [Multiple Domains](https://cloudmydc.com/)
+- enable [Multiple Domains](/docs/ApplicationSetting/Domain%20Name%20Management/Multiple%20Domain%20for%20Tomcat)
 
   **_<u>variables.conf</u>_**
 
-- configure memory settings for your java containers by stating your custom [GC](https://cloudmydc.com/), [-Xmx](https://cloudmydc.com/), [-Xms](https://cloudmydc.com/) parameters (use standard parameters stating each at the new line):
+- configure memory settings for your java containers by stating your custom [GC](https://cloudmydc.com/), [-Xmx](https://docs.oracle.com/cd/E13150_01/jrockit_jvm/jrockit/jrdocs/refman/optionX.html#wp999528), [-Xms](https://www.oracle.com/java/technologies/javase/gc-tuning-6.html) parameters (use standard parameters stating each at the new line):
 
   _-Xmx< size >m -Xms< size >m_
 
-- set your custom [system properties](https://cloudmydc.com/) for your [Tomcat, TomEE, Jetty](https://cloudmydc.com/) or [GlassFish](https://cloudmydc.com/):
+- set your custom [system properties](docs/EnvironmentManagement/EnvironmentVariables/Java%20Options%20and%20Arguments ) for your [Tomcat, TomEE, Jetty](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat-TomEE%20Variables)or [GlassFish](docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat-TomEE%20Variables#glassfish-variables):
 
   _-Dvar1=value1 -Dvar2=value2 -Dmy.var3=/my/value_
 
-- configure [JavaAgent interceptor](https://cloudmydc.com/)
+- configure [JavaAgent interceptor](/docs/Java/Java%20Apps%20Specifications/Java%20Agent)
 
-- enable [remote debugging](https://cloudmydc.com/):
+- enable [remote debugging](/docs/ApplicationSetting/Remote%20Debugging):
   _-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address={port_number}_
 
 **Note** that this file is available only for **Tomcat 6,7** and **TomEE** application servers. For configuring a **GlassFish** server, use the _Admin Panel_.
@@ -107,7 +107,7 @@ Using the following config files, you can perform the actions listed below (thes
 
 </div>
 
-[Back to the list](https://cloudmydc.com/)
+[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
 
 ## HOME
 
@@ -125,7 +125,7 @@ As a result you can make configurations specifying the path to your downloaded/c
 
 </div>
 
-[Back to the list](https://cloudmydc.com/)
+[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
 
 :::tip Note
 
@@ -133,7 +133,7 @@ though the server’s directory, which refers to this folder, can be named temp 
 
 :::
 
-[Back to the list](https://cloudmydc.com/)
+[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
 
 ## WEBAPPS / WORK
 
@@ -149,9 +149,9 @@ The **webapps** (for Tomcat/TomEE) and **work** (for Jetty) folders are used for
 
 </div>
 
-[Back to the list](https://cloudmydc.com/)
+[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
 
-[Back to the list](#app_server)
+[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
 
 ## JAVA_HOME
 
@@ -167,7 +167,7 @@ The **JAVA_HOME** folder contains the java config files and libs. Here, you can 
 
 </div>
 
-[Back to the list](https://cloudmydc.com/)
+[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
 
 ## LIB
 
@@ -185,11 +185,11 @@ The **lib** folder is used for storing default and uploading custom **jar** libr
 
 </div>
 
-[Back to the list](https://cloudmydc.com/)
+[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
 
 ## CRON
 
-App servers include a cron folder with the config file, where cronjobs can be configured. Detailed information on Cronjob configuration can be found in the [Setting Up a Cronjob](https://cloudmydc.com/) document.
+App servers include a cron folder with the config file, where cronjobs can be configured. Detailed information on Cronjob configuration can be found in the [Setting Up a Cronjob](/docs/ApplicationSetting/Scheduling%20Configuration/Setting%20Up%20Cronjob) document.
 
 <div style={{
     display:'flex',
@@ -201,7 +201,7 @@ App servers include a cron folder with the config file, where cronjobs can be co
 
 </div>
 
-[Back to the list](https://cloudmydc.com/)
+[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
 
 ## KEYS
 
@@ -219,7 +219,7 @@ _/var/lib/jelastic/keys/{key_file_name}_
 
 </div>
 
-[Back to the list](https://cloudmydc.com/)
+[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
 
 ## CONTEXTS
 
@@ -235,7 +235,7 @@ The **contexts** folder contains XML config files for each deployed context. All
 
 </div>
 
-[Back to the list](https://cloudmydc.com/)
+[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
 
 ## SERVER_LIB
 
@@ -251,7 +251,7 @@ The **server_lib** folder is the GlassFish config directory with all available s
 
 </div>
 
-[Back to the list](https://cloudmydc.com/)
+[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
 
 ## APPS
 
@@ -267,7 +267,7 @@ The **apps** TomEE folder is used for storing the unpacked EE application deploy
 
 </div>
 
-[Back to the list](https://cloudmydc.com/)
+[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
 
 ## Tomcat
 
@@ -358,7 +358,7 @@ The **apps** TomEE folder is used for storing the unpacked EE application deploy
     </div> 
 </div>
 
-[Back to the list](https://cloudmydc.com/)
+[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
 
 ## TomEE
 
@@ -449,7 +449,7 @@ The **apps** TomEE folder is used for storing the unpacked EE application deploy
     </div> 
 </div>
 
-[Back to the list](https://cloudmydc.com/)
+[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
 
 ## GlassFish
 
@@ -540,7 +540,7 @@ The **apps** TomEE folder is used for storing the unpacked EE application deploy
     </div> 
 </div>
 
-[Back to the list](https://cloudmydc.com/)
+[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
 
 ## Jetty
 
@@ -631,4 +631,4 @@ The **apps** TomEE folder is used for storing the unpacked EE application deploy
     </div> 
 </div>
 
-[Back to the list](https://cloudmydc.com/)
+[Back to the list](/docs/Java/Java%20App%20Server%20Configuration/)
