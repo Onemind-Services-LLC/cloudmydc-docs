@@ -10,7 +10,7 @@ const config = {
   tagline: 'Easy, accessible, affordable cloud for all Hyperconverged, production- ready OpenStack for service providers, enabling lower cost IaaS, PaaS and XaaS for businesses everywhere',
   favicon: 'img/favicon.ico',
 
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://docs.cloudmydc.com/',
   baseUrl: '/',
 
   organizationName: 'Onemind Services LLC',
@@ -57,7 +57,7 @@ const config = {
       // customCss: [require.resolve('./src/css/custom-dark-theme.css')],
       image: 'img/docusaurus-social-card.jpg',
       algolia: {
-        apiKey: 'd34b31960c127a6cbcc57d2e5a9f96c2',
+        apiKey: 'c2220d2a3515d7d4629b7e8ef22bb78c',
         indexName: 'vishal_sir_onemindservices',
         contextualSearch: true,
         placeholder: 'Search',

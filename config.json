@@ -1,7 +1,6 @@
 {
   "index_name": "vishal_sir_onemindservices",
-  "start_urls": ["https://docusaurus.io/"],
-  "sitemap_urls": ["https://192.168.200.1:3000/sitemap.xml"],
+  "sitemap_urls": ["http://192.168.200.1:3000/sitemap.xml"],
   "sitemap_alternate_links": true,
   "stop_urls": ["/tests"],
   "selectors": {
