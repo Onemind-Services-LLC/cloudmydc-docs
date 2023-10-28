@@ -26,18 +26,18 @@ sidebar_position: 2
 </div>
 <div>
 
-[**Sendmail**](https://cloudmydc.com/) is a highly popular open source mail transfer agent for UNIX systems, which is commonly delivered in a bundle with the majority of Linux distributions.
+[**Sendmail**](https://www.proofpoint.com/us/products/email-protection/open-source-email-solution) is a highly popular open source mail transfer agent for UNIX systems, which is commonly delivered in a bundle with the majority of Linux distributions.
 
 </div>
 </div>
 
 It supports a plenty of mail transfer protocols (such as SMTP, ESMTP and others), being designed to route emails over the Internet and internal networks.
 
-The platform delivers Sendmail included to all of the application servers' builds (except the [IIS](https://cloudmydc.com/) ones) by default. However, the ability to run this service in a container depends on a particular hosting providers' settings - at some platforms, it could be available only in case of a bound [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address presence. So, let’s consider how to:
+The platform delivers Sendmail included to all of the application servers' builds (except the [IIS](/docs/Windows&.NET/DOT%20NET%20Core) ones) by default. However, the ability to run this service in a container depends on a particular hosting providers' settings - at some platforms, it could be available only in case of a bound [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address presence. So, let’s consider how to:
 
-- [check the Sendmail availability](https://cloudmydc.com/)
-- [enable Sendmail in case it is not run](https://cloudmydc.com/)
-- [send a test message](https://cloudmydc.com/)
+- [check the Sendmail availability](/docs/Deployment%20Tools/Mailings/Running%20Sendmail%20Service#check-sendmail-availability)
+- [enable Sendmail in case it is not run](/docs/Deployment%20Tools/Mailings/Running%20Sendmail%20Service#enable-sendmail)
+- [send a test message](/docs/Deployment%20Tools/Mailings/Running%20Sendmail%20Service#send-a-message-via-sendmail)
 
 ## Check Sendmail Availability
 
@@ -65,7 +65,7 @@ In case you haven’t performed similar operations before, you need to:
 
 - [generate](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) an SSH keypair
 - [add your public SSH key](/docs/Deployment%20Tools/SSH/Add%20SSH%20Key) to the dashboard
-- [establish the connection](https://cloudmydc.com/) over SSH protocol
+- [establish the connection](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) over SSH protocol
 
 :::
 
@@ -85,7 +85,7 @@ Otherwise, i.e. in case the appropriate line is absent, proceed to the next sect
 
 ## Enable Sendmail
 
-The easiest way to launch Sendmail is to enable [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) for your application server via the topology wizard (either while [environment creation](https://cloudmydc.com/), or, for the already running environment, it can be accessed with the help of the **Change environment topology** button).
+The easiest way to launch Sendmail is to enable [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) for your application server via the topology wizard (either while [environment creation](/docs/EnvironmentManagement/Setting%20Up%20Environment), or, for the already running environment, it can be accessed with the help of the **Change environment topology** button).
 
 Then just turn on the corresponding switcher at the App Server layer and confirm the changes with the **Apply** button at the bottom right corner of the wizard frame.
 
@@ -99,7 +99,7 @@ Then just turn on the corresponding switcher at the App Server layer and confirm
 
 </div>
 
-After the confirmation and external IP address attachment, the Sendmail service will be automatically started, so you can start to [use](https://cloudmydc.com/) it immediately.
+After the confirmation and external IP address attachment, the Sendmail service will be automatically started, so you can start to [use](/docs/Deployment%20Tools/Mailings/Running%20Sendmail%20Service#send-a-message-via-sendmail) it immediately.
 
 :::tip
 
@@ -147,7 +147,7 @@ where:
 
 </div>
 
-Great! Now you can be sure that Sendmail is ready for work. And in case you are interested in more detailed configurations and far complex solutions, that can be implemented by means of this tool, please refer to the [official documentation](https://cloudmydc.com/).
+Great! Now you can be sure that Sendmail is ready for work. And in case you are interested in more detailed configurations and far complex solutions, that can be implemented by means of this tool, please refer to the [official documentation](https://www.proofpoint.com/us/products/email-protection/open-source-email-solution).
 
 :::tip
 

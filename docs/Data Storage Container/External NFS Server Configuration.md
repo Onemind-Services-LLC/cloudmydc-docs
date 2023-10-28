@@ -16,15 +16,15 @@ sidebar_position: 6
 
 <div>
 
-The platform allows [sharing data]( /docs/Data%20Storage%20Container/Data%20Storage%20Overview) between servers (where the files are physically located) and clients (gain access to the remote data as if it was kept locally). The configurations required to set up a share varied based on the following condition:
+The platform allows [sharing data](/docs/Data%20Storage%20Container/Data%20Storage%20Overview) between servers (where the files are physically located) and clients (gain access to the remote data as if it was kept locally). The configurations required to set up a share varied based on the following condition:
 
-_both instances are inside of the same PaaS account_ - either [export data]( /docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing)[ from storage or mount data]( /docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) on the clients (the platform automatically handles the second operation)
-
-</div>
+_both instances are inside of the same PaaS account_ - either [export data](/docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing)[ from storage or mount data](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) on the clients (the platform automatically handles the second operation)
 
 </div>
 
-_one instance is outside of the platform_ - export data from external storage (described in this guide) <u>and</u> [mount external data]( /docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) on the clients
+</div>
+
+_one instance is outside of the platform_ - export data from external storage (described in this guide) <u>and</u> [mount external data](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) on the clients
 
 Below, we’ll consider the configurations required to export data from the platform [Shared Storage Container](/docs/Data%20Storage%20Container/Data%20Storage%20Overview) to the external instance. The described flow is suitable for any NFS-based storage server.
 
@@ -40,7 +40,7 @@ Below, we’ll consider the configurations required to export data from the plat
 
 </div>
 
-2. Next, you need to declare the list of directories you’d like to share within the corresponding **_etc/exports_** file. In the platform, it can be easily accessed with the **Configuration** button in the **_[Exports]( /docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing)_** section of the built-in _Configuration File Manager._
+2. Next, you need to declare the list of directories you’d like to share within the corresponding **_etc/exports_** file. In the platform, it can be easily accessed with the **Configuration** button in the **_[Exports](/docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing)_** section of the built-in _Configuration File Manager._
 
 Here, the following format should be used:
 
@@ -61,7 +61,7 @@ Here, the following format should be used:
 where:
 
 - **{directory}** - path to the folder (relative to the Root folder) that should be exported
-- **{NFS_client}** - [custom domain]( /docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) name or public IP address of the client node (i.e where the exported files should be mounted)
+- **{NFS_client}** - [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) name or public IP address of the client node (i.e where the exported files should be mounted)
 
 :::tip Note
 
@@ -146,7 +146,7 @@ exportfs -ra
 
 </div>
 
-5. Next, you need to open the NFS server ports (111, 2049, and 20048) for the NFS client IP address (the one used in the second step). Navigate to the storage environment **Settings > [Firewall]( /docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall)** section to add required rules via intuitive UI:
+5. Next, you need to open the NFS server ports (111, 2049, and 20048) for the NFS client IP address (the one used in the second step). Navigate to the storage environment **Settings > [Firewall](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall)** section to add required rules via intuitive UI:
 
 <div style={{
     display:'flex',
@@ -203,4 +203,4 @@ Here:
 
 </div>
 
-That’s all! Your data storage server is ready, so you can return to the client instance and start [mounting]( /docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points).
+That’s all! Your data storage server is ready, so you can return to the client instance and start [mounting](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points).

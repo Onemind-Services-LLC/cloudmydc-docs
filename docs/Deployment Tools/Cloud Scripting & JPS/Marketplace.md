@@ -6,7 +6,7 @@ import obj from './Marketplace.json'
 
 ## Marketplace
 
-Platform Marketplace is a library of the most popular and requested applications, which are configured and optimized in the most beneficial way via the platform [Packaging Standard](https://cloudmydc.com/). These packaged solutions can be installed automatically directly from the dashboard, skipping many steps of manual deployment and optimization.
+Platform Marketplace is a library of the most popular and requested applications, which are configured and optimized in the most beneficial way via the platform [Packaging Standard](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview). These packaged solutions can be installed automatically directly from the dashboard, skipping many steps of manual deployment and optimization.
 
 You can access the **Marketplace** via the appropriate button at the top-left corner of the dashboard.
 
@@ -255,18 +255,18 @@ The PaaS team frequently implements new solutions to extend this list. The major
 
 :::tip Tip
 
-For more solution examples refer to the [JPS Collection](https://cloudmydc.com/) on GitHub, where you can find multiple packages to be used with the platform:
+For more solution examples refer to the [JPS Collection](https://github.com/jelastic-jps/) on GitHub, where you can find multiple packages to be used with the platform:
 
-- [Enterprise WordPress Cluster for Auto Scaling, High Performance and High Availability](https://cloudmydc.com/)
-- [Scalable MySQL Cluster with ProxySQL Load Balancer and Orchestrator](https://cloudmydc.com/)
-- [Free Let’s Encrypt SSL Certificates Integration for the Most Popular Software Stacks](https://cloudmydc.com/)
-- [Highly Available and Auto-Scalable Magento Cluster](https://cloudmydc.com/)
-- C[yclos - a Payment Platform for Large Businesses and Organisations](https://cloudmydc.com/)
-- [Cron-Based Scheduler for Automatic Environment Hibernation](https://cloudmydc.com/)
-- [Minio Cluster - S3 Compatible Object Storage](https://cloudmydc.com/)
-- [Auto-Scalable Docker Engine and Docker Swarm Cluster](https://cloudmydc.com/)
-- [Simple Automated CI/CD Pipeline for GitHub and GitLab Projects](https://cloudmydc.com/)
-- [Java Memory Agent for Container RAM Usage Optimization](https://cloudmydc.com/)
+- [Enterprise WordPress Cluster for Auto Scaling, High Performance and High Availability](https://github.com/jelastic-jps/wordpress-cluster)
+- [Scalable MySQL Cluster with ProxySQL Load Balancer and Orchestrator](https://github.com/jelastic-jps/mysql-cluster)
+- [Free Let’s Encrypt SSL Certificates Integration for the Most Popular Software Stacks](https://github.com/jelastic-jps/lets-encrypt)
+- [Highly Available and Auto-Scalable Magento Cluster](https://github.com/jelastic-jps/magento-cluster)
+- C[yclos - a Payment Platform for Large Businesses and Organisations](https://github.com/jelastic-jps/cyclos)
+- [Cron-Based Scheduler for Automatic Environment Hibernation](https://github.com/jelastic-jps/start-stop-scheduler)
+- [Minio Cluster - S3 Compatible Object Storage](https://github.com/jelastic-jps/minio)
+- [Auto-Scalable Docker Engine and Docker Swarm Cluster](https://github.com/jelastic-jps/docker-native)
+- [Simple Automated CI/CD Pipeline for GitHub and GitLab Projects](https://github.com/jelastic-jps/git-push-deploy)
+- [Java Memory Agent for Container RAM Usage Optimization](https://github.com/jelastic-jps/java-memory-agent)
 
 [import](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import) the appropriate manifest file via the dashboard to instantly get your solution. Also, you can explore the source code of any package, fork repository for yourself and customize it up to your particular needs before installation.
 
@@ -276,7 +276,7 @@ For more solution examples refer to the [JPS Collection](https://cloudmydc.com/)
 
 _This feature availability depends on the particular hosting provider’s settings._
 
-The **Subscription Plans** section of the Marketplace lists all the products that are offered on a subscription-based basis (i.e. for a fixed price). You can learn more in the dedicated [Subscription-Based Products](https://cloudmydc.com/) guide.
+The **Subscription Plans** section of the Marketplace lists all the products that are offered on a subscription-based basis (i.e. for a fixed price). You can learn more in the dedicated [Subscription-Based Products](/docs/Account&Pricing/Subscription-Based%20Products) guide.
 
 <div style={{
     display:'flex',
@@ -348,7 +348,7 @@ Click **Install** to continue.
 
 You can track the JPS package installation process in detail via the Cloud Scripting console. While logged into your dashboard account, add the **_/console_** suffix to URL:
 
-_https://app._[**_{platformDomain}_**](https://cloudmydc.com/)_/console_
+_https://app._[**_{platformDomain}_**](/docs/QuickStart/Hosters%20List%20&%20Info)_/console_
 
 <div style={{
     display:'flex',

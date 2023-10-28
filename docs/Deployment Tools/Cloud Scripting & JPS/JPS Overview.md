@@ -18,11 +18,11 @@ sidebar_position: 2
 
 JPS package is based on JSON installation manifest. This file is used to describe processes of environment creation, application deployment and configuration, allocation of resources and setting scaling limits for each server within an environment.
 
-This technology allows to [automate complex CI/CD scenarios](https://cloudmydc.com/) and easily distribute your ready-to-go solutions with [one-click installation widgets](https://cloudmydc.com/).
+This technology allows to [automate complex CI/CD scenarios](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview#application-cicd-automation-with-cloud-scripting) and easily distribute your ready-to-go solutions with [one-click installation widgets](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview#widget-for-instant-application-deploy).
 
 ## Application CI/CD Automation with Cloud Scripting
 
-Powered by a special platform-developed [Cloud Scripting](https://cloudmydc.com/) language, JPS packaging technology can help to completely automate the application delivery process - e.g. to automatically transfer each new application version through development, testing and production stages. This is ensured by applying the required project processing logic through interconnecting different [platform API](https://cloudmydc.com/) methods.
+Powered by a special platform-developed [Cloud Scripting](https://docs.cloudscripting.com/) language, JPS packaging technology can help to completely automate the application delivery process - e.g. to automatically transfer each new application version through development, testing and production stages. This is ensured by applying the required project processing logic through interconnecting different [platform API](https://cloudmydc.com/) methods.
 
 <div style={{
     display:'flex',
@@ -36,14 +36,14 @@ Powered by a special platform-developed [Cloud Scripting](https://cloudmydc.com/
 
 Due to the variety of tuning and automation options available, you can implement almost any required scenario by means of Cloud Scripting - from executing pretty simple operations to maintaining complex distributed applications and clusters. To achieve this and build own custom solution, with CS you are able to:
 
-- predefine the required configuration properties and declare expected application behavior with the help of appropriate [actions](https://cloudmydc.com/)
-- bound these operations to particular application lifecycle [events](https://cloudmydc.com/)
-- fetch [user input](https://cloudmydc.com/) data and use it inside
-- execute [custom scripts](https://cloudmydc.com/) right within created containers
+- predefine the required configuration properties and declare expected application behavior with the help of appropriate [actions](https://docs.cloudscripting.com/creating-manifest/actions/)
+- bound these operations to particular application lifecycle [events](https://docs.cloudscripting.com/creating-manifest/events/)
+- fetch [user input](https://docs.cloudscripting.com/creating-manifest/placeholders/#input-parameters) data and use it inside
+- execute [custom scripts](https://docs.cloudscripting.com/creating-manifest/custom-scripts/) right within created containers
 
 :::tip Note
 
-Before preparing your own package, we recommend to get acquainted with the number of ready-to-go solutions at [JPS Collection](https://cloudmydc.com/). Any of them can be easily integrated within your projects or used as a basis to create your own automated solution.
+Before preparing your own package, we recommend to get acquainted with the number of ready-to-go solutions at [JPS Collection](https://github.com/jelastic-jps). Any of them can be easily integrated within your projects or used as a basis to create your own automated solution.
 
 :::
 
@@ -77,13 +77,13 @@ To install packaged application into the platform, a user needs to **initiate in
 
 Use the docs below to find out information on how to properly compose application manifest and create such installation widget:
 
-- [Application Manifest](https://cloudmydc.com/)
-- [Application Manifest Example](https://cloudmydc.com/)
-- [Placeholders](https://cloudmydc.com/)
-- [JPS Collection](https://cloudmydc.com/)
+- [Application Manifest](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Application%20Manifest)
+- [Application Manifest Example](https://docs.cloudscripting.com/samples/)
+- [Placeholders](https://docs.cloudscripting.com/creating-manifest/placeholders/)
+- [JPS Collection](https://github.com/jelastic-jps)
 
 :::tip Note
 
-After packaging your own application due to our instructions, you can contact your hosting provider and negotiate adding your JPS to the set of solutions within [Marketplace](https://cloudmydc.com/) at the dashboard. In such a way, your app will be available for automatic deploy to all users within your hosting platform.
+After packaging your own application due to our instructions, you can contact your hosting provider and negotiate adding your JPS to the set of solutions within [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) at the dashboard. In such a way, your app will be available for automatic deploy to all users within your hosting platform.
 
 :::

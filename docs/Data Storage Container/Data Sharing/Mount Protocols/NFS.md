@@ -13,7 +13,7 @@ The platform provides NFS support out-of-the-box for all containers (both client
 
 :::tip Tip
 
-NFS is recommended for the performance-oriented topologies, while _[Gluster Native]( /docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Protocols/GlusterFS)_ ensures data safety through backups and replication.
+NFS is recommended for the performance-oriented topologies, while _[Gluster Native](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Protocols/GlusterFS)_ ensures data safety through backups and replication.
 
 :::
 
@@ -26,10 +26,10 @@ NFS is recommended for the performance-oriented topologies, while _[Gluster Nati
 
 - regular files cannot be exported (only directories)
 - mounted directory cannot start with **_/proc, /dev, /sys, /run_** or be equal to the following: **_/, /bin, /lib, /lib64, /lib32, /usr, /usr/bin, /usr/sbin, /usr/lib_**, or **_/usr/lib64_** (this list may vary based on your provider’s settings)
-- NFS shares do not work with sleeping environments and during the [live migration]( /docs/EnvironmentManagement/Environment%20Regions/Migration%20between%20Regions)
+- NFS shares do not work with sleeping environments and during the [live migration](/docs/EnvironmentManagement/Environment%20Regions/Migration%20between%20Regions)
 
-3. When facing any issues with NFS, you can check the **[Tasks Panel]( /docs/QuickStart/Dashboard%20Guide#tasks-panel)** in the dashboard. Also, the following logs can provide some additional information:
+3. When facing any issues with NFS, you can check the **[Tasks Panel](/docs/QuickStart/Dashboard%20Guide#tasks-panel)** in the dashboard. Also, the following logs can provide some additional information:
 
 - **_/var/log/messages_** on the NFS server
 - run the **_journalctl_** command on the Shared Storage, custom Docker, or VPS containers
-  Follow the [mount points]( /docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) or [exporting data]( /docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing) guides to share files over the NFS protocol.
+  Follow the [mount points](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) or [exporting data](/docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing) guides to share files over the NFS protocol.
