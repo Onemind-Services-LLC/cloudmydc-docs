@@ -24,15 +24,11 @@ The **LiteSpeed Web ADC** stack is [HTTP/3](https://cloudmydc.com/) ready with t
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/LiteSpeedWebServer/01-litespeed-web-server-logo.png)
 
 </div>
 </div>
 <div>
-
-<!-- Content changes -->
 
 The [**LiteSpeed Web Server**](https://cloudmydc.com/) is a high performance and low memory consumption PHP web server with high scalability. It is built based on the best practices of the PHP hosting, utilizing the benefits of both _Apache_ and _NGINX_ implementations, and integrating its own optimizations.
 

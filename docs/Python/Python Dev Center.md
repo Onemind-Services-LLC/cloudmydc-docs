@@ -16,15 +16,11 @@ sidebar_position: 1
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/PythonDevCenter/01-python-cloud-hosting.png)
 
 </div>
 </div>
 <div>
-
-<!-- Content changes -->
 
 The platform provides an out-of-box integration of the scalable _Apache_ application server dedicated specially for the Python-based applications hosting. It is already optimized and prepared for immediate management, allowing to dive right into development without bothering about numerous orchestration tasks, i.e. making the hosting process maximally convenient for developers.
 

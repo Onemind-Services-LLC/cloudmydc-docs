@@ -16,15 +16,11 @@ sidebar_position: 5
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/ZDTDeploymentforPHP/01-zdt-redeploy-logo.png)
 
 </div>
 </div>
 <div>
-
-<!-- Content changes -->
 
 The majority of modern web-services should be accessible for users at all times. A common but often overlooked problem here is the process of project re-deployment (i.e. update), causing your application to go down or return errors until the operation is finished. This can be solved with a variety of tools like Capistrano, Fabric and others. However, these supplements often require additional time, expense, and specialist knowledge for being successfully integrated and configured properly (e.g. this may be performed through setting up multiple servers with a load-balancer in front of them; while the deployment is running on one server - it is excluded from the route list, after that other servers could be updated). Obviously, such an implementation is rather complicated and requires a lot of extra resources, thus a better method is needed.
 

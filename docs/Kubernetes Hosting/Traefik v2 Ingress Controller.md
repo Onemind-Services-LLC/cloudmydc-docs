@@ -14,15 +14,11 @@ sidebar_position: 6
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/Traefikv2IngressController/image3-1-300x219.png)
 
 </div>
 </div>
 <div>
-
-<!-- Content changes -->
 
 Jelastic Kubernetes cluster can be installed with NGINX, Traefik, or HAProxy ingress controllers. In this post, we will take a closer look at Traefik and its evolution in Jelastic Kubernetes Service (Jelastic KS).
 

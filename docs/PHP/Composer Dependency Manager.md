@@ -16,15 +16,11 @@ sidebar_position: 8
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/ComposerDependencyManager/01-php-composer-logo.png)
 
 </div>
 </div>
 <div>
-
-<!-- Content changes -->
 
 [**Composer**](https://getcomposer.org/) is one of PHP’s most popular dependency management tools inspired by the node’s [npm](https://www.npmjs.com/) and ruby’s [bundler](https://bundler.io/). It will smartly manage all the required libraries and packages for your application. Running on a per-project basis, **Composer** determines which versions of which packages your project depends on and installs them in a working directory. Moreover, this tool provides the [autoload](https://getcomposer.org/doc/04-schema.md#autoload) feature to keep your packages up-to-date.
 

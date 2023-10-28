@@ -16,15 +16,11 @@ sidebar_position: 1
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/TrafficDistributorOverview/01-traffic-distributor-logo.png)
 
 </div>
 </div>
 <div>
-
-<!-- Content changes -->
 
 One of the most common problems you can face upon your project growth is the necessity to maintain multiple environments. It may be required for getting enough capacity (to serve all of the clients) or, e.g., for handling different app versions. In this situation, you’ll most likely meet the problem of proper traffic distribution between such project copies, including a number of aspects like setting a proper method for requests routing, servers loading rates, etc. Solving all of these issues can become a challenge even for experienced developers.
 

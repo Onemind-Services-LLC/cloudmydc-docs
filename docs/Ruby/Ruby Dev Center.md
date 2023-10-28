@@ -16,15 +16,11 @@ sidebar_position: 1
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/RubyDevCenter/01-ruby-cloud-hosting.png)
 
 </div>
 </div>
 <div>
-
-<!-- Content changes -->
 
 **Ruby** is a popular, open source programming language with a powerful and practical, yet natural and easy to read/write syntax. Ruby combines the best practices from various solutions to provide a unique object-oriented language, which aims for simplicity and provides such features as basic & special object-oriented features; operator overloading; exception handling; iterators and closures; garbage collection, and more.
 

@@ -16,15 +16,11 @@ sidebar_position: 1
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/CustomDomainName/01-custom-domais.png)
 
 </div>
 </div>
 <div>
-
-<!-- Content changes -->
 
 With the platform, you have a possibility to set an external domain address for your site, instead of the default environment URL (_i.e. {env_name}_.[_hoster_domain_name_](/docs/QuickStart/Hosters%20List%20&%20Info)). The custom domain allows promoting your unique branding and improves your web application recognition over the Internet.
 

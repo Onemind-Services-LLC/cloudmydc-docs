@@ -1,7 +1,7 @@
 ---
 sidebar_position: 6
 ---
-## anchor 27
+
 <div style={{
     display: 'grid',
     gridTemplateColumns: '0.23fr 1fr',
@@ -24,7 +24,7 @@ Below, we’ll go step-by-step on the two-factor authentication feature manageme
 - [enable 2FA](/docs/Account&Pricing/Two-Factor%20Authentication#enable-two-factor-authentication)
 - [manage recovery codes](/docs/Account&Pricing/Two-Factor%20Authentication#manage-recovery-codes)
 - [deactivate 2FA](/docs/Account&Pricing/Two-Factor%20Authentication#disable-two-factor-authentication)
-- [working with API](/docs/Account&Pricing/Two-Factor%20Authentication#using-api-with-two-factor-authentication)
+- [working with API](/docs/Account&Pricing/Two-Factor%20Authentication)
 
 ## Enable Two-Factor Authentication
 

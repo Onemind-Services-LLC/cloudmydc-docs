@@ -2,8 +2,6 @@
 sidebar_position: 4
 ---
 
-## anchor 13
-
 import obj from './CreateEnvParams.json'
 
 ## Parameters for CreateEnvironment API
@@ -12,11 +10,11 @@ Creation of a new environment at the platform can be automated in a variety of d
 
 Thus, below we provide the description for all of such settings with the examples on their usage via CLI. They are divided into 3 major sections as arrays of the _~/jelastic/environment/control/createenvironment_ method, being named according to the appropriate arrays' denominations - two common ones and listing of the specialized parameters for the Docker containers' creation:
 
-- [env](https://cloudmydc.com/)
+- [env](/docs/Deployment%20Tools/API%20&%20CLI/CreateEnv%20Params#common-environment-configurations)
 - [nodes](/docs/Deployment%20Tools/API%20&%20CLI/CreateEnv%20Params#nodes-configurations)
 - [docker](/docs/Deployment%20Tools/API%20&%20CLI/CreateEnv%20Params#docker-based-environment-configurations)
 
-# Common Environment Configurations
+## Common Environment Configurations
 
 The parameters below are to be specified within the **_env_** array (of either CLI command or JSON file) and define the most common environment configurations, like _programming language, name, region_ and others:
 
