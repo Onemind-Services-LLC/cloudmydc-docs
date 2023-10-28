@@ -4,7 +4,7 @@ sidebar_position: 3
 
 ## Environment Management with Eclipse Plugin
 
-Before proceeding further with the [new projects deployment](https://cloudmydc.com/), let’s consider the basics of the remote environments management through Eclipse IDE.
+Before proceeding further with the [new projects deployment](/docs/Deployment%20Tools/Plugins/Eclipse%20Plugin/Application%20Deployment#eclipse-plugin-application-deployment), let’s consider the basics of the remote environments management through Eclipse IDE.
 
 1. Navigate to the **Window > Show View > Other** section. Here, you can notice that **Cloud Platform** category has been added to the list.
 
@@ -46,4 +46,4 @@ Here, they can be quickly managed through context menu (called with the right mo
 
 </div>
 
-Now, as you are aware with the key environment management operations the Eclipse Plugin provides, let’s consider how to [deploy a new project](https://cloudmydc.com/) into the Cloud directly from your IDE.
+Now, as you are aware with the key environment management operations the Eclipse Plugin provides, let’s consider how to [deploy a new project](/docs/Deployment%20Tools/Plugins/Eclipse%20Plugin/Application%20Deployment#eclipse-plugin-application-deployment) into the Cloud directly from your IDE.

@@ -6,7 +6,7 @@ sidebar_position: 6
 
 One of the ways to secure your application is to use SSL-encrypted (Secure Sockets Layer) connection. With the platform, you can use both [Built-In SSL](/docs/ApplicationSetting/SSL/Built-In%20SSL) and [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL) certificates.
 
-Herewith, all custom SSL certificates require to be signed, and usually, this is done by the Certificate Authority (CA) companies (e.g. [Let’s Encrypt](https://cloudmydc.com/)). In this case, your certificate becomes reliable after signing, so others can trust it and any connection to your site or application is performed without issues.
+Herewith, all custom SSL certificates require to be signed, and usually, this is done by the Certificate Authority (CA) companies (e.g. Let’s Encrypt). In this case, your certificate becomes reliable after signing, so others can trust it and any connection to your site or application is performed without issues.
 
 Nevertheless, you can sign your custom certificate yourself and still receive a secure connection, but such a certificate will be untrusted. As a result, while opening your application, it will require a visitor to pass through the warning message, that highly recommends him to leave your web page, because of the untrusted secure connection.
 
@@ -30,13 +30,14 @@ In order to generate a self-signed certificate, you need to buy a **Domain Name*
 
 Once that is done, you are ready to proceed to the generation of your SSL certificate with the help of any preferred tool. We’ll use OpenSSL as an example. Depending on the operating system you are using, perform the following steps:
 
-- [for Windows](https://cloudmydc.com/)
-- [for Linux/MacOS/FreeBSD](https://cloudmydc.com/)
+- [for Windows](/docs/ApplicationSetting/SSL/Self-Signed%20Custom%20SSL#for-windows)
+- [for Linux/MacOS/FreeBSD](/docs/ApplicationSetting/SSL/Self-Signed%20Custom%20SSL#for-linuxmacosfreebsd)
 
-You are also able to generate the required files using our [Elastic Virtual Private Server](https://cloudmydc.com/).
+You are also able to generate the required files using our [Elastic Virtual Private Server](/docs/ApplicationSetting/SSL/Self-Signed%20Custom%20SSL#elastic-vps).
 
-- For Windows
-  [Download](https://cloudmydc.com/) the latest OpenSSL tool version. Extract the received archive and run the tool by double-clicking the **_openssl.exe_** file in the _bin_ folder. Subsequently, the files created with OpenSSL will appear in the same _bin_ directory by default.
+## For Windows
+
+[Download](https://code.google.com/archive/p/openssl-for-windows/downloads) the latest OpenSSL tool version. Extract the received archive and run the tool by double-clicking the **_openssl.exe_** file in the _bin_ folder. Subsequently, the files created with OpenSSL will appear in the same _bin_ directory by default.
 
 1. First, you need to generate an SSH private key for your root certificate (this is what signs all issued certificates). Create it as follows:
 
@@ -320,7 +321,7 @@ You also have the possibility to create your self-signed certificate using the [
 - create an environment with Elastic VPS inside
 - connect to it in a preferred way (using [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) or via [SSH Gateway](/docs/Deployment%20Tools/SSH/SSH%20Overview))
 - access the OpenSSL shell with the corresponding **_openssl_** command
-- create a self-signed certificate following the [Linux/MacOS/FreeBSD](https://cloudmydc.com/) section of this guide (the only difference is all the commands should be executed without the **_openssl_** word at their beginning, as you are already inside the OpenSSL shell)
+- create a self-signed certificate following the [Linux/MacOS/FreeBSD](/docs/ApplicationSetting/SSL/Self-Signed%20Custom%20SSL#for-linuxmacosfreebsd) section of this guide (the only difference is all the commands should be executed without the **_openssl_** word at their beginning, as you are already inside the OpenSSL shell)
 
 Once the generation process is finished, you need to download the created certificate files (e.g. via [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager)) to apply them to the necessary environment afterward.
 
@@ -328,9 +329,9 @@ Once the generation process is finished, you need to download the created certif
 
 Now, follow the steps as for any other custom SSL upload:
 
-- [Adjust Environment Topology](https://cloudmydc.com/)
-- [Domain Name and A Record Settings](https://cloudmydc.com/)
-- [Upload Certificate to the Environment](https://cloudmydc.com/)
+- [Adjust Environment Topology](/docs/ApplicationSetting/SSL/Custom%20SSL)
+- [Domain Name and A Record Settings](/docs/ApplicationSetting/SSL/Custom%20SSL)
+- [Upload Certificate to the Environment](/docs/ApplicationSetting/SSL/Custom%20SSL)
 
 That’s it! If you enter the bound custom domain name (or the attached external IP address) into your browser’s address bar with the **_https://_** connection protocol, you’ll see the mentioned warning message opened, informing you that the used SSL certificate is not trusted.
 

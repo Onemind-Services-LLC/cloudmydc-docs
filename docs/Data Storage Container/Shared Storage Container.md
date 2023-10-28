@@ -5,8 +5,8 @@ sidebar_position: 2
 **Shared Storage Сontainer** is a special type of node, designed for data storing. Compared to other managed containers, it provides a number of the appropriate benefits:
 
 - **_NFS and Gluster Native (FUSE) client types_** for data mounting
-  - **[NFS](https://cloudmydc.com/)** - straightforward file system protocol, designed for accelerated processing and high performance
-  - **[Gluster Native (FUSE)](https://cloudmydc.com/)** - reliable file system protocol with automatic replication of the mounted data, designed for data backup and failover (consumes more CPU/disk than NFS)
+  - **[NFS](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Protocols/NFS)** - straightforward file system protocol, designed for accelerated processing and high performance
+  - **[Gluster Native (FUSE)](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Protocols/GlusterFS)** - reliable file system protocol with automatic replication of the mounted data, designed for data backup and failover (consumes more CPU/disk than NFS)
 - **_NFSv4 Support_** instead of NFSv3 on other managed stacks, ensures improved performance (especially for a large number of files), stronger security, support of the FUSE directories export, and more.
 
 :::tip Note
@@ -17,7 +17,7 @@ Any platform-managed container can receive mounts over the fourth version of the
 
 - **_[Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances)_** option automatically configures a reliable storage cluster, ensuring data safety. In case of failure of one or several nodes, the AutoFS client automatically switches to the working instances on the next read/write operation attempt.
 - **_Enlarged Disk Space_** compared to other common-purposed nodes is provided for Shared Storage Container, allowing to work with bigger data volumes. The particular value depends on your service provider’s settings and can vary based on the account type.
-- **_Optimized Performance_** due to all the necessary software being preinstalled (e.g. NFS & RPC for NFSv4, _[GlusterFS](https://cloudmydc.com/)_ for auto-clustering) and the default features of the platform (elastic vertical and horizontal scaling, efficient pay-as-you-use pricing model, comfortable UI with file exports and mount points support, etc.)
+- **_Optimized Performance_** due to all the necessary software being preinstalled (e.g. NFS & RPC for NFSv4, _[GlusterFS](https://www.gluster.org/)_ for auto-clustering) and the default features of the platform (elastic vertical and horizontal scaling, efficient pay-as-you-use pricing model, comfortable UI with file exports and mount points support, etc.)
 
 <div style={{
     display:'flex',
@@ -31,9 +31,9 @@ Any platform-managed container can receive mounts over the fourth version of the
 
 And below we’ll consider how to set up such Shared Storage server inside the platform, some tips on its management, and use case specifics:
 
-- [Storage Container Creation](https://cloudmydc.com/)
-- [Shared Storage Auto-Cluster](https://cloudmydc.com/)
-- [Storage Container Management](https://cloudmydc.com/)
+- [Storage Container Creation](/docs/Data%20Storage%20Container/Shared%20Storage%20Container#storage-container-creation)
+- [Shared Storage Auto-Cluster](/docs/Data%20Storage%20Container/Shared%20Storage%20Container#shared-storage-auto-cluster)
+- [Storage Container Management](/docs/Data%20Storage%20Container/Shared%20Storage%20Container#storage-container-management)
 
 ## Storage Container Creation
 
@@ -49,7 +49,7 @@ To create a new Shared Storage Container, enable the corresponding **_Storage_**
 
 </div>
 
-In the middle part of the wizard, you can provide additional configurations for your Shared Storage. The exact amount of provided storage space can be adjusted via the Disk Limit field. The platform can automatically configure a [reliable storage cluster](https://cloudmydc.com/) (instead of separate nodes) if you enable the **_Auto-Clustering_** switcher. Also, in case of necessity, [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) addresses can be attached to the nodes (both IPv4 and IPv6).
+In the middle part of the wizard, you can provide additional configurations for your Shared Storage. The exact amount of provided storage space can be adjusted via the Disk Limit field. The platform can automatically configure a [reliable storage cluster](/docs/Data%20Storage%20Container/Shared%20Storage%20Container#shared-storage-auto-cluster) (instead of separate nodes) if you enable the **_Auto-Clustering_** switcher. Also, in case of necessity, [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) addresses can be attached to the nodes (both IPv4 and IPv6).
 
 :::tip Tip
 
@@ -63,7 +63,7 @@ Click **Create** when ready.
 
 ## Shared Storage Auto-Cluster
 
-Upon enabling **[Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances)** switcher for the Shared Storage Container in topology wizard, the platform automatically configures a replicated volume (replicates files across bricks in the volume). Such a solution is implemented based on the pre-installed _[GlusterFS](https://cloudmydc.com/)_ RPM packages and is intended for environments where high-reliability is critical.
+Upon enabling **[Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances)** switcher for the Shared Storage Container in topology wizard, the platform automatically configures a replicated volume (replicates files across bricks in the volume). Such a solution is implemented based on the pre-installed _[GlusterFS](https://www.gluster.org/)_ RPM packages and is intended for environments where high-reliability is critical.
 
 <div style={{
     display:'flex',
@@ -79,14 +79,14 @@ Upon enabling **[Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clust
 
 Consider the following specifics:
 
-- Currently, automatic conversion of the existing standalone storage into the GlusterFS cluster is not supported. Follow the manual [migration guide](https://cloudmydc.com/).
+- Currently, automatic conversion of the existing standalone storage into the GlusterFS cluster is not supported. Follow the manual [migration guide](/docs/Data%20Storage%20Container/Migrating%20to%20GlusterFS%20Cluster).
 - Shared Storage auto-clustering requires the latest [CloudMyDc 7](https://cloudmydc.com/) virtualization used on the [environment region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) (depends on your hosting provider)
 - storage auto-cluster requires 3 or more nodes and cannot be disabled after creation
 - scaling is performed with two nodes step to maintain working quorum
 
 :::
 
-During creation, the GlusterFS volume is mounted into the **/data** folder and is accessible over NFSv4 protocol. Consequently, when [mounting](https://cloudmydc.com/) from/to your storage cluster, it is managed as a single component (i.e. not a collection of separate storage containers). In case of failure of one or several nodes, the AutoFS client (that is used in application containers by default) automatically switches to the working instances on the next read/write operation attempt.
+During creation, the GlusterFS volume is mounted into the **/data** folder and is accessible over NFSv4 protocol. Consequently, when [mounting](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) from/to your storage cluster, it is managed as a single component (i.e. not a collection of separate storage containers). In case of failure of one or several nodes, the AutoFS client (that is used in application containers by default) automatically switches to the working instances on the next read/write operation attempt.
 
 <div style={{
     display:'flex',
@@ -100,13 +100,13 @@ During creation, the GlusterFS volume is mounted into the **/data** folder and i
 
 :::tip Tip
 
-If facing the [split-brains error](https://cloudmydc.com/) (i.e. storage cannot determine which copy in the replica is the correct one), follow the linked troubleshooting guide to resolve the issue.
+If facing the [split-brains error](https://docs.gluster.org/en/latest/Troubleshooting/resolving-splitbrain/) (i.e. storage cannot determine which copy in the replica is the correct one), follow the linked troubleshooting guide to resolve the issue.
 
 :::
 
 ## Use Cases Peculiarities
 
-The storage cluster based on the Gluster software is [suitable for the most solutions](https://cloudmydc.com/). However, some cases benefit from the GlusterFS & NFS usage more than others.
+The storage cluster based on the Gluster software is [suitable for the most solutions](https://docs.gluster.org/en/latest/Install-Guide/Overview/#is-gluster-going-to-work-for-me-and-what-i-need-it-to-do). However, some cases benefit from the GlusterFS & NFS usage more than others.
 
 <u>Recommended</u> use cases:
 
@@ -118,7 +118,7 @@ The storage cluster based on the Gluster software is [suitable for the most solu
 - Gluster does not support so-called “structured data”, so do not use Shared Storage for SQL databases. However, using GlusterFS to backup and restore a database would be fine
 - NFS is not suitable for applications with heavy IO operations and, in case of a node failure during the write operation, can even lead to data corruption
 
-Some general examples of the storage usage are described in the [Dedicated Storage](https://cloudmydc.com/) documentation.
+Some general examples of the storage usage are described in the [Dedicated Storage](/docs/Data%20Storage%20Container/Use%20Cases/Dedicated%20Container) documentation.
 
 ## Storage Container Management
 
@@ -138,11 +138,11 @@ Right after creation, you can immediately proceed to the container configuration
 
 :::tip Tip
 
-For files sharing with other instances within the platform or external servers, the appropriate **_[Mount Points](https://cloudmydc.com/)_** and **_[Exports](https://cloudmydc.com/)_** tabs can be used.
+For files sharing with other instances within the platform or external servers, the appropriate **_[Mount Points](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points)_** and **_[Exports](/docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing)_** tabs can be used.
 
 :::
 
-2. [SSH access](https://cloudmydc.com/) (either via the web or local SSH client) can be established to get full control over your storage server.
+2. [SSH access](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) (either via the web or local SSH client) can be established to get full control over your storage server.
 
 <div style={{
     display:'flex',
@@ -154,7 +154,7 @@ For files sharing with other instances within the platform or external servers, 
 
 </div>
 
-3. If you want to use your Shared Storage Container as an external server (i.e. not only within the current PaaS installation) - enable the [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) option to make it accessible from outside. Follow instructions in the dedicated [NFS server configurations](https://cloudmydc.com/) guide.
+3. If you want to use your Shared Storage Container as an external server (i.e. not only within the current PaaS installation) - enable the [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) option to make it accessible from outside. Follow instructions in the dedicated [NFS server configurations](/docs/Data%20Storage%20Container/External%20NFS%20Server%20Configuration) guide.
 
 <div style={{
     display:'flex',
@@ -182,7 +182,7 @@ The IP address(es) attached to Shared Storage can be viewed through expanding th
 
 :::tip Note
 
-The live migration option is not available for [migration of environments](https://cloudmydc.com/) with Shared Storage containers. So, to check the nodes affected by the temporary unavailability of the storage, use the appropriate availability of the components link circled in the image below.
+The live migration option is not available for [migration of environments](/docs/EnvironmentManagement/Environment%20Regions/Migration%20between%20Regions) with Shared Storage containers. So, to check the nodes affected by the temporary unavailability of the storage, use the appropriate availability of the components link circled in the image below.
 
 <div style={{
     display:'flex',

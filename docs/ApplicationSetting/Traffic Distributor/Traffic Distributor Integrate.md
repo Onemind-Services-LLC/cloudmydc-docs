@@ -4,7 +4,7 @@ sidebar_position: 4
 
 ## Integrate Traffic Distributor with Running Application
 
-In most cases, developers face the problem of traffic distribution between several backends when already having some running application, with a pool of existing users and constant incoming load. Thus, besides the general traffic sharing configuration difficulties, it is additionally complicated with the necessity to apply the appropriate “on-fly” changes to the front-end application instance. In many cases, it causes a temporary app downtime. So in order to minimize such negative influence on your customers, below we’ll consider the ways to easily and painlessly integrate [Traffic Distributor (TD)](https://cloudmydc.com/) solution into your running application topology.
+In most cases, developers face the problem of traffic distribution between several backends when already having some running application, with a pool of existing users and constant incoming load. Thus, besides the general traffic sharing configuration difficulties, it is additionally complicated with the necessity to apply the appropriate “on-fly” changes to the front-end application instance. In many cases, it causes a temporary app downtime. So in order to minimize such negative influence on your customers, below we’ll consider the ways to easily and painlessly integrate [Traffic Distributor (TD)](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Overview) solution into your running application topology.
 
 :::tip Note
 
@@ -18,8 +18,8 @@ Traffic Distributor provides the ability to benefit from a number of useful solu
 
 To achieve this, you’ll need to pass through the following steps:
 
-- [deploy new app version & add it to routing](https://cloudmydc.com/)
-- [configure app entrypoint via TD](https://cloudmydc.com/)
+- [deploy new app version & add it to routing](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Integrate#add-application-copy-to-routing)
+- [configure app entrypoint via TD](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Integrate#configure-app-entrypoint-via-td)
 
 ## Add Application Copy to Routing
 
@@ -39,7 +39,7 @@ For this example, we run an application in the Apache server within the _primary
 
 :::tip Tip
 
-You can use the [environment cloning](https://cloudmydc.com/) feature to instantly get the identical environment copy (i.e. with all the appropriate data and settings being already set up inside) of any type.
+You can use the [environment cloning](/docs/EnvironmentManagement/Cloning%20Environment) feature to instantly get the identical environment copy (i.e. with all the appropriate data and settings being already set up inside) of any type.
 
 :::
 
@@ -59,7 +59,7 @@ Don’t forget to properly configure any “hardcoded” data (direct links, IPs
 
 :::
 
-2. Now, we are ready to [install Traffic Distributor](https://cloudmydc.com/), specifying both these environments as backends.
+2. Now, we are ready to [install Traffic Distributor](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Installation), specifying both these environments as backends.
 
 <div style={{
     display:'flex',
@@ -73,7 +73,7 @@ Don’t forget to properly configure any “hardcoded” data (direct links, IPs
 
 :::tip Tip
 
-If there are several [environment regions](https://cloudmydc.com/) available at the chosen hosting provider platform, you can subsequently [migrate](https://cloudmydc.com/) one of your environments to a different hardware set. This will grant better failover protection, as you’ll be able to deal with the hardware-dependent problem at one of your backends (if such occurs) by routing requests to the instance that remains operable.
+If there are several [environment regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) available at the chosen hosting provider platform, you can subsequently [migrate](/docs/EnvironmentManagement/Environment%20Regions/Migration%20between%20Regions) one of your environments to a different hardware set. This will grant better failover protection, as you’ll be able to deal with the hardware-dependent problem at one of your backends (if such occurs) by routing requests to the instance that remains operable.
 
 :::
 
@@ -93,12 +93,12 @@ The only remaining thing is to redirect incoming traffic from the first environm
 
 ## Configure App Entrypoint via TD
 
-Most applications in production have some [custom domain](https://cloudmydc.com/). In our example, the initial environment (_primary-env_ in our case) already has a [custom domain name bound](https://cloudmydc.com/).
+Most applications in production have some [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name). In our example, the initial environment (_primary-env_ in our case) already has a [custom domain name bound](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-bind-domain-to-environment).
 
 For the proper redirection of requests (i.e. to process them through the distributor), we need to move the appropriate entrypoint to the TD environment. In such a way, it will be placed in front of the chosen pair of backends and share the incoming load among them based on specified settings.In order to accomplish this, follow one of the next simple procedures based on the used custom domain binding method:
 
-- _if using CNAME or ANAME redirect_ - [swap domains](/docs/ApplicationSetting/Domain%20Name%20Management/Swap%20Domains) between the initial and TD environments
-- _if using A Record_ - s[wap Public IPs](https://cloudmydc.com/) to transfer used external IP to the TD environment
+- _if using CNAME or ANAME redirect_ - [swap domains](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Integrate#swap-domains) between the initial and TD environments
+- _if using A Record_ - [swap Public IPs](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Integrate#swap-public-ips) to transfer used external IP to the TD environment
 
 ## Swap Domains
 
@@ -114,7 +114,7 @@ For the proper redirection of requests (i.e. to process them through the distrib
 
 </div>
 
-2. Within the opened environment settings tab, the required **Custom domains** section will be displayed by default. Go to the **[Swap Domains]/swap-domains/)** suboption and select Traffic Distributor environment within the drop-down list.
+2. Within the opened environment settings tab, the required **Custom domains** section will be displayed by default. Go to the **[Swap Domains]/swap-domains/** suboption and select Traffic Distributor environment within the drop-down list.
 
 <div style={{
     display:'flex',
@@ -132,13 +132,13 @@ Now, click the **Swap** button and confirm this action within the pop-up to appl
 
 ## Swap Public IPs
 
-The easiest way to pass public IP from p*rimary-env* (i.e. the one your custom domain is attached to) to Traffic Distributor is by using the corresponding **External Addresses Swap** functionality, available through platform [API](https://cloudmydc.com/) and [CLI](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview).
+The easiest way to pass public IP from p*rimary-env* (i.e. the one your custom domain is attached to) to Traffic Distributor is by using the corresponding **External Addresses Swap** functionality, available through platform [API](https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps) and [CLI](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview).
 
 It allows performing the required configurations in a single command, sparing you from the manual A _Record_ reconfiguration.
 
 If you prefer to work **via GUI**, you need to go to your domain registrar and manually substitute an external IP address in the A Record for your custom domain.
 
-1. Ensure that the NGINX balancer instance in your Traffic Distributor environment has an [external IP address](https://cloudmydc.com/) attached. Copy its value from the dashboard.
+1. Ensure that the NGINX balancer instance in your Traffic Distributor environment has an [external IP address](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) attached. Copy its value from the dashboard.
 
 <div style={{
     display:'flex',
@@ -150,7 +150,7 @@ If you prefer to work **via GUI**, you need to go to your domain registrar and m
 
 </div>
 
-2. Then, access your DNS manager and re-configure your [A record](https://cloudmydc.com/) so that it points to this new IP address.
+2. Then, access your DNS manager and re-configure your [A record](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) so that it points to this new IP address.
 
 :::tip Tips:
 

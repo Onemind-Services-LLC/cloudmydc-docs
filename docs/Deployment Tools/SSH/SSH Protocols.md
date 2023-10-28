@@ -70,7 +70,7 @@ Now we can proceed to establishing the SFTP connection.
 
 4. In the opened window, click the **New site** button and specify the following parameters:
 
-- in the **Host** field state your SSH host (_gate.{[hoster_domain](https://cloudmydc.com/)}_)
+- in the **Host** field state your SSH host (_gate.{[hoster_domain](/docs/QuickStart/Hosters%20List%20&%20Info)}_)
 - in the **Port** field enter _3022_ value.
 - choose **SFTP** in the Protocol drop-down list.
 - choose **Normal** Logon Type.
@@ -112,7 +112,7 @@ Let’s look at the example of FISH protocol use via establishing a secure conne
 
 - for DSA key `ls -la /home/<username>/.ssh/id_dsa` - Ownership should be stated as your **username** and attributes should be **400**or **600**. I.e. your private key should not be available for reading by other users, otherwise a connection will not be established.
 
-3. Install and run your [Midnight Commander](https://cloudmydc.com/).
+3. Install and run your [Midnight Commander](https://en.wikipedia.org/wiki/Midnight_Commander).
 
 4. Select F9 to show the menu toolbar. Then open the left or right panel’s menu and choose **Shell link** item.
 

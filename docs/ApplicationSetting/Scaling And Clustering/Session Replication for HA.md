@@ -2,12 +2,9 @@
 sidebar_position: 7
 ---
 
-!image incompleted
-!link incompleted
-
 ## High Availability with Sticky Session Replication
 
-The platform provides automated session replication between [Tomcat](https://cloudmydc.com/), [GlassFish](https://cloudmydc.com/) and [Jetty](https://cloudmydc.com/) servers to gain web application high availability within Java cluster.
+The platform provides automated session replication between [Tomcat](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat%20Server), [GlassFish](/docs/Java/Java%20App%20Servers/GlassFish/GlassFish%20Server) and [Jetty](/docs/Java/Java%20App%20Servers/Jetty/Jetty%20Server) servers to gain web application high availability within Java cluster.
 
 Session replication is a mechanism used to replicate the data stored in a session between different instances, which have to be a part of the same cluster. When session replication is enabled in a cluster environment, the entire session data is copied on a replicated instance. The session replication operation does not copy the attributes that cannot be serialized in a session and any instance specific data. Session replication provides high reliability, scalability, and perfect failover capabilities.
 

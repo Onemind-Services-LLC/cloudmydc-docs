@@ -6,7 +6,7 @@ sidebar_position: 4
 
 **MySQL**, **MariaDB**, and **Percona** are among of the most popular open source SQL databases, used by world’s largest organizations. In this guide we’ll overview a simple example of **Node.js** application connection to MySQL or MariaDB server.
 
-1. Log into your PaaS account and [create an environment](https://cloudmydc.com/) with MySQL (or MariaDB) database server, we’ll also add a NodeJS compute node for this tutorial.
+1. Log into your PaaS account and [Create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with MySQL (or MariaDB) database server, we’ll also add a NodeJS compute node for this tutorial.
 
 <div style={{
     display:'flex',

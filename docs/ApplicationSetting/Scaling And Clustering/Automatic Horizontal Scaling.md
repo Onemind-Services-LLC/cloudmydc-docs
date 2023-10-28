@@ -4,7 +4,7 @@ sidebar_position: 3
 
 ## Automatic Horizontal Scaling
 
-In addition to the inbuilt [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling), the platform can automatically scale nodes horizontally, changing the number of containers within a [layer](https://cloudmydc.com/) ([nodeGroup](https://cloudmydc.com/)) based on incoming load. Herewith, all instances within the same layer are evenly distributed across the available hardware sets (hosts) using the anti-affinity rules. Namely, when a new container is created, it is placed at the host with the least number of instances from the same layer and the lowest load mark, which ensures [reliability and high-availability](https://cloudmydc.com/) of the hosted projects.
+In addition to the inbuilt [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling), the platform can automatically scale nodes horizontally, changing the number of containers within a [layer](/docs/PlatformOverview/Basics%20&%20Terminology#layer) ([nodeGroup](https://docs.cloudscripting.com/creating-manifest/selecting-containers/#all-containers-by-group)) based on incoming load. Herewith, all instances within the same layer are evenly distributed across the available hardware sets (hosts) using the anti-affinity rules. Namely, when a new container is created, it is placed at the host with the least number of instances from the same layer and the lowest load mark, which ensures [reliability and high-availability](/docs/PlatformOverview/Isolated%20Container) of the hosted projects.
 
 <div style={{
     display:'flex',
@@ -22,8 +22,8 @@ Herewith, the statistic is gathered for the whole layer, so if there are three n
 
 Below, we’ll overview how to:
 
-- set triggers for automatic scaling
-- view triggers execution history
+- [set triggers for automatic scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling#triggers-for-automatic-scaling)
+- [view triggers execution history](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling#triggers-execution-history)
 
 ## Triggers for Automatic Scaling
 
@@ -31,7 +31,7 @@ To configure a trigger for the automatic horizontal scaling, follow the steps be
 
 :::danger Note
 
-When a single certified application server (not a custom Docker container) is scaled out on environment without [load balancers](https://cloudmydc.com/), the NGINX balancer is added automatically. Herewith, if you require a different one for your application, it should be added manually before the first scaling event.
+When a single certified application server (not a custom Docker container) is scaled out on environment without [load balancers](/docs/Load%20Balancers/Load%20Balancing), the NGINX balancer is added automatically. Herewith, if you require a different one for your application, it should be added manually before the first scaling event.
 
 :::
 
@@ -82,7 +82,7 @@ Click **Add** to proceed.
 
 :::tip
 
-- the initial (master) node can be used as a [storage server](https://cloudmydc.com/) for sharing data within the whole layer, including nodes added through automatic horizontal scaling
+- the initial (master) node can be used as a [storage server](/docs/Data%20Storage%20Container/Use%20Cases/Master%20Container) for sharing data within the whole layer, including nodes added through automatic horizontal scaling
 - the _CPU_ and _Memory_ limits are calculated based on the amount of the allocated [cloudlets](/docs/PlatformOverview/Cloudlet) (a special platform resource unit, which represents 400 MHz CPU and 128 MiB RAM simultaneously)
 
 :::
@@ -167,7 +167,7 @@ Select the required option to finish trigger creation (adjustment).
 
 You can view the history of scaling triggers execution for a particular environment.
 
-In the example below, we’ll apply high load for 5 minutes (see the RAM usage [statistics](https://cloudmydc.com/) in the image below) on the application server with the following triggers configured:
+In the example below, we’ll apply high load for 5 minutes (see the RAM usage [statistics](/docs/ApplicationSetting/Built-in%20Monitoring/Statistics) in the image below) on the application server with the following triggers configured:
 
 - **_add node_** when average RAM load is more than 65% for at least 5 minutes
 - **_remove node_** when average RAM load is less than 20% for at least 10 minutes

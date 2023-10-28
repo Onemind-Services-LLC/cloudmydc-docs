@@ -4,11 +4,11 @@ sidebar_position: 3
 
 ## Traffic Distributor Installation
 
-The process of [Traffic Distributor](https://cloudmydc.com/) installation is fairly simple with the PaaS - being specially packed for the [Marketplace](https://cloudmydc.com/), it can be created in a few clicks and start working in just a matter of minutes. Herewith, the configurability of the solution is great, so let’s walk through the installation steps below to learn about all of the available functionality and hidden nuances.
+The process of [Traffic Distributor](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Overview) installation is fairly simple with the PaaS - being specially packed for the [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace), it can be created in a few clicks and start working in just a matter of minutes. Herewith, the configurability of the solution is great, so let’s walk through the installation steps below to learn about all of the available functionality and hidden nuances.
 
 :::tip Note
 
-The described flow is suitable for the installation from scratch, i.e. in case you want to route traffic for the new environments. In order to be applied to the already running and loaded applications in production, follow the [Inject Traffic Distributor into Running Project](https://cloudmydc.com/) guide.
+The described flow is suitable for the installation from scratch, i.e. in case you want to route traffic for the new environments. In order to be applied to the already running and loaded applications in production, follow the [Inject Traffic Distributor into Running Project](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Integrate) guide.
 
 :::
 
@@ -70,16 +70,16 @@ Click **OK** to proceed.
 
 The following data should be specified:
 
-- **_Entrypoint_** - switcher with either [Shared Load Balancer or Public IP](https://cloudmydc.com/) position
+- **_Entrypoint_** - switcher with either Shared Load Balancer or Public IP position
 - **_Balancers_** - the number of the NGINX instances that will be added to the Traffic Distributor topology
-- **_Routing Method_** - select from the three available [types of traffic distribution](https://cloudmydc.com/): _Round Robin, Sticky Sessions_, and _Failover_
+- **_Routing Method_** - select from the three available [types of traffic distribution](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Overview#routing-methods): _Round Robin, Sticky Sessions_, and _Failover_
 - **_Traffic Ratio_** - set backend’s weight (priority) to control the distribution of the requests
 - **_HTTPS_** - enable this option if backends are serving traffic via HTTPS
 - **_Backends_** - select two environments to be balanced, either from the automatically fetched list of available ones from your account or type in the required IP address/domain name (for a custom host)
 
 :::tip Note
 
-[Jelasic endpoint](https://cloudmydc.com/) URLs can’t be specified as backends for traffic distribution as they presuppose operating via external _Public_ ports, while interaction in the confines of a single platform is built on _Private_ ports usage.
+[Jelasic endpoint](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints) URLs can’t be specified as backends for traffic distribution as they presuppose operating via external _Public_ ports, while interaction in the confines of a single platform is built on _Private_ ports usage.
 
 In this case, you need to set custom port redirects for your backends. For that, switch to the **_upstream_** section of the **_/etc/nginx/nginx-jelastic.conf_** file inside the load balancer server of your Traffic Distributor environment.
 
@@ -93,13 +93,13 @@ In this case, you need to set custom port redirects for your backends. For that,
 
 </div>
 
-Here, you need to add the required internal containers' port number to the appropriate backend IP addresses and, additionally, define it within the [health check](https://cloudmydc.com/) parameters.
+Here, you need to add the required internal containers' port number to the appropriate backend IP addresses and, additionally, define it within the [health check](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/Failover%20Protection) parameters.
 
 :::
 
 - **_Environment_** - domain name for your environment (e.g. _traffic-distributor_)
 - **_Display Name_** - optionally, an [alias](/docs/EnvironmentManagement/Environment%20Aliases) to be shown for the environment (_Traffic Distributor_ by default)
-- **_Region_** - a drop-down list of the available [environment regions](https://cloudmydc.com/)
+- **_Region_** - a drop-down list of the available [environment regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region)
 
 When all of the required data is specified, click the **Install** button. The platform will do everything else automatically.
 
@@ -117,17 +117,17 @@ When all of the required data is specified, click the **Install** button. The pl
 
 :::tip Note
 
-As Traffic Distributor loading depends only on the number of incoming requests, it does not require a lot of resources. Thus the default one fixed cloudlet with [vertically scale](https://cloudmydc.com/) ability (up to 16 cloudlets) will be enough to handle even a huge amount of simultaneous requests.
+As Traffic Distributor loading depends only on the number of incoming requests, it does not require a lot of resources. Thus the default one fixed cloudlet with [vertically scale](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling) ability (up to 16 cloudlets) will be enough to handle even a huge amount of simultaneous requests.
 
 :::
 
 Using the links at the end of the frame, you can learn how to:
 
-- apply [Blue-Green Deploy](https://cloudmydc.com/)
+- apply [Blue-Green Deploy](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/Blue-Green%20Deploy)
 - adopt [failover protection](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/Failover%20Protection)
 - perform [A/B testing](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/A-B%20Testing)
-- [Inject Distributor](https://cloudmydc.com/) into running project
-- bind [Custom Domain](https://cloudmydc.com/)
+- [Inject Distributor](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Integrate) into running project
+- bind [Custom Domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name)
 - enable [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL)
 
 ## Traffic Distributor Reconfiguration
@@ -178,9 +178,9 @@ The **Reload configuration** option is required to apply manual changes to the T
 
 Options available for configuration are:
 
-- **_Entrypoint_** - switcher with either [Shared Load Balancer or Public IP](https://cloudmydc.com/) position
+- **_Entrypoint_** - switcher with either Shared Load Balancer or Public IP position
 - **_Balancers_** - the number of the NGINX instances that you would like to have in the Traffic Distributor topology
-- **_Routing Method_** - select from the three available [types of traffic distribution](https://cloudmydc.com/): _Round Robin, Sticky_ _Sessions_, and _Failover_
+- **_Routing Method_** - select from the three available [types of traffic distribution](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Overview): _Round Robin, Sticky_ _Sessions_, and _Failover_
 - **_Traffic Ratio_** - set backends' weight (priority) to control the distribution of the requests
 - **_HTTPS_** - enable this option if backends are serving traffic via HTTPS
 - **_Backends_** - select two environments to be balanced, either from the automatically fetched list of available ones from your account or type in the required IP address/domain name (for a custom host)

@@ -4,7 +4,7 @@ sidebar_position: 1
 
 ## Automatic Vertical Scaling
 
-The platform is the only Cloud PaaS which can automatically **scale any application**, both vertically and [horizontally](https://cloudmydc.com/), making hosting of your applications truly flexible.
+The platform is the only Cloud PaaS which can automatically **scale any application**, both vertically and [horizontally](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling), making hosting of your applications truly flexible.
 
 **Automatic vertical scaling** is made possible by the platform’s ability to dynamically change the amount of allocated to server resources (RAM and CPU) according to its current demands, with no manual intervention required. This feature guarantees you never overpay for unused resources and saves your time due to eliminating the necessity of handling the load-related adjustments or architectural changes.
 
@@ -36,7 +36,7 @@ The vertical scaling feature is applicable for any type of instance in environme
 
 :::
 
-As you could observe within the video above, the platform measures resources in special units called **cloudlets**, which provide you with a superior granularity while scaling. A [cloudlet](https://cloudmydc.com/) is roughly equivalent to 128 MiB RAM and 400Mhz CPU core.
+As you could observe within the video above, the platform measures resources in special units called **cloudlets**, which provide you with a superior granularity while scaling. A [cloudlet](/docs/PlatformOverview/Cloudlet) is roughly equivalent to 128 MiB RAM and 400Mhz CPU core.
 
 <div style={{
     display:'flex',
@@ -102,4 +102,4 @@ If changing the scaling limit (i.e. the number of the dynamic cloudlets) for the
 
 :::
 
-You can use the automatically gathered [statistics](https://cloudmydc.com/) to check the consumption level for the last month and set the amount of resources according to it. And in the case your application becomes highly popular and a single server’s capacity is not enough, feel free to scale it horizontally by means of increasing the number of nodes [manually](https://cloudmydc.com/) or configure a set of [triggers for automatic horizontal scaling](https://cloudmydc.com/) of your application server.
+You can use the automatically gathered [statistics](/docs/ApplicationSetting/Built-in%20Monitoring/Statistics) to check the consumption level for the last month and set the amount of resources according to it. And in the case your application becomes highly popular and a single server’s capacity is not enough, feel free to scale it horizontally by means of increasing the number of nodes [manually](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) or configure a set of [triggers for automatic horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling) of your application server.

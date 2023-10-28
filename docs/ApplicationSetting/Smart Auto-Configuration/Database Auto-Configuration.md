@@ -4,7 +4,7 @@ sidebar_position: 2
 
 ## Database Auto-Configuration
 
-The platform [**Smart Auto-Configuration**](https://cloudmydc.com/) automatically adjusts the **_MySQL_**, **_MariaDB_**, and **_Percona_** databases in accordance with the resource limit allocated to the containers. Namely, the changes affect the **_/etc/my.cnf_** configuration file and the following settings in particular:
+The platform [**Smart Auto-Configuration**](/docs/ApplicationSetting/Smart%20Auto-Configuration/Auto-Configuration%20Overview) automatically adjusts the **_MySQL_**, **_MariaDB_**, and **_Percona_** databases in accordance with the resource limit allocated to the containers. Namely, the changes affect the **_/etc/my.cnf_** configuration file and the following settings in particular:
 
 - _key_buffer_size_
 - _table_open_cache_
@@ -16,7 +16,7 @@ Starting with the **5.7** and **8.0** versions of the **MySQL/Percona** and **Ma
 - _innodb_buffer_pool_instances - deprecated in MariaDB since the 10.6.x (always 1 pool instance)_
 - _innodb_buffer_pool_chunk_size_
 
-If you want to manually change any of the settings from the list above, you need to set the **_JELASTIC_AUTOCONFIG_** [environment variable](https://cloudmydc.com/) to _“false”, “disable”, or “0”_. Otherwise, your custom changes will be overwritten.
+If you want to manually change any of the settings from the list above, you need to set the **_JELASTIC_AUTOCONFIG_** [environment variable](/docs/Container/Container%20Configuration/Variables) to _“false”, “disable”, or “0”_. Otherwise, your custom changes will be overwritten.
 
 <div style={{
     display:'flex',

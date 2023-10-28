@@ -130,7 +130,7 @@ There are also separate instructions for managing your projects via [Gitblit](/d
 
 ## Domains Management
 
-You can bind a [custom domain](https://cloudmydc.com/) name to your application’s URL and use it instead of the default environment domain:
+You can bind a [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) name to your application’s URL and use it instead of the default environment domain:
 
 - **_CNAME redirect_** if using _Shared Load Balancer_; is recommended for **_dev_** and **test** environments
 - **DNS A Record** if using _public IP_; can handle high traffic load and is suitable for **production** environments

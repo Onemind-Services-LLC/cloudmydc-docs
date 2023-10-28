@@ -43,16 +43,16 @@ You can further analyze the presented statistics by varying the _Interval_ and _
 
 :::danger Note
 
-The platform collects statistics every minute and stores it for an hour to implement an accurate [**_Pay-per-Use_**](https://cloudmydc.com/) charging approach. Afterward, the data is automatically aggregated into the one-hour blocks, using one of the two methods based on the particular resource type:
+The platform collects statistics every minute and stores it for an hour to implement an accurate [**_Pay-per-Use_**](/docs/Account&Pricing/Pricing%20Model%20Overview) charging approach. Afterward, the data is automatically aggregated into the one-hour blocks, using one of the two methods based on the particular resource type:
 
 - a sum of all values for _CPU, Network, Disk IOPS_ and _Disk IO_
 - the maximum value for _RAM_ and _Disk_
 
 :::
 
-Using the statistics data you can easily track the resources consumption of your application (hover over for the details on a particular time frame), thus analyze and predict your future spends and, as a result, be able to choose the best way to manage your environment. For even more convenience, you can configure the set of [load alerts](https://cloudmydc.com/) to be notified about the consumption level growth or wane to the specified percentage via email. This can greatly help you to save your money!
+Using the statistics data you can easily track the resources consumption of your application (hover over for the details on a particular time frame), thus analyze and predict your future spends and, as a result, be able to choose the best way to manage your environment. For even more convenience, you can configure the set of [load alerts](/docs/ApplicationSetting/Built-in%20Monitoring/Load%20Alerts) to be notified about the consumption level growth or wane to the specified percentage via email. This can greatly help you to save your money!
 
-See the linked document to get additional information on [resources charging](https://cloudmydc.com/).
+See the linked document to get additional information on [resources charging](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ).
 
 And below we’ll consider the specifics of I/O usage tracking in more details.
 

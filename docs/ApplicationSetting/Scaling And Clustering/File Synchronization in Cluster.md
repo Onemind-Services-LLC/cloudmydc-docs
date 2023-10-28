@@ -26,7 +26,7 @@ sidebar_position: 5
 
 <!-- Content changes -->
 
-As incoming traffic to your project grows, you need to improve your app performance to keep up with it. Some room of capacities for elastic extension is automatically provisioned in confines of a set server [vertical scaling](https://cloudmydc.com/) limit, but eventually you most likely will face the need to enlarge a number of its nodes (i.e. to scale it [horizontally](https://cloudmydc.com/)) upon your service popularity rises.
+As incoming traffic to your project grows, you need to improve your app performance to keep up with it. Some room of capacities for elastic extension is automatically provisioned in confines of a set server [vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling) limit, but eventually you most likely will face the need to enlarge a number of its nodes (i.e. to scale it [horizontally](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling)) upon your service popularity rises.
 
 </div>
 </div>
@@ -35,16 +35,16 @@ For lots of the most widely used apps (like _WordPress, Drupal, Joomla, Liferay,
 
 To help you in getting rid of such content being out-of-sync upon building clustered solution for your application, the platform provides a special **File Synchronization** add-on, intended to keep the uploaded files set similar across multiple web-server instances. Herewith, synchronization could be applied not just in confines of one environment (i.e. for a single horizontally scaled node) but even across application servers in two separate environments, regardless of whether they run the same stack and/or application or different ones.
 
-So, follow the guide below to dive into [implementation specifics](https://cloudmydc.com/) of this solution and to discover how it actually works in practice with the next steps:
+So, follow the guide below to dive into [implementation specifics](/docs/ApplicationSetting/Scaling%20And%20Clustering/File%20Synchronization%20in%20Cluster) of this solution and to discover how it actually works in practice with the next steps:
 
-- [Install Example WordPress Application](https://cloudmydc.com/)
-- [Test File Upload Without Synchronization](https://cloudmydc.com/)
-- [Apply File Synchronization](https://cloudmydc.com/)
-- [Check Sync Logs](https://cloudmydc.com/)
+- [Install Example WordPress Application](/docs/ApplicationSetting/Scaling%20And%20Clustering/File%20Synchronization%20in%20Cluster#install-application)
+- [Test File Upload Without Synchronization](/docs/ApplicationSetting/Scaling%20And%20Clustering/File%20Synchronization%20in%20Cluster#test-file-upload-without-synchronization)
+- [Apply File Synchronization](/docs/ApplicationSetting/Scaling%20And%20Clustering/File%20Synchronization%20in%20Cluster#apply-file-synchronization)
+- [Check Sync Logs](/docs/ApplicationSetting/Scaling%20And%20Clustering/File%20Synchronization%20in%20Cluster#check-logs)
 
 ## File Synchronization Add-on Implementation
 
-The **File Sync** solution is provided as a single-click [add-on](https://cloudmydc.com/), implemented with a bundle of [**lsyncd**](https://cloudmydc.com/) daemon and **cron** utility. Herewith, being wisely coupled with [**inotify**](https://cloudmydc.com/), _lsyncd_ initiates file synchronization only when any actual changes are detected on the system. Such realization notably offloads CPU in comparison to the regular sync calls and keeps your data up-to-date all the time, which makes this solution simultaneously simple to use, powerful, and affordable.
+The **File Sync** solution is provided as a single-click [add-on](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace), implemented with a bundle of [**lsyncd**](https://code.google.com/archive/p/lsyncd/) daemon and **cron** utility. Herewith, being wisely coupled with [**inotify**](https://en.wikipedia.org/wiki/Inotify), _lsyncd_ initiates file synchronization only when any actual changes are detected on the system. Such realization notably offloads CPU in comparison to the regular sync calls and keeps your data up-to-date all the time, which makes this solution simultaneously simple to use, powerful, and affordable.
 
 <div style={{
     display:'flex',
@@ -56,7 +56,7 @@ The **File Sync** solution is provided as a single-click [add-on](https://cloudm
 
 </div>
 
-The **File Sync** add-on can be installed on top of any platform-managed application server stack (i.e. except for [Docker](https://cloudmydc.com/) containers). Before the appliance, you will be asked to select the folder to synchronize. In this way, you are able to sync only the part of your app server’s file system that actually requires this. Thus, only changes within the selected directory (on any of specified application server instances) will trigger the synchronization.
+The **File Sync** add-on can be installed on top of any platform-managed application server stack (i.e. except for [Docker](/docs/Container/Container%20Types) containers). Before the appliance, you will be asked to select the folder to synchronize. In this way, you are able to sync only the part of your app server’s file system that actually requires this. Thus, only changes within the selected directory (on any of specified application server instances) will trigger the synchronization.
 
 Now, let’s see how to put all of this into action step-by-step.
 
@@ -70,7 +70,7 @@ The instruction below is fully appropriate for other similar applications (_Drup
 
 :::
 
-1. You can install your **WordPress** application [manually](https://cloudmydc.com/) or locate the appropriate one-click package in [Marketplace](https://cloudmydc.com/) to deploy it automatically.
+1. You can install your **WordPress** application manually or locate the appropriate one-click package in [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) to deploy it automatically.
 
 <div style={{
     display:'flex',
@@ -96,7 +96,7 @@ Click **Install** and provide the required details, such as _Environment, Displa
 
 Confirm the installation and wait a minute for a message with your admin data to be shown (the same information will be simultaneously sent to you via email).
 
-2. Click **Change environment topology** and use the **+** button within the [_Horizontal Scaling_](https://cloudmydc.com/) section to add one more app server node and, this way, to create a cluster.
+2. Click **Change environment topology** and use the **+** button within the [_Horizontal Scaling_](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) section to add one more app server node and, this way, to create a cluster.
 
 <div style={{
     display:'flex',
@@ -112,7 +112,7 @@ When finished, click **Apply**.
 
 :::tip
 
-By using instructions in our documentation, you can easily add [extra app servers](https://cloudmydc.com/), enable [high availability](https://cloudmydc.com/) or even configure a [clustered](https://cloudmydc.com/) solution.
+By using instructions in our documentation, you can easily add [extra app servers](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling), enable [high availability](/docs/ApplicationSetting/Scaling%20And%20Clustering/Session%20Replication%20for%20HA) or even configure a clustered solution.
 
 In our case, we have simply added one more app server to the environment but you can use a more complex scenario by setting the [clustered solution](https://cloudmydc.com/) for your WordPress application
 
@@ -189,7 +189,7 @@ As you can see, one of the app server instances (_Node ID 54502_ in our example)
 
 So, to implement content synchronization inside our cluster, let’s apply the **File Synchronization** add-on.
 
-1. Locate and **Install** the **_File Synchronization_** add-on within the platform [Marketplace](https://cloudmydc.com/).
+1. Locate and **Install** the **_File Synchronization_** add-on within the platform [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace).
 
 <div style={{
     display:'flex',

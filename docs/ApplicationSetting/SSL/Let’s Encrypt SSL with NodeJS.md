@@ -4,11 +4,11 @@ sidebar_position: 5
 
 ## Let’s Encrypt SSL Add-On with NodeJS
 
-The platform automates SSL certificate binding for most software stacks when working with the [**Let’s Encrypt**](https://cloudmydc.com/) add-on. However, the out-of-box automation is difficult for the Node.js nodes due to the stack specifics. In the Node.js application, Let’s Encrypt certificates are issued but are not bound - just stored at the **/var/lib/jelastic/keys** directory. You can manually use them in your application by creating a Web server and reading the certificates directly from the code.
+The platform automates SSL certificate binding for most software stacks when working with the **Let’s Encrypt** add-on. However, the out-of-box automation is difficult for the Node.js nodes due to the stack specifics. In the Node.js application, Let’s Encrypt certificates are issued but are not bound - just stored at the **/var/lib/jelastic/keys** directory. You can manually use them in your application by creating a Web server and reading the certificates directly from the code.
 
 :::tip
 
-As an alternative, you can place a [load balancer](https://cloudmydc.com/) node in front of your Node.js server to act as a reverse proxy. The _Let’s Encrypt_ SSL add-on can be installed on such a balancer, benefiting from out-of-box automation.
+As an alternative, you can place a [load balancer](/docs/Load%20Balancers/Load%20Balancing) node in front of your Node.js server to act as a reverse proxy. The _Let’s Encrypt_ SSL add-on can be installed on such a balancer, benefiting from out-of-box automation.
 
 Such an approach is preferable for larger projects that want to utilize the [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) feature as it will require a load balancer node anyway.
 
@@ -18,7 +18,7 @@ This guide will provide a basic example of how you can implement the Let’s Enc
 
 ## Using SSL with NodeJS
 
-1. [Create an environment](https://cloudmydc.com/) with the **Node.js** application server.
+1. [Create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with the **Node.js** application server.
 
 <div style={{
     display:'flex',
@@ -30,7 +30,7 @@ This guide will provide a basic example of how you can implement the Let’s Enc
 
 </div>
 
-2. Install the [Let’s Encrypt](https://cloudmydc.com/) add-on to generate free SSL certificates for your application.
+2. Install the Let’s Encrypt add-on to generate free SSL certificates for your application.
 
 <div style={{
     display:'flex',
@@ -44,11 +44,11 @@ This guide will provide a basic example of how you can implement the Let’s Enc
 
 Due to the Node.js engine specifics, the Let’s Encrypt add-on just generates SSL certificates. You must manually adjust your application code to read certificates from:
 
-- /var/lib/jelastic/keys/privkey.pem
-- /var/lib/jelastic/keys/fullchain.pem
-- /var/lib/jelastic/keys/ca.cer
+- _/var/lib/jelastic/keys/privkey.pem_
+- _/var/lib/jelastic/keys/fullchain.pem_
+- _/var/lib/jelastic/keys/ca.cer_
 
-3. Create a new app or integrate [HTTPS configs](https://cloudmydc.com/) into the existing application. Check the examples below:
+3. Create a new app or integrate [HTTPS configs](https://nodejs.org/api/https.html#https_https_createserver_options_requestlistener) into the existing application. Check the examples below:
 
 - **new application** – replace the content of the default **_server.js_** file in the **/home/jelastic/ROOT** directory
 
@@ -120,7 +120,7 @@ var path = url.parse(req.url).pathname;
 console.log("The HTTPS server has started at: " + serverUrl);
 ```
 
-4. Run your application via [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH). In our example, we use the **_forever_** [process manager](https://cloudmydc.com/) (sudo is needed to listen on the privileged port 443).
+4. Run your application via [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH). In our example, we use the **_forever_** [process manager](/docs/Nodejs/Nodejs%20Apps%20Specifications/Process%20Managers) (sudo is needed to listen on the privileged port 443).
 
 ```bash
 cd /home/jelastic/ROOT
@@ -155,7 +155,7 @@ Let’s Encrypt SSL certificates remain valid for 90 days. After that, they shou
 
 The operation can be automated alongside the certificate update by means of the **_webhooks_** – a custom script executed after the default add-on operations.
 
-Go to the **_/var/lib/jelastic/keys/letsencrypt_** folder (create if missing) and add the **_settings-custom_** file. Based on the [Node.js process manager](https://cloudmydc.com/), your restart/reload script may vary. For example:
+Go to the **_/var/lib/jelastic/keys/letsencrypt_** folder (create if missing) and add the **_settings-custom_** file. Based on the [Node.js process manager](/docs/Nodejs/Nodejs%20Apps%20Specifications/Process%20Managers), your restart/reload script may vary. For example:
 
 ```bash
 deployHook=sudo forever restart /home/jelastic/ROOT/server.js
@@ -186,7 +186,7 @@ Ensure that your script file is executable (**chmod +x {fileName}**). For exampl
  echo "This is example of deployHook script" >> /tmp/testFile
 ```
 
-Also, you can configure the update hook via API using the **_deployHook_** parameter. See [Let’s Encrypt SSL](https://cloudmydc.com/) article for more details.
+Also, you can configure the update hook via API using the **_deployHook_** parameter. See Let’s Encrypt SSL article for more details.
 
 :::
 
@@ -218,4 +218,4 @@ You can manually trigger certificate updates from the **Add-Ons** menu for your 
 
 </div>
 
-- When working with the [Let’s Encrypt add-on via API](https://cloudmydc.com/), you can use the **_deployHook_** parameter to handle custom logic once certificates got issued/updated.
+- When working with the Let’s Encrypt add-on via API, you can use the **_deployHook_** parameter to handle custom logic once certificates got issued/updated.
