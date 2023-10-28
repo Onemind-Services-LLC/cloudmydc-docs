@@ -24,7 +24,7 @@ sidebar_position: 1
 </div>
 <div>
 
-The most valuable about [Eclipse](https://cloudmydc.com/) is that it provides an open source platform for creating an extensible integrated development environment (IDE).
+The most valuable about [Eclipse](https://www.eclipse.org/) is that it provides an open source platform for creating an extensible integrated development environment (IDE).
 
 </div>
 </div>
@@ -33,7 +33,7 @@ It has a well-designed and extensible architecture and allows anyone to build so
 
 The key to the **seamless integration** of tools with Eclipse is the approach of attachable **_plugins_**. With the exception of a small run-time kernel, everything in Eclipse is a plugin. This means that you can develop such an attachable module by your own, which subsequently can be easily integrated with Eclipse in exactly the same way as the other ones.
 
-PaaS team has also created a dedicated [plugin for Eclipse](https://cloudmydc.com/) development platform. It represents a set of software development tools, that simplifies the process of applications development at Eclipse IDE, where they are handled in the form of projects (Java EE) at the platform.
+PaaS team has also created a dedicated [plugin for Eclipse](https://marketplace.eclipse.org/content/jelastic-paas-plugin) development platform. It represents a set of software development tools, that simplifies the process of applications development at Eclipse IDE, where they are handled in the form of projects (Java EE) at the platform.
 
 See the following video tutorial in order to quickly get insights on basics of the Eclipse Plugin usage:
 
@@ -41,6 +41,6 @@ See the following video tutorial in order to quickly get insights on basics of t
 
 And within the instructions below, you can find out how to install the plugin, manage environments and deploy your projects directly from Eclipse IDE in more details:
 
-- [Plugin Installation](https://cloudmydc.com/)
-- [Environment Management](https://cloudmydc.com/)
-- [application deployment](/docs/Deployment/Deployment%20Guide)
+- [Plugin Installation](/docs/Deployment%20Tools/Plugins/Eclipse%20Plugin/Eclipse%20Plugin%20Installation)
+- [Environment Management](/docs/Deployment%20Tools/Plugins/Eclipse%20Plugin/Environment%20Management)
+- [application deployment](/docs/Deployment%20Tools/Plugins/Eclipse%20Plugin/Application%20Deployment)

@@ -106,7 +106,7 @@ _“jdbc:{dbtype}://{dbtype}{node_id}-{environment_name}.{hoster_domain}/{dbname
 
 Your hosting provider domain can be found within the last column of the appropriate table in the [Hosters Info](https://cloudmydc.com/) page.
 
-In case your hosting provider platform has several [environment regions](https://cloudmydc.com/) to choose, the {hoster_domain} value for your environment can differ from the general platform’s one.
+In case your hosting provider platform has several [environment regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) to choose, the {hoster_domain} value for your environment can differ from the general platform’s one.
 
 :::
 

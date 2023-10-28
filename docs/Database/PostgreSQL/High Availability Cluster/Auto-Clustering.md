@@ -428,7 +428,7 @@ Now your database got back to work and ready to handle read/write requests by th
 
 ## Cluster Restoration
 
-With a new primary address you can easily avoid tuning your application connection string changing IP addresses of the primary database. To do this you have to put a [load balancer](https://cloudmydc.com/) in front of the cluster that will monitor the status of its components and route traffic to the current primary. Below, we will demonstrate how to restore original cluster topology and thus no changes will be required at the frontend.
+With a new primary address you can easily avoid tuning your application connection string changing IP addresses of the primary database. To do this you have to put a [load balancer](/docs/Load%20Balancers/Load%20Balancing) in front of the cluster that will monitor the status of its components and route traffic to the current primary. Below, we will demonstrate how to restore original cluster topology and thus no changes will be required at the frontend.
 
 Another reason the topology should be restored is related to ensuring a scaling ability of the cluster. Only original topology can be scaled in/out horizontally.
 

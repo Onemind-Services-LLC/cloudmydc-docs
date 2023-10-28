@@ -4,24 +4,24 @@ sidebar_position: 8
 
 ## CLI Tutorial: Container Volumes
 
-[Container (Docker) Volumes](https://cloudmydc.com/) management functionality at the platform allows creating a persistent [local storage](https://cloudmydc.com/), designed to be not affected by various operations during container lifecycle. Creation of such a storage right inside a container helps to ensure high level of integrity and prevent loss of important data.
+[Container (Docker) Volumes](/docs/Container/Container%20Configuration/Volumes) management functionality at the platform allows creating a persistent [local storage](/docs/Data%20Storage%20Container/Use%20Cases/Local%20Filesystem), designed to be not affected by various operations during container lifecycle. Creation of such a storage right inside a container helps to ensure high level of integrity and prevent loss of important data.
 
 Using platform CLI, you can set up container volumes in two ways:
 
-- [within topology settings](https://cloudmydc.com/)
-- [via direct CLI methods](https://cloudmydc.com/)
+- [within topology settings](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Container%20Volumes#set-volumes-via-environment-topology)
+- [via direct CLI methods](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Container%20Volumes#direct-volumes-management)
 
 ## Set Volumes via Environment Topology
 
-The first way to create container volume we’ll consider is to define it right during the [environment creation](https://cloudmydc.com/) (or when [changing its topology](https://cloudmydc.com/)). So, in order to setup your local container storage, the following [parameters](https://cloudmydc.com/) can be used while executing the appropriate CLI method:
+The first way to create container volume we’ll consider is to define it right during the [environment creation](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Environment%20Creation) (or when [changing its topology](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Server%20Scaling)). So, in order to setup your local container storage, the following [parameters](/docs/Deployment%20Tools/API%20&%20CLI/CreateEnv%20Params#docker-based-environment-configurations) can be used while executing the appropriate CLI method:
 
 - **_volumes_** - sets list of local volumes
-- **_volumeMounts_** - allows to configure [mount points](https://cloudmydc.com/)
+- **_volumeMounts_** - allows to configure [mount points](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points)
 - **_volumesFrom_** - imports existing volumes from node on your account
 
 :::tip Tip
 
-These parameters can be used within your [JPS](https://cloudmydc.com/) manifests as well.
+These parameters can be used within your [JPS](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview) manifests as well.
 
 :::
 
@@ -73,8 +73,8 @@ The highlighted data should be changed to the appropriate values:
 
 Alternatively to the _“sourceNodeId”_ parameter, you can also use:
 
-- _“sourceNodeGroup”_ - defines [environment layer](https://cloudmydc.com/), which master node will be used as a source for mount operation
-- _“sourceHost”_ - external IP or [custom domain](https://cloudmydc.com/) name of the data storage server (including [external one](https://cloudmydc.com/))
+- _“sourceNodeGroup”_ - defines [environment layer](/docs/Deployment%20Tools/API%20&%20CLI/CreateEnv%20Params#docker-based-environment-configurations), which master node will be used as a source for mount operation
+- _“sourceHost”_ - external IP or [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) name of the data storage server (including [external one](/docs/Data%20Storage%20Container/External%20NFS%20Server%20Configuration))
 
 :::
 
@@ -104,7 +104,7 @@ Here:
 
 :::tip Note
 
-Alternatively, it is possible to use _“sourceNodeGroup”_ to define the [environment layer](https://cloudmydc.com/), which master node will be used as a source for mount operation.
+Alternatively, it is possible to use _“sourceNodeGroup”_ to define the [environment layer](/docs/Deployment%20Tools/API%20&%20CLI/CreateEnv%20Params#docker-based-environment-configurations), which master node will be used as a source for mount operation.
 
 :::
 
@@ -190,7 +190,7 @@ Here, the **_{node_group}_** parameter allows to define a layer in the current e
 
 </div>
 
-In such a way, using these CLI methods, you can easily take control over your container volumes and manage them in a matter of minutes. And in case you are in need of adding some [Mount Points](https://cloudmydc.com/) alongside with volumes, use the linked guide for detailed instruction.
+In such a way, using these CLI methods, you can easily take control over your container volumes and manage them in a matter of minutes. And in case you are in need of adding some [Mount Points](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Mount%20Points) alongside with volumes, use the linked guide for detailed instruction.
 
 :::tip TIP
 

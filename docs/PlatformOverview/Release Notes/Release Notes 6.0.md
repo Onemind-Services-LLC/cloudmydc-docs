@@ -537,7 +537,7 @@ The platform has two types of the “No free disk space” error. The first one 
 
 ## Binding Busy Domain Error Clarification
 
-In the current PaaS 6.0 upgrade, a validation message for the binding of a [custom domain](https://cloudmydc.com/) that is already used by some other environment on the platform was improved. For now, instead of a general error, it explicitly notifies that the specified domain is already in use. Moreover, if an external domain belongs to the same account, the error message will point to the appropriate environment.
+In the current PaaS 6.0 upgrade, a validation message for the binding of a [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) that is already used by some other environment on the platform was improved. For now, instead of a general error, it explicitly notifies that the specified domain is already in use. Moreover, if an external domain belongs to the same account, the error message will point to the appropriate environment.
 
 <div style={{
     display:'flex',

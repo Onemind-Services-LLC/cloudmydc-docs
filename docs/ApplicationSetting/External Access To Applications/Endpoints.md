@@ -30,13 +30,13 @@ The **Endpoints** feature at the platform refers to the possibility of TCP/UDP p
 
 </div>
 </div>
-This is achieved through providing the ability to establish the direct connection (over either raw TCP or UDP protocol) to the corresponding node, without the mandatory [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address attached.
+This is achieved through providing the ability to establish the direct connection (over either raw TCP or UDP protocol) to the corresponding node, without the mandatory <a href="/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP">public IP</a> address attached.
 
-Such linking can be used to enable a great variety of different tasks, like remote database management, direct apps' [deployment from IDE](https://cloudmydc.com/) (for _IIS_), running multiple project copies on a single instance, accessing a server’s admin panel with no external address bound, etc.
+Such linking can be used to enable a great variety of different tasks, like remote database management, direct apps' [deployment from IDE](/docs/Windows&.NET/DOT%20NET%20Core) (for _IIS_), running multiple project copies on a single instance, accessing a server’s admin panel with no external address bound, etc.
 
 :::tip
 
-Beside the increased convenience, with endpoints you can cut your spends for the External IP usage, which, otherwise, would be required for such operations. Obviously, endpoints can’t completely replace them, but may become useful in some elementary jobs, and being combined with other platform features (like automatic [vertical](https://cloudmydc.com/) and [horizontal](https://cloudmydc.com/) scaling, [discounts tiers](https://cloudmydc.com/), etc.) such an approach can help you to significantly save your money.
+Beside the increased convenience, with endpoints you can cut your spends for the External IP usage, which, otherwise, would be required for such operations. Obviously, endpoints can’t completely replace them, but may become useful in some elementary jobs, and being combined with other platform features (like automatic [vertical](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling) and [horizontal](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling) scaling, [discounts tiers](/docs/Account&Pricing/Automatic%20Discounts), etc.) such an approach can help you to significantly save your money.
 
 :::
 
@@ -58,8 +58,8 @@ The list of endpoints can be accessed via the environment **Settings** menu, tha
 
 Within the opened tab, switch to the **Endpoints** menu item. Now you can start working with your mapping’s list:
 
-- [add new endpoint](https://cloudmydc.com/)
-- [edit/remove the existing endpoint](https://cloudmydc.com/)
+- [add new endpoint](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#adding-endpoints)
+- [edit/remove the existing endpoint](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#editremove-endpoint)
 
 ## Adding Endpoints
 
@@ -76,7 +76,7 @@ To create a new endpoint, click the **Add** button from the top tools' pane and 
 </div>
 
 - **Node** - select the instance you’d like to set the endpoint for (here only the comprised in the chosen environment nodes are displayed)
-- **Name** - either type the title for a new endpoint or choose one of the preconfigured options (the corresponding list is provided just [down](https://cloudmydc.com/) the page)
+- **Name** - either type the title for a new endpoint or choose one of the preconfigured options (the corresponding list is provided just down the page)
 - **Private port** - specify the preferred local node’s port to be used for mapping (it’s substituted automatically in case the predefined _Name_ was selected)
 - **Protocol** - select either TCP or UDP
 
@@ -236,8 +236,8 @@ For more convenience, we provide the embedded list of predefined endpoint config
 **\*Optional** values availability depends on the type of the chosen node:
 
 - _database nodes_ are provided with the default endpoint, named after themselves and with the appropriate port stated
-- _Windows-based containers_ have the additional [_RDP_](https://cloudmydc.com/) (_3389_) connection
-- _IIS application server_ has the _DEPLOY_ (_8172_) connection for the direct project [deployment from IDE](https://cloudmydc.com/)
+- _Windows-based containers_ have the additional [_RDP_](/docs/Windows&.NET/Windows%20RD%20Access) (_3389_) connection
+- _IIS application server_ has the _DEPLOY_ (_8172_) connection for the direct project [deployment from IDE](/docs/Windows&.NET/DOT%20NET%20Core)
 
 :::
 
@@ -255,7 +255,7 @@ Here you’ll find the **Public port** and **Access URL** actual values already 
 
 :::tip Note
 
-that for linking functionality to work properly with the [VPS](https://cloudmydc.com/) and [Docker®](https://cloudmydc.com/) containers, the corresponding private ports (stated during the endpoint addition) at these nodes should be opened by the owner manually.
+that for linking functionality to work properly with the [VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information) and [Docker®](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) containers, the corresponding private ports (stated during the endpoint addition) at these nodes should be opened by the owner manually.
 
 :::
 
@@ -307,7 +307,7 @@ Just after that, the corresponding endpoint will be removed from the list.
 
 Once the required mappings are configured, you can apply them for running different tasks. To make it easier to start, below we’ll describe a few most common endpoints' use-cases that you can benefit from.
 
-As an example, we will use an environment with the **Apache** application server and **MySQL** database (you can create the similar one following [this](https://cloudmydc.com/) guide):
+As an example, we will use an environment with the **Apache** application server and **MySQL** database (you can create the similar one following [this](/docs/EnvironmentManagement/Setting%20Up%20Environment) guide):
 
 <div style={{
     display:'flex',
@@ -321,12 +321,12 @@ As an example, we will use an environment with the **Apache** application server
 
 Now, let’s learn how to use endpoints for:
 
-- [establishing remote access to your database](https://cloudmydc.com/)
-- [running multiple project copies on a single app server](https://cloudmydc.com/)
+- [establishing remote access to your database](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#database-management)
+- [running multiple project copies on a single app server](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#multiple-development-stages-at-a-single-app-server)
 
 ## Database Management
 
-With endpoints, gaining remote access to your DB instance becomes pretty easy, as using this feature eliminates the necessity to acquire any additional options like a Public IP. To show this, we’ll consider two simple ways of performing this operation: through [embedded OS terminal](https://cloudmydc.com/) and [third-party DB client](https://cloudmydc.com/).
+With endpoints, gaining remote access to your DB instance becomes pretty easy, as using this feature eliminates the necessity to acquire any additional options like a Public IP. To show this, we’ll consider two simple ways of performing this operation: through [embedded OS terminal](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#connection-via-terminal) and [third-party DB client](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#connection-via-local-client).
 
 ## Connection via Terminal
 
@@ -360,7 +360,7 @@ That’s all! Now you can start working with your database through executing the
 
 In the case you require advanced functionality or if you are used to managing the data stored within your database with more convenience, a type of database desktop client may come in handy here. It will provide you with a user-friendly graphic interface and the variety of included features to accelerate your work.
 
-For an example of such a client, that will help to establish the remote connection to our database through the created endpoint, we’ll use one of the most popular DB management tools - [MySQL Workbench](https://cloudmydc.com/).
+For an example of such a client, that will help to establish the remote connection to our database through the created endpoint, we’ll use one of the most popular DB management tools - [MySQL Workbench](https://www.mysql.com/products/workbench/).
 
 1. Run the abovementioned application and click the **New Connection** button.
 
@@ -430,7 +430,7 @@ You can also tick _Save password in keychain_ if you don’t want to enter it ma
 
 Great! Now you can start organizing your data using all the provided benefits of the full-featured management client.
 
-Just in the same way you can connect to any other database server within the platform or, for example, [backup and restore](https://cloudmydc.com/) your data within dump files.
+Just in the same way you can connect to any other database server within the platform or, for example, [backup and restore](/docs/Database/MySQL-MariaDB-Percona/Dump%20Import-Export) your data within dump files.
 
 ## Multiple Development Stages at a Single App Server
 
@@ -454,7 +454,7 @@ Do not choose port _80_ as private port for this task, as Apache uses it by defa
 
 :::
 
-2. Now, [deploy](https://cloudmydc.com/) your application twice to different contexts (_e.g. prod and dev_).
+2. Now, [deploy](/docs/Deployment/Deployment%20Guide) your application twice to different contexts (_e.g. prod and dev_).
 
 <div style={{
     display:'flex',
@@ -522,7 +522,7 @@ Then adjust the appropriate _DocumentRoot_ locations for both virtual hosts with
 
 </div>
 
-7. Now you can connect to your prod project as usual, e.g. using the **Open in browser** button (or entering the external [custom domain](https://cloudmydc.com/) if one was additionally bound to your app), while for accessing its dev version, you just need to specify the used endpoint’s Access URL.
+7. Now you can connect to your prod project as usual, e.g. using the **Open in browser** button (or entering the external [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) if one was additionally bound to your app), while for accessing its dev version, you just need to specify the used endpoint’s Access URL.
 
 <div style={{
     display:'flex',

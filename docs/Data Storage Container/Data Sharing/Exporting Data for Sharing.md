@@ -14,13 +14,13 @@ sidebar_position: 2
 
 <div>
 
-The platform provides extended support for [data sharing](https://cloudmydc.com/) between instances inside of the same account. The dedicated UI panels are available in the dashboard to simplify the required export from a server (described in this guide) and [mount on client](https://cloudmydc.com/) operations. You only need to perform either of these actions, and the platform will automatically apply the correlated configuration on the appropriate second instance.
+The platform provides extended support for [data sharing](/docs/Data%20Storage%20Container/Data%20Storage%20Overview) between instances inside of the same account. The dedicated UI panels are available in the dashboard to simplify the required export from a server (described in this guide) and [mount on client](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) operations. You only need to perform either of these actions, and the platform will automatically apply the correlated configuration on the appropriate second instance.
 
 </div>
 
 </div>
 
-So, let’s overview how you can [share directories](https://cloudmydc.com/) on your containers and how to manage all of the [container’s exports](https://cloudmydc.com/).
+So, let’s overview how you can [share directories](/docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing#directory-export) on your containers and how to manage all of the [container’s exports](/docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing#managing-exports).
 
 ## Directory Export
 
@@ -28,7 +28,7 @@ You can share any directory inside your container with any other node at your ac
 
 :::tip Note
 
-In case you need to [export data externally](https://cloudmydc.com/) (i.e. to the server outside of your PaaS account), follow the linked guide to configure exports manually.
+In case you need to [export data externally](/docs/Data%20Storage%20Container/External%20NFS%20Server%20Configuration) (i.e. to the server outside of your PaaS account), follow the linked guide to configure exports manually.
 
 :::
 
@@ -98,13 +98,13 @@ The same form can be accessed directly from the node’s [file manager](/docs/Ap
 
 </div>
 
-That’s all! During the operation, the appropriate [SSH Gateway](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) on the target node(s) is configured automatically by the platform so that you can immediately start working with your shared data without any additional steps required.
+That’s all! During the operation, the appropriate [mount point](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) on the target node(s) is configured automatically by the platform so that you can immediately start working with your shared data without any additional steps required.
 
 ## Managing Exports
 
-Beside [exporting directories](https://cloudmydc.com/), the **Exports** section allows managing existing records.
+Beside [exporting directories](/docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing), the **Exports** section allows managing existing records.
 
-1. All directories shared from this container to any node on the same platform are displayed here (the [externally](https://cloudmydc.com/) exported data won’t be shown).
+1. All directories shared from this container to any node on the same platform are displayed here (the [externally](/docs/Data%20Storage%20Container/External%20NFS%20Server%20Configuration) exported data won’t be shown).
 
 <div style={{
     display:'flex',
@@ -148,7 +148,7 @@ The following information can be found here:
 
 </div>
 
-- with the **Export** option, you are able to [share any directory](https://cloudmydc.com/) inside the container with any other node at your account
+- with the **Export** option, you are able to [share any directory](/docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing#directory-export) inside the container with any other node at your account
 - the **Unmount** button stops data sharing with the selected client node
 
 <div style={{
@@ -177,7 +177,7 @@ After confirmation, the corresponding record will be removed from the list, and 
 
 :::danger Note
 
-If working in the confines of your PaaS account, all of the required export configurations are automated. Manual adjustment of this file is only needed for [external exports](https://cloudmydc.com/).
+If working in the confines of your PaaS account, all of the required export configurations are automated. Manual adjustment of this file is only needed for [external exports](/docs/Data%20Storage%20Container/External%20NFS%20Server%20Configuration).
 
 :::
 

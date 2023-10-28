@@ -6,11 +6,11 @@ sidebar_position: 2
 
 ## Eclipse Plugin Installation
 
-In order to start working with the Eclipse Plugin, you need to [get it installed](https://cloudmydc.com/) and [authenticated to your PaaS account](https://cloudmydc.com/) within its settings. So, launch your Eclipse IDE and proceed with the instructions below.
+In order to start working with the Eclipse Plugin, you need to [get it installed](/docs/Deployment%20Tools/Plugins/Eclipse%20Plugin/Eclipse%20Plugin%20Installation) and [authenticated to your PaaS account](/docs/Deployment%20Tools/Plugins/Eclipse%20Plugin/Eclipse%20Plugin%20Installation#authentication-with-account-credentials) within its settings. So, launch your Eclipse IDE and proceed with the instructions below.
 
 ## Plugin Installation
 
-1. Open the Eclipse [**Marketplace**](https://cloudmydc.com/) page with the platform Plugin in a browser. Click on and drag the plugin installation button (circled in the image below) into your running Eclipse workspace.
+1. Open the Eclipse [**Marketplace**](https://marketplace.eclipse.org/content/jelastic-paas-plugin) page with the platform Plugin in a browser. Click on and drag the plugin installation button (circled in the image below) into your running Eclipse workspace.
 
 <div style={{
     display:'flex',
@@ -86,9 +86,7 @@ In the opened tab, fill in the _Login_ and _Password_ fields with the correspond
 
 ![Locale Dropdown](./img/EclipsePluginInstallation/06-preferences-for-remote-access.png)
 
-</div> 
+</div>
 
 Select the A**pply and Close** button to confirm the entered data.
-That’s all the required configurations! Now, having the **Eclipse plugin** installed, you can [manage environments](https://cloudmydc.com/) and [deploy new projects](https://cloudmydc.com/) easily without switching between IDE and browser.
-
-What’s next?
+That’s all the required configurations! Now, having the **Eclipse plugin** installed, you can [manage environments](/docs/Deployment%20Tools/Plugins/Eclipse%20Plugin/Environment%20Management) and [deploy new projects](/docs/Deployment%20Tools/Plugins/Eclipse%20Plugin/Application%20Deployment) easily without switching between IDE and browser.
