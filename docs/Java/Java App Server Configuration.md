@@ -74,7 +74,7 @@ Using the following config files, you can perform the actions listed below (thes
 
   **_<u>web.xml</u>_**
 
-- configure [remote access via WebDav](docs/Deployment%20Tools/Remote%20Access%20via%20WebDAV)
+- configure [remote access via WebDav](/docs/Deployment%20Tools/Remote%20Access%20via%20WebDAV)
 
   **_<u>server.xml</u>_**
 
@@ -86,7 +86,7 @@ Using the following config files, you can perform the actions listed below (thes
 
   _-Xmx< size >m -Xms< size >m_
 
-- set your custom [system properties](docs/EnvironmentManagement/EnvironmentVariables/Java%20Options%20and%20Arguments ) for your [Tomcat, TomEE, Jetty](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat-TomEE%20Variables)or [GlassFish](docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat-TomEE%20Variables#glassfish-variables):
+- set your custom [system properties](/docs/EnvironmentManagement/EnvironmentVariables/Java%20Options%20and%20Arguments) for your [Tomcat, TomEE, Jetty](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat-TomEE%20Variables)or [GlassFish](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat-TomEE%20Variables#glassfish-variables):
 
   _-Dvar1=value1 -Dvar2=value2 -Dmy.var3=/my/value_
 
@@ -172,8 +172,6 @@ The **JAVA_HOME** folder contains the java config files and libs. Here, you can 
 ## LIB
 
 The **lib** folder is used for storing default and uploading custom **jar** libraries.
-
-
 
 <div style={{
     display:'flex',
