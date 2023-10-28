@@ -61,7 +61,6 @@ Here, the following format should be used:
 where:
 
 - **{directory}** - path to the folder (relative to the Root folder) that should be exported
-
 - **{NFS_client}** - [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) name or public IP address of the client node (i.e where the exported files should be mounted)
 
 :::tip Note

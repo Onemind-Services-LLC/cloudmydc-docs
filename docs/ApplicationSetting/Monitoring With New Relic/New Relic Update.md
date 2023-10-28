@@ -4,7 +4,7 @@ sidebar_position: 2
 
 ## How to Update Installed New Relic Monitoring Add-on
 
-In order to keep in pace with the most recent [New Relic](https://cloudmydc.com/) monitoring features, the platform provides the inbuilt update option for the dedicated add-on. It checks the presence of the newly released agent versions directly at the corresponding repositories and allows to update it in just a few clicks, without the necessity to handle this manually. So, let’s see how to perform this!
+In order to keep in pace with the most recent [New Relic](/docs/ApplicationSetting/Monitoring%20With%20New%20Relic/New%20Relic%20Installation) monitoring features, the platform provides the inbuilt update option for the dedicated add-on. It checks the presence of the newly released agent versions directly at the corresponding repositories and allows to update it in just a few clicks, without the necessity to handle this manually. So, let’s see how to perform this!
 
 ## New Relic Agent Update
 
@@ -64,7 +64,7 @@ So, follow this tip by clicking the appropriate button next to your application 
 
 Please, **pay attention** that if your project is run in a single app server node, the restart will cause a **temporary downtime** of your application, thus we leave for you to decide when to perform this operation.
 
-However, in case your app server is [scaled horizontally](https://cloudmydc.com/), the downtime will be minimized, since all the server instances will be restarted sequentially. And starting with [4.9 PaaS version](https://cloudmydc.com/), you are able to get rid of this inconvenience at all, through setting the delay for executing this operation at each next node within a layer. In such a way, whilst one node is undergoing the maintenance, the rest ones will remain active.
+However, in case your app server is [scaled horizontally](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling), the downtime will be minimized, since all the server instances will be restarted sequentially. And starting with 4.9 PaaS version, you are able to get rid of this inconvenience at all, through setting the delay for executing this operation at each next node within a layer. In such a way, whilst one node is undergoing the maintenance, the rest ones will remain active.
 
 :::
 
@@ -74,7 +74,7 @@ That’s it! Your New Relic add-on is updated and ready to work.
 
 Subsequently, the current version of your agent could be checked as follows:
 
-- for _Java_ servers - within the **_logs/newrelic_agent.log_** file, located in the dedicated directory with add-on files (see the [list of paths](https://cloudmydc.com/) to it depending on a server)
+- for _Java_ servers - within the **_logs/newrelic_agent.log_** file, located in the dedicated directory with add-on files (see the [list of paths](/docs/ApplicationSetting/Monitoring%20With%20New%20Relic/New%20Relic%20Installation) to it depending on a server)
 - for _PHP_ servers - via the **_phpinfo()_** output
 
 :::

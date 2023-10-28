@@ -4,14 +4,14 @@ sidebar_position: 14
 
 ## Managing Timezone Data
 
-All containers created within the platform utilize the UTC timezone by default. However, in case of necessity, you can easily change it to any preferable one with the help of the [**_TimeZone Change_**](https://cloudmydc.com/) add-on. Follow the steps provided within the linked section to switch timezones on any of your instances.
+All containers created within the platform utilize the UTC timezone by default. However, in case of necessity, you can easily change it to any preferable one with the help of the [**_TimeZone Change_**](/docs/ApplicationSetting/Managing%20Timezone%20Settings#timezone-add-on) add-on. Follow the steps provided within the linked section to switch timezones on any of your instances.
 
 Alternatively, you can apply the changes manually. For example, all of the Java and PHP application servers at the platform are supplied with special timezone packages, which includes data about the history of local time in different locations around the globe and current timezone rules. This information is required for software, running inside the appropriate containers, and is regularly updated within the corresponding server builds in the confines of the newly released platform versions.
 
 Besides that, you can instantly update the timezone rules manually if necessary, or change the currently used TZ, based on the preferred location. So, below we’ll reveal some specifics of the timezone data management at the platform for the application servers of the programming languagesmentioned above:
 
-- [for Java](https://cloudmydc.com/)
-- [for PHP](https://cloudmydc.com/)
+- [for Java](/docs/ApplicationSetting/Managing%20Timezone%20Settings#timezone-rules-for-java)
+- [for PHP](/docs/ApplicationSetting/Managing%20Timezone%20Settings#changing-timezone-java)
 
 ## TimeZone Add-On
 
@@ -31,7 +31,7 @@ Besides that, you can instantly update the timezone rules manually if necessary,
 
 As you can see, the _UTC_ zone is used (default for all platform-managed containers).
 
-2. Go to the [TimeZone Change](https://cloudmydc.com/) add-on repository within the JPS Collection at GitHub. Copy a link to the **_manifest.jps_** file and [import](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import) it via the dashboard: [_https://github.com/jelastic-jps/time-zone-change/blob/master/manifest.jps._](https://cloudmydc.com/)
+2. Go to the [TimeZone Change](https://github.com/jelastic-jps/time-zone-change) add-on repository within the JPS Collection at GitHub. Copy a link to the **_manifest.jps_** file and [import](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import) it via the dashboard: [_https://github.com/jelastic-jps/time-zone-change/blob/master/manifest.jps._](https://github.com/jelastic-jps/time-zone-change/blob/master/manifest.jps)
 
 <div style={{
     display:'flex',
@@ -59,7 +59,7 @@ Based on your particular hosting provider settings add-on can be available via [
 
 :::
 
-3. Within the opened frame, select the target **_Environment_** and type the preferable **_TimeZone Name_** ([list of time zones](https://cloudmydc.com/)) for it.
+3. Within the opened frame, select the target **_Environment_** and type the preferable **_TimeZone Name_** ([list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)) for it.
 
 <div style={{
     display:'flex',
@@ -91,8 +91,8 @@ As you can see, the system time was successfully switched to the _EDT_ (Eastern 
 
 The timezone rules within Java compute nodes are delivered by means of the dedicated **TZdata** package, comprised in each appropriate container. Follow the instructions below to:
 
-- [update timezone data](https://cloudmydc.com/)
-- [change current timezone](https://cloudmydc.com/)
+- [update timezone data](/docs/ApplicationSetting/Managing%20Timezone%20Settings#updating-timezone-data)
+- [change current timezone](/docs/ApplicationSetting/Managing%20Timezone%20Settings#changing-timezone-java)
 
 ## Updating Timezone Data
 
@@ -190,7 +190,7 @@ For that, paste the code below instead of the **/opt/tomcat/webapps/ROOT/index.j
 
 - for **Tomcat**, **TomEE**, **Payara**, **Spring Boot** and **Jetty**
 
-Switch to the **_variables.conf_** configuration file and add the **_-Duser.timezone_** variable with the [required zone](https://cloudmydc.com/) as a value, for example:
+Switch to the **_variables.conf_** configuration file and add the **_-Duser.timezone_** variable with the [required zone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) as a value, for example:
 
 _-Duser.timezone=US/Pacific_
 
@@ -227,7 +227,7 @@ Depending on a particular application server used, the location of this file may
 
 </div>
 
-- for **WildFly** Switch to the **_/opt/wildfly/bin/standalone.conf_** file (or, if a server was [scaled horizontally](https://cloudmydc.com/), refer to the **_/opt/wildfly/bin/domain.conf_** config) and declare the corresponding variable using the following format: _export JAVA_OPTS="-Duser.timezone=US/Pacific"_
+- for **WildFly** Switch to the **_/opt/wildfly/bin/standalone.conf_** file (or, if a server was [scaled horizontally](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling), refer to the **_/opt/wildfly/bin/domain.conf_** config) and declare the corresponding variable using the following format: _export JAVA_OPTS="-Duser.timezone=US/Pacific"_
 
 <div style={{
     display:'flex',
@@ -273,12 +273,12 @@ To access it, you need to click the **Config** button next to the required node.
 
 As you can see, this section comprises two options, which can be used to:
 
-- [get the latest timezone data](https://cloudmydc.com/)
-- [set custom timezone](https://cloudmydc.com/)
+- [get the latest timezone data](/docs/ApplicationSetting/Managing%20Timezone%20Settings#checking-timezone-data)
+- [set custom timezone](/docs/ApplicationSetting/Managing%20Timezone%20Settings#changing-timezone-php)
 
 ## Checking Timezone Data
 
-The first setting allows you to use the alternative external timezone database (namely - the [Olson](https://cloudmydc.com/) one) in case the internal one is outdated.
+The first setting allows you to use the alternative external timezone database (namely - the [Olson](https://www.iana.org/time-zones) one) in case the internal one is outdated.
 
 <div style={{
     display:'flex',
@@ -336,7 +336,7 @@ Now, if **Saving** the updated file and clicking **Open in browser**, you’ll s
 
 </div>
 
-Return to the platform dashboard and specify the desired [timezone](https://cloudmydc.com/) as a value for the _date.timezone_ parameter within the **_php.ini_** file (e.g. _Australia/Sydney_ in our case).
+Return to the platform dashboard and specify the desired [timezone](https://www.php.net/manual/en/timezones.php) as a value for the _date.timezone_ parameter within the **_php.ini_** file (e.g. _Australia/Sydney_ in our case).
 
 <div style={{
     display:'flex',

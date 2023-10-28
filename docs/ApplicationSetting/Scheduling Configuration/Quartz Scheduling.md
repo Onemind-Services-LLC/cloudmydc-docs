@@ -4,7 +4,7 @@ sidebar_position: 2
 
 ## Job Scheduling Using Quartz
 
-[**Quartz**](https://cloudmydc.com/) is a full-featured, open source job scheduling service that can be integrated with, or used along side virtually any Java application - from the smallest stand-alone application to the largest e-commerce system. Quartz can be used to create simple or complex schedules for executing tens, hundreds, or even tens-of-thousands of jobs; jobs whose tasks are defined as standard Java components that may execute virtually anything you may program them to do.
+[**Quartz**](https://www.quartz-scheduler.org/) is a full-featured, open source job scheduling service that can be integrated with, or used along side virtually any Java application - from the smallest stand-alone application to the largest e-commerce system. Quartz can be used to create simple or complex schedules for executing tens, hundreds, or even tens-of-thousands of jobs; jobs whose tasks are defined as standard Java components that may execute virtually anything you may program them to do.
 
 If your application has tasks that need to occur at any given moment, or if your system has recurring maintenance jobs, then Quartz may be your ideal solution.
 

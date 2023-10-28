@@ -30,13 +30,12 @@ Application lifecycle management becomes a lot easier thanks to the automation o
 
 To realize the schema above we’ll come through the next steps:
 
-- [Create the production environment](https://cloudmydc.com/)
-- [Create the build environment](https://cloudmydc.com/)
-- [Build and deploy the project](https://cloudmydc.com/)
-- [Create database environment](https://cloudmydc.com/)
-- [Configure database connection](https://cloudmydc.com/)
-- [Create the test environment](https://cloudmydc.com/)
-- [Upgrade application](https://cloudmydc.com/)
+- [Create the production environment](/docs/ApplicationSetting/Application%20Lifecycle%20Management#create-the-production-environment)
+- [Create the build environment](/docs/ApplicationSetting/Application%20Lifecycle%20Management#create-the-build-environment)
+- [Build and deploy the project](/docs/ApplicationSetting/Application%20Lifecycle%20Management#build-and-deploy-the-project)
+- [Create database environment](/docs/ApplicationSetting/Application%20Lifecycle%20Management#create-database-environment)
+- [Create the test environment](/docs/ApplicationSetting/Application%20Lifecycle%20Management#create-the-test-environment)
+- [Upgrade application](/docs/ApplicationSetting/Application%20Lifecycle%20Management#upgrade-application)
 
 Also here is a video version of the same procedure:
 

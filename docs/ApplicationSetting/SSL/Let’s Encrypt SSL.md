@@ -8,7 +8,7 @@ One of the key issues we should deal with while hosting production applications 
 
 Besides that, starting from January 1th, 2017 one of the most popular browsers - Google Chrome - have started marking all web-pages, that request specifying password or credit card details and aren’t secured with SSL, as non-secure. Such novelty makes the encryption integration even more essential.
 
-However, issuing and configuring custom SSL certificate for a project can be a rather complicated and time-consuming task. [**Let's Encrypt**](https://cloudmydc.com/) (LE) is a free and open certificate authority, that allows to greatly simplify and automate the process of the trusted SSL certificates integration.
+However, issuing and configuring custom SSL certificate for a project can be a rather complicated and time-consuming task. [**Let's Encrypt**](https://letsencrypt.org/) (LE) is a free and open certificate authority, that allows to greatly simplify and automate the process of the trusted SSL certificates integration.
 
 <div style={{
     display:'flex',
@@ -20,11 +20,11 @@ However, issuing and configuring custom SSL certificate for a project can be a r
 
 </div>
 
-A general trend of moving Web to HTTPS implies the complete automation of custom SSL certificates issuing and appliance. Thus, Jelastic developers have made a great job on packaging Let's Encrypt service with [Cloud Scripting](https://cloudmydc.com/), to implement a solution that allows getting rid of carrying out regular certificates renewal.
+A general trend of moving Web to HTTPS implies the complete automation of custom SSL certificates issuing and appliance. Thus, Jelastic developers have made a great job on packaging Let's Encrypt service with [Cloud Scripting](https://docs.cloudscripting.com/), to implement a solution that allows getting rid of carrying out regular certificates renewal.
 
 The key advantage of this solution is a unique out-of-box integration with the most popular load balancer and application server stacks. In such a way, it gives a possibility to freely secure the majority of existing applications that are run in Jelastic.
 
-Being provisioned as an add-on, this solution can be easily installed on top of any container with the [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL) support enabled, namely the following servers (the list is constantly extended):
+Being provisioned as an add-on, this solution can be easily installed on top of any container with the [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL) support enabled, namely the following servers (the [list](https://github.com/jelastic-jps/lets-encrypt/blob/f08448d949878cd196e49c996ab8a9e60154c0d8/manifest.jps#L10) is constantly extended):
 
 - Load Balancers - NGINX, Apache LB, HAProxy, Varnish
 - Java application servers - Tomcat, TomEE, GlassFish, Payara, Jetty
@@ -39,7 +39,7 @@ During the installation, the add-on downloads and configures Let's Encrypt clien
 
 ## Domain Control Validation
 
-Upon the certificates issuing request, Let's Encrypt CA [checks the entry point](https://cloudmydc.com/) of the environment at _80_ port in order to prove that the given web-server controls the specified domains. Herewith, during the domain validation process, all incoming HTTP traffic will be internally routed to the custom _12345_ port where the corresponding CMA proxy is run.
+Upon the certificates issuing request, Let's Encrypt CA [checks the entry point](https://letsencrypt.org/how-it-works/) of the environment at _80_ port in order to prove that the given web-server controls the specified domains. Herewith, during the domain validation process, all incoming HTTP traffic will be internally routed to the custom _12345_ port where the corresponding CMA proxy is run.
 
 In case a layer contains several same-type nodes, during the update period all incoming HTTP traffic will be additionally routed to the master node where the CMA proxy is run. This is achieved by setting special temporary DNAT routing rules so the domain validation request can be handled by the CMA.
 
@@ -63,7 +63,7 @@ Despite the long description, all of these operations are handled just in a matt
 
 To get SSL certificate for the environment hostname, perform the following:
 
-1. Log into Jelastic dashboard and click [**Marketplace**](https://cloudmydc.com/) at the top of a page. Within the opened frame switch to the **Add-ons** tab and find the _Let's Encrypt Free SSL_ package.
+1. Log into Jelastic dashboard and click [**Marketplace**](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) at the top of a page. Within the opened frame switch to the **Add-ons** tab and find the _Let's Encrypt Free SSL_ package.
 
 <div style={{
     display:'flex',
@@ -77,7 +77,7 @@ To get SSL certificate for the environment hostname, perform the following:
 
 :::tip
 
-Alternatively you can Import the manifest.jps file from the appropriate Let's Encrypt add-on repository:
+Alternatively you can [Import](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import) the manifest.jps file from the appropriate Let's Encrypt add-on repository:
 https://github.com/jelastic-jps/lets-encrypt/blob/master/manifest.jpsImporting add-on via JPS tab allows providing customization on a fly.
 
 :::
@@ -89,7 +89,7 @@ Click **Install** to proceed.
 Here, you need to:
 
 - provide **_External Domain(s)_** of the target environment, the possible options are:
-  - leave the field blank to create a dummy SSL certificate, assigned to environment internal URL (_env_name.{[hoster_domain](https://cloudmydc.com/)}_), for being used in testing
+  - leave the field blank to create a dummy SSL certificate, assigned to environment internal URL (_env_name.{[hoster_domain](/docs/QuickStart/Hosters%20List%20&%20Info)}_), for being used in testing
   - insert the preliminary linked external domain(s) to get a trusted certificate for each of them; if specifying multiple hostnames, separate them with either space, comma, or semicolon
 
 <div style={{
@@ -109,7 +109,7 @@ Finally, click on **Install** to initiate installation of the appropriate SSL ce
 
 :::tip Note
 
-that the add-on requires [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address for proper work. So in case, the environment entry point does not have such, it will be automatically attached during installation (be aware that Public IP is a paid option - the cost can be found within the [Quotas & Pricing](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-much-do-resources-cost) frame).
+that the add-on requires [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address for proper work. So in case, the environment entry point does not have such, it will be automatically attached during installation (be aware that Public IP is a paid option - the cost can be found within the [Quotas & Pricing](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ) frame).
 
 :::
 
@@ -143,17 +143,17 @@ As you can see, the environment is accessible and the established connection is 
 
 ## Add-On Installation via API
 
-Alternatively add-on can be installed with Jelastic [API method install](https://cloudmydc.com/). Api call looks like:
+Alternatively add-on can be installed with Jelastic [API method install](https://docs.jelastic.com/api/#!/api/marketplace.Jps-method-Install). Api call looks like:
 
-\*https://[[hoster-api-host](https://cloudmydc.com/)]/1.0/marketplace/jps/rest/install?jps=letsencrypt-ssl-addon&session={**_session_**}&envName={**_your_env_name_**}&nodeGroup={**_your_node_group_**}&settings={**_your_addon_settings_**}\*
+\*https://[[hoster-api-host](/docs/QuickStart/Hosters%20List%20&%20Info)]/1.0/marketplace/jps/rest/install?jps=letsencrypt-ssl-addon&session={**_session_**}&envName={**_your_env_name_**}&nodeGroup={**_your_node_group_**}&settings={**_your_addon_settings_**}\*
 
 where:
 
-**{session}** - user’s session or [authentication token ](https://cloudmydc.com/)
+**{session}** - user’s session or [authentication token ](/docs/Account&Pricing/Personal%20Access%20Tokens)
 
 **{your_env_name}** - name of the target environment
 
-**{your_node_group}** - unique identifier of the [nodeGroup](https://cloudmydc.com/)
+**{your_node_group}** - unique identifier of the [nodeGroup](/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames)
 
 **{your_addon_settings}** - list of add-on specific settings in JSON format (key:value pairs)
 
@@ -196,14 +196,14 @@ Also, your SSL certificates can be updated by add-on re-installation for the sam
 
 ## Certificates Update via API
 
-Similar to Add-On installation the certificate can be forced to update via API call with method executeappaction:
+Similar to Add-On installation the certificate can be forced to update via API call with method **_[executeappaction](https://docs.jelastic.com/api/#/api/marketplace.Jps)_**:
 
-\*https://[[hoster-api-host](https://cloudmydc.com/)]/1.0/marketplace/jps/rest/executeappaction?session=**_{session}_**&appUniqueName=**_{app_unique_name}_**&action=update\*
+\*https://[[hoster-api-host](/docs/QuickStart/Hosters%20List%20&%20Info)]/1.0/marketplace/jps/rest/executeappaction?session=**_{session}_**&appUniqueName=**_{app_unique_name}_**&action=update\*
 
 where:
 
 - **{session}**- user’s session or authentication token
-- **{app_unique_name}**- unique name of the installed add-on. Could be found as the value of the **_uniqueName_** key in the response of [GetEnvInfo](https://cloudmydc.com/) method.
+- **{app_unique_name}**- unique name of the installed add-on. Could be found as the value of the **_uniqueName_** key in the response of [GetEnvInfo](https://docs.jelastic.com/api/#!/api/environment.Control-method-GetEnvInfo) method.
 
 For example:
 
@@ -244,12 +244,12 @@ To avoid security issues, a new certificate will be issued, even in case of remo
 
 ## Let’s Encrypt Certificates Reconfiguration via API
 
-\*https://[[hoster-api-host](https://cloudmydc.com/)]/1.0/marketplace/jps/rest/executeappaction?session={session}&appUniqueName=**_{app_unique_name}_**&action=configure&params={"customDomains":"**_{your_new_domain_list}_**"}
+\*https://[[hoster-api-host](/docs/QuickStart/Hosters%20List%20&%20Info)]/1.0/marketplace/jps/rest/executeappaction?session={session}&appUniqueName=**_{app_unique_name}_**&action=configure&params={"customDomains":"**_{your_new_domain_list}_**"}
 
 - where:
 
 * **{session} **- user’s session or authentication token
-* **{app_unique_name}** - unique name of the installed add-on. Could be found as the value of the **_uniqueName_** key in the response of [GetEnvInfo](https://cloudmydc.com/) method
+* **{app_unique_name}** - unique name of the installed add-on. Could be found as the value of the **_uniqueName_** key in the response of [GetEnvInfo](https://docs.jelastic.com/api/#!/api/environment.Control-method-GetEnvInfo) method
 * **{your_new_domain_list}** - new list of linked external domain(s) to get a SSL certificate for each of them; if specifying multiple hostnames, separate them with either comma or semicolon
 
 Example:
@@ -274,4 +274,4 @@ If necessary, the Let's _Encrypt SSL_ add-on can be easily removed from your env
 
 After confirmation, the add-on will be removed and attached certificates will be deactivated.
 
-That’s it! Now you know how to install and manage Let's Encrypt add-on for automatic custom SSL configuration of your environment so you can protect almost any application in no time, completely for free and without hardly any efforts. Get started now at one of the [Jelastic PaaS service providers](https://cloudmydc.com/).
+That’s it! Now you know how to install and manage Let's Encrypt add-on for automatic custom SSL configuration of your environment so you can protect almost any application in no time, completely for free and without hardly any efforts. Get started now at one of the Jelastic PaaS service providers.

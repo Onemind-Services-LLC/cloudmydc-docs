@@ -29,7 +29,7 @@ The platform supports assigning multiple [public IP](/docs/ApplicationSetting/Ex
 </div>
 </div>
 
-For example, if hosting several web-sites on a single node, the multi-IP option allows to handle them as separate production-ready services due to the ability to apply dedicated [custom domain name](https://cloudmydc.com/) and [SSL certificate](https://cloudmydc.com/) to each of them. Also, this option can be helpful for operating network appliances (e.g. load balancers) with multiple IP addresses for each network.
+For example, if hosting several web-sites on a single node, the multi-IP option allows to handle them as separate production-ready services due to the ability to apply dedicated [custom domain name](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) and [SSL certificate](/docs/ApplicationSetting/SSL/Secure%20Sockets%20Layer) to each of them. Also, this option can be helpful for operating network appliances (e.g. load balancers) with multiple IP addresses for each network.
 
 :::tip Note
 
@@ -49,7 +49,7 @@ You can assign multiple IP addresses through your platform dashboard by means of
 
 </div>
 
-Here, you can select or enter the required number of addresses of both types through the appropriate **Public IPv4** and **_Public IPv6_** boxes. If meeting the limits, please, contact your [hosting provider](https://cloudmydc.com/) to increase the available addresses count.
+Here, you can select or enter the required number of addresses of both types through the appropriate **Public IPv4** and **_Public IPv6_** boxes. If meeting the limits, please, contact your hosting provider to increase the available addresses count.
 
 ## Managing Multiple Public IP Addresses
 
@@ -89,7 +89,7 @@ The very first added Public IP of each type that is added to an instance is cons
 
 :::
 
-Also, all IP addresses, assigned to a container, are shown within environment topology details at terminal upon connecting to an environment via [SSH Gate](https://cloudmydc.com/).
+Also, all IP addresses, assigned to a container, are shown within environment topology details at terminal upon connecting to an environment via [SSH Gate](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview).
 
 <div style={{
     display:'flex',
@@ -105,19 +105,19 @@ Here, all container external addresses are displayed within the **WAN IP** colum
 
 :::tip Note
 
-In case the required type of the newly attached IP is not indicated explicitly (e.g. within [Cloud Scripting](https://cloudmydc.com/) solution or application/add-on package settings at [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace)), the IPv4 is used by default.
+In case the required type of the newly attached IP is not indicated explicitly (e.g. within [Cloud Scripting](https://docs.cloudscripting.com/) solution or application/add-on package settings at [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace)), the IPv4 is used by default.
 
 :::
 
-These is a set of [API methods](https://cloudmydc.com/) that you can use to perform tasks related to Public IP. For the detailed API reference on Public IP, please proceed to the following section.
+These is a set of [API methods](/docs/Deployment%20Tools/API%20&%20CLI/API%20Overview) that you can use to perform tasks related to Public IP. For the detailed API reference on Public IP, please proceed to the following section.
 
 ## API Reference on Multiple Public IPs
 
-In this section, you can find information on [platform API](https://cloudmydc.com/) methods that are provided for you to work with multiple Public IP addresses.
+In this section, you can find information on platform API methods that are provided for you to work with multiple Public IP addresses.
 
 1. To attach or detach a Public IP address via platform API, the **_SetExtIpCount_** method is provided.
 
-_https://[hoster-api-host]/1.0/environment/control/rest/setextipcount?**envname**=[string]&**session**=[string]&**type**=[string]&**count**=[int]&**nodegroup**=[string]&**nodeid**=[int]_
+_https://[hoster-api-host](/docs/QuickStart/Hosters%20List%20&%20Info)/1.0/environment/control/rest/setextipcount?**envname**=[string]&**session**=[string]&**type**=[string]&**count**=[int]&**nodegroup**=[string]&**nodeid**=[int]_
 
 This method is used with the following parameters:
 
@@ -138,7 +138,7 @@ The **_AttachExtIp_** and **_DetachExtIp_** methods, which were provided earlier
 
 2. To swap Public IP addresses between two nodes within the same or separate environments, you can use the **_SwapExtIps_** method.
 
-_https://{hoster-api-host}/1.0/environment/control/rest/swapextips?**envname**=[string]&**session**=[string]&**sourcenodeid**=[int]&**destnodeid**=[int]&**sourceip**=[string]&**destip**=[string]_
+_https://{[hoster-api-host](/docs/QuickStart/Hosters%20List%20&%20Info)}/1.0/environment/control/rest/swapextips?**envname**=[string]&**session**=[string]&**sourcenodeid**=[int]&**destnodeid**=[int]&**sourceip**=[string]&**destip**=[string]_
 
 This method is used with the following parameters:
 

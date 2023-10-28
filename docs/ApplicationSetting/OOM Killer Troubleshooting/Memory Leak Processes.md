@@ -8,10 +8,10 @@ import obj from './MemoryLeakProcesses.json'
 
 Pay special attention to the processes in this group as to the most probable cause of your out-of-memory issues (sorted based on server role):
 
-- [Load Balancers](https://cloudmydc.com/)
-- [Application Servers](https://cloudmydc.com/)
-- [Database Servers](https://cloudmydc.com/)
-- [Common Processes for Different-Type Stacks](https://cloudmydc.com/)
+- [Load Balancers](/docs/ApplicationSetting/OOM%20Killer%20Troubleshooting/Memory%20Leak%20Processes#load-balancers)
+- [Application Servers](/docs/ApplicationSetting/OOM%20Killer%20Troubleshooting/Memory%20Leak%20Processes#application-servers)
+- [Database Servers](/docs/ApplicationSetting/OOM%20Killer%20Troubleshooting/Memory%20Leak%20Processes#database-servers)
+- [Common Processes for Different-Type Stacks](/docs/ApplicationSetting/OOM%20Killer%20Troubleshooting/Memory%20Leak%20Processes#common-processes-for-different-type-stacks)
 
 ## Load Balancers
 
