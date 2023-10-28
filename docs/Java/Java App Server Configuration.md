@@ -51,7 +51,7 @@ Below you will see the list of the configuration files available for editing in 
 
 To get more information on which settings can be changed in the provided config folders, use the appropriate descriptions:
 
-- [server](docs/Java/Java%20App%20Server%20Configuration#server)
+- [server](/docs/Java/Java%20App%20Server%20Configuration#server)
 - [home](/docs/Java/Java%20App%20Server%20Configuration#home)
 - [webapps/work](/docs/Java/Java%20App%20Server%20Configuration#webapps--work)
 - [JAVA_HOME](/docs/Java/Java%20App%20Server%20Configuration#java_home)

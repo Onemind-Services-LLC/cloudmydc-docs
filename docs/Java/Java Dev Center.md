@@ -37,7 +37,7 @@ Use the table of content below to find required information within the guide qui
 - [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling)
 - [Horizontal Scaling: Manual and Automatic](/docs/Java/Java%20Dev%20Center#horizontal-scaling-manual-and-automatic)
 - [Java Clusterization](/docs/Java/Java%20Dev%20Center#java-clusterization)
-- [Database Connection to Java Application](docs/Java/Java%20Dev%20Center#database-connection-to-java-application)
+- [Database Connection to Java Application](/docs/Java/Java%20Dev%20Center#database-connection-to-java-application)
 
 ## Java Versions
 
@@ -69,12 +69,12 @@ You can choose the preferred version while creating an environment, or change it
 Within a wide variety of software stacks, the platform supports a pure [Java Engine](/docs/Java/Java%20App%20Servers/Java%20Engine%20Server) and the following Java application servers:
 
 - [GlassFish](/docs/Java/Java%20App%20Servers/GlassFish/GlassFish%20Server)
-- [Jetty](docs/Java/Java%20App%20Servers/Jetty/Jetty%20Server)
+- [Jetty](/docs/Java/Java%20App%20Servers/Jetty/Jetty%20Server)
 - [Payara](https://cloudmydc.com/)
 - [Spring Boot](https://cloudmydc.com/)
 - [Tomcat9](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat%20Server)
 - [TomEE](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/TomEE%20Server)
-- [WildFly](www.virtuozzo.com/application-platform-docs/wildfly/)
+- [WildFly](/docs/Java/Java%20App%20Servers/WildFly/WildFly%20Server)
 
 Read the documentation below for additional information on Java servers specifics within the platform:
 
@@ -185,7 +185,7 @@ To set or change the vertical scaling limit, just use the appropriate slider wit
 
 ## Horizontal Scaling: Manual and Automatic
 
-In case your application becomes highly popular and a single node is not enough, feel free to scale it [horizontally](docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling). In order to ensure even more reliability and high-availability, all the newly added nodes are created on the different hardware nodes.
+In case your application becomes highly popular and a single node is not enough, feel free to scale it [horizontally](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling). In order to ensure even more reliability and high-availability, all the newly added nodes are created on the different hardware nodes.
 
 <div style={{
     display:'flex',
@@ -232,7 +232,7 @@ The trigger starts monitoring the resource consumption immediately after additio
 
 The embedded application server clustering feature provides replication of sessions between pairs of nodes and eliminates the necessity of additional software or Memcached usage for increasing application availability.
 
-The platform provides automated session replication between _Tomcat_ and _TomEE servers_ with the help of multicast to gain web application high availability within the Java cluster. This [**High-Availability**](docs/ApplicationSetting/Scaling%20And%20Clustering/Session%20Replication%20for%20HA) feature can be enabled in the wizard during environment creation or topology tuning.
+The platform provides automated session replication between _Tomcat_ and _TomEE servers_ with the help of multicast to gain web application high availability within the Java cluster. This [**High-Availability**](/docs/ApplicationSetting/Scaling%20And%20Clustering/Session%20Replication%20for%20HA) feature can be enabled in the wizard during environment creation or topology tuning.
 
 <div style={{
     display:'flex',
