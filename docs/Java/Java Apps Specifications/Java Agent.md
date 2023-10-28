@@ -10,7 +10,7 @@ sidebar_position: 2
 
 All of the platform-certified Java stacks runs the **_jelastic-gc-agent.jar_** Java agent as a part of the standard optimization. It performs periodical Full GC calls to reduce the memory usage and release unused RAM back to OS. Due to [the platform contribution to the Java development](https://cloudmydc.com/), similar functionality is natively implemented since the _12th_ version of JDK.
 
-Refer to the [Memory Agent](https://cloudmydc.com/) add-on to learn more about the platform automatic optimization of the managed Java stacks or use it to optimize any custom Java container.
+Refer to the [Memory Agent](https://github.com/jelastic-jps/java-memory-agent) add-on to learn more about the platform automatic optimization of the managed Java stacks or use it to optimize any custom Java container.
 
 <div style={{
     display:'flex',
@@ -52,7 +52,7 @@ Follow the next steps to add a custom Java agent into a container:
 
 Provide a link to the required file or locate it on the local machine to **Upload**.
 
-3. Next, switch to the [**_variables.conf_**](https://cloudmydc.com/) file (the exact location vary based on the particular software stack) to provide custom variables and [JVM options](https://cloudmydc.com/). Here, you can specify the javaagent parameter with a path to the required **_jar_** file. For example: _javaagent:/opt/tomcat/temp/my-java-agent.jar_
+3. Next, switch to the [**_variables.conf_**](/docs/EnvironmentManagement/EnvironmentVariables/Custom%20Environment%20Variables) file (the exact location vary based on the particular software stack) to provide custom variables and [JVM options](/docs/EnvironmentManagement/EnvironmentVariables/Java%20Options%20and%20Arguments). Here, you can specify the javaagent parameter with a path to the required **_jar_** file. For example: _javaagent:/opt/tomcat/temp/my-java-agent.jar_
 
 <div style={{
     display:'flex',
