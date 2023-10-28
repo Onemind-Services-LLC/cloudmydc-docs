@@ -17,7 +17,7 @@ Unlike HTTP, the FTP protocol is stateful: you establish a control connection fo
 **FTP Usage:**
 
 - uploading/downloading resources
-- downloading and reading [logs](https://cloudmydc.com/) for analysing
+- downloading and reading [logs]( /docs/ApplicationSetting/Built-in%20Monitoring/Log%20Files) for analysing
 - editing configurations
 - syncing files
 - deploying applications (not recommended)
@@ -26,7 +26,7 @@ With Platform FTP feature is available for both application servers and database
 
 :::tip Note
 
-Currently, FTP add-on is not compatible with [Docker containers](https://cloudmydc.com/).
+Currently, FTP add-on is not compatible with [Docker containers]( /docs/Container/Container%20Types).
 
 :::
 
@@ -40,18 +40,18 @@ To benefit from FTP with the platform, you need to meet three requirements:
 
 Let’s go step-by-step the process of adding FTP to your environment:
 
-- [Create Environment](https://cloudmydc.com/)
-- [Install FTP](https://cloudmydc.com/)
-- [Using FTP](https://cloudmydc.com/)
-- [Transfer Files](https://cloudmydc.com/)
-- [Download Log Files](https://cloudmydc.com/)
-- [Synchronize Files](https://cloudmydc.com/)
-- [Edit Configuration Files](https://cloudmydc.com/)
-- [Deploy Application via FTP](https://cloudmydc.com/)
-- [Switching FTPS](https://cloudmydc.com/)
-- [Reset FTP Password](https://cloudmydc.com/)
-- [State Custom FTP Password](https://cloudmydc.com/)
-- [Uninstall FTP](https://cloudmydc.com/)
+- [Create Environment]( /docs/Deployment%20Tools/FTP-FTPS%20Support#create-environment)
+- [Install FTP]( /docs/Deployment%20Tools/FTP-FTPS%20Support#install-ftp)
+- [Using FTP]( /docs/Deployment%20Tools/FTP-FTPS%20Support#using-ftp)
+- [Transfer Files]( /docs/Deployment%20Tools/FTP-FTPS%20Support#transfer-files)
+- [Download Log Files]( /docs/Deployment%20Tools/FTP-FTPS%20Support#download-log-files)
+- [Synchronize Files]( /docs/Deployment%20Tools/FTP-FTPS%20Support#synchronize-files)
+- [Edit Configuration Files]( /docs/Deployment%20Tools/FTP-FTPS%20Support#edit-configuration-files)
+- [Deploy Application via FTP]( /docs/Deployment%20Tools/FTP-FTPS%20Support#deploy-application-via-ftp)
+- [Switching FTPS]( /docs/Deployment%20Tools/FTP-FTPS%20Support#switching-ftps)
+- [Reset FTP Password]( /docs/Deployment%20Tools/FTP-FTPS%20Support#reset-ftp-password)
+- [State Custom FTP Password]( /docs/Deployment%20Tools/FTP-FTPS%20Support#state-custom-ftp-password)
+- [Uninstall FTP]( /docs/Deployment%20Tools/FTP-FTPS%20Support#uninstall-ftp)
 
 ## Create Environment
 
@@ -419,9 +419,9 @@ You can change the password of FTP-addon, installed at your environment. Using c
 
 Your FTP password can be changed via SSH following the next steps:
 
-1. [generate](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) an SSH key and [add](https://cloudmydc.com/) it to your dashboard.
+1. [generate](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) an SSH key and [add]( /docs/Deployment%20Tools/SSH/Add%20SSH%20Key) it to your dashboard.
 
-2. [Access](https://cloudmydc.com/) a necessary container with the installed FTP-addon via SSH.
+2. [Access]( /docs/Deployment%20Tools/SSH/SSH%20Access/Overview) a necessary container with the installed FTP-addon via SSH.
 
 <div style={{
     display:'flex',

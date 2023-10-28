@@ -4,7 +4,7 @@ sidebar_position: 7
 
 ## CLI Tutorial: Container Redeploy
 
-In this guide, we’ll show how to [redeploy](https://cloudmydc.com/) a container from one image tag to another. Herewith, if needed, an option for whole layer redeployment is supported.
+In this guide, we’ll show how to [redeploy]( /docs/Container/Container%20Redeploy) a container from one image tag to another. Herewith, if needed, an option for whole layer redeployment is supported.
 
 1. At first, locate the environment name and node ID/layer of the container(s) that should be redeployed. You can either view the required info via the dashboard or use the **_GetEnvs_** and **_GetEnvInfo_** methods to get the data directly from the terminal (for all or particular environment respectively).
 
@@ -48,7 +48,7 @@ The following parameters are used:
 
 - **_{envName}_** - name of the environment, where container(s) should be redeployed
 
-- **_{nodeGroup}_** - identifier of the [environment layer](https://cloudmydc.com/) to update (_optional_)
+- **_{nodeGroup}_** - identifier of the [environment layer](https://docs.cloudscripting.com/creating-manifest/selecting-containers/#all-containers-by-group) to update (_optional_)
 
 - **_{nodeId}_** - identification number of the particular container to be redeployed (_optional_)
 

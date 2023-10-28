@@ -18,12 +18,12 @@ In the example above, the highlighted placeholders should be substituted with th
 
 - **_{env_name}_** - name for the new environment
 - **_{engine_type}_** - engine for being used in this environment
-- **_{node_type}_** - stack type identifier, according to the [list](https://cloudmydc.com/)
+- **_{node_type}_** - stack type identifier, according to the [list]( /docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Application%20Manifest)
 - **_{cloudlets_amount}_** - number of fixed and flexible cloudlets to allocate for a particular node
 
 :::tip Tip
 
-The more detailed information on available parameters can be found within the corresponding [API method](https://cloudmydc.com/) description and at the [CreateEnvironment API](https://cloudmydc.com/) overview.
+The more detailed information on available parameters can be found within the corresponding [API method](https://docs.jelastic.com/api/#!/api/environment.Control-method-CreateEnvironment) description and at the [CreateEnvironment API]( /docs/Deployment%20Tools/API%20&%20CLI/CreateEnv%20Params) overview.
 
 :::
 
@@ -79,7 +79,7 @@ In addition, you can redefine or add some of the settings (namely – _shortdoma
 
 </div>
 
-2. Creation of a [Docker-based environment](https://cloudmydc.com/) is almost similar to the above described methods, but includes a few specific parameters. So, in order to get a Docker container using platform CLI, you need to execute the following line:
+2. Creation of a [Docker-based environment]( /docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) is almost similar to the above described methods, but includes a few specific parameters. So, in order to get a Docker container using platform CLI, you need to execute the following line:
 
 ```bash
 ~/jelastic/environment/control/createenvironment --env '{"shortdomain" : "{env_name}"}' --nodes '[{"nodeType" : "docker", "fixedCloudlets" : {cloudlets_amount}, "flexibleCloudlets" : {cloudlets_amount}, "docker" : {"image" : "{image_name}"}}]'
@@ -95,7 +95,7 @@ Herewith:
 
 :::tip Note
 
-The full list of the special Docker parameters can be found at the appropriate [document](https://cloudmydc.com/).
+The full list of the special Docker parameters can be found at the appropriate [document]( /docs/Deployment%20Tools/API%20&%20CLI/CreateEnv%20Params).
 
 :::
 

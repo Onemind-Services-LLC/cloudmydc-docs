@@ -4,7 +4,7 @@ sidebar_position: 9
 
 ## CLI Tutorial: Mount Points
 
-[Mount Points](https://cloudmydc.com/) are used to manage connection between data storage server and client, allowing you can work with the shared remote files as easy as with the local ones. With platform CLI it’s possible to configure such mounts via terminal and to include them into specialized scripts for automation.
+[Mount Points]( /docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) are used to manage connection between data storage server and client, allowing you can work with the shared remote files as easy as with the local ones. With platform CLI it’s possible to configure such mounts via terminal and to include them into specialized scripts for automation.
 
 Below, we’ll observe all of the available commands for the mount points management.
 

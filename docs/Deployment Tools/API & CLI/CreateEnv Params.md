@@ -1,18 +1,18 @@
 ---
 sidebar_position: 4
 ---
-
+## anchor 13
 import obj from './CreateEnvParams.json'
 
 ## Parameters for CreateEnvironment API
 
-Creation of a new environment at the platform can be automated in a variety of different ways, e.g. with the help of [platform CLI](https://cloudmydc.com/), through the direct [API](https://cloudmydc.com/) request or by declaring the appropriate parameters via [JPS](https://cloudmydc.com/) manifest. Herewith, though representing a rather simple operation, it can include a bunch of different parameters for the precise topology definition.
+Creation of a new environment at the platform can be automated in a variety of different ways, e.g. with the help of [platform CLI]( /docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview), through the direct [API](https://cloudmydc.com/) request or by declaring the appropriate parameters via [JPS]( /docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview) manifest. Herewith, though representing a rather simple operation, it can include a bunch of different parameters for the precise topology definition.
 
 Thus, below we provide the description for all of such settings with the examples on their usage via CLI. They are divided into 3 major sections as arrays of the _~/jelastic/environment/control/createenvironment_ method, being named according to the appropriate arrays' denominations - two common ones and listing of the specialized parameters for the Docker containers' creation:
 
 - [env](https://cloudmydc.com/)
-- [nodes](https://cloudmydc.com/)
-- [docker](https://cloudmydc.com/)
+- [nodes]( /docs/Deployment%20Tools/API%20&%20CLI/CreateEnv%20Params#nodes-configurations)
+- [docker]( /docs/Deployment%20Tools/API%20&%20CLI/CreateEnv%20Params#docker-based-environment-configurations)
 
 # Common Environment Configurations
 

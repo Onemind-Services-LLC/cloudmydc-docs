@@ -26,7 +26,7 @@ Platform API follows REST principles. **REST API** determines a set of functions
 
 All requests of API methods are GET or POST HTTPS-requests to the URL with a set of parameters:
 
-**_https://_**[**_{hoster-api-host}_**](https://cloudmydc.com/)**_/1.0/_**
+**_https://_**[**_{hoster-api-host}_**]( /docs/QuickStart/Hosters%20List%20&%20Info)**_/1.0/_**
 
 The type of the URL which should be used, is stated in the description of each method (REST field).
 
@@ -40,7 +40,7 @@ The type of the URL which should be used, is stated in the description of each m
 
 </div>
 
-The data of the request can be sent as a query string (after the “?” sign) while using the GET method, or in the body of the POST request. Remember, that in case of a GET request, the parameters must be [percent encoded](https://cloudmydc.com/) (URL encoding).
+The data of the request can be sent as a query string (after the “?” sign) while using the GET method, or in the body of the POST request. Remember, that in case of a GET request, the parameters must be [percent encoded](https://en.wikipedia.org/wiki/Percent-encoding) (URL encoding).
 
 :::tip Note
 
@@ -69,7 +69,7 @@ The text value of the parameters should be provided in UTF-8 code. The sequence 
 
 ## Platform API Response
 
-The request response is UTF-8 encoded. The response for all API functions is given in [JSON](https://cloudmydc.com/) format. An example of the result is described in the documentation of the method.
+The request response is UTF-8 encoded. The response for all API functions is given in [JSON](https://en.wikipedia.org/wiki/JSON) format. An example of the result is described in the documentation of the method.
 
 <div style={{
     display:'flex',
@@ -85,8 +85,8 @@ The request response is UTF-8 encoded. The response for all API functions is giv
 
 To start automation of the required processes with platform API you have to face the following requirements:
 
-- You must be registered on any [hosting provider](https://cloudmydc.com/)
-- You need to download the appropriate [Platform Client Library](https://cloudmydc.com/) (according to the version of used platform) and add it to classpath
+- You must be registered on any [hosting provider]( /docs/QuickStart/Hosters%20List%20&%20Info)
+- You need to download the appropriate [Platform Client Library](https://mvnrepository.com/artifact/com.jelastic/jelastic-public-j2se) (according to the version of used platform) and add it to classpath
 
 If you are using Maven, add the following dependency to **_pom.xml_**
 
@@ -131,7 +131,7 @@ private final static String ENV_NAME = "test-api-environment-" + new Random().ne
 
 where:
 
-- URL of your hosting provider (_Hoster’s URL / API_ column in [this](https://cloudmydc.com/) document)
+- URL of your hosting provider (_Hoster’s URL / API_ column in [this]( /docs/QuickStart/Hosters%20List%20&%20Info) document)
 - your PaaS account’s email (login)
 - your PaaS account’s password
 
@@ -176,7 +176,7 @@ if (!arrayResponse.isOK()) {
 }
 ```
 
-5. The next block is devoted to the custom configurations and settings of your new environment and servers it will contain. More details on JSON parameters, used in the platform manifests for defining environment’s topology, can be seen [here](https://cloudmydc.com/).
+5. The next block is devoted to the custom configurations and settings of your new environment and servers it will contain. More details on JSON parameters, used in the platform manifests for defining environment’s topology, can be seen [here]( /docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Application%20Manifest).
 
 ```bash
 JSONObject env = new JSONObject()
