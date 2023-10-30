@@ -2,21 +2,17 @@
 sidebar_position: 2
 ---
 
-## work todo
-
 ## Automatic WildFly Clustering in Managed Domain Mode and Scaling inside Containers
 
-Tetiana Fydorenchyk | May 6, 2021 | Containers, DevOps PaaS, Installer, Java | auto-clustering, auto-scaling, Java EE hosting, Java hosting, micro clustering, wildfly clustering, WildFly hosting, wildfly in domain mode, wildfly managed domain, wildfly scaling
-
-Nowadays it’s easy to get up and running WildFly standalone server in a container. But what if you need to enable clustering in Managed Domain mode which is one of the key features of [Jakarta EE](https://cloudmydc.com/) in general. That is not so easy task. Some people claim it’s nearly impossible in the cloud-native world, because Jakarta EE clustering was designed before the containers era. The old question at the official [developers portal](https://cloudmydc.com/) is still not answered with any adequate instruction that just proves the presence of the issue.
+Nowadays it’s easy to get up and running WildFly standalone server in a container. But what if you need to enable clustering in Managed Domain mode which is one of the key features of [Jakarta EE](https://jakarta.ee/) in general. That is not so easy task. Some people claim it’s nearly impossible in the cloud-native world, because Jakarta EE clustering was designed before the containers era. The old question at the official [developers portal](https://developer.jboss.org/thread/249340) is still not answered with any adequate instruction that just proves the presence of the issue.
 
 As a result, developers go with standalone nodes as the only available production-ready option in containers integrating clustering and management features from the 3rd party solutions. Or they just keep running applications in VMs facing complexity that makes migration nearly impossible.
 
 But what developers should do if they are looking for a solution to migrate from VMs to containers already existing and nicely working Jakarta EE clusters in managed domain mode?
 
-Till this time there were very few examples (e.g. for [GlassFish](https://cloudmydc.com/) and [WebLogic](https://cloudmydc.com/)) how to run and scale Java application servers in managed domain mode within containers correctly. In most cases, lack of knowledge or even the absence of a working solution for the domain mode in containers leads to the loss of integrated Jakarta EE clustering features that just become obsolete.
+Till this time there were very few examples (e.g. for GlassFish and WebLogic) how to run and scale Java application servers in managed domain mode within containers correctly. In most cases, lack of knowledge or even the absence of a working solution for the domain mode in containers leads to the loss of integrated Jakarta EE clustering features that just become obsolete.
 
-But managed domain mode is still awesome! A vast portion of mission-critical and large-scale applications such as banking and billing are still running on Jakarta EE in VMs. Integrated Jakarta EE clustering provides functionality that people are interested in, including high-availability and automated deployment among distributed Java application servers regardless of underlying infrastructure, and, of course, Admin Panel to manage your cluster using a nice UI.
+But managed domain mode is still awesome! A vast portion of mission-critical and large-scale applications such as banking and billing are still running on [Jakarta EE](https://jakartablogs.ee/) in VMs. Integrated Jakarta EE clustering provides functionality that people are interested in, including high-availability and automated deployment among distributed Java application servers regardless of underlying infrastructure, and, of course, Admin Panel to manage your cluster using a nice UI.
 
 <div style={{
     display:'flex',
@@ -28,7 +24,7 @@ But managed domain mode is still awesome! A vast portion of mission-critical and
 
 </div>
 
-To get familiar with benefits of natively integrated clustering technology please refer to a good article “[Under the Hood of J2EE Clustering](https://cloudmydc.com/)”. Merging this rich functionality with ready-to-go containers provides a huge benefit by saving time and efforts of the team, and enables fast iterations as the majority of developers do not deal with containers or VMs if environment setup is fully automated.
+To get familiar with benefits of natively integrated clustering technology please refer to a good article “[Under the Hood of J2EE Clustering](https://www.theserverside.com/news/1364410/Under-the-Hood-of-J2EE-Clustering)”. Merging this rich functionality with ready-to-go containers provides a huge benefit by saving time and efforts of the team, and enables fast iterations as the majority of developers do not deal with containers or VMs if environment setup is fully automated.
 
 ## When, What and Why Managed Domain Mode?
 
@@ -37,7 +33,7 @@ Every WildFly standalone server has its own admin console and is managed indepen
 - Multi-server production environments with the ability to use centralized management capabilities that a managed domain provides.
 - For advanced development scenarios, i.e. those involving interaction between multiple WildFly instances.
 
-We can easily run one big service or several small interrelated services per cluster running in managed domain mode. Deployment to such cluster is automated so applications running in VMs can be [lifted and shifted to containers without re-architecturing](https://cloudmydc.com/). It provides a very convenient way for replicating on-premise applications in the cloud while avoiding costly and time-consuming re-design. As a result, the legacy applications can benefit from cost-efficiency of cloud-native features such as elastic compute and auto-scaling.
+We can easily run one big service or several small interrelated services per cluster running in managed domain mode. Deployment to such cluster is automated so applications running in VMs can be [lifted and shifted to containers without re-architecturing](https://www.techtarget.com/searchcloudcomputing/definition/cloud-migration). It provides a very convenient way for replicating on-premise applications in the cloud while avoiding costly and time-consuming re-design. As a result, the legacy applications can benefit from cost-efficiency of cloud-native features such as elastic compute and auto-scaling.
 
 ## Complexity of Managed Domain Topology
 
@@ -74,7 +70,7 @@ We adjusted this illustration for a little bit better view of the topology, as w
 
 As we can see from the illustration above, the VM1 contains 2 Java processes inside: Process Controller and Domain Controller. And every other VM contains at least 3 Java processes (or more, depending on how many server instances you want to run inside every host): Process Controller, Host Controllers and Worker Server(s).
 
-That’s not easy to run it in containers. Such topology conflicts with the anti-pattern in the application containers world. The [official Docker documentation](https://cloudmydc.com/) warns us about running multiple Java processes inside the same container:
+That’s not easy to run it in containers. Such topology conflicts with the anti-pattern in the application containers world. The [official Docker documentation](https://docs.docker.com/config/containers/multi-service_container/) warns us about running multiple Java processes inside the same container:
 
 _“It’s ok to have multiple processes, but to get the most benefit out of Docker, avoid one container being responsible for multiple aspects of your overall application.”_
 
@@ -82,7 +78,7 @@ So users feel confused when they get the message to perform this “seems-unreli
 
 ## Running Multiple Processes in a System Container
 
-However, the situation is not so bad. If configured properly, the domain mode works perfectly inside [system containers](https://cloudmydc.com/). They can handle as many processes as required inside one container. This kind of containers drastically simplifies migration from heavy VMs to a much lightweight virtualization. And there are two well-known options on the market [LXD](https://cloudmydc.com/) and [OpenVZ](https://cloudmydc.com/). Moreover, system containers and application containers are complementary, the combination of both provides [VM characteristics for dockerized applications](https://cloudmydc.com/).
+However, the situation is not so bad. If configured properly, the domain mode works perfectly inside [system containers](https://www.excella.com/insights/application-vs-system-containers). They can handle as many processes as required inside one container. This kind of containers drastically simplifies migration from heavy VMs to a much lightweight virtualization. And there are two well-known options on the market [LXD](https://linuxcontainers.org/lxd/) and [OpenVZ](https://openvz.org/). Moreover, system containers and application containers are complementary, the combination of both provides [VM characteristics for dockerized applications](https://linux.softpedia.com/blog/infographic-lxd-machine-containers-from-ubuntu-linux-492602.shtml).
 
 Jelastic PaaS implemented support of system containers at early days of 2011 and can confirm that many customers are happy with running multiple processes inside the same container in production when it’s required.
 
@@ -90,7 +86,7 @@ Moreover, system containers provide a better resource and security isolation com
 
 ## Decomposition and Building Modified Topology
 
-We are ready to start our decomposition journey. The first rule is in the spirit of microservices - it is always better to put only one Worker Server per one container. Also, we create only one server group per domain for all containers inside the cluster. Such simple adjustments will give tremendous and desired flexibility for scaling each Worker Server vertically, gaining [resource usage efficiency](https://cloudmydc.com/), and scaling the group of containers horizontally by adding new instances on demand.
+We are ready to start our decomposition journey. The first rule is in the spirit of microservices - it is always better to put only one Worker Server per one container. Also, we create only one server group per domain for all containers inside the cluster. Such simple adjustments will give tremendous and desired flexibility for scaling each Worker Server vertically, gaining resource usage efficiency, and scaling the group of containers horizontally by adding new instances on demand.
 
 <div style={{
     display:'flex',
@@ -192,7 +188,7 @@ Make sure that your application is up and running, pressing **Open in browser** 
 
 </div>
 
-If you log in to your container via built-in [Web SSH client](https://cloudmydc.com/), you’ll see only one running process of **Standalone** server.
+If you log in to your container via built-in [Web SSH client](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH), you’ll see only one running process of **Standalone** server.
 
 <div style={{
     display:'flex',
@@ -210,7 +206,7 @@ WildFly clustering with domain mode is configured automatically by means of Auto
 
 - Manually
 
-Add new servers via wizard while creating the environment or by [changing its topology](https://cloudmydc.com/).
+Add new servers via wizard while creating the environment or by [changing its topology](/docs/QuickStart/Dashboard%20Guide).
 
 <div style={{
     display:'flex',
@@ -236,7 +232,7 @@ Just refer to the application server layer within the left-side environment pane
 
 - Automatically
 
-The number of servers can be changed automatically by setting up scaling triggers based on the resource consumption within S**ettings > Auto Horizontal Scaling**.
+The number of servers can be changed automatically by setting up [scaling triggers](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling) based on the resource consumption within S**ettings > Auto Horizontal Scaling**.
 
 <div style={{
     display:'flex',
@@ -375,4 +371,4 @@ This way, you can apply the implied changes to your environment copy without aff
 
 ## Summary
 
-This instruction proves that there is no need to rebuild the whole application architecture in order to gain the required outcome from both managed domain mode and container technology. Migration of legacy projects from VMs to micro clusters with system containers is not that painful at all. It brings a “rich taste” of flexibility and efficiency for increasing competitive advantage. Just give it a try! Create your own cluster with [Jelastic PaaS](https://cloudmydc.com/) at one of the decentralized service providers worldwide.
+This instruction proves that there is no need to rebuild the whole application architecture in order to gain the required outcome from both managed domain mode and container technology. Migration of legacy projects from VMs to micro clusters with system containers is not that painful at all. It brings a “rich taste” of flexibility and efficiency for increasing competitive advantage. Just give it a try! Create your own cluster with Jelastic PaaS at one of the decentralized service providers worldwide.

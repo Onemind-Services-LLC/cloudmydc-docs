@@ -15,7 +15,7 @@ You can have a **Redmine** instance up and running within minutes using one-clic
 
 The process is simple - just click **Get it hosted now**, type your email and install Redmine in a minute skipping the steps of manual installation.
 
-Find the full list of applications available for one-click installation at our [Marketplace page](https://www.virtuozzo.com/application-platform/?referer=jelastic).
+Find the full list of applications available for one-click installation at our Marketplace page.
 
 In case you would like to configure and run your Redmine instance manually, just follow the step-by-step instruction below.
 

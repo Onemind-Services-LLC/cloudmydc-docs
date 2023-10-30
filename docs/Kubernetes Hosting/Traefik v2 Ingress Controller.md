@@ -2,11 +2,9 @@
 sidebar_position: 6
 ---
 
-## work todo
-
 <div style={{
     display: 'grid',
-    gridTemplateColumns: '0.7fr 1fr',
+    gridTemplateColumns: '0.55fr 1fr',
     gap: '10px'
 }}>
 <div>
@@ -24,12 +22,12 @@ sidebar_position: 6
 
 Jelastic Kubernetes cluster can be installed with NGINX, Traefik, or HAProxy ingress controllers. In this post, we will take a closer look at Traefik and its evolution in Jelastic Kubernetes Service (Jelastic KS).
 
-</div>
-</div>
-
 At the moment all issued Jelastic Kubernetes versions support Traefik v1, but commencing from K8s version 1.21.2, Traefik v2 will be used instead.
 
 A number of internal components of Traefik were conceptually redesigned moving from v1 to v2. Below we will cover some of them we consider more important.
+
+</div>
+</div>
 
 ## No Frontends and Backends
 
@@ -89,7 +87,7 @@ http:
           - "user2:$apr1$w70ASLDx$1UJmrFL/lVoltjmAz4UDH/"
 ```
 
-This middleware is an alternative to specifying credentials via [Kubernetes Secrets](https://cloudmydc.com/) and restricts access to the services:
+This middleware is an alternative to specifying credentials via [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/) and restricts access to the services:
 
 <div style={{
     display:'flex',
@@ -202,4 +200,4 @@ Also, Traefik offers a set of internal services. You can see an example in the c
 
 These are only a few main changes in the new Traefik v2 which is implemented within [Jelastic Kubernetes v1.21.2+](https://github.com/jelastic-jps/kubernetes/tree/v1.21.2). You can check a full list in the official [documentation related to transition from Traefik v1 to v2](https://doc.traefik.io/traefik/migration/v1-to-v2/).
 
-Get started with [Kubernetes Service](https://cloudmydc.com/) that can be automatically deployed, scaled and updated using Jelastic PaaS and don’t forget to keep an eye on [new releases](/docs/Kubernetes%20Hosting/Kubernetes%20Cluster/Cluster%20Versions#current-versions).
+Get started with Kubernetes Service that can be automatically deployed, scaled and updated using Jelastic PaaS and don’t forget to keep an eye on [new releases](/docs/Kubernetes%20Hosting/Kubernetes%20Cluster/Cluster%20Versions#current-versions).

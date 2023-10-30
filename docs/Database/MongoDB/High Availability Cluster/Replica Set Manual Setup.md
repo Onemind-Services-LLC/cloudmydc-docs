@@ -2,8 +2,6 @@
 sidebar_position: 2
 ---
 
-## work todo
-
 ## MongoDB Replication and Automated Failover. Configuration Guide
 Replica set is a term used for defining a database cluster of multiple nodes with the replication and an automated failover configured between them. Such a structure usually requires an odd number of members, either with [Arbiter](https://www.mongodb.com/docs/manual/tutorial/add-replica-set-arbiter/) node or not, to ensure the correct PRIMARY database election. This selected DB will process all the incoming write operations, storing the information about them within its oplog, where they can be accessed and replicated by every SECONDARY replica member for being applied to their data sets. In such a way, all servers will represent the same content and ensure its availability.
 
@@ -506,4 +504,4 @@ In the next block of the output, a full information about the replica set hosts 
 - **["is_primary"]** and **["is_secondary"]** - the parameters indicating the status of the server (correspondent values for the chosen primary MongoDB server are true, false and for two other MongoDB servers - false, true respectively)
 In addition, you can start and stop any of your database nodes and refresh this page to track the changes. In such a way, you can make sure that your MongoDB cluster is available and works as intended, and thus can be applied for any real case right now!
 
-Get your own highly-available MongoDB replica set with Jelastic PaaS, simply sign up for a [free trial at one of the service providers](https://www.virtuozzo.com/paas-cloud-hosting/?referer=jelastic) and follow the instructions.
+Get your own highly-available MongoDB replica set with Jelastic PaaS, simply sign up for a free trial at one of the service providers and follow the instructions.

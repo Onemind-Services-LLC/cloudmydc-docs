@@ -2,8 +2,6 @@
 sidebar_position: 1
 ---
 
-## work todo
-
 ## Auto-Scalable Couchbase Cluster in Containers: One-Click Deploy to the Cloud
 
 <div style={{
@@ -79,7 +77,7 @@ Now, let’s proceed further to examine how to easily get such Couchbase cluster
 
 With the considered prepackaged solution for one-click installation, the process of Couchbase cluster deployment is fully automated and doesn’t require any manual configurations - just several steps to accomplish.
 
-1. Log in to the [Jelastic Cloud](https://www.virtuozzo.com/application-platform-partners/?utm_source=blog-couchbase&_gl=1*1abug5j*_gcl_au*MTkyNTQ2Mjk4Ny4xNjk0OTczMzMx) with your credentials and click **Marketplace** at the top pane.
+1. Log in to the Jelastic Cloud with your credentials and click **Marketplace** at the top pane.
 
 <div style={{
     display:'flex',
@@ -133,7 +131,7 @@ At the opened start page, you’ll see a general Cluster Overview, composed of t
 - _Servers_ - displays general information on servers count within a cluster and their status
   For a detailed guidance on working with Couchbase Web Console, refer to the [official documentation](https://docs.couchbase.com/server/current/introduction/intro.html?_gl=1*1t80js0*_gcl_au*MTkyNTQ2Mjk4Ny4xNjk0OTczMzMx).
 
-Now, when the cluster is up and running, it can serve your application as a highly available and elastic data storage - the details on setting up a proper interaction between them will be considered in one of the forthcoming articles. Thus, keep track on Jelastic blog updates whilst exploring the efficiency of the above described clustered Couchbase DB solution by your own with a free 2-week trial period at one of our partner's [Cloud Platforms](https://www.virtuozzo.com/application-platform-partners/?utm_source=blog-couchbase&_gl=1*1t80js0*_gcl_au*MTkyNTQ2Mjk4Ny4xNjk0OTczMzMx).
+Now, when the cluster is up and running, it can serve your application as a highly available and elastic data storage - the details on setting up a proper interaction between them will be considered in one of the forthcoming articles. Thus, keep track on Jelastic blog updates whilst exploring the efficiency of the above described clustered Couchbase DB solution by your own with a free 2-week trial period at one of our partner's Cloud Platforms.
 
 :::tip Tip
 Have any questions on scalable Couchbase cluster deployment to Jelastic in one click? Feel free to submit them within the comments below or get in touch with our technical experts at [Stackoverflow](https://stackoverflow.com/questions/tagged/jelastic?_gl=1*1t80js0*_gcl_au*MTkyNTQ2Mjk4Ny4xNjk0OTczMzMx).

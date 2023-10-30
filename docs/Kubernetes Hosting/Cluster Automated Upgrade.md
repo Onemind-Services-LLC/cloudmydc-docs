@@ -2,11 +2,9 @@
 sidebar_position: 9
 ---
 
-## work todo
-
 <div style={{
     display: 'grid',
-    gridTemplateColumns: '0.7fr 1fr',
+    gridTemplateColumns: '0.15fr 1fr',
     gap: '10px'
 }}>
 <div>
@@ -24,10 +22,11 @@ sidebar_position: 9
 
 Flexibility, accelerated development and delivery, improved scalability and high availability are the main reasons companies are adopting Kubernetes (K8s) technology. But managing and keeping the system up to date can be so complex for organizations that they need to hire a separate department just to handle everything properly.
 
+With Jelastic’s Kubernetes automation you can improve DevOps productivity and focus on your business aims rather than fighting infrastructure complexity. In this article, we will cover how to streamline the Kubernetes cluster lifecycle via delivering upgrades automatically.
+
 </div>
 </div>
 
-With Jelastic’s Kubernetes automation you can improve DevOps productivity and focus on your business aims rather than fighting infrastructure complexity. In this article, we will cover how to streamline the Kubernetes cluster lifecycle via delivering upgrades automatically.
 
 ## Kubernetes Cluster Versioning
 
@@ -500,7 +499,7 @@ During the container redeploy the following directories and files are kept untou
 
 :::tip Note
 
-Starting from package version [1.18.14](https://cloudmydc.com/) users can add custom files and directories to the mentioned list of untouched ones changing file **_/etc/jelastic/redeploy.conf_** on the master node.
+Starting from package version 1.18.14 users can add custom files and directories to the mentioned list of untouched ones changing file **_/etc/jelastic/redeploy.conf_** on the master node.
 
 :::
 
@@ -510,4 +509,4 @@ In addition to the internal Kubernetes components, the platform updates the func
 - configuration files (e.g. kubernetes-dashboard.yaml, jelastic-values.yaml, etc.)
 - integrated add-ons
 
-So as a result, Kubernetes cluster is upgraded smoothly and with minimum manual intervention. Jelastic automation makes this process truly straightforward and helps to keep your cloud environment up to date. Try it yourself at one of [Jelastic Cloud](https://cloudmydc.com/) Providers.
+So as a result, Kubernetes cluster is upgraded smoothly and with minimum manual intervention. Jelastic automation makes this process truly straightforward and helps to keep your cloud environment up to date. Try it yourself at one of Jelastic Cloud Providers.

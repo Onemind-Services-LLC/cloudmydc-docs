@@ -2,8 +2,6 @@
 sidebar_position: 1
 ---
 
-## WORK TODO
-
 ## How to Connect PostgreSQL with Java Application
 
 PostgreSQL is a powerful, open source SQL database with the object-relational structure and numerous robust features to ensure excellent performance and reliability. In this tutorial, we’ll show how to connect [PostgreSQL](https://www.postgresql.org/?_gl=1*on0g80*_gcl_au*MTkyNTQ2Mjk4Ny4xNjk0OTczMzMx) database with Java application hosted with Jelastic PaaS.
@@ -214,4 +212,4 @@ Your request will be processed shortly displaying the result message.
 
 </div>
 
-As you can see, a new table (named due to the date and time of the creation) has been successfully added by our Java application. The connection is successfully established! Try it out at one of the [globally-available Jelastic service providers](https://www.virtuozzo.com/application-platform-partners/).
+As you can see, a new table (named due to the date and time of the creation) has been successfully added by our Java application. The connection is successfully established! Try it out at one of the globally-available Jelastic service providers.

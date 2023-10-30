@@ -198,4 +198,4 @@ Where:
 
 As you can see, the replica set (with the default **_rs0_** name) is up and running. Other [replica set commands](https://www.mongodb.com/docs/manual/reference/method/js-replication/) can be found at the official documentation. For example, use the **_rs.conf()_** operation if you want to see replica set configs.
 
-Get your own highly-available MongoDB replica set with Jelastic PaaS [at one of the service providers](https://www.virtuozzo.com/paas-cloud-hosting/?referer=jelastic).
+Get your own highly-available MongoDB replica set with Jelastic PaaS at one of the service providers.

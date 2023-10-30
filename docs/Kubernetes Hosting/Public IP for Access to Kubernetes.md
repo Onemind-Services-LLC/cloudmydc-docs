@@ -2,11 +2,9 @@
 sidebar_position: 7
 ---
 
-## work todo
-
 <div style={{
     display: 'grid',
-    gridTemplateColumns: '0.7fr 1fr',
+    gridTemplateColumns: '0.5fr 1fr',
     gap: '10px'
 }}>
 <div>
@@ -29,7 +27,7 @@ In this post we’d like to show how to expose applications via a public [IP add
 
 ## Dedicated Load Balancer for Application Access
 
-1. First of all, [install the Kubernetes cluster](https://cloudmydc.com/) from Jelastic marketplace and deploy the application. As an example, we go with [Jakarta EE Cargo Tracker](https://cloudmydc.com/).
+1. First of all, install the Kubernetes cluster from Jelastic marketplace and deploy the application. As an example, we go with Jakarta EE Cargo Tracker.
 
 2. Click **Change Environment Topology** next to your Kubernetes cluster. In the opened window add a Dedicated Load Balancer node and attach a public IP address to it.
 
@@ -77,7 +75,7 @@ Here we use the NGINX load balancer node, but you can choose any other available
 
 </div>
 
-4. Now you may bind the custom domain to the K8s cluster and send a request to issue a trusted [Let’s Encrypt SSL certificate](https://cloudmydc.com/) to secure applications’ traffic.
+4. Now you may bind the custom domain to the K8s cluster and send a request to issue a trusted Let’s Encrypt SSL certificate to secure applications’ traffic.
 
 - Go to the load balancer [Add-Ons](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) and find **Let’s Encrypt Free SSL**.
 
@@ -228,4 +226,4 @@ Congratulations! You’ve successfully exposed your application in two different
 
 </div>
 
-Sure, in production you need only one ingress depending on the chosen implementation. Explore easy and scalable Kubernetes hosting with [Jelastic service providers worldwide](https://cloudmydc.com/).
+Sure, in production you need only one ingress depending on the chosen implementation. Explore easy and scalable Kubernetes hosting with Jelastic service providers worldwide.

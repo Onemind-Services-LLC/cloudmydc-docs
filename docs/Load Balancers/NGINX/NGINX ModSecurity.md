@@ -2,11 +2,9 @@
 sidebar_position: 7
 ---
 
-## work todo
-
 ## How to Enable ModSecurity Web Application Firewall inside NGINX Server
 
-**[ModSecurity](https://cloudmydc.com/)** is an open-source, cross-platform web application firewall (WAF) module that helps to detect and prevent various attacks against web applications. The module can block common code injection attacks that ensures higher level of server security. It comes with a set of rules for cross website scripting, SQL injection, bad user agents, session hijacking, trojans, and other exploits.
+**[ModSecurity](https://www.modsecurity.org/)** is an open-source, cross-platform web application firewall (WAF) module that helps to detect and prevent various attacks against web applications. The module can block common code injection attacks that ensures higher level of server security. It comes with a set of rules for cross website scripting, SQL injection, bad user agents, session hijacking, trojans, and other exploits.
 
 Jelastic certified NGINX stacks (application servers and load balancer) are provided with the already pre-built ModSecurity module. You can follow just a few steps to enable this functionality on your containers:
 
@@ -107,4 +105,4 @@ Now, your application is protected with ModSecurity.
 
 As you can see, the ModSecurity is up and working to keep your web application secure.
 
-Start free trial and ensure high-level protection while running your projects with [Jelastic Multi-Cloud PaaS](https://cloudmydc.com/).
+Start free trial and ensure high-level protection while running your projects with Jelastic Multi-Cloud PaaS.
