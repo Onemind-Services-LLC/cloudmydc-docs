@@ -47,7 +47,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.2#ubuntu-21-os-template-support">
                     Learn More >>
                 </a>
             </div>
@@ -91,7 +91,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.2#deprecated-password-authentication-for-git">
                     Learn More >>
                 </a>
             </div>
@@ -110,7 +110,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.2#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -154,7 +154,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.2#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -165,9 +165,9 @@ Fixed
 
 ## Ubuntu 21 OS Template Support
 
-The platform implements support for the **Ubuntu 21** OS templates on all the PaaS installations regardless of the platform version. The new release offers an updated kernel, toolchain upgrades, security improvements, and more. For detailed information on [Ubuntu 21](https://cloudmydc.com/), refer to the official release notes.
+The platform implements support for the **Ubuntu 21** OS templates on all the PaaS installations regardless of the platform version. The new release offers an updated kernel, toolchain upgrades, security improvements, and more. For detailed information on [Ubuntu 21](https://discourse.ubuntu.com/t/hirsute-hippo-release-notes/19221) refer to the official release notes.
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/Container/Container%20Image%20Requirements)
 
 <div style={{
         display: 'flex',
@@ -181,7 +181,7 @@ The platform implements support for the **Ubuntu 21** OS templates on all the Pa
 
 ## Deprecated Password Authentication for Git
 
-Due to a recent [security update](https://cloudmydc.com/), password-based authentication for Git operations is no longer supported. In order to meet the new security requirements, token-based authentication is now mandatory (SSH keys can be used as well). Starting with the PaaS 6.1.2 release, if you still try to use password authentication for Git deploy operations, a dedicated notification will inform you of the necessity to switch to the personal access tokens.
+Due to a recent [security update](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/), password-based authentication for Git operations is no longer supported. In order to meet the new security requirements, token-based authentication is now mandatory (SSH keys can be used as well). Starting with the PaaS 6.1.2 release, if you still try to use password authentication for Git deploy operations, a dedicated notification will inform you of the necessity to switch to the personal access tokens.
 
 <div style={{
         display: 'flex',
@@ -318,9 +318,9 @@ Below, you can find the fixes that were implemented in the PaaS 6.1.2 release an
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/QuickStart/Software%20Stack%20Versions)
 
 <div style={{
         display: 'flex',

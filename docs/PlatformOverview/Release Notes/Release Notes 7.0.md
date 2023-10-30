@@ -48,7 +48,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.0#extended-account-collaboration">
                     Learn More >>
                 </a>
             </div>
@@ -95,7 +95,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.0#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -114,7 +114,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.0#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -158,7 +158,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.0#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -177,7 +177,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.0#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -190,7 +190,7 @@ Fixed
 
 The platform’s **_account collaboration_** feature is a powerful tool that allows multiple users to work on the same project. The core idea is straightforward - you can share your environment with other accounts on the platform. Additionally, different permissions can be provided to the collaboration members to cover various use cases.
 
-In the current 7.0 upgrade, the feature received a major rework, mainly focusing on extending its flexibility. Two focal points are **roles and policies** mechanics for advanced permission management and **integration with [environment groups](https://cloudmydc.com/)** to better organize shared components. All the features are wrapped in a new comprehensive UI:
+In the current 7.0 upgrade, the feature received a major rework, mainly focusing on extending its flexibility. Two focal points are **roles and policies** mechanics for advanced permission management and **integration with [environment groups](/docs/EnvironmentManagement/Environment%20Groups/Overview)** to better organize shared components. All the features are wrapped in a new comprehensive UI:
 
 - **Shared by Me** - collaboration options for the primary account, it has three tabs:
   - **Members** - manages a list of collaboration members (invite new users, suspend or remove existing ones, customize shared environments, groups, roles, etc.)
@@ -212,11 +212,11 @@ The new collaboration flow remains the same in principle but much more configura
 
 You can find information on even more changes to the collaboration feature (ability to temporarily suspend collaboration, role assigning algorithm, direct environment sharing, etc.) in the dedicated documentation:
 
-- [Collaboration Overview](https://cloudmydc.com/)
-- [Collaboration Roles & Policies](https://cloudmydc.com/)
+- [Collaboration Overview](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview)
+- [Collaboration Roles & Policies](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Roles%20Policies)
 - [Create Collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Create%20Collaboration)
-- [Collaboration User Experience](https://cloudmydc.com/)
-- [Share Environment](https://cloudmydc.com/)
+- [Collaboration User Experience](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20User%20Experience)
+- [Share Environment](/docs/EnvironmentManagement/Share%20Environment)
 
 :::danger Note
 
@@ -224,7 +224,7 @@ During the upgrade, the platform automatically generates configurations equivale
 
 :::
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview)
 
 <div style={{
         display: 'flex',
@@ -242,13 +242,13 @@ Below, you can find a list of all changes to the public API in the 7.0 platform 
 
 - in the **users** namespace:
   - added a new **[collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview)** service
-  - removed methods from the **[account](https://cloudmydc.com/)** service: _SetLinkedUserDisplayName_, _SetOwnerUserDisplayName_, _ConfirmLinkRequest_, _UnlinkLinkedUser_, _UnlinkOwnerUser_, _GetLinkedUsers_, _GetOwnerUsers_, _GetLinkedUsersByLogin_, _GetOwnerUsersByLogin_, _GetPayerQuotas_, _HazelcastPartitionsTest_, _LinkUsers_, _SetLinkedUserRole_, _SetLinkedUserDisplayName_, _SetOwnerUserDisplayName_, _ConfirmLinkRequest_, _UnlinkLinkedUser_, _UnlinkOwnerUser_, _GetLinkedUsers_, _GetOwnerUsers_, _SendLinkRequest_, _LinkUsersInner_
+  - removed methods from the **[account](https://docs.jelastic.com/api/#!/api/users.Account)** service: _SetLinkedUserDisplayName_, _SetOwnerUserDisplayName_, _ConfirmLinkRequest_, _UnlinkLinkedUser_, _UnlinkOwnerUser_, _GetLinkedUsers_, _GetOwnerUsers_, _GetLinkedUsersByLogin_, _GetOwnerUsersByLogin_, _GetPayerQuotas_, _HazelcastPartitionsTest_, _LinkUsers_, _SetLinkedUserRole_, _SetLinkedUserDisplayName_, _SetOwnerUserDisplayName_, _ConfirmLinkRequest_, _UnlinkLinkedUser_, _UnlinkOwnerUser_, _GetLinkedUsers_, _GetOwnerUsers_, _SendLinkRequest_, _LinkUsersInner_
 - in the **marketplace** namespace:
-  - added new **[favorite](https://cloudmydc.com/)**, **[installation](https://cloudmydc.com/)**, and **[app services](https://cloudmydc.com/)**
-  - added the **_GetAppInfo_** and **_GetAppSettings_** methods to the **[jps](https://cloudmydc.com/)** service
-  - removed the **_AttachAddon_** and **_DetachAddon_** methods from the **[jps](https://cloudmydc.com/)** service
-  - added **_ReadLog_** and **_ClearLog_** methods to the [console](https://cloudmydc.com/) service
-- in the **environment > [control](https://cloudmydc.com/)** service:
+  - added new **[favorite](https://docs.jelastic.com/api/#!/api/marketplace.Favorite)**, **[installation](https://docs.jelastic.com/api/#!/api/marketplace.Installation)**, and **[app services](https://docs.jelastic.com/api/#!/api/marketplace.App)**
+  - added the **_GetAppInfo_** and **_GetAppSettings_** methods to the **[jps](https://docs.jelastic.com/api/#!/api/marketplace.Jps)** service
+  - removed the **_AttachAddon_** and **_DetachAddon_** methods from the **[jps](https://docs.jelastic.com/api/#!/api/marketplace.Jps)** service
+  - added **_ReadLog_** and **_ClearLog_** methods to the [console](https://docs.jelastic.com/api/#!/api/marketplace.Console) service
+- in the **environment > [control](https://docs.jelastic.com/api/#!/api/environment.Control)** service:
   - added new **_GetSSHAccessInfo_**, **_GetEndpoints_**, and **_Exports_** methods
   - added the **_ownerUid_** optional parameter for the **_CreateEnvironment_**, **_GetTemplates_**, and **_GetEnvs_** methods
   - added the **_envGroups_** optional parameter for the **_CreateEnvironment_** method
@@ -259,8 +259,8 @@ Below, you can find a list of all changes to the public API in the 7.0 platform 
   - added the **_ownerUid_** optional parameter for the **_AttachEnv_**, **_DetachEnv_**, **_CreateGroup_**, **_EditGroup_**, **_RemoveGroup_**, and **_GetGroups_** methods
   - merged the **_envGroup_** parameter with the envGroups one and made mandatory for the **_AttachEnv_**, and **_DetachEnv_** methods
   - added the **_targetAppid_** optional parameter for the **_GetGroups_** method
-- added a new **environment > [export](https://cloudmydc.com/)** service
-- added new methods to the **environment > [trigger](https://cloudmydc.com/)** service: _AddAutoScalingTrigger_, _EditAutoScalingTrigger_, _SetAutoScalingTriggerEnabled_, _GetAutoScalingTriggers_, _DeleteAutoScalingTrigger_, _AutoScalingHistory_, _AddLoadAlertTrigger_, _EditLoadAlertTrigger_, _SetLoadAlertTriggerEnabled_, _GetLoadAlertTriggers_, _DeleteLoadAlertTrigger_, _LoadAlertHistory_
+- added a new **environment > [export](https://docs.jelastic.com/api/#!/api/environment.Group)** service
+- added new methods to the **environment > [trigger](https://docs.jelastic.com/api/#!/api/environment.Trigger)** service: _AddAutoScalingTrigger_, _EditAutoScalingTrigger_, _SetAutoScalingTriggerEnabled_, _GetAutoScalingTriggers_, _DeleteAutoScalingTrigger_, _AutoScalingHistory_, _AddLoadAlertTrigger_, _EditLoadAlertTrigger_, _SetLoadAlertTriggerEnabled_, _GetLoadAlertTriggers_, _DeleteLoadAlertTrigger_, _LoadAlertHistory_
 
 [More info](https://cloudmydc.com/)
 
@@ -397,9 +397,9 @@ PaaS 7.0
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/QuickStart/Software%20Stack%20Versions)
 
 <div style={{
         display: 'flex',

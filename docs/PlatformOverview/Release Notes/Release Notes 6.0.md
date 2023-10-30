@@ -44,7 +44,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0#windows-vms-support">
                     Learn More >>
                 </a>
             </div>
@@ -63,7 +63,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0#tomcattomee-hot-deploy">
                     Learn More >>
                 </a>
             </div>
@@ -82,7 +82,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0#non-downgradable-software-stacks">
                     Learn More >>
                 </a>
             </div>
@@ -101,7 +101,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0#extended-target-node-filtering-in-cloud-scripting">
                     Learn More >>
                 </a>
             </div>
@@ -145,7 +145,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0#traffic-distributor-package-update">
                     Learn More >>
                 </a>
             </div>
@@ -164,7 +164,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0#extended-logs-in-tasks-manager">
                     Learn More >>
                 </a>
             </div>
@@ -183,7 +183,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0#no-free-disk-error-clarification">
                     Learn More >>
                 </a>
             </div>
@@ -202,7 +202,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0#binding-busy-domain-error-clarification">
                     Learn More >>
                 </a>
             </div>
@@ -221,7 +221,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0#runlog-logrotate">
                     Learn More >>
                 </a>
             </div>
@@ -240,7 +240,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -259,7 +259,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -303,7 +303,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0#centos-6-end-of-life">
                     Learn More >>
                 </a>
             </div>
@@ -322,7 +322,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -341,7 +341,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -352,7 +352,7 @@ Fixed
 
 ## Windows VMs Support
 
-Starting with the PaaS 6.0 release, [Windows VM](https://cloudmydc.com/) support is implemented for the platforms. The feature availability depends on each particular service hosting provider as it requires additional configurations in order to be set up on a platform.
+Starting with the PaaS 6.0 release, [Windows VM](/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0#windows-vms-support) support is implemented for the platforms. The feature availability depends on each particular service hosting provider as it requires additional configurations in order to be set up on a platform.
 
 VM hosting at the platform is provided in a familiar way to the regular containers. Windows VM instances can be added via the topology wizard under the VPS section. However, there are a few peculiarities for virtual machines:
 
@@ -374,8 +374,8 @@ Virtual machines are visually highlighted in the dashboard via the dedicated VM 
 
 - Add-Ons - installs available pluggable modules (e.g. Env Start/Stop Scheduler)
 - Restart Node(s) - restarts a VM
-- Statistics - shows real-time and historical VM’s [resource consumption](https://cloudmydc.com/)
-- Remote Desktop - provides [RDP-related functionality](https://cloudmydc.com/) for Windows VM
+- Statistics - shows real-time and historical VM’s [resource consumption](/docs/ApplicationSetting/Built-in%20Monitoring/Statistics)
+- Remote Desktop - provides [RDP-related functionality](/docs/Windows&.NET/Windows%20RD%20Access) for Windows VM
 - Additionally - lists additional options (if any)
 
 <div style={{
@@ -390,7 +390,7 @@ Virtual machines are visually highlighted in the dashboard via the dedicated VM 
 
 Regardless of the actual consumption, VM Resources (vCPU and Memory) cost is always fixed, predefined by resource plan (license). Disk, Network, and Options are billed separately, just as for containers.
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/Windows&.NET/Windows%20Server%20VM)
 
 <div style={{
         display: 'flex',
@@ -416,7 +416,7 @@ Tomcat and TomEE application servers provide support for the **_hot deploy_** fe
 
 </div>
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/Windows&.NET/Windows%20Server%20VM)
 
 <div style={{
         display: 'flex',
@@ -430,7 +430,7 @@ Tomcat and TomEE application servers provide support for the **_hot deploy_** fe
 
 ## Non-Downgradable Software Stacks
 
-The platform provides out-of-the-box support for multiple [software stacks](/docs/QuickStart/Software%20Stack%20Versions) to build topologies that meet the most demanding users' requirements. Moreover, most of the stacks have at least a few releases to choose from. These versions can be freely switched at any time due to the **[Containers Redeploy](https://cloudmydc.com/)** feature.
+The platform provides out-of-the-box support for multiple [software stacks](/docs/QuickStart/Software%20Stack%20Versions) to build topologies that meet the most demanding users' requirements. Moreover, most of the stacks have at least a few releases to choose from. These versions can be freely switched at any time due to the **[Containers Redeploy](/docs/Container/Container%20Redeploy)** feature.
 
 However, not all of the software solutions provide backward compatibility. If there are substantial differences between the releases, downgrading a software version can result in unforeseen problems. In the current PaaS 6.0 upgrade, all the stacks were analyzed to locate those vulnerable to the issue and explicitly restricted from downgrading during the redevelopment process.
 
@@ -465,7 +465,7 @@ Currently, redeployment to the lower version is forbidden on the following stack
 
 ## CentOS 6 End-of-Life
 
-**CentOS 6** software stack support has officially reached its [end-of-life](https://cloudmydc.com/). It will no longer get any updates and security fixes. In order to ensure that users operate with reliable and secure stacks only, CentOS 6 was removed from the list of [supported OS templates](https://cloudmydc.com/) on the platform. After the 6.0 upgrade, the creation of the new containers based on the CentOS 6 will not be possible, while any existing instance will remain fully operable. However, we strictly recommend updating to the 7th or 8th release versions via built-in [redeploy functionality](https://cloudmydc.com/).
+**CentOS 6** software stack support has officially reached its [end-of-life](https://wiki.centos.org/About/Product). It will no longer get any updates and security fixes. In order to ensure that users operate with reliable and secure stacks only, CentOS 6 was removed from the list of [supported OS templates](/docs/Container/Container%20Image%20Requirements) on the platform. After the 6.0 upgrade, the creation of the new containers based on the CentOS 6 will not be possible, while any existing instance will remain fully operable. However, we strictly recommend updating to the 7th or 8th release versions via built-in [redeploy functionality](/docs/Container/Container%20Redeploy).
 
 [More info](https://cloudmydc.com/)
 
@@ -481,7 +481,7 @@ Currently, redeployment to the lower version is forbidden on the following stack
 
 ## Traffic Distributor Package Update
 
-**[Traffic Distributor](https://cloudmydc.com/)** is a package powered by the platform, which helps control traffic flow between environments. It is an easy-to-manage solution suitable for multiple use cases and hosting scenarios (Blue-Green Deploy, Failover Protection, A/B Testing). In the present 6.0 PaaS upgrade, PaaS team integrated the ability to choose between proxying traffic to backends over SSL or without it. The corresponding **HTTPS** config within the **_Traffic Distributor_** package UI is shown in the image below:
+**[Traffic Distributor](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Overview)** is a package powered by the platform, which helps control traffic flow between environments. It is an easy-to-manage solution suitable for multiple use cases and hosting scenarios (Blue-Green Deploy, Failover Protection, A/B Testing). In the present 6.0 PaaS upgrade, PaaS team integrated the ability to choose between proxying traffic to backends over SSL or without it. The corresponding **HTTPS** config within the **_Traffic Distributor_** package UI is shown in the image below:
 
 <div style={{
     display:'flex',
@@ -495,7 +495,7 @@ Currently, redeployment to the lower version is forbidden on the following stack
 
 Also, the default value for the **_proxy_connect_timeout_** setting in Traffic Distributor was increased to 60 seconds to reduce the number of reconfigurations due to the false-positive backend failures. However, upon selecting the Failover routing method, this parameter is automatically changed to the 20 seconds value.
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Overview)
 
 <div style={{
         display: 'flex',
@@ -509,7 +509,7 @@ Also, the default value for the **_proxy_connect_timeout_** setting in Traffic D
 
 ## Extended Logs in Tasks Manager
 
-Dashboard’s [tasks manager](https://cloudmydc.com/) provides all the vital information on the account activities. It helps developers with troubleshooting, issues analysis, and action tracking. In the current 6.0 PaaS release, the tasks manager was improved by providing additional **_log_** information for errors. This log field is present in the response of some error messages and contains valuable data for debugging.
+Dashboard’s [tasks manager](/docs/QuickStart/Dashboard%20Guide) provides all the vital information on the account activities. It helps developers with troubleshooting, issues analysis, and action tracking. In the current 6.0 PaaS release, the tasks manager was improved by providing additional **_log_** information for errors. This log field is present in the response of some error messages and contains valuable data for debugging.
 
 <div style={{
         display: 'flex',
@@ -575,7 +575,7 @@ Logrotate is a standard UNIX rotation and compression tool for log files. The pl
 
 ## Extended Target Node Filtering in Cloud Scripting
 
-The **_[targetNodes](https://cloudmydc.com/)_** parameter is an optional config for the JPS add-on solutions that defines environments suitable for installation. In the current PaaS 6.0 release, its functionality was extended with an additional **guestOSType** filter, which lists the suitable OS templates for the add-on installation. The possible values are:
+The **_[targetNodes](https://docs.cloudscripting.com/creating-manifest/visual-settings/#target-nodes)_** parameter is an optional config for the JPS add-on solutions that defines environments suitable for installation. In the current PaaS 6.0 release, its functionality was extended with an additional **guestOSType** filter, which lists the suitable OS templates for the add-on installation. The possible values are:
 
 - _LINUX_
 - _WINDOWS2008_
@@ -585,7 +585,7 @@ The **_[targetNodes](https://cloudmydc.com/)_** parameter is an optional config 
 
 For example, this parameter can be used to hide unnecessary (not supported) add-ons for the Windows-based nodes and vice versa.
 
-[More info](https://cloudmydc.com/)
+[More info](https://docs.cloudscripting.com/creating-manifest/visual-settings/#target-nodes)
 
 <div style={{
         display: 'flex',
@@ -599,7 +599,7 @@ For example, this parameter can be used to hide unnecessary (not supported) add-
 
 ## API Changes
 
-Below, you can find a list of all changes to the public API in the 6.0 platform version (compared to the preceding [5.9.8](https://cloudmydc.com/) ones):
+Below, you can find a list of all changes to the public API in the 6.0 platform version (compared to the preceding [5.9.8](/docs/category/platform-overview) ones):
 
 - added new **_Get_**, **_SetSLBAccessEnabled_**, **_SetOptions_**, and **_ApplyData_** methods to the **_nodegroup_** service
 - added a new **_GetNodeTags_** method to the **control** service
@@ -743,9 +743,9 @@ Below, you can find the fixes that were implemented in the PaaS 6.0 release and 
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/QuickStart/Software%20Stack%20Versions)
 
 <div style={{
         display: 'flex',

@@ -48,7 +48,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.2#debian-11-os-template-update">
                     Learn More >>
                 </a>
             </div>
@@ -67,7 +67,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.2#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -111,7 +111,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.2#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -130,7 +130,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.2#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -141,9 +141,9 @@ Fixed
 
 ## Debian 11 OS Template Update
 
-The OS template for the [recently implemented **Debian 11** stack](https://cloudmydc.com/) was updated in the current 6.2 PaaS release. The new OS template version provides even greater stability for the containers based on this image.
+The OS template for the [recently implemented **Debian 11** stack](/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.2#debian-11-os-template-update) was updated in the current 6.2 PaaS release. The new OS template version provides even greater stability for the containers based on this image.
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/Container/Container%20Image%20Requirements)
 
 <div style={{
         display: 'flex',
@@ -280,9 +280,9 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/QuickStart/Software%20Stack%20Versions)
 
 <div style={{
         display: 'flex',

@@ -443,9 +443,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
                 wordBreak: 'break-all',
                 padding: '20px',
             }}>
-                <a href="/">
                     {item.JE}
-                </a>
             </div>
             <div style={{
                 display: 'flex', 
@@ -483,7 +481,7 @@ The software stack provisioning process is independent of the platform release, 
 
 The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/QuickStart/Software%20Stack%20Versions)
 
 <div style={{
         display: 'flex',
@@ -582,9 +580,7 @@ In the table below, you can see the list of bug fixes applied to the platform st
                 wordBreak: 'break-all',
                 padding: '20px',
             }}>
-                <a href="/">
                 {item.JE}
-                </a>
             </div>
             <div style={{
                 display: 'flex', 

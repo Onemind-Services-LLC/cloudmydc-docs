@@ -44,7 +44,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.3#dashboard-performance-optimization">
                     Learn More >>
                 </a>
             </div>
@@ -63,7 +63,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.3#ubuntu-22-support">
                     Learn More >>
                 </a>
             </div>
@@ -82,7 +82,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.3#api-to-move-public-ips">
                     Learn More >>
                 </a>
             </div>
@@ -126,7 +126,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.3#platform-optimizations">
                     Learn More >>
                 </a>
             </div>
@@ -145,7 +145,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.3#show-logs-button-in-dashboard-notifications">
                     Learn More >>
                 </a>
             </div>
@@ -164,7 +164,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.3#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -183,7 +183,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.3#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -227,7 +227,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.3#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -246,7 +246,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.3#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -295,7 +295,7 @@ Below you can find a number of optimizations implemented in the current 7.3 rele
 
 ## Ubuntu 22 Support
 
-The platform introduces support of the latest Long Term Support release for one of the world’s most popular Linux distributions - **_Ubuntu 22.04_** LTS (Jammy Jellyfish). The update integrates the base [operating system template](https://cloudmydc.com/) (for custom Docker containers) and adds the Ubuntu 22.04 VPS stack. Moreover, the distribution support is automatically available for all platform versions since the 6.0.2 release via the appropriate patches.
+The platform introduces support of the latest Long Term Support release for one of the world’s most popular Linux distributions - **_Ubuntu 22.04_** LTS (Jammy Jellyfish). The update integrates the base [operating system template](/docs/Container/Container%20Image%20Requirements) (for custom Docker containers) and adds the Ubuntu 22.04 VPS stack. Moreover, the distribution support is automatically available for all platform versions since the 6.0.2 release via the appropriate patches.
 
 <div style={{
     display:'flex',
@@ -307,7 +307,7 @@ The platform introduces support of the latest Long Term Support release for one 
 
 </div>
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/Container/Container%20Image%20Requirements)
 
 <div style={{
         display: 'flex',
@@ -321,7 +321,7 @@ The platform introduces support of the latest Long Term Support release for one 
 
 ## Show Logs Button in Dashboard Notifications
 
-In the current 7.3 platform release, the ability to display the **Show Logs** button within the _‘warning’_ and _‘error’_ dashboard notification was implemented. Previously, such functionality was available for the _‘info’_ notifications only. The implementation allows custom package developers to handle errors more naturally. Namely, the log file may contain additional information on the occurred issue and even some suggested resolution steps.
+In the current 7.3 platform release, the ability to display the **Show Logs** button within the _‘warning’_ and _‘error’_ [dashboard notification](https://docs.cloudscripting.com/creating-manifest/handling-custom-responses/) was implemented. Previously, such functionality was available for the _‘info’_ notifications only. The implementation allows custom package developers to handle errors more naturally. Namely, the log file may contain additional information on the occurred issue and even some suggested resolution steps.
 
 <div style={{
         display: 'flex',
@@ -335,7 +335,7 @@ In the current 7.3 platform release, the ability to display the **Show Logs** bu
 
 ## API to Move Public IPs
 
-The new **_MoveExtIP_** API method allows moving external IP addresses from the source node to the target node. It complements the existing [SwapExtIps](https://cloudmydc.com/) API, making the management of existing public IPs more flexible. Additionally, the new method supports nodes with multiple IPs and can manage them in a single API call.
+The new **_MoveExtIP_** API method allows moving external IP addresses from the source node to the target node. It complements the existing [SwapExtIps](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Swap%20Public%20IPs) API, making the management of existing public IPs more flexible. Additionally, the new method supports nodes with multiple IPs and can manage them in a single API call.
 
 The following parameters should be specified for the **_MoveExtIP_** method:
 
@@ -365,10 +365,10 @@ The UI implementation of moving public IPs will be provided in future releases.
 
 ## API Changes
 
-Below, you can find a list of all changes to the public API in the 7.3 platform version (compared to the preceding [7.1](https://cloudmydc.com/) ones):
+Below, you can find a list of all changes to the public API in the 7.3 platform version (compared to the preceding [7.1](/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.1#api-changes) ones):
 
-- Implemented a new **_MoveExtIP_** API method (the **binder** service) that can [move external IP addresses](https://cloudmydc.com/) between containers and can operate with multiple IPs
-- Added a new **_GetBasicEnvsInfo_** API method (the **control** service) to improve the [dashboard loading speed](https://cloudmydc.com/)
+- Implemented a new **_MoveExtIP_** API method (the **binder** service) that can [move external IP addresses](/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.3#api-to-move-public-ips) between containers and can operate with multiple IPs
+- Added a new **_GetBasicEnvsInfo_** API method (the **control** service) to improve the [dashboard loading speed](/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.3#platform-optimizations)
 
 [More info](https://cloudmydc.com/)
 
@@ -505,9 +505,9 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/QuickStart/Software%20Stack%20Versions)
 
 <div style={{
         display: 'flex',

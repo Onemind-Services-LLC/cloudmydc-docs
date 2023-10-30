@@ -44,7 +44,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.4#submit-button-customization-in-cs">
                     Learn More >>
                 </a>
             </div>
@@ -88,7 +88,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.4#lets-encrypt-root-certificate-expiration">
                     Learn More >>
                 </a>
             </div>
@@ -107,7 +107,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.4#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -126,7 +126,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.4#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -170,7 +170,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.4#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -189,7 +189,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.4#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -200,7 +200,7 @@ Fixed
 
 ## Let’s Encrypt Root Certificate Expiration
 
-Due to the [**DST Root CA X3** Let’s Encrypt certificate expiration](https://cloudmydc.com/) on September 30, clients with the outdated list of root certificates will consider certificates issued by LE as expired. In order to make sure that all platform clients support the modern **_ISRG Root X1_** Let’s Encrypt certificate, the root certificate package was updated on all PaaS installations.
+Due to the [**DST Root CA X3** Let’s Encrypt certificate expiration](https://letsencrypt.org/docs/dst-root-ca-x3-expiration-september-2021/) on September 30, clients with the outdated list of root certificates will consider certificates issued by LE as expired. In order to make sure that all platform clients support the modern **_ISRG Root X1_** Let’s Encrypt certificate, the root certificate package was updated on all PaaS installations.
 
 <div style={{
         display: 'flex',
@@ -214,7 +214,7 @@ Due to the [**DST Root CA X3** Let’s Encrypt certificate expiration](https://c
 
 ## Submit Button Customization in CS
 
-In the current PaaS 6.1.4 release, the possibility to customize the default submit button in the [Cloud Scripting](https://cloudmydc.com/) dialogs was implemented. In some specific use cases, developers may need customization to the submit button behavior. For example, using the recently [improved **OnBeforeInit** event](https://cloudmydc.com/), it is possible to determine if the user has enough permissions for the specific operation. If not, this improvement allows hiding the default **Apply** button or displaying an account upgrade / platform support button instead.
+In the current PaaS 6.1.4 release, the possibility to customize the default submit button in the [Cloud Scripting](https://docs.cloudscripting.com/) dialogs was implemented. In some specific use cases, developers may need customization to the submit button behavior. For example, using the recently [improved **OnBeforeInit** event](https://cloudmydc.com/), it is possible to determine if the user has enough permissions for the specific operation. If not, this improvement allows hiding the default **Apply** button or displaying an account upgrade / platform support button instead.
 
 The exact list of new options to the buttons and settings configuration is provided below:
 
@@ -249,7 +249,7 @@ The exact list of new options to the buttons and settings configuration is provi
 
 ## API Changes
 
-Below, you can find a list of all changes to the public API in the 6.1.4 platform version (compared to the preceding [6.0](https://cloudmydc.com/) ones):
+Below, you can find a list of all changes to the public API in the 6.1.4 platform version (compared to the preceding [6.0](/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.4#api-changes) ones):
 
 - The response of the **_[GetSSLCerts](https://cloudmydc.com/)_** method was extended. Now it contains information about linked domains.
 
@@ -388,9 +388,9 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/QuickStart/Software%20Stack%20Versions)
 
 <div style={{
         display: 'flex',

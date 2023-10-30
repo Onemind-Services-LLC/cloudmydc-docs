@@ -47,7 +47,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.3#debian-11-os-template-support">
                     Learn More >>
                 </a>
             </div>
@@ -91,7 +91,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.3#pop-up-notifications-for-interrupted-onbeforeinit-event">
                     Learn More >>
                 </a>
             </div>
@@ -110,7 +110,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.3#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -154,7 +154,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.3#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -173,7 +173,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.3#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -184,7 +184,7 @@ Fixed
 
 ## Debian 11 OS Template Support
 
-The platform implements support for the **Debian 11** “bullseye” OS templates on all the PaaS installations (available for all platforms starting with the PaaS 6.0 release). It is an LTS (Long Term Support) version with an estimated support period of five years. The new release provides a massive update of the default packages list, kernel support for the exFAT filesystem, and many other improvements, optimizations, and security fixes. For detailed information, refer to the official [Debian 11 release notes](https://cloudmydc.com/).
+The platform implements support for the **Debian 11** “bullseye” OS templates on all the PaaS installations (available for all platforms starting with the PaaS 6.0 release). It is an LTS (Long Term Support) version with an estimated support period of five years. The new release provides a massive update of the default packages list, kernel support for the exFAT filesystem, and many other improvements, optimizations, and security fixes. For detailed information, refer to the official [Debian 11 release notes](https://www.debian.org/releases/bullseye/releasenotes).
 
 Also, Debian 11 was added as an out-of-box [Elastic VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information) stack in the platform dashboard.
 
@@ -198,7 +198,7 @@ Also, Debian 11 was added as an out-of-box [Elastic VPS](/docs/Elastic%20VPS/Ela
 
 </div>
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/Container/Container%20Image%20Requirements)
 
 <div style={{
         display: 'flex',
@@ -230,7 +230,7 @@ return { type: "info|warning|error", message: "Your custom message." };
 
 </div>
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/QuickStart/Software%20Stack%20Versions)
 
 <div style={{
         display: 'flex',
@@ -367,9 +367,9 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/QuickStart/Software%20Stack%20Versions)
 
 <div style={{
         display: 'flex',
