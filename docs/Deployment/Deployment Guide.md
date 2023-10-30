@@ -6,7 +6,7 @@ The platform supports various ways of the applications automatic deployment, all
 
 - **Dashboard** - corresponds to [deployment via archive](/docs/Deployment/Deployment%20Guide#archive-deployment-configurations) (provided either as local file or URL)
 - **VCS** - allows to [deploy from your VCS](/docs/Deployment/Deployment%20Guide#git--svn-deployment-configurations) repository (e.g. Git, SVN, Bitbucket)
-- **Hub Registry** - creates a custom container with your application based on the Docker image stored at your _[public](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment)_ or _[private](https://www.virtuozzo.com/application-platform-docs/custom-containers-deployment/)_ registry
+- **Hub Registry** - creates a custom container with your application based on the Docker image stored at your _[public](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment)_ or _private_ registry
 - **Plugins** - deploys a project using one of the popular software development tools (_[Ant Task](/docs/Deployment%20Tools/Plugins/Ant%20Task)_, _[Eclipse](/docs/Deployment%20Tools/Plugins/Eclipse%20Plugin/Eclipse%20Plugin%20Manual)_, _[Intellij IDEA](/docs/Deployment%20Tools/Plugins/IDEA%20Plugin)_, _[Maven](/docs/Deployment%20Tools/Plugins/Maven%20Plugin)_ or _[NetBeans](/docs/Deployment%20Tools/Plugins/NetBeans%20Plugin/NetBeans%20Plugin%20Overview)_), which provides integration with platform
 
 <div style={{

@@ -2,11 +2,9 @@
 sidebar_position: 10
 ---
 
-## work todo
-
 <div style={{
     display: 'grid',
-    gridTemplateColumns: '0.7fr 1fr',
+    gridTemplateColumns: '0.55fr 1fr',
     gap: '10px'
 }}>
 <div>
@@ -14,6 +12,8 @@ sidebar_position: 10
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'cetner',
+    width: "100%",
+    objectFit: "contain",
 }}>
 
 ![Locale Dropdown](./img/GitLabCI-CDIntegration/image22-300x300.png)
@@ -22,7 +22,7 @@ sidebar_position: 10
 </div>
 <div>
 
-In the article “[Private GitLab Server Automatic Installation with Jelastic PaaS](https://cloudmydc.com/)” we looked at the GitLab installation, its initial setup, and the basics required for the project’s lifecycle (git project importing and docker registry accessing). And today we’ll move forward to the integration of GitLab with Kubernetes, as well as describe how to set up continuous integration and continuous deployment pipeline for your projects based on Java application sample.
+In the article “Private GitLab Server Automatic Installation with Jelastic PaaS” we looked at the GitLab installation, its initial setup, and the basics required for the project’s lifecycle (git project importing and docker registry accessing). And today we’ll move forward to the integration of GitLab with Kubernetes, as well as describe how to set up continuous integration and continuous deployment pipeline for your projects based on Java application sample.
 
 </div>
 </div>
@@ -32,7 +32,7 @@ In the article “[Private GitLab Server Automatic Installation with Jelastic Pa
 GitLab's ecosystem is enriched with a large number of features like:
 
 - the built-in continuous integration system (CI/CD) allows you to create a pipeline and control the lifecycle of the application’s deployment, from downloading the code to the repository, until it is uploaded to the production environment
-- with AutoDevOps, you can establish a CI/CD pipeline that automatically detects, builds, tests, and deploys your projects. Integrated with a [Kubernetes (K8S) cluster](https://cloudmydc.com/), it allows you to deploy applications with no provisioning of extra CI/CD resources or configurations required.
+- with AutoDevOps, you can establish a CI/CD pipeline that automatically detects, builds, tests, and deploys your projects. Integrated with a Kubernetes (K8S) cluster, it allows you to deploy applications with no provisioning of extra CI/CD resources or configurations required.
 
 ## Kubernetes Integration Details
 
@@ -70,7 +70,7 @@ Sign in to the Jelastic platform dashboard, go to the [Marketplace](/docs/Deploy
 
 </div>
 
-- If you are going to use a custom domain, activate the [Install Let’s Encrypt Certificates and Custom Domain Addon](https://cloudmydc.com/) option while installing the GitLab server.
+- If you are going to use a custom domain, activate the Install Let’s Encrypt Certificates and Custom Domain Addon option while installing the GitLab server.
 
 <div style={{
     display:'flex',
@@ -162,4 +162,4 @@ Now you may use GitLab pipelines to build and deploy projects to the Kubernetes 
 
 In the next article, we'll cover how to test Kubernetes and GitLab integration, as well as how to bind custom domain to the application running within this setup.
 
-Automate continuous integration and delivery of your applications using state-of-the-art solutions. Get your Kubernetes with GitLab CI/CD pipeline setup at one of [Jelastic cloud service providers](https://cloudmydc.com/).
+Automate continuous integration and delivery of your applications using state-of-the-art solutions. Get your Kubernetes with GitLab CI/CD pipeline setup at one of Jelastic cloud service providers.

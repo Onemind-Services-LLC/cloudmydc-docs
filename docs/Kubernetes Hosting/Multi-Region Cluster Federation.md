@@ -2,11 +2,9 @@
 sidebar_position: 8
 ---
 
-## work todo
-
 <div style={{
     display: 'grid',
-    gridTemplateColumns: '0.7fr 1fr',
+    gridTemplateColumns: '0.55fr 1fr',
     gap: '10px'
 }}>
 <div>
@@ -24,12 +22,14 @@ sidebar_position: 8
 
 If you have multiple Kubernetes (K8s) clusters in different regions and need to run the same application across all of them, it is reasonable to use the so-called Kubernetes Cluster Federation or [KubeFed](https://github.com/kubernetes-retired/kubefed/blob/master/README.md).
 
-</div>
-</div>
-
 Kubernetes Federation is a multi-cloud or multi-region implementation for centralized deployment and management of applications and services across multiple Kubernetes clusters.
 
-Federation allows to create a set of interconnected clusters, into which you can deploy applications according to specific rules. The most demanded use case for Federation is scaling applications across different clusters located in different regions. You can bundle components of your application to federated resources and distribute the specified number of replicas across all member clusters.
+Federation allows to create a set of interconnected clusters, into which you can deploy applications according to specific rules. The most demanded use case for Federation is scaling applications across different clusters located in different regions. 
+
+</div>
+</div>
+
+You can bundle components of your application to federated resources and distribute the specified number of replicas across all member clusters.
 
 In this article we’ll demonstrate how to set up Jelastic Kubernetes Services (JK8s) as a Federation located across different regions.
 
@@ -51,7 +51,7 @@ Thus we need to decide which payload we want to distribute, and which member clu
 
 So, let’s get down to business and create a Federation in Jelastic PaaS.
 
-Sing in your account and create two [Kubernetes clusters](https://cloudmydc.com/) in different [regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region). Actually you may create as many as you need though, but here we create a **Host Cluster** and **Member Cluster 1** only. All of the actions below can be applied to any number of Member Clusters. So, deploy:
+Sing in your account and create two Kubernetes clusters in different [regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region). Actually you may create as many as you need though, but here we create a **Host Cluster** and **Member Cluster 1** only. All of the actions below can be applied to any number of Member Clusters. So, deploy:
 
 - Federation Host Cluster: **_fedhost.vip.jelastic.cloud_**
 - Federation Member Cluster: **_member1.demo.jelastic.com_**
@@ -340,4 +340,4 @@ fedhost~$ kubectl -n kube-federation-system get kubefedclusters
 
 </div>
 
-Congratulations! Now you are aware how to build Kubernetes Federation across multiple regions of [Jelastic PaaS service providers](https://cloudmydc.com/). The next step is to start federating the resources and we’ll cover this in more detail within our upcoming publication.
+Congratulations! Now you are aware how to build Kubernetes Federation across multiple regions of Jelastic PaaS service providers. The next step is to start federating the resources and we’ll cover this in more detail within our upcoming publication.

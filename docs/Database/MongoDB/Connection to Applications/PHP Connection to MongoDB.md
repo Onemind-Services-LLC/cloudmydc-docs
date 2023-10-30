@@ -96,7 +96,7 @@ Then, select the corresponding database using the drop-down list below and **Exe
 - mongodb.so
   Both these extensions implement different API, so we recommend to use the legacy module for keeping old applications running, whilst adapt your new projects due to the latest one.
 
-**Tip:** The current version of used PaaS installation usually can be seen within the logo in the top left dashboard corner. Additionally, you can check it within the [Cloud Union Catalog](https://www.virtuozzo.com/application-platform-par).
+**Tip:** The current version of used PaaS installation usually can be seen within the logo in the top left dashboard corner. Additionally, you can check it within the Cloud Union Catalog.
 
 :::
 

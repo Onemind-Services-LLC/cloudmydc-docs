@@ -124,9 +124,9 @@ Refer to the following guides for the detailed overview of the deployment proces
 
 Check examples of the Python-based application hosting on the platform:
 
-- [Django CMS](https://www.virtuozzo.com/company/blog/django-cms-installation-python-cloud-hosting/)
-- [Mezzanine CMS](https://www.virtuozzo.com/company/blog/how-to-get-mezzanine-cms-inside-jelastic-cloud/)
-- [Wagtail CMS](https://www.virtuozzo.com/company/blog/deploy-wagtail-python-cms/)
+- Django CMS
+- Mezzanine CMS
+- Wagtail CMS
 
 ## Python Packages/Modules Management
 
