@@ -81,7 +81,7 @@ In a minute your environment will be created and appears in the environment list
 - **proxy_cache_valid** _{number}m_
   It specify the time during which the NGINX should keep cash. For example 720m.
 
-To find info about other available directives follow the [link](https://cloudmydc.com/).
+To find info about other available directives follow the [link](https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_cache_valid).
 
 :::tip Tip
 

@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-It is possible to access your VPS container using any preferred third-party SSH software via the attached external IP address. Such connection provides the same full root access level as while working over [SSH Gate](https://cloudmydc.com/).
+It is possible to access your VPS container using any preferred third-party SSH software via the attached external IP address. Such connection provides the same full root access level as while working over [SSH Gate](/docs/Elastic%20VPS/Elastic%20VPS%20Management/Linux%20VPS%20Access%20via%20SSH%20Gate).
 
 :::tip Tip
 
@@ -22,12 +22,12 @@ You can locate your Public IP by expanding the appropriate node in the platform 
 
 Below, we’ve prepared examples of connection to Elastic VPS container over public IP from under different operating systems:
 
-- [MacOS/Linux/BSD](https://cloudmydc.com/)
-- [Windows](https://cloudmydc.com/)
+- [MacOS/Linux/BSD](/docs/Elastic%20VPS/Elastic%20VPS%20Management/Linux%20VPS%20Access%20via%20Public%20IP#public-ip-access-for-macoslinuxbsd)
+- [Windows](/docs/Elastic%20VPS/Elastic%20VPS%20Management/Linux%20VPS%20Access%20via%20Public%20IP#public-ip-access-for-windows)
 
 :::tip Tip
 
-In confines of the [Windows-based](https://cloudmydc.com/) VPS containers, the [remote desktop protocol](https://cloudmydc.com/) (RDP) is used to perform any required server configurations.
+In confines of the [Windows-based](/docs/Windows&.NET/Windows%20Server%20VM) VPS containers, the [remote desktop protocol](/docs/Windows&.NET/Windows%20RD%20Access) (RDP) is used to perform any required server configurations.
 
 :::
 
@@ -35,7 +35,7 @@ In confines of the [Windows-based](https://cloudmydc.com/) VPS containers, the [
 
 Run your preferred SSH tool and connect to your VPS server with the steps similar to the ones provided below.
 
-As an example, we’ll use the [OpenSSH](https://cloudmydc.com/) software, open your terminal and run the following command:
+As an example, we’ll use the [OpenSSH](https://www.openssh.com/) software, open your terminal and run the following command:
 
 ```bash
 ssh {userName}@{hostname}
@@ -62,7 +62,7 @@ That’s it! Start managing your VPS container and apply any required configurat
 
 ## Public IP Access for Windows
 
-In confines of Windows OS, choose a compatible tool to establish SSH connection via Public IP to your VPS container. For example, we’ll use the [PuTTY](https://cloudmydc.com/) SSH client.
+In confines of Windows OS, choose a compatible tool to establish SSH connection via Public IP to your VPS container. For example, we’ll use the [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) SSH client.
 
 1. Navigate to the **Configuration** tab and establish **Session** by specifying your Public IP address into the appropriate **Host Name** field.
 

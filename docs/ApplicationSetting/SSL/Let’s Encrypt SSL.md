@@ -2,6 +2,8 @@
 sidebar_position: 4
 ---
 
+## work todo
+
 ## Free Let’s Encrypt SSL Certificates: Out-of-Box Integration with the Most Popular Software Stacks
 
 One of the key issues we should deal with while hosting production applications is to ensure its security. The very basic and commonly used approach for secure data exchange is encrypting the application traffic with HTTPS protocol.
@@ -77,7 +79,7 @@ To get SSL certificate for the environment hostname, perform the following:
 
 :::tip
 
-Alternatively you can [Import](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import) the manifest.jps file from the appropriate Let's Encrypt add-on repository:
+Alternatively you can [Import](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import) the <b><i>manifest.jps</i></b> file from the appropriate Let's Encrypt add-on repository:
 https://github.com/jelastic-jps/lets-encrypt/blob/master/manifest.jpsImporting add-on via JPS tab allows providing customization on a fly.
 
 :::
@@ -274,4 +276,4 @@ If necessary, the Let's _Encrypt SSL_ add-on can be easily removed from your env
 
 After confirmation, the add-on will be removed and attached certificates will be deactivated.
 
-That’s it! Now you know how to install and manage Let's Encrypt add-on for automatic custom SSL configuration of your environment so you can protect almost any application in no time, completely for free and without hardly any efforts. Get started now at one of the Jelastic PaaS service providers.
+That’s it! Now you know how to install and manage Let's Encrypt add-on for automatic custom SSL configuration of your environment so you can protect almost any application in no time, completely for free and without hardly any efforts. Get started now at one of the [Jelastic PaaS service providers](https://cloudmydc.com/).

@@ -6,7 +6,7 @@ sidebar_position: 3
 
 **MySQL**, **MariaDB**, and **Percona** are highly popular among developers all over the world, when an open source SQL databases are required. In this instruction we’ll show you how to connect your **Python** application, hosted within the platform, to these DB servers.
 
-1. Log into the platform dashboard and [create a new environment](https://cloudmydc.com/) with both Python and MySQL (or Python and MariaDB) servers.
+1. Log into the platform dashboard and [create a new environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with both Python and MySQL (or Python and MariaDB) servers.
 
 <div style={{
     display:'flex',
@@ -24,7 +24,7 @@ Locating instances within a single environment is just an example, you can estab
 
 :::
 
-2. After environment creation, access your application server via SSH Gate, e.g. by pressing the **[Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)** button.
+2. After environment creation, access your application server via SSH Gate, e.g. by pressing the **[Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH#ssh-access-via-web-browser)** button.
 
 <div style={{
     display:'flex',
@@ -38,7 +38,7 @@ Locating instances within a single environment is just an example, you can estab
 
 A terminal emulator with the automatically established SSH connection to your node will be opened in the appropriate tab.
 
-3. Now, install a [MySQL connector for Python](https://cloudmydc.com/) (it works with MariaDB as well) with the following command:
+3. Now, install a [MySQL connector for Python](https://github.com/sanpingz/mysql-connector) (it works with MariaDB as well) with the following command:
 
 ```bash
 pip install mysql-connector==2.1.6
@@ -56,7 +56,7 @@ pip install mysql-connector==2.1.6
 
 :::tip Note
 
-In order to use the newer version of the MySQL connector, you need to additionally install [Protobuf C++](https://cloudmydc.com/) of the 2.6.0 version or above.
+In order to use the newer version of the MySQL connector, you need to additionally install [Protobuf C++](https://protobuf.dev/downloads/) of the 2.6.0 version or above.
 
 :::
 
@@ -115,4 +115,4 @@ python script.py
 
 </div>
 
-If the “You are connected!” string appeared within terminal, the connection was successful. Now, you can be sure that your database server is accessible and you can [extend the code](https://cloudmydc.com/) to execute the required actions.
+If the “You are connected!” string appeared within terminal, the connection was successful. Now, you can be sure that your database server is accessible and you can [extend the code](https://dev.mysql.com/doc/connector-python/en/) to execute the required actions.

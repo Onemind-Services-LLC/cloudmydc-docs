@@ -12,11 +12,7 @@ Another use case for variables is to configure the application through the set o
 
 ## Default Environment Variables
 
-<!-- <u> -->
-
 Click this abstract to view a full list of default variables used within the platform containers.
-
-<!-- </u> -->
 
 Or use the categorized groups below to narrow the search.
 

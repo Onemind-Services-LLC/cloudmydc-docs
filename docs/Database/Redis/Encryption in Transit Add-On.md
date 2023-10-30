@@ -14,7 +14,7 @@ The add-on can be installed on top of the Redis nodes only.
 
 :::tip Tip
 
-The add-on is also available from the [Marketplace](https://cloudmydc.com/) and can be imported from the appropriate GitHub repository.
+The add-on is also available from the [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace#marketplace) and can be imported from the appropriate GitHub repository.
 
 :::
 
@@ -56,7 +56,7 @@ Click **Install** to continue.
 
 :::danger Note
 
-Port **_6380_** is used for secure connection by default and is automatically added to the firewall rules during the add-on installation.
+Port **_6380_** is used for secure connection by default and is automatically added to the [firewall rules](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall#container-firewall-rules-management) during the add-on installation.
 
 <div style={{
     display:'flex',
@@ -76,7 +76,7 @@ You can find generated SSL certificates under the **/var/lib/jelastic/keys/SSL-T
 
 Below you can learn about certificates generation processes and specifics:
 
-- Add-on pre-installs **[Redli](https://cloudmydc.com/)** – a humane Go-based alternative to the official redis-cli utility.
+- Add-on pre-installs **[Redli](https://github.com/IBM-Cloud/redli)** – a humane Go-based alternative to the official redis-cli utility.
 - Certificates are generated with the **_/usr/local/sbin/selfcertgen_** utility.
 - Certificates are self-signed and issued for the hostname of the particular node. It means that each node has a set of own certificates, and you must use the ones corresponding to the accessed node for authentication.
 - Due to Redis specifics, the alternative hostname is added when creating the server certificate:
@@ -152,7 +152,7 @@ If no longer needed, remove the add-on from the layer by choosing the **Uninstal
 
 ## Secure Connection to Redis
 
-For secure connection (we’ll use the **[redis-cli](https://cloudmydc.com/)** utility as an example), specify the command with the following options:
+For secure connection (we’ll use the **[redis-cli](https://redis.io/docs/connect/cli/)** utility as an example), specify the command with the following options:
 
 :::tip Tip
 
@@ -236,7 +236,7 @@ The automatic and manual scaling can work incorrectly after the changes due to b
 
 - **multi-regional cluster SSL interconnection**
 
-When working with the [multi-regional Redis cluster](https://cloudmydc.com/), the same root certificate must be used on all the nodes of all the environments for successful interconnection between nodes through the TLS.
+When working with the [multi-regional Redis cluster](/docs/Database/Redis/High%20Availability%20Cluster/Multi-Region%20Cluster#redis-multi-region-cluster), the same root certificate must be used on all the nodes of all the environments for successful interconnection between nodes through the TLS.
 
 1. Install the SSL add-on on the first environment of the multi-regional cluster.
 

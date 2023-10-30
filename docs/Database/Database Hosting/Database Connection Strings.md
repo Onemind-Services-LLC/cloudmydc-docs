@@ -8,9 +8,9 @@ import obj from './DatabaseConnectionStrings.json'
 
 All instances, created inside the platform, are operated as independent containers. To establish connection to a database from the application, deployed within application server, you need to set a connection string for it, using either:
 
-- [CNAME](https://cloudmydc.com/) of database, e.g. _node{node_id}-{environment_name}.{hoster_domain}_
+- [CNAME](/docs/Database/Database%20Hosting/DB%20Hosting%20Overview#database-admin-panel-url) of database, e.g. _node{node_id}-{environment_name}.{hoster_domain}_
 - Private IP address
-- [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address (if attached)
+- [Public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip) address (if attached)
 
 :::danger Note
 
@@ -20,8 +20,8 @@ Specifying localhost within a connection string will not work for establishing c
 
 Depending on the engine that powers your environment, refer to one of the sections below:
 
-- [Java](https://cloudmydc.com/)
-- [PHP](https://cloudmydc.com/)
+- [Java](/docs/Database/Database%20Hosting/Database%20Connection%20Strings#database-connection-for-java-apps)
+- [PHP](/docs/Database/Database%20Hosting/Database%20Connection%20Strings#database-connection-for-php-apps)
 
 ## Database Connection for Java Apps
 
@@ -104,9 +104,9 @@ _“jdbc:{dbtype}://{dbtype}{node_id}-{environment_name}.{hoster_domain}/{dbname
 
 :::tip Tip
 
-Your hosting provider domain can be found within the last column of the appropriate table in the [Hosters Info](https://cloudmydc.com/) page.
+Your hosting provider domain can be found within the last column of the appropriate table in the [Hosters Info](/docs/QuickStart/Hosters%20List%20&%20Info#paas-hosting-providers) page.
 
-In case your hosting provider platform has several [environment regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) to choose, the {hoster_domain} value for your environment can differ from the general platform’s one.
+In case your hosting provider platform has several [environment regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#environment-regions) to choose, the {hoster_domain} value for your environment can differ from the general platform’s one.
 
 :::
 

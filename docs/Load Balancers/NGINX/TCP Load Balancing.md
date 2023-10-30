@@ -7,7 +7,7 @@ Load balancing ensures high system availability through the distribution of work
 
 Platform clients can use **TCP** for balancing requests to databases, mail servers and other distributable applications with network support. Also TCP can be used instead of HTTP if faster balancing is needed. In this case you just need to note that this fastness is achieved through omitting the process of handling requests.
 
-**TCP load balancing** component receives a connection request from a client application through a network socket. This component decides which node in the environment receives the request. For this requests distribution, the platform uses Round Robin Algorithm.
+**TCP load balancing** component receives a connection request from a client application through a network socket. This component decides which node in the environment receives the request. For this requests distribution, the platform uses *Round Robin Algorithm*.
 
 When the connection is established, requests from the client application continue to go through the same connection to the chosen node. The application cannot determine which instance is selected.
 

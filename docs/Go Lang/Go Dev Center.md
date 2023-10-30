@@ -18,17 +18,17 @@ The PaaS is a truly multilingual cloud platform, which currently provides Java, 
 
 In this guide, you’ll get acquainted with the distinctive features of the Go hosting and will be introduced to the Go-related possibilities within the platform. Use the table of content below to find required information within the guide quicker:
 
-- [Go Environment Hosting](https://cloudmydc.com/)
-- [Golang Versioning](https://cloudmydc.com/)
-- [Go Application Deployment](https://cloudmydc.com/)
-- [Domains Management](https://cloudmydc.com/)
-- [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling)
-- [Manual Horizontal Scaling](https://cloudmydc.com/)
-- [Automatic Horizontal Scaling](https://cloudmydc.com/)
+- [Go Environment Hosting](/docs/Go%20Lang/Go%20Dev%20Center#go-environment-hosting)
+- [Golang Versioning](/docs/Go%20Lang/Go%20Dev%20Center#golang-versioning)
+- [Go Application Deployment](/docs/Go%20Lang/Go%20Dev%20Center#go-application-deployment)
+- [Domains Management](/docs/Go%20Lang/Go%20Dev%20Center#domains-management)
+- [Automatic Vertical Scaling](/docs/Go%20Lang/Go%20Dev%20Center#automatic-vertical-scaling)
+- [Manual Horizontal Scaling](/docs/Go%20Lang/Go%20Dev%20Center#manual-horizontal-scaling)
+- [Automatic Horizontal Scaling](/docs/Go%20Lang/Go%20Dev%20Center#automatic-horizontal-scaling)
 
 ## Go Environment Hosting
 
-In order to host your Go application, you need to [create](https://cloudmydc.com/) the appropriate environment using the **Topology Wizard**.
+In order to host your Go application, you need to [create](/docs/EnvironmentManagement/Setting%20Up%20Environment) the appropriate environment using the **Topology Wizard**.
 
 Switch to the **Go** engine tab, add _Golang_ as your application server and any other software stack required for your project (e.g. load balancers, databases or shared storage). If needed, adjust your environment nodes count, cloudlet limits for RAM and CPU, attach public IPs, etc.
 
@@ -50,11 +50,11 @@ This template utilizes a modern **_systemd_** initialization daemon.
 
 :::tip Note
 
-All instances on the platform are completely [isolated containers](https://cloudmydc.com/), which are evenly distributed across the available hosts (physical servers or VMs) using automatic anti-affinity rules. This eliminates a risk of your application downtime, i.e. ensure [high availability](https://cloudmydc.com/).
+All instances on the platform are completely [isolated containers](/docs/PlatformOverview/Isolated%20Container), which are evenly distributed across the available hosts (physical servers or VMs) using automatic anti-affinity rules. This eliminates a risk of your application downtime, i.e. ensure [high availability](/docs/PlatformOverview/Isolated%20Container#high-availability-for-applications).
 
 :::
 
-For more information about setting up the environment, see the [Create Environment](https://cloudmydc.com/) document.
+For more information about setting up the environment, see the [Create Environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) document.
 
 ## Golang Versioning
 
@@ -68,7 +68,7 @@ Currently (at the time of this writing), the following versions of the _Golang_ 
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](https://cloudmydc.com/) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/QuickStart/Software%20Stack%20Versions) document.
 
 :::
 
@@ -86,14 +86,14 @@ You can choose the preferred version during environment creation and change it l
 
 ## Go Application Deployment
 
-After environment creation, you can [deploy](https://cloudmydc.com/) your Go project from the Git repository (the deployment from application archive will be implemented in the upcoming platform release).
+After environment creation, you can [deploy](/docs/Deployment/Deployment%20Guide) your Go project from the Git repository (the deployment from application archive will be implemented in the upcoming platform release).
 
-It is possible to customize the deployment process by providing or adjusting the following container [Variables](/docs/Container/Container%20Configuration/Variables):
+It is possible to customize the deployment process by providing or adjusting the following container [variables](/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables#go-golang):
 
 - **_GO_RUN_** - sets a name of the executable binary file (if not specified, the deployment script will try to locate one based on the Git project name)
 - **_GOPATH_** - defines the deployment folder (_/home/jelastic/webapp_, by default)
-- **_GO_BUILD_OPTIONS_** - provides additional [options for the build operation](https://cloudmydc.com/) (-a, by default, to force rebuilding of packages that are already up-to-date)
-- **_GO_RUN_OPTIONS_** - provides additional [options for the run operation](https://cloudmydc.com/)
+- **_GO_BUILD_OPTIONS_** - provides additional [options for the build operation](https://pkg.go.dev/cmd/go#hdr-Compile_packages_and_dependencies) (-a, by default, to force rebuilding of packages that are already up-to-date)
+- **_GO_RUN_OPTIONS_** - provides additional [options for the run operation](https://pkg.go.dev/cmd/go#hdr-Compile_and_run_Go_program)
 
 <div style={{
     display:'flex',
@@ -108,23 +108,23 @@ It is possible to customize the deployment process by providing or adjusting the
 During deployment, the platform automatically performs the following steps:
 
 - parses the provided Git URL to get a link to the Go project
-- downloads the package with all the dependencies using the [**_go get_**](https://cloudmydc.com/) command
+- downloads the package with all the dependencies using the [**_go get_**](https://pkg.go.dev/cmd/go#hdr-Add_dependencies_to_current_module_and_install_them) command
   - in case of error, performs download as for the common Git project and retries getting the Go dependencies
 - builds the project with the **_go build_** command (using the additional options specified in the **GO_BUILD_OPTIONS** variable)
 - runs the binary defined by the **GO_RUN** variable with the **_go run_** command (using the additional options specified in **GO_RUN_OPTIONS**)
 
-After successful deployment, the Go project is located in the directory set with the **_GOPATH_** variable. Herewith, the [workspace hierarchy](https://cloudmydc.com/) inside is based on the requirements in the official documentation.
+After successful deployment, the Go project is located in the directory set with the **_GOPATH_** variable. Herewith, the [workspace hierarchy](https://go.dev/doc/code#Organization) inside is based on the requirements in the official documentation.
 
 You can learn more about Go applications deployment via the appropriate documents:
 
-- [Deployment Manager](https://cloudmydc.com/)
-- [Deployment Guide](https://cloudmydc.com/)
-- [Auto-Deploy Overview](https://cloudmydc.com/)
-- [Deployment Hooks](https://cloudmydc.com/)
+- [Deployment Manager](/docs/Deployment/Deployment%20Manager)
+- [Deployment Guide](/docs/Deployment/Deployment%20Guide)
+- [Auto-Deploy Overview](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview)
+- [Deployment Hooks](/docs/Deployment/Deployment%20Hooks)
 
 ## Domains Management
 
-With the platform you can easily bind an [external (custom) domain](https://cloudmydc.com/) name to your Go application to be used instead of the default environment domain. Depending on the used entry point, there are two options:
+With the platform you can easily bind an [external (custom) domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) name to your Go application to be used instead of the default environment domain. Depending on the used entry point, there are two options:
 
 - **CNAME redirect** if using _Shared Load Balancer_; is recommended for **_dev_** and **_test_** environments
 - **DNS A Record** if using _public IP_; can handle high traffic load and is suitable for **_production_** environments
@@ -143,7 +143,7 @@ Additionally, you can easily [swap domains](/docs/ApplicationSetting/Domain%20Na
 
 :::tip Tip
 
-For the access via public IP, the traffic can be redirected to another environment with the help of the [**_SwapExtIps_**](https://cloudmydc.com/) API method (also, available via [CLI](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview)).
+For the access via public IP, the traffic can be redirected to another environment with the help of the [**_SwapExtIps_**](https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps) API method (also, available via [CLI](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Swap%20Public%20IPs)).
 
 :::
 
@@ -181,7 +181,7 @@ Extra Golang servers can be easily added via the topology wizard during environm
 
 The maximum number of the same-type servers within a single environment layer depends on a particular hosting provider settings (usually this limit stands for 16 nodes and can be enlarged by sending the appropriate request to support).
 
-Also, you can notice that upon Golang server scaling, the [load balancing](https://cloudmydc.com/) node is automatically added to environment topology (required for the proper requests distribution). Find more details about manual [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) in the documentation.
+Also, you can notice that upon Golang server scaling, the [load balancing](/docs/Load%20Balancers/Load%20Balancing) node is automatically added to environment topology (required for the proper requests distribution). Find more details about manual [horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) in the documentation.
 
 ## Automatic Horizontal Scaling
 
@@ -199,7 +199,7 @@ Here, you can configure the triggers for specific stacks and resources (_CPU, RA
 
 </div>
 
-Learn more about [automatic horizontal scaling](https://cloudmydc.com/) in the corresponding document.
+Learn more about [automatic horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling) in the corresponding document.
 
 In addition, there is a set of other features and functionality provided by the platform Go hosting, among them:
 

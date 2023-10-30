@@ -6,9 +6,9 @@ sidebar_position: 2
 
 CloudMyDc Application Platform for WordPress provides a quick and automated installation procedure for the new project creation. The built-in production/staging functionality helps implement various DevOps integrations. Let’s see these processes in detail:
 
-- [Installing Project](https://cloudmydc.com/)
-- [Staging Project](https://cloudmydc.com/)
-- [Deleting Project](https://cloudmydc.com/)
+- [Installing Project](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Installation#installing-project)
+- [Staging Project](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Installation#staging-project)
+- [Deleting Project](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Installation#deleting-project)
 
 ## Installing Project
 
@@ -114,7 +114,7 @@ Click **Continue** to create your new subscription and add the project to with t
 
 </div>
 
-Now you can proceed to the [Project Management](https://cloudmydc.com/) guide.
+Now you can proceed to the [Project Management](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Management) guide.
 
 ## Staging Project
 
@@ -186,7 +186,7 @@ You’ll be asked to confirm the action by typing the project’s name.
 
 :::danger Note
 
-Deleting production will remove the whole project, while removing _[staging](https://cloudmydc.com/)_ – only the corresponding environment (the production one will remain intact).
+Deleting production will remove the whole project, while removing _[staging](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Installation#staging-project)_ – only the corresponding environment (the production one will remain intact).
 
 :::
 

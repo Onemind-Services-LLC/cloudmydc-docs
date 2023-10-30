@@ -8,11 +8,11 @@ All WordPress projects on the platform are provided with a dedicated page where 
 
 Below, we’ve grouped all the functionality available for projects in the WordPress dashboard into the following groups:
 
-- [Settings and Basic Actions](https://cloudmydc.com/)
-- [General Data](https://cloudmydc.com/)
-- [WordPress Plugins](https://cloudmydc.com/)
-- [application deployment](/docs/Deployment/Deployment%20Guide)
-- [Environment Management](https://cloudmydc.com/)
+- [Settings and Basic Actions](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Management#settings-and-basic-actions)
+- [General Data](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Management#general-data)
+- [WordPress Plugins](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Management#wordpress-plugins)
+- [Application Deployment](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Management#application-deployment)
+- [Environment Management](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Management#environment-management)
 
 ## Settings and Basic Actions
 
@@ -30,7 +30,7 @@ Below, we’ve grouped all the functionality available for projects in the WordP
 
 Just click the required button to perform the appropriate operation.
 
-2. The button with a gear icon will redirect you to the project **Settings** page, which has several sections, including an option to [delete the project](https://cloudmydc.com/) at the bottom.
+2. The button with a gear icon will redirect you to the project **Settings** page, which has several sections, including an option to [delete the project](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Installation#deleting-project) at the bottom.
 
 <div style={{
     display:'flex',
@@ -42,7 +42,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-2.1. The **Custom Domains** section provides instruction and functionality for binding [custom domains](https://cloudmydc.com/) to your environment.
+2.1. The **Custom Domains** section provides instruction and functionality for binding [custom domains](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) to your environment.
 
 <div style={{
     display:'flex',
@@ -66,7 +66,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-2.3. The **Backup Storage** section enables automatic backups for your project based on the specified schedule (pre-defined, custom, or crontab). Additionally, you can select backup storage (add it via [account settings](https://cloudmydc.com/)) and set a number of latest backups to keep. Learn more about the [backup and restore process](https://cloudmydc.com/).
+2.3. The **Backup Storage** section enables automatic backups for your project based on the specified schedule (pre-defined, custom, or crontab). Additionally, you can select backup storage (add it via [account settings](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Dashboard%20Overview#account-settings)) and set a number of latest backups to keep. Learn more about the [backup and restore process](/docs/Wordpress%20as%20a%20Service/WordPress%20Backups).
 
 <div style={{
     display:'flex',
@@ -90,7 +90,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-[endpoints](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints) create a direct connection (over raw TCP or UDP protocol) to one of the project nodes without the mandatory Public IP address. It can be used to set up remote access. For example, one of the most common use cases is gaining remote access to your database instance using a local database client.
+[Endpoints](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints) create a direct connection (over raw TCP or UDP protocol) to one of the project nodes without the mandatory Public IP address. It can be used to set up remote access. For example, one of the most common use cases is gaining remote access to your database instance using a local database client.
 
 2.5. The **Subscription Plan** section shows subscription details of the current project and, depending on the hosting provider configurations, can provide the **Change Plan** option. It gives the ability to move the current project to a different plan within the same subscription.
 
@@ -104,7 +104,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-3. Next to the buttons mentioned above, you can find a drop-down list to switch between _[Production and Staging environments](https://cloudmydc.com/)_ for your project.
+3. Next to the buttons mentioned above, you can find a drop-down list to switch between _[Production and Staging environments](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Installation#staging-project)_ for your project.
 
 <div style={{
     display:'flex',
@@ -130,7 +130,7 @@ The project’s **_Overview_** section provides the most frequently needed data 
 
 </div>
 
-1. The icon at the start shows whether the project is clustered or standalone solution. The colored dot next to it indicates project status (_green_ – active, _yellow_ – in progress, _red_ – stopped). The name that follows defines whether the environment is production or staging. Lastly, you can see the internal domain of the project.
+1. The icon at the start shows whether the project is clustered or standalone solution. The colored dot next to it indicates project status (_green_ – active, _yellow_ – in progress, _red_ – stopped). The name that follows defines whether the [environment is production or staging](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Installation#staging-project). Lastly, you can see the internal domain of the project.
 
 <div style={{
     display:'flex',
@@ -142,7 +142,7 @@ The project’s **_Overview_** section provides the most frequently needed data 
 
 </div>
 
-You can click the **Edit Domain Name** button to [bind a custom external domain](https://cloudmydc.com/).
+You can click the **Edit Domain Name** button to [bind a custom external domain](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Management#settings-and-basic-actions).
 
 <div style={{
     display:'flex',
@@ -166,7 +166,7 @@ You can click the **Edit Domain Name** button to [bind a custom external domain]
 
 </div>
 
-Learn more in the dedicated [application deployment](/docs/Deployment/Deployment%20Guide) section.
+Learn more in the dedicated [Application Deployment](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Management#application-deployment) section.
 
 3. Below that, the platform displays the automatically detected **WordPress version** and provides a link to the WordPress admin panel.
 
@@ -204,7 +204,7 @@ Hower over to see the **Redeploy** option that allows updating the PHP version. 
 
 </div>
 
-We recommend performing regular redeployments to the latest version to ensure your project’s container is running the up-to-date operating system and software stacks with all the latest vulnerability fixes. However, be aware that the operation will cause a brief downtime for the project. You can read more on the **[redeployment](/docs/Container/Container%20Redeploy)** feature in the linked document.
+We recommend performing regular redeployments to the latest version to ensure your project’s container is running the up-to-date operating system and software stacks with all the latest vulnerability fixes. However, be aware that the operation will cause a brief downtime for the project. You can read more on the **[Redeployment](/docs/Container/Container%20Redeploy)** feature in the linked document.
 
 5. Click the **Datacenter Info** to check the relevant information.
 
@@ -218,7 +218,7 @@ We recommend performing regular redeployments to the latest version to ensure yo
 
 </div>
 
-6. Click the **SSH/SFTP Info** to see how you can access your project via the [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview) and [SFTP](https://cloudmydc.com/) protocols. The drop-down list allows viewing information for different nodes of the cluster.
+6. Click the **SSH/SFTP Info** to see how you can access your project via the [SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/SSH%20Gate#ssh-access-to-platform-account) and [SFTP](/docs/Deployment%20Tools/SSH/SSH%20Protocols) protocols. The drop-down list allows viewing information for different nodes of the cluster.
 
 <div style={{
     display:'flex',
@@ -292,7 +292,7 @@ In order to add new plugins, you need to connect to your project via the **_Word
 
 </div>
 
-Go to the **Plugins** tab within the admin panel and choose the required plugin from the marketplace (or upload your custom one). Learn more at the official WordPress documentation - check the **[Managing Plugins](https://cloudmydc.com/)** guide.
+Go to the **Plugins** tab within the admin panel and choose the required plugin from the marketplace (or upload your custom one). Learn more at the official WordPress documentation - check the **[Managing Plugins](https://wordpress.org/documentation/article/manage-plugins/#finding-and-installing-plugins-1)** guide.
 
 ## Application Deployment
 
@@ -330,7 +330,7 @@ Confirm the action via pop-up.
 
 </div>
 
-3. Within the opened window, you can select the preferable Git repository from the list of ones added via the [account settings](https://cloudmydc.com/). Optionally, tick the “Check and auto-deploy updates (min)” checkbox and provide the preferred period to enable automatic updates of the deployed application (only upon some changes).
+3. Within the opened window, you can select the preferable Git repository from the list of ones added via the [account settings](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Dashboard%20Overview#account-settings). Optionally, tick the “Check and auto-deploy updates (min)” checkbox and provide the preferred period to enable automatic updates of the deployed application (only upon some changes).
 
 <div style={{
     display:'flex',
@@ -470,4 +470,4 @@ The **Favorites** tab is used for quick access to the main configuration files o
 
 </div>
 
-For [more management options](https://cloudmydc.com/), connect via SSH or make adjustments via the database and WordPress admin panels.
+For [more management options](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Management#general-data), connect via SSH or make adjustments via the database and WordPress admin panels.

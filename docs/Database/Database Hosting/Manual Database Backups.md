@@ -4,19 +4,19 @@ sidebar_position: 8
 
 ## Manual Database Backups
 
-The platform provides all [certified database stacks](https://cloudmydc.com/) with a convenient and straightforward script for backing up the stored data. Thus, the process is as simple as providing the required parameters and can be accomplished in a matter of minutes. Herewith, no specialized knowledge is needed - just follow the [setup steps](https://cloudmydc.com/) to configure the appropriate cron expression.
+The platform provides all [certified database stacks](/docs/QuickStart/Software%20Stack%20Versions) with a convenient and straightforward script for backing up the stored data. Thus, the process is as simple as providing the required parameters and can be accomplished in a matter of minutes. Herewith, no specialized knowledge is needed - just follow the [setup steps](/docs/Database/Database%20Hosting/Manual%20Database%20Backups#backups-scheduling) to configure the appropriate cron expression.
 
 Additionally, we’ll show how you can work with the created backups:
 
-- [Check Backups](https://cloudmydc.com/)
-- [Download Backup](https://cloudmydc.com/)
-- [Restore Database](https://cloudmydc.com/)
+- [Check Backups](/docs/Database/Database%20Hosting/Manual%20Database%20Backups#check-backups)
+- [Download Backup](/docs/Database/Database%20Hosting/Manual%20Database%20Backups#download-backup)
+- [Restore Database](/docs/Database/Database%20Hosting/Manual%20Database%20Backups#restore-database)
 
 For this tutorial, we’ll use a MySQL database as an example. However, the required steps are similar for all the other databases.
 
 ## Backups Scheduling
 
-Let’s use the default backup script to automate the process of backup creation and configure it up to your specific needs (e.g. frequency, number of old backups to keep, etc.). Herewith, if you don’t have an environment with a database yet, follow the [Database Hosting](https://cloudmydc.com/) guide to create one.
+Let’s use the default backup script to automate the process of backup creation and configure it up to your specific needs (e.g. frequency, number of old backups to keep, etc.). Herewith, if you don’t have an environment with a database yet, follow the [Database Hosting](/docs/Database/Database%20Hosting/DB%20Hosting%20Overview#database-hosting) guide to create one.
 
 1. The source code of the script can be viewed directly within the dashboard. Click the **Config** button next to your database to open the built-in file manager and locate the **_/var/lib/jelastic/bin/backup_script.sh_** file.
 
@@ -32,11 +32,11 @@ Let’s use the default backup script to automate the process of backup creation
 
 :::danger Note
 
-The backup script is not available for the **[Redis](https://cloudmydc.com/)** stack, which is key-value storage, usually used as cache.
+The backup script is not available for the **[Redis](/docs/Database/Redis/Redis%20Overview#redis)** stack, which is key-value storage, usually used as cache.
 
 :::
 
-2. To automate the script execution, we’ll use the _[cron scheduler](https://cloudmydc.com/)_ available within the containers out-of-box. Open the **_/var/spool/cron/mysql_** file and provide a cron expression in the following format:
+2. To automate the script execution, we’ll use the _[cron scheduler](/docs/ApplicationSetting/Scheduling%20Configuration/Setting%20Up%20Cronjob#setting-up-cronjob)_ available within the containers out-of-box. Open the **_/var/spool/cron/mysql_** file and provide a cron expression in the following format:
 
 ```bash
 {frequency} {path-to-script} {script-parameters}
@@ -86,7 +86,7 @@ If your **_{password}_** contains special characters, it should be included in t
 
 **Save** the settings to apply them.
 
-4. To store data on some other node or the remote server, you can configure the appropriate mount point for your database.
+4. To store data on some other node or the remote server, you can configure the appropriate [mount point](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) for your database.
 
 <div style={{
     display:'flex',
@@ -126,7 +126,7 @@ If the backup operation is successful, you’ll see the appropriate **_bz2_** ar
 
 There are multiple options to download a file from a container:
 
-1. The most straightforward variant is to use the [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) directly in the dashboard.
+1. The most straightforward variant is to use the [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager#configuration-file-manager) directly in the dashboard.
 
 <div style={{
     display:'flex',
@@ -140,7 +140,7 @@ There are multiple options to download a file from a container:
 
 Locate the required file, hover over it, and select **Download** from the context menu.
 
-2. Another option is to use the [SFTP/FISH protocol](https://cloudmydc.com/) connection.
+2. Another option is to use the [SFTP/FISH protocol](/docs/Deployment%20Tools/SSH/SSH%20Protocols#sftpfish-protocols) connection.
 
 <div style={{
     display:'flex',
@@ -154,11 +154,11 @@ Locate the required file, hover over it, and select **Download** from the contex
 
 The required access details can be viewed within the dashboard.
 
-3. Also, you can install [FTP add-on](https://cloudmydc.com/) for your database to manage files via FTP.
+3. Also, you can install [FTP add-on](/docs/Deployment%20Tools/FTP-FTPS%20Support#ftpftps-support) for your database to manage files via FTP.
 
 :::danger Note
 
-A [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address is required for this option. If needed, it will be automatically attached to the node during add-on installation.
+A [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip) address is required for this option. If needed, it will be automatically attached to the node during add-on installation.
 
 :::
 

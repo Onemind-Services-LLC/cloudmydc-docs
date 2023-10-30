@@ -4,15 +4,15 @@ sidebar_position: 1
 
 ## Ruby Dependency Management
 
-All Ruby-based application servers (_Apache_ and _NGINX_) are provided with the [**Bundler**](https://cloudmydc.com/) dependency manager by default. It automatically tracks and installs dependencies required by your application. You only need to specify the list of required gems in [**_Gemfile_**](https://cloudmydc.com/), which will resolve all dependencies.
+All Ruby-based application servers (_Apache_ and _NGINX_) are provided with the [**Bundler**](https://bundler.io/) dependency manager by default. It automatically tracks and installs dependencies required by your application. You only need to specify the list of required gems in [**_Gemfile_**](https://bundler.io/guides/gemfile.html), which will resolve all dependencies.
 
 Bundler performs dependency resolving in the following cases:
 
-- [deploying applications](https://cloudmydc.com/)
-- [switching between Ruby versions](https://cloudmydc.com/)
-- [changing deployment type](https://cloudmydc.com/)
+- [deploying applications](/docs/Deployment/Deployment%20Guide)
+- [switching between Ruby versions](/docs/Container/Container%20Redeploy)
+- [changing deployment type](/docs/Ruby/Ruby%20Dev%20Center#ruby-application-deployment)
 
-After any of the actions mentioned above, Bundler searches [RubyGems.org](https://cloudmydc.com/) (Ruby community’s gem hosting service) for dependencies listed in the config file and, if needed, installs them. By default, Ruby application servers are provided only with gems required for the example application’s work.
+After any of the actions mentioned above, Bundler searches [RubyGems.org](https://rubygems.org/) (Ruby community’s gem hosting service) for dependencies listed in the config file and, if needed, installs them. By default, Ruby application servers are provided only with gems required for the example application’s work.
 
 <div style={{
     display:'flex',
@@ -30,7 +30,7 @@ Also, if your application uses any special (non-public) dependencies, you need t
 
 :::danger Note
 
-When [SSH Gateway](/docs/Container/Container%20Redeploy) a Ruby environment, ensure that a new engine version is correctly covered in the Gemfile. Otherwise, you’ll get a discrepancy error after the process.
+When [redeploying](/docs/Container/Container%20Redeploy) a Ruby environment, ensure that a new engine version is correctly covered in the Gemfile. Otherwise, you’ll get a discrepancy error after the process.
 
 We recommend using a non-strict Ruby version declaration in your **_Gemfile_**, for example **_ruby “~> 2.6.0”_**. Such a flexible form prevents you from interrupting your deployment or CI process while being able to upgrade your Ruby version.
 

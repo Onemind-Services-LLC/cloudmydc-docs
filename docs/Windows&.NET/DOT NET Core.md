@@ -4,14 +4,14 @@ sidebar_position: 1
 
 ## .NET Core Application Server
 
-**[.NET Core](https://cloudmydc.com/)** is an open-source, cross-platform version of .NET for building websites, services, and console applications. Often it is used for cloud applications or refactoring large enterprise applications into microservices.
+**[.NET Core](https://learn.microsoft.com/en-us/dotnet/core/introduction)** is an open-source, cross-platform version of .NET for building websites, services, and console applications. Often it is used for cloud applications or refactoring large enterprise applications into microservices.
 
 .NET Core consists of the following components:
 
-- **[.NET Core runtime](https://cloudmydc.com/)** - provides essential services (type system, assembly loading, garbage collector, etc.). [Framework libraries](https://cloudmydc.com/) provide primitive data types, app composition types, and fundamental utilities
-- **[ASP.NET Core runtime](https://cloudmydc.com/)** - provides a framework for building modern, cloud-based, internet-connected applications (_web apps_, _IoT apps_, and _mobile backends_)
-- **[.NET Core SDK](https://cloudmydc.com/)** and language compilers ([Roslyn](https://cloudmydc.com/) and [F#](https://cloudmydc.com/)) - allow the development of the .NET Core projects
-- **[dotnet command](https://cloudmydc.com/)** - launches .NET Core applications and CLI commands. It selects and hosts the runtime, provides an assembly loading policy, and launches apps and tools
+- **[.NET Core runtime](https://github.com/dotnet/runtime/tree/main/src/coreclr)** - provides essential services (type system, assembly loading, garbage collector, etc.). [Framework libraries](https://github.com/dotnet/runtime/tree/main/src/libraries) provide primitive data types, app composition types, and fundamental utilities
+- **[ASP.NET Core runtime](https://github.com/dotnet/aspnetcore)** - provides a framework for building modern, cloud-based, internet-connected applications (_web apps_, _IoT apps_, and _mobile backends_)
+- **[.NET Core SDK](https://github.com/dotnet/sdk)** and language compilers ([Roslyn](https://github.com/dotnet/roslyn) and [F#](https://github.com/dotnet/fsharp)) - allow the development of the .NET Core projects
+- **[dotnet command](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet)** - launches .NET Core applications and CLI commands. It selects and hosts the runtime, provides an assembly loading policy, and launches apps and tools
 
 :::tip Notes
 
@@ -24,7 +24,7 @@ sidebar_position: 1
 
 1. Log in to the PaaS dashboard and click the **New Environment** button at the top-left corner.
 
-2. Within the opened [topology wizard](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment), navigate to the **.NET** tab and select the **_.NET Core_** application server. Configure the other parameters (_[cloudlets](/docs/PlatformOverview/Cloudlet)_,_disk limit_, _[public IPs](https://cloudmydc.com/)_, etc.) up to your needs.
+2. Within the opened [topology wizard](/docs/EnvironmentManagement/Setting%20Up%20Environment), navigate to the **.NET** tab and select the **_.NET Core_** application server. Configure the other parameters (_[cloudlets](/docs/PlatformOverview/Cloudlet)_,_disk limit_, _[public IPs](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP/)_, etc.) up to your needs.
 
 <div style={{
     display:'flex',
@@ -54,9 +54,9 @@ The application server operates in a separate container (node) - an isolated vir
 
 ## Deploying Application to .NET Core Server
 
-The platform provides multiple options to automatically [deploy projects](https://cloudmydc.com/). In this example, we’ll add a simple .NET project stored on GitHub.
+The platform provides multiple options to automatically [deploy projects](/docs/Deployment/Deployment%20Guide). In this example, we’ll add a simple .NET project stored on GitHub.
 
-1. Open the **_Git/SVN_** tab of the **[Deployment Manager](https://cloudmydc.com/)** to add a new repository.
+1. Open the **_Git/SVN_** tab of the **[Deployment Manager](/docs/Deployment/Deployment%20Manager#git--svn-projects)** to add a new repository.
 
 <div style={{
     display:'flex',
@@ -70,7 +70,7 @@ The platform provides multiple options to automatically [deploy projects](https:
 
 :::tip Tip
 
-If you are interested in [creating your own .NET application](https://cloudmydc.com/) follow the official documentation.
+If you are interested in [creating your own .NET application](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-7.0&tabs=visual-studio) follow the official documentation.
 
 :::
 
@@ -78,7 +78,7 @@ If you are interested in [creating your own .NET application](https://cloudmydc.
 
 :::tip Note
 
-.NET Core supports several specific [Variables](/docs/Container/Container%20Configuration/Variables) that can help with application deployment:
+.NET Core supports several specific [variables](/docs/Container/Container%20Configuration/Variables) that can help with application deployment:
 
 - **_APP_NAME_** - points to the particular folder (if there are multiple applications in a single repository) or runs a specific **_.dll_** file in your project
 - **_ASPNETCORE_URLS_** - configures services to work with the specified URL

@@ -26,15 +26,12 @@ In contrast to the majority of other vendors, all of these features allow provid
 
 The video below will help you to catch the key points of the platform pricing system flexibility and the problems it helps to solve:
 
-<!-- Video tag -->
 
 ## How It Works
 
 With automatic scaling you don’t need to guess or predict the incoming load. The platform will automatically adjust the amount of allocated to environment resources (within the stated scaling diapason) according to its current requirements.
 
 The **_Scaling Limit_** sets a maximum number of cloudlets that can be allocated for each server, so you can use it to define a maximum possible budget for your project. Subsequently, cloudlets will be automatically added to your servers based on application resource consumption. These are called **_Dynamic Cloudlets_** because they’re dynamically added (as your resource usage increases) and removed (as your resource usage decreases). So, you pay based on the actual hourly usage.
-
-<!-- Video tag -->
 
 Since most applications need a certain amount of resources just to be loaded and ready to run, you’ll always consume a particular number of cloudlets regardless the load level. Therefore, you can allocate them beforehand with **_Reserved Cloudlets_** and benefit on [automatic discounts](/docs/Account&Pricing/Automatic%20Discounts).
 
@@ -111,8 +108,6 @@ In our example, the server has 4 **Reserved cloudlets** and a maximum limit of 2
 - if you use e.g. 16 cloudlets, you pay for 4 cloudlets based on Reserved price (as they are already allocated) and for 12 cloudlets based on Dynamic price
 
 Combining the Reserved and Dynamic cloudlets usage enables you to save your costs whilst remain prepared for the unexpected surges in application demands. Such an approach allows to handle all of the incoming requests during load peaks, and, at the same time, not to overpay for the unused resources.
-
-<!-- Video Tag -->
 
 ## More Useful Links
 

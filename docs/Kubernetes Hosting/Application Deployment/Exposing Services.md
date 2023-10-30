@@ -4,13 +4,13 @@ sidebar_position: 4
 
 ## Kubernetes Cluster: Exposing Services
 
-While components of your application can communicate with each other by [service names](https://cloudmydc.com/) using the internal network, external connections require additional configurations.
+While components of your application can communicate with each other by [service names](/docs/Kubernetes%20Hosting/Application%20Deployment/Internal%20Networking) using the internal network, external connections require additional configurations.
 
 Kubernetes supports three service types to establish an internal and external connections to application:
 
-- [ClusterIP](https://cloudmydc.com/)
-- [NodePort](https://cloudmydc.com/)
-- [LoadBalancer](https://cloudmydc.com/)
+- [ClusterIP](/docs/Kubernetes%20Hosting/Application%20Deployment/Exposing%20Services#clusterip)
+- [NodePort](/docs/Kubernetes%20Hosting/Application%20Deployment/Exposing%20Services#nodeport)
+- [LoadBalancer](/docs/Kubernetes%20Hosting/Application%20Deployment/Exposing%20Services#loadbalancer)
 
 ## ClusterIP
 
@@ -34,13 +34,13 @@ spec:
 
 ## NodePort
 
-The most basic way to establish an external connection to a service is to expose it via **_[NodePort](https://cloudmydc.com/)_** directly. As the name implies, this type of service opens a specific port on the nodes, any traffic sent to this port is forwarded to your service. By default, the nodePort for your service is selected randomly from the 30000-32767 range.
+The most basic way to establish an external connection to a service is to expose it via **_[NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#nodeport)_** directly. As the name implies, this type of service opens a specific port on the nodes, any traffic sent to this port is forwarded to your service. By default, the nodePort for your service is selected randomly from the 30000-32767 range.
 
 :::danger Note
 
 This method has several downsides that should be considered when configuring the Kubernetes Cluster (one service per port, restricted range of ports, etc.). As a result, the NodePort service type can be used for the demo or other temporary applications. However, the production solutions usually require more complex configuration with ingresses and LoadBalancer service options. Follow our guide(s) to create verified configurations for your application and put in production:
 
-- [Ingresses](https://cloudmydc.com/)
+- [Ingresses](/docs/Kubernetes%20Hosting/Application%20Deployment/Creating%20Ingresses)
 - [Using Public IPs in Kubernetes Service](https://cloudmydc.com/)
 
 :::
@@ -101,7 +101,7 @@ Click **Add** to confirm. It may take up to a few minutes for the platform to ex
 
 ## LoadBalancer
 
-The service **_[LoadBalancer](https://cloudmydc.com/)_** type is the commonly used way to provide a service on the Internet. It requires the public IP attached to any worker node.
+The service **_[LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer)_** type is the commonly used way to provide a service on the Internet. It requires the public IP attached to any worker node.
 
 Keep in mind that with LoadBalancer type all traffic is directly forwarded to the service with no filtering, routing, etc. The **port** parameter is an incoming port on the Internet which the service maps to a targetPort on the application side.
 

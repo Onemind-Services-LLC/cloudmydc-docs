@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ## Create an Environment
 
-Log into your platform account and [create](https://cloudmydc.com/) a new environment with the **MongoDB** node of the preferred version (can be found within the NoSQL wizard section).
+Log into your platform account and [create](/docs/EnvironmentManagement/Setting%20Up%20Environment) a new environment with the **MongoDB** node of the preferred version (can be found within the NoSQL wizard section).
 
 <div style={{
     display:'flex',
@@ -96,7 +96,7 @@ Then, select the corresponding database using the drop-down list below and **Exe
 - mongodb.so
   Both these extensions implement different API, so we recommend to use the legacy module for keeping old applications running, whilst adapt your new projects due to the latest one.
 
-**Tip:** The current version of used PaaS installation usually can be seen within the logo in the top left dashboard corner. Additionally, you can check it within the [Cloud Union Catalog](https://cloudmydc.com/).
+**Tip:** The current version of used PaaS installation usually can be seen within the logo in the top left dashboard corner. Additionally, you can check it within the [Cloud Union Catalog](https://www.virtuozzo.com/application-platform-par).
 
 :::
 
@@ -140,7 +140,7 @@ Scroll down to the approximately 483rd line and uncomment the string with the re
 
 ## Application Deployment
 
-Now you can proceed to application deployment into the environment you’ve just prepared using the platform [Deployment Manager](https://cloudmydc.com/) (for projects, packed into a single archive or fetched directly from a GIT/SVN repo).
+Now you can proceed to application deployment into the environment you’ve just prepared using the platform [Deployment Manager](/docs/Deployment/Deployment%20Guide) (for projects, packed into a single archive or fetched directly from a GIT/SVN repo).
 
 As an example, we’ll use the following simple app, designed to verify the establishment of connection between the corresponding compute node and the specified MongoDB server by means of the latter mongodb.so extension.
 
@@ -210,11 +210,11 @@ if ($host)
 
 ```
 
-Thus, if you’d like to test the connection itself, just [download](https://cloudmydc.com/) the already wrapped package with the project, shown above, and deploy it.
+Thus, if you’d like to test the connection itself, just [download](https://download.jelastic.com/public.php?service=files&t=1c95797713ca48b40dd0c7106d909337&download) the already wrapped package with the project, shown above, and deploy it.
 
 :::tip Tip
 
-For the legacy driver version (i.e. mongo.so), please use [this](https://cloudmydc.com/) test application. The workflow will be similar to the described below.
+For the legacy driver version (i.e. mongo.so), please use [this](https://download.jelastic.com/public.php?service=files&t=980accaada56df506cc9b196395b6645&download) test application. The workflow will be similar to the described below.
 
 :::
 
@@ -284,7 +284,7 @@ Thus, you can navigate to your DB’s admin panel for making sure everything wor
 
 The platform Developer’s Center also contains a number of more specific MongoDB guides, that may come in handy for a variety of different tasks:
 
-- configure a [Replica Set](https://cloudmydc.com/) with an uneven number of MongoDB nodes to simultaneously implement the master-slave replication and automated failover
-- increase your information safety through setting [Backups Scheduling](https://cloudmydc.com/), which may prevent data loss or minimize its consequences (through recovering) if an unexpected server failure occurs
-- use the [Remote Access](https://cloudmydc.com/) option for operating with your database directly via the preferred client application, getting rid of the necessity to log in to our dashboard for that
-- examine how to [Import & Export Dump](https://cloudmydc.com/) files using the inbuilt or 3d-party DB management clients for easily backing up your data
+- configure a [Replica Set](/docs/Database/MongoDB/High%20Availability%20Cluster/Replica%20Set%20Manual%20Setup#mongodb-replication-and-automated-failover-configuration-guide) with an uneven number of MongoDB nodes to simultaneously implement the master-slave replication and automated failover
+- increase your information safety through setting [Backups Scheduling](/docs/Database/Database%20Hosting/Manual%20Database%20Backups#manual-database-backups), which may prevent data loss or minimize its consequences (through recovering) if an unexpected server failure occurs
+- use the [Remote Access](/docs/Database/MongoDB/Remote%20Access#remote-access-to-mongodb) option for operating with your database directly via the preferred client application, getting rid of the necessity to log in to our dashboard for that
+- examine how to [Import & Export Dump](/docs/Database/MongoDB/Dump%20Import-Export#import-and-export-dump-files-to-mongodb) files using the inbuilt or 3d-party DB management clients for easily backing up your data

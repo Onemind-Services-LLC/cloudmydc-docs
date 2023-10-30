@@ -2,14 +2,14 @@
 sidebar_position: 2
 ---
 
-With the platform it is possible to integrate mail server to your virtual private machine. Below, we’ll guide you through the steps required to get one on within the [CentOS VPS](https://cloudmydc.com/). For that, you need to access the required container over SSH protocol using the preferable connection flow (e.g. [web-based client for CentOS](https://cloudmydc.com/) in our case) and carry out the following steps:
+With the platform it is possible to integrate mail server to your virtual private machine. Below, we’ll guide you through the steps required to get one on within the [CentOS VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/CentOS%20VPS). For that, you need to access the required container over SSH protocol using the preferable connection flow (e.g. [web-based client for CentOS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/CentOS%20VPS) in our case) and carry out the following steps:
 
-- [Install and Test Mail Server](https://cloudmydc.com/)
-- [Configure Authorized Networks](https://cloudmydc.com/)
+- [Install and Test Mail Server](/docs/Elastic%20VPS/Linux%20VPS%20Use%20Cases/Setting%20Mail%20Server%20Inside%20VPS#set-up-and-test-mail-server)
+- [Configure Authorized Networks](/docs/Elastic%20VPS/Linux%20VPS%20Use%20Cases/Setting%20Mail%20Server%20Inside%20VPS#configure-postfix-authorized-networks)
 
 ## Set Up and Test Mail Server
 
-In the current guide we are going to leverage the [Postfix](https://cloudmydc.com/) mail server, so follow the next steps to install it within your VPS container and verify if it works as intended.
+In the current guide we are going to leverage the [Postfix](http://www.postfix.org/) mail server, so follow the next steps to install it within your VPS container and verify if it works as intended.
 
 1. Run the Postfix installer with the following yum command:install postfix on vps
 
@@ -137,6 +137,6 @@ That’s all. The mail server has been successfully adjusted to work with applic
 
 :::tip Note
 
-Some settings may differ depending on the currently used [PaaS installation](https://cloudmydc.com/) (i.e. hosting provider platform). Refer to the Postfix [official documentation](https://cloudmydc.com/) to reveal more details considering required mail server configurations.
+Some settings may differ depending on the currently used [PaaS installation](https://cloudmydc.com/) (i.e. hosting provider platform). Refer to the Postfix [official documentation](http://www.postfix.org/documentation.html) to reveal more details considering required mail server configurations.
 
 :::

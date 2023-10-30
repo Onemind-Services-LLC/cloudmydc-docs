@@ -2,6 +2,8 @@
 sidebar_position: 7
 ---
 
+## work todo
+
 ## How to Enable ModSecurity Web Application Firewall inside NGINX Server
 
 **[ModSecurity](https://cloudmydc.com/)** is an open-source, cross-platform web application firewall (WAF) module that helps to detect and prevent various attacks against web applications. The module can block common code injection attacks that ensures higher level of server security. It comes with a set of rules for cross website scripting, SQL injection, bad user agents, session hijacking, trojans, and other exploits.
@@ -51,7 +53,7 @@ You can use the **Search** field to quickly locate the required strings.
 
 Don’t forget to Save the file after adjustments.
 
-3.  According to the **_/etc/nginx/conf.d/modsecurity/modsec_includes.conf_** config, an _[OWASP ModSecurity Core Rule Set (CRS)](https://cloudmydc.com/)_ is included by default (provides generic protection from unknown vulnerabilities often found in web applications).
+3.  According to the **_/etc/nginx/conf.d/modsecurity/modsec_includes.conf_** config, an _[OWASP ModSecurity Core Rule Set (CRS)](https://owasp.org/www-project-modsecurity-core-rule-set/)_ is included by default (provides generic protection from unknown vulnerabilities often found in web applications).
 
 <div style={{
     display:'flex',
@@ -91,7 +93,7 @@ Now, your application is protected with ModSecurity.
 
 </div>
 
-6. The operability of the ModSecurity can be checked by simulating an attack on your application. For example, try adding the **/?q="><script>alert(1)</script>** string to your environment domain. If the module works as intended, the **403 error page** should be displayed, and the appropriate action [logged](https://cloudmydc.com/) to the error log file:
+6. The operability of the ModSecurity can be checked by simulating an attack on your application. For example, try adding the **/?q="><script>alert(1)</script>** string to your environment domain. If the module works as intended, the **403 error page** should be displayed, and the appropriate action [logged](/docs/ApplicationSetting/Built-in%20Monitoring/Log%20Files) to the error log file:
 
 <div style={{
     display:'flex',

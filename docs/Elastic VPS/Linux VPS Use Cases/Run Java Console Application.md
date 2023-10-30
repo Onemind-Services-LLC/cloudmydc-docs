@@ -4,16 +4,16 @@ sidebar_position: 1
 
 ## Java Console Application with CentOS VPS
 
-In the current tutorial we’ll overview how to install a sample of Java console application to your [СentOS](https://cloudmydc.com/) virtual private server and check its operability. For that, you’ll need to execute the following operations:
+In the current tutorial we’ll overview how to install a sample of Java console application to your [СentOS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/CentOS%20VPS) virtual private server and check its operability. For that, you’ll need to execute the following operations:
 
-- [install Java](https://cloudmydc.com/)
-- [upload application](https://cloudmydc.com/)
-- [access application via SSH](https://cloudmydc.com/)
-- [check app operability](https://cloudmydc.com/)
+- [install Java](/docs/Elastic%20VPS/Linux%20VPS%20Use%20Cases/Run%20Java%20Console%20Application#install-java-to-vps)
+- [upload application](/docs/Elastic%20VPS/Linux%20VPS%20Use%20Cases/Run%20Java%20Console%20Application#upload-application-to-vps)
+- [access application via SSH](/docs/Elastic%20VPS/Linux%20VPS%20Use%20Cases/Run%20Java%20Console%20Application#a%D1%81%D1%81ess-application-via-ssh)
+- [check app operability](/docs/Elastic%20VPS/Linux%20VPS%20Use%20Cases/Run%20Java%20Console%20Application#check-application-operability)
 
 ## Install Java to VPS
 
-In order to install Java to your VPS container, carry out the next steps, while being connected over SSH protocol by means of [SSH Gate](https://cloudmydc.com/) or [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP).
+In order to install Java to your VPS container, carry out the next steps, while being connected over SSH protocol by means of [SSH Gate](/docs/Elastic%20VPS/Elastic%20VPS%20Management/Linux%20VPS%20Access%20via%20SSH%20Gate) or [public IP](/docs/Elastic%20VPS/Elastic%20VPS%20Management/Linux%20VPS%20Access%20via%20Public%20IP).
 
 1. Enter the following command to initiate Java package download.
 
@@ -118,7 +118,7 @@ public class VdsSocket {
 }
 ```
 
-Once your application is ready, you need to pack it into a **_.jar_** archive and upload it to VPS container via preferred file transfer client. In our example, we’ll upload [vdssocket.jar](https://cloudmydc.com/) file by means of [WinSCP](https://cloudmydc.com/) tool. For that, let’s perform the following steps.
+Once your application is ready, you need to pack it into a **_.jar_** archive and upload it to VPS container via preferred file transfer client. In our example, we’ll upload [vdssocket.jar](https://cloudmydc.com/) file by means of [WinSCP](https://winscp.net/eng/index.php) tool. For that, let’s perform the following steps.
 
 1. Access WinSCP client and connect to your VPS container using credentials received via email upon server installation:
 
@@ -154,7 +154,7 @@ Within the appeared transfer settings dialog, click **Copy** to start uploading.
 
 ## Aссess Application via SSH
 
-Access your VPS container via [SSH protocol](https://cloudmydc.com/) to locate the recently uploaded application.
+Access your VPS container via [SSH protocol](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) to locate the recently uploaded application.
 
 1. Move to the directory you’ve created in the previous section and inspect its content to ensure application archive is present.
 
@@ -193,7 +193,7 @@ That’s it! Now, as you can see, the specified port is listened to.
 
 ## Check Application Operability
 
-To check the application proper workflow, we’ll connect to VPS container over the Telnet protocol. For that, install a Telnet client and run it.
+To check the application proper workflow, we’ll connect to VPS container over the [Telnet](https://en.wikipedia.org/wiki/Telnet) protocol. For that, [install](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771275(v=ws.10)?redirectedfrom=MSDN#bkmk_installcmd) a Telnet client and run it.
 
 1. Establish connection to your VPS container by executing the following command:
 

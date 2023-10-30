@@ -4,7 +4,7 @@ sidebar_position: 2
 
 ## Kubernetes Cluster: System Requirements
 
-**Kubernetes Cluster** package may not be available in some [regions](https://cloudmydc.com/) due to the hardware specifics of the particular platform. In such a case, please contact your hosting provider support.
+**Kubernetes Cluster** package may not be available in some [regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) due to the hardware specifics of the particular platform. In such a case, please contact your hosting provider support.
 
 The minimum and optimal consumption of RAM, CPU, and storage depends on the cluster size, installed components, active workload, etc.
 
@@ -155,8 +155,8 @@ The minimum and optimal consumption of RAM, CPU, and storage depends on the clus
 - **_[1]_** Measurements were performed on the bare development and production clusters without any additional load. Thus, the specified values are minimum system requirements, which can be much higher for the loaded clusters (especially production one).
 - **_[2]_** Development cluster topology - one master, one worker, one storage node, no monitoring tools, sample Hello World deployment.
 - **_[3]_** Production cluster topology - API balancer, three masters, two workers, one storage node, monitoring tools, sample Hello World deployment
-- **_[4]_** Fast disks are critical for etcd (key-value storage used by K8s) performance, while slow etcd may lead to cluster instability due to failed workloads. Useful links: [Disk Requirements](https://cloudmydc.com/), [Benchmark Information](https://cloudmydc.com/), [How to Run Benchmark](https://cloudmydc.com/), and [Download Benchmark](https://cloudmydc.com/).
+- **_[4]_** Fast disks are critical for etcd (key-value storage used by K8s) performance, while slow etcd may lead to cluster instability due to failed workloads. Useful links: [Disk Requirements](https://etcd.io/docs/v3.5/op-guide/hardware/#disks), [Benchmark Information](https://etcd.io/docs/v3.5/op-guide/performance/#benchmarks), [How to Run Benchmark](https://github.com/etcd-io/etcd/tree/main/tools/benchmark), and [Download Benchmark](https://github.com/etcd-io/etcd/tree/main/tools/benchmark).
 
 :::
 
-Herewith, the development cluster is recommended only as a **sandbox environment**. For **production purposes**, a highly available topology with multi-masters is the preferred option. Next, based on the expected load, the required number of workers can be added manually, or the appropriate [automatic horizontal scaling](https://cloudmydc.com/) can be configured. Adding more master nodes makes sense only if there is a significant number of requests coming from clients (_kubectl, dashboard, continuous integration_ job, _K8s-native_ applications, etc.).
+Herewith, the development cluster is recommended only as a **sandbox environment**. For **production purposes**, a highly available topology with multi-masters is the preferred option. Next, based on the expected load, the required number of workers can be added manually, or the appropriate [automatic horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling) can be configured. Adding more master nodes makes sense only if there is a significant number of requests coming from clients (_kubectl, dashboard, continuous integration_ job, _K8s-native_ applications, etc.).

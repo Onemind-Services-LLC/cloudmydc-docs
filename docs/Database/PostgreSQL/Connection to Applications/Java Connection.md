@@ -2,11 +2,13 @@
 sidebar_position: 1
 ---
 
+## WORK TODO
+
 ## How to Connect PostgreSQL with Java Application
 
-PostgreSQL is a powerful, open source SQL database with the object-relational structure and numerous robust features to ensure excellent performance and reliability. In this tutorial, we’ll show how to connect [PostgreSQL](https://cloudmydc.com/) database with Java application hosted with Jelastic PaaS.
+PostgreSQL is a powerful, open source SQL database with the object-relational structure and numerous robust features to ensure excellent performance and reliability. In this tutorial, we’ll show how to connect [PostgreSQL](https://www.postgresql.org/?_gl=1*on0g80*_gcl_au*MTkyNTQ2Mjk4Ny4xNjk0OTczMzMx) database with Java application hosted with Jelastic PaaS.
 
-1. Log into Jelastic dashboard, [create](https://cloudmydc.com/) **New Environment** with the **_Java_** application server and the **_PostgreSQL database_**.
+1. Log into Jelastic dashboard, [create](/docs/EnvironmentManagement/Setting%20Up%20Environment) **New Environment** with the **_Java_** application server and the **_PostgreSQL database_**.
 
 <div style={{
     display:'flex',
@@ -30,7 +32,7 @@ PostgreSQL is a powerful, open source SQL database with the object-relational st
 
 </div>
 
-3. Click the **Config** button next to your application server (Tomcat in our case) to access the [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) and create a new **_mydb.cfg_** file in the **/opt/tomcat/temp** folder.
+3. Click the **Config** button next to your application server (Tomcat in our case) to access the [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager#configuration-file-manager) and create a new **_mydb.cfg_** file in the **/opt/tomcat/temp** folder.
 
 <div style={{
     display:'flex',
@@ -142,11 +144,11 @@ return result;
 }
 ```
 
-6. [Deploy](https://cloudmydc.com/) our example application to your Tomcat server. Due to different version servlet specifications supported by Tomcat 9 and Tomcat 10 we have prepared the respective applications:
+6. [Deploy](/docs/Deployment/Deployment%20Guide) our example application to your Tomcat server. Due to different version servlet specifications supported by Tomcat 9 and Tomcat 10 we have prepared the respective applications:
 
-For Tomcat 9: [https://download.jelastic.com/public.php?service=files&t=18753849900d2461b3162bd4355f834d&download](https://cloudmydc.com/)
+For Tomcat 9: [https://download.jelastic.com/public.php?service=files&t=18753849900d2461b3162bd4355f834d&download](https://download.jelastic.com/public.php?service=files&t=18753849900d2461b3162bd4355f834d&download)
 
-For Tomcat 10: [https://download.jelastic.com/public.php?service=files&t=503e9768ee573fd452cec8a34a2215b2&download](https://cloudmydc.com/)
+For Tomcat 10: [https://download.jelastic.com/public.php?service=files&t=503e9768ee573fd452cec8a34a2215b2&download](https://download.jelastic.com/public.php?service=files&t=503e9768ee573fd452cec8a34a2215b2&download)
 
 <div style={{
     display:'flex',
@@ -212,4 +214,4 @@ Your request will be processed shortly displaying the result message.
 
 </div>
 
-As you can see, a new table (named due to the date and time of the creation) has been successfully added by our Java application. The connection is successfully established! Try it out at one of the [globally-available Jelastic service providers](https://cloudmydc.com/).
+As you can see, a new table (named due to the date and time of the creation) has been successfully added by our Java application. The connection is successfully established! Try it out at one of the [globally-available Jelastic service providers](https://www.virtuozzo.com/application-platform-partners/).

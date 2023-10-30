@@ -6,15 +6,15 @@ sidebar_position: 2
 
 **MySQL**, **MariaDB**, and **Percona** are highly popular open source databases, used by developers all over the world. Follow the instruction below to learn how to connect your PHP application, hosted within the platform, to one of these DB servers:
 
-- [create environment](https://cloudmydc.com/)
-- [connect to database](https://cloudmydc.com/)
-- [check connection](https://cloudmydc.com/)
-- [execute request](https://cloudmydc.com/)
-- [additional configurations](https://cloudmydc.com/)
+- [create environment](/docs/Database/MySQL-MariaDB-Percona/Connection%20to%20Applications/PHP%20Connection#environment-creation)
+- [connect to database](/docs/Database/MySQL-MariaDB-Percona/Connection%20to%20Applications/PHP%20Connection#connection-to-the-database)
+- [check connection](/docs/Database/MySQL-MariaDB-Percona/Connection%20to%20Applications/PHP%20Connection#checking-the-connection)
+- [execute request](/docs/Database/MySQL-MariaDB-Percona/Connection%20to%20Applications/PHP%20Connection#executing-a-simple-request)
+- [additional configurations](/docs/Database/MySQL-MariaDB-Percona/Connection%20to%20Applications/PHP%20Connection#useful-to-know)
 
 ## Environment Creation
 
-1. Log into your PaaS account and [Create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with **MySQL** or **MariaDB** database server (both are available within the **_SQL_** wizard section).
+1. Log into your PaaS account and [create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with **MySQL** or **MariaDB** database server (both are available within the **_SQL_** wizard section).
 
 <div style={{
     display:'flex',
@@ -66,11 +66,11 @@ Log into the opened admin panel using credentials you’ve received in the above
 
 </div>
 
-Now, you can [deploy](https://cloudmydc.com/) your application (either from archive or GIT/SVN repository) to the created environment.
+Now, you can [deploy](/docs/QuickStart/Dashboard%20Guide) your application (either from archive or GIT/SVN repository) to the created environment.
 
 ## Connection to the Database
 
-Once your project is successfully deployed, you need to connect it to your database. For that, your application should be appropriately configured, for example using the inbuilt [MySQLi](https://cloudmydc.com/) (MySQL Improved) extension.
+Once your project is successfully deployed, you need to connect it to your database. For that, your application should be appropriately configured, for example using the inbuilt [MySQLi](https://www.php.net/manual/en/book.mysqli.php) (MySQL Improved) extension.
 
 Refer to the linked official documentation page for the full list of available functions, while we’ll overview just the basic ones below:
 
@@ -126,7 +126,7 @@ mysqli_close($link);
 
 :::tip Note
 
-Do not forget to substitute **_{host}_**, **_{user}_**, **_{password}_** and **_{db_name}_** in the connection string with the corresponding values (as it is described in the [Connection to the Database](https://cloudmydc.com/) section).
+Do not forget to substitute **_{host}_**, **_{user}_**, **_{password}_** and **_{db_name}_** in the connection string with the corresponding values (as it is described in the [Connection to the Database](/docs/Database/MySQL-MariaDB-Percona/Connection%20to%20Applications/PHP%20Connection#connection-to-the-database) section).
 
 :::
 
@@ -196,7 +196,7 @@ Great! Now you can easily connect your PHP application to the **MySQL** or **Mar
 
 The platform also lets you extend your MySQL/MariaDB servers functionality by following the appropriate instructions in our documentation:
 
-- set up the preferred database replication type - [master-slave](https://cloudmydc.com/) or [master-master](https://cloudmydc.com/) - in order to get the increased DB performance and data loss protection
-- adjust [Backups Scheduling](https://cloudmydc.com/) for ensuring safety of the information inside your DBs in the case of unexpected server failure
-- see the [Remote Access](https://cloudmydc.com/) instruction and learn how to access your database remotely via the preferred desktop MySQL client
-- use the [Dump Files Import/Export](https://cloudmydc.com/) guide to find out how to manually backup and restore your data from the previously created dumps
+- set up the preferred database replication type - [master-slave](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Manual%20Primary-Secondary%20Replication#mysqlmariadbpercona-database-primary-secondary-replication) or [master-master](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Manual%20Multi-Primary%20Replication#multi-primary-replication-for-mysqlmariadbpercona) - in order to get the increased DB performance and data loss protection
+- adjust [Backups Scheduling](/docs/Database/Database%20Hosting/Manual%20Database%20Backups#manual-database-backups) for ensuring safety of the information inside your DBs in the case of unexpected server failure
+- see the [Remote Access](/docs/Database/MySQL-MariaDB-Percona/Remote%20Access#remote-access-to-mysqlmariadbpercona) instruction and learn how to access your database remotely via the preferred desktop MySQL client
+- use the [Dump Files Import/Export](/docs/Database/MySQL-MariaDB-Percona/Dump%20Import-Export) guide to find out how to manually backup and restore your data from the previously created dumps

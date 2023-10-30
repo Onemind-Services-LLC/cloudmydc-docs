@@ -37,13 +37,13 @@ Use the drop-down list to choose among the available DB management systems:
 
 :::tip Note
 
-The list of available [database servers](https://cloudmydc.com/) can vary and depends on your hosting provider settings. If some of these servers are not available in your wizard, please, contact your hosting provider for activation.
+The list of available [database servers](/docs/QuickStart/Software%20Stack%20Versions) can vary and depends on your hosting provider settings. If some of these servers are not available in your wizard, please, contact your hosting provider for activation.
 
 :::
 
 When the corresponding database server is created, you’ll receive an email notification with credentials (access URL, login and password) to the database administration panel.
 
-3. To launch your database admin panel, click the **Open in Browser** button next to the target database node at the dashboard (or compose the admin panel URL [manually](https://cloudmydc.com/)).
+3. To launch your database admin panel, click the **Open in Browser** button next to the target database node at the dashboard (or compose the admin panel URL [manually](/docs/Database/Database%20Hosting/DB%20Hosting%20Overview#database-admin-panel-url)).
 
 <div style={{
     display:'flex',
@@ -59,11 +59,11 @@ In the opened page, use credentials from the email to log in and start applying 
 
 :::tip Tip
 
-For containers without [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address attached, the database admin console is available via https:// by default.
+For containers without [Public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip) address attached, the database admin console is available via https:// by default.
 
 :::
 
-When your database server is up and ready, you can [Connect your application to DB](https://cloudmydc.com/).
+When your database server is up and ready, you can [Connect your application to DB](/docs/Database/Database%20Hosting/Database%20Connection%20Strings#database-connection-strings).
 
 ## Database Password Reset
 
@@ -102,11 +102,11 @@ where
 </div>
 
 - **{environment-name}** - name of the environment you’ve added the server to (e.g. database)
-- **{hoster_domain}**- your hosting provider domain; can be found within the last column of the appropriate table in the [Hosters Info](https://cloudmydc.com/) page
+- **{hoster_domain}**- your hosting provider domain; can be found within the last column of the appropriate table in the [Hosters Info](/docs/QuickStart/Hosters%20List%20&%20Info#paas-hosting-providers) page
 
 :::tip Note
 
-In case your hosting provider platform has several [environment regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) to choose, the _{hoster_domain}_ value for your environment can differ from the general platform’s one.
+In case your hosting provider platform has several [environment regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#environment-regions) to choose, the _{hoster_domain}_ value for your environment can differ from the general platform’s one.
 
 :::
 

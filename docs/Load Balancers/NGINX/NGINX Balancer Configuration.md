@@ -63,9 +63,9 @@ Back to the list
 
 The **tcpmaps** folder contains the **_mappings.xml_** file where you can set the redirection of the TCP balancing ports. There you need to specify the pair of ports: one to listen to and the other to redirect to.
 
-You can find more information in the [NGINX Load Balancing](https://cloudmydc.com/) and [TCP Load Balancing](https://cloudmydc.com/) documents.
+You can find more information in the [NGINX Load Balancing](/docs/Load%20Balancers/NGINX/NGINX%20Balancer/) and [TCP Load Balancing](/docs/Load%20Balancers/NGINX/TCP%20Load%20Balancing) documents.
 
-To set [caching in NGINX](https://cloudmydc.com/) click on the link and follow the instruction.
+To set [caching in NGINX](/docs/Load%20Balancers/NGINX/Caching%20in%20NGINX%20Balancer) click on the link and follow the instruction.
 
 <div style={{
     display:'flex',

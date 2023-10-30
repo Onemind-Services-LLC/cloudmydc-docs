@@ -2,6 +2,8 @@
 sidebar_position: 6
 ---
 
+## work todo
+
 <div style={{
     display: 'grid',
     gridTemplateColumns: '0.7fr 1fr',
@@ -38,7 +40,7 @@ In order to increase flexibility tweaking the requests before they will be sent 
 
 ## Middleware
 
-There are a [number of middlewares available](https://cloudmydc.com/). Besides serving traditional ingresses for HTTP requests, separate middleware entities allow to modify the request parameters, the HTTP headers, some are responsible for redirects logic, other ones add authentication capabilities, etc.
+There are a [number of middlewares available](https://doc.traefik.io/traefik/middlewares/overview/#available-middlewares). Besides serving traditional ingresses for HTTP requests, separate middleware entities allow to modify the request parameters, the HTTP headers, some are responsible for redirects logic, other ones add authentication capabilities, etc.
 
 Before the request will be sent to the service it can be modified with middleware(s) attached to a router.
 
@@ -158,9 +160,9 @@ spec:
 
 ## Providers
 
-Traefik v2 introduces the concept of a [provider](https://cloudmydc.com/), which is an infrastructure component that provides information regarding routing to the Traefik. Once the Traefik detects any changes, it automatically updates the routes. The Kubernetes Ingress Traefik provider offers the traditional [Kubernetes ingress](https://cloudmydc.com/) controller functionality.
+Traefik v2 introduces the concept of a [provider](https://doc.traefik.io/traefik/providers/overview/), which is an infrastructure component that provides information regarding routing to the Traefik. Once the Traefik detects any changes, it automatically updates the routes. The Kubernetes Ingress Traefik provider offers the traditional [Kubernetes ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) controller functionality.
 
-Aside from the standard Ingress, Jelastic KS now supports an [IngressRoute](https://cloudmydc.com/) which is the Custom Resource Definition (CRD) implementation of a [Traefik HTTP router](https://cloudmydc.com/). This implementation improved accessibility to the K8s clusters without writing annotations. You can get familiar with an [example](https://cloudmydc.com/) of how to use IngressRoute in our K8s repository.
+Aside from the standard Ingress, Jelastic KS now supports an [IngressRoute](https://doc.traefik.io/traefik/user-guides/crd-acme/#ingressroute-definition) which is the Custom Resource Definition (CRD) implementation of a [Traefik HTTP router](https://doc.traefik.io/traefik/routing/routers/#configuring-http-routers). This implementation improved accessibility to the K8s clusters without writing annotations. You can get familiar with an [example](https://github.com/jelastic-jps/kubernetes/blob/v1.21.2/addons/jaeger/hotrod-app-traefik.yaml) of how to use IngressRoute in our K8s repository.
 
 ## Services
 
@@ -198,6 +200,6 @@ Also, Traefik offers a set of internal services. You can see an example in the c
 
 </div>
 
-These are only a few main changes in the new Traefik v2 which is implemented within [Jelastic Kubernetes v1.21.2+](https://cloudmydc.com/). You can check a full list in the official [documentation related to transition from Traefik v1 to v2](https://cloudmydc.com/).
+These are only a few main changes in the new Traefik v2 which is implemented within [Jelastic Kubernetes v1.21.2+](https://github.com/jelastic-jps/kubernetes/tree/v1.21.2). You can check a full list in the official [documentation related to transition from Traefik v1 to v2](https://doc.traefik.io/traefik/migration/v1-to-v2/).
 
-Get started with [Kubernetes Service](https://cloudmydc.com/) that can be automatically deployed, scaled and updated using Jelastic PaaS and don’t forget to keep an eye on [new releases](https://cloudmydc.com/).
+Get started with [Kubernetes Service](https://cloudmydc.com/) that can be automatically deployed, scaled and updated using Jelastic PaaS and don’t forget to keep an eye on [new releases](/docs/Kubernetes%20Hosting/Kubernetes%20Cluster/Cluster%20Versions#current-versions).

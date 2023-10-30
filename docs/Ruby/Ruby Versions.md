@@ -12,11 +12,11 @@ The platform supports all of the latest major releases of the Ruby engine and pr
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](https://cloudmydc.com/) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/QuickStart/Software%20Stack%20Versions) document.
 
 :::
 
-You can choose the required one during [environment creation](https://cloudmydc.com/) and quickly [switch between](https://cloudmydc.com/) them afterward.
+You can choose the required one during [environment creation](/docs/Ruby/Ruby%20Versions#create-ruby-environment) and quickly [switch between](/docs/Ruby/Ruby%20Versions#change-ruby-version) them afterward.
 
 ## Create Ruby Environment
 
@@ -44,11 +44,11 @@ You can choose the required one during [environment creation](https://cloudmydc.
 
 </div>
 
-Configure any other desired customization (e.g. cloudlets limit, [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP), [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), etc.) and click **Create**.
+Configure any other desired customization (e.g. cloudlets limit, [public IP]/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip), [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#environment-regions), etc.) and click **Create**.
 
 ## Change Ruby Version
 
-For the already existing environments, you can change the Ruby version by [redeploying container(s)](https://cloudmydc.com/):
+For the already existing environments, you can change the Ruby version by [redeploying container(s)](/docs/Container/Container%20Redeploy):
 
 1. There are two options to access container update dialog:
 
@@ -79,8 +79,8 @@ For the already existing environments, you can change the Ruby version by [redep
 2. In the opened window, adjust the following settings:
 
 - **_Tag_** - allows choosing the needed Ruby version
-- **_Keep volumes data_** - saves data in [Volumes](/docs/Container/Container%20Configuration/Volumes)
-- **_Simultaneous_** or **_Sequential deployment with delay_** (for [scaled servers](https://cloudmydc.com/) only) - defines whether all containers within a layer should be redeployed at once or one-by-one, to avoid downtime
+- **_Keep volumes data_** - saves data in [volumes](/docs/Container/Container%20Configuration/Volumes)
+- **_Simultaneous_** or **_Sequential deployment with delay_** (for [scaled servers](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling#horizontal-scaling-inside-the-cloud-multi-node) only) - defines whether all containers within a layer should be redeployed at once or one-by-one, to avoid downtime
 
 <div style={{
     display:'flex',

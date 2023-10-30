@@ -176,7 +176,7 @@ Another major new feature is the ability to switch subscription plans within the
 
 </div>
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Dashboard%20Overview)
 
 <div style={{
         display: 'flex',
@@ -204,7 +204,7 @@ You can find this new feature by selecting a specific project and navigating to 
 
 </div>
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Management)
 
 <div style={{
         display: 'flex',
@@ -237,7 +237,7 @@ In the current 2.1 platform release, a new **User Information** section was adde
 
 </div>
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Dashboard%20Overview#account-settings)
 
 <div style={{
         display: 'flex',

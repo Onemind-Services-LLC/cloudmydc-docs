@@ -2,6 +2,8 @@
 sidebar_position: 7
 ---
 
+## work todo
+
 <div style={{
     display: 'grid',
     gridTemplateColumns: '0.7fr 1fr',
@@ -14,15 +16,13 @@ sidebar_position: 7
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/PublicIPforAccesstoKubernetes/image10-3-300x253.png)
 
 </div>
 </div>
 <div>
 
-In this post we’d like to show how to expose applications via a public [IP address](https://cloudmydc.com/) attached to one of the nodes of a Kubernetes cluster environment in Jelastic PaaS. It can be done in two possible ways - attaching IP to [Dedicated Load Balancer](https://cloudmydc.com/) or to K8s Worker node.
+In this post we’d like to show how to expose applications via a public [IP address](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) attached to one of the nodes of a Kubernetes cluster environment in Jelastic PaaS. It can be done in two possible ways - attaching IP to [Dedicated Load Balancer](/docs/Load%20Balancers/Load%20Balancing) or to K8s Worker node.
 
 </div>
 </div>
@@ -43,7 +43,7 @@ In this post we’d like to show how to expose applications via a public [IP add
 
 </div>
 
-Here we use the NGINX load balancer node, but you can choose any other available ([HAProxy](https://cloudmydc.com/), [LS Web ADC](https://cloudmydc.com/), [Varnish](https://cloudmydc.com/)). Once the topology is changed it should look like as follows:
+Here we use the NGINX load balancer node, but you can choose any other available ([HAProxy](/docs/Load%20Balancers/HAProxy), [LS Web ADC](/docs/Load%20Balancers/LiteSpeed%20Web%20ADC), [Varnish](/docs/Load%20Balancers/Varnish)). Once the topology is changed it should look like as follows:
 
 <div style={{
     display:'flex',
@@ -65,7 +65,7 @@ Here we use the NGINX load balancer node, but you can choose any other available
 
 </div>
 
-3. After that, create an [A record](https://cloudmydc.com/) for a [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) using the IP address added at the previous step. For example **_cargo-tracker.jele.website_**.
+3. After that, create an [A record](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-configure-dns-record) for a [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) using the IP address added at the previous step. For example **_cargo-tracker.jele.website_**.
 
 <div style={{
     display:'flex',
@@ -79,7 +79,7 @@ Here we use the NGINX load balancer node, but you can choose any other available
 
 4. Now you may bind the custom domain to the K8s cluster and send a request to issue a trusted [Let’s Encrypt SSL certificate](https://cloudmydc.com/) to secure applications’ traffic.
 
-- Go to the load balancer [Add-Ons](https://cloudmydc.com/) and find **Let’s Encrypt Free SSL**.
+- Go to the load balancer [Add-Ons](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) and find **Let’s Encrypt Free SSL**.
 
 <div style={{
     display:'flex',
@@ -135,7 +135,7 @@ Let’s proceed on the same cluster with the Cargo Tracker application deployed.
 
 2. Create the A record for a custom domain mapping to the newly added IP address. Use a domain name different from that one used in the previous chapter. For example: **_cargo-tracker-worker.jele.website_**.
 
-3. Then, go to the add-ons of the Control Plane node and install [Certificate Manager](https://cloudmydc.com/). Along with a cert-manager controller there will be installed an NGINX ingress controller with LoadBalancer service type. It will hold the IP attached to the worker node, and will be serving the “nginx-cert” ingress class resources.
+3. Then, go to the add-ons of the Control Plane node and install [Certificate Manager](https://cert-manager.io/docs/). Along with a cert-manager controller there will be installed an NGINX ingress controller with LoadBalancer service type. It will hold the IP attached to the worker node, and will be serving the “nginx-cert” ingress class resources.
 
 <div style={{
     display:'flex',

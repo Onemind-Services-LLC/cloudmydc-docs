@@ -8,7 +8,7 @@ import obj from './LiteSpeedWebADC.json'
 
 :::tip Tip
 
-The **LiteSpeed Web ADC** stack is [HTTP/3](https://cloudmydc.com/) ready with the feature support enabled by default. However, a [public IP address](https://cloudmydc.com/) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
+The **LiteSpeed Web ADC** stack is [HTTP/3](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support) ready with the feature support enabled by default. However, a [public IP address](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
 
 :::
 
@@ -24,26 +24,24 @@ The **LiteSpeed Web ADC** stack is [HTTP/3](https://cloudmydc.com/) ready with t
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/LiteSpeedWebADC/01-litespeed-web-adc-logo.png)
 
 </div>
 </div>
 <div>
 
-The **[LiteSpeed Web ADC](https://cloudmydc.com/)** (Application Delivery Controller) is a high-performance HTTP load balancing solution. It not just distributes traffic but also improves the speed and reliability of the services on the backend.
+The **[LiteSpeed Web ADC](https://www.litespeedtech.com/products/litespeed-web-adc)** (Application Delivery Controller) is a high-performance HTTP load balancing solution. It not just distributes traffic but also improves the speed and reliability of the services on the backend.
 
 </div>
 </div>
 
 Such benefits are achieved through the implementation and support of the most innovative and efficient technologies required for load balancing, e.g. next-generation HTTP/3 (QUIC) transport protocol.
 
-LiteSpeed Web ADC is suitable for the projects of any scale, being able to handle everyday traffic and seasonal spikes alike. This balancer will surely get the most of your application due to its [numerous features](https://cloudmydc.com/).
+LiteSpeed Web ADC is suitable for the projects of any scale, being able to handle everyday traffic and seasonal spikes alike. This balancer will surely get the most of your application due to its [numerous features](https://www.litespeedtech.com/products/litespeed-web-adc/features).
 
 :::danger Note
 
-Being a commercial software, LiteSpeed Web Server cannot be distributed freely, i.e. requires the license to be applied to the platform. If working with this application server, you’ll be charged an [additional fee](https://cloudmydc.com/) for usage of the license mentioned above.
+Being a commercial software, LiteSpeed Web Server cannot be distributed freely, i.e. requires the license to be applied to the platform. If working with this application server, you’ll be charged an [additional fee](/docs/Load%20Balancers/LiteSpeed%20Web%20ADC#license-pricing) for usage of the license mentioned above.
 
 :::
 
@@ -75,12 +73,12 @@ Get your own LiteSpeed Web ADC load balancer server at the platform by following
 
 :::tip Tip
 
-You can apply some customization to your LiteSpeed ADC by adjusting some of the [dedicated environment variables](https://cloudmydc.com/):
+You can apply some customization to your LiteSpeed ADC by adjusting some of the [dedicated environment variables](/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables):
 
 - **JELASTIC_AUTOCONFIG** - enables (enabled, by default) or disables (disabled) autoconfiguration of the LiteSpeed worker processes count based on the allocated RAM and number of CPU cores
 - **DEFAULT_CLUSTER** - selects the load balancing type for requests' proxying (HTTP, AJP, FCGI, LSAPI). If working with some custom backends, this logic can be disabled (0, disabled, false)
-- **WP_PROTECT** - configures an action for the [WordPress Brute Force Attack Protection](https://cloudmydc.com/) feature (off|on|drop|deny|throttle|captcha; off by default)
-- **WP_PROTECT_LIMIT** - sets a limit for the [WordPress Brute Force Attack Protection](https://cloudmydc.com/) feature (0|1|2-1000; 10 by default)
+- **WP_PROTECT** - configures an action for the [WordPress Brute Force Attack Protection](https://www.litespeedtech.com/support/wiki/doku.php/litespeed_wiki:config:wordpress-protection) feature (off|on|drop|deny|throttle|captcha; off by default)
+- **WP_PROTECT_LIMIT** - sets a limit for the [WordPress Brute Force Attack Protection](https://www.litespeedtech.com/support/wiki/doku.php/litespeed_wiki:config:wordpress-protection) feature (0|1|2-1000; 10 by default)
 
 <div style={{
     display:'flex',
@@ -124,7 +122,7 @@ Click **Create** to proceed.
 
 There are some specifics while working with the platform implementation of the LiteSpeed via the admin panel:
 
-- to ensure container stability, the [platform-native redeploy feature](https://cloudmydc.com/) should be used instead of the **Actions > Version Manager** functionality
+- to ensure container stability, the [platform-native redeploy feature](/docs/Container/Container%20Redeploy) should be used instead of the **Actions > Version Manager** functionality
 
 <div style={{
     display:'flex',
@@ -150,7 +148,7 @@ There are some specifics while working with the platform implementation of the L
 
 :::
 
-In case you need to adjust any of the configuration files, you can work over the [dashboard file manager](https://cloudmydc.com/) or establish an [SSH connection](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview).
+In case you need to adjust any of the configuration files, you can work over the [dashboard file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) or establish an [SSH connection](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview).
 
 ## License Pricing
 
@@ -159,7 +157,7 @@ The platform seamlessly integrates the cost of the LiteSpeed license in accordan
 - new licenses are issued for every newly-created container (e.g. during environment provisioning or horizontal scaling)
 - updated while changing available resource limits within each container
 - decommissioned while stopping the environment or scaling in
-  Based on your needs, you can select the required plan using a dedicated **_LiteSpeed License Manager_** add-on that is automatically installed on all the LiteSpeed-based nodes ([LS Web Server](https://cloudmydc.com/), LS ADC, [LLSMP](https://cloudmydc.com/)).
+  Based on your needs, you can select the required plan using a dedicated **_LiteSpeed License Manager_** add-on that is automatically installed on all the LiteSpeed-based nodes ([LS Web Server](/docs/PHP/PHP%20App%20Servers/LiteSpeed%20Web%20Server), LS ADC, [LLSMP](/docs/PHP/PHP%20App%20Servers/LEMP%20&%20LLSMP)).
 
 <div style={{
     display:'flex',
@@ -171,7 +169,7 @@ The platform seamlessly integrates the cost of the LiteSpeed license in accordan
 
 </div>
 
-The add-on allows switching between plans by adjusting the number of **_Workers_** (processes to do general server work). Also, the **_LiteMage_** caching solution (with unlimited [publicly cached objects](https://cloudmydc.com/)) can be automatically configured for LiteSpeed ADC for an additional price of **149$** per month.
+The add-on allows switching between plans by adjusting the number of **_Workers_** (processes to do general server work). Also, the **_LiteMage_** caching solution (with unlimited [publicly cached objects](https://www.litespeedtech.com/products/litespeed-web-server/lsws-pricing/lsws-litemage-pricing#objects)) can be automatically configured for LiteSpeed ADC for an additional price of **149$** per month.
 
 <div style={{
     display:'flex',
@@ -290,7 +288,7 @@ The license price is calculated dynamically based on the network traffic process
 
 :::danger Note
 
-The exact cost may vary slightly for the platforms with a currency other than USD; it depends on the conversion rate at the moment of the hourly billing event. All the account charges can be viewed via the **[Billing History](https://cloudmydc.com/)** in the dashboard.
+The exact cost may vary slightly for the platforms with a currency other than USD; it depends on the conversion rate at the moment of the hourly billing event. All the account charges can be viewed via the **[Billing History](/docs/Account&Pricing/Resource%20Charging/Monitoring%20Consumed%20Resources#billing-history)** in the dashboard.
 
 <div style={{
     display:'flex',
@@ -312,4 +310,4 @@ When performing testing of the LiteSpeed Web ADC load balancer, you should take 
 
 2. If LiteSpeed ADC does not have its own [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP), all the requests go through the platform’s [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer). In such a case, ADC considers that the load comes from a single IP address (of the Shared Load Balancer).
 
-As a result, for the proper testing of the <u>production cluster</u> with LiteSpeed ADC as a load balancer, you need to attach public IP and send requests from multiple sources. Alternatively, you can temporarily switch to the **Stateless** mode, which does not care about sessions (recommended during the <u>development/testing stages</u> only). Check out more about [LiteSpeed ADC testing](https://cloudmydc.com/) at the official documentation.
+As a result, for the proper testing of the <u>production cluster</u> with LiteSpeed ADC as a load balancer, you need to attach public IP and send requests from multiple sources. Alternatively, you can temporarily switch to the **Stateless** mode, which does not care about sessions (recommended during the <u>development/testing stages</u> only). Check out more about [LiteSpeed ADC testing](https://docs.litespeedtech.com/lsadc/settings/#testing) at the official documentation.

@@ -8,8 +8,8 @@ CloudMyDc Application Platform for WordPress provides a dedicated dashboard desi
 
 Below, we’ll provide an overview of the:
 
-- [WordPress Dashboard](https://cloudmydc.com/)
-- [Account Settings](https://cloudmydc.com/)
+- [WordPress Dashboard](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Dashboard%20Overview#wordpress-dashboard)
+- [Account Settings](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Dashboard%20Overview#account-settings)
 
 ## WordPress Dashboard
 
@@ -41,7 +41,7 @@ Below, we’ll provide an overview of the:
 
 </div>
 
-Additionally, at the top-right corner of the home page, you can see the **Create New Project** button. Learn more at the dedicated [WordPress Project Creation](https://cloudmydc.com/) guide.
+Additionally, at the top-right corner of the home page, you can see the **Create New Project** button. Learn more at the dedicated [WordPress Project Creation](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Installation) guide.
 
 3. Each project has the following options available from the home page:
 
@@ -72,7 +72,7 @@ Additionally, at the top-right corner of the home page, you can see the **Create
 
 </div>
 
-Learn more at the [WordPress Project Management](https://cloudmydc.com/) guide.
+Learn more at the [WordPress Project Management](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Management) guide.
 
 ## Account Settings
 
@@ -154,7 +154,7 @@ The platform supports the following key types:
 - EdDSA
 - RSA
 
-In the linked documents, you can learn more about [generating SSH keys](https://cloudmydc.com/) and [connecting via SSH Gate](https://cloudmydc.com/).
+In the linked documents, you can learn more about [generating SSH keys](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) and [connecting via SSH Gate](/docs/Deployment%20Tools/SSH/SSH%20Access/SSH%20Gate).
 
 2.3. On the **Payment Methods** tab, you can view and manage your payment methods.
 
@@ -222,7 +222,7 @@ Use the drop-down menu at the bottom of each subscription to manage it:
 - _Git Configuration_
 - _Backup Storage_
 
-  3.1. The **SSL Certificates** tab manages SSL certificates on the account. It automatically lists all the [Let’s Encrypt certificates](https://cloudmydc.com/) issued for your projects and allows manually adding [custom SSL certificates](https://cloudmydc.com/) with the **Add SSL** button.
+  3.1. The **SSL Certificates** tab manages SSL certificates on the account. It automatically lists all the [Let’s Encrypt certificates](https://cloudmydc.com/) issued for your projects and allows manually adding [custom SSL certificates](/docs/ApplicationSetting/SSL/Custom%20SSL) with the **Add SSL** button.
 
 <div style={{
     display:'flex',
@@ -305,7 +305,7 @@ In order to add a new storage, click the **Add Backup** button and provide the f
 
 </div>
 
-Click **Add** when ready. Your new storage product will be created in a few minutes. Learn more about the [backup and restore process](https://cloudmydc.com/).
+Click **Add** when ready. Your new storage product will be created in a few minutes. Learn more about the [backup and restore process](/docs/Wordpress%20as%20a%20Service/WordPress%20Backups).
 
 4. The Language list allows changing the dashboard localization to the preferred language. The availability and exact options depend on the service hosting provider configurations.
 

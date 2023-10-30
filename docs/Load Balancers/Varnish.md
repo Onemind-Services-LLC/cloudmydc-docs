@@ -6,15 +6,15 @@ sidebar_position: 5
 
 :::tip Tip
 
-The Varnish stack is [HTTP/3](https://cloudmydc.com/) ready with the feature support enabled by default since the 5.2.x and 6.x.x versions. However, a [public IP address](https://cloudmydc.com/) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
+The *Varnish* stack is [HTTP/3](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support) ready with the feature support enabled by default since the *5.2.x* and *6.x.x* versions. However, a [public IP address](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
 
 :::
 
-**Varnish** is a web-application accelerator also known as a caching HTTP reverse proxy for dynamic web-sites with high traffic. Unlike other proxy servers, it was initially designed to be focused exclusively on HTTP. Nevertheless, within the platform implementation, it is delivered in a bundle with the NGINX server (run on the 443rd port as a HTTPS proxy), that gives the ability to work with the secured data and the [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL) option in particular. In this case, after the incoming traffic decryption, NGINX redirects it directly to Varnish (run on the port 80) to be further processed.
+**Varnish** is a web-application accelerator also known as a caching HTTP reverse proxy for dynamic web-sites with high traffic. Unlike other proxy servers, it was initially designed to be focused exclusively on HTTP. Nevertheless, within the platform implementation, it is delivered in a bundle with the NGINX server (run on the *443rd* port as a HTTPS proxy), that gives the ability to work with the secured data and the [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL) option in particular. In this case, after the incoming traffic decryption, NGINX redirects it directly to Varnish (run on the port *80*) to be further processed.
 
-As an accelerator, Varnish only has basic load balancing support, which, however, still includes round robin and random redirector options, backend health-checking and more. But the emphasis is made on the speed, which is mainly achieved through the caching, that makes the web-site faster by offloading the static objects' delivery.
+As an accelerator, Varnish only has basic load balancing support, which, however, still includes *round robin* and *random redirector* options, backend *health-checking* and more. But the emphasis is made on the speed, which is mainly achieved through the caching, that makes the web-site faster by offloading the static objects' delivery.
 
-Besides that, Varnish is a modular software with a variety of modules available, including tools for statistics (like varnishstat, varnishhist), a powerful live traffic analyzer (varnishlog) and many others. Furthermore, this server is heavily threaded, with each client connection being handled by a separate worker thread. When the number of active worker threads reaches the configured limit, the incoming connections are put in an overflow queue. In case this queue grows to its stated limit, further incoming connections will be rejected.
+Besides that, Varnish is a modular software with a variety of modules available, including tools for statistics (like *varnishstat*, *varnishhist*), a powerful live traffic analyzer (*varnishlog*) and many others. Furthermore, this server is heavily threaded, with each client connection being handled by a separate worker thread. When the number of active worker threads reaches the configured limit, the incoming connections are put in an overflow queue. In case this queue grows to its stated limit, further incoming connections will be rejected.
 
 :::tip Note
 
@@ -71,7 +71,7 @@ That’s all about Varnish installation! Now you can proceed to its configuratio
 
 The Varnish load-balancer can be adjusted according to your needs in one of the following ways:
 
-- through accessing the required server via the platform [SSH Gateway](/docs/Deployment%20Tools/SSH/SSH%20Overview):
+- through accessing the required server via the platform [SSH Gateway](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview):
 
 <div style={{
     display:'flex',

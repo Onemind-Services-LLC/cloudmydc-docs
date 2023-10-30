@@ -14,7 +14,7 @@ The add-on can be installed on top of the **MySQL/MariaDB/Percona** and **ProxyS
 
 :::tip Tip
 
-The add-on is also available from the [Marketplace](https://cloudmydc.com/) and can be imported from the appropriate GitHub repository.
+The add-on is also available from the [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace#marketplace) and can be imported from the appropriate GitHub repository.
 
 :::
 
@@ -107,7 +107,7 @@ ssl-cipher=ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-SHA
 **ProxySQL configurations:**
 
 - SSL on the ProxySQL nodes is enabled by setting the following variables on all the servers:
-  - **\*[mysql-have_ssl](https://cloudmydc.com/)** (true)\* - enables SSL for frontend connections
+  - **\*[mysql-have_ssl](https://proxysql.com/documentation/global-variables/mysql-variables/#mysql-have_ssl)** (true)\* - enables SSL for frontend connections
   - **\*use_ssl** (1)\* - sets the corresponding column in mysql_servers, which will tell ProxySQL that our backend nodes use SSL
 - Changes are done with the following SQL query:
 
@@ -136,7 +136,7 @@ To remove the add-on from the layer (including custom configs and generated SSL 
 
 ## Secure Connection to MySQL/MariaDB/Percona
 
-1. The “**encryption in transit**” (**_server-side encryption_**) functionality works immediately after the add-on’s installation. You can check it by connecting to the database using the credentials from the email. For remote connection, you can add [endpoint](https://cloudmydc.com/) or [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP):
+1. The “**encryption in transit**” (**_server-side encryption_**) functionality works immediately after the add-on’s installation. You can check it by connecting to the database using the credentials from the email. For remote connection, you can add [endpoint](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#endpoints-a-direct-connection-to-the-cloud) or [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip):
 
 <div style={{
     display:'flex',

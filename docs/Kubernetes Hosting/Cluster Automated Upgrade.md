@@ -2,6 +2,8 @@
 sidebar_position: 9
 ---
 
+## work todo
+
 <div style={{
     display: 'grid',
     gridTemplateColumns: '0.7fr 1fr',
@@ -13,8 +15,6 @@ sidebar_position: 9
     alignItems: 'center',
     justifyContent: 'cetner',
 }}>
-
-<!-- Image Url changes -->
 
 ![Locale Dropdown](./img/ClusterAutomatedUpgrade/kubernetes-automated-upgrade-106x165.png)
 
@@ -45,7 +45,7 @@ Before taking the decision regarding the upgrade, you can check a current versio
 
 </div>
 
-- via WebSSH client by issuing the command to get the [Kubernetes version](https://cloudmydc.com/)
+- via WebSSH client by issuing the command to get the [Kubernetes version](https://kubernetes.io/releases/version-skew-policy/)
   **kubectl version --short**
 
 <div style={{
@@ -58,7 +58,7 @@ Before taking the decision regarding the upgrade, you can check a current versio
 
 </div>
 
-Then compare the current cluster version with available auto-upgrade packages which are presented in the [Jelastic Kubernetes versions page](https://cloudmydc.com/).
+Then compare the current cluster version with available auto-upgrade packages which are presented in the [Jelastic Kubernetes versions page](/docs/Kubernetes%20Hosting/Kubernetes%20Cluster/Cluster%20Versions#k8s-package-change-log).
 
 <div style={{
     display:'flex',

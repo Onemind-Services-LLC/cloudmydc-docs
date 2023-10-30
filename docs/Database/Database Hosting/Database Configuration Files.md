@@ -6,7 +6,7 @@ import obj from './DatabaseConfigurationFiles.json'
 
 ## Database Configuration Files
 
-In this guide, we’ll list all the main configuration files in the [platform-managed database](https://cloudmydc.com/) servers. Each line of the table corresponds to the folder with configs for the databases listed in the Database Types column.
+In this guide, we’ll list all the main configuration files in the [platform-managed database](/docs/QuickStart/Software%20Stack%20Versions) servers. Each line of the table corresponds to the folder with configs for the databases listed in the Database Types column.
 
 <div style={{
         width: '100%',
@@ -138,7 +138,7 @@ Alternatively, you can override any of the settings in the **_/etc/my.cnf_** fil
 
 The database servers include the **/var/spool/cron** folder with a config file, where cron jobs can be configured.
 
-For example, you can set the [scheduled backups](https://cloudmydc.com/) of your database. The required cron expression is included in the cron config file by default. You just need to uncomment the appropriate line and, if necessary, adjust it based on your custom requirements.
+For example, you can set the [scheduled backups](/docs/Database/Database%20Hosting/Manual%20Database%20Backups#manual-database-backups) of your database. The required cron expression is included in the cron config file by default. You just need to uncomment the appropriate line and, if necessary, adjust it based on your custom requirements.
 
 <div style={{
     display:'flex',
@@ -150,11 +150,11 @@ For example, you can set the [scheduled backups](https://cloudmydc.com/) of your
 
 </div>
 
-You can find more information in the [Setting Up Cronjob](https://cloudmydc.com/) documentation.
+You can find more information in the [Setting Up Cronjob](/docs/ApplicationSetting/Scheduling%20Configuration/Setting%20Up%20Cronjob#setting-up-cronjob) documentation.
 
 ## SCRIPTS
 
-This folder contains the default **_[backup_script.sh](https://cloudmydc.com/)_** script. You can also use the **/var/lib/jelastic/bin** folder for uploading your custom scripts.
+This folder contains the default **_[backup_script.sh](/docs/Database/Database%20Hosting/Manual%20Database%20Backups#manual-database-backups)_** script. You can also use the **/var/lib/jelastic/bin** folder for uploading your custom scripts.
 
 <div style={{
     display:'flex',
@@ -168,7 +168,7 @@ This folder contains the default **_[backup_script.sh](https://cloudmydc.com/)_*
 
 ## BACKUP
 
-The **/var/lib/jelastic/backup** folder is used for storing the [database backup](https://cloudmydc.com/) files. You can use these files for restoring your database data.
+The **/var/lib/jelastic/backup** folder is used for storing the [database backup](/docs/Database/Database%20Hosting/Manual%20Database%20Backups#manual-database-backups) files. You can use these files for restoring your database data.
 
 <div style={{
     display:'flex',

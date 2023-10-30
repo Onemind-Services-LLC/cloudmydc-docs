@@ -2,6 +2,8 @@
 sidebar_position: 8
 ---
 
+## work todo
+
 <div style={{
     display: 'grid',
     gridTemplateColumns: '0.7fr 1fr',
@@ -14,15 +16,13 @@ sidebar_position: 8
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/Multi-RegionClusterFederation/image1-3-300x300.png)
 
 </div>
 </div>
 <div>
 
-If you have multiple Kubernetes (K8s) clusters in different regions and need to run the same application across all of them, it is reasonable to use the so-called Kubernetes Cluster Federation or [KubeFed](https://cloudmydc.com/).
+If you have multiple Kubernetes (K8s) clusters in different regions and need to run the same application across all of them, it is reasonable to use the so-called Kubernetes Cluster Federation or [KubeFed](https://github.com/kubernetes-retired/kubefed/blob/master/README.md).
 
 </div>
 </div>
@@ -35,7 +35,7 @@ In this article we’ll demonstrate how to set up Jelastic Kubernetes Services (
 
 ## Federation Prerequisites
 
-Supposedly within one Jelastic PaaS we have five clusters in different regions and we'd like to deploy applications to any of these clusters. One of them is a Host Cluster that acts as a Federation [Control Plane](https://cloudmydc.com/), it propagates and pushes configurations to the
+Supposedly within one Jelastic PaaS we have five clusters in different regions and we'd like to deploy applications to any of these clusters. One of them is a Host Cluster that acts as a Federation [Control Plane](https://kubernetes.io/docs/reference/glossary/?all=true#term-control-plane), it propagates and pushes configurations to the
 
 <div style={{
     display:'flex',
@@ -51,7 +51,7 @@ Thus we need to decide which payload we want to distribute, and which member clu
 
 So, let’s get down to business and create a Federation in Jelastic PaaS.
 
-Sing in your account and create two [Kubernetes clusters](https://cloudmydc.com/) in different [regions](https://cloudmydc.com/). Actually you may create as many as you need though, but here we create a **Host Cluster** and **Member Cluster 1** only. All of the actions below can be applied to any number of Member Clusters. So, deploy:
+Sing in your account and create two [Kubernetes clusters](https://cloudmydc.com/) in different [regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region). Actually you may create as many as you need though, but here we create a **Host Cluster** and **Member Cluster 1** only. All of the actions below can be applied to any number of Member Clusters. So, deploy:
 
 - Federation Host Cluster: **_fedhost.vip.jelastic.cloud_**
 - Federation Member Cluster: **_member1.demo.jelastic.com_**
@@ -68,11 +68,11 @@ Sing in your account and create two [Kubernetes clusters](https://cloudmydc.com/
 
 ## Remote Access to the Clusters
 
-The next step is to establish [remote access to the clusters](https://cloudmydc.com/).
+The next step is to establish [remote access to the clusters](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/).
 
-Log in the master node of the **Host Cluster** via [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview) and start with the configuration. Some commands output will be shown to let you be sure you are doing right:
+Log in the master node of the **Host Cluster** via [SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/SSH%20Gate) and start with the configuration. Some commands output will be shown to let you be sure you are doing right:
 
-1. First, install the KubeFed chart with [helm](https://cloudmydc.com/) in **kube-federation-system** namespace :
+1. First, install the KubeFed chart with [helm](https://kubernetes.io/blog/2016/10/helm-charts-making-it-simple-to-package-and-deploy-apps-on-kubernetes/) in **kube-federation-system** namespace :
    Add repository:
 
 ```bash
@@ -81,7 +81,7 @@ fedhost~$ helm repo add kubefed-charts
 
 ***https://raw.githubusercontent.com/kubernetes-sigs/kubefed/master/charts***
 
-Install the [latest version](https://cloudmydc.com/) available of **kubefed**. Here and below, we use 0.7.0 as the current version:
+Install the [latest version](https://github.com/kubernetes-retired/kubefed/branches/active) available of **kubefed**. Here and below, we use 0.7.0 as the current version:
 
 ```bash
 fedhost~$ helm install kubefed kubefed-charts/kubefed --version 0.7.0 --namespace kube-federation-system --create-namespace
@@ -97,7 +97,7 @@ fedhost~$ helm install kubefed kubefed-charts/kubefed --version 0.7.0 --namespac
 
 </div>
 
-2. Download the latest version of [kubefedctl](https://cloudmydc.com/) command line tool as well and copy it to /usr/local/bin directory:
+2. Download the latest version of [kubefedctl](https://github.com/kubernetes-retired/kubefed/releases) command line tool as well and copy it to /usr/local/bin directory:
 
 ```bash
 fedhost~$ wget
@@ -110,7 +110,7 @@ fedhost~$ tar xvf kubefedctl-0.7.0-linux-amd64.tgz
 fedhost~$ mv kubefedctl /usr/local/bin
 ```
 
-3. To let KubeFed federating deployments, it must be able to interact with all of selected **Member Clusters**. To get this, you can use the following [RBAC](https://cloudmydc.com/) config file to create the necessary role to ensure connection from the [Host Cluster](https://cloudmydc.com/). Log in the master node of the [Member Cluster](https://cloudmydc.com/) via SSH and create a configuration file for example [member1.yaml](https://cloudmydc.com/) and paste the content below into it.
+3. To let KubeFed federating deployments, it must be able to interact with all of selected **Member Clusters**. To get this, you can use the following [RBAC](/docs/Kubernetes%20Hosting/Managing%20Kubernetes/Access%20Control) config file to create the necessary role to ensure connection from the **Host Cluster**. Log in the master node of the **Member Cluster** via SSH and create a configuration file for example **member1.yaml** and paste the content below into it.
 
 ```bash
 apiVersion: v1

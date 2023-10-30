@@ -15,7 +15,7 @@ You can have a **Redmine** instance up and running within minutes using one-clic
 
 The process is simple - just click **Get it hosted now**, type your email and install Redmine in a minute skipping the steps of manual installation.
 
-Find the full list of applications available for one-click installation at our [Marketplace page](https://cloudmydc.com/).
+Find the full list of applications available for one-click installation at our [Marketplace page](https://www.virtuozzo.com/application-platform/?referer=jelastic).
 
 In case you would like to configure and run your Redmine instance manually, just follow the step-by-step instruction below.
 
@@ -49,7 +49,7 @@ In case you would like to configure and run your Redmine instance manually, just
 
 ## Redmine Deployment
 
-1. Open the official [Redmine web-site](https://cloudmydc.com/) and download its latest stable release as **.tar.gz** or **.zip** archive.
+1. Open the official [Redmine web-site](https://www.redmine.org/projects/redmine/wiki/Download) and download its latest stable release as **.tar.gz** or **.zip** archive.
 
 <div style={{
     display:'flex',

@@ -6,16 +6,16 @@ sidebar_position: 6
 
 This instruction lists the most common limitations and problems when hosting a **[MariaDB Galera Cluster](https://cloudmydc.com/)** at the platform. Follow this guide to find possible issues and recovery solutions to the already occurred problems:
 
-- [Galera Cluster Limitations](https://cloudmydc.com/)
-- [Stop/Start/Restart Specifics](https://cloudmydc.com/)
-- [Node with Maximum Transactions](https://cloudmydc.com/)
-- [Starting Cluster after Crash](https://cloudmydc.com/)
-- [Single Node Failure](https://cloudmydc.com/)
-- [Monitoring Galera Cluster](https://cloudmydc.com/)
+- [Galera Cluster Limitations](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#galera-cluster-limitations)
+- [Stop/Start/Restart Specifics](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#stopstartrestart-specifics)
+- [Node with Maximum Transactions](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#node-with-maximum-transactions)
+- [Starting Cluster after Crash](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#starting-cluster-after-crash)
+- [Single Node Failure](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#single-node-failure)
+- [Monitoring Galera Cluster](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#monitoring-galera-cluster)
 
 ## Galera Cluster Limitations
 
-_You can find a complete list of the Galera Cluster limitations on the [official website](https://cloudmydc.com/)._
+_You can find a complete list of the Galera Cluster limitations on the [official website](https://mariadb.com/kb/en/mariadb-galera-cluster-known-limitations/)._
 
 Below, we’ll highlight the most relevant ones to the platform.
 
@@ -45,7 +45,7 @@ order by tab.table_schema,
 tab.table_name;
 ```
 
-2. **[MyISAM](https://cloudmydc.com/) tables**.
+2. **[MyISAM](https://mariadb.com/kb/en/myisam-storage-engine/) tables**.
 
 :::tip Tip
 
@@ -53,7 +53,7 @@ tab.table_name;
 
 :::
 
-An experimental parameter _[wsrep_replicate_myisam](https://cloudmydc.com/)_ for supporting MyISAM tables has been added to the configuration file.
+An experimental parameter _[wsrep_replicate_myisam](https://mariadb.com/kb/en/galera-cluster-system-variables/#wsrep_replicate_myisam)_ for supporting MyISAM tables has been added to the configuration file.
 
 ## Stop/Start/Restart Specifics
 
@@ -123,7 +123,7 @@ CT-44999 /# grep safe_to_bootstrap /var/lib/mysql/grastate.dat
 safe_to_bootstrap: 0
 ```
 
-4. On the [node with maximum transactions](https://cloudmydc.com/), set **safe_to_bootstrap** to **1** and start the mysql process.
+4. On the [node with maximum transactions](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#node-with-maximum-transactions), set **safe_to_bootstrap** to **1** and start the mysql process.
 
 ```bash
 CT-44999 /# sed -i 's/safe_to_bootstrap: 0/safe_to_bootstrap: 1/g' /var/lib/mysql/grastate.dat
@@ -152,11 +152,11 @@ However, in case of an error, check **_mysqld.log_** on this second node. Look f
 2020-11-19 16:55:20 0 [ERROR] WSREP: gcs/src/gcs_group.cpp:group_post_state_exchange():422: Reversing history: 3151891 -> 3150782, this member has applied 1109 more events than the primary component.Data loss is possible. Aborting.
 ```
 
-If such a record exists, ​your second node has more transactions than the initially selected one (i.e. the first node where you set **safe_to_bootstrap** to **1**). Please, return to the [beginning of this section](https://cloudmydc.com/) and start it anew, using the second node in the fourth step.
+If such a record exists, ​your second node has more transactions than the initially selected one (i.e. the first node where you set **safe_to_bootstrap** to **1**). Please, return to the [beginning of this section](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#starting-cluster-after-crash) and start it anew, using the second node in the fourth step.
 
 ## Single Node Failure
 
-The most frequent cause of a node crash is the impossibility of processing a request due to some ignored **[limitations](https://cloudmydc.com/)**. You can check the **_/var/log/mysql/mysqld.log_** log for such errors.
+The most frequent cause of a node crash is the impossibility of processing a request due to some ignored **[limitations](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#galera-cluster-limitations)**. You can check the **_/var/log/mysql/mysqld.log_** log for such errors.
 
 In order to restore a node, you need to:
 
@@ -204,7 +204,7 @@ mysql -uuser -ppass -e "SHOW GLOBAL STATUS LIKE 'wsrep_local_state_comment';"
 
 :::tip Tip
 
-Check out more examples in the [official Galera cluster](https://cloudmydc.com/) documentation.
+Check out more examples in the [official Galera cluster](https://galeracluster.com/library/documentation/monitoring-cluster.html) documentation.
 
 :::
 

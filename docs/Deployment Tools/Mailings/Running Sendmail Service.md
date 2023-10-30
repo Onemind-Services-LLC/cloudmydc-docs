@@ -18,8 +18,6 @@ sidebar_position: 2
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/RunningSendmailService/1.png)
 
 </div>

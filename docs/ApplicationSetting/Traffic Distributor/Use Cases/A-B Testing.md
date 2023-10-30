@@ -24,8 +24,6 @@ You can use any tool that allows to compare conversion rates, from a simple piec
     margin: '0 0 1rem 0'
 }}>
 
-<!-- ![Locale Dropdown](./img/FILE_NAME/IMAGE_NAME) -->
-
 ![Locale Dropdown](./img/A-BTesting/01.png)
 
 </div>

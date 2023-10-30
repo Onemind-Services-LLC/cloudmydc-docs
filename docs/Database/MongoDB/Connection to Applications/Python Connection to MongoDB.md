@@ -6,7 +6,7 @@ sidebar_position: 3
 
 **MongoDB** is one of the most popular NoSQL databases, which allows developers to easily work with the stored data. This tutorial provides an example of connection to the MongoDB server from your **Python** application.
 
-1. In our case we have an environment with _Python_ and _MongoDB_ containers inside (you can create such one at any time), but this instruction is suitable for the remote servers as well.
+1. In our case we have an environment with _Python_ and _MongoDB_ containers inside (you can [create](/docs/EnvironmentManagement/Setting%20Up%20Environment) such one at any time), but this instruction is suitable for the remote servers as well.
 
 <div style={{
     display:'flex',
@@ -18,7 +18,7 @@ sidebar_position: 3
 
 </div>
 
-2. Connect your compute node via [SSH Gate](https://cloudmydc.com/).
+2. Connect your compute node via [SSH Gate](/docs/Deployment%20Tools/SSH/SSH%20Overview#ssh-gate-overview).
 
 <div style={{
     display:'flex',
@@ -30,7 +30,7 @@ sidebar_position: 3
 
 </div>
 
-3. Install a [MongoDB driver for Python](https://cloudmydc.com/) using the command below:
+3. Install a [MongoDB driver for Python](https://github.com/mongodb/mongo-python-driver) using the command below:
 
 ```bash
 pip install pymongo
@@ -58,7 +58,7 @@ else: print("You are connected!")
 client.close()
 ```
 
-Just adjust the [connection string](https://cloudmydc.com/) with a relevant date, which can be gained from email for your MongoDB node:
+Just adjust the [connection string](https://www.mongodb.com/docs/manual/reference/connection-string/) with a relevant date, which can be gained from email for your MongoDB node:
 
 - **{user}** - username to log into database with
 - **{password}** - password for the appropriate user
@@ -94,4 +94,4 @@ python script.py
 
 </div>
 
-The “You are connected!” string ensures, that application was able to connect the DB server successfully, so you can start managing database node by [extending code](https://cloudmydc.com/) with other operations.
+The “You are connected!” string ensures, that application was able to connect the DB server successfully, so you can start managing database node by [extending code](http://api.mongodb.com/python/current/api/pymongo/) with other operations.

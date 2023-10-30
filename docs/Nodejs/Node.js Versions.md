@@ -13,11 +13,11 @@ The platform allows to pre-select any of the latest major NodeJS application ser
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](https://cloudmydc.com/) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/QuickStart/Software%20Stack%20Versions) document.
 
 :::
 
-The required Node.js version can be selected when creating [a new environment](https://cloudmydc.com/), as well as switched for [the already existing](https://cloudmydc.com/) one.
+The required Node.js version can be selected when creating [a new environment](/docs/Nodejs/Node.js%20Versions#create-nodejs-environment), as well as switched for [the already existing](/docs/Nodejs/Node.js%20Versions#change-nodejs-version) one.
 
 ## Create Node.js Environment
 
@@ -45,7 +45,7 @@ The required Node.js version can be selected when creating [a new environment](h
 
 </div>
 
-3. Next, you can select the preferred [process manager](https://cloudmydc.com/) (_supervisor_, _forever_,_npm_ or _pm2_) through the _tags_ drop-down list (circled in the image below):
+3. Next, you can select the preferred [process manager](/docs/Nodejs/Nodejs%20Apps%20Specifications/Process%20Managers#nodejs-process-managers) (_supervisor_, _forever_,_npm_ or _pm2_) through the _tags_ drop-down list (circled in the image below):
 
 <div style={{
     display:'flex',
@@ -64,13 +64,13 @@ A Node.js process manager helps to control your application lifecycle, providing
 - **_forever_** - manages node processes (i.e. service start, stop, restart) to save services alive through keeping them run continuously
 - **_pm2_** - provides you with multiple special options (like monitoring, load balancing, deployment, etc.), allowing to manage your application more effectively
 
-Specify the remaining server and environment parameters (e.g. cloudlet limits, [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), environment name, etc.) and click the **Create** button in the bottom right frame corner.
+Specify the remaining server and environment parameters (e.g. cloudlet limits, [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#environment-regions), environment name, etc.) and click the **Create** button in the bottom right frame corner.
 
 ## Change Node.js Version
 
 You are also able to switch the version of your NodeJS server and process manager afterward, for the already existing environment.
 
-1. Access the [redeploy container(s)](https://cloudmydc.com/) dialog through either:
+1. Access the [redeploy container(s)](/docs/Container/Container%20Redeploy) dialog through either:
 
 - clicking on the **Change Environment Topology** button next to the appropriate environment.
 
@@ -111,8 +111,8 @@ In the opened frame, select to edit your Nodejs server version or tag (i.e. clic
 2. Within the opened R**_edeploy container(s)_** dialog, re-configure the following options:
 
 - **_Tag_** - provides a choice of needed Node.js version and preferred process manager
-- **_Keep volumes data_** - allows saving data in [Volumes](/docs/Container/Container%20Configuration/Volumes)
-- **_Simultaneous_** or **_Sequential deployment with delay_** (for [scaled servers](https://cloudmydc.com/) only) - defines whether all containers within a layer should be redeployed at once or one-by-one, to avoid downtime
+- **_Keep volumes data_** - allows saving data in [volumes](/docs/Container/Container%20Configuration/Volumes)
+- **_Simultaneous_** or **_Sequential deployment with delay_** (for [scaled servers](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) only) - defines whether all containers within a layer should be redeployed at once or one-by-one, to avoid downtime
 
 <div style={{
     display:'flex',
@@ -138,6 +138,6 @@ In the opened frame, select to edit your Nodejs server version or tag (i.e. clic
 
 :::tip
 
-For the detailed guidance on Node.js projects hosting, please, refer to the [Node.js Developer’s Center](https://cloudmydc.com/) guide.
+For the detailed guidance on Node.js projects hosting, please, refer to the [Node.js Developer’s Center](/docs/Nodejs/Node.js%20Dev%20Center#nodejs-hosting) guide.
 
 :::

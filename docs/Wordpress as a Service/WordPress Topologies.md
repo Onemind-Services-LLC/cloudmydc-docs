@@ -14,7 +14,7 @@ The list of offered WordPress packages and their specifics may vary for each pla
 
 ## WordPress Standalone
 
-The **WordPress Standalone** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LEMP](https://cloudmydc.com/) (Linux + NGINX + MariaDB + PHP) template with a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
+The **WordPress Standalone** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LEMP](/docs/PHP/PHP%20App%20Servers/LEMP%20&%20LLSMP) (Linux + NGINX + MariaDB + PHP) template with a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
 
 <div style={{
     display:'flex',
@@ -28,7 +28,7 @@ The **WordPress Standalone** package has an efficient single node topology based
 
 ## WordPress Standalone Pro
 
-The **WordPress Standalone Pro** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LLSMP](https://cloudmydc.com/) (Linux + LiteSpeed + MariaDB + PHP) template with a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
+The **WordPress Standalone Pro** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LLSMP](/docs/PHP/PHP%20App%20Servers/LEMP%20&%20LLSMP) (Linux + LiteSpeed + MariaDB + PHP) template with a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
 
 <div style={{
     display:'flex',
@@ -42,13 +42,13 @@ The **WordPress Standalone Pro** package has an efficient single node topology b
 
 :::tip Tip
 
-Learn about LiteSpeed Benefits Over Other Servers for WordPress Hosting in the dedicated blog article.
+Learn about _[*LiteSpeed Benefits Over Other Servers for WordPress Hosting*](https://cloudmydc.com/)_ in the dedicated blog article.
 
 :::
 
 ## WordPress WooCommerce
 
-The **WordPress WooCommerce** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LEMP](https://cloudmydc.com/) (Linux + NGINX + MariaDB + PHP) template with the [WooCommerce](https://cloudmydc.com/) plugin and a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
+The **WordPress WooCommerce** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LEMP](/docs/PHP/PHP%20App%20Servers/LEMP%20&%20LLSMP) (Linux + NGINX + MariaDB + PHP) template with the [WooCommerce](https://wordpress.org/plugins/woocommerce/) plugin and a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
 
 <div style={{
     display:'flex',
@@ -64,7 +64,7 @@ WooCommerce is a free, open-source e-commerce plugin designed specifically for W
 
 ## WordPress WooCommerce Pro
 
-The **WordPress WooCommerce Pro** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LLSMP](https://cloudmydc.com/) (Linux + LiteSpeed + MariaDB + PHP) template with the [WooCommerce](https://cloudmydc.com/) plugin and a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
+The **WordPress WooCommerce Pro** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LLSMP](/docs/PHP/PHP%20App%20Servers/LEMP%20&%20LLSMP) (Linux + LiteSpeed + MariaDB + PHP) template with the [WooCommerce](https://wordpress.org/plugins/woocommerce/) plugin and a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
 
 <div style={{
     display:'flex',
@@ -126,7 +126,7 @@ WooCommerce is a free, open-source e-commerce plugin designed specifically for W
 
 ## WordPress Multi-Region Standalone
 
-CloudMyDc Application Platform for WordPress provides a multi-region geographic distribution approach for WordPress CMS deployment. The application will be distributed as standalone instances across several [regions](https://cloudmydc.com/) within one cloud to ensure automatic fault-tolerance and low latency read operations for the users based on their location.
+CloudMyDc Application Platform for WordPress provides a multi-region geographic distribution approach for WordPress CMS deployment. The application will be distributed as standalone instances across several [regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) within one cloud to ensure automatic fault-tolerance and low latency read operations for the users based on their location.
 
 Such implementation provides a high availability level and ensures business continuity even in case of a data center outage. Additionally, having several WordPress instances in different locations over the globe can significantly improve website ranking from search engine side by decreasing response time and consequently attracting more customers worldwide.
 
