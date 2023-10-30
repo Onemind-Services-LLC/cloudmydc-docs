@@ -48,7 +48,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.0#extended-account-collaboration">
+                <a href=" /docs/PlatformOverview/Release%20Notes/Release%20Notes%207.0#extended-account-collaboration">
                     Learn More >>
                 </a>
             </div>
@@ -95,7 +95,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.0#api-changes">
+                <a href=" /docs/PlatformOverview/Release%20Notes/Release%20Notes%207.0#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -114,7 +114,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.0#software-stack-versions">
+                <a href=" /docs/PlatformOverview/Release%20Notes/Release%20Notes%207.0#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -158,7 +158,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.0#fixes-compatible-with-prior-versions">
+                <a href=" /docs/PlatformOverview/Release%20Notes/Release%20Notes%207.0#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -177,7 +177,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.0#bug-fixes">
+                <a href=" /docs/PlatformOverview/Release%20Notes/Release%20Notes%207.0#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -190,7 +190,7 @@ Fixed
 
 The platform’s **_account collaboration_** feature is a powerful tool that allows multiple users to work on the same project. The core idea is straightforward - you can share your environment with other accounts on the platform. Additionally, different permissions can be provided to the collaboration members to cover various use cases.
 
-In the current 7.0 upgrade, the feature received a major rework, mainly focusing on extending its flexibility. Two focal points are **roles and policies** mechanics for advanced permission management and **integration with [environment groups](http://localhost:3000/docs/EnvironmentManagement/Environment%20Groups/Overview)** to better organize shared components. All the features are wrapped in a new comprehensive UI:
+In the current 7.0 upgrade, the feature received a major rework, mainly focusing on extending its flexibility. Two focal points are **roles and policies** mechanics for advanced permission management and **integration with [environment groups]( /docs/EnvironmentManagement/Environment%20Groups/Overview)** to better organize shared components. All the features are wrapped in a new comprehensive UI:
 
 - **Shared by Me** - collaboration options for the primary account, it has three tabs:
   - **Members** - manages a list of collaboration members (invite new users, suspend or remove existing ones, customize shared environments, groups, roles, etc.)
@@ -212,11 +212,11 @@ The new collaboration flow remains the same in principle but much more configura
 
 You can find information on even more changes to the collaboration feature (ability to temporarily suspend collaboration, role assigning algorithm, direct environment sharing, etc.) in the dedicated documentation:
 
-- [Collaboration Overview](http://localhost:3000/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview)
-- [Collaboration Roles & Policies](http://localhost:3000/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Roles%20Policies)
+- [Collaboration Overview]( /docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview)
+- [Collaboration Roles & Policies]( /docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Roles%20Policies)
 - [Create Collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Create%20Collaboration)
-- [Collaboration User Experience](http://localhost:3000/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20User%20Experience)
-- [Share Environment](http://localhost:3000/docs/EnvironmentManagement/Share%20Environment)
+- [Collaboration User Experience]( /docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20User%20Experience)
+- [Share Environment]( /docs/EnvironmentManagement/Share%20Environment)
 
 :::danger Note
 
@@ -224,7 +224,7 @@ During the upgrade, the platform automatically generates configurations equivale
 
 :::
 
-[More info](http://localhost:3000/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview)
+[More info]( /docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview)
 
 <div style={{
         display: 'flex',
@@ -397,9 +397,9 @@ PaaS 7.0
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions]( /docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
 
-[More info](http://localhost:3000/docs/QuickStart/Software%20Stack%20Versions)
+[More info]( /docs/QuickStart/Software%20Stack%20Versions)
 
 <div style={{
         display: 'flex',

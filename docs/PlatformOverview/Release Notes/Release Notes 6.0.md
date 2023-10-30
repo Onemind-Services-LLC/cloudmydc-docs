@@ -322,7 +322,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0#fixes-compatible-with-prior-versions">
+                <a href=" /docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
