@@ -45,7 +45,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href=" /docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0.3#software-stack-versions">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0.3#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -240,9 +240,9 @@ Below, you can find the fixes that were implemented in the PaaS 6.0.3 release an
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions]( /docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
 
-[More info]( /docs/QuickStart/Software%20Stack%20Versions)
+[More info](/docs/QuickStart/Software%20Stack%20Versions)
 
 <div style={{
         display: 'flex',

@@ -145,7 +145,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href=" /docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1#apache-php-redeployment-amendments">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1#apache-php-redeployment-amendments">
                     Learn More >>
                 </a>
             </div>

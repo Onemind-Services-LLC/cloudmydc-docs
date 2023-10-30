@@ -44,7 +44,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href=" /docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#platform-rebranding">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#platform-rebranding">
                     Learn More >>
                 </a>
             </div>
@@ -63,7 +63,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href=" /docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#centos-stream-8-os-support">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#centos-stream-8-os-support">
                     Learn More >>
                 </a>
             </div>
@@ -107,7 +107,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href=" /docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#collaboration-policy-for-custom-commands">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#collaboration-policy-for-custom-commands">
                     Learn More >>
                 </a>
             </div>
@@ -126,7 +126,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href=" /docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#environment-selection-field-adjustment">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#environment-selection-field-adjustment">
                     Learn More >>
                 </a>
             </div>
@@ -145,7 +145,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href=" /docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#software-stack-versions">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -189,7 +189,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href=" /docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#fixes-compatible-with-prior-versions">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -208,7 +208,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href=" /docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#bug-fixes">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -266,7 +266,7 @@ In order to extend the capabilities of the [account collaboration](/docs/Account
 
 ## Environment Selection Field Adjustment
 
-In the current CloudMyDc Application Platform 7.2 release, the dashboard’s combo-boxes for environment selection were improved. For now, the displayed items provide better clarity by showing both the [custom alias]( /docs/EnvironmentManagement/Environment%20Aliases) (if specified) and the environment name. Such implementation uniquely identifies the provided options and helps avoid possible confusion when several environments have similar aliases.
+In the current CloudMyDc Application Platform 7.2 release, the dashboard’s combo-boxes for environment selection were improved. For now, the displayed items provide better clarity by showing both the [custom alias](/docs/EnvironmentManagement/Environment%20Aliases) (if specified) and the environment name. Such implementation uniquely identifies the provided options and helps avoid possible confusion when several environments have similar aliases.
 
 <div style={{
     display:'flex',
@@ -290,7 +290,7 @@ In the current CloudMyDc Application Platform 7.2 release, the dashboard’s com
 
 ## CentOS Stream 8 OS Support
 
-CloudMyDc Application Platform supports the most popular [operating system templates]( /docs/Container/Container%20Image%20Requirements), which allows using multiple different solutions from Docker Hub as [custom containers]( /docs/Container/Container%20Types). Due to the recent CentOS Linux 8 end of life, the recommended alternative template was added to the platform – **CentOS Stream 8**. You can find a [comparison of these two versions](https://centos.org/cl-vs-cs/) in the official documentation.
+CloudMyDc Application Platform supports the most popular [operating system templates](/docs/Container/Container%20Image%20Requirements), which allows using multiple different solutions from Docker Hub as [custom containers](/docs/Container/Container%20Types). Due to the recent CentOS Linux 8 end of life, the recommended alternative template was added to the platform – **CentOS Stream 8**. You can find a [comparison of these two versions](https://centos.org/cl-vs-cs/) in the official documentation.
 
 :::tip Note
 
@@ -433,9 +433,9 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions]( /docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
 
-[More info]( /docs/QuickStart/Software%20Stack%20Versions)
+[More info](/docs/QuickStart/Software%20Stack%20Versions)
 
 <div style={{
         display: 'flex',
