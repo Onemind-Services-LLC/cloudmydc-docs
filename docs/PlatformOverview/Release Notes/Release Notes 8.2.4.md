@@ -46,7 +46,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.2.4#almalinux-8-os-support">
                     Learn More >>
                 </a>
             </div>
@@ -92,7 +92,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.2.4#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -102,7 +102,7 @@ Changed
 
 ## AlmaLinux 8 OS Support
 
-Starting with the current 8.2.4 PaaS release, the alternative OS template for the discontinued CentOS Linux 8 stable release was changed to **_AlmaLinux 8_**. [AlmaLinux](https://cloudmydc.com/) is an open-source 1:1 binary-compatible clone of RHEL that is guided and built by the community.
+Starting with the current 8.2.4 PaaS release, the alternative OS template for the discontinued CentOS Linux 8 stable release was changed to **_AlmaLinux 8_**. [AlmaLinux](https://almalinux.org/) is an open-source 1:1 binary-compatible clone of RHEL that is guided and built by the community.
 
 :::danger
 
@@ -110,7 +110,7 @@ Note: CloudMyDc Application Platform no longer supports the previously used _Cen
 
 :::
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/Container/Container%20Image%20Requirements)
 
 <div style={{
         display: 'flex',
@@ -126,9 +126,9 @@ Note: CloudMyDc Application Platform no longer supports the previously used _Cen
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/QuickStart/Software%20Stack%20Versions)
 
 <div style={{
         display: 'flex',
