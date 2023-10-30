@@ -27,7 +27,7 @@ Let’s do it step-by-step:
 </div>
 
 2. Create a new user in a database:
-   How to create new user - [click here](https://cloudmydc.com/)
+   How to create new user - [click here](/docs/Database/MySQL-MariaDB-Percona/Connection%20to%20Applications/Java%20Connection#java-connection-to-mariadbmysqlpercona)
 
 ```bash
 Database name : jelasticDb

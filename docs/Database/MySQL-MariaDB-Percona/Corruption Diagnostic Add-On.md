@@ -4,7 +4,7 @@ sidebar_position: 4
 
 ## MySQL/MariaDB/Percona Corruption Diagnostic Add-On
 
-The **[Database Corruption Diagnostic](https://cloudmydc.com/)** add-on is available for all the MySQL/MariaDB/Percona databases (including cluster topologies) and can perform diagnostics to detect file corruption. It checks the integrity of the cluster’s indexes, tables, and databases.
+The **[Database Corruption Diagnostic](https://github.com/jelastic-jps/mysql-cluster/tree/master/addons/check-corrupts)** add-on is available for all the MySQL/MariaDB/Percona databases (including cluster topologies) and can perform diagnostics to detect file corruption. It checks the integrity of the cluster’s indexes, tables, and databases.
 
 The list of supported stacks for corruption diagnostic:
 
@@ -16,7 +16,7 @@ The list of supported stacks for corruption diagnostic:
 
 ## Add-On Installtion
 
-The add-on can be installed either automatically along with database cluster installation or manually from Marketplace.
+The add-on can be installed either automatically along with database cluster installation or manually from [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace#marketplace).
 
 1. Go to the **Add-Ons** section in the Marketplace and pick the **Database Corruption Diagnostic** add-on.
 
@@ -92,4 +92,4 @@ The operation will temporarily stop the database services, so be aware of the do
 
 </div>
 
-In case of detecting corrupted data, it is recommended to restore your database from a backup. You can use the **[Backup/Restore](https://cloudmydc.com/)** add-on to schedule regular backup creation, ensuring you always have a backup to restore your database in case of an emergency.
+In case of detecting corrupted data, it is recommended to restore your database from a backup. You can use the **[Backup/Restore](/docs/Database/MySQL-MariaDB-Percona/Backup-Restore%20Add-On#database-backuprestore-add-on)** add-on to schedule regular backup creation, ensuring you always have a backup to restore your database in case of an emergency.

@@ -13,10 +13,10 @@ Configuring JDBC pool connection for your application server can reduce delays a
 
 Herewith, both GlassFish and Payara Java application servers provide a native support of the connection pooling mechanism to enhance a database access. Follow the simple steps below to configure JDBC connection pool:
 
-- [Create Environment](https://cloudmydc.com/)
-- [Prepare Database](https://cloudmydc.com/)
-- [Configure Application Server](https://cloudmydc.com/)
-- [Connect from Java Code](https://cloudmydc.com/)
+- [Create Environment](/docs/Database/Database%20Hosting/JDBC%20Connection%20Pool#create-environment)
+- [Prepare Database](/docs/Database/Database%20Hosting/JDBC%20Connection%20Pool#prepare-database)
+- [Configure Application Server](/docs/Database/Database%20Hosting/JDBC%20Connection%20Pool#configure-application-server)
+- [Connect from Java Code](/docs/Database/Database%20Hosting/JDBC%20Connection%20Pool#connect-from-java-code)
 
 ## Create Environment
 

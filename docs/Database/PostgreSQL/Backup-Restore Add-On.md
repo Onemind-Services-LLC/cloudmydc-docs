@@ -4,11 +4,11 @@ sidebar_position: 3
 
 ## Database Backup/Restore Add-On
 
-**[Database Backup](https://cloudmydc.com/)** add-on is compatible with all the MySQL-based (MySQL/MariaDB/Percona), PostgreSQL, and Redis databases in the CloudMyDc Application Platform. It works in tandem with [Backup Storage](https://cloudmydc.com/) to help users automatically create and store database backups at the remote storage.
+**[Database Backup](https://github.com/jelastic-jps/database-backup-addon)** add-on is compatible with all the MySQL-based (MySQL/MariaDB/Percona), PostgreSQL, and Redis databases in the CloudMyDc Application Platform. It works in tandem with [Backup Storage](https://github.com/jelastic-jps/backup-storage) to help users automatically create and store database backups at the remote storage.
 
 :::danger Note
 
-When updating (redeploying) the PostgreSQL instance, it is <u>highly recommended</u> to create a database backup before the process. Refer to the official documentation for _[upgrading data via pg_dumpall](https://cloudmydc.com/)_ and _[pg_upgrade](https://cloudmydc.com/)_.
+When updating (redeploying) the PostgreSQL instance, it is <u>highly recommended</u> to create a database backup before the process. Refer to the official documentation for _[upgrading data via pg_dumpall](https://www.postgresql.org/docs/15/upgrading.html#UPGRADING-VIA-PGDUMPALL)_ and _[pg_upgrade](https://www.postgresql.org/docs/current/pgupgrade.html)_.
 
 :::
 
@@ -16,7 +16,7 @@ When updating (redeploying) the PostgreSQL instance, it is <u>highly recommended
 
 Before starting the add-on installation, you need to create a dedicated storage instance to keep all the backup data.
 
-1. If you don’t have one, it can be created in a few minutes using the dedicated **Backup Storage** package in the [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace).
+1. If you don’t have one, it can be created in a few minutes using the dedicated **Backup Storage** package in the [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace#marketplace).
 
 <div style={{
     display:'flex',
@@ -33,8 +33,8 @@ If you already have such storage, you can skip to the fourth step.
 2. Within the installation window, you can choose between the **_Standalone_** and **_Cluster_** storage options. Next, specify the preferred **Number of nodes** (for Cluster option) and **Storage size**. Finalize by providing the standard data:
 
 - **Environment** – environment domain name
-- **Display Name** – [environment’s alias](https://cloudmydc.com/)
-- **Region** – [environment’s region](https://cloudmydc.com/) (if multiple ones are available)
+- **Display Name** – [environment’s alias](/docs/EnvironmentManagement/Environment%20Aliases)
+- **Region** – [environment’s region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#environment-regions) (if multiple ones are available)
 
 <div style={{
     display:'flex',
@@ -46,7 +46,7 @@ If you already have such storage, you can skip to the fourth step.
 
 </div>
 
-3. Click the Install button and wait several minutes for the storage to be created. It will be automatically added to the “_Backup storage nodes_” [group](https://cloudmydc.com/).
+3. Click the Install button and wait several minutes for the storage to be created. It will be automatically added to the “_Backup storage nodes_” [group](/docs/EnvironmentManagement/Environment%20Groups/Overview).
 
 <div style={{
     display:'flex',
@@ -94,7 +94,7 @@ Locate the required **_Database Backup/Restore_** Add-On and click **Install**.
 
 </div>
 
-- **Manual (crontab)** - provide a simple [cron-based expression](https://cloudmydc.com/) (using the UTC zone) to schedule backups
+- **Manual (crontab)** - provide a simple [cron-based expression](https://en.wikipedia.org/wiki/Cron#Overview) (using the UTC zone) to schedule backups
 
 <div style={{
     display:'flex',

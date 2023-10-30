@@ -6,7 +6,7 @@ sidebar_position: 1
 
 **MariaDB**, **MySQL**, and **Percona** are highly popular open source databases, used by developers all over the world. In this instruction we’ll show you how to connect your Java application to these databases, standalone server and [clustered solution](https://cloudmydc.com/).
 
-1. Log into your PaaS account and [Create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with the **MariaDB** (or **MySQL**) database server (available within the **_SQL_** wizard section):
+1. Log into your PaaS account and [create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with the **MariaDB** (or **MySQL**) database server (available within the **_SQL_** wizard section):
 
 - for standalone database server
 
@@ -76,7 +76,7 @@ Log into the opened admin panel using credentials from the above-mentioned email
 
 </div>
 
-5. Return to dashboard and click the **Config** button next to the application server (Tomcat, in our case) to access [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager).
+5. Return to dashboard and click the **Config** button next to the application server (Tomcat, in our case) to access [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager#configuration-file-manager).
 
 <div style={{
     display:'flex',
@@ -236,9 +236,9 @@ public class DbManager {
 }
 ```
 
-8. [Deploy](https://cloudmydc.com/) our example application to your Tomcat server using the following link:
+8. [Deploy](/docs/Deployment/Deployment%20Guide) our example application to your Tomcat server using the following link:
 
-_[https://download.jelastic.com/public.php?service=files&t=b2c6e4e01d487dfd5af953ba31dac848&download](https://cloudmydc.com/)_
+_[https://download.jelastic.com/public.php?service=files&t=b2c6e4e01d487dfd5af953ba31dac848&download](/docs/Deployment/Deployment%20Guide)_
 
 <div style={{
     display:'flex',
@@ -262,7 +262,7 @@ _[https://download.jelastic.com/public.php?service=files&t=b2c6e4e01d487dfd5af95
 
 :::tip Note
 
-- Our example application already contains the jdbc-connectors for [MariaDB/MySQL](https://cloudmydc.com/) database access. However, to connect your own project, you need to manually upload them to the **webapps/{app_context}/WEB-INF/lib** folder on your application server.
+- Our example application already contains the jdbc-connectors for [MariaDB](https://mariadb.org/download/?t=mariadb&p=mariadb&r=11.3.0&os=windows&cpu=x86_64&pkg=msi&m=ossplanet)/[MySQL](https://dev.mysql.com/downloads/connector/j/) database access. However, to connect your own project, you need to manually upload them to the **webapps/{app_context}/WEB-INF/lib** folder on your application server.
 - Don’t forget to restart your application server to apply **_mydb.cfg_** changes, by pressing **Restart Node** button.
 
 <div style={{
@@ -319,11 +319,11 @@ You’ll see that the newly created table appeared with the name {date-time of c
 
 The platform also lets you extend your MariaDB/MySQL servers functionality by following the appropriate instructions in our documentation:
 
-- set up the preferred database replication type with embedded [Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances) feature in order to get the increased DB performance and data loss protection
-- adjust [Backups Scheduling](https://cloudmydc.com/) for ensuring safety of the information inside your DBs in the case of unexpected server failure
-- see the [Remote Access](https://cloudmydc.com/) instruction and learn how to access your database remotely via the preferred desktop MySQL client
-- use the [Dump Files Import/Export](https://cloudmydc.com/) guide to find out how to manually backup and restore your data from the previously created dumps
-- see the [Database connection strings](https://cloudmydc.com/) to get more info how to configure connection to different db types
+- set up the preferred database replication type with embedded [Auto-Clustering](https://cloudmydc.com/) feature in order to get the increased DB performance and data loss protection
+- adjust [Backups Scheduling](/docs/Database/Database%20Hosting/Manual%20Database%20Backups#manual-database-backups) for ensuring safety of the information inside your DBs in the case of unexpected server failure
+- see the [Remote Access](/docs/Database/MySQL-MariaDB-Percona/Remote%20Access#remote-access-to-mysqlmariadbpercona) instruction and learn how to access your database remotely via the preferred desktop MySQL client
+- use the [Dump Files Import/Export](/docs/Database/MySQL-MariaDB-Percona/Dump%20Import-Export) guide to find out how to manually backup and restore your data from the previously created dumps
+- see the [Database connection strings](/docs/Database/Database%20Hosting/Database%20Connection%20Strings#database-connection-strings) to get more info how to configure connection to different db types
 
 ## Video Tutorial on MySQL Connection to Java Application
 

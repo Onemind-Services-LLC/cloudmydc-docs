@@ -18,11 +18,11 @@ When striving to keep information in your PostgreSQL database safe, the first th
 
 </div>
 
-Below, we’ll explore the appropriate [database server adjustment](https://cloudmydc.com/), required for SSL enabling, and certificates generation for it. Then, we’ll create and add certs for [client](https://cloudmydc.com/) machine and, lastly, will establish secure [connection](https://cloudmydc.com/) to our server via pgAdmin tool. So, let’s go on!
+Below, we’ll explore the appropriate [database server adjustment](/docs/Database/PostgreSQL/Connection%20to%20Applications/SSL%20Connection%20to%20PostgreSQL#postgresql-server-configuration), required for SSL enabling, and certificates generation for it. Then, we’ll create and add certs for [client](/docs/Database/PostgreSQL/Connection%20to%20Applications/SSL%20Connection%20to%20PostgreSQL#client-certificates) machine and, lastly, will establish secure [connection](/docs/Database/PostgreSQL/Connection%20to%20Applications/SSL%20Connection%20to%20PostgreSQL#establish-connection-via-pgadmin) to our server via pgAdmin tool. So, let’s go on!
 
 ## PostgreSQL Server Configuration
 
-Obviously, for this tutorial we’ll use an environment with PostgreSQL database inside - you can easily create such if you haven’t done this yet.
+Obviously, for this tutorial we’ll use an environment with PostgreSQL database inside - you can easily [create](/docs/EnvironmentManagement/Setting%20Up%20Environment) such if you haven’t done this yet.
 
 <div style={{
     display:'flex',
@@ -34,15 +34,15 @@ Obviously, for this tutorial we’ll use an environment with PostgreSQL database
 
 </div>
 
-1. To start with, connect to your database server via [SSH Gate](https://cloudmydc.com/).
+1. To start with, connect to your database server via [SSH Gate](/docs/Deployment%20Tools/SSH/SSH%20Overview#ssh-gate-overview).
 
 :::tip Tip
 
 In case you haven’t performed similar operation before, you need to:
 
-- [generate](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) an SSH keypair
-- [add your public SSH key](/docs/Deployment%20Tools/SSH/Add%20SSH%20Key) to the dashboard
-- [access your account](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) via SSH protocol
+- [generate](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key#generate-ssh-key) an SSH keypair
+- [add your public SSH key](/docs/Deployment%20Tools/SSH/Add%20SSH%20Key#add-ssh-key) to the dashboard
+- [access your account](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview#ssh-access) via SSH protocol
 
 :::
 
@@ -66,8 +66,8 @@ Within this tutorial, we’ll briefly consider how you can generate them by your
 
 :::tip Tips
 
-- we won’t explain commands parameters in details here, but if you’d like to know more, just refer to the [Self-Signed Custom SSL](https://cloudmydc.com/) page in our documentation or check the official [OpenSSL](https://cloudmydc.com/) site for the full list of available actions
-- you can also use [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL) certificate similarly to the described below (follow the Generate a Custom SSL Certificate section of the linked guide to get such). In this latter case, you can skip the generation instruction and jump directly to the [6th step](https://cloudmydc.com/) of this instruction
+- we won’t explain commands parameters in details here, but if you’d like to know more, just refer to the [Self-Signed Custom SSL](/docs/ApplicationSetting/SSL/Self-Signed%20Custom%20SSL#self-signed-custom-ssl-certificates) page in our documentation or check the official [OpenSSL](https://www.openssl.org/docs/manmaster/man1/openssl.html) site for the full list of available actions
+- you can also use [custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL#custom-ssl-certificates) certificate similarly to the described below (follow the Generate a Custom SSL Certificate section of the linked guide to get such). In this latter case, you can skip the generation instruction and jump directly to the [6th step](/docs/Database/PostgreSQL/Connection%20to%20Applications/SSL%20Connection%20to%20PostgreSQL#postgresql-server-configuration) of this instruction
 
 :::
 
@@ -338,7 +338,7 @@ sudo service postgresql restart
 
 Now, let’s create one more set of SSL certificate files for client instance, in order to support secure connection on both sides.
 
-1. Return to the terminal window with SSH connection to your PostgreSQL server you’ve operated through during server [setup](https://cloudmydc.com/) (or reconnect to it) - you’ll need your server certificates for further actions.
+1. Return to the terminal window with SSH connection to your PostgreSQL server you’ve operated through during [server setup](/docs/Database/PostgreSQL/Connection%20to%20Applications/SSL%20Connection%20to%20PostgreSQL#postgresql-server-configuration) (or reconnect to it) - you’ll need your server certificates for further actions.
 
 Once inside, generate a private key for client (also without a pass phrase, just as it was done in the previous section), for example within the **tmp** directory:
 
@@ -381,7 +381,7 @@ openssl x509 -req -in /tmp/postgresql.csr -CA root.crt -CAkey server.key -out /t
 
 </div>
 
-3. After the files - postgresql.key, postgresql.crt, root.crt - are ready, you need to move them to to the .**postgresql** folder at your client machine (for that, you can use [FTP add-on](https://cloudmydc.com/) or just copy and paste files content).
+3. After the files - postgresql.key, postgresql.crt, root.crt - are ready, you need to move them to to the .**postgresql** folder at your client machine (for that, you can use [FTP add-on](/docs/Deployment%20Tools/FTP-FTPS%20Support#ftpftps-support) or just copy and paste files content).
 
 :::tip Tip
 
@@ -409,9 +409,9 @@ Don’t forget to remove keys from the **tmp** directory on your DB server after
 
 ## Establish Connection via PgAdmin
 
-Eventually, after server and client configurations are done, you are ready to establish the connection. In our case, we’ll use the **[pgAdmin 3](https://cloudmydc.com/)** tool as an example, so get this application (or any other preferred one) installed beforehand.
+Eventually, after server and client configurations are done, you are ready to establish the connection. In our case, we’ll use the **[pgAdmin 3](https://www.pgadmin.org/)** tool as an example, so get this application (or any other preferred one) installed beforehand.
 
-1. In order to connect to the DB server via SSL, you need either [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) or [endpoint](https://cloudmydc.com/) being attached for your PostgreSQL database container.
+1. In order to connect to the DB server via SSL, you need either [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip) or [endpoint](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#endpoints-a-direct-connection-to-the-cloud) being attached for your PostgreSQL database container.
 
 We’ll consider the latter case - access environment **Settings**, switch to the **_Endpoints_** section and **Add** new endpoint with the same-named button at the top pane.
 
@@ -460,7 +460,7 @@ In the **_Properties_** tab of the opened window, specify the following data:
 
 That’s all! The required certificates will be loaded automatically during the first connection establishment, so just click **OK** to start managing your database via secure connection.
 
-Now you can connect your application to database (use the [Connect to Database](https://cloudmydc.com/) guide as an example) and enable SSL configurations for your project to encrypt your data while fetching/transferring.
+Now you can connect your application to database (use the [Connect to Database](/docs/Database/Database%20Hosting/Database%20Connection%20Strings#database-connection-strings) guide as an example) and enable SSL configurations for your project to encrypt your data while fetching/transferring.
 
 :::tip Tip
 

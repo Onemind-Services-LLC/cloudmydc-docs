@@ -16,7 +16,7 @@ sidebar_position: 2
 
 <div>
 
-**[CentOS](https://cloudmydc.com/)** (Community ENTerprise Operating System) is a free community-driven project, with open source code delivered from RHEL Linux distribution.
+**[CentOS](https://www.centos.org/)** (Community ENTerprise Operating System) is a free community-driven project, with open source code delivered from RHEL Linux distribution.
 
 Due to continuous community contribution, CentOS offers enterprise-level stability strengthened by robust performance and represents a reliable, low-maintenance, secure option for running virtual private servers.
 
@@ -28,7 +28,7 @@ Due to continuous community contribution, CentOS offers enterprise-level stabili
 
 So, to effortlessly set up your own CentOS [Elastic VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information) inside the platform, log in to your PaaS account and access environment topology wizard.
 
-The appropriate instance (i.e. **_CentOS 6.8_** or **_CentOS 7.2_**) can be found within the appropriate VPS section at the bottom left wizard corner (for the detailed installation guidance, refer to the [VPS Configuration](https://cloudmydc.com/) page).
+The appropriate instance (i.e. **_CentOS 6.8_** or **_CentOS 7.2_**) can be found within the appropriate VPS section at the bottom left wizard corner (for the detailed installation guidance, refer to the [VPS Configuration](/docs/Elastic%20VPS/Elastic%20VPS%20Management/VPS%20Configuration) page).
 
 <div style={{
     display:'flex',
@@ -42,13 +42,13 @@ The appropriate instance (i.e. **_CentOS 6.8_** or **_CentOS 7.2_**) can be foun
 
 :::danger Note
 
-By default, the VPS node is delivered with the automatically attached Public IP address (one per instance).
+By default, the VPS node is delivered with the automatically attached [**Public IP**](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address (one [per instance](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling)).
 
 :::
 
-The platform provides a set of [inbuilt tools](https://cloudmydc.com/) for applying some basic settings to your VPS instance right via the dashboard UI. For more complicated configs, you’ll need to access it via SSH - this can be accomplished through the SSH Gate or via any [3d-party software](https://cloudmydc.com/) (i.e. external SSH client) using Public IP address.
+The platform provides a set of [inbuilt tools](/docs/Elastic%20VPS/Elastic%20VPS%20Management/VPS%20Configuration#elastic-vps-inbuilt-tools) for applying some basic settings to your VPS instance right via the dashboard UI. For more complicated configs, you’ll need to access it via SSH - this can be accomplished through the [SSH Gate](/docs/Elastic%20VPS/Elastic%20VPS%20Management/Linux%20VPS%20Access%20via%20SSH%20Gate) or via any [3d-party software](/docs/Elastic%20VPS/Elastic%20VPS%20Management/Linux%20VPS%20Access%20via%20Public%20IP) (i.e. external SSH client) using Public IP address.
 
 Once your virtual private server on top of CentOS is set up and properly configured, consider exploring the following example tutorials:
 
-- [How to Run Java Console Application](https://cloudmydc.com/)
-- [How to Set Up Mail Server Inside VPS](https://cloudmydc.com/)
+- [How to Run Java Console Application](/docs/Elastic%20VPS/Linux%20VPS%20Use%20Cases/Run%20Java%20Console%20Application)
+- [How to Set Up Mail Server Inside VPS](/docs/Elastic%20VPS/Linux%20VPS%20Use%20Cases/Setting%20Mail%20Server%20Inside%20VPS)

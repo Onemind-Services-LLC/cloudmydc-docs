@@ -6,7 +6,7 @@ sidebar_position: 4
 
 **MySQL**, **MariaDB**, and **Percona** are among of the most popular open source SQL databases, used by world’s largest organizations. In this guide we’ll overview a simple example of **Node.js** application connection to MySQL or MariaDB server.
 
-1. Log into your PaaS account and [Create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with MySQL (or MariaDB) database server, we’ll also add a NodeJS compute node for this tutorial.
+1. Log into your PaaS account and [create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with MySQL (or MariaDB) database server, we’ll also add a NodeJS compute node for this tutorial.
 
 <div style={{
     display:'flex',
@@ -18,7 +18,7 @@ sidebar_position: 4
 
 </div>
 
-2. Access your NodeJS server via SSH, e.g. with embedded [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH) client.
+2. Access your NodeJS server via SSH, e.g. with embedded [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH#ssh-access-via-web-browser) client.
 
 <div style={{
     display:'flex',
@@ -30,7 +30,7 @@ sidebar_position: 4
 
 </div>
 
-3. Once connected, get an official MySQL driver for Node.js (compatible with MariaDB) by executing the following command:
+3. Once connected, get an official [MySQL driver for Node.js](https://www.npmjs.com/package/mysql) (compatible with MariaDB) by executing the following command:
 
 ```bash
 npm install mysql
@@ -111,4 +111,4 @@ node script.js
 
 </div>
 
-For successful connection a “You are connected!” phrase will be displayed in terminal, otherwise error description will be provided. Now, when you are sure your database container is accessible, [expand the code](https://cloudmydc.com/) to execute some real actions on your DB server.
+For successful connection a “You are connected!” phrase will be displayed in terminal, otherwise error description will be provided. Now, when you are sure your database container is accessible, [expand the code](https://www.npmjs.com/package/mysql) to execute some real actions on your DB server.

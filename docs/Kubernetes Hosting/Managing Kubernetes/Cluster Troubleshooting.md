@@ -6,9 +6,9 @@ sidebar_position: 3
 
 The **Kubernetes Cluster** package is an extremely complicated product, which includes multiple steps required to set up the solution. Herewith, each action can fail due to various reasons, which should be analyzed to prevent problem occurrence in the future. Below, we’ll overview the main troubleshooting steps during the different stages and for multiple log files:
 
-- [K8s Installation](https://cloudmydc.com/)
-- [Events Tracking](https://cloudmydc.com/)
-- [Pod Logs](https://cloudmydc.com/)
+- [K8s Installation](/docs/Kubernetes%20Hosting/Managing%20Kubernetes/Cluster%20Troubleshooting#k8s-installation)
+- [Events Tracking](/docs/Kubernetes%20Hosting/Managing%20Kubernetes/Cluster%20Troubleshooting#events-tracking)
+- [Pod Logs](/docs/Kubernetes%20Hosting/Managing%20Kubernetes/Cluster%20Troubleshooting#pod-logs)
 
 ## K8s Installation
 
@@ -63,5 +63,5 @@ example output from the **_kubectl get events -n $namespace_** command
 After scheduling pod(s) to run on a free node, you can follow the appropriate logs via:
 
 - _Kubernetes Dashboard_ - navigate to the **_pod_** page and click the **Logs** button in the top right corner
-- _kubectl_ - utilize commands for the [pods management](https://cloudmydc.com/)
+- _kubectl_ - utilize commands for the [pods management](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#interacting-with-running-pods)
   For example, these logs can help find the root cause of the “_Back-off restart failed container_” event for your pods.

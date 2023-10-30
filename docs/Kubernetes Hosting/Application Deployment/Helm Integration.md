@@ -4,9 +4,9 @@ sidebar_position: 1
 
 ## Kubernetes Cluster: Helm Integration
 
-Kubernetes provides multiple options to deploy applications. One of the most common methods is to use the **[Helm](https://cloudmydc.com/)** package manager. If you are looking to run a popular or any relatively known solution in your Kubernetes cluster, most likely it can be found as a preconfigured package that can be installed in a matter of minutes. Helm helps you install Kubernetes applications from remote repositories as well as create local Helm charts.
+Kubernetes provides multiple options to deploy applications. One of the most common methods is to use the **[Helm](https://helm.sh/)** package manager. If you are looking to run a popular or any relatively known solution in your Kubernetes cluster, most likely it can be found as a preconfigured package that can be installed in a matter of minutes. Helm helps you install Kubernetes applications from remote repositories as well as create local Helm charts.
 
-Helm is available on all control plane nodes of the **Kubernetes Cluster** by default and requires no additional configuration. Just connect to the node (e.g. via [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)), and you can start working with Helm. The package manager version is automatically updated during the [Kubernetes Cluster upgrades](https://cloudmydc.com/).
+Helm is available on all control plane nodes of the **Kubernetes Cluster** by default and requires no additional configuration. Just connect to the node (e.g. via [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)), and you can start working with Helm. The package manager version is automatically updated during the [Kubernetes Cluster upgrades](/docs/Kubernetes%20Hosting/Managing%20Kubernetes/Cluster%20Upgrade).
 
 Helm works with three big concepts:
 
@@ -18,15 +18,15 @@ Helm installs **_charts_** into Kubernetes, creating a new **_release_** for eac
 
 In this guide, we’ll cover all the main stages of working with Helm:
 
-- [searching for charts and working with repositories](https://cloudmydc.com/)
-- [installing new Helm applications](https://cloudmydc.com/)
-- [managing existing applications](https://cloudmydc.com/)
+- [searching for charts and working with repositories](/docs/Kubernetes%20Hosting/Application%20Deployment/Helm%20Integration#finding-helm-charts)
+- [installing new Helm applications](/docs/Kubernetes%20Hosting/Application%20Deployment/Helm%20Integration#installing-helm-package)
+- [managing existing applications](/docs/Kubernetes%20Hosting/Application%20Deployment/Helm%20Integration#managing-helm-applications)
 
 :::tip Tip
 
 Helm is useful not only for its ready-to-use solutions, but also as a versioning and standardization tool for project development. At first, when you are working on a small project, the scripted deployment approach can be enough for your needs. However, the complexity can rump up pretty quickly, requiring more and more adjustments to your YAML files. For example, even deploying into staging and production environments requires tweaks like database URLs.
 
-At some point, you may feel that it’s hard to keep track of the interaction and dependencies of the components. Usually, this means that your environment’s complexity is outgrowing your custom deployment scripts. In such a situation, it might be a good time to consider Helm as a potential solution that will replace your homegrown scripts. The [Chart Development Guide](https://cloudmydc.com/) will explain how to develop your own charts.
+At some point, you may feel that it’s hard to keep track of the interaction and dependencies of the components. Usually, this means that your environment’s complexity is outgrowing your custom deployment scripts. In such a situation, it might be a good time to consider Helm as a potential solution that will replace your homegrown scripts. The [Chart Development Guide](https://helm.s/docs/topics/charts/) will explain how to develop your own charts.
 
 :::
 
@@ -36,7 +36,7 @@ There are a lot of preconfigured solutions that can be installed inside the Kube
 
 Helm comes with a powerful **_search_** command that can be used to search two different source types:
 
-- **_helm search hub_** searches the [Artifact Hub](https://cloudmydc.com/) (distributed community Helm chart repository), which lists helm charts from dozens of repositories
+- **_helm search hub_** searches the [Artifact Hub](https://artifacthub.io/) (distributed community Helm chart repository), which lists helm charts from dozens of repositories
 
 For example, you can find all publicly available charts for WordPress by running:
 
@@ -56,7 +56,7 @@ helm search hub wordpress
 
 - **_helm search repo_** searches the repositories you have added to your local helm client (with helm repo add). This search is done over local data, and no public network connection is needed
 
-Helm 3 (used since Kubernetes 1.18.10) no longer ships with a default chart repository. You can use the **_helm repo_** commands to add, list, and remove repositories. For example, let’s add popular [Bitnami](https://cloudmydc.com/) repositories:
+Helm 3 (used since Kubernetes 1.18.10) no longer ships with a default chart repository. You can use the **_helm repo_** commands to add, list, and remove repositories. For example, let’s add popular [Bitnami](https://github.com/bitnami/charts) repositories:
 
 ```bash
 helm repo add bitnami https://charts.bitnami.com/bitnami
@@ -109,9 +109,9 @@ helm repo update
 To install a new package, use the **_helm install_** command. At its simplest, it takes two arguments:
 
 - **_{name}_** - a release name that you pick (e.g. mywordpress)
-- **_{chart}_** - the name of the chart you want to install (e.g. _[bitnami/wordpress](https://cloudmydc.com/)_)
+- **_{chart}_** - the name of the chart you want to install (e.g. _[bitnami/wordpress](https://github.com/bitnami/charts/tree/main/bitnami/wordpress)_)
 
-Additionally, you can provide chart options to customize the application (see more details in the [managing Helm section](https://cloudmydc.com/)). For example, let’s change the blog name with the _--set wordpressBlogName=‘My Blog!'_ parameter.
+Additionally, you can provide chart options to customize the application (see more details in the [managing Helm section](/docs/Kubernetes%20Hosting/Application%20Deployment/Helm%20Integration#managing-helm-applications)). For example, let’s change the blog name with the _--set wordpressBlogName=‘My Blog!'_ parameter.
 
 ```bash
 helm install --set wordpressBlogName='My Blog!' mywordpress bitnami/wordpress
@@ -267,7 +267,7 @@ If needed, you can use the upgrade command with the **--reset-values** flag to r
 
 :::
 
-Due to the specifics of our WordPress chart from the [installing section](https://cloudmydc.com/), you must provide current passwords when upgrading the release. Let’s add these values into corresponding variables for convenience:
+Due to the specifics of our WordPress chart from the [installing section](/docs/Kubernetes%20Hosting/Application%20Deployment/Helm%20Integration#installing-helm-package), you must provide current passwords when upgrading the release. Let’s add these values into corresponding variables for convenience:
 
 ```bash
 export WORDPRESS_PASSWORD=$(kubectl get secret --namespace "default" mywordpress -o jsonpath="{.data.wordpress-password}" | base64 --decode)

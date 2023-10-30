@@ -18,8 +18,6 @@ import obj from './EndPoints.json'
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/Endpoints/1-logo.png)
 
 </div>

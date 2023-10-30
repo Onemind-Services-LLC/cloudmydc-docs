@@ -62,8 +62,6 @@ According to the settings in the image above, both backends will be checked for 
     margin: '0 0 1rem 0'
 }}>
 
-<!-- ![Locale Dropdown](./img/FILE_NAME/IMAGE_NAME) -->
-
 ![Locale Dropdown](./img/FailoverProtection/03-traffic-distributor-reload-configuration.png)
 
 </div>

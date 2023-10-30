@@ -14,7 +14,7 @@ The add-on can only be installed on top of the **PostgreSQL** and **Pgpool-II** 
 
 :::tip Tip
 
-The solution is also available from the Marketplace or can be imported from the repository on GitHub.
+The solution is also available from the [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace#marketplace) or can be imported from the [repository](https://github.com/jelastic-jps/postgres-ssl-addon/tree/main) on GitHub.
 
 :::
 
@@ -120,7 +120,7 @@ hostssl all all 0.0.0.0/0 scram-sha-256
 
 </div>
 
-- If you want to enable user authentication via client certificates, you need to manually add “cert” as auth method.
+- If you want to enable user authentication via client certificates, you need to manually add “cert” as [auth method](https://www.postgresql.org/docs/current/auth-methods.html).
 
 **Pgpool-II configurations:**
 
@@ -193,16 +193,16 @@ After the installation, the add-on can be found under the **Add-Ons** tab for th
 The available configuration options are straightforward:
 
 - **Re-issue certificates** – generates SSL certificates for secure connection anew (e.g. if compromised or accidentally removed)
-- **Configuration Tutorial** – opens the manual guide on _[Establishing SSL Connection to PostgreSQL](https://cloudmydc.com/)_
+- **Configuration Tutorial** – opens the manual guide on _[Establishing SSL Connection to PostgreSQL](/docs/Database/PostgreSQL/Connection%20to%20Applications/SSL%20Connection%20to%20PostgreSQL#establishing-ssl-connection-to-postgresql-db-server)_
 - **Uninstall** (in the add-on’s menu in the top-right corner) - removes the add-on, custom configs, and generated SSL certificates from the layer
 
 ## Secure Connection to PostgreSQL
 
-1. The **_“encryption in transit”_** (server-side encryption) functionality works immediately after the installation. You can check it by providing the client with the access credentials and establishing the connection. We’ll use the **_[psql](https://cloudmydc.com/)_** utility for this example.
+1. The **_“encryption in transit”_** (server-side encryption) functionality works immediately after the installation. You can check it by providing the client with the access credentials and establishing the connection. We’ll use the **_[psql](https://www.postgresql.org/docs/current/app-psql.html)_** utility for this example.
 
 :::tip Tip
 
-You can use an [endpoint](https://cloudmydc.com/) or [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) as your database entry point for external connection. Let’s check the endpoint example (to the Pgpool-II node for the cluster):
+You can use an [endpoint](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#endpoints-a-direct-connection-to-the-cloud) or [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip) as your database entry point for external connection. Let’s check the endpoint example (to the Pgpool-II node for the cluster):
 
 <div style={{
     display:'flex',
@@ -269,6 +269,6 @@ psql "sslmode=verify-ca sslrootcert={path/to/root.crt} sslcert={path/to/client.c
 
 :::tip Tip
 
-Alternatively, you can check authentication with client certificates as described in the SSL Connection to PostgreSQL guide.
+Alternatively, you can check authentication with client certificates as described in the [SSL Connection to PostgreSQL](/docs/Database/PostgreSQL/Connection%20to%20Applications/SSL%20Connection%20to%20PostgreSQL#establish-connection-via-pgadmin) guide.
 
 :::

@@ -19,11 +19,11 @@ Database clusterization is an obligatory requirement for highly loaded productio
 The implemented solution provides a set of benefits:
 
 - **high availability with pre-configured replication options** - Primary-Secondary, Primary-Primary, Galera, XtraDB
-- **scalability and autodiscovery** – new nodes, added during [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling), are connected to the cluster with all required adjustments being applied automatically
+- **scalability and autodiscovery** – new nodes, added during [horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling#horizontal-scaling-inside-the-cloud-multi-node), are connected to the cluster with all required adjustments being applied automatically
 - **efficient load balancing** – each cluster is supplemented with two ProxySQL nodes for load balancing with automatic splitting of read/write requests
 - **automated failover** – the database nodes that are temporarily unavailable or have high latency are automatically excluded from the cluster and re-added once the connection is restored
 
-All these benefits can be achieved just in a few clicks within a topology wizard. Explore the steps below to activate [auto-clustering for your MariaDB/MySQL/Percona databases](https://cloudmydc.com/) in PaaS.
+All these benefits can be achieved just in a few clicks within a topology wizard. Explore the steps below to activate [auto-clustering for your MariaDB/MySQL/Percona databases](https://github.com/jelastic-jps/mysql-cluster) in PaaS.
 
 ## Enable Automatic Clustering for Databases
 
@@ -91,15 +91,15 @@ During cluster creation, the platform automatically generates database access cr
 
 </div>
 
-3. Press **Apply** and custom credentials will be mailed to you upon cluster successful installation as for access to the [PHP MyAdmin at Primary Node](https://cloudmydc.com/) and database cluster [Entry Point](https://cloudmydc.com/).
+3. Press **Apply** and custom credentials will be mailed to you upon cluster successful installation as for access to the **PHP MyAdmin at Primary Node** and database cluster **Entry Point**.
 
 ## Cluster Horizontal Scaling
 
-If you decide to scale the primary-secondary/primary-primary topologies with an extra database node, it will be created via cloning an existing secondary node. Once the cloning procedure is completed the database on the new cluster member catches up data via binlog replay. Such an algorithm guarantees the [binlog](https://cloudmydc.com/) will never expire and horizontal scaling takes a short period of time.
+If you decide to scale the primary-secondary/primary-primary topologies with an extra database node, it will be created via cloning an existing secondary node. Once the cloning procedure is completed the database on the new cluster member catches up data via binlog replay. Such an algorithm guarantees the [binlog](https://dev.mysql.com/doc/dev/mysql-server/latest/) will never expire and horizontal scaling takes a short period of time.
 
 ## Cluster Layers Isolation
 
-Depending on whether you are going to use an external application or not, you may decide what layers you will expose outside - all or the entry point proxy layer only. Turn the SLB access switch into the required position for each layer and click **Create**.
+Depending on whether you are going to use an external application or not, you may decide what layers you will expose outside - all or the entry point proxy layer only. Turn the [SLB access](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer#deny-access-via-shared-load-balancer) switch into the required position for each layer and click **Create**.
 
 <div style={{
     display:'flex',
@@ -139,7 +139,7 @@ After successful installation, you’ll receive a number of emails with the clus
 
 </div>
 
-- **Entry Point for Connections to Database Cluster** - [hostname and credentials for connecting](https://cloudmydc.com/) an application to the database cluster.These nodes form a proxy layer referred to as the entry point for the database cluster with hostname as follows: **_proxy.${envName}.${platformDomain}_**.
+- **Entry Point for Connections to Database Cluster** - [hostname and credentials for connecting](/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#hostnames-for-specific-layers) an application to the database cluster.These nodes form a proxy layer referred to as the entry point for the database cluster with hostname as follows: **_proxy.${envName}.${platformDomain}_**.
 
 <div style={{
     display:'flex',
@@ -164,7 +164,7 @@ Substitute and with credentials of a newly created database account.
 
 :::
 
-- **Cluster Orchestrator Panel** - credentials to access the Orchestrator panel, intended for convenient cluster management. Use the received credentials to access admin panel of cluster Orchestrator installed on ProxySQL node, that provides a possibility to review the cluster topology information: slick visualization of topologies, replication problems if there are any, read/write distribution, state of health check-ups and autodiscovery of newly added DB nodes, etc.
+- **Cluster Orchestrator Panel** - credentials to access the Orchestrator panel, intended for convenient cluster management. Use the received credentials to access admin panel of cluster [Orchestrator](https://github.com/openark/orchestrator) installed on ProxySQL node, that provides a possibility to review the cluster topology information: slick visualization of topologies, replication problems if there are any, read/write distribution, state of health check-ups and autodiscovery of newly added DB nodes, etc.
 
 <div style={{
     display:'flex',

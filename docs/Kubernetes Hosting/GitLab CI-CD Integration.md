@@ -2,6 +2,8 @@
 sidebar_position: 10
 ---
 
+## work todo
+
 <div style={{
     display: 'grid',
     gridTemplateColumns: '0.7fr 1fr',
@@ -13,8 +15,6 @@ sidebar_position: 10
     alignItems: 'center',
     justifyContent: 'cetner',
 }}>
-
-<!-- Image Url changes -->
 
 ![Locale Dropdown](./img/GitLabCI-CDIntegration/image22-300x300.png)
 
@@ -58,7 +58,7 @@ All of them may be done with platform automation. Also, we will go through the s
 
 ## Kubernetes and GitLab Installation
 
-Sign in to the Jelastic platform dashboard, go to the [Marketplace](https://cloudmydc.com/), find and install **DevOps Lab - GitLab Server** and **Kubernetes Cluster** applications one by one. The installation sequence is arbitrary. Note that the solution from this guide is available only for billing customers.
+Sign in to the Jelastic platform dashboard, go to the [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace), find and install **DevOps Lab - GitLab Server** and **Kubernetes Cluster** applications one by one. The installation sequence is arbitrary. Note that the solution from this guide is available only for billing customers.
 
 <div style={{
     display:'flex',

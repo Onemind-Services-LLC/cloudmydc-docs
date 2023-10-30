@@ -4,7 +4,7 @@ sidebar_position: 5
 
 ## Database Cluster Recovery Add-On
 
-The platform has several popular out-of-box clustering options for the MariaDB/MySQL databases, which can be automatically implemented via the [Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances) feature. Such database clusters offer an advanced high availability and auto-scalability while remaining accessible to any user through automation.
+The platform has several popular out-of-box clustering options for the MariaDB/MySQL databases, which can be automatically implemented via the [auto-clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#auto-clustering-of-instances-via-topology-wizard) feature. Such database clusters offer an advanced high availability and auto-scalability while remaining accessible to any user through automation.
 
 In order to make the solution even more alluring, the platform offers a free diagnostic and recovery add-on to help with database maintenance. Currently, the **Database Cluster Recovery** add-on supports the following database clusters:
 
@@ -26,7 +26,7 @@ During diagnostic, the add-on checks the following:
 
 In order to perform the required recovery operations, the add-on applies the following adjustments to the database cluster during the installation:
 
-A replica user is added to perform the validation of the clusters. Also, this user is used in the ProxySQL configuration. The credentials can be viewed via the dedicated [environment variables](/docs/Container/Container%20Configuration/Variables):
+A replica user is added to perform the validation of the clusters. Also, this user is used in the ProxySQL configuration. The credentials can be viewed via the dedicated [environment variables](/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables):
 
 - **REPLICA_USER**: repl-xxxxxx
 - **REPLICA_PSWD**: xxxxxxxxxxxx
@@ -45,7 +45,7 @@ Also, SSH access is configured between the database nodes (with the dedicated se
 
 ## Add-On Installation
 
-The add-on is available via the platform Marketplace. Alternatively, you can import the appropriate **_[Database Cluster Recovery](https://cloudmydc.com/)_** package from GitHub.
+The add-on is available via the platform Marketplace. Alternatively, you can import the appropriate **_[Database Cluster Recovery](https://github.com/jelastic-jps/mysql-cluster/tree/master/addons/recovery)_** package from GitHub.
 
 <div style={{
     display:'flex',
@@ -119,7 +119,7 @@ In case some problems are discovered, you can try to resolve them automatically 
 
 :::danger Note
 
-We recommend [making a backup](https://cloudmydc.com/) of the database before the recovery.
+We recommend [making a backup](/docs/Database/Database%20Hosting/Manual%20Database%20Backups#manual-database-backups) of the database before the recovery.
 
 :::
 
@@ -133,4 +133,4 @@ We recommend [making a backup](https://cloudmydc.com/) of the database before th
 
 </div>
 
-For additional details or in case of recovery failure, you can check the **_db_recovery_** [log](https://cloudmydc.com/) mentioned above. Also, check the **[Manual Recovery](https://cloudmydc.com/)** guide if the problem is not resolved.
+For additional details or in case of recovery failure, you can check the **_db_recovery_** [log](/docs/ApplicationSetting/Built-in%20Monitoring/Log%20Files#view-log-files) mentioned above. Also, check the **[Manual Recovery](https://github.com/jelastic-jps/mysql-cluster/blob/master/addons/recovery/docs/ManualRecoveryGuide.md#configuration-file-restoration)** guide if the problem is not resolved.

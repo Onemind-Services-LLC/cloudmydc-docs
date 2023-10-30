@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+## work todo
+
 ## What is PaaS? Platform-as-a-Service Types Explained
 
 There’s no single PaaS for everyone. Even the definition of this cloud computing service model is quite vague today. Commonly, it is described as a cloud hosting platform with a set of deployment and scaling automation, application management and DevOps tools that can be run on shared infrastructure or on-premise. Also, PaaS eliminates the complexity of building and maintaining the underlying infrastructure. Let’s see how PaaSes differ through the prism of their use cases and supported technologies, and how to determine which one will meet specific needs.

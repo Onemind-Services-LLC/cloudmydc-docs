@@ -16,8 +16,6 @@ sidebar_position: 2
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/ProcessManagers/01-nodejs-process-managers.png)
 
 </div>
@@ -31,7 +29,7 @@ Node.js process manager is a tool, which provides an ability to control applicat
 
 The platform provides four pre-configured process managers by default, which can be selected in the following ways:
 
-- by selecting the appropriate tag during the environment [creation](https://cloudmydc.com/) or container [redeploy](https://cloudmydc.com/)
+- by selecting the appropriate tag during the environment [creation](/docs/EnvironmentManagement/Setting%20Up%20Environment) or container [redeploy](/docs/Container/Container%20Redeploy)
 
 <div style={{
     display:'flex',
@@ -43,7 +41,7 @@ The platform provides four pre-configured process managers by default, which can
 
 </div>
 
-- by editing the **_PROCESS_MANAGER_** Docker environment [variable](https://cloudmydc.com/) in the already created container(s) with the _forever_, _npm_, _pm2_ or _supervisor_ value (restart is needed to apply the new options)
+- by editing the **_PROCESS_MANAGER_** Docker environment [variable](/docs/Container/Container%20Configuration/Variables) in the already created container(s) with the _forever_, _npm_, _pm2_ or _supervisor_ value (restart is needed to apply the new options)
 
 <div style={{
     display:'flex',
@@ -64,13 +62,13 @@ Below, we’ll consider each of the available managers to help you select one:
 
 ## Process Manager (npm)
 
-Alongside [package management](https://cloudmydc.com/), the NPM provides the ability to start the application. The “n*pm start*” (which is the “_npm run start_” alias) is performed if **NPM** is chosen as a value for the **_PROCESS_MANAGER_** variable on the NodeJS container. As a result, the script defined in _“start”_ of **_package.json_** is launched.
+Alongside [package management](/docs/Nodejs/Nodejs%20Apps%20Specifications/Package%20Managers#nodejs-package-managers), the NPM provides the ability to start the application. The “n*pm start*” (which is the “_npm run start_” alias) is performed if **NPM** is chosen as a value for the **_PROCESS_MANAGER_** variable on the NodeJS container. As a result, the script defined in _“start”_ of **_package.json_** is launched.
 
-Refer to the [official documentation](https://cloudmydc.com/) for additional information.
+Refer to the [official documentation](https://docs.npmjs.com/cli/v8/commands/npm-run-script) for additional information.
 
 ## PM2
 
-[PM2](https://cloudmydc.com/) provides a huge variety of application management features, including the launched NodeJS processes monitoring. You can get acquainted with the [list of commands](https://cloudmydc.com/) for _pm2_, which can be executed directly via SSH.
+[PM2](https://pm2.keymetrics.io/) provides a huge variety of application management features, including the launched NodeJS processes monitoring. You can get acquainted with the [list of commands](https://www.npmjs.com/package/pm2#commands-overview) for _pm2_, which can be executed directly via SSH.
 
 For example, after Node.js server creation, you can list the running processes with the following command:
 
@@ -90,7 +88,7 @@ pm2 list
 
 As you can see it shows the default _draw-game_ application is running.
 
-Next, you can remove this app with the **_pm2 delete_** command and [deploy](https://cloudmydc.com/) your own project (e.g. the default Hello Word application):
+Next, you can remove this app with the **_pm2 delete_** command and [deploy](/docs/Deployment/Deployment%20Guide) your own project (e.g. the default Hello Word application):
 
 <div style={{
     display:'flex',
@@ -102,17 +100,17 @@ Next, you can remove this app with the **_pm2 delete_** command and [deploy](htt
 
 </div>
 
-Also, PM2 provides users the ability to create the configuration files where all the run options are listed, which is useful for microservice-based applications deployment, as several apps can be described in a single file. The appropriate [config file reference](https://cloudmydc.com/)) can be found by following the provided link (e.g. the default **_ecosystem.config.js_** file is used to launch the server.js application file as the “_draw game_” application).
+Also, PM2 provides users the ability to create the configuration files where all the run options are listed, which is useful for microservice-based applications deployment, as several apps can be described in a single file. The appropriate [config file reference](https://pm2.keymetrics.io/docs/usage/application-declaration/)) can be found by following the provided link (e.g. the default **_ecosystem.config.js_** file is used to launch the server.js application file as the “_draw game_” application).
 
 ## Supervisor
 
-[Supervisor](https://cloudmydc.com/) is a great solution to keep your applications running. It automatically monitors any code changes in the launched **_.js_** scripts and restarts the appropriate app to keep it up-to-date. Herewith, it allows to perform a hot restart of your NodeJS processes, ensuring they are always available and are automatically restarted in the event of a failure.
+[Supervisor](https://www.npmjs.com/package/supervisor) is a great solution to keep your applications running. It automatically monitors any code changes in the launched **_.js_** scripts and restarts the appropriate app to keep it up-to-date. Herewith, it allows to perform a hot restart of your NodeJS processes, ensuring they are always available and are automatically restarted in the event of a failure.
 
 :::tip Note
 
-By default, the supervisor process manager monitors file changes in the application directory and, if any, automatically restarts NodeJS. Herewith, during the VCS deployment (including [auto-deploy](https://cloudmydc.com/)), your application server will be restarted even if there are no project changes (due to modification of the **.git** folder).
+By default, the supervisor process manager monitors file changes in the application directory and, if any, automatically restarts NodeJS. Herewith, during the VCS deployment (including [auto-deploy](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview#auto-deploy-of-gitsvn-updates)), your application server will be restarted even if there are no project changes (due to modification of the **.git** folder).
 
-To avoid the unnecessary restarts, you can disable file changes monitoring by adding the -i parameter into the **_PROCESS_MANAGER_OPTS_** [variable](https://cloudmydc.com/).
+To avoid the unnecessary restarts, you can disable file changes monitoring by adding the -i parameter into the **_PROCESS_MANAGER_OPTS_** [variable](/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables).
 
 <div style={{
     display:'flex',
@@ -146,7 +144,7 @@ Here, you can find a short description of the module, its usage syntax, addition
 
 ## Forever
 
-The [forever](https://cloudmydc.com/) process manager is the simple CLI tool, which allows to make your NodeJS processes run continuously. It permanently keeps a child process (such as your project on the Node.js web server) and automatically restart it upon failure.
+The [forever](https://www.npmjs.com/package/forever) process manager is the simple CLI tool, which allows to make your NodeJS processes run continuously. It permanently keeps a child process (such as your project on the Node.js web server) and automatically restart it upon failure.
 
 Run the next command to get the main information on the _forever_ manager usage, actions, usage, etc.:
 
@@ -164,7 +162,7 @@ forever --help
 
 </div>
 
-Also, using _forever_ you can specify the application options in a [JSON file](https://cloudmydc.com/). For example, for the default Draw game (available after Node.js server installation), this **_/home/jelastic/ROOT/forever.json_** file looks like:
+Also, using _forever_ you can specify the application options in a [JSON file](https://www.npmjs.com/package/forever#json-configuration-files). For example, for the default Draw game (available after Node.js server installation), this **_/home/jelastic/ROOT/forever.json_** file looks like:
 
 ```bash
 {
@@ -180,6 +178,6 @@ where:
 
 - **uid** - sets unique name for your app
 - **append** - selects if logs should be supplemented (_true_) or overwritten (_false_)
-- **watch** - allows enabling or disabling automatic restart of a child process upon the appropriate application code changes; set to _“false”_, if you want to avoid unexpected restart after deployment from VCS (including [auto-deploy](https://cloudmydc.com/))
+- **watch** - allows enabling or disabling automatic restart of a child process upon the appropriate application code changes; set to _“false”_, if you want to avoid unexpected restart after deployment from VCS (including [auto-deploy](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview#auto-deploy-of-gitsvn-updates/))
 - **script** - defines a name of the executable **_.js_** file
 - **sourceDir** - provides an absolute path to the specified script

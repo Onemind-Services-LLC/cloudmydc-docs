@@ -6,12 +6,12 @@ sidebar_position: 4
 
 You can import and export dump files to MongoDB in two ways:
 
-- [using any **MongoDB client**](https://cloudmydc.com/)
-- [using **RockMongo** administration GUI tool](https://cloudmydc.com/)
+- [using any **MongoDB client**](/docs/Database/MongoDB/Dump%20Import-Export#mongodb-client-database-master)
+- [using **RockMongo** administration GUI tool](/docs/Database/MongoDB/Dump%20Import-Export#rockmongo-admin-panel)
 
 :::tip Note
 
-If you would like to use MongoDB client, you need to have **[public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)** feature enabled in your MongoDB node.
+If you would like to use MongoDB client, you need to have **[public IP](https://cloudmydc.com/)** feature enabled in your MongoDB node.
 
 :::
 

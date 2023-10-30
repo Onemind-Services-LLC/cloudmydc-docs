@@ -43,7 +43,7 @@ Then state the resources limits for the chosen nodes. Finally, enter name for yo
 
 ## Diaspora\* Deployment
 
-1. Navigate to the [Diaspora GitHub repository](https://cloudmydc.com/). There change the branch to **_master_** and click **_Download ZIP_** button.
+1. Navigate to the [Diaspora GitHub repository](https://github.com/diaspora/diaspora). There change the branch to **_master_** and click **_Download ZIP_** button.
 
 <div style={{
     display:'flex',

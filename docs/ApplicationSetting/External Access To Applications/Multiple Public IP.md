@@ -16,8 +16,6 @@ sidebar_position: 3
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/MultiplePublicIP/01-multiple-public-ip.png)
 
 </div>

@@ -8,7 +8,7 @@ sidebar_position: 4
 
 ## Database Cluster Topology
 
-The [MariaDB Multi-Region clustering](https://cloudmydc.com/) is based on Primary-Primary topology. Its asynchronous replication allows compensating the latency influence on transaction commit. Such implementation better fits cases when regions (data centers) are significantly distanced from each other.
+The [MariaDB Multi-Region clustering](https://github.com/jelastic-jps/mysql-multiregion) is based on Primary-Primary topology. Its asynchronous replication allows compensating the latency influence on transaction commit. Such implementation better fits cases when regions (data centers) are significantly distanced from each other.
 
 As for disaster recovery, one or more Secondary nodes can be added for the required cross-region deployment. For example, on the platforms with three regions, the recommended topology is Primary-Primary-Secondary.
 
@@ -22,13 +22,13 @@ As for disaster recovery, one or more Secondary nodes can be added for the requi
 
 </div>
 
-Every database server or load balancer node in the cluster topology is created in a separate environment with a [ProxySQL Load Balancer](https://cloudmydc.com/) layer in front of the cluster to distribute requests between Primary nodes. After creation, such environments are combined into the multi-region cluster.
+Every database server or load balancer node in the cluster topology is created in a separate environment with a [ProxySQL Load Balancer](https://www.proxysql.com/) layer in front of the cluster to distribute requests between Primary nodes. After creation, such environments are combined into the multi-region cluster.
 
 The package provides out-of-box high availability and failover for the database cluster. It is ensured on the data center level – the database is accessible even if one of the regions becomes unavailable. If one of the Primary regions fails, the cluster will be available and keep handling Read and Write queries. Even in case of both Primary regions become unavailable, the Secondary one can be used to handle Read and Write requests with no data loss. However, it’ll require an update of the entry point setting in the database client application (replacing ProxySQL hostnames with the Secondary database server hostname).
 
 ## Cluster Installation
 
-1. Find the **_MariaDB Multi-Region Cluster_** application (the **Clusters** section or use the **Search** field) in the platform [Marketplace](https://cloudmydc.com/).
+1. Find the **_MariaDB Multi-Region Cluster_** application (the **Clusters** section or use the **Search** field) in the platform [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace#marketplace).
 
 <div style={{
     display:'flex',
@@ -44,7 +44,7 @@ The package provides out-of-box high availability and failover for the database 
 
 - **Regions** – choose platform regions where the cluster environments will be deployed. Note that regions order matters, as the first two will have Primary servers and others will be Secondary
 - **Database** version – select the preferred MariaDB version
-- **Environment** – provide a name for the isolation and [grouping](https://cloudmydc.com/) of your database cluster environments
+- **Environment** – provide a name for the isolation and [grouping](/docs/EnvironmentManagement/Environment%20Groups/Overview) of your database cluster environments
 - **Display Name** – set a custom name for the cluster environments
 
 <div style={{

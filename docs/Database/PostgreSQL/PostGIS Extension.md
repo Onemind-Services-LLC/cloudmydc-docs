@@ -43,7 +43,7 @@ First of all you need to create an environment as a basis for your application.
 
 Now we can proceed to GeoServer software deploy.
 
-1. Open the **[GeoServer official web-site](https://cloudmydc.com/)** and download the latest stable release as a web archive.
+1. Open the **[GeoServer official web-site](https://geoserver.org/)** and download the latest stable release as a web archive.
 
 <div style={{
     display:'flex',
@@ -215,9 +215,9 @@ That’s all. PostGIS extension is enabled and can be used.
 
 ## Dataset Import
 
-Now let’s import PostGIS dump of a dataset to our PostreSQL database. As an example, we are going to use [nyc_buildings.zip](https://cloudmydc.com/) with dataset of buildings from New York City.
+Now let’s import PostGIS dump of a dataset to our PostreSQL database. As an example, we are going to use [nyc_buildings.zip](https://docs.geoserver.org/stable/en/user/_downloads/nyc_buildings.zip) with dataset of buildings from New York City.
 
-1. Download [nyc_buildings.zip](https://cloudmydc.com/) package and extract it. You’ll get the **_nyc_buildings.sql_** file.
+1. Download [nyc_buildings.zip](https://docs.geoserver.org/stable/en/user/_downloads/nyc_buildings.zip) package and extract it. You’ll get the **_nyc_buildings.sql_** file.
 2. Enter **phpPgAdmin** for PostgreSQL with your credentials and navigate again to the SQL tab for your database with PostGIS extension (in our case, **_nyc_** database).
 
 <div style={{

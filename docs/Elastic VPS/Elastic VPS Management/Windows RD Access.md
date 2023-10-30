@@ -31,8 +31,8 @@ In order to ensure the maximum convenience while using the Windows hosting servi
 
 Besides this default connection scenario, you can also use your preferred local remote desktop client. So, below we’ll describe both ways of the remote desktop connections' establishment in more details:
 
-- [RDP Connection via Web Client](https://cloudmydc.com/)
-- [RDP Connection via Local Client](https://cloudmydc.com/)
+- [RDP Connection via Web Client](/docs/Windows&.NET/Windows%20RD%20Access#rdp-connection-via-web-client)
+- [RDP Connection via Local Client](/docs/Windows&.NET/Windows%20RD%20Access#rdp-connection-via-local-client)
 
 ## RDP Connection via Web Client
 
@@ -52,7 +52,7 @@ Let’s consider it on the example of the Windows VM server.
 
 </div>
 
-The other available options are required for connection via the local RDP client:
+The other available options are required for connection via the [local RDP client](/docs/Windows&.NET/Windows%20RD%20Access#rdp-connection-via-local-client):
 
 - **Reset RDP Password** to reset and resend Administrator credentials
 - **Info**, which displays short information on establishing the RDP connection manually
@@ -70,7 +70,7 @@ The other available options are required for connection via the local RDP client
 
 </div>
 
-Once the connection is established, you’ll see the **Server Manager** window opened. Now, you can start [managing your server](https://cloudmydc.com/).
+Once the connection is established, you’ll see the **Server Manager** window opened. Now, you can start [managing your server](/docs/Windows&.NET/Managing%20Server%20Roles%20&%20Features).
 
 ## RDP Connection via Local Client
 
@@ -78,12 +78,12 @@ In case you prefer to work with a local remote desktop client, you’ll need to 
 
 Below, we’ll describe the examples of working with the most common RDP clients for Windows and UNIX-based operating systems:
 
-- [For Windows](https://cloudmydc.com/)
-- [For Linux/MacOS/FreeBSD](https://cloudmydc.com/)
+- [For Windows](/docs/Windows&.NET/Windows%20RD%20Access#for-windows)
+- [For Linux/MacOS/FreeBSD](/docs/Windows&.NET/Windows%20RD%20Access#for-linuxmacosfreebsd)
 
 ## For Windows
 
-1. Get the **[Microsoft Remote Desktop](https://cloudmydc.com/)** application and launch it.
+1. Get the **[Microsoft Remote Desktop](https://apps.microsoft.com/detail/9WZDNCRFJ3PS?hl=en-us&gl=US#activetab=pivot:overviewtab)** application and launch it.
 
 2. Click **Add > PC** at the top of the opened window.
 
@@ -97,7 +97,7 @@ Below, we’ll describe the examples of working with the most common RDP clients
 
 </div>
 
-3. Provide the RDP connection link ([endpoint](https://cloudmydc.com/)) into the **PC name** field.
+3. Provide the RDP connection link ([endpoint](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints)) into the **PC name** field.
 
 :::danger Note
 

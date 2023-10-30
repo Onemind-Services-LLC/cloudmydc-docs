@@ -16,8 +16,6 @@ sidebar_position: 6
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/AppSecuritywithNGINXBalancer/cloud.png)
 
 </div>
@@ -31,7 +29,7 @@ As the amount of information shared through the internet is growing from year to
 
 So, in this guide we’ll show you how to set a couple of simple protection mechanisms, that are available for any application that uses **NGINX balancer** as a frontend, and which applying doesn’t require any additional costs.
 
-Primarily the NGINX load balancer server is intended for performing the smart requests distribution between multiple application server nodes and thus ensuring high system availability and reliability. Herewith, it can be used for processing both HTTP and TCP traffic types (details can be found within the [HTTP Load Balancing](https://cloudmydc.com/) and [TCP Load Balancing](https://cloudmydc.com/) docs).
+Primarily the NGINX load balancer server is intended for performing the smart requests distribution between multiple application server nodes and thus ensuring high system availability and reliability. Herewith, it can be used for processing both HTTP and TCP traffic types (details can be found within the [HTTP Load Balancing](/docs/Load%20Balancers/Load%20Balancing) and [TCP Load Balancing](/docs/Load%20Balancers/NGINX/TCP%20Load%20Balancing) docs).
 
 Load balancing node is automatically added to an environment if you pick up more than one application server node, and in addition, it can be added manually even for a single server. To do this, just select the Balancing wizard block above the chosen application server in the **Environment Topology** window.
 
@@ -47,15 +45,15 @@ Load balancing node is automatically added to an environment if you pick up more
 
 Now when the environment is ready, you can proceed to configuring the desired protection method using the instructions below:
 
-- [Authentication](https://cloudmydc.com/) makes application access protected with a password
-- [IP Address Deny](https://cloudmydc.com/) mechanism is used to forbid application access from a particular IP
-  We’ll also pay the attention to the way of [combining](https://cloudmydc.com/) the abovementioned methods for being used simultaneously. So, let’s find out how to implement this to your environment. Here we go!
+- [Authentication](/docs/Load%20Balancers/NGINX/App%20Security%20with%20NGINX%20Balancer#authentication) makes application access protected with a password
+- [IP Address Deny](/docs/Load%20Balancers/NGINX/App%20Security%20with%20NGINX%20Balancer#ip-address-deny) mechanism is used to forbid application access from a particular IP
+  We’ll also pay the attention to the way of [combining](/docs/Load%20Balancers/NGINX/App%20Security%20with%20NGINX%20Balancer#methods-combination) the abovementioned methods for being used simultaneously. So, let’s find out how to implement this to your environment. Here we go!
 
 ## Authentication
 
 Authentication is a simple but powerful method to restrict application axccess and ensure that an unauthorised entity won’t be able to cause any harm to it. In this example, we’ll show you how to set up username/password protection.
 
-1. Obviously the password information can not be stored in an open form, so it needs to be protected itself. For that you need to generate a hash, based on the desired username and password using any htpasswd tool or one of the similar online services (for example, [http://www.htpasswdgenerator.net/](https://cloudmydc.com/)).
+1. Obviously the password information can not be stored in an open form, so it needs to be protected itself. For that you need to generate a hash, based on the desired username and password using any htpasswd tool or one of the similar online services (for example, [http://www.htpasswdgenerator.net/](https://www.afternic.com/forsale/htpasswdgenerator.net?utm_source=TDFS_DASLNC&utm_medium=DASLNC&utm_campaign=TDFS_DASLNC&traffic_type=TDFS_DASLNC&traffic_id=daslnc&)).
 
 2. Save the character sequence you’ve received and switch back to the platform dashboard with your environment listed. There click the **Config** button for the **NGINX balancer** node.
 
@@ -219,7 +217,7 @@ if ($http_x_forwarded_for ~* {IP_ADDRESS}) {
 
 ## Methods Combination
 
-To combine both restriction by IP address and authentication methods implementation, you’ll need to use the _[satisfy](https://cloudmydc.com/)_ directive. By default (i.e. if not visibly declared in the configuration) it is set to **all**, which means that a user should meet both types of conditions to be granted access. If you specify this directive inside your configuration file and set its value to **any**, a user will be able to open the application if at least one condition is satisfied. Here is an example of such a configuration:
+To combine both restriction by IP address and authentication methods implementation, you’ll need to use the _[satisfy](https://nginx.org/en/docs/http/ngx_http_core_module.html#satisfy)_ directive. By default (i.e. if not visibly declared in the configuration) it is set to **all**, which means that a user should meet both types of conditions to be granted access. If you specify this directive inside your configuration file and set its value to **any**, a user will be able to open the application if at least one condition is satisfied. Here is an example of such a configuration:
 
 <div style={{
     display:'flex',

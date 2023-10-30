@@ -6,14 +6,14 @@ sidebar_position: 2
 
 Follow the instruction below to learn how to connect your PHP application, hosted within the platform, to the PostgreSQL database server:
 
-- [create environment](https://cloudmydc.com/)
-- [configure PHP server](https://cloudmydc.com/)
-- [check connection](https://cloudmydc.com/)
+- [create environment](/docs/Database/PostgreSQL/Connection%20to%20Applications/PHP%20Connection%20to%20PostgreSQL#create-environment)
+- [configure PHP server](/docs/Database/PostgreSQL/Connection%20to%20Applications/PHP%20Connection%20to%20PostgreSQL#configure-database-connection)
+- [check connection](/docs/Database/PostgreSQL/Connection%20to%20Applications/PHP%20Connection%20to%20PostgreSQL#connection-check-up)
 
 ## Create Environment
 
 1. Log into the platform dashboard.
-2. [Create](https://cloudmydc.com/) an environment with the **PHP** application server (e.g. Apache PHP) and the **PostgreSQL** database.
+2. [Create](/docs/EnvironmentManagement/Setting%20Up%20Environment) an environment with the **PHP** application server (e.g. Apache PHP) and the **PostgreSQL** database.
 
 <div style={{
     display:'flex',
@@ -79,7 +79,7 @@ Add the **extension=pgsql.so** line like it is shown in the image below.
 
 </div>
 
-4. There are two main **[PG functions](https://cloudmydc.com/)** for operating with a database server:
+4. There are two main **[PG functions](https://www.php.net/manual/en/ref.pgsql.php)** for operating with a database server:
 
 - opening PostgreSQL connection:
   _pg_connect(“host=**{host}** port=**{port}** dbname=**{dbname}** user=**{user}** password=**{password}**");_ where:

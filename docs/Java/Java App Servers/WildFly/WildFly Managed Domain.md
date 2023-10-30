@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+## work todo
+
 ## Automatic WildFly Clustering in Managed Domain Mode and Scaling inside Containers
 
 Tetiana Fydorenchyk | May 6, 2021 | Containers, DevOps PaaS, Installer, Java | auto-clustering, auto-scaling, Java EE hosting, Java hosting, micro clustering, wildfly clustering, WildFly hosting, wildfly in domain mode, wildfly managed domain, wildfly scaling

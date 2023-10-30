@@ -16,8 +16,6 @@ sidebar_position: 1
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/EclipsePluginManual/1.png)
 
 </div>

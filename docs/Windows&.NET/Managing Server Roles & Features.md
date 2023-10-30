@@ -4,19 +4,19 @@ sidebar_position: 4
 
 ## Set Windows Roles and Features via Server Manager
 
-[Windows VM](https://cloudmydc.com/) provides a powerful GUI of Windows OS that can be accessed via [remote desktop protocol](https://cloudmydc.com/) (RDP). It allows connect to and manage your Windows instance remotely, for example:
+[Windows VM](/docs/Windows&.NET/Windows%20Server%20VM) provides a powerful GUI of Windows OS that can be accessed via [remote desktop protocol](/docs/Windows&.NET/Windows%20RD%20Access) (RDP). It allows connect to and manage your Windows instance remotely, for example:
 
-- via the [Guacamole](https://cloudmydc.com/) HTML5 tool directly in your browser
-- via the [local RD client](https://cloudmydc.com/) (the appropriate credentials for connection establishment can be found in the email, sent after environment creation)
+- via the [Guacamole](/docs/Windows&.NET/Windows%20RD%20Access#rdp-connection-via-web-client) HTML5 tool directly in your browser
+- via the [local RD client](/docs/Windows&.NET/Windows%20RD%20Access#rdp-connection-via-local-client) (the appropriate credentials for connection establishment can be found in the email, sent after environment creation)
 
 For configuring Windows virtual private server via RDP, the inbuilt Server Manager is used. Below we highlight some of the basic functionalities it provides :
 
-- [setting server roles](https://cloudmydc.com/)
-- [adding server features](https://cloudmydc.com/)
+- [setting server roles](/docs/Windows&.NET/Managing%20Server%20Roles%20&%20Features#set-windows-vm-roles)
+- [adding server features](/docs/Windows&.NET/Managing%20Server%20Roles%20&%20Features#add-features-to-windows-server-roles)
 
 ## Set Windows VM Roles
 
-Once [connected](https://cloudmydc.com/) to the required node’s desktop, you’ll see the **Server Manager** tool opened. As an example, let’s add a new server role with the following steps.
+Once [connected](/docs/Windows&.NET/Windows%20RD%20Access) to the required node’s desktop, you’ll see the **Server Manager** tool opened. As an example, let’s add a new server role with the following steps.
 
 1. Click the **Add roles and features** link located on the manager’s main page.
 
@@ -144,6 +144,6 @@ Also, you can always remove any custom role or feature with the help of the comp
 
 :::tip Tip
 
-If you’d like to learn more about the available Windows VM possibilities, refer to the [Windows Server 2008 R2](https://cloudmydc.com/) and [Windows Server 2012](https://cloudmydc.com/) official documentation.
+If you’d like to learn more about the available Windows VM possibilities, refer to the [Windows Server 2008 R2](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd349801(v=ws.10)?redirectedfrom=MSDN) and [Windows Server 2012](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh801901(v=ws.11)?redirectedfrom=MSDN) official documentation.
 
 :::

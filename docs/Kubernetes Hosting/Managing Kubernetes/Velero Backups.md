@@ -6,7 +6,7 @@ import obj from './VeleroBackups.json'
 
 ## Kubernetes Cluster: Velero Backups
 
-**[Velero](https://cloudmydc.com/)** is an open-source backup and restoration tool for Kubernetes cluster disaster recovery. It also supports the migration of cluster resources and persistent volumes backup. Manual or scheduled backups to the external storage ensure your data safety and protection.
+**[Velero](https://velero.io/)** is an open-source backup and restoration tool for Kubernetes cluster disaster recovery. It also supports the migration of cluster resources and persistent volumes backup. Manual or scheduled backups to the external storage ensure your data safety and protection.
 
 You can leverage Velero to achieve the following tasks:
 
@@ -55,7 +55,7 @@ Waiting for the first server to format the disks.
 
 </div>
 
-3. Find the latest **_vmware-tanzu/velero_** [release](https://cloudmydc.com/) (_v1.8.1_ in our case), click the link in the Download section and copy the URL to the **_linux amd64_** archive.
+3. Find the latest **_vmware-tanzu/velero_** [release](https://github.com/vmware-tanzu/velero/releases) (_v1.8.1_ in our case), click the link in the Download section and copy the URL to the **_linux amd64_** archive.
 
 <div style={{
     display:'flex',
@@ -92,7 +92,7 @@ tar -zxvf velero-v1.8.1-linux-amd64.tar.gz -C /usr/local/sbin --strip-components
 
 :::danger Note
 
-If uploading via the file manager, you’ll need to adjust the file permissions:
+If uploading via the [file manager](/docs/ApplicationSetting/Configuration%20File%20Manager), you’ll need to adjust the file permissions:
 
 ```bash
 chmod 755 /usr/local/sbin/velero
@@ -138,7 +138,7 @@ velero install --provider aws --plugins velero/velero-plugin-for-aws:v1.4.1 --bu
 
 </div>
 
-We use AWS emulation to work with S3 and **_[restic](https://cloudmydc.com/)_** add-on since we have NFS storages for which we don’t have a native snapshot functionality.
+We use AWS emulation to work with S3 and **_[restic](https://restic.net/)_** add-on since we have NFS storages for which we don’t have a native snapshot functionality.
 
 7. Let’s deploy a test application with storage and mounts to test how Velero can perform backups. We’ll use the following example application:
 
@@ -196,7 +196,7 @@ exit
 
 :::danger Note
 
-Without the annotation, [PV and PVC](https://cloudmydc.com/) definitions are copied but not the data.
+Without the annotation, [PV and PVC](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) definitions are copied but not the data.
 
 :::
 

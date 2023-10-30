@@ -4,7 +4,7 @@ sidebar_position: 6
 
 ## Import and Export Dump Files to PostgreSQL
 
-Create two database environments and connect to them using any desktop client (we use pgAdmin4 as an example. Learn more in our [tutorial](https://cloudmydc.com/)).
+Create two database environments and connect to them using any desktop client (we use pgAdmin4 as an example. Learn more in our [tutorial](/docs/Database/MySQL-MariaDB-Percona/Remote%20Access)).
 
 <div style={{
     display:'flex',

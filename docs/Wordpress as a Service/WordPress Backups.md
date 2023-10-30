@@ -4,11 +4,11 @@ sidebar_position: 5
 
 ## WordPress Backups
 
-CloudMyDc Application Platform for WordPress provides a fully automated backup solution (based on the **[Restic](https://cloudmydc.com/)** software) for all the supported topologies. The platform lets you set up the process based on your needs via a clear and intuitive user interface.
+CloudMyDc Application Platform for WordPress provides a fully automated backup solution (based on the **[Restic](https://restic.readthedocs.io/en/stable/010_introduction.html)** software) for all the supported topologies. The platform lets you set up the process based on your needs via a clear and intuitive user interface.
 
 :::tip Tip
 
-Refer to the linked section if you are interested in the [backup process flow and specifics](https://cloudmydc.com/).
+Refer to the linked section if you are interested in the [backup process flow and specifics](/docs/Wordpress%20as%20a%20Service/WordPress%20Backups#backup-process-specifics).
 
 :::
 

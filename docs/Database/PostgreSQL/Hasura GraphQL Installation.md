@@ -16,7 +16,7 @@ sidebar_position: 8
 
 <div>
 
-**[Hasura](https://cloudmydc.com/)** is an open-source engine based on the GraphQL query language for API. It allows you to create a connection, manage, and configure event triggers for the PostgreSQL database in minutes. Hasura helps you build GraphQL applications backed by PostgreSQL or incrementally move your existing projects.
+**[Hasura](https://hasura.io/)** is an open-source engine based on the GraphQL query language for API. It allows you to create a connection, manage, and configure event triggers for the PostgreSQL database in minutes. Hasura helps you build GraphQL applications backed by PostgreSQL or incrementally move your existing projects.
 
 </div>
 
@@ -24,12 +24,12 @@ sidebar_position: 8
 
 In this tutorial, we’ll overview two examples of the Hasura GraphQL engine installation at the platform:
 
-- [Automatic Deployment with Local PostgreSQL Database](https://cloudmydc.com/)
-- [Manual Deployment with External PostgreSQL Database](https://cloudmydc.com/)
+- [Automatic Deployment with Local PostgreSQL Database](/docs/Database/PostgreSQL/Hasura%20GraphQL%20Installation#automatic-deployment-with-local-postgresql-database)
+- [Manual Deployment with External PostgreSQL Database](/docs/Database/PostgreSQL/Hasura%20GraphQL%20Installation#manual-deployment-with-external-postgresql-database)
 
 ## Automatic Deployment with Local PostgreSQL Database
 
-1. Log in the dashboard and click **[Marketplace](https://cloudmydc.com/)** at the top-left corner.
+1. Log in the dashboard and click **[Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace#marketplace)** at the top-left corner.
 
 <div style={{
     display:'flex',
@@ -53,9 +53,9 @@ In this tutorial, we’ll overview two examples of the Hasura GraphQL engine ins
 
 </div>
 
-3. To automatically create Hasura and PostgreSQL database in the same container, choose the Deploy containers from compose.yml option, and provide the default config from the [Hasura on Docker](https://cloudmydc.com/) repository:
+3. To automatically create Hasura and PostgreSQL database in the same container, choose the Deploy containers from compose.yml option, and provide the default config from the [Hasura on Docker](https://github.com/hasura/graphql-engine/tree/master/install-manifests/docker-compose) repository:
 
-_[https://raw.githubusercontent.com/hasura/graphql-engine/master/install-manifests/docker-compose/docker-compose.yamldeploy hasura from compose.yml](https://cloudmydc.com/)_
+_[https://raw.githubusercontent.com/hasura/graphql-engine/master/install-manifests/docker-compose/docker-compose.yamldeploy hasura from compose.yml](https://raw.githubusercontent.com/hasura/graphql-engine/master/install-manifests/docker-compose/docker-compose.yaml)_
 
 <div style={{
     display:'flex',
@@ -69,11 +69,11 @@ _[https://raw.githubusercontent.com/hasura/graphql-engine/master/install-manifes
 
 :::danger Note
 
-The installation requires a [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP), which is a paid option available for billing users only.
+The installation requires a [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip), which is a paid option available for billing users only.
 
 :::
 
-Configure the remaining Environment, [Display Name](https://cloudmydc.com/), [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) (if available) fields up to your needs, and click **Install**.
+Configure the remaining Environment, [Display Name](/docs/EnvironmentManagement/Environment%20Aliases), [Region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#environment-regions) (if available) fields up to your needs, and click **Install**.
 
 4. After a successful installation, you can access the Hasura console to ensure that everything works properly.
 
@@ -95,7 +95,7 @@ That’s it! Now, you can provide **Data** for your database via the same-named 
 
 In case you already have a database, you can connect to it with the Hasura GraphQL engine.
 
-1. Create a clean standalone **_Docker Engine CE_** via [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace).
+1. Create a clean standalone **_Docker Engine CE_** via [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace#marketplace).
 
 <div style={{
     display:'flex',
@@ -107,7 +107,7 @@ In case you already have a database, you can connect to it with the Hasura Graph
 
 </div>
 
-2. After creation connect to the container via [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH) and create a file with the following content (e.g. **_nano docker-run.sh_**):
+2. After creation connect to the container via [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH#ssh-access-via-web-browser) and create a file with the following content (e.g. **_nano docker-run.sh_**):
 
 ```bash
 docker run -d --restart=always -p 80:8080 \
@@ -127,12 +127,12 @@ hasura/graphql-engine:v1.0.0
 
 </div>
 
-For the detailed information on the docker run command, refer to the official documentation. In our case, the parameters are the following:
+For the detailed information on the [docker run](https://docs.docker.com/engine/reference/run/) command, refer to the official documentation. In our case, the parameters are the following:
 
 - **-d** - runs your services in the background
 - **–restart=always** - to always start the daemon (e.g. after container restart)
 - **-p 80:8080** - configures port redirect from the 80 port of the Docker Engine container to the 8080 one of the Hasura image running inside
-- **-e** - sets environment variables (refer to the [full list](https://cloudmydc.com/) for additional details)
+- **-e** - sets environment variables (refer to the [full list](https://docs.hasura.io/1.0/graphql/manual/deployment/graphql-engine-flags/reference.html) for additional details)
   - HASURA_GRAPHQL_DATABASE_URL - connection link to your PostgreSQL database with special characters being URL encoded (if located at the platform, the required details can be viewed in the PostgreSQL after-creation email)
   - HASURA_GRAPHQL_ENABLE_CONSOLE - enables Hasura console
   - HASURA_GRAPHQL_ADMIN_SECRET - configures admin secret key to access console, myadminsecretkey in our case

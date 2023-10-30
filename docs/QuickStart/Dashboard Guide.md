@@ -36,8 +36,6 @@ Let’s start our detailed exploration of the platform dashboard:
 
 1. Click **New Environment** in the upper left corner of the dashboard.
 
-<!-- ![Locale Dropdown](./img/DashboardGuide/01-paas-main-buttons.png) -->
-
 <div style={{
     display:'flex',
     justifyContent: 'center',

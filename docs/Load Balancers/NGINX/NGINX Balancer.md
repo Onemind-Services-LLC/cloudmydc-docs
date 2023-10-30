@@ -6,11 +6,11 @@ sidebar_position: 1
 
 :::tip Tip
 
-The NGINX balancer stack is [HTTP/3](https://cloudmydc.com/) ready with the feature support enabled by default since the 1.16.1 release. However, a [public IP address](https://cloudmydc.com/) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
+The NGINX balancer stack is [HTTP/3](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support) ready with the feature support enabled by default since the 1.16.1 release. However, a [public IP address](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
 
 :::
 
-**[NGINX](https://cloudmydc.com/)** is an open-source TCP/UDP, HTTP, and reverse proxy server. It is one of the most popular solutions for load balancing in the world, which provides customers with high performance and efficient resource usage. The modular architecture of NGINX ensures personalized customization that can support all of the customers' needs, including such features as:
+**[NGINX](https://nginx.org/en/)** is an open-source TCP/UDP, HTTP, and reverse proxy server. It is one of the most popular solutions for load balancing in the world, which provides customers with high performance and efficient resource usage. The modular architecture of NGINX ensures personalized customization that can support all of the customers' needs, including such features as:
 
 - generic proxying of TCP and UDP
 - serving static files, auto-indexing
@@ -44,7 +44,7 @@ The NGINX balancer stack is [HTTP/3](https://cloudmydc.com/) ready with the feat
 
 </div>
 
-Next, you need to set the desired configurations for your NGINX balancer ([cloudlets](/docs/PlatformOverview/Cloudlet), disk space, [IP addresses](https://cloudmydc.com/), etc.), add any other needed stacks (e.g. application servers or databases), and click **Create**.
+Next, you need to set the desired configurations for your NGINX balancer ([cloudlets](/docs/PlatformOverview/Cloudlet), disk space, [IP addresses](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP), etc.), add any other needed stacks (e.g. application servers or databases), and click **Create**.
 
 3. Wait a moment for the platform to set up the environment for you.
 

@@ -6,7 +6,7 @@ sidebar_position: 4
 
 **MongoDB** is a popular NoSQL database, which is natively supported by the platform and can be easily installed on the Cloud. Below, we’ll consider a simple example of how to connect this DB stack from your **Node.js** application server.
 
-1. In order to follow this guide, you’ll need Node.js and MongoDB servers either within the platform (you can create it at any time) or on any external resources.
+1. In order to follow this guide, you’ll need Node.js and MongoDB servers either within the platform (you can [create](/docs/EnvironmentManagement/Setting%20Up%20Environment) it at any time) or on any external resources.
 
 <div style={{
     display:'flex',
@@ -20,7 +20,7 @@ sidebar_position: 4
 
 In our case, both instances are hosted within a single environment.
 
-2. Connect to your application server via [SSH Gate](https://cloudmydc.com/).
+2. Connect to your application server via [SSH Gate](/docs/Deployment%20Tools/SSH/SSH%20Overview#ssh-gate-overview).
 
 <div style={{
     display:'flex',
@@ -32,7 +32,7 @@ In our case, both instances are hosted within a single environment.
 
 </div>
 
-3. Next, download and install an official [MongoDB driver for Node.js](https://cloudmydc.com/):
+3. Next, download and install an official [MongoDB driver for Node.js](https://github.com/mongodb/node-mongodb-native):
 
 ```bash
 npm install -s mongodb
@@ -63,7 +63,7 @@ if(!err) {
 });
 ```
 
-Here, you need to adjust the connection string (all the required information is provided within email for your MongoDB node):
+Here, you need to adjust the [connection string](https://www.mongodb.com/docs/manual/reference/connection-string/) (all the required information is provided within email for your MongoDB node):
 
 - **{user}** - username to log into database with
 - **{password}** - password for the appropriate user
@@ -99,4 +99,4 @@ node script.js
 
 </div>
 
-If everything is specified correctly, you should see the “You are connected!” string within terminal. Next, you can [extend code](https://cloudmydc.com/) to execute all of the required actions.
+If everything is specified correctly, you should see the “You are connected!” string within terminal. Next, you can [extend code](http://mongodb.github.io/node-mongodb-native/2.2/api/) to execute all of the required actions.

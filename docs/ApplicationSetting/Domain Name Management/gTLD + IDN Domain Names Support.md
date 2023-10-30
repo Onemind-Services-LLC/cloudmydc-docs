@@ -16,8 +16,6 @@ sidebar_position: 7
     justifyContent: 'cetner',
 }}>
 
-<!-- Image Url changes -->
-
 ![Locale Dropdown](./img/gTLDIDNDomainNamesSupport/slide-domain.png)
 
 </div>

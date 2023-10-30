@@ -4,10 +4,10 @@ sidebar_position: 1
 
 ## Kubernetes Cluster Access
 
-After the successful [installation of a cluster](https://cloudmydc.com/), there are multiple ways to access it to start management:
+After the successful [installation of a cluster](/docs/Kubernetes%20Hosting/Kubernetes%20Cluster/Cluster%20Installation), there are multiple ways to access it to start management:
 
-- [Kubernetes Dashboard](https://cloudmydc.com/)
-- [kubectl client](https://cloudmydc.com/)
+- [Kubernetes Dashboard](/docs/Kubernetes%20Hosting/Managing%20Kubernetes/Cluster%20Access#kubernetes-dashboard)
+- [kubectl client](/docs/Kubernetes%20Hosting/Managing%20Kubernetes/Cluster%20Access#kubectl-client)
 
 ## Kubernetes Dashboard
 
@@ -39,7 +39,7 @@ The same information is also provided via the appropriate email notification.
 
 :::tip Tip
 
-It is also possible to log in with the **_kubeconfig_** file; however, you’ll need to install kubectl and set the right context (see the [section](https://cloudmydc.com/) below).
+It is also possible to log in with the **_kubeconfig_** file; however, you’ll need to install kubectl and set the right context (see the [section](/docs/Kubernetes%20Hosting/Managing%20Kubernetes/Cluster%20Access#kubectl-client) below).
 
 :::
 
@@ -63,9 +63,9 @@ Now, you can access the Kubernetes Dashboard once again.
 
 ## Kubectl Client
 
-**[Kubectl](https://cloudmydc.com/)** is a command-line tool to control a Kubernetes cluster. The platform automatically installs it on all master nodes during the environment creation. You can start working with your cluster using kubectl right away, just connect to the required node [over SSH](https://cloudmydc.com/).
+**[Kubectl](https://kubernetes.io/docs/tasks/tools/)** is a command-line tool to control a Kubernetes cluster. The platform automatically installs it on all master nodes during the environment creation. You can start working with your cluster using kubectl right away, just connect to the required node [over SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview).
 
-1. Follow the [installation steps](https://cloudmydc.com/) to use a local kubectl. Next, run a command to establish remote connection:
+1. Follow the [installation steps](https://kubernetes.io/docs/tasks/tools/) to use a local kubectl. Next, run a command to establish remote connection:
 
 ```bash
 kubectl config set-cluster jelastic --server={api-endpoint} && \

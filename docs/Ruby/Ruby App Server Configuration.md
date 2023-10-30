@@ -11,9 +11,9 @@ The platform provides Ruby application servers based on the two software stacks:
 
 Herewith, both ones are configured to utilize the **Passenger** application server by default, which is integrated via the appropriate custom module. Moreover, if needed, the _NGINX Ruby_ stack can be easily configured to work with the different inbuilt servers:
 
-- [**_Passenger_**](https://cloudmydc.com/) - one of the most feature rich application servers for Ruby, which are invaluable for the modern web apps and microservice APIs
-- [**_Puma_**](https://cloudmydc.com/) - a Ruby web server oriented on speed and parallelism due to fast and accurate HTTP 1.1 protocol parsing
-- [**_Unicorn_**](https://cloudmydc.com/) - an HTTP server, which takes advantage of the Unix/Unix-like kernels features for serving fast clients on low-latency, high-bandwidth connections
+- [**_Passenger_**](https://www.phusionpassenger.com/) - one of the most feature rich application servers for Ruby, which are invaluable for the modern web apps and microservice APIs
+- [**_Puma_**](https://puma.io/) - a Ruby web server oriented on speed and parallelism due to fast and accurate HTTP 1.1 protocol parsing
+- [**_Unicorn_**](https://yhbt.net/unicorn/) - an HTTP server, which takes advantage of the Unix/Unix-like kernels features for serving fast clients on low-latency, high-bandwidth connections
 
 Let’s see how it can be switched on the NGINX Ruby server.
 
@@ -33,7 +33,7 @@ The **Passenger** module is used for all newly created Ruby environments by defa
 
 </div>
 
-2. Within the opened [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) panel, navigate to the **/etc/nginx/** **_nginx.conf_** file. Find the **_include app_servers_** strings:
+2. Within the opened [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager#configuration-file-manager) panel, navigate to the **/etc/nginx/** **_nginx.conf_** file. Find the **_include app_servers_** strings:
 
 - _include app_servers/nginx-unicorn.conf_
 - _include app_servers/nginx-puma.conf_
@@ -81,7 +81,7 @@ For example, we’ll switch to **_Puma_**.
 
 </div>
 
-5. Access your node via SSH (e.g. using [Web SHH](https://cloudmydc.com/)) and run the selected module with the appropriate command executed from the project directory:
+5. Access your node via SSH (e.g. using [Web SHH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH#ssh-access-via-web-browser)) and run the selected module with the appropriate command executed from the project directory:
 
 ```bash
 cd /var/www/webroot/ROOT/

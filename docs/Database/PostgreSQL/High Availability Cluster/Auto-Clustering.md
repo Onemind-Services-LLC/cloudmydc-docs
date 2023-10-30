@@ -24,12 +24,12 @@ So, let’s see how the Primary-Secondary PostgreSQL database cluster can be ins
 
 The platform provides two automated ways to get a PostgreSQL cluster:
 
-- [Pre-Packaged Marketplace Solution](https://cloudmydc.com/)
-- [Topology Wizard Auto-Clustering](https://cloudmydc.com/)
+- [Pre-Packaged Marketplace Solution](/docs/Database/PostgreSQL/High%20Availability%20Cluster/Auto-Clustering#pre-packaged-marketplace-solution)
+- [Topology Wizard Auto-Clustering](/docs/Database/PostgreSQL/High%20Availability%20Cluster/Auto-Clustering#topology-wizard-auto-clustering)
 
 ## Pre-Packaged Marketplace Solution
 
-The quickest and most straightforward way to create a PostgreSQL cluster is to use the pre-packaged solution from the [marketplace](https://cloudmydc.com/).
+The quickest and most straightforward way to create a PostgreSQL cluster is to use the pre-packaged solution from the [marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace#marketplace).
 
 1. Click the **Marketplace** button at the top-left of the dashboard and search for the **_PostgreSQL Primary-Secondary Cluster_** package.
 
@@ -75,7 +75,7 @@ When finished, you’ll be shown the appropriate notification with data for Post
 
 PostgreSQL database cluster can be enabled via the embedded **Auto-Clustering** feature at the dashboard. It provides more customization options compared to the marketplace option while still automating all the configuration processes.
 
-1. Open a new environment [topology wizard](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment), pick the **_PostgreSQL_** database software stack and just turn on a dedicated **Auto-Clustering** switch. If needed, you can enable Pgpool-II load balancer for your cluster.
+1. Open a new environment [topology wizard](/docs/EnvironmentManagement/Setting%20Up%20Environment), pick the **_PostgreSQL_** database software stack and just turn on a dedicated **Auto-Clustering** switch. If needed, you can enable Pgpool-II load balancer for your cluster.
 
 <div style={{
     display:'flex',
@@ -105,13 +105,13 @@ Next, you can fully utilize the customization power of the wizard to change the 
 
 Below, we’ll provide some helpful information on PostgreSQL cluster management:
 
-- [Cluster Entry Point](https://cloudmydc.com/)
-- [Cluster Admin Panels](https://cloudmydc.com/)
-- [Primary PostgreSQL Configuration](https://cloudmydc.com/)
-- [Configuring Standby](https://cloudmydc.com/)
-- [Replication Check](https://cloudmydc.com/)
-- [Automatic Failover Scenario](https://cloudmydc.com/)
-- [Manual Failover Scenario](https://cloudmydc.com/)
+- [Cluster Entry Point](/docs/Database/PostgreSQL/High%20Availability%20Cluster/Auto-Clustering#cluster-entry-point)
+- [Cluster Admin Panels](/docs/Database/PostgreSQL/High%20Availability%20Cluster/Auto-Clustering#cluster-admin-panels)
+- [Primary PostgreSQL Configuration](/docs/Database/PostgreSQL/High%20Availability%20Cluster/Auto-Clustering#primary-postgresql-configuration)
+- [Configuring Standby](/docs/Database/PostgreSQL/High%20Availability%20Cluster/Auto-Clustering#configuring-standby)
+- [Replication Check](/docs/Database/PostgreSQL/High%20Availability%20Cluster/Auto-Clustering#replication-check)
+- [Automatic Failover Scenario](/docs/Database/PostgreSQL/High%20Availability%20Cluster/Auto-Clustering#automatic-failover-scenario)
+- [Manual Failover Scenario](/docs/Database/PostgreSQL/High%20Availability%20Cluster/Auto-Clustering#manual-failover-scenario)
 
 ## Cluster Entry Point
 
@@ -134,7 +134,7 @@ In PaaS, the PostgreSQL cluster components can be managed either via CLI or UI.
 
 </div>
 
-If required, the separate node can be installed with more advanced PostgreSQL database management software [pgAdmin4](https://cloudmydc.com/) via importing the following [manifest](https://cloudmydc.com/).
+If required, the separate node can be installed with more advanced PostgreSQL database management software [pgAdmin4](hhttps://www.pgadmin.org/) via importing the following [manifest](https://github.com/jelastic-jps/pgadmin/blob/master/manifest.yaml).
 
 <div style={{
     display:'flex',
@@ -147,7 +147,7 @@ If required, the separate node can be installed with more advanced PostgreSQL da
 </div>
 
 - **Pgpool-II Management**
-  Pgpool-II nodes can be also managed via user-friendly built-in Administration Panel [pgpoolAdmin](https://cloudmydc.com/).
+  Pgpool-II nodes can be also managed via user-friendly built-in Administration Panel [pgpoolAdmin](https://www.pgpool.net/docs/pgpoolAdmin/index_en.html).
 
 <div style={{
     display:'flex',
@@ -355,7 +355,7 @@ sudo service postgresql restart
 
 ## Automatic Failover Scenario
 
-The **_automatic failover_** for the PostgreSQL cluster is implemented with the help of the Pgpool-II node and is not available for the topologies without it ([manual configuration](https://cloudmydc.com/) is required). The load balancing node automatically detects if the primary database is down and promotes one of the available secondaries. Once the problematic node is back, it will be automatically re-added to the cluster (as secondary) with all the missing data restored using the pgrewind utility.
+The **_automatic failover_** for the PostgreSQL cluster is implemented with the help of the Pgpool-II node and is not available for the topologies without it ([manual configuration](/docs/Database/PostgreSQL/High%20Availability%20Cluster/Auto-Clustering#manual-failover-scenario) is required). The load balancing node automatically detects if the primary database is down and promotes one of the available secondaries. Once the problematic node is back, it will be automatically re-added to the cluster (as secondary) with all the missing data restored using the pgrewind utility.
 
 ## Manual Failover Scenario
 
@@ -395,7 +395,7 @@ Once the secondary database is promoted to the primary, you should change your a
 
 Failover process can rely on **pg_isready** utility that issues a connection check to a PostgreSQL database.
 
-You may create a simple script which checks primary database server availability and promotes the standby in case of primary failure. Run the script through a [crontab](https://cloudmydc.com/) at the secondary node with an appropriate interval. The script may look like below. Let’s call it as **_failover.sh_**:
+You may create a simple script which checks primary database server availability and promotes the standby in case of primary failure. Run the script through a [crontab](https://en.wikipedia.org/wiki/Cron) at the secondary node with an appropriate interval. The script may look like below. Let’s call it as **_failover.sh_**:
 
 ```bash
 #!/bin/bash
@@ -428,7 +428,7 @@ Now your database got back to work and ready to handle read/write requests by th
 
 ## Cluster Restoration
 
-With a new primary address you can easily avoid tuning your application connection string changing IP addresses of the primary database. To do this you have to put a [load balancer](/docs/Load%20Balancers/Load%20Balancing) in front of the cluster that will monitor the status of its components and route traffic to the current primary. Below, we will demonstrate how to restore original cluster topology and thus no changes will be required at the frontend.
+With a new primary address you can easily avoid tuning your application connection string changing IP addresses of the primary database. To do this you have to put a [load balancer](/docs/Database/PostgreSQL/High%20Availability%20Cluster/Auto-Clustering#manual-failover-scenario) in front of the cluster that will monitor the status of its components and route traffic to the current primary. Below, we will demonstrate how to restore original cluster topology and thus no changes will be required at the frontend.
 
 Another reason the topology should be restored is related to ensuring a scaling ability of the cluster. Only original topology can be scaled in/out horizontally.
 
@@ -501,11 +501,11 @@ pg_basebackup -U replication -h 172.25.2.31 -D /var/lib/pgsql/data -Fp -Xs -P -R
 
 Where:
 
-- _[pg_basebackup](https://cloudmydc.com/)_ - is used to take base backups of a running PostgreSQL database cluster.
+- _[pg_basebackup](https://www.postgresql.org/docs/current/app-pgbasebackup.html)_ - is used to take base backups of a running PostgreSQL database cluster.
 - _172.25.2.31_ - IP address of the current primary node.
 - _/var/lib/pgsql/data_ - PostgreSQL data directory.
 
-4. Make sure the IP address in the **_host_** parameter described in thesecond step of [Configuring Standby](https://cloudmydc.com/) contains proper IP address of the former primary.
+4. Make sure the IP address in the **_host_** parameter described in thesecond step of [Configuring Standby](/docs/Database/PostgreSQL/High%20Availability%20Cluster/Auto-Clustering#configuring-standby) contains proper IP address of the former primary.
 
 <div style={{
     display:'flex',

@@ -39,6 +39,7 @@ Wait just a minute for your environment to be created.
 
 4. Click **info** button for MySQL and you’ll see your **public IP** in the end of the dropdown list.
 
+
 <div style={{
     display:'flex',
     justifyContent: 'center',
