@@ -45,7 +45,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.0#autofs-downgrade">
                     Learn More >>
                 </a>
             </div>
@@ -64,7 +64,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.0#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -108,7 +108,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.0#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -127,7 +127,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.0#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -138,7 +138,7 @@ Fixed
 
 ## AutoFS Downgrade
 
-**AutoFS** is a file system tool to automate [directories mounting](https://cloudmydc.com/) operations and to achieve the “as-needed” approach. With this directory mounting method, shared folders are mounted only upon access and automatically unmounted after a period of inactivity. The main focus of the implementation is better network efficiency compared to static mounts.
+**AutoFS** is a file system tool to automate [directories mounting](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) operations and to achieve the “as-needed” approach. With this directory mounting method, shared folders are mounted only upon access and automatically unmounted after a period of inactivity. The main focus of the implementation is better network efficiency compared to static mounts.
 
 However, some performance issues were detected with the latest AutoFS versions. As a result, it was forcibly downgraded to the stable **_AutoFS 5.1.6_** version for all containers on the platform. The platform will restore regular updates to the newest release as soon as the problem is resolved.
 
@@ -239,7 +239,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
                 wordBreak: 'break-all',
                 padding: '20px',
             }}>
-                <a href="/">
+                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
                     {item.JE}
                 </a>
             </div>
@@ -277,9 +277,9 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](https://cloudmydc.com/) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
 
-[More info](https://cloudmydc.com/)
+[More info](/docs/QuickStart/Software%20Stack%20Versions)
 
 <div style={{
         display: 'flex',
