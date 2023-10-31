@@ -158,7 +158,7 @@ Also, you can quickly switch traffic between your environments (e.g. to redirect
 
 ## Automatic Vertical Scaling
 
-The platform dynamically provides the exact amount of resources (RAM and CPU) required by your nodes according to the current load with no manual intervention required. As a result, you [never overpay for unused resources](https://cloudmydc.com/) and save your time as the platform eliminates the need to handle the load-related adjustments or architectural changes.
+The platform dynamically provides the exact amount of resources (RAM and CPU) required by your nodes according to the current load with no manual intervention required. As a result, you never overpay for unused resources and save your time as the platform eliminates the need to handle the load-related adjustments or architectural changes.
 
 You just need to set the upper [cloudlets](/docs/PlatformOverview/Cloudlet#what-is-a-cloudlet) limit (each one equals to _128 MiB_ of RAM and _400 MHz_ of CPU) for your NodeJS application server and everything else will be handled by platform automatically.
 

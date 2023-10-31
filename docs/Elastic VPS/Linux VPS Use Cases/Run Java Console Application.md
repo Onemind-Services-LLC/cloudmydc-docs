@@ -118,7 +118,7 @@ public class VdsSocket {
 }
 ```
 
-Once your application is ready, you need to pack it into a **_.jar_** archive and upload it to VPS container via preferred file transfer client. In our example, we’ll upload [vdssocket.jar](https://cloudmydc.com/) file by means of [WinSCP](https://winscp.net/eng/index.php) tool. For that, let’s perform the following steps.
+Once your application is ready, you need to pack it into a **_.jar_** archive and upload it to VPS container via preferred file transfer client. In our example, we’ll upload vdssocket.jar file by means of [WinSCP](https://winscp.net/eng/index.php) tool. For that, let’s perform the following steps.
 
 1. Access WinSCP client and connect to your VPS container using credentials received via email upon server installation:
 
@@ -193,7 +193,7 @@ That’s it! Now, as you can see, the specified port is listened to.
 
 ## Check Application Operability
 
-To check the application proper workflow, we’ll connect to VPS container over the [Telnet](https://en.wikipedia.org/wiki/Telnet) protocol. For that, [install](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771275(v=ws.10)?redirectedfrom=MSDN#bkmk_installcmd) a Telnet client and run it.
+To check the application proper workflow, we’ll connect to VPS container over the [Telnet](https://en.wikipedia.org/wiki/Telnet) protocol. For that, [install](<https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771275(v=ws.10)?redirectedfrom=MSDN#bkmk_installcmd>) a Telnet client and run it.
 
 1. Establish connection to your VPS container by executing the following command:
 

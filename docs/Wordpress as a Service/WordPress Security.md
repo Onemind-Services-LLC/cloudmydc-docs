@@ -39,4 +39,4 @@ Depending on the topology, you are provided with credentials to the admin panels
 
 :::
 
-Check our **[WordPress Security Optimization for High-Performing Websites](https://cloudmydc.com/)** article for more security and optimization advice.
+Check our **WordPress Security Optimization for High-Performing Websites** article for more security and optimization advice.

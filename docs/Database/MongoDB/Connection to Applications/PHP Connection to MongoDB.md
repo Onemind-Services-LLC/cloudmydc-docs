@@ -90,7 +90,7 @@ Then, select the corresponding database using the drop-down list below and **Exe
 
 :::tip Note
 
-[Starting with the 4.3 PaaS version](https://cloudmydc.com/), there are two driver versions available at all of the newly created PHP app servers:
+Starting with the 4.3 PaaS version, there are two driver versions available at all of the newly created PHP app servers:
 
 - mongo.so (currently, it’s considered deprecated)
 - mongodb.so

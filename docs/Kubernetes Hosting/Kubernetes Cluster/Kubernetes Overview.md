@@ -21,6 +21,6 @@ Installation of a Kubernetes Cluster, as well as network and storage configurati
 
 :::tip Tip
 
-For more information, view the **_[Kubernetes Cluster Overview](https://cloudmydc.com/)_** article on our blog.
+For more information, view the **_Kubernetes Cluster Overview_** article on our blog.
 
 :::

@@ -13,6 +13,6 @@ The combination of PaaS vertical scaling and VPA can help minimize resource util
 
 :::tip Tip
 
-An extended real case example (WordPress) on the **_[Kubernetes Cluster Scaling](https://cloudmydc.com/)_** is provided within the linked article.
+An extended real case example (WordPress) on the **_Kubernetes Cluster Scaling_** is provided within the linked article.
 
 :::

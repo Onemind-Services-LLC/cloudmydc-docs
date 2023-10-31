@@ -4,7 +4,7 @@ sidebar_position: 1
 
 ## Java Connection to MariaDB/MySQL/Percona
 
-**MariaDB**, **MySQL**, and **Percona** are highly popular open source databases, used by developers all over the world. In this instruction we’ll show you how to connect your Java application to these databases, standalone server and [clustered solution](https://cloudmydc.com/).
+**MariaDB**, **MySQL**, and **Percona** are highly popular open source databases, used by developers all over the world. In this instruction we’ll show you how to connect your Java application to these databases, standalone server and clustered solution.
 
 1. Log into your PaaS account and [create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with the **MariaDB** (or **MySQL**) database server (available within the **_SQL_** wizard section):
 
@@ -319,7 +319,7 @@ You’ll see that the newly created table appeared with the name {date-time of c
 
 The platform also lets you extend your MariaDB/MySQL servers functionality by following the appropriate instructions in our documentation:
 
-- set up the preferred database replication type with embedded [Auto-Clustering](https://cloudmydc.com/) feature in order to get the increased DB performance and data loss protection
+- set up the preferred database replication type with embedded Auto-Clustering feature in order to get the increased DB performance and data loss protection
 - adjust [Backups Scheduling](/docs/Database/Database%20Hosting/Manual%20Database%20Backups#manual-database-backups) for ensuring safety of the information inside your DBs in the case of unexpected server failure
 - see the [Remote Access](/docs/Database/MySQL-MariaDB-Percona/Remote%20Access#remote-access-to-mysqlmariadbpercona) instruction and learn how to access your database remotely via the preferred desktop MySQL client
 - use the [Dump Files Import/Export](/docs/Database/MySQL-MariaDB-Percona/Dump%20Import-Export) guide to find out how to manually backup and restore your data from the previously created dumps

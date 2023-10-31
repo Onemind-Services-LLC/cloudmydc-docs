@@ -54,7 +54,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-2.2. The **SSL Installation** section allows issuing new or viewing existing certificates. You can use automatic _[Let’s Encrypt SSL](https://cloudmydc.com/)_ or manually manage custom SSL for the project (you need to add custom domain first).
+2.2. The **SSL Installation** section allows issuing new or viewing existing certificates. You can use automatic _Let’s Encrypt SSL_ or manually manage custom SSL for the project (you need to add custom domain first).
 
 <div style={{
     display:'flex',

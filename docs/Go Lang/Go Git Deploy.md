@@ -71,11 +71,11 @@ mkdir -p /home/jelastic/webapp/ROOT/custom/conf
 cp /home/jelastic/webapp/ROOT/conf/app.ini /home/jelastic/webapp/ROOT/custom/conf/app.iniinstall gogs
 ```
 
-6. Adjust the ***server*** section of your custom ***app.ini*** config file:
+6. Adjust the **_server_** section of your custom **_app.ini_** config file:
 
-- ***PROTOCOL*** - set the protocol to be used (e.g. http)
-- ***DOMAIN*** - provide your environment domain name (my-gogs.jelastic.com)
-- ***ROOT_URL*** - change to the following `%(PROTOCOL)s://%(DOMAIN)s/`
+- **_PROTOCOL_** - set the protocol to be used (e.g. http)
+- **_DOMAIN_** - provide your environment domain name (my-gogs.jelastic.com)
+- **_ROOT_URL_** - change to the following `%(PROTOCOL)s://%(DOMAIN)s/`
 
 <div style={{
     display:'flex',
@@ -87,9 +87,9 @@ cp /home/jelastic/webapp/ROOT/conf/app.ini /home/jelastic/webapp/ROOT/custom/con
 
 </div>
 
-Don’t forget to **Save** the changes. 
+Don’t forget to **Save** the changes.
 
-7. Add the ***GO_RUN_OPTIONS*** [environment variable](http://localhost:3000/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables) with the ***web*** value.
+7. Add the **_GO_RUN_OPTIONS_** [environment variable](/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables) with the **_web_** value.
 
 <div style={{
     display:'flex',
@@ -101,13 +101,13 @@ Don’t forget to **Save** the changes.
 
 </div>
 
-**Restart** your Golang node to apply changes. 
+**Restart** your Golang node to apply changes.
 
 8. Open your environment in a browser and you’ll be automatically redirected to the Gogs installation page:
 
-- ***Database Settings*** (*Type, Host, User, Password, DB name*) - provide the database connection data (use the previously received email to get the required credentials)
-- ***Application General Settings*** - change the Run User field value to *golang*
-- ***Optional Settings*** - configure Admin Account Settings (can be registered later - the very first user will be automatically provided with administrator permissions)
+- **_Database Settings_** (_Type, Host, User, Password, DB name_) - provide the database connection data (use the previously received email to get the required credentials)
+- **_Application General Settings_** - change the Run User field value to _golang_
+- **_Optional Settings_** - configure Admin Account Settings (can be registered later - the very first user will be automatically provided with administrator permissions)
 
 <div style={{
     display:'flex',
@@ -119,7 +119,7 @@ Don’t forget to **Save** the changes.
 
 </div>
 
-Click the **Install Gogs** at the bottom of the page. 
+Click the **Install Gogs** at the bottom of the page.
 
 9. You’ll be automatically logged in or redirected to the login screen (where you can sign up a new user).
 

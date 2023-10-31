@@ -76,7 +76,9 @@ In this guide, we’ll list all the main configuration files in the [platform-ma
                 wordBreak: 'break-all',
                 padding: '20px',
             }}>
+                <a href={item.url}>
                 {item.Folder}
+                </a>
             </div>
             <div style={{
                 padding: '20px',

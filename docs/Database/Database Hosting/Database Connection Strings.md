@@ -85,7 +85,11 @@ Look through the table of database types to find the appropriate DB connection c
                 wordBreak: 'break-all',
                 padding: '20px',
             }}>
-                {item.DBType}
+                {item.required ? <a href={item.url}>
+                    {item.DBType}
+                </a> : <a>
+                    {item.DBType}
+                </a>}
             </div>
             <div style={{
                 padding: '20px',
@@ -172,7 +176,9 @@ Based on the used DB type, check out the connection code examples below and adju
                 wordBreak: 'break-all',
                 padding: '20px',
             }}>
-                {item.DBType}
+                <a href={item.url}>
+                    {item.DBType}
+                </a>
             </div>
             <div style={{
                 padding: '20px',

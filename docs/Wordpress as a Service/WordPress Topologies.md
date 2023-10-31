@@ -42,7 +42,7 @@ The **WordPress Standalone Pro** package has an efficient single node topology b
 
 :::tip Tip
 
-Learn about _[*LiteSpeed Benefits Over Other Servers for WordPress Hosting*](https://cloudmydc.com/)_ in the dedicated blog article.
+Learn about _*LiteSpeed Benefits Over Other Servers for WordPress Hosting*_ in the dedicated blog article.
 
 :::
 
@@ -78,7 +78,7 @@ The **WordPress WooCommerce Pro** package has an efficient single node topology 
 
 :::tip Tip
 
-Learn about _[LiteSpeed Benefits Over Other Servers for WordPress Hosting](https://cloudmydc.com/)_ in the dedicated blog article.
+Learn about _LiteSpeed Benefits Over Other Servers for WordPress Hosting_ in the dedicated blog article.
 
 :::
 

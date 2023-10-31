@@ -4,7 +4,7 @@ sidebar_position: 6
 
 ## Galera Cluster Limitations and Recovery
 
-This instruction lists the most common limitations and problems when hosting a **[MariaDB Galera Cluster](https://cloudmydc.com/)** at the platform. Follow this guide to find possible issues and recovery solutions to the already occurred problems:
+This instruction lists the most common limitations and problems when hosting a **MariaDB Galera Cluster** at the platform. Follow this guide to find possible issues and recovery solutions to the already occurred problems:
 
 - [Galera Cluster Limitations](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#galera-cluster-limitations)
 - [Stop/Start/Restart Specifics](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#stopstartrestart-specifics)

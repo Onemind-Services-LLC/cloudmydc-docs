@@ -4,7 +4,7 @@ sidebar_position: 4
 
 ## How to Test Load Balancing
 
-When your project becomes highly demanded and visited, you face a problem - necessity to increase your hardware productivity, as it should be able to handle and rapidly serve all the incoming users' requests. Adding more resources will temporarily improve the situation, saving your server from the failure, but won’t solve the root issue. And this results in the need to set up a [clustering solution](https://cloudmydc.com/) with an embedded automatic load balancing.
+When your project becomes highly demanded and visited, you face a problem - necessity to increase your hardware productivity, as it should be able to handle and rapidly serve all the incoming users' requests. Adding more resources will temporarily improve the situation, saving your server from the failure, but won’t solve the root issue. And this results in the need to set up a [clustering solution](/docs/Load%20Balancers/NGINX/Testing%20Load%20Balancing) with an embedded automatic load balancing.
 
 Application cluster adjusting is quite easy with the platform - just add a few more application server instances to your environment [via the topology wizard](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling). In addition, you’ll automatically get the NGINX-balancer server enabled in front of your project. It will be responsible for the even load distribution among the stated number of app server nodes, performed by virtue of the [load balancing](/docs/Load%20Balancers/Load%20Balancing).
 

@@ -45,7 +45,7 @@ You can get a **MySQL** or **MariaDB** database cluster with the required replic
 
 <input type="text" placeholder="Enter Email here"/>
 
-The process is simple - just provide your email and confirm via the appropriate notification. Read the **[MariaDB/MySQL Auto-Clustering](https://cloudmydc.com/)** article for more information on the installed package and available customization options.
+The process is simple - just provide your email and confirm via the appropriate notification. Read the **MariaDB/MySQL Auto-Clustering** article for more information on the installed package and available customization options.
 
 ## Manual Installation
 
@@ -97,7 +97,7 @@ Wait just a minute for your environment to be created.
 
 </div>
 
-3. In the same way, create one more environment with MariaDB or just [clone](https://cloudmydc.com/) it. Let’s name it slavebase. It will be located on the other hardnode, which is even more secure and reliable for storing your data.
+3. In the same way, create one more environment with MariaDB or just [clone](/docs/EnvironmentManagement/Cloning%20Environment) it. Let’s name it slavebase. It will be located on the other hardnode, which is even more secure and reliable for storing your data.
 
 Now you have two identical environments with two databases.
 

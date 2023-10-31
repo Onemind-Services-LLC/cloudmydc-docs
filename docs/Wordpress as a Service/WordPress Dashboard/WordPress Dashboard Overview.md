@@ -222,7 +222,7 @@ Use the drop-down menu at the bottom of each subscription to manage it:
 - _Git Configuration_
 - _Backup Storage_
 
-  3.1. The **SSL Certificates** tab manages SSL certificates on the account. It automatically lists all the [Let’s Encrypt certificates](https://cloudmydc.com/) issued for your projects and allows manually adding [custom SSL certificates](/docs/ApplicationSetting/SSL/Custom%20SSL) with the **Add SSL** button.
+  3.1. The **SSL Certificates** tab manages SSL certificates on the account. It automatically lists all the Let’s Encrypt certificates issued for your projects and allows manually adding [custom SSL certificates](/docs/ApplicationSetting/SSL/Custom%20SSL) with the **Add SSL** button.
 
 <div style={{
     display:'flex',

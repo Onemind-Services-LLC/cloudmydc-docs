@@ -40,4 +40,4 @@ CloudMyDc Application Platform for WordPress provides numerous features that can
 - **[robust dashboard](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Dashboard%20Overview)** with numerous features you may like (built-in file manager, real-time statistics monitoring, etc.)
 - automated **[backup and restore](/docs/Wordpress%20as%20a%20Service/WordPress%20Backups)** processes
 - the **subscription-based** pricing model
-- [powerful API](https://cloudmydc.com/) for automation and scripting
+- powerful API for automation and scripting

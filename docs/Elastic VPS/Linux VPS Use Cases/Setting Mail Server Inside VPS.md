@@ -137,6 +137,6 @@ That’s all. The mail server has been successfully adjusted to work with applic
 
 :::tip Note
 
-Some settings may differ depending on the currently used [PaaS installation](https://cloudmydc.com/) (i.e. hosting provider platform). Refer to the Postfix [official documentation](http://www.postfix.org/documentation.html) to reveal more details considering required mail server configurations.
+Some settings may differ depending on the currently used PaaS installation (i.e. hosting provider platform). Refer to the Postfix [official documentation](http://www.postfix.org/documentation.html) to reveal more details considering required mail server configurations.
 
 :::

@@ -13,6 +13,6 @@ With both of these horizontal scaling methods, Kubernetes Cluster always has nod
 
 :::tip Tip
 
-An extended real case example (WordPress) on the **_[Kubernetes Cluster Scaling](https://cloudmydc.com/)_** is provided within the linked article.
+An extended real case example (WordPress) on the **_Kubernetes Cluster Scaling_** is provided within the linked article.
 
 :::

@@ -17,7 +17,7 @@ You can easily integrate Velero backups with the Kubernetes cluster on the platf
 
 1. Start by organizing the S3-compatible storage, which Velero will use to store your backups. For example, you can use _AWS S3_, _VHI S3_, or _MinIO cluster_.
 
-In our guide, we’ll proceed with the latter option so that you can have the whole setup under the same platform. You can install the **_[MinIO Cluster](https://cloudmydc.com/)_** at the platform in a few clicks using the Marketplace (follow the steps in the linked guide).
+In our guide, we’ll proceed with the latter option so that you can have the whole setup under the same platform. You can install the **_MinIO Cluster_** at the platform in a few clicks using the Marketplace (follow the steps in the linked guide).
 
 <div style={{
     display:'flex',

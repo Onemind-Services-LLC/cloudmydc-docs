@@ -22,7 +22,7 @@ In this guide, you’ll get acquainted with the distinctive features of the Go h
 - [Golang Versioning](/docs/Go%20Lang/Go%20Dev%20Center#golang-versioning)
 - [Go Application Deployment](/docs/Go%20Lang/Go%20Dev%20Center#go-application-deployment)
 - [Domains Management](/docs/Go%20Lang/Go%20Dev%20Center#domains-management)
-- [Automatic Vertical Scaling](/docs/Go%20Lang/Go%20Dev%20Center#automatic-vertical-scaling)
+- [Automatic Vertical Scaling](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview)
 - [Manual Horizontal Scaling](/docs/Go%20Lang/Go%20Dev%20Center#manual-horizontal-scaling)
 - [Automatic Horizontal Scaling](/docs/Go%20Lang/Go%20Dev%20Center#automatic-horizontal-scaling)
 

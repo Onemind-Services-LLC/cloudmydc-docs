@@ -185,7 +185,7 @@ One of the key-features of the platform is dynamic provisioning of the exact amo
 
 </div>
 
-As a result, you automatically benefit on a truly user-oriented [**_Pay-per-Use_**](/docs/Account&Pricing/Pricing%20Model%20Overview#platform-usage-based-pricing-pay-per-use) charging approach and don’t need to guess or predict the incoming load. It ensures that you [never overpay for unused resources](https://cloudmydc.com/) and save your time because the platform eliminates the need to handle the load-related adjustments or perform architectural changes manually.
+As a result, you automatically benefit on a truly user-oriented [**_Pay-per-Use_**](/docs/Account&Pricing/Pricing%20Model%20Overview#platform-usage-based-pricing-pay-per-use) charging approach and don’t need to guess or predict the incoming load. It ensures that you never overpay for unused resources and save your time because the platform eliminates the need to handle the load-related adjustments or perform architectural changes manually.
 
 <div style={{
     display:'flex',

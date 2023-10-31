@@ -41,7 +41,7 @@ The most basic way to establish an external connection to a service is to expose
 This method has several downsides that should be considered when configuring the Kubernetes Cluster (one service per port, restricted range of ports, etc.). As a result, the NodePort service type can be used for the demo or other temporary applications. However, the production solutions usually require more complex configuration with ingresses and LoadBalancer service options. Follow our guide(s) to create verified configurations for your application and put in production:
 
 - [Ingresses](/docs/Kubernetes%20Hosting/Application%20Deployment/Creating%20Ingresses)
-- [Using Public IPs in Kubernetes Service](https://cloudmydc.com/)
+- Using Public IPs in Kubernetes Service
 
 :::
 
