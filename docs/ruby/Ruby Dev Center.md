@@ -46,9 +46,9 @@ In this article, we’ll go through the distinctive features of the [Ruby](https
 
 ## Ruby Environment Hosting
 
-The platform provides a powerful and intuitive topology wizard to [set up](/docs/EnvironmentManagement/Setting%20Up%20Environment) the hosting of a new environment.
+The platform provides a powerful and intuitive topology wizard to [set up](/docs/environment-management/setting-up-environment) the hosting of a new environment.
 
-Switch to the _Ruby_ language tab, select the required application server and engine version, add any other [software stack](/docs/QuickStart/Software%20Stack%20Versions) required. If needed, adjust other parameters, such as cloudlets (RAM and CPU), disk space, public IPv4/IPv6, node count, etc.
+Switch to the _Ruby_ language tab, select the required application server and engine version, add any other [software stack](/docs/quickstart/software-stack-versions) required. If needed, adjust other parameters, such as cloudlets (RAM and CPU), disk space, public IPv4/IPv6, node count, etc.
 
 :::tip Note
 
@@ -92,11 +92,11 @@ The following Ruby versions are supported at the time of this writing:
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/QuickStart/Software%20Stack%20Versions) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/quickstart/software-stack-versions) document.
 
 :::
 
-You can select the required [version of Ruby](/docs/Ruby/Ruby%20Versions#ruby-versions) via the topology wizard during the creation of a new environment, as well as adjust it for the existing instances via [container redeployment](/docs/Container/Container%20Redeploy).
+You can select the required [version of Ruby](/docs/Ruby/Ruby%20Versions#ruby-versions) via the topology wizard during the creation of a new environment, as well as adjust it for the existing instances via [container redeployment](/docs/category/container-deployment).
 
 ## Ruby Application Deployment
 
@@ -135,8 +135,8 @@ If needed, you can switch between the Ruby deployment types via the appropriate 
 
 Read the related documents to learn more about the deployment of the Ruby applications:
 
-- [Deployment Manager](/docs/Deployment/Deployment%20Manager)
-- [Deployment Guide](/docs/Deployment/Deployment%20Guide)
+- [Deployment Manager](/docs/deployment/deployment-manager)
+- [Deployment Guide](/docs/deployment/deployment-guide)
 - [Auto-Deploy Overview](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview#auto-deploy-of-gitsvn-updates)
 - [Deployment Hooks](/docs/Deployment/Deployment%20Hooks)
 
@@ -246,7 +246,7 @@ In addition, hosting at the PaaS allows using other built-in tools and features,
 
 - [Built-in](/docs/ApplicationSetting/SSL/Built-In%20SSL#built-in-ssl-certificates) or [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL#custom-ssl-certificates)
 - [Public IPv4 and IPv6](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip)
-- A wide range of complementary [software stacks](/docs/QuickStart/Software%20Stack%20Versions), including SQL and NoSQL databases
+- A wide range of complementary [software stacks](/docs/quickstart/software-stack-versions), including SQL and NoSQL databases
 - [Container firewalls](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall#container-firewall-rules-management), [endpoints](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#endpoints-a-direct-connection-to-the-cloud) and [environment network isolation](/docs/EnvironmentManagement/Environment%20Isolation#environment-network-isolation)
 - [User-friendly UI](/docs/QuickStart/Dashboard%20Guide) and [SSH access](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview#ssh-access)
 - [Open API](/docs/Deployment%20Tools/API%20&%20CLI/API%20Overview#platform-api) and [Cloud Scripting](https://docs.cloudscripting.com/) for automation

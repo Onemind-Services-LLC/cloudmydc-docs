@@ -4,7 +4,7 @@ slug: ssh-access-to-git-repository
 sidebar_position: 5
 ---
 
-With the platform, you can easily [deploy your application](/docs/Deployment/Deployment%20Guide) from any remote public or private GIT/SVN repository for each of the supported programming languages: Java, PHP, Ruby, Python, and Node.js.
+With the platform, you can easily [deploy your application](/docs/deployment/deployment-guide) from any remote public or private GIT/SVN repository for each of the supported programming languages: Java, PHP, Ruby, Python, and Node.js.
 
 In order to achieve more security, you can also access your private GIT repositories via SSH and easily clone and update your applications from them. In addition, this gives you the ability to work with those repositories, which are located at the private servers, instead of common web-based hosting services for projects like GitHub, GitLab, Bitbucket, etc.
 
@@ -294,7 +294,7 @@ Click the **Add key** button.
 
 Finally, now you can proceed to your project’s deployment via the secured connection.
 
-1. Go to the **_[Deployment Manager](/docs/Deployment/Deployment%20Manager#git--svn-projects)_** at the bottom of the dashboard and click **Add repo**. Provide the following information within the opened form:
+1. Go to the **_[Deployment Manager](/docs/deployment/deployment-manager#git--svn-projects)_** at the bottom of the dashboard and click **Add repo**. Provide the following information within the opened form:
 
 - **Name** - the name of your application (no spaces and special symbols are allowed)
 - **URL** - the appropriate **_git_** URL to the repository
@@ -353,7 +353,7 @@ For Java-based environments, you need to additionally select a [build node](http
 
 When all the data is entered, click **Deploy** to proceed and wait until your project is successfully deployed.
 
-3. You can ensure your project files are now available. Open the **[configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager)** for your environment, go to the **webroot** directory, and check a folder named after the specified context (**ROOT** by default) inside.
+3. You can ensure your project files are now available. Open the **[configuration file manager](/docs/application-setting/configuration-file-manager)** for your environment, go to the **webroot** directory, and check a folder named after the specified context (**ROOT** by default) inside.
 
 <div style={{
     display:'flex',

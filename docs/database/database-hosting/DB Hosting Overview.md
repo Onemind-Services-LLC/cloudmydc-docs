@@ -39,7 +39,7 @@ Use the drop-down list to choose among the available DB management systems:
 
 :::tip Note
 
-The list of available [database servers](/docs/QuickStart/Software%20Stack%20Versions) can vary and depends on your hosting provider settings. If some of these servers are not available in your wizard, please, contact your hosting provider for activation.
+The list of available [database servers](/docs/quickstart/software-stack-versions) can vary and depends on your hosting provider settings. If some of these servers are not available in your wizard, please, contact your hosting provider for activation.
 
 :::
 
@@ -104,7 +104,7 @@ where
 </div>
 
 - **{environment-name}** - name of the environment you’ve added the server to (e.g. database)
-- **{hoster_domain}**- your hosting provider domain; can be found within the last column of the appropriate table in the [Hosters Info](/docs/QuickStart/Hosters%20List%20&%20Info#paas-hosting-providers) page
+- **{hoster_domain}**- your hosting provider domain; can be found within the last column of the appropriate table in the [Hosters Info](/docs/quickstart/hosters-list-&-info#paas-hosting-providers) page
 
 :::tip Note
 

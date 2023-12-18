@@ -132,8 +132,8 @@ Use the table below as a reference:
 
 Additional ports can be opened using:
 
-- **[endpoints](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints)** - maps the container internal port to random external via the platform [Shared LB](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer)
-- **[public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)** - provides a direct access to all ports of your container
+- **[endpoints](/docs/application-setting/external-access-to-applications/endpoints)** - maps the container internal port to random external via the platform [Shared LB](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer)
+- **[public IP](/docs/application-setting/external-access-to-applications/public-ip)** - provides a direct access to all ports of your container
 
 <div style={{
     display:'flex',
@@ -170,4 +170,4 @@ Alternatively, a comma-separated list of ports can be provided via the **_JELAST
 - when working with the **NodeJS** application server, an additional **_REDIRECT_EXCLUDE_PORTS_** variable can be used to manually exclude ports from the auto-redirect algorithm (i.e. port 80 won’t redirect to them)
 
 :::
-To get even greater flexibility over the node accessibility, you can customize your [container firewall](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall) settings.
+To get even greater flexibility over the node accessibility, you can customize your [container firewall](/docs/application-setting/external-access-to-applications/container-firewall) settings.

@@ -31,7 +31,7 @@ Node.js process manager is a tool, which provides an ability to control applicat
 
 The platform provides four pre-configured process managers by default, which can be selected in the following ways:
 
-- by selecting the appropriate tag during the environment [creation](/docs/EnvironmentManagement/Setting%20Up%20Environment) or container [redeploy](/docs/Container/Container%20Redeploy)
+- by selecting the appropriate tag during the environment [creation](/docs/environment-management/setting-up-environment) or container [redeploy](/docs/category/container-deployment)
 
 <div style={{
     display:'flex',
@@ -90,7 +90,7 @@ pm2 list
 
 As you can see it shows the default _draw-game_ application is running.
 
-Next, you can remove this app with the **_pm2 delete_** command and [deploy](/docs/Deployment/Deployment%20Guide) your own project (e.g. the default Hello Word application):
+Next, you can remove this app with the **_pm2 delete_** command and [deploy](/docs/deployment/deployment-guide) your own project (e.g. the default Hello Word application):
 
 <div style={{
     display:'flex',

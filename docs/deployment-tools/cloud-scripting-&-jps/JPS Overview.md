@@ -86,6 +86,6 @@ Use the docs below to find out information on how to properly compose applicatio
 
 :::tip Note
 
-After packaging your own application due to our instructions, you can contact your hosting provider and negotiate adding your JPS to the set of solutions within [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) at the dashboard. In such a way, your app will be available for automatic deploy to all users within your hosting platform.
+After packaging your own application due to our instructions, you can contact your hosting provider and negotiate adding your JPS to the set of solutions within [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace) at the dashboard. In such a way, your app will be available for automatic deploy to all users within your hosting platform.
 
 :::

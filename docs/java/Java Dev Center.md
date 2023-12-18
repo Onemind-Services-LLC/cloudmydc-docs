@@ -36,7 +36,7 @@ Use the table of content below to find required information within the guide qui
 - [Java Environment Creation](/docs/Java/Java%20Dev%20Center#java-environment-creation)
 - [Java Application Deployment](/docs/Java/Java%20Dev%20Center#java-application-deployment)
 - [Domains Management](/docs/Java/Java%20Dev%20Center#domains-management)
-- [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling)
+- [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling)
 - [Horizontal Scaling: Manual and Automatic](/docs/Java/Java%20Dev%20Center#horizontal-scaling-manual-and-automatic)
 - [Java Clusterization](/docs/Java/Java%20Dev%20Center#java-clusterization)
 - [Database Connection to Java Application](/docs/Java/Java%20Dev%20Center#database-connection-to-java-application)
@@ -87,7 +87,7 @@ Read the documentation below for additional information on Java servers specific
 
 ## Java Environment Creation
 
-To host a Java application, you need to create an appropriate environment. Just open the [**topology wizard**](/docs/EnvironmentManagement/Setting%20Up%20Environment) in your PaaS dashboard, navigate to the **Java** language tab, pick the desired Java application server, databases, and other stacks. If needed, customize settings (such as cloudlets, disk space, region, etc.) and click **Create**.
+To host a Java application, you need to create an appropriate environment. Just open the [**topology wizard**](/docs/environment-management/setting-up-environment) in your PaaS dashboard, navigate to the **Java** language tab, pick the desired Java application server, databases, and other stacks. If needed, customize settings (such as cloudlets, disk space, region, etc.) and click **Create**.
 
 <div style={{
     display:'flex',
@@ -99,7 +99,7 @@ To host a Java application, you need to create an appropriate environment. Just 
 
 </div>
 
-All added servers represent [fully isolated containers](/docs/PlatformOverview/Isolated%20Container), located on different hosts for more availability, while isolation eliminates the risks of interfering with one another. You can attach the [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address to any of these servers for being accessed directly. Otherwise (i.e. if using default settings), the incoming requests sent to your application will be proxied by [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer).
+All added servers represent [fully isolated containers](/docs/PlatformOverview/Isolated%20Container), located on different hosts for more availability, while isolation eliminates the risks of interfering with one another. You can attach the [public IP](/docs/application-setting/external-access-to-applications/public-ip) address to any of these servers for being accessed directly. Otherwise (i.e. if using default settings), the incoming requests sent to your application will be proxied by [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer).
 
 ## Java Application Deployment
 
@@ -109,7 +109,7 @@ The following deployment methods are supported:
 
 - via the application **_archive_** - _.war, .zip, .jar,_ and _.ear_ archives
 - from the GIT/SVN remote **_repository_**, using the Maven build node
-- using **_plugins_** - _[Ant Task](/docs/Deployment%20Tools/Plugins/Ant%20Task), [Eclipse, IntelliJ IDEA](https://cloudmydc.com/), [Maven](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven)_ and _[NetBeans](/docs/Deployment%20Tools/Plugins/NetBeans%20Plugin/NetBeans%20Plugin%20Overview/)_
+- using **_plugins_** - _[Ant Task](/docs/Deployment%20Tools/Plugins/Ant%20Task), [Eclipse, IntelliJ IDEA](https://cloudmydc.com/), [Maven](/docs/java/build-node/java-vcs-deployment-with-maven)_ and _[NetBeans](/docs/Deployment%20Tools/Plugins/NetBeans%20Plugin/NetBeans%20Plugin%20Overview/)_
 
 <div style={{
     display:'flex',
@@ -123,8 +123,8 @@ The following deployment methods are supported:
 
 You can read the appropriate documents to learn more about the deployment of the Java applications:
 
-- [Deployment Guide](/docs/Deployment/Deployment%20Guide)
-- [Maven Build Node](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven)
+- [Deployment Guide](/docs/deployment/deployment-guide)
+- [Maven Build Node](/docs/java/build-node/java-vcs-deployment-with-maven)
 - [Auto-Deploy Overview](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview)
 - [Deployment Hooks](/docs/Deployment/Deployment%20Hooks)
 
@@ -132,12 +132,12 @@ There are also separate instructions for managing your projects via [Gitblit](/d
 
 ## Domains Management
 
-You can bind a [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) name to your application’s URL and use it instead of the default environment domain:
+You can bind a [custom domain](/docs/application-setting/domain-name-management/custom-domain-name) name to your application’s URL and use it instead of the default environment domain:
 
 - **_CNAME redirect_** if using _Shared Load Balancer_; is recommended for **_dev_** and **test** environments
 - **DNS A Record** if using _public IP_; can handle high traffic load and is suitable for **production** environments
 
-Also, with the help of the [swapping domains](https://cloudmydc.com/) feature or the **SwapExtIps** [API](https://cloudmydc.com/)/[CLI](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview) method, you can upgrade and modify your application with zero downtime (i.e. your users won’t notice any interruption).
+Also, with the help of the [swapping domains](https://cloudmydc.com/) feature or the **SwapExtIps** [API](https://cloudmydc.com/)/[CLI](/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview) method, you can upgrade and modify your application with zero downtime (i.e. your users won’t notice any interruption).
 
 <div style={{
     display:'flex',
@@ -161,7 +161,7 @@ The platform allows using multiple domains within a single environment to increa
 
 ## Automatic Vertical Scaling
 
-The platform dynamically provides the number of cloudlets (i.e. RAM and CPU resources), which are required by your application to handle the current load. Just specify the maximum limit, and everything else will be performed by the platform automatically - no manual intervention required. This feature is called [**_atuomatic vertical scaling_**](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling) and ensures that you never overpay for unused capacities without experiencing a resource shortage.
+The platform dynamically provides the number of cloudlets (i.e. RAM and CPU resources), which are required by your application to handle the current load. Just specify the maximum limit, and everything else will be performed by the platform automatically - no manual intervention required. This feature is called [**_atuomatic vertical scaling_**](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) and ensures that you never overpay for unused capacities without experiencing a resource shortage.
 
 <div style={{
     display:'flex',
@@ -208,7 +208,7 @@ Also, you can adjust the preferred [scaling mode](/docs/ApplicationSetting/Scali
 
 Horizontal scaling can be performed not only manually but also automatically based on the current load on the node, which is monitored through the tunable triggers.
 
-Within the **Settings > Monitoring > [Auto Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling)** section, you can adjust the scaling conditions due to your needs, i.e. the lower/upper limit (percentage) for the specified resource type during a certain period. If the load stays out of the set limits, the nodes removal/addition process will be called automatically.
+Within the **Settings > Monitoring > [Auto Horizontal Scaling](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling)** section, you can adjust the scaling conditions due to your needs, i.e. the lower/upper limit (percentage) for the specified resource type during a certain period. If the load stays out of the set limits, the nodes removal/addition process will be called automatically.
 
 There are five different types of resources, which are monitored by triggers:
 

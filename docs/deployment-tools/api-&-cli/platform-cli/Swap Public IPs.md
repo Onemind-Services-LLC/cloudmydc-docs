@@ -6,7 +6,7 @@ sidebar_position: 11
 
 ## CLI Tutorial: Public IPs (External Addresses) Swap
 
-The operation of [public IPs](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) swap can come in handy for routing of the incoming requests to the required environment or application. It may be especially useful when, for example, switching testing and production environments.
+The operation of [public IPs](/docs/application-setting/external-access-to-applications/public-ip) swap can come in handy for routing of the incoming requests to the required environment or application. It may be especially useful when, for example, switching testing and production environments.
 
 The appropriate **_SwapExtIps_** CLI method gives you the ability to exchange external IP addresses between two containers. In case only one node has a public IP, it will be moved (reassigned) to the second instance. The method can work with nodes of the same or different environments but only in the confines of a single account.
 
@@ -35,7 +35,7 @@ Here, the following parameters should be specified:
 
 :::danger Notes:
 
-- Before using the **_SwapExtIps_** CLI method, please make sure that the source and destination nodes (environments) are running and belong to the same [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region).
+- Before using the **_SwapExtIps_** CLI method, please make sure that the source and destination nodes (environments) are running and belong to the same [region](/docs/environment-management/environment-regions/choosing-a-region).
 - <u>Before the PaaS 5.8 release</u>, this method does not support IPv6 and works with IPv4 only.
 - <u>Before the PaaS 6.0 release</u>, IP swap fails if an environment has a [bound](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-bind-domain-to-environment) custom domain.
 - The process may cause short-term unavailability of the corresponding Public IP address(es) (up to 10 seconds).

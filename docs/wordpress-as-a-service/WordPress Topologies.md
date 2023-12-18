@@ -128,7 +128,7 @@ WooCommerce is a free, open-source e-commerce plugin designed specifically for W
 
 ## WordPress Multi-Region Standalone
 
-CloudMyDc Application Platform for WordPress provides a multi-region geographic distribution approach for WordPress CMS deployment. The application will be distributed as standalone instances across several [regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) within one cloud to ensure automatic fault-tolerance and low latency read operations for the users based on their location.
+CloudMyDc Application Platform for WordPress provides a multi-region geographic distribution approach for WordPress CMS deployment. The application will be distributed as standalone instances across several [regions](/docs/environment-management/environment-regions/choosing-a-region) within one cloud to ensure automatic fault-tolerance and low latency read operations for the users based on their location.
 
 Such implementation provides a high availability level and ensures business continuity even in case of a data center outage. Additionally, having several WordPress instances in different locations over the globe can significantly improve website ranking from search engine side by decreasing response time and consequently attracting more customers worldwide.
 

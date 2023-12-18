@@ -8,7 +8,7 @@ sidebar_position: 6
 
 ## CLI Tutorial: Server Scaling
 
-When the environment is already created, in some cases it may be required to change its topology - for example, to scale a particular server or the whole environment layer (using the [vertical](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling) and/or [horizontal](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling) scaling respectively) due to the changed incoming load. This may be accomplished with the corresponding **_changetopology_** CLI method:
+When the environment is already created, in some cases it may be required to change its topology - for example, to scale a particular server or the whole environment layer (using the [vertical](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) and/or [horizontal](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) scaling respectively) due to the changed incoming load. This may be accomplished with the corresponding **_changetopology_** CLI method:
 
 ```bash
 ~/jelastic/environment/control/changetopology --envName {env_name} --env '{"engine" : "{engine_type}"}' --nodes ['{"nodeType" : "{node_type}","count" : {nodes_amount}, "fixedCloudlets" : {cloudlets_amount}, "flexibleCloudlets" : {cloudlets_amount}}, {"nodeType" : "{node_type}", "count" : {nodes_amount}, "fixedCloudlets" : {cloudlets_amount}, "flexibleCloudlets" :  {cloudlets_amount}}']
@@ -31,7 +31,7 @@ As for the rest of options, in this example we use the following ones:
 - **_{engine_type}_** - engine the instances of the chosen environment are powered by (an obligatory string)
 - **_{node_type}_** - stack type identifier, according to the [list](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Application%20Manifest)
 - **_{nodes_amount}_** - amount of nodes to be set (applies [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling))
-- **_{cloudlets_amount}_** - number of fixed (_fixedCloudlets_) and/or flexible (_flexibleCloudlets_) cloudlets to be allocated for the specified node type (applies [vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling))
+- **_{cloudlets_amount}_** - number of fixed (_fixedCloudlets_) and/or flexible (_flexibleCloudlets_) cloudlets to be allocated for the specified node type (applies [vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling))
 
 :::danger Note
 

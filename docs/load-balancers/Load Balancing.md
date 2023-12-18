@@ -20,7 +20,7 @@ Load balancing is a process of traffic navigation and workload distribution acro
 
 :::danger Note
 
-The platform provides load balancing on application (this document) and infrastructure layers (described in the **_[Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer)_** document). The former handles requests inside environments and the latter - from outside the platform to environments (except the direct connections via _[public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)_).
+The platform provides load balancing on application (this document) and infrastructure layers (described in the **_[Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer)_** document). The former handles requests inside environments and the latter - from outside the platform to environments (except the direct connections via _[public IP](/docs/application-setting/external-access-to-applications/public-ip)_).
 
 :::
 
@@ -49,4 +49,4 @@ probe = { .url = "/"; .timeout = 30s; .interval = 60s; .window = 5; .threshold =
 
 - **LiteSpeed ADC** - a TCP check is done by the internal IP every second with a one-second timeout (health check is implemented as a default functionality on the Worker Group level)
 
-Obviously, the default health check settings can be manually adjusted up to your needs (through either [file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) GUI or via [SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview)). Use the official documentation as a reference - _[NGINX](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-health-check/)_, _[HAProxy](https://www.haproxy.com/documentation/hapee/2-0r1/load-balancing/health-checking/active-health-checks)_, _[Apache Balancer](https://httpd.apache.org/docs/2.4/mod/mod_proxy_hcheck.html)_, _[Varnish](https://varnish-cache.org/docs/7.0/users-guide/vcl-backends.html#health-checks)_, and _[LiteSpeed](https://docs.litespeedtech.com/lsadc/settings/)_.
+Obviously, the default health check settings can be manually adjusted up to your needs (through either [file manager](/docs/application-setting/configuration-file-manager) GUI or via [SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview)). Use the official documentation as a reference - _[NGINX](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-health-check/)_, _[HAProxy](https://www.haproxy.com/documentation/hapee/2-0r1/load-balancing/health-checking/active-health-checks)_, _[Apache Balancer](https://httpd.apache.org/docs/2.4/mod/mod_proxy_hcheck.html)_, _[Varnish](https://varnish-cache.org/docs/7.0/users-guide/vcl-backends.html#health-checks)_, and _[LiteSpeed](https://docs.litespeedtech.com/lsadc/settings/)_.

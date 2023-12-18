@@ -8,7 +8,7 @@ sidebar_position: 4
 
 **MongoDB** is a popular NoSQL database, which is natively supported by the platform and can be easily installed on the Cloud. Below, we’ll consider a simple example of how to connect this DB stack from your **Node.js** application server.
 
-1. In order to follow this guide, you’ll need Node.js and MongoDB servers either within the platform (you can [create](/docs/EnvironmentManagement/Setting%20Up%20Environment) it at any time) or on any external resources.
+1. In order to follow this guide, you’ll need Node.js and MongoDB servers either within the platform (you can [create](/docs/environment-management/setting-up-environment) it at any time) or on any external resources.
 
 <div style={{
     display:'flex',

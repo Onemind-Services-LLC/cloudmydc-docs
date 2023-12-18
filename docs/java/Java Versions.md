@@ -21,7 +21,7 @@ When setting up an environment on the platform, you can choose the distribution 
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/QuickStart/Software%20Stack%20Versions) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/quickstart/software-stack-versions) document.
 
 :::
 
@@ -41,7 +41,7 @@ Also, for the existing environments the used engine version can be easily switch
 
 Within the opened wizard, switch to the **_Java_** tab, pick the desired application server and engine versions (as it is shown in the image above).
 
-2. To change the version of Java in the already existing environment, [redeploy](http://localhost:3001/docs/Container/Container%20Redeploy) the appropriate container(s):
+2. To change the version of Java in the already existing environment, [redeploy](http://localhost:3001/docs/category/container-deployment) the appropriate container(s):
 
 <div style={{
     display:'flex',

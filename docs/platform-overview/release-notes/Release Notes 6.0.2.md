@@ -247,7 +247,7 @@ The software stack provisioning process is independent of the platform release, 
 
 The most accurate and up-to-date list of the certified [software stack versions](/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0.2#software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/QuickStart/Software%20Stack%20Versions)
+[More info](/docs/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',

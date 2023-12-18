@@ -44,7 +44,7 @@ The maximal usage pricing is almost unreachable in practice (100% load on all no
 
 :::
 
-4. The last **Enjoy Pricing Advantages** slide helps to explain the efficiency of the platform [usage-based pricing](/docs/Account&Pricing/Pricing%20Model%20Overview) comparing to other cloud vendors' models.
+4. The last **Enjoy Pricing Advantages** slide helps to explain the efficiency of the platform [usage-based pricing](/docs/account-and-pricing/pricing-model-overview) comparing to other cloud vendors' models.
 
 ![Locale Dropdown](./img/WelcomeTutorial/05-tutorial-paas-pricing-advantages.png)
 
@@ -68,17 +68,17 @@ You can hide the current hint or completely abandon the tutorial with the approp
 
 :::
 
-If needed, you can [set up your new environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) using all of the parameters available via topology wizard. However, you don’t need any specific configurations for this tutorial, so we recommend to follow the hint and click **Create** straightaway.
+If needed, you can [set up your new environment](/docs/environment-management/setting-up-environment) using all of the parameters available via topology wizard. However, you don’t need any specific configurations for this tutorial, so we recommend to follow the hint and click **Create** straightaway.
 
 6. Wait a minute for your environment to be created. Meanwhile, you can track the process state in the [Tasks](/docs/QuickStart/Dashboard%20Guide) panel.
 
 ![Locale Dropdown](./img/WelcomeTutorial/08-tutorial-tasks-panel.png)
 
-7. Once the operation is completed, tutorial automatically navigates you to the [deployment manager](/docs/Deployment/Deployment%20Manager) section. Here, a button to deploy the default Hello World application will be highlighted. Click it to proceed.
+7. Once the operation is completed, tutorial automatically navigates you to the [deployment manager](/docs/deployment/deployment-manager) section. Here, a button to deploy the default Hello World application will be highlighted. Click it to proceed.
 
 ![Locale Dropdown](./img/WelcomeTutorial/09-tutorial-deploy-default-application.png)
 
-8. Within the opened [deploy frame](/docs/Deployment/Deployment%20Guide), select your just created Environment in the appropriate drop-down menu and click the **Deploy** button.
+8. Within the opened [deploy frame](/docs/deployment/deployment-guide), select your just created Environment in the appropriate drop-down menu and click the **Deploy** button.
 
 <div style={{
     display:'flex',

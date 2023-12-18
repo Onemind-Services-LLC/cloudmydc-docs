@@ -33,7 +33,7 @@ Besides that, you can instantly update the timezone rules manually if necessary,
 
 As you can see, the _UTC_ zone is used (default for all platform-managed containers).
 
-2. Go to the [TimeZone Change](https://github.com/jelastic-jps/time-zone-change) add-on repository within the JPS Collection at GitHub. Copy a link to the **_manifest.jps_** file and [import](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import) it via the dashboard: [_https://github.com/jelastic-jps/time-zone-change/blob/master/manifest.jps._](https://github.com/jelastic-jps/time-zone-change/blob/master/manifest.jps)
+2. Go to the [TimeZone Change](https://github.com/jelastic-jps/time-zone-change) add-on repository within the JPS Collection at GitHub. Copy a link to the **_manifest.jps_** file and [import](/docs/environment-management/environment-export-and-import/environment-import) it via the dashboard: [_https://github.com/jelastic-jps/time-zone-change/blob/master/manifest.jps._](https://github.com/jelastic-jps/time-zone-change/blob/master/manifest.jps)
 
 <div style={{
     display:'flex',
@@ -47,7 +47,7 @@ As you can see, the _UTC_ zone is used (default for all platform-managed contain
 
 :::tip Tip
 
-Based on your particular hosting provider settings add-on can be available via [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace).
+Based on your particular hosting provider settings add-on can be available via [platform Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace).
 
 <div style={{
     display:'flex',
@@ -100,7 +100,7 @@ The timezone rules within Java compute nodes are delivered by means of the dedic
 
 Despite the fact the newest TZdata package edition is integrated into a node during its creation, after some time it becomes outdated due to periodical changing of the intrinsic data. Thus, old containers may require the corresponding updating from time to time (particularly, in order not to be recreated each time this is needed). For that, a special embedded **TZUpdater** tool is used, intended for keeping your timezone data accurate and up-to-date. It is fairly simple to use and can be run with a single-line command; you just need to:
 
-1. Connect to your Java environment via SSH, e.g. using the embedded [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH) client:
+1. Connect to your Java environment via SSH, e.g. using the embedded [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh) client:
 
 <div style={{
     display:'flex',
@@ -152,7 +152,7 @@ Now, let’s discover how to check and change the application server’s local t
 
 1. Let’s set the current timestamp to be shown at the server start page - this will help to quickly ensure that new timezone settings have been successfully applied and are relevant for now.
 
-For that, paste the code below instead of the **/opt/tomcat/webapps/ROOT/index.jsp** file default content (the easiest way is to use the inbuilt [file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) for that).
+For that, paste the code below instead of the **/opt/tomcat/webapps/ROOT/index.jsp** file default content (the easiest way is to use the inbuilt [file manager](/docs/application-setting/configuration-file-manager) for that).
 
 ```bash
 <%@page import="java.util.*"%>

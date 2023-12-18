@@ -8,7 +8,7 @@ sidebar_position: 3
 
 **MySQL**, **MariaDB**, and **Percona** are highly popular among developers all over the world, when an open source SQL databases are required. In this instruction we’ll show you how to connect your **Python** application, hosted within the platform, to these DB servers.
 
-1. Log into the platform dashboard and [create a new environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with both Python and MySQL (or Python and MariaDB) servers.
+1. Log into the platform dashboard and [create a new environment](/docs/environment-management/setting-up-environment) with both Python and MySQL (or Python and MariaDB) servers.
 
 <div style={{
     display:'flex',

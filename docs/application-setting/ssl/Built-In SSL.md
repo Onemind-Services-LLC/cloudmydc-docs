@@ -28,7 +28,7 @@ So, to get the **built-in SSL certificate**, perform the following simple steps:
 
 </div>
 
-2. In the opened topology wizard, [set up your environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) up to your needs, then switch to the **SSL** section at the top-left part of the frame and enable the built-in SSL with the appropriate switcher.
+2. In the opened topology wizard, [set up your environment](/docs/environment-management/setting-up-environment) up to your needs, then switch to the **SSL** section at the top-left part of the frame and enable the built-in SSL with the appropriate switcher.
 
 <div style={{
     display:'flex',
@@ -42,7 +42,7 @@ So, to get the **built-in SSL certificate**, perform the following simple steps:
 
 :::danger note
 
-Built-in SSL is not compatible with [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address attached to your servers and is applied to the specified environment name domain only (e.g. my-project.jelastic.com for the image above).
+Built-in SSL is not compatible with [public IP](/docs/application-setting/external-access-to-applications/public-ip) address attached to your servers and is applied to the specified environment name domain only (e.g. my-project.jelastic.com for the image above).
 
 :::
 

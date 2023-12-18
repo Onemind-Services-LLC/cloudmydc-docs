@@ -40,7 +40,7 @@ Automatic installation and configuration is available with the **[Redis Auto-Clu
 
 </div>
 
-Alternatively, you can import the **_Redis Cluster_** [package manifest](https://github.com/jelastic-jps/redis-cluster/blob/main/manifest.jps) or find it in the dashboard’s [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace#marketplace). Either way, you’ll see the installation frame, where you can provide the following data:
+Alternatively, you can import the **_Redis Cluster_** [package manifest](https://github.com/jelastic-jps/redis-cluster/blob/main/manifest.jps) or find it in the dashboard’s [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace). Either way, you’ll see the installation frame, where you can provide the following data:
 
 - **Nodes count** - sets the total number of Redis nodes in the cluster. The scaling is performed via the Primary-Secondary pairs. The minimal number is **6** (3 Primary and 3 Secondary nodes) and the maximum is **12** (6 Primary and 6 Secondary)
 - **Enable Horizontal Auto-Scaling** - complements cluster with [scaling triggers](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling#triggers-for-automatic-scaling) to perform automatic horizontal scaling. Automatic resharding and rebalancing will be done after adding and before removing the Primary node
@@ -66,7 +66,7 @@ The scaling will be performed according to the following conditions by default:
 
 - **Enable External IP Addresses for cluster nodes** - assigns [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip) to each node and reconfigures cluster to work via public IP only
 - **Environment** - provides environment name
-- **Display Name** - sets the preferred environment [alias](/docs/EnvironmentManagement/Environment%20Aliases)
+- **Display Name** - sets the preferred environment [alias](/docs/environment-management/environment-aliases)
 - **Region** - selects the [environment region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#environment-regions) from the list of available ones
   Click **Install** when ready.
 

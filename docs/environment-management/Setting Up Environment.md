@@ -33,7 +33,7 @@ Below, we’ll review each of these points in detail, providing explanations on 
 
 As the first step of your environment creation, you need to select the deployment solution required for your project. PaaS is an extremely versatile platform that supports multiple options for application development and hosting thus it suits even the most demanding clients.
 
-1. The most common and recommended choice (unless you are pursuing a specific application/architecture) is **certified containers**. These [stacks](/docs/QuickStart/Software%20Stack%20Versions) are specifically configured and managed by the platform (e.g. version updates, security patches). By default, they support all platform features (scaling, automated deployment, redeploy, SSL, etc.) for the most smooth and convenient hosting and development.
+1. The most common and recommended choice (unless you are pursuing a specific application/architecture) is **certified containers**. These [stacks](/docs/quickstart/software-stack-versions) are specifically configured and managed by the platform (e.g. version updates, security patches). By default, they support all platform features (scaling, automated deployment, redeploy, SSL, etc.) for the most smooth and convenient hosting and development.
 
 ![Locale Dropdown](./img/SettingUpEnvironment/03-environment-programming-languages-in-wizard.png)
 
@@ -49,7 +49,7 @@ Click on the tab with the required programming language (Java, PHP, Ruby, .NET, 
 
 - **Kubernetes Cluster** - ready-to-go _[Kubernetes cluster](/docs/Kubernetes%20Hosting/Kubernetes%20Cluster/Kubernetes%20Overview)_ with a preconfigured control plane and worker nodes created based on the system containers. The deployment, scaling, and orchestration of the microservices inside are handled by Kubernetes control units, while the platform scales and manages control plane and worker nodes.
 
-3. Also, it is recommended to select the preferred [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) (if available) before proceeding further.
+3. Also, it is recommended to select the preferred [region](/docs/environment-management/environment-regions/choosing-a-region) (if available) before proceeding further.
 
 <div style={{
     display:'flex',
@@ -63,7 +63,7 @@ Click on the tab with the required programming language (Java, PHP, Ruby, .NET, 
 
 ## Configuring Topology
 
-You can configure environment topology ([layers](/docs/PlatformOverview/Basics%20&%20Terminology#layer) structure) via the left part of the wizard. Сonsider it as a constructor that helps you to create your environment. Here, the following blocks are available:
+You can configure environment topology ([layers](/docs/platform-overview/basics-&-terminology#layer) structure) via the left part of the wizard. Сonsider it as a constructor that helps you to create your environment. Here, the following blocks are available:
 
 - **[Load Balancers](/docs/Load%20Balancers/Load%20Balancing)** - stacks that operate as an entry point for the environment to distribute incoming request and create even load on other nodes
 - **[Application Servers](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat%20Server)** (compute nodes) - web servers that run your application
@@ -71,7 +71,7 @@ You can configure environment topology ([layers](/docs/PlatformOverview/Basics%2
 - **[Cache Node](/docs/Memcached/Memcached%20System)** - a Memcached object caching system for speeding up web applications through alleviating database load
 - **[Shared Storage](/docs/Data%20Storage%20Container/Shared%20Storage%20Container)** - dedicated storage node with NFSv4 support, enlarged disk space and optimized performance
 - **[Elastic VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information)** - virtual private servers on top of the CentOS, Ubuntu, Debian, and Windows OS
-- **[Build Node](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven)** - a build automation tool for Java projects
+- **[Build Node](/docs/java/build-node/java-vcs-deployment-with-maven)** - a build automation tool for Java projects
 - **Extra** (custom layers) - any of the stacks mentioned above
 
 <div style={{
@@ -120,9 +120,9 @@ If you cannot find a required software solution, you can add it as a [custom con
 
 2. An **SSL** protection can be configured for your environment via the same-named section. Here, two options are available:
 
-- **[Built-In SSL](/docs/ApplicationSetting/SSL/Built-In%20SSL)** - enables an already trusted SSL certificate, avoiding any additional checks and saving your time on the certificate validation. However, it is applied to the default environment domain name only (i.e. with the hoster’s domain at the end) and does not work if [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) is attached to your servers.
+- **[Built-In SSL](/docs/ApplicationSetting/SSL/Built-In%20SSL)** - enables an already trusted SSL certificate, avoiding any additional checks and saving your time on the certificate validation. However, it is applied to the default environment domain name only (i.e. with the hoster’s domain at the end) and does not work if [public IP](/docs/application-setting/external-access-to-applications/public-ip) is attached to your servers.
 
-- **[Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL)** - shows the pre-conditions of using your custom SSL certificates for the environment. Click the **Enable** button to automatically fulfill the requirements (e.g. enable Public IP) and refer to the linked instruction for further guidance.
+- **[Custom SSL](/docs/application-setting/ssl/custom-ssl)** - shows the pre-conditions of using your custom SSL certificates for the environment. Click the **Enable** button to automatically fulfill the requirements (e.g. enable Public IP) and refer to the linked instruction for further guidance.
 
 :::tip Tip
 Also, you can apply the Let’s Encrypt SSL add-on after the environment creation to automatically issue and integrate a free SSL certificate.
@@ -155,7 +155,7 @@ Once you are done with the topology structure, you can adjust each particular la
 
 </div>
 
-2. Configure the [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling) by setting the number of reserved and dynamic [cloudlets](/docs/PlatformOverview/Cloudlet) (1 cloudlet = **128 MiB** of RAM and **400 MHz** of CPU) for the nodes within the layer.
+2. Configure the [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) by setting the number of reserved and dynamic [cloudlets](/docs/PlatformOverview/Cloudlet) (1 cloudlet = **128 MiB** of RAM and **400 MHz** of CPU) for the nodes within the layer.
 
 <div style={{
     display:'flex',
@@ -181,7 +181,7 @@ Think of it as a minimum and maximum CPU & RAM capacities per server. It is wort
 
 </div>
 
-You can use the drop-down lists to change stack and engine type/versions (if needed, expand and start typing to **Search**). In case of adjusting an existing environment, these lists will redirect to the [container redeploy](/docs/Container/Container%20Redeploy) dialog in order to apply changes.
+You can use the drop-down lists to change stack and engine type/versions (if needed, expand and start typing to **Search**). In case of adjusting an existing environment, these lists will redirect to the [container redeploy](/docs/category/container-deployment) dialog in order to apply changes.
 
 :::tip Tip
 
@@ -218,7 +218,7 @@ The list may vary depending on the particular stack and account permissions:
 - **Sequential restart delay** - a delay between the restart operation completion on one node and start on the other. It is used to avoid downtime, ensuring that at least one server is active. You can set it to “-1” for the simultaneous restart of all nodes within the layer.
 - **[High-Availability](/docs/ApplicationSetting/Scaling%20And%20Clustering/Session%20Replication%20for%20HA)** (deprecated option, it is recommended redeploying to the latest version of the stack and using the Auto-Clustering feature instead) - automated session replication for the Tomcat and TomEE application servers
 - **[Access via SLB](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer)**- blocks access to the nodes of the layer via the platform Shared Load Balancer
-- **[Public IPv4/IPv6](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)** - attach the specified number of external IP addresses to each node within the layer
+- **[Public IPv4/IPv6](/docs/application-setting/external-access-to-applications/public-ip)** - attach the specified number of external IP addresses to each node within the layer
 
 5. At the bottom of the section, you can find buttons to the container configuration tools:
 
@@ -290,7 +290,7 @@ Hover over the pricing widget to view extended details on the estimated cost cal
 
 :::
 
-If needed, you can click on the links under the widget for additional information on [how pricing works](/docs/Account&Pricing/Pricing%20Model%20Overview) and [what is charged at the platform](/docs/Account&Pricing/Resource%20Charging/Charged%20Resources).
+If needed, you can click on the links under the widget for additional information on [how pricing works](/docs/account-and-pricing/pricing-model-overview) and [what is charged at the platform](/docs/Account&Pricing/Resource%20Charging/Charged%20Resources).
 
 3. Lastly, provide a name for your environment and click the **Create** button to proceed.
 
@@ -316,4 +316,4 @@ That’s all! In a few minutes, your new environment will appear on the dashboar
 
 </div>
 
-Now, you are ready for [application deployment](/docs/Deployment/Deployment%20Guide) and further use of your cloud environment.
+Now, you are ready for [application deployment](/docs/deployment/deployment-guide) and further use of your cloud environment.

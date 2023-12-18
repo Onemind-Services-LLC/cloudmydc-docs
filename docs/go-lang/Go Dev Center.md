@@ -30,7 +30,7 @@ In this guide, you’ll get acquainted with the distinctive features of the Go h
 
 ## Go Environment Hosting
 
-In order to host your Go application, you need to [create](/docs/EnvironmentManagement/Setting%20Up%20Environment) the appropriate environment using the **Topology Wizard**.
+In order to host your Go application, you need to [create](/docs/environment-management/setting-up-environment) the appropriate environment using the **Topology Wizard**.
 
 Switch to the **Go** engine tab, add _Golang_ as your application server and any other software stack required for your project (e.g. load balancers, databases or shared storage). If needed, adjust your environment nodes count, cloudlet limits for RAM and CPU, attach public IPs, etc.
 
@@ -56,7 +56,7 @@ All instances on the platform are completely [isolated containers](/docs/Platfor
 
 :::
 
-For more information about setting up the environment, see the [Create Environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) document.
+For more information about setting up the environment, see the [Create Environment](/docs/environment-management/setting-up-environment) document.
 
 ## Golang Versioning
 
@@ -70,11 +70,11 @@ Currently (at the time of this writing), the following versions of the _Golang_ 
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/QuickStart/Software%20Stack%20Versions) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/quickstart/software-stack-versions) document.
 
 :::
 
-You can choose the preferred version during environment creation and change it later through [container redeploy](/docs/Container/Container%20Redeploy). Herewith, all the custom data inside the node(s) will be saved, which, for example, allows to easily upgrade your software version upon the new stack template release.
+You can choose the preferred version during environment creation and change it later through [container redeploy](/docs/category/container-deployment). Herewith, all the custom data inside the node(s) will be saved, which, for example, allows to easily upgrade your software version upon the new stack template release.
 
 <div style={{
     display:'flex',
@@ -88,7 +88,7 @@ You can choose the preferred version during environment creation and change it l
 
 ## Go Application Deployment
 
-After environment creation, you can [deploy](/docs/Deployment/Deployment%20Guide) your Go project from the Git repository (the deployment from application archive will be implemented in the upcoming platform release).
+After environment creation, you can [deploy](/docs/deployment/deployment-guide) your Go project from the Git repository (the deployment from application archive will be implemented in the upcoming platform release).
 
 It is possible to customize the deployment process by providing or adjusting the following container [variables](/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables#go-golang):
 
@@ -119,19 +119,19 @@ After successful deployment, the Go project is located in the directory set with
 
 You can learn more about Go applications deployment via the appropriate documents:
 
-- [Deployment Manager](/docs/Deployment/Deployment%20Manager)
-- [Deployment Guide](/docs/Deployment/Deployment%20Guide)
+- [Deployment Manager](/docs/deployment/deployment-manager)
+- [Deployment Guide](/docs/deployment/deployment-guide)
 - [Auto-Deploy Overview](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview)
 - [Deployment Hooks](/docs/Deployment/Deployment%20Hooks)
 
 ## Domains Management
 
-With the platform you can easily bind an [external (custom) domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) name to your Go application to be used instead of the default environment domain. Depending on the used entry point, there are two options:
+With the platform you can easily bind an [external (custom) domain](/docs/application-setting/domain-name-management/custom-domain-name) name to your Go application to be used instead of the default environment domain. Depending on the used entry point, there are two options:
 
 - **CNAME redirect** if using _Shared Load Balancer_; is recommended for **_dev_** and **_test_** environments
 - **DNS A Record** if using _public IP_; can handle high traffic load and is suitable for **_production_** environments
 
-Additionally, you can easily [swap domains](/docs/ApplicationSetting/Domain%20Name%20Management/Swap%20Domains) to redirect traffic from one environment to another (e.g. to switch to the newer application version without downtime).
+Additionally, you can easily [swap domains](/docs/application-setting/domain-name-management/swap-domains) to redirect traffic from one environment to another (e.g. to switch to the newer application version without downtime).
 
 <div style={{
     display:'flex',
@@ -165,7 +165,7 @@ The scaling process is handled by platform automatically, you just need to speci
 
 </div>
 
-Your application will work within these limits reducing resource consumption when the load is down or increasing them when the load is up. Thus, you only pay for the resources that are actually consumed. For more information, please refer to the [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling) documentation.
+Your application will work within these limits reducing resource consumption when the load is down or increasing them when the load is up. Thus, you only pay for the resources that are actually consumed. For more information, please refer to the [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) documentation.
 
 ## Manual Horizontal Scaling
 
@@ -201,7 +201,7 @@ Here, you can configure the triggers for specific stacks and resources (_CPU, RA
 
 </div>
 
-Learn more about [automatic horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling) in the corresponding document.
+Learn more about [automatic horizontal scaling](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) in the corresponding document.
 
 In addition, there is a set of other features and functionality provided by the platform Go hosting, among them:
 

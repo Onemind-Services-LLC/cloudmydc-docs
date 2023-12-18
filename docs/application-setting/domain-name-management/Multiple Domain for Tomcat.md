@@ -44,7 +44,7 @@ In a minute your environment will be successfully created.
 
 </div>
 
-3. You can buy and set up your own domain names instead of default ones by adding CNAME record or by setting A Records. Read more in the [Custom External Domain Name Binding](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) document.
+3. You can buy and set up your own domain names instead of default ones by adding CNAME record or by setting A Records. Read more in the [Custom External Domain Name Binding](/docs/application-setting/domain-name-management/custom-domain-name) document.
 
 4. Go back to the platform dashboard, click the **Settings** button for your environment and bind your domains.
 

@@ -27,7 +27,7 @@ changes to the container; however, it may break some internal logic.
 
 :::
 
-There are a number of options that can be used with all of the [platform-managed stacks](/docs/QuickStart/Software%20Stack%20Versions):
+There are a number of options that can be used with all of the [platform-managed stacks](/docs/quickstart/software-stack-versions):
 
 <div style={{
         width: '100%',

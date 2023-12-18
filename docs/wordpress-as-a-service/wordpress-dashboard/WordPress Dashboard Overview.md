@@ -156,7 +156,7 @@ The platform supports the following key types:
 - EdDSA
 - RSA
 
-In the linked documents, you can learn more about [generating SSH keys](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) and [connecting via SSH Gate](/docs/Deployment%20Tools/SSH/SSH%20Access/SSH%20Gate).
+In the linked documents, you can learn more about [generating SSH keys](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) and [connecting via SSH Gate](/docs/deployment-tools/ssh/ssh-access/ssh-gate).
 
 2.3. On the **Payment Methods** tab, you can view and manage your payment methods.
 
@@ -224,7 +224,7 @@ Use the drop-down menu at the bottom of each subscription to manage it:
 - _Git Configuration_
 - _Backup Storage_
 
-  3.1. The **SSL Certificates** tab manages SSL certificates on the account. It automatically lists all the Let’s Encrypt certificates issued for your projects and allows manually adding [custom SSL certificates](/docs/ApplicationSetting/SSL/Custom%20SSL) with the **Add SSL** button.
+  3.1. The **SSL Certificates** tab manages SSL certificates on the account. It automatically lists all the Let’s Encrypt certificates issued for your projects and allows manually adding [custom SSL certificates](/docs/application-setting/ssl/custom-ssl) with the **Add SSL** button.
 
 <div style={{
     display:'flex',

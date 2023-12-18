@@ -16,7 +16,7 @@ The add-on can only be installed on top of the **PostgreSQL** and **Pgpool-II** 
 
 :::tip Tip
 
-The solution is also available from the [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace#marketplace) or can be imported from the [repository](https://github.com/jelastic-jps/postgres-ssl-addon/tree/main) on GitHub.
+The solution is also available from the [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace) or can be imported from the [repository](https://github.com/jelastic-jps/postgres-ssl-addon/tree/main) on GitHub.
 
 :::
 

@@ -28,7 +28,7 @@ A general trend of moving Web to HTTPS implies the complete automation of custom
 
 The key advantage of this solution is a unique out-of-box integration with the most popular load balancer and application server stacks. In such a way, it gives a possibility to freely secure the majority of existing applications that are run in Jelastic.
 
-Being provisioned as an add-on, this solution can be easily installed on top of any container with the [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL) support enabled, namely the following servers (the [list](https://github.com/jelastic-jps/lets-encrypt/blob/f08448d949878cd196e49c996ab8a9e60154c0d8/manifest.jps#L10) is constantly extended):
+Being provisioned as an add-on, this solution can be easily installed on top of any container with the [Custom SSL](/docs/application-setting/ssl/custom-ssl) support enabled, namely the following servers (the [list](https://github.com/jelastic-jps/lets-encrypt/blob/f08448d949878cd196e49c996ab8a9e60154c0d8/manifest.jps#L10) is constantly extended):
 
 - Load Balancers - NGINX, Apache LB, HAProxy, Varnish
 - Java application servers - Tomcat, TomEE, GlassFish, Payara, Jetty
@@ -67,7 +67,7 @@ Despite the long description, all of these operations are handled just in a matt
 
 To get SSL certificate for the environment hostname, perform the following:
 
-1. Log into Jelastic dashboard and click [**Marketplace**](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) at the top of a page. Within the opened frame switch to the **Add-ons** tab and find the _Let's Encrypt Free SSL_ package.
+1. Log into Jelastic dashboard and click [**Marketplace**](/docs/deployment-tools/cloud-scripting-&-jps/marketplace) at the top of a page. Within the opened frame switch to the **Add-ons** tab and find the _Let's Encrypt Free SSL_ package.
 
 <div style={{
     display:'flex',
@@ -81,7 +81,7 @@ To get SSL certificate for the environment hostname, perform the following:
 
 :::tip
 
-Alternatively you can [Import](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import) the <b><i>manifest.jps</i></b> file from the appropriate Let's Encrypt add-on repository:
+Alternatively you can [Import](/docs/environment-management/environment-export-and-import/environment-import) the <b><i>manifest.jps</i></b> file from the appropriate Let's Encrypt add-on repository:
 https://github.com/jelastic-jps/lets-encrypt/blob/master/manifest.jpsImporting add-on via JPS tab allows providing customization on a fly.
 
 :::
@@ -113,7 +113,7 @@ Finally, click on **Install** to initiate installation of the appropriate SSL ce
 
 :::tip Note
 
-that the add-on requires [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address for proper work. So in case, the environment entry point does not have such, it will be automatically attached during installation (be aware that Public IP is a paid option - the cost can be found within the [Quotas & Pricing](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ) frame).
+that the add-on requires [public IP](/docs/application-setting/external-access-to-applications/public-ip) address for proper work. So in case, the environment entry point does not have such, it will be automatically attached during installation (be aware that Public IP is a paid option - the cost can be found within the [Quotas & Pricing](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ) frame).
 
 :::
 
@@ -153,7 +153,7 @@ Alternatively add-on can be installed with Jelastic [API method install](https:/
 
 where:
 
-**{session}** - user’s session or [authentication token ](/docs/Account&Pricing/Personal%20Access%20Tokens)
+**{session}** - user’s session or [authentication token ](/docs/account-and-pricing/personal-access-tokens)
 
 **{your_env_name}** - name of the target environment
 

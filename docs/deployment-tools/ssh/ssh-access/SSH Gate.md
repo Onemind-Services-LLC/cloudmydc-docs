@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Access via SSH Gate
 
-In order to establish connection via SSH Gate, you need to [generate SSH key pair](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) and to [add public key](/docs/Deployment%20Tools/SSH/Add%20SSH%20Key) to your account at the dashboard (if needed, read the linked step-by-step guides for assistance).
+In order to establish connection via SSH Gate, you need to [generate SSH key pair](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) and to [add public key](/docs/deployment-tools/ssh/add-ssh-key) to your account at the dashboard (if needed, read the linked step-by-step guides for assistance).
 
 Next, get an SSH connection string for your account by clicking the **Settings** button at the top panel of the dashboard.
 
@@ -34,7 +34,7 @@ In the opened **Account settings** window, the **SSH Keys > SSH Connect** tab wi
 
 :::tip Tip
 
-Within the right part of the section you can establish [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH) connection to any node directly in browser.
+Within the right part of the section you can establish [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh) connection to any node directly in browser.
 
 :::
 
@@ -90,7 +90,7 @@ In order to add your private SSH key with PuTTY, download and run [Pageant](http
 
 :::
 
-1. Once connected, you will see a list of [environment groups](/docs/EnvironmentManagement/Environment%20Groups/Overview) (with a number of containers within provided in brackets) and ungrouped environments available for your account. Select the required point by entering the appropriate number.
+1. Once connected, you will see a list of [environment groups](/docs/environment-management/environment-groups/overview) (with a number of containers within provided in brackets) and ungrouped environments available for your account. Select the required point by entering the appropriate number.
 
 <div style={{
     display:'flex',

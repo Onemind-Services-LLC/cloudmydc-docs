@@ -107,7 +107,7 @@ Additional [security headers](/docs/EnvironmentManagement/HTTP%20Headers#securit
 
 :::
 
-The list of supported HTTP headers can vary based on the topology of the connected environment. Due to external access specifics (via [resolver/SLB](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) or [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP)), there are four possible scenarios when working with the platform:
+The list of supported HTTP headers can vary based on the topology of the connected environment. Due to external access specifics (via [resolver/SLB](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) or [public IP](/docs/application-setting/external-access-to-applications/public-ip)), there are four possible scenarios when working with the platform:
 
 <div style={{
         width: '100%',

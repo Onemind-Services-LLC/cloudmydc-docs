@@ -44,7 +44,7 @@ Keeping the pace with technology evolution, the platform supports the latest PHP
 
 :::tip Tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/QuickStart/Software%20Stack%20Versions) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/quickstart/software-stack-versions) document.
 
 :::
 
@@ -81,7 +81,7 @@ To see in detail how these servers can be configured, and find out the list of e
 
 ## PHP Application Deployment
 
-[Zero downtime deployment](/docs/PHP/ZDT%20Deployment%20for%20PHP) provides the ability to run any cloud-native or legacy application. In order to deliver your PHP projects to the created environment within the platform, you can choose one of the available [deployment options](/docs/Deployment/Deployment%20Guide): via Archive/URL, GIT/SVN, Bitbucket project, etc.
+[Zero downtime deployment](/docs/PHP/ZDT%20Deployment%20for%20PHP) provides the ability to run any cloud-native or legacy application. In order to deliver your PHP projects to the created environment within the platform, you can choose one of the available [deployment options](/docs/deployment/deployment-guide): via Archive/URL, GIT/SVN, Bitbucket project, etc.
 
 Besides, you can configure an [automatic periodic re-deployment](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview) from the repository (it is performed only if new code changes appear).
 
@@ -99,9 +99,9 @@ Also, all platform-certified PHP nodes are provided with the pre-installed [**Co
 
 ## Domains Management
 
-For production purposes, you can bind an external domain name to your application instead of the default environment domain. Follow the appropriate [custom domains](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) instruction to learn how it can be done.
+For production purposes, you can bind an external domain name to your application instead of the default environment domain. Follow the appropriate [custom domains](/docs/application-setting/domain-name-management/custom-domain-name) instruction to learn how it can be done.
 
-With the help of the [swapping domains](/docs/ApplicationSetting/Domain%20Name%20Management/Swap%20Domains) feature, end-users of your application won’t experience any downtime when you, for example, deploy a new application version. You can stage your new application version in a test environment and consequently swap URLs with a production environment just in a few clicks.
+With the help of the [swapping domains](/docs/application-setting/domain-name-management/swap-domains) feature, end-users of your application won’t experience any downtime when you, for example, deploy a new application version. You can stage your new application version in a test environment and consequently swap URLs with a production environment just in a few clicks.
 
 <div style={{
     display:'flex',
@@ -131,7 +131,7 @@ In order to set up automatic resource consumption by your PHP server, open the e
 
 </div>
 
-Your application will work within these limits reducing resource consumption when the load is down or increasing them when the load is up. Thus, you only pay for the resources that are actually consumed. For more information, please refer to the documentation about [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling).
+Your application will work within these limits reducing resource consumption when the load is down or increasing them when the load is up. Thus, you only pay for the resources that are actually consumed. For more information, please refer to the documentation about [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling).
 
 ## Manual Horizontal Scaling
 
@@ -171,7 +171,7 @@ In this way, you can configure the triggers for specific stacks and resources (C
 
 </div>
 
-Please, find more details about [automatic horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling) in the corresponding document.
+Please, find more details about [automatic horizontal scaling](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) in the corresponding document.
 
 ## PHP Clustering
 
@@ -224,7 +224,7 @@ Additional configuration guidance is available for particular application server
 - [Apache Security Configurations](/docs/PHP/PHP%20App%20Servers/Apache%20PHP/Apache%20Security%20Configurations)
 - [NGINX Security Configurations](/docs/PHP/PHP%20App%20Servers/NGINX%20PHP/NGINX%20Security%20Configurations)
 
-One more way to ensure the application protection is using a container [firewall feature](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall). It lets you control nodes' availability both from inside and outside of the platform.
+One more way to ensure the application protection is using a container [firewall feature](/docs/application-setting/external-access-to-applications/container-firewall). It lets you control nodes' availability both from inside and outside of the platform.
 
 <div style={{
     display:'flex',

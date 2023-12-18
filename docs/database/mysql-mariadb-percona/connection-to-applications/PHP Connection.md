@@ -16,7 +16,7 @@ sidebar_position: 2
 
 ## Environment Creation
 
-1. Log into your PaaS account and [create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with **MySQL** or **MariaDB** database server (both are available within the **_SQL_** wizard section).
+1. Log into your PaaS account and [create an environment](/docs/environment-management/setting-up-environment) with **MySQL** or **MariaDB** database server (both are available within the **_SQL_** wizard section).
 
 <div style={{
     display:'flex',

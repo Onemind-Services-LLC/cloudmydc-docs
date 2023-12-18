@@ -4,7 +4,7 @@ slug: environment-import
 sidebar_position: 3
 ---
 
-The the platform’s **Environment Import** feature allows executing the **_.json, .jps, .yml, .yaml_**, or **_.cs_** files on the platform to automatically install and configure projects according to the declared settings. Being initially designed to deploy the previously [exported](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Export) environment copies (e.g. to transfer an application from another PaaS installation), it can also be used to install your own solutions, declared via JSON, or integrate any ready-to-go package from [JPS Collection](https://github.com/jelastic-jps).
+The the platform’s **Environment Import** feature allows executing the **_.json, .jps, .yml, .yaml_**, or **_.cs_** files on the platform to automatically install and configure projects according to the declared settings. Being initially designed to deploy the previously [exported](/docs/environment-management/environment-export-and-import/environment-export) environment copies (e.g. to transfer an application from another PaaS installation), it can also be used to install your own solutions, declared via JSON, or integrate any ready-to-go package from [JPS Collection](https://github.com/jelastic-jps).
 
 So, let’s consider how to work with the platform import functionality in detail on the example of the exported environment.
 
@@ -87,8 +87,8 @@ To proceed, click the **Import** button in the bottom-right corner of the needed
 Within the fields inside, you need to specify the following parameters:
 
 - **Environment** - domain name for your new environment
-- **Display Name** - environment [alias](/docs/EnvironmentManagement/Environment%20Aliases) to be displayed at the dashboard instead of its domain (optional)
-- **Region** - [environment region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) to host the solution (if several ones are available)
+- **Display Name** - environment [alias](/docs/environment-management/environment-aliases) to be displayed at the dashboard instead of its domain (optional)
+- **Region** - [environment region](/docs/environment-management/environment-regions/choosing-a-region) to host the solution (if several ones are available)
 
 Click **Import** when ready.
 

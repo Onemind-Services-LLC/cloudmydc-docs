@@ -64,7 +64,7 @@ So, let’s go on!
 
 First of all, we’ll consider more specifically how the above described PHP zero-downtime deployment mechanism actually works on the platform - let’s examine all of these processes step-by-step with a real example.
 
-1. To start with, you’ll need a PHP environment (either a [new](/docs/EnvironmentManagement/Setting%20Up%20Environment) or the already existing one) - we’ll use Apache for this example:
+1. To start with, you’ll need a PHP environment (either a [new](/docs/environment-management/setting-up-environment) or the already existing one) - we’ll use Apache for this example:
 
 <div style={{
     display:'flex',
@@ -76,7 +76,7 @@ First of all, we’ll consider more specifically how the above described PHP zer
 
 </div>
 
-2. Next, proceed to the [deployment](/docs/Deployment/Deployment%20Guide) of the required application. During this procedure, you need to tick the corresponding checkbox at the appropriate confirmation frame (depending on the project source type used) in order to enable the ZDT deployment option:
+2. Next, proceed to the [deployment](/docs/deployment/deployment-guide) of the required application. During this procedure, you need to tick the corresponding checkbox at the appropriate confirmation frame (depending on the project source type used) in order to enable the ZDT deployment option:
 
 - for deployment via local file or direct URL
 

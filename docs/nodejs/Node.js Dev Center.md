@@ -32,7 +32,7 @@ Use the table of content below to find required information within the guide qui
 
 ## Node.js Environment Hosting
 
-To run your Node.js application, you need to [set up](/docs/EnvironmentManagement/Setting%20Up%20Environment#choosing-programming-language-or-specific-deployment-option) the appropriate environment using the powerful and intuitive **Topology Wizard**. Switch to the **_Node.js_** tab, select the required engine version for your application server and add any other [software stack](/docs/QuickStart/Software%20Stack%20Versions) required. If needed, adjust other parameters, such as cloudlets and nodes count, Public IPv4 and IPv6, etc.
+To run your Node.js application, you need to [set up](/docs/EnvironmentManagement/Setting%20Up%20Environment#choosing-programming-language-or-specific-deployment-option) the appropriate environment using the powerful and intuitive **Topology Wizard**. Switch to the **_Node.js_** tab, select the required engine version for your application server and add any other [software stack](/docs/quickstart/software-stack-versions) required. If needed, adjust other parameters, such as cloudlets and nodes count, Public IPv4 and IPv6, etc.
 
 <div style={{
     display:'flex',
@@ -61,7 +61,7 @@ Currently (at the time of this writing), the following Node.js versions are supp
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/QuickStart/Software%20Stack%20Versions) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/quickstart/software-stack-versions) document.
 
 :::
 
@@ -75,7 +75,7 @@ The up-to-date list of the releases available on the platform is provided via th
 
 </div>
 
-You can select the required [version of Node.js](/docs/Nodejs/Node.js%20Versions#nodejs-versions) directly from the topology wizard during the creation of a new environment and adjust it for the existing one via [container redeployment](/docs/Container/Container%20Redeploy).
+You can select the required [version of Node.js](/docs/Nodejs/Node.js%20Versions#nodejs-versions) directly from the topology wizard during the creation of a new environment and adjust it for the existing one via [container redeployment](/docs/category/container-deployment).
 
 ## Node.js Application Deployment
 
@@ -102,8 +102,8 @@ Usually, due to the [ports auto-redirect](/docs/Container/Container%20Configurat
 
 You can read the appropriate documents to learn more about the deployment of the Node.js applications:
 
-- [Deployment Manager](/docs/Deployment/Deployment%20Manager)
-- [Deployment Guide](/docs/Deployment/Deployment%20Guide)
+- [Deployment Manager](/docs/deployment/deployment-manager)
+- [Deployment Guide](/docs/deployment/deployment-guide)
 - [Auto-Deploy Overview](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview)
 - [Deployment Hooks](/docs/Deployment/Deployment%20Hooks)
 
@@ -137,7 +137,7 @@ By default, the npm package manager is used for the NodeJS application servers, 
 - [**_forever_**](https://www.npmjs.com/package/forever) - allows running your Node.js processes continuously and automatically restarting them upon failure
 - [**_supervisor_**](https://www.npmjs.com/package/supervisor) - monitors running applications for changes and automatically restarts required ones to keep them up-to-date
 
-Users can choose the necessary process manager during container [redeployment](/docs/Container/Container%20Redeploy) or by adjusting the **_PROCESS_MANAGER_** [variable](/docs/Container/Container%20Configuration/Variables) (using _forever_, _npm_, _pm2_, or _supervisor_ as value, container restart is needed to apply new options).
+Users can choose the necessary process manager during container [redeployment](/docs/category/container-deployment) or by adjusting the **_PROCESS_MANAGER_** [variable](/docs/Container/Container%20Configuration/Variables) (using _forever_, _npm_, _pm2_, or _supervisor_ as value, container restart is needed to apply new options).
 
 ## Domains Management
 

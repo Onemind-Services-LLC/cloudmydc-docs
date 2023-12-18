@@ -24,7 +24,7 @@ sidebar_position: 5
 </div>
 <div>
 
-As incoming traffic to your project grows, you need to improve your app performance to keep up with it. Some room of capacities for elastic extension is automatically provisioned in confines of a set server [vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling) limit, but eventually you most likely will face the need to enlarge a number of its nodes (i.e. to scale it [horizontally](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling)) upon your service popularity rises.
+As incoming traffic to your project grows, you need to improve your app performance to keep up with it. Some room of capacities for elastic extension is automatically provisioned in confines of a set server [vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) limit, but eventually you most likely will face the need to enlarge a number of its nodes (i.e. to scale it [horizontally](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling)) upon your service popularity rises.
 
 </div>
 </div>
@@ -42,7 +42,7 @@ So, follow the guide below to dive into [implementation specifics](/docs/Applica
 
 ## File Synchronization Add-on Implementation
 
-The **File Sync** solution is provided as a single-click [add-on](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace), implemented with a bundle of [**lsyncd**](https://code.google.com/archive/p/lsyncd/) daemon and **cron** utility. Herewith, being wisely coupled with [**inotify**](https://en.wikipedia.org/wiki/Inotify), _lsyncd_ initiates file synchronization only when any actual changes are detected on the system. Such realization notably offloads CPU in comparison to the regular sync calls and keeps your data up-to-date all the time, which makes this solution simultaneously simple to use, powerful, and affordable.
+The **File Sync** solution is provided as a single-click [add-on](/docs/deployment-tools/cloud-scripting-&-jps/marketplace), implemented with a bundle of [**lsyncd**](https://code.google.com/archive/p/lsyncd/) daemon and **cron** utility. Herewith, being wisely coupled with [**inotify**](https://en.wikipedia.org/wiki/Inotify), _lsyncd_ initiates file synchronization only when any actual changes are detected on the system. Such realization notably offloads CPU in comparison to the regular sync calls and keeps your data up-to-date all the time, which makes this solution simultaneously simple to use, powerful, and affordable.
 
 <div style={{
     display:'flex',
@@ -68,7 +68,7 @@ The instruction below is fully appropriate for other similar applications (_Drup
 
 :::
 
-1. You can install your **WordPress** application manually or locate the appropriate one-click package in [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) to deploy it automatically.
+1. You can install your **WordPress** application manually or locate the appropriate one-click package in [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace) to deploy it automatically.
 
 <div style={{
     display:'flex',
@@ -80,7 +80,7 @@ The instruction below is fully appropriate for other similar applications (_Drup
 
 </div>
 
-Click **Install** and provide the required details, such as _Environment, Display Name_ ([alias](/docs/EnvironmentManagement/Environment%20Aliases)) and Region (if several [regions](https://cloudmydc.com/) are available).
+Click **Install** and provide the required details, such as _Environment, Display Name_ ([alias](/docs/environment-management/environment-aliases)) and Region (if several [regions](https://cloudmydc.com/) are available).
 
 <div style={{
     display:'flex',
@@ -187,7 +187,7 @@ As you can see, one of the app server instances (_Node ID 54502_ in our example)
 
 So, to implement content synchronization inside our cluster, let’s apply the **File Synchronization** add-on.
 
-1. Locate and **Install** the **_File Synchronization_** add-on within the platform [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace).
+1. Locate and **Install** the **_File Synchronization_** add-on within the platform [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace).
 
 <div style={{
     display:'flex',
@@ -223,7 +223,7 @@ Here, specify whether file synchronization should run within _One_ environment (
 
 In order to implement synchronization between two different environments, the add-on should be installed to web-servers in both of them (selecting another environment within the appropriate drop-down list each time) with the chosen Two _environments synchronization_ option. Here, the following additional parameters should be specified:
 
-- **2nd environment IP** - address of any application server node within the second environment (you can use internal IP for the case both environments are run on the same Platform and hardware [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region); otherwise, external IP address is required)
+- **2nd environment IP** - address of any application server node within the second environment (you can use internal IP for the case both environments are run on the same Platform and hardware [region](/docs/environment-management/environment-regions/choosing-a-region); otherwise, external IP address is required)
 - **Password** - optional box to set a password on synchronization (should be stated the same on both instances)
 
 <div style={{

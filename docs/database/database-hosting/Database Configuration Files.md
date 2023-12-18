@@ -8,7 +8,7 @@ import obj from './DatabaseConfigurationFiles.json'
 
 ## Database Configuration Files
 
-In this guide, we’ll list all the main configuration files in the [platform-managed database](/docs/QuickStart/Software%20Stack%20Versions) servers. Each line of the table corresponds to the folder with configs for the databases listed in the Database Types column.
+In this guide, we’ll list all the main configuration files in the [platform-managed database](/docs/quickstart/software-stack-versions) servers. Each line of the table corresponds to the folder with configs for the databases listed in the Database Types column.
 
 <div style={{
         width: '100%',

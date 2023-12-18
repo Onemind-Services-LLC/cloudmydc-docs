@@ -192,7 +192,7 @@ Fixed
 
 The platform’s **_account collaboration_** feature is a powerful tool that allows multiple users to work on the same project. The core idea is straightforward - you can share your environment with other accounts on the platform. Additionally, different permissions can be provided to the collaboration members to cover various use cases.
 
-In the current 7.0 upgrade, the feature received a major rework, mainly focusing on extending its flexibility. Two focal points are **roles and policies** mechanics for advanced permission management and **integration with [environment groups](/docs/EnvironmentManagement/Environment%20Groups/Overview)** to better organize shared components. All the features are wrapped in a new comprehensive UI:
+In the current 7.0 upgrade, the feature received a major rework, mainly focusing on extending its flexibility. Two focal points are **roles and policies** mechanics for advanced permission management and **integration with [environment groups](/docs/environment-management/environment-groups/overview)** to better organize shared components. All the features are wrapped in a new comprehensive UI:
 
 - **Shared by Me** - collaboration options for the primary account, it has three tabs:
   - **Members** - manages a list of collaboration members (invite new users, suspend or remove existing ones, customize shared environments, groups, roles, etc.)
@@ -214,7 +214,7 @@ The new collaboration flow remains the same in principle but much more configura
 
 You can find information on even more changes to the collaboration feature (ability to temporarily suspend collaboration, role assigning algorithm, direct environment sharing, etc.) in the dedicated documentation:
 
-- [Collaboration Overview](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview)
+- [Collaboration Overview](/docs/account-and-pricing/accounts-collaboration/collaboration-overview)
 - [Collaboration Roles & Policies](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Roles%20Policies)
 - [Create Collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Create%20Collaboration)
 - [Collaboration User Experience](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20User%20Experience)
@@ -226,7 +226,7 @@ During the upgrade, the platform automatically generates configurations equivale
 
 :::
 
-[More info](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview)
+[More info](/docs/account-and-pricing/accounts-collaboration/collaboration-overview)
 
 <div style={{
         display: 'flex',
@@ -243,7 +243,7 @@ During the upgrade, the platform automatically generates configurations equivale
 Below, you can find a list of all changes to the public API in the 7.0 platform version (compared to the preceding [6.3](https://cloudmydc.com/) ones):
 
 - in the **users** namespace:
-  - added a new **[collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview)** service
+  - added a new **[collaboration](/docs/account-and-pricing/accounts-collaboration/collaboration-overview)** service
   - removed methods from the **[account](https://docs.jelastic.com/api/#!/api/users.Account)** service: _SetLinkedUserDisplayName_, _SetOwnerUserDisplayName_, _ConfirmLinkRequest_, _UnlinkLinkedUser_, _UnlinkOwnerUser_, _GetLinkedUsers_, _GetOwnerUsers_, _GetLinkedUsersByLogin_, _GetOwnerUsersByLogin_, _GetPayerQuotas_, _HazelcastPartitionsTest_, _LinkUsers_, _SetLinkedUserRole_, _SetLinkedUserDisplayName_, _SetOwnerUserDisplayName_, _ConfirmLinkRequest_, _UnlinkLinkedUser_, _UnlinkOwnerUser_, _GetLinkedUsers_, _GetOwnerUsers_, _SendLinkRequest_, _LinkUsersInner_
 - in the **marketplace** namespace:
   - added new **[favorite](https://docs.jelastic.com/api/#!/api/marketplace.Favorite)**, **[installation](https://docs.jelastic.com/api/#!/api/marketplace.Installation)**, and **[app services](https://docs.jelastic.com/api/#!/api/marketplace.App)**
@@ -399,9 +399,9 @@ PaaS 7.0
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/QuickStart/Software%20Stack%20Versions)
+[More info](/docs/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',

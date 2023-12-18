@@ -28,7 +28,7 @@ The sum of these implementations ensures out-of-box high availability and failov
 
 ## Cluster Installation
 
-1. Find the **_PostgreSQL Multi-Region Cluster_** application (the **Clusters** section or use the **Search** field) in the platform [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace#marketplace).
+1. Find the **_PostgreSQL Multi-Region Cluster_** application (the **Clusters** section or use the **Search** field) in the platform [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
 
 <div style={{
     display:'flex',
@@ -43,7 +43,7 @@ The sum of these implementations ensures out-of-box high availability and failov
 2. In the opened installation window, specify the following data:
 
 - **Version** - select the preferred PostgreSQL version
-- **Environment** - provide a name for [grouping](/docs/EnvironmentManagement/Environment%20Groups/Overview) your database cluster environments
+- **Environment** - provide a name for [grouping](/docs/environment-management/environment-groups/overview) your database cluster environments
 - **Create separate environment group** – tick to [isolate](/docs/EnvironmentManagement/Environment%20Isolation#private-network-isolation) the environment group
 - **PostgreSQL Regions** - choose platform regions where the cluster environments will be deployed. Note that regions order matters, as the first one will be the Primary server and the others will be Secondary
 - **Pgpool-II enabled** – enable to add load-balancing, monitoring, and management node (Pgpool-II) in front of database nodes in each region

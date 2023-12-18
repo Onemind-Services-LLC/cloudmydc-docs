@@ -140,7 +140,7 @@ Fixed
 
 ## AutoFS Downgrade
 
-**AutoFS** is a file system tool to automate [directories mounting](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) operations and to achieve the “as-needed” approach. With this directory mounting method, shared folders are mounted only upon access and automatically unmounted after a period of inactivity. The main focus of the implementation is better network efficiency compared to static mounts.
+**AutoFS** is a file system tool to automate [directories mounting](/docs/data-storage-container/data-sharing/mount-points) operations and to achieve the “as-needed” approach. With this directory mounting method, shared folders are mounted only upon access and automatically unmounted after a period of inactivity. The main focus of the implementation is better network efficiency compared to static mounts.
 
 However, some performance issues were detected with the latest AutoFS versions. As a result, it was forcibly downgraded to the stable **_AutoFS 5.1.6_** version for all containers on the platform. The platform will restore regular updates to the newest release as soon as the problem is resolved.
 
@@ -279,9 +279,9 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/QuickStart/Software%20Stack%20Versions)
+[More info](/docs/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',

@@ -25,9 +25,9 @@ Also, service hosting providers can offer a service of creating the required app
 
 **Any environment** (stopped/running) can be transferred **from any account** (including deactivated ones). However, a target account should meet the following requirements:
 
-- **type** - can be of any [type](/docs/Account&Pricing/Account%20Types) (beta, billing), <u>except trial accounts</u>
+- **type** - can be of any [type](/docs/account-and-pricing/account-types) (beta, billing), <u>except trial accounts</u>
 - **status** - should be [active](/docs/Account&Pricing/Account%20Statuses) (i.e. not suspended or deactivated)
-- **quotas** - should have sufficient [quotas](/docs/Account&Pricing/Quotas%20System) (limitations) to add the environment
+- **quotas** - should have sufficient [quotas](/docs/account-and-pricing/quotas-system) (limitations) to add the environment
 
 :::danger Note
 

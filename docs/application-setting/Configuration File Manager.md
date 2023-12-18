@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Configuration File Manager
 
-The platform configuration manager is a powerful tool, which allows to take control over all of the files within the particular container. This allows to easily and quickly apply some common configurations to your nodes through the comfortable GUI right in your browser, without the necessity to establish [SSH connection](/docs/Deployment%20Tools/SSH/SSH%20Overview), that may be required for some complex operations.
+The platform configuration manager is a powerful tool, which allows to take control over all of the files within the particular container. This allows to easily and quickly apply some common configurations to your nodes through the comfortable GUI right in your browser, without the necessity to establish [SSH connection](/docs/deployment-tools/ssh/ssh-overview), that may be required for some complex operations.
 
 In order to open the configuration manager, hover over the required node and click **the Config** button (the one with a wrench icon).
 
@@ -27,12 +27,12 @@ config manager tab
 Herein the following sections are available:
 
 - **Root** (File Manager) - gives you an access to the container’s local filesystem, where you can manage different settings within configuration files of your app
-- **Mount Points** - list of folders, that are physically stored on the remote node but can be used at a current node (learn how you can [mount data](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) at the platform)
+- **Mount Points** - list of folders, that are physically stored on the remote node but can be used at a current node (learn how you can [mount data](/docs/data-storage-container/data-sharing/mount-points) at the platform)
 - **Exports** - list of folders, which are shared with other nodes, i.e. these files are stored locally, but are also available at the remote instances (find out more at the dedicated [storage exports](/docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing) documentation page)
 - **Favorites** - files and folders you’ve marked as favorites so that you have a quick and simple access to them
   Further down this guide, we’ll consider the basics of configuration manager usage, that are applicable for any platform container. However, if you require to find out the configuration specifics for a particular node type, select one of the following docs:
 
-- [Docker Container Configuration](/docs/Container/Container%20Configuration/Configuration%20Tools)
+- [Docker Container Configuration](/docs/container/container-configuration/configuration-tools)
 - [Java Application Server Configuration](/docs/Java/Java%20App%20Server%20Configuration)
 - [PHP Application Server Configuration](/docs/PHP/PHP%20App%20Server%20Configuration)
 - [Ruby Application Server Configuration](/docs/Ruby/Ruby%20App%20Server%20Configuration)

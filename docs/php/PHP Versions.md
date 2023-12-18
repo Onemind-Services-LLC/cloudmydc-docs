@@ -14,7 +14,7 @@ Within the confines of PHP hosting at the platform, the following PHP engine ver
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/QuickStart/Software%20Stack%20Versions) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/quickstart/software-stack-versions) document.
 
 :::
 
@@ -44,7 +44,7 @@ You can choose the version you need while environment creation and easily [switc
 
 </div>
 
-Specify the resource limits, select the preferred [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), type your environment name (or leave the default one) and click the **Create** button.
+Specify the resource limits, select the preferred [region](/docs/environment-management/environment-regions/choosing-a-region), type your environment name (or leave the default one) and click the **Create** button.
 
 :::tip Tip
 

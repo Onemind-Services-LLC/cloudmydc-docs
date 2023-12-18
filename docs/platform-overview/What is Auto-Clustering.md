@@ -6,7 +6,7 @@ sidebar_position: 6
 
 In the modern world, the importance of data availability cannot be underestimated. Herewith, you want to maintain immediate access to any required information at a moment’s notice. Thus, for any production solution of any meaningful size, it is highly recommended to configure a **cluster**. Software clustering is the technique of using at least two instances for a service. Such redundancy not only provides reliability (the system can withstand a failure of at least one instance) but also helps to handle high load.
 
-Based on the experience, the configuration of a cluster can be a challenging process that requires quite a lot of time investment. In order to help you out, the platform automates some of the most popular clusterization solutions and can perform them for you on-demand directly from [topology wizard](/docs/EnvironmentManagement/Setting%20Up%20Environment). Such automation immensely simplifies and speeds up the creation of a reliable production-ready cluster for your project.
+Based on the experience, the configuration of a cluster can be a challenging process that requires quite a lot of time investment. In order to help you out, the platform automates some of the most popular clusterization solutions and can perform them for you on-demand directly from [topology wizard](/docs/environment-management/setting-up-environment). Such automation immensely simplifies and speeds up the creation of a reliable production-ready cluster for your project.
 
 ## Enabling Auto-Clustering
 
@@ -19,7 +19,7 @@ Currently, the following templates support the Auto-Clustering feature via the t
 
 :::tip Tip
 
-In addition to the **Auto-Clustering** option in topology wizard, a number of prepackaged clusterization solutions can be found under the **Clusters** category of the platform [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace).
+In addition to the **Auto-Clustering** option in topology wizard, a number of prepackaged clusterization solutions can be found under the **Clusters** category of the platform [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace).
 
 ![Locale Dropdown](./img/WhatIsAuto-Clustering/01-clusters-in-marketplace.png)
 

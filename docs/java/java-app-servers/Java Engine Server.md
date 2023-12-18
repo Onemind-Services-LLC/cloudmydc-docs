@@ -44,7 +44,7 @@ Follow the next simple steps to create a new environment with Java Engine server
 
 </div>
 
-Customize any other parameter up to your needs, e.g. resources limits, disk space, external IPs, [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) (if available), etc. Click **Create** to proceed.
+Customize any other parameter up to your needs, e.g. resources limits, disk space, external IPs, [region](/docs/environment-management/environment-regions/choosing-a-region) (if available), etc. Click **Create** to proceed.
 
 3. Your environment should be ready in a minute.
 

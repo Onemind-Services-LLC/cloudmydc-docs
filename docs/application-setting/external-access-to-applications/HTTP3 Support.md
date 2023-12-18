@@ -71,7 +71,7 @@ Below, you can view the most accurate list of the software stacks at the platfor
   - [_NGINX PHP_](/docs/PHP/PHP%20App%20Servers/NGINX%20PHP/): since the _1.16.1_ release for PHP _7.2.26, 7.3.13, 7.4.1_ versions and above
   - [_NGINX Ruby_](/docs/Ruby/NGINX%20Ruby): since the _1.16.1_ release for Ruby _2.4.9, 2.5.7, 2.6.5, 2.7.0_ versions and above
 
-Just [create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) topology that includes any of the application servers or load balancers mentioned above.
+Just [create an environment](/docs/environment-management/setting-up-environment) topology that includes any of the application servers or load balancers mentioned above.
 
 <div style={{
     display:'flex',
@@ -83,7 +83,7 @@ Just [create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environm
 
 </div>
 
-Herewith, you’ll need to additionally attach a [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address to bypass the Shared Load Balancer and allow working directly with the server over HTTP/3.
+Herewith, you’ll need to additionally attach a [public IP](/docs/application-setting/external-access-to-applications/public-ip) address to bypass the Shared Load Balancer and allow working directly with the server over HTTP/3.
 
 :::danger note
 

@@ -31,7 +31,7 @@ In this tutorial, we’ll overview two examples of the Hasura GraphQL engine ins
 
 ## Automatic Deployment with Local PostgreSQL Database
 
-1. Log in the dashboard and click **[Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace#marketplace)** at the top-left corner.
+1. Log in the dashboard and click **[Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace)** at the top-left corner.
 
 <div style={{
     display:'flex',
@@ -75,7 +75,7 @@ The installation requires a [public IP](/docs/ApplicationSetting/External%20Acce
 
 :::
 
-Configure the remaining Environment, [Display Name](/docs/EnvironmentManagement/Environment%20Aliases), [Region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#environment-regions) (if available) fields up to your needs, and click **Install**.
+Configure the remaining Environment, [Display Name](/docs/environment-management/environment-aliases), [Region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#environment-regions) (if available) fields up to your needs, and click **Install**.
 
 4. After a successful installation, you can access the Hasura console to ensure that everything works properly.
 
@@ -97,7 +97,7 @@ That’s it! Now, you can provide **Data** for your database via the same-named 
 
 In case you already have a database, you can connect to it with the Hasura GraphQL engine.
 
-1. Create a clean standalone **_Docker Engine CE_** via [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace#marketplace).
+1. Create a clean standalone **_Docker Engine CE_** via [platform Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
 
 <div style={{
     display:'flex',

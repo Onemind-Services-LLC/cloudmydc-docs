@@ -123,7 +123,7 @@ chown -R wildfly:wildfly /opt/wildfly-$WILDFLY_VERSION /opt/wildfly /var/log/wil
 RUN /opt/wildfly/bin/add-user.sh --user $ADMIN_USER --password $ADMIN_PASSWORD --silent --enable
 ```
 
-10. Now, we can correct a link to the admin panel itself at the default index.html page by defining the corresponding redirect (as in case our image will be deployed to a container without the [external IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) attached, port 4949 and HTTP connection should be used here):
+10. Now, we can correct a link to the admin panel itself at the default index.html page by defining the corresponding redirect (as in case our image will be deployed to a container without the [external IP](/docs/application-setting/external-access-to-applications/public-ip) attached, port 4949 and HTTP connection should be used here):
 
 ```bash
 RUN sed -i "s/<a href=\"\/console\">/<a href=\"\/console\" onclick=\"javascript:event.target.port=4949;event.target.protocol=\'http:\';\">/" /opt/wildfly/welcome-content/index.html

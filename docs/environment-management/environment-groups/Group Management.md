@@ -6,7 +6,7 @@ sidebar_position: 4
 
 ## Environment Groups Management: How to Assign, Edit & Remove
 
-The guide below contains information on the basic management options the platform provides for operating with [environment groups](/docs/EnvironmentManagement/Environment%20Groups/Overview). Namely, we’ll get deeper insights on how to:
+The guide below contains information on the basic management options the platform provides for operating with [environment groups](/docs/environment-management/environment-groups/overview). Namely, we’ll get deeper insights on how to:
 
 - [Assign Group to Environment](/docs/EnvironmentManagement/Environment%20Groups/Group%20Management#assign-group-to-environment)
 - [Add Subgroup](/docs/EnvironmentManagement/Environment%20Groups/Group%20Management#add-subgroups)
@@ -49,7 +49,7 @@ In order to specify labels for your environment, hover over the **Tags** column 
 
 </div>
 
-In the opened dialog box, you can define group(s) for this environment (through choosing them via the automatically fetched list of the existing ones), [create](/docs/EnvironmentManagement/Environment%20Groups/Group%20Creation) and assign new tags (just type in the desired name and press **Enter**) or detach the unrequired ones.
+In the opened dialog box, you can define group(s) for this environment (through choosing them via the automatically fetched list of the existing ones), [create](/docs/environment-management/environment-groups/group-creation) and assign new tags (just type in the desired name and press **Enter**) or detach the unrequired ones.
 
 <div style={{
     display:'flex',
@@ -90,7 +90,7 @@ Within the **Tags** dashboard column, subgroups are displayed in a view of path,
 
 Such nesting can include the unlimited number of levels and can be set in the following ways:
 
-- right during new [group creation](/docs/EnvironmentManagement/Environment%20Groups/Group%20Creation), through either typing the full group path in the Name field (using slash as a separator) or choosing Parent Group within the appropriate list (so this new group will be included to the selected parent)
+- right during new [group creation](/docs/environment-management/environment-groups/group-creation), through either typing the full group path in the Name field (using slash as a separator) or choosing Parent Group within the appropriate list (so this new group will be included to the selected parent)
 
 <div style={{
     display:'flex',

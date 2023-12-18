@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Environment Migration between Regions
 
-Within the confines of the multiple **[environment regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region)** approach, the initially chosen location of the project can be easily changed using the migration option (obviously, if you have an access to several environment regions). It represents an extremely powerful tool, that can help you to benefit in both cost and productivity - as an example, you can choose cheaper hardware for the development/testing stages and subsequently migrate your production-ready application to the hardware with the best parameters, just before the release.
+Within the confines of the multiple **[environment regions](/docs/environment-management/environment-regions/choosing-a-region)** approach, the initially chosen location of the project can be easily changed using the migration option (obviously, if you have an access to several environment regions). It represents an extremely powerful tool, that can help you to benefit in both cost and productivity - as an example, you can choose cheaper hardware for the development/testing stages and subsequently migrate your production-ready application to the hardware with the best parameters, just before the release.
 
 <div style={{
     display:'flex',

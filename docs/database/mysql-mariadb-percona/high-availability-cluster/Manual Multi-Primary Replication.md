@@ -46,7 +46,7 @@ The first thing that you need in order to configure a database replication is, a
 - **the second master DB environment**
   To create the second environment (**master-mysql-2**) you will be required to repeat the steps of **master-mysql-1** environment creation.
 
-Or, you can just [clone](/docs/EnvironmentManagement/Cloning%20Environment) the first environment, specifying the proper name in the corresponding frame:
+Or, you can just [clone](/docs/environment-management/cloning-environment) the first environment, specifying the proper name in the corresponding frame:
 
 <div style={{
     display:'flex',

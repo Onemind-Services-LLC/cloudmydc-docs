@@ -46,7 +46,7 @@ Below we will review each case in detail, as well as provide some hints on what 
 
 ## Certified Managed Containers
 
-The most common and recommended choice for the platform customers is **certified containers**. The platform offers multiple pre-configured and managed [software stacks](/docs/QuickStart/Software%20Stack%20Versions), that allow creation of flexible topologies with the required **application server** (_Java, PHP, Node.js, Ruby, Python, or Go_), **load balancer**, **databases**, etc.
+The most common and recommended choice for the platform customers is **certified containers**. The platform offers multiple pre-configured and managed [software stacks](/docs/quickstart/software-stack-versions), that allow creation of flexible topologies with the required **application server** (_Java, PHP, Node.js, Ruby, Python, or Go_), **load balancer**, **databases**, etc.
 
 <div style={{
     display:'flex',

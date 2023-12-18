@@ -20,7 +20,7 @@ This guide will provide a basic example of how you can implement the Let’s Enc
 
 ## Using SSL with NodeJS
 
-1. [Create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with the **Node.js** application server.
+1. [Create an environment](/docs/environment-management/setting-up-environment) with the **Node.js** application server.
 
 <div style={{
     display:'flex',
@@ -122,7 +122,7 @@ var path = url.parse(req.url).pathname;
 console.log("The HTTPS server has started at: " + serverUrl);
 ```
 
-4. Run your application via [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH). In our example, we use the **_forever_** [process manager](/docs/Nodejs/Nodejs%20Apps%20Specifications/Process%20Managers) (sudo is needed to listen on the privileged port 443).
+4. Run your application via [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh). In our example, we use the **_forever_** [process manager](/docs/Nodejs/Nodejs%20Apps%20Specifications/Process%20Managers) (sudo is needed to listen on the privileged port 443).
 
 ```bash
 cd /home/jelastic/ROOT

@@ -138,7 +138,7 @@ Fixed
 
 ## SSH Gate Improvements
 
-[SSH Gate](/docs/Deployment%20Tools/SSH/SSH%20Overview) component of the platform that helps connect to environments via SSH protocol. In the current 8.3.2 platform version, several improvements were applied to ensure the security and reliability of the process:
+[SSH Gate](/docs/deployment-tools/ssh/ssh-overview) component of the platform that helps connect to environments via SSH protocol. In the current 8.3.2 platform version, several improvements were applied to ensure the security and reliability of the process:
 
 - Implemented the correct processing of the new [OpenSSH extension](https://github.com/openssh/openssh-portable/blob/V_9_1/PROTOCOL#L288) to the SSH protocol. The OpenSSH 8.5 and newer clients no longer require the “**UpdateHostkeys=no**” directive to connect the gate.
 - Removed support for the obsolete KEX (key exchange protocol) algorithms to ensure the security of the connection.
@@ -274,9 +274,9 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/QuickStart/Software%20Stack%20Versions)
+[More info](/docs/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',

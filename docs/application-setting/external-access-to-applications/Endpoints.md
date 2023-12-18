@@ -32,11 +32,11 @@ The **Endpoints** feature at the platform refers to the possibility of TCP/UDP p
 </div>
 This is achieved through providing the ability to establish the direct connection (over either raw TCP or UDP protocol) to the corresponding node, without the mandatory <a href="/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP">public IP</a> address attached.
 
-Such linking can be used to enable a great variety of different tasks, like remote database management, direct apps' [deployment from IDE](/docs/Windows&.NET/DOT%20NET%20Core) (for _IIS_), running multiple project copies on a single instance, accessing a server’s admin panel with no external address bound, etc.
+Such linking can be used to enable a great variety of different tasks, like remote database management, direct apps' [deployment from IDE](/docs/windows-and-.NET/dot-net-core) (for _IIS_), running multiple project copies on a single instance, accessing a server’s admin panel with no external address bound, etc.
 
 :::tip
 
-Beside the increased convenience, with endpoints you can cut your spends for the External IP usage, which, otherwise, would be required for such operations. Obviously, endpoints can’t completely replace them, but may become useful in some elementary jobs, and being combined with other platform features (like automatic [vertical](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling) and [horizontal](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling) scaling, [discounts tiers](/docs/Account&Pricing/Automatic%20Discounts), etc.) such an approach can help you to significantly save your money.
+Beside the increased convenience, with endpoints you can cut your spends for the External IP usage, which, otherwise, would be required for such operations. Obviously, endpoints can’t completely replace them, but may become useful in some elementary jobs, and being combined with other platform features (like automatic [vertical](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) and [horizontal](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) scaling, [discounts tiers](/docs/Account&Pricing/Automatic%20Discounts), etc.) such an approach can help you to significantly save your money.
 
 :::
 
@@ -236,8 +236,8 @@ For more convenience, we provide the embedded list of predefined endpoint config
 **\*Optional** values availability depends on the type of the chosen node:
 
 - _database nodes_ are provided with the default endpoint, named after themselves and with the appropriate port stated
-- _Windows-based containers_ have the additional [_RDP_](/docs/Windows&.NET/Windows%20RD%20Access) (_3389_) connection
-- _IIS application server_ has the _DEPLOY_ (_8172_) connection for the direct project [deployment from IDE](/docs/Windows&.NET/DOT%20NET%20Core)
+- _Windows-based containers_ have the additional [_RDP_](/docs/windows-and-.NET/windows-rd-access) (_3389_) connection
+- _IIS application server_ has the _DEPLOY_ (_8172_) connection for the direct project [deployment from IDE](/docs/windows-and-.NET/dot-net-core)
 
 :::
 
@@ -307,7 +307,7 @@ Just after that, the corresponding endpoint will be removed from the list.
 
 Once the required mappings are configured, you can apply them for running different tasks. To make it easier to start, below we’ll describe a few most common endpoints' use-cases that you can benefit from.
 
-As an example, we will use an environment with the **Apache** application server and **MySQL** database (you can create the similar one following [this](/docs/EnvironmentManagement/Setting%20Up%20Environment) guide):
+As an example, we will use an environment with the **Apache** application server and **MySQL** database (you can create the similar one following [this](/docs/environment-management/setting-up-environment) guide):
 
 <div style={{
     display:'flex',
@@ -454,7 +454,7 @@ Do not choose port _80_ as private port for this task, as Apache uses it by defa
 
 :::
 
-2. Now, [deploy](/docs/Deployment/Deployment%20Guide) your application twice to different contexts (_e.g. prod and dev_).
+2. Now, [deploy](/docs/deployment/deployment-guide) your application twice to different contexts (_e.g. prod and dev_).
 
 <div style={{
     display:'flex',
@@ -522,7 +522,7 @@ Then adjust the appropriate _DocumentRoot_ locations for both virtual hosts with
 
 </div>
 
-7. Now you can connect to your prod project as usual, e.g. using the **Open in browser** button (or entering the external [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) if one was additionally bound to your app), while for accessing its dev version, you just need to specify the used endpoint’s Access URL.
+7. Now you can connect to your prod project as usual, e.g. using the **Open in browser** button (or entering the external [custom domain](/docs/application-setting/domain-name-management/custom-domain-name) if one was additionally bound to your app), while for accessing its dev version, you just need to specify the used endpoint’s Access URL.
 
 <div style={{
     display:'flex',

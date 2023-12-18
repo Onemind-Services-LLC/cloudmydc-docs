@@ -16,7 +16,7 @@ The add-on can be installed on top of the Redis nodes only.
 
 :::tip Tip
 
-The add-on is also available from the [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace#marketplace) and can be imported from the appropriate GitHub repository.
+The add-on is also available from the [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace) and can be imported from the appropriate GitHub repository.
 
 :::
 

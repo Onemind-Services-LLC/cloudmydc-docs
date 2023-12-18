@@ -43,9 +43,9 @@ Through this article, you’ll get acquainted with the main tools and features a
 
 ## Python Environment Hosting
 
-To start hosting your Python application at the platform, you need to [create](/docs/EnvironmentManagement/Setting%20Up%20Environment) the appropriate environment via the powerful _topology wizard_ (accessible through the **New Environment** button at the dashboard’s top panel).
+To start hosting your Python application at the platform, you need to [create](/docs/environment-management/setting-up-environment) the appropriate environment via the powerful _topology wizard_ (accessible through the **New Environment** button at the dashboard’s top panel).
 
-Switch to the **_Python_** language tab and select the desired engine version. _Apache Python_ application server is automatically added in a bundle with the _mod_wsgi_ module. Specify resource limits and nodes' count, as well as add extra [software stacks](/docs/QuickStart/Software%20Stack%20Versions) or options (e.g. Public IPs) if required.
+Switch to the **_Python_** language tab and select the desired engine version. _Apache Python_ application server is automatically added in a bundle with the _mod_wsgi_ module. Specify resource limits and nodes' count, as well as add extra [software stacks](/docs/quickstart/software-stack-versions) or options (e.g. Public IPs) if required.
 
 :::tip Note
 
@@ -82,7 +82,7 @@ Currently (at the time of this writing), the following Python versions are suppo
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/QuickStart/Software%20Stack%20Versions) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/quickstart/software-stack-versions) document.
 
 :::
 
@@ -96,7 +96,7 @@ The up-to-date list of the releases available on the platform is provided via th
 
 </div>
 
-You can select the required [version of Python](/docs/Python/Python%20Versions#python-versions) directly from the topology wizard during the creation of a new environment, as well as adjust it for already existing ones using [container redeployment](/docs/Container/Container%20Redeploy).
+You can select the required [version of Python](/docs/Python/Python%20Versions#python-versions) directly from the topology wizard during the creation of a new environment, as well as adjust it for already existing ones using [container redeployment](/docs/category/container-deployment).
 
 ## Python Application Deployment
 
@@ -119,8 +119,8 @@ Git flow provides a possibility of sequential or simultaneous deploy, as well as
 
 Refer to the following guides for the detailed overview of the deployment process and the provided additional options:
 
-- [Deployment Manager](/docs/Deployment/Deployment%20Manager)
-- [Deployment Guide](/docs/Deployment/Deployment%20Guide)
+- [Deployment Manager](/docs/deployment/deployment-manager)
+- [Deployment Guide](/docs/deployment/deployment-guide)
 - [Auto-Deploy Overview](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview#auto-deploy-of-gitsvn-updates)
 - [Deployment Hooks](/docs/Deployment/Deployment%20Hooks)
 

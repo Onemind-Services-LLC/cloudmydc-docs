@@ -110,7 +110,7 @@ _“jdbc:{dbtype}://{dbtype}{node_id}-{environment_name}.{hoster_domain}/{dbname
 
 :::tip Tip
 
-Your hosting provider domain can be found within the last column of the appropriate table in the [Hosters Info](/docs/QuickStart/Hosters%20List%20&%20Info#paas-hosting-providers) page.
+Your hosting provider domain can be found within the last column of the appropriate table in the [Hosters Info](/docs/quickstart/hosters-list-&-info#paas-hosting-providers) page.
 
 In case your hosting provider platform has several [environment regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#environment-regions) to choose, the {hoster_domain} value for your environment can differ from the general platform’s one.
 

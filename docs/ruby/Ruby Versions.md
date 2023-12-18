@@ -14,7 +14,7 @@ The platform supports all of the latest major releases of the Ruby engine and pr
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/QuickStart/Software%20Stack%20Versions) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/quickstart/software-stack-versions) document.
 
 :::
 
@@ -50,7 +50,7 @@ Configure any other desired customization (e.g. cloudlets limit, [public IP]/doc
 
 ## Change Ruby Version
 
-For the already existing environments, you can change the Ruby version by [redeploying container(s)](/docs/Container/Container%20Redeploy):
+For the already existing environments, you can change the Ruby version by [redeploying container(s)](/docs/category/container-deployment):
 
 1. There are two options to access container update dialog:
 

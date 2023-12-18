@@ -54,7 +54,7 @@ The only exception is **GlassFish**, as it requires some server-side configurati
 
 </div>
 
-5. Now, you can deploy your application, which requires the WebSockets protocol support, to your environment. This can be done via [local archive/URL](/docs/Deployment/Deployment%20Guide), or, if you prefer to use the remote VCS repository, simply add the **Maven** node to your environment topology and follow this [guide](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven).
+5. Now, you can deploy your application, which requires the WebSockets protocol support, to your environment. This can be done via [local archive/URL](/docs/deployment/deployment-guide), or, if you prefer to use the remote VCS repository, simply add the **Maven** node to your environment topology and follow this [guide](/docs/java/build-node/java-vcs-deployment-with-maven).
 
 As a result, your deployed application will be listed in the appropriate panel column:
 

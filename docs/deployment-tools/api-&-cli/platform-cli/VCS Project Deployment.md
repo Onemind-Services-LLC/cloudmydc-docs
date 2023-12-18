@@ -33,7 +33,7 @@ Here, the list of parameters can be divided into the following groups:
 In case you need to connect to a private repository, the additional authentication parameters [*–login* ***{login}***] _[–password_ **_{password}_**] _[–keyId_ **_{keyId}_**] should be added to the main command. Here, you need to obligatory state the **_{login}_** option (to specify your VCS account login) and append one of the following settings depending on the desired (_password_ or _SSH key_) access types:
 
 - **_{password}_** - the corresponding VCS account password
-- **_{keyId}_** - name of the private SSH key you’ve specified while its addition to the dashboard; this allows to establish a [secure connection](/docs/Deployment/SSH%20Access%20to%20GIT%20Repository) to the repo with the paired public SSH key is attached
+- **_{keyId}_** - name of the private SSH key you’ve specified while its addition to the dashboard; this allows to establish a [secure connection](/docs/deployment/ssh-access-to-git-repository) to the repo with the paired public SSH key is attached
 
 :::
 

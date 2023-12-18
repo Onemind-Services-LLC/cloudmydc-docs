@@ -26,7 +26,7 @@ sidebar_position: 1
 
 1. Log in to the PaaS dashboard and click the **New Environment** button at the top-left corner.
 
-2. Within the opened [topology wizard](/docs/EnvironmentManagement/Setting%20Up%20Environment), navigate to the **.NET** tab and select the **_.NET Core_** application server. Configure the other parameters (_[cloudlets](/docs/PlatformOverview/Cloudlet)_,_disk limit_, _[public IPs](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP/)_, etc.) up to your needs.
+2. Within the opened [topology wizard](/docs/environment-management/setting-up-environment), navigate to the **.NET** tab and select the **_.NET Core_** application server. Configure the other parameters (_[cloudlets](/docs/PlatformOverview/Cloudlet)_,_disk limit_, _[public IPs](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP/)_, etc.) up to your needs.
 
 <div style={{
     display:'flex',
@@ -56,9 +56,9 @@ The application server operates in a separate container (node) - an isolated vir
 
 ## Deploying Application to .NET Core Server
 
-The platform provides multiple options to automatically [deploy projects](/docs/Deployment/Deployment%20Guide). In this example, we’ll add a simple .NET project stored on GitHub.
+The platform provides multiple options to automatically [deploy projects](/docs/deployment/deployment-guide). In this example, we’ll add a simple .NET project stored on GitHub.
 
-1. Open the **_Git/SVN_** tab of the **[Deployment Manager](/docs/Deployment/Deployment%20Manager#git--svn-projects)** to add a new repository.
+1. Open the **_Git/SVN_** tab of the **[Deployment Manager](/docs/deployment/deployment-manager#git--svn-projects)** to add a new repository.
 
 <div style={{
     display:'flex',

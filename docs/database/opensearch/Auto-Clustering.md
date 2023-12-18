@@ -54,7 +54,7 @@ After being created, the OpenSearch node is available on port 9200 for internal 
 
 The OpenSearch stack benefits from all the functionality available for other certified templates - dashboard file manager, Web SSH, dashboard log viewer, etc.
 
-Also, platform’s [redeploy](/docs/Container/Container%20Redeploy) functionality provides a simple update process. However, only redeployment to the same or newer version is allowed - a downgrade is restricted.
+Also, platform’s [redeploy](/docs/category/container-deployment) functionality provides a simple update process. However, only redeployment to the same or newer version is allowed - a downgrade is restricted.
 
 ## OpenSearch Dashboards
 
@@ -179,7 +179,7 @@ These settings can also be edited for the already installed add-on using the **C
 
 ## OpenSearch Cluster Installation
 
-The OpenSearch Cluster creation at the platform is a straightforward and fully automated process that can be performed directly from the [topology wizard](/docs/EnvironmentManagement/Setting%20Up%20Environment).
+The OpenSearch Cluster creation at the platform is a straightforward and fully automated process that can be performed directly from the [topology wizard](/docs/environment-management/setting-up-environment).
 
 Select the **OpenSearch** stack at the NoSQL database section.
 

@@ -10,7 +10,7 @@ sidebar_position: 3
 
 In addition to the [Built-In SSL](/docs/ApplicationSetting/SSL/Built-In%20SSL) and Let’s Encrypt SSL, the platform provides the ability to upload and use **custom SSL certificates** for your environments. The platform supports the following certificate types:
 
-- [self-signed](/docs/ApplicationSetting/SSL/Self-Signed%20Custom%20SSL)
+- [self-signed](/docs/application-setting/ssl/self-signed-custom-ssl)
 - Wildcard
 - Multi-Domain
 - Extended validation single domain
@@ -175,7 +175,7 @@ The **Common Name** parameter value has to be equal to your purchased domain nam
 
 :::tip
 
-You can [sign certificates yourself](/docs/ApplicationSetting/SSL/Self-Signed%20Custom%20SSL), follow the link to see the detailed instruction.
+You can [sign certificates yourself](/docs/application-setting/ssl/self-signed-custom-ssl), follow the link to see the detailed instruction.
 
 :::
 
@@ -239,7 +239,7 @@ Now you need to set an **A Record** in order to point your custom domain name to
 
 2. Then, navigate to **DNS Manager** of the chosen domain registrar system (the one you’ve used for your custom domain name purchase) and set an A Record within it.
 
-Additional information and a detailed example can be found in the appropriate [Custom Domain Name](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) document.
+Additional information and a detailed example can be found in the appropriate [Custom Domain Name](/docs/application-setting/domain-name-management/custom-domain-name) document.
 
 ## Upload Certificate to the Environment
 

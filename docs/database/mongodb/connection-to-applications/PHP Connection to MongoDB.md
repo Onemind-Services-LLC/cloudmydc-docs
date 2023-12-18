@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ## Create an Environment
 
-Log into your platform account and [create](/docs/EnvironmentManagement/Setting%20Up%20Environment) a new environment with the **MongoDB** node of the preferred version (can be found within the NoSQL wizard section).
+Log into your platform account and [create](/docs/environment-management/setting-up-environment) a new environment with the **MongoDB** node of the preferred version (can be found within the NoSQL wizard section).
 
 <div style={{
     display:'flex',
@@ -142,7 +142,7 @@ Scroll down to the approximately 483rd line and uncomment the string with the re
 
 ## Application Deployment
 
-Now you can proceed to application deployment into the environment you’ve just prepared using the platform [Deployment Manager](/docs/Deployment/Deployment%20Guide) (for projects, packed into a single archive or fetched directly from a GIT/SVN repo).
+Now you can proceed to application deployment into the environment you’ve just prepared using the platform [Deployment Manager](/docs/deployment/deployment-guide) (for projects, packed into a single archive or fetched directly from a GIT/SVN repo).
 
 As an example, we’ll use the following simple app, designed to verify the establishment of connection between the corresponding compute node and the specified MongoDB server by means of the latter mongodb.so extension.
 

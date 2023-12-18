@@ -8,7 +8,7 @@ sidebar_position: 1
 
 PostgreSQL is a powerful, open source SQL database with the object-relational structure and numerous robust features to ensure excellent performance and reliability. In this tutorial, we’ll show how to connect [PostgreSQL](https://www.postgresql.org/?_gl=1*on0g80*_gcl_au*MTkyNTQ2Mjk4Ny4xNjk0OTczMzMx) database with Java application hosted with Jelastic PaaS.
 
-1. Log into Jelastic dashboard, [create](/docs/EnvironmentManagement/Setting%20Up%20Environment) **New Environment** with the **_Java_** application server and the **_PostgreSQL database_**.
+1. Log into Jelastic dashboard, [create](/docs/environment-management/setting-up-environment) **New Environment** with the **_Java_** application server and the **_PostgreSQL database_**.
 
 <div style={{
     display:'flex',
@@ -144,7 +144,7 @@ return result;
 }
 ```
 
-6. [Deploy](/docs/Deployment/Deployment%20Guide) our example application to your Tomcat server. Due to different version servlet specifications supported by Tomcat 9 and Tomcat 10 we have prepared the respective applications:
+6. [Deploy](/docs/deployment/deployment-guide) our example application to your Tomcat server. Due to different version servlet specifications supported by Tomcat 9 and Tomcat 10 we have prepared the respective applications:
 
 For Tomcat 9: [https://download.jelastic.com/public.php?service=files&t=18753849900d2461b3162bd4355f834d&download](https://download.jelastic.com/public.php?service=files&t=18753849900d2461b3162bd4355f834d&download)
 

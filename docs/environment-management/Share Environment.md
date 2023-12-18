@@ -4,7 +4,7 @@ slug: share-environment
 sidebar_position: 3
 ---
 
-**Environment Sharing** is a particular case of the [account collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview) feature - when you want to give access or some functionality of your account to other users. The only difference is that you need to share just a single environment.
+**Environment Sharing** is a particular case of the [account collaboration](/docs/account-and-pricing/accounts-collaboration/collaboration-overview) feature - when you want to give access or some functionality of your account to other users. The only difference is that you need to share just a single environment.
 
 Check a quick summary of the feature for better understanding:
 

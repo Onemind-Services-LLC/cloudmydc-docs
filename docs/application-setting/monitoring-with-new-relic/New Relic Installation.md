@@ -73,7 +73,7 @@ The currently supported Java application servers are **Tomcat**, **TomEE**, and 
 
 The New Relic APM agent is also available at the [JPS Collection](https://github.com/jelastic-jps), alongside with the number of other useful JPS solutions the platform provides.
 
-You can [import](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import) and integrate any of them using the link to _manifest.jps_ file within the appropriate repository.
+You can [import](/docs/environment-management/environment-export-and-import/environment-import) and integrate any of them using the link to _manifest.jps_ file within the appropriate repository.
 
 :::
 
@@ -93,7 +93,7 @@ Here, the following data should be specified within the appropriate fields:
 
 - **Application name** - enter the label for this app to be shown at your New Relic dashboard, e.g. _my-project_ (an environment domain is substituted by default here if switching among several available ones)
 
-- **License key** - a unique identifier, that is bound to each New Relic user and can be viewed at the **_Account settings_** section of its [admin panel](/docs/ApplicationSetting/Configuration%20File%20Manager) (stating it, you ensure that the collected data will be reported at your account)
+- **License key** - a unique identifier, that is bound to each New Relic user and can be viewed at the **_Account settings_** section of its [admin panel](/docs/application-setting/configuration-file-manager) (stating it, you ensure that the collected data will be reported at your account)
 
 <div style={{
     display:'flex',

@@ -60,7 +60,7 @@ This environment should have a [bound custom domain](/docs/ApplicationSetting/Do
 
 </div>
 
-3. [Clone this environment](/docs/EnvironmentManagement/Cloning%20Environment) to automatically create its identical copy including, all deployed packages, databases, etc. Let’s name it _testing_.
+3. [Clone this environment](/docs/environment-management/cloning-environment) to automatically create its identical copy including, all deployed packages, databases, etc. Let’s name it _testing_.
 
 <div style={{
     display:'flex',
@@ -90,9 +90,9 @@ Now, you can add new features, customize settings, apply updates, etc. All witho
 
 1. Make the needed changes (either directly via the dashboard or by deploying the new project version) to the cloned environment. The following documentation guides can help you with your project adjustments:
 
-- [Deployment Guide](/docs/Deployment/Deployment%20Guide)
+- [Deployment Guide](/docs/deployment/deployment-guide)
 - [SSH Access](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview)
-- [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager)
+- [configuration file manager](/docs/application-setting/configuration-file-manager)
 
 <div style={{
     display:'flex',

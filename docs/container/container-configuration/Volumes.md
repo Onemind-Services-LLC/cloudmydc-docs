@@ -9,9 +9,9 @@ The **Volumes** tab contains the list of mounted at the current container data v
 
 ![Locale Dropdown](./img/Volumes/01--volumes-layer-settings.png)
 
-Storing data within volumes allows different internal operations (e.g. [SSH Gateway](/docs/Container/Container%20Redeploy) the container to another tag version) to be performed without affecting or losing the data. Such volume content preservation provides a high level of integrity for your data.
+Storing data within volumes allows different internal operations (e.g. [SSH Gateway](/docs/category/container-deployment) the container to another tag version) to be performed without affecting or losing the data. Such volume content preservation provides a high level of integrity for your data.
 
-Below, we’ll consider how to add a custom volume for your container and types of [data mounting](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) the platform provides - at a **Local Filesystem**, separate dedicated **Data Container**, layer **Master Container** or **External NFS Server**.
+Below, we’ll consider how to add a custom volume for your container and types of [data mounting](/docs/data-storage-container/data-sharing/mount-points) the platform provides - at a **Local Filesystem**, separate dedicated **Data Container**, layer **Master Container** or **External NFS Server**.
 
 ## Operating Custom Volumes
 
@@ -33,7 +33,7 @@ Beside that, you have an ability to mount and manage your custom volumes, placed
 
 </div>
 
-- **[Data Container](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points)** - this type of volume allows to mount data from any other layer within your accountadd data container volume
+- **[Data Container](/docs/data-storage-container/data-sharing/mount-points)** - this type of volume allows to mount data from any other layer within your accountadd data container volume
 
 <div style={{
     display:'flex',
@@ -93,7 +93,7 @@ Do not forget to **Apply** the changes you’ve made.
 
 - before deletion, make sure the appropriate volume does not contain any substantial data, as it will be permanently removed
 - the predefined (i.e. default) volumes can’t be deleted (whilst still being available for editing)
-- if you want to remove volume but keep the [SSH Gateway](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points), untick the Unmount path checkbox
+- if you want to remove volume but keep the [SSH Gateway](/docs/data-storage-container/data-sharing/mount-points), untick the Unmount path checkbox
 
 :::
 

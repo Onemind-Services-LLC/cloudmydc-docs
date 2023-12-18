@@ -19,7 +19,7 @@ Unlike HTTP, the FTP protocol is stateful: you establish a control connection fo
 **FTP Usage:**
 
 - uploading/downloading resources
-- downloading and reading [logs](/docs/ApplicationSetting/Built-in%20Monitoring/Log%20Files) for analysing
+- downloading and reading [logs](/docs/application-setting/built-in-monitoring/log-files) for analysing
 - editing configurations
 - syncing files
 - deploying applications (not recommended)
@@ -421,7 +421,7 @@ You can change the password of FTP-addon, installed at your environment. Using c
 
 Your FTP password can be changed via SSH following the next steps:
 
-1. [generate](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) an SSH key and [add](/docs/Deployment%20Tools/SSH/Add%20SSH%20Key) it to your dashboard.
+1. [generate](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) an SSH key and [add](/docs/deployment-tools/ssh/add-ssh-key) it to your dashboard.
 
 2. [Access](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) a necessary container with the installed FTP-addon via SSH.
 

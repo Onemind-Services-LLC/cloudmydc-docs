@@ -232,7 +232,7 @@ The platform already utilizes these new methods to provide proper notification a
 
 ## Info for Environment Clone Dialog
 
-The **[Clone Environment](/docs/EnvironmentManagement/Cloning%20Environment)** is a powerful platform feature that allows you to create an identical copy of the existing environment. For example, it can be helpful during development to create a separate instance of the project where tuning and adjustments can be safely tested without affecting existing customers. However, when utilizing the feature, users should be aware that the IP addresses and hostnames of the clone will differ from the initial environment (i.e. manual re-adjustment of these values may be required). To ensure better awareness of the fact, such information was added to the **_Clone Environment_** dialog.
+The **[Clone Environment](/docs/environment-management/cloning-environment)** is a powerful platform feature that allows you to create an identical copy of the existing environment. For example, it can be helpful during development to create a separate instance of the project where tuning and adjustments can be safely tested without affecting existing customers. However, when utilizing the feature, users should be aware that the IP addresses and hostnames of the clone will differ from the initial environment (i.e. manual re-adjustment of these values may be required). To ensure better awareness of the fact, such information was added to the **_Clone Environment_** dialog.
 
 <div style={{
     display:'flex',
@@ -244,7 +244,7 @@ The **[Clone Environment](/docs/EnvironmentManagement/Cloning%20Environment)** i
 
 </div>
 
-[More info](/docs/EnvironmentManagement/Cloning%20Environment)
+[More info](/docs/environment-management/cloning-environment)
 
 <div style={{
         display: 'flex',
@@ -400,9 +400,9 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/QuickStart/Software%20Stack%20Versions)
+[More info](/docs/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',

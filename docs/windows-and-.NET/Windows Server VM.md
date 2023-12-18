@@ -72,7 +72,7 @@ The cost of the VM Resources is always fixed regardless of the actual consumptio
 
 :::tip Tip
 
-You can hover over the **Usage** column for a comprehensive overview of the current consumption or refer to the node **[Statistics](/docs/ApplicationSetting/Built-in%20Monitoring/Statistics)** for detailed analysis.
+You can hover over the **Usage** column for a comprehensive overview of the current consumption or refer to the node **[Statistics](/docs/application-setting/built-in-monitoring/statistics)** for detailed analysis.
 
 <div style={{
     display:'flex',
@@ -86,7 +86,7 @@ You can hover over the **Usage** column for a comprehensive overview of the curr
 
 :::
 
-2. Some [node’s function icons](/docs/QuickStart/Dashboard%20Guide#function-icons-for-each-instance) for VM are a bit different compared to containers. The following options are available:
+2. Some [node’s function icons](/docs/quickstart/dashboard-guide#function-icons-for-each-instance) for VM are a bit different compared to containers. The following options are available:
 
 - **Add-Ons** - installs available pluggable modules (e.g. _Env Start/Stop Scheduler_)
 - **Restart Node(s)** - restarts a VM
@@ -106,7 +106,7 @@ You can hover over the **Usage** column for a comprehensive overview of the curr
 
 :::danger Note
 
-The **[clone](/docs/EnvironmentManagement/Cloning%20Environment)** and **[migration](/docs/EnvironmentManagement/Environment%20Regions/Migration%20between%20Regions)** options are automatically disabled for environments with VMs.
+The **[clone](/docs/environment-management/cloning-environment)** and **[migration](/docs/environment-management/environment-regions/migration-between-regions)** options are automatically disabled for environments with VMs.
 
 <div style={{
     display:'flex',
@@ -153,7 +153,7 @@ Let’s overview these options in detail.
 
 5. In addition to the built-in web client, you can connect using any preferred local RDP application. Connect to VM based on its entry point:
 
-- If created <u>without external IP</u>, an [endpoint](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints) is created automatically and can be used for RDP connectionWindows VM endpoint for RDP
+- If created <u>without external IP</u>, an [endpoint](/docs/application-setting/external-access-to-applications/endpoints) is created automatically and can be used for RDP connectionWindows VM endpoint for RDP
 
 <div style={{
     display:'flex',

@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Kubernetes Cluster: Package Installation
 
-The **Kubernetes Cluster** solution is available for automatic installation via [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) under the Clusters category (or use Search to locate). Note that this clustered solution is available for billing customers only.
+The **Kubernetes Cluster** solution is available for automatic installation via [platform Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace) under the Clusters category (or use Search to locate). Note that this clustered solution is available for billing customers only.
 
 <div style={{
     display:'flex',
@@ -36,7 +36,7 @@ The development topology is not recommended for production projects as it cannot
 - **Deployment**
 
   - _Clean cluster_ with pre-deployed HelloWorld example
-  - _Custom_ helm or stack deployed via shell command - chose this option to manually provide commands for custom application deployment from the [*helm*](/docs/Kubernetes%20Hosting/Application%20Deployment/Helm%20Integration) repository
+  - _Custom_ helm or stack deployed via shell command - chose this option to manually provide commands for custom application deployment from the [_helm_](/docs/Kubernetes%20Hosting/Application%20Deployment/Helm%20Integration) repository
 
 - **NFS Storage** - enable to attach a dedicated NFS Storage with dynamic volume provisioning (disable if you want to register own storage class, requires in-depth K8s knowledge)
 - **Modules** (can be enabled later via the add-ons)
@@ -44,8 +44,8 @@ The development topology is not recommended for production projects as it cannot
   - _Jaeger Tracing Tools_ - tick to install Jaeger tracing system for monitoring and troubleshooting
   - _Remote API Access_ - check if you plan on using the kubectl command-line tool or some other remote clients
 - **Environment** - provide a name for your environment
-- **Display Name** - specify an [alias](/docs/EnvironmentManagement/Environment%20Aliases)
-- **Region** - choose a [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) (if available)
+- **Display Name** - specify an [alias](/docs/environment-management/environment-aliases)
+- **Region** - choose a [region](/docs/environment-management/environment-regions/choosing-a-region) (if available)
 
 <div style={{
     display:'flex',

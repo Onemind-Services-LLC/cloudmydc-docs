@@ -15,7 +15,7 @@ Follow the instruction below to learn how to connect your PHP application, hoste
 ## Create Environment
 
 1. Log into the platform dashboard.
-2. [Create](/docs/EnvironmentManagement/Setting%20Up%20Environment) an environment with the **PHP** application server (e.g. Apache PHP) and the **PostgreSQL** database.
+2. [Create](/docs/environment-management/setting-up-environment) an environment with the **PHP** application server (e.g. Apache PHP) and the **PostgreSQL** database.
 
 <div style={{
     display:'flex',

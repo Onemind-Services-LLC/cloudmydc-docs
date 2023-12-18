@@ -29,7 +29,7 @@ Below, we’ve prepared examples of connection to Elastic VPS container over pub
 
 :::tip Tip
 
-In confines of the [Windows-based](/docs/Windows&.NET/Windows%20Server%20VM) VPS containers, the [remote desktop protocol](/docs/Windows&.NET/Windows%20RD%20Access) (RDP) is used to perform any required server configurations.
+In confines of the [Windows-based](/docs/Windows&.NET/Windows%20Server%20VM) VPS containers, the [remote desktop protocol](/docs/windows-and-.NET/windows-rd-access) (RDP) is used to perform any required server configurations.
 
 :::
 

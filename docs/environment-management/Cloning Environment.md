@@ -20,7 +20,7 @@ sidebar_position: 4
 
 </div>
 
-Also, if talking about more complex and sophisticated projects (which implies the involvement of the whole development team), multiple copies of your application (dedicated to a specific task) are recommended. The most common application [lifecycle](/docs/ApplicationSetting/Application%20Lifecycle%20Management) implementation involves the following stages:
+Also, if talking about more complex and sophisticated projects (which implies the involvement of the whole development team), multiple copies of your application (dedicated to a specific task) are recommended. The most common application [lifecycle](/docs/application-setting/application-lifecycle-management) implementation involves the following stages:
 
 - **development** - for developers to create and modify features
 - **testing** - for quality assurance to discover and analyze possible issues
@@ -73,7 +73,7 @@ For some specific cases, additional adjustments are required to make your enviro
 
 - nodes' IP addresses and hostnames will differ from the initial ones and, in case of being “hardcoded” within config files, should be re-adjusted manually
 - if you’ve faced a problem when cloning a massive environment (i.e. with more than 1TB of data being stored in containers), please contact your hosting provider for assistance
-- an environment in [collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview) can be cloned only by its owner; herewith, the created copy won’t be available to collaborators by default
+- an environment in [collaboration](/docs/account-and-pricing/accounts-collaboration/collaboration-overview) can be cloned only by its owner; herewith, the created copy won’t be available to collaborators by default
 
 :::
 
@@ -86,7 +86,7 @@ Now, you can re-configure it, deploy new application versions, and apply any top
 Consequently, you can use your environment in the following ways:
 
 - rename (change internal domain) your environment
-- [swap domains](/docs/ApplicationSetting/Domain%20Name%20Management/Swap%20Domains) to redirect your clients to the upgraded project
+- [swap domains](/docs/application-setting/domain-name-management/swap-domains) to redirect your clients to the upgraded project
 - implement [blue-green deployment](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/Blue-Green%20Deploy) to allow so-called “invisible” updates, which will not cause any downtime for your application
 
 <div style={{

@@ -26,7 +26,7 @@ If you have multiple Kubernetes (K8s) clusters in different regions and need to 
 
 Kubernetes Federation is a multi-cloud or multi-region implementation for centralized deployment and management of applications and services across multiple Kubernetes clusters.
 
-Federation allows to create a set of interconnected clusters, into which you can deploy applications according to specific rules. The most demanded use case for Federation is scaling applications across different clusters located in different regions. 
+Federation allows to create a set of interconnected clusters, into which you can deploy applications according to specific rules. The most demanded use case for Federation is scaling applications across different clusters located in different regions.
 
 </div>
 </div>
@@ -53,7 +53,7 @@ Thus we need to decide which payload we want to distribute, and which member clu
 
 So, let’s get down to business and create a Federation in Jelastic PaaS.
 
-Sing in your account and create two Kubernetes clusters in different [regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region). Actually you may create as many as you need though, but here we create a **Host Cluster** and **Member Cluster 1** only. All of the actions below can be applied to any number of Member Clusters. So, deploy:
+Sing in your account and create two Kubernetes clusters in different [regions](/docs/environment-management/environment-regions/choosing-a-region). Actually you may create as many as you need though, but here we create a **Host Cluster** and **Member Cluster 1** only. All of the actions below can be applied to any number of Member Clusters. So, deploy:
 
 - Federation Host Cluster: **_fedhost.vip.jelastic.cloud_**
 - Federation Member Cluster: **_member1.demo.jelastic.com_**
@@ -72,7 +72,7 @@ Sing in your account and create two Kubernetes clusters in different [regions](/
 
 The next step is to establish [remote access to the clusters](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/).
 
-Log in the master node of the **Host Cluster** via [SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/SSH%20Gate) and start with the configuration. Some commands output will be shown to let you be sure you are doing right:
+Log in the master node of the **Host Cluster** via [SSH](/docs/deployment-tools/ssh/ssh-access/ssh-gate) and start with the configuration. Some commands output will be shown to let you be sure you are doing right:
 
 1. First, install the KubeFed chart with [helm](https://kubernetes.io/blog/2016/10/helm-charts-making-it-simple-to-package-and-deploy-apps-on-kubernetes/) in **kube-federation-system** namespace :
    Add repository:

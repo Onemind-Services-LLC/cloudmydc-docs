@@ -120,4 +120,4 @@ In order to run containers of another type, please, [contact us](https://cloudmy
 
 ## Supported Architectures
 
-Currently, only **_amd64_** image architecture is supported for [custom container deployment](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) (and [redeployment](/docs/Container/Container%20Redeploy)).
+Currently, only **_amd64_** image architecture is supported for [custom container deployment](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) (and [redeployment](/docs/category/container-deployment)).

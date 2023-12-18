@@ -31,7 +31,7 @@ Thus, to allow our customers benefit from all the advantages this data storing s
 
 ## Auto-Scalable Couchbase Cluster Package Specifics
 
-The [Couchbase Cluster](https://github.com/jelastic-jps/couchbase?utm_source=blog-couchbase&_gl=1*1ya143w*_gcl_au*MTkyNTQ2Mjk4Ny4xNjk0OTczMzMx) package by Jelastic is built upon the official _[couchbase](https://hub.docker.com/_/couchbase/?_gl=1*1ya143w*_gcl_au*MTkyNTQ2Mjk4Ny4xNjk0OTczMzMx)_ Docker image as a base. During its deployment, you can set the desired number of cluster nodes (up to 10 instances) to be created. All cluster members (both the initially created ones and subsequently added nodes) will be automatically interconnected to represent a single highly available data storing system. In this way, you get a ready-to-use logical grouping of container instances rather than a set of standalone nodes that require additional configurations’ appliance for even data distribution.
+The [Couchbase Cluster](https://github.com/jelastic-jps/couchbase?utm_source=blog-couchbase&_gl=1*1ya143w*_gcl_au*MTkyNTQ2Mjk4Ny4xNjk0OTczMzMx) package by Jelastic is built upon the official _[couchbase](https://hub.docker.com/_/couchbase/?_gl=1*1ya143w*\_gcl_au\*MTkyNTQ2Mjk4Ny4xNjk0OTczMzMx)_ Docker image as a base. During its deployment, you can set the desired number of cluster nodes (up to 10 instances) to be created. All cluster members (both the initially created ones and subsequently added nodes) will be automatically interconnected to represent a single highly available data storing system. In this way, you get a ready-to-use logical grouping of container instances rather than a set of standalone nodes that require additional configurations’ appliance for even data distribution.
 
 <div style={{
     display:'flex',
@@ -91,7 +91,7 @@ With the considered prepackaged solution for one-click installation, the process
 
 </div>
 
-Within the **Apps** section, use the search box to find the Auto Scalable Couchbase Cluster package and select **Install**. 2. In the opened frame, set a number of Nodes in Cluster to be created (considering that this value will be set as a minimal cluster size and can’t be decreased due to auto-scaling). Then type an Environment name, and, optionally, alternative Display Name ([alias](/docs/EnvironmentManagement/Environment%20Aliases)) for it.
+Within the **Apps** section, use the search box to find the Auto Scalable Couchbase Cluster package and select **Install**. 2. In the opened frame, set a number of Nodes in Cluster to be created (considering that this value will be set as a minimal cluster size and can’t be decreased due to auto-scaling). Then type an Environment name, and, optionally, alternative Display Name ([alias](/docs/environment-management/environment-aliases)) for it.
 
 <div style={{
     display:'flex',

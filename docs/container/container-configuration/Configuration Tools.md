@@ -19,7 +19,7 @@ The platform integrated the special **Docker layer settings** dialog frame to th
 
 So, to start with, you need to access the above-mentioned frame. There are two ways this can be done through:
 
-via topology wizard - click on the **New Environment** button and [add the needed container(s)](/docs/EnvironmentManagement/Setting%20Up%20Environment) or hit the **Change Environment Topology** button for the already created environment.
+via topology wizard - click on the **New Environment** button and [add the needed container(s)](/docs/environment-management/setting-up-environment) or hit the **Change Environment Topology** button for the already created environment.
 
 ![Locale Dropdown](./img/ConfigurationTools/01-topology-wizard-layer-configuration.png)
 
@@ -49,14 +49,14 @@ As you can see, it contains 5 separate sections with the next settings options (
 
 ## Configuration File Manager
 
-The in-built **[configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager)** is designed to manage the files inside your container (including the ones, that are available and/or exported by means of [Shared Storage Container](/docs/Data%20Storage%20Container/Data%20Storage%20Overview) functionality). The appropriate tab can be opened by clicking on the **Config** button next to the necessary node (or the whole layer):
+The in-built **[configuration file manager](/docs/application-setting/configuration-file-manager)** is designed to manage the files inside your container (including the ones, that are available and/or exported by means of [Shared Storage Container](/docs/Data%20Storage%20Container/Data%20Storage%20Overview) functionality). The appropriate tab can be opened by clicking on the **Config** button next to the necessary node (or the whole layer):
 
 ![Locale Dropdown](./img/ConfigurationTools/04-configuration-file-manager.png)
 
 It includes 4 main sections:
 
 - **Root** (File Manager) - gives you an easy access to container local filesystem, where you can operate the comprised data and instance settings within the corresponding configuration files
-- **Mount Points** - list of folders, that are physically stored on a remote node but can be used at a current container through [mounting the directories](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) with required data
+- **Mount Points** - list of folders, that are physically stored on a remote node but can be used at a current container through [mounting the directories](/docs/data-storage-container/data-sharing/mount-points) with required data
 - **Exports** - list of folders, which are shared with other nodes, i.e. are [exported](/docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing) to be available at the remote instances whilst being stored locally
 - **Favorites** - commonly used files and folders to have a quick and simple access to (you can manually mark any custom ones as favorites)
 
@@ -75,7 +75,7 @@ Another section of the platform dashboard, which may help you to manage your pro
 
 :::tip Note
 
-The list of shown log files and directories depends on a particular [software stack](/docs/QuickStart/Software%20Stack%20Versions) and can vary.
+The list of shown log files and directories depends on a particular [software stack](/docs/quickstart/software-stack-versions) and can vary.
 
 :::
 
@@ -85,4 +85,4 @@ The log files inside a container are automatically rotated, so when any of them 
 
 If you prefer to manage your containers via terminal, you can easily connect to any of them [via SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview), no matter whether has it the external IP address attached or not. Once connected, you get a true freedom for managing your instances through executing the necessary operations directly from your local machine.
 
-In addition, the platform is supplied with the dedicated [CLI client](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview), which allows to handle the vast majority of operations, required for your applications lifecycle management, by means of a set of special scripts. Herewith, the structure of the commands this could be accomplished through is completely similar to the [platform API](https://cloudmydc.com/) hierarchy, so you can easily get used to the client.
+In addition, the platform is supplied with the dedicated [CLI client](/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview), which allows to handle the vast majority of operations, required for your applications lifecycle management, by means of a set of special scripts. Herewith, the structure of the commands this could be accomplished through is completely similar to the [platform API](https://cloudmydc.com/) hierarchy, so you can easily get used to the client.

@@ -376,8 +376,8 @@ Virtual machines are visually highlighted in the dashboard via the dedicated VM 
 
 - Add-Ons - installs available pluggable modules (e.g. Env Start/Stop Scheduler)
 - Restart Node(s) - restarts a VM
-- Statistics - shows real-time and historical VM’s [resource consumption](/docs/ApplicationSetting/Built-in%20Monitoring/Statistics)
-- Remote Desktop - provides [RDP-related functionality](/docs/Windows&.NET/Windows%20RD%20Access) for Windows VM
+- Statistics - shows real-time and historical VM’s [resource consumption](/docs/application-setting/built-in-monitoring/statistics)
+- Remote Desktop - provides [RDP-related functionality](/docs/windows-and-.NET/windows-rd-access) for Windows VM
 - Additionally - lists additional options (if any)
 
 <div style={{
@@ -432,7 +432,7 @@ Tomcat and TomEE application servers provide support for the **_hot deploy_** fe
 
 ## Non-Downgradable Software Stacks
 
-The platform provides out-of-the-box support for multiple [software stacks](/docs/QuickStart/Software%20Stack%20Versions) to build topologies that meet the most demanding users' requirements. Moreover, most of the stacks have at least a few releases to choose from. These versions can be freely switched at any time due to the **[Containers Redeploy](/docs/Container/Container%20Redeploy)** feature.
+The platform provides out-of-the-box support for multiple [software stacks](/docs/quickstart/software-stack-versions) to build topologies that meet the most demanding users' requirements. Moreover, most of the stacks have at least a few releases to choose from. These versions can be freely switched at any time due to the **[Containers Redeploy](/docs/category/container-deployment)** feature.
 
 However, not all of the software solutions provide backward compatibility. If there are substantial differences between the releases, downgrading a software version can result in unforeseen problems. In the current PaaS 6.0 upgrade, all the stacks were analyzed to locate those vulnerable to the issue and explicitly restricted from downgrading during the redevelopment process.
 
@@ -467,7 +467,7 @@ Currently, redeployment to the lower version is forbidden on the following stack
 
 ## CentOS 6 End-of-Life
 
-**CentOS 6** software stack support has officially reached its [end-of-life](https://wiki.centos.org/About/Product). It will no longer get any updates and security fixes. In order to ensure that users operate with reliable and secure stacks only, CentOS 6 was removed from the list of [supported OS templates](/docs/Container/Container%20Image%20Requirements) on the platform. After the 6.0 upgrade, the creation of the new containers based on the CentOS 6 will not be possible, while any existing instance will remain fully operable. However, we strictly recommend updating to the 7th or 8th release versions via built-in [redeploy functionality](/docs/Container/Container%20Redeploy).
+**CentOS 6** software stack support has officially reached its [end-of-life](https://wiki.centos.org/About/Product). It will no longer get any updates and security fixes. In order to ensure that users operate with reliable and secure stacks only, CentOS 6 was removed from the list of [supported OS templates](/docs/Container/Container%20Image%20Requirements) on the platform. After the 6.0 upgrade, the creation of the new containers based on the CentOS 6 will not be possible, while any existing instance will remain fully operable. However, we strictly recommend updating to the 7th or 8th release versions via built-in [redeploy functionality](/docs/category/container-deployment).
 
 [More info](https://cloudmydc.com/)
 
@@ -539,7 +539,7 @@ The platform has two types of the “No free disk space” error. The first one 
 
 ## Binding Busy Domain Error Clarification
 
-In the current PaaS 6.0 upgrade, a validation message for the binding of a [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) that is already used by some other environment on the platform was improved. For now, instead of a general error, it explicitly notifies that the specified domain is already in use. Moreover, if an external domain belongs to the same account, the error message will point to the appropriate environment.
+In the current PaaS 6.0 upgrade, a validation message for the binding of a [custom domain](/docs/application-setting/domain-name-management/custom-domain-name) that is already used by some other environment on the platform was improved. For now, instead of a general error, it explicitly notifies that the specified domain is already in use. Moreover, if an external domain belongs to the same account, the error message will point to the appropriate environment.
 
 <div style={{
     display:'flex',
@@ -745,9 +745,9 @@ Below, you can find the fixes that were implemented in the PaaS 6.0 release and 
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/QuickStart/Software%20Stack%20Versions)
+[More info](/docs/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',

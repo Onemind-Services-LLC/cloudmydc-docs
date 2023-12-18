@@ -8,7 +8,7 @@ sidebar_position: 12
 
 A **locale** is a set of language and cultural rules, which define preferences that you want to see in your interface and applications. It covers aspects such as language for messages, different character sets, lexicographic conventions, and so on. Below, we’ll overview how to view and change the locale settings on your containers.
 
-1. By default, all the platform-managed templates are provided with English language preferences. You can view the current [**_locale_**](https://man7.org/linux/man-pages/man1/locale.1.html) settings on the container using the following command (e.g. can be run via [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)):
+1. By default, all the platform-managed templates are provided with English language preferences. You can view the current [**_locale_**](https://man7.org/linux/man-pages/man1/locale.1.html) settings on the container using the following command (e.g. can be run via [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh)):
 
 ```bash
 locale -a

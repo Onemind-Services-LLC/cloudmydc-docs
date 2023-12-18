@@ -9,7 +9,7 @@ Keeping an eye on the amount of resources your application consumes allows you t
 - [Estimated Environment Cost](/docs/Account&Pricing/Resource%20Charging/Monitoring%20Consumed%20Resources#estimated-environment-cost)
 - [Current Resource Usage](/docs/Account&Pricing/Resource%20Charging/Monitoring%20Consumed%20Resources#current-resource-usage)
 - [Statistic of Consumption](/docs/Account&Pricing/Resource%20Charging/Monitoring%20Consumed%20Resources#statistics-of-consumption)
-- [Billing History](/docs/Account&Pricing/Resource%20Charging/Monitoring%20Consumed%20Resources#billing-history)
+- [Billing History](/docs/account-and-pricing/resource-charging/monitoring-consumed-resources#billing-history)
 
 ## Estimated Environment Cost
 
@@ -73,7 +73,7 @@ The cloudlet icon changes color to warn when you are currently near (![Locale Dr
 
 ## Statistics of Consumption
 
-You can also see the amount of consumed Disk, RAM (Memory), CPU and Network Bandwidth according to each container by clicking on the [Statistics](/docs/ApplicationSetting/Built-in%20Monitoring/Statistics) ![Locale Dropdown](./img/MonitoringConsumedResources/09--statistics-icon.png) button of the desired node.
+You can also see the amount of consumed Disk, RAM (Memory), CPU and Network Bandwidth according to each container by clicking on the [Statistics](/docs/application-setting/built-in-monitoring/statistics) ![Locale Dropdown](./img/MonitoringConsumedResources/09--statistics-icon.png) button of the desired node.
 
 <div style={{
     display:'flex',
@@ -85,14 +85,14 @@ You can also see the amount of consumed Disk, RAM (Memory), CPU and Network Band
 
 </div>
 
-Based on the received statistics, you can change limits of the automatic [vertical](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling) and [horizontal](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling) scaling for your environment. For example, you can choose the number of reserved cloudlets in accordance with the load on the graphs.
+Based on the received statistics, you can change limits of the automatic [vertical](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) and [horizontal](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) scaling for your environment. For example, you can choose the number of reserved cloudlets in accordance with the load on the graphs.
 
 ## Billing History
 
 An important tool for budget analysis is billing history tracking, which you can be found in the corresponding section at the platform dashboard and, consequently, be downloaded to your local machine.
 
 1. Use the **Billing history** ![Locale Dropdown](./img/MonitoringConsumedResources/11--billing-history-icon.png) button for your environment or navigate to **Balance > Billing history** item in the upper menu to review the charges applied for consumed resources. In the left panel, you can specify the desired start/end dates, and the time period interval to view the billing data for.
-   The displayed data is grouped by environments, use the ![Locale Dropdown](./img/MonitoringConsumedResources/12--arrow-icon.png) icon on the right panel to expand the particular one and see the list of its nodes and their resource usage. Herewith, all the nodes are sorted in the alphabetical order and below a list of the additional paid options (if any) is shown, e.g. [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) or [SSL](/docs/ApplicationSetting/SSL/Custom%20SSL).
+   The displayed data is grouped by environments, use the ![Locale Dropdown](./img/MonitoringConsumedResources/12--arrow-icon.png) icon on the right panel to expand the particular one and see the list of its nodes and their resource usage. Herewith, all the nodes are sorted in the alphabetical order and below a list of the additional paid options (if any) is shown, e.g. [public IP](/docs/application-setting/external-access-to-applications/public-ip) or [SSL](/docs/application-setting/ssl/custom-ssl).
 
 <div style={{
     display:'flex',

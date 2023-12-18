@@ -16,7 +16,7 @@ In the platform, you can protect your servers with BitNinja security in a few cl
 
 The [**BitNinja**](https://github.com/jelastic-jps/bitninja) add-on is available for all certified nodes at the platform (except [VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information)).
 
-1. Open the [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) in the platform dashboard and search for the **_BitNinja Service_** package or find it in the **Add-Ons** section. Hover over and click **Install** to proceed.
+1. Open the [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace) in the platform dashboard and search for the **_BitNinja Service_** package or find it in the **Add-Ons** section. Hover over and click **Install** to proceed.
 
 <div style={{
     display:'flex',
@@ -110,7 +110,7 @@ Each license is charged based on the [1 hosted user](https://bitninja.com/pricin
 
 :::danger Note
 
-The exact cost may vary slightly for the platforms with a currency other than USD; it depends on the conversion rate at the moment of the hourly billing event. You can track all the account charges via the [**Billing History**](/docs/Account&Pricing/Resource%20Charging/Monitoring%20Consumed%20Resources#billing-history) in the dashboard.
+The exact cost may vary slightly for the platforms with a currency other than USD; it depends on the conversion rate at the moment of the hourly billing event. You can track all the account charges via the [**Billing History**](/docs/account-and-pricing/resource-charging/monitoring-consumed-resources#billing-history) in the dashboard.
 
 :::
 

@@ -107,7 +107,7 @@ If necessary do the same for the Slave node of the database cluster.
 
 ## Remote Connection to PostgreSQL
 
-Let’s create a new connection to the database using any desktop or web client. Here we use the **pgAdmin4** which is the most popular and feature-rich Open Source administration and development platform for PostgreSQL. You can get client software that meets your platform. See the download page to get the proper link ([https://www.pgadmin.org/download/](https://www.pgadmin.org/download/)) or you may get familiar with this application in the platform by deploying it via [import](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import) of corresponding pgAdmin4 [manifest](https://github.com/jelastic-jps/pgadmin/blob/master/manifest.yaml).
+Let’s create a new connection to the database using any desktop or web client. Here we use the **pgAdmin4** which is the most popular and feature-rich Open Source administration and development platform for PostgreSQL. You can get client software that meets your platform. See the download page to get the proper link ([https://www.pgadmin.org/download/](https://www.pgadmin.org/download/)) or you may get familiar with this application in the platform by deploying it via [import](/docs/environment-management/environment-export-and-import/environment-import) of corresponding pgAdmin4 [manifest](https://github.com/jelastic-jps/pgadmin/blob/master/manifest.yaml).
 
 <div style={{
     display:'flex',

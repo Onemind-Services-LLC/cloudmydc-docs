@@ -44,7 +44,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-2.1. The **Custom Domains** section provides instruction and functionality for binding [custom domains](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) to your environment.
+2.1. The **Custom Domains** section provides instruction and functionality for binding [custom domains](/docs/application-setting/domain-name-management/custom-domain-name) to your environment.
 
 <div style={{
     display:'flex',
@@ -92,7 +92,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-[Endpoints](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints) create a direct connection (over raw TCP or UDP protocol) to one of the project nodes without the mandatory Public IP address. It can be used to set up remote access. For example, one of the most common use cases is gaining remote access to your database instance using a local database client.
+[Endpoints](/docs/application-setting/external-access-to-applications/endpoints) create a direct connection (over raw TCP or UDP protocol) to one of the project nodes without the mandatory Public IP address. It can be used to set up remote access. For example, one of the most common use cases is gaining remote access to your database instance using a local database client.
 
 2.5. The **Subscription Plan** section shows subscription details of the current project and, depending on the hosting provider configurations, can provide the **Change Plan** option. It gives the ability to move the current project to a different plan within the same subscription.
 
@@ -206,7 +206,7 @@ Hower over to see the **Redeploy** option that allows updating the PHP version. 
 
 </div>
 
-We recommend performing regular redeployments to the latest version to ensure your project’s container is running the up-to-date operating system and software stacks with all the latest vulnerability fixes. However, be aware that the operation will cause a brief downtime for the project. You can read more on the **[Redeployment](/docs/Container/Container%20Redeploy)** feature in the linked document.
+We recommend performing regular redeployments to the latest version to ensure your project’s container is running the up-to-date operating system and software stacks with all the latest vulnerability fixes. However, be aware that the operation will cause a brief downtime for the project. You can read more on the **[Redeployment](/docs/category/container-deployment)** feature in the linked document.
 
 5. Click the **Datacenter Info** to check the relevant information.
 
@@ -220,7 +220,7 @@ We recommend performing regular redeployments to the latest version to ensure yo
 
 </div>
 
-6. Click the **SSH/SFTP Info** to see how you can access your project via the [SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/SSH%20Gate#ssh-access-to-platform-account) and [SFTP](/docs/Deployment%20Tools/SSH/SSH%20Protocols) protocols. The drop-down list allows viewing information for different nodes of the cluster.
+6. Click the **SSH/SFTP Info** to see how you can access your project via the [SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/SSH%20Gate#ssh-access-to-platform-account) and [SFTP](/docs/deployment-tools/ssh/ssh-protocols) protocols. The drop-down list allows viewing information for different nodes of the cluster.
 
 <div style={{
     display:'flex',

@@ -335,7 +335,7 @@ Fixed
 
 ## Topology Wizard Improvements
 
-A major overhaul of the topology builder for the environment wizard was performed in the current 6.1 PaaS release. The main change is the implementation of the ability to search for the required [software stack](/docs/QuickStart/Software%20Stack%20Versions) and add it to any layer. The standard approach recommends the following topology structure from top to bottom:
+A major overhaul of the topology builder for the environment wizard was performed in the current 6.1 PaaS release. The main change is the implementation of the ability to search for the required [software stack](/docs/quickstart/software-stack-versions) and add it to any layer. The standard approach recommends the following topology structure from top to bottom:
 
 - **load balancers** (_green blocks_)
 - **application servers** (_blue_)
@@ -354,7 +354,7 @@ With the new change, the configuration of the custom topologies is significantly
 
 </div>
 
-Usually, when selecting a stack for a block ([layer](/docs/PlatformOverview/Basics%20&%20Terminology#layer)) in the topology wizard, users are provided with a list of recommended software for the specific role according to the block position. For now, a new “**_More…_**” option is added to the stack selection drop-down list to choose a template from any role. For example, you can easily add a database into the central block, which is commonly reserved for application servers.
+Usually, when selecting a stack for a block ([layer](/docs/platform-overview/basics-&-terminology#layer)) in the topology wizard, users are provided with a list of recommended software for the specific role according to the block position. For now, a new “**_More…_**” option is added to the stack selection drop-down list to choose a template from any role. For example, you can easily add a database into the central block, which is commonly reserved for application servers.
 
 In order to help locate the required stack quicker, the **Search** field can be accessed by clicking on the current stack name at the top of the list. Start typing to see the relevant results grouped by their role. Additionally, the search option was added for the engine/version field in the central part of the wizard when a particular stack is already selected.
 
@@ -362,7 +362,7 @@ Other adjustments of the topology wizard include:
 
 - renamed the **Docker** tab to **Custom** (since different [container types](/docs/Container/Container%20Types) are available - Kubernetes, Docker Native, etc.), adjusted the corresponding icon and descriptions of the available options
 - added the default **Storage** block to the **_.NET_** tab
-- implemented **_tags search_** when working with custom containers based on the Docker images in topology wizard and during [container redeploy](/docs/Container/Container%20Redeploy)
+- implemented **_tags search_** when working with custom containers based on the Docker images in topology wizard and during [container redeploy](/docs/category/container-deployment)
 
 [More info](https://cloudmydc.com/)
 
@@ -415,11 +415,11 @@ You can learn more about the [architecture implementation](https://docs.gluster.
 
 ## Custom Domains Tab Improvements
 
-The platform provides a [Domain Binding](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) option that allows configuring custom domains for environments that are accessed via [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) (i.e. without public IP). The process is simple - you just need to create the appropriate CNAME or ANAME record for your domain and bind it to the environment via the platform dashboard.
+The platform provides a [Domain Binding](/docs/application-setting/domain-name-management/custom-domain-name) option that allows configuring custom domains for environments that are accessed via [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) (i.e. without public IP). The process is simple - you just need to create the appropriate CNAME or ANAME record for your domain and bind it to the environment via the platform dashboard.
 
 :::danger Note
 
-For environments that are accessed through the [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) (recommended for production), you don’t need to bind domains via the dashboard. Just configure **[A Record](https://cloudmydc.com/)** in your DNS panel to map a custom domain directly to the required IP address.
+For environments that are accessed through the [public IP](/docs/application-setting/external-access-to-applications/public-ip) (recommended for production), you don’t need to bind domains via the dashboard. Just configure **[A Record](https://cloudmydc.com/)** in your DNS panel to map a custom domain directly to the required IP address.
 
 :::
 
@@ -435,7 +435,7 @@ In order to clarify the process to users, the appropriate specifics and detailed
 
 </div>
 
-Additionally, the **[swap domains](/docs/ApplicationSetting/Domain%20Name%20Management/Swap%20Domains)** section was provided with a list of bound domains. As a result, you can view the list of the current and target environment domains (in the Domain Binding and Swap Domains subsections, respectively).
+Additionally, the **[swap domains](/docs/application-setting/domain-name-management/swap-domains)** section was provided with a list of bound domains. As a result, you can view the list of the current and target environment domains (in the Domain Binding and Swap Domains subsections, respectively).
 
 [More info](https://cloudmydc.com/)
 
@@ -455,7 +455,7 @@ Some adjustments were applied to the backups created via the [redeploy functiona
 
 Also, when redeploying to the same tag, the platform won’t overwrite the existing **_php.ini_** file.
 
-[More info](/docs/Container/Container%20Redeploy)
+[More info](/docs/category/container-deployment)
 
 <div style={{
         display: 'flex',
@@ -511,7 +511,7 @@ JEM (Jelastic Environment Manager) is a platform component responsible for all o
 
 ## OnBeforeInit CS Event Improvements
 
-**_[OnBeforeInit](https://docs.cloudscripting.com/creating-manifest/events/#onbeforeinit)_** is a Cloud Scripting event that is triggered before application installation. It is usually used to dynamically configure the installation form based on some specifics (e.g. account quotas). In the current 6.1 PaaS upgrade, the onBeforeInit event was improved to support placeholders, allowing validation of the collaborator account’s permissions. Such a change ensures that the JPS installation frame can be correctly customized when installing as a [collaborator](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview).
+**_[OnBeforeInit](https://docs.cloudscripting.com/creating-manifest/events/#onbeforeinit)_** is a Cloud Scripting event that is triggered before application installation. It is usually used to dynamically configure the installation form based on some specifics (e.g. account quotas). In the current 6.1 PaaS upgrade, the onBeforeInit event was improved to support placeholders, allowing validation of the collaborator account’s permissions. Such a change ensures that the JPS installation frame can be correctly customized when installing as a [collaborator](/docs/account-and-pricing/accounts-collaboration/collaboration-overview).
 
 Additionally, a new trigger condition was added for the onBeforeInit event. For now, it is possible to implement some custom initialization actions upon clicking a [custom button](https://docs.cloudscripting.com/creating-manifest/visual-settings/#custom-buttons).
 
@@ -529,7 +529,7 @@ Additionally, a new trigger condition was added for the onBeforeInit event. For 
 
 ## Debian 8 End-of-Life
 
-D**ebian 8 “Jessie”** software stack [LTS support](https://wiki.debian.org/LTS) has officially ended. It will no longer get any updates and security fixes. In the current PaaS 6.1 release, this version was removed from the list of [supported OS templates](/docs/Container/Container%20Image%20Requirements) to ensure that users operate with reliable and secure stacks only. The platform restricts the creation of new Debian 8 containers, but all existing ones remain fully operable. However, we strongly recommend updating such instances to the 9th or 10th release versions via built-in [redeploy functionality](/docs/Container/Container%20Redeploy).
+D**ebian 8 “Jessie”** software stack [LTS support](https://wiki.debian.org/LTS) has officially ended. It will no longer get any updates and security fixes. In the current PaaS 6.1 release, this version was removed from the list of [supported OS templates](/docs/Container/Container%20Image%20Requirements) to ensure that users operate with reliable and secure stacks only. The platform restricts the creation of new Debian 8 containers, but all existing ones remain fully operable. However, we strongly recommend updating such instances to the 9th or 10th release versions via built-in [redeploy functionality](/docs/category/container-deployment).
 
 [More info](/docs/Container/Container%20Image%20Requirements)
 
@@ -680,9 +680,9 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/QuickStart/Software%20Stack%20Versions)
+[More info](/docs/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',

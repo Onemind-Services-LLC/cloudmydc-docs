@@ -270,7 +270,7 @@ For more solution examples refer to the [JPS Collection](https://github.com/jela
 - [Simple Automated CI/CD Pipeline for GitHub and GitLab Projects](https://github.com/jelastic-jps/git-push-deploy)
 - [Java Memory Agent for Container RAM Usage Optimization](https://github.com/jelastic-jps/java-memory-agent)
 
-[import](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import) the appropriate manifest file via the dashboard to instantly get your solution. Also, you can explore the source code of any package, fork repository for yourself and customize it up to your particular needs before installation.
+[import](/docs/environment-management/environment-export-and-import/environment-import) the appropriate manifest file via the dashboard to instantly get your solution. Also, you can explore the source code of any package, fork repository for yourself and customize it up to your particular needs before installation.
 
 :::
 
@@ -320,7 +320,7 @@ Below, we’ll provide an example of a packaged solution installation.
 
 3. Based on the particular package, you may need to provide some additional data to customize the solution up to your needs. For example, it could be the preferable nodes count or specific option availability.
 
-For a detailed overview of the [WordPress Standalone Hosting](https://cloudmydc.com/) peculiarities, refer to the linked article on our blog. In general, the basic settings (i.e. required by any application) are environment name, [alias](/docs/EnvironmentManagement/Environment%20Aliases), and, if available, [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region).
+For a detailed overview of the [WordPress Standalone Hosting](https://cloudmydc.com/) peculiarities, refer to the linked article on our blog. In general, the basic settings (i.e. required by any application) are environment name, [alias](/docs/environment-management/environment-aliases), and, if available, [region](/docs/environment-management/environment-regions/choosing-a-region).
 
 <div style={{
     display:'flex',

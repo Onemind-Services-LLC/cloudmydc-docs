@@ -78,10 +78,10 @@ An additional secure network protocol is **FISH** (Files transferred over Shell 
 Using our documentation you’ll find out how to:
 
 - [generate SSH key](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key)
-- [add SSH key](/docs/Deployment%20Tools/SSH/Add%20SSH%20Key)
+- [add SSH key](/docs/deployment-tools/ssh/add-ssh-key)
 - [access environments and containers](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview)
 - [work via SSH](https://cloudmydc.com/)
-- [use SFTP and FISH protocols](/docs/Deployment%20Tools/SSH/SSH%20Protocols)
+- [use SFTP and FISH protocols](/docs/deployment-tools/ssh/ssh-protocols)
 - [manage containers via SSH with Capistrano](/docs/Deployment%20Tools/SSH/Capistrano)
 
 :::tip Note

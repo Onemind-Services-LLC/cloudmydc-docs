@@ -190,7 +190,7 @@ Make sure that your application is up and running, pressing **Open in browser** 
 
 </div>
 
-If you log in to your container via built-in [Web SSH client](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH), you’ll see only one running process of **Standalone** server.
+If you log in to your container via built-in [Web SSH client](/docs/deployment-tools/ssh/ssh-access/web-ssh), you’ll see only one running process of **Standalone** server.
 
 <div style={{
     display:'flex',
@@ -234,7 +234,7 @@ Just refer to the application server layer within the left-side environment pane
 
 - Automatically
 
-The number of servers can be changed automatically by setting up [scaling triggers](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling) based on the resource consumption within S**ettings > Auto Horizontal Scaling**.
+The number of servers can be changed automatically by setting up [scaling triggers](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) based on the resource consumption within S**ettings > Auto Horizontal Scaling**.
 
 <div style={{
     display:'flex',

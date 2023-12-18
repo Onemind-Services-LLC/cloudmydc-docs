@@ -101,19 +101,19 @@ In such a case, you just need to click **Open in Browser** for the corresponding
 
 :::tip Note
 
-In case your container does not have an [external IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) attached, the platform performs an automatic port redirect. This means that if application listens to a custom port on TCP level, the platform will try to automatically detect it and forward all the incoming requests to this port number. As a result, in most cases, your app or service will become available over the Internet under the corresponding node’s domain right after creation.
+In case your container does not have an [external IP](/docs/application-setting/external-access-to-applications/public-ip) attached, the platform performs an automatic port redirect. This means that if application listens to a custom port on TCP level, the platform will try to automatically detect it and forward all the incoming requests to this port number. As a result, in most cases, your app or service will become available over the Internet under the corresponding node’s domain right after creation.
 
-However, in case you’d like to prohibit such a possibility, you may declare the corresponding rules within your container’s [firewall settings](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall).
+However, in case you’d like to prohibit such a possibility, you may declare the corresponding rules within your container’s [firewall settings](/docs/application-setting/external-access-to-applications/container-firewall).
 
 :::
 
-2. For more complex implementations, the platform provides special [endpoints](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints) functionality (available within the same-named section of any environment’s **Settings**):
+2. For more complex implementations, the platform provides special [endpoints](/docs/application-setting/external-access-to-applications/endpoints) functionality (available within the same-named section of any environment’s **Settings**):
 
 ![Locale Dropdown](./img/ConnectToCustomContainer/07.png)
 
 It allows to expose the required private port on your container through the randomly chosen public port at the platform Shared Load Balancer, so it can be accessed via the provided **Access URL**.
 
-3. And the last option, which gives the maximum freedom (allowing, for example, to secure your connection with [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL), get rid of limitation on the simultaneous connections amount, etc.) is attachment of [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address to your container.
+3. And the last option, which gives the maximum freedom (allowing, for example, to secure your connection with [Custom SSL](/docs/application-setting/ssl/custom-ssl), get rid of limitation on the simultaneous connections amount, etc.) is attachment of [public IP](/docs/application-setting/external-access-to-applications/public-ip) address to your container.
 
 ![Locale Dropdown](./img/ConnectToCustomContainer/08.png)
 
@@ -121,7 +121,7 @@ By its means, your app can be configured to listen to any port you need and, in 
 
 :::danger Note
 
-Public IP option is a paid add-on. The exact cost for its usage can be seen upon hovering over the price widget at the right part of your topology wizard or through navigating to [Quotas & Pricing](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-much-do-resources-cost) > Pricing > Options tab.
+Public IP option is a paid add-on. The exact cost for its usage can be seen upon hovering over the price widget at the right part of your topology wizard or through navigating to [Quotas & Pricing](/docs/account-and-pricing/resource-charging/pricing-faq#how-much-do-resources-cost) > Pricing > Options tab.
 
 :::
 

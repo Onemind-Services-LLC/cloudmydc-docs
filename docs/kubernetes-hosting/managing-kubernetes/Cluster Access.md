@@ -45,7 +45,7 @@ It is also possible to log in with the **_kubeconfig_** file; however, you’ll 
 
 :::
 
-3. If you’ve lost an email with the Kubernetes cluster access token, it can be viewed by executing the following command on the master node (e.g. via [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)):
+3. If you’ve lost an email with the Kubernetes cluster access token, it can be viewed by executing the following command on the master node (e.g. via [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh)):
 
 ```bash
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep fulladmin | awk '{print $1}') | grep 'token:' | sed -e's/token:\| //g'

@@ -6,11 +6,11 @@ sidebar_position: 7
 
 _This feature availability depends on the particular hosting provider’s settings._
 
-The platform can offer some products based on the subscription model. The flow is standard to the modern subscription services implementations – a client is charged once and gets a designated product for a specified period. The solution gives you a fix-priced alternative to the default [usage-based model](/docs/Account&Pricing/Pricing%20Model%20Overview). Let’s see how it works.
+The platform can offer some products based on the subscription model. The flow is standard to the modern subscription services implementations – a client is charged once and gets a designated product for a specified period. The solution gives you a fix-priced alternative to the default [usage-based model](/docs/account-and-pricing/pricing-model-overview). Let’s see how it works.
 
 ## Purchasing Subscription
 
-1. All products that are available for the user are displayed in the dedicated **_Subscription Plans_** tab of the [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace).
+1. All products that are available for the user are displayed in the dedicated **_Subscription Plans_** tab of the [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace).
 
 <div style={{
     display:'flex',

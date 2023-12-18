@@ -11,7 +11,7 @@ The platform provides support for the **Docker Engine Community Edition** with f
 - **Docker Compose** - helps assemble applications consisting of multiple components with all the required configurations declared in a single compose file
 - **Docker Swarm** - represents several independent Docker nodes interconnected into a cluster
 
-1. **Docker Engine CE** is delivered as the pre-packaged solution available through the [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace). Use the search field at the top or locate the package under the Dev & Admin Tools category:
+1. **Docker Engine CE** is delivered as the pre-packaged solution available through the [platform Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace). Use the search field at the top or locate the package under the Dev & Admin Tools category:
 
 <div style={{
     display:'flex',

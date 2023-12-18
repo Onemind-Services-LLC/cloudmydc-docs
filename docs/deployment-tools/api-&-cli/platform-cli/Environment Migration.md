@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ## CLI Tutorial: Environment Migration
 
-Sometimes, it may be required to move your application to another [environment region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) with better conditions and\or location or, for example, to distribute several [cloned](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Environment%20Cloning) environment copies among different hardware sets to achieve increased availability. To perform this remotely, you’ll need to execute the corresponding **_migrate_** CLI method via your terminal. So, let’s consider it in more details.
+Sometimes, it may be required to move your application to another [environment region](/docs/environment-management/environment-regions/choosing-a-region) with better conditions and\or location or, for example, to distribute several [cloned](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Environment%20Cloning) environment copies among different hardware sets to achieve increased availability. To perform this remotely, you’ll need to execute the corresponding **_migrate_** CLI method via your terminal. So, let’s consider it in more details.
 
 1. To start with, you have to get the list of regions which are available at a Platform.
    For that, the **_getregions_** command should be used, with the appropriate search filter being applied in order to shorten the output and simplify the perception:

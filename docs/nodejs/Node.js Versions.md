@@ -15,7 +15,7 @@ The platform allows to pre-select any of the latest major NodeJS application ser
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/QuickStart/Software%20Stack%20Versions) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/quickstart/software-stack-versions) document.
 
 :::
 
@@ -72,7 +72,7 @@ Specify the remaining server and environment parameters (e.g. cloudlet limits, [
 
 You are also able to switch the version of your NodeJS server and process manager afterward, for the already existing environment.
 
-1. Access the [redeploy container(s)](/docs/Container/Container%20Redeploy) dialog through either:
+1. Access the [redeploy container(s)](/docs/category/container-deployment) dialog through either:
 
 - clicking on the **Change Environment Topology** button next to the appropriate environment.
 

@@ -46,7 +46,7 @@ Adjust the rest options (cloudlet limits, [number](/docs/ApplicationSetting/Scal
 
 :::danger Note
 
-Working with **VPS** presupposes usage of [external IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) addresses (one per instance), which are automatically attached to the corresponding container(s).
+Working with **VPS** presupposes usage of [external IP](/docs/application-setting/external-access-to-applications/public-ip) addresses (one per instance), which are automatically attached to the corresponding container(s).
 
 :::
 

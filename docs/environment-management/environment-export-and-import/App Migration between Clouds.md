@@ -29,11 +29,11 @@ It allows to easily migrate hosted applications across [available PaaS installat
 
 To accomplish this, you need to:
 
-- [export](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Export) your environment from PaaS installation it is currently hosted at
-- [import](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import) it to the preferred target platform
+- [export](/docs/environment-management/environment-export-and-import/environment-export) your environment from PaaS installation it is currently hosted at
+- [import](/docs/environment-management/environment-export-and-import/environment-import) it to the preferred target platform
 
 :::tip Notes
 
 - Currently, the **_Environment Export_** feature exports only topology information. The imported environment will be created from scratch without any custom data inside.
 - **_Environment Export / Import_** feature to work properly, the initial hosting provider’s platform should have the 7979 port opened, which is intended to be used for downloading environment source files during the import operation. Thus, depending on a particular provider’s configurations, exported environments from some of our partners' platforms may be not available for importing at other PaaS installations.
-- You can also use the [Environment Transferring](/docs/EnvironmentManagement/Environment%20Transferring) option for moving your projects between different accounts of a single hosting provider platform, without the necessity to export/import them.
+- You can also use the [Environment Transferring](/docs/environment-management/environment-transferring) option for moving your projects between different accounts of a single hosting provider platform, without the necessity to export/import them.

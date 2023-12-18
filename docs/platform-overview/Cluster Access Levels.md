@@ -49,7 +49,7 @@ The platform provides a full set of analytics, documentation and required tools 
 
 ## Developers or SMBs
 
-This group of platform customers can create environments, deploy their applications and perform all the actions required for the successful [lifecycle of their applications](/docs/ApplicationSetting/Application%20Lifecycle%20Management). Environment and application management is performed via the platform’s panel for developers - [PaaS Dashboard](/docs/QuickStart/Dashboard%20Guide).
+This group of platform customers can create environments, deploy their applications and perform all the actions required for the successful [lifecycle of their applications](/docs/application-setting/application-lifecycle-management). Environment and application management is performed via the platform’s panel for developers - [PaaS Dashboard](/docs/QuickStart/Dashboard%20Guide).
 
 The main activities available for developers or SMBs in the platform are as follows:
 
@@ -96,7 +96,7 @@ The **end-users** are connected to the PaaS Cluster indirectly by **using applic
 
 </div>
 
-- via [Public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) if it is attached to the entry point of the environment (balancer, app server or database container). This solution provides less risk of being affected by other applications (as in the case with shared Resolvers) and is recommended for production applications. Also Public IP usage makes more features available such as remote debugging, remote backup, JMX, FTP, Custom SSL, websockets and polling etc.
+- via [Public IP](/docs/application-setting/external-access-to-applications/public-ip) if it is attached to the entry point of the environment (balancer, app server or database container). This solution provides less risk of being affected by other applications (as in the case with shared Resolvers) and is recommended for production applications. Also Public IP usage makes more features available such as remote debugging, remote backup, JMX, FTP, Custom SSL, websockets and polling etc.
 
 <div style={{
     display:'flex',

@@ -143,14 +143,14 @@ Fixed
 
 ## SSH Gate Cryptography Update
 
-In the current 7.3.2 release, the platform **[SSH Gate](/docs/Deployment%20Tools/SSH/SSH%20Overview)** components were updated to support new public key algorithms and the latest SSH versions. The list of changes includes the following improvements:
+In the current 7.3.2 release, the platform **[SSH Gate](/docs/deployment-tools/ssh/ssh-overview)** components were updated to support new public key algorithms and the latest SSH versions. The list of changes includes the following improvements:
 
 - support for RSA SHA-2 host key signatures
 - the server-sig-algs extension support
 - handshake using the ssh-rsa keys signed using the ssh-rsa-sha2-256 (ssh-rsa-sha2-512) algorithm
 - added key exchange method using Curve25519 and Curve448 (curve25519-sha256 only)
 
-[More info](/docs/Deployment%20Tools/SSH/SSH%20Overview)
+[More info](/docs/deployment-tools/ssh/ssh-overview)
 
 <div style={{
         display: 'flex',

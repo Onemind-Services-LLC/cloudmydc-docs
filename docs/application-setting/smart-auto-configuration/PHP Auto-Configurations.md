@@ -71,7 +71,7 @@ You may also be interested in [How the Auto Configuration Works](/docs/Applicati
 
 ## NGINX PHP Auto Adjustable Settings
 
-Request handling in the NGINX PHP application server is managed by _FastCGI Process Manager (FPM)_, which can be configured via the **_/etc/_** [**_php-fpm.conf_**](https://www.php.net/manual/en/install.fpm.configuration.php) file. It is automatically added to the _favorites_ list in the [container file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) for quick access:
+Request handling in the NGINX PHP application server is managed by _FastCGI Process Manager (FPM)_, which can be configured via the **_/etc/_** [**_php-fpm.conf_**](https://www.php.net/manual/en/install.fpm.configuration.php) file. It is automatically added to the _favorites_ list in the [container file manager](/docs/application-setting/configuration-file-manager) for quick access:
 
 <div style={{
     display:'flex',
@@ -115,7 +115,7 @@ Also, to gain advanced performance, the PHP FPM listener utilizes the UNIX domai
 
 You can check how the parameters mentioned above are changed based on the allocated resources. We’ll consider it on the Apache PHP server example:
 
-1. [Create](/docs/EnvironmentManagement/Setting%20Up%20Environment) a new PHP environment with the **Apache PHP** application server inside (if you don’t have one).
+1. [Create](/docs/environment-management/setting-up-environment) a new PHP environment with the **Apache PHP** application server inside (if you don’t have one).
 
 Then, click the **Config** button for this node and find the **_prefork_** module configs in the **_/etc/httpd/conf/httpd.conf_** file.
 

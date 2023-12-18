@@ -16,7 +16,7 @@ The platform provides all the latest versions of the Python programming language
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/QuickStart/Software%20Stack%20Versions) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/quickstart/software-stack-versions) document.
 
 :::
 
@@ -52,7 +52,7 @@ Adjust any other settings (e.g. [cloudlets limits](/docs/ApplicationSetting/Scal
 
 ## Change Python Version
 
-The version of the existing Python instances can be changed with the [container redeploy](/docs/Container/Container%20Redeploy) feature.
+The version of the existing Python instances can be changed with the [container redeploy](/docs/category/container-deployment) feature.
 
 1. The appropriate dialog can be accessed in the following ways:
 

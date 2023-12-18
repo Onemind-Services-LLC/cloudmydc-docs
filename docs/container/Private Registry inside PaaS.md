@@ -53,7 +53,7 @@ You can select the required tag for your Docker image at the top of this frame o
 
 Click **Next** to proceed.
 
-3. Provide all other [configurations](/docs/EnvironmentManagement/Setting%20Up%20Environment) for the environment (disk limit, name, [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), etc.) up to your needs.
+3. Provide all other [configurations](/docs/environment-management/setting-up-environment) for the environment (disk limit, name, [region](/docs/environment-management/environment-regions/choosing-a-region), etc.) up to your needs.
 
 ![Locale Dropdown](./img/PrivateRegistryInsidePaaS/04-configure-environment.png)
 
@@ -65,11 +65,11 @@ The instruction below is written for the [newest registry](https://github.com/di
 
 Click **Create** and wait a minute for the environment to be configured.
 
-4. Now, you need to configure an entry point for external access. We’ll create one, leveraging the platform [endpoints](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints) feature, in order to expose the container’s port 5000.
+4. Now, you need to configure an entry point for external access. We’ll create one, leveraging the platform [endpoints](/docs/application-setting/external-access-to-applications/endpoints) feature, in order to expose the container’s port 5000.
 
 :::tip Note
 
-Alternatively, you can attach and work over [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) (a paid option) without any additional configurations.
+Alternatively, you can attach and work over [public IP](/docs/application-setting/external-access-to-applications/public-ip) (a paid option) without any additional configurations.
 
 :::
 
@@ -121,7 +121,7 @@ where:
 
 :::tip Tip
 
-A [self-signed](/docs/ApplicationSetting/SSL/Self-Signed%20Custom%20SSL) certificate can be applied as well - in this case, you’ll need to manually instruct your Docker daemon to [trust](https://docs.docker.com/registry/#docker-still-complains-about-the-certificate-when-using-authentication) it.
+A [self-signed](/docs/application-setting/ssl/self-signed-custom-ssl) certificate can be applied as well - in this case, you’ll need to manually instruct your Docker daemon to [trust](https://docs.docker.com/registry/#docker-still-complains-about-the-certificate-when-using-authentication) it.
 
 :::
 However, for testing purposes, you can apply a relatively simpler configuration, that allows bypassing this requirement - run your registry in an [insecure mode](https://docs.docker.com/registry/#deploying-a-plain-http-registry), so all the communication will be performed over the plain HTTP (which, although, is <u>highly unrecommended</u> in confines of production usage).

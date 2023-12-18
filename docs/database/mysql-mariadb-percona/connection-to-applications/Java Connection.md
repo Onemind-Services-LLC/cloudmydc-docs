@@ -8,7 +8,7 @@ sidebar_position: 1
 
 **MariaDB**, **MySQL**, and **Percona** are highly popular open source databases, used by developers all over the world. In this instruction we’ll show you how to connect your Java application to these databases, standalone server and clustered solution.
 
-1. Log into your PaaS account and [create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with the **MariaDB** (or **MySQL**) database server (available within the **_SQL_** wizard section):
+1. Log into your PaaS account and [create an environment](/docs/environment-management/setting-up-environment) with the **MariaDB** (or **MySQL**) database server (available within the **_SQL_** wizard section):
 
 - for standalone database server
 
@@ -238,9 +238,9 @@ public class DbManager {
 }
 ```
 
-8. [Deploy](/docs/Deployment/Deployment%20Guide) our example application to your Tomcat server using the following link:
+8. [Deploy](/docs/deployment/deployment-guide) our example application to your Tomcat server using the following link:
 
-_[https://download.jelastic.com/public.php?service=files&t=b2c6e4e01d487dfd5af953ba31dac848&download](/docs/Deployment/Deployment%20Guide)_
+_[https://download.jelastic.com/public.php?service=files&t=b2c6e4e01d487dfd5af953ba31dac848&download](/docs/deployment/deployment-guide)_
 
 <div style={{
     display:'flex',

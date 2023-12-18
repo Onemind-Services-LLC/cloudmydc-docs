@@ -11,7 +11,7 @@ sidebar_position: 13
 The platform provides a versatile pricing model, that can be adjusted to meet the requirements of the most demanding customers due to the number of awesome features:
 
 - The resources are provisioned with granular units - [cloudlets](/docs/PlatformOverview/Cloudlet) (128MiB of RAM and 400MHz of CPU). This allows to allocate exactly the needed amount of resources.
-- Fully automatic _[vertical](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling)_ and _[horizontal](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling)_ scaling assure that you’ll be provided only with the required capacities without overpaying for unused resources.
+- Fully automatic _[vertical](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling)_ and _[horizontal](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling)_ scaling assure that you’ll be provided only with the required capacities without overpaying for unused resources.
 - The system of _[automatic discounts](/docs/Account&Pricing/Automatic%20Discounts)_ makes the platform usage even more beneficial when the volume of ordered resources grows.
 
 In contrast to the majority of other vendors, all of these features allow providing a truly user-oriented **_Pay-per-Use_** charging approach:
@@ -27,7 +27,6 @@ In contrast to the majority of other vendors, all of these features allow provid
 </div>
 
 The video below will help you to catch the key points of the platform pricing system flexibility and the problems it helps to solve:
-
 
 ## How It Works
 
@@ -116,6 +115,6 @@ Combining the Reserved and Dynamic cloudlets usage enables you to save your cost
 - [How much PaaS costs](https://www.youtube.com/watch?v=yg_fVjCbyuw&list=PLkntuNwly7TcU_IAoiZhxxQuq9nUsQQ5r&index=8) - learn how to track your hosting spends
 - [PaaS vs Amazon Pricing](https://cloudmydc.com/) - get insights on dynamic pricing benefits
 - [Charged Resources](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ) - learn what is charged at the platform
-- [Monitor Consumed Resources](/docs/Account&Pricing/Resource%20Charging/Monitoring%20Consumed%20Resources) - check the current load and consumed resources history
+- [Monitor Consumed Resources](/docs/account-and-pricing/resource-charging/monitoring-consumed-resources) - check the current load and consumed resources history
 - [Save Your Cloud Money](https://cloudmydc.com/) - see some tips on how to decrease the consumption
 - [Cloud Union](https://cloudmydc.com/) - compare the prices at different hosting provider’s platforms and choose the most suitable one

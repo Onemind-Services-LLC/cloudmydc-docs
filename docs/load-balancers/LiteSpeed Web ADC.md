@@ -10,7 +10,7 @@ import obj from './LiteSpeedWebADC.json'
 
 :::tip Tip
 
-The **LiteSpeed Web ADC** stack is [HTTP/3](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support) ready with the feature support enabled by default. However, a [public IP address](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
+The **LiteSpeed Web ADC** stack is [HTTP/3](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support) ready with the feature support enabled by default. However, a [public IP address](/docs/application-setting/external-access-to-applications/public-ip) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
 
 :::
 
@@ -124,7 +124,7 @@ Click **Create** to proceed.
 
 There are some specifics while working with the platform implementation of the LiteSpeed via the admin panel:
 
-- to ensure container stability, the [platform-native redeploy feature](/docs/Container/Container%20Redeploy) should be used instead of the **Actions > Version Manager** functionality
+- to ensure container stability, the [platform-native redeploy feature](/docs/category/container-deployment) should be used instead of the **Actions > Version Manager** functionality
 
 <div style={{
     display:'flex',
@@ -150,7 +150,7 @@ There are some specifics while working with the platform implementation of the L
 
 :::
 
-In case you need to adjust any of the configuration files, you can work over the [dashboard file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) or establish an [SSH connection](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview).
+In case you need to adjust any of the configuration files, you can work over the [dashboard file manager](/docs/application-setting/configuration-file-manager) or establish an [SSH connection](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview).
 
 ## License Pricing
 
@@ -290,7 +290,7 @@ The license price is calculated dynamically based on the network traffic process
 
 :::danger Note
 
-The exact cost may vary slightly for the platforms with a currency other than USD; it depends on the conversion rate at the moment of the hourly billing event. All the account charges can be viewed via the **[Billing History](/docs/Account&Pricing/Resource%20Charging/Monitoring%20Consumed%20Resources#billing-history)** in the dashboard.
+The exact cost may vary slightly for the platforms with a currency other than USD; it depends on the conversion rate at the moment of the hourly billing event. All the account charges can be viewed via the **[Billing History](/docs/account-and-pricing/resource-charging/monitoring-consumed-resources#billing-history)** in the dashboard.
 
 <div style={{
     display:'flex',
@@ -310,6 +310,6 @@ When performing testing of the LiteSpeed Web ADC load balancer, you should take 
 
 1. By default, the load balancer operates in the **Stateful** mode, which tracks sessions associated with each back-end server (also called “Session Affinity”). It means that requests from a single source will always go to the same back-end server (unless it’s not working).
 
-2. If LiteSpeed ADC does not have its own [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP), all the requests go through the platform’s [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer). In such a case, ADC considers that the load comes from a single IP address (of the Shared Load Balancer).
+2. If LiteSpeed ADC does not have its own [public IP](/docs/application-setting/external-access-to-applications/public-ip), all the requests go through the platform’s [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer). In such a case, ADC considers that the load comes from a single IP address (of the Shared Load Balancer).
 
 As a result, for the proper testing of the <u>production cluster</u> with LiteSpeed ADC as a load balancer, you need to attach public IP and send requests from multiple sources. Alternatively, you can temporarily switch to the **Stateless** mode, which does not care about sessions (recommended during the <u>development/testing stages</u> only). Check out more about [LiteSpeed ADC testing](https://docs.litespeedtech.com/lsadc/settings/#testing) at the official documentation.

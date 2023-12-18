@@ -65,7 +65,7 @@ Then set the resources usage limits for the chosen nodes by means of cloudlet sl
 
 </div>
 
-4. Upload and deploy your application to the desired context (we’ll use the default _ROOT_ one) using archive/URL or via the remote VCS repository - link to the corresponding instruction can be found in our [Deployment Guide](/docs/Deployment/Deployment%20Guide).
+4. Upload and deploy your application to the desired context (we’ll use the default _ROOT_ one) using archive/URL or via the remote VCS repository - link to the corresponding instruction can be found in our [Deployment Guide](/docs/deployment/deployment-guide).
 
 Once this is completed, the name of your project source will appear in the _Deployed_ panel column.
 

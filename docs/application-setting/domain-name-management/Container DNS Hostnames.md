@@ -26,12 +26,12 @@ import obj from './ContainerDNSHostnames.json'
 </div>
 <div>
 
-Being able to easily connect to Cloud services is a criteria of great importance for all of the developers. In the platform, each newly created node is assigned a number of automatically generated hostnames, pointed to the appropriate server internal/[external](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) IP address.
+Being able to easily connect to Cloud services is a criteria of great importance for all of the developers. In the platform, each newly created node is assigned a number of automatically generated hostnames, pointed to the appropriate server internal/[external](/docs/application-setting/external-access-to-applications/public-ip) IP address.
 
 </div>
 </div>
 
-Depending on a type of the created node, the set of hostnames for it could differ. Thus, below we’ll consider the possible ways to refer to a particular node, hosted at the platform, either from inside (i.e. when managing it via [SSH Gate](/docs/Deployment%20Tools/SSH/SSH%20Overview)) or outside of the Cloud:
+Depending on a type of the created node, the set of hostnames for it could differ. Thus, below we’ll consider the possible ways to refer to a particular node, hosted at the platform, either from inside (i.e. when managing it via [SSH Gate](/docs/deployment-tools/ssh/ssh-overview)) or outside of the Cloud:
 
 - [Hostnames for Specific Containers](/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#hostnames-for-specific-containers)
 - [Supplementary Hostnames for Particular Node Types](/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#supplementary-hostnames-for-particular-node-types)
@@ -60,7 +60,7 @@ Herewith, the placeholders should be replaced with the next values:
 
 </div>
 
-- **_${envName}_** - environment name (not an [alias](/docs/EnvironmentManagement/Environment%20Aliases)), specified during its creation
+- **_${envName}_** - environment name (not an [alias](/docs/environment-management/environment-aliases)), specified during its creation
 - **_${platformDomain}_** - domain name of a PaaS installation [hosting service provider](/docs/QuickStart/Hosters%20List%20&%20Info)
 
 Both variants can be used for refering to the nodes from inside or outside of the platform (i.e. allowing to establish both internal and external connections).
@@ -274,7 +274,7 @@ All the newly created Docker containers and dockerized platform-managed stacks a
 - **_node${nodeId}_** - alias to refer to a container in confines of a single environment
 - **_${nodeGroup}_** - alias to refer to a layer in confines of a single environment
 
-Utilizing such short hostnames in server configuration files, application source code and [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview) console (within often used commands like _ping, host, dig_, etc.) makes operating with Dockerized stacks via Platform internal network much more convenient. Additionally, such approach enables painless [environment migration](/docs/EnvironmentManagement/Environment%20Regions/Migration%20between%20Regions) to another [hardware region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) through eliminating the necessity to adjust your application code due to the changed server location.
+Utilizing such short hostnames in server configuration files, application source code and [SSH](/docs/deployment-tools/ssh/ssh-overview) console (within often used commands like _ping, host, dig_, etc.) makes operating with Dockerized stacks via Platform internal network much more convenient. Additionally, such approach enables painless [environment migration](/docs/environment-management/environment-regions/migration-between-regions) to another [hardware region](/docs/environment-management/environment-regions/choosing-a-region) through eliminating the necessity to adjust your application code due to the changed server location.
 
 ## Hostnames for Linked Containers
 

@@ -18,6 +18,6 @@ Failover is a special routing method, that implements project protection through
 
 </div>
 
-For such type of distribution, you, obviously, can not configure the traffic ratio distribution different from 100 to 0, i.e. you can only select which of your servers is primary and which is in backup. According to this, all of the incoming requests can go to one server at a time - either to main one or, in case of its unavailability, to the secondary one. Herewith, locating your backends in different [environment regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) will allow to easily overcome the hardware dependent failures.
+For such type of distribution, you, obviously, can not configure the traffic ratio distribution different from 100 to 0, i.e. you can only select which of your servers is primary and which is in backup. According to this, all of the incoming requests can go to one server at a time - either to main one or, in case of its unavailability, to the secondary one. Herewith, locating your backends in different [environment regions](/docs/environment-management/environment-regions/choosing-a-region) will allow to easily overcome the hardware dependent failures.
 
 Generally, your customer’s requests are automatically redirected to the working server, so, even in case of failure, users won’t notice any interruption in application work.

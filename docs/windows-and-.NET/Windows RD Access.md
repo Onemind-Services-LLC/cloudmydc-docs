@@ -100,11 +100,11 @@ Below, we’ll describe the examples of working with the most common RDP clients
 
 </div>
 
-3. Provide the RDP connection link ([endpoint](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints)) into the **PC name** field.
+3. Provide the RDP connection link ([endpoint](/docs/application-setting/external-access-to-applications/endpoints)) into the **PC name** field.
 
 :::danger Note
 
-If [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) is attached to the Windows VM node, it must be used instead of the endpoint.
+If [public IP](/docs/application-setting/external-access-to-applications/public-ip) is attached to the Windows VM node, it must be used instead of the endpoint.
 
 :::
 

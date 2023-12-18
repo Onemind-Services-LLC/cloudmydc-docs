@@ -72,4 +72,4 @@ A Jetty server home page will be opened in a new browser page:
 
 </div>
 
-As you can see the Eclipse Jetty server is up and running, so you can proceed to the [application deployment](/docs/Deployment/Deployment%20Guide).
+As you can see the Eclipse Jetty server is up and running, so you can proceed to the [application deployment](/docs/deployment/deployment-guide).

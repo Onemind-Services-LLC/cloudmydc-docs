@@ -135,11 +135,11 @@ LLSMP has additional variables (e.g. _WAF, WP_PROTECT, WP_PROTECT_LIMIT_) specif
 
 3. Obviously, all the benefits of the regular platform containers are available for the LEMP and LLSMP stacks as well. For example:
 
-- [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling)
-- [usage-based pricing](/docs/Account&Pricing/Pricing%20Model%20Overview)
+- [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling)
+- [usage-based pricing](/docs/account-and-pricing/pricing-model-overview)
 - [SSH access](https://cloudmydc.com/)
-- [container firewall](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall)
-- [container redeploy](/docs/Container/Container%20Redeploy)
+- [container firewall](/docs/application-setting/external-access-to-applications/container-firewall)
+- [container redeploy](/docs/category/container-deployment)
 - [statistics monitoring](https://cloudmydc.com/)
 - [deployment automation](https://cloudmydc.com/)
 - and even more at [Platform Documentation](https://cloudmydc.com/)

@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## How to Create Environment Group
 
-Setting new [environment group](/docs/EnvironmentManagement/Environment%20Groups/Overview) involves creation of a special tag, that subsequently can be attached to the required environment to logically mark it within the dashboard. You can use any naming paradigm that would be convenient for you - for example, if having development, testing, and production versions of a project, you can apply such tags to the corresponding environments to easily separate them.
+Setting new [environment group](/docs/environment-management/environment-groups/overview) involves creation of a special tag, that subsequently can be attached to the required environment to logically mark it within the dashboard. You can use any naming paradigm that would be convenient for you - for example, if having development, testing, and production versions of a project, you can apply such tags to the corresponding environments to easily separate them.
 
 So, to quickly create an environment group with only a few minutes notice, follow the next steps.
 
@@ -100,4 +100,4 @@ Once you are finished, click Add.
 
 </div>
 
-Additionally, learn the ways you can [manage your environment groups](/docs/EnvironmentManagement/Environment%20Groups/Group%20Management) and quickly [navigate between them](/docs/EnvironmentManagement/Environment%20Groups/Navigation%20Across%20Groups) within dashboard.
+Additionally, learn the ways you can [manage your environment groups](/docs/environment-management/environment-groups/group-management) and quickly [navigate between them](/docs/environment-management/environment-groups/navigation-across-groups) within dashboard.

@@ -420,7 +420,7 @@ Additional info on the various database cluster types can be viewed by hovering 
 
 :::
 
-3. The other settings can be [configured](/docs/EnvironmentManagement/Setting%20Up%20Environment) just as for any regular environment.
+3. The other settings can be [configured](/docs/environment-management/setting-up-environment) just as for any regular environment.
 
 <div style={{
     display:'flex',

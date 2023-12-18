@@ -10,7 +10,7 @@ When you have your [SSH key generated](/docs/Deployment%20Tools/SSH/Generate%20S
 
 :::tip
 
-In order to manage private SSH keys intended for authentication at your GIT account, follow the corresponding instruction within the [SSH Access to GIT Repository](/docs/Deployment/SSH%20Access%20to%20GIT%20Repository) guide.
+In order to manage private SSH keys intended for authentication at your GIT account, follow the corresponding instruction within the [SSH Access to GIT Repository](/docs/deployment/ssh-access-to-git-repository) guide.
 
 :::
 

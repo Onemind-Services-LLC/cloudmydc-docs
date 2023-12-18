@@ -22,7 +22,7 @@ There are two ways to connect your server inside Jelastic PaaS over SSH:
 
 </div>
 
-- **SSH Gate** - alternatively, you can connect to your server via any preferred local SSH client basing on preliminary [generated](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) SSH keys pair (where the public key should be [added](/docs/Deployment%20Tools/SSH/Add%20SSH%20Key) to your Account Settings, and the corresponding private key - being handled at your local machine)
+- **SSH Gate** - alternatively, you can connect to your server via any preferred local SSH client basing on preliminary [generated](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) SSH keys pair (where the public key should be [added](/docs/deployment-tools/ssh/add-ssh-key) to your Account Settings, and the corresponding private key - being handled at your local machine)
 
 <div style={{
     display:'flex',
@@ -34,7 +34,7 @@ There are two ways to connect your server inside Jelastic PaaS over SSH:
 
 </div>
 
-Once all the requirements are fulfilled, you can [establish an SSH connection](/docs/Deployment%20Tools/SSH/SSH%20Access/SSH%20Gate) by means of the corresponding command line (circled above) from the same-named tab of your account settings.
+Once all the requirements are fulfilled, you can [establish an SSH connection](/docs/deployment-tools/ssh/ssh-access/ssh-gate) by means of the corresponding command line (circled above) from the same-named tab of your account settings.
 
 For the sake of simplicity and quick access, in this article we’ll leverage the inbuilt Web SSH tool; however, the described below commands can be used when working via remote local client absolutely similar.
 
@@ -70,7 +70,7 @@ As a result, the violet string next to the container hostname will change, indic
 
 :::tip Tip
 
-If you are new to a stack runtime that your instance runs, most likely you’d like to explore is its inner structure first (i.e. tree of files & directories, available configuration files, etc). The most convenient way to accomplish this is to use the inbuilt Jelastic [File Manager](/docs/ApplicationSetting/Configuration%20File%20Manager) GUI, available by clicking on the **Config** button next to the required server at your developer’s panel:
+If you are new to a stack runtime that your instance runs, most likely you’d like to explore is its inner structure first (i.e. tree of files & directories, available configuration files, etc). The most convenient way to accomplish this is to use the inbuilt Jelastic [File Manager](/docs/application-setting/configuration-file-manager) GUI, available by clicking on the **Config** button next to the required server at your developer’s panel:
 
 <div style={{
     display:'flex',
@@ -337,7 +337,7 @@ Within the console response, you should see the **_{VAR_VALUE}_** string similar
 
 ## Specifics of Certified Jelastic Containers Remote Management
 
-At Jelastic PaaS, there are 2 types of [software stack](/docs/QuickStart/Software%20Stack%20Versions) templates, which are used as a base when creating each of containers:
+At Jelastic PaaS, there are 2 types of [software stack](/docs/quickstart/software-stack-versions) templates, which are used as a base when creating each of containers:
 
 - **_dockerized_** - unified template model based on [native Docker standard support](/docs/Container/Container%20Types) with the generality of container management principles and functionality for all server types (i.e. regardless of whether it computes node, or database server, or caching instance, etc).
   When connecting to such server via SSH, you automatically get full control over the instance with root privileges granted and can perform any required operations inside a container.

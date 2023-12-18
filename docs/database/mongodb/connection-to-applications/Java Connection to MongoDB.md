@@ -11,7 +11,7 @@ sidebar_position: 1
 ## Create Environment
 
 1. Log in to your PaaS account.
-2. [Create an environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with **MongoDB** instance (available within the NoSQL section). The preferred application server for your app to be deployed to can be located in the same or separate environment (as an example, we’ve added Tomcat 7):
+2. [Create an environment](/docs/environment-management/setting-up-environment) with **MongoDB** instance (available within the NoSQL section). The preferred application server for your app to be deployed to can be located in the same or separate environment (as an example, we’ve added Tomcat 7):
 
 <div style={{
     display:'flex',
@@ -198,7 +198,7 @@ public class MongoManager {
 }
 ```
 
-2. Any application can be deployed using either platform [Deployment Manager](/docs/Deployment/Deployment%20Guide) (with a local file/URL as a source) or [Maven](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven#java-vcs-deployment-with-maven) (for deployment from GIT/SVN).
+2. Any application can be deployed using either platform [Deployment Manager](/docs/deployment/deployment-guide) (with a local file/URL as a source) or [Maven](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven#java-vcs-deployment-with-maven) (for deployment from GIT/SVN).
 
 For testing, you can try our ready-to-use mongoclient.war project, which already contains the appropriate connector driver (or download its sources and adjust it in any preferred way).
 

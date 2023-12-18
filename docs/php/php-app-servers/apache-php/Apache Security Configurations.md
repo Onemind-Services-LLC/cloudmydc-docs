@@ -140,7 +140,7 @@ Navigate to the **/etc/httpd/conf** folder and open the **_httpd.conf_** file (o
 
 :::tip Note
 
-Denying access through IP makes sense only if you use [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) feature.
+Denying access through IP makes sense only if you use [public IP](/docs/application-setting/external-access-to-applications/public-ip) feature.
 
 :::
 

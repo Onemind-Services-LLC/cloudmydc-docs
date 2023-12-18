@@ -18,7 +18,7 @@ Using platform CLI, you can set up container volumes in two ways:
 The first way to create container volume we’ll consider is to define it right during the [environment creation](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Environment%20Creation) (or when [changing its topology](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Server%20Scaling)). So, in order to setup your local container storage, the following [parameters](/docs/Deployment%20Tools/API%20&%20CLI/CreateEnv%20Params#docker-based-environment-configurations) can be used while executing the appropriate CLI method:
 
 - **_volumes_** - sets list of local volumes
-- **_volumeMounts_** - allows to configure [mount points](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points)
+- **_volumeMounts_** - allows to configure [mount points](/docs/data-storage-container/data-sharing/mount-points)
 - **_volumesFrom_** - imports existing volumes from node on your account
 
 :::tip Tip
@@ -76,7 +76,7 @@ The highlighted data should be changed to the appropriate values:
 Alternatively to the _“sourceNodeId”_ parameter, you can also use:
 
 - _“sourceNodeGroup”_ - defines [environment layer](/docs/Deployment%20Tools/API%20&%20CLI/CreateEnv%20Params#docker-based-environment-configurations), which master node will be used as a source for mount operation
-- _“sourceHost”_ - external IP or [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) name of the data storage server (including [external one](/docs/Data%20Storage%20Container/External%20NFS%20Server%20Configuration))
+- _“sourceHost”_ - external IP or [custom domain](/docs/application-setting/domain-name-management/custom-domain-name) name of the data storage server (including [external one](/docs/Data%20Storage%20Container/External%20NFS%20Server%20Configuration))
 
 :::
 

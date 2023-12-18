@@ -128,7 +128,7 @@ In order to set up automatic resource provisioning for your Tomcat server, open 
 
 </div>
 
-Your application will work within these limits reducing resource allocation when the load goes down and increasing when it goes up. Thus, you only pay for the resources that are actually consumed. For more information, please refer to the documentation about [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling).
+Your application will work within these limits reducing resource allocation when the load goes down and increasing when it goes up. Thus, you only pay for the resources that are actually consumed. For more information, please refer to the documentation about [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling).
 
 ## Manual Horizontal Scaling
 

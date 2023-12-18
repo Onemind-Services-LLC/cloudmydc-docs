@@ -6,7 +6,7 @@ sidebar_position: 3
 
 import obj from './ContainerRedeploy.json'
 
-The majority of Docker-based solutions (including platform-managed [stacks](/docs/QuickStart/Software%20Stack%20Versions)) are continuously developed, delivering new product versions and fixes. Thus, it is recommended to regularly update your templates to their latest tags, i.e. releases.
+The majority of Docker-based solutions (including platform-managed [stacks](/docs/quickstart/software-stack-versions)) are continuously developed, delivering new product versions and fixes. Thus, it is recommended to regularly update your templates to their latest tags, i.e. releases.
 
 Such an operation is called **redeploy** and has the following specifics when managed on the platform:
 
@@ -18,7 +18,7 @@ Such an operation is called **redeploy** and has the following specifics when ma
   - **firewall configurations** (_/etc/sysconfig/iptables-custom, /etc/sysconfig/iptables4-jelastic, /etc/sysconfig/iptables6-jelastic, /etc/iptables/rules.v4_)
   - **SSH access data** (_/root/.ssh/authorized_keys, /root/.ssh/authorized_keys2, /root/.ssh/id_rsa_)
 
-- all the previously specified custom [configurations](/docs/Container/Container%20Configuration/Configuration%20Tools) (like run commands, links, variables, etc.) won’t be affected
+- all the previously specified custom [configurations](/docs/container/container-configuration/configuration-tools) (like run commands, links, variables, etc.) won’t be affected
 - if operating with [multiple](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) (horizontally scaled) instances, the update can be performed on containers one by one, i.e. implicitly with no downtime
 
 In such a way, you are able to update your Docker-based container to a new tag (version) without affecting the application inside. With the platform, container redeployment can be performed in just a few clicks via the [dashboard UI](/docs/Container/Container%20Redeploy#update-container-via-dashboard) or easily automated [via API](/docs/Container/Container%20Redeploy#update-container-via-platform-apicscli).
@@ -86,7 +86,7 @@ Now, you know how to redeploy a container via the platform dashboard.
 
 ## Update Container via Platform API/CS/CLI
 
-The update process can be automated using [platform API](https://cloudmydc.com/), [Cloud Scripting](https://docs.cloudscripting.com/creating-manifest/actions/#api), and [CLI](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview) (command-line interface).
+The update process can be automated using [platform API](https://cloudmydc.com/), [Cloud Scripting](https://docs.cloudscripting.com/creating-manifest/actions/#api), and [CLI](/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview) (command-line interface).
 
 :::tip Tip
 
@@ -98,7 +98,7 @@ Container redeploy is performed with the **[environment.Control.RedeployContaine
 
 - **envName** - name of the environment, where container(s) should be redeployed
 
-- **session** - user session (or [token](/docs/Account&Pricing/Personal%20Access%20Tokens)) identifier, used for authentication
+- **session** - user session (or [token](/docs/account-and-pricing/personal-access-tokens)) identifier, used for authentication
 
 - **nodeGroup** - identifier of the [environment layer](https://docs.cloudscripting.com/creating-manifest/selecting-containers/#all-containers-by-group) to update (optional)
 
@@ -146,7 +146,7 @@ Here, the **{nodeId}** value should be substituted with the ID number of the req
 
 ## Saving Custom Data during Container Redeploy
 
-Each [platform-managed container](/docs/QuickStart/Software%20Stack%20Versions) is provided with a special **/etc/jelastic/redeploy.conf** file, storing a list of critical container configs. These settings are automatically preserved by the platform during the container redeploy. The file can be easily accessed via the [embedded file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) through the Favorites shortcut.
+Each [platform-managed container](/docs/quickstart/software-stack-versions) is provided with a special **/etc/jelastic/redeploy.conf** file, storing a list of critical container configs. These settings are automatically preserved by the platform during the container redeploy. The file can be easily accessed via the [embedded file manager](/docs/application-setting/configuration-file-manager) through the Favorites shortcut.
 
 <div style={{
     display:'flex',
@@ -175,7 +175,7 @@ Here, container-specific configurations that are required for the correct redepl
 - **/etc/jelastic/redeploy.conf** - the current redeployment config itself (to store the list of required for saving files and directories during each further container redeploy)
 - **${home}/.bash_profile** - contains the default SSH shell settings (e.g. shell introduction message, the required configuration files to be fetched, etc.)
 - **/etc/sysconfig/iptables** - keeps the default firewall rules
-- **/etc/sysconfig/iptables-custom** - contains [custom firewall rules](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall)
+- **/etc/sysconfig/iptables-custom** - contains [custom firewall rules](/docs/application-setting/external-access-to-applications/container-firewall)
 - **/var/lib/jelastic/keys** - stores [uploaded SSH private keys](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key), which are necessary to access the container via SSH and for interaction with other containers
 
 <u>

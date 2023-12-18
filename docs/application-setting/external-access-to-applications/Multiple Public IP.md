@@ -24,16 +24,16 @@ sidebar_position: 3
 </div>
 <div>
 
-The platform supports assigning multiple [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) addresses (of both IPv4 and IPv6 revisions) to a single container. Herewith, the assigned IPs could be either of one of the versions or both of them simultaneously.
+The platform supports assigning multiple [public IP](/docs/application-setting/external-access-to-applications/public-ip) addresses (of both IPv4 and IPv6 revisions) to a single container. Herewith, the assigned IPs could be either of one of the versions or both of them simultaneously.
 
 </div>
 </div>
 
-For example, if hosting several web-sites on a single node, the multi-IP option allows to handle them as separate production-ready services due to the ability to apply dedicated [custom domain name](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) and [SSL certificate](/docs/ApplicationSetting/SSL/Secure%20Sockets%20Layer) to each of them. Also, this option can be helpful for operating network appliances (e.g. load balancers) with multiple IP addresses for each network.
+For example, if hosting several web-sites on a single node, the multi-IP option allows to handle them as separate production-ready services due to the ability to apply dedicated [custom domain name](/docs/application-setting/domain-name-management/custom-domain-name) and [SSL certificate](/docs/ApplicationSetting/SSL/Secure%20Sockets%20Layer) to each of them. Also, this option can be helpful for operating network appliances (e.g. load balancers) with multiple IP addresses for each network.
 
 :::tip Note
 
-Both Public IPv4 and IPv6 are paid options, charged separately (either for the same or different price) on hourly basis. The exact cost and allowed number of IPs per node/per environment can be seen within the **[Quotas & Pricing](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-much-do-resources-cost) > Account Limits** dashboard tab.
+Both Public IPv4 and IPv6 are paid options, charged separately (either for the same or different price) on hourly basis. The exact cost and allowed number of IPs per node/per environment can be seen within the **[Quotas & Pricing](/docs/account-and-pricing/resource-charging/pricing-faq#how-much-do-resources-cost) > Account Limits** dashboard tab.
 
 :::
 
@@ -105,7 +105,7 @@ Here, all container external addresses are displayed within the **WAN IP** colum
 
 :::tip Note
 
-In case the required type of the newly attached IP is not indicated explicitly (e.g. within [Cloud Scripting](https://docs.cloudscripting.com/) solution or application/add-on package settings at [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace)), the IPv4 is used by default.
+In case the required type of the newly attached IP is not indicated explicitly (e.g. within [Cloud Scripting](https://docs.cloudscripting.com/) solution or application/add-on package settings at [platform Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace)), the IPv4 is used by default.
 
 :::
 

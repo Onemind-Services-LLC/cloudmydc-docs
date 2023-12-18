@@ -29,7 +29,7 @@ One of the most common problems you can face upon your project growth is the nec
 </div>
 </div>
 
-So, in order to ease these problems' resolution, the platform offers a completely free and easy-to-use solution based on the automatically configured load balancer. It is delivered as a special **_Traffic Distributor_** add-on, which is available for quick one-click installation through [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) and provides smart traffic routing based on your requirements.
+So, in order to ease these problems' resolution, the platform offers a completely free and easy-to-use solution based on the automatically configured load balancer. It is delivered as a special **_Traffic Distributor_** add-on, which is available for quick one-click installation through [platform Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace) and provides smart traffic routing based on your requirements.
 
 <div style={{
     display:'flex',
@@ -43,7 +43,7 @@ So, in order to ease these problems' resolution, the platform offers a completel
 
 With this solution, you are able to set intelligent workloads balancing between pair of hosts and benefit from the following features and opportunities it provides:
 
-- _high availability and advanced failover_ - share the load among two copies of your application, which could be located on [different hardware](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region) to achieve better failure protection
+- _high availability and advanced failover_ - share the load among two copies of your application, which could be located on [different hardware](/docs/environment-management/environment-regions/choosing-a-region) to achieve better failure protection
 
 - _Blue-Green (zero downtime) application deploy_ - redirect all incoming requests to a single backend for the time another one is undergoing the maintenance
 
@@ -117,7 +117,7 @@ All you need to do to get your own Traffic Distributor is to fill in the form wi
 
 </div>
 
-Before the installation, you can choose an entry point - i.e. requests will be processed through either [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) or [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address(es).
+Before the installation, you can choose an entry point - i.e. requests will be processed through either [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) or [public IP](/docs/application-setting/external-access-to-applications/public-ip) address(es).
 
 :::tip Tip
 

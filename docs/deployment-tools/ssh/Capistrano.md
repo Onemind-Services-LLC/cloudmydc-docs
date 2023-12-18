@@ -11,7 +11,7 @@ Capistrano is an open-source tool for executing scripts at the remote servers. M
 Thus, in this instruction we will discover how to deploy a PHP application remotely, via the Capistrano tool. Initially you will need:
 
 - an already created PHP environment with Apache application server;
-- [SSH public key generated](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) and [added to your platform](/docs/Deployment%20Tools/SSH/Add%20SSH%20Key) dashboard;
+- [SSH public key generated](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) and [added to your platform](/docs/deployment-tools/ssh/add-ssh-key) dashboard;
 - GIT repository with PHP application you would like to deploy (for now Capistrano 3 tool supports GIT VCS type only);
 - local copy of this project at your computer.
 

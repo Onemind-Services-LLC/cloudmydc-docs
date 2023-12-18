@@ -24,7 +24,7 @@ Platform cardividges have officially reached EOL and will not receive updates an
 
 :::
 
-We highly recommend re-creating or [redeploying](/docs/Container/Container%20Redeploy) EOL containers with the up-to-date release of the software to ensure the availability of all the latest functionality and security fixes. Similarly, it is advisable to periodically (at least once per year) update all of your environments.
+We highly recommend re-creating or [redeploying](/docs/category/container-deployment) EOL containers with the up-to-date release of the software to ensure the availability of all the latest functionality and security fixes. Similarly, it is advisable to periodically (at least once per year) update all of your environments.
 
 ## Load Balancers
 

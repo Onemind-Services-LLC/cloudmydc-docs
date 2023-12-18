@@ -10,7 +10,7 @@ The platform can automatically create **custom containers** based on any standar
 
 :::tip Tip
 
-The platform provides support of the most popular [software stacks](/docs/QuickStart/Software%20Stack%20Versions) with ensured template operability and regular updates to the latest version (**[certified containers](/docs/Container/Container%20Deployment/Certified%20Containers%20Deployment)**).
+The platform provides support of the most popular [software stacks](/docs/quickstart/software-stack-versions) with ensured template operability and regular updates to the latest version (**[certified containers](/docs/Container/Container%20Deployment/Certified%20Containers%20Deployment)**).
 
 :::
 
@@ -18,7 +18,7 @@ Within this guide, you’ll find out how to get started with custom Docker conta
 
 ## Custom Containers from Docker Hub
 
-1. Open the environment [topology wizard](/docs/EnvironmentManagement/Setting%20Up%20Environment) by clicking the **New Environment** button at the top-left corner of the dashboard.
+1. Open the environment [topology wizard](/docs/environment-management/setting-up-environment) by clicking the **New Environment** button at the top-left corner of the dashboard.
 
 ![Locale Dropdown](./img/CustomContainersDeployment/02-topology-wizard-custom-container.png)
 
@@ -86,7 +86,7 @@ You can **Open in Browser** each container with the corresponding button next to
 :::tip Notes
 
 - Not all custom containers have the web interface running out-of-the-box. Thus you can get the 502 application down error while accessing such a node via the browser. However, that doesn’t mean this image is incorrect or corrupted. If you’d like to ensure the necessary service is working, check the running processes inside a container [using the SSH](/docs/Container/Custom%20Container%20SSH%20Access) connection.
-- In case an application is deployed to a container without the [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) and is not listening to the [port](/docs/Container/Container%20Configuration/Ports) 80 on its backend, you’ll be shown the dedicated 502 - Service is down error page while trying to open it. In such a case, you need to ensure your container has an HTTP service running and set for handling the incoming requests through the port mentioned above.
+- In case an application is deployed to a container without the [public IP](/docs/application-setting/external-access-to-applications/public-ip) and is not listening to the [port](/docs/Container/Container%20Configuration/Ports) 80 on its backend, you’ll be shown the dedicated 502 - Service is down error page while trying to open it. In such a case, you need to ensure your container has an HTTP service running and set for handling the incoming requests through the port mentioned above.
 
 :::
 
@@ -102,11 +102,11 @@ In our example, you can see a Docker application sample upon opening the image i
 
 </div>
 
-You can make additional configurations to this container directly in the dashboard. For example, you can operate via the embedded [file manager](/docs/Container/Container%20Configuration/Configuration%20Tools) or **[Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)** client. In both cases, you are granted the full root permissions for accomplishing your desired adjustments.
+You can make additional configurations to this container directly in the dashboard. For example, you can operate via the embedded [file manager](/docs/container/container-configuration/configuration-tools) or **[Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh)** client. In both cases, you are granted the full root permissions for accomplishing your desired adjustments.
 
 ## Containers from Custom/Private Registry
 
-In addition to the numerous public templates available to be found within the official Docker Hub registry, the platform gives you the ability to deploy your own private image from any custom registry. This template will be remembered by the platform (stored within the dedicated **Custom** section), allowing you to manage it the same way as any public image. If your repository is protected, you’ll need to specify the appropriate access credentials (just once during the addition). At the same time, all the subsequent authentication required for [container scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) or [redeployment](/docs/Container/Container%20Redeploy) will be performed automatically.
+In addition to the numerous public templates available to be found within the official Docker Hub registry, the platform gives you the ability to deploy your own private image from any custom registry. This template will be remembered by the platform (stored within the dedicated **Custom** section), allowing you to manage it the same way as any public image. If your repository is protected, you’ll need to specify the appropriate access credentials (just once during the addition). At the same time, all the subsequent authentication required for [container scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) or [redeployment](/docs/category/container-deployment) will be performed automatically.
 
 Such an image addition can be done via the Custom section in the topology wizard.
 

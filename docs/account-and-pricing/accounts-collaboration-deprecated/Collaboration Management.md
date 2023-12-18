@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Collaboration Management (Deprecated)
 
-This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview) feature description.
+This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](/docs/account-and-pricing/accounts-collaboration/collaboration-overview) feature description.
 
 Full access to collaboration management is available only for its creator. The owner of this **primary account** can:
 

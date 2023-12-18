@@ -4,7 +4,7 @@ slug: create-collaboration
 sidebar_position: 3
 ---
 
-In order to create your own [collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview), you just need a billing PaaS account (**primary account**) that will invite additional customers/users (**collaboration members**). You can perform most collaboration-related operations via the dedicated section at the account settings panel.
+In order to create your own [collaboration](/docs/account-and-pricing/accounts-collaboration/collaboration-overview), you just need a billing PaaS account (**primary account**) that will invite additional customers/users (**collaboration members**). You can perform most collaboration-related operations via the dedicated section at the account settings panel.
 
 Click the **Settings** button in the top-right corner of the dashboard.
 
@@ -90,7 +90,7 @@ Fill in the fields of the opened **_Invite Member_** dialog:
 - you can provide different roles for each (sub-)component
 - hover over a role in the list to see a hint with all included policies
 - if needed, you can **_Create New Role_** without closing the invite form
-- you can manage [environment group](/docs/EnvironmentManagement/Environment%20Groups/Overview) structure directly in the invite form - hover over the group and click the gear icon to select the required option (**Add**, **Edit**, **Remove**)
+- you can manage [environment group](/docs/environment-management/environment-groups/overview) structure directly in the invite form - hover over the group and click the gear icon to select the required option (**Add**, **Edit**, **Remove**)
 - to provide an ability to create environments at the account root (i.e. without any group), share the whole Environments category with a role that grants the appropriate permission
 - if you need to [share a single environment](/docs/EnvironmentManagement/Share%20Environment), it can be done from the appropriate environment configs
 

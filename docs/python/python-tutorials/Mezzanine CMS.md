@@ -36,7 +36,7 @@ Mezzanine CMS provide benefits for both developers and content managers:
 
 ## Create Python Environment
 
-To host Mezzanine CMS, you need a Python-based application server. Let’s [create](/docs/EnvironmentManagement/Setting%20Up%20Environment) a new environment with the Apache Python node:
+To host Mezzanine CMS, you need a Python-based application server. Let’s [create](/docs/environment-management/setting-up-environment) a new environment with the Apache Python node:
 
 1. Click the **New Environment** button at the top of the dashboard to access topology wizard.
 
@@ -68,7 +68,7 @@ The Mezzanine CMS is not supported on **_Python 3.7_** yet and, also, on **_Pyth
 
 :::
 
-If needed, configure other settings (e.g. [cloudlet limit](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling), [public IPs](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP), [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), etc), type environment name and click **Create**.
+If needed, configure other settings (e.g. [cloudlet limit](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling), [public IPs](/docs/application-setting/external-access-to-applications/public-ip), [region](/docs/environment-management/environment-regions/choosing-a-region), etc), type environment name and click **Create**.
 
 3. Your environment will appear at the dashboard in a moment.
 
@@ -97,7 +97,7 @@ If configuring own deployment archive, please ensure your Mezzanine CMS package 
 
 :::
 
-1. Add application archive to the [deployment manager](/docs/Deployment/Deployment%20Manager) via the following link:
+1. Add application archive to the [deployment manager](/docs/deployment/deployment-manager) via the following link:
 
 <a href="https://download.jelastic.com/public.php?service=files&amp;t=3d6fa1ed641a044c6a291bbeaa6c333c&amp;download" target="_blank" rel="noopener noreferrer external" data-wpel-link="external"><i>https://download.jelastic.com/public.php?service=files&amp;t=3d6fa1ed641a044c6a291bbeaa6c333c&amp;download</i></a>
 
@@ -111,7 +111,7 @@ If configuring own deployment archive, please ensure your Mezzanine CMS package 
 
 </div>
 
-2. [Deploy](/docs/Deployment/Deployment%20Guide) Mezzanine CMS into the environment with the Apache Python application server.
+2. [Deploy](/docs/deployment/deployment-guide) Mezzanine CMS into the environment with the Apache Python application server.
 
 <div style={{
     display:'flex',
@@ -155,7 +155,7 @@ The process of the Mezzanine CMS deployment can be divided into three steps: ins
 
 ## Install Mezzanine CMS
 
-1. Connect to your application server via **[Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)**:
+1. Connect to your application server via **[Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh)**:
 
 <div style={{
     display:'flex',

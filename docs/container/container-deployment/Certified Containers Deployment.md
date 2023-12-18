@@ -4,9 +4,9 @@ slug: certified-containers-deployment
 sidebar_position: 1
 ---
 
-The platform offers the most popular [software stacks](/docs/QuickStart/Software%20Stack%20Versions) as pre-configured and managed solutions for quick deployment and comfortable management. All of these certified containers are thoroughly tested and optimized specifically for use within the platform. Customizations include regular updates to the latest software version and additional integrations (such as auto-optimization based on the assigned resources, automated SSL certificates installation and application deployment, built-in [auto-clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances), etc.).
+The platform offers the most popular [software stacks](/docs/quickstart/software-stack-versions) as pre-configured and managed solutions for quick deployment and comfortable management. All of these certified containers are thoroughly tested and optimized specifically for use within the platform. Customizations include regular updates to the latest software version and additional integrations (such as auto-optimization based on the assigned resources, automated SSL certificates installation and application deployment, built-in [auto-clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances), etc.).
 
-1. The deployment of certified containers is performed via the [topology wizard](/docs/EnvironmentManagement/Setting%20Up%20Environment), which can be opened by clicking the **New Environment** button.
+1. The deployment of certified containers is performed via the [topology wizard](/docs/environment-management/setting-up-environment), which can be opened by clicking the **New Environment** button.
 
 <div style={{
     display:'flex',
@@ -38,7 +38,7 @@ The platform offers the most popular [software stacks](/docs/QuickStart/Software
 - **[Cache Node](/docs/Memcached/Memcached%20System)** - a Memcached object caching system for speeding up web applications through alleviating database load
 - **[Shared Storage](/docs/Data%20Storage%20Container/Shared%20Storage%20Container)** - dedicated storage node with NFSv4 support, enlarged disk space, and optimized performance
 - **[Elastic VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information)** - virtual private servers on top of the CentOS, Ubuntu, Debian, and Windows OS
-- **[Build Node](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven)** - a build automation tool for Java projects
+- **[Build Node](/docs/java/build-node/java-vcs-deployment-with-maven)** - a build automation tool for Java projects
 - **Extra** (custom layers) - some extra services or any of the stacks mentioned above
 
 <div style={{
@@ -79,7 +79,7 @@ If the required software is not available as a certified template, you can try i
 
 :::
 
-5. You can [configure](/docs/EnvironmentManagement/Setting%20Up%20Environment) added nodes (_vertical and horizontal scaling, disk limit, public IPs, etc._) via the central part of the wizard. Certified containers can have additional options, e.g. [Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances).
+5. You can [configure](/docs/environment-management/setting-up-environment) added nodes (_vertical and horizontal scaling, disk limit, public IPs, etc._) via the central part of the wizard. Certified containers can have additional options, e.g. [Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances).
 
 ![Locale Dropdown](./img/CertifiedContainersDeployment/05-environment-with-certified-containers.png)
 

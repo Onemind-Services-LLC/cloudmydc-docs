@@ -20,4 +20,4 @@ Kubernetes cluster uses CoreDNS to resolve internal Kubernetes DNS names. It is 
 
 <u>For example</u>, if you have an environment with a database in the platform and want to connect to it from your Kubernetes pod, you need to use the <b><i>“{obj.data1}”</i></b> hostname and default port for your database (3306 for MySQL, 5432 for Postgres, etc.).
 
-However, you need to create an [endpoint](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints) to connect to such a database from outside of the platform.
+However, you need to create an [endpoint](/docs/application-setting/external-access-to-applications/endpoints) to connect to such a database from outside of the platform.

@@ -6,7 +6,7 @@ sidebar_position: 1
 
 - [What is charged?](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#what-is-charged)
 - [Where can consumed resources be seen?](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#where-the-consumed-resources-can-be-seen)
-- [How much do resources cost?](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-much-do-resources-cost)
+- [How much do resources cost?](/docs/account-and-pricing/resource-charging/pricing-faq#how-much-do-resources-cost)
 - [How to decrease the consumption?](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-to-decrease-the-consumption)
 
 ## What is Charged?
@@ -27,7 +27,7 @@ The detailed information on the amount of consumed resources can be seen in the 
 - the total usage **Statistics** on all resources types (i.e. RAM, CPU, Storage and Network Bandwidth) can be seen via the appropriate section for the desired node/set of the same-type nodes
 - finally, the **Billing History** section provides any information on all the payable resources, consumed during the stated period, and their costs.
 
-The details on each of these options can be seen in the [Monitor Consumed Resources](/docs/Account&Pricing/Resource%20Charging/Monitoring%20Consumed%20Resources) document.
+The details on each of these options can be seen in the [Monitor Consumed Resources](/docs/account-and-pricing/resource-charging/monitoring-consumed-resources) document.
 
 ## How Much do Resources Cost?
 
@@ -47,7 +47,7 @@ Navigate to **Balance > Quotas & Pricing** menu item. Here you’ll see a set of
 
 </div>
 
-Choose the one you are interested in to see the pricing and discount scale offered by your hosting provider. You can find more information about pricing and discount systems in the [Pricing System](/docs/Account&Pricing/Pricing%20Model%20Overview) and [Automatic Discounts](/docs/Account&Pricing/Automatic%20Discounts) documents.
+Choose the one you are interested in to see the pricing and discount scale offered by your hosting provider. You can find more information about pricing and discount systems in the [Pricing System](/docs/account-and-pricing/pricing-model-overview) and [Automatic Discounts](/docs/Account&Pricing/Automatic%20Discounts) documents.
 
 Note that the various software stacks are provided free of charge in the platform. You only pay for the resources consumed but not for the software itself.
 
@@ -72,4 +72,4 @@ You are going to pay only for **disk space** that you use and for **public IP** 
 Follow the links to get acquainted with useful tips on consuming platform resources in a smart way:
 
 - [Save Your Cloud Money!](https://cloudmydc.com/)
-- [How to Manage the Application Lifecycle in PaaS](/docs/ApplicationSetting/Application%20Lifecycle%20Management)
+- [How to Manage the Application Lifecycle in PaaS](/docs/application-setting/application-lifecycle-management)

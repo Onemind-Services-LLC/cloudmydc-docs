@@ -147,7 +147,7 @@ In just the same way, you can enable the _Auto refresh_ option again.
 
 :::tip Tip
 
-If you use the remote [GIT/SVN](/docs/Deployment/Deployment%20Guide) repository for deploying your application, a new **vcs_update** pull log file is added to your [Maven](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven) node (for Java) or [Apache](/docs/PHP/PHP%20App%20Servers/Apache%20PHP/)/[NGINX](/docs/PHP/PHP%20App%20Servers/NGINX%20PHP/) application server (for PHP), which contains the information on your project’s building and deploying.
+If you use the remote [GIT/SVN](/docs/deployment/deployment-guide) repository for deploying your application, a new **vcs_update** pull log file is added to your [Maven](/docs/java/build-node/java-vcs-deployment-with-maven) node (for Java) or [Apache](/docs/PHP/PHP%20App%20Servers/Apache%20PHP/)/[NGINX](/docs/PHP/PHP%20App%20Servers/NGINX%20PHP/) application server (for PHP), which contains the information on your project’s building and deploying.
 
 <div style={{
     display:'flex',

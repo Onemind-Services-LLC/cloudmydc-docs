@@ -6,7 +6,7 @@ sidebar_position: 8
 
 ## Manual Database Backups
 
-The platform provides all [certified database stacks](/docs/QuickStart/Software%20Stack%20Versions) with a convenient and straightforward script for backing up the stored data. Thus, the process is as simple as providing the required parameters and can be accomplished in a matter of minutes. Herewith, no specialized knowledge is needed - just follow the [setup steps](/docs/Database/Database%20Hosting/Manual%20Database%20Backups#backups-scheduling) to configure the appropriate cron expression.
+The platform provides all [certified database stacks](/docs/quickstart/software-stack-versions) with a convenient and straightforward script for backing up the stored data. Thus, the process is as simple as providing the required parameters and can be accomplished in a matter of minutes. Herewith, no specialized knowledge is needed - just follow the [setup steps](/docs/Database/Database%20Hosting/Manual%20Database%20Backups#backups-scheduling) to configure the appropriate cron expression.
 
 Additionally, we’ll show how you can work with the created backups:
 
@@ -88,7 +88,7 @@ If your **_{password}_** contains special characters, it should be included in t
 
 **Save** the settings to apply them.
 
-4. To store data on some other node or the remote server, you can configure the appropriate [mount point](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points) for your database.
+4. To store data on some other node or the remote server, you can configure the appropriate [mount point](/docs/data-storage-container/data-sharing/mount-points) for your database.
 
 <div style={{
     display:'flex',

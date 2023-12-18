@@ -42,7 +42,7 @@ The obligatory points here are:
 
 :::
 
-3. Everything is set up now, i.e. new incoming requests are evenly routed to both application versions with monitored conversion score. So just share your Traffic Distributor entry point link (i.e. environment domain or your [custom](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name) one) among users and wait for some period of time for your customers to try out the given app versions and collect some data on conversions.
+3. Everything is set up now, i.e. new incoming requests are evenly routed to both application versions with monitored conversion score. So just share your Traffic Distributor entry point link (i.e. environment domain or your [custom](/docs/application-setting/domain-name-management/custom-domain-name) one) among users and wait for some period of time for your customers to try out the given app versions and collect some data on conversions.
 
 4. Finally, analyse the results you’ve gathered to choose which project branch is more preferable for usage. Obviously, environment with higher _Conversion Rate_ will win the race and can be boldly used in production, while the other one can be removed or just modified for another testing.
 

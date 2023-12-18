@@ -31,7 +31,7 @@ The platform provides two automated ways to get a PostgreSQL cluster:
 
 ## Pre-Packaged Marketplace Solution
 
-The quickest and most straightforward way to create a PostgreSQL cluster is to use the pre-packaged solution from the [marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace#marketplace).
+The quickest and most straightforward way to create a PostgreSQL cluster is to use the pre-packaged solution from the [marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
 
 1. Click the **Marketplace** button at the top-left of the dashboard and search for the **_PostgreSQL Primary-Secondary Cluster_** package.
 
@@ -77,7 +77,7 @@ When finished, you’ll be shown the appropriate notification with data for Post
 
 PostgreSQL database cluster can be enabled via the embedded **Auto-Clustering** feature at the dashboard. It provides more customization options compared to the marketplace option while still automating all the configuration processes.
 
-1. Open a new environment [topology wizard](/docs/EnvironmentManagement/Setting%20Up%20Environment), pick the **_PostgreSQL_** database software stack and just turn on a dedicated **Auto-Clustering** switch. If needed, you can enable Pgpool-II load balancer for your cluster.
+1. Open a new environment [topology wizard](/docs/environment-management/setting-up-environment), pick the **_PostgreSQL_** database software stack and just turn on a dedicated **Auto-Clustering** switch. If needed, you can enable Pgpool-II load balancer for your cluster.
 
 <div style={{
     display:'flex',

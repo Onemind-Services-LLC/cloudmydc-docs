@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Automatic Horizontal Scaling
 
-In addition to the inbuilt [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling), the platform can automatically scale nodes horizontally, changing the number of containers within a [layer](/docs/PlatformOverview/Basics%20&%20Terminology#layer) ([nodeGroup](https://docs.cloudscripting.com/creating-manifest/selecting-containers/#all-containers-by-group)) based on incoming load. Herewith, all instances within the same layer are evenly distributed across the available hardware sets (hosts) using the anti-affinity rules. Namely, when a new container is created, it is placed at the host with the least number of instances from the same layer and the lowest load mark, which ensures [reliability and high-availability](/docs/PlatformOverview/Isolated%20Container) of the hosted projects.
+In addition to the inbuilt [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling), the platform can automatically scale nodes horizontally, changing the number of containers within a [layer](/docs/platform-overview/basics-&-terminology#layer) ([nodeGroup](https://docs.cloudscripting.com/creating-manifest/selecting-containers/#all-containers-by-group)) based on incoming load. Herewith, all instances within the same layer are evenly distributed across the available hardware sets (hosts) using the anti-affinity rules. Namely, when a new container is created, it is placed at the host with the least number of instances from the same layer and the lowest load mark, which ensures [reliability and high-availability](/docs/PlatformOverview/Isolated%20Container) of the hosted projects.
 
 <div style={{
     display:'flex',
@@ -169,7 +169,7 @@ Select the required option to finish trigger creation (adjustment).
 
 You can view the history of scaling triggers execution for a particular environment.
 
-In the example below, we’ll apply high load for 5 minutes (see the RAM usage [statistics](/docs/ApplicationSetting/Built-in%20Monitoring/Statistics) in the image below) on the application server with the following triggers configured:
+In the example below, we’ll apply high load for 5 minutes (see the RAM usage [statistics](/docs/application-setting/built-in-monitoring/statistics) in the image below) on the application server with the following triggers configured:
 
 - **_add node_** when average RAM load is more than 65% for at least 5 minutes
 - **_remove node_** when average RAM load is less than 20% for at least 10 minutes

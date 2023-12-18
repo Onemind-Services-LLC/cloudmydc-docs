@@ -221,7 +221,7 @@ Fixed
 
 ## AlmaLinux 9 Base OS Image
 
-Starting with the current 8.3 release, CloudMyDc Application Platform starts transitioning to the [software stacks](/docs/QuickStart/Software%20Stack%20Versions) based on the new **_AlmaLinux 9_** images (from the previously used CentOS 7). Such a change ensures support of all the up-to-date functionality, modern security standards, and compatibility with all the latest software solutions.
+Starting with the current 8.3 release, CloudMyDc Application Platform starts transitioning to the [software stacks](/docs/quickstart/software-stack-versions) based on the new **_AlmaLinux 9_** images (from the previously used CentOS 7). Such a change ensures support of all the up-to-date functionality, modern security standards, and compatibility with all the latest software solutions.
 
 The transition process will be gradual and non-intrusive. It follows the next points:
 
@@ -229,8 +229,8 @@ The transition process will be gradual and non-intrusive. It follows the next po
 - All the newly released stack versions will be based on AlmaLinux 9, so the whole pool of images will be seamlessly replaced with the new OS over time.
 - Updates for the CentOS 7 based images will still be provided in case of critical patches and security issues.
 - In the dashboard, tags based on the AlmaLinux 9 will be explicitly highlighted.
-- [Redeployment](/docs/Container/Container%20Redeploy) from the CentOS 7 to the AlmaLinux 9 version of the stack can be performed without any setbacks. <u>However, downgrading back to CentOS 7 is not supported.</u>
-- The up-to-date list of the [software stacks](/docs/QuickStart/Software%20Stack%20Versions) based on the AlmaLinux 9 image can be checked in the linked document.
+- [Redeployment](/docs/category/container-deployment) from the CentOS 7 to the AlmaLinux 9 version of the stack can be performed without any setbacks. <u>However, downgrading back to CentOS 7 is not supported.</u>
+- The up-to-date list of the [software stacks](/docs/quickstart/software-stack-versions) based on the AlmaLinux 9 image can be checked in the linked document.
 
 <div style={{
     display:'flex',
@@ -242,7 +242,7 @@ The transition process will be gradual and non-intrusive. It follows the next po
 
 </div>
 
-Alongside the AlmaLinux 9 image implementation, some new functionality is introduced, including updated key generation (_rsa-sha2-256_ and _rsa-sha2-512_ signatures support), updated Guacamole ([Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH)) client, and **_[nftables](https://netfilter.org/projects/nftables/)_** netfilter (replaces _iptables_). The _nftables_ solution is a new recommended choice for firewall rules management. It offers unified and consistent syntax (contrary to the _xtables_ utilities), high performance through maps and concatenations, and increased security as rules get translated into bytecode. At the same time, all the dashboard UI and API calls remain the same as before so that the management process is unchanged.
+Alongside the AlmaLinux 9 image implementation, some new functionality is introduced, including updated key generation (_rsa-sha2-256_ and _rsa-sha2-512_ signatures support), updated Guacamole ([Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh)) client, and **_[nftables](https://netfilter.org/projects/nftables/)_** netfilter (replaces _iptables_). The _nftables_ solution is a new recommended choice for firewall rules management. It offers unified and consistent syntax (contrary to the _xtables_ utilities), high performance through maps and concatenations, and increased security as rules get translated into bytecode. At the same time, all the dashboard UI and API calls remain the same as before so that the management process is unchanged.
 
 Other stack-related changes include an updated list of [supported OS distributions](/docs/Container/Container%20Image%20Requirements), including **CentOS Stream 9** addition and **Debian 9** deprecation.
 
@@ -325,7 +325,7 @@ Lastly the ability to enable/disable **Auto Pay** option was implemented, allowi
 
 ## Action Initiator for Emails
 
-CloudMyDc Application Platform provides a powerful [collaboration functionality](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview#account-collaboration) that allows multiple users to work on the same account. However, with high participants number and active development, it may become difficult to track all the actions performed by individuals and create confusion on whether the account is compromised. In order to help the tracking efforts, the email notifications were extended with the “action initiator” data. Depending on the operation, it can be the email address of the collaboration member or a reference to the internal trigger (e.g., [automatic horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling)).
+CloudMyDc Application Platform provides a powerful [collaboration functionality](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview#account-collaboration) that allows multiple users to work on the same account. However, with high participants number and active development, it may become difficult to track all the actions performed by individuals and create confusion on whether the account is compromised. In order to help the tracking efforts, the email notifications were extended with the “action initiator” data. Depending on the operation, it can be the email address of the collaboration member or a reference to the internal trigger (e.g., [automatic horizontal scaling](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling)).
 
 <div style={{
         display: 'flex',
@@ -481,9 +481,9 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/QuickStart/Software%20Stack%20Versions)
+[More info](/docs/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',

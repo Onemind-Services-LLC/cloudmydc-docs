@@ -30,7 +30,7 @@ Once the [collaboration is established](/docs/Account&Pricing/Accounts%20Collabo
 
 </div>
 
-3. At the **[Env Groups](/docs/EnvironmentManagement/Environment%20Groups/Overview)** **> Shared with Me** tab, you can see the complete list of shared environments and groups.
+3. At the **[Env Groups](/docs/environment-management/environment-groups/overview)** **> Shared with Me** tab, you can see the complete list of shared environments and groups.
 
 <div style={{
     display:'flex',
@@ -130,7 +130,7 @@ Here, you can select an account and group to create your environment.
 
 :::tip Tip
 
-If you have permission to install packages from the [Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace), the **_Owner_** field will be added to the installation window.
+If you have permission to install packages from the [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace), the **_Owner_** field will be added to the installation window.
 
 <div style={{
     display:'flex',
@@ -144,7 +144,7 @@ If you have permission to install packages from the [Marketplace](/docs/Deployme
 
 :::
 
-The limitations of the selected owner are automatically applied to the topology wizard or installation window (for [imported](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import) and Marketplace packages).
+The limitations of the selected owner are automatically applied to the topology wizard or installation window (for [imported](/docs/environment-management/environment-export-and-import/environment-import) and Marketplace packages).
 
 <div style={{
     display:'flex',

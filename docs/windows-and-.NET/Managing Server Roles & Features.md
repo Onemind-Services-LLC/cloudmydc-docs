@@ -6,7 +6,7 @@ sidebar_position: 4
 
 ## Set Windows Roles and Features via Server Manager
 
-[Windows VM](/docs/Windows&.NET/Windows%20Server%20VM) provides a powerful GUI of Windows OS that can be accessed via [remote desktop protocol](/docs/Windows&.NET/Windows%20RD%20Access) (RDP). It allows connect to and manage your Windows instance remotely, for example:
+[Windows VM](/docs/Windows&.NET/Windows%20Server%20VM) provides a powerful GUI of Windows OS that can be accessed via [remote desktop protocol](/docs/windows-and-.NET/windows-rd-access) (RDP). It allows connect to and manage your Windows instance remotely, for example:
 
 - via the [Guacamole](/docs/Windows&.NET/Windows%20RD%20Access#rdp-connection-via-web-client) HTML5 tool directly in your browser
 - via the [local RD client](/docs/Windows&.NET/Windows%20RD%20Access#rdp-connection-via-local-client) (the appropriate credentials for connection establishment can be found in the email, sent after environment creation)
@@ -18,7 +18,7 @@ For configuring Windows virtual private server via RDP, the inbuilt Server Manag
 
 ## Set Windows VM Roles
 
-Once [connected](/docs/Windows&.NET/Windows%20RD%20Access) to the required node’s desktop, you’ll see the **Server Manager** tool opened. As an example, let’s add a new server role with the following steps.
+Once [connected](/docs/windows-and-.NET/windows-rd-access) to the required node’s desktop, you’ll see the **Server Manager** tool opened. As an example, let’s add a new server role with the following steps.
 
 1. Click the **Add roles and features** link located on the manager’s main page.
 
@@ -146,6 +146,6 @@ Also, you can always remove any custom role or feature with the help of the comp
 
 :::tip Tip
 
-If you’d like to learn more about the available Windows VM possibilities, refer to the [Windows Server 2008 R2](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd349801(v=ws.10)?redirectedfrom=MSDN) and [Windows Server 2012](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh801901(v=ws.11)?redirectedfrom=MSDN) official documentation.
+If you’d like to learn more about the available Windows VM possibilities, refer to the [Windows Server 2008 R2](<https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd349801(v=ws.10)?redirectedfrom=MSDN>) and [Windows Server 2012](<https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh801901(v=ws.11)?redirectedfrom=MSDN>) official documentation.
 
 :::

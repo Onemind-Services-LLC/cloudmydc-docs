@@ -69,7 +69,7 @@ To access PaaS from your IDEA, navigate to **Settings > Jelastic**, type your ac
 
 :::danger Note
 
-On accounts with [two-factor authentication](/docs/Account&Pricing/Two-Factor%20Authentication) enabled, a dedicated **_IDE Plugins_** [access token](/docs/Account&Pricing/Personal%20Access%20Tokens) should be used instead of the password.
+On accounts with [two-factor authentication](/docs/account-and-pricing/two-factor-authentication) enabled, a dedicated **_IDE Plugins_** [access token](/docs/account-and-pricing/personal-access-tokens) should be used instead of the password.
 
 <div style={{
     display:'flex',
@@ -89,7 +89,7 @@ When you are finished, proceed to the following section to deploy your applicati
 
 After installing the plugin, you can see a button with the platform logo in the main IDEA toolbar or in the pop-up menu for the **Projects** tool window. Click this button to deploy your Java web project.
 
-In the opened window, choose the appropriate artifact (**_.ear_**, **_.jar_** or **_.war_** archive), state the **Context**, select the destination [environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) from the list and confirm your choice.
+In the opened window, choose the appropriate artifact (**_.ear_**, **_.jar_** or **_.war_** archive), state the **Context**, select the destination [environment](/docs/environment-management/setting-up-environment) from the list and confirm your choice.
 
 The selected project will be displayed within the **PaaS Tool Window** in IDEA. Click the **Deploy** button for the plugin to run a build of the provided artifact and deploy it to the platform.
 

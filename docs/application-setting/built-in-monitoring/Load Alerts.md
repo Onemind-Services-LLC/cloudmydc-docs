@@ -120,7 +120,7 @@ In this way, you can set up a number of different triggers for any existing node
 
 You can view the history of triggers' executions for the nodes of a particular environment within its settings.
 
-1. Navigate to the **Monitoring > Events History** section. The **_Load Alerts_** notification **Type** will be chosen automatically (whilst the second option in the appropriate list is devoted to [auto horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling) history).
+1. Navigate to the **Monitoring > Events History** section. The **_Load Alerts_** notification **Type** will be chosen automatically (whilst the second option in the appropriate list is devoted to [auto horizontal scaling](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) history).
 
 <div style={{
     display:'flex',

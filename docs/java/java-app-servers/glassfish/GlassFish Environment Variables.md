@@ -113,7 +113,7 @@ As you can see, the changes were successfully applied.
 
 The following simple workflow is identical for all of the platform-managed Java application servers.
 
-1. Click the **Config** button for your application server to access container [file manager](/docs/ApplicationSetting/Configuration%20File%20Manager).
+1. Click the **Config** button for your application server to access container [file manager](/docs/application-setting/configuration-file-manager).
 
 <div style={{
     display:'flex',

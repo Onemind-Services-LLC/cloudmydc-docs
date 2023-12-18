@@ -99,7 +99,7 @@ Wait just a minute for your environment to be created.
 
 </div>
 
-3. In the same way, create one more environment with MariaDB or just [clone](/docs/EnvironmentManagement/Cloning%20Environment) it. Let’s name it slavebase. It will be located on the other hardnode, which is even more secure and reliable for storing your data.
+3. In the same way, create one more environment with MariaDB or just [clone](/docs/environment-management/cloning-environment) it. Let’s name it slavebase. It will be located on the other hardnode, which is even more secure and reliable for storing your data.
 
 Now you have two identical environments with two databases.
 

@@ -56,7 +56,7 @@ With the platform you can create the required environment in several clicks - ju
 
 </div>
 
-4. Upload and deploy your application using the platform Deployment Manager or via the remote GIT/SVN repository (the required instruction, according to the chosen engine, can be found in our [Deployment Guide](/docs/Deployment/Deployment%20Guide)).
+4. Upload and deploy your application using the platform Deployment Manager or via the remote GIT/SVN repository (the required instruction, according to the chosen engine, can be found in our [Deployment Guide](/docs/deployment/deployment-guide)).
 
 <div style={{
     display:'flex',

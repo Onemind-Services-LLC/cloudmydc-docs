@@ -27,7 +27,7 @@ Just update your code, make a commit and all the changes in your VCS project wil
 
 ## Preparing a Project
 
-1. First of all, prepare an [environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) for further addition of the intended project with the code from Git/SVN.
+1. First of all, prepare an [environment](/docs/environment-management/setting-up-environment) for further addition of the intended project with the code from Git/SVN.
 
 :::tip Note
 
@@ -65,7 +65,7 @@ Also, in case of a Maven build node usage, you need to additionally specify the 
 
 :::tip Tip
 
-If you need more detailed information on these options, refer to the relevant [Deployment Guide](/docs/Deployment/Deployment%20Guide) instruction and [Maven for Deploy via Git/SVN](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven) for Java engine specifics.
+If you need more detailed information on these options, refer to the relevant [Deployment Guide](/docs/deployment/deployment-guide) instruction and [Maven for Deploy via Git/SVN](/docs/java/build-node/java-vcs-deployment-with-maven) for Java engine specifics.
 
 :::
 

@@ -10,15 +10,15 @@ With the platform intuitive UI, you can quickly deploy your applications to the 
 
 This guide shows some of the basic steps required to get started with the platform:
 
-- [sign up](/docs/QuickStart/Getting%20Started#sign-up-how-to-create-an-account)
-- [deploy application](/docs/QuickStart/Getting%20Started#deploy-application)
+- [sign up](/docs/quickstart/getting-started#sign-up-how-to-create-an-account)
+- [deploy application](/docs/quickstart/getting-started#deploy-application)
 
 ## Sign Up: How to Create an Account
 
 In order to start working with the platform, you need the appropriate account. So, if you don’t have one yet, register a new one via:
 
-- [dedicated Cloud Union website](/docs/QuickStart/Getting%20Started#cloud-union)
-- [particular platform dashboard](/docs/QuickStart/Getting%20Started#platform-dashboard)
+- [dedicated Cloud Union website](/docs/quickstart/getting-started#cloud-union)
+- [particular platform dashboard](/docs/quickstart/getting-started#platform-dashboard)
 
 After sign up, you will receive a confirmation email, so just follow the provided instructions (additional verification via captcha or SMS may be required).
 
@@ -56,7 +56,7 @@ That’s it, check your inbox for the confirmation email.
 
 ## Platform Dashboard
 
-Access particular platform via [hoster domain](/docs/QuickStart/Hosters%20List%20&%20Info#paas-hosting-providers).
+Access particular platform via [hoster domain](/docs/quickstart/hosters-list-&-info#paas-hosting-providers).
 
 1. Expand the menu at the bottom-left corner and select the Signup](https://cloudmydc.com/) option.
 
@@ -90,12 +90,12 @@ That’s it, the platform will automatically send the confirmation email to you.
 
 When you access the platform dashboard for the first time, a short tutorial (can be manually called via the **Help > Tutorial** option) will be automatically started. It provides you with a quick platform overview and a step-by-step walkthrough for your first environment creation and application deployment. Follow these tips or skip the tutorial and use the steps described below:
 
-- [automatic deployment from application Marketplace](/docs/QuickStart/Getting%20Started#application-marketplace)
-- [manual deployment via dashboard](/docs/QuickStart/Getting%20Started#platform-dashboard)
+- [automatic deployment from application Marketplace](/docs/quickstart/getting-started#application-marketplace)
+- [manual deployment via dashboard](/docs/quickstart/getting-started#platform-dashboard)
 
 ## Application Marketplace
 
-You can access [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace#marketplace) directly from the dashboard to install various popular solutions in one click.
+You can access [platform Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace) directly from the dashboard to install various popular solutions in one click.
 
 1. Click the **Marketplace** button at the top of the dashboard.
 
@@ -115,7 +115,7 @@ You can access [platform Marketplace](/docs/Deployment%20Tools/Cloud%20Scripting
 
 Hover over the application plank and click the **Install** button.
 
-3. Configure installation preferences (e.g. environment name, [alias](/docs/EnvironmentManagement/Environment%20Aliases), [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region), etc.) and click **Install** one more time.
+3. Configure installation preferences (e.g. environment name, [alias](/docs/environment-management/environment-aliases), [region](/docs/environment-management/environment-regions/choosing-a-region), etc.) and click **Install** one more time.
 
 <div style={{
     display:'flex',
@@ -146,12 +146,12 @@ In case you want to deploy any custom application and manually control the deplo
 
 </div>
 
-2. The **Topology Wizard** will be opened, where you can [set up your environment](/docs/EnvironmentManagement/Setting%20Up%20Environment). Among the central platform features configurable via this form, there are:
+2. The **Topology Wizard** will be opened, where you can [set up your environment](/docs/environment-management/setting-up-environment). Among the central platform features configurable via this form, there are:
 
 - multiple programming languages support (Java, PHP, Ruby, Python, Node.js, .NET, Go) and custom Docker containers integration
-- wide list of managed [software stacks](/docs/QuickStart/Software%20Stack%20Versions).
-- [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling) to ensure fair pricing and [horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling) to provide flexibility and reliability
-- [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) attachment for direct access from the Internet
+- wide list of managed [software stacks](/docs/quickstart/software-stack-versions).
+- [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) to ensure fair pricing and [horizontal scaling](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) to provide flexibility and reliability
+- [public IP](/docs/application-setting/external-access-to-applications/public-ip) attachment for direct access from the Internet
 
 ![Locale Dropdown](./img/GettingStarted/09-topology-wizard.png)
 
@@ -161,13 +161,13 @@ For now, let’s **Create** just a single Tomcat application server.
 
 ![Locale Dropdown](./img/GettingStarted/10-new-environment-on-dashboard.png)
 
-4. The platform supports multiple ways of automatic [application deployment](/docs/Deployment/Deployment%20Guide) so that you can select the most suitable option. For this example, we’ll show the deployment of a default Hello World application from the archive in the deployment manager (located at the bottom of the dashboard).
+4. The platform supports multiple ways of automatic [application deployment](/docs/deployment/deployment-guide) so that you can select the most suitable option. For this example, we’ll show the deployment of a default Hello World application from the archive in the deployment manager (located at the bottom of the dashboard).
 
 ![Locale Dropdown](./img/GettingStarted/11-application-deploy-from-deployment-manager.png)
 
 :::tip Tip
 
-You can easily add your applications to the [Deployment Manager](/docs/Deployment/Deployment%20Manager) by uploading archive (either from local machine or via URL) or adding the appropriate Git/SVN repository.
+You can easily add your applications to the [Deployment Manager](/docs/deployment/deployment-manager) by uploading archive (either from local machine or via URL) or adding the appropriate Git/SVN repository.
 
 :::
 
@@ -189,6 +189,6 @@ Hover over the project and click the **Deploy to** button.
 
 ![Locale Dropdown](./img/GettingStarted/13-open-in-browser-button.png)
 
-6. Herewith, if your application requires some additional settings or don’t have a web interface, do not hesitate to use various in-build [configuration tools](/docs/Container/Container%20Configuration/Configuration%20Tools).
+6. Herewith, if your application requires some additional settings or don’t have a web interface, do not hesitate to use various in-build [configuration tools](/docs/container/container-configuration/configuration-tools).
 
 That’s all! Enjoy using the platform!

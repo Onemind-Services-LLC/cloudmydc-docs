@@ -89,7 +89,7 @@ Click the **Open in Browser** button to access the server’s default page.
 
 </div>
 
-Now, you can proceed to the [application deployment](/docs/Deployment/Deployment%20Guide).
+Now, you can proceed to the [application deployment](/docs/deployment/deployment-guide).
 
 :::tip
 

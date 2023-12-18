@@ -10,7 +10,7 @@ With the help of [Traffic Distributor](/docs/ApplicationSetting/Traffic%20Distri
 
 So let’s reveal how to get rid of such problems and apply blue-green updates to your project by means of the proposed traffic routing solution.
 
-1. Let’s assume we have two environments (with the _Blue_ and _Green_ [aliases](/docs/EnvironmentManagement/Environment%20Aliases) set for each of them for better differentiation) and Traffic Distributor within a separate environment, intended to route traffic between them:
+1. Let’s assume we have two environments (with the _Blue_ and _Green_ [aliases](/docs/environment-management/environment-aliases) set for each of them for better differentiation) and Traffic Distributor within a separate environment, intended to route traffic between them:
 
 <div style={{
     display:'flex',

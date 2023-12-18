@@ -24,7 +24,7 @@ Nevertheless, in case you’d like to achieve more high-availability (i.e. for t
 
 </div>
 
-- use the appropriate [CLI method](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview) for VCS projects' management:
+- use the appropriate [CLI method](/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview) for VCS projects' management:
 
 ```bash
 ~/jelastic/environment/vcs/update --envName {env_name} --project {app_context}

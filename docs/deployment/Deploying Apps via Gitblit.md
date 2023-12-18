@@ -34,7 +34,7 @@ Just click **Get it hosted now** and type your email address in order to launch 
 
 :::tip Note
 
-The full list of applications, available for one-click installation, can be found at our [Marketplace page](https://cloudmydc.com/pricing) or within the [corresponding](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/Marketplace) section at the dashboard.
+The full list of applications, available for one-click installation, can be found at our [Marketplace page](https://cloudmydc.com/pricing) or within the [corresponding](/docs/deployment-tools/cloud-scripting-&-jps/marketplace) section at the dashboard.
 
 :::
 
@@ -277,11 +277,11 @@ Now, let’s discover how to deploy your project from a Gitblit repository into 
 
 that the extra Maven node is required for Java projects only, while for the rest of engines build is performed automatically, while adding a project to application server. Refer to the appropriate document below in case you need details on how to accomplish this:
 
-- [Maven for Deploy via Git/SVN](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven)
-- [Deploy PHP Projects via Git/SVN](/docs/Deployment/Deployment%20Guide)
-- [Deploy Ruby Project via Git/SVN](/docs/Deployment/Deployment%20Guide)
-- [Deploy Python Projects via Git/SVN](/docs/Deployment/Deployment%20Guide)
-- [Deploy Node.js Project via Git/SVN ](/docs/Deployment/Deployment%20Guide)
+- [Maven for Deploy via Git/SVN](/docs/java/build-node/java-vcs-deployment-with-maven)
+- [Deploy PHP Projects via Git/SVN](/docs/deployment/deployment-guide)
+- [Deploy Ruby Project via Git/SVN](/docs/deployment/deployment-guide)
+- [Deploy Python Projects via Git/SVN](/docs/deployment/deployment-guide)
+- [Deploy Node.js Project via Git/SVN ](/docs/deployment/deployment-guide)
 
 :::
 

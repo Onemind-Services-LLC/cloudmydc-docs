@@ -170,7 +170,7 @@ Ensuring the full-functional remote management, platform CLI works with all type
 - [environment cloning](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Environment%20Cloning)
 - [environment migration](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Environment%20Migration)
 - [server scaling](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Server%20Scaling)
-- [container redeploy](/docs/Container/Container%20Redeploy)
+- [container redeploy](/docs/category/container-deployment)
 - [container volumes](/docs/Container/Container%20Configuration/Volumes)
 - [mount points](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Mount%20Points)
 - [VCS projects deployment](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/VCS%20Project%20Deployment)

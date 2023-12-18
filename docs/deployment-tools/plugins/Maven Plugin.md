@@ -10,13 +10,13 @@ sidebar_position: 4
 
 :::tip Tip
 
-Alternatively, you can manage your project remotely (i.e. from anywhere over the Internet) by creating [Maven build node](/docs/Java/Build%20Node/Java%20VCS%20Deployment%20with%20Maven) at the platform and storing project at any preferable GIT version control system.
+Alternatively, you can manage your project remotely (i.e. from anywhere over the Internet) by creating [Maven build node](/docs/java/build-node/java-vcs-deployment-with-maven) at the platform and storing project at any preferable GIT version control system.
 
 :::
 
 Follow the next steps to deploy your Java applications into the platform with the help of the Maven plugin:
 
-1. Ensure you have a running Java environment to deploy your project into. If needed, [create](/docs/EnvironmentManagement/Setting%20Up%20Environment) a new one by following the linked guide.
+1. Ensure you have a running Java environment to deploy your project into. If needed, [create](/docs/environment-management/setting-up-environment) a new one by following the linked guide.
 
 2. Prepare Java project using the [Maven](https://maven.apache.org/download.cgi) build tool (manually or using any IDE).
 
@@ -51,7 +51,7 @@ Follow the next steps to deploy your Java applications into the platform with th
 
 :::danger Note
 
-You can generate [access token](/docs/Account&Pricing/Personal%20Access%20Tokens) for **_Maven Plugin_** via the dashboard.
+You can generate [access token](/docs/account-and-pricing/personal-access-tokens) for **_Maven Plugin_** via the dashboard.
 
 <div style={{
     display:'flex',
@@ -79,7 +79,7 @@ Initiates your application deployment, substitute the **_{password}_** placehold
 mvn jelastic:publish
 ```
 
-Builds and uploads **_.war_** file to your account [deployment manager](/docs/Deployment/Deployment%20Manager) without actually deploying project.
+Builds and uploads **_.war_** file to your account [deployment manager](/docs/deployment/deployment-manager) without actually deploying project.
 
 ```bash
 mvn clean install jelastic:deploy

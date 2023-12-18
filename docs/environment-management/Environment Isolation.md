@@ -28,7 +28,7 @@ This way, each internal connection between nodes on the platform needs to pass t
 
 :::tip Tip
 
-Additionally, the connectivity of nodes can be restricted by the [container firewall](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall) rules, which represent a more flexible solution that is suitable for both internal and external access management.
+Additionally, the connectivity of nodes can be restricted by the [container firewall](/docs/application-setting/external-access-to-applications/container-firewall) rules, which represent a more flexible solution that is suitable for both internal and external access management.
 
 :::
 
@@ -36,7 +36,7 @@ Additionally, the connectivity of nodes can be restricted by the [container fire
 
 If the **Network Isolation** feature is enabled on the platform, all accounts are isolated from each other by default. In such a case, the connection between environments on different user accounts can be established only if configured explicitly on both ends.
 
-Additionally, the feature allows developers to isolate [groups of environments](/docs/EnvironmentManagement/Environment%20Groups/Overview) within a particular account. Just turn on the **_Network Isolation_** switcher in the **Add/Edit Group** frame.
+Additionally, the feature allows developers to isolate [groups of environments](/docs/environment-management/environment-groups/overview) within a particular account. Just turn on the **_Network Isolation_** switcher in the **Add/Edit Group** frame.
 
 <div style={{
     display:'flex',
@@ -55,7 +55,7 @@ While managing Network Isolation, you should consider the following peculiaritie
 - isolation can be enabled for the top-level group only (i.e. not for [subgroups](/docs/EnvironmentManagement/Environment%20Groups/Group%20Management#add-subgroups))
 - environment groups with enabled isolation are provided with a custom shield icon (![Locale Dropdown](./img/EnvironmentIsolation/03-isolated-group-icon.png) ) for better recognition
 - [shared environments](/docs/EnvironmentManagement/Share%20Environment) can not be included into isolated groups by collaborators
-- this feature is not suitable to limit the access to your containers from outside of the platform (e.g. via [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP))
+- this feature is not suitable to limit the access to your containers from outside of the platform (e.g. via [public IP](/docs/application-setting/external-access-to-applications/public-ip))
 
 ## Using Network Isolation
 
@@ -63,6 +63,6 @@ Summing all this up, _Network Isolation_ is a useful and user-oriented feature a
 
 - If you need to share access to your application or database with a third-party employee or company, you’ll be sure that containers inside the isolated group won’t be accessible via the platform’s internal network
 
-- If you are [cloning](/docs/EnvironmentManagement/Cloning%20Environment) an initially isolated project, it will be protected from the clone’s influence (e.g. if your copied project inherited a “hardcoded” database access, it will be disabled by the network Isolation feature so that the actual production data could not be changed)
+- If you are [cloning](/docs/environment-management/cloning-environment) an initially isolated project, it will be protected from the clone’s influence (e.g. if your copied project inherited a “hardcoded” database access, it will be disabled by the network Isolation feature so that the actual production data could not be changed)
 
 This way, the _Network Isolation_ feature can separate projects on a single account and prevent undesired interconnections between them.

@@ -246,7 +246,7 @@ Currently, the platform supports the following SSH key types:
 
 ## Extended Environment Metadata
 
-Each environment on the platform has its common information stored via the dedicated JSON file. Such implementation simplifies various internal processes by allowing PaaS to get the required data quickly. Additionally, this data is utilized during the [environment export](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Export) operation. In the current platform upgrade, environments’ metadata was extended with a JSON field for various additional information (e.g. _ProjectName_ or _ProjectScope_).
+Each environment on the platform has its common information stored via the dedicated JSON file. Such implementation simplifies various internal processes by allowing PaaS to get the required data quickly. Additionally, this data is utilized during the [environment export](/docs/environment-management/environment-export-and-import/environment-export) operation. In the current platform upgrade, environments’ metadata was extended with a JSON field for various additional information (e.g. _ProjectName_ or _ProjectScope_).
 
 <div style={{
         display: 'flex',
@@ -431,9 +431,9 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/QuickStart/Software%20Stack%20Versions)
+[More info](/docs/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',

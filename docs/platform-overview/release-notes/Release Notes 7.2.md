@@ -244,7 +244,7 @@ Continuing the smooth integration of the PaaS (formerly known as Jelastic) with 
 
 ## Collaboration Policy for Custom Commands
 
-In order to extend the capabilities of the [account collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview) feature even further and ensure the possibility of providing full access to the shared account, a new **Execute CMD** policy was added. If included in the collaboration role, it allows members to execute custom CMD commands on the shared environments. This permission may be required when installing some complex JPS solutions.
+In order to extend the capabilities of the [account collaboration](/docs/account-and-pricing/accounts-collaboration/collaboration-overview) feature even further and ensure the possibility of providing full access to the shared account, a new **Execute CMD** policy was added. If included in the collaboration role, it allows members to execute custom CMD commands on the shared environments. This permission may be required when installing some complex JPS solutions.
 
 <div style={{
     display:'flex',
@@ -268,7 +268,7 @@ In order to extend the capabilities of the [account collaboration](/docs/Account
 
 ## Environment Selection Field Adjustment
 
-In the current CloudMyDc Application Platform 7.2 release, the dashboard’s combo-boxes for environment selection were improved. For now, the displayed items provide better clarity by showing both the [custom alias](/docs/EnvironmentManagement/Environment%20Aliases) (if specified) and the environment name. Such implementation uniquely identifies the provided options and helps avoid possible confusion when several environments have similar aliases.
+In the current CloudMyDc Application Platform 7.2 release, the dashboard’s combo-boxes for environment selection were improved. For now, the displayed items provide better clarity by showing both the [custom alias](/docs/environment-management/environment-aliases) (if specified) and the environment name. Such implementation uniquely identifies the provided options and helps avoid possible confusion when several environments have similar aliases.
 
 <div style={{
     display:'flex',
@@ -296,7 +296,7 @@ CloudMyDc Application Platform supports the most popular [operating system templ
 
 :::tip Note
 
-Do not confuse OS templates (base image for containers) support with container templates ([stacks](/docs/QuickStart/Software%20Stack%20Versions)).
+Do not confuse OS templates (base image for containers) support with container templates ([stacks](/docs/quickstart/software-stack-versions)).
 
 :::
 
@@ -435,9 +435,9 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/QuickStart/Software%20Stack%20Versions)
+[More info](/docs/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',

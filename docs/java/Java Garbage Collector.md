@@ -156,7 +156,7 @@ You can set a custom GC parameter based on your application requirements via [En
 
 Alternatively, all these parameters can be passed to Java process via **variables.conf** in the container.
 
-All of the paths to config, executable or log files can differ based on the Java server you use and can be accessed via [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager) or [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview).
+All of the paths to config, executable or log files can differ based on the Java server you use and can be accessed via [configuration file manager](/docs/application-setting/configuration-file-manager) or [SSH](/docs/deployment-tools/ssh/ssh-overview).
 
 <div style={{
         width: '100%',
@@ -280,7 +280,7 @@ Also, you can control how JVM handles its heap memory with other JAVA options st
 
 </div>
 
-As a result of properly configured options, the GC can be observed in action via the [Statistics](/docs/ApplicationSetting/Built-in%20Monitoring/Statistics) tab.
+As a result of properly configured options, the GC can be observed in action via the [Statistics](/docs/application-setting/built-in-monitoring/statistics) tab.
 
 <div style={{
     display:'flex',

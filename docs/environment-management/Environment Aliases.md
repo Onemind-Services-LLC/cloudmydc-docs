@@ -58,7 +58,7 @@ Such a custom name will define the corresponding item in all the appropriate lis
 
 </div>
 
-- in the [SSH](/docs/Deployment%20Tools/SSH/SSH%20Overview) console
+- in the [SSH](/docs/deployment-tools/ssh/ssh-overview) console
 
 <div style={{
     display:'flex',
@@ -80,6 +80,6 @@ Such a custom name will define the corresponding item in all the appropriate lis
 
 </div>
 
-Also, these labels are visible for other users [in collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview) and remain attached after environment’s [cloning](/docs/EnvironmentManagement/Cloning%20Environment), [transferring](/docs/EnvironmentManagement/Environment%20Transferring), etc.
+Also, these labels are visible for other users [in collaboration](/docs/account-and-pricing/accounts-collaboration/collaboration-overview) and remain attached after environment’s [cloning](/docs/environment-management/cloning-environment), [transferring](/docs/environment-management/environment-transferring), etc.
 
 Deleting the alias name anytime will return the default value.

@@ -36,7 +36,7 @@ In this way, Spring Boot enables you to keep things portable, whilst Jelastic en
 
 So, log in to your Jelastic Cloud dashboard and let’s get started.
 
-1. First of all, you need to create a **New Environment** - use the same-named button to launch topology wizard. Switch to the **Java** language tab and choose the **Spring Boot** template within the application server layer at the left-hand panel as shown below. Set the amount of [allocated resources](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling), type your environment name and click Create to proceed.
+1. First of all, you need to create a **New Environment** - use the same-named button to launch topology wizard. Switch to the **Java** language tab and choose the **Spring Boot** template within the application server layer at the left-hand panel as shown below. Set the amount of [allocated resources](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling), type your environment name and click Create to proceed.
 
 <div style={{
     display:'flex',
@@ -137,14 +137,14 @@ For that, **Upload** archive with your app via **Deployment Manager** and initia
 In the opened dialog, select the destination environment (the previously created spring-boot-app in our case) and confirm **Deploy** with the same-named button. Wait till the corresponding task is finished.
 
 - **Remote Deploy via CLI**
-  Alternatively, you can leverage [Jelastic CLI](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview) to deploy your application to a target Spring Boot environment remotely with the following command:
+  Alternatively, you can leverage [Jelastic CLI](/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview) to deploy your application to a target Spring Boot environment remotely with the following command:
 
 <b><i>~/jelastic/environment/control/deployapp --envName spring-boot-app --fileUrl
 http://link/to/archive --fileName my_springboot.jar --context ROOT</i></b>
 
 ## Checking Logs
 
-When the deployment is finished, give the system some more time to run the required services (where delay directly depends on your project complexity) - the current progress of this operation can be tracked in real-time via the **_run.log_** server [log](/docs/ApplicationSetting/Built-in%20Monitoring/Log%20Files).
+When the deployment is finished, give the system some more time to run the required services (where delay directly depends on your project complexity) - the current progress of this operation can be tracked in real-time via the **_run.log_** server [log](/docs/application-setting/built-in-monitoring/log-files).
 
 <div style={{
     display:'flex',
@@ -263,7 +263,7 @@ In addition to all the above-mentioned options, Jelastic offers a special Git-Pu
 
 The majority of basic server management operations can be performed right via Jelastic Cloud UI with the appropriate embedded tools, e.g.:
 
-- use the built-in **[Configuration Manager](/docs/ApplicationSetting/Configuration%20File%20Manager)** to create or upload new files, edit or delete the existing ones, set up [mount points](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Points), and manage [exported data](/docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing) from other servers
+- use the built-in **[Configuration Manager](/docs/application-setting/configuration-file-manager)** to create or upload new files, edit or delete the existing ones, set up [mount points](/docs/data-storage-container/data-sharing/mount-points), and manage [exported data](/docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing) from other servers
 
 <div style={{
     display:'flex',
@@ -287,8 +287,8 @@ The majority of basic server management operations can be performed right via Je
 
 </div>
 
-- explore server **[Logs](/docs/ApplicationSetting/Built-in%20Monitoring/Log%20Files)** to get the details on run operations for efficient service administration and troubleshooting
-- track the **[Statistics](/docs/ApplicationSetting/Built-in%20Monitoring/Statistics)** on consumed resources to be aware of the capacities your server actually needs and define the best approach for their allocation
+- explore server **[Logs](/docs/application-setting/built-in-monitoring/log-files)** to get the details on run operations for efficient service administration and troubleshooting
+- track the **[Statistics](/docs/application-setting/built-in-monitoring/statistics)** on consumed resources to be aware of the capacities your server actually needs and define the best approach for their allocation
 
 For more complex maintenance operations, you can connect to your Spring Boot container [via SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) (either using the web or local SSH client). The following tips can come in handy when working with your Spring Boot server:
 
@@ -307,7 +307,7 @@ Jelastic Platform provides real-time elastic scalability that is available out-o
 
 ## Automatic Vertical Scaling
 
-The [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling) is enabled by default and ensures your service remains available during the load spikes, and at the same time, eliminates the need to pay for unused resources. Just decide on maximum limit of resources (set with [cloudlets](/docs/PlatformOverview/Cloudlet)) your application may consume and Jelastic will automatically adjust the maximum memory size (**-Xmx**) for you application based on these capacities, for example:
+The [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) is enabled by default and ensures your service remains available during the load spikes, and at the same time, eliminates the need to pay for unused resources. Just decide on maximum limit of resources (set with [cloudlets](/docs/PlatformOverview/Cloudlet)) your application may consume and Jelastic will automatically adjust the maximum memory size (**-Xmx**) for you application based on these capacities, for example:
 
 - 8 cloudlets (1GiB RAM) set the maximum heap size to 819 MB
 - 16 cloudlets (2GiB RAM) set the maximum heap size to 1638 MB
@@ -315,7 +315,7 @@ The [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Cluste
 
 ## Automatic Horizontal Scaling
 
-The [automatic horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling) functionality allows adjusting the number of web and application servers according to the resources consumption of your application. It is implemented by means of the tunable monitoring triggers that are based on the usage of a particular resource type:
+The [automatic horizontal scaling](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) functionality allows adjusting the number of web and application servers according to the resources consumption of your application. It is implemented by means of the tunable monitoring triggers that are based on the usage of a particular resource type:
 
 - CPU
 - Memory (RAM)
@@ -357,7 +357,7 @@ If your project requires some complex configurations for requests handling, like
 
 </div>
 
-- [custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL) can be configured for the Spring Boot based environment by adding any of the certified load balancers
+- [custom SSL](/docs/application-setting/ssl/custom-ssl) can be configured for the Spring Boot based environment by adding any of the certified load balancers
 - as a free-of-charge SSL alternative, applicable for both internal and custom domains, a special Jelastic-developed Let’s Encrypt add-on can be used (certified [load balancer](/docs/Load%20Balancers/Load%20Balancing) is required)
 
 Applying any of these solutions will enable traffic encryption on the environment level, eliminating the necessity to configure it inside your application. As a result, the received encrypted traffic will be terminated at the load balancing layer and proxied further to the application server in a plain view.
@@ -372,7 +372,7 @@ Herewith, when your environment link is requested over the Internet, the [ports]
 
 Thus, if working over standard HTTP/HTTPS ports, your application can be accessed directly via environment URL with the corresponding protocol specified, with no necessity to enter the appropriate port number.
 
-And if your application does need to process the requests on some custom interface, Jelastic allows exposing private container TCP and UDP ports via [Endpoints](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints). After adding such, the corresponding port will be automatically enabled in server firewall settings, making it accessible for the rest of the world.
+And if your application does need to process the requests on some custom interface, Jelastic allows exposing private container TCP and UDP ports via [Endpoints](/docs/application-setting/external-access-to-applications/endpoints). After adding such, the corresponding port will be automatically enabled in server firewall settings, making it accessible for the rest of the world.
 
 ## Conclusion
 

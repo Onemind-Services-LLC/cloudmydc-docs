@@ -8,7 +8,7 @@ sidebar_position: 1
 
 :::tip Tip
 
-The NGINX balancer stack is [HTTP/3](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support) ready with the feature support enabled by default since the 1.16.1 release. However, a [public IP address](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
+The NGINX balancer stack is [HTTP/3](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support) ready with the feature support enabled by default since the 1.16.1 release. However, a [public IP address](/docs/application-setting/external-access-to-applications/public-ip) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
 
 :::
 
@@ -46,7 +46,7 @@ The NGINX balancer stack is [HTTP/3](/docs/ApplicationSetting/External%20Access%
 
 </div>
 
-Next, you need to set the desired configurations for your NGINX balancer ([cloudlets](/docs/PlatformOverview/Cloudlet), disk space, [IP addresses](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP), etc.), add any other needed stacks (e.g. application servers or databases), and click **Create**.
+Next, you need to set the desired configurations for your NGINX balancer ([cloudlets](/docs/PlatformOverview/Cloudlet), disk space, [IP addresses](/docs/application-setting/external-access-to-applications/public-ip), etc.), add any other needed stacks (e.g. application servers or databases), and click **Create**.
 
 3. Wait a moment for the platform to set up the environment for you.
 

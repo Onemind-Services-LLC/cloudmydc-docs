@@ -24,7 +24,7 @@ Below, we’ll explore the appropriate [database server adjustment](/docs/Databa
 
 ## PostgreSQL Server Configuration
 
-Obviously, for this tutorial we’ll use an environment with PostgreSQL database inside - you can easily [create](/docs/EnvironmentManagement/Setting%20Up%20Environment) such if you haven’t done this yet.
+Obviously, for this tutorial we’ll use an environment with PostgreSQL database inside - you can easily [create](/docs/environment-management/setting-up-environment) such if you haven’t done this yet.
 
 <div style={{
     display:'flex',

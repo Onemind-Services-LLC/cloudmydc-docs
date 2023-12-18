@@ -26,7 +26,7 @@ If you want to restrict access between the environments on a single account, it 
 
 ## Container Firewall Management via Platform UI
 
-Each node at the platform (excluding custom [Docker](/docs/Container/Container%20Types)- and [Windows](/docs/Windows&.NET/DOT%20NET%20Core)-based containers) is provisioned with a set of firewall rules, which can be reviewed and managed through an intuitive graphical user interface. The appropriate section can be accessed by clicking on the **Settings** button next to the required environment and selecting the **Firewall** menu item.
+Each node at the platform (excluding custom [Docker](/docs/Container/Container%20Types)- and [Windows](/docs/windows-and-.NET/dot-net-core)-based containers) is provisioned with a set of firewall rules, which can be reviewed and managed through an intuitive graphical user interface. The appropriate section can be accessed by clicking on the **Settings** button next to the required environment and selecting the **Firewall** menu item.
 
 :::tip Note
 
@@ -126,7 +126,7 @@ Here, **_{portN}_** is a particular port (_1234_) or range (_33062-34000_), whic
 
 :::tip Note
 
-Changes due to the **_OPEN_INBOUND_PORTS_** variable are applied just once during nodes' installation. Consequently, the [firewall rules](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall) should be managed manually.
+Changes due to the **_OPEN_INBOUND_PORTS_** variable are applied just once during nodes' installation. Consequently, the [firewall rules](/docs/application-setting/external-access-to-applications/container-firewall) should be managed manually.
 
 :::
 
@@ -206,11 +206,11 @@ Access to your nodes can be controlled based on such request parameters as its s
 
 :::tip Note
 
-Before following this instruction, ensure that the appropriate container is provided with a [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address.
+Before following this instruction, ensure that the appropriate container is provided with a [public IP](/docs/application-setting/external-access-to-applications/public-ip) address.
 
 :::
 
-Also, when preparing some container lifecycle automation solution, you may need to apply the required firewall changes via [platform API](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall) - examine the list of the appropriate methods within the linked reference.
+Also, when preparing some container lifecycle automation solution, you may need to apply the required firewall changes via [platform API](/docs/application-setting/external-access-to-applications/container-firewall) - examine the list of the appropriate methods within the linked reference.
 
 ## Restrict Access via User Interface
 
@@ -270,7 +270,7 @@ This way you can deny access to your containers from any IP address.
 
 ## Restrict Access via SSH
 
-Alternatively, you can configure firewall rules for your container via terminal when accessing the node through [SSH Gate](/docs/Deployment%20Tools/SSH/SSH%20Overview).
+Alternatively, you can configure firewall rules for your container via terminal when accessing the node through [SSH Gate](/docs/deployment-tools/ssh/ssh-overview).
 
 :::tip Note
 
@@ -278,7 +278,7 @@ Although most of the firewall configurations can be performed via the dedicated 
 
 :::
 
-1. The simplest way to access node via SSH is to call the appropriate [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH) option directly from the platform dashboard - click the same-named button next to the required node. Once connected, check the /**_etc/jelastic/metainf.conf_** file to ensure that container firewall is turned on:
+1. The simplest way to access node via SSH is to call the appropriate [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh) option directly from the platform dashboard - click the same-named button next to the required node. Once connected, check the /**_etc/jelastic/metainf.conf_** file to ensure that container firewall is turned on:
 
 ```bash
 cat /etc/jelastic/metainf.conf

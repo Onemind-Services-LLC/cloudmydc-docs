@@ -9,7 +9,7 @@ sidebar_position: 2
 [Gogs](https://gogs.io/) (Go Git Service) is an open-sourced self-hosted Git service, which can be easily deployed and hosted at Jelastic PaaS. Get your own GitHub-like fully configurable and isolated instance with unlimited private repositories and a tiny resource footprint.
 Follow the step-by-step guide below to deploy Gogs:
 
-1. [Create a new environment](/docs/EnvironmentManagement/Setting%20Up%20Environment) with the **_Golang_** application server and the **_MySQL_** database.
+1. [Create a new environment](/docs/environment-management/setting-up-environment) with the **_Golang_** application server and the **_MySQL_** database.
 
 <div style={{
     display:'flex',
@@ -51,7 +51,7 @@ For production usage, it is recommended to create separate DB user (the **User a
 
 :::
 
-4. [Deploy](/docs/Deployment/Deployment%20Guide) the Gogs project using the following repository link:
+4. [Deploy](/docs/deployment/deployment-guide) the Gogs project using the following repository link:
    [https://github.com/gogs/gogs.git](https://github.com/gogs/gogs)
 
 <div style={{
@@ -66,7 +66,7 @@ For production usage, it is recommended to create separate DB user (the **User a
 
 5. After successful deployment, you need to adjust the default settings.
    First of all, make a copy of the **_/home/jelastic/webapp/ROOT/conf/app.ini_** config file and paste it into the newly created **_/home/jelastic/webapp/ROOT/custom/conf/_** folder.
-   This can be easily done via [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH), just run the following two commands:
+   This can be easily done via [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh), just run the following two commands:
 
 ```bash
 mkdir -p /home/jelastic/webapp/ROOT/custom/conf

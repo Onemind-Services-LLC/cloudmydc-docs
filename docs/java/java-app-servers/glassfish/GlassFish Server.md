@@ -72,7 +72,7 @@ Admin page will be available in a new tab.
 
 </div>
 
-- If you have [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) attached to application server node, the default GlassFish admin panel port (_4848_) can be changed in **/opt/glassfish3/glassfish/domains/domain1/config/domain.xml** configuration file (a **server** shortcut in _Favorites_) by adding the following string:
+- If you have [public IP](/docs/application-setting/external-access-to-applications/public-ip) attached to application server node, the default GlassFish admin panel port (_4848_) can be changed in **/opt/glassfish3/glassfish/domains/domain1/config/domain.xml** configuration file (a **server** shortcut in _Favorites_) by adding the following string:
 
 ```bash
 <http-listener id="admin-listener" port="4848" address="0.0.0.0" default-virtual-server="__asadmin"

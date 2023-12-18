@@ -44,7 +44,7 @@ The appropriate instance (i.e. **_CentOS 6.8_** or **_CentOS 7.2_**) can be foun
 
 :::danger Note
 
-By default, the VPS node is delivered with the automatically attached [**Public IP**](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP) address (one [per instance](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling)).
+By default, the VPS node is delivered with the automatically attached [**Public IP**](/docs/application-setting/external-access-to-applications/public-ip) address (one [per instance](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling)).
 
 :::
 

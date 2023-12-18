@@ -261,7 +261,7 @@ All the above-described values and criteria are part of the platform’s new def
 
 ## Inbound Ports Variable
 
-**JELASTIC_PORTS** is a special [variable](/docs/category/environment-variables) that is used during the platform containers creation to define which custom ports should be opened in the [container’s firewall](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall). In order to make the purpose of the variable intuitive, it was renamed to **_OPEN_INBOUND_PORTS_** in the current 6.3 platform release. Both values are supported to ensure backward compatibility, but all the new containers will be created with the **_OPEN_INBOUND_PORTS_** variant by default.
+**JELASTIC_PORTS** is a special [variable](/docs/category/environment-variables) that is used during the platform containers creation to define which custom ports should be opened in the [container’s firewall](/docs/application-setting/external-access-to-applications/container-firewall). In order to make the purpose of the variable intuitive, it was renamed to **_OPEN_INBOUND_PORTS_** in the current 6.3 platform release. Both values are supported to ensure backward compatibility, but all the new containers will be created with the **_OPEN_INBOUND_PORTS_** variant by default.
 
 [More info](/docs/category/environment-variables)
 
@@ -437,9 +437,9 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/QuickStart/Software%20Stack%20Versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/QuickStart/Software%20Stack%20Versions)
+[More info](/docs/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',
