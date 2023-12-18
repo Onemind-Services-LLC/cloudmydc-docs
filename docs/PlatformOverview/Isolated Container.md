@@ -1,4 +1,6 @@
 ---
+title: Isolated container
+slug: isolated-container
 sidebar_position: 6
 ---
 

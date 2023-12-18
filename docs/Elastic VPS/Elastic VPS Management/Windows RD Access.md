@@ -1,4 +1,6 @@
 ---
+title: Windows rd access
+slug: windows-rd-access
 sidebar_position: 4
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Ftp-ftps support
+slug: ftp-ftps-support
 sidebar_position: 4
 ---
 

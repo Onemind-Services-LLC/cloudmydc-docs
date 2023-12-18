@@ -1,4 +1,6 @@
 ---
+title: Built-in ssl
+slug: built-in-ssl
 sidebar_position: 2
 ---
 

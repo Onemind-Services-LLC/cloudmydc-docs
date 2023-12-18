@@ -1,4 +1,6 @@
 ---
+title: Docker engine deployment
+slug: docker-engine-deployment
 sidebar_position: 3
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Failover
+slug: failover
 sidebar_position: 3
 ---
 

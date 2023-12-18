@@ -1,4 +1,6 @@
 ---
+title: Mount points
+slug: mount-points
 sidebar_position: 1
 ---
 

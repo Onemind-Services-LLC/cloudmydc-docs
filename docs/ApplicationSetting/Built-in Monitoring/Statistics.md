@@ -1,4 +1,6 @@
 ---
+title: Statistics
+slug: statistics
 sidebar_position: 2
 ---
 

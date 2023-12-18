@@ -1,4 +1,6 @@
 ---
+title: Pricing faq
+slug: pricing-faq
 sidebar_position: 1
 ---
 

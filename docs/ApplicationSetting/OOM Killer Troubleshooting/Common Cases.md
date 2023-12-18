@@ -1,4 +1,6 @@
 ---
+title: Common cases
+slug: common-cases
 sidebar_position: 2
 ---
 

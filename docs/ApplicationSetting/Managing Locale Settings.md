@@ -1,4 +1,6 @@
 ---
+title: Managing locale settings
+slug: managing-locale-settings
 sidebar_position: 12
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Jetty custom variables
+slug: jetty-custom-variables
 sidebar_position: 2
 ---
 

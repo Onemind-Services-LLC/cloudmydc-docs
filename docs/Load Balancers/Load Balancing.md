@@ -1,4 +1,6 @@
 ---
+title: Load balancing
+slug: load-balancing
 sidebar_position: 1
 ---
 

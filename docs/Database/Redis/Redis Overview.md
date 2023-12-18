@@ -1,4 +1,6 @@
 ---
+title: Redis overview
+slug: redis-overview
 sidebar_position: 1
 ---
 

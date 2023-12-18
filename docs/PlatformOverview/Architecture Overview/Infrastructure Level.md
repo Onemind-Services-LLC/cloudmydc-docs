@@ -1,4 +1,6 @@
 ---
+title: Infrastructure level
+slug: infrastructure-level
 sidebar_position: 3
 ---
 

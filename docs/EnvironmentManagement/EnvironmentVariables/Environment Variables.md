@@ -1,4 +1,6 @@
 ---
+title: Environment variables
+slug: environment-variables
 sidebar_position: 1
 ---
 

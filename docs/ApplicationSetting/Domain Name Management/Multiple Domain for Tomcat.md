@@ -1,4 +1,6 @@
 ---
+title: Multiple domain for tomcat
+slug: multiple-domain-for-tomcat
 sidebar_position: 3
 ---
 

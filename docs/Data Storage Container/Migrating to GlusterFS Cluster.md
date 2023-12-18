@@ -1,4 +1,6 @@
 ---
+title: Migrating to glusterfs cluster
+slug: migrating-to-glusterfs-cluster
 sidebar_position: 5
 ---
 

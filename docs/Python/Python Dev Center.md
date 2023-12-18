@@ -1,4 +1,6 @@
 ---
+title: Python dev center
+slug: python-dev-center
 sidebar_position: 1
 ---
 

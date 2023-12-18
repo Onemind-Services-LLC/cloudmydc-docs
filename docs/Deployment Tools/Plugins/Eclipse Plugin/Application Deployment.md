@@ -1,4 +1,6 @@
 ---
+title: Application deployment
+slug: application-deployment
 sidebar_position: 4
 ---
 

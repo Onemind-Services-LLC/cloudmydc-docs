@@ -1,4 +1,6 @@
 ---
+title: Share environment
+slug: share-environment
 sidebar_position: 3
 ---
 

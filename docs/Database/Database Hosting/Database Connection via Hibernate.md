@@ -1,4 +1,6 @@
 ---
+title: Database connection via hibernate
+slug: database-connection-via-hibernate
 sidebar_position: 7
 ---
 

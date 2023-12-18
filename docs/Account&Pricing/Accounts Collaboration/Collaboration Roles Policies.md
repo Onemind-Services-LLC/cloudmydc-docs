@@ -1,4 +1,6 @@
 ---
+title: Collaboration roles policies
+slug: collaboration-roles-policies
 sidebar_position: 2
 ---
 

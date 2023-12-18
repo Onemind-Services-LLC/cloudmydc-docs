@@ -1,4 +1,6 @@
 ---
+title: Java options and arguments
+slug: java-options-and-arguments
 sidebar_position: 2
 ---
 

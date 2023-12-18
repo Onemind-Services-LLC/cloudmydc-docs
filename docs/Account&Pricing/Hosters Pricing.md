@@ -1,4 +1,6 @@
 ---
+title: Hosters pricing
+slug: hosters-pricing
 sidebar_position: 16
 ---
 

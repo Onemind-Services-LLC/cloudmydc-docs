@@ -1,4 +1,6 @@
 ---
+title: Ssh protocols
+slug: ssh-protocols
 sidebar_position: 5
 ---
 

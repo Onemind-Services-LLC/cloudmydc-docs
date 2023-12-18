@@ -1,4 +1,6 @@
 ---
+title: Swap domains
+slug: swap-domains
 sidebar_position: 2
 ---
 

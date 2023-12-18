@@ -1,4 +1,6 @@
 ---
+title: Php.ini security settings
+slug: php.ini-security-settings
 sidebar_position: 7
 ---
 

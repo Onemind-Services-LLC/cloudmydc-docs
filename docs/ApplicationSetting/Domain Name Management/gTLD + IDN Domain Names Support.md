@@ -1,4 +1,6 @@
 ---
+title: Gtld + idn domain names support
+slug: gtld-+-idn-domain-names-support
 sidebar_position: 7
 ---
 

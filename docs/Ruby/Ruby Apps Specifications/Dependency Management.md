@@ -1,4 +1,6 @@
 ---
+title: Dependency management
+slug: dependency-management
 sidebar_position: 1
 ---
 

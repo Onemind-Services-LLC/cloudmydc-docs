@@ -1,4 +1,6 @@
 ---
+title: Go git deploy
+slug: go-git-deploy
 sidebar_position: 2
 ---
 

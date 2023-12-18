@@ -1,4 +1,6 @@
 ---
+title: Round robin
+slug: round-robin
 sidebar_position: 1
 ---
 

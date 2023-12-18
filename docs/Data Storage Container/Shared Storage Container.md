@@ -1,4 +1,6 @@
 ---
+title: Shared storage container
+slug: shared-storage-container
 sidebar_position: 2
 ---
 

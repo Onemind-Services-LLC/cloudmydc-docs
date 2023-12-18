@@ -1,4 +1,6 @@
 ---
+title: Netbeans plugin overview
+slug: netbeans-plugin-overview
 sidebar_position: 1
 ---
 

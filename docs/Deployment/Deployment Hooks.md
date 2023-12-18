@@ -1,4 +1,6 @@
 ---
+title: Deployment hooks
+slug: deployment-hooks
 sidebar_position: 7
 ---
 

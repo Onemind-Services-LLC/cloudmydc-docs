@@ -1,4 +1,6 @@
 ---
+title: Container image requirements
+slug: container-image-requirements
 sidebar_position: 5
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Internal networking
+slug: internal-networking
 sidebar_position: 3
 ---
 

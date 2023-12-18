@@ -1,4 +1,6 @@
 ---
+title: Log files
+slug: log-files
 sidebar_position: 1
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Cloning environment
+slug: cloning-environment
 sidebar_position: 4
 ---
 

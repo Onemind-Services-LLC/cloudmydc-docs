@@ -1,4 +1,6 @@
 ---
+title: Testing load balancing
+slug: testing-load-balancing
 sidebar_position: 4
 ---
 

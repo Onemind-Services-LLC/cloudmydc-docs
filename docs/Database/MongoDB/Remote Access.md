@@ -1,4 +1,6 @@
 ---
+title: Remote access
+slug: remote-access
 sidebar_position: 3
 ---
 

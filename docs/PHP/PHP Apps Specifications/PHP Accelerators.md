@@ -1,4 +1,6 @@
 ---
+title: Php accelerators
+slug: php-accelerators
 sidebar_position: 2
 ---
 

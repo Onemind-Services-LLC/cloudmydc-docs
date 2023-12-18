@@ -1,4 +1,6 @@
 ---
+title: Memcached system
+slug: memcached-system
 sidebar_position: 1
 ---
 

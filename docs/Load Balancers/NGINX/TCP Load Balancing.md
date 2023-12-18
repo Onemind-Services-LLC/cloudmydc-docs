@@ -1,4 +1,6 @@
 ---
+title: Tcp load balancing
+slug: tcp-load-balancing
 sidebar_position: 2
 ---
 

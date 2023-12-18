@@ -1,4 +1,6 @@
 ---
+title: Windows server vm
+slug: windows-server-vm
 sidebar_position: 2
 ---
 

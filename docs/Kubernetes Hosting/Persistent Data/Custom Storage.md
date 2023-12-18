@@ -1,4 +1,6 @@
 ---
+title: Custom storage
+slug: custom-storage
 sidebar_position: 3
 ---
 

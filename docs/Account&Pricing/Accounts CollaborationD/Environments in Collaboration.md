@@ -1,4 +1,6 @@
 ---
+title: Environments in collaboration
+slug: environments-in-collaboration
 sidebar_position: 4
 ---
 

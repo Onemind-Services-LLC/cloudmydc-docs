@@ -1,4 +1,6 @@
 ---
+title: Manual multi-primary replication
+slug: manual-multi-primary-replication
 sidebar_position: 3
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Exporting data for sharing
+slug: exporting-data-for-sharing
 sidebar_position: 2
 ---
 

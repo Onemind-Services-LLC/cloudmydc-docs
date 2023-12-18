@@ -1,4 +1,6 @@
 ---
+title: Non-leaking processes
+slug: non-leaking-processes
 sidebar_position: 4
 ---
 

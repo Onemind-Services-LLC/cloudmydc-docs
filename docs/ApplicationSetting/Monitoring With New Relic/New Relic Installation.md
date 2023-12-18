@@ -1,4 +1,6 @@
 ---
+title: New relic installation
+slug: new-relic-installation
 sidebar_position: 1
 ---
 

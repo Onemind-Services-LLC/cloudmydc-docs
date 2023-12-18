@@ -1,4 +1,6 @@
 ---
+title: Getting started
+slug: getting-started
 sidebar_position: 1
 ---
 

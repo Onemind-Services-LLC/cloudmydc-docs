@@ -1,4 +1,6 @@
 ---
+title: Apache modules
+slug: apache-modules
 sidebar_position: 3
 ---
 

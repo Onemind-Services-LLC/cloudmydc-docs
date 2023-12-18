@@ -1,4 +1,6 @@
 ---
+title: Java agent
+slug: java-agent
 sidebar_position: 2
 ---
 

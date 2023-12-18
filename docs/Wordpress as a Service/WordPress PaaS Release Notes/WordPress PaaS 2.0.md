@@ -1,4 +1,6 @@
 ---
+title: Wordpress paas 2.0
+slug: wordpress-paas-2.0
 sidebar_position: 2
 ---
 

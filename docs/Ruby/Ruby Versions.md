@@ -1,4 +1,6 @@
 ---
+title: Ruby versions
+slug: ruby-versions
 sidebar_position: 2
 ---
 

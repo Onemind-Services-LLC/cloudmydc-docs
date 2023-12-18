@@ -1,4 +1,6 @@
 ---
+title: Jetty security
+slug: jetty-security
 sidebar_position: 3
 ---
 

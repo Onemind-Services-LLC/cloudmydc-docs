@@ -1,4 +1,6 @@
 ---
+title: Variables
+slug: variables
 sidebar_position: 2
 ---
 

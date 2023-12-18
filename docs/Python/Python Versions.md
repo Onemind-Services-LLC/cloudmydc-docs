@@ -1,4 +1,6 @@
 ---
+title: Python versions
+slug: python-versions
 sidebar_position: 2
 ---
 

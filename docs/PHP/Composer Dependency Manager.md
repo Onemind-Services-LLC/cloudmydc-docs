@@ -1,4 +1,6 @@
 ---
+title: Composer dependency manager
+slug: composer-dependency-manager
 sidebar_position: 8
 ---
 

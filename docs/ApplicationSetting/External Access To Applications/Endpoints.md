@@ -1,4 +1,6 @@
 ---
+title: Endpoints
+slug: endpoints
 sidebar_position: 5
 ---
 

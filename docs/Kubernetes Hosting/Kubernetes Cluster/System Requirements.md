@@ -1,4 +1,6 @@
 ---
+title: System requirements
+slug: system-requirements
 sidebar_position: 2
 ---
 

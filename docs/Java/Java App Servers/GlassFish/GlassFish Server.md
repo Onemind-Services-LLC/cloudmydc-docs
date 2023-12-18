@@ -1,4 +1,6 @@
 ---
+title: Glassfish server
+slug: glassfish-server
 sidebar_position: 1
 ---
 

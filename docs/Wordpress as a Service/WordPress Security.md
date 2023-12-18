@@ -1,4 +1,6 @@
 ---
+title: Wordpress security
+slug: wordpress-security
 sidebar_position: 6
 ---
 

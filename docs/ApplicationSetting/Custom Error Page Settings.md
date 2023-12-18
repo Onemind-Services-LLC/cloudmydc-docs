@@ -1,4 +1,6 @@
 ---
+title: Custom error page settings
+slug: custom-error-page-settings
 sidebar_position: 13
 ---
 

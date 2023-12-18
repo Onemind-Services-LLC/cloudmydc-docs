@@ -1,4 +1,6 @@
 ---
+title: General information
+slug: general-information
 sidebar_position: 1
 ---
 

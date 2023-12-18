@@ -1,4 +1,6 @@
 ---
+title: Cluster upgrade
+slug: cluster-upgrade
 sidebar_position: 4
 ---
 

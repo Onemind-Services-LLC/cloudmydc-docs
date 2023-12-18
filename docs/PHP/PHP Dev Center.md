@@ -1,4 +1,6 @@
 ---
+title: Php dev center
+slug: php-dev-center
 sidebar_position: 1
 ---
 

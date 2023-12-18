@@ -1,4 +1,6 @@
 ---
+title: Mezzanine cms
+slug: mezzanine-cms
 sidebar_position: 1
 ---
 

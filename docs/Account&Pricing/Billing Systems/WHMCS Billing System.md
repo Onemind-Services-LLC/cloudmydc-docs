@@ -1,4 +1,6 @@
 ---
+title: Whmcs billing system
+slug: whmcs-billing-system
 sidebar_position: 4
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Environment management
+slug: environment-management
 sidebar_position: 3
 ---
 

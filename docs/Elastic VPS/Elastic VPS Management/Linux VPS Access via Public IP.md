@@ -1,4 +1,6 @@
 ---
+title: Linux vps access via public ip
+slug: linux-vps-access-via-public-ip
 sidebar_position: 3
 ---
 

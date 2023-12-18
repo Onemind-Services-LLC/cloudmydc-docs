@@ -1,4 +1,6 @@
 ---
+title: Let’s encrypt ssl
+slug: let’s-encrypt-ssl
 sidebar_position: 4
 ---
 

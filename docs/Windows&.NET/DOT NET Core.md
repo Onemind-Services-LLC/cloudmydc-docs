@@ -1,4 +1,6 @@
 ---
+title: Dot net core
+slug: dot-net-core
 sidebar_position: 1
 ---
 

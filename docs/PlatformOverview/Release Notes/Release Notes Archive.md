@@ -1,4 +1,6 @@
 ---
+title: Release notes archive
+slug: release-notes-archive
 sidebar_position: 32
 ---
 

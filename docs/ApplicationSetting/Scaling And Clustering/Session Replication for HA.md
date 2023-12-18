@@ -1,4 +1,6 @@
 ---
+title: Session replication for ha
+slug: session-replication-for-ha
 sidebar_position: 7
 ---
 

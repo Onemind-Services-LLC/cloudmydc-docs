@@ -1,4 +1,6 @@
 ---
+title: Http3 support
+slug: http3-support
 sidebar_position: 6
 ---
 

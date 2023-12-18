@@ -1,4 +1,6 @@
 ---
+title: Creating ingresses
+slug: creating-ingresses
 sidebar_position: 5
 ---
 

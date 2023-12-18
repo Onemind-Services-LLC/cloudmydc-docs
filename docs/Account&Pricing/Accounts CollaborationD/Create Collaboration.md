@@ -1,4 +1,6 @@
 ---
+title: Create collaboration
+slug: create-collaboration
 sidebar_position: 2
 ---
 

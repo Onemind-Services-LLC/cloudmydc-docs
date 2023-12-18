@@ -1,4 +1,6 @@
 ---
+title: Managing server roles & features
+slug: managing-server-roles-&-features
 sidebar_position: 4
 ---
 

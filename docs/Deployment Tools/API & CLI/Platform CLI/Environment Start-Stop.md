@@ -1,4 +1,6 @@
 ---
+title: Environment start-stop
+slug: environment-start-stop
 sidebar_position: 3
 ---
 

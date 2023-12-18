@@ -1,4 +1,6 @@
 ---
+title: Yaml deployments
+slug: yaml-deployments
 sidebar_position: 2
 ---
 

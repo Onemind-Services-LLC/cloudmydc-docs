@@ -1,4 +1,6 @@
 ---
+title: Python connection
+slug: python-connection
 sidebar_position: 3
 ---
 

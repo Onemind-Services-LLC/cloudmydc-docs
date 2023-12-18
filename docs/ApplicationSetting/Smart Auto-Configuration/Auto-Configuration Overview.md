@@ -1,4 +1,6 @@
 ---
+title: Auto-configuration overview
+slug: auto-configuration-overview
 sidebar_position: 1
 ---
 

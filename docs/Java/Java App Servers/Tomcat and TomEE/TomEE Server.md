@@ -1,4 +1,6 @@
 ---
+title: Tomee server
+slug: tomee-server
 sidebar_position: 2
 ---
 

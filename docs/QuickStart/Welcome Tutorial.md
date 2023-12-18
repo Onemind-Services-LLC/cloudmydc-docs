@@ -1,4 +1,6 @@
 ---
+title: Welcome tutorial
+slug: welcome-tutorial
 sidebar_position: 3
 ---
 

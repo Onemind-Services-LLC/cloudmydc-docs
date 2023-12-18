@@ -1,4 +1,6 @@
 ---
+title: Tomcat server
+slug: tomcat-server
 sidebar_position: 1
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Nginx balancer
+slug: nginx-balancer
 sidebar_position: 1
 ---
 

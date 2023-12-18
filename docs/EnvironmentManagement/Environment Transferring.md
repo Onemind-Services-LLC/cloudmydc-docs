@@ -1,4 +1,6 @@
 ---
+title: Environment transferring
+slug: environment-transferring
 sidebar_position: 7
 ---
 

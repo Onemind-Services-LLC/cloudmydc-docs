@@ -1,4 +1,6 @@
 ---
+title: Cluster access
+slug: cluster-access
 sidebar_position: 1
 ---
 

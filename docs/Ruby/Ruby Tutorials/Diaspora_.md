@@ -1,4 +1,6 @@
 ---
+title: Diaspora_
+slug: diaspora_
 sidebar_position: 2
 ---
 

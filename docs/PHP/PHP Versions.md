@@ -1,4 +1,6 @@
 ---
+title: Php versions
+slug: php-versions
 sidebar_position: 2
 ---
 

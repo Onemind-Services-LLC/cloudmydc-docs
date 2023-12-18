@@ -1,4 +1,6 @@
 ---
+title: Payara
+slug: payara
 sidebar_position: 4
 ---
 

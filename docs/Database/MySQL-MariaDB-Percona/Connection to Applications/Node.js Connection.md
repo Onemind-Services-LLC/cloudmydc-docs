@@ -1,4 +1,6 @@
 ---
+title: Node.js connection
+slug: node.js-connection
 sidebar_position: 4
 ---
 

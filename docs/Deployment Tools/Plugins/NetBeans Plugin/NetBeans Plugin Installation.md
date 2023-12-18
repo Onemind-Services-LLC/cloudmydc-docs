@@ -1,4 +1,6 @@
 ---
+title: Netbeans plugin installation
+slug: netbeans-plugin-installation
 sidebar_position: 2
 ---
 

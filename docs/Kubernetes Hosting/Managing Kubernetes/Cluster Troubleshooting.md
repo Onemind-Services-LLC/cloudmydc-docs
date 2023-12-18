@@ -1,4 +1,6 @@
 ---
+title: Cluster troubleshooting
+slug: cluster-troubleshooting
 sidebar_position: 3
 ---
 

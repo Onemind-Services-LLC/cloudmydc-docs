@@ -1,4 +1,6 @@
 ---
+title: Migration between regions
+slug: migration-between-regions
 sidebar_position: 2
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Websockets support
+slug: websockets-support
 sidebar_position: 1
 ---
 

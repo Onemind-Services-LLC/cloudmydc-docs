@@ -1,4 +1,6 @@
 ---
+title: Container types
+slug: container-types
 sidebar_position: 1
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Hosters list & info
+slug: hosters-list-&-info
 sidebar_position: 5
 ---
 

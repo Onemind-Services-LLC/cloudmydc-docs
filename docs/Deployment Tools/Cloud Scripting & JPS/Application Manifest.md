@@ -1,4 +1,6 @@
 ---
+title: Application manifest
+slug: application-manifest
 sidebar_position: 3
 ---
 

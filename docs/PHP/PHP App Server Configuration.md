@@ -1,4 +1,6 @@
 ---
+title: Php app server configuration
+slug: php-app-server-configuration
 sidebar_position: 4
 ---
 

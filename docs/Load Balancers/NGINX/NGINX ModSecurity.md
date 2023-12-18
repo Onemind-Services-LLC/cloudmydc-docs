@@ -1,4 +1,6 @@
 ---
+title: Nginx modsecurity
+slug: nginx-modsecurity
 sidebar_position: 7
 ---
 

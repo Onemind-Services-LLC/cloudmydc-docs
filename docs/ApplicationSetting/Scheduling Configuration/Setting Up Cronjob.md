@@ -1,4 +1,6 @@
 ---
+title: Setting up cronjob
+slug: setting-up-cronjob
 sidebar_position: 1
 ---
 

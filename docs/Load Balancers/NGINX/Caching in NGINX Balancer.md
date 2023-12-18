@@ -1,4 +1,6 @@
 ---
+title: Caching in nginx balancer
+slug: caching-in-nginx-balancer
 sidebar_position: 5
 ---
 

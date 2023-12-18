@@ -1,4 +1,6 @@
 ---
+title: Basics & terminology
+slug: basics-&-terminology
 sidebar_position: 2
 ---
 

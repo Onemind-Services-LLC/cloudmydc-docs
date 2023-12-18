@@ -1,4 +1,6 @@
 ---
+title: Container firewall
+slug: container-firewall
 sidebar_position: 4
 ---
 

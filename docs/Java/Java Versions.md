@@ -1,4 +1,6 @@
 ---
+title: Java versions
+slug: java-versions
 sidebar_position: 2
 ---
 

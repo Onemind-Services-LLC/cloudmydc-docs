@@ -1,4 +1,6 @@
 ---
+title: Database connection via jndi
+slug: database-connection-via-jndi
 sidebar_position: 6
 ---
 

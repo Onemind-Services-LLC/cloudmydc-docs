@@ -1,4 +1,6 @@
 ---
+title: Failover protection
+slug: failover-protection
 sidebar_position: 2
 ---
 

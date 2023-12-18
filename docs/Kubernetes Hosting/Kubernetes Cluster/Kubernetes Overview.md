@@ -1,4 +1,6 @@
 ---
+title: Kubernetes overview
+slug: kubernetes-overview
 sidebar_position: 1
 ---
 

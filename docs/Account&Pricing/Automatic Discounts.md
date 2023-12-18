@@ -1,4 +1,6 @@
 ---
+title: Automatic discounts
+slug: automatic-discounts
 sidebar_position: 14
 ---
 

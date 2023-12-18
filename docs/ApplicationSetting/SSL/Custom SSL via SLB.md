@@ -1,4 +1,6 @@
 ---
+title: Custom ssl via slb
+slug: custom-ssl-via-slb
 sidebar_position: 4
 ---
 

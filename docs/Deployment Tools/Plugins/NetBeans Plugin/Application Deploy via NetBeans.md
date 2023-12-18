@@ -1,4 +1,6 @@
 ---
+title: Application deploy via netbeans
+slug: application-deploy-via-netbeans
 sidebar_position: 4
 ---
 

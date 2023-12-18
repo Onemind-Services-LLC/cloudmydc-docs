@@ -1,4 +1,6 @@
 ---
+title: Name-based virtual host in apache
+slug: name-based-virtual-host-in-apache
 sidebar_position: 7
 ---
 

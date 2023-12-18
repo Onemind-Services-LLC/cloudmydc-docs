@@ -1,4 +1,6 @@
 ---
+title: Backup-restore add-on
+slug: backup-restore-add-on
 sidebar_position: 3
 ---
 

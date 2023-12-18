@@ -1,4 +1,6 @@
 ---
+title: Eclipse plugin installation
+slug: eclipse-plugin-installation
 sidebar_position: 2
 ---
 

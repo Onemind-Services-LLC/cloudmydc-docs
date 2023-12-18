@@ -1,4 +1,6 @@
 ---
+title: Nginx modules
+slug: nginx-modules
 sidebar_position: 3
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Process managers
+slug: process-managers
 sidebar_position: 2
 ---
 

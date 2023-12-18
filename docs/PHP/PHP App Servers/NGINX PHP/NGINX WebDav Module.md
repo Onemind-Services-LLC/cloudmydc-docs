@@ -1,4 +1,6 @@
 ---
+title: Nginx webdav module
+slug: nginx-webdav-module
 sidebar_position: 4
 ---
 

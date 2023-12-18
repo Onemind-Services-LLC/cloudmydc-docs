@@ -1,4 +1,6 @@
 ---
+title: Web ssh
+slug: web-ssh
 sidebar_position: 2
 ---
 

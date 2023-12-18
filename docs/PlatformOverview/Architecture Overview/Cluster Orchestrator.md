@@ -1,4 +1,6 @@
 ---
+title: Cluster orchestrator
+slug: cluster-orchestrator
 sidebar_position: 2
 ---
 

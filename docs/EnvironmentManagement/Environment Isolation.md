@@ -1,4 +1,6 @@
 ---
+title: Environment isolation
+slug: environment-isolation
 sidebar_position: 12
 ---
 

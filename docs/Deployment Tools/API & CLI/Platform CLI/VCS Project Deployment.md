@@ -1,4 +1,6 @@
 ---
+title: Vcs project deployment
+slug: vcs-project-deployment
 sidebar_position: 10
 ---
 

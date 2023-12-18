@@ -1,4 +1,6 @@
 ---
+title: Dashboard guide
+slug: dashboard-guide
 sidebar_position: 2
 ---
 

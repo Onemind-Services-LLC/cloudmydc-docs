@@ -1,4 +1,6 @@
 ---
+title: Nginx ruby
+slug: nginx-ruby
 sidebar_position: 3
 ---
 

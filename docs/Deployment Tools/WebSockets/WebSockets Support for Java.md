@@ -1,4 +1,6 @@
 ---
+title: Websockets support for java
+slug: websockets-support-for-java
 sidebar_position: 2
 ---
 

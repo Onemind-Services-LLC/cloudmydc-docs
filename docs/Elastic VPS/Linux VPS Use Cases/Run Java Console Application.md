@@ -1,4 +1,6 @@
 ---
+title: Run java console application
+slug: run-java-console-application
 sidebar_position: 1
 ---
 

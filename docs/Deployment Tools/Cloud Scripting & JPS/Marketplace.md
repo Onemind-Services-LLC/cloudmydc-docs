@@ -1,4 +1,6 @@
 ---
+title: Marketplace
+slug: marketplace
 sidebar_position: 4
 ---
 

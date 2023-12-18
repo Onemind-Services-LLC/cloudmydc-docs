@@ -1,4 +1,6 @@
 ---
+title: Lemp & llsmp
+slug: lemp-&-llsmp
 sidebar_position: 4
 ---
 

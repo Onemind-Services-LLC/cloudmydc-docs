@@ -1,4 +1,6 @@
 ---
+title: Memory leak processes
+slug: memory-leak-processes
 sidebar_position: 3
 ---
 

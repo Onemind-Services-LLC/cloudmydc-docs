@@ -1,4 +1,6 @@
 ---
+title: Wordpress project installation
+slug: wordpress-project-installation
 sidebar_position: 2
 ---
 

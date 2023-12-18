@@ -1,4 +1,6 @@
 ---
+title: Managing timezone settings
+slug: managing-timezone-settings
 sidebar_position: 14
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Auto-deploy for multiple containers
+slug: auto-deploy-for-multiple-containers
 sidebar_position: 2
 ---
 

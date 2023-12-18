@@ -1,4 +1,6 @@
 ---
+title: Php auto-configurations
+slug: php-auto-configurations
 sidebar_position: 3
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Diaspora_ tutorial
+slug: diaspora_-tutorial
 sidebar_position: 5
 ---
 

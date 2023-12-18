@@ -1,4 +1,6 @@
 ---
+title: System container
+slug: system-container
 sidebar_position: 4
 ---
 

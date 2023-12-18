@@ -1,4 +1,6 @@
 ---
+title: Exposing services
+slug: exposing-services
 sidebar_position: 4
 ---
 

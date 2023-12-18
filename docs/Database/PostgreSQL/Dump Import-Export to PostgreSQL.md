@@ -1,4 +1,6 @@
 ---
+title: Dump import-export to postgresql
+slug: dump-import-export-to-postgresql
 sidebar_position: 6
 ---
 

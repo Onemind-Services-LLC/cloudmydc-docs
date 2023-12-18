@@ -1,4 +1,6 @@
 ---
+title: Java connection
+slug: java-connection
 sidebar_position: 1
 ---
 

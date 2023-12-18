@@ -1,4 +1,6 @@
 ---
+title: Add apache modules
+slug: add-apache-modules
 sidebar_position: 4
 ---
 

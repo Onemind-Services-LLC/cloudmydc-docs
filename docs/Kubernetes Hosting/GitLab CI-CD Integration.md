@@ -1,4 +1,6 @@
 ---
+title: Gitlab ci-cd integration
+slug: gitlab-ci-cd-integration
 sidebar_position: 10
 ---
 

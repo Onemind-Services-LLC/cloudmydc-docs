@@ -1,4 +1,6 @@
 ---
+title: Application container
+slug: application-container
 sidebar_position: 5
 ---
 

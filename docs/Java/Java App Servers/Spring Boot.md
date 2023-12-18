@@ -1,4 +1,6 @@
 ---
+title: Spring boot
+slug: spring-boot
 sidebar_position: 6
 ---
 

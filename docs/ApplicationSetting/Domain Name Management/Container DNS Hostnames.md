@@ -1,4 +1,6 @@
 ---
+title: Container dns hostnames
+slug: container-dns-hostnames
 sidebar_position: 8
 ---
 

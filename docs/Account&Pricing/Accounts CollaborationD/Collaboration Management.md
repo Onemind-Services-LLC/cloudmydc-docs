@@ -1,4 +1,6 @@
 ---
+title: Collaboration management
+slug: collaboration-management
 sidebar_position: 3
 ---
 

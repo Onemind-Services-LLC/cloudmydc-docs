@@ -1,4 +1,6 @@
 ---
+title: Running sendmail service
+slug: running-sendmail-service
 sidebar_position: 2
 ---
 

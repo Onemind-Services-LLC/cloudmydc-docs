@@ -1,4 +1,6 @@
 ---
+title: Nfs
+slug: nfs
 sidebar_position: 1
 ---
 

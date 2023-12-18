@@ -1,4 +1,6 @@
 ---
+title: Custom container ssh access
+slug: custom-container-ssh-access
 sidebar_position: 7
 ---
 

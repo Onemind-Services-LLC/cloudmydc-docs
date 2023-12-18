@@ -1,4 +1,6 @@
 ---
+title: Navigation across groups
+slug: navigation-across-groups
 sidebar_position: 3
 ---
 

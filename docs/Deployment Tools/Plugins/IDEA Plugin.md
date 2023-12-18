@@ -1,4 +1,6 @@
 ---
+title: Idea plugin
+slug: idea-plugin
 sidebar_position: 3
 ---
 

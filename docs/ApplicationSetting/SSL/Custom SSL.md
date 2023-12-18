@@ -1,4 +1,6 @@
 ---
+title: Custom ssl
+slug: custom-ssl
 sidebar_position: 3
 ---
 

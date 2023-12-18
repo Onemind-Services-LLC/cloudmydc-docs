@@ -1,4 +1,6 @@
 ---
+title: Quartz scheduling
+slug: quartz-scheduling
 sidebar_position: 2
 ---
 

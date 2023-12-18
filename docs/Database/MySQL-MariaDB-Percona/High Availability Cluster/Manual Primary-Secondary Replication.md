@@ -1,4 +1,6 @@
 ---
+title: Manual primary-secondary replication
+slug: manual-primary-secondary-replication
 sidebar_position: 2
 ---
 

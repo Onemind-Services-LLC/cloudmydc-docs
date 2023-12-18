@@ -1,4 +1,6 @@
 ---
+title: Jps overview
+slug: jps-overview
 sidebar_position: 2
 ---
 

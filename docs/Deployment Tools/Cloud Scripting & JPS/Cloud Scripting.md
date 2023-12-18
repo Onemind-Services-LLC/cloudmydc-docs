@@ -1,4 +1,6 @@
 ---
+title: Cloud scripting
+slug: cloud-scripting
 sidebar_position: 1
 ---
 

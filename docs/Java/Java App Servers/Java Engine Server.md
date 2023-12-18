@@ -1,4 +1,6 @@
 ---
+title: Java engine server
+slug: java-engine-server
 sidebar_position: 7
 ---
 

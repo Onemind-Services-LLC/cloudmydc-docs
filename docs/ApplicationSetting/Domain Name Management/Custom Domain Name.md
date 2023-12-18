@@ -1,4 +1,6 @@
 ---
+title: Custom domain name
+slug: custom-domain-name
 sidebar_position: 1
 ---
 

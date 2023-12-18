@@ -1,4 +1,6 @@
 ---
+title: Connect to custom container
+slug: connect-to-custom-container
 sidebar_position: 6
 ---
 

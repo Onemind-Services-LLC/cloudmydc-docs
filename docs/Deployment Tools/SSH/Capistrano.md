@@ -1,4 +1,6 @@
 ---
+title: Capistrano
+slug: capistrano
 sidebar_position: 6
 ---
 

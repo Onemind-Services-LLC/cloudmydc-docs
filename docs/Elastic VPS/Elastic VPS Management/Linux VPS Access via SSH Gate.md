@@ -1,4 +1,6 @@
 ---
+title: Linux vps access via ssh gate
+slug: linux-vps-access-via-ssh-gate
 sidebar_position: 2
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Release notes 6.0.4
+slug: release-notes-6.0.4
 sidebar_position: 28
 ---
 

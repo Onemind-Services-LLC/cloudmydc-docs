@@ -1,4 +1,6 @@
 ---
+title: Container redeploy
+slug: container-redeploy
 sidebar_position: 7
 ---
 

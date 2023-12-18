@@ -1,4 +1,6 @@
 ---
+title: Share environment deprecated
+slug: share-environment-deprecated
 sidebar_position: 2
 ---
 

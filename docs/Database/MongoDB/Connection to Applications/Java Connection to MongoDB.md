@@ -1,4 +1,6 @@
 ---
+title: Java connection to mongodb
+slug: java-connection-to-mongodb
 sidebar_position: 1
 ---
 

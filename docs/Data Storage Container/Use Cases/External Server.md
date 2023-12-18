@@ -1,4 +1,6 @@
 ---
+title: External server
+slug: external-server
 sidebar_position: 5
 ---
 

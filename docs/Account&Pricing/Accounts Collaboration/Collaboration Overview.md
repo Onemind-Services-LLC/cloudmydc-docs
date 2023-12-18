@@ -1,4 +1,6 @@
 ---
+title: Collaboration overview
+slug: collaboration-overview
 sidebar_position: 1
 ---
 

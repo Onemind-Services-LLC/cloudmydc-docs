@@ -1,4 +1,6 @@
 ---
+title: Memcached memory allocation
+slug: memcached-memory-allocation
 sidebar_position: 3
 ---
 

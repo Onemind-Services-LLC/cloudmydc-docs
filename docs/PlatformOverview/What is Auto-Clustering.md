@@ -1,4 +1,6 @@
 ---
+title: What is auto-clustering
+slug: what-is-auto-clustering
 sidebar_position: 6
 ---
 

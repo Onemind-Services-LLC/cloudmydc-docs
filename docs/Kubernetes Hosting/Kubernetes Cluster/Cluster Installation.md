@@ -1,4 +1,6 @@
 ---
+title: Cluster installation
+slug: cluster-installation
 sidebar_position: 3
 ---
 

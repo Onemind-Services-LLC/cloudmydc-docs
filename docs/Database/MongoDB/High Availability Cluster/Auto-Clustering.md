@@ -1,4 +1,6 @@
 ---
+title: Auto-clustering
+slug: auto-clustering
 sidebar_position: 1
 ---
 

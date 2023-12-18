@@ -1,4 +1,6 @@
 ---
+title: Tomcat security
+slug: tomcat-security
 sidebar_position: 5
 ---
 

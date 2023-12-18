@@ -1,4 +1,6 @@
 ---
+title: Add ssh key
+slug: add-ssh-key
 sidebar_position: 3
 ---
 

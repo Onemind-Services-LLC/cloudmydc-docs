@@ -1,4 +1,6 @@
 ---
+title: Charged resources
+slug: charged-resources
 sidebar_position: 2
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Php tutorials
+slug: php-tutorials
 sidebar_position: 10
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Glassfish clustering
+slug: glassfish-clustering
 sidebar_position: 3
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Apache security configurations
+slug: apache-security-configurations
 sidebar_position: 2
 ---
 

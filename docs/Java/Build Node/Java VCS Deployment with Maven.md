@@ -1,4 +1,6 @@
 ---
+title: Java vcs deployment with maven
+slug: java-vcs-deployment-with-maven
 sidebar_position: 1
 ---
 

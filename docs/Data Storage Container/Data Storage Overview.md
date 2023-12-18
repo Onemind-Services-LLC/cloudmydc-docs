@@ -1,4 +1,6 @@
 ---
+title: Data storage overview
+slug: data-storage-overview
 sidebar_position: 1
 ---
 

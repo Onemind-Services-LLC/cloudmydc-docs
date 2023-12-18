@@ -1,4 +1,6 @@
 ---
+title: Application lifecycle management
+slug: application-lifecycle-management
 sidebar_position: 17
 ---
 

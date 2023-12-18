@@ -1,4 +1,6 @@
 ---
+title: Java tutorials
+slug: java-tutorials
 sidebar_position: 8
 ---
 

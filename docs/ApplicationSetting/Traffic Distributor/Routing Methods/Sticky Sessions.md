@@ -1,4 +1,6 @@
 ---
+title: Sticky sessions
+slug: sticky-sessions
 sidebar_position: 2
 ---
 

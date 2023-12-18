@@ -1,4 +1,6 @@
 ---
+title: Db hosting overview
+slug: db-hosting-overview
 sidebar_position: 1
 ---
 

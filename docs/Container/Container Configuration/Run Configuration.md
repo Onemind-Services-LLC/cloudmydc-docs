@@ -1,4 +1,6 @@
 ---
+title: Run configuration
+slug: run-configuration
 sidebar_position: 6
 ---
 

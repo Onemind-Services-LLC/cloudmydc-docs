@@ -1,4 +1,6 @@
 ---
+title: Account statuses
+slug: account-statuses
 sidebar_position: 3
 ---
 

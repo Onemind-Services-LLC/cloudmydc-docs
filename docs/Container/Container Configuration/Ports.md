@@ -1,4 +1,6 @@
 ---
+title: Ports
+slug: ports
 sidebar_position: 5
 ---
 

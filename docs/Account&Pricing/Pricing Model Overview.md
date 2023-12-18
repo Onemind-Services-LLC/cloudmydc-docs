@@ -1,4 +1,6 @@
 ---
+title: Pricing model overview
+slug: pricing-model-overview
 sidebar_position: 13
 ---
 

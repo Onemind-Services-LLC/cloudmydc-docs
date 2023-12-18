@@ -1,4 +1,6 @@
 ---
+title: Netbeans plugin management
+slug: netbeans-plugin-management
 sidebar_position: 3
 ---
 

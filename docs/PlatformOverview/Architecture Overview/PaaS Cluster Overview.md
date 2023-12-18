@@ -1,4 +1,6 @@
 ---
+title: Paas cluster overview
+slug: paas-cluster-overview
 sidebar_position: 1
 ---
 

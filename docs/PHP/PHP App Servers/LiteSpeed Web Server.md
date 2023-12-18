@@ -1,4 +1,6 @@
 ---
+title: Litespeed web server
+slug: litespeed-web-server
 sidebar_position: 3
 ---
 

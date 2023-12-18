@@ -1,4 +1,6 @@
 ---
+title: Automatic horizontal scaling
+slug: automatic-horizontal-scaling
 sidebar_position: 3
 ---
 

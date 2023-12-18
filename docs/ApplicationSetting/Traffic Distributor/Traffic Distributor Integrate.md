@@ -1,4 +1,6 @@
 ---
+title: Traffic distributor integrate
+slug: traffic-distributor-integrate
 sidebar_position: 4
 ---
 

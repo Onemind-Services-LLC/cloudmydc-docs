@@ -1,4 +1,6 @@
 ---
+title: Quotas system
+slug: quotas-system
 sidebar_position: 5
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Php connection to postgresql
+slug: php-connection-to-postgresql
 sidebar_position: 2
 ---
 

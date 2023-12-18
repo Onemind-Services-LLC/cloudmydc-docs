@@ -1,4 +1,6 @@
 ---
+title: Litespeed web adc
+slug: litespeed-web-adc
 sidebar_position: 3
 ---
 

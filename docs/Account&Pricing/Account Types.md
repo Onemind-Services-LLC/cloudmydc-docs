@@ -1,4 +1,6 @@
 ---
+title: Account types
+slug: account-types
 sidebar_position: 2
 ---
 

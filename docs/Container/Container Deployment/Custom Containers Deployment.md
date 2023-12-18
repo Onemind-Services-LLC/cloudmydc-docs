@@ -1,4 +1,6 @@
 ---
+title: Custom containers deployment
+slug: custom-containers-deployment
 sidebar_position: 2
 ---
 

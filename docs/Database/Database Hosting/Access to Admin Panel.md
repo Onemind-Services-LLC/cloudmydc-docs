@@ -1,4 +1,6 @@
 ---
+title: Access to admin panel
+slug: access-to-admin-panel
 sidebar_position: 3
 ---
 

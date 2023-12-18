@@ -1,4 +1,6 @@
 ---
+title: Http headers
+slug: http-headers
 sidebar_position: 5
 ---
 

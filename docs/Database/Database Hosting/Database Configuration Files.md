@@ -1,4 +1,6 @@
 ---
+title: Database configuration files
+slug: database-configuration-files
 sidebar_position: 2
 ---
 

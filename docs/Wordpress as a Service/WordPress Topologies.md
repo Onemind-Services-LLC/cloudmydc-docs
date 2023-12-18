@@ -1,4 +1,6 @@
 ---
+title: Wordpress topologies
+slug: wordpress-topologies
 sidebar_position: 4
 ---
 

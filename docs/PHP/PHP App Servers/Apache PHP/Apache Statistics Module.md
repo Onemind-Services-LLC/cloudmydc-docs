@@ -1,4 +1,6 @@
 ---
+title: Apache statistics module
+slug: apache-statistics-module
 sidebar_position: 6
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Public ip for access to kubernetes
+slug: public-ip-for-access-to-kubernetes
 sidebar_position: 7
 ---
 

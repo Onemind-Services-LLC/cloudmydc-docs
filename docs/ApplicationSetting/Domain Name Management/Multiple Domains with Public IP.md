@@ -1,4 +1,6 @@
 ---
+title: Multiple domains with public ip
+slug: multiple-domains-with-public-ip
 sidebar_position: 6
 ---
 

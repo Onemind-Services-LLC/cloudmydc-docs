@@ -1,4 +1,6 @@
 ---
+title: Blue-green deploy
+slug: blue-green-deploy
 sidebar_position: 1
 ---
 

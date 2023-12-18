@@ -1,4 +1,6 @@
 ---
+title: Multiple public ip
+slug: multiple-public-ip
 sidebar_position: 3
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Ssl connection to postgresql
+slug: ssl-connection-to-postgresql
 sidebar_position: 3
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Shared load balancer
+slug: shared-load-balancer
 sidebar_position: 1
 ---
 

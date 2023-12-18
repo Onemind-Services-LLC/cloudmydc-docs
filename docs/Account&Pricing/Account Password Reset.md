@@ -1,4 +1,6 @@
 ---
+title: Account password reset
+slug: account-password-reset
 sidebar_position: 5
 ---
 

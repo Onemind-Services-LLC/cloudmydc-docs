@@ -1,4 +1,6 @@
 ---
+title: Session replication via memcached
+slug: session-replication-via-memcached
 sidebar_position: 5
 ---
 

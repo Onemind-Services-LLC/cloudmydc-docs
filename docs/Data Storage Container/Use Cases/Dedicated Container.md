@@ -1,4 +1,6 @@
 ---
+title: Dedicated container
+slug: dedicated-container
 sidebar_position: 4
 ---
 

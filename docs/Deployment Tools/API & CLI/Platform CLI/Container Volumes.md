@@ -1,4 +1,6 @@
 ---
+title: Container volumes
+slug: container-volumes
 sidebar_position: 8
 ---
 

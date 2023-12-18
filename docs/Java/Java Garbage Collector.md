@@ -1,4 +1,6 @@
 ---
+title: Java garbage collector
+slug: java-garbage-collector
 sidebar_position: 5
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Auto-clustering of instances
+slug: auto-clustering-of-instances
 sidebar_position: 6
 ---
 

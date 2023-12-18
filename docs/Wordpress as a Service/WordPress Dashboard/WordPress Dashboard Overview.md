@@ -1,4 +1,6 @@
 ---
+title: Wordpress dashboard overview
+slug: wordpress-dashboard-overview
 sidebar_position: 1
 ---
 

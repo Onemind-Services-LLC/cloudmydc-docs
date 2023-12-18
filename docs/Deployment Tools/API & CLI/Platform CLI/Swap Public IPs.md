@@ -1,4 +1,6 @@
 ---
+title: Swap public ips
+slug: swap-public-ips
 sidebar_position: 11
 ---
 

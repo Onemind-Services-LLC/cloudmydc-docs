@@ -1,4 +1,6 @@
 ---
+title: Remote access to ejb on glassfish
+slug: remote-access-to-ejb-on-glassfish
 sidebar_position: 3
 ---
 

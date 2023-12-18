@@ -1,4 +1,6 @@
 ---
+title: Node.js dev center
+slug: node.js-dev-center
 sidebar_position: 1
 ---
 

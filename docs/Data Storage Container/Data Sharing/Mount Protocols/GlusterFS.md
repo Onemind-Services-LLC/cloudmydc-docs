@@ -1,4 +1,6 @@
 ---
+title: Glusterfs
+slug: glusterfs
 sidebar_position: 2
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Release notes 7.0.3
+slug: release-notes-7.0.3
 sidebar_position: 14
 ---
 

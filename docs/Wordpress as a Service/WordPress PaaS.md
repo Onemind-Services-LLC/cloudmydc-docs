@@ -1,4 +1,6 @@
 ---
+title: Wordpress paas
+slug: wordpress-paas
 sidebar_position: 1
 ---
 

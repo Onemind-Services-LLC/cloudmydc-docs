@@ -1,4 +1,6 @@
 ---
+title: Postgis extension
+slug: postgis-extension
 sidebar_position: 7
 ---
 

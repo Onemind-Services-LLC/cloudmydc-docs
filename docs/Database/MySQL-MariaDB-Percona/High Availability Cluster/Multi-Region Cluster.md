@@ -1,4 +1,6 @@
 ---
+title: Multi-region cluster
+slug: multi-region-cluster
 sidebar_position: 4
 ---
 

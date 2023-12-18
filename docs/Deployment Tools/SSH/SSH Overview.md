@@ -1,4 +1,6 @@
 ---
+title: Ssh overview
+slug: ssh-overview
 sidebar_position: 1
 ---
 

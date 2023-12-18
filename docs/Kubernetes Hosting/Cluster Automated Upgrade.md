@@ -1,4 +1,6 @@
 ---
+title: Cluster automated upgrade
+slug: cluster-automated-upgrade
 sidebar_position: 9
 ---
 

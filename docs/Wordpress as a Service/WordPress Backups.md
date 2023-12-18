@@ -1,4 +1,6 @@
 ---
+title: Wordpress backups
+slug: wordpress-backups
 sidebar_position: 5
 ---
 

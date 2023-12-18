@@ -1,4 +1,6 @@
 ---
+title: Master container
+slug: master-container
 sidebar_position: 2
 ---
 

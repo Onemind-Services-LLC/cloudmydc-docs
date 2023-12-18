@@ -1,4 +1,6 @@
 ---
+title: Cluster recovery add-on
+slug: cluster-recovery-add-on
 sidebar_position: 5
 ---
 

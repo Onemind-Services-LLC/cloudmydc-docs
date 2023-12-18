@@ -1,4 +1,6 @@
 ---
+title: Package managers
+slug: package-managers
 sidebar_position: 1
 ---
 

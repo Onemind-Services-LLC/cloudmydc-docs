@@ -1,4 +1,6 @@
 ---
+title: Traefik v2 ingress controller
+slug: traefik-v2-ingress-controller
 sidebar_position: 6
 ---
 

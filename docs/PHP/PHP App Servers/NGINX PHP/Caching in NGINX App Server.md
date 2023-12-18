@@ -1,4 +1,6 @@
 ---
+title: Caching in nginx app server
+slug: caching-in-nginx-app-server
 sidebar_position: 5
 ---
 

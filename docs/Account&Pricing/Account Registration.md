@@ -1,4 +1,6 @@
 ---
+title: Account registration
+slug: account-registration
 sidebar_position: 1
 ---
 

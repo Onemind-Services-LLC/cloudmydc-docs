@@ -1,4 +1,6 @@
 ---
+title: Obas billing system
+slug: obas-billing-system
 sidebar_position: 3
 ---
 

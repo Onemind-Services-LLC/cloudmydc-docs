@@ -1,4 +1,6 @@
 ---
+title: Ssh gate
+slug: ssh-gate
 sidebar_position: 3
 ---
 

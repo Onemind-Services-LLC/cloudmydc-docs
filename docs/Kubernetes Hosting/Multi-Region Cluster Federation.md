@@ -1,4 +1,6 @@
 ---
+title: Multi-region cluster federation
+slug: multi-region-cluster-federation
 sidebar_position: 8
 ---
 

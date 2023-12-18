@@ -1,4 +1,6 @@
 ---
+title: Traffic distributor overview
+slug: traffic-distributor-overview
 sidebar_position: 1
 ---
 

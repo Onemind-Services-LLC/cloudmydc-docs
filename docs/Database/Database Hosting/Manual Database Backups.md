@@ -1,4 +1,6 @@
 ---
+title: Manual database backups
+slug: manual-database-backups
 sidebar_position: 8
 ---
 

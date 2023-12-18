@@ -1,4 +1,6 @@
 ---
+title: Nginx php
+slug: nginx-php
 sidebar_position: 1
 ---
 

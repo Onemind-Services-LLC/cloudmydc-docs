@@ -1,4 +1,6 @@
 ---
+title: Software stack versions
+slug: software-stack-versions
 sidebar_position: 4
 ---
 

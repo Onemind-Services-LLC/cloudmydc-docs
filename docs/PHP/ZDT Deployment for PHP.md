@@ -1,4 +1,6 @@
 ---
+title: Zdt deployment for php
+slug: zdt-deployment-for-php
 sidebar_position: 5
 ---
 

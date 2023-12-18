@@ -1,4 +1,6 @@
 ---
+title: Two-factor authentication
+slug: two-factor-authentication
 sidebar_position: 6
 ---
 

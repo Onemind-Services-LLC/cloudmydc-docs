@@ -1,4 +1,6 @@
 ---
+title: Release notes 8.1
+slug: release-notes-8.1
 sidebar_position: 7
 ---
 

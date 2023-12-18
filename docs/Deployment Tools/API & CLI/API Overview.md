@@ -1,4 +1,6 @@
 ---
+title: Api overview
+slug: api-overview
 sidebar_position: 1
 ---
 

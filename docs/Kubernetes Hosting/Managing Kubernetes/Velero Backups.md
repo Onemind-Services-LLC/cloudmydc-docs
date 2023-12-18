@@ -1,4 +1,6 @@
 ---
+title: Velero backups
+slug: velero-backups
 sidebar_position: 5
 ---
 

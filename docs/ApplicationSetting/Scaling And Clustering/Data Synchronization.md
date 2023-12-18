@@ -1,4 +1,6 @@
 ---
+title: Data synchronization
+slug: data-synchronization
 sidebar_position: 4
 ---
 

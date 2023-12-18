@@ -1,4 +1,6 @@
 ---
+title: Php connection
+slug: php-connection
 sidebar_position: 2
 ---
 

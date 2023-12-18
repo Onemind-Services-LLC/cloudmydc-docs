@@ -1,4 +1,6 @@
 ---
+title: Setting up environment
+slug: setting-up-environment
 sidebar_position: 1
 ---
 

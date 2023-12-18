@@ -1,4 +1,6 @@
 ---
+title: Java app server configuration
+slug: java-app-server-configuration
 sidebar_position: 4
 ---
 

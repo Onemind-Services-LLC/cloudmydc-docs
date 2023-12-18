@@ -1,4 +1,6 @@
 ---
+title: Memcached configuration
+slug: memcached-configuration
 sidebar_position: 2
 ---
 

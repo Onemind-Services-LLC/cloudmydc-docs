@@ -1,4 +1,6 @@
 ---
+title: New relic update
+slug: new-relic-update
 sidebar_position: 2
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Createenv params
+slug: createenv-params
 sidebar_position: 4
 ---
 

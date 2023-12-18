@@ -1,4 +1,6 @@
 ---
+title: Haproxy
+slug: haproxy
 sidebar_position: 4
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Maven plugin
+slug: maven-plugin
 sidebar_position: 4
 ---
 

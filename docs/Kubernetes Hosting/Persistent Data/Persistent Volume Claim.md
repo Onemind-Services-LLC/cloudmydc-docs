@@ -1,4 +1,6 @@
 ---
+title: Persistent volume claim
+slug: persistent-volume-claim
 sidebar_position: 2
 ---
 

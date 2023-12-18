@@ -1,4 +1,6 @@
 ---
+title: Volumes
+slug: volumes
 sidebar_position: 4
 ---
 

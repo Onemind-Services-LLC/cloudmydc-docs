@@ -1,4 +1,6 @@
 ---
+title: Corruption diagnostic add-on
+slug: corruption-diagnostic-add-on
 sidebar_position: 4
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Wagtail cms
+slug: wagtail-cms
 sidebar_position: 2
 ---
 

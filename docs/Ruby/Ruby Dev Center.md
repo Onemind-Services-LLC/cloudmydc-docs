@@ -1,4 +1,6 @@
 ---
+title: Ruby dev center
+slug: ruby-dev-center
 sidebar_position: 1
 ---
 

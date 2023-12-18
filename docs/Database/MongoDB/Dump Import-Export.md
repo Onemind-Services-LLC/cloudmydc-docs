@@ -1,4 +1,6 @@
 ---
+title: Dump import-export
+slug: dump-import-export
 sidebar_position: 4
 ---
 

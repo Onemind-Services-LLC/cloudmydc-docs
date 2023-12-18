@@ -1,4 +1,6 @@
 ---
+title: Post deploy configuration
+slug: post-deploy-configuration
 sidebar_position: 2
 ---
 

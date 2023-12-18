@@ -1,4 +1,6 @@
 ---
+title: Environment migration
+slug: environment-migration
 sidebar_position: 5
 ---
 

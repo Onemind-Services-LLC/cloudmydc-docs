@@ -1,4 +1,6 @@
 ---
+title: Jdbc connection pool
+slug: jdbc-connection-pool
 sidebar_position: 5
 ---
 

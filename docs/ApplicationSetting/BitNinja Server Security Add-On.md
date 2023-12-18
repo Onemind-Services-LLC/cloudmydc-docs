@@ -1,4 +1,6 @@
 ---
+title: Bitninja server security add-on
+slug: bitninja-server-security-add-on
 sidebar_position: 11
 ---
 

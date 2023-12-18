@@ -1,4 +1,6 @@
 ---
+title: Helm integration
+slug: helm-integration
 sidebar_position: 1
 ---
 

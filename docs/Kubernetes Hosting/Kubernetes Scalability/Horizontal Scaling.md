@@ -1,4 +1,6 @@
 ---
+title: Horizontal scaling
+slug: horizontal-scaling
 sidebar_position: 2
 ---
 

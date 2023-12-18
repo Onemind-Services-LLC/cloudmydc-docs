@@ -1,4 +1,6 @@
 ---
+title: Server scaling
+slug: server-scaling
 sidebar_position: 6
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Automatic vertical scaling
+slug: automatic-vertical-scaling
 sidebar_position: 1
 ---
 

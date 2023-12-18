@@ -1,4 +1,6 @@
 ---
+title: Ruby app server configuration
+slug: ruby-app-server-configuration
 sidebar_position: 4
 ---
 

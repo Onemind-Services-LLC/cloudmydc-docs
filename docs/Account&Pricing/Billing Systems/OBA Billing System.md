@@ -1,4 +1,6 @@
 ---
+title: Oba billing system
+slug: oba-billing-system
 sidebar_position: 2
 ---
 

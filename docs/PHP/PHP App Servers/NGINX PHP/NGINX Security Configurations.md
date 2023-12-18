@@ -1,4 +1,6 @@
 ---
+title: Nginx security configurations
+slug: nginx-security-configurations
 sidebar_position: 2
 ---
 

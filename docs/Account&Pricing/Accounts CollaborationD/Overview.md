@@ -1,4 +1,6 @@
 ---
+title: Overview
+slug: overview
 sidebar_position: 1
 ---
 

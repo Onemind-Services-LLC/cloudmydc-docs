@@ -1,4 +1,6 @@
 ---
+title: Environment creation
+slug: environment-creation
 sidebar_position: 2
 ---
 

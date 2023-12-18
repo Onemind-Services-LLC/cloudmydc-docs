@@ -1,4 +1,6 @@
 ---
+title: Deployment guide
+slug: deployment-guide
 sidebar_position: 3
 ---
 

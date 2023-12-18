@@ -1,4 +1,6 @@
 ---
+title: Tomcat clustering
+slug: tomcat-clustering
 sidebar_position: 4
 ---
 

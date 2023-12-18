@@ -1,4 +1,6 @@
 ---
+title: Upgrade & refill account
+slug: upgrade-&-refill-account
 sidebar_position: 11
 ---
 

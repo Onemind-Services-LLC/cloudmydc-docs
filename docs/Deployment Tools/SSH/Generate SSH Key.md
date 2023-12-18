@@ -1,4 +1,6 @@
 ---
+title: Generate ssh key
+slug: generate-ssh-key
 sidebar_position: 2
 ---
 

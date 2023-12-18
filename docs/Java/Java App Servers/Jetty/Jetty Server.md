@@ -1,4 +1,6 @@
 ---
+title: Jetty server
+slug: jetty-server
 sidebar_position: 1
 ---
 

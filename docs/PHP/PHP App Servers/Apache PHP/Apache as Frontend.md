@@ -1,4 +1,6 @@
 ---
+title: Apache as frontend
+slug: apache-as-frontend
 sidebar_position: 8
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Multiple domain for php
+slug: multiple-domain-for-php
 sidebar_position: 5
 ---
 

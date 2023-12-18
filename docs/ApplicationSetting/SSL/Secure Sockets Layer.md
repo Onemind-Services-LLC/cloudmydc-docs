@@ -1,4 +1,6 @@
 ---
+title: Secure sockets layer
+slug: secure-sockets-layer
 sidebar_position: 1
 ---
 

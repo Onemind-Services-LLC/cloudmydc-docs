@@ -1,4 +1,6 @@
 ---
+title: Public ip
+slug: public-ip
 sidebar_position: 2
 ---
 

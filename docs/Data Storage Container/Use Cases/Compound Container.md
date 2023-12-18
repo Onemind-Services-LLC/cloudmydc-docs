@@ -1,4 +1,6 @@
 ---
+title: Compound container
+slug: compound-container
 sidebar_position: 3
 ---
 

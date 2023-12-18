@@ -1,4 +1,6 @@
 ---
+title: A-b testing
+slug: a-b-testing
 sidebar_position: 3
 ---
 

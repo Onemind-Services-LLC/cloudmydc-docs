@@ -1,4 +1,6 @@
 ---
+title: App security with nginx balancer
+slug: app-security-with-nginx-balancer
 sidebar_position: 6
 ---
 

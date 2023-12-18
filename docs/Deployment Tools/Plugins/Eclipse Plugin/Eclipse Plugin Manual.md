@@ -1,4 +1,6 @@
 ---
+title: Eclipse plugin manual
+slug: eclipse-plugin-manual
 sidebar_position: 1
 ---
 

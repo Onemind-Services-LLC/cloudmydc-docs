@@ -1,4 +1,6 @@
 ---
+title: Access control
+slug: access-control
 sidebar_position: 2
 ---
 

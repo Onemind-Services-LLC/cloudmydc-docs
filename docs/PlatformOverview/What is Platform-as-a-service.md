@@ -1,4 +1,6 @@
 ---
+title: What is platform-as-a-service
+slug: what-is-platform-as-a-service
 sidebar_position: 1
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: App migration between clouds
+slug: app-migration-between-clouds
 sidebar_position: 1
 ---
 

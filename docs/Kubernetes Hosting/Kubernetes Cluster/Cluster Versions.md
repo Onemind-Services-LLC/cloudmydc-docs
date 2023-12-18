@@ -1,4 +1,6 @@
 ---
+title: Cluster versions
+slug: cluster-versions
 sidebar_position: 4
 ---
 

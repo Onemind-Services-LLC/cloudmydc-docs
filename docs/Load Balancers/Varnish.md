@@ -1,4 +1,6 @@
 ---
+title: Varnish
+slug: varnish
 sidebar_position: 5
 ---
 

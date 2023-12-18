@@ -1,4 +1,6 @@
 ---
+title: Redmine
+slug: redmine
 sidebar_position: 1
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Tomcat-tomee variables
+slug: tomcat-tomee-variables
 sidebar_position: 3
 ---
 

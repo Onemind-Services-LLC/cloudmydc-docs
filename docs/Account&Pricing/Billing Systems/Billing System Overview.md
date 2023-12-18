@@ -1,4 +1,6 @@
 ---
+title: Billing system overview
+slug: billing-system-overview
 sidebar_position: 1
 ---
 

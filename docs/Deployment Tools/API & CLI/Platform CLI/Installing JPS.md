@@ -1,4 +1,6 @@
 ---
+title: Installing jps
+slug: installing-jps
 sidebar_position: 12
 ---
 

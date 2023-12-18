@@ -1,4 +1,6 @@
 ---
+title: Configuration file manager
+slug: configuration-file-manager
 sidebar_position: 1
 ---
 

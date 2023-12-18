@@ -1,4 +1,6 @@
 ---
+title: Hasura graphql installation
+slug: hasura-graphql-installation
 sidebar_position: 8
 ---
 

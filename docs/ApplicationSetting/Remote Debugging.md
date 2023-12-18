@@ -1,4 +1,6 @@
 ---
+title: Remote debugging
+slug: remote-debugging
 sidebar_position: 16
 ---
 

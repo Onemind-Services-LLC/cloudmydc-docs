@@ -1,4 +1,6 @@
 ---
+title: Environment import
+slug: environment-import
 sidebar_position: 3
 ---
 

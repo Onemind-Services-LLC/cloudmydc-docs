@@ -1,4 +1,6 @@
 ---
+title: Personal access tokens
+slug: personal-access-tokens
 sidebar_position: 8
 ---
 

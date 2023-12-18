@@ -1,4 +1,6 @@
 ---
+title: Database connection strings
+slug: database-connection-strings
 sidebar_position: 4
 ---
 

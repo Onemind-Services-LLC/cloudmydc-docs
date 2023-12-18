@@ -1,4 +1,6 @@
 ---
+title: Monitoring consumed resources
+slug: monitoring-consumed-resources
 sidebar_position: 3
 ---
 

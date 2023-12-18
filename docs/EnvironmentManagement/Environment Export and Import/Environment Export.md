@@ -1,4 +1,6 @@
 ---
+title: Environment export
+slug: environment-export
 sidebar_position: 2
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Ant task
+slug: ant-task
 sidebar_position: 1
 ---
 

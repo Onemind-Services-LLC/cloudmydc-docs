@@ -1,4 +1,6 @@
 ---
+title: Websockets support for php
+slug: websockets-support-for-php
 sidebar_position: 3
 ---
 

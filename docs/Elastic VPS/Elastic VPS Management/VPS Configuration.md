@@ -1,4 +1,6 @@
 ---
+title: Vps configuration
+slug: vps-configuration
 sidebar_position: 1
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Cluster access levels
+slug: cluster-access-levels
 sidebar_position: 9
 ---
 

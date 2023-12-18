@@ -1,4 +1,6 @@
 ---
+title: Php connection to mongodb
+slug: php-connection-to-mongodb
 sidebar_position: 2
 ---
 

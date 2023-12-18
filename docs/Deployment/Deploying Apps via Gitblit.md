@@ -1,4 +1,6 @@
 ---
+title: Deploying apps via gitblit
+slug: deploying-apps-via-gitblit
 sidebar_position: 6
 ---
 

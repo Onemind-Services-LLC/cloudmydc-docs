@@ -1,4 +1,6 @@
 ---
+title: Deployment manager
+slug: deployment-manager
 sidebar_position: 2
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Setting mail server inside vps
+slug: setting-mail-server-inside-vps
 sidebar_position: 2
 ---
 

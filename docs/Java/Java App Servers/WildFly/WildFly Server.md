@@ -1,4 +1,6 @@
 ---
+title: Wildfly server
+slug: wildfly-server
 sidebar_position: 1
 ---
 

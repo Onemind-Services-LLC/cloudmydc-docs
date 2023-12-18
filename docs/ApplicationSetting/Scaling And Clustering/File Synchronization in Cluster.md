@@ -1,4 +1,6 @@
 ---
+title: File synchronization in cluster
+slug: file-synchronization-in-cluster
 sidebar_position: 5
 ---
 

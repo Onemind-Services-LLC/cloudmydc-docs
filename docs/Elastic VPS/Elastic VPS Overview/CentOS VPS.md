@@ -1,4 +1,6 @@
 ---
+title: Centos vps
+slug: centos-vps
 sidebar_position: 2
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Glassfish environment variables
+slug: glassfish-environment-variables
 sidebar_position: 2
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Building custom container
+slug: building-custom-container
 sidebar_position: 9
 ---
 

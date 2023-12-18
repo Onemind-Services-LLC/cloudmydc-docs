@@ -1,4 +1,6 @@
 ---
+title: Upload jar files
+slug: upload-jar-files
 sidebar_position: 1
 ---
 

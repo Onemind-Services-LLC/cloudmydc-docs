@@ -1,4 +1,6 @@
 ---
+title: Cloudlet
+slug: cloudlet
 sidebar_position: 7
 ---
 

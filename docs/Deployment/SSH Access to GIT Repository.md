@@ -1,4 +1,6 @@
 ---
+title: Ssh access to git repository
+slug: ssh-access-to-git-repository
 sidebar_position: 5
 ---
 

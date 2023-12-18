@@ -1,4 +1,6 @@
 ---
+title: Wildfly managed domain
+slug: wildfly-managed-domain
 sidebar_position: 2
 ---
 

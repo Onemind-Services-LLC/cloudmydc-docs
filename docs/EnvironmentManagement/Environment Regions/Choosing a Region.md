@@ -1,4 +1,6 @@
 ---
+title: Choosing a region
+slug: choosing-a-region
 sidebar_position: 1
 ---
 

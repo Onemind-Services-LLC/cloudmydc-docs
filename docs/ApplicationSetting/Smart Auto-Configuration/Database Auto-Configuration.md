@@ -1,4 +1,6 @@
 ---
+title: Database auto-configuration
+slug: database-auto-configuration
 sidebar_position: 2
 ---
 

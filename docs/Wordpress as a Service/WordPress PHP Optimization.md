@@ -1,4 +1,6 @@
 ---
+title: Wordpress php optimization
+slug: wordpress-php-optimization
 sidebar_position: 7
 ---
 

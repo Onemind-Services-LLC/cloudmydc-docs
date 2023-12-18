@@ -1,4 +1,6 @@
 ---
+title: Release notes 8.2.4
+slug: release-notes-8.2.4
 sidebar_position: 4
 ---
 

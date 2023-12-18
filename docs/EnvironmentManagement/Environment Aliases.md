@@ -1,4 +1,6 @@
 ---
+title: Environment aliases
+slug: environment-aliases
 sidebar_position: 8
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Platform cli overview
+slug: platform-cli-overview
 sidebar_position: 1
 ---
 

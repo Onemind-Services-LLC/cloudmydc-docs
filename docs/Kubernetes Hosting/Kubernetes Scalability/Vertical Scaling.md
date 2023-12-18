@@ -1,4 +1,6 @@
 ---
+title: Vertical scaling
+slug: vertical-scaling
 sidebar_position: 1
 ---
 

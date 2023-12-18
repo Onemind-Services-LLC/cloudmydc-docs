@@ -1,4 +1,6 @@
 ---
+title: Encryption in transit add-on
+slug: encryption-in-transit-add-on
 sidebar_position: 5
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Apache webdav module
+slug: apache-webdav-module
 sidebar_position: 5
 ---
 

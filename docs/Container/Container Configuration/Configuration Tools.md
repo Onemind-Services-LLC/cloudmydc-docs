@@ -1,4 +1,6 @@
 ---
+title: Configuration tools
+slug: configuration-tools
 sidebar_position: 1
 ---
 

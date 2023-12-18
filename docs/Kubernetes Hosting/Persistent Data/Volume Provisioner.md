@@ -1,4 +1,6 @@
 ---
+title: Volume provisioner
+slug: volume-provisioner
 sidebar_position: 1
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Wordpress project management
+slug: wordpress-project-management
 sidebar_position: 3
 ---
 

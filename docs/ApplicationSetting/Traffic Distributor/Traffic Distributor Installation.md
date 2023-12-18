@@ -1,4 +1,6 @@
 ---
+title: Traffic distributor installation
+slug: traffic-distributor-installation
 sidebar_position: 3
 ---
 

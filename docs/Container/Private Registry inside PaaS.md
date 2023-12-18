@@ -1,4 +1,6 @@
 ---
+title: Private registry inside paas
+slug: private-registry-inside-paas
 sidebar_position: 8
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Node.js connection to mongodb
+slug: node.js-connection-to-mongodb
 sidebar_position: 4
 ---
 

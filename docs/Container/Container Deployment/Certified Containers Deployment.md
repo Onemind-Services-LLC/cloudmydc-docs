@@ -1,4 +1,6 @@
 ---
+title: Certified containers deployment
+slug: certified-containers-deployment
 sidebar_position: 1
 ---
 

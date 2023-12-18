@@ -1,4 +1,6 @@
 ---
+title: Galera cluster recovery
+slug: galera-cluster-recovery
 sidebar_position: 6
 ---
 

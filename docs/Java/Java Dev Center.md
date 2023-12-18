@@ -1,4 +1,6 @@
 ---
+title: Java dev center
+slug: java-dev-center
 sidebar_position: 1
 ---
 

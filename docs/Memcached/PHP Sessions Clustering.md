@@ -1,4 +1,6 @@
 ---
+title: Php sessions clustering
+slug: php-sessions-clustering
 sidebar_position: 4
 ---
 

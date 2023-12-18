@@ -1,4 +1,6 @@
 ---
+title: Local filesystem
+slug: local-filesystem
 sidebar_position: 1
 ---
 

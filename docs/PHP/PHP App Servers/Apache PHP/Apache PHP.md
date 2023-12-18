@@ -1,4 +1,6 @@
 ---
+title: Apache php
+slug: apache-php
 sidebar_position: 1
 ---
 

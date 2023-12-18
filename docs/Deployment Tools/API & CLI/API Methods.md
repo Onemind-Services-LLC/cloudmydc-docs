@@ -1,4 +1,6 @@
 ---
+title: Api methods
+slug: api-methods
 sidebar_position: 2
 ---
 

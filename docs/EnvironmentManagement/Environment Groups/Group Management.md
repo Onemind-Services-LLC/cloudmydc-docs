@@ -1,4 +1,6 @@
 ---
+title: Group management
+slug: group-management
 sidebar_position: 4
 ---
 

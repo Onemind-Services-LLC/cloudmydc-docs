@@ -1,4 +1,6 @@
 ---
+title: Links
+slug: links
 sidebar_position: 3
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Load alerts
+slug: load-alerts
 sidebar_position: 3
 ---
 

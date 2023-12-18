@@ -1,4 +1,6 @@
 ---
+title: Php extensions
+slug: php-extensions
 sidebar_position: 1
 ---
 

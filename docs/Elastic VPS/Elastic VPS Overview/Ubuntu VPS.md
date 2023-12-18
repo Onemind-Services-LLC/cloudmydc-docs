@@ -1,4 +1,6 @@
 ---
+title: Ubuntu vps
+slug: ubuntu-vps
 sidebar_position: 3
 ---
 

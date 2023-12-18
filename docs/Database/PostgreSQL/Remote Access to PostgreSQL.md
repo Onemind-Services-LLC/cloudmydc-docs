@@ -1,4 +1,6 @@
 ---
+title: Remote access to postgresql
+slug: remote-access-to-postgresql
 sidebar_position: 5
 ---
 

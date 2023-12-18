@@ -1,4 +1,6 @@
 ---
+title: Zero code change deploy
+slug: zero-code-change-deploy
 sidebar_position: 1
 ---
 

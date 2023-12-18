@@ -1,4 +1,6 @@
 ---
+title: Custom environment variables
+slug: custom-environment-variables
 sidebar_position: 3
 ---
 

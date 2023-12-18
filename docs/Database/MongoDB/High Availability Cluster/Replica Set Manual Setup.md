@@ -1,4 +1,6 @@
 ---
+title: Replica set manual setup
+slug: replica-set-manual-setup
 sidebar_position: 2
 ---
 

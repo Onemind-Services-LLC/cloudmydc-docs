@@ -1,4 +1,6 @@
 ---
+title: Python connection to mongodb
+slug: python-connection-to-mongodb
 sidebar_position: 3
 ---
 

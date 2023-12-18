@@ -1,4 +1,6 @@
 ---
+title: Auto-deploy overview
+slug: auto-deploy-overview
 sidebar_position: 1
 ---
 

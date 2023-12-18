@@ -1,4 +1,6 @@
 ---
+title: Collaboration user experience
+slug: collaboration-user-experience
 sidebar_position: 4
 ---
 

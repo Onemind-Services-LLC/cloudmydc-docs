@@ -1,4 +1,6 @@
 ---
+title: Remote access via webdav
+slug: remote-access-via-webdav
 sidebar_position: 8
 ---
 

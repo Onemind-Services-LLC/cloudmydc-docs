@@ -1,4 +1,6 @@
 ---
+title: Go dev center
+slug: go-dev-center
 sidebar_position: 1
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: Email via external smtp
+slug: email-via-external-smtp
 sidebar_position: 1
 ---
 

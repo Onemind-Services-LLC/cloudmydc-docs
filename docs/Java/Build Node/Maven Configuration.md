@@ -1,4 +1,6 @@
 ---
+title: Maven configuration
+slug: maven-configuration
 sidebar_position: 2
 ---
 

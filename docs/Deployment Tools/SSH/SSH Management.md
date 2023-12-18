@@ -1,4 +1,6 @@
 ---
+title: Ssh management
+slug: ssh-management
 sidebar_position: 5
 ---
 

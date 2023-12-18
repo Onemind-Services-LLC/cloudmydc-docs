@@ -1,4 +1,6 @@
 ---
+title: Group creation
+slug: group-creation
 sidebar_position: 2
 ---
 
