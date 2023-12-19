@@ -22,7 +22,7 @@ The PaaS is offered across multiple platforms worldwide, so if you don’t have 
 
 :::tip Tip
 
-Check out our **[Getting Started](/docs/QuickStart/Getting%20Started)** guide for general information on how to create a new account.
+Check out our **[Getting Started](http://localhost:3000/docs/quickstart/getting-started)** guide for general information on how to create a new account.
 
 :::
 

@@ -65,7 +65,7 @@ Here we use the NGINX load balancer node, but you can choose any other available
 
 </div>
 
-3. After that, create an [A record](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-configure-dns-record) for a [custom domain](/docs/application-setting/domain-name-management/custom-domain-name) using the IP address added at the previous step. For example **_cargo-tracker.jele.website_**.
+3. After that, create an [A record](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#how-to-configure-dns-record) for a [custom domain](/docs/application-setting/domain-name-management/custom-domain-name) using the IP address added at the previous step. For example **_cargo-tracker.jele.website_**.
 
 <div style={{
     display:'flex',

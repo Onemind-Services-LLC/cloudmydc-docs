@@ -10,7 +10,7 @@ You have an opportunity to work with your databases remotely from your computer 
 
 ## Create Environment
 
-The database can be accessed either via [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip) or [endpoints](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#endpoints-a-direct-connection-to-the-cloud) (no public IP required). Let’s take a look at both options of creating database environment.
+The database can be accessed either via [public IP](http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip#public-ip) or [endpoints](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#endpoints-a-direct-connection-to-the-cloud) (no public IP required). Let’s take a look at both options of creating database environment.
 
 ## Environment with Public IP
 

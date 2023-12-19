@@ -50,7 +50,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.3.2#ssh-gate-cryptography-update">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.3.2#ssh-gate-cryptography-update">
                     Learn More >>
                 </a>
             </div>
@@ -69,7 +69,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.3.2#software-stack-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.3.2#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -113,7 +113,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.3.2#fixes-compatible-with-prior-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.3.2#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -132,7 +132,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.3.2#bug-fixes">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.3.2#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -157,7 +157,7 @@ In the current 7.3.2 release, the platform **[SSH Gate](/docs/deployment-tools/s
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -276,7 +276,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -285,16 +285,16 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.3.2#software-stack-versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.3.2#software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.3.2#software-stack-versions)
+[More info](http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.3.2#software-stack-versions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

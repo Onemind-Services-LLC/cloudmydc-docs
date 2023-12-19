@@ -49,7 +49,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.3#debian-11-os-template-support">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1.3#debian-11-os-template-support">
                     Learn More >>
                 </a>
             </div>
@@ -93,7 +93,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.3#pop-up-notifications-for-interrupted-onbeforeinit-event">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1.3#pop-up-notifications-for-interrupted-onbeforeinit-event">
                     Learn More >>
                 </a>
             </div>
@@ -112,7 +112,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.3#software-stack-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1.3#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -156,7 +156,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.3#fixes-compatible-with-prior-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1.3#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -175,7 +175,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.3#bug-fixes">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1.3#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -200,14 +200,14 @@ Also, Debian 11 was added as an out-of-box [Elastic VPS](/docs/Elastic%20VPS/Ela
 
 </div>
 
-[More info](/docs/Container/Container%20Image%20Requirements)
+[More info](http://localhost:3000/docs/container/container-image-requirements)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -239,7 +239,7 @@ return { type: "info|warning|error", message: "Your custom message." };
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -360,7 +360,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -378,7 +378,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

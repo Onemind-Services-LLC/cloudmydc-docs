@@ -41,7 +41,7 @@ With SSH Gate, you can easily access:
 
 </div>
 
-- **separate containers directly** while working with them remotely via additional tools (e.g. [Capistrano](/docs/Deployment%20Tools/SSH/Capistrano)) or using SFTP and FISH protocols
+- **separate containers directly** while working with them remotely via additional tools (e.g. [Capistrano](http://localhost:3000/docs/deployment-tools/ssh/capistrano)) or using SFTP and FISH protocols
 
 <div style={{
     display:'flex',
@@ -77,12 +77,12 @@ An additional secure network protocol is **FISH** (Files transferred over Shell 
 
 Using our documentation you’ll find out how to:
 
-- [generate SSH key](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key)
+- [generate SSH key](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key)
 - [add SSH key](/docs/deployment-tools/ssh/add-ssh-key)
-- [access environments and containers](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview)
+- [access environments and containers](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview)
 - [work via SSH](https://cloudmydc.com/)
 - [use SFTP and FISH protocols](/docs/deployment-tools/ssh/ssh-protocols)
-- [manage containers via SSH with Capistrano](/docs/Deployment%20Tools/SSH/Capistrano)
+- [manage containers via SSH with Capistrano](http://localhost:3000/docs/deployment-tools/ssh/capistrano)
 
 :::tip Note
 

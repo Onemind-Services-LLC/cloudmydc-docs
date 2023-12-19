@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Custom Environment Variables
 
-Environment variables represent a kind of placeholders, where you can store the frequently used parameters values or strings in order not to specify them manually in the code each time they are needed. There is a number of [default environment variables](/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables#default-environment-variables) which are preconfigured and can be used in your application code or even adjusted before node creation to apply some customization, making your work with the platform even more convenient.
+Environment variables represent a kind of placeholders, where you can store the frequently used parameters values or strings in order not to specify them manually in the code each time they are needed. There is a number of [default environment variables](http://localhost:3000/docs/environment-management/environment-variables/environment-variables#default-environment-variables) which are preconfigured and can be used in your application code or even adjusted before node creation to apply some customization, making your work with the platform even more convenient.
 
 In this guide, we’ll describe the most common ways of adding your custom variables for any node within the platform:
 
@@ -57,7 +57,7 @@ You are able to provide your custom variables using the shell config files:
 
 In order to help you with maintaining these files, the platform automatically include the sources of the **_.bashrc_** config within **_.bash_profile_**. In such a way, you can provide custom variables through the former file only:
 
-1. Establish [SSH connection](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) to your container. For example, we’ll use the embedded **Web SSH** client:
+1. Establish [SSH connection](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) to your container. For example, we’ll use the embedded **Web SSH** client:
 
 <div style={{
     display:'flex',
@@ -134,7 +134,7 @@ The following simple workflow is identical for all of the platform-managed Java 
 - **Payara** - _/opt/payara/glassfish/domains/domain1/config/variables.conf_
 - **WildFly** - _/opt/wildfly/conf/variables.conf_
 
-3. Here, you can provide your custom variables (each one should be separated by space or start from a new line) or [adjust Java options]/docs/EnvironmentManagement/EnvironmentVariables/Java%20Options%20and%20Arguments) for your application. For example:
+3. Here, you can provide your custom variables (each one should be separated by space or start from a new line) or [adjust Java options]http://localhost:3000/docs/environment-management/environment-variables/java-options-and-arguments) for your application. For example:
 
    **_-Dvar1=value1 -Dvar2=value2_**
 

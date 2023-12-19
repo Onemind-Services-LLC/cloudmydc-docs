@@ -46,7 +46,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#almalinux-9-base-os-image">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#almalinux-9-base-os-image">
                     Learn More >>
                 </a>
             </div>
@@ -65,7 +65,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#subscription-improvements">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#subscription-improvements">
                     Learn More >>
                 </a>
             </div>
@@ -109,7 +109,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#action-initiator-for-emails">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#action-initiator-for-emails">
                     Learn More >>
                 </a>
             </div>
@@ -128,7 +128,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#api-changes">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -147,7 +147,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#software-stack-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -191,7 +191,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#fixes-compatible-with-prior-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -210,7 +210,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#bug-fixes">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -244,16 +244,16 @@ The transition process will be gradual and non-intrusive. It follows the next po
 
 Alongside the AlmaLinux 9 image implementation, some new functionality is introduced, including updated key generation (_rsa-sha2-256_ and _rsa-sha2-512_ signatures support), updated Guacamole ([Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh)) client, and **_[nftables](https://netfilter.org/projects/nftables/)_** netfilter (replaces _iptables_). The _nftables_ solution is a new recommended choice for firewall rules management. It offers unified and consistent syntax (contrary to the _xtables_ utilities), high performance through maps and concatenations, and increased security as rules get translated into bytecode. At the same time, all the dashboard UI and API calls remain the same as before so that the management process is unchanged.
 
-Other stack-related changes include an updated list of [supported OS distributions](/docs/Container/Container%20Image%20Requirements), including **CentOS Stream 9** addition and **Debian 9** deprecation.
+Other stack-related changes include an updated list of [supported OS distributions](http://localhost:3000/docs/container/container-image-requirements), including **CentOS Stream 9** addition and **Debian 9** deprecation.
 
-[More info](/docs/Container/Container%20Image%20Requirements)
+[More info](http://localhost:3000/docs/container/container-image-requirements)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#cloudmydc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -318,7 +318,7 @@ Lastly the ability to enable/disable **Auto Pay** option was implemented, allowi
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#cloudmydc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -332,16 +332,16 @@ CloudMyDc Application Platform provides a powerful [collaboration functionality]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#cloudmydc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## API Changes
 
-Below, you can find a list of all changes to the public API in the 8.3 platform version (compared to the preceding [8.2.2](/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.2#api-changes) ones):
+Below, you can find a list of all changes to the public API in the 8.3 platform version (compared to the preceding [8.2.2](http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2#api-changes) ones):
 
-- Added new **_SetAutopay_**, **_MoveProduct_**, **_UpdateSubscription_**, **_UpcomingInvoice_**, and **_DiscardUpdateSubscription_** API methods due to [subscription](/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#subscription-improvements) changes.
+- Added new **_SetAutopay_**, **_MoveProduct_**, **_UpdateSubscription_**, **_UpcomingInvoice_**, and **_DiscardUpdateSubscription_** API methods due to [subscription](http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#subscription-improvements) changes.
 - Added a new **_invalidateSessions_** parameter to all the password reset methods, which allows terminating all active user sessions (except the current one).
 
 The API documentation’s complete review has started in order to provide a comprehensive description of all the methods and their parameters. Currently, most of the **_billing_** and **_environment_** services have been updated. You can expect complete coverage over the course of several future releases.
@@ -353,7 +353,7 @@ The API documentation’s complete review has started in order to provide a comp
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#cloudmydc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -472,7 +472,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#cloudmydc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -490,7 +490,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#cloudmydc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>

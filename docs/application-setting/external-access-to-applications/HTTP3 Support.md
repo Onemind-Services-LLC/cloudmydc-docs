@@ -8,16 +8,16 @@ sidebar_position: 6
 
 **_HTTP/3_** (formerly known as _“HTTP over QUIC"_) is the to-become third major version of the Hypertext Transfer Protocol family. Featurewise, it is very similar to HTTP/2 but offers some significant advantages due to changes to the underlying method of utilization. Namely, the HTTP/3 is built on **_QUIC_** transport protocol, which works over UDP instead of TCP.
 
-Currently, HTTP/3 is already provided by some solutions (e.g. *LiteSpeed and *NGINX\*) and is [adopted by the platform](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support) through the latest releases of the following stacks:
+Currently, HTTP/3 is already provided by some solutions (e.g. *LiteSpeed and *NGINX\*) and is [adopted by the platform](http://localhost:3000/docs/application-setting/external-access-to-applications/http3-support) through the latest releases of the following stacks:
 
 - **_load balancers:_** [LiteSpeed Web ADC](/docs/Load%20Balancers/LiteSpeed%20Web%20ADC), [Varnish](/docs/Load%20Balancers/Varnish), [NGINX](/docs/Load%20Balancers/NGINX/NGINX%20Balancer)
 - **_application servers:_** [LiteSpeed WS](/docs/PHP/PHP%20App%20Servers/LiteSpeed%20Web%20Server), [LLSMP & LEMP](/docs/PHP/PHP%20App%20Servers/LEMP%20&%20LLSMP), [NGINX PHP](/docs/PHP/PHP%20App%20Servers/NGINX%20PHP/), [NGINX Ruby](/docs/Ruby/NGINX%20Ruby)
 
 Below, you can check the:
 
-- [technical preconditions of the HTTP/3 implementation](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support#technical-implementation-specificspreconditions)
-- [benefits of the HTTP/3 (QUIC)](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support#http3-quic-key-features)
-- [integration in the platform](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support#http3-support-implementation)
+- [technical preconditions of the HTTP/3 implementation](http://localhost:3000/docs/application-setting/external-access-to-applications/http3-support#technical-implementation-specificspreconditions)
+- [benefits of the HTTP/3 (QUIC)](http://localhost:3000/docs/application-setting/external-access-to-applications/http3-support#http3-quic-key-features)
+- [integration in the platform](http://localhost:3000/docs/application-setting/external-access-to-applications/http3-support#http3-support-implementation)
 
 ## Technical Implementation Specifics/Preconditions
 
@@ -32,7 +32,7 @@ Below, we’ve provided some examples of the limitations provided by TCP:
 
 :::
 
-UDP suffers no such limitations and is just as widespread as TCP, which allows achieving improvements without significant changes to the existing operating systems and devices firmware. Thus, HTTP/3 has adopted the QUIC transport protocol (initially developed by Google), which is based on UDP, provides [significant benefits](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support#http3-quic-key-features). Also, being already in use by prominent internet companies such as Google and Facebook, the efficiency and reliability of the QUIC solution cannot be denied.
+UDP suffers no such limitations and is just as widespread as TCP, which allows achieving improvements without significant changes to the existing operating systems and devices firmware. Thus, HTTP/3 has adopted the QUIC transport protocol (initially developed by Google), which is based on UDP, provides [significant benefits](http://localhost:3000/docs/application-setting/external-access-to-applications/http3-support#http3-quic-key-features). Also, being already in use by prominent internet companies such as Google and Facebook, the efficiency and reliability of the QUIC solution cannot be denied.
 
 ## HTTP/3 (QUIC) Key Features
 

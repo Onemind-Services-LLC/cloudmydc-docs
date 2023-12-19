@@ -8,7 +8,7 @@ import obj from './EnvironmentVariables.json'
 
 **Environment variables** are used to store the values of the frequently used parameters that are provided to a software program at runtime. The utilization of such placeholders makes your application more portable and flexible.
 
-The most common use of variables is to make quick adjustments to specific values that are utilized multiple times in your application code. Follow the linked guide if you need to create such [custom environment variables](/docs/EnvironmentManagement/EnvironmentVariables/Custom%20Environment%20Variables) for your project.
+The most common use of variables is to make quick adjustments to specific values that are utilized multiple times in your application code. Follow the linked guide if you need to create such [custom environment variables](http://localhost:3000/docs/environment-management/environment-variables/custom-environment-variables) for your project.
 
 Another use case for variables is to configure the application through the set of predefined values (enable/disable features, change behavior, etc.). The platform supplements most of the certified software stacks with a number of default variables, which can be used by developers to help with application hosting.
 

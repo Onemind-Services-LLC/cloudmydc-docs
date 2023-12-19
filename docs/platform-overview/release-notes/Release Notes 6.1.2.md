@@ -49,7 +49,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.2#ubuntu-21-os-template-support">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1.2#ubuntu-21-os-template-support">
                     Learn More >>
                 </a>
             </div>
@@ -93,7 +93,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.2#deprecated-password-authentication-for-git">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1.2#deprecated-password-authentication-for-git">
                     Learn More >>
                 </a>
             </div>
@@ -112,7 +112,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.2#software-stack-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1.2#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -156,7 +156,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.2#fixes-compatible-with-prior-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1.2#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -169,14 +169,14 @@ Fixed
 
 The platform implements support for the **Ubuntu 21** OS templates on all the PaaS installations regardless of the platform version. The new release offers an updated kernel, toolchain upgrades, security improvements, and more. For detailed information on [Ubuntu 21](https://discourse.ubuntu.com/t/hirsute-hippo-release-notes/19221) refer to the official release notes.
 
-[More info](/docs/Container/Container%20Image%20Requirements)
+[More info](http://localhost:3000/docs/container/container-image-requirements)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -190,7 +190,7 @@ Due to a recent [security update](https://github.blog/2020-12-15-token-authentic
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -311,7 +311,7 @@ Below, you can find the fixes that were implemented in the PaaS 6.1.2 release an
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -329,7 +329,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

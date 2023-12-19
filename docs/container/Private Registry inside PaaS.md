@@ -27,10 +27,10 @@ In order to handle your own Docker image, the appropriate registry is needed. Th
 
 So, let’s discover how to get it at the platform in a matter of minutes through following the next steps:
 
-- [deploying private registry](/docs/Container/Private%20Registry%20inside%20PaaS#deploy-private-registry)
-- [adding image to registry](/docs/Container/Private%20Registry%20inside%20PaaS#add-image-to-registry)
+- [deploying private registry](http://localhost:3000/docs/container/private-registry-inside-paas#deploy-private-registry)
+- [adding image to registry](http://localhost:3000/docs/container/private-registry-inside-paas#add-image-to-registry)
 
-Subsequently, you’ll be able to easily deploy the added image from your [private registry](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) to the platform.
+Subsequently, you’ll be able to easily deploy the added image from your [private registry](http://localhost:3000/docs/container/container-deployment/custom-containers-deployment) to the platform.
 
 ## Deploy Private Registry
 
@@ -153,7 +153,7 @@ docker push  {entry_point}/{repository}
 
 That’s all! Shortly, your image will be uploaded to the registry (the exact time depends on image size and the internet connection speed) and will become available for use throughout the Internet.
 
-As a result, you can easily [deploy it within the platform](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) just in the similar way we’ve done this at the beginning of the instruction.
+As a result, you can easily [deploy it within the platform](http://localhost:3000/docs/container/container-deployment/custom-containers-deployment) just in the similar way we’ve done this at the beginning of the instruction.
 
 :::tip
 In case you face any issues while deploying your own registry or adding an image to it, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://stackoverflow.com/questions/tagged/jelastic).

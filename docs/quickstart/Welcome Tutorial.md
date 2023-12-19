@@ -28,7 +28,7 @@ Hover over a particular point within the list to view an explanatory illustratio
 
 Hovering over any point reveals the corresponding illustration, while clicking on it redirects to the dedicated documentation page.
 
-2. The second **Build Your Application Topology** slide shows how to build your application topology using the platform components. Refer to the [Concept & Terminology](/docs/PlatformOverview/Basics%20&%20Terminology) document for additional details.
+2. The second **Build Your Application Topology** slide shows how to build your application topology using the platform components. Refer to the [Concept & Terminology](/docs/platform-overview/basics-&-terminology) document for additional details.
 
 ![Locale Dropdown](./img/WelcomeTutorial/03-tutorial-build-application-topology.png)
 
@@ -70,7 +70,7 @@ You can hide the current hint or completely abandon the tutorial with the approp
 
 If needed, you can [set up your new environment](/docs/environment-management/setting-up-environment) using all of the parameters available via topology wizard. However, you don’t need any specific configurations for this tutorial, so we recommend to follow the hint and click **Create** straightaway.
 
-6. Wait a minute for your environment to be created. Meanwhile, you can track the process state in the [Tasks](/docs/QuickStart/Dashboard%20Guide) panel.
+6. Wait a minute for your environment to be created. Meanwhile, you can track the process state in the [Tasks](http://localhost:3000/docs/quickstart/dashboard-guide) panel.
 
 ![Locale Dropdown](./img/WelcomeTutorial/08-tutorial-tasks-panel.png)
 

@@ -80,7 +80,7 @@ Using the following config files, you can perform the actions listed below (thes
 
   **_<u>server.xml</u>_**
 
-- enable [Multiple Domains](/docs/ApplicationSetting/Domain%20Name%20Management/Multiple%20Domain%20for%20Tomcat)
+- enable [Multiple Domains](http://localhost:3000/docs/application-setting/domain-name-management/multiple-domain-for-tomcat)
 
   **_<u>variables.conf</u>_**
 
@@ -88,13 +88,13 @@ Using the following config files, you can perform the actions listed below (thes
 
   _-Xmx< size >m -Xms< size >m_
 
-- set your custom [system properties](/docs/EnvironmentManagement/EnvironmentVariables/Java%20Options%20and%20Arguments) for your [Tomcat, TomEE, Jetty](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat-TomEE%20Variables)or [GlassFish](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat-TomEE%20Variables#glassfish-variables):
+- set your custom [system properties](http://localhost:3000/docs/environment-management/environment-variables/java-options-and-arguments) for your [Tomcat, TomEE, Jetty](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat-TomEE%20Variables)or [GlassFish](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat-TomEE%20Variables#glassfish-variables):
 
   _-Dvar1=value1 -Dvar2=value2 -Dmy.var3=/my/value_
 
 - configure [JavaAgent interceptor](/docs/Java/Java%20Apps%20Specifications/Java%20Agent)
 
-- enable [remote debugging](/docs/ApplicationSetting/Remote%20Debugging):
+- enable [remote debugging](http://localhost:3000/docs/application-setting/remote-debugging):
   _-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address={port_number}_
 
 **Note** that this file is available only for **Tomcat 6,7** and **TomEE** application servers. For configuring a **GlassFish** server, use the _Admin Panel_.
@@ -189,7 +189,7 @@ The **lib** folder is used for storing default and uploading custom **jar** libr
 
 ## CRON
 
-App servers include a cron folder with the config file, where cronjobs can be configured. Detailed information on Cronjob configuration can be found in the [Setting Up a Cronjob](/docs/ApplicationSetting/Scheduling%20Configuration/Setting%20Up%20Cronjob) document.
+App servers include a cron folder with the config file, where cronjobs can be configured. Detailed information on Cronjob configuration can be found in the [Setting Up a Cronjob](http://localhost:3000/docs/application-setting/scheduling-configuration/setting-up-cronjob) document.
 
 <div style={{
     display:'flex',

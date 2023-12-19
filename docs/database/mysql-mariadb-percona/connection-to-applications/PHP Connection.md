@@ -68,7 +68,7 @@ Log into the opened admin panel using credentials you’ve received in the above
 
 </div>
 
-Now, you can [deploy](/docs/QuickStart/Dashboard%20Guide) your application (either from archive or GIT/SVN repository) to the created environment.
+Now, you can [deploy](http://localhost:3000/docs/quickstart/dashboard-guide) your application (either from archive or GIT/SVN repository) to the created environment.
 
 ## Connection to the Database
 

@@ -48,6 +48,6 @@ Elastic VPS instances require [public IP](/docs/application-setting/external-acc
 
 :::
 
-Adjust other options up to your needs ([vertical](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) and [horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling), disk limit, etc.) and click the **Create** button.
+Adjust other options up to your needs ([vertical](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) and [horizontal scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling), disk limit, etc.) and click the **Create** button.
 
 In a moment, your fully isolated virtual server with Debian operating system will be ready to work, allowing you to proceed with the required software and services installation.

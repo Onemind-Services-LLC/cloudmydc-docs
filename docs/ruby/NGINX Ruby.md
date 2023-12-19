@@ -8,7 +8,7 @@ sidebar_position: 3
 
 :::tip
 
-The _NGINX Ruby_ stack is [HTTP/3](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support#http3-quic-support) ready with the feature support enabled by default since the _1.16.1_ release for Ruby _2.4.9, 2.5.7, 2.6.5, 2.7.0_ versions and above. However, a [public IP address](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
+The _NGINX Ruby_ stack is [HTTP/3](http://localhost:3000/docs/application-setting/external-access-to-applications/http3-support#http3-quic-support) ready with the feature support enabled by default since the _1.16.1_ release for Ruby _2.4.9, 2.5.7, 2.6.5, 2.7.0_ versions and above. However, a [public IP address](http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip#public-ip) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
 
 :::
 
@@ -46,7 +46,7 @@ This template utilizes a modern **_systemd_** initialization daemon.
 
 </div>
 
-Next, you can configure the [Ruby engine version](/docs/Ruby/Ruby%20Versions#ruby-versions) and other parameters of the added stacks using the central part of the wizard (e.g. set [scaling limit](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling#automatic-vertical-scaling), [nodes count](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling#horizontal-scaling-inside-the-cloud-multi-node), attach [public IPs](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip), etc.). When ready, provide the desired environment name and click **Create**.
+Next, you can configure the [Ruby engine version](/docs/Ruby/Ruby%20Versions#ruby-versions) and other parameters of the added stacks using the central part of the wizard (e.g. set [scaling limit](http://localhost:3000/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling#automatic-vertical-scaling), [nodes count](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-inside-the-cloud-multi-node), attach [public IPs](http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip#public-ip), etc.). When ready, provide the desired environment name and click **Create**.
 
 3. In a minute, your environment will appear on the dashboard.
 

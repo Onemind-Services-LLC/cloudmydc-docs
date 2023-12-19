@@ -46,7 +46,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.3#password-policy">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.3#password-policy">
                     Learn More >>
                 </a>
             </div>
@@ -65,7 +65,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.3#non-zero-error-codes-for-cli">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.3#non-zero-error-codes-for-cli">
                     Learn More >>
                 </a>
             </div>
@@ -109,7 +109,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.3#inbound-ports-variable">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.3#inbound-ports-variable">
                     Learn More >>
                 </a>
             </div>
@@ -128,7 +128,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.3#api-changes">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.3#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -147,7 +147,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.3#software-stack-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.3#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -191,7 +191,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.3#fixes-compatible-with-prior-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.3#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -210,7 +210,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.3#bug-fixes">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.3#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -254,7 +254,7 @@ All the above-described values and criteria are part of the platform’s new def
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -270,23 +270,23 @@ All the above-described values and criteria are part of the platform’s new def
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Non-Zero Error Codes for CLI
 
-[Platform CLI](/docs/Deployment%20Tools/API%20&%20CLI/API%20Overview) is a platform’s management and automation tool that allows handling the vast majority of the platform operations remotely. Usually, the CLI commands return zero code, while the response provides the actual results of the API method call. Starting with the 6.3 release, a new **_jelastic.non_zero_exit_code_** parameter can be added to the CLI configuration file (located at **_~/.config/jelastic/jelastic.properties_** by default). It defines if the CLI command should respond with zero code as usual (_false_ - default value) or with a non-zero code when the executed API method returns an error (true).
+[Platform CLI](http://localhost:3000/docs/deployment-tools/api-&-cli/api-overview) is a platform’s management and automation tool that allows handling the vast majority of the platform operations remotely. Usually, the CLI commands return zero code, while the response provides the actual results of the API method call. Starting with the 6.3 release, a new **_jelastic.non_zero_exit_code_** parameter can be added to the CLI configuration file (located at **_~/.config/jelastic/jelastic.properties_** by default). It defines if the CLI command should respond with zero code as usual (_false_ - default value) or with a non-zero code when the executed API method returns an error (true).
 
-[More info](/docs/Deployment%20Tools/API%20&%20CLI/API%20Overview)
+[More info](http://localhost:3000/docs/deployment-tools/api-&-cli/api-overview)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -295,7 +295,7 @@ All the above-described values and criteria are part of the platform’s new def
 
 Starting with the current platform release, PaaS provides a source file with all the supported public API in the **[OpenAPI Specification](https://swagger.io/resources/open-api/)** standard. You can download it in the YAML or JSON format by clicking on the appropriate link below:
 
-- [YAML](/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.2)
+- [YAML](http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.2)
 - [JSON](https://docs.jelastic.com/api/resources/api.json)
 
 You can integrate these files with any tool that supports OpenAPI standards (for example, [Swagger tools](https://swagger.io/tools/)) to generate clients based on the required programming language, build documentation, etc.
@@ -307,7 +307,7 @@ You can integrate these files with any tool that supports OpenAPI standards (for
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -428,7 +428,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -446,7 +446,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

@@ -47,7 +47,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0.5#beta-label-removal-for-mongodbpostgresql-auto-clustering">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0.5#beta-label-removal-for-mongodbpostgresql-auto-clustering">
                     Learn More >>
                 </a>
             </div>
@@ -66,7 +66,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0.5#software-stack-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0.5#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -110,7 +110,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0.5#fixes-compatible-with-prior-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0.5#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -129,7 +129,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.0.5#bug-fixes">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0.5#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -140,7 +140,7 @@ Fixed
 
 ## Beta Label Removal for MongoDB/PostgreSQL Auto-Clustering
 
-the platform’s **_[Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances)_** feature helps users automatically set up a production-ready cluster for some of the most popular software stacks. Such an option has been provided for MongoDB and PostgreSQL databases for quite some time and receives positive feedback without any major issues. As a result, starting with the present 6.0.5 PaaS release, we are removing the “beta” UI label next to the Auto-Clustering option for these stacks.
+the platform’s **_[Auto-Clustering](http://localhost:3000/docs/application-setting/scaling-and-clustering/auto-clustering-of-instances)_** feature helps users automatically set up a production-ready cluster for some of the most popular software stacks. Such an option has been provided for MongoDB and PostgreSQL databases for quite some time and receives positive feedback without any major issues. As a result, starting with the present 6.0.5 PaaS release, we are removing the “beta” UI label next to the Auto-Clustering option for these stacks.
 
 <div style={{
     display:'flex',
@@ -159,7 +159,7 @@ the platform’s **_[Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20C
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -278,7 +278,7 @@ Below, you can find the fixes that were implemented in the PaaS 6.0.5 release an
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -296,7 +296,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

@@ -156,7 +156,7 @@ The platform supports the following key types:
 - EdDSA
 - RSA
 
-In the linked documents, you can learn more about [generating SSH keys](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) and [connecting via SSH Gate](/docs/deployment-tools/ssh/ssh-access/ssh-gate).
+In the linked documents, you can learn more about [generating SSH keys](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key) and [connecting via SSH Gate](/docs/deployment-tools/ssh/ssh-access/ssh-gate).
 
 2.3. On the **Payment Methods** tab, you can view and manage your payment methods.
 

@@ -63,9 +63,9 @@ In order to discover whether your hosting service provider allows to run Sendmai
 
 In case you haven’t performed similar operations before, you need to:
 
-- [generate](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) an SSH keypair
+- [generate](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key) an SSH keypair
 - [add your public SSH key](/docs/deployment-tools/ssh/add-ssh-key) to the dashboard
-- [establish the connection](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) over SSH protocol
+- [establish the connection](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) over SSH protocol
 
 :::
 
@@ -111,7 +111,7 @@ As an option, you can appeal to your hoster’s Support team and negotiate getti
 
 You can discover how Sendmail is working by sending a simple test email. This can be accomplished right from the command line - for that:
 
-1. Connect to your application server (with the Sendmail service already running) [via SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview).
+1. Connect to your application server (with the Sendmail service already running) [via SSH](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview).
 
 2. Execute the following line of code in order to send a letter:
 

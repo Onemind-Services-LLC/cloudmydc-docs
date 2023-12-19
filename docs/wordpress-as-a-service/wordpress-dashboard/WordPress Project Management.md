@@ -220,7 +220,7 @@ We recommend performing regular redeployments to the latest version to ensure yo
 
 </div>
 
-6. Click the **SSH/SFTP Info** to see how you can access your project via the [SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/SSH%20Gate#ssh-access-to-platform-account) and [SFTP](/docs/deployment-tools/ssh/ssh-protocols) protocols. The drop-down list allows viewing information for different nodes of the cluster.
+6. Click the **SSH/SFTP Info** to see how you can access your project via the [SSH](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/ssh-gate#ssh-access-to-platform-account) and [SFTP](/docs/deployment-tools/ssh/ssh-protocols) protocols. The drop-down list allows viewing information for different nodes of the cluster.
 
 <div style={{
     display:'flex',

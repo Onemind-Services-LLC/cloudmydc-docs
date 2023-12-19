@@ -6,22 +6,22 @@ sidebar_position: 4
 
 ## Integrate Traffic Distributor with Running Application
 
-In most cases, developers face the problem of traffic distribution between several backends when already having some running application, with a pool of existing users and constant incoming load. Thus, besides the general traffic sharing configuration difficulties, it is additionally complicated with the necessity to apply the appropriate “on-fly” changes to the front-end application instance. In many cases, it causes a temporary app downtime. So in order to minimize such negative influence on your customers, below we’ll consider the ways to easily and painlessly integrate [Traffic Distributor (TD)](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Overview) solution into your running application topology.
+In most cases, developers face the problem of traffic distribution between several backends when already having some running application, with a pool of existing users and constant incoming load. Thus, besides the general traffic sharing configuration difficulties, it is additionally complicated with the necessity to apply the appropriate “on-fly” changes to the front-end application instance. In many cases, it causes a temporary app downtime. So in order to minimize such negative influence on your customers, below we’ll consider the ways to easily and painlessly integrate [Traffic Distributor (TD)](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-overview) solution into your running application topology.
 
 :::tip Note
 
 Traffic Distributor provides the ability to benefit from a number of useful solutions, like:
 
-- apply “invisible” application updates with [blue-green deployment](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/Blue-Green%20Deploy)
-- examine performance, user experience, and new app version’s stability through [A/B testing](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/A-B%20Testing)
-- increase service availability with advanced [failover protection](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/Failover%20Protection)
+- apply “invisible” application updates with [blue-green deployment](http://localhost:3000/docs/application-setting/traffic-distributor/use-cases/blue-green-deploy)
+- examine performance, user experience, and new app version’s stability through [A/B testing](http://localhost:3000/docs/application-setting/traffic-distributor/use-cases/a-b-testing)
+- increase service availability with advanced [failover protection](http://localhost:3000/docs/application-setting/traffic-distributor/use-cases/failover-protection)
 
 :::
 
 To achieve this, you’ll need to pass through the following steps:
 
-- [deploy new app version & add it to routing](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Integrate#add-application-copy-to-routing)
-- [configure app entrypoint via TD](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Integrate#configure-app-entrypoint-via-td)
+- [deploy new app version & add it to routing](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-integrate#add-application-copy-to-routing)
+- [configure app entrypoint via TD](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-integrate#configure-app-entrypoint-via-td)
 
 ## Add Application Copy to Routing
 
@@ -61,7 +61,7 @@ Don’t forget to properly configure any “hardcoded” data (direct links, IPs
 
 :::
 
-2. Now, we are ready to [install Traffic Distributor](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Installation), specifying both these environments as backends.
+2. Now, we are ready to [install Traffic Distributor](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-installation), specifying both these environments as backends.
 
 <div style={{
     display:'flex',
@@ -95,12 +95,12 @@ The only remaining thing is to redirect incoming traffic from the first environm
 
 ## Configure App Entrypoint via TD
 
-Most applications in production have some [custom domain](/docs/application-setting/domain-name-management/custom-domain-name). In our example, the initial environment (_primary-env_ in our case) already has a [custom domain name bound](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-bind-domain-to-environment).
+Most applications in production have some [custom domain](/docs/application-setting/domain-name-management/custom-domain-name). In our example, the initial environment (_primary-env_ in our case) already has a [custom domain name bound](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#how-to-bind-domain-to-environment).
 
 For the proper redirection of requests (i.e. to process them through the distributor), we need to move the appropriate entrypoint to the TD environment. In such a way, it will be placed in front of the chosen pair of backends and share the incoming load among them based on specified settings.In order to accomplish this, follow one of the next simple procedures based on the used custom domain binding method:
 
-- _if using CNAME or ANAME redirect_ - [swap domains](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Integrate#swap-domains) between the initial and TD environments
-- _if using A Record_ - [swap Public IPs](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Integrate#swap-public-ips) to transfer used external IP to the TD environment
+- _if using CNAME or ANAME redirect_ - [swap domains](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-integrate#swap-domains) between the initial and TD environments
+- _if using A Record_ - [swap Public IPs](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-integrate#swap-public-ips) to transfer used external IP to the TD environment
 
 ## Swap Domains
 

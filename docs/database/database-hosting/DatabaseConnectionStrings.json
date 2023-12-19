@@ -9,13 +9,13 @@
     {
       "DBType": "MySQL Auto-Cluster",
       "ConnectionCode": "String URL = \"jdbc:mysql://proxy.{environment_name}.{hoster_domain}:3306/{dbname}\"; DriverManager.getConnection(URL, user_name, user_password);",
-      "url": "/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances",
+      "url": "http://localhost:3000/docs/application-setting/scaling-and-clustering/auto-clustering-of-instances",
       "required": true
     },
     {
       "DBType": "MariaDB Auto-Cluster",
       "ConnectionCode": "String URL = \"jdbc:mariadb://proxy.{environment_name}.{hoster_domain}:3306/{dbname}?usePipelineAuth=false\"; DriverManager.getConnection(URL, user_name, user_password);",
-      "url": "/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances",
+      "url": "http://localhost:3000/docs/application-setting/scaling-and-clustering/auto-clustering-of-instances",
       "required": true
     },
     {

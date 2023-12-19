@@ -99,7 +99,7 @@ You may want to adjust some [dedicated environment variables](https://cloudmydc.
 
 :::
 
-Configure any other required parameters ([cloudlets](/docs/PlatformOverview/Cloudlet), disk space, [regions](https://cloudmydc.com/), etc.) and proceed with the **Create** button.
+Configure any other required parameters ([cloudlets](http://localhost:3000/docs/platform-overview/cloudlet), disk space, [regions](https://cloudmydc.com/), etc.) and proceed with the **Create** button.
 
 3. After creation, you can view the default _phpinfo_ data on the server by clicking **Open in Browser** next to your LiteSpeed server:
 

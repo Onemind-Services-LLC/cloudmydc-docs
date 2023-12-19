@@ -24,7 +24,7 @@ Here, the list of parameters can be divided into the following groups:
   - **_{url}_** - link to the appropriate repository
 
 - additional options (their activation is defined with the **_{true/false}_** values)
-  - _autoupdate_ - enables regular [autoupdate](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview) of your deployed project; if activated, requires the additional **_{interval}_** parameter for setting the frequency of redeployments
+  - _autoupdate_ - enables regular [autoupdate](http://localhost:3000/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview) of your deployed project; if activated, requires the additional **_{interval}_** parameter for setting the frequency of redeployments
   - _utoResolveConflict_ - switches on the corresponding same-named option
   - _zdt_ - allows to activate [ZDT deployment](/docs/PHP/ZDT%20Deployment%20for%20PHP) for PHP projects
 

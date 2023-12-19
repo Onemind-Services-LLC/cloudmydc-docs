@@ -61,7 +61,7 @@ In the opened page, use credentials from the email to log in and start applying 
 
 :::tip Tip
 
-For containers without [Public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip) address attached, the database admin console is available via https:// by default.
+For containers without [Public IP](http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip#public-ip) address attached, the database admin console is available via https:// by default.
 
 :::
 
@@ -108,7 +108,7 @@ where
 
 :::tip Note
 
-In case your hosting provider platform has several [environment regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#environment-regions) to choose, the _{hoster_domain}_ value for your environment can differ from the general platform’s one.
+In case your hosting provider platform has several [environment regions](http://localhost:3000/docs/environment-management/environment-regions/choosing-a-region#environment-regions) to choose, the _{hoster_domain}_ value for your environment can differ from the general platform’s one.
 
 :::
 

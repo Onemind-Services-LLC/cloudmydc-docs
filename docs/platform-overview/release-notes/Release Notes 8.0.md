@@ -47,7 +47,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.0#autofs-downgrade">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.0#autofs-downgrade">
                     Learn More >>
                 </a>
             </div>
@@ -66,7 +66,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.0#software-stack-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.0#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -110,7 +110,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.0#fixes-compatible-with-prior-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.0#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -129,7 +129,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.0#bug-fixes">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.0#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -149,7 +149,7 @@ However, some performance issues were detected with the latest AutoFS versions. 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -241,7 +241,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
                 wordBreak: 'break-all',
                 padding: '20px',
             }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
                     {item.JE}
                 </a>
             </div>
@@ -270,7 +270,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -288,7 +288,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

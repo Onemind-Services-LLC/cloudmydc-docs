@@ -29,7 +29,7 @@ sidebar_position: 8
 </div>
 </div>
 
-The **Composer** is integrated into all PHP application servers (_Apache, NGINX, LiteSpeed, LEMP_, and _LSSMP_) by default. It is installed to the **/usr/local/bin** folder, which is added to the PATH variable, making Composer operable from anywhere on the node via the _composer_ shortcut (e.g. _composer about_). Additionally, if the project has a **_composer.json_** file, Composer can manage dependencies directly during the installation using the _Post-Deploy_ [hook script](/docs/Deployment/Deployment%20Hooks). All you need to do is move to your project directory and run the _composer install_ command:
+The **Composer** is integrated into all PHP application servers (_Apache, NGINX, LiteSpeed, LEMP_, and _LSSMP_) by default. It is installed to the **/usr/local/bin** folder, which is added to the PATH variable, making Composer operable from anywhere on the node via the _composer_ shortcut (e.g. _composer about_). Additionally, if the project has a **_composer.json_** file, Composer can manage dependencies directly during the installation using the _Post-Deploy_ [hook script](http://localhost:3000/docs/deployment/deployment-hooks). All you need to do is move to your project directory and run the _composer install_ command:
 
 ```bash
 cd $WEBROOT/{project_name}

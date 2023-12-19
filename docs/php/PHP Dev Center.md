@@ -83,7 +83,7 @@ To see in detail how these servers can be configured, and find out the list of e
 
 [Zero downtime deployment](/docs/PHP/ZDT%20Deployment%20for%20PHP) provides the ability to run any cloud-native or legacy application. In order to deliver your PHP projects to the created environment within the platform, you can choose one of the available [deployment options](/docs/deployment/deployment-guide): via Archive/URL, GIT/SVN, Bitbucket project, etc.
 
-Besides, you can configure an [automatic periodic re-deployment](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview) from the repository (it is performed only if new code changes appear).
+Besides, you can configure an [automatic periodic re-deployment](http://localhost:3000/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview) from the repository (it is performed only if new code changes appear).
 
 <div style={{
     display:'flex',
@@ -113,13 +113,13 @@ With the help of the [swapping domains](/docs/application-setting/domain-name-ma
 
 </div>
 
-Using [multiple domains](/docs/ApplicationSetting/Domain%20Name%20Management/Multiple%20Domain%20For%20PHP) on a single PHP server increases the application usability, efficiency, and scalability, simultaneously saving the costs on the necessity to set up separate instances.
+Using [multiple domains](http://localhost:3000/docs/application-setting/domain-name-management/multiple-domain-for-php) on a single PHP server increases the application usability, efficiency, and scalability, simultaneously saving the costs on the necessity to set up separate instances.
 
 ## Automatic Vertical Scaling
 
 Automatic vertical scaling is made possible by the platform ability to dynamically change the number of allocated resources (RAM and CPU) for a server according to its current demands, with no manual intervention required. This feature guarantees you never overpay for unused resources and saves your time due to eliminating the necessity of handling the load-related adjustments or architectural changes.
 
-In order to set up automatic resource consumption by your PHP server, open the environment topology wizard and specify the upper scaling limit of [cloudlets](/docs/PlatformOverview/Cloudlet) (each equals to 128 MiB and 400 MHz) with the slider located at the top:
+In order to set up automatic resource consumption by your PHP server, open the environment topology wizard and specify the upper scaling limit of [cloudlets](http://localhost:3000/docs/platform-overview/cloudlet) (each equals to 128 MiB and 400 MHz) with the slider located at the top:
 
 <div style={{
     display:'flex',
@@ -151,7 +151,7 @@ The maximum number of the same-type servers within a single environment layer de
 
 Also, as you can see, when you add extra servers, [[load balancing]](/docs/Load%20Balancers/Load%20Balancing) is enabled automatically.
 
-Please, find more details about manual [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) in the documentation.
+Please, find more details about manual [Horizontal Scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) in the documentation.
 
 ## Automatic Horizontal Scaling
 
@@ -177,7 +177,7 @@ Please, find more details about [automatic horizontal scaling](/docs/application
 
 Implementing the [PHP sessions clustering](/docs/PHP/PHP%20Sessions%20Clustering) for your application can highly increase its availability and failover capabilities using the sticky sessions, run on several app server nodes. This mechanism is ensured by a Memcached node that should be added to your environment and used as storage for the processed sessions’ backups.
 
-While scaling out PHP server with your deployed application, you get its exact copy with all the same configurations and files inside due to built-in [data synchronization](/docs/ApplicationSetting/Scaling%20And%20Clustering/Data%20Synchronization).
+While scaling out PHP server with your deployed application, you get its exact copy with all the same configurations and files inside due to built-in [data synchronization](http://localhost:3000/docs/application-setting/scaling-and-clustering/data-synchronization).
 
 Besides, the platform has pre-packaged auto-scalable [WordPress Cluster](https://github.com/jelastic-jps/wordpress-cluster) and [Magento Cluster](https://github.com/jelastic-jps/magento-cluster) available for one-click installation to ensure your service operability. Moreover, you can package any PHP application in this way to automate its clustered installation.
 
@@ -211,11 +211,11 @@ Apache PHP and NGINX servers include a particular [set of the inbuilt modules](/
 - [Apache WebDav Module](/docs/PHP/PHP%20App%20Servers/Apache%20PHP/Apache%20WebDav%20Module)
 - [Apache Statistics Module](/docs/PHP/PHP%20App%20Servers/Apache%20PHP/Apache%20Statistics%20Module)
 - [NGINX WebDav Module](/docs/PHP/PHP%20App%20Servers/NGINX%20PHP/NGINX%20WebDav%20Module)
-- [New Relic Monitoring](/docs/ApplicationSetting/Monitoring%20With%20New%20Relic/New%20Relic%20Installation)
+- [New Relic Monitoring](http://localhost:3000/docs/application-setting/monitoring-with-new-relic/new-relic-installation)
 
 ## PHP Security
 
-[SSL / TLS](/docs/ApplicationSetting/SSL/Secure%20Sockets%20Layer) (Secure Sockets Layer / Transport Layer Security) is the industry standard security technology for establishing an encrypted connection between a web server and a browser. This technology is supported by the platform and ensures that all passed data remains private and confidential, i.e., it can’t be intercepted by a third party.
+[SSL / TLS](http://localhost:3000/docs/application-setting/ssl/secure-sockets-layer) (Secure Sockets Layer / Transport Layer Security) is the industry standard security technology for establishing an encrypted connection between a web server and a browser. This technology is supported by the platform and ensures that all passed data remains private and confidential, i.e., it can’t be intercepted by a third party.
 
 Besides the common protection methods, security of your application can be increased through [customizing the main PHP configuration file](/docs/PHP/PHP.INI%20Security%20Settings), named **_php.ini_**. You can edit a number of default settings it contains or adds your own in accordance with the needs of your application.
 

@@ -104,11 +104,11 @@ Please note that each container for handling incoming requests runs 3 Java proce
 
 ## WildFly Managed Domain in Jelastic
 
-In order to facilitate the migration of legacy Jakarta EE applications from VMs to containers, we created a special embedded [Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances) mode for WildFly that can be enabled for new instances.
+In order to facilitate the migration of legacy Jakarta EE applications from VMs to containers, we created a special embedded [Auto-Clustering](http://localhost:3000/docs/application-setting/scaling-and-clustering/auto-clustering-of-instances) mode for WildFly that can be enabled for new instances.
 
 The main advantage of this solution is an automatic interconnection of multiple application servers upon the environment topology change, which implements the commonly used clustering configuration in managed domain mode.
 
-Below you’ll see how standalone WildFly transforms into the cluster by means of Auto-Clustering feature and a simple [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) with no manual configurations required. Also, we’ll describe infrastructure topology specifics and the way to get the appropriate development and production environments up and running inside Jelastic PaaS.
+Below you’ll see how standalone WildFly transforms into the cluster by means of Auto-Clustering feature and a simple [Horizontal Scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) with no manual configurations required. Also, we’ll describe infrastructure topology specifics and the way to get the appropriate development and production environments up and running inside Jelastic PaaS.
 
 ## Create Standalone WildFly
 
@@ -208,7 +208,7 @@ WildFly clustering with domain mode is configured automatically by means of Auto
 
 - Manually
 
-Add new servers via wizard while creating the environment or by [changing its topology](/docs/QuickStart/Dashboard%20Guide).
+Add new servers via wizard while creating the environment or by [changing its topology](http://localhost:3000/docs/quickstart/dashboard-guide).
 
 <div style={{
     display:'flex',
@@ -220,7 +220,7 @@ Add new servers via wizard while creating the environment or by [changing its to
 
 </div>
 
-Just refer to the application server layer within the left-side environment panel, enable Auto-Clustering mode and add **(+)** nodes within the [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) frame.
+Just refer to the application server layer within the left-side environment panel, enable Auto-Clustering mode and add **(+)** nodes within the [Horizontal Scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) frame.
 
 <div style={{
     display:'flex',

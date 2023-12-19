@@ -30,7 +30,7 @@ The **Endpoints** feature at the platform refers to the possibility of TCP/UDP p
 
 </div>
 </div>
-This is achieved through providing the ability to establish the direct connection (over either raw TCP or UDP protocol) to the corresponding node, without the mandatory <a href="/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP">public IP</a> address attached.
+This is achieved through providing the ability to establish the direct connection (over either raw TCP or UDP protocol) to the corresponding node, without the mandatory <a href="http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip">public IP</a> address attached.
 
 Such linking can be used to enable a great variety of different tasks, like remote database management, direct apps' [deployment from IDE](/docs/windows-and-.NET/dot-net-core) (for _IIS_), running multiple project copies on a single instance, accessing a server’s admin panel with no external address bound, etc.
 
@@ -58,8 +58,8 @@ The list of endpoints can be accessed via the environment **Settings** menu, tha
 
 Within the opened tab, switch to the **Endpoints** menu item. Now you can start working with your mapping’s list:
 
-- [add new endpoint](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#adding-endpoints)
-- [edit/remove the existing endpoint](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#editremove-endpoint)
+- [add new endpoint](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#adding-endpoints)
+- [edit/remove the existing endpoint](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#editremove-endpoint)
 
 ## Adding Endpoints
 
@@ -255,7 +255,7 @@ Here you’ll find the **Public port** and **Access URL** actual values already 
 
 :::tip Note
 
-that for linking functionality to work properly with the [VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information) and [Docker®](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) containers, the corresponding private ports (stated during the endpoint addition) at these nodes should be opened by the owner manually.
+that for linking functionality to work properly with the [VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information) and [Docker®](http://localhost:3000/docs/container/container-deployment/custom-containers-deployment) containers, the corresponding private ports (stated during the endpoint addition) at these nodes should be opened by the owner manually.
 
 :::
 
@@ -321,12 +321,12 @@ As an example, we will use an environment with the **Apache** application server
 
 Now, let’s learn how to use endpoints for:
 
-- [establishing remote access to your database](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#database-management)
-- [running multiple project copies on a single app server](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#multiple-development-stages-at-a-single-app-server)
+- [establishing remote access to your database](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#database-management)
+- [running multiple project copies on a single app server](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#multiple-development-stages-at-a-single-app-server)
 
 ## Database Management
 
-With endpoints, gaining remote access to your DB instance becomes pretty easy, as using this feature eliminates the necessity to acquire any additional options like a Public IP. To show this, we’ll consider two simple ways of performing this operation: through [embedded OS terminal](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#connection-via-terminal) and [third-party DB client](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#connection-via-local-client).
+With endpoints, gaining remote access to your DB instance becomes pretty easy, as using this feature eliminates the necessity to acquire any additional options like a Public IP. To show this, we’ll consider two simple ways of performing this operation: through [embedded OS terminal](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#connection-via-terminal) and [third-party DB client](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#connection-via-local-client).
 
 ## Connection via Terminal
 

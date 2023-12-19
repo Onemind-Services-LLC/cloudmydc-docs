@@ -81,7 +81,7 @@ In addition, you can redefine or add some of the settings (namely – _shortdoma
 
 </div>
 
-2. Creation of a [Docker-based environment](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) is almost similar to the above described methods, but includes a few specific parameters. So, in order to get a Docker container using platform CLI, you need to execute the following line:
+2. Creation of a [Docker-based environment](http://localhost:3000/docs/container/container-deployment/custom-containers-deployment) is almost similar to the above described methods, but includes a few specific parameters. So, in order to get a Docker container using platform CLI, you need to execute the following line:
 
 ```bash
 ~/jelastic/environment/control/createenvironment --env '{"shortdomain" : "{env_name}"}' --nodes '[{"nodeType" : "docker", "fixedCloudlets" : {cloudlets_amount}, "flexibleCloudlets" : {cloudlets_amount}, "docker" : {"image" : "{image_name}"}}]'

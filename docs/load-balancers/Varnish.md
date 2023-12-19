@@ -8,7 +8,7 @@ sidebar_position: 5
 
 :::tip Tip
 
-The _Varnish_ stack is [HTTP/3](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support) ready with the feature support enabled by default since the _5.2.x_ and _6.x.x_ versions. However, a [public IP address](/docs/application-setting/external-access-to-applications/public-ip) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
+The _Varnish_ stack is [HTTP/3](http://localhost:3000/docs/application-setting/external-access-to-applications/http3-support) ready with the feature support enabled by default since the _5.2.x_ and _6.x.x_ versions. However, a [public IP address](/docs/application-setting/external-access-to-applications/public-ip) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
 
 :::
 
@@ -73,7 +73,7 @@ That’s all about Varnish installation! Now you can proceed to its configuratio
 
 The Varnish load-balancer can be adjusted according to your needs in one of the following ways:
 
-- through accessing the required server via the platform [SSH Gateway](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview):
+- through accessing the required server via the platform [SSH Gateway](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview):
 
 <div style={{
     display:'flex',

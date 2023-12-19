@@ -8,9 +8,9 @@ sidebar_position: 1
 
 The PaaS combines two types of containers in a single platform. These containerization technologies are oriented to solve different problems, but platform orchestration inherits benefits of both implementations.
 
-- **_[System Containers](/docs/PlatformOverview/System%20Container)_** - one of the oldest container types, which is quite similar to virtual machines. It is a stateful, operating system centric solution that can run multiple processes. System containers are usually used for traditional or monolithic applications, as they allow to host architectures, tools, and configurations implemented for VMs. There are different implementations of system containers: LXC/LXD, OpenVZ/CloudMyDc, BSD jails, Linux vServer, and some others. The platform uses CloudMyDc solution.
+- **_[System Containers](http://localhost:3000/docs/platform-overview/system-container)_** - one of the oldest container types, which is quite similar to virtual machines. It is a stateful, operating system centric solution that can run multiple processes. System containers are usually used for traditional or monolithic applications, as they allow to host architectures, tools, and configurations implemented for VMs. There are different implementations of system containers: LXC/LXD, OpenVZ/CloudMyDc, BSD jails, Linux vServer, and some others. The platform uses CloudMyDc solution.
 
-- **_[Application Containers](/docs/PlatformOverview/Application%20Container)_** - a relatively new container type, which commonly runs a single process inside. It is a stateless microservice-centric solution that is easily scalable horizontally. Application containers are the most suitable for immutable and ephemeral infrastructures. Several application container implementations are available at the market: Docker, containerd, CRI-O, and some others. The platform utilizes Docker as the most widely adopted technology for application contains.
+- **_[Application Containers](http://localhost:3000/docs/platform-overview/application-container)_** - a relatively new container type, which commonly runs a single process inside. It is a stateless microservice-centric solution that is easily scalable horizontally. Application containers are the most suitable for immutable and ephemeral infrastructures. Several application container implementations are available at the market: Docker, containerd, CRI-O, and some others. The platform utilizes Docker as the most widely adopted technology for application contains.
 
 <div style={{
     display:'flex',
@@ -36,11 +36,11 @@ Talking about containers nowadays, people often think of Docker technology, as i
 
 Within the platform, different container types can be used for various use cases:
 
-- [Certified Managed Containers](/docs/Container/Container%20Types#certified-managed-containers)
-- [Virtual Private Servers (Elastic VPS)](/docs/Container/Container%20Types#virtual-private-servers-elastic-vps)
-- [Custom Docker Containers](/docs/Container/Container%20Types#custom-docker-containers)
-- [Docker Engine CE (Docker Native)](/docs/Container/Container%20Types#docker-engine-ce-docker-native)
-- [Kubernetes Cluster](/docs/Container/Container%20Types#kubernetes-cluster)
+- [Certified Managed Containers](http://localhost:3000/docs/container/container-types#certified-managed-containers)
+- [Virtual Private Servers (Elastic VPS)](http://localhost:3000/docs/container/container-types#virtual-private-servers-elastic-vps)
+- [Custom Docker Containers](http://localhost:3000/docs/container/container-types#custom-docker-containers)
+- [Docker Engine CE (Docker Native)](http://localhost:3000/docs/container/container-types#docker-engine-ce-docker-native)
+- [Kubernetes Cluster](http://localhost:3000/docs/container/container-types#kubernetes-cluster)
 
 Below we will review each case in detail, as well as provide some hints on what options can be more appropriate for your project.
 
@@ -70,7 +70,7 @@ All of these certified containers are thoroughly tested and optimized specifical
 
 </div>
 
-Usually, these containers also benefit from additional integrations, such as automated configuration based on the resource ([cloudlet](/docs/PlatformOverview/Cloudlet)) scaling limits, automated SSL certificates installation, application deployment automation, built-in [auto-clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances), managed delivery of security updates, and others.
+Usually, these containers also benefit from additional integrations, such as automated configuration based on the resource ([cloudlet](http://localhost:3000/docs/platform-overview/cloudlet)) scaling limits, automated SSL certificates installation, application deployment automation, built-in [auto-clustering](http://localhost:3000/docs/application-setting/scaling-and-clustering/auto-clustering-of-instances), managed delivery of security updates, and others.
 
 ## Virtual Private Servers (Elastic VPS)
 
@@ -90,7 +90,7 @@ So, since it is practically “empty” after the installation, all the required
 
 ## Custom Docker Containers
 
-The **Custom Docker Container** is a Docker image (based on the [supported OS and architecture](/docs/Container/Container%20Image%20Requirements)) deployed inside the platform system container, which makes it compatible with the most (but not all) platform-distinguishing features, such as built-in vertical and horizontal scaling. In other words, the filesystem of your custom Docker image is unpacked inside the system container runtime.
+The **Custom Docker Container** is a Docker image (based on the [supported OS and architecture](http://localhost:3000/docs/container/container-image-requirements)) deployed inside the platform system container, which makes it compatible with the most (but not all) platform-distinguishing features, such as built-in vertical and horizontal scaling. In other words, the filesystem of your custom Docker image is unpacked inside the system container runtime.
 
 <div style={{
     display:'flex',

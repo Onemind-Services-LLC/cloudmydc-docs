@@ -65,7 +65,7 @@ Now, you can access the Kubernetes Dashboard once again.
 
 ## Kubectl Client
 
-**[Kubectl](https://kubernetes.io/docs/tasks/tools/)** is a command-line tool to control a Kubernetes cluster. The platform automatically installs it on all master nodes during the environment creation. You can start working with your cluster using kubectl right away, just connect to the required node [over SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview).
+**[Kubectl](https://kubernetes.io/docs/tasks/tools/)** is a command-line tool to control a Kubernetes cluster. The platform automatically installs it on all master nodes during the environment creation. You can start working with your cluster using kubectl right away, just connect to the required node [over SSH](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview).
 
 1. Follow the [installation steps](https://kubernetes.io/docs/tasks/tools/) to use a local kubectl. Next, run a command to establish remote connection:
 

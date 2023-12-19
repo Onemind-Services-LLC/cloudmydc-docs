@@ -35,7 +35,7 @@ So, the article below describes how the Glassfish and Payara auto-clustering wor
 
 ## How the Auto-Clustering for GlassFish and Payara Works
 
-In the most general sense, any “clusterized solution” can be defined as a set of interconnected instances that run the same stack and operate the same data. In other words, this means that the corresponding server should be [horizontally scaled](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) and share user sessions.
+In the most general sense, any “clusterized solution” can be defined as a set of interconnected instances that run the same stack and operate the same data. In other words, this means that the corresponding server should be [horizontally scaled](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) and share user sessions.
 
 Starting with the Jelastic 5.5.3 version, a new **Auto-Clustering** feature is introduced allowing to enable clusterization of the GlassFish and Payara instances directly within the topology wizard:
 
@@ -49,7 +49,7 @@ Starting with the Jelastic 5.5.3 version, a new **Auto-Clustering** feature is i
 
 </div>
 
-Choose either GlassFish or Payara application server on the **Java** tab of the wizard. Then, in the central part, locate and enable the appropriate **_Auto-Clustering_** switcher. Configure the remaining settings up to your need (consider [horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) to get a reliable solution from the start).
+Choose either GlassFish or Payara application server on the **Java** tab of the wizard. Then, in the central part, locate and enable the appropriate **_Auto-Clustering_** switcher. Configure the remaining settings up to your need (consider [horizontal scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) to get a reliable solution from the start).
 
 :::tip Tip
 
@@ -64,7 +64,7 @@ For production, clustering is virtually a mandatory option to ensure your applic
 - for 2+ GlassFish (Payara) instances, environment topology is complemented with a load balancer (LB), intended to handle the incoming requests and distribute them across the workers
 - An extra Domain Administration Server (**[DAS](https://docs.oracle.com/cd/E19159-01/819-3680/abfbb/index.html)**) node is automatically added - a dedicated instance to perform centralized control of cluster nodes and to configure interaction between them via SSH. Its integration implies a number of specifics:
   - administration server is linked to all workers within the application server layer with the DAS alias hostname, which can be used by workers for further interaction
-  - to enable proper nodes connectivity and control, the system automatically generates an SSH keypair for DAS node and places it within a [volume](/docs/Container/Container%20Configuration/Volumes), mounted to all the rest of cluster instancecluster without multicast
+  - to enable proper nodes connectivity and control, the system automatically generates an SSH keypair for DAS node and places it within a [volume](http://localhost:3000/docs/container/container-configuration/volumes), mounted to all the rest of cluster instancecluster without multicast
 
 <div style={{
     display:'flex',
@@ -80,7 +80,7 @@ For production, clustering is virtually a mandatory option to ensure your applic
 
 To ensure high availability of your cluster, the Jelastic PaaS automatically configures session replication across the worker nodes. This way, all user session data, that is stored during its processing, is distributed across all application server instances from the node that has actually handled the request.
 
-Together with automatically configured sticky sessions mechanism on the [load balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) layer, session replication ensures hosting of the increased reliability and improves failover capabilities of your application within such GlassFish or Payara cluster. Herewith, depending on a used stack, the implemented replication mechanism will slightly differ - let’s consider each approach in more details.
+Together with automatically configured sticky sessions mechanism on the [load balancer](http://localhost:3000/docs/application-setting/external-access-to-applications/shared-load-balancer) layer, session replication ensures hosting of the increased reliability and improves failover capabilities of your application within such GlassFish or Payara cluster. Herewith, depending on a used stack, the implemented replication mechanism will slightly differ - let’s consider each approach in more details.
 
 ## GlassFish Session Replication with GMS
 
@@ -233,7 +233,7 @@ As a result, a ready-to-work cluster copy will be created, with all the required
 
 This way, you can apply the implied changes to your environment copy without affecting the actual production one.
 
-Subsequently, you can also evaluate the productivity and effectiveness of the modified application version comparing to the currently original one, i.e. to perform so-called A/B Testing. At Jelastic PaaS, this can be implemented with a special supplementary [Traffic Distributor](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Overview) add-on.
+Subsequently, you can also evaluate the productivity and effectiveness of the modified application version comparing to the currently original one, i.e. to perform so-called A/B Testing. At Jelastic PaaS, this can be implemented with a special supplementary [Traffic Distributor](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-overview) add-on.
 
 <div style={{
     display:'flex',
@@ -247,11 +247,11 @@ Subsequently, you can also evaluate the productivity and effectiveness of the mo
 
 auto clustering computing
 
-Being placed in front of a pair of environments with the Sticky Sessions mode chosen, it provides smart routing of the incoming requests according to the stated backends weight. For more details on a proper TD configuration in this case, refer to the dedicated [A/B Testing](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/A-B%20Testing) guideline.
+Being placed in front of a pair of environments with the Sticky Sessions mode chosen, it provides smart routing of the incoming requests according to the stated backends weight. For more details on a proper TD configuration in this case, refer to the dedicated [A/B Testing](http://localhost:3000/docs/application-setting/traffic-distributor/use-cases/a-b-testing) guideline.
 
 ## ...and a Few Useful Tips
 
 When your GlassFish or Payara cluster is set up and you’ve ensured everything works as intended, you could also consider the hints below to get the maximum efficiency of its running inside the Jelastic Cloud with the extensive platform functionality:
 
 - For optimized resource consumption, set [auto-scaling triggers](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) within your environment settings so that nodes will be automatically added/removed within a cluster depending on the incoming load.
-- For connection with any [database software stack](/docs/QuickStart/Software%20Stack%20Versions#additional-stacks), the cluster requires the appropriate libraries being integrated to its Administration Server - the most popular ones are available by default at all newly created GF/Payara nodes. And if operating with legacy instances, make sure the _/opt/glassfish/glassfish/domains/domain1/lib_ DAS directory contains the appropriate files (otherwise - just upload them to the mentioned location manually).
+- For connection with any [database software stack](http://localhost:3000/docs/quickstart/software-stack-versions#additional-stacks), the cluster requires the appropriate libraries being integrated to its Administration Server - the most popular ones are available by default at all newly created GF/Payara nodes. And if operating with legacy instances, make sure the _/opt/glassfish/glassfish/domains/domain1/lib_ DAS directory contains the appropriate files (otherwise - just upload them to the mentioned location manually).

@@ -60,8 +60,8 @@ Both topologies provide out-of-box high availability and failover capabilities f
 
 - **Version** - select the preferred Redis version
 - **Environment** - provide a name for [grouping](/docs/environment-management/environment-groups/overview) your database cluster environments
-- **Create separate environment group** – tick to [isolate](/docs/EnvironmentManagement/Environment%20Isolation#private-network-isolation) the environment group
-- **Enable External IP Addresses for cluster nodes** – tick to add [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip) to the cluster nodes (three IPs per region), which is required if the Redis client is located outside the platform
+- **Create separate environment group** – tick to [isolate](http://localhost:3000/docs/environment-management/environment-isolation#private-network-isolation) the environment group
+- **Enable External IP Addresses for cluster nodes** – tick to add [public IP](http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip#public-ip) to the cluster nodes (three IPs per region), which is required if the Redis client is located outside the platform
 - **Topology** – choose either **_Maximum Performance_** or **_Maximum Reliability_** topology (details can be found in the [Cluster Topology](/docs/Database/Redis/High%20Availability%20Cluster/Multi-Region%20Cluster#database-cluster-topology) section above)
 - **Regions** - select platform regions where the cluster environments will be deployed. For the **_Maximum Reliability_** topology, the first region will host primary servers and other - secondary databases (replicas)
 

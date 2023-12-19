@@ -78,7 +78,7 @@ Log into the opened admin panel using credentials from the above-mentioned email
 
 </div>
 
-5. Return to dashboard and click the **Config** button next to the application server (Tomcat, in our case) to access [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager#configuration-file-manager).
+5. Return to dashboard and click the **Config** button next to the application server (Tomcat, in our case) to access [configuration file manager](http://localhost:3000/docs/application-setting/configuration-file-manager#configuration-file-manager).
 
 <div style={{
     display:'flex',

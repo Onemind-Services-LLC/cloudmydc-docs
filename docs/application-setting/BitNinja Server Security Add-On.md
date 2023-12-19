@@ -70,7 +70,7 @@ All features (modules) are available and can be enabled on all layers. The list 
 
 :::danger Note
 
-As proprietary software, the add-on usage requires a license. You can learn all the [license pricing](/docs/ApplicationSetting/BitNinja%20Server%20Security%20Add-On#license-pricing) specifics in the dedicated section below.
+As proprietary software, the add-on usage requires a license. You can learn all the [license pricing](http://localhost:3000/docs/application-setting/bitninja-server-security-add-on#license-pricing) specifics in the dedicated section below.
 
 :::
 

@@ -36,13 +36,13 @@ To start with, you’ll need at least three MongoDB nodes in order to configure 
 
 </div>
 
-If required, change the **Environment Name** and destination [Region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#environment-regions). Once installation is completed you have to take care about security of nodes communication with the help of authentication key file.
+If required, change the **Environment Name** and destination [Region](http://localhost:3000/docs/environment-management/environment-regions/choosing-a-region#environment-regions). Once installation is completed you have to take care about security of nodes communication with the help of authentication key file.
 
 ## Add Authentication Key File
 
 Authentication is an important security assurance process that forces each member of the replica set to identify itself during the inner communication by means of a special unique authentication key file. So let’s generate your own in order to protect the data inside your DBs from illegal access:
 
-1. Log into one of database nodes via [Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH#ssh-access-via-web-browser).
+1. Log into one of database nodes via [Web SSH](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser).
 
 <div style={{
     display:'flex',
@@ -60,7 +60,7 @@ Authentication is an important security assurance process that forces each membe
 
 3. Now you have to distribute just created key file across all MongoDB instances:
 
-- Click on the **Config** button next to your database nodes in order to access [File Manager](/docs/ApplicationSetting/Configuration%20File%20Manager#configuration-file-manager).
+- Click on the **Config** button next to your database nodes in order to access [File Manager](http://localhost:3000/docs/application-setting/configuration-file-manager#configuration-file-manager).
 
 <div style={{
     display:'flex',

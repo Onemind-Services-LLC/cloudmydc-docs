@@ -6,7 +6,7 @@ sidebar_position: 8
 
 Specifying the alias (alternative name) for an environment or a separate node can greatly facilitate the process of their management. It clarifies which item you are working with, so you’ll never make a mistake while choosing the environment/node that needs to be adjusted.
 
-This ability is especially useful while working with numerous nodes of the same type, possibly due to the [multi nodes](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) feature. Let’s consider this on the example of defining the master and slave nodes in a DB cluster.
+This ability is especially useful while working with numerous nodes of the same type, possibly due to the [multi nodes](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) feature. Let’s consider this on the example of defining the master and slave nodes in a DB cluster.
 
 1. Select the necessary environment with a set of same-type nodes and expand the instances list:
 

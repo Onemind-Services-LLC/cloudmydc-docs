@@ -24,7 +24,7 @@ sidebar_position: 5
 </div>
 <div>
 
-As incoming traffic to your project grows, you need to improve your app performance to keep up with it. Some room of capacities for elastic extension is automatically provisioned in confines of a set server [vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) limit, but eventually you most likely will face the need to enlarge a number of its nodes (i.e. to scale it [horizontally](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling)) upon your service popularity rises.
+As incoming traffic to your project grows, you need to improve your app performance to keep up with it. Some room of capacities for elastic extension is automatically provisioned in confines of a set server [vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) limit, but eventually you most likely will face the need to enlarge a number of its nodes (i.e. to scale it [horizontally](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling)) upon your service popularity rises.
 
 </div>
 </div>
@@ -33,12 +33,12 @@ For lots of the most widely used apps (like _WordPress, Drupal, Joomla, Liferay,
 
 To help you in getting rid of such content being out-of-sync upon building clustered solution for your application, the platform provides a special **File Synchronization** add-on, intended to keep the uploaded files set similar across multiple web-server instances. Herewith, synchronization could be applied not just in confines of one environment (i.e. for a single horizontally scaled node) but even across application servers in two separate environments, regardless of whether they run the same stack and/or application or different ones.
 
-So, follow the guide below to dive into [implementation specifics](/docs/ApplicationSetting/Scaling%20And%20Clustering/File%20Synchronization%20in%20Cluster) of this solution and to discover how it actually works in practice with the next steps:
+So, follow the guide below to dive into [implementation specifics](http://localhost:3000/docs/application-setting/scaling-and-clustering/file-synchronization-in-cluster) of this solution and to discover how it actually works in practice with the next steps:
 
-- [Install Example WordPress Application](/docs/ApplicationSetting/Scaling%20And%20Clustering/File%20Synchronization%20in%20Cluster#install-application)
-- [Test File Upload Without Synchronization](/docs/ApplicationSetting/Scaling%20And%20Clustering/File%20Synchronization%20in%20Cluster#test-file-upload-without-synchronization)
-- [Apply File Synchronization](/docs/ApplicationSetting/Scaling%20And%20Clustering/File%20Synchronization%20in%20Cluster#apply-file-synchronization)
-- [Check Sync Logs](/docs/ApplicationSetting/Scaling%20And%20Clustering/File%20Synchronization%20in%20Cluster#check-logs)
+- [Install Example WordPress Application](http://localhost:3000/docs/application-setting/scaling-and-clustering/file-synchronization-in-cluster#install-application)
+- [Test File Upload Without Synchronization](http://localhost:3000/docs/application-setting/scaling-and-clustering/file-synchronization-in-cluster#test-file-upload-without-synchronization)
+- [Apply File Synchronization](http://localhost:3000/docs/application-setting/scaling-and-clustering/file-synchronization-in-cluster#apply-file-synchronization)
+- [Check Sync Logs](http://localhost:3000/docs/application-setting/scaling-and-clustering/file-synchronization-in-cluster#check-logs)
 
 ## File Synchronization Add-on Implementation
 
@@ -54,7 +54,7 @@ The **File Sync** solution is provided as a single-click [add-on](/docs/deployme
 
 </div>
 
-The **File Sync** add-on can be installed on top of any platform-managed application server stack (i.e. except for [Docker](/docs/Container/Container%20Types) containers). Before the appliance, you will be asked to select the folder to synchronize. In this way, you are able to sync only the part of your app server’s file system that actually requires this. Thus, only changes within the selected directory (on any of specified application server instances) will trigger the synchronization.
+The **File Sync** add-on can be installed on top of any platform-managed application server stack (i.e. except for [Docker](http://localhost:3000/docs/container/container-types) containers). Before the appliance, you will be asked to select the folder to synchronize. In this way, you are able to sync only the part of your app server’s file system that actually requires this. Thus, only changes within the selected directory (on any of specified application server instances) will trigger the synchronization.
 
 Now, let’s see how to put all of this into action step-by-step.
 
@@ -94,7 +94,7 @@ Click **Install** and provide the required details, such as _Environment, Displa
 
 Confirm the installation and wait a minute for a message with your admin data to be shown (the same information will be simultaneously sent to you via email).
 
-2. Click **Change environment topology** and use the **+** button within the [_Horizontal Scaling_](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) section to add one more app server node and, this way, to create a cluster.
+2. Click **Change environment topology** and use the **+** button within the [_Horizontal Scaling_](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) section to add one more app server node and, this way, to create a cluster.
 
 <div style={{
     display:'flex',
@@ -110,7 +110,7 @@ When finished, click **Apply**.
 
 :::tip
 
-By using instructions in our documentation, you can easily add [extra app servers](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling), enable [high availability](/docs/ApplicationSetting/Scaling%20And%20Clustering/Session%20Replication%20for%20HA) or even configure a clustered solution.
+By using instructions in our documentation, you can easily add [extra app servers](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling), enable [high availability](http://localhost:3000/docs/application-setting/scaling-and-clustering/session-replication-for-ha) or even configure a clustered solution.
 
 In our case, we have simply added one more app server to the environment but you can use a more complex scenario by setting the [clustered solution](https://cloudmydc.com/) for your WordPress application
 

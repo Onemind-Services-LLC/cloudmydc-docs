@@ -28,7 +28,7 @@ With Platform FTP feature is available for both application servers and database
 
 :::tip Note
 
-Currently, FTP add-on is not compatible with [Docker containers](/docs/Container/Container%20Types).
+Currently, FTP add-on is not compatible with [Docker containers](http://localhost:3000/docs/container/container-types).
 
 :::
 
@@ -421,9 +421,9 @@ You can change the password of FTP-addon, installed at your environment. Using c
 
 Your FTP password can be changed via SSH following the next steps:
 
-1. [generate](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) an SSH key and [add](/docs/deployment-tools/ssh/add-ssh-key) it to your dashboard.
+1. [generate](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key) an SSH key and [add](/docs/deployment-tools/ssh/add-ssh-key) it to your dashboard.
 
-2. [Access](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) a necessary container with the installed FTP-addon via SSH.
+2. [Access](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) a necessary container with the installed FTP-addon via SSH.
 
 <div style={{
     display:'flex',

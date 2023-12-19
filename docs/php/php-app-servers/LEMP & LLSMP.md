@@ -101,7 +101,7 @@ Within the LEMP/LLSMP container, you can establish the client connection to the 
 
 Read the linked guide to learn more about [PHP connection to MariaDB](https://cloudmydc.com/).
 
-2. Several [environment variables](/docs/Container/Container%20Configuration/Variables) can be used to manage your LEMP/LLSMP container:
+2. Several [environment variables](http://localhost:3000/docs/container/container-configuration/variables) can be used to manage your LEMP/LLSMP container:
 
 - **_ADMINPANEL_ENABLED_** - allows (_true_, by default) or forbids (_false_) access to phpMyAdmin console for the integrated MariaDB database server
 - **_REDIS_ENABLED_** - enables (_true_, by default) or disables (_false_) object caching with Redis

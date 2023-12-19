@@ -81,7 +81,7 @@ To scale your environment, you need to increase/decrease the maximum number of a
 
 </div>
 
-The platform **[horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling)** functionality allows to easily adjust the number of servers in your environment using the appropriate “**-**” and “**+**” buttons. Herewith, you can select the preferred scaling mode:
+The platform **[horizontal scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling)** functionality allows to easily adjust the number of servers in your environment using the appropriate “**-**” and “**+**” buttons. Herewith, you can select the preferred scaling mode:
 
 - **_Stateless_** - simultaneously creates all new nodes from the base image template
 - **_Stateful_** - sequentially copies file system of the master container into the new nodes

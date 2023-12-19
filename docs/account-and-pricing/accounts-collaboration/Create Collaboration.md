@@ -92,7 +92,7 @@ Fill in the fields of the opened **_Invite Member_** dialog:
 - if needed, you can **_Create New Role_** without closing the invite form
 - you can manage [environment group](/docs/environment-management/environment-groups/overview) structure directly in the invite form - hover over the group and click the gear icon to select the required option (**Add**, **Edit**, **Remove**)
 - to provide an ability to create environments at the account root (i.e. without any group), share the whole Environments category with a role that grants the appropriate permission
-- if you need to [share a single environment](/docs/EnvironmentManagement/Share%20Environment), it can be done from the appropriate environment configs
+- if you need to [share a single environment](http://localhost:3000/docs/environment-management/share-environment), it can be done from the appropriate environment configs
 
 ::: 3. The invited member will appear in the list in the **_pending acceptance_** state.
 

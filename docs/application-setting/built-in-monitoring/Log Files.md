@@ -26,7 +26,7 @@ So, to view your node’s logs, follow these steps:
 
 </div>
 
-3. The logs tab will appear at the bottom of your dashboard. If your environment contains several [nodes of the same type](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling), you can choose the one you want to see the logs for in the drop-down list.
+3. The logs tab will appear at the bottom of your dashboard. If your environment contains several [nodes of the same type](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling), you can choose the one you want to see the logs for in the drop-down list.
 
 <div style={{
     display:'flex',

@@ -204,7 +204,7 @@ The available configuration options are straightforward:
 
 :::tip Tip
 
-You can use an [endpoint](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#endpoints-a-direct-connection-to-the-cloud) or [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip) as your database entry point for external connection. Let’s check the endpoint example (to the Pgpool-II node for the cluster):
+You can use an [endpoint](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#endpoints-a-direct-connection-to-the-cloud) or [public IP](http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip#public-ip) as your database entry point for external connection. Let’s check the endpoint example (to the Pgpool-II node for the cluster):
 
 <div style={{
     display:'flex',

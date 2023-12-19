@@ -38,7 +38,7 @@ The vertical scaling feature is applicable for any type of instance in environme
 
 :::
 
-As you could observe within the video above, the platform measures resources in special units called **cloudlets**, which provide you with a superior granularity while scaling. A [cloudlet](/docs/PlatformOverview/Cloudlet) is roughly equivalent to 128 MiB RAM and 400Mhz CPU core.
+As you could observe within the video above, the platform measures resources in special units called **cloudlets**, which provide you with a superior granularity while scaling. A [cloudlet](http://localhost:3000/docs/platform-overview/cloudlet) is roughly equivalent to 128 MiB RAM and 400Mhz CPU core.
 
 <div style={{
     display:'flex',
@@ -104,4 +104,4 @@ If changing the scaling limit (i.e. the number of the dynamic cloudlets) for the
 
 :::
 
-You can use the automatically gathered [statistics](/docs/application-setting/built-in-monitoring/statistics) to check the consumption level for the last month and set the amount of resources according to it. And in the case your application becomes highly popular and a single server’s capacity is not enough, feel free to scale it horizontally by means of increasing the number of nodes [manually](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) or configure a set of [triggers for automatic horizontal scaling](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) of your application server.
+You can use the automatically gathered [statistics](/docs/application-setting/built-in-monitoring/statistics) to check the consumption level for the last month and set the amount of resources according to it. And in the case your application becomes highly popular and a single server’s capacity is not enough, feel free to scale it horizontally by means of increasing the number of nodes [manually](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) or configure a set of [triggers for automatic horizontal scaling](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) of your application server.

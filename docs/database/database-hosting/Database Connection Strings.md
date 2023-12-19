@@ -12,7 +12,7 @@ All instances, created inside the platform, are operated as independent containe
 
 - [CNAME](/docs/Database/Database%20Hosting/DB%20Hosting%20Overview#database-admin-panel-url) of database, e.g. _node{node_id}-{environment_name}.{hoster_domain}_
 - Private IP address
-- [Public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip) address (if attached)
+- [Public IP](http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip#public-ip) address (if attached)
 
 :::danger Note
 
@@ -112,7 +112,7 @@ _“jdbc:{dbtype}://{dbtype}{node_id}-{environment_name}.{hoster_domain}/{dbname
 
 Your hosting provider domain can be found within the last column of the appropriate table in the [Hosters Info](/docs/quickstart/hosters-list-&-info#paas-hosting-providers) page.
 
-In case your hosting provider platform has several [environment regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#environment-regions) to choose, the {hoster_domain} value for your environment can differ from the general platform’s one.
+In case your hosting provider platform has several [environment regions](http://localhost:3000/docs/environment-management/environment-regions/choosing-a-region#environment-regions) to choose, the {hoster_domain} value for your environment can differ from the general platform’s one.
 
 :::
 

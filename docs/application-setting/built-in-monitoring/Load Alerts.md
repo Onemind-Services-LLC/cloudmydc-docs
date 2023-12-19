@@ -16,8 +16,8 @@ Starting with PaaS 4.6 version, each of the newly created containers is delivere
 
 :::
 
-- [Create Alert](/docs/ApplicationSetting/Built-in%20Monitoring/Load%20Alerts#create-alert)
-- [Triggers Execution History](/docs/ApplicationSetting/Built-in%20Monitoring/Load%20Alerts#triggers-execution-history)
+- [Create Alert](http://localhost:3000/docs/application-setting/built-in-monitoring/load-alerts#create-alert)
+- [Triggers Execution History](http://localhost:3000/docs/application-setting/built-in-monitoring/load-alerts#triggers-execution-history)
 
 ## Create Alert
 
@@ -110,7 +110,7 @@ After you’ve stated all the preferable configurations, click **Add** button.
 
 :::tip Note
 
-That if an environment is [shared](/docs/EnvironmentManagement/Share%20Environment) with other users, they will also receive the same preconfigured load notifications via their emails.
+That if an environment is [shared](http://localhost:3000/docs/environment-management/share-environment) with other users, they will also receive the same preconfigured load notifications via their emails.
 
 :::
 

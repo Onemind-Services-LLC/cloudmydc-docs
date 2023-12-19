@@ -156,7 +156,7 @@ Within the appeared transfer settings dialog, click **Copy** to start uploading.
 
 ## Aссess Application via SSH
 
-Access your VPS container via [SSH protocol](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) to locate the recently uploaded application.
+Access your VPS container via [SSH protocol](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) to locate the recently uploaded application.
 
 1. Move to the directory you’ve created in the previous section and inspect its content to ensure application archive is present.
 

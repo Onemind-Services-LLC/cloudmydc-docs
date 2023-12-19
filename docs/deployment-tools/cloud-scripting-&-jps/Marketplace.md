@@ -350,7 +350,7 @@ Click **Install** to continue.
 
 You can track the JPS package installation process in detail via the Cloud Scripting console. While logged into your dashboard account, add the **_/console_** suffix to URL:
 
-_https://app._[**_{platformDomain}_**](/docs/QuickStart/Hosters%20List%20&%20Info)_/console_
+_https://app._[**_{platformDomain}_**](http://localhost:3000/docs/quickstart/hosters-list-&-info)_/console_
 
 <div style={{
     display:'flex',

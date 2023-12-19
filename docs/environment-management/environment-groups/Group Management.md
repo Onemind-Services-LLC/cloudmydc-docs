@@ -8,10 +8,10 @@ sidebar_position: 4
 
 The guide below contains information on the basic management options the platform provides for operating with [environment groups](/docs/environment-management/environment-groups/overview). Namely, we’ll get deeper insights on how to:
 
-- [Assign Group to Environment](/docs/EnvironmentManagement/Environment%20Groups/Group%20Management#assign-group-to-environment)
-- [Add Subgroup](/docs/EnvironmentManagement/Environment%20Groups/Group%20Management#add-subgroups)
-- [Edit Group](/docs/EnvironmentManagement/Environment%20Groups/Group%20Management#edit-group)
-- [Remove Group](/docs/EnvironmentManagement/Environment%20Groups/Group%20Management#remove-group)
+- [Assign Group to Environment](http://localhost:3000/docs/environment-management/environment-groups/group-management#assign-group-to-environment)
+- [Add Subgroup](http://localhost:3000/docs/environment-management/environment-groups/group-management#add-subgroups)
+- [Edit Group](http://localhost:3000/docs/environment-management/environment-groups/group-management#edit-group)
+- [Remove Group](http://localhost:3000/docs/environment-management/environment-groups/group-management#remove-group)
 
 ## Assign Group to Environment
 

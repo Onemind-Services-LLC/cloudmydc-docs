@@ -24,11 +24,11 @@ The process of manual scaling is fairly simple - open the environment topology w
 
 - you can automate horizontal scaling based on incoming load with the help of [tunable triggers](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling)
 - you can use the initial (master) node of the layer as your [storage server](/docs/Data%20Storage%20Container/Use%20Cases/Master%20Container) for sharing data within the whole layer
-- in case of scaling in (i.e decreasing the nodes number), the last container added to the layer is the first one to be removed (unless it is [selected explicitly](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling#managing-nodes-within-layer))
+- in case of scaling in (i.e decreasing the nodes number), the last container added to the layer is the first one to be removed (unless it is [selected explicitly](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling#managing-nodes-within-layer))
 
 :::
 
-Next, you can select the required [scaling mode](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) from the appropriate drop-down list. Also, for additional details refer to the [horizontal scaling specifics](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) section below.
+Next, you can select the required [scaling mode](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) from the appropriate drop-down list. Also, for additional details refer to the [horizontal scaling specifics](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) section below.
 
 ## Scaling Modes
 
@@ -53,7 +53,7 @@ While using the **_stateless_** mode, be aware of the following features absence
 
 - **deployments** - the existing project contexts won’t be transferred
 - **custom SSL** - SSL certificates and configs won’t be copied
-- **mount points** - custom [mounts](/docs/data-storage-container/data-sharing/mount-points) will be moved only if the appropriate [volume](/docs/Container/Container%20Configuration/Volumes) is configured
+- **mount points** - custom [mounts](/docs/data-storage-container/data-sharing/mount-points) will be moved only if the appropriate [volume](http://localhost:3000/docs/container/container-configuration/volumes) is configured
 - **add-ons** - any [add-ons](/docs/deployment-tools/cloud-scripting-&-jps/marketplace) installed on the layer won’t be available
 
 :::danger tip
@@ -125,7 +125,7 @@ More information on this labeling feature can be found in the [Environment Alias
 While scaling different types of stacks, consider the following specifics:
 
 - upon scaling the application server instance, the load balancer node will be automatically added to the environment topology
-- if enabling the [High-Availability](/docs/ApplicationSetting/Scaling%20And%20Clustering/Session%20Replication%20for%20HA) option for application server, the obligatory required NGINX load balancer cannot be scaled horizontally (if several nodes of NGINX were available before, they will be automatically downscaled to a single instance)
+- if enabling the [High-Availability](http://localhost:3000/docs/application-setting/scaling-and-clustering/session-replication-for-ha) option for application server, the obligatory required NGINX load balancer cannot be scaled horizontally (if several nodes of NGINX were available before, they will be automatically downscaled to a single instance)
 - upon scaling VPS nodes, each one is provided with a separate [public IP](/docs/application-setting/external-access-to-applications/public-ip) address attached
 - [Maven](/docs/java/build-node/java-vcs-deployment-with-maven) is the only node, which cannot be scaled horizontally (as there is no point in such operation)
 
@@ -175,7 +175,7 @@ In the **Scaling Nodes** window, you can perform the following actions:
 
 :::tip
 
-- In case a [**high availability**](/docs/ApplicationSetting/Scaling%20And%20Clustering/Session%20Replication%20for%20HA) option is enabled for the layer (available for the _Tomcat_ and _TomEE_ application servers only), the nodes are added and removed in pairs.
+- In case a [**high availability**](http://localhost:3000/docs/application-setting/scaling-and-clustering/session-replication-for-ha) option is enabled for the layer (available for the _Tomcat_ and _TomEE_ application servers only), the nodes are added and removed in pairs.
 - The new nodes' icons represent the scaling mode of the layer - empty container for _stateless_ and filled one for _stateful_.
 
 :::

@@ -32,7 +32,7 @@ Use the table of content below to find required information within the guide qui
 
 ## Node.js Environment Hosting
 
-To run your Node.js application, you need to [set up](/docs/EnvironmentManagement/Setting%20Up%20Environment#choosing-programming-language-or-specific-deployment-option) the appropriate environment using the powerful and intuitive **Topology Wizard**. Switch to the **_Node.js_** tab, select the required engine version for your application server and add any other [software stack](/docs/quickstart/software-stack-versions) required. If needed, adjust other parameters, such as cloudlets and nodes count, Public IPv4 and IPv6, etc.
+To run your Node.js application, you need to [set up](http://localhost:3000/docs/environment-management/setting-up-environment#choosing-programming-language-or-specific-deployment-option) the appropriate environment using the powerful and intuitive **Topology Wizard**. Switch to the **_Node.js_** tab, select the required engine version for your application server and add any other [software stack](/docs/quickstart/software-stack-versions) required. If needed, adjust other parameters, such as cloudlets and nodes count, Public IPv4 and IPv6, etc.
 
 <div style={{
     display:'flex',
@@ -46,7 +46,7 @@ To run your Node.js application, you need to [set up](/docs/EnvironmentManagemen
 
 :::tip Note
 
-Each instance is a completely [isolated container](/docs/PlatformOverview/Isolated%20Container#isolated-containers-live-migration), fully independent and uninfluenced by other stacks. Additionally, scaled out nodes are automatically distributed across the physical servers (or VMs) ensuring [high availability](/docs/PlatformOverview/Isolated%20Container#high-availability-for-applications).
+Each instance is a completely [isolated container](http://localhost:3000/docs/platform-overview/isolated-container#isolated-containers-live-migration), fully independent and uninfluenced by other stacks. Additionally, scaled out nodes are automatically distributed across the physical servers (or VMs) ensuring [high availability](http://localhost:3000/docs/platform-overview/isolated-container#high-availability-for-applications).
 
 :::
 
@@ -96,7 +96,7 @@ The platform automates the deployment process for the managed NodeJS application
 
 :::tip
 
-Usually, due to the [ports auto-redirect](/docs/Container/Container%20Configuration/Ports#ports-auto-redirect) algorithm, the deployed projects are instantly accessible without any additional manipulations. Herewith, for greater accuracy, you can manually exclude some of the services from the auto-redirect search by listing the appropriate ports via the **_REDIRECT_EXCLUDE_PORTS_** [variable](/docs/Container/Container%20Configuration/Variables).
+Usually, due to the [ports auto-redirect](http://localhost:3000/docs/container/container-configuration/ports#ports-auto-redirect) algorithm, the deployed projects are instantly accessible without any additional manipulations. Herewith, for greater accuracy, you can manually exclude some of the services from the auto-redirect search by listing the appropriate ports via the **_REDIRECT_EXCLUDE_PORTS_** [variable](http://localhost:3000/docs/container/container-configuration/variables).
 
 :::
 
@@ -104,8 +104,8 @@ You can read the appropriate documents to learn more about the deployment of the
 
 - [Deployment Manager](/docs/deployment/deployment-manager)
 - [Deployment Guide](/docs/deployment/deployment-guide)
-- [Auto-Deploy Overview](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview)
-- [Deployment Hooks](/docs/Deployment/Deployment%20Hooks)
+- [Auto-Deploy Overview](http://localhost:3000/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview)
+- [Deployment Hooks](http://localhost:3000/docs/deployment/deployment-hooks)
 
 ## Node.js Package Managers
 
@@ -116,7 +116,7 @@ The platform supports two types of package managers:
 - [**_npm_**](https://www.npmjs.com/) - manages your project requirements by installing the additional modules, packages, and ready-to-use applications
 - [**_yarn_**](https://classic.yarnpkg.com/en/) - operates the same requirements as in _npm_ (so no changes are required for the existing applications), while providing higher speed, reliability, and convenience
 
-By default, the npm package manager is used for the NodeJS application servers, but, if necessary, it can be easily switched to yarn. For that, access the [container variables](/docs/Container/Container%20Configuration/Variables) frame and set the appropriate **_PACKAGE_MANAGER_** value (either _npm_ or _yarn_).
+By default, the npm package manager is used for the NodeJS application servers, but, if necessary, it can be easily switched to yarn. For that, access the [container variables](http://localhost:3000/docs/container/container-configuration/variables) frame and set the appropriate **_PACKAGE_MANAGER_** value (either _npm_ or _yarn_).
 
 <div style={{
     display:'flex',
@@ -137,16 +137,16 @@ By default, the npm package manager is used for the NodeJS application servers, 
 - [**_forever_**](https://www.npmjs.com/package/forever) - allows running your Node.js processes continuously and automatically restarting them upon failure
 - [**_supervisor_**](https://www.npmjs.com/package/supervisor) - monitors running applications for changes and automatically restarts required ones to keep them up-to-date
 
-Users can choose the necessary process manager during container [redeployment](/docs/category/container-deployment) or by adjusting the **_PROCESS_MANAGER_** [variable](/docs/Container/Container%20Configuration/Variables) (using _forever_, _npm_, _pm2_, or _supervisor_ as value, container restart is needed to apply new options).
+Users can choose the necessary process manager during container [redeployment](/docs/category/container-deployment) or by adjusting the **_PROCESS_MANAGER_** [variable](http://localhost:3000/docs/container/container-configuration/variables) (using _forever_, _npm_, _pm2_, or _supervisor_ as value, container restart is needed to apply new options).
 
 ## Domains Management
 
-Your Node.js application can be easily supplemented with the [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#custom-domain-name) name to be used instead of the default one. There are two options based on your environment topology:
+Your Node.js application can be easily supplemented with the [custom domain](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#custom-domain-name) name to be used instead of the default one. There are two options based on your environment topology:
 
 - **CNAME redirect** if using Shared Load Balancer; is recommended for **_dev_** and **_test_** environments
 - **DNS A Record** if using Public IP; can handle high traffic load and is suitable for **_production_** environments
 
-Also, you can quickly switch traffic between your environments (e.g. to redirect customers to the newer application version without downtime) by utilizing the [swap domains](/docs/ApplicationSetting/Domain%20Name%20Management/Swap%20Domains#swap-domains) functionality or with the help of the **_SwapExtIps_** [API](https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps)/[CLI](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Swap%20Public%20IPs#cli-tutorial-public-ips-external-addresses-swap) method.
+Also, you can quickly switch traffic between your environments (e.g. to redirect customers to the newer application version without downtime) by utilizing the [swap domains](http://localhost:3000/docs/application-setting/domain-name-management/swap-domains#swap-domains) functionality or with the help of the **_SwapExtIps_** [API](https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps)/[CLI](http://localhost:3000/docs/deployment-tools/api-&-cli/platform-cli/swap-public-ips#cli-tutorial-public-ips-external-addresses-swap) method.
 
 <div style={{
     display:'flex',
@@ -162,7 +162,7 @@ Also, you can quickly switch traffic between your environments (e.g. to redirect
 
 The platform dynamically provides the exact amount of resources (RAM and CPU) required by your nodes according to the current load with no manual intervention required. As a result, you never overpay for unused resources and save your time as the platform eliminates the need to handle the load-related adjustments or architectural changes.
 
-You just need to set the upper [cloudlets](/docs/PlatformOverview/Cloudlet#what-is-a-cloudlet) limit (each one equals to _128 MiB_ of RAM and _400 MHz_ of CPU) for your NodeJS application server and everything else will be handled by platform automatically.
+You just need to set the upper [cloudlets](http://localhost:3000/docs/platform-overview/cloudlet#what-is-a-cloudlet) limit (each one equals to _128 MiB_ of RAM and _400 MHz_ of CPU) for your NodeJS application server and everything else will be handled by platform automatically.
 
 <div style={{
     display:'flex',
@@ -174,7 +174,7 @@ You just need to set the upper [cloudlets](/docs/PlatformOverview/Cloudlet#what-
 
 </div>
 
-Refer to the [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling#automatic-vertical-scaling) documentation for more information.
+Refer to the [automatic vertical scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling#automatic-vertical-scaling) documentation for more information.
 
 ## Manual Horizontal Scaling
 
@@ -195,7 +195,7 @@ To scale out/in NodeJS application servers, you need to access the topology wiza
 
 The maximum number of the same-type servers within a single environment layer depends on a particular hosting provider settings (usually this limit stands for 16 nodes and can be enlarged by sending the appropriate request to support).
 
-Also, for the proper requests distribution, a [load balancer](/docs/Load%20Balancers/Load%20Balancing#load-balancing) instance is automatically added upon NodeJS server scaling. Refer to the [horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling#horizontal-scaling-inside-the-cloud-multi-node) documentation for more details.
+Also, for the proper requests distribution, a [load balancer](/docs/Load%20Balancers/Load%20Balancing#load-balancing) instance is automatically added upon NodeJS server scaling. Refer to the [horizontal scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-inside-the-cloud-multi-node) documentation for more details.
 
 ## Automatic Horizontal Scaling
 
@@ -211,7 +211,7 @@ Access the environment **Settings > Monitoring > Auto Horizontal** Scaling secti
 
 </div>
 
-Learn more about [automatic horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling#automatic-horizontal-scaling) in the linked document.
+Learn more about [automatic horizontal scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling#automatic-horizontal-scaling) in the linked document.
 
 In addition, hosting at the platform allows using other inbuilt tools and features, for example:
 

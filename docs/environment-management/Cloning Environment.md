@@ -26,12 +26,12 @@ Also, if talking about more complex and sophisticated projects (which implies th
 - **testing** - for quality assurance to discover and analyze possible issues
 - **production** - the latest actual application version, provisioned for end-customers use
 
-Below, we’ll provide information on [how to make an environment copy](/docs/EnvironmentManagement/Cloning%20Environment#how-to-clone-environment) and [some common use cases](/docs/EnvironmentManagement/Cloning%20Environment#common-use-cases).
+Below, we’ll provide information on [how to make an environment copy](http://localhost:3000/docs/environment-management/cloning-environment#how-to-clone-environment) and [some common use cases](http://localhost:3000/docs/environment-management/cloning-environment#common-use-cases).
 
 :::tip
 **Take into consideration** the following specific points of environment cloning at the platform:
 
-- based on the layer [scaling mode](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling), cloned containers will be either created from the appropriate base image (_stateless_) or copied from the master container (_stateful_)
+- based on the layer [scaling mode](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling), cloned containers will be either created from the appropriate base image (_stateless_) or copied from the master container (_stateful_)
 - you may experience a short-term freeze on source containers due to memory state migration to the cloned nodes (the implementation specifics is similar to live migration)
 - while cloning a Windows-based environment, containers will be temporarily stopped, so be ready for a short downtime
 
@@ -87,7 +87,7 @@ Consequently, you can use your environment in the following ways:
 
 - rename (change internal domain) your environment
 - [swap domains](/docs/application-setting/domain-name-management/swap-domains) to redirect your clients to the upgraded project
-- implement [blue-green deployment](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/Blue-Green%20Deploy) to allow so-called “invisible” updates, which will not cause any downtime for your application
+- implement [blue-green deployment](http://localhost:3000/docs/application-setting/traffic-distributor/use-cases/blue-green-deploy) to allow so-called “invisible” updates, which will not cause any downtime for your application
 
 <div style={{
     display:'flex',
@@ -99,7 +99,7 @@ Consequently, you can use your environment in the following ways:
 
 </div>
 
-- perform applications [A/B testing](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/A-B%20Testing) (i.e. compare different versions) to designate which one provides better user appeal
+- perform applications [A/B testing](http://localhost:3000/docs/application-setting/traffic-distributor/use-cases/a-b-testing) (i.e. compare different versions) to designate which one provides better user appeal
 
 <div style={{
     display:'flex',
@@ -111,7 +111,7 @@ Consequently, you can use your environment in the following ways:
 
 </div>
 
-achieve advanced _[failover protection](/docs/ApplicationSetting/Traffic%20Distributor/Use%20Cases/Failover%20Protection)_ of your application
+achieve advanced _[failover protection](http://localhost:3000/docs/application-setting/traffic-distributor/use-cases/failover-protection)_ of your application
 
 <div style={{
     display:'flex',

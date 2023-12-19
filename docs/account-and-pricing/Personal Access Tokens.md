@@ -153,7 +153,7 @@ For example, you can [stop an environment](https://docs.jelastic.com/api/#!/api/
 
 https://app.
 **$**
-**_[{platformDomain}](/docs/QuickStart/Hosters%20List%20&%20Info)_**
+**_[{platformDomain}](http://localhost:3000/docs/quickstart/hosters-list-&-info)_**
 /1.0/environment/control/rest/stopenv?envName=
 **${envName}**
 &session=

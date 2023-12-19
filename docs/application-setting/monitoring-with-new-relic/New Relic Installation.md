@@ -29,7 +29,7 @@ Once these conditions are fulfilled, you can easily integrate New Relic agent to
 
 :::tip Note
 
-Subsequently, the installed New Relic monitoring software can be [smoothly updated](/docs/ApplicationSetting/Monitoring%20With%20New%20Relic/New%20Relic%20Update) to its latest version with the corresponding inbuilt add-on option.
+Subsequently, the installed New Relic monitoring software can be [smoothly updated](http://localhost:3000/docs/application-setting/monitoring-with-new-relic/new-relic-update) to its latest version with the corresponding inbuilt add-on option.
 
 :::
 
@@ -109,7 +109,7 @@ Here, the following data should be specified within the appropriate fields:
 
 The **_License key_** field at add-on installation frame contains the key mask by default. You can complete the installation leaving it unchanged, but, obviously, you won’t be able to explore the gathered statistics (because of the absence of the bound New Relic account).
 
-Nevertheless, you can specify this parameter later within the New Relic add-on settings by means of the platform [Configuration Manager](/docs/Container/Container%20Configuration/Configuration%20Tools#configuration-file-manager).The paths for the required file are:
+Nevertheless, you can specify this parameter later within the New Relic add-on settings by means of the platform [Configuration Manager](http://localhost:3000/docs/container/container-configuration/configuration-tools#configuration-file-manager).The paths for the required file are:
 
 - for **Java** app servers:
   - **TomEE**,**Tomcat** - _/opt/tomcat/lib/newrelic/newrelic.yml_
@@ -154,7 +154,7 @@ Click the **Install** button to confirm your entries and initiate the deployment
 
 Please, **pay attention** that if your project is run in a single app server node, the restart will cause a **temporary downtime** of your application, thus we leave for you to decide when to perform this operation.
 
-However, in case your app server is [scaled horizontally](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling), the downtime will be minimized, since all the server instances will be restarted sequentially. You are able to get rid of this inconvenience at all, through setting the delay for executing this operation at each next node within a layer. In such a way, whilst one node is undergoing the maintenance, the rest ones will remain active.
+However, in case your app server is [scaled horizontally](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling), the downtime will be minimized, since all the server instances will be restarted sequentially. You are able to get rid of this inconvenience at all, through setting the delay for executing this operation at each next node within a layer. In such a way, whilst one node is undergoing the maintenance, the rest ones will remain active.
 
 :::
 

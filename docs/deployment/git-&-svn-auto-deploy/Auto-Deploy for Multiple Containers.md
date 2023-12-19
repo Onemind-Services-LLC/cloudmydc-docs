@@ -8,7 +8,7 @@ import obj from './Auto-DeployforMultipleContainers.json'
 
 ## GIT & SVN Auto-Deploy for Multiple Containers
 
-When handling a highly-visited project, it’s commonly recommended to leverage the platform [Multi-Nodes](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) feature for ensuring enough performance for your app. Also, you need to consider that with the [auto-deploy option](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview) enabled for such a project, all of the containers within your application server layer will be updated <u>simultaneously</u>.
+When handling a highly-visited project, it’s commonly recommended to leverage the platform [Multi-Nodes](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) feature for ensuring enough performance for your app. Also, you need to consider that with the [auto-deploy option](http://localhost:3000/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview) enabled for such a project, all of the containers within your application server layer will be updated <u>simultaneously</u>.
 
 Nevertheless, in case you’d like to achieve more high-availability (i.e. for the redeployment to be performed implicitly and <u>consequentially</u> at each node), here are a few options this can be ensured through:
 

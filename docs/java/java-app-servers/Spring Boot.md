@@ -275,7 +275,7 @@ The majority of basic server management operations can be performed right via Je
 
 </div>
 
-- set up custom [Java options and arguments](/docs/EnvironmentManagement/EnvironmentVariables/Java%20Options%20and%20Arguments) for your server by adjusting the **_JAVA_OPTS_** and **_JAVA_ARGS_** environment variables
+- set up custom [Java options and arguments](http://localhost:3000/docs/environment-management/environment-variables/java-options-and-arguments) for your server by adjusting the **_JAVA_OPTS_** and **_JAVA_ARGS_** environment variables
 
 <div style={{
     display:'flex',
@@ -290,7 +290,7 @@ The majority of basic server management operations can be performed right via Je
 - explore server **[Logs](/docs/application-setting/built-in-monitoring/log-files)** to get the details on run operations for efficient service administration and troubleshooting
 - track the **[Statistics](/docs/application-setting/built-in-monitoring/statistics)** on consumed resources to be aware of the capacities your server actually needs and define the best approach for their allocation
 
-For more complex maintenance operations, you can connect to your Spring Boot container [via SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) (either using the web or local SSH client). The following tips can come in handy when working with your Spring Boot server:
+For more complex maintenance operations, you can connect to your Spring Boot container [via SSH](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) (either using the web or local SSH client). The following tips can come in handy when working with your Spring Boot server:
 
 - your application files can be located in the **_/home/jelastic/APP_** directory, which is considered as “current” or “working” for the Java process
 - Java Virtual Machine (JVM) configuration parameters can be customized within the **_/home/jelastic/conf/variables.conf_** file (e.g. to enable remote debugging or pass any additional arguments to JVM)
@@ -307,7 +307,7 @@ Jelastic Platform provides real-time elastic scalability that is available out-o
 
 ## Automatic Vertical Scaling
 
-The [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) is enabled by default and ensures your service remains available during the load spikes, and at the same time, eliminates the need to pay for unused resources. Just decide on maximum limit of resources (set with [cloudlets](/docs/PlatformOverview/Cloudlet)) your application may consume and Jelastic will automatically adjust the maximum memory size (**-Xmx**) for you application based on these capacities, for example:
+The [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) is enabled by default and ensures your service remains available during the load spikes, and at the same time, eliminates the need to pay for unused resources. Just decide on maximum limit of resources (set with [cloudlets](http://localhost:3000/docs/platform-overview/cloudlet)) your application may consume and Jelastic will automatically adjust the maximum memory size (**-Xmx**) for you application based on these capacities, for example:
 
 - 8 cloudlets (1GiB RAM) set the maximum heap size to 819 MB
 - 16 cloudlets (2GiB RAM) set the maximum heap size to 1638 MB
@@ -335,7 +335,7 @@ The [automatic horizontal scaling](/docs/application-setting/scaling-and-cluster
 
 :::tip Note
 
-When a server is scaled out (both with a trigger or [manually](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling)), an NGINX [load balancer](/docs/Load%20Balancers/Load%20Balancing) will be automatically added to your environment, with pre-configurations for sticky session load balancing. Alternatively, you can switch the used balancer stack to _Apache_, _HAProxy_, _Varnish_, or _LiteSpeed ADC_.
+When a server is scaled out (both with a trigger or [manually](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling)), an NGINX [load balancer](/docs/Load%20Balancers/Load%20Balancing) will be automatically added to your environment, with pre-configurations for sticky session load balancing. Alternatively, you can switch the used balancer stack to _Apache_, _HAProxy_, _Varnish_, or _LiteSpeed ADC_.
 
 :::
 
@@ -345,7 +345,7 @@ Herewith, all the newly added nodes will be created at different hardware server
 
 If your project requires some complex configurations for requests handling, like HTTPS and load balancing, feel free to leverage the following security options:
 
-- [built-in SSL](/docs/ApplicationSetting/SSL/Built-In%20SSL) functionality allows to instantly apply traffic encryption for your application internal domain (i.e. _https://{envName}{platformDomain}_) with Jelastic wildcard SSL certificate
+- [built-in SSL](http://localhost:3000/docs/application-setting/ssl/built-in-ssl) functionality allows to instantly apply traffic encryption for your application internal domain (i.e. _https://{envName}{platformDomain}_) with Jelastic wildcard SSL certificate
 
 <div style={{
     display:'flex',
@@ -365,7 +365,7 @@ Applying any of these solutions will enable traffic encryption on the environmen
 ## Custom Ports & HTTP/HTTPS Usage Considerations
 
 By default, the majority of Java applications listen to port **_8080_** on HTTP level, thus it is considered as the standard Spring Boot endpoint for HTTP traffic.
-Herewith, when your environment link is requested over the Internet, the [ports](/docs/Container/Container%20Configuration/Ports) are automatically mapped as follows:
+Herewith, when your environment link is requested over the Internet, the [ports](http://localhost:3000/docs/container/container-configuration/ports) are automatically mapped as follows:
 
 - internal HTTP port **_8080_** refers to the port **_80_**
 - secure HTTPS port **_8743_** refers to the ports **_443_** and **_80_**

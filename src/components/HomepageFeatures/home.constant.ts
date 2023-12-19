@@ -58,7 +58,7 @@ export const FeatureList: FeatureItem[] = [
   {
     title: "Containers",
     Svg: require("@site/static/img/home/container.svg").default,
-    url: "/docs/Container/Container%20Types",
+    url: "http://localhost:3000/docs/container/container-types",
   },
   {
     title: "Kubernetes",
@@ -95,15 +95,15 @@ export const FeatureList: FeatureItem[] = [
 export const QuickStartList: QuickStartItem[] = [
   {
     title: "Getting Started",
-    url: "/docs/QuickStart/Getting%20Started",
+    url: "http://localhost:3000/docs/quickstart/getting-started",
   },
   {
     title: "Dashboard Guide",
-    url: "/docs/QuickStart/Dashboard%20Guide",
+    url: "http://localhost:3000/docs/quickstart/dashboard-guide",
   },
   {
     title: "Deployment Guide",
-    url: "/docs/Deployment/Deployment%20Guide",
+    url: "http://localhost:3000/docs/deployment/deployment-guide",
   },
   {
     title: "Database Сonnection",
@@ -111,26 +111,26 @@ export const QuickStartList: QuickStartItem[] = [
   },
   {
     title: "Software Stack Versions",
-    url: "/docs/QuickStart/Software%20Stack%20Versions",
+    url: "http://localhost:3000/docs/quickstart/software-stack-versions",
   },
 ];
 
 export const RecommendedList: RecommendedItem[] = [
   {
     title: "Automatic Vertical Scaling",
-    url: "/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling",
+    url: "http://localhost:3000/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling",
   },
   {
     title: "Automatic Horizontal Scaling",
-    url: "/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling",
+    url: "http://localhost:3000/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling",
   },
   {
     title: "Custom Domain Name",
-    url: "/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name",
+    url: "http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name",
   },
   {
     title: "Traffic Distributor",
-    url: "/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Overview",
+    url: "http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-overview",
   },
   {
     title: "Accounts Collaboration",
@@ -141,13 +141,13 @@ export const RecommendedList: RecommendedItem[] = [
 export const GettingInfoList: GettingInfoItem[] = [
   {
     title: "Release Notes",
-    url: "/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3.2",
+    url: "http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3.2",
   },
   // { title: "Platform API", url: "#" },
   { title: "Cloud Scripting", url: "https://docs.cloudscripting.com/" },
   {
     title: "Platform CLI",
-    url: "/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview",
+    url: "http://localhost:3000/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview",
   },
   // { title: "Ops Docs", url: "#" },
 ];

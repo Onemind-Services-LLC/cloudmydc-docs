@@ -68,7 +68,7 @@ Both _Apache Ruby_ and _NGINX Ruby_ templates utilize a modern **_systemd_** ini
 
 :::tip Note
 
-All instances are [completely isolated](/docs/PlatformOverview/Isolated%20Container) and fully independent containers. Additionally, scaled out nodes are automatically distributed across the physical servers (or VMs), ensuring [high availability](/docs/PlatformOverview/Isolated%20Container#high-availability-for-applications).
+All instances are [completely isolated](http://localhost:3000/docs/platform-overview/isolated-container) and fully independent containers. Additionally, scaled out nodes are automatically distributed across the physical servers (or VMs), ensuring [high availability](http://localhost:3000/docs/platform-overview/isolated-container#high-availability-for-applications).
 
 :::
 
@@ -137,8 +137,8 @@ Read the related documents to learn more about the deployment of the Ruby applic
 
 - [Deployment Manager](/docs/deployment/deployment-manager)
 - [Deployment Guide](/docs/deployment/deployment-guide)
-- [Auto-Deploy Overview](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview#auto-deploy-of-gitsvn-updates)
-- [Deployment Hooks](/docs/Deployment/Deployment%20Hooks)
+- [Auto-Deploy Overview](http://localhost:3000/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview#auto-deploy-of-gitsvn-updates)
+- [Deployment Hooks](http://localhost:3000/docs/deployment/deployment-hooks)
 
 ## Ruby Dependency Management
 
@@ -156,12 +156,12 @@ The file should contain a list of commands (each one from a new line) that will 
 
 ## Domains Management
 
-You can provide a [custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#custom-domain-name) name for your Ruby application to be used instead of the default one. Based on the environment topology, you should use:
+You can provide a [custom domain](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#custom-domain-name) name for your Ruby application to be used instead of the default one. Based on the environment topology, you should use:
 
 - **CNAME redirect** if using _Shared Load Balancer_; is recommended for **_dev_** and **_test_** environments
 - **DNS A Record** if using _public IP_; can handle high traffic load and is suitable for **_production_** environments
 
-To switch traffic from one environment to another (e.g. to redirect customers to the newer application version without downtime), the [swap domains](/docs/ApplicationSetting/Domain%20Name%20Management/Swap%20Domains#swap-domains) functionality should be used. It is also available as the **_SwapExtIps_** [API](https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps)/[CLI](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Swap%20Public%20IPs#cli-tutorial-public-ips-external-addresses-swap) method.
+To switch traffic from one environment to another (e.g. to redirect customers to the newer application version without downtime), the [swap domains](http://localhost:3000/docs/application-setting/domain-name-management/swap-domains#swap-domains) functionality should be used. It is also available as the **_SwapExtIps_** [API](https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps)/[CLI](http://localhost:3000/docs/deployment-tools/api-&-cli/platform-cli/swap-public-ips#cli-tutorial-public-ips-external-addresses-swap) method.
 
 <div style={{
     display:'flex',
@@ -175,7 +175,7 @@ To switch traffic from one environment to another (e.g. to redirect customers to
 
 ## Automatic Vertical Scaling
 
-One of the key-features of the platform is dynamic provisioning of the exact amount of resources (RAM and CPU) required by your nodes according to the current load with no manual intervention. Just set the required [cloudlets](/docs/PlatformOverview/Cloudlet#what-is-a-cloudlet) limit (_128 MiB_ of RAM and _400 MHz_ of CPU each) for your Ruby application server and everything else will be handled by the platform automatically.
+One of the key-features of the platform is dynamic provisioning of the exact amount of resources (RAM and CPU) required by your nodes according to the current load with no manual intervention. Just set the required [cloudlets](http://localhost:3000/docs/platform-overview/cloudlet#what-is-a-cloudlet) limit (_128 MiB_ of RAM and _400 MHz_ of CPU each) for your Ruby application server and everything else will be handled by the platform automatically.
 
 <div style={{
     display:'flex',
@@ -199,11 +199,11 @@ As a result, you automatically benefit on a truly user-oriented [**_Pay-per-Use_
 
 </div>
 
-Refer to the [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling#automatic-vertical-scaling) documentation for additional information.
+Refer to the [automatic vertical scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling#automatic-vertical-scaling) documentation for additional information.
 
 ## Manual Horizontal Scaling
 
-[Horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling#horizontal-scaling-inside-the-cloud-multi-node) with the platform is as simple as selecting the required number of nodes via the corresponding section in the topology wizard. Additionally, you can choose between two scaling modes:
+[Horizontal scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-inside-the-cloud-multi-node) with the platform is as simple as selecting the required number of nodes via the corresponding section in the topology wizard. Additionally, you can choose between two scaling modes:
 
 - **_Stateless_** - simultaneously creates all new nodes from the base image template
 - **_Stateful_** - sequentially copies file system of the master container into the new nodes
@@ -228,7 +228,7 @@ The maximum number of the same-type servers within a single environment layer de
 
 ## Automatic Horizontal Scaling
 
-You can configure [automatic horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling#automatic-horizontal-scaling) for your Ruby environment through tunable triggers, which monitor the changes in the nodes load and increase/decrease their number appropriately.
+You can configure [automatic horizontal scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling#automatic-horizontal-scaling) for your Ruby environment through tunable triggers, which monitor the changes in the nodes load and increase/decrease their number appropriately.
 
 The process is simple, access the environment **Settings > Monitoring > Auto Horizontal Scaling** section, choose the required layer and resource to be monitored (_CPU, RAM, Network, Disk I/O, Disk IOPS_). Set the exact condition and specifics of scaling via the intuitive UI form.
 
@@ -244,14 +244,14 @@ The process is simple, access the environment **Settings > Monitoring > Auto Hor
 
 In addition, hosting at the PaaS allows using other built-in tools and features, for example:
 
-- [Built-in](/docs/ApplicationSetting/SSL/Built-In%20SSL#built-in-ssl-certificates) or [Custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL#custom-ssl-certificates)
-- [Public IPv4 and IPv6](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip)
+- [Built-in](http://localhost:3000/docs/application-setting/ssl/built-in-ssl#built-in-ssl-certificates) or [Custom SSL](http://localhost:3000/docs/application-setting/ssl/custom-ssl#custom-ssl-certificates)
+- [Public IPv4 and IPv6](http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip#public-ip)
 - A wide range of complementary [software stacks](/docs/quickstart/software-stack-versions), including SQL and NoSQL databases
-- [Container firewalls](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall#container-firewall-rules-management), [endpoints](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#endpoints-a-direct-connection-to-the-cloud) and [environment network isolation](/docs/EnvironmentManagement/Environment%20Isolation#environment-network-isolation)
-- [User-friendly UI](/docs/QuickStart/Dashboard%20Guide) and [SSH access](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview#ssh-access)
-- [Open API](/docs/Deployment%20Tools/API%20&%20CLI/API%20Overview#platform-api) and [Cloud Scripting](https://docs.cloudscripting.com/) for automation
+- [Container firewalls](http://localhost:3000/docs/application-setting/external-access-to-applications/container-firewall#container-firewall-rules-management), [endpoints](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#endpoints-a-direct-connection-to-the-cloud) and [environment network isolation](http://localhost:3000/docs/environment-management/environment-isolation#environment-network-isolation)
+- [User-friendly UI](http://localhost:3000/docs/quickstart/dashboard-guide) and [SSH access](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview#ssh-access)
+- [Open API](http://localhost:3000/docs/deployment-tools/api-&-cli/api-overview#platform-api) and [Cloud Scripting](https://docs.cloudscripting.com/) for automation
 - [Pay-per-use pricing model](/docs/Account&Pricing/Pricing%20Model%20Overview#platform-usage-based-pricing-pay-per-use)
 - [Collaboration for teamwork](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview#account-collaboration)
-- [Multi-cloud distribution](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#environment-regions)
+- [Multi-cloud distribution](http://localhost:3000/docs/environment-management/environment-regions/choosing-a-region#environment-regions)
 
 Explore Ruby hosting benefits within the platform!

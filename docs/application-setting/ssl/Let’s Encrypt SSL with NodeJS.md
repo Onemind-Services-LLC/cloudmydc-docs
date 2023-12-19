@@ -12,7 +12,7 @@ The platform automates SSL certificate binding for most software stacks when wor
 
 As an alternative, you can place a [load balancer](/docs/Load%20Balancers/Load%20Balancing) node in front of your Node.js server to act as a reverse proxy. The _Let’s Encrypt_ SSL add-on can be installed on such a balancer, benefiting from out-of-box automation.
 
-Such an approach is preferable for larger projects that want to utilize the [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) feature as it will require a load balancer node anyway.
+Such an approach is preferable for larger projects that want to utilize the [Horizontal Scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) feature as it will require a load balancer node anyway.
 
 :::
 

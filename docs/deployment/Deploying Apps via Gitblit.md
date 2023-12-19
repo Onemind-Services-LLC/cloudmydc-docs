@@ -30,7 +30,7 @@ import obj from './DeployingAppsViaGitblit.json'
 
 So, let’s find out how to host Gitblit at the platform and, subsequently, simplify your apps management with its help. You can automatically get a preconfigured ready-to-work **Gitblit** instance up and running within minutes using our one-click installation widget:
 
-Just click **Get it hosted now** and type your email address in order to launch Gitblit and get the ability to proceed directly to the [repository creation](/docs/Deployment/Deploying%20Apps%20via%20Gitblit#create-a-gitblit-repository) guide section, skipping the steps of manual installation.
+Just click **Get it hosted now** and type your email address in order to launch Gitblit and get the ability to proceed directly to the [repository creation](http://localhost:3000/docs/deployment/deploying-apps-via-gitblit#create-a-gitblit-repository) guide section, skipping the steps of manual installation.
 
 :::tip Note
 

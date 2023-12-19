@@ -58,7 +58,7 @@ Environment transferring feature is currently not available between accounts at 
 
 No changes are applied to the environment after transferring. The new owner receives it in the same state, with the same applications deployed, and with the same custom configurations. All the consequent charges for the environment will be applied to the new owner as well.
 
-Also, the transferred environment becomes [unshared](/docs/EnvironmentManagement/Share%20Environment) from all the users that had access to it.
+Also, the transferred environment becomes [unshared](http://localhost:3000/docs/environment-management/share-environment) from all the users that had access to it.
 
 ## Transferring Steps
 

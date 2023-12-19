@@ -46,7 +46,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.4#submit-button-customization-in-cs">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1.4#submit-button-customization-in-cs">
                     Learn More >>
                 </a>
             </div>
@@ -90,7 +90,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.4#lets-encrypt-root-certificate-expiration">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1.4#lets-encrypt-root-certificate-expiration">
                     Learn More >>
                 </a>
             </div>
@@ -109,7 +109,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.4#api-changes">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1.4#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -128,7 +128,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.4#software-stack-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1.4#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -172,7 +172,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.4#fixes-compatible-with-prior-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1.4#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -191,7 +191,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.4#bug-fixes">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1.4#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -209,7 +209,7 @@ Due to the [**DST Root CA X3** Let’s Encrypt certificate expiration](https://l
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -244,14 +244,14 @@ The exact list of new options to the buttons and settings configuration is provi
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## API Changes
 
-Below, you can find a list of all changes to the public API in the 6.1.4 platform version (compared to the preceding [6.0](/docs/PlatformOverview/Release%20Notes/Release%20Notes%206.1.4#api-changes) ones):
+Below, you can find a list of all changes to the public API in the 6.1.4 platform version (compared to the preceding [6.0](http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1.4#api-changes) ones):
 
 - The response of the **_[GetSSLCerts](https://cloudmydc.com/)_** method was extended. Now it contains information about linked domains.
 
@@ -262,7 +262,7 @@ Below, you can find a list of all changes to the public API in the 6.1.4 platfor
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -381,7 +381,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -399,7 +399,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

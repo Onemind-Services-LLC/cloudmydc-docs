@@ -60,7 +60,7 @@ The _6th, 9th, 10th_, and _12th_ Java versions cannot be created within the new 
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/QuickStart/Software%20Stack%20Versions#engines) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](http://localhost:3000/docs/quickstart/software-stack-versions#engines) document.
 
 :::
 
@@ -99,7 +99,7 @@ To host a Java application, you need to create an appropriate environment. Just 
 
 </div>
 
-All added servers represent [fully isolated containers](/docs/PlatformOverview/Isolated%20Container), located on different hosts for more availability, while isolation eliminates the risks of interfering with one another. You can attach the [public IP](/docs/application-setting/external-access-to-applications/public-ip) address to any of these servers for being accessed directly. Otherwise (i.e. if using default settings), the incoming requests sent to your application will be proxied by [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer).
+All added servers represent [fully isolated containers](http://localhost:3000/docs/platform-overview/isolated-container), located on different hosts for more availability, while isolation eliminates the risks of interfering with one another. You can attach the [public IP](/docs/application-setting/external-access-to-applications/public-ip) address to any of these servers for being accessed directly. Otherwise (i.e. if using default settings), the incoming requests sent to your application will be proxied by [Shared Load Balancer](http://localhost:3000/docs/application-setting/external-access-to-applications/shared-load-balancer).
 
 ## Java Application Deployment
 
@@ -125,10 +125,10 @@ You can read the appropriate documents to learn more about the deployment of the
 
 - [Deployment Guide](/docs/deployment/deployment-guide)
 - [Maven Build Node](/docs/java/build-node/java-vcs-deployment-with-maven)
-- [Auto-Deploy Overview](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview)
-- [Deployment Hooks](/docs/Deployment/Deployment%20Hooks)
+- [Auto-Deploy Overview](http://localhost:3000/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview)
+- [Deployment Hooks](http://localhost:3000/docs/deployment/deployment-hooks)
 
-There are also separate instructions for managing your projects via [Gitblit](/docs/Deployment/Deploying%20Apps%20via%20Gitblit) and [WebDAV](/docs/Deployment%20Tools/Remote%20Access%20via%20WebDAV).
+There are also separate instructions for managing your projects via [Gitblit](http://localhost:3000/docs/deployment/deploying-apps-via-gitblit) and [WebDAV](/docs/Deployment%20Tools/Remote%20Access%20via%20WebDAV).
 
 ## Domains Management
 
@@ -153,9 +153,9 @@ Also, with the help of the [swapping domains](https://cloudmydc.com/) feature or
 
 The platform allows using multiple domains within a single environment to increase its usability, efficiency, and scalability, while simultaneously saving your costs by avoiding a need to set up separate instances for different apps. Check the appropriate examples below:
 
-- [Multiple Domains with Public IP](/docs/ApplicationSetting/Domain%20Name%20Management/Multiple%20Domains%20with%20Public%20IP)
-- [Multiple Domains for Tomcat](/docs/ApplicationSetting/Domain%20Name%20Management/Multiple%20Domain%20for%20Tomcat)
-- [Multiple Domains for GlassFish](/docs/ApplicationSetting/Domain%20Name%20Management/Multiple%20Domains%20For%20GlassFish)
+- [Multiple Domains with Public IP](http://localhost:3000/docs/application-setting/domain-name-management/multiple-domains-with-public-ip)
+- [Multiple Domains for Tomcat](http://localhost:3000/docs/application-setting/domain-name-management/multiple-domain-for-tomcat)
+- [Multiple Domains for GlassFish](http://localhost:3000/docs/application-setting/domain-name-management/multiple-domains-for-glassfish)
 
 :::
 
@@ -187,7 +187,7 @@ To set or change the vertical scaling limit, just use the appropriate slider wit
 
 ## Horizontal Scaling: Manual and Automatic
 
-In case your application becomes highly popular and a single node is not enough, feel free to scale it [horizontally](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling). In order to ensure even more reliability and high-availability, all the newly added nodes are created on the different hardware nodes.
+In case your application becomes highly popular and a single node is not enough, feel free to scale it [horizontally](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling). In order to ensure even more reliability and high-availability, all the newly added nodes are created on the different hardware nodes.
 
 <div style={{
     display:'flex',
@@ -201,7 +201,7 @@ In case your application becomes highly popular and a single node is not enough,
 
 Click the **+/-** buttons within the _Horizontal Scaling_ section of the topology wizard to set the required number of nodes (load balancer will be added automatically).
 
-Also, you can adjust the preferred [scaling mode](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling):
+Also, you can adjust the preferred [scaling mode](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling):
 
 - **_Stateless_** - simultaneously creates all of the new nodes from the base image template
 - **_Stateful_** - sequentially copies file system of the master container into the new nodes
@@ -234,7 +234,7 @@ The trigger starts monitoring the resource consumption immediately after additio
 
 The embedded application server clustering feature provides replication of sessions between pairs of nodes and eliminates the necessity of additional software or Memcached usage for increasing application availability.
 
-The platform provides automated session replication between _Tomcat_ and _TomEE servers_ with the help of multicast to gain web application high availability within the Java cluster. This [**High-Availability**](/docs/ApplicationSetting/Scaling%20And%20Clustering/Session%20Replication%20for%20HA) feature can be enabled in the wizard during environment creation or topology tuning.
+The platform provides automated session replication between _Tomcat_ and _TomEE servers_ with the help of multicast to gain web application high availability within the Java cluster. This [**High-Availability**](http://localhost:3000/docs/application-setting/scaling-and-clustering/session-replication-for-ha) feature can be enabled in the wizard during environment creation or topology tuning.
 
 <div style={{
     display:'flex',
@@ -246,7 +246,7 @@ The platform provides automated session replication between _Tomcat_ and _TomEE 
 
 </div>
 
-The newer modern [**Auto-Clustering**](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances) solution is provided for the _GlassFish, Payara,_ and _WildFly_ stacks:
+The newer modern [**Auto-Clustering**](http://localhost:3000/docs/application-setting/scaling-and-clustering/auto-clustering-of-instances) solution is provided for the _GlassFish, Payara,_ and _WildFly_ stacks:
 
 - [Out-of-Box GlassFish & Payara Clustering0](https://cloudmydc.com/)
 - [WildFly Automatic Micro Clustering and Scaling](https://cloudmydc.com/)

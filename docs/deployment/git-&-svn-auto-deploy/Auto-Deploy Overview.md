@@ -92,7 +92,7 @@ As you can easily guess from the option name, it is stated in minutes. Thus, if 
 :::danger Notes
 
 - if the verification interval is smaller than the time needed to build and deploy the project, the next task will wait in a queue until these operations are completed
-- in case your application server layer contains several nodes, please also consider the [details](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20for%20Multiple%20Containers) on their update sequence
+- in case your application server layer contains several nodes, please also consider the [details](http://localhost:3000/docs/deployment/git-&-svn-auto-deploy/auto-deploy-for-multiple-containers) on their update sequence
 
 :::
 

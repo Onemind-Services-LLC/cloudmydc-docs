@@ -52,7 +52,7 @@ share environment a375d2047848941da72832ea4018c58csettings button
 
 </div>
 
-3. After clicking the **Save** button, this user will receive an email notification about environment sharing and can proceed to [managing](/docs/EnvironmentManagement/Share%20Environment%20Deprecated#manage-a-shared-environment) it.
+3. After clicking the **Save** button, this user will receive an email notification about environment sharing and can proceed to [managing](http://localhost:3000/docs/environment-management/share-environment-deprecated#manage-a-shared-environment) it.
 
 ## Environment Sharing with an Unregistered Account
 

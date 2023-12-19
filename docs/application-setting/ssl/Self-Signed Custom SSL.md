@@ -6,7 +6,7 @@ sidebar_position: 6
 
 ## Self-Signed Custom SSL Certificates
 
-One of the ways to secure your application is to use SSL-encrypted (Secure Sockets Layer) connection. With the platform, you can use both [Built-In SSL](/docs/ApplicationSetting/SSL/Built-In%20SSL) and [Custom SSL](/docs/application-setting/ssl/custom-ssl) certificates.
+One of the ways to secure your application is to use SSL-encrypted (Secure Sockets Layer) connection. With the platform, you can use both [Built-In SSL](http://localhost:3000/docs/application-setting/ssl/built-in-ssl) and [Custom SSL](/docs/application-setting/ssl/custom-ssl) certificates.
 
 Herewith, all custom SSL certificates require to be signed, and usually, this is done by the Certificate Authority (CA) companies (e.g. Let’s Encrypt). In this case, your certificate becomes reliable after signing, so others can trust it and any connection to your site or application is performed without issues.
 
@@ -32,10 +32,10 @@ In order to generate a self-signed certificate, you need to buy a **Domain Name*
 
 Once that is done, you are ready to proceed to the generation of your SSL certificate with the help of any preferred tool. We’ll use OpenSSL as an example. Depending on the operating system you are using, perform the following steps:
 
-- [for Windows](/docs/ApplicationSetting/SSL/Self-Signed%20Custom%20SSL#for-windows)
-- [for Linux/MacOS/FreeBSD](/docs/ApplicationSetting/SSL/Self-Signed%20Custom%20SSL#for-linuxmacosfreebsd)
+- [for Windows](http://localhost:3000/docs/application-setting/ssl/self-signed-custom-ssl#for-windows)
+- [for Linux/MacOS/FreeBSD](http://localhost:3000/docs/application-setting/ssl/self-signed-custom-ssl#for-linuxmacosfreebsd)
 
-You are also able to generate the required files using our [Elastic Virtual Private Server](/docs/ApplicationSetting/SSL/Self-Signed%20Custom%20SSL#elastic-vps).
+You are also able to generate the required files using our [Elastic Virtual Private Server](http://localhost:3000/docs/application-setting/ssl/self-signed-custom-ssl#elastic-vps).
 
 ## For Windows
 
@@ -323,7 +323,7 @@ You also have the possibility to create your self-signed certificate using the [
 - create an environment with Elastic VPS inside
 - connect to it in a preferred way (using [public IP](/docs/application-setting/external-access-to-applications/public-ip) or via [SSH Gateway](/docs/deployment-tools/ssh/ssh-overview))
 - access the OpenSSL shell with the corresponding **_openssl_** command
-- create a self-signed certificate following the [Linux/MacOS/FreeBSD](/docs/ApplicationSetting/SSL/Self-Signed%20Custom%20SSL#for-linuxmacosfreebsd) section of this guide (the only difference is all the commands should be executed without the **_openssl_** word at their beginning, as you are already inside the OpenSSL shell)
+- create a self-signed certificate following the [Linux/MacOS/FreeBSD](http://localhost:3000/docs/application-setting/ssl/self-signed-custom-ssl#for-linuxmacosfreebsd) section of this guide (the only difference is all the commands should be executed without the **_openssl_** word at their beginning, as you are already inside the OpenSSL shell)
 
 Once the generation process is finished, you need to download the created certificate files (e.g. via [configuration file manager](/docs/application-setting/configuration-file-manager)) to apply them to the necessary environment afterward.
 

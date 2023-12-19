@@ -12,7 +12,7 @@ For the Windows VPS management, utilize the [remote desktop protocol](/docs/wind
 
 :::
 
-The process of [SSH access](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) to the Elastic VPS nodes is the same as for any other container on the platform but provides full root access.
+The process of [SSH access](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) to the Elastic VPS nodes is the same as for any other container on the platform but provides full root access.
 
 - [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh)
 
@@ -36,7 +36,7 @@ An SSH connection to VPS from the console on your local machine. Access is based
 
 If you haven’t established a connection via SSH Gate before, you’ll need to perform the following steps beforehand:
 
-- [generate](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key) an SSH key pair
+- [generate](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key) an SSH key pair
 - [add your public SSH key](/docs/deployment-tools/ssh/add-ssh-key) to the dashboard
 
 <div style={{

@@ -4,7 +4,7 @@ slug: setting-up-environment
 sidebar_position: 1
 ---
 
-The first step of any application hosting is a creation of the [environment](/docs/PlatformOverview/Basics%20&%20Terminology#environment) with the required isolated containers. The platform provides a powerful and intuitive UI to create and configure environments up to your specific needs. This document will guide you through all the needed steps, giving an extended explanation of available specifics and features.
+The first step of any application hosting is a creation of the [environment](/docs/platform-overview/basics-&-terminology#environment) with the required isolated containers. The platform provides a powerful and intuitive UI to create and configure environments up to your specific needs. This document will guide you through all the needed steps, giving an extended explanation of available specifics and features.
 
 1. Log in to the platform dashboard and click the **New Environment** button in the upper-left corner.
 
@@ -20,10 +20,10 @@ The first step of any application hosting is a creation of the [environment](/do
 
 2. Within the opened **_topology wizard_** dialog, you can set up all the necessary customizations. We recommend performing adjustments in the following order:
 
-- [choose programming language](/docs/EnvironmentManagement/Setting%20Up%20Environment#choosing-programming-language-or-specific-deployment-option) or specialized deployment solution (Docker Engine or Kubernetes Cluster)
-- [set up topology](/docs/EnvironmentManagement/Setting%20Up%20Environment#configuring-topology) by adding required software stacks
-- [configure nodes](/docs/EnvironmentManagement/Setting%20Up%20Environment#configuring-nodes-resources-and-specifics) resources and specifics
-  review estimations, name the environment and [confirm the creation](/docs/EnvironmentManagement/Setting%20Up%20Environment#reviewing-and-confirming-environment-creation)
+- [choose programming language](http://localhost:3000/docs/environment-management/setting-up-environment#choosing-programming-language-or-specific-deployment-option) or specialized deployment solution (Docker Engine or Kubernetes Cluster)
+- [set up topology](http://localhost:3000/docs/environment-management/setting-up-environment#configuring-topology) by adding required software stacks
+- [configure nodes](http://localhost:3000/docs/environment-management/setting-up-environment#configuring-nodes-resources-and-specifics) resources and specifics
+  review estimations, name the environment and [confirm the creation](http://localhost:3000/docs/environment-management/setting-up-environment#reviewing-and-confirming-environment-creation)
 
 ![Locale Dropdown](./img/SettingUpEnvironment/02-configure-environment-via-wizard.png)
 
@@ -39,13 +39,13 @@ As the first step of your environment creation, you need to select the deploymen
 
 Click on the tab with the required programming language (Java, PHP, Ruby, .NET, Node.js, or Python) tab to proceed with the platform certified containers.
 
-2. The other deployment options are available via the Custom tab. All the variants listed below utilize the basic platform’s [system container](/docs/PlatformOverview/System%20Container) (so-called OS container), which makes them compatible with the most (but not all) of the platform-distinguishing features (e.g. vertical and horizontal scaling).
+2. The other deployment options are available via the Custom tab. All the variants listed below utilize the basic platform’s [system container](http://localhost:3000/docs/platform-overview/system-container) (so-called OS container), which makes them compatible with the most (but not all) of the platform-distinguishing features (e.g. vertical and horizontal scaling).
 
 ![Locale Dropdown](./img/SettingUpEnvironment/04-topology-wizard-docker-tab.png)
 
-- **Custom Container Images** - any Docker image (based on the [supported OS](/docs/Container/Container%20Image%20Requirements)) deployed into the system container. Compared to the **managed containers**, this option provides access to a greater variety of solutions, search the entire Docker Hub registry or use your private repository. However, the software operability and compatibility with the platform cannot be guaranteed as the content is managed by respective image maintainers. It’s recommended to build custom container images based on [platform certified images](https://hub.docker.com/u/jelastic) using [FROM instruction](https://docs.docker.com/engine/reference/builder/#from).
+- **Custom Container Images** - any Docker image (based on the [supported OS](http://localhost:3000/docs/container/container-image-requirements)) deployed into the system container. Compared to the **managed containers**, this option provides access to a greater variety of solutions, search the entire Docker Hub registry or use your private repository. However, the software operability and compatibility with the platform cannot be guaranteed as the content is managed by respective image maintainers. It’s recommended to build custom container images based on [platform certified images](https://hub.docker.com/u/jelastic) using [FROM instruction](https://docs.docker.com/engine/reference/builder/#from).
 
-- **Docker Engine** - a Docker Engine CE deployed into the system container. It provides access to all the Docker native functionality, including deployment, scaling, and management of multiple [application containers](/docs/PlatformOverview/Application%20Container) inside.
+- **Docker Engine** - a Docker Engine CE deployed into the system container. It provides access to all the Docker native functionality, including deployment, scaling, and management of multiple [application containers](http://localhost:3000/docs/platform-overview/application-container) inside.
 
 - **Kubernetes Cluster** - ready-to-go _[Kubernetes cluster](/docs/Kubernetes%20Hosting/Kubernetes%20Cluster/Kubernetes%20Overview)_ with a preconfigured control plane and worker nodes created based on the system containers. The deployment, scaling, and orchestration of the microservices inside are handled by Kubernetes control units, while the platform scales and manages control plane and worker nodes.
 
@@ -114,13 +114,13 @@ The sequence of blocks displayed above is the default order. However, you can mi
 
 :::tip Tip
 
-If you cannot find a required software solution, you can add it as a [custom container](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) from Docker Hub or your private repository.
+If you cannot find a required software solution, you can add it as a [custom container](http://localhost:3000/docs/container/container-deployment/custom-containers-deployment) from Docker Hub or your private repository.
 
 :::
 
 2. An **SSL** protection can be configured for your environment via the same-named section. Here, two options are available:
 
-- **[Built-In SSL](/docs/ApplicationSetting/SSL/Built-In%20SSL)** - enables an already trusted SSL certificate, avoiding any additional checks and saving your time on the certificate validation. However, it is applied to the default environment domain name only (i.e. with the hoster’s domain at the end) and does not work if [public IP](/docs/application-setting/external-access-to-applications/public-ip) is attached to your servers.
+- **[Built-In SSL](http://localhost:3000/docs/application-setting/ssl/built-in-ssl)** - enables an already trusted SSL certificate, avoiding any additional checks and saving your time on the certificate validation. However, it is applied to the default environment domain name only (i.e. with the hoster’s domain at the end) and does not work if [public IP](/docs/application-setting/external-access-to-applications/public-ip) is attached to your servers.
 
 - **[Custom SSL](/docs/application-setting/ssl/custom-ssl)** - shows the pre-conditions of using your custom SSL certificates for the environment. Click the **Enable** button to automatically fulfill the requirements (e.g. enable Public IP) and refer to the linked instruction for further guidance.
 
@@ -155,7 +155,7 @@ Once you are done with the topology structure, you can adjust each particular la
 
 </div>
 
-2. Configure the [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) by setting the number of reserved and dynamic [cloudlets](/docs/PlatformOverview/Cloudlet) (1 cloudlet = **128 MiB** of RAM and **400 MHz** of CPU) for the nodes within the layer.
+2. Configure the [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) by setting the number of reserved and dynamic [cloudlets](http://localhost:3000/docs/platform-overview/cloudlet) (1 cloudlet = **128 MiB** of RAM and **400 MHz** of CPU) for the nodes within the layer.
 
 <div style={{
     display:'flex',
@@ -169,7 +169,7 @@ Once you are done with the topology structure, you can adjust each particular la
 
 Think of it as a minimum and maximum CPU & RAM capacities per server. It is worth mentioning that no matter how high the scaling limit is, only actually consumed resources are charged. This helps to overcome load spikes and, at the same time, not to overpay for unused memory or processor.
 
-3. The [Horizontal Scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) part allows defining a number of nodes within the layer and choosing a preferred scaling mode (stateful or stateless).
+3. The [Horizontal Scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) part allows defining a number of nodes within the layer and choosing a preferred scaling mode (stateful or stateless).
 
 <div style={{
     display:'flex',
@@ -185,7 +185,7 @@ You can use the drop-down lists to change stack and engine type/versions (if nee
 
 :::tip Tip
 
-Click on the gear icon (circled in the image below) for additional [management options](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling#managing-nodes-within-layer) during scaling.
+Click on the gear icon (circled in the image below) for additional [management options](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling#managing-nodes-within-layer) during scaling.
 
 <div style={{
     display:'flex',
@@ -213,20 +213,20 @@ Click on the gear icon (circled in the image below) for additional [management o
 
 The list may vary depending on the particular stack and account permissions:
 
-- **[Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances)** - automatic clusterization for some platform certified templates. Additional fields can appear after activation, e.g. scheme selection (_master-slave, master-master, or galera_) for the database cluster.
+- **[Auto-Clustering](http://localhost:3000/docs/application-setting/scaling-and-clustering/auto-clustering-of-instances)** - automatic clusterization for some platform certified templates. Additional fields can appear after activation, e.g. scheme selection (_master-slave, master-master, or galera_) for the database cluster.
 - **Disk Limit** - an amount of disk space reserved per node. The dedicated [Shared Storage](/docs/Data%20Storage%20Container/Shared%20Storage%20Container) containers are usually provided with enlarged storage capacity.
 - **Sequential restart delay** - a delay between the restart operation completion on one node and start on the other. It is used to avoid downtime, ensuring that at least one server is active. You can set it to “-1” for the simultaneous restart of all nodes within the layer.
-- **[High-Availability](/docs/ApplicationSetting/Scaling%20And%20Clustering/Session%20Replication%20for%20HA)** (deprecated option, it is recommended redeploying to the latest version of the stack and using the Auto-Clustering feature instead) - automated session replication for the Tomcat and TomEE application servers
-- **[Access via SLB](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer)**- blocks access to the nodes of the layer via the platform Shared Load Balancer
+- **[High-Availability](http://localhost:3000/docs/application-setting/scaling-and-clustering/session-replication-for-ha)** (deprecated option, it is recommended redeploying to the latest version of the stack and using the Auto-Clustering feature instead) - automated session replication for the Tomcat and TomEE application servers
+- **[Access via SLB](http://localhost:3000/docs/application-setting/external-access-to-applications/shared-load-balancer)**- blocks access to the nodes of the layer via the platform Shared Load Balancer
 - **[Public IPv4/IPv6](/docs/application-setting/external-access-to-applications/public-ip)** - attach the specified number of external IP addresses to each node within the layer
 
 5. At the bottom of the section, you can find buttons to the container configuration tools:
 
-- **[Variables](/docs/Container/Container%20Configuration/Variables)** - review and manage a list of the [environment variables](/docs/Container/Container%20Configuration/Variables) for the current layer
-- **[Links](/docs/Container/Container%20Configuration/Links)** - interconnect layers inside the environment
-- **[Volumes](/docs/Container/Container%20Configuration/Volumes)** - manage a list of the data volumes to ensure files integrity during container lifecycle
-- **[Ports](/docs/Container/Container%20Configuration/Ports)** - view information about containers' ports
-- **[CMD / Entry Point](/docs/Container/Container%20Configuration/Run%20Configuration)** - configure containers' Entry Point and Run Command
+- **[Variables](http://localhost:3000/docs/container/container-configuration/variables)** - review and manage a list of the [environment variables](http://localhost:3000/docs/container/container-configuration/variables) for the current layer
+- **[Links](http://localhost:3000/docs/container/container-configuration/links)** - interconnect layers inside the environment
+- **[Volumes](http://localhost:3000/docs/container/container-configuration/volumes)** - manage a list of the data volumes to ensure files integrity during container lifecycle
+- **[Ports](http://localhost:3000/docs/container/container-configuration/ports)** - view information about containers' ports
+- **[CMD / Entry Point](http://localhost:3000/docs/container/container-configuration/run-configuration)** - configure containers' Entry Point and Run Command
 
 <div style={{
     display:'flex',
@@ -242,7 +242,7 @@ The list may vary depending on the particular stack and account permissions:
 
 After all the configurations are done, you can review the amount of allocated resources and the estimated cost of the environment.
 
-1. The main resource measuring units in the platform are [cloudlets](/docs/PlatformOverview/Cloudlet). Here, you can see the number of reserved ones and the scaling limit (dynamic) for the whole environment.
+1. The main resource measuring units in the platform are [cloudlets](http://localhost:3000/docs/platform-overview/cloudlet). Here, you can see the number of reserved ones and the scaling limit (dynamic) for the whole environment.
 
 <div style={{
     display:'flex',

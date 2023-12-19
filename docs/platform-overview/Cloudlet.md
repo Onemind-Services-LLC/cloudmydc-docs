@@ -26,13 +26,13 @@ that in contrast to RAM consumption (with MiB=1024 KiB unit), usage of [disk spa
 
 :::
 
-Below, we’ll consider which [types of cloudlet](/docs/PlatformOverview/Cloudlet#cloudlet-types) are used at the platform, how the [cloudlet consumption is calculated](/docs/PlatformOverview/Cloudlet#cloudlet-consumption-calculation) and where to [track your resource usage](/docs/PlatformOverview/Cloudlet#consumption-tracking).
+Below, we’ll consider which [types of cloudlet](http://localhost:3000/docs/platform-overview/cloudlet#cloudlet-types) are used at the platform, how the [cloudlet consumption is calculated](http://localhost:3000/docs/platform-overview/cloudlet#cloudlet-consumption-calculation) and where to [track your resource usage](http://localhost:3000/docs/platform-overview/cloudlet#consumption-tracking).
 
 ## Cloudlet Types
 
 There are two types of cloudlet at the platform, available to be setup for every server in environment via the [Vertical Scaling per Node](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) topology wizard section: **_Reserved_** and **_Dynamic_**.
 
-Herewith, if a layer contains [multiple nodes](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling), these limits are configured for all of them at once, i.e. are stated equal for each instance.
+Herewith, if a layer contains [multiple nodes](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling), these limits are configured for all of them at once, i.e. are stated equal for each instance.
 
 ![Locale Dropdown](./img/Cloudlet/4.72.png)
 

@@ -4,7 +4,7 @@ slug: certified-containers-deployment
 sidebar_position: 1
 ---
 
-The platform offers the most popular [software stacks](/docs/quickstart/software-stack-versions) as pre-configured and managed solutions for quick deployment and comfortable management. All of these certified containers are thoroughly tested and optimized specifically for use within the platform. Customizations include regular updates to the latest software version and additional integrations (such as auto-optimization based on the assigned resources, automated SSL certificates installation and application deployment, built-in [auto-clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances), etc.).
+The platform offers the most popular [software stacks](/docs/quickstart/software-stack-versions) as pre-configured and managed solutions for quick deployment and comfortable management. All of these certified containers are thoroughly tested and optimized specifically for use within the platform. Customizations include regular updates to the latest software version and additional integrations (such as auto-optimization based on the assigned resources, automated SSL certificates installation and application deployment, built-in [auto-clustering](http://localhost:3000/docs/application-setting/scaling-and-clustering/auto-clustering-of-instances), etc.).
 
 1. The deployment of certified containers is performed via the [topology wizard](/docs/environment-management/setting-up-environment), which can be opened by clicking the **New Environment** button.
 
@@ -75,11 +75,11 @@ If you cannot find the required stack, you can check other categories (e.g. appl
 
 :::tip Tip
 
-If the required software is not available as a certified template, you can try installing it as a [custom container](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment). Click the **Docker Image** option and search for the appropriate image on Docker Hub.
+If the required software is not available as a certified template, you can try installing it as a [custom container](http://localhost:3000/docs/container/container-deployment/custom-containers-deployment). Click the **Docker Image** option and search for the appropriate image on Docker Hub.
 
 :::
 
-5. You can [configure](/docs/environment-management/setting-up-environment) added nodes (_vertical and horizontal scaling, disk limit, public IPs, etc._) via the central part of the wizard. Certified containers can have additional options, e.g. [Auto-Clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances).
+5. You can [configure](/docs/environment-management/setting-up-environment) added nodes (_vertical and horizontal scaling, disk limit, public IPs, etc._) via the central part of the wizard. Certified containers can have additional options, e.g. [Auto-Clustering](http://localhost:3000/docs/application-setting/scaling-and-clustering/auto-clustering-of-instances).
 
 ![Locale Dropdown](./img/CertifiedContainersDeployment/05-environment-with-certified-containers.png)
 

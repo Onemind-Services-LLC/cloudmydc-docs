@@ -47,7 +47,7 @@ The platform in-build file manager gives an easy and convenient access to your c
 
 :::tip
 
-You can also connect to a container via [SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview) in order to get even more possibilities for its management.
+You can also connect to a container via [SSH](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) in order to get even more possibilities for its management.
 
 :::
 

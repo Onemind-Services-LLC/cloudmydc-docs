@@ -6,14 +6,14 @@ sidebar_position: 14
 
 ## Managing Timezone Data
 
-All containers created within the platform utilize the UTC timezone by default. However, in case of necessity, you can easily change it to any preferable one with the help of the [**_TimeZone Change_**](/docs/ApplicationSetting/Managing%20Timezone%20Settings#timezone-add-on) add-on. Follow the steps provided within the linked section to switch timezones on any of your instances.
+All containers created within the platform utilize the UTC timezone by default. However, in case of necessity, you can easily change it to any preferable one with the help of the [**_TimeZone Change_**](http://localhost:3000/docs/application-setting/managing-timezone-settings#timezone-add-on) add-on. Follow the steps provided within the linked section to switch timezones on any of your instances.
 
 Alternatively, you can apply the changes manually. For example, all of the Java and PHP application servers at the platform are supplied with special timezone packages, which includes data about the history of local time in different locations around the globe and current timezone rules. This information is required for software, running inside the appropriate containers, and is regularly updated within the corresponding server builds in the confines of the newly released platform versions.
 
 Besides that, you can instantly update the timezone rules manually if necessary, or change the currently used TZ, based on the preferred location. So, below we’ll reveal some specifics of the timezone data management at the platform for the application servers of the programming languagesmentioned above:
 
-- [for Java](/docs/ApplicationSetting/Managing%20Timezone%20Settings#timezone-rules-for-java)
-- [for PHP](/docs/ApplicationSetting/Managing%20Timezone%20Settings#changing-timezone-java)
+- [for Java](http://localhost:3000/docs/application-setting/managing-timezone-settings#timezone-rules-for-java)
+- [for PHP](http://localhost:3000/docs/application-setting/managing-timezone-settings#changing-timezone-java)
 
 ## TimeZone Add-On
 
@@ -93,8 +93,8 @@ As you can see, the system time was successfully switched to the _EDT_ (Eastern 
 
 The timezone rules within Java compute nodes are delivered by means of the dedicated **TZdata** package, comprised in each appropriate container. Follow the instructions below to:
 
-- [update timezone data](/docs/ApplicationSetting/Managing%20Timezone%20Settings#updating-timezone-data)
-- [change current timezone](/docs/ApplicationSetting/Managing%20Timezone%20Settings#changing-timezone-java)
+- [update timezone data](http://localhost:3000/docs/application-setting/managing-timezone-settings#updating-timezone-data)
+- [change current timezone](http://localhost:3000/docs/application-setting/managing-timezone-settings#changing-timezone-java)
 
 ## Updating Timezone Data
 
@@ -229,7 +229,7 @@ Depending on a particular application server used, the location of this file may
 
 </div>
 
-- for **WildFly** Switch to the **_/opt/wildfly/bin/standalone.conf_** file (or, if a server was [scaled horizontally](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling), refer to the **_/opt/wildfly/bin/domain.conf_** config) and declare the corresponding variable using the following format: _export JAVA_OPTS="-Duser.timezone=US/Pacific"_
+- for **WildFly** Switch to the **_/opt/wildfly/bin/standalone.conf_** file (or, if a server was [scaled horizontally](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling), refer to the **_/opt/wildfly/bin/domain.conf_** config) and declare the corresponding variable using the following format: _export JAVA_OPTS="-Duser.timezone=US/Pacific"_
 
 <div style={{
     display:'flex',
@@ -275,8 +275,8 @@ To access it, you need to click the **Config** button next to the required node.
 
 As you can see, this section comprises two options, which can be used to:
 
-- [get the latest timezone data](/docs/ApplicationSetting/Managing%20Timezone%20Settings#checking-timezone-data)
-- [set custom timezone](/docs/ApplicationSetting/Managing%20Timezone%20Settings#changing-timezone-php)
+- [get the latest timezone data](http://localhost:3000/docs/application-setting/managing-timezone-settings#checking-timezone-data)
+- [set custom timezone](http://localhost:3000/docs/application-setting/managing-timezone-settings#changing-timezone-php)
 
 ## Checking Timezone Data
 

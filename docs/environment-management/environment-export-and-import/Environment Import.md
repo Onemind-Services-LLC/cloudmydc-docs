@@ -52,7 +52,7 @@ For your exported environment to work correctly, it should be migrated to the Pa
 
 </div>
 
-- **JPS** - the built-in editor to either insert and edit code or to compose your own solution from scratch (refer to the [JPS deployment and troubleshooting](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/Environment%20Import#jps-deployment--troubleshooting) section below for more information)
+- **JPS** - the built-in editor to either insert and edit code or to compose your own solution from scratch (refer to the [JPS deployment and troubleshooting](http://localhost:3000/docs/environment-management/environment-export-and-import/environment-import#jps-deployment--troubleshooting) section below for more information)
 
 <div style={{
     display:'flex',

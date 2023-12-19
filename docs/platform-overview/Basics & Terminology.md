@@ -8,21 +8,21 @@ This document represents an overview of the platform fundamental concepts, a ver
 
 Here, we offer a consistent outline of the underlying platform components with pointers to the corresponding documentation, namely:
 
-- [Cloudlet](/docs/PlatformOverview/Basics%20&%20Terminology#cloudlet)
-- [Container](/docs/PlatformOverview/Basics%20&%20Terminology#container)
+- [Cloudlet](/docs/platform-overview/basics-&-terminology#cloudlet)
+- [Container](/docs/platform-overview/basics-&-terminology#container)
 - [Layer](/docs/platform-overview/basics-&-terminology#layer)
-- [Environment](/docs/PlatformOverview/Basics%20&%20Terminology#environment)
-- [Application](/docs/PlatformOverview/Basics%20&%20Terminology#application)
-- [Host](/docs/PlatformOverview/Basics%20&%20Terminology#host)
-- [Environment Region](/docs/PlatformOverview/Basics%20&%20Terminology#environment-region)
-- [Platform Installation](/docs/PlatformOverview/Basics%20&%20Terminology#platform-installation)
-- [Cloud Union](/docs/PlatformOverview/Basics%20&%20Terminology#cloud-union)
+- [Environment](/docs/platform-overview/basics-&-terminology#environment)
+- [Application](/docs/platform-overview/basics-&-terminology#application)
+- [Host](/docs/platform-overview/basics-&-terminology#host)
+- [Environment Region](/docs/platform-overview/basics-&-terminology#environment-region)
+- [Platform Installation](/docs/platform-overview/basics-&-terminology#platform-installation)
+- [Cloud Union](/docs/platform-overview/basics-&-terminology#cloud-union)
 
 Being informed about the basic components and how they interrelate, you can proceed with more complex scenarios available within the platform.
 
 ## Cloudlet
 
-[**Cloudlet**](/docs/PlatformOverview/Cloudlet) is the smallest platform infrastructure component. It is a special resource unit that equals to **_128 MiB_** of **RAM** and **_400 MHz_** of **CPU** power simultaneously. Such high granularity of resources allows the system to allocate the exactly required capacity for each instance in the environment. This ensures the truly fair [usage-based pricing](/docs/account-and-pricing/pricing-model-overview), so that only the really consumed resources are being paid.
+[**Cloudlet**](http://localhost:3000/docs/platform-overview/cloudlet) is the smallest platform infrastructure component. It is a special resource unit that equals to **_128 MiB_** of **RAM** and **_400 MHz_** of **CPU** power simultaneously. Such high granularity of resources allows the system to allocate the exactly required capacity for each instance in the environment. This ensures the truly fair [usage-based pricing](/docs/account-and-pricing/pricing-model-overview), so that only the really consumed resources are being paid.
 
 ![Locale Dropdown](./img/BasicsTerminology/01-cloudlet-resource-unit.png)
 
@@ -43,15 +43,15 @@ Both reserved and dynamic cloudlets functionality provides auto discounts for th
 
 ## Container
 
-**Container** (node) is an isolated virtualized instance, provisioned for software stack handling (like application servers, databases, load balancers, etc.) and placed on a particular [host](/docs/PlatformOverview/Basics%20&%20Terminology#host). Each container can be automatically scaled, both [vertically](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) and [horizontally](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling), making hosting of applications truly flexible.
+**Container** (node) is an isolated virtualized instance, provisioned for software stack handling (like application servers, databases, load balancers, etc.) and placed on a particular [host](/docs/platform-overview/basics-&-terminology#host). Each container can be automatically scaled, both [vertically](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) and [horizontally](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling), making hosting of applications truly flexible.
 
 ![Locale Dropdown](./img/BasicsTerminology/03-container-secure-and-isolated-instance.png)
 
-The platform provides [certified containers](/docs/quickstart/software-stack-versions) for Java, PHP, Ruby, Node.js, Python, Go, .NET and the ability to deploy custom [Docker](/docs/Container/Container%20Types) containers. Each container has its own private IP and unique DNS record, whilst [public IP](/docs/application-setting/external-access-to-applications/public-ip) can be easily attached within UI [dashboard](/docs/QuickStart/Dashboard%20Guide) or via [API](/docs/Deployment%20Tools/API%20&%20CLI/API%20Overview).
+The platform provides [certified containers](/docs/quickstart/software-stack-versions) for Java, PHP, Ruby, Node.js, Python, Go, .NET and the ability to deploy custom [Docker](http://localhost:3000/docs/container/container-types) containers. Each container has its own private IP and unique DNS record, whilst [public IP](/docs/application-setting/external-access-to-applications/public-ip) can be easily attached within UI [dashboard](http://localhost:3000/docs/quickstart/dashboard-guide) or via [API](http://localhost:3000/docs/deployment-tools/api-&-cli/api-overview).
 
 ## Layer
 
-**Layer**, also referred to as a **Node group**, is a set of similar [containers](/docs/PlatformOverview/Basics%20&%20Terminology#container) in a single [environment](/docs/PlatformOverview/Basics%20&%20Terminology#environment). There is a set of predefined layers within the platform [topology wizard](/docs/environment-management/setting-up-environment) for certified containers, such as:
+**Layer**, also referred to as a **Node group**, is a set of similar [containers](/docs/platform-overview/basics-&-terminology#container) in a single [environment](/docs/platform-overview/basics-&-terminology#environment). There is a set of predefined layers within the platform [topology wizard](/docs/environment-management/setting-up-environment) for certified containers, such as:
 
 - load balancer (LB)
 - compute (CP)
@@ -60,24 +60,24 @@ The platform provides [certified containers](/docs/quickstart/software-stack-ver
 - сache
 - VPS
 - build node
-- extra (custom layer; multiple ones can be added for [Docker-based](/docs/Container/Container%20Types) environments)
+- extra (custom layer; multiple ones can be added for [Docker-based](http://localhost:3000/docs/container/container-types) environments)
 
 ![Locale Dropdown](./img/BasicsTerminology/04-layer-group-of-similar-containers.png)
 
-The layers are designed to perform different actions with the same type of containers at once. For example, the nodes can be simultaneously restarted or redeployed, as well as horizontally [scaled](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling):
+The layers are designed to perform different actions with the same type of containers at once. For example, the nodes can be simultaneously restarted or redeployed, as well as horizontally [scaled](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling):
 
-- manually via [dashboard](/docs/QuickStart/Dashboard%20Guide), platform [API](/docs/Deployment%20Tools/API%20&%20CLI/API%20Overview#platform-api), [CLI](/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview)
+- manually via [dashboard](http://localhost:3000/docs/quickstart/dashboard-guide), platform [API](http://localhost:3000/docs/deployment-tools/api-&-cli/api-overview#platform-api), [CLI](/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview)
 - automatically based on the [load triggers](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling)
 
 Also, it is possible to check the common logs and stats, or make the required configurations via file manager for all containers in a layer.
 
-In addition, the containers of one layer are distributed across different [hosts](/docs/PlatformOverview/Basics%20&%20Terminology#host) using anti-affinity rules, ensuring even more reliability and high-availability for hosted applications.
+In addition, the containers of one layer are distributed across different [hosts](/docs/platform-overview/basics-&-terminology#host) using anti-affinity rules, ensuring even more reliability and high-availability for hosted applications.
 
 ## Environment
 
-**Environment** is a collection of isolated [containers](/docs/PlatformOverview/Basics%20&%20Terminology#container) for running particular application services. The platform provides built-in tools for convenient environment [management](/docs/environment-management/setting-up-environment) (i.e. configuration, monitoring, troubleshooting, etc.).
+**Environment** is a collection of isolated [containers](/docs/platform-overview/basics-&-terminology#container) for running particular application services. The platform provides built-in tools for convenient environment [management](/docs/environment-management/setting-up-environment) (i.e. configuration, monitoring, troubleshooting, etc.).
 
-There is a number of actions that can be performed for the whole environment, such as stop, start, clone, migrate to another region, share with team members for [collaborative work](/docs/EnvironmentManagement/Share%20Environment), track resource consumption and so on.
+There is a number of actions that can be performed for the whole environment, such as stop, start, clone, migrate to another region, share with team members for [collaborative work](http://localhost:3000/docs/environment-management/share-environment), track resource consumption and so on.
 
 ![Locale Dropdown](./img/BasicsTerminology/05-environment-interconnected-container-layers.png)
 
@@ -97,9 +97,9 @@ Applications with more complex topology usually require more flexibility during 
 
 Application source code or built binaries can be deployed from:
 
-- GIT/SVN repository, which allows to benefit on the [automatic updates](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview)
-- local archive (zip, war, ear, etc.) via [UI dashboard](/docs/QuickStart/Dashboard%20Guide) or [FTP](/docs/Deployment%20Tools/FTP-FTPS%20Support)
-- custom [Docker](/docs/Container/Container%20Types) template
+- GIT/SVN repository, which allows to benefit on the [automatic updates](http://localhost:3000/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview)
+- local archive (zip, war, ear, etc.) via [UI dashboard](http://localhost:3000/docs/quickstart/dashboard-guide) or [FTP](/docs/Deployment%20Tools/FTP-FTPS%20Support)
+- custom [Docker](http://localhost:3000/docs/container/container-types) template
 
 Also, a number of already prepackaged applications can be found within the platform [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace), to be set up in just a few clicks.
 
@@ -109,11 +109,11 @@ Also, a number of already prepackaged applications can be found within the platf
 
 ![Locale Dropdown](./img/BasicsTerminology/07-host-physical-or-virtual-server.png)
 
-Hosts are sliced into small isolated [containers](/docs/PlatformOverview/Basics%20&%20Terminology#container) that are used to build [environments](/docs/PlatformOverview/Basics%20&%20Terminology#environment). Such partition provides the industry-leading multitenancy, as well as high density and smart resource utilization with the help of containers distribution according to the load across hosts.
+Hosts are sliced into small isolated [containers](/docs/platform-overview/basics-&-terminology#container) that are used to build [environments](/docs/platform-overview/basics-&-terminology#environment). Such partition provides the industry-leading multitenancy, as well as high density and smart resource utilization with the help of containers distribution according to the load across hosts.
 
 ## Environment Region
 
-**[Environment region](/docs/environment-management/environment-regions/choosing-a-region)** is a set of [hosts](/docs/PlatformOverview/Basics%20&%20Terminology#host) orchestrated within a single isolated network.
+**[Environment region](/docs/environment-management/environment-regions/choosing-a-region)** is a set of [hosts](/docs/platform-overview/basics-&-terminology#host) orchestrated within a single isolated network.
 
 ![Locale Dropdown](./img/BasicsTerminology/08-environment-region-hosts-group.png)
 
@@ -121,7 +121,7 @@ Each environment region has its own capacity in a specific data centre, predefin
 
 ## Platform Installation
 
-The **Platform** is a group of [environment regions](/docs/PlatformOverview/Basics%20&%20Terminology#environment-region) (where each one can be physically located in a separate Data Center, representing an isolated Cloud) and cluster orchestrator to control and act like a single system. This provides versatile possibilities to develop, deploy, test, run, debug and maintain applications due to the multiple options while selecting hardware - different capacity, pricing, location, etc.
+The **Platform** is a group of [environment regions](/docs/platform-overview/basics-&-terminology#environment-region) (where each one can be physically located in a separate Data Center, representing an isolated Cloud) and cluster orchestrator to control and act like a single system. This provides versatile possibilities to develop, deploy, test, run, debug and maintain applications due to the multiple options while selecting hardware - different capacity, pricing, location, etc.
 
 ![Locale Dropdown](./img/BasicsTerminology/09-platform-orchestrator-environment-regions.png)
 

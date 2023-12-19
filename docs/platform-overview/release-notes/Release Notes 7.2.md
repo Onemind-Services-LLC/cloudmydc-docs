@@ -46,7 +46,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#platform-rebranding">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.2#platform-rebranding">
                     Learn More >>
                 </a>
             </div>
@@ -65,7 +65,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#centos-stream-8-os-support">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.2#centos-stream-8-os-support">
                     Learn More >>
                 </a>
             </div>
@@ -109,7 +109,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#collaboration-policy-for-custom-commands">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.2#collaboration-policy-for-custom-commands">
                     Learn More >>
                 </a>
             </div>
@@ -128,7 +128,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#environment-selection-field-adjustment">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.2#environment-selection-field-adjustment">
                     Learn More >>
                 </a>
             </div>
@@ -147,7 +147,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#software-stack-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.2#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -191,7 +191,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#fixes-compatible-with-prior-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.2#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -210,7 +210,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.2#bug-fixes">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.2#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -237,7 +237,7 @@ Continuing the smooth integration of the PaaS (formerly known as Jelastic) with 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -261,7 +261,7 @@ In order to extend the capabilities of the [account collaboration](/docs/account
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -285,14 +285,14 @@ In the current CloudMyDc Application Platform 7.2 release, the dashboard’s com
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## CentOS Stream 8 OS Support
 
-CloudMyDc Application Platform supports the most popular [operating system templates](/docs/Container/Container%20Image%20Requirements), which allows using multiple different solutions from Docker Hub as [custom containers](/docs/Container/Container%20Types). Due to the recent CentOS Linux 8 end of life, the recommended alternative template was added to the platform – **CentOS Stream 8**. You can find a [comparison of these two versions](https://centos.org/cl-vs-cs/) in the official documentation.
+CloudMyDc Application Platform supports the most popular [operating system templates](http://localhost:3000/docs/container/container-image-requirements), which allows using multiple different solutions from Docker Hub as [custom containers](http://localhost:3000/docs/container/container-types). Due to the recent CentOS Linux 8 end of life, the recommended alternative template was added to the platform – **CentOS Stream 8**. You can find a [comparison of these two versions](https://centos.org/cl-vs-cs/) in the official documentation.
 
 :::tip Note
 
@@ -307,7 +307,7 @@ Do not confuse OS templates (base image for containers) support with container t
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -426,7 +426,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -444,7 +444,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

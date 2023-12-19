@@ -24,7 +24,7 @@ sidebar_position: 1
 </div>
 <div>
 
-With the platform, you have a possibility to set an external domain address for your site, instead of the default environment URL (_i.e. {env_name}_.[_hoster_domain_name_](/docs/QuickStart/Hosters%20List%20&%20Info)). The custom domain allows promoting your unique branding and improves your web application recognition over the Internet.
+With the platform, you have a possibility to set an external domain address for your site, instead of the default environment URL (_i.e. {env_name}_.[_hoster_domain_name_](http://localhost:3000/docs/quickstart/hosters-list-&-info)). The custom domain allows promoting your unique branding and improves your web application recognition over the Internet.
 
 </div>
 </div>
@@ -49,15 +49,15 @@ Before diving in, let’s deal with some basic concepts for better understanding
 
 :::tip Tip
 
-The platform also provides the full [gTLD + IDN Domain Names](/docs/ApplicationSetting/Domain%20Name%20Management/gTLD%20+%20IDN%20Domain%20Names%20Support) support so that you can use both internationalized and generic top-level names for your external domains.
+The platform also provides the full [gTLD + IDN Domain Names](http://localhost:3000/docs/application-setting/domain-name-management/gtld-+-idn-domain-names-support) support so that you can use both internationalized and generic top-level names for your external domains.
 
 :::
 
 To attach the custom domain you should follow the next steps:
 
-- [purchase custom domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-buy-a-domain-name)
-- [configure DNS record](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-configure-dns-record)
-- [bind domain name](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-bind-domain-to-environment) (if needed)
+- [purchase custom domain](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#how-to-buy-a-domain-name)
+- [configure DNS record](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#how-to-configure-dns-record)
+- [bind domain name](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#how-to-bind-domain-to-environment) (if needed)
 
 ## How to Buy a Domain Name?
 
@@ -101,7 +101,7 @@ The exact steps vary based on your particular domain registrar. As an example, w
 
 ## How to Configure DNS Record?
 
-Once you have your [own domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-buy-a-domain-name), the flow to add a new DNS record is simple ([GoDaddy](https://www.godaddy.com/en-in) example):
+Once you have your [own domain](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#how-to-buy-a-domain-name), the flow to add a new DNS record is simple ([GoDaddy](https://www.godaddy.com/en-in) example):
 
 <div style={{
     display:'flex',
@@ -113,15 +113,15 @@ Once you have your [own domain](/docs/ApplicationSetting/Domain%20Name%20Managem
 
 </div>
 
-There are [various types of DNS records](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#which-dns-record-to-use), which can be used to point to your environment:
+There are [various types of DNS records](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#which-dns-record-to-use), which can be used to point to your environment:
 
-- [**_CNAME_**](https://en.wikipedia.org/wiki/CNAME_record) - maps your custom domain to environment domain (requires additional [domain binding](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-bind-domain-to-environment) via the platform dashboard)
-- [**_ANAME_**](https://en.wikipedia.org/wiki/CNAME_record#ANAME_record) (if supported by your DNS server) - maps whole [root domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#custom-domain-name) (e.g. example.com) to your environment domain or other root domain
+- [**_CNAME_**](https://en.wikipedia.org/wiki/CNAME_record) - maps your custom domain to environment domain (requires additional [domain binding](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#how-to-bind-domain-to-environment) via the platform dashboard)
+- [**_ANAME_**](https://en.wikipedia.org/wiki/CNAME_record#ANAME_record) (if supported by your DNS server) - maps whole [root domain](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#custom-domain-name) (e.g. example.com) to your environment domain or other root domain
 - **_A Record_** - maps your custom domain to a public IP (requires external IP address attached to the environment)
 
 :::tip Note
 
-The **_CNAME/ANAME_** DNS records can be used with [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer) (i.e. without public IP). However, for the production environments, it is recommended to attach [public IP](/docs/application-setting/external-access-to-applications/public-ip) and configure **_A Record_**.
+The **_CNAME/ANAME_** DNS records can be used with [Shared Load Balancer](http://localhost:3000/docs/application-setting/external-access-to-applications/shared-load-balancer) (i.e. without public IP). However, for the production environments, it is recommended to attach [public IP](/docs/application-setting/external-access-to-applications/public-ip) and configure **_A Record_**.
 
 In case of a _Private Cloud_ setup, when the platform owner controls all the environments, the Shared Load Balancer limitations can be disabled, making the CNAME usage a production-ready option.
 
@@ -153,7 +153,7 @@ Below, we’ll provide step-by-step instructions to configure a record for your 
 
 </div>
 
-3. Within the shown **Add Zone Record** frame, select the [required option](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#which-dns-record-to-use) from the **Type** drop-down list (e.g. A Record).
+3. Within the shown **Add Zone Record** frame, select the [required option](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#which-dns-record-to-use) from the **Type** drop-down list (e.g. A Record).
 
 <div style={{
     display:'flex',
@@ -218,13 +218,13 @@ _name1.mydomain.com > 111.111.111.111_
 
 _name2.mydomain.com > 111.111.111.112_
 
-- use **CNAME** if you want to alias custom domain to environment name (requires [domain binding](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-bind-domain-to-environment))
+- use **CNAME** if you want to alias custom domain to environment name (requires [domain binding](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#how-to-bind-domain-to-environment))
 
 _name1.mydomain.com > env1.hosterdomain.com_
 
 _name2.mydomain.com > env2.hosterdomain.com_
 
-- use **ANAME** if you need to redirect one DNS zone ([root domain](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#custom-domain-name)) to another with all of its subdomains being resolved over the same subdomains
+- use **ANAME** if you need to redirect one DNS zone ([root domain](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#custom-domain-name)) to another with all of its subdomains being resolved over the same subdomains
 
 **mydomain.com > hosterdomain.com**
 As a result, any subdomain on your domain will be pointed to the appropriate one on the service hosting provider: _{subdomain}.mydomain.com > {subdomain}.hosterdomain.com._
@@ -232,12 +232,12 @@ As a result, any subdomain on your domain will be pointed to the appropriate one
 **mynewcompany.com > myoldcompany.com**
 As a result, you can point all traffic from your old domain to a new one keeping all the subdomains the same: _{subdomain}.mynewcompany.com > {subdomain}.myoldcompany.com._
 
-**mydomain.com > env1.hosterdomain.com** (requires [domain binding](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#how-to-bind-domain-to-environment))
+**mydomain.com > env1.hosterdomain.com** (requires [domain binding](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#how-to-bind-domain-to-environment))
 As a result, subdomains of your custom domain will point to the appropriate ones within the target environment: _{subdomain}.mydomain.com > {subdomain}.env1.hosterdomain.com._
 
 ## How to Bind Domain to Environment?
 
-When working **without public IP** addresses attached (i.e. DNS record points to the environment name via [CNAME or ANAME](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#which-dns-record-to-use)), you need to **bind** the appropriate domain name. It is necessary for the Shared Load Balancers to correctly route traffic to the target environment.
+When working **without public IP** addresses attached (i.e. DNS record points to the environment name via [CNAME or ANAME](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#which-dns-record-to-use)), you need to **bind** the appropriate domain name. It is necessary for the Shared Load Balancers to correctly route traffic to the target environment.
 
 :::tip Note
 

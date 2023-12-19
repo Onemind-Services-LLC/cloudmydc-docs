@@ -26,7 +26,7 @@ sidebar_position: 1
 
 1. Log in to the PaaS dashboard and click the **New Environment** button at the top-left corner.
 
-2. Within the opened [topology wizard](/docs/environment-management/setting-up-environment), navigate to the **.NET** tab and select the **_.NET Core_** application server. Configure the other parameters (_[cloudlets](/docs/PlatformOverview/Cloudlet)_,_disk limit_, _[public IPs](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP/)_, etc.) up to your needs.
+2. Within the opened [topology wizard](/docs/environment-management/setting-up-environment), navigate to the **.NET** tab and select the **_.NET Core_** application server. Configure the other parameters (_[cloudlets](http://localhost:3000/docs/platform-overview/cloudlet)_,_disk limit_, _[public IPs](http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip/)_, etc.) up to your needs.
 
 <div style={{
     display:'flex',
@@ -80,7 +80,7 @@ If you are interested in [creating your own .NET application](https://learn.micr
 
 :::tip Note
 
-.NET Core supports several specific [variables](/docs/Container/Container%20Configuration/Variables) that can help with application deployment:
+.NET Core supports several specific [variables](http://localhost:3000/docs/container/container-configuration/variables) that can help with application deployment:
 
 - **_APP_NAME_** - points to the particular folder (if there are multiple applications in a single repository) or runs a specific **_.dll_** file in your project
 - **_ASPNETCORE_URLS_** - configures services to work with the specified URL

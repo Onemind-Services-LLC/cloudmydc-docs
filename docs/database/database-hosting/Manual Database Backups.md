@@ -38,7 +38,7 @@ The backup script is not available for the **[Redis](/docs/Database/Redis/Redis%
 
 :::
 
-2. To automate the script execution, we’ll use the _[cron scheduler](/docs/ApplicationSetting/Scheduling%20Configuration/Setting%20Up%20Cronjob#setting-up-cronjob)_ available within the containers out-of-box. Open the **_/var/spool/cron/mysql_** file and provide a cron expression in the following format:
+2. To automate the script execution, we’ll use the _[cron scheduler](http://localhost:3000/docs/application-setting/scheduling-configuration/setting-up-cronjob#setting-up-cronjob)_ available within the containers out-of-box. Open the **_/var/spool/cron/mysql_** file and provide a cron expression in the following format:
 
 ```bash
 {frequency} {path-to-script} {script-parameters}
@@ -128,7 +128,7 @@ If the backup operation is successful, you’ll see the appropriate **_bz2_** ar
 
 There are multiple options to download a file from a container:
 
-1. The most straightforward variant is to use the [configuration file manager](/docs/ApplicationSetting/Configuration%20File%20Manager#configuration-file-manager) directly in the dashboard.
+1. The most straightforward variant is to use the [configuration file manager](http://localhost:3000/docs/application-setting/configuration-file-manager#configuration-file-manager) directly in the dashboard.
 
 <div style={{
     display:'flex',
@@ -142,7 +142,7 @@ There are multiple options to download a file from a container:
 
 Locate the required file, hover over it, and select **Download** from the context menu.
 
-2. Another option is to use the [SFTP/FISH protocol](/docs/Deployment%20Tools/SSH/SSH%20Protocols#sftpfish-protocols) connection.
+2. Another option is to use the [SFTP/FISH protocol](http://localhost:3000/docs/deployment-tools/ssh/ssh-protocols#sftpfish-protocols) connection.
 
 <div style={{
     display:'flex',
@@ -160,7 +160,7 @@ The required access details can be viewed within the dashboard.
 
 :::danger Note
 
-A [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip) address is required for this option. If needed, it will be automatically attached to the node during add-on installation.
+A [public IP](http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip#public-ip) address is required for this option. If needed, it will be automatically attached to the node during add-on installation.
 
 :::
 

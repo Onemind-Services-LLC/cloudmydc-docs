@@ -10,7 +10,7 @@ import obj from './LiteSpeedWebADC.json'
 
 :::tip Tip
 
-The **LiteSpeed Web ADC** stack is [HTTP/3](/docs/ApplicationSetting/External%20Access%20To%20Applications/HTTP3%20Support) ready with the feature support enabled by default. However, a [public IP address](/docs/application-setting/external-access-to-applications/public-ip) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
+The **LiteSpeed Web ADC** stack is [HTTP/3](http://localhost:3000/docs/application-setting/external-access-to-applications/http3-support) ready with the feature support enabled by default. However, a [public IP address](/docs/application-setting/external-access-to-applications/public-ip) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
 
 :::
 
@@ -75,7 +75,7 @@ Get your own LiteSpeed Web ADC load balancer server at the platform by following
 
 :::tip Tip
 
-You can apply some customization to your LiteSpeed ADC by adjusting some of the [dedicated environment variables](/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables):
+You can apply some customization to your LiteSpeed ADC by adjusting some of the [dedicated environment variables](http://localhost:3000/docs/environment-management/environment-variables/environment-variables):
 
 - **JELASTIC_AUTOCONFIG** - enables (enabled, by default) or disables (disabled) autoconfiguration of the LiteSpeed worker processes count based on the allocated RAM and number of CPU cores
 - **DEFAULT_CLUSTER** - selects the load balancing type for requests' proxying (HTTP, AJP, FCGI, LSAPI). If working with some custom backends, this logic can be disabled (0, disabled, false)
@@ -150,7 +150,7 @@ There are some specifics while working with the platform implementation of the L
 
 :::
 
-In case you need to adjust any of the configuration files, you can work over the [dashboard file manager](/docs/application-setting/configuration-file-manager) or establish an [SSH connection](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview).
+In case you need to adjust any of the configuration files, you can work over the [dashboard file manager](/docs/application-setting/configuration-file-manager) or establish an [SSH connection](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview).
 
 ## License Pricing
 
@@ -310,6 +310,6 @@ When performing testing of the LiteSpeed Web ADC load balancer, you should take 
 
 1. By default, the load balancer operates in the **Stateful** mode, which tracks sessions associated with each back-end server (also called “Session Affinity”). It means that requests from a single source will always go to the same back-end server (unless it’s not working).
 
-2. If LiteSpeed ADC does not have its own [public IP](/docs/application-setting/external-access-to-applications/public-ip), all the requests go through the platform’s [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer). In such a case, ADC considers that the load comes from a single IP address (of the Shared Load Balancer).
+2. If LiteSpeed ADC does not have its own [public IP](/docs/application-setting/external-access-to-applications/public-ip), all the requests go through the platform’s [Shared Load Balancer](http://localhost:3000/docs/application-setting/external-access-to-applications/shared-load-balancer). In such a case, ADC considers that the load comes from a single IP address (of the Shared Load Balancer).
 
 As a result, for the proper testing of the <u>production cluster</u> with LiteSpeed ADC as a load balancer, you need to attach public IP and send requests from multiple sources. Alternatively, you can temporarily switch to the **Stateless** mode, which does not care about sessions (recommended during the <u>development/testing stages</u> only). Check out more about [LiteSpeed ADC testing](https://docs.litespeedtech.com/lsadc/settings/#testing) at the official documentation.

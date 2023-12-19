@@ -32,7 +32,7 @@ Resources consumed by environments provided based on the subscriptions are consi
 
 ### RAM & CPU
 
-RAM & CPU are measured in a platform resource unit called a [Cloudlet](/docs/PlatformOverview/Cloudlet). One **Cloudlet** is equivalent to 128 MiB RAM and 400MHz CPU.
+RAM & CPU are measured in a platform resource unit called a [Cloudlet](http://localhost:3000/docs/platform-overview/cloudlet). One **Cloudlet** is equivalent to 128 MiB RAM and 400MHz CPU.
 
 Resources are charged on an hourly basis:
 

@@ -6,7 +6,7 @@ sidebar_position: 6
 
 ## How to Connect to Your Custom Container
 
-[Containers](/docs/Container/Container%20Types) integration into the platform is one of the most important and demanded services. The synthesis of container portability, together with the platform flexible management, appeals to developers and allows to effortlessly host and maintain all types of applications available within Docker templates.
+[Containers](http://localhost:3000/docs/container/container-types) integration into the platform is one of the most important and demanded services. The synthesis of container portability, together with the platform flexible management, appeals to developers and allows to effortlessly host and maintain all types of applications available within Docker templates.
 
 The following tutorial deals with the key principles of work with Docker-based applications, which may be a point of interest for both beginners and intermediate developers.
 
@@ -24,14 +24,14 @@ Below we’ll get a particularly detailed insight into the ways of connecting to
 
 So, let’s see how to:
 
-- [set up an internal container connection](/docs/Container/Connect%20to%20Custom%20Container#internal-connection)
-- [get access to container from outside](/docs/Container/Connect%20to%20Custom%20Container#external-connection)
+- [set up an internal container connection](http://localhost:3000/docs/container/connect-to-custom-container#internal-connection)
+- [get access to container from outside](http://localhost:3000/docs/container/connect-to-custom-container#external-connection)
 
 ## Internal Connection
 
 Each container at the platform automatically gets a unique internal domain name and internal IP address right after creation. Further, these parameters can be used to access containers in confines of a single Cloud (i.e. to establish connection between them via the platform’s internal network).
 
-1. The very first option you need to consider in case of having necessity to set up interconnection between containers is the embedded functionality of [container linking](/docs/Container/Container%20Configuration/Links). It allows to connect containers from different layers within a single environment to securely transfer environment variables information from source Docker image to the recipient without exposing any ports externally.
+1. The very first option you need to consider in case of having necessity to set up interconnection between containers is the embedded functionality of [container linking](http://localhost:3000/docs/container/container-configuration/links). It allows to connect containers from different layers within a single environment to securely transfer environment variables information from source Docker image to the recipient without exposing any ports externally.
 
 For that, you just need to select the required layer and specify an alias for the connection denomination (whilst all of the appropriate variables will get the corresponding prefix according to it):
 
@@ -47,7 +47,7 @@ For that, you just need to select the required layer and specify an alias for th
 
 Don’t forget to **Save** and **Apply** the changes you’ve made.
 
-After that, you may refer to the [Variables](/docs/Container/Container%20Configuration/Variables) section of your container settings and adjust any of them separately upon the necessity. However, changing the environment variable’s value for a container, that is already linked to another one, will also cause its automatic update in a container this link was applied to.
+After that, you may refer to the [Variables](http://localhost:3000/docs/container/container-configuration/variables) section of your container settings and adjust any of them separately upon the necessity. However, changing the environment variable’s value for a container, that is already linked to another one, will also cause its automatic update in a container this link was applied to.
 
 2. In case there is a need to establish internal connection of another type (i.e. which requires some manual adjustments via the comprised configuration files), it is required to know the exact container domain name or IP address it can be accessed through the platform’s internal network.
 
@@ -93,7 +93,7 @@ In such a way, the retrieved information can be used to establish internal conne
 
 In order to access your container from outside the platform (i.e. from the Internet), you have the following solutions:
 
-1. If your service or application, that is running within container, listens to the port 80, then it will be automatically exposed to external network (over the assigned domain name) via the platform [Shared Load Balancer](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer).
+1. If your service or application, that is running within container, listens to the port 80, then it will be automatically exposed to external network (over the assigned domain name) via the platform [Shared Load Balancer](http://localhost:3000/docs/application-setting/external-access-to-applications/shared-load-balancer).
 
 ![Locale Dropdown](./img/ConnectToCustomContainer/06.png)
 

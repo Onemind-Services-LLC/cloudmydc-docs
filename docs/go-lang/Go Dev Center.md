@@ -24,7 +24,7 @@ In this guide, you’ll get acquainted with the distinctive features of the Go h
 - [Golang Versioning](/docs/Go%20Lang/Go%20Dev%20Center#golang-versioning)
 - [Go Application Deployment](/docs/Go%20Lang/Go%20Dev%20Center#go-application-deployment)
 - [Domains Management](/docs/Go%20Lang/Go%20Dev%20Center#domains-management)
-- [Automatic Vertical Scaling](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview)
+- [Automatic Vertical Scaling](http://localhost:3000/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview)
 - [Manual Horizontal Scaling](/docs/Go%20Lang/Go%20Dev%20Center#manual-horizontal-scaling)
 - [Automatic Horizontal Scaling](/docs/Go%20Lang/Go%20Dev%20Center#automatic-horizontal-scaling)
 
@@ -52,7 +52,7 @@ This template utilizes a modern **_systemd_** initialization daemon.
 
 :::tip Note
 
-All instances on the platform are completely [isolated containers](/docs/PlatformOverview/Isolated%20Container), which are evenly distributed across the available hosts (physical servers or VMs) using automatic anti-affinity rules. This eliminates a risk of your application downtime, i.e. ensure [high availability](/docs/PlatformOverview/Isolated%20Container#high-availability-for-applications).
+All instances on the platform are completely [isolated containers](http://localhost:3000/docs/platform-overview/isolated-container), which are evenly distributed across the available hosts (physical servers or VMs) using automatic anti-affinity rules. This eliminates a risk of your application downtime, i.e. ensure [high availability](http://localhost:3000/docs/platform-overview/isolated-container#high-availability-for-applications).
 
 :::
 
@@ -90,7 +90,7 @@ You can choose the preferred version during environment creation and change it l
 
 After environment creation, you can [deploy](/docs/deployment/deployment-guide) your Go project from the Git repository (the deployment from application archive will be implemented in the upcoming platform release).
 
-It is possible to customize the deployment process by providing or adjusting the following container [variables](/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables#go-golang):
+It is possible to customize the deployment process by providing or adjusting the following container [variables](http://localhost:3000/docs/environment-management/environment-variables/environment-variables#go-golang):
 
 - **_GO_RUN_** - sets a name of the executable binary file (if not specified, the deployment script will try to locate one based on the Git project name)
 - **_GOPATH_** - defines the deployment folder (_/home/jelastic/webapp_, by default)
@@ -121,8 +121,8 @@ You can learn more about Go applications deployment via the appropriate document
 
 - [Deployment Manager](/docs/deployment/deployment-manager)
 - [Deployment Guide](/docs/deployment/deployment-guide)
-- [Auto-Deploy Overview](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview)
-- [Deployment Hooks](/docs/Deployment/Deployment%20Hooks)
+- [Auto-Deploy Overview](http://localhost:3000/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview)
+- [Deployment Hooks](http://localhost:3000/docs/deployment/deployment-hooks)
 
 ## Domains Management
 
@@ -145,7 +145,7 @@ Additionally, you can easily [swap domains](/docs/application-setting/domain-nam
 
 :::tip Tip
 
-For the access via public IP, the traffic can be redirected to another environment with the help of the [**_SwapExtIps_**](https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps) API method (also, available via [CLI](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Swap%20Public%20IPs)).
+For the access via public IP, the traffic can be redirected to another environment with the help of the [**_SwapExtIps_**](https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps) API method (also, available via [CLI](http://localhost:3000/docs/deployment-tools/api-&-cli/platform-cli/swap-public-ips)).
 
 :::
 
@@ -153,7 +153,7 @@ For the access via public IP, the traffic can be redirected to another environme
 
 Automatic vertical scaling is ensured by the platform’s ability to dynamically provide the resources (RAM and CPU) for a server within predefined limits according to its current demands, with no manual intervention required. This feature guarantees you [never overpay for unused resources](https://cloudmydc.com/) and saves your time due to eliminating the necessity of handling the load-related adjustments or architectural changes.
 
-The scaling process is handled by platform automatically, you just need to specify the lower and upper [cloudlets](/docs/PlatformOverview/Cloudlet) limit (each one equals to _128 MiB_ of RAM and _400 MHz_ of CPU) for your Go server through the topology wizard:
+The scaling process is handled by platform automatically, you just need to specify the lower and upper [cloudlets](http://localhost:3000/docs/platform-overview/cloudlet) limit (each one equals to _128 MiB_ of RAM and _400 MHz_ of CPU) for your Go server through the topology wizard:
 
 <div style={{
     display:'flex',
@@ -183,7 +183,7 @@ Extra Golang servers can be easily added via the topology wizard during environm
 
 The maximum number of the same-type servers within a single environment layer depends on a particular hosting provider settings (usually this limit stands for 16 nodes and can be enlarged by sending the appropriate request to support).
 
-Also, you can notice that upon Golang server scaling, the [load balancing](/docs/Load%20Balancers/Load%20Balancing) node is automatically added to environment topology (required for the proper requests distribution). Find more details about manual [horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) in the documentation.
+Also, you can notice that upon Golang server scaling, the [load balancing](/docs/Load%20Balancers/Load%20Balancing) node is automatically added to environment topology (required for the proper requests distribution). Find more details about manual [horizontal scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) in the documentation.
 
 ## Automatic Horizontal Scaling
 

@@ -46,7 +46,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.1#send-message-api-with-ip-authorization">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.1#send-message-api-with-ip-authorization">
                     Learn More >>
                 </a>
             </div>
@@ -90,7 +90,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.1#info-for-environment-clone-dialog">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.1#info-for-environment-clone-dialog">
                     Learn More >>
                 </a>
             </div>
@@ -109,7 +109,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.1#api-changes">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.1#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -128,7 +128,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.1#software-stack-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.1#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -172,7 +172,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.1#fixes-compatible-with-prior-versions">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.1#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -191,7 +191,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.1#bug-fixes">
+                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.1#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -216,7 +216,7 @@ Both new methods are part of the **environment > node** service:
   - **name** - title of the message
   - **message** - body of the message
 
-The platform already utilizes these new methods to provide proper notification about changes in containers - for example, automatic notifications due to [smart recovery after the OOM error](/docs/ApplicationSetting/Smart%20Auto-Configuration/Auto-Configuration%20Overview). Developers can benefit from the implementation by extending their custom packages with automatic notification of the container owner based on some specific condition.
+The platform already utilizes these new methods to provide proper notification about changes in containers - for example, automatic notifications due to [smart recovery after the OOM error](http://localhost:3000/docs/application-setting/smart-auto-configuration/auto-configuration-overview). Developers can benefit from the implementation by extending their custom packages with automatic notification of the container owner based on some specific condition.
 
 [More info](https://cloudmydc.com/)
 
@@ -225,7 +225,7 @@ The platform already utilizes these new methods to provide proper notification a
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -251,16 +251,16 @@ The **[Clone Environment](/docs/environment-management/cloning-environment)** is
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## API Changes
 
-Below, you can find a list of all changes to the public API in the 7.1 platform version (compared to the preceding [7.0](/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.0#api-changes) ones).
+Below, you can find a list of all changes to the public API in the 7.1 platform version (compared to the preceding [7.0](http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.0#api-changes) ones).
 
-Two new API methods were added to the **environment > node** service, implementing a simplified flow to [notify the container owner](/docs/PlatformOverview/Release%20Notes/Release%20Notes%207.1#send-message-api-with-ip-authorization) (using IP authorization instead of user session):
+Two new API methods were added to the **environment > node** service, implementing a simplified flow to [notify the container owner](http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.1#send-message-api-with-ip-authorization) (using IP authorization instead of user session):
 
 - **_SendEvent_** - sends a predefined notification based on the specific event inside a container
 - **_SendNotification_** - sends a custom email notification to the node owner
@@ -272,7 +272,7 @@ Two new API methods were added to the **environment > node** service, implementi
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -391,7 +391,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -409,7 +409,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3#CloudMyDc-application-platform-83">
+    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

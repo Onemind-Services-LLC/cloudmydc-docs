@@ -22,7 +22,7 @@ With the title of the best CMS on the market comes the security threat of being 
 
 To prevent such attacks, the LiteSpeed server protects the most vulnerable **_xmlrpc.php_** and **_wp-login.php_** files. It also moves the Security Captcha from the application level to the server level and prevents unwanted login attempts by automatically blocking IP addresses. It is achieved by setting an automatic quota for logins that is reduced by one after each failed attempt. Once it reaches zero, the throttling, denying, or dropping of the requests will be applied to protect your WordPress installation.
 
-Multiple other security options can be configured for the LiteSpeed server. The platform integrates some of the most popular features used with the WordPress installations, allowing users to easily enable them on the server using the [dedicated environment variables](/docs/EnvironmentManagement/EnvironmentVariables/Environment%20Variables):
+Multiple other security options can be configured for the LiteSpeed server. The platform integrates some of the most popular features used with the WordPress installations, allowing users to easily enable them on the server using the [dedicated environment variables](http://localhost:3000/docs/environment-management/environment-variables/environment-variables):
 
 - **WAF** - enables (true) or disables (false, by default) Web Application Firewall with the [Comodo](https://waf.comodo.com/) default ruleset
 - **WP_PROTECT** - configures an action for the [WordPress Brute Force Attack Protection](https://www.litespeedtech.com/support/wiki/doku.php/litespeed_wiki:config:wordpress-protection) feature (off|on|drop|deny|throttle|captcha; off by default)

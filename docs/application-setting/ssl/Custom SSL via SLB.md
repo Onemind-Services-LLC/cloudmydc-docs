@@ -9,14 +9,14 @@ sidebar_position: 4
 The platform provides multiple possibilities to configure SSL for the environments. The available options depend on the particular topology and target domains:
 
 - environments with public IP as an entry point can utilize the _Let’s Encrypt SSL_ and [_Custom SSL_](/docs/application-setting/ssl/custom-ssl) options to automatically secure connection to any domain attached
-- the [_Built-In SSL_](/docs/ApplicationSetting/SSL/Built-In%20SSL) option allows to automatically configure SSL for the base domain of the environment without public IP
+- the [_Built-In SSL_](http://localhost:3000/docs/application-setting/ssl/built-in-ssl) option allows to automatically configure SSL for the base domain of the environment without public IP
 - in case SSL should be set up for custom domains on the environment without external IP the _Custom SSL_ via SLB feature can be used
 
 The latter solution is mainly aimed for the platform installations on top of the _Azure_ or _Google_ hardware (i.e. without additional external IPs). Let’s overview it in more details.
 
 ## Configure Custom SSL via SLB
 
-The feature is designed to give an ability to set up Custom SSL certificates without obligatory [external IP](/docs/application-setting/external-access-to-applications/public-ip) attached to the entry point of the environment. As the first step of this approach, a private key, the domain certificate and, optionally, intermediate certificate are uploaded to the platform database. Next, the data is synced across the cluster of [Shared Load Balancers](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer). The selection between the SSL certificates on SLB is performed over SNI.
+The feature is designed to give an ability to set up Custom SSL certificates without obligatory [external IP](/docs/application-setting/external-access-to-applications/public-ip) attached to the entry point of the environment. As the first step of this approach, a private key, the domain certificate and, optionally, intermediate certificate are uploaded to the platform database. Next, the data is synced across the cluster of [Shared Load Balancers](http://localhost:3000/docs/application-setting/external-access-to-applications/shared-load-balancer). The selection between the SSL certificates on SLB is performed over SNI.
 
 [Server Name Indication](https://en.wikipedia.org/wiki/Server_Name_Indication) (SNI) is an extension to the TLS protocol, which ensures that clients send a name of the domain they request. SNI allows server to provide a certificate with the correct domain even in the case when a full list of hostnames cannot be known in advance.
 

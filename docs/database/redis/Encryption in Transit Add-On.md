@@ -58,7 +58,7 @@ Click **Install** to continue.
 
 :::danger Note
 
-Port **_6380_** is used for secure connection by default and is automatically added to the [firewall rules](/docs/ApplicationSetting/External%20Access%20To%20Applications/Container%20Firewall#container-firewall-rules-management) during the add-on installation.
+Port **_6380_** is used for secure connection by default and is automatically added to the [firewall rules](http://localhost:3000/docs/application-setting/external-access-to-applications/container-firewall#container-firewall-rules-management) during the add-on installation.
 
 <div style={{
     display:'flex',

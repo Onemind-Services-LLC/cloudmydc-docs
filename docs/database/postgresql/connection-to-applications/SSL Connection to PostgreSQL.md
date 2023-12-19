@@ -36,15 +36,15 @@ Obviously, for this tutorial we’ll use an environment with PostgreSQL database
 
 </div>
 
-1. To start with, connect to your database server via [SSH Gate](/docs/Deployment%20Tools/SSH/SSH%20Overview#ssh-gate-overview).
+1. To start with, connect to your database server via [SSH Gate](http://localhost:3000/docs/deployment-tools/ssh/ssh-overview#ssh-gate-overview).
 
 :::tip Tip
 
 In case you haven’t performed similar operation before, you need to:
 
-- [generate](/docs/Deployment%20Tools/SSH/Generate%20SSH%20Key#generate-ssh-key) an SSH keypair
-- [add your public SSH key](/docs/Deployment%20Tools/SSH/Add%20SSH%20Key#add-ssh-key) to the dashboard
-- [access your account](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview#ssh-access) via SSH protocol
+- [generate](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key#generate-ssh-key) an SSH keypair
+- [add your public SSH key](http://localhost:3000/docs/deployment-tools/ssh/add-ssh-key#add-ssh-key) to the dashboard
+- [access your account](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview#ssh-access) via SSH protocol
 
 :::
 
@@ -68,8 +68,8 @@ Within this tutorial, we’ll briefly consider how you can generate them by your
 
 :::tip Tips
 
-- we won’t explain commands parameters in details here, but if you’d like to know more, just refer to the [Self-Signed Custom SSL](/docs/ApplicationSetting/SSL/Self-Signed%20Custom%20SSL#self-signed-custom-ssl-certificates) page in our documentation or check the official [OpenSSL](https://www.openssl.org/docs/manmaster/man1/openssl.html) site for the full list of available actions
-- you can also use [custom SSL](/docs/ApplicationSetting/SSL/Custom%20SSL#custom-ssl-certificates) certificate similarly to the described below (follow the Generate a Custom SSL Certificate section of the linked guide to get such). In this latter case, you can skip the generation instruction and jump directly to the [6th step](/docs/Database/PostgreSQL/Connection%20to%20Applications/SSL%20Connection%20to%20PostgreSQL#postgresql-server-configuration) of this instruction
+- we won’t explain commands parameters in details here, but if you’d like to know more, just refer to the [Self-Signed Custom SSL](http://localhost:3000/docs/application-setting/ssl/self-signed-custom-ssl#self-signed-custom-ssl-certificates) page in our documentation or check the official [OpenSSL](https://www.openssl.org/docs/manmaster/man1/openssl.html) site for the full list of available actions
+- you can also use [custom SSL](http://localhost:3000/docs/application-setting/ssl/custom-ssl#custom-ssl-certificates) certificate similarly to the described below (follow the Generate a Custom SSL Certificate section of the linked guide to get such). In this latter case, you can skip the generation instruction and jump directly to the [6th step](/docs/Database/PostgreSQL/Connection%20to%20Applications/SSL%20Connection%20to%20PostgreSQL#postgresql-server-configuration) of this instruction
 
 :::
 
@@ -413,7 +413,7 @@ Don’t forget to remove keys from the **tmp** directory on your DB server after
 
 Eventually, after server and client configurations are done, you are ready to establish the connection. In our case, we’ll use the **[pgAdmin 3](https://www.pgadmin.org/)** tool as an example, so get this application (or any other preferred one) installed beforehand.
 
-1. In order to connect to the DB server via SSL, you need either [public IP](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip) or [endpoint](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#endpoints-a-direct-connection-to-the-cloud) being attached for your PostgreSQL database container.
+1. In order to connect to the DB server via SSL, you need either [public IP](http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip#public-ip) or [endpoint](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#endpoints-a-direct-connection-to-the-cloud) being attached for your PostgreSQL database container.
 
 We’ll consider the latter case - access environment **Settings**, switch to the **_Endpoints_** section and **Add** new endpoint with the same-named button at the top pane.
 

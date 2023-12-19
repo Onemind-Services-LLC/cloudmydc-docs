@@ -27,8 +27,8 @@ sidebar_position: 7
 
 So below we’ll examine how to operate with hooks at the platform and will overview several common use cases with step-by-step instructions this functionality can come in handy for:
 
-- [Hooks Management](/docs/Deployment/Deployment%20Hooks#hooks-management)
-- [Hooks Use Cases](/docs/Deployment/Deployment%20Hooks#hooks-use-cases)
+- [Hooks Management](http://localhost:3000/docs/deployment/deployment-hooks#hooks-management)
+- [Hooks Use Cases](http://localhost:3000/docs/deployment/deployment-hooks#hooks-use-cases)
 
 ## Hooks Management
 

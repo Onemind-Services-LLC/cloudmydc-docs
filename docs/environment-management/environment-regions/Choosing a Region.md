@@ -19,8 +19,8 @@ In such a way, you receive impressive flexibility for the organization of your a
 
 So, read the complete guidance on managing environment regions for your applications below and get the maximum efficiency of this significant feature - find out how to:
 
-- [select an environment region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#select-environment-region)
-- [view details about regions](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#view-details-about-regions)
+- [select an environment region](http://localhost:3000/docs/environment-management/environment-regions/choosing-a-region#select-environment-region)
+- [view details about regions](http://localhost:3000/docs/environment-management/environment-regions/choosing-a-region#view-details-about-regions)
 
 ## Select Environment Region
 

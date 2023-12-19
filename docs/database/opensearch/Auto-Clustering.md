@@ -108,7 +108,7 @@ The input for _[Beats](/docs/Database/OpenSearch/Auto-Clustering#beats-add-on)_ 
 
 :::danger Note
 
-The **Logstash** is not a separate stack and cannot be created separately from OpenSearch. You can add as many Logstash nodes as needed - scaling is in [stateful mode](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling#scaling-modes) to provide initial configs. However, each node can be reconfigured for different data transformations.
+The **Logstash** is not a separate stack and cannot be created separately from OpenSearch. You can add as many Logstash nodes as needed - scaling is in [stateful mode](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling#scaling-modes) to provide initial configs. However, each node can be reconfigured for different data transformations.
 
 :::
 
@@ -116,7 +116,7 @@ The **Logstash** is not a separate stack and cannot be created separately from O
 
 **Beats** is a free and open platform for single-purpose data shippers. They send data from the client nodes to Logstash or OpenSearch.
 
-You can install [Beats add-on](https://github.com/jelastic-jps/beats-jps-addon) on any node (except alpine-based ones) created inside the platform and specify the credentials to connect to the OpenSearch cluster or [custom Docker](/docs/Container/Container%20Types#custom-docker-containers) with the ElasticSearch instance. Two versions of the add-on are available:
+You can install [Beats add-on](https://github.com/jelastic-jps/beats-jps-addon) on any node (except alpine-based ones) created inside the platform and specify the credentials to connect to the OpenSearch cluster or [custom Docker](http://localhost:3000/docs/container/container-types#custom-docker-containers) with the ElasticSearch instance. Two versions of the add-on are available:
 
 - **_7.12.1_** - to ship data directly to OpenSearch (see [compatibility charts](https://opensearch.org/docs/latest/tools/index/))
 
@@ -193,7 +193,7 @@ Select the **OpenSearch** stack at the NoSQL database section.
 
 </div>
 
-The stack is automatically configured as a cluster due to the [auto-clustering](/docs/ApplicationSetting/Scaling%20And%20Clustering/Auto-Clustering%20of%20Instances#auto-clustering-of-instances-via-topology-wizard) feature. Also, you have additional options to add the **OpenSearch Dashboards** and **Logstash** components.
+The stack is automatically configured as a cluster due to the [auto-clustering](http://localhost:3000/docs/application-setting/scaling-and-clustering/auto-clustering-of-instances#auto-clustering-of-instances-via-topology-wizard) feature. Also, you have additional options to add the **OpenSearch Dashboards** and **Logstash** components.
 
 ## OpenSearch vs Elasticsearch Performance
 

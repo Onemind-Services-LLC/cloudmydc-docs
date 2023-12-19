@@ -65,8 +65,8 @@ This template utilizes a modern **_systemd_** initialization daemon.
 
 :::tip Notes:
 
-- Each instance is a fully independent [isolated container](/docs/PlatformOverview/System%20Container).
-- Instances of the same layer are automatically distributed across available hosts ensuring [high availability](/docs/PlatformOverview/Isolated%20Container#high-availability-for-applications).
+- Each instance is a fully independent [isolated container](http://localhost:3000/docs/platform-overview/system-container).
+- Instances of the same layer are automatically distributed across available hosts ensuring [high availability](http://localhost:3000/docs/platform-overview/isolated-container#high-availability-for-applications).
 
 :::
 
@@ -115,14 +115,14 @@ Deployment to the managed application servers (_Apache Python_) is automated by 
 
 </div>
 
-Git flow provides a possibility of sequential or simultaneous deploy, as well as [automatic redeployment](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview#auto-deploy-of-gitsvn-updates) from the repository if new code changes appear.
+Git flow provides a possibility of sequential or simultaneous deploy, as well as [automatic redeployment](http://localhost:3000/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview#auto-deploy-of-gitsvn-updates) from the repository if new code changes appear.
 
 Refer to the following guides for the detailed overview of the deployment process and the provided additional options:
 
 - [Deployment Manager](/docs/deployment/deployment-manager)
 - [Deployment Guide](/docs/deployment/deployment-guide)
-- [Auto-Deploy Overview](/docs/Deployment/Git%20&%20SVN%20Auto-Deploy/Auto-Deploy%20Overview#auto-deploy-of-gitsvn-updates)
-- [Deployment Hooks](/docs/Deployment/Deployment%20Hooks)
+- [Auto-Deploy Overview](http://localhost:3000/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview#auto-deploy-of-gitsvn-updates)
+- [Deployment Hooks](http://localhost:3000/docs/deployment/deployment-hooks)
 
 Check examples of the Python-based application hosting on the platform:
 
@@ -134,7 +134,7 @@ Check examples of the Python-based application hosting on the platform:
 
 In order to successfully deploy and run a Python application, some additional modules or other packages may be required to be installed. It is a common practice to run Python web applications in isolated [**_virtual environments_**](https://virtualenv.pypa.io/en/stable/), for example using the virtual environment tool, which allows managing projects independently and without the administrator privileges.
 
-1. Connect to the Python environment [via SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Overview#ssh-access) (using either a _local_ or built-in _Web SSH_ client) to create and start a new virtual environment. Run the following commands:
+1. Connect to the Python environment [via SSH](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview#ssh-access) (using either a _local_ or built-in _Web SSH_ client) to create and start a new virtual environment. Run the following commands:
 
 ```bash
 virtualenv {appName}
@@ -167,12 +167,12 @@ In the case of the preconfigured application packages (archives), all the depend
 
 ## Domains Management
 
-If needed, the default domain name of your Python application can be replaced with a [custom one](/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name#custom-domain-name) via:
+If needed, the default domain name of your Python application can be replaced with a [custom one](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#custom-domain-name) via:
 
 - **CNAME redirect** if using _Shared Load Balancer_; is recommended for **_dev_** and **_test_** environments
 - **DNS A Record** if using _public IP_; can handle high traffic load and is suitable for **_production_** environments
 
-In addition, the platform allows switching traffic between two environments quickly and without downtime (e.g. to seamlessly redirect customers to the newer application version) using the [swap domains](/docs/ApplicationSetting/Domain%20Name%20Management/Swap%20Domains#swap-domains) functionality or with the help of the **_SwapExtIps_** [API](https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps)/[CLI](/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Swap%20Public%20IPs#cli-tutorial-public-ips-external-addresses-swap) method.
+In addition, the platform allows switching traffic between two environments quickly and without downtime (e.g. to seamlessly redirect customers to the newer application version) using the [swap domains](http://localhost:3000/docs/application-setting/domain-name-management/swap-domains#swap-domains) functionality or with the help of the **_SwapExtIps_** [API](https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps)/[CLI](http://localhost:3000/docs/deployment-tools/api-&-cli/platform-cli/swap-public-ips#cli-tutorial-public-ips-external-addresses-swap) method.
 
 <div style={{
     display:'flex',
@@ -188,7 +188,7 @@ In addition, the platform allows switching traffic between two environments quic
 
 Automatic vertical scaling implemented by the platform provides the exact amount of resources (RAM and CPU) that your application currently requires. As a result, you don’t need to waste your time continuously making load-related adjustments. And in combination with the [Pay-as-You-Use](https://www.virtuozzo.com/company/blog/deceptive-cloud-efficiency-do-you-really-pay-as-you-use/) pricing model, it ensures you never overpay for unused resources.
 
-Just set the upper [cloudlets](/docs/PlatformOverview/Cloudlet#what-is-a-cloudlet) limit (each one equals _128 MiB_ of RAM and _400 MHz_ of CPU) for your Python application server. Everything else will be handled by the platform automatically.
+Just set the upper [cloudlets](http://localhost:3000/docs/platform-overview/cloudlet#what-is-a-cloudlet) limit (each one equals _128 MiB_ of RAM and _400 MHz_ of CPU) for your Python application server. Everything else will be handled by the platform automatically.
 
 <div style={{
     display:'flex',
@@ -200,11 +200,11 @@ Just set the upper [cloudlets](/docs/PlatformOverview/Cloudlet#what-is-a-cloudle
 
 </div>
 
-Refer to the [automatic vertical scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling#automatic-vertical-scaling) guide for additional details.
+Refer to the [automatic vertical scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling#automatic-vertical-scaling) guide for additional details.
 
 ## Manual Horizontal Scaling
 
-Horizontal scaling of the Python servers is no different from scaling any other instance at the platform - just specify the required number of nodes with the **+/-** buttons in the central part of the topology wizard. If needed, choose the preferred [scaling mode](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling#scaling-modes):
+Horizontal scaling of the Python servers is no different from scaling any other instance at the platform - just specify the required number of nodes with the **+/-** buttons in the central part of the topology wizard. If needed, choose the preferred [scaling mode](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling#scaling-modes):
 
 - **_Stateless_** - simultaneously creates all of the new nodes from the base image template
 - **_Stateful_** - sequentially copies file system of the master container into the new nodes
@@ -221,13 +221,13 @@ Horizontal scaling of the Python servers is no different from scaling any other 
 
 :::tip Tip
 
-For the proper request distribution, a [load balancer](/docs/Load%20Balancers/Load%20Balancing#load-balancing) instance is automatically added to the environment upon Python server scaling. Refer to the [horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling#horizontal-scaling-specifics) documentation for more specifications.
+For the proper request distribution, a [load balancer](/docs/Load%20Balancers/Load%20Balancing#load-balancing) instance is automatically added to the environment upon Python server scaling. Refer to the [horizontal scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-specifics) documentation for more specifications.
 
 :::
 
 ## Automatic Horizontal Scaling
 
-Navigate to the environment **Settings >** [**Auto Horizontal Scaling**](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling#automatic-horizontal-scaling) section to set up custom triggers, which allow automatically increase/decrease the number of nodes due to the application load. Just choose a resource type to be monitored (_CPU, RAM, Network, Disk_) and the exact condition of scaling, the rest actions are automated. You’ll be informed about any changes with email notifications if the appropriate option is enabled.
+Navigate to the environment **Settings >** [**Auto Horizontal Scaling**](http://localhost:3000/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling#automatic-horizontal-scaling) section to set up custom triggers, which allow automatically increase/decrease the number of nodes due to the application load. Just choose a resource type to be monitored (_CPU, RAM, Network, Disk_) and the exact condition of scaling, the rest actions are automated. You’ll be informed about any changes with email notifications if the appropriate option is enabled.
 
 <div style={{
     display:'flex',

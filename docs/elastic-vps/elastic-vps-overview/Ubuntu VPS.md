@@ -42,7 +42,7 @@ Log into your platform dashboard and open the topology wizard by clicking the **
 
 </div>
 
-Adjust the rest options (cloudlet limits, [number](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling) of server instances and name for your environment) and click the **_Create_** button.
+Adjust the rest options (cloudlet limits, [number](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) of server instances and name for your environment) and click the **_Create_** button.
 
 :::danger Note
 

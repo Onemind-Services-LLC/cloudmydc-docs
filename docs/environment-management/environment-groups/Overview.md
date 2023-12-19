@@ -71,7 +71,7 @@ The overall structure of your environment groups, with all inclusions and nestin
 
 </div>
 
-You can create unlimited number of groups based on any naming scheme that makes logic to you (using any letters, numerals, special characters and spaces within their names). Moreover, each group can be parted further into smaller [subgroups](/docs/EnvironmentManagement/Environment%20Groups/Group%20Management#add-subgroups) if needed, as well as each environment can belong to multiple groups, which makes this approach truly flexible and versatile. To get a hands-on experience with environment groups, follow the next guides and find out how to:
+You can create unlimited number of groups based on any naming scheme that makes logic to you (using any letters, numerals, special characters and spaces within their names). Moreover, each group can be parted further into smaller [subgroups](http://localhost:3000/docs/environment-management/environment-groups/group-management#add-subgroups) if needed, as well as each environment can belong to multiple groups, which makes this approach truly flexible and versatile. To get a hands-on experience with environment groups, follow the next guides and find out how to:
 
 - [Create Environment Group](/docs/environment-management/environment-groups/group-creation)
 - [Navigate Across Environment Groups](/docs/environment-management/environment-groups/navigation-across-groups)

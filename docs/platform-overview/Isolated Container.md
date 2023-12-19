@@ -8,9 +8,9 @@ All of the instances in the environment (like databases, application servers, et
 
 Three main reasons why the platform provides individual role-based servers are:
 
-- [live migration](/docs/PlatformOverview/Isolated%20Container#isolated-containers-live-migration)
-- [high availability](/docs/PlatformOverview/Isolated%20Container#high-availability-for-applications)
-- [security](/docs/PlatformOverview/Isolated%20Container#security-of-isolated-containers)
+- [live migration](http://localhost:3000/docs/platform-overview/isolated-container#isolated-containers-live-migration)
+- [high availability](http://localhost:3000/docs/platform-overview/isolated-container#high-availability-for-applications)
+- [security](http://localhost:3000/docs/platform-overview/isolated-container#security-of-isolated-containers)
 
 ## Isolated Containers Live Migration
 

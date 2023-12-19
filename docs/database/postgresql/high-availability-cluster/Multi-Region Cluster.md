@@ -44,7 +44,7 @@ The sum of these implementations ensures out-of-box high availability and failov
 
 - **Version** - select the preferred PostgreSQL version
 - **Environment** - provide a name for [grouping](/docs/environment-management/environment-groups/overview) your database cluster environments
-- **Create separate environment group** – tick to [isolate](/docs/EnvironmentManagement/Environment%20Isolation#private-network-isolation) the environment group
+- **Create separate environment group** – tick to [isolate](http://localhost:3000/docs/environment-management/environment-isolation#private-network-isolation) the environment group
 - **PostgreSQL Regions** - choose platform regions where the cluster environments will be deployed. Note that regions order matters, as the first one will be the Primary server and the others will be Secondary
 - **Pgpool-II enabled** – enable to add load-balancing, monitoring, and management node (Pgpool-II) in front of database nodes in each region
 - **Pgpool regions** - choose platform regions where the load balancing nodes will be deployed
@@ -75,7 +75,7 @@ To easily view all the related environments, you can switch to the group specifi
 
 </div>
 
-4. The default entry point for your multi-region cluster is a leader Pgpool-II node (the one deployed into the first region). If it fails, you can use any other Pgpool-II node using either [hostname](/docs/ApplicationSetting/Domain%20Name%20Management/Container%20DNS%20Hostnames#hostnames-for-specific-containers) or IP address.
+4. The default entry point for your multi-region cluster is a leader Pgpool-II node (the one deployed into the first region). If it fails, you can use any other Pgpool-II node using either [hostname](http://localhost:3000/docs/application-setting/domain-name-management/container-dns-hostnames#hostnames-for-specific-containers) or IP address.
 
 <div style={{
     display:'flex',

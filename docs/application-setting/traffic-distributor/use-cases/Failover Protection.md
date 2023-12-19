@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Failover Protection with TD
 
-[Traffic Distributor](/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Overview) allows to easily achieve advanced failover protection with the help of the in-build health check module, which automatically regularly tests backends for availability and excludes unavailable ones from routing. This functionality is enabled by default, however, you can adjust this module behaviour if required. Follow the steps below for that.
+[Traffic Distributor](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-overview) allows to easily achieve advanced failover protection with the help of the in-build health check module, which automatically regularly tests backends for availability and excludes unavailable ones from routing. This functionality is enabled by default, however, you can adjust this module behaviour if required. Follow the steps below for that.
 
 1. Navigate to the NGINX **Config** panel with the same-named button and navigate to the _/etc/nginx/nginx-jelastic.conf_ file within **Root**:
 

@@ -19,7 +19,7 @@ sidebar_position: 1
 
 <div>
 
-[PaaS & CaaS](/docs/EnvironmentManagement/Environment%20Export%20and%20Import/App%20Migration%20between%20Clouds) is designed to provide a real freedom of choice to developers: no proprietary APIs, no necessity to adjust your applications' code before hosting, a wide variety of stacks and features available. And one of the key options that exempts our users from any lock-in is the **Environment Export / Import** feature.
+[PaaS & CaaS](http://localhost:3000/docs/environment-management/environment-export-and-import/app-migration-between-clouds) is designed to provide a real freedom of choice to developers: no proprietary APIs, no necessity to adjust your applications' code before hosting, a wide variety of stacks and features available. And one of the key options that exempts our users from any lock-in is the **Environment Export / Import** feature.
 
 </div>
 

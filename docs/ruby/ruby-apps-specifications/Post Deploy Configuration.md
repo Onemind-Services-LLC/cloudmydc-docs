@@ -14,31 +14,31 @@ To do this we’ve introduced a new file called **_rake_deploy_**. It is located
 
 The platform executes commands from **_rake_deploy_** with each restart of the apache/nginx service and deletes them right after successful execution. As a result, if you need to bypass different commands to rake on each deploy you need to create a **_rake_deploy_** file each time and put the correct commands there.
 
-The platform puts the output of each **_rake_deploy_** into a corresponding log file which is available via the [**Log**](/docs/ApplicationSetting/Built-in%20Monitoring/Log%20Files#view-log-files) view in the platform dashboard.
+The platform puts the output of each **_rake_deploy_** into a corresponding log file which is available via the [**Log**](http://localhost:3000/docs/application-setting/built-in-monitoring/log-files#view-log-files) view in the platform dashboard.
 
 **_Syntaxis of the rake_deploy file:_**
 
 ```bash
-$COMMAND_NAME_1  
-$COMMAND_NAME_2  
-...  
+$COMMAND_NAME_1
+$COMMAND_NAME_2
+...
 $COMMAND_NAME_N
 ```
 
 And the platform will execute the following scripts:
 
 ```bash
-rake $COMMAND_NAME_1  
-rake $COMMAND_NAME_2  
-...  
+rake $COMMAND_NAME_1
+rake $COMMAND_NAME_2
+...
 rake $COMMAND_NAME_N
 ```
 
 For example, **rake_deploy** looks like the following in the [_Redmine_](https://cloudmydc.com/) tutorial:
 
 ```bash
-generate_secret_token  
-db:migrate  
+generate_secret_token
+db:migrate
 redmine:load_default_data
 ```
 

@@ -100,7 +100,7 @@ You can check the role and list of allowed policies for shared resources at the 
 
 </div>
 
-In order to check your roles for the specific [shared environment](/docs/EnvironmentManagement/Share%20Environment), go to its **Settings > Collaboration** section.
+In order to check your roles for the specific [shared environment](http://localhost:3000/docs/environment-management/share-environment), go to its **Settings > Collaboration** section.
 
 <div style={{
     display:'flex',

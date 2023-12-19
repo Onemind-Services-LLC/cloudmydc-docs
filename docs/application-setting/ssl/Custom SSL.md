@@ -8,7 +8,7 @@ sidebar_position: 3
 
 **SSL certificates** support gives a significant level of security for your domain names. With the platform, hosting of applications that need SSL becomes fairly easy.
 
-In addition to the [Built-In SSL](/docs/ApplicationSetting/SSL/Built-In%20SSL) and Let’s Encrypt SSL, the platform provides the ability to upload and use **custom SSL certificates** for your environments. The platform supports the following certificate types:
+In addition to the [Built-In SSL](http://localhost:3000/docs/application-setting/ssl/built-in-ssl) and Let’s Encrypt SSL, the platform provides the ability to upload and use **custom SSL certificates** for your environments. The platform supports the following certificate types:
 
 - [self-signed](/docs/application-setting/ssl/self-signed-custom-ssl)
 - Wildcard
@@ -36,8 +36,8 @@ Therefore, follow the next instruction:
 
 We’ll use **OpenSSL** as an example. Depending on the operating system you are using, perform the following steps:
 
-- [for Windows](/docs/ApplicationSetting/SSL/Custom%20SSL#for-windows)
-- [for Linux/MacOS/FreeBSD](/docs/ApplicationSetting/SSL/Custom%20SSL#for-linuxmacosfreebsd)
+- [for Windows](http://localhost:3000/docs/application-setting/ssl/custom-ssl#for-windows)
+- [for Linux/MacOS/FreeBSD](http://localhost:3000/docs/application-setting/ssl/custom-ssl#for-linuxmacosfreebsd)
 
 ## For Windows
 
@@ -189,7 +189,7 @@ In order to be secured with a Custom SSL certificate, your environment should ha
 
 :::danger note
 
-Environments based on the **.NET**, **Go**, **Node.js** servers or [**custom Docker containers**](/docs/Container/Container%20Types) should include the certified [**load balancer**](/docs/Load%20Balancers/Load%20Balancing) to support custom SSL. In these cases, the external IP address should be attached to the balancer instead of an application server as it becomes the entry point of your environment.
+Environments based on the **.NET**, **Go**, **Node.js** servers or [**custom Docker containers**](http://localhost:3000/docs/container/container-types) should include the certified [**load balancer**](/docs/Load%20Balancers/Load%20Balancing) to support custom SSL. In these cases, the external IP address should be attached to the balancer instead of an application server as it becomes the entry point of your environment.
 
 :::
 

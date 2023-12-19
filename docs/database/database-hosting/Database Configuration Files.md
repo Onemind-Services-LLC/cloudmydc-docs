@@ -154,7 +154,7 @@ For example, you can set the [scheduled backups](/docs/Database/Database%20Hosti
 
 </div>
 
-You can find more information in the [Setting Up Cronjob](/docs/ApplicationSetting/Scheduling%20Configuration/Setting%20Up%20Cronjob#setting-up-cronjob) documentation.
+You can find more information in the [Setting Up Cronjob](http://localhost:3000/docs/application-setting/scheduling-configuration/setting-up-cronjob#setting-up-cronjob) documentation.
 
 ## SCRIPTS
 

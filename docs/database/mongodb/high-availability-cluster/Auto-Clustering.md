@@ -11,7 +11,7 @@ sidebar_position: 1
 Jelastic PaaS provides automatic clusterization for the **MongoDB** stack, which allows you to create a reliable [replica set](https://www.mongodb.com/docs/manual/replication/) for your database with a single click. The implemented solution provides a set of benefits:
 
 - **redundancy and data high availability** - multiple copies of data on different database servers offer a high level of fault tolerance against the data loss
-- **scalability and autodiscovery** – new nodes, added during [horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling#horizontal-scaling-inside-the-cloud-multi-node), are connected to the cluster with all required adjustments being applied automatically
+- **scalability and autodiscovery** – new nodes, added during [horizontal scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-inside-the-cloud-multi-node), are connected to the cluster with all required adjustments being applied automatically
 - **automated failover** – the database nodes that are temporarily unavailable or have high latency are automatically excluded from the cluster and re-added once the connection is restored
 
 <div style={{
@@ -54,7 +54,7 @@ Another important point is security and protection from undesired access. Herewi
 
 MongoDB utilizes the **_[WiredTiger](https://www.mongodb.com/docs/manual/core/wiredtiger/)_** storage engine by default. It ensures a high performance (due to non-locking algorithms) and effective cost/resource utilization. The default options for WiredTiger are optimized to run a single mongod instance per server, which is also suitable for Jelastic PaaS containers. MongoDB utilizes both the WiredTiger internal cache and the filesystem cache. The internal cache size is 50% of total RAM minus 1 GB (but no less than 256 MB), while filesystem cache operates free memory that is not used by WiredTiger or other processes. For more information on WiredTiger configs, refer to the official MongoDB documentation.
 
-One more unique feature of the MongoDB auto-cluster is the automated detection of new nodes added through the [horizontal scaling](/docs/ApplicationSetting/Scaling%20And%20Clustering/Horizontal%20Scaling#horizontal-scaling-inside-the-cloud-multi-node) and their inclusion into the replica set without any manual actions. Similarly, nodes are excluded from the cluster while scaling in.
+One more unique feature of the MongoDB auto-cluster is the automated detection of new nodes added through the [horizontal scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-inside-the-cloud-multi-node) and their inclusion into the replica set without any manual actions. Similarly, nodes are excluded from the cluster while scaling in.
 
 ## Enable Automatic Clustering for Databases
 
@@ -77,7 +77,7 @@ The whole process of the MongoDB auto-cluster creation can be done in a few simp
 Some of the topology specifics of the MongoDB cluster are listed below:
 
 - auto-clustering is supported since the **_4.x.x_** version
-- 4 GiB of RAM (32 cloudlets) are recommended for a proper work of the replica set nodes. By default, these number of cloudlets are added as a dynamic scaling limit, so [you won’t be charged unless resources are actually consumed](/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling#automatic-vertical-scaling).
+- 4 GiB of RAM (32 cloudlets) are recommended for a proper work of the replica set nodes. By default, these number of cloudlets are added as a dynamic scaling limit, so [you won’t be charged unless resources are actually consumed](http://localhost:3000/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling#automatic-vertical-scaling).
 
 <div style={{
     display:'flex',
@@ -93,7 +93,7 @@ Some of the topology specifics of the MongoDB cluster are listed below:
 
 :::
 
-Configure other parameters up to your needs ([public IPs](/docs/ApplicationSetting/External%20Access%20To%20Applications/Public%20IP#public-ip), [region](/docs/EnvironmentManagement/Environment%20Regions/Choosing%20a%20Region#environment-regions), etc.) and click **Create**.
+Configure other parameters up to your needs ([public IPs](http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip#public-ip), [region](http://localhost:3000/docs/environment-management/environment-regions/choosing-a-region#environment-regions), etc.) and click **Create**.
 
 2. Wait a minute for the platform to configure the cluster for you.
 
@@ -137,7 +137,7 @@ Where:
 
 :::
 
-The outlined above application connection is considered to be established within one hosting platform. But if required, you can make an external application connection to the replica set through [SLB](/docs/ApplicationSetting/External%20Access%20To%20Applications/Shared%20Load%20Balancer#shared-load-balancer). In this case you have to maintain connection to the primary node only for read/writes via [Jelastic Endpoints](/docs/ApplicationSetting/External%20Access%20To%20Applications/Endpoints#endpoints-a-direct-connection-to-the-cloud).
+The outlined above application connection is considered to be established within one hosting platform. But if required, you can make an external application connection to the replica set through [SLB](http://localhost:3000/docs/application-setting/external-access-to-applications/shared-load-balancer#shared-load-balancer). In this case you have to maintain connection to the primary node only for read/writes via [Jelastic Endpoints](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#endpoints-a-direct-connection-to-the-cloud).
 
 <div style={{
     display:'flex',
@@ -164,7 +164,7 @@ If you need to read from the secondaries you have to customize your application 
 
 </div>
 
-5. Also, you can connect to your database via the mongo shell directly in your terminal (for example, using the built-in **[Web SSH](/docs/Deployment%20Tools/SSH/SSH%20Access/Web%20SSH#ssh-access-via-web-browser)** option).
+5. Also, you can connect to your database via the mongo shell directly in your terminal (for example, using the built-in **[Web SSH](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser)** option).
 
 \*mongo -u **{user}** -p **{password} {DB_name}\***
 

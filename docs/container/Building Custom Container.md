@@ -24,9 +24,9 @@ Below, we’ll consider all the specifics of a custom image running at our platf
 
 So, let’s walk through the required operations step-by-step:
 
-- [composing dockerfile](/docs/Container/Building%20Custom%20Container#composing-dockerfile)
-- [adding image to repository](/docs/Container/Building%20Custom%20Container#adding-image-to-repository)
-- [deploying image at the platform](/docs/Container/Building%20Custom%20Container#deploying-image-at-platform)
+- [composing dockerfile](/docs/container/building-custom-container#composing-dockerfile)
+- [adding image to repository](/docs/container/building-custom-container#adding-image-to-repository)
+- [deploying image at the platform](/docs/container/building-custom-container#deploying-image-at-platform)
 
 ## Composing Dockerfile
 
@@ -129,7 +129,7 @@ RUN /opt/wildfly/bin/add-user.sh --user $ADMIN_USER --password $ADMIN_PASSWORD -
 RUN sed -i "s/<a href=\"\/console\">/<a href=\"\/console\" onclick=\"javascript:event.target.port=4949;event.target.protocol=\'http:\';\">/" /opt/wildfly/welcome-content/index.html
 ```
 
-11. Add the English [locale settings](/docs/ApplicationSetting/Managing%20Locale%20Settings) to the container.
+11. Add the English [locale settings](http://localhost:3000/docs/application-setting/managing-locale-settings) to the container.
 
 ```bash
 RUN localedef -i en_US -f UTF-8 en_US.UTF-8
@@ -196,7 +196,7 @@ You can log into the registry in advance using the corresponding docker login co
 
 ## Deploying Image at Platform
 
-As soon as your image is successfully stored at the repository, it becomes available for usage at the platform and can be added to an environment through the dedicated Docker board integrated to the [topology wizard](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) dashboard sections.
+As soon as your image is successfully stored at the repository, it becomes available for usage at the platform and can be added to an environment through the dedicated Docker board integrated to the [topology wizard](http://localhost:3000/docs/container/container-deployment/custom-containers-deployment) dashboard sections.
 
 So, select the **New Environment** button at the top of the dashboard, move to the **_Docker_** tab within the opened environment wizard and click on the Select Image button.
 
@@ -244,7 +244,7 @@ We use the public Docker Hub repository, located within the central Registry Hub
 
 </div>
 
-Set the rest of the necessary [configurations](/docs/Container/Container%20Deployment/Custom%20Containers%20Deployment) on your own (the details on the available options can be read in the linked guide) and finish the environment creation.
+Set the rest of the necessary [configurations](http://localhost:3000/docs/container/container-deployment/custom-containers-deployment) on your own (the details on the available options can be read in the linked guide) and finish the environment creation.
 
 4. Once your environment with the appropriate image inside appears on the dashboard, it can be accessed using the corresponding **Open in Browser** button:
 
