@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Access via SSH Gate
 
-In order to establish connection via SSH Gate, you need to [generate SSH key pair](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key) and to [add public key](/docs/deployment-tools/ssh/add-ssh-key) to your account at the dashboard (if needed, read the linked step-by-step guides for assistance).
+In order to establish connection via SSH Gate, you need to [generate SSH key pair](/docs/deployment-tools/ssh/generate-ssh-key) and to [add public key](/docs/deployment-tools/ssh/add-ssh-key) to your account at the dashboard (if needed, read the linked step-by-step guides for assistance).
 
 Next, get an SSH connection string for your account by clicking the **Settings** button at the top panel of the dashboard.
 
@@ -38,7 +38,7 @@ Within the right part of the section you can establish [Web SSH](/docs/deploymen
 
 :::
 
-Now, you can access either [whole PaaS account](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/ssh-gate#ssh-access-to-platform-account) or just a [particular container](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/ssh-gate#direct-access-to-container) with your local SSH client.
+Now, you can access either [whole PaaS account](/docs/deployment-tools/ssh/ssh-access/ssh-gate#ssh-access-to-platform-account) or just a [particular container](/docs/deployment-tools/ssh/ssh-access/ssh-gate#direct-access-to-container) with your local SSH client.
 
 ## SSH Access to Platform Account
 
@@ -161,4 +161,4 @@ For example, in order to access the Tomcat container, which is shown in the imag
     </div>
 </div>
 
-Such a possibility can be useful for automatization scripts or for setting up application configurations (for example, [Capistrano](http://localhost:3000/docs/deployment-tools/ssh/capistrano)).
+Such a possibility can be useful for automatization scripts or for setting up application configurations (for example, [Capistrano](/docs/deployment-tools/ssh/capistrano)).

@@ -36,7 +36,7 @@ If you already have such storage, you can skip to the fourth step.
 
 - **Environment** – environment domain name
 - **Display Name** – [environment’s alias](/docs/environment-management/environment-aliases)
-- **Region** – [environment’s region](http://localhost:3000/docs/environment-management/environment-regions/choosing-a-region#environment-regions) (if multiple ones are available)
+- **Region** – [environment’s region](/docs/environment-management/environment-regions/choosing-a-region#environment-regions) (if multiple ones are available)
 
 <div style={{
     display:'flex',

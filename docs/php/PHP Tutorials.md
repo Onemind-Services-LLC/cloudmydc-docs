@@ -12,16 +12,16 @@ sidebar_position: 10
         *
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-       <a href="/docs/PHP/PHP%20Tutorials">A</a>
+       <a href="/docs/php/php-tutorials">A</a>
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
               B
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-             <a href="/docs/PHP/PHP%20Tutorials">C</a>
+             <a href="/docs/php/php-tutorials">C</a>
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                     <a href="/docs/PHP/PHP%20Tutorials">D</a>
+                     <a href="/docs/php/php-tutorials">D</a>
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
                             E
@@ -40,11 +40,11 @@ sidebar_position: 10
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                            <a href="/docs/PHP/PHP%20Tutorials">I</a>
+                            <a href="/docs/php/php-tutorials">I</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                                   <a href="/docs/PHP/PHP%20Tutorials">J</a>
+                                   <a href="/docs/php/php-tutorials">J</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
@@ -56,7 +56,7 @@ sidebar_position: 10
 
  </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                              <a href="/docs/PHP/PHP%20Tutorials">M</a>
+                              <a href="/docs/php/php-tutorials">M</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
@@ -64,11 +64,11 @@ sidebar_position: 10
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                              <a href="/docs/PHP/PHP%20Tutorials">O</a>
+                              <a href="/docs/php/php-tutorials">O</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                           <a href="/docs/PHP/PHP%20Tutorials">P</a>
+                           <a href="/docs/php/php-tutorials">P</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
@@ -80,11 +80,11 @@ sidebar_position: 10
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                                   <a href="/docs/PHP/PHP%20Tutorials">S</a>
+                                   <a href="/docs/php/php-tutorials">S</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                           <a href="/docs/PHP/PHP%20Tutorials">T</a>
+                           <a href="/docs/php/php-tutorials">T</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
@@ -96,7 +96,7 @@ sidebar_position: 10
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                         <a href="/docs/PHP/PHP%20Tutorials">W</a>
+                         <a href="/docs/php/php-tutorials">W</a>
 
  </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
@@ -108,7 +108,7 @@ sidebar_position: 10
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                         <a href="/docs/PHP/PHP%20Tutorials">Z</a>
+                         <a href="/docs/php/php-tutorials">Z</a>
 
 </div>
 

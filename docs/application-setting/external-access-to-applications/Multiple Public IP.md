@@ -29,7 +29,7 @@ The platform supports assigning multiple [public IP](/docs/application-setting/e
 </div>
 </div>
 
-For example, if hosting several web-sites on a single node, the multi-IP option allows to handle them as separate production-ready services due to the ability to apply dedicated [custom domain name](/docs/application-setting/domain-name-management/custom-domain-name) and [SSL certificate](http://localhost:3000/docs/application-setting/ssl/secure-sockets-layer) to each of them. Also, this option can be helpful for operating network appliances (e.g. load balancers) with multiple IP addresses for each network.
+For example, if hosting several web-sites on a single node, the multi-IP option allows to handle them as separate production-ready services due to the ability to apply dedicated [custom domain name](/docs/application-setting/domain-name-management/custom-domain-name) and [SSL certificate](/docs/application-setting/ssl/secure-sockets-layer) to each of them. Also, this option can be helpful for operating network appliances (e.g. load balancers) with multiple IP addresses for each network.
 
 :::tip Note
 
@@ -89,7 +89,7 @@ The very first added Public IP of each type that is added to an instance is cons
 
 :::
 
-Also, all IP addresses, assigned to a container, are shown within environment topology details at terminal upon connecting to an environment via [SSH Gate](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview).
+Also, all IP addresses, assigned to a container, are shown within environment topology details at terminal upon connecting to an environment via [SSH Gate](/docs/deployment-tools/ssh/ssh-access/overview).
 
 <div style={{
     display:'flex',
@@ -109,7 +109,7 @@ In case the required type of the newly attached IP is not indicated explicitly (
 
 :::
 
-These is a set of [API methods](http://localhost:3000/docs/deployment-tools/api-&-cli/api-overview) that you can use to perform tasks related to Public IP. For the detailed API reference on Public IP, please proceed to the following section.
+These is a set of [API methods](/docs/deployment-tools/api-&-cli/api-overview) that you can use to perform tasks related to Public IP. For the detailed API reference on Public IP, please proceed to the following section.
 
 ## API Reference on Multiple Public IPs
 
@@ -117,7 +117,7 @@ In this section, you can find information on platform API methods that are provi
 
 1. To attach or detach a Public IP address via platform API, the **_SetExtIpCount_** method is provided.
 
-_https://[hoster-api-host](http://localhost:3000/docs/quickstart/hosters-list-&-info)/1.0/environment/control/rest/setextipcount?**envname**=[string]&**session**=[string]&**type**=[string]&**count**=[int]&**nodegroup**=[string]&**nodeid**=[int]_
+_https://[hoster-api-host](/docs/quickstart/hosters-list-&-info)/1.0/environment/control/rest/setextipcount?**envname**=[string]&**session**=[string]&**type**=[string]&**count**=[int]&**nodegroup**=[string]&**nodeid**=[int]_
 
 This method is used with the following parameters:
 
@@ -138,7 +138,7 @@ The **_AttachExtIp_** and **_DetachExtIp_** methods, which were provided earlier
 
 2. To swap Public IP addresses between two nodes within the same or separate environments, you can use the **_SwapExtIps_** method.
 
-_https://{[hoster-api-host](http://localhost:3000/docs/quickstart/hosters-list-&-info)}/1.0/environment/control/rest/swapextips?**envname**=[string]&**session**=[string]&**sourcenodeid**=[int]&**destnodeid**=[int]&**sourceip**=[string]&**destip**=[string]_
+_https://{[hoster-api-host](/docs/quickstart/hosters-list-&-info)}/1.0/environment/control/rest/swapextips?**envname**=[string]&**session**=[string]&**sourcenodeid**=[int]&**destnodeid**=[int]&**sourceip**=[string]&**destip**=[string]_
 
 This method is used with the following parameters:
 

@@ -46,7 +46,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2#subscription-based-solutions">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.2#subscription-based-solutions">
                     Learn More >>
                 </a>
             </div>
@@ -90,7 +90,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2#refilling-with-3ds-cards">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.2#refilling-with-3ds-cards">
                     Learn More >>
                 </a>
             </div>
@@ -109,7 +109,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2#api-changes">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.2#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -128,7 +128,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2#software-stack-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.2#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -172,7 +172,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2#fixes-compatible-with-prior-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.2#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -191,7 +191,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2#bug-fixes">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.2#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -234,16 +234,16 @@ All the **Subscriptions** are added to the dedicated section in the account sett
 
 </div>
 
-Due to the concept of subscriptions, some actions are restricted for the installed instances (e.g. topology adjustment or environment cloning). Read more about subscriptions in the dedicated **[Subscription-Based Product](/docs/Account&Pricing/Subscription-Based%20Products)** document.
+Due to the concept of subscriptions, some actions are restricted for the installed instances (e.g. topology adjustment or environment cloning). Read more about subscriptions in the dedicated **[Subscription-Based Product](/docs/account-and-pricing/subscription-based-products)** document.
 
-[More info](/docs/Account&Pricing/Subscription-Based%20Products)
+[More info](/docs/account-and-pricing/subscription-based-products)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.2">
         Back to the top
     </a>
 </div>
@@ -259,25 +259,25 @@ When refilling the account balance using the saved payment method with the 3DS, 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.2">
         Back to the top
     </a>
 </div>
 
 ## API Changes
 
-Below, you can find a list of all changes to the public API in the 8.2.2 platform version (compared to the preceding [8.0.2](http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2#api-changes) ones):
+Below, you can find a list of all changes to the public API in the 8.2.2 platform version (compared to the preceding [8.0.2](/docs/platform-overview/release-notes/release-notes-8.2#api-changes) ones):
 
-Added a new **[Billing > Subscriptions](https://docs.jelastic.com/api/#!/api/billing.Subscription)** service with API methods to support the [subscriptions](http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2#subscription-based-solutions) feature
+Added a new **[Billing > Subscriptions](https://docs.jelastic.com/api/#!/api/billing.Subscription)** service with API methods to support the [subscriptions](/docs/platform-overview/release-notes/release-notes-8.2#subscription-based-solutions) feature
 
-[More info](http://localhost:3000/docs/deployment-tools/api-&-cli/api-methods)
+[More info](/docs/deployment-tools/api-&-cli/api-methods)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.2">
         Back to the top
     </a>
 </div>
@@ -396,7 +396,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.2">
         Back to the top
     </a>
 </div>
@@ -414,7 +414,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.2">
         Back to the top
     </a>
 </div>
@@ -533,7 +533,7 @@ In the table below, you can see the list of bug fixes applied to the platform st
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.2">
         Back to the top
     </a>
 </div>

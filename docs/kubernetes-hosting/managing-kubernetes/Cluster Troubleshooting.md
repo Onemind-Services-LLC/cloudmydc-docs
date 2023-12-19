@@ -8,9 +8,9 @@ sidebar_position: 3
 
 The **Kubernetes Cluster** package is an extremely complicated product, which includes multiple steps required to set up the solution. Herewith, each action can fail due to various reasons, which should be analyzed to prevent problem occurrence in the future. Below, we’ll overview the main troubleshooting steps during the different stages and for multiple log files:
 
-- [K8s Installation](/docs/Kubernetes%20Hosting/Managing%20Kubernetes/Cluster%20Troubleshooting#k8s-installation)
-- [Events Tracking](/docs/Kubernetes%20Hosting/Managing%20Kubernetes/Cluster%20Troubleshooting#events-tracking)
-- [Pod Logs](/docs/Kubernetes%20Hosting/Managing%20Kubernetes/Cluster%20Troubleshooting#pod-logs)
+- [K8s Installation](/docs/kubernetes-hosting/managing-kubernetes/cluster-troubleshooting#k8s-installation)
+- [Events Tracking](/docs/kubernetes-hosting/managing-kubernetes/cluster-troubleshooting#events-tracking)
+- [Pod Logs](/docs/kubernetes-hosting/managing-kubernetes/cluster-troubleshooting#pod-logs)
 
 ## K8s Installation
 

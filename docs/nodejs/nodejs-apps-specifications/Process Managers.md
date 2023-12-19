@@ -43,7 +43,7 @@ The platform provides four pre-configured process managers by default, which can
 
 </div>
 
-- by editing the **_PROCESS_MANAGER_** Docker environment [variable](http://localhost:3000/docs/container/container-configuration/variables) in the already created container(s) with the _forever_, _npm_, _pm2_ or _supervisor_ value (restart is needed to apply the new options)
+- by editing the **_PROCESS_MANAGER_** Docker environment [variable](/docs/container/container-configuration/variables) in the already created container(s) with the _forever_, _npm_, _pm2_ or _supervisor_ value (restart is needed to apply the new options)
 
 <div style={{
     display:'flex',
@@ -64,7 +64,7 @@ Below, we’ll consider each of the available managers to help you select one:
 
 ## Process Manager (npm)
 
-Alongside [package management](/docs/Nodejs/Nodejs%20Apps%20Specifications/Package%20Managers#nodejs-package-managers), the NPM provides the ability to start the application. The “n*pm start*” (which is the “_npm run start_” alias) is performed if **NPM** is chosen as a value for the **_PROCESS_MANAGER_** variable on the NodeJS container. As a result, the script defined in _“start”_ of **_package.json_** is launched.
+Alongside [package management](/docs/nodejs/nodejs-apps-specifications/process-managers#nodejs-package-managers), the NPM provides the ability to start the application. The “n*pm start*” (which is the “_npm run start_” alias) is performed if **NPM** is chosen as a value for the **_PROCESS_MANAGER_** variable on the NodeJS container. As a result, the script defined in _“start”_ of **_package.json_** is launched.
 
 Refer to the [official documentation](https://docs.npmjs.com/cli/v8/commands/npm-run-script) for additional information.
 
@@ -110,9 +110,9 @@ Also, PM2 provides users the ability to create the configuration files where all
 
 :::tip Note
 
-By default, the supervisor process manager monitors file changes in the application directory and, if any, automatically restarts NodeJS. Herewith, during the VCS deployment (including [auto-deploy](http://localhost:3000/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview#auto-deploy-of-gitsvn-updates)), your application server will be restarted even if there are no project changes (due to modification of the **.git** folder).
+By default, the supervisor process manager monitors file changes in the application directory and, if any, automatically restarts NodeJS. Herewith, during the VCS deployment (including [auto-deploy](/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview#auto-deploy-of-gitsvn-updates)), your application server will be restarted even if there are no project changes (due to modification of the **.git** folder).
 
-To avoid the unnecessary restarts, you can disable file changes monitoring by adding the -i parameter into the **_PROCESS_MANAGER_OPTS_** [variable](http://localhost:3000/docs/environment-management/environment-variables/environment-variables).
+To avoid the unnecessary restarts, you can disable file changes monitoring by adding the -i parameter into the **_PROCESS_MANAGER_OPTS_** [variable](/docs/environment-management/environment-variables/environment-variables).
 
 <div style={{
     display:'flex',
@@ -180,6 +180,6 @@ where:
 
 - **uid** - sets unique name for your app
 - **append** - selects if logs should be supplemented (_true_) or overwritten (_false_)
-- **watch** - allows enabling or disabling automatic restart of a child process upon the appropriate application code changes; set to _“false”_, if you want to avoid unexpected restart after deployment from VCS (including [auto-deploy](http://localhost:3000/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview#auto-deploy-of-gitsvn-updates/))
+- **watch** - allows enabling or disabling automatic restart of a child process upon the appropriate application code changes; set to _“false”_, if you want to avoid unexpected restart after deployment from VCS (including [auto-deploy](/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview#auto-deploy-of-gitsvn-updates/))
 - **script** - defines a name of the executable **_.js_** file
 - **sourceDir** - provides an absolute path to the specified script

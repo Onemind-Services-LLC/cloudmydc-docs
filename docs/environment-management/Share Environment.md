@@ -9,7 +9,7 @@ sidebar_position: 3
 Check a quick summary of the feature for better understanding:
 
 - environment _owner_ has complete control over the environment
-- collaborators can only perform actions allowed by the owner (through the assigned [roles](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Roles%20Policies))
+- collaborators can only perform actions allowed by the owner (through the assigned [roles](/docs/account-and-pricing/accounts-collaboration/collaboration-roles-policies))
 - only the _owner_ is charged for the shared environment
 
 In order to share an environment, select it and go to the **Settings > Collaboration** tab. Here, you can see a list of all existing collaborators (if any) that have access to the current environment.
@@ -55,7 +55,7 @@ When accessing this tab as a collaborator, you can only check your own role for 
 
 </div>
 
-- **Access Level** - shows the highest access level for the current environment. Hover over for more details. Information on the [access level algorithm](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Roles%20Policies#roles-assigning-algorithm) can be found upon hovering over the column header.
+- **Access Level** - shows the highest access level for the current environment. Hover over for more details. Information on the [access level algorithm](/docs/account-and-pricing/accounts-collaboration/collaboration-roles-policies#roles-assigning-algorithm) can be found upon hovering over the column header.
 
 <div style={{
     display:'flex',
@@ -86,7 +86,7 @@ When accessing this tab as a collaborator, you can only check your own role for 
 
 :::tip Tip
 
-When inviting a new member, the flow is similar to the one described in the **[Create Collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Create%20Collaboration)** guide. The user receives an invitation email and can accept or reject it.
+When inviting a new member, the flow is similar to the one described in the **[Create Collaboration](/docs/account-and-pricing/accounts-collaboration/create-collaboration)** guide. The user receives an invitation email and can accept or reject it.
 
 <div style={{
     display:'flex',

@@ -10,7 +10,7 @@ CloudMyDc Application Platform for WordPress provides a fully automated backup s
 
 :::tip Tip
 
-Refer to the linked section if you are interested in the [backup process flow and specifics](/docs/Wordpress%20as%20a%20Service/WordPress%20Backups#backup-process-specifics).
+Refer to the linked section if you are interested in the [backup process flow and specifics](/docs/wordpress-as-a-service/wordpress-backups#backup-process-specifics).
 
 :::
 

@@ -4,8 +4,6 @@ slug: remote-access-via-webdav
 sidebar_position: 8
 ---
 
-!Context code missing
-
 ## Remote Access to Your Files via WebDAV
 
 While setting up a website you can face the need to build some complicated method of viewing and updating the information on the site. **Web-based Distributed Authoring and Versioning (WebDAV)** is a set of extensions to HTTP that allows clients to perform remote web authoring operations. Some of these extensions overwrite protection by locking, name-space management and properties (metadata) are fully implemented. Other offered extensions include version management, advanced collections and access control with HTTP Digest Authentication. XML is used to encode method parameters and responses.

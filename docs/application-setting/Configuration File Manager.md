@@ -28,18 +28,18 @@ Herein the following sections are available:
 
 - **Root** (File Manager) - gives you an access to the container’s local filesystem, where you can manage different settings within configuration files of your app
 - **Mount Points** - list of folders, that are physically stored on the remote node but can be used at a current node (learn how you can [mount data](/docs/data-storage-container/data-sharing/mount-points) at the platform)
-- **Exports** - list of folders, which are shared with other nodes, i.e. these files are stored locally, but are also available at the remote instances (find out more at the dedicated [storage exports](/docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing) documentation page)
+- **Exports** - list of folders, which are shared with other nodes, i.e. these files are stored locally, but are also available at the remote instances (find out more at the dedicated [storage exports](/docs/data-storage-container/data-sharing/exporting-data-for-sharing) documentation page)
 - **Favorites** - files and folders you’ve marked as favorites so that you have a quick and simple access to them
   Further down this guide, we’ll consider the basics of configuration manager usage, that are applicable for any platform container. However, if you require to find out the configuration specifics for a particular node type, select one of the following docs:
 
 - [Docker Container Configuration](/docs/container/container-configuration/configuration-tools)
-- [Java Application Server Configuration](/docs/Java/Java%20App%20Server%20Configuration)
-- [PHP Application Server Configuration](/docs/PHP/PHP%20App%20Server%20Configuration)
-- [Ruby Application Server Configuration](/docs/Ruby/Ruby%20App%20Server%20Configuration)
-- [Database Configuration](/docs/Database/Database%20Hosting/Database%20Configuration%20Files)
-- [NGINX Balancer Configuration](/docs/Load%20Balancers/NGINX/NGINX%20Balancer%20Configuration)
-- [Memcached Configuration](/docs/Memcached/Memcached%20Configuration)
-- [Maven Configuration](/docs/Java/Build%20Node/Maven%20Configuration)
+- [Java Application Server Configuration](/docs/java/java-app-server-configuration)
+- [PHP Application Server Configuration](/docs/php/php-app-server-configuration)
+- [Ruby Application Server Configuration](/docs/ruby/ruby-app-server-configuration)
+- [Database Configuration](/docs/database/database-hosting/database-configuration-files)
+- [NGINX Balancer Configuration](/docs/load-balancers/nginx/nginx-balancer-configuration)
+- [Memcached Configuration](/docs/memcached/memcached-configuration)
+- [Maven Configuration](/docs/java/build-node/maven-configuration)
 
 ## Working with File Manager
 
@@ -47,7 +47,7 @@ The platform in-build file manager gives an easy and convenient access to your c
 
 :::tip
 
-You can also connect to a container via [SSH](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) in order to get even more possibilities for its management.
+You can also connect to a container via [SSH](/docs/deployment-tools/ssh/ssh-access/overview) in order to get even more possibilities for its management.
 
 :::
 

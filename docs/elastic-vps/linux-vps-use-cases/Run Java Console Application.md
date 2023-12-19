@@ -6,16 +6,16 @@ sidebar_position: 1
 
 ## Java Console Application with CentOS VPS
 
-In the current tutorial we’ll overview how to install a sample of Java console application to your [СentOS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/CentOS%20VPS) virtual private server and check its operability. For that, you’ll need to execute the following operations:
+In the current tutorial we’ll overview how to install a sample of Java console application to your [СentOS](/docs/elastic-vps/elastic-vps-overview/centos-vps) virtual private server and check its operability. For that, you’ll need to execute the following operations:
 
-- [install Java](/docs/Elastic%20VPS/Linux%20VPS%20Use%20Cases/Run%20Java%20Console%20Application#install-java-to-vps)
-- [upload application](/docs/Elastic%20VPS/Linux%20VPS%20Use%20Cases/Run%20Java%20Console%20Application#upload-application-to-vps)
-- [access application via SSH](/docs/Elastic%20VPS/Linux%20VPS%20Use%20Cases/Run%20Java%20Console%20Application#a%D1%81%D1%81ess-application-via-ssh)
-- [check app operability](/docs/Elastic%20VPS/Linux%20VPS%20Use%20Cases/Run%20Java%20Console%20Application#check-application-operability)
+- [install Java](/docs/elastic-vps/linux-vps-use-cases/run-java-console-application#install-java-to-vps)
+- [upload application](/docs/elastic-vps/linux-vps-use-cases/run-java-console-application#upload-application-to-vps)
+- [access application via SSH](/docs/elastic-vps/linux-vps-use-cases/run-java-console-application#a%D1%81%D1%81ess-application-via-ssh)
+- [check app operability](/docs/elastic-vps/linux-vps-use-cases/run-java-console-application#check-application-operability)
 
 ## Install Java to VPS
 
-In order to install Java to your VPS container, carry out the next steps, while being connected over SSH protocol by means of [SSH Gate](/docs/Elastic%20VPS/Elastic%20VPS%20Management/Linux%20VPS%20Access%20via%20SSH%20Gate) or [public IP](/docs/Elastic%20VPS/Elastic%20VPS%20Management/Linux%20VPS%20Access%20via%20Public%20IP).
+In order to install Java to your VPS container, carry out the next steps, while being connected over SSH protocol by means of [SSH Gate](/docs/elastic-vps/elastic-vps-management/linux-vps-access-via-ssh-gate) or [public IP](/docs/elastic-vps/elastic-vps-management/linux-vps-access-via-public-ip).
 
 1. Enter the following command to initiate Java package download.
 
@@ -156,7 +156,7 @@ Within the appeared transfer settings dialog, click **Copy** to start uploading.
 
 ## Aссess Application via SSH
 
-Access your VPS container via [SSH protocol](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) to locate the recently uploaded application.
+Access your VPS container via [SSH protocol](/docs/deployment-tools/ssh/ssh-access/overview) to locate the recently uploaded application.
 
 1. Move to the directory you’ve created in the previous section and inspect its content to ensure application archive is present.
 

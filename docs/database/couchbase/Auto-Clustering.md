@@ -43,7 +43,7 @@ The [Couchbase Cluster](https://github.com/jelastic-jps/couchbase?utm_source=blo
 
 </div>
 
-Within the package, each Couchbase container is assigned 16 dynamic cloudlets as a space of resources for [vertical scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling#automatic-vertical-scaling), with maximum capacities in 2 GiB of RAM and 6.4 GHz of CPU (if necessary, this limit can be subsequently adjusted by following the above-linked guide). And with automatically provisioned [Jelastic SSL](http://localhost:3000/docs/application-setting/ssl/built-in-ssl#built-in-ssl-certificates) certificate, you get the out-of-box ability to access your Couchbase cluster via secured HTTPS connection.
+Within the package, each Couchbase container is assigned 16 dynamic cloudlets as a space of resources for [vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling#automatic-vertical-scaling), with maximum capacities in 2 GiB of RAM and 6.4 GHz of CPU (if necessary, this limit can be subsequently adjusted by following the above-linked guide). And with automatically provisioned [Jelastic SSL](/docs/application-setting/ssl/built-in-ssl#built-in-ssl-certificates) certificate, you get the out-of-box ability to access your Couchbase cluster via secured HTTPS connection.
 
 As for the memory allocation parameters, they are set as following for each node in a cluster by default:
 
@@ -57,7 +57,7 @@ The Couchbase cluster is to be expanded/shrunk with **automatic horizontal scali
 
 - +1 node (up to 10 instances per layer) if either RAM or CPU usage exceeds 70% of the allocated capacity for at least 5 minutes
 - -1 node (but not less than a number of containers you’ve stated initially, i.e. during package installation) whenever RAM or CPU usage drops under 40% of a set limit and remains in this range for at least 5 minutes
-  The appropriate modifications are automatically applied to add/remove Couchbase nodes, whilst you receive the corresponding email notification upon each executed scaling operation. If necessary, these default auto-scaling trigger settings could be subsequently changed by following the [Automatic Horizontal Scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling#automatic-horizontal-scaling) guide.
+  The appropriate modifications are automatically applied to add/remove Couchbase nodes, whilst you receive the corresponding email notification upon each executed scaling operation. If necessary, these default auto-scaling trigger settings could be subsequently changed by following the [Automatic Horizontal Scaling](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling#automatic-horizontal-scaling) guide.
 
 Each time a cluster is scaled in or out, the process of **rebalancing** takes place. It represents an automated operation of data redistribution across available nodes in a cluster. During this operation, a cluster remains fully workable and continues to serve and handle client requests.
 
@@ -103,7 +103,7 @@ Within the **Apps** section, use the search box to find the Auto Scalable Couchb
 
 </div>
 
-Also, select a preferable hardware _[Region](http://localhost:3000/docs/environment-management/environment-regions/choosing-a-region#environment-regions)_ (if several ones are available) and click **Install**. 3. Once cluster deployment is completed, you’ll be provided with credentials for its administrating in the appeared pop-up and, at the same time, via dedicated email notification.
+Also, select a preferable hardware _[Region](/docs/environment-management/environment-regions/choosing-a-region#environment-regions)_ (if several ones are available) and click **Install**. 3. Once cluster deployment is completed, you’ll be provided with credentials for its administrating in the appeared pop-up and, at the same time, via dedicated email notification.
 
 <div style={{
     display:'flex',

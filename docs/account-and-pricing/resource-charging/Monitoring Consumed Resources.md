@@ -6,9 +6,9 @@ sidebar_position: 3
 
 Keeping an eye on the amount of resources your application consumes allows you to plan your budget and control an expenditure of funds. Below, we will describe how it is implemented in the platform:
 
-- [Estimated Environment Cost](/docs/Account&Pricing/Resource%20Charging/Monitoring%20Consumed%20Resources#estimated-environment-cost)
-- [Current Resource Usage](/docs/Account&Pricing/Resource%20Charging/Monitoring%20Consumed%20Resources#current-resource-usage)
-- [Statistic of Consumption](/docs/Account&Pricing/Resource%20Charging/Monitoring%20Consumed%20Resources#statistics-of-consumption)
+- [Estimated Environment Cost](/docs/account-and-pricing/resource-charging/monitoring-consumed-resources#estimated-environment-cost)
+- [Current Resource Usage](/docs/account-and-pricing/resource-charging/monitoring-consumed-resources#current-resource-usage)
+- [Statistic of Consumption](/docs/account-and-pricing/resource-charging/monitoring-consumed-resources#statistics-of-consumption)
 - [Billing History](/docs/account-and-pricing/resource-charging/monitoring-consumed-resources#billing-history)
 
 ## Estimated Environment Cost

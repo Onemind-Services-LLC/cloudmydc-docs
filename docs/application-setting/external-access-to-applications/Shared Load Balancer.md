@@ -62,7 +62,7 @@ In such a way, all containers are considered “up” after SLB starts. Then the
 
 :::tip
 
-If an environment has several backends (application servers), the [dedicated load balancer nodes](/docs/Load%20Balancers/Load%20Balancing) are automatically added to manage traffic and perform health checks.
+If an environment has several backends (application servers), the [dedicated load balancer nodes](/docs/load-balancers/load-balancing) are automatically added to manage traffic and perform health checks.
 
 :::
 

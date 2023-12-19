@@ -4,7 +4,7 @@ slug: linux-vps-access-via-public-ip
 sidebar_position: 3
 ---
 
-It is possible to access your VPS container using any preferred third-party SSH software via the attached external IP address. Such connection provides the same full root access level as while working over [SSH Gate](/docs/Elastic%20VPS/Elastic%20VPS%20Management/Linux%20VPS%20Access%20via%20SSH%20Gate).
+It is possible to access your VPS container using any preferred third-party SSH software via the attached external IP address. Such connection provides the same full root access level as while working over [SSH Gate](/docs/elastic-vps/elastic-vps-management/linux-vps-access-via-ssh-gate).
 
 :::tip Tip
 
@@ -24,12 +24,12 @@ You can locate your Public IP by expanding the appropriate node in the platform 
 
 Below, we’ve prepared examples of connection to Elastic VPS container over public IP from under different operating systems:
 
-- [MacOS/Linux/BSD](/docs/Elastic%20VPS/Elastic%20VPS%20Management/Linux%20VPS%20Access%20via%20Public%20IP#public-ip-access-for-macoslinuxbsd)
-- [Windows](/docs/Elastic%20VPS/Elastic%20VPS%20Management/Linux%20VPS%20Access%20via%20Public%20IP#public-ip-access-for-windows)
+- [MacOS/Linux/BSD](/docs/elastic-vps/elastic-vps-management/linux-vps-access-via-public-ip#public-ip-access-for-macoslinuxbsd)
+- [Windows](/docs/elastic-vps/elastic-vps-management/linux-vps-access-via-public-ip#public-ip-access-for-windows)
 
 :::tip Tip
 
-In confines of the [Windows-based](/docs/Windows&.NET/Windows%20Server%20VM) VPS containers, the [remote desktop protocol](/docs/windows-and-.NET/windows-rd-access) (RDP) is used to perform any required server configurations.
+In confines of the [Windows-based](/docs/windows-and-.NET/windows-server-vm) VPS containers, the [remote desktop protocol](/docs/windows-and-.NET/windows-rd-access) (RDP) is used to perform any required server configurations.
 
 :::
 

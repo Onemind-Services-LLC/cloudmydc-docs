@@ -8,7 +8,7 @@ sidebar_position: 1
 
 CloudMyDc Application Platform for WordPress is a DevOps platform dedicated to WordPress hosting specifically. It offers a number of prepackaged topologies of varying complexity (from single-container solutions to clusters and synchronized multi-region instances), which covers all the range of use cases (from small testing installation to the enterprise-level clusters).
 
-Below, you can find a list of all the standard [WordPress topologies](/docs/Wordpress%20as%20a%20Service/WordPress%20Topologies) available on the platform:
+Below, you can find a list of all the standard [WordPress topologies](/docs/wordpress-as-a-service/wordpress-topologies) available on the platform:
 
 - **Standalone** - a single-container solution with NGINX
 - **Standalone Pro** - a single-container solution with LiteSpeed
@@ -39,7 +39,7 @@ The list of topologies, service plans, and specifics may vary for different plat
 CloudMyDc Application Platform for WordPress provides numerous features that can significantly enhance your WordPress development and hosting experience:
 
 - **automatic WordPress** instance installation with multiple preconfigured topologies
-- **[robust dashboard](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Dashboard%20Overview)** with numerous features you may like (built-in file manager, real-time statistics monitoring, etc.)
-- automated **[backup and restore](/docs/Wordpress%20as%20a%20Service/WordPress%20Backups)** processes
+- **[robust dashboard](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview)** with numerous features you may like (built-in file manager, real-time statistics monitoring, etc.)
+- automated **[backup and restore](/docs/wordpress-as-a-service/wordpress-backups)** processes
 - the **subscription-based** pricing model
 - powerful API for automation and scripting

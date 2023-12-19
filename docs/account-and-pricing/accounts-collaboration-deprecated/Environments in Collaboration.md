@@ -24,9 +24,9 @@ A member of collaboration with the user account can:
 
 And now, let’s see how to perform all of these actions within collaboration:
 
-- [Create environment](/docs/Account&Pricing/Accounts%20CollaborationD/Environments%20in%20Collaboration#create-a-new-environment-in-collaboration)
-- [Share environment](/docs/Account&Pricing/Accounts%20CollaborationD/Environments%20in%20Collaboration#share-environment-with-collaboration-users)
-- [Use shared environment](/docs/Account&Pricing/Accounts%20CollaborationD/Environments%20in%20Collaboration#use-shared-environments)
+- [Create environment](/docs/account-and-pricing/accounts-collaboration-deprecated/environments-in-collaboration#create-a-new-environment-in-collaboration)
+- [Share environment](/docs/account-and-pricing/accounts-collaboration-deprecated/environments-in-collaboration#share-environment-with-collaboration-users)
+- [Use shared environment](/docs/account-and-pricing/accounts-collaboration-deprecated/environments-in-collaboration#use-shared-environments)
 
 ## Create a New Environment in Collaboration
 

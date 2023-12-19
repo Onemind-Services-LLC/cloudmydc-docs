@@ -8,7 +8,7 @@ sidebar_position: 7
 
 **Java Engine** software stack is an image of a base CentOS template with the preinstalled JDK. It provides a bare minimum required for Java application hosting, while ensuring compatibility with all of the [platform features](https://cloudmydc.com/) (e.g. automated vertical and horizontal scaling, public IP, isolation groups, firewall rules, API and SSH access, etc.).
 
-Java Engine is designed for the deployment and hosting of Java applications based on the fat _JAR / uber JAR_ (i.e. executable JAR with all the classes, resources, and dependencies). It utilized the [Java Memory Agent](http://localhost:3000/docs/environment-management/environment-variables/custom-environment-variables) to automatically optimize your application by tuning configs according to the load and available resources.
+Java Engine is designed for the deployment and hosting of Java applications based on the fat _JAR / uber JAR_ (i.e. executable JAR with all the classes, resources, and dependencies). It utilized the [Java Memory Agent](/docs/environment-management/environment-variables/custom-environment-variables) to automatically optimize your application by tuning configs according to the load and available resources.
 
 :::tip Note
 

@@ -8,9 +8,9 @@ sidebar_position: 2
 
 Follow the instruction below to learn how to connect your PHP application, hosted within the platform, to the PostgreSQL database server:
 
-- [create environment](/docs/Database/PostgreSQL/Connection%20to%20Applications/PHP%20Connection%20to%20PostgreSQL#create-environment)
-- [configure PHP server](/docs/Database/PostgreSQL/Connection%20to%20Applications/PHP%20Connection%20to%20PostgreSQL#configure-database-connection)
-- [check connection](/docs/Database/PostgreSQL/Connection%20to%20Applications/PHP%20Connection%20to%20PostgreSQL#connection-check-up)
+- [create environment](/docs/database/postgresql/connection-to-applications/php-connection-to-postgresql#create-environment)
+- [configure PHP server](/docs/database/postgresql/connection-to-applications/php-connection-to-postgresql#configure-database-connection)
+- [check connection](/docs/database/postgresql/connection-to-applications/php-connection-to-postgresql#connection-check-up)
 
 ## Create Environment
 

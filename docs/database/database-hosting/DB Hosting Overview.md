@@ -45,7 +45,7 @@ The list of available [database servers](/docs/quickstart/software-stack-version
 
 When the corresponding database server is created, you’ll receive an email notification with credentials (access URL, login and password) to the database administration panel.
 
-3. To launch your database admin panel, click the **Open in Browser** button next to the target database node at the dashboard (or compose the admin panel URL [manually](/docs/Database/Database%20Hosting/DB%20Hosting%20Overview#database-admin-panel-url)).
+3. To launch your database admin panel, click the **Open in Browser** button next to the target database node at the dashboard (or compose the admin panel URL [manually](/docs/database/database-hosting/db-hosting-overview#database-admin-panel-url)).
 
 <div style={{
     display:'flex',
@@ -61,11 +61,11 @@ In the opened page, use credentials from the email to log in and start applying 
 
 :::tip Tip
 
-For containers without [Public IP](http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip#public-ip) address attached, the database admin console is available via https:// by default.
+For containers without [Public IP](/docs/application-setting/external-access-to-applications/public-ip#public-ip) address attached, the database admin console is available via https:// by default.
 
 :::
 
-When your database server is up and ready, you can [Connect your application to DB](/docs/Database/Database%20Hosting/Database%20Connection%20Strings#database-connection-strings).
+When your database server is up and ready, you can [Connect your application to DB](/docs/database/database-hosting/database-connection-strings#database-connection-strings).
 
 ## Database Password Reset
 
@@ -108,7 +108,7 @@ where
 
 :::tip Note
 
-In case your hosting provider platform has several [environment regions](http://localhost:3000/docs/environment-management/environment-regions/choosing-a-region#environment-regions) to choose, the _{hoster_domain}_ value for your environment can differ from the general platform’s one.
+In case your hosting provider platform has several [environment regions](/docs/environment-management/environment-regions/choosing-a-region#environment-regions) to choose, the _{hoster_domain}_ value for your environment can differ from the general platform’s one.
 
 :::
 

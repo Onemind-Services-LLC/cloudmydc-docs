@@ -6,10 +6,10 @@ sidebar_position: 3
 
 The platform supports various ways of the applications automatic deployment, allowing to choose the most suitable option, which will suit your specific needs:
 
-- **Dashboard** - corresponds to [deployment via archive](http://localhost:3000/docs/deployment/deployment-guide#archive-deployment-configurations) (provided either as local file or URL)
-- **VCS** - allows to [deploy from your VCS](http://localhost:3000/docs/deployment/deployment-guide#git--svn-deployment-configurations) repository (e.g. Git, SVN, Bitbucket)
-- **Hub Registry** - creates a custom container with your application based on the Docker image stored at your _[public](http://localhost:3000/docs/container/container-deployment/custom-containers-deployment)_ or _private_ registry
-- **Plugins** - deploys a project using one of the popular software development tools (_[Ant Task](/docs/Deployment%20Tools/Plugins/Ant%20Task)_, _[Eclipse](/docs/Deployment%20Tools/Plugins/Eclipse%20Plugin/Eclipse%20Plugin%20Manual)_, _[Intellij IDEA](/docs/Deployment%20Tools/Plugins/IDEA%20Plugin)_, _[Maven](/docs/Deployment%20Tools/Plugins/Maven%20Plugin)_ or _[NetBeans](/docs/Deployment%20Tools/Plugins/NetBeans%20Plugin/NetBeans%20Plugin%20Overview)_), which provides integration with platform
+- **Dashboard** - corresponds to [deployment via archive](/docs/deployment/deployment-guide#archive-deployment-configurations) (provided either as local file or URL)
+- **VCS** - allows to [deploy from your VCS](/docs/deployment/deployment-guide#git--svn-deployment-configurations) repository (e.g. Git, SVN, Bitbucket)
+- **Hub Registry** - creates a custom container with your application based on the Docker image stored at your _[public](/docs/container/container-deployment/custom-containers-deployment)_ or _private_ registry
+- **Plugins** - deploys a project using one of the popular software development tools (_[Ant Task](/docs/deployment-tools/plugins/ant-task)_, _[Eclipse](/docs/deployment-tools/plugins/eclipse-plugin/eclipse-plugin-manual)_, _[Intellij IDEA](/docs/deployment-tools/plugins/idea-plugin)_, _[Maven](/docs/deployment-tools/plugins/maven-plugin)_ or _[NetBeans](/docs/deployment-tools/plugins/netbeans-plugin/netbeans-plugin-overview)_), which provides integration with platform
 
 <div style={{
     display:'flex',
@@ -51,9 +51,9 @@ Below, we’ve provided a detailed description for all the possible options with
 - **Local file** (or **URL**) - points to the archive file to be deployed (is automatically selected, when installing from Deployment Manager)
 - **Environment** - selects a target environment with the application server (is automatically selected, when installing from application server)
 - **Path** - sets the desired custom context; herewith, the available options may be limited due to the used programming language specifics (e.g. Python and Node.js have a single predefined deployment path only)
-- **Hooks** - applies the provided [scripts](http://localhost:3000/docs/deployment/deployment-hooks) either before or after deployment process
-- **Deploy Strategy** (for deployments into [scaled server](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling)) - allows to choose between relatively quicker Simultaneous deployment variant, which causes a brief downtime, and the Sequential deployment with delay option to perform deployment on servers one-by-one with a set delay between operations, which ensures application uptime
-- **Enable zero-downtime deployment** (for PHP servers only) - adjusts (if option is ticked) the deployment flow to [avoid application downtime](/docs/PHP/ZDT%20Deployment%20for%20PHP)
+- **Hooks** - applies the provided [scripts](/docs/deployment/deployment-hooks) either before or after deployment process
+- **Deploy Strategy** (for deployments into [scaled server](/docs/application-setting/scaling-and-clustering/horizontal-scaling)) - allows to choose between relatively quicker Simultaneous deployment variant, which causes a brief downtime, and the Sequential deployment with delay option to perform deployment on servers one-by-one with a set delay between operations, which ensures application uptime
+- **Enable zero-downtime deployment** (for PHP servers only) - adjusts (if option is ticked) the deployment flow to [avoid application downtime](/docs/php/zdt-deployment-for-php)
 
 <div style={{
     display:'flex',
@@ -78,11 +78,11 @@ Below, we’ve provided a detailed description for all the possible options with
 - **Environment** - selects a target environment with the application server (is automatically selected, when installing from application server)
 - **Path** - sets the desired custom context; herewith, the available options may be limited due to the used programming language specifics (e.g. Python and Node.js have a single predefined deployment path only)
 - **Build** (for Java application deployments) - allows to choose the existing [Maven build node](/docs/java/build-node/java-vcs-deployment-with-maven) (or add one into the target environment) and, if required, to select repository Working Directory
-- **Hooks** - applies the provided [scripts](http://localhost:3000/docs/deployment/deployment-hooks) either before or after deployment process
-- **Deploy Strategy** (for deployments into [scaled server](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling)) - allows to choose between relatively quicker Simultaneous deployment variant, which causes a brief downtime, and the Sequential deployment with delay option to perform deployment on servers one-by-one with a set delay between operations, which ensures application uptime
-- **Check and auto-deploy updates** - enables periodical check ups for code changes in your repository (with configurable frequency); if any, project [automatic deployment](http://localhost:3000/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview) is initiated
+- **Hooks** - applies the provided [scripts](/docs/deployment/deployment-hooks) either before or after deployment process
+- **Deploy Strategy** (for deployments into [scaled server](/docs/application-setting/scaling-and-clustering/horizontal-scaling)) - allows to choose between relatively quicker Simultaneous deployment variant, which causes a brief downtime, and the Sequential deployment with delay option to perform deployment on servers one-by-one with a set delay between operations, which ensures application uptime
+- **Check and auto-deploy updates** - enables periodical check ups for code changes in your repository (with configurable frequency); if any, project [automatic deployment](/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview) is initiated
 - **Auto-resolve conflicts** - prevents the occurrence of merge conflicts by updating the contradictory files to the repository version (i.e. locally made changes are discarded)
-- **Enable zero-downtime deployment** (for PHP servers only) - adjusts the deployment flow to [avoid application downtime](/docs/PHP/ZDT%20Deployment%20for%20PHP)
+- **Enable zero-downtime deployment** (for PHP servers only) - adjusts the deployment flow to [avoid application downtime](/docs/php/zdt-deployment-for-php)
 
 <div style={{
     display:'flex',
@@ -96,7 +96,7 @@ Below, we’ve provided a detailed description for all the possible options with
 
 Click **Deploy** to initiate the process.
 
-In a few minutes your application will be successfully deployed. Now, you can access it with the **Open in Browser** button, analyzed via [Logs](/docs/application-setting/built-in-monitoring/log-files) or managed with [file manager](/docs/application-setting/configuration-file-manager) / via [SSH access](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview).
+In a few minutes your application will be successfully deployed. Now, you can access it with the **Open in Browser** button, analyzed via [Logs](/docs/application-setting/built-in-monitoring/log-files) or managed with [file manager](/docs/application-setting/configuration-file-manager) / via [SSH access](/docs/deployment-tools/ssh/ssh-access/overview).
 
 ## Editing Git / SVN Projects
 

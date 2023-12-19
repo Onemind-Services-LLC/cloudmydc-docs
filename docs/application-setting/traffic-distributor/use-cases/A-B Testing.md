@@ -6,9 +6,9 @@ sidebar_position: 3
 
 ## A/B Testing with TD
 
-Each commercial web-site or application has the embedded options of product purchase, sign up, conversion to paid version, subscription, etc. The amount of such actions, initiated by end-users (which, if being measured in percents, is called [_conversion rate_](https://en.wikipedia.org/wiki/Conversion_marketing#Conversion_rate)), is highly dependent on app’s visual appeal, advertising texts and other marketing ploys used. Comparison of different application versions, aimed to designate which app version is better in confines of user’s conversion rate, is named [A/B testing](http://localhost:3000/docs/application-setting/traffic-distributor/use-cases/a-b-testing). Such procedure can help you to find out the best combination of attractions and other product characteristics, that will allow to receive the highest revenue.
+Each commercial web-site or application has the embedded options of product purchase, sign up, conversion to paid version, subscription, etc. The amount of such actions, initiated by end-users (which, if being measured in percents, is called [_conversion rate_](https://en.wikipedia.org/wiki/Conversion_marketing#Conversion_rate)), is highly dependent on app’s visual appeal, advertising texts and other marketing ploys used. Comparison of different application versions, aimed to designate which app version is better in confines of user’s conversion rate, is named [A/B testing](/docs/application-setting/traffic-distributor/use-cases/a-b-testing). Such procedure can help you to find out the best combination of attractions and other product characteristics, that will allow to receive the highest revenue.
 
-With the help of [Traffic Distributor](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-overview), you can easily apply such kind of testing to your projects - find the details below.
+With the help of [Traffic Distributor](/docs/application-setting/traffic-distributor/traffic-distributor-overview), you can easily apply such kind of testing to your projects - find the details below.
 
 1. To perform A/B testing, you’ll need two different application examples to analyze, and any preferable type of monitoring to track the desired actions' calling (e.g. when a user clicks on the required button).
 
@@ -18,7 +18,7 @@ You can use any tool that allows to compare conversion rates, from a simple piec
 
 :::
 
-2. Next, [install](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-installation) your Traffic Distributor or just [configure](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-installation#traffic-distributor-reconfiguration) it correspondingly (if having one already created):
+2. Next, [install](/docs/application-setting/traffic-distributor/traffic-distributor-installation) your Traffic Distributor or just [configure](/docs/application-setting/traffic-distributor/traffic-distributor-installation#traffic-distributor-reconfiguration) it correspondingly (if having one already created):
 
 <div style={{
     display:'flex',
@@ -37,8 +37,8 @@ The obligatory points here are:
 
 :::danger Notes
 
-- DO NOT use [Round Robin](http://localhost:3000/docs/application-setting/traffic-distributor/routing-methods/round-robin) routing for A/B testing, as this procedure assumes provision of different content on your backends, so some project elements may not be available on a particular server upon the request.
-- In case you have the already-run production project, learn how to smartly [inject Traffic Distributor](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-integrate) in front of it without interrupting application normal work.
+- DO NOT use [Round Robin](/docs/application-setting/traffic-distributor/routing-methods/round-robin) routing for A/B testing, as this procedure assumes provision of different content on your backends, so some project elements may not be available on a particular server upon the request.
+- In case you have the already-run production project, learn how to smartly [inject Traffic Distributor](/docs/application-setting/traffic-distributor/traffic-distributor-integrate) in front of it without interrupting application normal work.
 
 :::
 
@@ -48,6 +48,6 @@ The obligatory points here are:
 
 :::tip Tip
 
-After you’ve revealed which app version is better, consider to follow the [Inject Traffic Distributor](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-integrate) guide to start using it in a bundle with Traffic Distributor for achieving high availability and [failover protection](http://localhost:3000/docs/application-setting/traffic-distributor/use-cases/failover-protection).
+After you’ve revealed which app version is better, consider to follow the [Inject Traffic Distributor](/docs/application-setting/traffic-distributor/traffic-distributor-integrate) guide to start using it in a bundle with Traffic Distributor for achieving high availability and [failover protection](/docs/application-setting/traffic-distributor/use-cases/failover-protection).
 
 :::

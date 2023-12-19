@@ -12,7 +12,7 @@ For the Windows VPS management, utilize the [remote desktop protocol](/docs/wind
 
 :::
 
-The process of [SSH access](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) to the Elastic VPS nodes is the same as for any other container on the platform but provides full root access.
+The process of [SSH access](/docs/deployment-tools/ssh/ssh-access/overview) to the Elastic VPS nodes is the same as for any other container on the platform but provides full root access.
 
 - [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh)
 
@@ -36,7 +36,7 @@ An SSH connection to VPS from the console on your local machine. Access is based
 
 If you haven’t established a connection via SSH Gate before, you’ll need to perform the following steps beforehand:
 
-- [generate](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key) an SSH key pair
+- [generate](/docs/deployment-tools/ssh/generate-ssh-key) an SSH key pair
 - [add your public SSH key](/docs/deployment-tools/ssh/add-ssh-key) to the dashboard
 
 <div style={{
@@ -49,4 +49,4 @@ If you haven’t established a connection via SSH Gate before, you’ll need to 
 
 </div>
 
-In case you prefer to operate your VPS container with the help of external SSH tools, consider establishing [access via Public IP](/docs/Elastic%20VPS/Elastic%20VPS%20Management/Linux%20VPS%20Access%20via%20Public%20IP) address. Regardless of the chosen approach, the provided functionality and management capabilities are the same.
+In case you prefer to operate your VPS container with the help of external SSH tools, consider establishing [access via Public IP](/docs/elastic-vps/elastic-vps-management/linux-vps-access-via-public-ip) address. Regardless of the chosen approach, the provided functionality and management capabilities are the same.

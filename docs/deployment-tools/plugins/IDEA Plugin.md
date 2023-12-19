@@ -41,11 +41,11 @@ IntelliJ IDEA has a robust ecosystem with lots of available plugins, including t
 
 To explore the topic in more details, read the guide below where we’ll describe the platform integration with IntelliJ IDEA through the following steps:
 
-- [Install Plugin](/docs/Deployment%20Tools/Plugins/IDEA%20Plugin#install-intellij-idea-plugin)
-- [Access PaaS from IDEA](/docs/Deployment%20Tools/Plugins/IDEA%20Plugin#access-platform-from-idea)
-- [Deploy Application to PaaS](/docs/Deployment%20Tools/Plugins/IDEA%20Plugin#deploy-application-to-the-cloud)
-- [Work with Environments and Log Files](/docs/Deployment%20Tools/Plugins/IDEA%20Plugin#work-with-environments-and-view-log-files)
-- [Create Web Project](/docs/Deployment%20Tools/Plugins/IDEA%20Plugin#create-web-project-in-idea)
+- [Install Plugin](/docs/deployment-tools/plugins/idea-plugin#install-intellij-idea-plugin)
+- [Access PaaS from IDEA](/docs/deployment-tools/plugins/idea-plugin#access-platform-from-idea)
+- [Deploy Application to PaaS](/docs/deployment-tools/plugins/idea-plugin#deploy-application-to-the-cloud)
+- [Work with Environments and Log Files](/docs/deployment-tools/plugins/idea-plugin#work-with-environments-and-view-log-files)
+- [Create Web Project](/docs/deployment-tools/plugins/idea-plugin#create-web-project-in-idea)
 
 ## Install IntelliJ IDEA Plugin
 
@@ -195,7 +195,7 @@ To view the existing artifacts for your project, navigate to **File > Project st
 
 </div>
 
-At this point, the artifacts are built and ready for deployment that you can run as described in the [previous section](/docs/Deployment%20Tools/Plugins/IDEA%20Plugin#deploy-application-to-the-cloud).
+At this point, the artifacts are built and ready for deployment that you can run as described in the [previous section](/docs/deployment-tools/plugins/idea-plugin#deploy-application-to-the-cloud).
 
 <div style={{
     display:'flex',

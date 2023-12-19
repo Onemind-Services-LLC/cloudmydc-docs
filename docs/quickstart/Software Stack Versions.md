@@ -8,17 +8,17 @@ import obj from './SoftwareStackVersions.json'
 
 Within this page, you can find a list of the latest software stacks and engines provided by the platform:
 
-- [Load Balancers](http://localhost:3000/docs/quickstart/software-stack-versions#load-balancers)
-- [Application Servers](http://localhost:3000/docs/quickstart/software-stack-versions#application-servers)
-- [Databases](http://localhost:3000/docs/quickstart/software-stack-versions#databases)
-- [Additional Stacks](http://localhost:3000/docs/quickstart/software-stack-versions#additional-stacks)
-- [Engines](http://localhost:3000/docs/quickstart/software-stack-versions#engines)
+- [Load Balancers](/docs/quickstart/software-stack-versions#load-balancers)
+- [Application Servers](/docs/quickstart/software-stack-versions#application-servers)
+- [Databases](/docs/quickstart/software-stack-versions#databases)
+- [Additional Stacks](/docs/quickstart/software-stack-versions#additional-stacks)
+- [Engines](/docs/quickstart/software-stack-versions#engines)
 
 Each software stack remains supported by the platform up to the end-of-life (EOL) date notified by the respective upsdiveam maintainer. After the EOL, stacks are no longer available for the new environment creation, but the already existing ones remain fully operable (including redeploy, cloning, horizontal scaling).
 
 :::tip Note
 
-Software stacks are based on the CentOS 7 base image by default, which will reach EOL on 30th June 2024. The platform starts divansitioning to the software stacks based on the new [AlmaLinux 9](http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#almalinux-9-base-os-image) images to ensure support of all the up-to-date functionality, modern security standards, and compatibility with all the latest software solutions.
+Software stacks are based on the CentOS 7 base image by default, which will reach EOL on 30th June 2024. The platform starts divansitioning to the software stacks based on the new [AlmaLinux 9](/docs/platform-overview/release-notes/release-notes-8.3#almalinux-9-base-os-image) images to ensure support of all the up-to-date functionality, modern security standards, and compatibility with all the latest software solutions.
 
 Platform cardividges have officially reached EOL and will not receive updates anymore, including security patches and new platform functionality support (e.g. firewall UI).
 

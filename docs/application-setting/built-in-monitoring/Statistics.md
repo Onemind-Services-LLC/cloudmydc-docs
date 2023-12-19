@@ -29,7 +29,7 @@ In the opened tab you’ll find the statistics on all the types of consumed reso
 - **Network** - internal and external traffic (in _MB_)
 - **Disk** - stored data amount (in _MB_) and I/O operations amount (in _IOPS_)
 
-The _RAM_ and _CPU_ limits depend on the number of [cloudlets](http://localhost:3000/docs/platform-overview/cloudlet). The Disk can be set within the allowed range, while _Network_ and _IOPS limits_ are defined by your hosting provider. Also, be aware that _Network_ is limited not by the total usage but by the amount of external traffic per second (_Mbps_).
+The _RAM_ and _CPU_ limits depend on the number of [cloudlets](/docs/platform-overview/cloudlet). The Disk can be set within the allowed range, while _Network_ and _IOPS limits_ are defined by your hosting provider. Also, be aware that _Network_ is limited not by the total usage but by the amount of external traffic per second (_Mbps_).
 
 You can further analyze the presented statistics by varying the _Interval_ and _Duration_ settings and enabling/disabling the particular sections at the top tools panel:
 
@@ -54,7 +54,7 @@ The platform collects statistics every minute and stores it for an hour to imple
 
 Using the statistics data you can easily track the resources consumption of your application (hover over for the details on a particular time frame), thus analyze and predict your future spends and, as a result, be able to choose the best way to manage your environment. For even more convenience, you can configure the set of [load alerts](/docs/application-setting/built-in-monitoring/load-alerts) to be notified about the consumption level growth or wane to the specified percentage via email. This can greatly help you to save your money!
 
-See the linked document to get additional information on [resources charging](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ).
+See the linked document to get additional information on [resources charging](/docs/account-and-pricing/resource-charging/pricing-faq).
 
 And below we’ll consider the specifics of I/O usage tracking in more details.
 

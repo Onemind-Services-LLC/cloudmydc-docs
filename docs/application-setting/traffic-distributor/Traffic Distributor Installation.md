@@ -6,11 +6,11 @@ sidebar_position: 3
 
 ## Traffic Distributor Installation
 
-The process of [Traffic Distributor](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-overview) installation is fairly simple with the PaaS - being specially packed for the [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace), it can be created in a few clicks and start working in just a matter of minutes. Herewith, the configurability of the solution is great, so let’s walk through the installation steps below to learn about all of the available functionality and hidden nuances.
+The process of [Traffic Distributor](/docs/application-setting/traffic-distributor/traffic-distributor-overview) installation is fairly simple with the PaaS - being specially packed for the [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace), it can be created in a few clicks and start working in just a matter of minutes. Herewith, the configurability of the solution is great, so let’s walk through the installation steps below to learn about all of the available functionality and hidden nuances.
 
 :::tip Note
 
-The described flow is suitable for the installation from scratch, i.e. in case you want to route traffic for the new environments. In order to be applied to the already running and loaded applications in production, follow the [Inject Traffic Distributor into Running Project](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-integrate) guide.
+The described flow is suitable for the installation from scratch, i.e. in case you want to route traffic for the new environments. In order to be applied to the already running and loaded applications in production, follow the [Inject Traffic Distributor into Running Project](/docs/application-setting/traffic-distributor/traffic-distributor-integrate) guide.
 
 :::
 
@@ -74,7 +74,7 @@ The following data should be specified:
 
 - **_Entrypoint_** - switcher with either Shared Load Balancer or Public IP position
 - **_Balancers_** - the number of the NGINX instances that will be added to the Traffic Distributor topology
-- **_Routing Method_** - select from the three available [types of traffic distribution](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-overview#routing-methods): _Round Robin, Sticky Sessions_, and _Failover_
+- **_Routing Method_** - select from the three available [types of traffic distribution](/docs/application-setting/traffic-distributor/traffic-distributor-overview#routing-methods): _Round Robin, Sticky Sessions_, and _Failover_
 - **_Traffic Ratio_** - set backend’s weight (priority) to control the distribution of the requests
 - **_HTTPS_** - enable this option if backends are serving traffic via HTTPS
 - **_Backends_** - select two environments to be balanced, either from the automatically fetched list of available ones from your account or type in the required IP address/domain name (for a custom host)
@@ -95,7 +95,7 @@ In this case, you need to set custom port redirects for your backends. For that,
 
 </div>
 
-Here, you need to add the required internal containers' port number to the appropriate backend IP addresses and, additionally, define it within the [health check](http://localhost:3000/docs/application-setting/traffic-distributor/use-cases/failover-protection) parameters.
+Here, you need to add the required internal containers' port number to the appropriate backend IP addresses and, additionally, define it within the [health check](/docs/application-setting/traffic-distributor/use-cases/failover-protection) parameters.
 
 :::
 
@@ -125,10 +125,10 @@ As Traffic Distributor loading depends only on the number of incoming requests, 
 
 Using the links at the end of the frame, you can learn how to:
 
-- apply [Blue-Green Deploy](http://localhost:3000/docs/application-setting/traffic-distributor/use-cases/blue-green-deploy)
-- adopt [failover protection](http://localhost:3000/docs/application-setting/traffic-distributor/use-cases/failover-protection)
-- perform [A/B testing](http://localhost:3000/docs/application-setting/traffic-distributor/use-cases/a-b-testing)
-- [Inject Distributor](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-integrate) into running project
+- apply [Blue-Green Deploy](/docs/application-setting/traffic-distributor/use-cases/blue-green-deploy)
+- adopt [failover protection](/docs/application-setting/traffic-distributor/use-cases/failover-protection)
+- perform [A/B testing](/docs/application-setting/traffic-distributor/use-cases/a-b-testing)
+- [Inject Distributor](/docs/application-setting/traffic-distributor/traffic-distributor-integrate) into running project
 - bind [Custom Domain](/docs/application-setting/domain-name-management/custom-domain-name)
 - enable [Custom SSL](/docs/application-setting/ssl/custom-ssl)
 
@@ -182,7 +182,7 @@ Options available for configuration are:
 
 - **_Entrypoint_** - switcher with either Shared Load Balancer or Public IP position
 - **_Balancers_** - the number of the NGINX instances that you would like to have in the Traffic Distributor topology
-- **_Routing Method_** - select from the three available [types of traffic distribution](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-overview): _Round Robin, Sticky_ _Sessions_, and _Failover_
+- **_Routing Method_** - select from the three available [types of traffic distribution](/docs/application-setting/traffic-distributor/traffic-distributor-overview): _Round Robin, Sticky_ _Sessions_, and _Failover_
 - **_Traffic Ratio_** - set backends' weight (priority) to control the distribution of the requests
 - **_HTTPS_** - enable this option if backends are serving traffic via HTTPS
 - **_Backends_** - select two environments to be balanced, either from the automatically fetched list of available ones from your account or type in the required IP address/domain name (for a custom host)

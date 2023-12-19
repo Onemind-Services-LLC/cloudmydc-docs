@@ -52,7 +52,7 @@ For your exported environment to work correctly, it should be migrated to the Pa
 
 </div>
 
-- **JPS** - the built-in editor to either insert and edit code or to compose your own solution from scratch (refer to the [JPS deployment and troubleshooting](http://localhost:3000/docs/environment-management/environment-export-and-import/environment-import#jps-deployment--troubleshooting) section below for more information)
+- **JPS** - the built-in editor to either insert and edit code or to compose your own solution from scratch (refer to the [JPS deployment and troubleshooting](/docs/environment-management/environment-export-and-import/environment-import#jps-deployment--troubleshooting) section below for more information)
 
 <div style={{
     display:'flex',
@@ -130,7 +130,7 @@ That’s all! This way, you can automatically install any required solution to t
 
 ## JPS Deployment & Troubleshooting
 
-The **Import > JPS** option is most frequently used by developers who create [JPS packages](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview) (e.g. for automation of the common tasks or implementation of complex CI/CD flows). Also, it is an excellent tool for the quick tuning and testing of the packages.
+The **Import > JPS** option is most frequently used by developers who create [JPS packages](/docs/deployment-tools/cloud-scripting-&-jps/jps-overview) (e.g. for automation of the common tasks or implementation of complex CI/CD flows). Also, it is an excellent tool for the quick tuning and testing of the packages.
 
 1. Once added into this editor, your code will be automatically parsed for errors. If detected, they will be marked with the red cross icon before the corresponding line (hover over for some additional information on the issue). Besides, your code is safely retained in your browser’s local storage, so you can freely close the whole Import frame (e.g. to perform some other operations at the dashboard) and return to coding later on.
 

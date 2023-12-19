@@ -20,10 +20,10 @@ The first step of any application hosting is a creation of the [environment](/do
 
 2. Within the opened **_topology wizard_** dialog, you can set up all the necessary customizations. We recommend performing adjustments in the following order:
 
-- [choose programming language](http://localhost:3000/docs/environment-management/setting-up-environment#choosing-programming-language-or-specific-deployment-option) or specialized deployment solution (Docker Engine or Kubernetes Cluster)
-- [set up topology](http://localhost:3000/docs/environment-management/setting-up-environment#configuring-topology) by adding required software stacks
-- [configure nodes](http://localhost:3000/docs/environment-management/setting-up-environment#configuring-nodes-resources-and-specifics) resources and specifics
-  review estimations, name the environment and [confirm the creation](http://localhost:3000/docs/environment-management/setting-up-environment#reviewing-and-confirming-environment-creation)
+- [choose programming language](/docs/environment-management/setting-up-environment#choosing-programming-language-or-specific-deployment-option) or specialized deployment solution (Docker Engine or Kubernetes Cluster)
+- [set up topology](/docs/environment-management/setting-up-environment#configuring-topology) by adding required software stacks
+- [configure nodes](/docs/environment-management/setting-up-environment#configuring-nodes-resources-and-specifics) resources and specifics
+  review estimations, name the environment and [confirm the creation](/docs/environment-management/setting-up-environment#reviewing-and-confirming-environment-creation)
 
 ![Locale Dropdown](./img/SettingUpEnvironment/02-configure-environment-via-wizard.png)
 
@@ -39,15 +39,15 @@ As the first step of your environment creation, you need to select the deploymen
 
 Click on the tab with the required programming language (Java, PHP, Ruby, .NET, Node.js, or Python) tab to proceed with the platform certified containers.
 
-2. The other deployment options are available via the Custom tab. All the variants listed below utilize the basic platform’s [system container](http://localhost:3000/docs/platform-overview/system-container) (so-called OS container), which makes them compatible with the most (but not all) of the platform-distinguishing features (e.g. vertical and horizontal scaling).
+2. The other deployment options are available via the Custom tab. All the variants listed below utilize the basic platform’s [system container](/docs/platform-overview/system-container) (so-called OS container), which makes them compatible with the most (but not all) of the platform-distinguishing features (e.g. vertical and horizontal scaling).
 
 ![Locale Dropdown](./img/SettingUpEnvironment/04-topology-wizard-docker-tab.png)
 
-- **Custom Container Images** - any Docker image (based on the [supported OS](http://localhost:3000/docs/container/container-image-requirements)) deployed into the system container. Compared to the **managed containers**, this option provides access to a greater variety of solutions, search the entire Docker Hub registry or use your private repository. However, the software operability and compatibility with the platform cannot be guaranteed as the content is managed by respective image maintainers. It’s recommended to build custom container images based on [platform certified images](https://hub.docker.com/u/jelastic) using [FROM instruction](https://docs.docker.com/engine/reference/builder/#from).
+- **Custom Container Images** - any Docker image (based on the [supported OS](/docs/container/container-image-requirements)) deployed into the system container. Compared to the **managed containers**, this option provides access to a greater variety of solutions, search the entire Docker Hub registry or use your private repository. However, the software operability and compatibility with the platform cannot be guaranteed as the content is managed by respective image maintainers. It’s recommended to build custom container images based on [platform certified images](https://hub.docker.com/u/jelastic) using [FROM instruction](https://docs.docker.com/engine/reference/builder/#from).
 
-- **Docker Engine** - a Docker Engine CE deployed into the system container. It provides access to all the Docker native functionality, including deployment, scaling, and management of multiple [application containers](http://localhost:3000/docs/platform-overview/application-container) inside.
+- **Docker Engine** - a Docker Engine CE deployed into the system container. It provides access to all the Docker native functionality, including deployment, scaling, and management of multiple [application containers](/docs/platform-overview/application-container) inside.
 
-- **Kubernetes Cluster** - ready-to-go _[Kubernetes cluster](/docs/Kubernetes%20Hosting/Kubernetes%20Cluster/Kubernetes%20Overview)_ with a preconfigured control plane and worker nodes created based on the system containers. The deployment, scaling, and orchestration of the microservices inside are handled by Kubernetes control units, while the platform scales and manages control plane and worker nodes.
+- **Kubernetes Cluster** - ready-to-go _[Kubernetes cluster](/docs/kubernetes-hosting/kubernetes-cluster/kubernetes-overview)_ with a preconfigured control plane and worker nodes created based on the system containers. The deployment, scaling, and orchestration of the microservices inside are handled by Kubernetes control units, while the platform scales and manages control plane and worker nodes.
 
 3. Also, it is recommended to select the preferred [region](/docs/environment-management/environment-regions/choosing-a-region) (if available) before proceeding further.
 
@@ -65,12 +65,12 @@ Click on the tab with the required programming language (Java, PHP, Ruby, .NET, 
 
 You can configure environment topology ([layers](/docs/platform-overview/basics-&-terminology#layer) structure) via the left part of the wizard. Сonsider it as a constructor that helps you to create your environment. Here, the following blocks are available:
 
-- **[Load Balancers](/docs/Load%20Balancers/Load%20Balancing)** - stacks that operate as an entry point for the environment to distribute incoming request and create even load on other nodes
-- **[Application Servers](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat%20Server)** (compute nodes) - web servers that run your application
-- **[Databases](/docs/Database/Database%20Hosting/DB%20Hosting%20Overview)** (SQL & NoSQL) - database solutions to store and manage data
-- **[Cache Node](/docs/Memcached/Memcached%20System)** - a Memcached object caching system for speeding up web applications through alleviating database load
-- **[Shared Storage](/docs/Data%20Storage%20Container/Shared%20Storage%20Container)** - dedicated storage node with NFSv4 support, enlarged disk space and optimized performance
-- **[Elastic VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information)** - virtual private servers on top of the CentOS, Ubuntu, Debian, and Windows OS
+- **[Load Balancers](/docs/load-balancers/load-balancing)** - stacks that operate as an entry point for the environment to distribute incoming request and create even load on other nodes
+- **[Application Servers](/docs/java/java-app-servers/tomcat-and-tomee/tomcat-server)** (compute nodes) - web servers that run your application
+- **[Databases](/docs/database/database-hosting/db-hosting-overview)** (SQL & NoSQL) - database solutions to store and manage data
+- **[Cache Node](/docs/memcached/memcached-system)** - a Memcached object caching system for speeding up web applications through alleviating database load
+- **[Shared Storage](/docs/data-storage-container/shared-storage-container)** - dedicated storage node with NFSv4 support, enlarged disk space and optimized performance
+- **[Elastic VPS](/docs/elastic-vps/elastic-vps-overview/general-information)** - virtual private servers on top of the CentOS, Ubuntu, Debian, and Windows OS
 - **[Build Node](/docs/java/build-node/java-vcs-deployment-with-maven)** - a build automation tool for Java projects
 - **Extra** (custom layers) - any of the stacks mentioned above
 
@@ -114,13 +114,13 @@ The sequence of blocks displayed above is the default order. However, you can mi
 
 :::tip Tip
 
-If you cannot find a required software solution, you can add it as a [custom container](http://localhost:3000/docs/container/container-deployment/custom-containers-deployment) from Docker Hub or your private repository.
+If you cannot find a required software solution, you can add it as a [custom container](/docs/container/container-deployment/custom-containers-deployment) from Docker Hub or your private repository.
 
 :::
 
 2. An **SSL** protection can be configured for your environment via the same-named section. Here, two options are available:
 
-- **[Built-In SSL](http://localhost:3000/docs/application-setting/ssl/built-in-ssl)** - enables an already trusted SSL certificate, avoiding any additional checks and saving your time on the certificate validation. However, it is applied to the default environment domain name only (i.e. with the hoster’s domain at the end) and does not work if [public IP](/docs/application-setting/external-access-to-applications/public-ip) is attached to your servers.
+- **[Built-In SSL](/docs/application-setting/ssl/built-in-ssl)** - enables an already trusted SSL certificate, avoiding any additional checks and saving your time on the certificate validation. However, it is applied to the default environment domain name only (i.e. with the hoster’s domain at the end) and does not work if [public IP](/docs/application-setting/external-access-to-applications/public-ip) is attached to your servers.
 
 - **[Custom SSL](/docs/application-setting/ssl/custom-ssl)** - shows the pre-conditions of using your custom SSL certificates for the environment. Click the **Enable** button to automatically fulfill the requirements (e.g. enable Public IP) and refer to the linked instruction for further guidance.
 
@@ -155,7 +155,7 @@ Once you are done with the topology structure, you can adjust each particular la
 
 </div>
 
-2. Configure the [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) by setting the number of reserved and dynamic [cloudlets](http://localhost:3000/docs/platform-overview/cloudlet) (1 cloudlet = **128 MiB** of RAM and **400 MHz** of CPU) for the nodes within the layer.
+2. Configure the [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) by setting the number of reserved and dynamic [cloudlets](/docs/platform-overview/cloudlet) (1 cloudlet = **128 MiB** of RAM and **400 MHz** of CPU) for the nodes within the layer.
 
 <div style={{
     display:'flex',
@@ -169,7 +169,7 @@ Once you are done with the topology structure, you can adjust each particular la
 
 Think of it as a minimum and maximum CPU & RAM capacities per server. It is worth mentioning that no matter how high the scaling limit is, only actually consumed resources are charged. This helps to overcome load spikes and, at the same time, not to overpay for unused memory or processor.
 
-3. The [Horizontal Scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) part allows defining a number of nodes within the layer and choosing a preferred scaling mode (stateful or stateless).
+3. The [Horizontal Scaling](/docs/application-setting/scaling-and-clustering/horizontal-scaling) part allows defining a number of nodes within the layer and choosing a preferred scaling mode (stateful or stateless).
 
 <div style={{
     display:'flex',
@@ -185,7 +185,7 @@ You can use the drop-down lists to change stack and engine type/versions (if nee
 
 :::tip Tip
 
-Click on the gear icon (circled in the image below) for additional [management options](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling#managing-nodes-within-layer) during scaling.
+Click on the gear icon (circled in the image below) for additional [management options](/docs/application-setting/scaling-and-clustering/horizontal-scaling#managing-nodes-within-layer) during scaling.
 
 <div style={{
     display:'flex',
@@ -213,20 +213,20 @@ Click on the gear icon (circled in the image below) for additional [management o
 
 The list may vary depending on the particular stack and account permissions:
 
-- **[Auto-Clustering](http://localhost:3000/docs/application-setting/scaling-and-clustering/auto-clustering-of-instances)** - automatic clusterization for some platform certified templates. Additional fields can appear after activation, e.g. scheme selection (_master-slave, master-master, or galera_) for the database cluster.
-- **Disk Limit** - an amount of disk space reserved per node. The dedicated [Shared Storage](/docs/Data%20Storage%20Container/Shared%20Storage%20Container) containers are usually provided with enlarged storage capacity.
+- **[Auto-Clustering](/docs/application-setting/scaling-and-clustering/auto-clustering-of-instances)** - automatic clusterization for some platform certified templates. Additional fields can appear after activation, e.g. scheme selection (_master-slave, master-master, or galera_) for the database cluster.
+- **Disk Limit** - an amount of disk space reserved per node. The dedicated [Shared Storage](/docs/data-storage-container/shared-storage-container) containers are usually provided with enlarged storage capacity.
 - **Sequential restart delay** - a delay between the restart operation completion on one node and start on the other. It is used to avoid downtime, ensuring that at least one server is active. You can set it to “-1” for the simultaneous restart of all nodes within the layer.
-- **[High-Availability](http://localhost:3000/docs/application-setting/scaling-and-clustering/session-replication-for-ha)** (deprecated option, it is recommended redeploying to the latest version of the stack and using the Auto-Clustering feature instead) - automated session replication for the Tomcat and TomEE application servers
-- **[Access via SLB](http://localhost:3000/docs/application-setting/external-access-to-applications/shared-load-balancer)**- blocks access to the nodes of the layer via the platform Shared Load Balancer
+- **[High-Availability](/docs/application-setting/scaling-and-clustering/session-replication-for-ha)** (deprecated option, it is recommended redeploying to the latest version of the stack and using the Auto-Clustering feature instead) - automated session replication for the Tomcat and TomEE application servers
+- **[Access via SLB](/docs/application-setting/external-access-to-applications/shared-load-balancer)**- blocks access to the nodes of the layer via the platform Shared Load Balancer
 - **[Public IPv4/IPv6](/docs/application-setting/external-access-to-applications/public-ip)** - attach the specified number of external IP addresses to each node within the layer
 
 5. At the bottom of the section, you can find buttons to the container configuration tools:
 
-- **[Variables](http://localhost:3000/docs/container/container-configuration/variables)** - review and manage a list of the [environment variables](http://localhost:3000/docs/container/container-configuration/variables) for the current layer
-- **[Links](http://localhost:3000/docs/container/container-configuration/links)** - interconnect layers inside the environment
-- **[Volumes](http://localhost:3000/docs/container/container-configuration/volumes)** - manage a list of the data volumes to ensure files integrity during container lifecycle
-- **[Ports](http://localhost:3000/docs/container/container-configuration/ports)** - view information about containers' ports
-- **[CMD / Entry Point](http://localhost:3000/docs/container/container-configuration/run-configuration)** - configure containers' Entry Point and Run Command
+- **[Variables](/docs/container/container-configuration/variables)** - review and manage a list of the [environment variables](/docs/container/container-configuration/variables) for the current layer
+- **[Links](/docs/container/container-configuration/links)** - interconnect layers inside the environment
+- **[Volumes](/docs/container/container-configuration/volumes)** - manage a list of the data volumes to ensure files integrity during container lifecycle
+- **[Ports](/docs/container/container-configuration/ports)** - view information about containers' ports
+- **[CMD / Entry Point](/docs/container/container-configuration/run-configuration)** - configure containers' Entry Point and Run Command
 
 <div style={{
     display:'flex',
@@ -242,7 +242,7 @@ The list may vary depending on the particular stack and account permissions:
 
 After all the configurations are done, you can review the amount of allocated resources and the estimated cost of the environment.
 
-1. The main resource measuring units in the platform are [cloudlets](http://localhost:3000/docs/platform-overview/cloudlet). Here, you can see the number of reserved ones and the scaling limit (dynamic) for the whole environment.
+1. The main resource measuring units in the platform are [cloudlets](/docs/platform-overview/cloudlet). Here, you can see the number of reserved ones and the scaling limit (dynamic) for the whole environment.
 
 <div style={{
     display:'flex',
@@ -290,7 +290,7 @@ Hover over the pricing widget to view extended details on the estimated cost cal
 
 :::
 
-If needed, you can click on the links under the widget for additional information on [how pricing works](/docs/account-and-pricing/pricing-model-overview) and [what is charged at the platform](/docs/Account&Pricing/Resource%20Charging/Charged%20Resources).
+If needed, you can click on the links under the widget for additional information on [how pricing works](/docs/account-and-pricing/pricing-model-overview) and [what is charged at the platform](/docs/account-and-pricing/resource-charging/charged-resources).
 
 3. Lastly, provide a name for your environment and click the **Create** button to proceed.
 

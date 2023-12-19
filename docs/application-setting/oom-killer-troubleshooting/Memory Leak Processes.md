@@ -10,10 +10,10 @@ import obj from './MemoryLeakProcesses.json'
 
 Pay special attention to the processes in this group as to the most probable cause of your out-of-memory issues (sorted based on server role):
 
-- [Load Balancers](http://localhost:3000/docs/application-setting/oom-killer-troubleshooting/memory-leak-processes#load-balancers)
-- [Application Servers](http://localhost:3000/docs/application-setting/oom-killer-troubleshooting/memory-leak-processes#application-servers)
-- [Database Servers](http://localhost:3000/docs/application-setting/oom-killer-troubleshooting/memory-leak-processes#database-servers)
-- [Common Processes for Different-Type Stacks](http://localhost:3000/docs/application-setting/oom-killer-troubleshooting/memory-leak-processes#common-processes-for-different-type-stacks)
+- [Load Balancers](/docs/application-setting/oom-killer-troubleshooting/memory-leak-processes#load-balancers)
+- [Application Servers](/docs/application-setting/oom-killer-troubleshooting/memory-leak-processes#application-servers)
+- [Database Servers](/docs/application-setting/oom-killer-troubleshooting/memory-leak-processes#database-servers)
+- [Common Processes for Different-Type Stacks](/docs/application-setting/oom-killer-troubleshooting/memory-leak-processes#common-processes-for-different-type-stacks)
 
 ## Load Balancers
 

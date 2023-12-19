@@ -29,7 +29,6 @@ With Jelastic’s Kubernetes automation you can improve DevOps productivity and 
 </div>
 </div>
 
-
 ## Kubernetes Cluster Versioning
 
 Before taking the decision regarding the upgrade, you can check a current version of your cluster using one of the following options:
@@ -59,7 +58,7 @@ Before taking the decision regarding the upgrade, you can check a current versio
 
 </div>
 
-Then compare the current cluster version with available auto-upgrade packages which are presented in the [Jelastic Kubernetes versions page](/docs/Kubernetes%20Hosting/Kubernetes%20Cluster/Cluster%20Versions#k8s-package-change-log).
+Then compare the current cluster version with available auto-upgrade packages which are presented in the [Jelastic Kubernetes versions page](/docs/kubernetes-hosting/kubernetes-cluster/cluster-versions#k8s-package-change-log).
 
 <div style={{
     display:'flex',

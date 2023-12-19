@@ -21,7 +21,7 @@ Beside that, you have an ability to mount and manage your custom volumes, placed
 
 1. Select the **Add** button above the list to see four tabs, named in accordance to the types of volumes you are able to create:
 
-- **[Local Filesystem](/docs/Data%20Storage%20Container/Use%20Cases/Local%20Filesystem)** - the specified directory will be used as a local storage, intended to persist the data independently of the current container lifecycle (as well as by any other node)
+- **[Local Filesystem](/docs/data-storage-container/use-cases/local-filesystem)** - the specified directory will be used as a local storage, intended to persist the data independently of the current container lifecycle (as well as by any other node)
 
 <div style={{
     display:'flex',
@@ -45,7 +45,7 @@ Beside that, you have an ability to mount and manage your custom volumes, placed
 
 </div>
 
-- **[Master Container](/docs/Data%20Storage%20Container/Use%20Cases/Master%20Container)** - data, stored within such volume, is physically placed at the initially created node of the layer (so-called “master node”) and is automatically shared with all of the rest instances within this layer.
+- **[Master Container](/docs/data-storage-container/use-cases/master-container)** - data, stored within such volume, is physically placed at the initially created node of the layer (so-called “master node”) and is automatically shared with all of the rest instances within this layer.
 
 <div style={{
     display:'flex',
@@ -57,7 +57,7 @@ Beside that, you have an ability to mount and manage your custom volumes, placed
 
 </div>
 
-- **[External Server](/docs/Data%20Storage%20Container/Use%20Cases/External%20Server)** - this option is intended to mount data from the external NFS server (either your custom third-party storage or [container at another platform](/docs/Data%20Storage%20Container/External%20NFS%20Server%20Configuration))
+- **[External Server](/docs/data-storage-container/use-cases/external-server)** - this option is intended to mount data from the external NFS server (either your custom third-party storage or [container at another platform](/docs/data-storage-container/external-nfs-server-configuration))
 
 <div style={{
     display:'flex',

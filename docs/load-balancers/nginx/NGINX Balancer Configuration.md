@@ -33,7 +33,7 @@ For performing necessary configurations for NGINX balancer the **_nginx.conf_** 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
 Back to the list
     </a>
 </div>
@@ -56,7 +56,7 @@ With access to NGINX configs you can not only edit the existing files but also u
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
 Back to the list
     </a>
 </div>
@@ -65,9 +65,9 @@ Back to the list
 
 The **tcpmaps** folder contains the **_mappings.xml_** file where you can set the redirection of the TCP balancing ports. There you need to specify the pair of ports: one to listen to and the other to redirect to.
 
-You can find more information in the [NGINX Load Balancing](/docs/Load%20Balancers/NGINX/NGINX%20Balancer/) and [TCP Load Balancing](/docs/Load%20Balancers/NGINX/TCP%20Load%20Balancing) documents.
+You can find more information in the [NGINX Load Balancing](/docs/load-balancers/nginx/nginx-balancer/) and [TCP Load Balancing](/docs/load-balancers/nginx/tcp-load-balancing) documents.
 
-To set [caching in NGINX](/docs/Load%20Balancers/NGINX/Caching%20in%20NGINX%20Balancer) click on the link and follow the instruction.
+To set [caching in NGINX](/docs/load-balancers/nginx/caching-in-nginx-balancer) click on the link and follow the instruction.
 
 <div style={{
     display:'flex',
@@ -84,7 +84,7 @@ To set [caching in NGINX](/docs/Load%20Balancers/NGINX/Caching%20in%20NGINX%20Ba
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
 Back to the list
     </a>
 </div>

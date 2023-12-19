@@ -30,13 +30,13 @@ The **Endpoints** feature at the platform refers to the possibility of TCP/UDP p
 
 </div>
 </div>
-This is achieved through providing the ability to establish the direct connection (over either raw TCP or UDP protocol) to the corresponding node, without the mandatory <a href="http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip">public IP</a> address attached.
+This is achieved through providing the ability to establish the direct connection (over either raw TCP or UDP protocol) to the corresponding node, without the mandatory <a href="/docs/application-setting/external-access-to-applications/public-ip">public IP</a> address attached.
 
 Such linking can be used to enable a great variety of different tasks, like remote database management, direct apps' [deployment from IDE](/docs/windows-and-.NET/dot-net-core) (for _IIS_), running multiple project copies on a single instance, accessing a server’s admin panel with no external address bound, etc.
 
 :::tip
 
-Beside the increased convenience, with endpoints you can cut your spends for the External IP usage, which, otherwise, would be required for such operations. Obviously, endpoints can’t completely replace them, but may become useful in some elementary jobs, and being combined with other platform features (like automatic [vertical](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) and [horizontal](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) scaling, [discounts tiers](/docs/Account&Pricing/Automatic%20Discounts), etc.) such an approach can help you to significantly save your money.
+Beside the increased convenience, with endpoints you can cut your spends for the External IP usage, which, otherwise, would be required for such operations. Obviously, endpoints can’t completely replace them, but may become useful in some elementary jobs, and being combined with other platform features (like automatic [vertical](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) and [horizontal](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) scaling, [discounts tiers](/docs/account-and-pricing/automatic-discounts), etc.) such an approach can help you to significantly save your money.
 
 :::
 
@@ -58,8 +58,8 @@ The list of endpoints can be accessed via the environment **Settings** menu, tha
 
 Within the opened tab, switch to the **Endpoints** menu item. Now you can start working with your mapping’s list:
 
-- [add new endpoint](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#adding-endpoints)
-- [edit/remove the existing endpoint](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#editremove-endpoint)
+- [add new endpoint](/docs/application-setting/external-access-to-applications/endpoints#adding-endpoints)
+- [edit/remove the existing endpoint](/docs/application-setting/external-access-to-applications/endpoints#editremove-endpoint)
 
 ## Adding Endpoints
 
@@ -255,7 +255,7 @@ Here you’ll find the **Public port** and **Access URL** actual values already 
 
 :::tip Note
 
-that for linking functionality to work properly with the [VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information) and [Docker®](http://localhost:3000/docs/container/container-deployment/custom-containers-deployment) containers, the corresponding private ports (stated during the endpoint addition) at these nodes should be opened by the owner manually.
+that for linking functionality to work properly with the [VPS](/docs/elastic-vps/elastic-vps-overview/general-information) and [Docker®](/docs/container/container-deployment/custom-containers-deployment) containers, the corresponding private ports (stated during the endpoint addition) at these nodes should be opened by the owner manually.
 
 :::
 
@@ -321,12 +321,12 @@ As an example, we will use an environment with the **Apache** application server
 
 Now, let’s learn how to use endpoints for:
 
-- [establishing remote access to your database](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#database-management)
-- [running multiple project copies on a single app server](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#multiple-development-stages-at-a-single-app-server)
+- [establishing remote access to your database](/docs/application-setting/external-access-to-applications/endpoints#database-management)
+- [running multiple project copies on a single app server](/docs/application-setting/external-access-to-applications/endpoints#multiple-development-stages-at-a-single-app-server)
 
 ## Database Management
 
-With endpoints, gaining remote access to your DB instance becomes pretty easy, as using this feature eliminates the necessity to acquire any additional options like a Public IP. To show this, we’ll consider two simple ways of performing this operation: through [embedded OS terminal](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#connection-via-terminal) and [third-party DB client](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#connection-via-local-client).
+With endpoints, gaining remote access to your DB instance becomes pretty easy, as using this feature eliminates the necessity to acquire any additional options like a Public IP. To show this, we’ll consider two simple ways of performing this operation: through [embedded OS terminal](/docs/application-setting/external-access-to-applications/endpoints#connection-via-terminal) and [third-party DB client](/docs/application-setting/external-access-to-applications/endpoints#connection-via-local-client).
 
 ## Connection via Terminal
 
@@ -430,7 +430,7 @@ You can also tick _Save password in keychain_ if you don’t want to enter it ma
 
 Great! Now you can start organizing your data using all the provided benefits of the full-featured management client.
 
-Just in the same way you can connect to any other database server within the platform or, for example, [backup and restore](/docs/Database/MySQL-MariaDB-Percona/Dump%20Import-Export) your data within dump files.
+Just in the same way you can connect to any other database server within the platform or, for example, [backup and restore](/docs/database/mysql-mariadb-percona/dump-import-export) your data within dump files.
 
 ## Multiple Development Stages at a Single App Server
 

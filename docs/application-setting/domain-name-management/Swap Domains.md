@@ -12,7 +12,7 @@ So, by utilizing this functionality, you can skip the steps of rolling out updat
 
 :::danger Note
 
-The _Swap Domains_ feature operates with the [bound domains](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#how-to-bind-domain-to-environment) only. If you need to swap URLs for environments with public IP as an entry point (attached to the application server or load balancer), use the [swap external IPs method](http://localhost:3000/docs/deployment-tools/api-&-cli/platform-cli/swap-public-ips) or adjust appropriate records in your domain registrar.
+The _Swap Domains_ feature operates with the [bound domains](/docs/application-setting/domain-name-management/custom-domain-name#how-to-bind-domain-to-environment) only. If you need to swap URLs for environments with public IP as an entry point (attached to the application server or load balancer), use the [swap external IPs method](/docs/deployment-tools/api-&-cli/platform-cli/swap-public-ips) or adjust appropriate records in your domain registrar.
 
 :::
 
@@ -34,7 +34,7 @@ So, let’s see how this works.
 
 :::danger Note
 
-This environment should have a [bound custom domain](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#how-to-bind-domain-to-environment) (e.g. _production.com_) that you will consequently swap with a different environment.
+This environment should have a [bound custom domain](/docs/application-setting/domain-name-management/custom-domain-name#how-to-bind-domain-to-environment) (e.g. _production.com_) that you will consequently swap with a different environment.
 
 <div style={{
     display:'flex',
@@ -91,7 +91,7 @@ Now, you can add new features, customize settings, apply updates, etc. All witho
 1. Make the needed changes (either directly via the dashboard or by deploying the new project version) to the cloned environment. The following documentation guides can help you with your project adjustments:
 
 - [Deployment Guide](/docs/deployment/deployment-guide)
-- [SSH Access](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview)
+- [SSH Access](/docs/deployment-tools/ssh/ssh-access/overview)
 - [configuration file manager](/docs/application-setting/configuration-file-manager)
 
 <div style={{
@@ -118,7 +118,7 @@ Now, you can add new features, customize settings, apply updates, etc. All witho
 
 :::tip Note
 
-The **Swap Domain** functionality will work even if only one environment has a bound domain. However, for more thorough testing, you can [bind a custom domain](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#how-to-bind-domain-to-environment) to your cloned environment as well.
+The **Swap Domain** functionality will work even if only one environment has a bound domain. However, for more thorough testing, you can [bind a custom domain](/docs/application-setting/domain-name-management/custom-domain-name#how-to-bind-domain-to-environment) to your cloned environment as well.
 
 <div style={{
     display:'flex',

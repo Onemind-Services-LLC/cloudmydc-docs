@@ -48,13 +48,13 @@ Additionally, the feature allows developers to isolate [groups of environments](
 
 </div>
 
-The platform automatically unites the containers' internal addresses into a dedicated IP set for each isolated group. This allows controlling access between nodes (i.e. if IPs are within the same set - interconnection is permitted, and if not - denied). The platform automatically detects all the related changes under your account (e.g. environment removal, [nodes scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling), etc.) to keep IP sets up-to-date.
+The platform automatically unites the containers' internal addresses into a dedicated IP set for each isolated group. This allows controlling access between nodes (i.e. if IPs are within the same set - interconnection is permitted, and if not - denied). The platform automatically detects all the related changes under your account (e.g. environment removal, [nodes scaling](/docs/application-setting/scaling-and-clustering/horizontal-scaling), etc.) to keep IP sets up-to-date.
 
 While managing Network Isolation, you should consider the following peculiarities:
 
-- isolation can be enabled for the top-level group only (i.e. not for [subgroups](http://localhost:3000/docs/environment-management/environment-groups/group-management#add-subgroups))
+- isolation can be enabled for the top-level group only (i.e. not for [subgroups](/docs/environment-management/environment-groups/group-management#add-subgroups))
 - environment groups with enabled isolation are provided with a custom shield icon (![Locale Dropdown](./img/EnvironmentIsolation/03-isolated-group-icon.png) ) for better recognition
-- [shared environments](http://localhost:3000/docs/environment-management/share-environment) can not be included into isolated groups by collaborators
+- [shared environments](/docs/environment-management/share-environment) can not be included into isolated groups by collaborators
 - this feature is not suitable to limit the access to your containers from outside of the platform (e.g. via [public IP](/docs/application-setting/external-access-to-applications/public-ip))
 
 ## Using Network Isolation

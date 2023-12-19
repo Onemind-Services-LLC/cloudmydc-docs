@@ -6,13 +6,13 @@ sidebar_position: 3
 
 import obj from './CustomEnvVar.json'
 
-Environment variables represent a kind of placeholders, where you can store the frequently used parameters values or strings in order not to specify them manually in the code each time they are needed. There is a number of [default environment variables](http://localhost:3000/docs/environment-management/environment-variables/environment-variables#default-environment-variables) which are preconfigured and can be used in your application code or even adjusted before node creation to apply some customization, making your work with the platform even more convenient.
+Environment variables represent a kind of placeholders, where you can store the frequently used parameters values or strings in order not to specify them manually in the code each time they are needed. There is a number of [default environment variables](/docs/environment-management/environment-variables/environment-variables#default-environment-variables) which are preconfigured and can be used in your application code or even adjusted before node creation to apply some customization, making your work with the platform even more convenient.
 
 In this guide, we’ll describe the most common ways of adding your custom variables for any node within the platform:
 
-- [via a dedicated variables section of the dashboard](http://localhost:3000/docs/environment-management/environment-variables/custom-environment-variables#customize-environment-variables-via-ui)
-- [using the shell configuration files](http://localhost:3000/docs/environment-management/environment-variables/custom-environment-variables#set-up-environment-variables-via-shell-configs)
-- [through the variables.conf file (for Java only)](http://localhost:3000/docs/environment-management/environment-variables/custom-environment-variables#adjust-java-environment-variables-via-configuration-manager)
+- [via a dedicated variables section of the dashboard](/docs/environment-management/environment-variables/custom-environment-variables#customize-environment-variables-via-ui)
+- [using the shell configuration files](/docs/environment-management/environment-variables/custom-environment-variables#set-up-environment-variables-via-shell-configs)
+- [through the variables.conf file (for Java only)](/docs/environment-management/environment-variables/custom-environment-variables#adjust-java-environment-variables-via-configuration-manager)
 
 ## Customize Environment Variables via UI
 
@@ -56,7 +56,7 @@ You are able to provide your custom variables using the shell config files:
 - **_~/.bashrc_** is executed for each new bash instance
   In order to help you with maintaining these files, the platform automatically include the sources of the .**_bashrc_** config within **_.bash_profile_**. In such a way, you can provide custom variables through the former file only:
 
-1. Establish [SSH connection](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) to your container. For example, we’ll use the embedded **Web SSH** client:
+1. Establish [SSH connection](/docs/deployment-tools/ssh/ssh-access/overview) to your container. For example, we’ll use the embedded **Web SSH** client:
 
 <div style={{
     display:'flex',
@@ -133,7 +133,7 @@ The following simple workflow is identical for all of the platform-managed Java 
 - **Payara** - /opt/payara/glassfish/domains/domain1/config/variables.conf
 - **WildFly** - /opt/wildfly/conf/variables.conf
 
-3. Here, you can provide your custom variables (each one should be separated by space or start from a new line) or [adjust Java options](http://localhost:3000/docs/environment-management/environment-variables/java-options-and-arguments) for your application. For example:
+3. Here, you can provide your custom variables (each one should be separated by space or start from a new line) or [adjust Java options](/docs/environment-management/environment-variables/java-options-and-arguments) for your application. For example:
 
 **-Dvar1=value1 -Dvar2=value2** <br/>
 **-Dmy.var3=/my/value**

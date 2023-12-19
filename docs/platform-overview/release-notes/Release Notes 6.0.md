@@ -46,7 +46,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0#windows-vms-support">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0#windows-vms-support">
                     Learn More >>
                 </a>
             </div>
@@ -65,7 +65,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0#tomcattomee-hot-deploy">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0#tomcattomee-hot-deploy">
                     Learn More >>
                 </a>
             </div>
@@ -84,7 +84,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0#non-downgradable-software-stacks">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0#non-downgradable-software-stacks">
                     Learn More >>
                 </a>
             </div>
@@ -103,7 +103,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0#extended-target-node-filtering-in-cloud-scripting">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0#extended-target-node-filtering-in-cloud-scripting">
                     Learn More >>
                 </a>
             </div>
@@ -147,7 +147,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0#traffic-distributor-package-update">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0#traffic-distributor-package-update">
                     Learn More >>
                 </a>
             </div>
@@ -166,7 +166,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0#extended-logs-in-tasks-manager">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0#extended-logs-in-tasks-manager">
                     Learn More >>
                 </a>
             </div>
@@ -185,7 +185,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0#no-free-disk-error-clarification">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0#no-free-disk-error-clarification">
                     Learn More >>
                 </a>
             </div>
@@ -204,7 +204,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0#binding-busy-domain-error-clarification">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0#binding-busy-domain-error-clarification">
                     Learn More >>
                 </a>
             </div>
@@ -223,7 +223,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0#runlog-logrotate">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0#runlog-logrotate">
                     Learn More >>
                 </a>
             </div>
@@ -242,7 +242,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0#api-changes">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -261,7 +261,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0#software-stack-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -305,7 +305,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0#centos-6-end-of-life">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0#centos-6-end-of-life">
                     Learn More >>
                 </a>
             </div>
@@ -324,7 +324,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0#fixes-compatible-with-prior-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -343,7 +343,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0#bug-fixes">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -354,13 +354,13 @@ Fixed
 
 ## Windows VMs Support
 
-Starting with the PaaS 6.0 release, [Windows VM](http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0#windows-vms-support) support is implemented for the platforms. The feature availability depends on each particular service hosting provider as it requires additional configurations in order to be set up on a platform.
+Starting with the PaaS 6.0 release, [Windows VM](/docs/platform-overview/release-notes/release-notes-6.0#windows-vms-support) support is implemented for the platforms. The feature availability depends on each particular service hosting provider as it requires additional configurations in order to be set up on a platform.
 
 VM hosting at the platform is provided in a familiar way to the regular containers. Windows VM instances can be added via the topology wizard under the VPS section. However, there are a few peculiarities for virtual machines:
 
 - a small VM label is displayed on the stack image for better clarity
 - only fixed resources based on the several predefined plans (licenses) are available; the exact sizes and prices can vary for different platforms
-- the _[Horizontal Scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling)_ and IPv6 options are not available in the current implementation
+- the _[Horizontal Scaling](/docs/application-setting/scaling-and-clustering/horizontal-scaling)_ and IPv6 options are not available in the current implementation
 
 <div style={{
     display:'flex',
@@ -392,14 +392,14 @@ Virtual machines are visually highlighted in the dashboard via the dedicated VM 
 
 Regardless of the actual consumption, VM Resources (vCPU and Memory) cost is always fixed, predefined by resource plan (license). Disk, Network, and Options are billed separately, just as for containers.
 
-[More info](/docs/Windows&.NET/Windows%20Server%20VM)
+[More info](/docs/windows-and-.NET/windows-server-vm)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -418,14 +418,14 @@ Tomcat and TomEE application servers provide support for the **_hot deploy_** fe
 
 </div>
 
-[More info](/docs/Windows&.NET/Windows%20Server%20VM)
+[More info](/docs/windows-and-.NET/windows-server-vm)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -460,14 +460,14 @@ Currently, redeployment to the lower version is forbidden on the following stack
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## CentOS 6 End-of-Life
 
-**CentOS 6** software stack support has officially reached its [end-of-life](https://wiki.centos.org/About/Product). It will no longer get any updates and security fixes. In order to ensure that users operate with reliable and secure stacks only, CentOS 6 was removed from the list of [supported OS templates](http://localhost:3000/docs/container/container-image-requirements) on the platform. After the 6.0 upgrade, the creation of the new containers based on the CentOS 6 will not be possible, while any existing instance will remain fully operable. However, we strictly recommend updating to the 7th or 8th release versions via built-in [redeploy functionality](/docs/category/container-deployment).
+**CentOS 6** software stack support has officially reached its [end-of-life](https://wiki.centos.org/About/Product). It will no longer get any updates and security fixes. In order to ensure that users operate with reliable and secure stacks only, CentOS 6 was removed from the list of [supported OS templates](/docs/container/container-image-requirements) on the platform. After the 6.0 upgrade, the creation of the new containers based on the CentOS 6 will not be possible, while any existing instance will remain fully operable. However, we strictly recommend updating to the 7th or 8th release versions via built-in [redeploy functionality](/docs/category/container-deployment).
 
 [More info](https://cloudmydc.com/)
 
@@ -476,14 +476,14 @@ Currently, redeployment to the lower version is forbidden on the following stack
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Traffic Distributor Package Update
 
-**[Traffic Distributor](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-overview)** is a package powered by the platform, which helps control traffic flow between environments. It is an easy-to-manage solution suitable for multiple use cases and hosting scenarios (Blue-Green Deploy, Failover Protection, A/B Testing). In the present 6.0 PaaS upgrade, PaaS team integrated the ability to choose between proxying traffic to backends over SSL or without it. The corresponding **HTTPS** config within the **_Traffic Distributor_** package UI is shown in the image below:
+**[Traffic Distributor](/docs/application-setting/traffic-distributor/traffic-distributor-overview)** is a package powered by the platform, which helps control traffic flow between environments. It is an easy-to-manage solution suitable for multiple use cases and hosting scenarios (Blue-Green Deploy, Failover Protection, A/B Testing). In the present 6.0 PaaS upgrade, PaaS team integrated the ability to choose between proxying traffic to backends over SSL or without it. The corresponding **HTTPS** config within the **_Traffic Distributor_** package UI is shown in the image below:
 
 <div style={{
     display:'flex',
@@ -497,28 +497,28 @@ Currently, redeployment to the lower version is forbidden on the following stack
 
 Also, the default value for the **_proxy_connect_timeout_** setting in Traffic Distributor was increased to 60 seconds to reduce the number of reconfigurations due to the false-positive backend failures. However, upon selecting the Failover routing method, this parameter is automatically changed to the 20 seconds value.
 
-[More info](http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-overview)
+[More info](/docs/application-setting/traffic-distributor/traffic-distributor-overview)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Extended Logs in Tasks Manager
 
-Dashboard’s [tasks manager](http://localhost:3000/docs/quickstart/dashboard-guide) provides all the vital information on the account activities. It helps developers with troubleshooting, issues analysis, and action tracking. In the current 6.0 PaaS release, the tasks manager was improved by providing additional **_log_** information for errors. This log field is present in the response of some error messages and contains valuable data for debugging.
+Dashboard’s [tasks manager](/docs/quickstart/dashboard-guide) provides all the vital information on the account activities. It helps developers with troubleshooting, issues analysis, and action tracking. In the current 6.0 PaaS release, the tasks manager was improved by providing additional **_log_** information for errors. This log field is present in the response of some error messages and contains valuable data for debugging.
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -532,7 +532,7 @@ The platform has two types of the “No free disk space” error. The first one 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -556,7 +556,7 @@ In the current PaaS 6.0 upgrade, a validation message for the binding of a [cust
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -570,7 +570,7 @@ Logrotate is a standard UNIX rotation and compression tool for log files. The pl
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -594,7 +594,7 @@ For example, this parameter can be used to hide unnecessary (not supported) add-
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -617,7 +617,7 @@ Also, all the deprecated methods were explicitly marked in the API documentation
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -736,7 +736,7 @@ Below, you can find the fixes that were implemented in the PaaS 6.0 release and 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -754,7 +754,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

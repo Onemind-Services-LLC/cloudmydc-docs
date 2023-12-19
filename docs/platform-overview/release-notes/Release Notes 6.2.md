@@ -50,7 +50,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.2#debian-11-os-template-update">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.2#debian-11-os-template-update">
                     Learn More >>
                 </a>
             </div>
@@ -69,7 +69,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.2#software-stack-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.2#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -113,7 +113,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.2#fixes-compatible-with-prior-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.2#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -132,7 +132,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.2#bug-fixes">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.2#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -143,16 +143,16 @@ Fixed
 
 ## Debian 11 OS Template Update
 
-The OS template for the [recently implemented **Debian 11** stack](http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.2#debian-11-os-template-update) was updated in the current 6.2 PaaS release. The new OS template version provides even greater stability for the containers based on this image.
+The OS template for the [recently implemented **Debian 11** stack](/docs/platform-overview/release-notes/release-notes-6.2#debian-11-os-template-update) was updated in the current 6.2 PaaS release. The new OS template version provides even greater stability for the containers based on this image.
 
-[More info](http://localhost:3000/docs/container/container-image-requirements)
+[More info](/docs/container/container-image-requirements)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -273,7 +273,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -291,7 +291,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

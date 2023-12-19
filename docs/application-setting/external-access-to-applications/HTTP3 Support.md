@@ -8,16 +8,16 @@ sidebar_position: 6
 
 **_HTTP/3_** (formerly known as _“HTTP over QUIC"_) is the to-become third major version of the Hypertext Transfer Protocol family. Featurewise, it is very similar to HTTP/2 but offers some significant advantages due to changes to the underlying method of utilization. Namely, the HTTP/3 is built on **_QUIC_** transport protocol, which works over UDP instead of TCP.
 
-Currently, HTTP/3 is already provided by some solutions (e.g. *LiteSpeed and *NGINX\*) and is [adopted by the platform](http://localhost:3000/docs/application-setting/external-access-to-applications/http3-support) through the latest releases of the following stacks:
+Currently, HTTP/3 is already provided by some solutions (e.g. *LiteSpeed and *NGINX\*) and is [adopted by the platform](/docs/application-setting/external-access-to-applications/http3-support) through the latest releases of the following stacks:
 
-- **_load balancers:_** [LiteSpeed Web ADC](/docs/Load%20Balancers/LiteSpeed%20Web%20ADC), [Varnish](/docs/Load%20Balancers/Varnish), [NGINX](/docs/Load%20Balancers/NGINX/NGINX%20Balancer)
-- **_application servers:_** [LiteSpeed WS](/docs/PHP/PHP%20App%20Servers/LiteSpeed%20Web%20Server), [LLSMP & LEMP](/docs/PHP/PHP%20App%20Servers/LEMP%20&%20LLSMP), [NGINX PHP](/docs/PHP/PHP%20App%20Servers/NGINX%20PHP/), [NGINX Ruby](/docs/Ruby/NGINX%20Ruby)
+- **_load balancers:_** [LiteSpeed Web ADC](/docs/load-balancers/litespeed-web-adc), [Varnish](/docs/load-balancers/varnish), [NGINX](/docs/load-balancers/nginx/nginx-balancer)
+- **_application servers:_** [LiteSpeed WS](/docs/php/php-app-servers/litespeed-web-server), [LLSMP & LEMP](/docs/php/php-app-servers/lemp-&-llsmp), [NGINX PHP](/docs/php/php-app-servers/nginx-php/nginx-php), [NGINX Ruby](/docs/ruby/nginx-ruby)
 
 Below, you can check the:
 
-- [technical preconditions of the HTTP/3 implementation](http://localhost:3000/docs/application-setting/external-access-to-applications/http3-support#technical-implementation-specificspreconditions)
-- [benefits of the HTTP/3 (QUIC)](http://localhost:3000/docs/application-setting/external-access-to-applications/http3-support#http3-quic-key-features)
-- [integration in the platform](http://localhost:3000/docs/application-setting/external-access-to-applications/http3-support#http3-support-implementation)
+- [technical preconditions of the HTTP/3 implementation](/docs/application-setting/external-access-to-applications/http3-support#technical-implementation-specificspreconditions)
+- [benefits of the HTTP/3 (QUIC)](/docs/application-setting/external-access-to-applications/http3-support#http3-quic-key-features)
+- [integration in the platform](/docs/application-setting/external-access-to-applications/http3-support#http3-support-implementation)
 
 ## Technical Implementation Specifics/Preconditions
 
@@ -32,7 +32,7 @@ Below, we’ve provided some examples of the limitations provided by TCP:
 
 :::
 
-UDP suffers no such limitations and is just as widespread as TCP, which allows achieving improvements without significant changes to the existing operating systems and devices firmware. Thus, HTTP/3 has adopted the QUIC transport protocol (initially developed by Google), which is based on UDP, provides [significant benefits](http://localhost:3000/docs/application-setting/external-access-to-applications/http3-support#http3-quic-key-features). Also, being already in use by prominent internet companies such as Google and Facebook, the efficiency and reliability of the QUIC solution cannot be denied.
+UDP suffers no such limitations and is just as widespread as TCP, which allows achieving improvements without significant changes to the existing operating systems and devices firmware. Thus, HTTP/3 has adopted the QUIC transport protocol (initially developed by Google), which is based on UDP, provides [significant benefits](/docs/application-setting/external-access-to-applications/http3-support#http3-quic-key-features). Also, being already in use by prominent internet companies such as Google and Facebook, the efficiency and reliability of the QUIC solution cannot be denied.
 
 ## HTTP/3 (QUIC) Key Features
 
@@ -61,15 +61,15 @@ The support for the HTTP/3 (QUIC) protocol is still in its earliest implementati
 Below, you can view the most accurate list of the software stacks at the platform that provide HTTP/3 support by default:
 
 - **_load balancers_**
-  - [_LiteSpeed Web ADC_](/docs/Load%20Balancers/LiteSpeed%20Web%20ADC): all versions
-  - [_Varnish_](/docs/Load%20Balancers/Varnish): _5.2.x, 6.x.x_ versions and above
-  - [_NGINX_](/docs/Load%20Balancers/NGINX/NGINX%20Balancer): since the _1.16.1_ release
+  - [_LiteSpeed Web ADC_](/docs/load-balancers/litespeed-web-adc): all versions
+  - [_Varnish_](/docs/load-balancers/varnish): _5.2.x, 6.x.x_ versions and above
+  - [_NGINX_](/docs/load-balancers/nginx/nginx-balancer): since the _1.16.1_ release
 - **_application servers_**
-  - [_LiteSpeed WS_](/docs/PHP/PHP%20App%20Servers/LiteSpeed%20Web%20Server): all versions
-  - [LLSMP](/docs/PHP/PHP%20App%20Servers/LEMP%20&%20LLSMP): all versions
-  - [_LEMP_](/docs/PHP/PHP%20App%20Servers/LEMP%20&%20LLSMP): since the _1.16.1_ release
-  - [_NGINX PHP_](/docs/PHP/PHP%20App%20Servers/NGINX%20PHP/): since the _1.16.1_ release for PHP _7.2.26, 7.3.13, 7.4.1_ versions and above
-  - [_NGINX Ruby_](/docs/Ruby/NGINX%20Ruby): since the _1.16.1_ release for Ruby _2.4.9, 2.5.7, 2.6.5, 2.7.0_ versions and above
+  - [_LiteSpeed WS_](/docs/php/php-app-servers/litespeed-web-server): all versions
+  - [LLSMP](/docs/php/php-app-servers/lemp-&-llsmp): all versions
+  - [_LEMP_](/docs/php/php-app-servers/lemp-&-llsmp): since the _1.16.1_ release
+  - [_NGINX PHP_](/docs/php/php-app-servers/nginx-php/nginx-php): since the _1.16.1_ release for PHP _7.2.26, 7.3.13, 7.4.1_ versions and above
+  - [_NGINX Ruby_](/docs/ruby/nginx-ruby): since the _1.16.1_ release for Ruby _2.4.9, 2.5.7, 2.6.5, 2.7.0_ versions and above
 
 Just [create an environment](/docs/environment-management/setting-up-environment) topology that includes any of the application servers or load balancers mentioned above.
 

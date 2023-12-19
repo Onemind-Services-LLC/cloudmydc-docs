@@ -56,7 +56,7 @@ Choose the required plan and click **Buy**.
 
 :::danger Note
 
-Although subscription environments are bought separately, they will still be stopped in case of [account deactivation](/docs/Account&Pricing/Account%20Statuses).
+Although subscription environments are bought separately, they will still be stopped in case of [account deactivation](/docs/account-and-pricing/account-statuses).
 
 :::
 
@@ -64,7 +64,7 @@ At the bottom of the frame, you can see the total sum of the configured subscrip
 
 4. An invoice will be generated immediately after clicking the **Subscribe & Pay** button.
 
-After that, your subscription will be added to the dedicated account section, where you can [manage all your subscriptions](/docs/Account&Pricing/Subscription-Based%20Products#managing-subscriptions).
+After that, your subscription will be added to the dedicated account section, where you can [manage all your subscriptions](/docs/account-and-pricing/subscription-based-products#managing-subscriptions).
 
 :::tip Tip
 
@@ -126,7 +126,7 @@ The subscription table provides the following information:
 
 The buttons on the tools panel allow to:
 
-- **Buy** [new subscriptions](/docs/Account&Pricing/Subscription-Based%20Products#purchasing-subscription), which will redirect to the appropriate Marketplace section (as described in the previous section).
+- **Buy** [new subscriptions](/docs/account-and-pricing/subscription-based-products#purchasing-subscription), which will redirect to the appropriate Marketplace section (as described in the previous section).
 - **Install** packages for the existing subscriptions.
 - **Edit** a subscription to change installation quantity and change the Auto Pay option.
 - **Refresh** information in the list.

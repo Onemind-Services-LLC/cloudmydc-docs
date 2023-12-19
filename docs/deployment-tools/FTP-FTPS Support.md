@@ -28,7 +28,7 @@ With Platform FTP feature is available for both application servers and database
 
 :::tip Note
 
-Currently, FTP add-on is not compatible with [Docker containers](http://localhost:3000/docs/container/container-types).
+Currently, FTP add-on is not compatible with [Docker containers](/docs/container/container-types).
 
 :::
 
@@ -42,18 +42,18 @@ To benefit from FTP with the platform, you need to meet three requirements:
 
 Let’s go step-by-step the process of adding FTP to your environment:
 
-- [Create Environment](/docs/Deployment%20Tools/FTP-FTPS%20Support#create-environment)
-- [Install FTP](/docs/Deployment%20Tools/FTP-FTPS%20Support#install-ftp)
-- [Using FTP](/docs/Deployment%20Tools/FTP-FTPS%20Support#using-ftp)
-- [Transfer Files](/docs/Deployment%20Tools/FTP-FTPS%20Support#transfer-files)
-- [Download Log Files](/docs/Deployment%20Tools/FTP-FTPS%20Support#download-log-files)
-- [Synchronize Files](/docs/Deployment%20Tools/FTP-FTPS%20Support#synchronize-files)
-- [Edit Configuration Files](/docs/Deployment%20Tools/FTP-FTPS%20Support#edit-configuration-files)
-- [Deploy Application via FTP](/docs/Deployment%20Tools/FTP-FTPS%20Support#deploy-application-via-ftp)
-- [Switching FTPS](/docs/Deployment%20Tools/FTP-FTPS%20Support#switching-ftps)
-- [Reset FTP Password](/docs/Deployment%20Tools/FTP-FTPS%20Support#reset-ftp-password)
-- [State Custom FTP Password](/docs/Deployment%20Tools/FTP-FTPS%20Support#state-custom-ftp-password)
-- [Uninstall FTP](/docs/Deployment%20Tools/FTP-FTPS%20Support#uninstall-ftp)
+- [Create Environment](/docs/deployment-tools/ftp-ftps-support#create-environment)
+- [Install FTP](/docs/deployment-tools/ftp-ftps-support#install-ftp)
+- [Using FTP](/docs/deployment-tools/ftp-ftps-support#using-ftp)
+- [Transfer Files](/docs/deployment-tools/ftp-ftps-support#transfer-files)
+- [Download Log Files](/docs/deployment-tools/ftp-ftps-support#download-log-files)
+- [Synchronize Files](/docs/deployment-tools/ftp-ftps-support#synchronize-files)
+- [Edit Configuration Files](/docs/deployment-tools/ftp-ftps-support#edit-configuration-files)
+- [Deploy Application via FTP](/docs/deployment-tools/ftp-ftps-support#deploy-application-via-ftp)
+- [Switching FTPS](/docs/deployment-tools/ftp-ftps-support#switching-ftps)
+- [Reset FTP Password](/docs/deployment-tools/ftp-ftps-support#reset-ftp-password)
+- [State Custom FTP Password](/docs/deployment-tools/ftp-ftps-support#state-custom-ftp-password)
+- [Uninstall FTP](/docs/deployment-tools/ftp-ftps-support#uninstall-ftp)
 
 ## Create Environment
 
@@ -421,9 +421,9 @@ You can change the password of FTP-addon, installed at your environment. Using c
 
 Your FTP password can be changed via SSH following the next steps:
 
-1. [generate](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key) an SSH key and [add](/docs/deployment-tools/ssh/add-ssh-key) it to your dashboard.
+1. [generate](/docs/deployment-tools/ssh/generate-ssh-key) an SSH key and [add](/docs/deployment-tools/ssh/add-ssh-key) it to your dashboard.
 
-2. [Access](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) a necessary container with the installed FTP-addon via SSH.
+2. [Access](/docs/deployment-tools/ssh/ssh-access/overview) a necessary container with the installed FTP-addon via SSH.
 
 <div style={{
     display:'flex',

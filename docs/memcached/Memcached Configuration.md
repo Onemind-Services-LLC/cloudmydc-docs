@@ -4,8 +4,6 @@ slug: memcached-configuration
 sidebar_position: 2
 ---
 
-
-
 import obj from './MemcachedConfiguration.json'
 
 The following Memcached configuration files are available:
@@ -97,7 +95,7 @@ The following Memcached configuration files are available:
     </div> 
 </div>
 
-More information about Memcached usage you can find in the [Memcached](/docs/Memcached/Memcached%20System) document.
+More information about Memcached usage you can find in the [Memcached](/docs/memcached/memcached-system) document.
 
 ## CONF
 

@@ -46,23 +46,23 @@ if you create/rename a file or folder in the Configuration manager, this will be
 
 Below you will see the list of the configuration files available for editing in the Java application servers:
 
-- [Tomcat](/docs/Java/Java%20App%20Server%20Configuration#tomcat)
-- [TomEE](/docs/Java/Java%20App%20Server%20Configuration#tomee)
-- [GlassFish](/docs/Java/Java%20App%20Server%20Configuration#glassfish)
-- [Jetty](/docs/Java/Java%20App%20Server%20Configuration#jetty)
+- [Tomcat](/docs/java/java-app-server-configuration#tomcat)
+- [TomEE](/docs/java/java-app-server-configuration#tomee)
+- [GlassFish](/docs/java/java-app-server-configuration#glassfish)
+- [Jetty](/docs/java/java-app-server-configuration#jetty)
 
 To get more information on which settings can be changed in the provided config folders, use the appropriate descriptions:
 
-- [server](/docs/Java/Java%20App%20Server%20Configuration#server)
-- [home](/docs/Java/Java%20App%20Server%20Configuration#home)
-- [webapps/work](/docs/Java/Java%20App%20Server%20Configuration#webapps--work)
-- [JAVA_HOME](/docs/Java/Java%20App%20Server%20Configuration#java_home)
-- [lib](/docs/Java/Java%20App%20Server%20Configuration#lib)
-- [cron](/docs/Java/Java%20App%20Server%20Configuration#cron)
-- [keys](/docs/Java/Java%20App%20Server%20Configuration#keys)
-- [contexts](/docs/Java/Java%20App%20Server%20Configuration#contexts)
-- [server_lib](/docs/Java/Java%20App%20Server%20Configuration#server_lib)
-- [apps](/docs/Java/Java%20App%20Server%20Configuration#apps)
+- [server](/docs/java/java-app-server-configuration#server)
+- [home](/docs/java/java-app-server-configuration#home)
+- [webapps/work](/docs/java/java-app-server-configuration#webapps--work)
+- [JAVA_HOME](/docs/java/java-app-server-configuration#java_home)
+- [lib](/docs/java/java-app-server-configuration#lib)
+- [cron](/docs/java/java-app-server-configuration#cron)
+- [keys](/docs/java/java-app-server-configuration#keys)
+- [contexts](/docs/java/java-app-server-configuration#contexts)
+- [server_lib](/docs/java/java-app-server-configuration#server_lib)
+- [apps](/docs/java/java-app-server-configuration#apps)
 
 ## SERVER
 
@@ -72,15 +72,15 @@ Using the following config files, you can perform the actions listed below (thes
 
 **_<u>context.xml</u>_**
 
-- configure [session replication via Memcached](/docs/Memcached/Session%20Replication%20via%20Memcached)
+- configure [session replication via Memcached](/docs/memcached/session-replication-via-memcached)
 
   **_<u>web.xml</u>_**
 
-- configure [remote access via WebDav](/docs/Deployment%20Tools/Remote%20Access%20via%20WebDAV)
+- configure [remote access via WebDav](/docs/deployment-tools/remote-access-via-webdav)
 
   **_<u>server.xml</u>_**
 
-- enable [Multiple Domains](http://localhost:3000/docs/application-setting/domain-name-management/multiple-domain-for-tomcat)
+- enable [Multiple Domains](/docs/application-setting/domain-name-management/multiple-domain-for-tomcat)
 
   **_<u>variables.conf</u>_**
 
@@ -88,13 +88,13 @@ Using the following config files, you can perform the actions listed below (thes
 
   _-Xmx< size >m -Xms< size >m_
 
-- set your custom [system properties](http://localhost:3000/docs/environment-management/environment-variables/java-options-and-arguments) for your [Tomcat, TomEE, Jetty](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat-TomEE%20Variables)or [GlassFish](/docs/Java/Java%20App%20Servers/Tomcat%20and%20TomEE/Tomcat-TomEE%20Variables#glassfish-variables):
+- set your custom [system properties](/docs/environment-management/environment-variables/java-options-and-arguments) for your [Tomcat, TomEE, Jetty](/docs/java/java-app-servers/tomcat-and-tomee/tomcat-tomee-variables)or [GlassFish](/docs/java/java-app-servers/tomcat-and-tomee/tomcat-tomee-variables#glassfish-variables):
 
   _-Dvar1=value1 -Dvar2=value2 -Dmy.var3=/my/value_
 
-- configure [JavaAgent interceptor](/docs/Java/Java%20Apps%20Specifications/Java%20Agent)
+- configure [JavaAgent interceptor](/docs/java/java-apps-specifications/java-agent)
 
-- enable [remote debugging](http://localhost:3000/docs/application-setting/remote-debugging):
+- enable [remote debugging](/docs/application-setting/remote-debugging):
   _-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address={port_number}_
 
 **Note** that this file is available only for **Tomcat 6,7** and **TomEE** application servers. For configuring a **GlassFish** server, use the _Admin Panel_.
@@ -109,7 +109,7 @@ Using the following config files, you can perform the actions listed below (thes
 
 </div>
 
-[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
+[Back to the list](/docs/java/java-app-server-configuration)
 
 ## HOME
 
@@ -127,7 +127,7 @@ As a result you can make configurations specifying the path to your downloaded/c
 
 </div>
 
-[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
+[Back to the list](/docs/java/java-app-server-configuration)
 
 :::tip Note
 
@@ -135,7 +135,7 @@ though the server’s directory, which refers to this folder, can be named temp 
 
 :::
 
-[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
+[Back to the list](/docs/java/java-app-server-configuration)
 
 ## WEBAPPS / WORK
 
@@ -151,9 +151,9 @@ The **webapps** (for Tomcat/TomEE) and **work** (for Jetty) folders are used for
 
 </div>
 
-[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
+[Back to the list](/docs/java/java-app-server-configuration)
 
-[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
+[Back to the list](/docs/java/java-app-server-configuration)
 
 ## JAVA_HOME
 
@@ -169,7 +169,7 @@ The **JAVA_HOME** folder contains the java config files and libs. Here, you can 
 
 </div>
 
-[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
+[Back to the list](/docs/java/java-app-server-configuration)
 
 ## LIB
 
@@ -185,11 +185,11 @@ The **lib** folder is used for storing default and uploading custom **jar** libr
 
 </div>
 
-[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
+[Back to the list](/docs/java/java-app-server-configuration)
 
 ## CRON
 
-App servers include a cron folder with the config file, where cronjobs can be configured. Detailed information on Cronjob configuration can be found in the [Setting Up a Cronjob](http://localhost:3000/docs/application-setting/scheduling-configuration/setting-up-cronjob) document.
+App servers include a cron folder with the config file, where cronjobs can be configured. Detailed information on Cronjob configuration can be found in the [Setting Up a Cronjob](/docs/application-setting/scheduling-configuration/setting-up-cronjob) document.
 
 <div style={{
     display:'flex',
@@ -201,7 +201,7 @@ App servers include a cron folder with the config file, where cronjobs can be co
 
 </div>
 
-[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
+[Back to the list](/docs/java/java-app-server-configuration)
 
 ## KEYS
 
@@ -219,7 +219,7 @@ _/var/lib/jelastic/keys/{key_file_name}_
 
 </div>
 
-[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
+[Back to the list](/docs/java/java-app-server-configuration)
 
 ## CONTEXTS
 
@@ -235,7 +235,7 @@ The **contexts** folder contains XML config files for each deployed context. All
 
 </div>
 
-[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
+[Back to the list](/docs/java/java-app-server-configuration)
 
 ## SERVER_LIB
 
@@ -251,7 +251,7 @@ The **server_lib** folder is the GlassFish config directory with all available s
 
 </div>
 
-[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
+[Back to the list](/docs/java/java-app-server-configuration)
 
 ## APPS
 
@@ -267,7 +267,7 @@ The **apps** TomEE folder is used for storing the unpacked EE application deploy
 
 </div>
 
-[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
+[Back to the list](/docs/java/java-app-server-configuration)
 
 ## Tomcat
 
@@ -358,7 +358,7 @@ The **apps** TomEE folder is used for storing the unpacked EE application deploy
     </div> 
 </div>
 
-[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
+[Back to the list](/docs/java/java-app-server-configuration)
 
 ## TomEE
 
@@ -449,7 +449,7 @@ The **apps** TomEE folder is used for storing the unpacked EE application deploy
     </div> 
 </div>
 
-[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
+[Back to the list](/docs/java/java-app-server-configuration)
 
 ## GlassFish
 
@@ -540,7 +540,7 @@ The **apps** TomEE folder is used for storing the unpacked EE application deploy
     </div> 
 </div>
 
-[Back to the list](/docs/Java/Java%20App%20Server%20Configuration)
+[Back to the list](/docs/java/java-app-server-configuration)
 
 ## Jetty
 
@@ -631,4 +631,4 @@ The **apps** TomEE folder is used for storing the unpacked EE application deploy
     </div> 
 </div>
 
-[Back to the list](/docs/Java/Java%20App%20Server%20Configuration/)
+[Back to the list](/docs/java/java-app-server-configuration/)

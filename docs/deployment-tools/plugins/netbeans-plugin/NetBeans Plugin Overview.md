@@ -30,6 +30,6 @@ PaaS team has created a plugin for **NetBeans** development platform that simpli
 
 Use the following instructions to install the plugin and manage environments through NetBeans IDE:
 
-- [Plugin Installation](/docs/Deployment%20Tools/Plugins/NetBeans%20Plugin/NetBeans%20Plugin%20Installation)
-- [Environment Management](/docs/Deployment%20Tools/Plugins/NetBeans%20Plugin/NetBeans%20Plugin%20Management)
-- [Application Deployment](/docs/Deployment%20Tools/Plugins/NetBeans%20Plugin/Application%20Deploy%20via%20NetBeans)
+- [Plugin Installation](/docs/deployment-tools/plugins/netbeans-plugin/netbeans-plugin-installation)
+- [Environment Management](/docs/deployment-tools/plugins/netbeans-plugin/netbeans-plugin-management)
+- [Application Deployment](/docs/deployment-tools/plugins/netbeans-plugin/application-deploy-via-netbeans)

@@ -93,7 +93,7 @@ Click **Install** to proceed.
 Here, you need to:
 
 - provide **_External Domain(s)_** of the target environment, the possible options are:
-  - leave the field blank to create a dummy SSL certificate, assigned to environment internal URL (_env_name.{[hoster_domain](http://localhost:3000/docs/quickstart/hosters-list-&-info)}_), for being used in testing
+  - leave the field blank to create a dummy SSL certificate, assigned to environment internal URL (_env_name.{[hoster_domain](/docs/quickstart/hosters-list-&-info)}_), for being used in testing
   - insert the preliminary linked external domain(s) to get a trusted certificate for each of them; if specifying multiple hostnames, separate them with either space, comma, or semicolon
 
 <div style={{
@@ -113,7 +113,7 @@ Finally, click on **Install** to initiate installation of the appropriate SSL ce
 
 :::tip Note
 
-that the add-on requires [public IP](/docs/application-setting/external-access-to-applications/public-ip) address for proper work. So in case, the environment entry point does not have such, it will be automatically attached during installation (be aware that Public IP is a paid option - the cost can be found within the [Quotas & Pricing](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ) frame).
+that the add-on requires [public IP](/docs/application-setting/external-access-to-applications/public-ip) address for proper work. So in case, the environment entry point does not have such, it will be automatically attached during installation (be aware that Public IP is a paid option - the cost can be found within the [Quotas & Pricing](/docs/account-and-pricing/resource-charging/pricing-faq) frame).
 
 :::
 
@@ -149,7 +149,7 @@ As you can see, the environment is accessible and the established connection is 
 
 Alternatively add-on can be installed with Jelastic [API method install](https://docs.jelastic.com/api/#!/api/marketplace.Jps-method-Install). Api call looks like:
 
-\*https://[[hoster-api-host](http://localhost:3000/docs/quickstart/hosters-list-&-info)]/1.0/marketplace/jps/rest/install?jps=letsencrypt-ssl-addon&session={**_session_**}&envName={**_your_env_name_**}&nodeGroup={**_your_node_group_**}&settings={**_your_addon_settings_**}\*
+\*https://[[hoster-api-host](/docs/quickstart/hosters-list-&-info)]/1.0/marketplace/jps/rest/install?jps=letsencrypt-ssl-addon&session={**_session_**}&envName={**_your_env_name_**}&nodeGroup={**_your_node_group_**}&settings={**_your_addon_settings_**}\*
 
 where:
 
@@ -157,7 +157,7 @@ where:
 
 **{your_env_name}** - name of the target environment
 
-**{your_node_group}** - unique identifier of the [nodeGroup](http://localhost:3000/docs/application-setting/domain-name-management/container-dns-hostnames)
+**{your_node_group}** - unique identifier of the [nodeGroup](/docs/application-setting/domain-name-management/container-dns-hostnames)
 
 **{your_addon_settings}** - list of add-on specific settings in JSON format (key:value pairs)
 
@@ -202,7 +202,7 @@ Also, your SSL certificates can be updated by add-on re-installation for the sam
 
 Similar to Add-On installation the certificate can be forced to update via API call with method **_[executeappaction](https://docs.jelastic.com/api/#/api/marketplace.Jps)_**:
 
-\*https://[[hoster-api-host](http://localhost:3000/docs/quickstart/hosters-list-&-info)]/1.0/marketplace/jps/rest/executeappaction?session=**_{session}_**&appUniqueName=**_{app_unique_name}_**&action=update\*
+\*https://[[hoster-api-host](/docs/quickstart/hosters-list-&-info)]/1.0/marketplace/jps/rest/executeappaction?session=**_{session}_**&appUniqueName=**_{app_unique_name}_**&action=update\*
 
 where:
 
@@ -248,7 +248,7 @@ To avoid security issues, a new certificate will be issued, even in case of remo
 
 ## Let’s Encrypt Certificates Reconfiguration via API
 
-\*https://[[hoster-api-host](http://localhost:3000/docs/quickstart/hosters-list-&-info)]/1.0/marketplace/jps/rest/executeappaction?session={session}&appUniqueName=**_{app_unique_name}_**&action=configure&params={"customDomains":"**_{your_new_domain_list}_**"}
+\*https://[[hoster-api-host](/docs/quickstart/hosters-list-&-info)]/1.0/marketplace/jps/rest/executeappaction?session={session}&appUniqueName=**_{app_unique_name}_**&action=configure&params={"customDomains":"**_{your_new_domain_list}_**"}
 
 - where:
 

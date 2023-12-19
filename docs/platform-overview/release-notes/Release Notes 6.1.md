@@ -46,7 +46,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1#topology-wizard-improvements">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.1#topology-wizard-improvements">
                     Learn More >>
                 </a>
             </div>
@@ -65,7 +65,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1#glusterfs-native-client-for-storage-cluster">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.1#glusterfs-native-client-for-storage-cluster">
                     Learn More >>
                 </a>
             </div>
@@ -84,7 +84,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1#jem-commands-validation">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.1#jem-commands-validation">
                     Learn More >>
                 </a>
             </div>
@@ -128,7 +128,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1#custom-domains-tab-improvements">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.1#custom-domains-tab-improvements">
                     Learn More >>
                 </a>
             </div>
@@ -147,7 +147,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1#apache-php-redeployment-amendments">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.1#apache-php-redeployment-amendments">
                     Learn More >>
                 </a>
             </div>
@@ -166,7 +166,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1#default-file-permissions-adjustments">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.1#default-file-permissions-adjustments">
                     Learn More >>
                 </a>
             </div>
@@ -185,7 +185,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1#keytool-utility-for-java-containers">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.1#keytool-utility-for-java-containers">
                     Learn More >>
                 </a>
             </div>
@@ -204,7 +204,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1#onbeforeinit-cs-event-improvements">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.1#onbeforeinit-cs-event-improvements">
                     Learn More >>
                 </a>
             </div>
@@ -223,7 +223,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1#vcs-deployment-errors-clarification">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.1#vcs-deployment-errors-clarification">
                     Learn More >>
                 </a>
             </div>
@@ -242,7 +242,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1#software-stack-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.1#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -286,7 +286,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1#debian-8-end-of-life">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.1#debian-8-end-of-life">
                     Learn More >>
                 </a>
             </div>
@@ -305,7 +305,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1#fixes-compatible-with-prior-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.1#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -324,7 +324,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1#bug-fixes">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.1#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -360,7 +360,7 @@ In order to help locate the required stack quicker, the **Search** field can be 
 
 Other adjustments of the topology wizard include:
 
-- renamed the **Docker** tab to **Custom** (since different [container types](http://localhost:3000/docs/container/container-types) are available - Kubernetes, Docker Native, etc.), adjusted the corresponding icon and descriptions of the available options
+- renamed the **Docker** tab to **Custom** (since different [container types](/docs/container/container-types) are available - Kubernetes, Docker Native, etc.), adjusted the corresponding icon and descriptions of the available options
 - added the default **Storage** block to the **_.NET_** tab
 - implemented **_tags search_** when working with custom containers based on the Docker images in topology wizard and during [container redeploy](/docs/category/container-deployment)
 
@@ -371,14 +371,14 @@ Other adjustments of the topology wizard include:
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## GlusterFS Native Client for Storage Cluster
 
-Starting with the 6.1 platform release, [Shared Storage Cluster](http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.1) provides support of the **Gluster Native Client** for distributed shared (cloud) storage. Such a change allows connecting clients over the FUSE interface (in addition to the standard NFS).
+Starting with the 6.1 platform release, [Shared Storage Cluster](/docs/platform-overview/release-notes/release-notes-6.1) provides support of the **Gluster Native Client** for distributed shared (cloud) storage. Such a change allows connecting clients over the FUSE interface (in addition to the standard NFS).
 
 Compared to the **NFS** protocol, GlusterFS offers greater reliability. It operates with multiple servers and is recommended for cases that require high concurrency, high performance of the write operations, and failover recovery upon emergencies.
 
@@ -396,26 +396,26 @@ Currently, only the Shared Storage Cluster can export data using GlusterFS (i.e.
 
 When selecting a protocol, as a general rule, you choose NFS for better performance and Gluster Native for reliability:
 
-- **[NFS](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Protocols/NFS)** - straightforward file system protocol, designed for accelerated processing and high performance
-- **[Gluster Native](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Protocols/GlusterFS)** (FUSE) - reliable file system protocol with automatic replication of the mounted data, designed for data backup and failover (requires less CPU/disk than NFS)
+- **[NFS](/docs/data-storage-container/data-sharing/mount-protocols/nfs)** - straightforward file system protocol, designed for accelerated processing and high performance
+- **[Gluster Native](/docs/data-storage-container/data-sharing/mount-protocols/glusterfs)** (FUSE) - reliable file system protocol with automatic replication of the mounted data, designed for data backup and failover (requires less CPU/disk than NFS)
 
 You can learn more about the [architecture implementation](https://docs.gluster.org/en/latest/Quick-Start-Guide/Architecture/) of GlusterFS from the official documentation.
 
-[More info](/docs/Data%20Storage%20Container/Data%20Sharing/Mount%20Protocols/GlusterFS)
+[More info](/docs/data-storage-container/data-sharing/mount-protocols/glusterfs)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Custom Domains Tab Improvements
 
-The platform provides a [Domain Binding](/docs/application-setting/domain-name-management/custom-domain-name) option that allows configuring custom domains for environments that are accessed via [Shared Load Balancer](http://localhost:3000/docs/application-setting/external-access-to-applications/shared-load-balancer) (i.e. without public IP). The process is simple - you just need to create the appropriate CNAME or ANAME record for your domain and bind it to the environment via the platform dashboard.
+The platform provides a [Domain Binding](/docs/application-setting/domain-name-management/custom-domain-name) option that allows configuring custom domains for environments that are accessed via [Shared Load Balancer](/docs/application-setting/external-access-to-applications/shared-load-balancer) (i.e. without public IP). The process is simple - you just need to create the appropriate CNAME or ANAME record for your domain and bind it to the environment via the platform dashboard.
 
 :::danger Note
 
@@ -444,7 +444,7 @@ Additionally, the **[swap domains](/docs/application-setting/domain-name-managem
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -462,7 +462,7 @@ Also, when redeploying to the same tag, the platform won’t overwrite the exist
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -476,7 +476,7 @@ Starting with the PaaS 6.1 release, file permissions for containers after an env
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -490,7 +490,7 @@ In order to allow a straightforward use of the Java keytool utility, a small adj
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -504,7 +504,7 @@ JEM (Jelastic Environment Manager) is a platform component responsible for all o
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -515,30 +515,30 @@ JEM (Jelastic Environment Manager) is a platform component responsible for all o
 
 Additionally, a new trigger condition was added for the onBeforeInit event. For now, it is possible to implement some custom initialization actions upon clicking a [custom button](https://docs.cloudscripting.com/creating-manifest/visual-settings/#custom-buttons).
 
-[More info](http://localhost:3000/docs/container/container-image-requirements)
+[More info](/docs/container/container-image-requirements)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Debian 8 End-of-Life
 
-D**ebian 8 “Jessie”** software stack [LTS support](https://wiki.debian.org/LTS) has officially ended. It will no longer get any updates and security fixes. In the current PaaS 6.1 release, this version was removed from the list of [supported OS templates](http://localhost:3000/docs/container/container-image-requirements) to ensure that users operate with reliable and secure stacks only. The platform restricts the creation of new Debian 8 containers, but all existing ones remain fully operable. However, we strongly recommend updating such instances to the 9th or 10th release versions via built-in [redeploy functionality](/docs/category/container-deployment).
+D**ebian 8 “Jessie”** software stack [LTS support](https://wiki.debian.org/LTS) has officially ended. It will no longer get any updates and security fixes. In the current PaaS 6.1 release, this version was removed from the list of [supported OS templates](/docs/container/container-image-requirements) to ensure that users operate with reliable and secure stacks only. The platform restricts the creation of new Debian 8 containers, but all existing ones remain fully operable. However, we strongly recommend updating such instances to the 9th or 10th release versions via built-in [redeploy functionality](/docs/category/container-deployment).
 
-[More info](http://localhost:3000/docs/container/container-image-requirements)
+[More info](/docs/container/container-image-requirements)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -552,7 +552,7 @@ In the current 6.1 platform version, error notifications for the failed VCS depl
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -671,7 +671,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -689,7 +689,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -808,7 +808,7 @@ In the table below, you can see the list of bug fixes applied to the platform st
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

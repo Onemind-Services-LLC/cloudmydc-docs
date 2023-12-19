@@ -37,12 +37,12 @@ Here, the following parameters should be specified:
 
 - Before using the **_SwapExtIps_** CLI method, please make sure that the source and destination nodes (environments) are running and belong to the same [region](/docs/environment-management/environment-regions/choosing-a-region).
 - <u>Before the PaaS 5.8 release</u>, this method does not support IPv6 and works with IPv4 only.
-- <u>Before the PaaS 6.0 release</u>, IP swap fails if an environment has a [bound](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#how-to-bind-domain-to-environment) custom domain.
+- <u>Before the PaaS 6.0 release</u>, IP swap fails if an environment has a [bound](/docs/application-setting/domain-name-management/custom-domain-name#how-to-bind-domain-to-environment) custom domain.
 - The process may cause short-term unavailability of the corresponding Public IP address(es) (up to 10 seconds).
-- If you need to swap two specific addresses between nodes with [multiple IPs](http://localhost:3000/docs/application-setting/external-access-to-applications/multiple-public-ip) on each one, please contact the Support Team for assistance. Support of such cases is currently under development and will be implemented in future releases.
+- If you need to swap two specific addresses between nodes with [multiple IPs](/docs/application-setting/external-access-to-applications/multiple-public-ip) on each one, please contact the Support Team for assistance. Support of such cases is currently under development and will be implemented in future releases.
 - The following node types will be automatically restarted to start listening on the new addresses after the operation: _GlassFish, Apache PHP, Apache Ruby, NGINX PHP, NGINX Ruby_.
-- Based on the comprized services, a manual restart may be required for the [_Elastic VPS_](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information) and custom [_Docker containers_](http://localhost:3000/docs/container/container-deployment/custom-containers-deployment) to adapt for the IP address change.
-- We recommend rechecking the [_Access via SLB_](http://localhost:3000/docs/application-setting/external-access-to-applications/shared-load-balancer#deny-access-via-shared-load-balancer) state for both nodes after swapping IPs.
+- Based on the comprized services, a manual restart may be required for the [_Elastic VPS_](/docs/elastic-vps/elastic-vps-overview/general-information) and custom [_Docker containers_](/docs/container/container-deployment/custom-containers-deployment) to adapt for the IP address change.
+- We recommend rechecking the [_Access via SLB_](/docs/application-setting/external-access-to-applications/shared-load-balancer#deny-access-via-shared-load-balancer) state for both nodes after swapping IPs.
 
 :::
 

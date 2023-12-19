@@ -32,12 +32,12 @@ Application lifecycle management becomes a lot easier thanks to the automation o
 
 To realize the schema above we’ll come through the next steps:
 
-- [Create the production environment](http://localhost:3000/docs/application-setting/application-lifecycle-management#create-the-production-environment)
-- [Create the build environment](http://localhost:3000/docs/application-setting/application-lifecycle-management#create-the-build-environment)
-- [Build and deploy the project](http://localhost:3000/docs/application-setting/application-lifecycle-management#build-and-deploy-the-project)
-- [Create database environment](http://localhost:3000/docs/application-setting/application-lifecycle-management#create-database-environment)
-- [Create the test environment](http://localhost:3000/docs/application-setting/application-lifecycle-management#create-the-test-environment)
-- [Upgrade application](http://localhost:3000/docs/application-setting/application-lifecycle-management#upgrade-application)
+- [Create the production environment](/docs/application-setting/application-lifecycle-management#create-the-production-environment)
+- [Create the build environment](/docs/application-setting/application-lifecycle-management#create-the-build-environment)
+- [Build and deploy the project](/docs/application-setting/application-lifecycle-management#build-and-deploy-the-project)
+- [Create database environment](/docs/application-setting/application-lifecycle-management#create-database-environment)
+- [Create the test environment](/docs/application-setting/application-lifecycle-management#create-the-test-environment)
+- [Upgrade application](/docs/application-setting/application-lifecycle-management#upgrade-application)
 
 Also here is a video version of the same procedure:
 

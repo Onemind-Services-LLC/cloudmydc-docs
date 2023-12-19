@@ -13,7 +13,7 @@ Since custom containers don’t have the embedded GUI for their management, the 
 With the PaaS, the majority of the required configurations can be performed directly through the dashboard without the necessity to use SSH, thanks to the following tools:
 
 - [Container Configurations](/docs/container/container-configuration/configuration-tools) - allows to customize the main container settings (like variables, volumes, linking, run options, opened ports, etc.)
-- [Configuration Manager](http://localhost:3000/docs/container/container-configuration/configuration-tools#configuration-file-manager) - provides the full root access to the container’s file system, allowing to operate with all of the comprised files
+- [Configuration Manager](/docs/container/container-configuration/configuration-tools#configuration-file-manager) - provides the full root access to the container’s file system, allowing to operate with all of the comprised files
   In addition, you can leverage the platform-dedicated [CLI client](/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview), which provides the advanced remote management for all types of environments and nodes and allows to automate your app’s lifecycle via scripts.
 
 :::
@@ -22,9 +22,9 @@ SSH connection to a container can be established in two ways:
 
 - through the SSH Gateway as for any other environment. The flow will be the following:
 
-  - [generate](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key) an SSH keypair
+  - [generate](/docs/deployment-tools/ssh/generate-ssh-key) an SSH keypair
   - [add your public SSH key](/docs/deployment-tools/ssh/add-ssh-key) to the dashboard
-  - [access your account](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) via SSH protocol
+  - [access your account](/docs/deployment-tools/ssh/ssh-access/overview) via SSH protocol
 
 - or, if you don’t want to use SSH keys, you need to attach the [public IP](/docs/application-setting/external-access-to-applications/public-ip) address to the required node and perform the next steps:
 

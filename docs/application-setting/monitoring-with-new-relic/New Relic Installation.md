@@ -18,7 +18,7 @@ sidebar_position: 1
 
 </div>
 
-Since New Relic is one of the most frequently used and extremely popular solutions for supervising application metrics, we have prepared a special add-on to simplify its delivery. Implemented on the base of [JPS](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview) (Packaging Standard), it gives opportunity to install this software in a single mouse click and start tracking the most crucial application server information in a matter of minutes. In addition, you can always stay up-to-date with the embedded option for automatic installation of available New Relic updates.
+Since New Relic is one of the most frequently used and extremely popular solutions for supervising application metrics, we have prepared a special add-on to simplify its delivery. Implemented on the base of [JPS](/docs/deployment-tools/cloud-scripting-&-jps/jps-overview) (Packaging Standard), it gives opportunity to install this software in a single mouse click and start tracking the most crucial application server information in a matter of minutes. In addition, you can always stay up-to-date with the embedded option for automatic installation of available New Relic updates.
 
 So, let’s explore how to unveil the latent performance capacities of your application with the help of New Relic - to proceed with the add-on installation, you’ll need to have:
 
@@ -29,13 +29,13 @@ Once these conditions are fulfilled, you can easily integrate New Relic agent to
 
 :::tip Note
 
-Subsequently, the installed New Relic monitoring software can be [smoothly updated](http://localhost:3000/docs/application-setting/monitoring-with-new-relic/new-relic-update) to its latest version with the corresponding inbuilt add-on option.
+Subsequently, the installed New Relic monitoring software can be [smoothly updated](/docs/application-setting/monitoring-with-new-relic/new-relic-update) to its latest version with the corresponding inbuilt add-on option.
 
 :::
 
 ## New Relic Add-On Installation
 
-With the platform, the New Relic add-on can be installed on the top of either _Java_-(handled as a [Java agent](/docs/Java/Java%20Apps%20Specifications/Java%20Agent)) or _PHP_-based environment (being implemented in a view of [PHP extension](/docs/PHP/PHP%20Apps%20Specifications/PHP%20Extensions)).
+With the platform, the New Relic add-on can be installed on the top of either _Java_-(handled as a [Java agent](/docs/java/java-apps-specifications/java-agent)) or _PHP_-based environment (being implemented in a view of [PHP extension](/docs/php/php-apps-specifications/php-extensions)).
 
 Anyway, the installation flow remains similar - so, as an example, we’ll use a Java environment with **Tomcat** application server.
 
@@ -109,7 +109,7 @@ Here, the following data should be specified within the appropriate fields:
 
 The **_License key_** field at add-on installation frame contains the key mask by default. You can complete the installation leaving it unchanged, but, obviously, you won’t be able to explore the gathered statistics (because of the absence of the bound New Relic account).
 
-Nevertheless, you can specify this parameter later within the New Relic add-on settings by means of the platform [Configuration Manager](http://localhost:3000/docs/container/container-configuration/configuration-tools#configuration-file-manager).The paths for the required file are:
+Nevertheless, you can specify this parameter later within the New Relic add-on settings by means of the platform [Configuration Manager](/docs/container/container-configuration/configuration-tools#configuration-file-manager).The paths for the required file are:
 
 - for **Java** app servers:
   - **TomEE**,**Tomcat** - _/opt/tomcat/lib/newrelic/newrelic.yml_
@@ -154,7 +154,7 @@ Click the **Install** button to confirm your entries and initiate the deployment
 
 Please, **pay attention** that if your project is run in a single app server node, the restart will cause a **temporary downtime** of your application, thus we leave for you to decide when to perform this operation.
 
-However, in case your app server is [scaled horizontally](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling), the downtime will be minimized, since all the server instances will be restarted sequentially. You are able to get rid of this inconvenience at all, through setting the delay for executing this operation at each next node within a layer. In such a way, whilst one node is undergoing the maintenance, the rest ones will remain active.
+However, in case your app server is [scaled horizontally](/docs/application-setting/scaling-and-clustering/horizontal-scaling), the downtime will be minimized, since all the server instances will be restarted sequentially. You are able to get rid of this inconvenience at all, through setting the delay for executing this operation at each next node within a layer. In such a way, whilst one node is undergoing the maintenance, the rest ones will remain active.
 
 :::
 

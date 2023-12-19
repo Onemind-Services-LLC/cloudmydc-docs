@@ -54,7 +54,7 @@ Follow the next steps to add a custom Java agent into a container:
 
 Provide a link to the required file or locate it on the local machine to **Upload**.
 
-3. Next, switch to the [**_variables.conf_**](http://localhost:3000/docs/environment-management/environment-variables/custom-environment-variables) file (the exact location vary based on the particular software stack) to provide custom variables and [JVM options](http://localhost:3000/docs/environment-management/environment-variables/java-options-and-arguments). Here, you can specify the javaagent parameter with a path to the required **_jar_** file. For example: _javaagent:/opt/tomcat/temp/my-java-agent.jar_
+3. Next, switch to the [**_variables.conf_**](/docs/environment-management/environment-variables/custom-environment-variables) file (the exact location vary based on the particular software stack) to provide custom variables and [JVM options](/docs/environment-management/environment-variables/java-options-and-arguments). Here, you can specify the javaagent parameter with a path to the required **_jar_** file. For example: _javaagent:/opt/tomcat/temp/my-java-agent.jar_
 
 <div style={{
     display:'flex',

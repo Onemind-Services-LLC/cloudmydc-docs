@@ -33,11 +33,11 @@ Being able to easily connect to Cloud services is a criteria of great importance
 
 Depending on a type of the created node, the set of hostnames for it could differ. Thus, below we’ll consider the possible ways to refer to a particular node, hosted at the platform, either from inside (i.e. when managing it via [SSH Gate](/docs/deployment-tools/ssh/ssh-overview)) or outside of the Cloud:
 
-- [Hostnames for Specific Containers](http://localhost:3000/docs/application-setting/domain-name-management/container-dns-hostnames#hostnames-for-specific-containers)
-- [Supplementary Hostnames for Particular Node Types](http://localhost:3000/docs/application-setting/domain-name-management/container-dns-hostnames#supplementary-hostnames-for-particular-node-types)
-- [Hostnames for Specific Layers](http://localhost:3000/docs/application-setting/domain-name-management/container-dns-hostnames#hostnames-for-specific-layers)
-- [Short Hostnames for Containers within One Environment](http://localhost:3000/docs/application-setting/domain-name-management/container-dns-hostnames#short-hostnames-for-containers-within-one-environment)
-- [Hostnames for Linked Containers](http://localhost:3000/docs/application-setting/domain-name-management/container-dns-hostnames#hostnames-for-linked-containers)
+- [Hostnames for Specific Containers](/docs/application-setting/domain-name-management/container-dns-hostnames#hostnames-for-specific-containers)
+- [Supplementary Hostnames for Particular Node Types](/docs/application-setting/domain-name-management/container-dns-hostnames#supplementary-hostnames-for-particular-node-types)
+- [Hostnames for Specific Layers](/docs/application-setting/domain-name-management/container-dns-hostnames#hostnames-for-specific-layers)
+- [Short Hostnames for Containers within One Environment](/docs/application-setting/domain-name-management/container-dns-hostnames#short-hostnames-for-containers-within-one-environment)
+- [Hostnames for Linked Containers](/docs/application-setting/domain-name-management/container-dns-hostnames#hostnames-for-linked-containers)
 
 ## Hostnames for Specific Containers
 
@@ -61,7 +61,7 @@ Herewith, the placeholders should be replaced with the next values:
 </div>
 
 - **_${envName}_** - environment name (not an [alias](/docs/environment-management/environment-aliases)), specified during its creation
-- **_${platformDomain}_** - domain name of a PaaS installation [hosting service provider](http://localhost:3000/docs/quickstart/hosters-list-&-info)
+- **_${platformDomain}_** - domain name of a PaaS installation [hosting service provider](/docs/quickstart/hosters-list-&-info)
 
 Both variants can be used for refering to the nodes from inside or outside of the platform (i.e. allowing to establish both internal and external connections).
 
@@ -221,7 +221,7 @@ Such supplementary prefixes are valid only within domains with a hyphen as a sep
     </div> 
 </div>
 
-All alternative domain strings, shown in the table above, can be utilized similarly to the [hostnames for specific containers](http://localhost:3000/docs/application-setting/domain-name-management/container-dns-hostnames#hostnames-for-specific-layers).
+All alternative domain strings, shown in the table above, can be utilized similarly to the [hostnames for specific containers](/docs/application-setting/domain-name-management/container-dns-hostnames#hostnames-for-specific-layers).
 
 ## Hostnames for Specific Layers
 
@@ -261,7 +261,7 @@ For example, this command can be used to get an application servers list for any
 
 :::tip Tip
 
-In order to get a list of containers for the current environment, just a [short hostname](http://localhost:3000/docs/application-setting/domain-name-management/container-dns-hostnames#short-hostnames-for-containers-within-one-environment) can be used.
+In order to get a list of containers for the current environment, just a [short hostname](/docs/application-setting/domain-name-management/container-dns-hostnames#short-hostnames-for-containers-within-one-environment) can be used.
 
 :::
 
@@ -278,7 +278,7 @@ Utilizing such short hostnames in server configuration files, application source
 
 ## Hostnames for Linked Containers
 
-Upon [linking](http://localhost:3000/docs/container/container-configuration/links) two Docker-based environment layers, a set of dedicated DNS records are automatically added to the global platform database. This allows to refer to the nodes within a _target_ layer from the _source_ ones (but not vice versa) when working in confines of these two layers using the following hostname aliases:
+Upon [linking](/docs/container/container-configuration/links) two Docker-based environment layers, a set of dedicated DNS records are automatically added to the global platform database. This allows to refer to the nodes within a _target_ layer from the _source_ ones (but not vice versa) when working in confines of these two layers using the following hostname aliases:
 
 - **${linkAlias}** - to refer to a random node within a target layer; an exact node to respond is chosen by means of the Round-Robin algorithm - this ensures even load distribution
 - **_${linkAlias}_${N}\_** - to access a particular container within a target layer

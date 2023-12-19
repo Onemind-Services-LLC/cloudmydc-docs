@@ -112,7 +112,7 @@ fedhost~$ tar xvf kubefedctl-0.7.0-linux-amd64.tgz
 fedhost~$ mv kubefedctl /usr/local/bin
 ```
 
-3. To let KubeFed federating deployments, it must be able to interact with all of selected **Member Clusters**. To get this, you can use the following [RBAC](/docs/Kubernetes%20Hosting/Managing%20Kubernetes/Access%20Control) config file to create the necessary role to ensure connection from the **Host Cluster**. Log in the master node of the **Member Cluster** via SSH and create a configuration file for example **member1.yaml** and paste the content below into it.
+3. To let KubeFed federating deployments, it must be able to interact with all of selected **Member Clusters**. To get this, you can use the following [RBAC](/docs/kubernetes-hosting/managing-kubernetes/access-control) config file to create the necessary role to ensure connection from the **Host Cluster**. Log in the master node of the **Member Cluster** via SSH and create a configuration file for example **member1.yaml** and paste the content below into it.
 
 ```bash
 apiVersion: v1
@@ -251,7 +251,7 @@ fedhost~$ kubectl config set clusters.kubefed-remote-member1.certificate-authori
 
 :::tip Note
 
-When the Member Cluster is located on the different Jelastic platform the certificate will be invalid because the [Shared Load Balancer](http://localhost:3000/docs/application-setting/external-access-to-applications/shared-load-balancer) with its own certificate is in front of the cluster. This certificate should be ignored during negotiation phase between Host Cluster and Member with a command for example:
+When the Member Cluster is located on the different Jelastic platform the certificate will be invalid because the [Shared Load Balancer](/docs/application-setting/external-access-to-applications/shared-load-balancer) with its own certificate is in front of the cluster. This certificate should be ignored during negotiation phase between Host Cluster and Member with a command for example:
 
 ```bash
 fedhost~$ kubectl config set clusters.kubefed-remote-member1.insecure-skip-tls-verify true

@@ -91,7 +91,7 @@ cp /home/jelastic/webapp/ROOT/conf/app.ini /home/jelastic/webapp/ROOT/custom/con
 
 Don’t forget to **Save** the changes.
 
-7. Add the **_GO_RUN_OPTIONS_** [environment variable](http://localhost:3000/docs/environment-management/environment-variables/environment-variables) with the **_web_** value.
+7. Add the **_GO_RUN_OPTIONS_** [environment variable](/docs/environment-management/environment-variables/environment-variables) with the **_web_** value.
 
 <div style={{
     display:'flex',

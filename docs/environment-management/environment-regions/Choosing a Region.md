@@ -19,8 +19,8 @@ In such a way, you receive impressive flexibility for the organization of your a
 
 So, read the complete guidance on managing environment regions for your applications below and get the maximum efficiency of this significant feature - find out how to:
 
-- [select an environment region](http://localhost:3000/docs/environment-management/environment-regions/choosing-a-region#select-environment-region)
-- [view details about regions](http://localhost:3000/docs/environment-management/environment-regions/choosing-a-region#view-details-about-regions)
+- [select an environment region](/docs/environment-management/environment-regions/choosing-a-region#select-environment-region)
+- [view details about regions](/docs/environment-management/environment-regions/choosing-a-region#view-details-about-regions)
 
 ## Select Environment Region
 
@@ -115,7 +115,7 @@ We recommend to getting acquainted with the specifics of each available region i
 
 Here, the detailed info on the provided regions can be found, e.g. a general description with the list of supplied parameters and included features. However, depending on your hosting provider’s settings, this link can lead to a separate site or document page.
 
-- Pricing section of the same frame, the details on the _[charged resources](/docs/Account&Pricing/Resource%20Charging/Charged%20Resources)_ (RAM/CPU, Disk Space, Traffic and Options tabs) and licensing costs (the Software tab) for every region can be viewed - use the drop-down list at the top to switch between them
+- Pricing section of the same frame, the details on the _[charged resources](/docs/account-and-pricing/resource-charging/charged-resources)_ (RAM/CPU, Disk Space, Traffic and Options tabs) and licensing costs (the Software tab) for every region can be viewed - use the drop-down list at the top to switch between them
 
 <div style={{
     display:'flex',

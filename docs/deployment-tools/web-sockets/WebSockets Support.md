@@ -14,14 +14,14 @@ You can achieve the following benefits using WebSockets:
 - Streaming through proxies and firewalls, both upstream and downstream at once
 - Backward compatibility with the pre-WebSocket world, by switching from the HTTP connection to WebSockets
 
-The platform provides you with an advanced and complemented WebSockets support by means of integrating this technology to the [Shared Load Balancer](http://localhost:3000/docs/application-setting/external-access-to-applications/shared-load-balancer) and [NGINX-balancer node](/docs/Load%20Balancers/NGINX/NGINX%20Balancer), so you can use it even without external IP address attached to your app server.
+The platform provides you with an advanced and complemented WebSockets support by means of integrating this technology to the [Shared Load Balancer](/docs/application-setting/external-access-to-applications/shared-load-balancer) and [NGINX-balancer node](/docs/load-balancers/nginx/nginx-balancer), so you can use it even without external IP address attached to your app server.
 
 The easiest way to activate the WebSockets support is to place an NGINX balancer in front of your application, making it the entry point of the environment and getting rid of any additional configurations. Over and above, this server can also be used for easily overriding the default settings with your custom ones, e.g. changing the listeners' port numbers.
 
 Nevertheless, the WebSockets technology is also supported by the application servers provided at the platform - the appropriate configuration examples are available within our documentation:
 
-- [WebSockets for Java](/docs/Deployment%20Tools/WebSockets/WebSockets%20Support%20for%20Java)
-- [WebSockets for PHP](/docs/Deployment%20Tools/WebSockets/Websockets%20Support%20for%20PHP)
+- [WebSockets for Java](/docs/deployment-tools/web-sockets/websockets-support-for-java)
+- [WebSockets for PHP](/docs/deployment-tools/web-sockets/websockets-support-for-php)
 
 And the guide below will provide insights on how to configure WebSockets support for your application, hosted at the platform, with the help of the **NGINX-balancer** node. As an example, we’ll use a simple chat application, written in PHP. So, let’s get started and move step-by-step from the very beginning.
 

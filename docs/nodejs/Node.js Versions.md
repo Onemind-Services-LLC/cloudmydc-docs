@@ -19,7 +19,7 @@ The up-to-date list of the releases available on the platform is provided via th
 
 :::
 
-The required Node.js version can be selected when creating [a new environment](/docs/Nodejs/Node.js%20Versions#create-nodejs-environment), as well as switched for [the already existing](/docs/Nodejs/Node.js%20Versions#change-nodejs-version) one.
+The required Node.js version can be selected when creating [a new environment](/docs/nodejs/node.js-versions#create-nodejs-environment), as well as switched for [the already existing](/docs/nodejs/node.js-versions#change-nodejs-version) one.
 
 ## Create Node.js Environment
 
@@ -47,7 +47,7 @@ The required Node.js version can be selected when creating [a new environment](/
 
 </div>
 
-3. Next, you can select the preferred [process manager](/docs/Nodejs/Nodejs%20Apps%20Specifications/Process%20Managers#nodejs-process-managers) (_supervisor_, _forever_,_npm_ or _pm2_) through the _tags_ drop-down list (circled in the image below):
+3. Next, you can select the preferred [process manager](/docs/nodejs/nodejs-apps-specifications/process-managers#nodejs-process-managers) (_supervisor_, _forever_,_npm_ or _pm2_) through the _tags_ drop-down list (circled in the image below):
 
 <div style={{
     display:'flex',
@@ -66,7 +66,7 @@ A Node.js process manager helps to control your application lifecycle, providing
 - **_forever_** - manages node processes (i.e. service start, stop, restart) to save services alive through keeping them run continuously
 - **_pm2_** - provides you with multiple special options (like monitoring, load balancing, deployment, etc.), allowing to manage your application more effectively
 
-Specify the remaining server and environment parameters (e.g. cloudlet limits, [region](http://localhost:3000/docs/environment-management/environment-regions/choosing-a-region#environment-regions), environment name, etc.) and click the **Create** button in the bottom right frame corner.
+Specify the remaining server and environment parameters (e.g. cloudlet limits, [region](/docs/environment-management/environment-regions/choosing-a-region#environment-regions), environment name, etc.) and click the **Create** button in the bottom right frame corner.
 
 ## Change Node.js Version
 
@@ -113,8 +113,8 @@ In the opened frame, select to edit your Nodejs server version or tag (i.e. clic
 2. Within the opened R**_edeploy container(s)_** dialog, re-configure the following options:
 
 - **_Tag_** - provides a choice of needed Node.js version and preferred process manager
-- **_Keep volumes data_** - allows saving data in [volumes](http://localhost:3000/docs/container/container-configuration/volumes)
-- **_Simultaneous_** or **_Sequential deployment with delay_** (for [scaled servers](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) only) - defines whether all containers within a layer should be redeployed at once or one-by-one, to avoid downtime
+- **_Keep volumes data_** - allows saving data in [volumes](/docs/container/container-configuration/volumes)
+- **_Simultaneous_** or **_Sequential deployment with delay_** (for [scaled servers](/docs/application-setting/scaling-and-clustering/horizontal-scaling) only) - defines whether all containers within a layer should be redeployed at once or one-by-one, to avoid downtime
 
 <div style={{
     display:'flex',
@@ -140,6 +140,6 @@ In the opened frame, select to edit your Nodejs server version or tag (i.e. clic
 
 :::tip
 
-For the detailed guidance on Node.js projects hosting, please, refer to the [Node.js Developer’s Center](/docs/Nodejs/Node.js%20Dev%20Center#nodejs-hosting) guide.
+For the detailed guidance on Node.js projects hosting, please, refer to the [Node.js Developer’s Center](/docs/nodejs/node.js-dev-center#nodejs-hosting) guide.
 
 :::

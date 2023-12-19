@@ -70,8 +70,8 @@ Pricing policy in different environment regions can vary based on their paramete
 
 Just lower down the tab the **_Live migration_** section is placed, either with the special switcher shown or providing some additional info, depending on the chosen target region. Here you can define which migration type (among the two provided ones) should be used:
 
-- **[live migration](http://localhost:3000/docs/environment-management/environment-regions/migration-between-regions#live-migration)** - available only between the environment regions, marked with the special LM label within the list (usually, only for regions within the same datacenter)
-- **[offline migration](http://localhost:3000/docs/environment-management/environment-regions/migration-between-regions#offline-migration)** - can be used for any environment regions
+- **[live migration](/docs/environment-management/environment-regions/migration-between-regions#live-migration)** - available only between the environment regions, marked with the special LM label within the list (usually, only for regions within the same datacenter)
+- **[offline migration](/docs/environment-management/environment-regions/migration-between-regions#offline-migration)** - can be used for any environment regions
 
 <div style={{
     display:'flex',
@@ -125,7 +125,7 @@ Although the benefits of live (online) migration are evident, keep in mind that 
 - _active database containers, [Big Data](https://en.wikipedia.org/wiki/Big_data)_ - possible corruption or loss of the currently processed data due to the nature of online migration and freezes of network connections/disk IO related operations during the migration process
 
 :::
-If the [offline mode](http://localhost:3000/docs/environment-management/environment-regions/migration-between-regions#offline-migration) is needed - just turn off the corresponding switcher.
+If the [offline mode](/docs/environment-management/environment-regions/migration-between-regions#offline-migration) is needed - just turn off the corresponding switcher.
 
 <div style={{
     display:'flex',

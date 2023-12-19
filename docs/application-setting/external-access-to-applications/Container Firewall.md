@@ -20,13 +20,13 @@ The platform **Container Firewall** feature provides a possibility to control yo
 
 :::tip
 
-If you want to restrict access between the environments on a single account, it can be automatically configured via the [Network Isolation](http://localhost:3000/docs/environment-management/environment-isolation) feature.
+If you want to restrict access between the environments on a single account, it can be automatically configured via the [Network Isolation](/docs/environment-management/environment-isolation) feature.
 
 :::
 
 ## Container Firewall Management via Platform UI
 
-Each node at the platform (excluding custom [Docker](http://localhost:3000/docs/container/container-types)- and [Windows](/docs/windows-and-.NET/dot-net-core)-based containers) is provisioned with a set of firewall rules, which can be reviewed and managed through an intuitive graphical user interface. The appropriate section can be accessed by clicking on the **Settings** button next to the required environment and selecting the **Firewall** menu item.
+Each node at the platform (excluding custom [Docker](/docs/container/container-types)- and [Windows](/docs/windows-and-.NET/dot-net-core)-based containers) is provisioned with a set of firewall rules, which can be reviewed and managed through an intuitive graphical user interface. The appropriate section can be accessed by clicking on the **Settings** button next to the required environment and selecting the **Firewall** menu item.
 
 :::tip Note
 
@@ -92,9 +92,9 @@ While working with the container (e.g. adding mount points, installing FTP add-o
 
 ## Adding Container Default Rules
 
-If needed (e.g. for the [automation solutions](/docs/Deployment%20Tools/Cloud%20Scripting%20&%20JPS/JPS%20Overview)), you can use the **_OPEN_INBOUND_PORTS_** [environment variable](http://localhost:3000/docs/environment-management/environment-variables/environment-variables) to define custom ports, which should be opened via container firewall during the appropriate nodes' creation.
+If needed (e.g. for the [automation solutions](/docs/deployment-tools/cloud-scripting-&-jps/jps-overview)), you can use the **_OPEN_INBOUND_PORTS_** [environment variable](/docs/environment-management/environment-variables/environment-variables) to define custom ports, which should be opened via container firewall during the appropriate nodes' creation.
 
-1. Click **New Environment** in the dashboard, select the required software stack, and navigate to the [**Variables**](http://localhost:3000/docs/container/container-configuration/variables) configuration frame.
+1. Click **New Environment** in the dashboard, select the required software stack, and navigate to the [**Variables**](/docs/container/container-configuration/variables) configuration frame.
 
 <div style={{
     display:'flex',
@@ -201,8 +201,8 @@ Subsequently, if meeting the necessity to **Edit** any default or custom rule, y
 
 Access to your nodes can be controlled based on such request parameters as its source node’s IP address, connection protocol, port and so on. In the guide below, we’ll consider a simple example of blocking access to a container for a particular IP address, applied via either:
 
-- [User Interface](http://localhost:3000/docs/application-setting/external-access-to-applications/container-firewall#restrict-access-via-user-interface)
-- [SSH connection](http://localhost:3000/docs/application-setting/external-access-to-applications/container-firewall#restrict-access-via-ssh)
+- [User Interface](/docs/application-setting/external-access-to-applications/container-firewall#restrict-access-via-user-interface)
+- [SSH connection](/docs/application-setting/external-access-to-applications/container-firewall#restrict-access-via-ssh)
 
 :::tip Note
 

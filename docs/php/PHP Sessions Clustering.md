@@ -44,7 +44,7 @@ If the original server fails, the next request is routed to another application 
 
 When the server answers the request, it also updates the session in the Memcached node. Thus there is no interruption of the app caused by the original server failure - the failover is successfully handled.
 
-At the same time, the NGINX load balancer is distributing traffic across the cluster containing HTTP resources. You can [check the load balancing](/docs/Load%20Balancers/NGINX/Testing%20Load%20Balancing) in the platform using different load balancing tools.
+At the same time, the NGINX load balancer is distributing traffic across the cluster containing HTTP resources. You can [check the load balancing](/docs/load-balancers/nginx/testing-load-balancing) in the platform using different load balancing tools.
 
 ## How to Configure
 

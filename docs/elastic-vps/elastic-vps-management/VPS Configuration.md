@@ -8,9 +8,9 @@ sidebar_position: 1
 
 All of the supported virtual private server types at the platform (i.e. based on CentOS, Ubuntu, and Windows) share the similar installation flow and the main management options. So, to get your Elastic VPS hosted and configured inside the platform, follow the next instructions on how to:
 
-- [create VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Management/VPS%20Configuration#elastic-vps-installation)
-- [scale server](/docs/Elastic%20VPS/Elastic%20VPS%20Management/VPS%20Configuration#elastic-vps-scaling)
-- [manage instance](/docs/Elastic%20VPS/Elastic%20VPS%20Management/VPS%20Configuration#elastic-vps-inbuilt-tools)
+- [create VPS](/docs/elastic-vps/elastic-vps-management/vps-configuration#elastic-vps-installation)
+- [scale server](/docs/elastic-vps/elastic-vps-management/vps-configuration#elastic-vps-scaling)
+- [manage instance](/docs/elastic-vps/elastic-vps-management/vps-configuration#elastic-vps-inbuilt-tools)
 
 ## Elastic VPS Installation
 
@@ -47,7 +47,7 @@ Nevertheless, in case of strict necessity, you can contact your hosting provider
 
 :::
 
-Specify cloudlet limits for this node, [scale](/docs/Elastic%20VPS/Elastic%20VPS%20Management/VPS%20Configuration#elastic-vps-scaling) it out (if required), select the preferred [region](/docs/environment-management/environment-regions/choosing-a-region) (if several of them are available), type the name of the environment and click on **Create**.
+Specify cloudlet limits for this node, [scale](/docs/elastic-vps/elastic-vps-management/vps-configuration#elastic-vps-scaling) it out (if required), select the preferred [region](/docs/environment-management/environment-regions/choosing-a-region) (if several of them are available), type the name of the environment and click on **Create**.
 
 3. In a couple of minutes, your new environment with the chosen virtual server will appear at the dashboard. You’ll also receive an email notification with its administration data (i.e. login/password credentials, attached Public IP and access URL).
 
@@ -81,7 +81,7 @@ To scale your environment, you need to increase/decrease the maximum number of a
 
 </div>
 
-The platform **[horizontal scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling)** functionality allows to easily adjust the number of servers in your environment using the appropriate “**-**” and “**+**” buttons. Herewith, you can select the preferred scaling mode:
+The platform **[horizontal scaling](/docs/application-setting/scaling-and-clustering/horizontal-scaling)** functionality allows to easily adjust the number of servers in your environment using the appropriate “**-**” and “**+**” buttons. Herewith, you can select the preferred scaling mode:
 
 - **_Stateless_** - simultaneously creates all new nodes from the base image template
 - **_Stateful_** - sequentially copies file system of the master container into the new nodes
@@ -110,7 +110,7 @@ The configurations on the Windows VPS can be applied via the [RDP](/docs/windows
 
 ## File Manager
 
-The in-built **[configuration file manager](/docs/application-setting/configuration-file-manager)** is designed to manage (create/delete, upload/download, edit) files inside your container, as well as setup [mount points](/docs/data-storage-container/data-sharing/mount-points) and manage [exported data](/docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing).
+The in-built **[configuration file manager](/docs/application-setting/configuration-file-manager)** is designed to manage (create/delete, upload/download, edit) files inside your container, as well as setup [mount points](/docs/data-storage-container/data-sharing/mount-points) and manage [exported data](/docs/data-storage-container/data-sharing/exporting-data-for-sharing).
 
 <div style={{
     display:'flex',
@@ -140,4 +140,4 @@ The appropriate tab can be opened by clicking on the **Config** button next to t
 
 The appropriate section can be accessed by clicking on the **Log** button next to the necessary VPS node (or the whole layer).
 
-For the complex configurations, you should connect to VPS server over [SSH Gate](/docs/Elastic%20VPS/Elastic%20VPS%20Management/Linux%20VPS%20Access%20via%20SSH%20Gate) (including an option to continue working via the dashboard using **Web SSH**) or establish a direct [SSH connection using Public IP](/docs/Elastic%20VPS/Elastic%20VPS%20Management/Linux%20VPS%20Access%20via%20Public%20IP).
+For the complex configurations, you should connect to VPS server over [SSH Gate](/docs/elastic-vps/elastic-vps-management/linux-vps-access-via-ssh-gate) (including an option to continue working via the dashboard using **Web SSH**) or establish a direct [SSH connection using Public IP](/docs/elastic-vps/elastic-vps-management/linux-vps-access-via-public-ip).

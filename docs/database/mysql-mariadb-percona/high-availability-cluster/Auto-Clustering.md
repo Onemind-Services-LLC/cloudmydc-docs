@@ -21,7 +21,7 @@ Database clusterization is an obligatory requirement for highly loaded productio
 The implemented solution provides a set of benefits:
 
 - **high availability with pre-configured replication options** - Primary-Secondary, Primary-Primary, Galera, XtraDB
-- **scalability and autodiscovery** – new nodes, added during [horizontal scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-inside-the-cloud-multi-node), are connected to the cluster with all required adjustments being applied automatically
+- **scalability and autodiscovery** – new nodes, added during [horizontal scaling](/docs/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-inside-the-cloud-multi-node), are connected to the cluster with all required adjustments being applied automatically
 - **efficient load balancing** – each cluster is supplemented with two ProxySQL nodes for load balancing with automatic splitting of read/write requests
 - **automated failover** – the database nodes that are temporarily unavailable or have high latency are automatically excluded from the cluster and re-added once the connection is restored
 
@@ -101,7 +101,7 @@ If you decide to scale the primary-secondary/primary-primary topologies with an 
 
 ## Cluster Layers Isolation
 
-Depending on whether you are going to use an external application or not, you may decide what layers you will expose outside - all or the entry point proxy layer only. Turn the [SLB access](http://localhost:3000/docs/application-setting/external-access-to-applications/shared-load-balancer#deny-access-via-shared-load-balancer) switch into the required position for each layer and click **Create**.
+Depending on whether you are going to use an external application or not, you may decide what layers you will expose outside - all or the entry point proxy layer only. Turn the [SLB access](/docs/application-setting/external-access-to-applications/shared-load-balancer#deny-access-via-shared-load-balancer) switch into the required position for each layer and click **Create**.
 
 <div style={{
     display:'flex',
@@ -141,7 +141,7 @@ After successful installation, you’ll receive a number of emails with the clus
 
 </div>
 
-- **Entry Point for Connections to Database Cluster** - [hostname and credentials for connecting](http://localhost:3000/docs/application-setting/domain-name-management/container-dns-hostnames#hostnames-for-specific-layers) an application to the database cluster.These nodes form a proxy layer referred to as the entry point for the database cluster with hostname as follows: **_proxy.${envName}.${platformDomain}_**.
+- **Entry Point for Connections to Database Cluster** - [hostname and credentials for connecting](/docs/application-setting/domain-name-management/container-dns-hostnames#hostnames-for-specific-layers) an application to the database cluster.These nodes form a proxy layer referred to as the entry point for the database cluster with hostname as follows: **_proxy.${envName}.${platformDomain}_**.
 
 <div style={{
     display:'flex',

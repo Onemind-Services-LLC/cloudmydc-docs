@@ -14,8 +14,8 @@ The instructions below walk you through the steps of generating an SSH key. Sinc
 
 Follow the steps in one of the following sections (based on your operating system):
 
-- [Linux/MacOS](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key#for-linuxmacos)
-- [Windows](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key#for-windows)
+- [Linux/MacOS](/docs/deployment-tools/ssh/generate-ssh-key#for-linuxmacos)
+- [Windows](/docs/deployment-tools/ssh/generate-ssh-key#for-windows)
 
 ## For Linux/MacOS
 

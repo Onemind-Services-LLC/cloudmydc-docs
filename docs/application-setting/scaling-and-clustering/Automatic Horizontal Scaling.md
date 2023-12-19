@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Automatic Horizontal Scaling
 
-In addition to the inbuilt [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling), the platform can automatically scale nodes horizontally, changing the number of containers within a [layer](/docs/platform-overview/basics-&-terminology#layer) ([nodeGroup](https://docs.cloudscripting.com/creating-manifest/selecting-containers/#all-containers-by-group)) based on incoming load. Herewith, all instances within the same layer are evenly distributed across the available hardware sets (hosts) using the anti-affinity rules. Namely, when a new container is created, it is placed at the host with the least number of instances from the same layer and the lowest load mark, which ensures [reliability and high-availability](http://localhost:3000/docs/platform-overview/isolated-container) of the hosted projects.
+In addition to the inbuilt [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling), the platform can automatically scale nodes horizontally, changing the number of containers within a [layer](/docs/platform-overview/basics-&-terminology#layer) ([nodeGroup](https://docs.cloudscripting.com/creating-manifest/selecting-containers/#all-containers-by-group)) based on incoming load. Herewith, all instances within the same layer are evenly distributed across the available hardware sets (hosts) using the anti-affinity rules. Namely, when a new container is created, it is placed at the host with the least number of instances from the same layer and the lowest load mark, which ensures [reliability and high-availability](/docs/platform-overview/isolated-container) of the hosted projects.
 
 <div style={{
     display:'flex',
@@ -24,8 +24,8 @@ Herewith, the statistic is gathered for the whole layer, so if there are three n
 
 Below, we’ll overview how to:
 
-- [set triggers for automatic scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling#triggers-for-automatic-scaling)
-- [view triggers execution history](http://localhost:3000/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling#triggers-execution-history)
+- [set triggers for automatic scaling](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling#triggers-for-automatic-scaling)
+- [view triggers execution history](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling#triggers-execution-history)
 
 ## Triggers for Automatic Scaling
 
@@ -33,7 +33,7 @@ To configure a trigger for the automatic horizontal scaling, follow the steps be
 
 :::danger Note
 
-When a single certified application server (not a custom Docker container) is scaled out on environment without [load balancers](/docs/Load%20Balancers/Load%20Balancing), the NGINX balancer is added automatically. Herewith, if you require a different one for your application, it should be added manually before the first scaling event.
+When a single certified application server (not a custom Docker container) is scaled out on environment without [load balancers](/docs/load-balancers/load-balancing), the NGINX balancer is added automatically. Herewith, if you require a different one for your application, it should be added manually before the first scaling event.
 
 :::
 
@@ -84,8 +84,8 @@ Click **Add** to proceed.
 
 :::tip
 
-- the initial (master) node can be used as a [storage server](/docs/Data%20Storage%20Container/Use%20Cases/Master%20Container) for sharing data within the whole layer, including nodes added through automatic horizontal scaling
-- the _CPU_ and _Memory_ limits are calculated based on the amount of the allocated [cloudlets](http://localhost:3000/docs/platform-overview/cloudlet) (a special platform resource unit, which represents 400 MHz CPU and 128 MiB RAM simultaneously)
+- the initial (master) node can be used as a [storage server](/docs/data-storage-container/use-cases/master-container) for sharing data within the whole layer, including nodes added through automatic horizontal scaling
+- the _CPU_ and _Memory_ limits are calculated based on the amount of the allocated [cloudlets](/docs/platform-overview/cloudlet) (a special platform resource unit, which represents 400 MHz CPU and 128 MiB RAM simultaneously)
 
 :::
 
@@ -133,7 +133,7 @@ Both of them are configured similarly:
 - **Scale out (in) to** - the maximum (minimum) number of _nodes_ for the layer, that can be configured due to automatic horizontal scaling
 - **Scale by** - the _count_ of nodes that are to be added/removed at a time upon trigger’s execution
 
-When configuring a trigger, we recommend taking into consideration the [scaling mode](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) of the layer. For example, you should set lower loading percent in the **_Add Nodes_** trigger for the _stateful_ mode, as content cloning requires some time (especially for containers with a lot of data) and you can reach resources limit before a new node is created.
+When configuring a trigger, we recommend taking into consideration the [scaling mode](/docs/application-setting/scaling-and-clustering/horizontal-scaling) of the layer. For example, you should set lower loading percent in the **_Add Nodes_** trigger for the _stateful_ mode, as content cloning requires some time (especially for containers with a lot of data) and you can reach resources limit before a new node is created.
 
 6. You automatically receive an email notification on the configured auto horizontal scaling trigger activity by default; however, if needed, you can disable it with the appropriate **Send Email Notifications** switcher.
 

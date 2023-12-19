@@ -98,4 +98,4 @@ If you have a deployed application, you can right-click on the appropriate conte
 </div>
 
 Also, using this menu you can delete the chosen context.
-In order to learn how to [deploy NetBeans projects](/docs/Deployment%20Tools/Plugins/NetBeans%20Plugin/Application%20Deploy%20via%20NetBeans) into the platform directly from IDE read the linked document.
+In order to learn how to [deploy NetBeans projects](/docs/deployment-tools/plugins/netbeans-plugin/application-deploy-via-netbeans) into the platform directly from IDE read the linked document.

@@ -38,8 +38,8 @@ Now, let’s examine a simple example of how to configure master-slave replicati
 
 You are able to set a DB cluster in two ways:
 
-- [automatically](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Manual%20Primary-Secondary%20Replication#one-click-installation) (via one-click widget)
-- [manually](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Manual%20Primary-Secondary%20Replication#manual-installation) (following the step-by-step instruction)
+- [automatically](/docs/database/mysql-mariadb-percona/high-availability-cluster/manual-primary-secondary-replication#one-click-installation) (via one-click widget)
+- [manually](/docs/database/mysql-mariadb-percona/high-availability-cluster/manual-primary-secondary-replication#manual-installation) (following the step-by-step instruction)
 
 ## One-Click Installation
 
@@ -290,7 +290,7 @@ $cfg['AllowArbitraryServer'] = true;
 
 </div>
 
-5. Let’s configure our slave database server via a built-in [Web SSH](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser) client. Connect to your database using credentials from the email received after the node creation.
+5. Let’s configure our slave database server via a built-in [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser) client. Connect to your database using credentials from the email received after the node creation.
 
 ```bash
 mysql -u root -p

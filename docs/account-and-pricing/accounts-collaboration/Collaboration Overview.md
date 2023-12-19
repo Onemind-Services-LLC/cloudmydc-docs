@@ -20,7 +20,7 @@ The core idea is pretty straightforward - one user (_primary account_) hosts all
 
 </div>
 
-The **primary account** has full access to all hosted environments regardless of whether they are shared or not (including ones created by collaboration members). It is responsible for managing collaboration and its members - inviting users, adjusting shared components, specifying [roles and permissions](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Roles%20Policies), etc. However, be aware that all charges for the shared environments (including actions performed by collaborators) are applied to this account.
+The **primary account** has full access to all hosted environments regardless of whether they are shared or not (including ones created by collaboration members). It is responsible for managing collaboration and its members - inviting users, adjusting shared components, specifying [roles and permissions](/docs/account-and-pricing/accounts-collaboration/collaboration-roles-policies), etc. However, be aware that all charges for the shared environments (including actions performed by collaborators) are applied to this account.
 
 **Collaboration members** are accounts that have accepted a collaboration invite from the primary account. The members are not charged for the shared environments and can work with them just as with regular ones. However, the list of allowed actions is defined and managed by the primary account (or other collaborators with the appropriate permission).
 

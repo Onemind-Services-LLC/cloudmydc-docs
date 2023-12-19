@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Add SSH Key
 
-When you have your [SSH key generated](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key), you can add it to your PaaS account.
+When you have your [SSH key generated](/docs/deployment-tools/ssh/generate-ssh-key), you can add it to your PaaS account.
 
 :::tip
 
@@ -14,7 +14,7 @@ In order to manage private SSH keys intended for authentication at your GIT acco
 
 :::
 
-For adding a public SSH key, which subsequently can be used for gaining [SSH access](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) to your PaaS account, proceed to the steps below:
+For adding a public SSH key, which subsequently can be used for gaining [SSH access](/docs/deployment-tools/ssh/ssh-access/overview) to your PaaS account, proceed to the steps below:
 
 1. Open the platform dashboard and navigate to the upper toolbar.
 

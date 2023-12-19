@@ -23,131 +23,131 @@ export const FeatureList: FeatureItem[] = [
   {
     title: "Java",
     Svg: require("@site/static/img/home/java-active.svg").default,
-    url: "/docs/Java/Java%20Dev%20Center",
+    url: "/docs/java/java-dev-center",
   },
   {
     title: "PHP",
     Svg: require("@site/static/img/home/php-active.svg").default,
-    url: "/docs/PHP/PHP%20Dev%20Center",
+    url: "/docs/php/php-dev-center",
   },
   {
     title: "Node.js",
     Svg: require("@site/static/img/home/node-active.svg").default,
-    url: "/docs/Nodejs/Node.js%20Dev%20Center",
+    url: "/docs/nodejs/node.js-dev-center",
   },
   {
     title: "Python",
     Svg: require("@site/static/img/home/python-active.svg").default,
-    url: "/docs/Python/Python%20Dev%20Center",
+    url: "/docs/python/python-dev-center",
   },
   {
     title: "Go Lang",
     Svg: require("@site/static/img/home/go-active.svg").default,
-    url: "/docs/Go%20Lang/Go%20Dev%20Center",
+    url: "/docs/go-lang/go-dev-center",
   },
   {
     title: "Ruby",
     Svg: require("@site/static/img/home/ruby-active.svg").default,
-    url: "/docs/Ruby/Ruby%20Dev%20Center",
+    url: "/docs/ruby/ruby-dev-center",
   },
   {
     title: ".NET",
     Svg: require("@site/static/img/home/dotnet.svg").default,
-    url: "/docs/Windows&.NET/DOT%20NET%20Core",
+    url: "/docs/windows-and-.NET/dot-net-core",
   },
   {
     title: "Containers",
     Svg: require("@site/static/img/home/container.svg").default,
-    url: "http://localhost:3000/docs/container/container-types",
+    url: "/docs/container/container-types",
   },
   {
     title: "Kubernetes",
     Svg: require("@site/static/img/home/kubernetes-icon-b.svg").default,
-    url: "/docs/Kubernetes%20Hosting/Kubernetes%20Cluster/Kubernetes%20Overview",
+    url: "/docs/kubernetes-hosting/kubernetes-cluster/kubernetes-overview",
   },
   {
     title: "Databases",
     Svg: require("@site/static/img/home/databases.svg").default,
-    url: "/docs/Database/Database%20Hosting/DB%20Hosting%20Overview",
+    url: "/docs/database/database-hosting/db-hosting-overview",
   },
   {
     title: "Load Balancer",
     Svg: require("@site/static/img/home/lb-b.svg").default,
-    url: "/docs/Load%20Balancers/Load%20Balancing",
+    url: "/docs/load-balancers/load-balancing",
   },
   {
     title: "Elastic VPS",
     Svg: require("@site/static/img/home/hosting-b.svg").default,
-    url: "/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information",
+    url: "/docs/elastic-vps/elastic-vps-overview/general-information",
   },
   {
     title: "Storage",
     Svg: require("@site/static/img/home/storage-b.svg").default,
-    url: "/docs/Data%20Storage%20Container/Data%20Storage%20Overview",
+    url: "/docs/data-storage-container/data-storage-overview",
   },
   {
     title: "Cache",
     Svg: require("@site/static/img/home/cache.svg").default,
-    url: "/docs/Memcached/Memcached%20System",
+    url: "/docs/memcached/memcached-system",
   },
 ];
 
 export const QuickStartList: QuickStartItem[] = [
   {
     title: "Getting Started",
-    url: "http://localhost:3000/docs/quickstart/getting-started",
+    url: "/docs/quickstart/getting-started",
   },
   {
     title: "Dashboard Guide",
-    url: "http://localhost:3000/docs/quickstart/dashboard-guide",
+    url: "/docs/quickstart/dashboard-guide",
   },
   {
     title: "Deployment Guide",
-    url: "http://localhost:3000/docs/deployment/deployment-guide",
+    url: "/docs/deployment/deployment-guide",
   },
   {
     title: "Database Сonnection",
-    url: "/docs/Database/Database%20Hosting/Database%20Connection%20Strings",
+    url: "/docs/database/database-hosting/database-connection-strings",
   },
   {
     title: "Software Stack Versions",
-    url: "http://localhost:3000/docs/quickstart/software-stack-versions",
+    url: "/docs/quickstart/software-stack-versions",
   },
 ];
 
 export const RecommendedList: RecommendedItem[] = [
   {
     title: "Automatic Vertical Scaling",
-    url: "http://localhost:3000/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling",
+    url: "/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling",
   },
   {
     title: "Automatic Horizontal Scaling",
-    url: "http://localhost:3000/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling",
+    url: "/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling",
   },
   {
     title: "Custom Domain Name",
-    url: "http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name",
+    url: "/docs/application-setting/domain-name-management/custom-domain-name",
   },
   {
     title: "Traffic Distributor",
-    url: "http://localhost:3000/docs/application-setting/traffic-distributor/traffic-distributor-overview",
+    url: "/docs/application-setting/traffic-distributor/traffic-distributor-overview",
   },
   {
     title: "Accounts Collaboration",
-    url: "/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview",
+    url: "/docs/account-and-pricing/accounts-collaboration/collaboration-overview",
   },
 ];
 
 export const GettingInfoList: GettingInfoItem[] = [
   {
     title: "Release Notes",
-    url: "http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3.2",
+    url: "/docs/platform-overview/release-notes/release-notes-8.3.2",
   },
   // { title: "Platform API", url: "#" },
   { title: "Cloud Scripting", url: "https://docs.cloudscripting.com/" },
   {
     title: "Platform CLI",
-    url: "http://localhost:3000/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview",
+    url: "/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview",
   },
   // { title: "Ops Docs", url: "#" },
 ];

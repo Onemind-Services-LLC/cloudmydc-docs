@@ -23,9 +23,9 @@ The platform allows configuring a **two-factor authentication** (2FA) to add an 
 
 Below, we’ll go step-by-step on the two-factor authentication feature management:
 
-- [enable 2FA](/docs/Account&Pricing/Two-Factor%20Authentication#enable-two-factor-authentication)
-- [manage recovery codes](/docs/Account&Pricing/Two-Factor%20Authentication#manage-recovery-codes)
-- [deactivate 2FA](/docs/Account&Pricing/Two-Factor%20Authentication#disable-two-factor-authentication)
+- [enable 2FA](/docs/account-and-pricing/two-factor-authentication#enable-two-factor-authentication)
+- [manage recovery codes](/docs/account-and-pricing/two-factor-authentication#manage-recovery-codes)
+- [deactivate 2FA](/docs/account-and-pricing/two-factor-authentication#disable-two-factor-authentication)
 - [working with API](/docs/account-and-pricing/two-factor-authentication)
 
 ## Enable Two-Factor Authentication

@@ -8,7 +8,7 @@ sidebar_position: 7
 
 PHP-based application servers have multiple functions that allow you to fine-tune a project and achieve maximum performance and security. We recommend configuring several standard PHP functions to protect your server from harm. Of course, these are just basic tools that can complement the overall protection of your system. So, let’s see how to perform some initial configurations to increase the security of your PHP environments.
 
-The main PHP configuration file, named **_php.ini_**, contains a number of default settings, which you can customize or even add new ones depending on your needs. The file is located in the **etc** directory of your PHP application server. It can be accessed and edited via the [embedded file manager](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Management#environment-management) directly in the dashboard. You can find it among the main configuration files in the Favorites tab.
+The main PHP configuration file, named **_php.ini_**, contains a number of default settings, which you can customize or even add new ones depending on your needs. The file is located in the **etc** directory of your PHP application server. It can be accessed and edited via the [embedded file manager](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management#environment-management) directly in the dashboard. You can find it among the main configuration files in the Favorites tab.
 
 <div style={{
     display:'flex',
@@ -81,7 +81,7 @@ Once again, while specifying the above-mentioned settings, you should consider t
 
 ## PHP Extensions
 
-The **_php.ini_** file contains a list of PHP extensions. Some of these modules are enabled for the server by default, while others can be activated manually when necessary. See the list of [PHP extensions](/docs/PHP/PHP%20Apps%20Specifications/PHP%20Extensions) available by default at the linked doc.
+The **_php.ini_** file contains a list of PHP extensions. Some of these modules are enabled for the server by default, while others can be activated manually when necessary. See the list of [PHP extensions](/docs/php/php-apps-specifications/php-extensions) available by default at the linked doc.
 
 If you wish to have an extension loaded automatically, use the following syntax:
 

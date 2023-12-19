@@ -10,14 +10,14 @@ The platform dynamic resources organization complements the basic PHP one to bri
 
 The type of basic requests' handling and dispatching system varies for different PHP application servers, so the directives they use are different too. However, the functionality of such parameters could be similar. To learn more about these directives for a particular application server, navigate to the corresponding section below:
 
-- [Apache PHP](http://localhost:3000/docs/application-setting/smart-auto-configuration/php-auto-configurations#apache-php-auto-adjustable-settings)
-- [NGINX PHP](http://localhost:3000/docs/application-setting/smart-auto-configuration/php-auto-configurations#nginx-php-auto-adjustable-settings)
+- [Apache PHP](/docs/application-setting/smart-auto-configuration/php-auto-configurations#apache-php-auto-adjustable-settings)
+- [NGINX PHP](/docs/application-setting/smart-auto-configuration/php-auto-configurations#nginx-php-auto-adjustable-settings)
 
-Besides that, you can learn [How the Auto Configuration Works](http://localhost:3000/docs/application-setting/smart-auto-configuration/php-auto-configurations#how-the-php-auto-configuration-works) or, if you want to redefine the values manually, proceed to the [How to Disable the Automatic Optimization](http://localhost:3000/docs/application-setting/smart-auto-configuration/php-auto-configurations#disable-automatic-optimization) section of this guide.
+Besides that, you can learn [How the Auto Configuration Works](/docs/application-setting/smart-auto-configuration/php-auto-configurations#how-the-php-auto-configuration-works) or, if you want to redefine the values manually, proceed to the [How to Disable the Automatic Optimization](/docs/application-setting/smart-auto-configuration/php-auto-configurations#disable-automatic-optimization) section of this guide.
 
 ## Apache PHP Auto Adjustable Settings
 
-Dynamic requests handling in Apache PHP is implemented with the help of the **_prefork_** Multi-Processing Module (MPM), which helps to reveal full server potential. The MPM directives are listed in the main Apache **_/etc/httpd/conf/_** [**_httpd.conf_**](/docs/PHP/PHP%20App%20Server%20Configuration) configuration file.
+Dynamic requests handling in Apache PHP is implemented with the help of the **_prefork_** Multi-Processing Module (MPM), which helps to reveal full server potential. The MPM directives are listed in the main Apache **_/etc/httpd/conf/_** [**_httpd.conf_**](/docs/php/php-app-server-configuration) configuration file.
 
 <div style={{
     display:'flex',
@@ -47,7 +47,7 @@ Here is a complete list of parameters, which the platform configures for the [**
 
 </div>
 
-Based on the allocated resources (i.e. a number of dynamic [cloudlets](http://localhost:3000/docs/platform-overview/cloudlet) reserved for the Apache PHP server) and capacity of the CPU provided by your particular hosting provider, the platform automatically adjusts the **_ServerLimit_** and **_MaxRequestWorkers_** parameters:
+Based on the allocated resources (i.e. a number of dynamic [cloudlets](/docs/platform-overview/cloudlet) reserved for the Apache PHP server) and capacity of the CPU provided by your particular hosting provider, the platform automatically adjusts the **_ServerLimit_** and **_MaxRequestWorkers_** parameters:
 
 **_MaxRequestWorkers_** = **_ServerLimit_** = min( **_{containerRam}_** / 30MiB, **_{coresCount}_** \* 5 )
 
@@ -67,7 +67,7 @@ If you’d like to state your custom value for these directives, be aware that i
 
 :::
 
-You may also be interested in [How the Auto Configuration Works](http://localhost:3000/docs/application-setting/smart-auto-configuration/php-auto-configurations#how-the-php-auto-configuration-works) or how to [Disable the Automatic Optimization](http://localhost:3000/docs/application-setting/smart-auto-configuration/php-auto-configurations#disable-automatic-optimization) to set your custom values for these directives.
+You may also be interested in [How the Auto Configuration Works](/docs/application-setting/smart-auto-configuration/php-auto-configurations#how-the-php-auto-configuration-works) or how to [Disable the Automatic Optimization](/docs/application-setting/smart-auto-configuration/php-auto-configurations#disable-automatic-optimization) to set your custom values for these directives.
 
 ## NGINX PHP Auto Adjustable Settings
 
@@ -91,7 +91,7 @@ The FPM works in the **_ondemand_** mode (the **_pm_** directive) by default. It
 
 The exact value depends on the capacity of the CPU provided by your particular hosting provider and the number of allocated cloudlets for your container. In such a way, cloudlets count enlargement results in the automatic growth of the **_pm.max_children_** parameter.
 
-This directive can be defined explicitly without [disabling the automatic optimization](http://localhost:3000/docs/application-setting/smart-auto-configuration/php-auto-configurations#disable-automatic-optimization) through the appropriate **_PHPFPM_MAX_CHILDREN_** [variable](http://localhost:3000/docs/environment-management/environment-variables/environment-variables).
+This directive can be defined explicitly without [disabling the automatic optimization](/docs/application-setting/smart-auto-configuration/php-auto-configurations#disable-automatic-optimization) through the appropriate **_PHPFPM_MAX_CHILDREN_** [variable](/docs/environment-management/environment-variables/environment-variables).
 
 :::
 
@@ -107,7 +107,7 @@ This directive can be defined explicitly without [disabling the automatic optimi
 
 </div>
 
-If needed, you can [Disable the Automatic Optimization](http://localhost:3000/docs/application-setting/smart-auto-configuration/php-auto-configurations) to change the FPM mode and adjust other directives (be aware that incorrect values can cause your NGINX PHP server instability).
+If needed, you can [Disable the Automatic Optimization](/docs/application-setting/smart-auto-configuration/php-auto-configurations) to change the FPM mode and adjust other directives (be aware that incorrect values can cause your NGINX PHP server instability).
 
 Also, to gain advanced performance, the PHP FPM listener utilizes the UNIX domain socket instead of the common TCP one. Such a solution is better suited for the communications within the same host, allowing to skip some checks and operations (like routing).
 
@@ -155,7 +155,7 @@ Inappropriate directive values may cause your server instability, so it is **not
 
 :::
 
-If you want to manually change any of the auto-configured settings, you need to set the **_JELASTIC_AUTOCONFIG_** [environment variable](http://localhost:3000/docs/container/container-configuration/variables) to _false_.
+If you want to manually change any of the auto-configured settings, you need to set the **_JELASTIC_AUTOCONFIG_** [environment variable](/docs/container/container-configuration/variables) to _false_.
 
 <div style={{
     display:'flex',

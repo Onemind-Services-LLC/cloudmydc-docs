@@ -36,7 +36,7 @@ To create NGINX server for PHP application hosting, follow the steps in the deta
 
 </div>
 
-2. On the **PHP** engine tab, choose **_NGINX_** as your application server and configure other parameters (like [cloudlets](http://localhost:3000/docs/platform-overview/cloudlet) or [environment region](/docs/environment-management/environment-regions/choosing-a-region) up to your needs.
+2. On the **PHP** engine tab, choose **_NGINX_** as your application server and configure other parameters (like [cloudlets](/docs/platform-overview/cloudlet) or [environment region](/docs/environment-management/environment-regions/choosing-a-region) up to your needs.
 
 <div style={{
     display:'flex',

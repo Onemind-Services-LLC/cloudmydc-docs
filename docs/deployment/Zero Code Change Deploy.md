@@ -65,7 +65,7 @@ To make the above more evident, let’s consider a few simple steps needed to de
 When the appropriate environment is created, you can [deploy your application](/docs/deployment/deployment-guide) with one of the supported deployment options:
 
 - provide an archive (zip, bzip2, tar, tar.gz, tar.bz2, war, jar or ear) with prepackaged application resources by uploading it to the platform storage or giving a link to the location it’s kept at
-- deliver installation files via [FTPS/SFTP](/docs/Deployment%20Tools/FTP-FTPS%20Support) channel
+- deliver installation files via [FTPS/SFTP](/docs/deployment-tools/ftp-ftps-support) channel
 - fetch sources from GIT/SVN repository (additionally, you can set up automatic update)
 - use integrated plugins (Maven, Eclipse, NetBeans, IntelliJ IDEA)
 

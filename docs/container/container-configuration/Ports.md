@@ -132,7 +132,7 @@ Use the table below as a reference:
 
 Additional ports can be opened using:
 
-- **[endpoints](/docs/application-setting/external-access-to-applications/endpoints)** - maps the container internal port to random external via the platform [Shared LB](http://localhost:3000/docs/application-setting/external-access-to-applications/shared-load-balancer)
+- **[endpoints](/docs/application-setting/external-access-to-applications/endpoints)** - maps the container internal port to random external via the platform [Shared LB](/docs/application-setting/external-access-to-applications/shared-load-balancer)
 - **[public IP](/docs/application-setting/external-access-to-applications/public-ip)** - provides a direct access to all ports of your container
 
 <div style={{
@@ -153,9 +153,9 @@ The platform automatically redirects incoming requests to the application hosted
 
 During a node creation, the platform detects the ports which are listened on the TCP level. The commonly used for standard services (e.g. SSH, mail, databases, etc.) are automatically filtered. The first among the remaining ports becomes the container entry point so that all incoming requests are forwarded to it.
 
-This process is performed on each container launch, so the corresponding application becomes available over the embedded [Shared Load Balancer](http://localhost:3000/docs/application-setting/external-access-to-applications/shared-load-balancer) just after being deployed, without any manual intervention required.
+This process is performed on each container launch, so the corresponding application becomes available over the embedded [Shared Load Balancer](/docs/application-setting/external-access-to-applications/shared-load-balancer) just after being deployed, without any manual intervention required.
 
-However, in case you need to disable or adjust this functionality (e.g. if it exposes application admin panel), you can manually change the auto-redirect settings during the container creation. For that, switch to the [Variables](http://localhost:3000/docs/container/container-configuration/variables) section, add the dedicated **_JELASTIC_EXPOSE_** parameter and set its value based on your needs:
+However, in case you need to disable or adjust this functionality (e.g. if it exposes application admin panel), you can manually change the auto-redirect settings during the container creation. For that, switch to the [Variables](/docs/container/container-configuration/variables) section, add the dedicated **_JELASTIC_EXPOSE_** parameter and set its value based on your needs:
 
 - 0 or DISABLED or FALSE - to disable auto-redirect
 - a number within the 1-65535 range - to define a container port, which will receive the incoming traffic (i.e. where it will be redirected to)

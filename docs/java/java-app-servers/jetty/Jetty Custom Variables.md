@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Custom Environment Variables for Java Application Servers
 
-Environment variables represent a kind of placeholders, where you can store the frequently used parameters' values or strings in order not to specify them manually in the code each time they are needed. There is a number of [default environment variables](http://localhost:3000/docs/environment-management/environment-variables/environment-variables#default-environment-variables) which are preconfigured at the platform application servers and can be easily integrated into your app, hosted within these servers, to make your work with the platform even more convenient.
+Environment variables represent a kind of placeholders, where you can store the frequently used parameters' values or strings in order not to specify them manually in the code each time they are needed. There is a number of [default environment variables](/docs/environment-management/environment-variables/environment-variables#default-environment-variables) which are preconfigured at the platform application servers and can be easily integrated into your app, hosted within these servers, to make your work with the platform even more convenient.
 
 The following guide will acquaint you with the details on how to add your custom environment variables to particular Java application servers:
 
@@ -38,8 +38,6 @@ The following workflow is pretty simple and identical for the majority of suppor
 2. In the opened tab, navigate to the **/opt/tomcat/conf** directory and choose the **_variables.conf_** file within it. There you’ll see a short instruction on setting your custom environment variables.
 
 Follow it, by means of adding the desired custom variables here. Each variable should be either separated by a space from the next one or started from a new line.
-
-!Context code missing
 
 For example:
 

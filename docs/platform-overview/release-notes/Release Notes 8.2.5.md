@@ -48,7 +48,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2.5#software-stack-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.2.5#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -92,7 +92,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2.5#fixes-compatible-with-prior-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.2.5#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -248,7 +248,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2.5#cloudmydc-application-platform-825">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.2.5#cloudmydc-application-platform-825">
         Back to the top
     </a>
 </div>
@@ -266,7 +266,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2.5#cloudmydc-application-platform-825">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.2.5#cloudmydc-application-platform-825">
         Back to the top
     </a>
 </div>

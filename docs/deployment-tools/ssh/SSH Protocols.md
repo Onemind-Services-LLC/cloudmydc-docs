@@ -72,7 +72,7 @@ Now we can proceed to establishing the SFTP connection.
 
 4. In the opened window, click the **New site** button and specify the following parameters:
 
-- in the **Host** field state your SSH host (_gate.{[hoster_domain](http://localhost:3000/docs/quickstart/hosters-list-&-info)}_)
+- in the **Host** field state your SSH host (_gate.{[hoster_domain](/docs/quickstart/hosters-list-&-info)}_)
 - in the **Port** field enter _3022_ value.
 - choose **SFTP** in the Protocol drop-down list.
 - choose **Normal** Logon Type.

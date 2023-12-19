@@ -14,7 +14,7 @@ To establish an SSL connection, a web server requires an **SSL Certificate** to 
 
 The platform gives you an opportunity to choose between three available SSL solutions:
 
-- [Built-In SSL Certificates](http://localhost:3000/docs/application-setting/ssl/built-in-ssl) - enables an already trusted platform Built-In SSL certificate, avoiding any additional checks and save your time on the certificate validation
+- [Built-In SSL Certificates](/docs/application-setting/ssl/built-in-ssl) - enables an already trusted platform Built-In SSL certificate, avoiding any additional checks and save your time on the certificate validation
 
 :::danger note
 

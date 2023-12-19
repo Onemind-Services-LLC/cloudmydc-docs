@@ -12,7 +12,7 @@ If you need to share access to the Kubernetes cluster with other users, it is re
 
 :::danger Notes
 
-- Kubernetes RBAC system is not aligned with PaaS accounts. Any user with SSH access to the master node can utilize the pre-configured kubectl tool with its cluster-admin role. Due to this specific, [environment sharing](http://localhost:3000/docs/environment-management/share-environment) over the platform functionality may expose sensitive information.
-- The [platform firewall](http://localhost:3000/docs/application-setting/external-access-to-applications/container-firewall/) feature does not work with the Kubernetes Cluster, as the rules are managed dynamically by Kubernetes itself.
+- Kubernetes RBAC system is not aligned with PaaS accounts. Any user with SSH access to the master node can utilize the pre-configured kubectl tool with its cluster-admin role. Due to this specific, [environment sharing](/docs/environment-management/share-environment) over the platform functionality may expose sensitive information.
+- The [platform firewall](/docs/application-setting/external-access-to-applications/container-firewall/) feature does not work with the Kubernetes Cluster, as the rules are managed dynamically by Kubernetes itself.
 
 :::

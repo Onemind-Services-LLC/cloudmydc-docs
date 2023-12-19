@@ -18,7 +18,7 @@ The up-to-date list of the releases available on the platform is provided via th
 
 :::
 
-You can choose the version you need while environment creation and easily [switch between them](/docs/PHP/PHP%20Versions) afterwards via topology wizard. The workflow is the following:
+You can choose the version you need while environment creation and easily [switch between them](/docs/php/php-versions) afterwards via topology wizard. The workflow is the following:
 
 1. Click the **New Environment** button at the top dashboard pane to open the _Environment Wizard_ frame.
 
@@ -48,7 +48,7 @@ Specify the resource limits, select the preferred [region](/docs/environment-man
 
 :::tip Tip
 
-For more information on PHP hosting specifics at the platform and the possibilities it provides, refer to the [PHP Developer’s Center](/docs/PHP/PHP%20Apps%20Specifications/PHP%20Extensions) document.
+For more information on PHP hosting specifics at the platform and the possibilities it provides, refer to the [PHP Developer’s Center](/docs/php/php-apps-specifications/php-extensions) document.
 
 :::
 
@@ -80,6 +80,6 @@ Click **Redeploy** to confirm the changes.
 
 :::danger Note
 
-In case of switching the engine version to PHP 7 for legacy PHP containers, you may require to manually [re-define](/docs/PHP/PHP%20Apps%20Specifications/PHP%20Extensions) the included PHP modules, as part of them was turned into dynamic (i.e. to be activated only upon the necessity) in confines of the [PaaS 4.3](/docs/category/platform-overview) release.
+In case of switching the engine version to PHP 7 for legacy PHP containers, you may require to manually [re-define](/docs/php/php-apps-specifications/php-extensions) the included PHP modules, as part of them was turned into dynamic (i.e. to be activated only upon the necessity) in confines of the [PaaS 4.3](/docs/category/platform-overview) release.
 
 :::

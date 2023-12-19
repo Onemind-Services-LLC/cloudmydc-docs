@@ -10,9 +10,9 @@ import obj from './DatabaseConnectionStrings.json'
 
 All instances, created inside the platform, are operated as independent containers. To establish connection to a database from the application, deployed within application server, you need to set a connection string for it, using either:
 
-- [CNAME](/docs/Database/Database%20Hosting/DB%20Hosting%20Overview#database-admin-panel-url) of database, e.g. _node{node_id}-{environment_name}.{hoster_domain}_
+- [CNAME](/docs/database/database-hosting/db-hosting-overview#database-admin-panel-url) of database, e.g. _node{node_id}-{environment_name}.{hoster_domain}_
 - Private IP address
-- [Public IP](http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip#public-ip) address (if attached)
+- [Public IP](/docs/application-setting/external-access-to-applications/public-ip#public-ip) address (if attached)
 
 :::danger Note
 
@@ -22,8 +22,8 @@ Specifying localhost within a connection string will not work for establishing c
 
 Depending on the engine that powers your environment, refer to one of the sections below:
 
-- [Java](/docs/Database/Database%20Hosting/Database%20Connection%20Strings#database-connection-for-java-apps)
-- [PHP](/docs/Database/Database%20Hosting/Database%20Connection%20Strings#database-connection-for-php-apps)
+- [Java](/docs/database/database-hosting/database-connection-strings#database-connection-for-java-apps)
+- [PHP](/docs/database/database-hosting/database-connection-strings#database-connection-for-php-apps)
 
 ## Database Connection for Java Apps
 
@@ -112,7 +112,7 @@ _“jdbc:{dbtype}://{dbtype}{node_id}-{environment_name}.{hoster_domain}/{dbname
 
 Your hosting provider domain can be found within the last column of the appropriate table in the [Hosters Info](/docs/quickstart/hosters-list-&-info#paas-hosting-providers) page.
 
-In case your hosting provider platform has several [environment regions](http://localhost:3000/docs/environment-management/environment-regions/choosing-a-region#environment-regions) to choose, the {hoster_domain} value for your environment can differ from the general platform’s one.
+In case your hosting provider platform has several [environment regions](/docs/environment-management/environment-regions/choosing-a-region#environment-regions) to choose, the {hoster_domain} value for your environment can differ from the general platform’s one.
 
 :::
 

@@ -47,7 +47,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0.6#kubernetes-cluster-domain-length-validation">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0.6#kubernetes-cluster-domain-length-validation">
                     Learn More >>
                 </a>
             </div>
@@ -66,7 +66,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0.6#software-stack-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0.6#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -110,7 +110,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0.6#fixes-compatible-with-prior-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0.6#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -129,7 +129,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-6.0.6#bug-fixes">
+                <a href="/docs/platform-overview/release-notes/release-notes-6.0.6#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -157,7 +157,7 @@ The total length of the container hostname is limited to **64** characters due t
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -276,7 +276,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -294,7 +294,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

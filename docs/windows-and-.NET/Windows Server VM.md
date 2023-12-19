@@ -40,7 +40,7 @@ The availability and version of the Window VMs (e.g., _Windows Server 2019_ or _
 
 </div>
 
-Also, note that the _[horizontal scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling)_ and IPv6 options are not available for virtual machines.
+Also, note that the _[horizontal scaling](/docs/application-setting/scaling-and-clustering/horizontal-scaling)_ and IPv6 options are not available for virtual machines.
 
 3. If VM is added to the topology, an additional **_VM Resources_** line appears in the right part of the wizard (just below the cloudlets information for containers).
 

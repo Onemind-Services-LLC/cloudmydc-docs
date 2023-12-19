@@ -8,8 +8,8 @@ sidebar_position: 1
 
 **SMTP** (Simple Mail Transfer Protocol) is a standard for sending emails via Internet protocol (IP) networks. Communication between sender and receiver is performed via emanating command strings and delivering data using a reliable data stream channel, a TCP connection usually. In this tutorial we will show how to send emails via SMTP using PaaS PHP hosting. Here we present two ways of performing this settings:
 
-- [by using PHPMailer](/docs/Deployment%20Tools/Mailings/Email%20via%20External%20SMTP#phpmailer-for-email-sending)
-- [by configuring a custom code of the form for email sending](/docs/Deployment%20Tools/Mailings/Email%20via%20External%20SMTP#using-custom-form-for-email-sending)
+- [by using PHPMailer](/docs/deployment-tools/mailings/email-via-external-smtp#phpmailer-for-email-sending)
+- [by configuring a custom code of the form for email sending](/docs/deployment-tools/mailings/email-via-external-smtp#using-custom-form-for-email-sending)
 
 ## PHPMailer for Email Sending
 

@@ -6,13 +6,13 @@ sidebar_position: 4
 
 ## Kubernetes Cluster: Exposing Services
 
-While components of your application can communicate with each other by [service names](/docs/Kubernetes%20Hosting/Application%20Deployment/Internal%20Networking) using the internal network, external connections require additional configurations.
+While components of your application can communicate with each other by [service names](/docs/kubernetes-hosting/application-deployment/internal-networking) using the internal network, external connections require additional configurations.
 
 Kubernetes supports three service types to establish an internal and external connections to application:
 
-- [ClusterIP](/docs/Kubernetes%20Hosting/Application%20Deployment/Exposing%20Services#clusterip)
-- [NodePort](/docs/Kubernetes%20Hosting/Application%20Deployment/Exposing%20Services#nodeport)
-- [LoadBalancer](/docs/Kubernetes%20Hosting/Application%20Deployment/Exposing%20Services#loadbalancer)
+- [ClusterIP](/docs/kubernetes-hosting/application-deployment/exposing-services#clusterip)
+- [NodePort](/docs/kubernetes-hosting/application-deployment/exposing-services#nodeport)
+- [LoadBalancer](/docs/kubernetes-hosting/application-deployment/exposing-services#loadbalancer)
 
 ## ClusterIP
 
@@ -42,7 +42,7 @@ The most basic way to establish an external connection to a service is to expose
 
 This method has several downsides that should be considered when configuring the Kubernetes Cluster (one service per port, restricted range of ports, etc.). As a result, the NodePort service type can be used for the demo or other temporary applications. However, the production solutions usually require more complex configuration with ingresses and LoadBalancer service options. Follow our guide(s) to create verified configurations for your application and put in production:
 
-- [Ingresses](/docs/Kubernetes%20Hosting/Application%20Deployment/Creating%20Ingresses)
+- [Ingresses](/docs/kubernetes-hosting/application-deployment/creating-ingresses)
 - Using Public IPs in Kubernetes Service
 
 :::

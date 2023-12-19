@@ -195,7 +195,7 @@ After the installation, the add-on can be found under the **Add-Ons** tab for th
 The available configuration options are straightforward:
 
 - **Re-issue certificates** – generates SSL certificates for secure connection anew (e.g. if compromised or accidentally removed)
-- **Configuration Tutorial** – opens the manual guide on _[Establishing SSL Connection to PostgreSQL](/docs/Database/PostgreSQL/Connection%20to%20Applications/SSL%20Connection%20to%20PostgreSQL#establishing-ssl-connection-to-postgresql-db-server)_
+- **Configuration Tutorial** – opens the manual guide on _[Establishing SSL Connection to PostgreSQL](/docs/database/postgresql/connection-to-applications/ssl-connection-to-postgresql#establishing-ssl-connection-to-postgresql-db-server)_
 - **Uninstall** (in the add-on’s menu in the top-right corner) - removes the add-on, custom configs, and generated SSL certificates from the layer
 
 ## Secure Connection to PostgreSQL
@@ -204,7 +204,7 @@ The available configuration options are straightforward:
 
 :::tip Tip
 
-You can use an [endpoint](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#endpoints-a-direct-connection-to-the-cloud) or [public IP](http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip#public-ip) as your database entry point for external connection. Let’s check the endpoint example (to the Pgpool-II node for the cluster):
+You can use an [endpoint](/docs/application-setting/external-access-to-applications/endpoints#endpoints-a-direct-connection-to-the-cloud) or [public IP](/docs/application-setting/external-access-to-applications/public-ip#public-ip) as your database entry point for external connection. Let’s check the endpoint example (to the Pgpool-II node for the cluster):
 
 <div style={{
     display:'flex',
@@ -271,6 +271,6 @@ psql "sslmode=verify-ca sslrootcert={path/to/root.crt} sslcert={path/to/client.c
 
 :::tip Tip
 
-Alternatively, you can check authentication with client certificates as described in the [SSL Connection to PostgreSQL](/docs/Database/PostgreSQL/Connection%20to%20Applications/SSL%20Connection%20to%20PostgreSQL#establish-connection-via-pgadmin) guide.
+Alternatively, you can check authentication with client certificates as described in the [SSL Connection to PostgreSQL](/docs/database/postgresql/connection-to-applications/ssl-connection-to-postgresql#establish-connection-via-pgadmin) guide.
 
 :::

@@ -8,12 +8,12 @@ sidebar_position: 6
 
 This instruction lists the most common limitations and problems when hosting a **MariaDB Galera Cluster** at the platform. Follow this guide to find possible issues and recovery solutions to the already occurred problems:
 
-- [Galera Cluster Limitations](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#galera-cluster-limitations)
-- [Stop/Start/Restart Specifics](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#stopstartrestart-specifics)
-- [Node with Maximum Transactions](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#node-with-maximum-transactions)
-- [Starting Cluster after Crash](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#starting-cluster-after-crash)
-- [Single Node Failure](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#single-node-failure)
-- [Monitoring Galera Cluster](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#monitoring-galera-cluster)
+- [Galera Cluster Limitations](/docs/database/mysql-mariadb-percona/high-availability-cluster/galera-cluster-recovery#galera-cluster-limitations)
+- [Stop/Start/Restart Specifics](/docs/database/mysql-mariadb-percona/high-availability-cluster/galera-cluster-recovery#stopstartrestart-specifics)
+- [Node with Maximum Transactions](/docs/database/mysql-mariadb-percona/high-availability-cluster/galera-cluster-recovery#node-with-maximum-transactions)
+- [Starting Cluster after Crash](/docs/database/mysql-mariadb-percona/high-availability-cluster/galera-cluster-recovery#starting-cluster-after-crash)
+- [Single Node Failure](/docs/database/mysql-mariadb-percona/high-availability-cluster/galera-cluster-recovery#single-node-failure)
+- [Monitoring Galera Cluster](/docs/database/mysql-mariadb-percona/high-availability-cluster/galera-cluster-recovery#monitoring-galera-cluster)
 
 ## Galera Cluster Limitations
 
@@ -125,7 +125,7 @@ CT-44999 /# grep safe_to_bootstrap /var/lib/mysql/grastate.dat
 safe_to_bootstrap: 0
 ```
 
-4. On the [node with maximum transactions](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#node-with-maximum-transactions), set **safe_to_bootstrap** to **1** and start the mysql process.
+4. On the [node with maximum transactions](/docs/database/mysql-mariadb-percona/high-availability-cluster/galera-cluster-recovery#node-with-maximum-transactions), set **safe_to_bootstrap** to **1** and start the mysql process.
 
 ```bash
 CT-44999 /# sed -i 's/safe_to_bootstrap: 0/safe_to_bootstrap: 1/g' /var/lib/mysql/grastate.dat
@@ -154,11 +154,11 @@ However, in case of an error, check **_mysqld.log_** on this second node. Look f
 2020-11-19 16:55:20 0 [ERROR] WSREP: gcs/src/gcs_group.cpp:group_post_state_exchange():422: Reversing history: 3151891 -> 3150782, this member has applied 1109 more events than the primary component.Data loss is possible. Aborting.
 ```
 
-If such a record exists, ​your second node has more transactions than the initially selected one (i.e. the first node where you set **safe_to_bootstrap** to **1**). Please, return to the [beginning of this section](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#starting-cluster-after-crash) and start it anew, using the second node in the fourth step.
+If such a record exists, ​your second node has more transactions than the initially selected one (i.e. the first node where you set **safe_to_bootstrap** to **1**). Please, return to the [beginning of this section](/docs/database/mysql-mariadb-percona/high-availability-cluster/galera-cluster-recovery#starting-cluster-after-crash) and start it anew, using the second node in the fourth step.
 
 ## Single Node Failure
 
-The most frequent cause of a node crash is the impossibility of processing a request due to some ignored **[limitations](/docs/Database/MySQL-MariaDB-Percona/High%20Availability%20Cluster/Galera%20Cluster%20Recovery#galera-cluster-limitations)**. You can check the **_/var/log/mysql/mysqld.log_** log for such errors.
+The most frequent cause of a node crash is the impossibility of processing a request due to some ignored **[limitations](/docs/database/mysql-mariadb-percona/high-availability-cluster/galera-cluster-recovery#galera-cluster-limitations)**. You can check the **_/var/log/mysql/mysqld.log_** log for such errors.
 
 In order to restore a node, you need to:
 

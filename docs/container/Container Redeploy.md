@@ -12,24 +12,24 @@ Such an operation is called **redeploy** and has the following specifics when ma
 
 - the custom user data and sensitive system files are preserved during the update:
 
-  - content of the **[volumes](http://localhost:3000/docs/container/container-configuration/volumes)** (default and custom ones)
-  - files listed in **[/etc/jelastic/redeploy.conf](http://localhost:3000/docs/container/container-redeploy#saving-custom-data-during-container-redeploy)** (specific configs of the stacks), which are required to ensure container operability
+  - content of the **[volumes](/docs/container/container-configuration/volumes)** (default and custom ones)
+  - files listed in **[/etc/jelastic/redeploy.conf](/docs/container/container-redeploy#saving-custom-data-during-container-redeploy)** (specific configs of the stacks), which are required to ensure container operability
   - **AutoFS and NFS** related configurations (_/etc/autofs.jelastic, /etc/auto.master, /etc/exports_)
   - **firewall configurations** (_/etc/sysconfig/iptables-custom, /etc/sysconfig/iptables4-jelastic, /etc/sysconfig/iptables6-jelastic, /etc/iptables/rules.v4_)
   - **SSH access data** (_/root/.ssh/authorized_keys, /root/.ssh/authorized_keys2, /root/.ssh/id_rsa_)
 
 - all the previously specified custom [configurations](/docs/container/container-configuration/configuration-tools) (like run commands, links, variables, etc.) won’t be affected
-- if operating with [multiple](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) (horizontally scaled) instances, the update can be performed on containers one by one, i.e. implicitly with no downtime
+- if operating with [multiple](/docs/application-setting/scaling-and-clustering/horizontal-scaling) (horizontally scaled) instances, the update can be performed on containers one by one, i.e. implicitly with no downtime
 
-In such a way, you are able to update your Docker-based container to a new tag (version) without affecting the application inside. With the platform, container redeployment can be performed in just a few clicks via the [dashboard UI](http://localhost:3000/docs/container/container-redeploy#update-container-via-dashboard) or easily automated [via API](http://localhost:3000/docs/container/container-redeploy#update-container-via-platform-apicscli).
+In such a way, you are able to update your Docker-based container to a new tag (version) without affecting the application inside. With the platform, container redeployment can be performed in just a few clicks via the [dashboard UI](/docs/container/container-redeploy#update-container-via-dashboard) or easily automated [via API](/docs/container/container-redeploy#update-container-via-platform-apicscli).
 
 :::danger Note
 
-When working with the MySQL, MariaDB, or Percona databases, [downgrading](https://dev.mysql.com/doc/refman/8.0/en/downgrading.html) (i.e. redeploying to the lower version) is not supported. In case the operation is necessary, we recommend [creating a backup](/docs/Database/Database%20Hosting/Manual%20Database%20Backups) and restoring a database after redeploy (or in a separate container altogether).
+When working with the MySQL, MariaDB, or Percona databases, [downgrading](https://dev.mysql.com/doc/refman/8.0/en/downgrading.html) (i.e. redeploying to the lower version) is not supported. In case the operation is necessary, we recommend [creating a backup](/docs/database/database-hosting/manual-database-backups) and restoring a database after redeploy (or in a separate container altogether).
 
 :::
 
-To learn about [saving or backing up custom data](http://localhost:3000/docs/container/container-redeploy#saving-custom-data-during-container-redeploy) during redeploy, refer to the appropriate section below.
+To learn about [saving or backing up custom data](/docs/container/container-redeploy#saving-custom-data-during-container-redeploy) during redeploy, refer to the appropriate section below.
 
 ## Update Container via Dashboard
 
@@ -59,8 +59,8 @@ The most straightforward and user-friendly way to redeploy a template tag is to 
 
 Also, you can adjust some additional options:
 
-- **Keep volumes data** - if enabled, data in the [volumes](http://localhost:3000/docs/container/container-configuration/volumes) will be protected from erasing and will remain available after redeploy
-- for [horizontally scaled](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) containers, you can choose between two deployment options:
+- **Keep volumes data** - if enabled, data in the [volumes](/docs/container/container-configuration/volumes) will be protected from erasing and will remain available after redeploy
+- for [horizontally scaled](/docs/application-setting/scaling-and-clustering/horizontal-scaling) containers, you can choose between two deployment options:
   - **Simultaneous deployment** - redeploys all nodes at once, which is comparatively quicker but causes a brief downtime of your application
   - **Sequential deployment with delay** - redeploys instances one-by-one with a specified delay between operations. This option ensures that there is always a running node to process incoming requests (i.e. no downtime)
 
@@ -90,7 +90,7 @@ The update process can be automated using [platform API](https://cloudmydc.com/)
 
 :::tip Tip
 
-A detailed example on [container redeploy via CLI](http://localhost:3000/docs/deployment-tools/api-&-cli/platform-cli/container-redeploy) is provided in the linked guide.
+A detailed example on [container redeploy via CLI](/docs/deployment-tools/api-&-cli/platform-cli/container-redeploy) is provided in the linked guide.
 
 :::
 
@@ -158,7 +158,7 @@ Each [platform-managed container](/docs/quickstart/software-stack-versions) is p
 
 </div>
 
-The **redeploy.conf** file is divided into two [system](http://localhost:3000/docs/container/container-redeploy#system-files-and-folders) and [custom](http://localhost:3000/docs/container/container-redeploy#custom-files-and-folders) sections and can be used to [backup system files](http://localhost:3000/docs/container/container-redeploy#creating-file-backup-copy-upon-image-redeployment).
+The **redeploy.conf** file is divided into two [system](/docs/container/container-redeploy#system-files-and-folders) and [custom](/docs/container/container-redeploy#custom-files-and-folders) sections and can be used to [backup system files](/docs/container/container-redeploy#creating-file-backup-copy-upon-image-redeployment).
 
 ## System Files and Folders
 
@@ -176,7 +176,7 @@ Here, container-specific configurations that are required for the correct redepl
 - **${home}/.bash_profile** - contains the default SSH shell settings (e.g. shell introduction message, the required configuration files to be fetched, etc.)
 - **/etc/sysconfig/iptables** - keeps the default firewall rules
 - **/etc/sysconfig/iptables-custom** - contains [custom firewall rules](/docs/application-setting/external-access-to-applications/container-firewall)
-- **/var/lib/jelastic/keys** - stores [uploaded SSH private keys](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key), which are necessary to access the container via SSH and for interaction with other containers
+- **/var/lib/jelastic/keys** - stores [uploaded SSH private keys](/docs/deployment-tools/ssh/generate-ssh-key), which are necessary to access the container via SSH and for interaction with other containers
 
 <u>
 Also, <b>redeploy.conf</b> for each particular node type include different stack-specific files.
@@ -188,7 +188,7 @@ Also, <b>redeploy.conf</b> for each particular node type include different stack
 
 :::danger Tip
 
-When providing “**custom files and folder**”, only add system configuration files that are required to ensure container operability during redeployment. Use [container volumes](http://localhost:3000/docs/container/container-configuration/volumes) for other cases (e.g. to keep your application data).
+When providing “**custom files and folder**”, only add system configuration files that are required to ensure container operability during redeployment. Use [container volumes](/docs/container/container-configuration/volumes) for other cases (e.g. to keep your application data).
 
 :::
 

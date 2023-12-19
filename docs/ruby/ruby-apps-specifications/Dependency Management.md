@@ -12,7 +12,7 @@ Bundler performs dependency resolving in the following cases:
 
 - [deploying applications](/docs/deployment/deployment-guide)
 - [switching between Ruby versions](/docs/category/container-deployment)
-- [changing deployment type](/docs/Ruby/Ruby%20Dev%20Center#ruby-application-deployment)
+- [changing deployment type](/docs/ruby/ruby-dev-center#ruby-application-deployment)
 
 After any of the actions mentioned above, Bundler searches [RubyGems.org](https://rubygems.org/) (Ruby community’s gem hosting service) for dependencies listed in the config file and, if needed, installs them. By default, Ruby application servers are provided only with gems required for the example application’s work.
 

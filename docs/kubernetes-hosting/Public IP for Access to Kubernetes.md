@@ -22,7 +22,7 @@ sidebar_position: 7
 </div>
 <div>
 
-In this post we’d like to show how to expose applications via a public [IP address](/docs/application-setting/external-access-to-applications/public-ip) attached to one of the nodes of a Kubernetes cluster environment in Jelastic PaaS. It can be done in two possible ways - attaching IP to [Dedicated Load Balancer](/docs/Load%20Balancers/Load%20Balancing) or to K8s Worker node.
+In this post we’d like to show how to expose applications via a public [IP address](/docs/application-setting/external-access-to-applications/public-ip) attached to one of the nodes of a Kubernetes cluster environment in Jelastic PaaS. It can be done in two possible ways - attaching IP to [Dedicated Load Balancer](/docs/load-balancers/load-balancing) or to K8s Worker node.
 
 </div>
 </div>
@@ -43,7 +43,7 @@ In this post we’d like to show how to expose applications via a public [IP add
 
 </div>
 
-Here we use the NGINX load balancer node, but you can choose any other available ([HAProxy](/docs/Load%20Balancers/HAProxy), [LS Web ADC](/docs/Load%20Balancers/LiteSpeed%20Web%20ADC), [Varnish](/docs/Load%20Balancers/Varnish)). Once the topology is changed it should look like as follows:
+Here we use the NGINX load balancer node, but you can choose any other available ([HAProxy](/docs/load-balancers/haproxy), [LS Web ADC](/docs/load-balancers/litespeed-web-adc), [Varnish](/docs/load-balancers/varnish)). Once the topology is changed it should look like as follows:
 
 <div style={{
     display:'flex',
@@ -65,7 +65,7 @@ Here we use the NGINX load balancer node, but you can choose any other available
 
 </div>
 
-3. After that, create an [A record](http://localhost:3000/docs/application-setting/domain-name-management/custom-domain-name#how-to-configure-dns-record) for a [custom domain](/docs/application-setting/domain-name-management/custom-domain-name) using the IP address added at the previous step. For example **_cargo-tracker.jele.website_**.
+3. After that, create an [A record](/docs/application-setting/domain-name-management/custom-domain-name#how-to-configure-dns-record) for a [custom domain](/docs/application-setting/domain-name-management/custom-domain-name) using the IP address added at the previous step. For example **_cargo-tracker.jele.website_**.
 
 <div style={{
     display:'flex',

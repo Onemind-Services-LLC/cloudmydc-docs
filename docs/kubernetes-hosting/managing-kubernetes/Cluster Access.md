@@ -6,10 +6,10 @@ sidebar_position: 1
 
 ## Kubernetes Cluster Access
 
-After the successful [installation of a cluster](/docs/Kubernetes%20Hosting/Kubernetes%20Cluster/Cluster%20Installation), there are multiple ways to access it to start management:
+After the successful [installation of a cluster](/docs/kubernetes-hosting/kubernetes-cluster/cluster-installation), there are multiple ways to access it to start management:
 
-- [Kubernetes Dashboard](/docs/Kubernetes%20Hosting/Managing%20Kubernetes/Cluster%20Access#kubernetes-dashboard)
-- [kubectl client](/docs/Kubernetes%20Hosting/Managing%20Kubernetes/Cluster%20Access#kubectl-client)
+- [Kubernetes Dashboard](/docs/kubernetes-hosting/managing-kubernetes/cluster-access#kubernetes-dashboard)
+- [kubectl client](/docs/kubernetes-hosting/managing-kubernetes/cluster-access#kubectl-client)
 
 ## Kubernetes Dashboard
 
@@ -41,7 +41,7 @@ The same information is also provided via the appropriate email notification.
 
 :::tip Tip
 
-It is also possible to log in with the **_kubeconfig_** file; however, you’ll need to install kubectl and set the right context (see the [section](/docs/Kubernetes%20Hosting/Managing%20Kubernetes/Cluster%20Access#kubectl-client) below).
+It is also possible to log in with the **_kubeconfig_** file; however, you’ll need to install kubectl and set the right context (see the [section](/docs/kubernetes-hosting/managing-kubernetes/cluster-access#kubectl-client) below).
 
 :::
 
@@ -65,7 +65,7 @@ Now, you can access the Kubernetes Dashboard once again.
 
 ## Kubectl Client
 
-**[Kubectl](https://kubernetes.io/docs/tasks/tools/)** is a command-line tool to control a Kubernetes cluster. The platform automatically installs it on all master nodes during the environment creation. You can start working with your cluster using kubectl right away, just connect to the required node [over SSH](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview).
+**[Kubectl](https://kubernetes.io/docs/tasks/tools/)** is a command-line tool to control a Kubernetes cluster. The platform automatically installs it on all master nodes during the environment creation. You can start working with your cluster using kubectl right away, just connect to the required node [over SSH](/docs/deployment-tools/ssh/ssh-access/overview).
 
 1. Follow the [installation steps](https://kubernetes.io/docs/tasks/tools/) to use a local kubectl. Next, run a command to establish remote connection:
 

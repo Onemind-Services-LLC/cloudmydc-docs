@@ -16,7 +16,7 @@ The list of offered WordPress packages and their specifics may vary for each pla
 
 ## WordPress Standalone
 
-The **WordPress Standalone** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LEMP](/docs/PHP/PHP%20App%20Servers/LEMP%20&%20LLSMP) (Linux + NGINX + MariaDB + PHP) template with a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
+The **WordPress Standalone** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LEMP](/docs/php/php-app-servers/lemp-&-llsmp) (Linux + NGINX + MariaDB + PHP) template with a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
 
 <div style={{
     display:'flex',
@@ -30,7 +30,7 @@ The **WordPress Standalone** package has an efficient single node topology based
 
 ## WordPress Standalone Pro
 
-The **WordPress Standalone Pro** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LLSMP](/docs/PHP/PHP%20App%20Servers/LEMP%20&%20LLSMP) (Linux + LiteSpeed + MariaDB + PHP) template with a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
+The **WordPress Standalone Pro** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LLSMP](/docs/php/php-app-servers/lemp-&-llsmp) (Linux + LiteSpeed + MariaDB + PHP) template with a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
 
 <div style={{
     display:'flex',
@@ -50,7 +50,7 @@ Learn about _*LiteSpeed Benefits Over Other Servers for WordPress Hosting*_ in t
 
 ## WordPress WooCommerce
 
-The **WordPress WooCommerce** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LEMP](/docs/PHP/PHP%20App%20Servers/LEMP%20&%20LLSMP) (Linux + NGINX + MariaDB + PHP) template with the [WooCommerce](https://wordpress.org/plugins/woocommerce/) plugin and a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
+The **WordPress WooCommerce** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LEMP](/docs/php/php-app-servers/lemp-&-llsmp) (Linux + NGINX + MariaDB + PHP) template with the [WooCommerce](https://wordpress.org/plugins/woocommerce/) plugin and a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
 
 <div style={{
     display:'flex',
@@ -66,7 +66,7 @@ WooCommerce is a free, open-source e-commerce plugin designed specifically for W
 
 ## WordPress WooCommerce Pro
 
-The **WordPress WooCommerce Pro** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LLSMP](/docs/PHP/PHP%20App%20Servers/LEMP%20&%20LLSMP) (Linux + LiteSpeed + MariaDB + PHP) template with the [WooCommerce](https://wordpress.org/plugins/woocommerce/) plugin and a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
+The **WordPress WooCommerce Pro** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LLSMP](/docs/php/php-app-servers/lemp-&-llsmp) (Linux + LiteSpeed + MariaDB + PHP) template with the [WooCommerce](https://wordpress.org/plugins/woocommerce/) plugin and a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
 
 <div style={{
     display:'flex',

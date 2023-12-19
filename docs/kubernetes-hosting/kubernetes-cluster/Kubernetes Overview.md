@@ -19,7 +19,7 @@ Installation of a Kubernetes Cluster, as well as network and storage configurati
 - **_[K9s](https://github.com/derailed/k9s)_**, **_[kubectx](https://github.com/ahmetb/kubectx)_**, **_[popeye](https://github.com/derailed/popeye)_**, and **_[stern](https://github.com/wercker/stern)_** command-line utilities to efficiently manage your cluster
 - **_[Metrics server](https://github.com/kubernetes-sigs/metrics-server)_**, **_[Prometheus](https://prometheus.io/)_**, and **_[Grafana](https://grafana.com/)_** for monitoring your cluster and applications health (optional)
 - **_[Jaeger](https://www.jaegertracing.io/)_** for monitoring and troubleshooting of the microservice-based distributed systems (optional, available since 1.15.5)
-  Besides K8s specific features, traditional platform features are available too, e.g. [vertical](/docs/Kubernetes%20Hosting/Kubernetes%20Scalability/Vertical%20Scaling) and [horizontal scaling](/docs/Kubernetes%20Hosting/Kubernetes%20Scalability/Horizontal%20Scaling).
+  Besides K8s specific features, traditional platform features are available too, e.g. [vertical](/docs/kubernetes-hosting/kubernetes-scalability/vertical-scaling) and [horizontal scaling](/docs/kubernetes-hosting/kubernetes-scalability/horizontal-scaling).
 
 :::tip Tip
 

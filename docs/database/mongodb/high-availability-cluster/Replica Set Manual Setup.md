@@ -18,7 +18,7 @@ Replica set is a term used for defining a database cluster of multiple nodes wit
 
 </div>
 
-In case some unexpected issue occurs, causing the primary database downtime (e.g. due to hardware failure or connection interruption), a new election process will be initiated automatically, helping to restore the normal application functioning, no manual intervention required. In such a way, replica set inherits the benefits of [usual replication](/docs/Database/MongoDB/High%20Availability%20Cluster/Auto-Clustering#mongodb-replica-set-auto-%D1%81lustering-for-high-availability-and-performance) (like failover redundancy, increased data availability and read capacity, disaster recovery, etc.) and simultaneously eliminates the complexity of managing numerous databases separately.
+In case some unexpected issue occurs, causing the primary database downtime (e.g. due to hardware failure or connection interruption), a new election process will be initiated automatically, helping to restore the normal application functioning, no manual intervention required. In such a way, replica set inherits the benefits of [usual replication](/docs/database/mongodb/high-availability-cluster/auto-clustering#mongodb-replica-set-auto-%D1%81lustering-for-high-availability-and-performance) (like failover redundancy, increased data availability and read capacity, disaster recovery, etc.) and simultaneously eliminates the complexity of managing numerous databases separately.
 
 Thus, here is a simple instruction, that will show you how to create and configure a MongoDB replica set with three members – such a complexion is considered to ensure enough margin of information safety and sufficient out-turn to handle the required amount of I/O operations, for most of the commonly used applications. Below we’ll discover how to prepare the appropriate environment, set an authentication between DB nodes, configure the replication itself and make sure everything is tuned properly.
 
@@ -36,13 +36,13 @@ To start with, you’ll need at least three MongoDB nodes in order to configure 
 
 </div>
 
-If required, change the **Environment Name** and destination [Region](http://localhost:3000/docs/environment-management/environment-regions/choosing-a-region#environment-regions). Once installation is completed you have to take care about security of nodes communication with the help of authentication key file.
+If required, change the **Environment Name** and destination [Region](/docs/environment-management/environment-regions/choosing-a-region#environment-regions). Once installation is completed you have to take care about security of nodes communication with the help of authentication key file.
 
 ## Add Authentication Key File
 
 Authentication is an important security assurance process that forces each member of the replica set to identify itself during the inner communication by means of a special unique authentication key file. So let’s generate your own in order to protect the data inside your DBs from illegal access:
 
-1. Log into one of database nodes via [Web SSH](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser).
+1. Log into one of database nodes via [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser).
 
 <div style={{
     display:'flex',
@@ -60,7 +60,7 @@ Authentication is an important security assurance process that forces each membe
 
 3. Now you have to distribute just created key file across all MongoDB instances:
 
-- Click on the **Config** button next to your database nodes in order to access [File Manager](http://localhost:3000/docs/application-setting/configuration-file-manager#configuration-file-manager).
+- Click on the **Config** button next to your database nodes in order to access [File Manager](/docs/application-setting/configuration-file-manager#configuration-file-manager).
 
 <div style={{
     display:'flex',
@@ -449,7 +449,7 @@ As a result, you’ll get a similar set of strings:
 
 Don’t forget to Save this file.
 
-4. Apache requires a special module for being able to [interact with the MongoDB server](/docs/Database/MongoDB/Connection%20to%20Applications/PHP%20Connection%20to%20MongoDB#php-connection-to-mongodb), so you need to add it within configs.
+4. Apache requires a special module for being able to [interact with the MongoDB server](/docs/database/mongodb/connection-to-applications/php-connection-to-mongodb#php-connection-to-mongodb), so you need to add it within configs.
 
 For that, go to the **etc** folder and open the **php.ini** file. Find the **[mongodb]** section and remove the semicolon before the **extension=mongodb.so** line to enable this extension.
 

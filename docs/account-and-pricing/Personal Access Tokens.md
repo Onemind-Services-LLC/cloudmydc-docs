@@ -33,8 +33,8 @@ Among advantages of tokens, the following ones can be highlighted:
 
 The platform provides a fully functional visual interface for tokens management directly in the dashboard (starting with the 5.5 version), which makes it the preferable way to authenticate any API integration (especially on accounts with the [two-factor authentication](https://cloudmydc.com/) enabled):
 
-- [Managing Access Tokens](/docs/Account&Pricing/Personal%20Access%20Tokens#managing-access-tokens)
-- [Using Access Tokens](/docs/Account&Pricing/Personal%20Access%20Tokens#using-access-tokens)
+- [Managing Access Tokens](/docs/account-and-pricing/personal-access-tokens#managing-access-tokens)
+- [Using Access Tokens](/docs/account-and-pricing/personal-access-tokens#using-access-tokens)
 
 ## Managing Access Tokens
 
@@ -153,7 +153,7 @@ For example, you can [stop an environment](https://docs.jelastic.com/api/#!/api/
 
 https://app.
 **$**
-**_[{platformDomain}](http://localhost:3000/docs/quickstart/hosters-list-&-info)_**
+**_[{platformDomain}](/docs/quickstart/hosters-list-&-info)_**
 /1.0/environment/control/rest/stopenv?envName=
 **${envName}**
 &session=

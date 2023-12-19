@@ -35,9 +35,9 @@ It supports a plenty of mail transfer protocols (such as SMTP, ESMTP and others)
 
 The platform delivers Sendmail included to all of the application servers' builds (except the [IIS](/docs/windows-and-.NET/dot-net-core) ones) by default. However, the ability to run this service in a container depends on a particular hosting providers' settings - at some platforms, it could be available only in case of a bound [public IP](/docs/application-setting/external-access-to-applications/public-ip) address presence. So, let’s consider how to:
 
-- [check the Sendmail availability](/docs/Deployment%20Tools/Mailings/Running%20Sendmail%20Service#check-sendmail-availability)
-- [enable Sendmail in case it is not run](/docs/Deployment%20Tools/Mailings/Running%20Sendmail%20Service#enable-sendmail)
-- [send a test message](/docs/Deployment%20Tools/Mailings/Running%20Sendmail%20Service#send-a-message-via-sendmail)
+- [check the Sendmail availability](/docs/deployment-tools/mailings/running-sendmail-service#check-sendmail-availability)
+- [enable Sendmail in case it is not run](/docs/deployment-tools/mailings/running-sendmail-service#enable-sendmail)
+- [send a test message](/docs/deployment-tools/mailings/running-sendmail-service#send-a-message-via-sendmail)
 
 ## Check Sendmail Availability
 
@@ -63,9 +63,9 @@ In order to discover whether your hosting service provider allows to run Sendmai
 
 In case you haven’t performed similar operations before, you need to:
 
-- [generate](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key) an SSH keypair
+- [generate](/docs/deployment-tools/ssh/generate-ssh-key) an SSH keypair
 - [add your public SSH key](/docs/deployment-tools/ssh/add-ssh-key) to the dashboard
-- [establish the connection](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) over SSH protocol
+- [establish the connection](/docs/deployment-tools/ssh/ssh-access/overview) over SSH protocol
 
 :::
 
@@ -99,7 +99,7 @@ Then just turn on the corresponding switcher at the App Server layer and confirm
 
 </div>
 
-After the confirmation and external IP address attachment, the Sendmail service will be automatically started, so you can start to [use](/docs/Deployment%20Tools/Mailings/Running%20Sendmail%20Service#send-a-message-via-sendmail) it immediately.
+After the confirmation and external IP address attachment, the Sendmail service will be automatically started, so you can start to [use](/docs/deployment-tools/mailings/running-sendmail-service#send-a-message-via-sendmail) it immediately.
 
 :::tip
 
@@ -111,7 +111,7 @@ As an option, you can appeal to your hoster’s Support team and negotiate getti
 
 You can discover how Sendmail is working by sending a simple test email. This can be accomplished right from the command line - for that:
 
-1. Connect to your application server (with the Sendmail service already running) [via SSH](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview).
+1. Connect to your application server (with the Sendmail service already running) [via SSH](/docs/deployment-tools/ssh/ssh-access/overview).
 
 2. Execute the following line of code in order to send a letter:
 

@@ -20,17 +20,17 @@ In order to achieve more security, you can also access your private GIT reposito
 
 For accessing your private GIT repository using the secured SSH protocol, follow the simple steps below:
 
-1. [Generate SSH Keychain](http://localhost:3000/docs/deployment/ssh-access-to-git-repository#generate-ssh-keychain)
-2. [Add Private SSH Key to Platform Account](http://localhost:3000/docs/deployment/ssh-access-to-git-repository#add-private-ssh-key-to-platform-account)
-3. [Add Public SSH Key to Git Account](http://localhost:3000/docs/deployment/ssh-access-to-git-repository#add-public-ssh-key-to-git-account)
-   - [GitHub](http://localhost:3000/docs/deployment/ssh-access-to-git-repository#github)
-   - [GitLab](http://localhost:3000/docs/deployment/ssh-access-to-git-repository#gitlab)
-   - [Bitbucket](http://localhost:3000/docs/deployment/ssh-access-to-git-repository#bitbucket)
-4. [Deploy Project via SSH](http://localhost:3000/docs/deployment/ssh-access-to-git-repository#deploy-project-via-ssh)
+1. [Generate SSH Keychain](/docs/deployment/ssh-access-to-git-repository#generate-ssh-keychain)
+2. [Add Private SSH Key to Platform Account](/docs/deployment/ssh-access-to-git-repository#add-private-ssh-key-to-platform-account)
+3. [Add Public SSH Key to Git Account](/docs/deployment/ssh-access-to-git-repository#add-public-ssh-key-to-git-account)
+   - [GitHub](/docs/deployment/ssh-access-to-git-repository#github)
+   - [GitLab](/docs/deployment/ssh-access-to-git-repository#gitlab)
+   - [Bitbucket](/docs/deployment/ssh-access-to-git-repository#bitbucket)
+4. [Deploy Project via SSH](/docs/deployment/ssh-access-to-git-repository#deploy-project-via-ssh)
 
 ## Generate SSH Keychain
 
-To start with, you need to create an SSH key pair (i.e. two related keys: private and public) for binding your GIT repository to the PaaS account. Follow the **[Generate SSH Key](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key)** instruction if you’ve never generated a keychain before.
+To start with, you need to create an SSH key pair (i.e. two related keys: private and public) for binding your GIT repository to the PaaS account. Follow the **[Generate SSH Key](/docs/deployment-tools/ssh/generate-ssh-key)** instruction if you’ve never generated a keychain before.
 
 :::danger Note: Your keys <u>must not</u> contain password protection (passphrase) in order to be used for establishing a connection between the platform and GIT accounts.
 
@@ -104,9 +104,9 @@ If your GIT repository is located at the remote private server, just upload the 
 
 In case you are using some web-based projects' hosting service, follow the corresponding detailed step-by-step guide below. As an example, we’ll pay attention to the three most popular services:
 
-- [GitHub](http://localhost:3000/docs/deployment/ssh-access-to-git-repository#github)
-- [GitLab](http://localhost:3000/docs/deployment/ssh-access-to-git-repository#gitlab)
-- [Bitbucket](http://localhost:3000/docs/deployment/ssh-access-to-git-repository#bitbucket)
+- [GitHub](/docs/deployment/ssh-access-to-git-repository#github)
+- [GitLab](/docs/deployment/ssh-access-to-git-repository#gitlab)
+- [Bitbucket](/docs/deployment/ssh-access-to-git-repository#bitbucket)
 
 ## GitHub
 
@@ -336,10 +336,10 @@ For Java-based environments, you need to additionally select a [build node](http
 :::
 
 - **Path** - type the context you would like your application to be deployed to (or leave the default one)
-- **[Hooks](http://localhost:3000/docs/deployment/deployment-hooks)** - add pre- and post-deployment operations (if needed)
-- **Check and auto-deploy updates** - enables [automatic periodic updates](http://localhost:3000/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview) of your project from the repository (performed only there are code changes) with a set interval
+- **[Hooks](/docs/deployment/deployment-hooks)** - add pre- and post-deployment operations (if needed)
+- **Check and auto-deploy updates** - enables [automatic periodic updates](/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview) of your project from the repository (performed only there are code changes) with a set interval
 - **Auto-resolve conflicts **- prevents the merge conflict, the “git reset –hard” command will be called during each subsequent project update (contradictory files will be updated according to its repository version, discarding the locally made changes)
-- **Enable [zero-downtime deployment](/docs/PHP/ZDT%20Deployment%20for%20PHP)** - adjusts the deployment flow to avoid application downtime (for PHP servers only)
+- **Enable [zero-downtime deployment](/docs/php/zdt-deployment-for-php)** - adjusts the deployment flow to avoid application downtime (for PHP servers only)
 
 <div style={{
     display:'flex',

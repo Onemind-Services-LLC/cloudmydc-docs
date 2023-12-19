@@ -94,4 +94,4 @@ The operation will temporarily stop the database services, so be aware of the do
 
 </div>
 
-In case of detecting corrupted data, it is recommended to restore your database from a backup. You can use the **[Backup/Restore](/docs/Database/MySQL-MariaDB-Percona/Backup-Restore%20Add-On#database-backuprestore-add-on)** add-on to schedule regular backup creation, ensuring you always have a backup to restore your database in case of an emergency.
+In case of detecting corrupted data, it is recommended to restore your database from a backup. You can use the **[Backup/Restore](/docs/database/mysql-mariadb-percona/backup-restore-add-on#database-backuprestore-add-on)** add-on to schedule regular backup creation, ensuring you always have a backup to restore your database in case of an emergency.

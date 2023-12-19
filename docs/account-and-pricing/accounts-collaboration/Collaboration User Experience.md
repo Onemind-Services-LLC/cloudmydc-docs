@@ -4,7 +4,7 @@ slug: collaboration-user-experience
 sidebar_position: 4
 ---
 
-Once the [collaboration is established](/docs/Account&Pricing/Accounts%20Collaboration/Create%20Collaboration), its members can start working with shared environments. In this guide, we’ll go through all the peculiarities of the process.
+Once the [collaboration is established](/docs/account-and-pricing/accounts-collaboration/create-collaboration), its members can start working with shared environments. In this guide, we’ll go through all the peculiarities of the process.
 
 1. The shared environments can be easily distinguished from the regular ones via the dedicated icon and owner tag.
 
@@ -72,7 +72,7 @@ Also, the whole groups' tree can be seen when managing environment groups.
 
 </div>
 
-You can check the [role and list of allowed policies](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Roles%20Policies) for shared resources at the account **Settings > Shared with Me** section.
+You can check the [role and list of allowed policies](/docs/account-and-pricing/accounts-collaboration/collaboration-roles-policies) for shared resources at the account **Settings > Shared with Me** section.
 
 <div style={{
     display:'flex',

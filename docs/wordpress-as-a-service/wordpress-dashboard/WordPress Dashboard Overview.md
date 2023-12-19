@@ -10,8 +10,8 @@ CloudMyDc Application Platform for WordPress provides a dedicated dashboard desi
 
 Below, we’ll provide an overview of the:
 
-- [WordPress Dashboard](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Dashboard%20Overview#wordpress-dashboard)
-- [Account Settings](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Dashboard%20Overview#account-settings)
+- [WordPress Dashboard](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview#wordpress-dashboard)
+- [Account Settings](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview#account-settings)
 
 ## WordPress Dashboard
 
@@ -43,7 +43,7 @@ Below, we’ll provide an overview of the:
 
 </div>
 
-Additionally, at the top-right corner of the home page, you can see the **Create New Project** button. Learn more at the dedicated [WordPress Project Creation](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Installation) guide.
+Additionally, at the top-right corner of the home page, you can see the **Create New Project** button. Learn more at the dedicated [WordPress Project Creation](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation) guide.
 
 3. Each project has the following options available from the home page:
 
@@ -74,7 +74,7 @@ Additionally, at the top-right corner of the home page, you can see the **Create
 
 </div>
 
-Learn more at the [WordPress Project Management](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Management) guide.
+Learn more at the [WordPress Project Management](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management) guide.
 
 ## Account Settings
 
@@ -156,7 +156,7 @@ The platform supports the following key types:
 - EdDSA
 - RSA
 
-In the linked documents, you can learn more about [generating SSH keys](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key) and [connecting via SSH Gate](/docs/deployment-tools/ssh/ssh-access/ssh-gate).
+In the linked documents, you can learn more about [generating SSH keys](/docs/deployment-tools/ssh/generate-ssh-key) and [connecting via SSH Gate](/docs/deployment-tools/ssh/ssh-access/ssh-gate).
 
 2.3. On the **Payment Methods** tab, you can view and manage your payment methods.
 
@@ -307,7 +307,7 @@ In order to add a new storage, click the **Add Backup** button and provide the f
 
 </div>
 
-Click **Add** when ready. Your new storage product will be created in a few minutes. Learn more about the [backup and restore process](/docs/Wordpress%20as%20a%20Service/WordPress%20Backups).
+Click **Add** when ready. Your new storage product will be created in a few minutes. Learn more about the [backup and restore process](/docs/wordpress-as-a-service/wordpress-backups).
 
 4. The Language list allows changing the dashboard localization to the preferred language. The availability and exact options depend on the service hosting provider configurations.
 

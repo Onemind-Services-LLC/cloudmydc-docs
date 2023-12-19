@@ -14,7 +14,7 @@ Full access to collaboration management is available only for its creator. The o
 - regulate the permissions of users within the collaboration
 - manage account billing
 
-A **user** added to the collaboration doesn’t have any special admin permissions for collaboration account management (only for [environments management](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20User%20Experience)). This user can simply leave the collaboration when it is required.
+A **user** added to the collaboration doesn’t have any special admin permissions for collaboration account management (only for [environments management](/docs/account-and-pricing/accounts-collaboration/collaboration-user-experience)). This user can simply leave the collaboration when it is required.
 
 To start managing your account collaboration, select the **Settings** button in the right top corner of your platform dashboard.
 
@@ -51,7 +51,7 @@ Using the buttons at the panel you can:
 - edit user’s Display name and permissions
 - delete a user from the collaboration
 
-1. The process of a new user **invitation** is described in the [Create Collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Create%20Collaboration) document.
+1. The process of a new user **invitation** is described in the [Create Collaboration](/docs/account-and-pricing/accounts-collaboration/create-collaboration) document.
 
 2. To edit a user’s **Display name** and **permissions**, follow these steps:
 

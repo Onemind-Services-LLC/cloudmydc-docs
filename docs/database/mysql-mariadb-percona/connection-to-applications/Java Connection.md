@@ -78,7 +78,7 @@ Log into the opened admin panel using credentials from the above-mentioned email
 
 </div>
 
-5. Return to dashboard and click the **Config** button next to the application server (Tomcat, in our case) to access [configuration file manager](http://localhost:3000/docs/application-setting/configuration-file-manager#configuration-file-manager).
+5. Return to dashboard and click the **Config** button next to the application server (Tomcat, in our case) to access [configuration file manager](/docs/application-setting/configuration-file-manager#configuration-file-manager).
 
 <div style={{
     display:'flex',
@@ -322,10 +322,10 @@ You’ll see that the newly created table appeared with the name {date-time of c
 The platform also lets you extend your MariaDB/MySQL servers functionality by following the appropriate instructions in our documentation:
 
 - set up the preferred database replication type with embedded Auto-Clustering feature in order to get the increased DB performance and data loss protection
-- adjust [Backups Scheduling](/docs/Database/Database%20Hosting/Manual%20Database%20Backups#manual-database-backups) for ensuring safety of the information inside your DBs in the case of unexpected server failure
-- see the [Remote Access](/docs/Database/MySQL-MariaDB-Percona/Remote%20Access#remote-access-to-mysqlmariadbpercona) instruction and learn how to access your database remotely via the preferred desktop MySQL client
-- use the [Dump Files Import/Export](/docs/Database/MySQL-MariaDB-Percona/Dump%20Import-Export) guide to find out how to manually backup and restore your data from the previously created dumps
-- see the [Database connection strings](/docs/Database/Database%20Hosting/Database%20Connection%20Strings#database-connection-strings) to get more info how to configure connection to different db types
+- adjust [Backups Scheduling](/docs/database/database-hosting/manual-database-backups#manual-database-backups) for ensuring safety of the information inside your DBs in the case of unexpected server failure
+- see the [Remote Access](/docs/database/mysql-mariadb-percona/remote-access#remote-access-to-mysqlmariadbpercona) instruction and learn how to access your database remotely via the preferred desktop MySQL client
+- use the [Dump Files Import/Export](/docs/database/mysql-mariadb-percona/dump-import-export) guide to find out how to manually backup and restore your data from the previously created dumps
+- see the [Database connection strings](/docs/database/database-hosting/database-connection-strings#database-connection-strings) to get more info how to configure connection to different db types
 
 ## Video Tutorial on MySQL Connection to Java Application
 

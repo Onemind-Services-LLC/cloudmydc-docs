@@ -107,7 +107,7 @@ Click the **Create** button when ready.
 
 In order to access the WildFly **_Administration Console_**, click the appropriate link (circled in the image above) or get URL from the email (received after server creation) alongside with other access credentials.
 
-Also, you can establish an [SSH connection](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) to your [WildFly server](https://cloudmydc.com/) and use the WildFly CLI inbuilt utility for managing.
+Also, you can establish an [SSH connection](/docs/deployment-tools/ssh/ssh-access/overview) to your [WildFly server](https://cloudmydc.com/) and use the WildFly CLI inbuilt utility for managing.
 
 ## Standalone Mode
 

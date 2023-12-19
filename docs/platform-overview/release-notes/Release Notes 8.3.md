@@ -46,7 +46,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#almalinux-9-base-os-image">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.3#almalinux-9-base-os-image">
                     Learn More >>
                 </a>
             </div>
@@ -65,7 +65,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#subscription-improvements">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.3#subscription-improvements">
                     Learn More >>
                 </a>
             </div>
@@ -109,7 +109,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#action-initiator-for-emails">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.3#action-initiator-for-emails">
                     Learn More >>
                 </a>
             </div>
@@ -128,7 +128,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#api-changes">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.3#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -147,7 +147,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#software-stack-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.3#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -191,7 +191,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#fixes-compatible-with-prior-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.3#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -210,7 +210,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#bug-fixes">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.3#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -244,23 +244,23 @@ The transition process will be gradual and non-intrusive. It follows the next po
 
 Alongside the AlmaLinux 9 image implementation, some new functionality is introduced, including updated key generation (_rsa-sha2-256_ and _rsa-sha2-512_ signatures support), updated Guacamole ([Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh)) client, and **_[nftables](https://netfilter.org/projects/nftables/)_** netfilter (replaces _iptables_). The _nftables_ solution is a new recommended choice for firewall rules management. It offers unified and consistent syntax (contrary to the _xtables_ utilities), high performance through maps and concatenations, and increased security as rules get translated into bytecode. At the same time, all the dashboard UI and API calls remain the same as before so that the management process is unchanged.
 
-Other stack-related changes include an updated list of [supported OS distributions](http://localhost:3000/docs/container/container-image-requirements), including **CentOS Stream 9** addition and **Debian 9** deprecation.
+Other stack-related changes include an updated list of [supported OS distributions](/docs/container/container-image-requirements), including **CentOS Stream 9** addition and **Debian 9** deprecation.
 
-[More info](http://localhost:3000/docs/container/container-image-requirements)
+[More info](/docs/container/container-image-requirements)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Subscription Improvements
 
-The recently implemented **[Subscription-Based Product](/docs/Account&Pricing/Subscription-Based%20Products)** solution was further improved in the current release to ensure the best experience for the customers. All the new changes are seamlessly integrated into the dedicated dashboard’s **_Subscription_** section.
+The recently implemented **[Subscription-Based Product](/docs/account-and-pricing/subscription-based-products)** solution was further improved in the current release to ensure the best experience for the customers. All the new changes are seamlessly integrated into the dedicated dashboard’s **_Subscription_** section.
 
 <div style={{
     display:'flex',
@@ -311,37 +311,37 @@ Lastly the ability to enable/disable **Auto Pay** option was implemented, allowi
 
 </div>
 
-[More info](/docs/Account&Pricing/Subscription-Based%20Products)
+[More info](/docs/account-and-pricing/subscription-based-products)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Action Initiator for Emails
 
-CloudMyDc Application Platform provides a powerful [collaboration functionality](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview#account-collaboration) that allows multiple users to work on the same account. However, with high participants number and active development, it may become difficult to track all the actions performed by individuals and create confusion on whether the account is compromised. In order to help the tracking efforts, the email notifications were extended with the “action initiator” data. Depending on the operation, it can be the email address of the collaboration member or a reference to the internal trigger (e.g., [automatic horizontal scaling](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling)).
+CloudMyDc Application Platform provides a powerful [collaboration functionality](/docs/account-and-pricing/accounts-collaboration/collaboration-overview#account-collaboration) that allows multiple users to work on the same account. However, with high participants number and active development, it may become difficult to track all the actions performed by individuals and create confusion on whether the account is compromised. In order to help the tracking efforts, the email notifications were extended with the “action initiator” data. Depending on the operation, it can be the email address of the collaboration member or a reference to the internal trigger (e.g., [automatic horizontal scaling](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling)).
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## API Changes
 
-Below, you can find a list of all changes to the public API in the 8.3 platform version (compared to the preceding [8.2.2](http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2#api-changes) ones):
+Below, you can find a list of all changes to the public API in the 8.3 platform version (compared to the preceding [8.2.2](/docs/platform-overview/release-notes/release-notes-8.2#api-changes) ones):
 
-- Added new **_SetAutopay_**, **_MoveProduct_**, **_UpdateSubscription_**, **_UpcomingInvoice_**, and **_DiscardUpdateSubscription_** API methods due to [subscription](http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#subscription-improvements) changes.
+- Added new **_SetAutopay_**, **_MoveProduct_**, **_UpdateSubscription_**, **_UpcomingInvoice_**, and **_DiscardUpdateSubscription_** API methods due to [subscription](/docs/platform-overview/release-notes/release-notes-8.3#subscription-improvements) changes.
 - Added a new **_invalidateSessions_** parameter to all the password reset methods, which allows terminating all active user sessions (except the current one).
 
 The API documentation’s complete review has started in order to provide a comprehensive description of all the methods and their parameters. Currently, most of the **_billing_** and **_environment_** services have been updated. You can expect complete coverage over the course of several future releases.
@@ -353,7 +353,7 @@ The API documentation’s complete review has started in order to provide a comp
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -472,7 +472,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -490,7 +490,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>

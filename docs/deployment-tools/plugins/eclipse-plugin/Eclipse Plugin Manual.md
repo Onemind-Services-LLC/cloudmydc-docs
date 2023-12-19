@@ -41,6 +41,6 @@ See the following video tutorial in order to quickly get insights on basics of t
 
 And within the instructions below, you can find out how to install the plugin, manage environments and deploy your projects directly from Eclipse IDE in more details:
 
-- [Plugin Installation](/docs/Deployment%20Tools/Plugins/Eclipse%20Plugin/Eclipse%20Plugin%20Installation)
-- [Environment Management](/docs/Deployment%20Tools/Plugins/Eclipse%20Plugin/Environment%20Management)
-- [application deployment](/docs/Deployment%20Tools/Plugins/Eclipse%20Plugin/Application%20Deployment)
+- [Plugin Installation](/docs/deployment-tools/plugins/eclipse-plugin/eclipse-plugin-installation)
+- [Environment Management](/docs/deployment-tools/plugins/eclipse-plugin/environment-management)
+- [application deployment](/docs/deployment-tools/plugins/eclipse-plugin/application-deployment)

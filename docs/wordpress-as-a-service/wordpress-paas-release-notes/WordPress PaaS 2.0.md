@@ -18,8 +18,8 @@ This document announces the Global Availability of the CloudMyDc Application Pla
 
 You can learn more in our dedicated documentation guides:
 
-- [Dashboard Overview](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Dashboard%20Overview)
-- [Project Installation](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Installation)
-- [Project Management](/docs/Wordpress%20as%20a%20Service/WordPress%20Dashboard/WordPress%20Project%20Management)
+- [Dashboard Overview](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview)
+- [Project Installation](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation)
+- [Project Management](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management)
 
 All further improvements to the product will be listed in the scope of the appropriate new releases.

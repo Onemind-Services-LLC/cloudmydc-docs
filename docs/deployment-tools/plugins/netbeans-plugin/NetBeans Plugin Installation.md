@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## NetBeans Plugin Installation
 
-In order to start working with the NetBeans plugin, you need to [get it installed](/docs/Deployment%20Tools/Plugins/NetBeans%20Plugin/NetBeans%20Plugin%20Installation#plugin-installation) and [connect to your platform account](/docs/Deployment%20Tools/Plugins/NetBeans%20Plugin/NetBeans%20Plugin%20Installation#connect-to-platform-account) within its settings.
+In order to start working with the NetBeans plugin, you need to [get it installed](/docs/deployment-tools/plugins/netbeans-plugin/netbeans-plugin-installation#plugin-installation) and [connect to your platform account](/docs/deployment-tools/plugins/netbeans-plugin/netbeans-plugin-installation#connect-to-platform-account) within its settings.
 So, launch your NetBeans IDE and proceed with the instructions below.
 
 ## Plugin Installation
@@ -171,4 +171,4 @@ To delete your cloud from NetBeans IDE, navigate to **Tools > Cloud Providers**.
 
 :::
 
-Now, as you have the NetBeans plugin installed and connection established, you can proceed to [environments management](/docs/Deployment%20Tools/Plugins/NetBeans%20Plugin/NetBeans%20Plugin%20Management) and [projects deployment](/docs/Deployment%20Tools/Plugins/NetBeans%20Plugin/Application%20Deploy%20via%20NetBeans).
+Now, as you have the NetBeans plugin installed and connection established, you can proceed to [environments management](/docs/deployment-tools/plugins/netbeans-plugin/netbeans-plugin-management) and [projects deployment](/docs/deployment-tools/plugins/netbeans-plugin/application-deploy-via-netbeans).

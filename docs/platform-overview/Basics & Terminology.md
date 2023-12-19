@@ -22,7 +22,7 @@ Being informed about the basic components and how they interrelate, you can proc
 
 ## Cloudlet
 
-[**Cloudlet**](http://localhost:3000/docs/platform-overview/cloudlet) is the smallest platform infrastructure component. It is a special resource unit that equals to **_128 MiB_** of **RAM** and **_400 MHz_** of **CPU** power simultaneously. Such high granularity of resources allows the system to allocate the exactly required capacity for each instance in the environment. This ensures the truly fair [usage-based pricing](/docs/account-and-pricing/pricing-model-overview), so that only the really consumed resources are being paid.
+[**Cloudlet**](/docs/platform-overview/cloudlet) is the smallest platform infrastructure component. It is a special resource unit that equals to **_128 MiB_** of **RAM** and **_400 MHz_** of **CPU** power simultaneously. Such high granularity of resources allows the system to allocate the exactly required capacity for each instance in the environment. This ensures the truly fair [usage-based pricing](/docs/account-and-pricing/pricing-model-overview), so that only the really consumed resources are being paid.
 
 ![Locale Dropdown](./img/BasicsTerminology/01-cloudlet-resource-unit.png)
 
@@ -47,7 +47,7 @@ Both reserved and dynamic cloudlets functionality provides auto discounts for th
 
 ![Locale Dropdown](./img/BasicsTerminology/03-container-secure-and-isolated-instance.png)
 
-The platform provides [certified containers](/docs/quickstart/software-stack-versions) for Java, PHP, Ruby, Node.js, Python, Go, .NET and the ability to deploy custom [Docker](http://localhost:3000/docs/container/container-types) containers. Each container has its own private IP and unique DNS record, whilst [public IP](/docs/application-setting/external-access-to-applications/public-ip) can be easily attached within UI [dashboard](http://localhost:3000/docs/quickstart/dashboard-guide) or via [API](http://localhost:3000/docs/deployment-tools/api-&-cli/api-overview).
+The platform provides [certified containers](/docs/quickstart/software-stack-versions) for Java, PHP, Ruby, Node.js, Python, Go, .NET and the ability to deploy custom [Docker](/docs/container/container-types) containers. Each container has its own private IP and unique DNS record, whilst [public IP](/docs/application-setting/external-access-to-applications/public-ip) can be easily attached within UI [dashboard](/docs/quickstart/dashboard-guide) or via [API](/docs/deployment-tools/api-&-cli/api-overview).
 
 ## Layer
 
@@ -60,13 +60,13 @@ The platform provides [certified containers](/docs/quickstart/software-stack-ver
 - сache
 - VPS
 - build node
-- extra (custom layer; multiple ones can be added for [Docker-based](http://localhost:3000/docs/container/container-types) environments)
+- extra (custom layer; multiple ones can be added for [Docker-based](/docs/container/container-types) environments)
 
 ![Locale Dropdown](./img/BasicsTerminology/04-layer-group-of-similar-containers.png)
 
-The layers are designed to perform different actions with the same type of containers at once. For example, the nodes can be simultaneously restarted or redeployed, as well as horizontally [scaled](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling):
+The layers are designed to perform different actions with the same type of containers at once. For example, the nodes can be simultaneously restarted or redeployed, as well as horizontally [scaled](/docs/application-setting/scaling-and-clustering/horizontal-scaling):
 
-- manually via [dashboard](http://localhost:3000/docs/quickstart/dashboard-guide), platform [API](http://localhost:3000/docs/deployment-tools/api-&-cli/api-overview#platform-api), [CLI](/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview)
+- manually via [dashboard](/docs/quickstart/dashboard-guide), platform [API](/docs/deployment-tools/api-&-cli/api-overview#platform-api), [CLI](/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview)
 - automatically based on the [load triggers](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling)
 
 Also, it is possible to check the common logs and stats, or make the required configurations via file manager for all containers in a layer.
@@ -77,7 +77,7 @@ In addition, the containers of one layer are distributed across different [hosts
 
 **Environment** is a collection of isolated [containers](/docs/platform-overview/basics-&-terminology#container) for running particular application services. The platform provides built-in tools for convenient environment [management](/docs/environment-management/setting-up-environment) (i.e. configuration, monitoring, troubleshooting, etc.).
 
-There is a number of actions that can be performed for the whole environment, such as stop, start, clone, migrate to another region, share with team members for [collaborative work](http://localhost:3000/docs/environment-management/share-environment), track resource consumption and so on.
+There is a number of actions that can be performed for the whole environment, such as stop, start, clone, migrate to another region, share with team members for [collaborative work](/docs/environment-management/share-environment), track resource consumption and so on.
 
 ![Locale Dropdown](./img/BasicsTerminology/05-environment-interconnected-container-layers.png)
 
@@ -97,9 +97,9 @@ Applications with more complex topology usually require more flexibility during 
 
 Application source code or built binaries can be deployed from:
 
-- GIT/SVN repository, which allows to benefit on the [automatic updates](http://localhost:3000/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview)
-- local archive (zip, war, ear, etc.) via [UI dashboard](http://localhost:3000/docs/quickstart/dashboard-guide) or [FTP](/docs/Deployment%20Tools/FTP-FTPS%20Support)
-- custom [Docker](http://localhost:3000/docs/container/container-types) template
+- GIT/SVN repository, which allows to benefit on the [automatic updates](/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview)
+- local archive (zip, war, ear, etc.) via [UI dashboard](/docs/quickstart/dashboard-guide) or [FTP](/docs/deployment-tools/ftp-ftps-support)
+- custom [Docker](/docs/container/container-types) template
 
 Also, a number of already prepackaged applications can be found within the platform [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace), to be set up in just a few clicks.
 

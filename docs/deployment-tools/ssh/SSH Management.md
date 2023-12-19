@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ## SSH Access to Container: Manage Your Server Remotely
 
-The Jelastic Platform allows establishing [SSH access](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) to any container on your account. In this guide, we’ll provide some of the most common commands that can come in handy when managing your server via SSH terminal.
+The Jelastic Platform allows establishing [SSH access](/docs/deployment-tools/ssh/ssh-access/overview) to any container on your account. In this guide, we’ll provide some of the most common commands that can come in handy when managing your server via SSH terminal.
 
 There are two ways to connect your server inside Jelastic PaaS over SSH:
 
@@ -22,7 +22,7 @@ There are two ways to connect your server inside Jelastic PaaS over SSH:
 
 </div>
 
-- **SSH Gate** - alternatively, you can connect to your server via any preferred local SSH client basing on preliminary [generated](http://localhost:3000/docs/deployment-tools/ssh/generate-ssh-key) SSH keys pair (where the public key should be [added](/docs/deployment-tools/ssh/add-ssh-key) to your Account Settings, and the corresponding private key - being handled at your local machine)
+- **SSH Gate** - alternatively, you can connect to your server via any preferred local SSH client basing on preliminary [generated](/docs/deployment-tools/ssh/generate-ssh-key) SSH keys pair (where the public key should be [added](/docs/deployment-tools/ssh/add-ssh-key) to your Account Settings, and the corresponding private key - being handled at your local machine)
 
 <div style={{
     display:'flex',
@@ -40,7 +40,7 @@ For the sake of simplicity and quick access, in this article we’ll leverage th
 
 :::tip Tips
 
-- Within the majority of servers within Jelastic PaaS (including [custom Docker containers](http://localhost:3000/docs/container/container-deployment/custom-containers-deployment)), you are automatically granted full root permissions while connected via SSH. For the rest, mostly legacy nodes, which were created upon Jelastic-managed certified stack templates, the sufficient level of controllability is ensured with a set of additional intentionally allowed commands.
+- Within the majority of servers within Jelastic PaaS (including [custom Docker containers](/docs/container/container-deployment/custom-containers-deployment)), you are automatically granted full root permissions while connected via SSH. For the rest, mostly legacy nodes, which were created upon Jelastic-managed certified stack templates, the sufficient level of controllability is ensured with a set of additional intentionally allowed commands.
 - The full [list of terminal commands](https://www.linfo.org/command_index.html) with all the appropriate options description you can find at the dedicated websites, similar to the linked above. In this guide we’ll consider a number of the most common commands to give you insights on the basics of operating with containers via the SSH protocol.
 
 :::
@@ -339,7 +339,7 @@ Within the console response, you should see the **_{VAR_VALUE}_** string similar
 
 At Jelastic PaaS, there are 2 types of [software stack](/docs/quickstart/software-stack-versions) templates, which are used as a base when creating each of containers:
 
-- **_dockerized_** - unified template model based on [native Docker standard support](http://localhost:3000/docs/container/container-types) with the generality of container management principles and functionality for all server types (i.e. regardless of whether it computes node, or database server, or caching instance, etc).
+- **_dockerized_** - unified template model based on [native Docker standard support](/docs/container/container-types) with the generality of container management principles and functionality for all server types (i.e. regardless of whether it computes node, or database server, or caching instance, etc).
   When connecting to such server via SSH, you automatically get full control over the instance with root privileges granted and can perform any required operations inside a container.
 - **_certified_** software templates are based on native stack implementation, adapted by our team according to platform specifics.
   Upon entering such server via SSH, you are logged in as a default server user. To provide enough possibilities for effective container management, we’ve made some additional options available to be executed under a regular user account:

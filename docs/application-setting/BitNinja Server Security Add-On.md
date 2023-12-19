@@ -14,7 +14,7 @@ In the platform, you can protect your servers with BitNinja security in a few cl
 
 ## BitNinja Installation
 
-The [**BitNinja**](https://github.com/jelastic-jps/bitninja) add-on is available for all certified nodes at the platform (except [VPS](/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information)).
+The [**BitNinja**](https://github.com/jelastic-jps/bitninja) add-on is available for all certified nodes at the platform (except [VPS](/docs/elastic-vps/elastic-vps-overview/general-information)).
 
 1. Open the [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace) in the platform dashboard and search for the **_BitNinja Service_** package or find it in the **Add-Ons** section. Hover over and click **Install** to proceed.
 
@@ -70,7 +70,7 @@ All features (modules) are available and can be enabled on all layers. The list 
 
 :::danger Note
 
-As proprietary software, the add-on usage requires a license. You can learn all the [license pricing](http://localhost:3000/docs/application-setting/bitninja-server-security-add-on#license-pricing) specifics in the dedicated section below.
+As proprietary software, the add-on usage requires a license. You can learn all the [license pricing](/docs/application-setting/bitninja-server-security-add-on#license-pricing) specifics in the dedicated section below.
 
 :::
 

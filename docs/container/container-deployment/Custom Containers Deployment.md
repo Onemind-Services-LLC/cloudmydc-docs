@@ -4,17 +4,17 @@ slug: custom-containers-deployment
 sidebar_position: 2
 ---
 
-The platform can automatically create **custom containers** based on any standard Docker image that uses [supported OS and architecture](http://localhost:3000/docs/container/container-image-requirements) and is stored at Docker Hub or any other public/private registry. Such containers get all the benefits of the platform (automatic vertical and horizontal scaling, logs, statistics and alerts monitoring, embedded configuration file manager, etc.) while maintaining the original software of the image intact. Be aware that the operability of the application itself cannot be guaranteed as it is managed by respective third-party image maintainers and not the platform.
+The platform can automatically create **custom containers** based on any standard Docker image that uses [supported OS and architecture](/docs/container/container-image-requirements) and is stored at Docker Hub or any other public/private registry. Such containers get all the benefits of the platform (automatic vertical and horizontal scaling, logs, statistics and alerts monitoring, embedded configuration file manager, etc.) while maintaining the original software of the image intact. Be aware that the operability of the application itself cannot be guaranteed as it is managed by respective third-party image maintainers and not the platform.
 
 ![Locale Dropdown](./img/CustomContainersDeployment/01-paas-custom-container-images.png)
 
 :::tip Tip
 
-The platform provides support of the most popular [software stacks](/docs/quickstart/software-stack-versions) with ensured template operability and regular updates to the latest version (**[certified containers](http://localhost:3000/docs/container/container-deployment/certified-containers-deployment)**).
+The platform provides support of the most popular [software stacks](/docs/quickstart/software-stack-versions) with ensured template operability and regular updates to the latest version (**[certified containers](/docs/container/container-deployment/certified-containers-deployment)**).
 
 :::
 
-Within this guide, you’ll find out how to get started with custom Docker containers - how to create and manage all types of applications and services that are available within the [Docker Hub](http://localhost:3000/docs/container/container-deployment/custom-containers-deployment) or your [custom private registry](http://localhost:3000/docs/container/container-deployment/custom-containers-deployment#containers-from-customprivate-registry).
+Within this guide, you’ll find out how to get started with custom Docker containers - how to create and manage all types of applications and services that are available within the [Docker Hub](/docs/container/container-deployment/custom-containers-deployment) or your [custom private registry](/docs/container/container-deployment/custom-containers-deployment#containers-from-customprivate-registry).
 
 ## Custom Containers from Docker Hub
 
@@ -30,7 +30,7 @@ Switch to the required layer and proceed with the **Select Image** button.
 
 - _Quick Start_, which provides a set of the most popular/recommended templates for the current layer (this tab may be absent depending on your hosting service provider settings)
 - _Search_, which allows you to find the desired template at the central Docker Hub registry
-- _Custom_, where you can add your own template from the [custom/private registries](http://localhost:3000/docs/container/container-deployment/custom-containers-deployment#containers-from-customprivate-registry)
+- _Custom_, where you can add your own template from the [custom/private registries](/docs/container/container-deployment/custom-containers-deployment#containers-from-customprivate-registry)
 - _Favorite_, where you can store the images for quick access (i.e. which you presume to use in the future)
 
 ![Locale Dropdown](./img/CustomContainersDeployment/03-wizard-search-for-image.png)
@@ -71,7 +71,7 @@ Different Docker images cannot be added to the same layer. To add more images, u
 
 Click the **Next** button after you’ve finished composing the topology.
 
-3. Once you are back at the wizard with all the required custom containers added, you can start configuring and managing them just as any [regular node](http://localhost:3000/docs/environment-management/setting-up-environment#configuring-nodes-resources-and-specifics):
+3. Once you are back at the wizard with all the required custom containers added, you can start configuring and managing them just as any [regular node](/docs/environment-management/setting-up-environment#configuring-nodes-resources-and-specifics):
 
 ![Locale Dropdown](./img/CustomContainersDeployment/06-create-custom-container-environment.png)
 
@@ -85,8 +85,8 @@ You can **Open in Browser** each container with the corresponding button next to
 
 :::tip Notes
 
-- Not all custom containers have the web interface running out-of-the-box. Thus you can get the 502 application down error while accessing such a node via the browser. However, that doesn’t mean this image is incorrect or corrupted. If you’d like to ensure the necessary service is working, check the running processes inside a container [using the SSH](http://localhost:3000/docs/container/custom-container-ssh-access) connection.
-- In case an application is deployed to a container without the [public IP](/docs/application-setting/external-access-to-applications/public-ip) and is not listening to the [port](http://localhost:3000/docs/container/container-configuration/ports) 80 on its backend, you’ll be shown the dedicated 502 - Service is down error page while trying to open it. In such a case, you need to ensure your container has an HTTP service running and set for handling the incoming requests through the port mentioned above.
+- Not all custom containers have the web interface running out-of-the-box. Thus you can get the 502 application down error while accessing such a node via the browser. However, that doesn’t mean this image is incorrect or corrupted. If you’d like to ensure the necessary service is working, check the running processes inside a container [using the SSH](/docs/container/custom-container-ssh-access) connection.
+- In case an application is deployed to a container without the [public IP](/docs/application-setting/external-access-to-applications/public-ip) and is not listening to the [port](/docs/container/container-configuration/ports) 80 on its backend, you’ll be shown the dedicated 502 - Service is down error page while trying to open it. In such a case, you need to ensure your container has an HTTP service running and set for handling the incoming requests through the port mentioned above.
 
 :::
 
@@ -106,7 +106,7 @@ You can make additional configurations to this container directly in the dashboa
 
 ## Containers from Custom/Private Registry
 
-In addition to the numerous public templates available to be found within the official Docker Hub registry, the platform gives you the ability to deploy your own private image from any custom registry. This template will be remembered by the platform (stored within the dedicated **Custom** section), allowing you to manage it the same way as any public image. If your repository is protected, you’ll need to specify the appropriate access credentials (just once during the addition). At the same time, all the subsequent authentication required for [container scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) or [redeployment](/docs/category/container-deployment) will be performed automatically.
+In addition to the numerous public templates available to be found within the official Docker Hub registry, the platform gives you the ability to deploy your own private image from any custom registry. This template will be remembered by the platform (stored within the dedicated **Custom** section), allowing you to manage it the same way as any public image. If your repository is protected, you’ll need to specify the appropriate access credentials (just once during the addition). At the same time, all the subsequent authentication required for [container scaling](/docs/application-setting/scaling-and-clustering/horizontal-scaling) or [redeployment](/docs/category/container-deployment) will be performed automatically.
 
 Such an image addition can be done via the Custom section in the topology wizard.
 

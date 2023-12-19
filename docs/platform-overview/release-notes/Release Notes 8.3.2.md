@@ -46,7 +46,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3.2#ssh-gate-improvements">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.3.2#ssh-gate-improvements">
                     Learn More >>
                 </a>
             </div>
@@ -65,7 +65,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3.2#software-stack-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.3.2#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -108,7 +108,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3.2#fixes-compatible-with-prior-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.3.2#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -127,7 +127,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3.2#bug-fixes">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.3.2#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -149,7 +149,7 @@ Fixed
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3.2#release-notes-832">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3.2#release-notes-832">
         Back to the top
     </a>
 </div>
@@ -265,7 +265,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3.2#release-notes-832">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3.2#release-notes-832">
         Back to the top
     </a>
 </div>
@@ -283,7 +283,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-   <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3.2#release-notes-832">
+   <a href="/docs/platform-overview/release-notes/release-notes-8.3.2#release-notes-832">
         Back to the top
     </a>
 </div>
@@ -401,7 +401,7 @@ In the table below, you can see the list of bug fixes applied to the platform st
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3.2#release-notes-832">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3.2#release-notes-832">
         Back to the top
     </a>
 </div>

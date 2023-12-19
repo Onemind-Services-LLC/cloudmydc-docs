@@ -8,9 +8,9 @@ sidebar_position: 3
 
 **WebSockets** is a widely spread client-server technology, which allows you to implement the instant messages exchanging within your application. This is achieved through establishing the continuous full-duplex TCP-based connection between server and client’s browser. Using such communication channels results in a very low connection latency and rapid interaction, simultaneously ensuring streaming through proxies and firewalls, both upstream and downstream at once.
 
-The platform provides you with an advanced and complemented WebSockets support by means of integrating this technology to the [Shared Load Balancer](http://localhost:3000/docs/application-setting/external-access-to-applications/shared-load-balancer) and [NGINX balancer node](/docs/Load%20Balancers/Load%20Balancing), so you can use it even without external IP address attached to your server. This is gained by proxying the variety of ports, used by your WebSockets apps, to a single one - 80 for HTTP and 443 for HTTPS.
+The platform provides you with an advanced and complemented WebSockets support by means of integrating this technology to the [Shared Load Balancer](/docs/application-setting/external-access-to-applications/shared-load-balancer) and [NGINX balancer node](/docs/load-balancers/load-balancing), so you can use it even without external IP address attached to your server. This is gained by proxying the variety of ports, used by your WebSockets apps, to a single one - 80 for HTTP and 443 for HTTPS.
 
-The easiest way to configure the WebSockets support for your app is to place an **NGINX balancer** in front of it (the detailed instruction can be found in the corresponding [document](/docs/Deployment%20Tools/WebSockets/WebSockets%20Support)). Nevertheless, sometimes such a method may contradict your requirements for some reason, while an application still needs this technology to be implemented. For such cases, the platform ensures the full WebSockets support within the available application servers, including both **Apache** (intended to serve PHP, Ruby and Python apps) and **NGINX** (for PHP and Ruby apps).
+The easiest way to configure the WebSockets support for your app is to place an **NGINX balancer** in front of it (the detailed instruction can be found in the corresponding [document](/docs/deployment-tools/web-sockets/websockets-support)). Nevertheless, sometimes such a method may contradict your requirements for some reason, while an application still needs this technology to be implemented. For such cases, the platform ensures the full WebSockets support within the available application servers, including both **Apache** (intended to serve PHP, Ruby and Python apps) and **NGINX** (for PHP and Ruby apps).
 
 The process of WebSocket’s integration can vary from application to application, but as for the server-side settings, the platform provides you with a configuration sample for each of the abovementioned nodes, thus you only need to uncomment it and add a few minor edits according to your app’s specifications (e.g. listener port number).
 
@@ -72,7 +72,7 @@ As a result, your deployed project will be listed inside the appropriate section
 
 ## Server and Application Configurations
 
-The WebSockets support within the Apache server is provided by means of the **_proxy_wstunnel_module_** module, added to the default server’s build. As for the NGINX application server, it uses the embedded ability to proxy the WebSockets connection similarly to the way the [NGINX-balancer](/docs/Deployment%20Tools/WebSockets/WebSockets%20Support) does.
+The WebSockets support within the Apache server is provided by means of the **_proxy_wstunnel_module_** module, added to the default server’s build. As for the NGINX application server, it uses the embedded ability to proxy the WebSockets connection similarly to the way the [NGINX-balancer](/docs/deployment-tools/web-sockets/websockets-support) does.
 
 So it’s time to configure your application server.
 

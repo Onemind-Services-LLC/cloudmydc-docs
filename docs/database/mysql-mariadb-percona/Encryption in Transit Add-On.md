@@ -138,7 +138,7 @@ To remove the add-on from the layer (including custom configs and generated SSL 
 
 ## Secure Connection to MySQL/MariaDB/Percona
 
-1. The “**encryption in transit**” (**_server-side encryption_**) functionality works immediately after the add-on’s installation. You can check it by connecting to the database using the credentials from the email. For remote connection, you can add [endpoint](http://localhost:3000/docs/application-setting/external-access-to-applications/endpoints#endpoints-a-direct-connection-to-the-cloud) or [public IP](http://localhost:3000/docs/application-setting/external-access-to-applications/public-ip#public-ip):
+1. The “**encryption in transit**” (**_server-side encryption_**) functionality works immediately after the add-on’s installation. You can check it by connecting to the database using the credentials from the email. For remote connection, you can add [endpoint](/docs/application-setting/external-access-to-applications/endpoints#endpoints-a-direct-connection-to-the-cloud) or [public IP](/docs/application-setting/external-access-to-applications/public-ip#public-ip):
 
 <div style={{
     display:'flex',

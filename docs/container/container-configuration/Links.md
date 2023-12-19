@@ -7,7 +7,7 @@ sidebar_position: 3
 Links
 The **Links** section is intended to establish connection between the containers placed at different layers of a single environment.
 
-After such connection is set, a container will be able to work with [environment variables](http://localhost:3000/docs/container/container-configuration/variables) of the linked image (herewith, the imported properties can be recognized by a specified prefix). Below, we’ll provide a step-by-step example of containers linking.
+After such connection is set, a container will be able to work with [environment variables](/docs/container/container-configuration/variables) of the linked image (herewith, the imported properties can be recognized by a specified prefix). Below, we’ll provide a step-by-step example of containers linking.
 
 1. Click the **Add** button and fill in the appeared fields:
 
@@ -37,4 +37,4 @@ For example, after linking with DB alias, you can ping specific containers at th
 
 ![Locale Dropdown](./img/Links/02--edit-remove-linking-layer-settings.png)
 
-When updates are applied, you can check the results by switching to the [Variables](http://localhost:3000/docs/container/container-configuration/variables) section (where the newly imported parameters will be listed).
+When updates are applied, you can check the results by switching to the [Variables](/docs/container/container-configuration/variables) section (where the newly imported parameters will be listed).

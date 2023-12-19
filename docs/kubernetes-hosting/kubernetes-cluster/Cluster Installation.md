@@ -20,7 +20,7 @@ The **Kubernetes Cluster** solution is available for automatic installation via 
 
 Within the opened installation frame, customize the available options to get a cluster specifically for your needs:
 
-- **Version** - choose a [Kubernetes version](/docs/Kubernetes%20Hosting/Kubernetes%20Cluster/Cluster%20Versions#current-versions) for your cluster
+- **Version** - choose a [Kubernetes version](/docs/kubernetes-hosting/kubernetes-cluster/cluster-versions#current-versions) for your cluster
 - **K8s Dashboard** - select between the v2 and Skooner options (note that some metrics in the skooner dashboard don’t work with the HAProxy ingress controller)
 - **Topology**
   - _Development_ - one control-plane (1) and one scalable worker (1+)
@@ -32,11 +32,11 @@ The development topology is not recommended for production projects as it cannot
 
 :::
 
-- **Ingress Controller** - choose the preferable [ingress controller](/docs/Kubernetes%20Hosting/Application%20Deployment/Creating%20Ingresses) for your cluster (NGINX, Traefik, or HAProxy). We recommended using NGINX as it provides the most flexibility
+- **Ingress Controller** - choose the preferable [ingress controller](/docs/kubernetes-hosting/application-deployment/creating-ingresses) for your cluster (NGINX, Traefik, or HAProxy). We recommended using NGINX as it provides the most flexibility
 - **Deployment**
 
   - _Clean cluster_ with pre-deployed HelloWorld example
-  - _Custom_ helm or stack deployed via shell command - chose this option to manually provide commands for custom application deployment from the [_helm_](/docs/Kubernetes%20Hosting/Application%20Deployment/Helm%20Integration) repository
+  - _Custom_ helm or stack deployed via shell command - chose this option to manually provide commands for custom application deployment from the [_helm_](/docs/kubernetes-hosting/application-deployment/helm-integration) repository
 
 - **NFS Storage** - enable to attach a dedicated NFS Storage with dynamic volume provisioning (disable if you want to register own storage class, requires in-depth K8s knowledge)
 - **Modules** (can be enabled later via the add-ons)

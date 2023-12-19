@@ -12,7 +12,7 @@ Internal networking configuration within the **Kubernetes Cluster** is an entire
 
 Also, Kubernetes supports direct access to services by their names, so there is no need for any service discovery mechanism. For example, your application server can connect to the database using its DNS name, which will be resolved as a required internal IP. Herewith, you only need to create a [service](https://kubernetes.io/docs/concepts/services-networking/service/) object with the correct selector.
 
-The **Kubernetes Cluster** is provided with the Hello World deployment, service, and [ingress](/docs/Kubernetes%20Hosting/Application%20Deployment/Creating%20Ingresses) by default (unless custom deployment option was selected during the [installation](/docs/Kubernetes%20Hosting/Kubernetes%20Cluster/Cluster%20Installation)). You can examine this default application to understand the concept of the Kubernetes service better.
+The **Kubernetes Cluster** is provided with the Hello World deployment, service, and [ingress](/docs/kubernetes-hosting/application-deployment/creating-ingresses) by default (unless custom deployment option was selected during the [installation](/docs/kubernetes-hosting/kubernetes-cluster/cluster-installation)). You can examine this default application to understand the concept of the Kubernetes service better.
 
 ## Platform DNS Name Resolution inside PODs
 

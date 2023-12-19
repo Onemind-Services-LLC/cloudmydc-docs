@@ -6,12 +6,12 @@ sidebar_position: 1
 
 ## Container Configuration
 
-The platform provides a possibility to manage all main aspects of containers lifecycle directly through a [dashboard](http://localhost:3000/docs/quickstart/dashboard-guide). It supports a number of various tools, intended to help you to configure your environments:
+The platform provides a possibility to manage all main aspects of containers lifecycle directly through a [dashboard](/docs/quickstart/dashboard-guide). It supports a number of various tools, intended to help you to configure your environments:
 
-- [settings wizard](http://localhost:3000/docs/container/container-configuration/configuration-tools#container-layer-settings-wizard)
-- [embedded file manager](http://localhost:3000/docs/container/container-configuration/configuration-tools#configuration-file-manager)
-- [log files](http://localhost:3000/docs/container/container-configuration/configuration-tools#log-files)
-- [SSH access](http://localhost:3000/docs/container/container-configuration/configuration-tools#ssh-access-to-container)
+- [settings wizard](/docs/container/container-configuration/configuration-tools#container-layer-settings-wizard)
+- [embedded file manager](/docs/container/container-configuration/configuration-tools#configuration-file-manager)
+- [log files](/docs/container/container-configuration/configuration-tools#log-files)
+- [SSH access](/docs/container/container-configuration/configuration-tools#ssh-access-to-container)
 
 ## Container Layer Settings Wizard
 
@@ -41,15 +41,15 @@ After that, the **Docker layer settings** window will appear:
 
 As you can see, it contains 5 separate sections with the next settings options (follow the appropriate guide below for the section you are interested in):
 
-- [Variables](http://localhost:3000/docs/container/container-configuration/variables)
-- [Links](http://localhost:3000/docs/container/container-configuration/links)
-- [Volumes](http://localhost:3000/docs/container/container-configuration/volumes)
-- [Ports](http://localhost:3000/docs/container/container-configuration/ports)
-- [Run Config](http://localhost:3000/docs/container/container-configuration/run-configuration)
+- [Variables](/docs/container/container-configuration/variables)
+- [Links](/docs/container/container-configuration/links)
+- [Volumes](/docs/container/container-configuration/volumes)
+- [Ports](/docs/container/container-configuration/ports)
+- [Run Config](/docs/container/container-configuration/run-configuration)
 
 ## Configuration File Manager
 
-The in-built **[configuration file manager](/docs/application-setting/configuration-file-manager)** is designed to manage the files inside your container (including the ones, that are available and/or exported by means of [Shared Storage Container](/docs/Data%20Storage%20Container/Data%20Storage%20Overview) functionality). The appropriate tab can be opened by clicking on the **Config** button next to the necessary node (or the whole layer):
+The in-built **[configuration file manager](/docs/application-setting/configuration-file-manager)** is designed to manage the files inside your container (including the ones, that are available and/or exported by means of [Shared Storage Container](/docs/data-storage-container/data-storage-overview) functionality). The appropriate tab can be opened by clicking on the **Config** button next to the necessary node (or the whole layer):
 
 ![Locale Dropdown](./img/ConfigurationTools/04-configuration-file-manager.png)
 
@@ -57,7 +57,7 @@ It includes 4 main sections:
 
 - **Root** (File Manager) - gives you an easy access to container local filesystem, where you can operate the comprised data and instance settings within the corresponding configuration files
 - **Mount Points** - list of folders, that are physically stored on a remote node but can be used at a current container through [mounting the directories](/docs/data-storage-container/data-sharing/mount-points) with required data
-- **Exports** - list of folders, which are shared with other nodes, i.e. are [exported](/docs/Data%20Storage%20Container/Data%20Sharing/Exporting%20Data%20for%20Sharing) to be available at the remote instances whilst being stored locally
+- **Exports** - list of folders, which are shared with other nodes, i.e. are [exported](/docs/data-storage-container/data-sharing/exporting-data-for-sharing) to be available at the remote instances whilst being stored locally
 - **Favorites** - commonly used files and folders to have a quick and simple access to (you can manually mark any custom ones as favorites)
 
 :::tip Tip
@@ -79,10 +79,10 @@ The list of shown log files and directories depends on a particular [software st
 
 :::
 
-The log files inside a container are automatically rotated, so when any of them reaches the size of 50 MB, it is automatically compressed and moved to the dedicated **_rotated_logs_** directory. To view such archives (if necessary), you need to enter the appropriate container [via SSH](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview) and download them for examining locally. The compressed logs are stored for 7 days, after which they will be automatically removed, being considered as an obsolete data.
+The log files inside a container are automatically rotated, so when any of them reaches the size of 50 MB, it is automatically compressed and moved to the dedicated **_rotated_logs_** directory. To view such archives (if necessary), you need to enter the appropriate container [via SSH](/docs/deployment-tools/ssh/ssh-access/overview) and download them for examining locally. The compressed logs are stored for 7 days, after which they will be automatically removed, being considered as an obsolete data.
 
 ## SSH Access to Container
 
-If you prefer to manage your containers via terminal, you can easily connect to any of them [via SSH](http://localhost:3000/docs/deployment-tools/ssh/ssh-access/overview), no matter whether has it the external IP address attached or not. Once connected, you get a true freedom for managing your instances through executing the necessary operations directly from your local machine.
+If you prefer to manage your containers via terminal, you can easily connect to any of them [via SSH](/docs/deployment-tools/ssh/ssh-access/overview), no matter whether has it the external IP address attached or not. Once connected, you get a true freedom for managing your instances through executing the necessary operations directly from your local machine.
 
 In addition, the platform is supplied with the dedicated [CLI client](/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview), which allows to handle the vast majority of operations, required for your applications lifecycle management, by means of a set of special scripts. Herewith, the structure of the commands this could be accomplished through is completely similar to the [platform API](https://cloudmydc.com/) hierarchy, so you can easily get used to the client.

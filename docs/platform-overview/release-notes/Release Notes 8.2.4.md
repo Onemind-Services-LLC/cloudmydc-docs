@@ -48,7 +48,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2.4#almalinux-8-os-support">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.2.4#almalinux-8-os-support">
                     Learn More >>
                 </a>
             </div>
@@ -94,7 +94,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.2.4#software-stack-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-8.2.4#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -112,14 +112,14 @@ Note: CloudMyDc Application Platform no longer supports the previously used _Cen
 
 :::
 
-[More info](http://localhost:3000/docs/container/container-image-requirements)
+[More info](/docs/container/container-image-requirements)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -137,7 +137,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

@@ -40,5 +40,5 @@ PaaS Cluster includes Hardware Nodes where [virtual isolated containers](https:/
 
 Follow the links to get more detailed information on each cluster component:
 
-- [Cluster Orchestrator (Infrastructure node)](http://localhost:3000/docs/platform-overview/architecture-overview/cluster-orchestrator)
-- [Hardware Node](http://localhost:3000/docs/platform-overview/architecture-overview/infrastructure-level)
+- [Cluster Orchestrator (Infrastructure node)](/docs/platform-overview/architecture-overview/cluster-orchestrator)
+- [Hardware Node](/docs/platform-overview/architecture-overview/infrastructure-level)

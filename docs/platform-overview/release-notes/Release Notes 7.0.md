@@ -50,7 +50,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.0#extended-account-collaboration">
+                <a href="/docs/platform-overview/release-notes/release-notes-7.0#extended-account-collaboration">
                     Learn More >>
                 </a>
             </div>
@@ -97,7 +97,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.0#api-changes">
+                <a href="/docs/platform-overview/release-notes/release-notes-7.0#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -116,7 +116,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.0#software-stack-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-7.0#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -160,7 +160,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.0#fixes-compatible-with-prior-versions">
+                <a href="/docs/platform-overview/release-notes/release-notes-7.0#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -179,7 +179,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-7.0#bug-fixes">
+                <a href="/docs/platform-overview/release-notes/release-notes-7.0#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -215,10 +215,10 @@ The new collaboration flow remains the same in principle but much more configura
 You can find information on even more changes to the collaboration feature (ability to temporarily suspend collaboration, role assigning algorithm, direct environment sharing, etc.) in the dedicated documentation:
 
 - [Collaboration Overview](/docs/account-and-pricing/accounts-collaboration/collaboration-overview)
-- [Collaboration Roles & Policies](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Roles%20Policies)
-- [Create Collaboration](/docs/Account&Pricing/Accounts%20Collaboration/Create%20Collaboration)
-- [Collaboration User Experience](/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20User%20Experience)
-- [Share Environment](http://localhost:3000/docs/environment-management/share-environment)
+- [Collaboration Roles & Policies](/docs/account-and-pricing/accounts-collaboration/collaboration-roles-policies)
+- [Create Collaboration](/docs/account-and-pricing/accounts-collaboration/create-collaboration)
+- [Collaboration User Experience](/docs/account-and-pricing/accounts-collaboration/collaboration-user-experience)
+- [Share Environment](/docs/environment-management/share-environment)
 
 :::danger Note
 
@@ -233,7 +233,7 @@ During the upgrade, the platform automatically generates configurations equivale
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -271,7 +271,7 @@ Below, you can find a list of all changes to the public API in the 7.0 platform 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -390,7 +390,7 @@ PaaS 7.0
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -408,7 +408,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="http://localhost:3000/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

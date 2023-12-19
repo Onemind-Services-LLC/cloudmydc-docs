@@ -10,9 +10,9 @@ The platform automates SSL certificate binding for most software stacks when wor
 
 :::tip
 
-As an alternative, you can place a [load balancer](/docs/Load%20Balancers/Load%20Balancing) node in front of your Node.js server to act as a reverse proxy. The _Let’s Encrypt_ SSL add-on can be installed on such a balancer, benefiting from out-of-box automation.
+As an alternative, you can place a [load balancer](/docs/load-balancers/load-balancing) node in front of your Node.js server to act as a reverse proxy. The _Let’s Encrypt_ SSL add-on can be installed on such a balancer, benefiting from out-of-box automation.
 
-Such an approach is preferable for larger projects that want to utilize the [Horizontal Scaling](http://localhost:3000/docs/application-setting/scaling-and-clustering/horizontal-scaling) feature as it will require a load balancer node anyway.
+Such an approach is preferable for larger projects that want to utilize the [Horizontal Scaling](/docs/application-setting/scaling-and-clustering/horizontal-scaling) feature as it will require a load balancer node anyway.
 
 :::
 
@@ -122,7 +122,7 @@ var path = url.parse(req.url).pathname;
 console.log("The HTTPS server has started at: " + serverUrl);
 ```
 
-4. Run your application via [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh). In our example, we use the **_forever_** [process manager](/docs/Nodejs/Nodejs%20Apps%20Specifications/Process%20Managers) (sudo is needed to listen on the privileged port 443).
+4. Run your application via [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh). In our example, we use the **_forever_** [process manager](/docs/nodejs/nodejs-apps-specifications/process-managers) (sudo is needed to listen on the privileged port 443).
 
 ```bash
 cd /home/jelastic/ROOT
@@ -157,7 +157,7 @@ Let’s Encrypt SSL certificates remain valid for 90 days. After that, they shou
 
 The operation can be automated alongside the certificate update by means of the **_webhooks_** – a custom script executed after the default add-on operations.
 
-Go to the **_/var/lib/jelastic/keys/letsencrypt_** folder (create if missing) and add the **_settings-custom_** file. Based on the [Node.js process manager](/docs/Nodejs/Nodejs%20Apps%20Specifications/Process%20Managers), your restart/reload script may vary. For example:
+Go to the **_/var/lib/jelastic/keys/letsencrypt_** folder (create if missing) and add the **_settings-custom_** file. Based on the [Node.js process manager](/docs/nodejs/nodejs-apps-specifications/process-managers), your restart/reload script may vary. For example:
 
 ```bash
 deployHook=sudo forever restart /home/jelastic/ROOT/server.js

@@ -67,8 +67,8 @@ Alternatively, you can access the same option via the expandable **Env Groups** 
 Specify the following data in order to create a new group:
 
 - **Name** - type a name for your group (any letters, numbers and special characters can be used including space)
-- **Parent Group **- optionally, specify nesting for the currently created group to be included to another one as a [subgroup](http://localhost:3000/docs/environment-management/environment-groups/group-management#add-subgroups)
-- **Environments** - select environments that should belong to the group (shared environments cannot be added to your personal groups); also, it is possible to create an empty group and [fill it up with environments](http://localhost:3000/docs/environment-management/environment-groups/group-management#assign-group-to-environment) later on
+- **Parent Group **- optionally, specify nesting for the currently created group to be included to another one as a [subgroup](/docs/environment-management/environment-groups/group-management#add-subgroups)
+- **Environments** - select environments that should belong to the group (shared environments cannot be added to your personal groups); also, it is possible to create an empty group and [fill it up with environments](/docs/environment-management/environment-groups/group-management#assign-group-to-environment) later on
 
 :::tip Tip
 

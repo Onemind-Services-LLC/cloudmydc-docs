@@ -8,7 +8,7 @@ sidebar_position: 2
 
 Kubernetes natively supports deployments from both JSON and YAML files. However, among the community, YAML is a more frequent option and can be considered a standard.
 
-Deployment from YAMLs is somewhat similar to the [Helm](/docs/Kubernetes%20Hosting/Application%20Deployment/Helm%20Integration) charts - the **_.yaml_** or **_.yml_** file provides object definition or a list of objects. Herewith, it can be directly applied in Kubernetes Dashboard or with the kubectl command-line tool without any additional software installation.
+Deployment from YAMLs is somewhat similar to the [Helm](/docs/kubernetes-hosting/application-deployment/helm-integration) charts - the **_.yaml_** or **_.yml_** file provides object definition or a list of objects. Herewith, it can be directly applied in Kubernetes Dashboard or with the kubectl command-line tool without any additional software installation.
 
 <div style={{
     display:'flex',
@@ -26,4 +26,4 @@ When working over kubectl, use the **_[apply](https://kubernetes.io/docs/referen
 kubectl apply -f /path/to/deployment.yaml
 ```
 
-On the other hand, the benefit of the [Helm](/docs/Kubernetes%20Hosting/Application%20Deployment/Helm%20Integration) charts is advanced flexibility (support of the conditions, replacements, parameters, etc.).
+On the other hand, the benefit of the [Helm](/docs/kubernetes-hosting/application-deployment/helm-integration) charts is advanced flexibility (support of the conditions, replacements, parameters, etc.).

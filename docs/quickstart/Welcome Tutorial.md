@@ -70,7 +70,7 @@ You can hide the current hint or completely abandon the tutorial with the approp
 
 If needed, you can [set up your new environment](/docs/environment-management/setting-up-environment) using all of the parameters available via topology wizard. However, you don’t need any specific configurations for this tutorial, so we recommend to follow the hint and click **Create** straightaway.
 
-6. Wait a minute for your environment to be created. Meanwhile, you can track the process state in the [Tasks](http://localhost:3000/docs/quickstart/dashboard-guide) panel.
+6. Wait a minute for your environment to be created. Meanwhile, you can track the process state in the [Tasks](/docs/quickstart/dashboard-guide) panel.
 
 ![Locale Dropdown](./img/WelcomeTutorial/08-tutorial-tasks-panel.png)
 

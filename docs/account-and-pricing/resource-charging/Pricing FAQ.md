@@ -4,10 +4,10 @@ slug: pricing-faq
 sidebar_position: 1
 ---
 
-- [What is charged?](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#what-is-charged)
-- [Where can consumed resources be seen?](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#where-the-consumed-resources-can-be-seen)
+- [What is charged?](/docs/account-and-pricing/resource-charging/pricing-faq#what-is-charged)
+- [Where can consumed resources be seen?](/docs/account-and-pricing/resource-charging/pricing-faq#where-the-consumed-resources-can-be-seen)
 - [How much do resources cost?](/docs/account-and-pricing/resource-charging/pricing-faq#how-much-do-resources-cost)
-- [How to decrease the consumption?](/docs/Account&Pricing/Resource%20Charging/Pricing%20FAQ#how-to-decrease-the-consumption)
+- [How to decrease the consumption?](/docs/account-and-pricing/resource-charging/pricing-faq#how-to-decrease-the-consumption)
 
 ## What is Charged?
 
@@ -16,7 +16,7 @@ Resource consumption for each environment is charged to the account owner on an 
 - **Primary** - fees for the main platform resources (i.e. RAM & CPU), provided within cloudlets
 - **Provider-dependent** - the ones that can be either payable or not, according to the chosen hosting provider settings
 - **Optional extras** - charges for usage of some additional platform features
-  Detailed information on each of these types of charges can be found in the [Charged Resources](/docs/Account&Pricing/Resource%20Charging/Charged%20Resources) document.
+  Detailed information on each of these types of charges can be found in the [Charged Resources](/docs/account-and-pricing/resource-charging/charged-resources) document.
 
 ## Where the Consumed Resources Can be Seen?
 
@@ -31,7 +31,7 @@ The details on each of these options can be seen in the [Monitor Consumed Resour
 
 ## How Much do Resources Cost?
 
-With the platform, you only pay for consumed resources. The resource pricing is set by your chosen hosting provider. You can find exact cost for each resource unit by going to your hoster’s [Pricing page](/docs/Account&Pricing/Hosters%20Pricing).
+With the platform, you only pay for consumed resources. The resource pricing is set by your chosen hosting provider. You can find exact cost for each resource unit by going to your hoster’s [Pricing page](/docs/account-and-pricing/hosters-pricing).
 
 The prices can also be seen inside your platform dashboard.
 
@@ -47,7 +47,7 @@ Navigate to **Balance > Quotas & Pricing** menu item. Here you’ll see a set of
 
 </div>
 
-Choose the one you are interested in to see the pricing and discount scale offered by your hosting provider. You can find more information about pricing and discount systems in the [Pricing System](/docs/account-and-pricing/pricing-model-overview) and [Automatic Discounts](/docs/Account&Pricing/Automatic%20Discounts) documents.
+Choose the one you are interested in to see the pricing and discount scale offered by your hosting provider. You can find more information about pricing and discount systems in the [Pricing System](/docs/account-and-pricing/pricing-model-overview) and [Automatic Discounts](/docs/account-and-pricing/automatic-discounts) documents.
 
 Note that the various software stacks are provided free of charge in the platform. You only pay for the resources consumed but not for the software itself.
 

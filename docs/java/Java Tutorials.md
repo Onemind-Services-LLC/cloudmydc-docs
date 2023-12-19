@@ -12,28 +12,28 @@ sidebar_position: 8
         *
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-      <a href="/docs/Java/Java%20Tutorials#a">A</a>
+      <a href="/docs/java/java-tutorials#a">A</a>
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
         B
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-         <a href="/docs/Java/Java%20Tutorials#c">C</a>
+         <a href="/docs/java/java-tutorials#c">C</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-       <a href="/docs/Java/Java%20Tutorials#d">D</a>
+       <a href="/docs/java/java-tutorials#d">D</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-         <a href="/docs/Java/Java%20Tutorials#e">E</a>
+         <a href="/docs/java/java-tutorials#e">E</a>
 
  </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
         F
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                <a href="/docs/Java/Java%20Tutorials#g">G</a>
+                <a href="/docs/java/java-tutorials#g">G</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
@@ -43,41 +43,41 @@ sidebar_position: 8
         I
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-    <a href="/docs/Java/Java%20Tutorials#j">J</a>
+    <a href="/docs/java/java-tutorials#j">J</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
         K
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-           <a href="/docs/Java/Java%20Tutorials#l">L</a>
+           <a href="/docs/java/java-tutorials#l">L</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-        <a href="/docs/Java/Java%20Tutorials#m">M</a>
+        <a href="/docs/java/java-tutorials#m">M</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-         <a href="/docs/Java/Java%20Tutorials#n">N</a>
+         <a href="/docs/java/java-tutorials#n">N</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-       <a href="/docs/Java/Java%20Tutorials#o">O</a>
+       <a href="/docs/java/java-tutorials#o">O</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-        <a href="/docs/Java/Java%20Tutorials#p">P</a>
+        <a href="/docs/java/java-tutorials#p">P</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
         Q
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-           <a href="/docs/Java/Java%20Tutorials#R">R</a>
+           <a href="/docs/java/java-tutorials#R">R</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-         <a href="/docs/Java/Java%20Tutorials#S">S</a>
+         <a href="/docs/java/java-tutorials#S">S</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
@@ -87,22 +87,22 @@ sidebar_position: 8
         U
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-         <a href="/docs/Java/Java%20Tutorials#v">V</a>
+         <a href="/docs/java/java-tutorials#v">V</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
         W
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-        <a href="/docs/Java/Java%20Tutorials#x">X</a>
+        <a href="/docs/java/java-tutorials#x">X</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-         <a href="/docs/Java/Java%20Tutorials#y">Y</a>
+         <a href="/docs/java/java-tutorials#y">Y</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-    <a href="/docs/Java/Java%20Tutorials#z">Z</a>
+    <a href="/docs/java/java-tutorials#z">Z</a>
 
 </div>
 </div>
