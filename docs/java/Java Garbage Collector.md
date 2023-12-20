@@ -1,12 +1,12 @@
 ---
-title: Java garbage collector
+title: Java Garbage Collector
 slug: java-garbage-collector
 sidebar_position: 5
 ---
 
 import obj from './JavaGarbageCollector.json'
 
-## Java Garbage Collection Types and Settings in Jelastic PaaS
+<!-- ## Java Garbage Collection Types and Settings in Jelastic PaaS -->
 
 <div style={{
     display: 'grid',
@@ -51,7 +51,7 @@ Jelastic supports the following GCs:
 
 - **_G1 GC (-XX:+UseG1GC)_** is a default GC in Jelastic PaaS. The Garbage-First (G1) is a server-style Garbage Collector for multiprocessor machines with a large amount of memory. The heap is partitioned into fixed-sized regions and G1 tracks the live data in those regions. When Garbage Collection is required, it collects from the regions with less live data first.
 - **_Shenandoah GC (-XX:+UseShenandoahGC)_** is a concurrent garbage collector for the JVM. Concurrent means that the GC tries to perform most of the activities in parallel without interrupting application performance. Such parallelism makes “stop-the-world” (STW) pauses extremely short that is the most required task for each GC. Another inherent advantage is an efficient work with small and large heaps with no impact on STW pauses' length. The Shenandoah GC uses an additional [**_-XX:ShenandoahGCHeuristics=compact_**](https://wiki.openjdk.org/display/shenandoah/Main#Main-Heuristics) option.
-- **_ZGC (-XX:+UseZGC)_** is low latency scalable garbage collector. Designed for use with applications that require a large heap and low latency. It uses a bunch of one generation and performs most (but not all) garbage collection in parallel with uninterrupted application work. This greatly limits the impact of garbage collection on your application response time. The ZGC uses an additional **_-XX:ZCollectionInterval=$ZCOLLECTION_INTERVAL_** option to set the maximum interval (in seconds) between two GC cycles (can be redefined via the **_ZCOLLECTION_INTERVAL_** [variable](/docs/container/container-configuration/variables)).
+- **_ZGC (-XX:+UseZGC)_** is low latency scalable garbage collector. Designed for use with applications that require a large heap and low latency. It uses a bunch of one generation and performs most (but not all) garbage collection in parallel with uninterrupted application work. This greatly limits the impact of garbage collection on your application response time. The ZGC uses an additional **_-XX:ZCollectionInterval=$ZCOLLECTION_INTERVAL_** option to set the maximum interval (in seconds) between two GC cycles (can be redefined via the **_ZCOLLECTION_INTERVAL_** [variable](/container/container-configuration/variables)).
 - **_Epsilon GC (-XX:+UseEpsilonGC)_** is a passive GC that handles memory allocation and doesn't clear it when objects are no longer used. When your application exhausts the Java heap, the JVM goes down. So, EpsilonGC prolongs an application life until the memory will run out and dumps the memory, that can be useful for application memory usage debugging, as well as measuring and managing application performance.
 - Parallel
   - **_ParNew GC (-XX:+UseParNewGC)_** is a "stop-the-world" multithreaded Garbage Collector. Mostly it is aimed to collect the young generation objects. Since the young generation is normally small in size, the ParNew does collection very fast and does not impact your application too much. In addition, ParNew has compaction of unused RAM that enables support of automatic vertical scaling - one of the prominent Jelastic features.
@@ -75,7 +75,7 @@ The **_Openj9_** Java engine <u>_does not_</u> support the GCs listed above. The
 
 By default Jelastic PaaS uses G1 GC for JVM 8+ versions. For lower versions it employs the ParNew GC. Also, for JVM versions below 12 Jelastic attaches [jelastic-gc-agent.jar](https://github.com/jelastic-jps/java-memory-agent) which enables vertical scaling for older releases.
 
-For JVM 12+ versions, the platform provides integrated vertical scaling to ensure G1 triggering with the following pre-set container [Variables](/docs/container/container-configuration/variables):
+For JVM 12+ versions, the platform provides integrated vertical scaling to ensure G1 triggering with the following pre-set container [Variables](/container/container-configuration/variables):
 
 - **G1PERIODIC_GC_INTERVAL=3000**
 
@@ -125,7 +125,7 @@ For more details, you can review the following script that manages [automatic co
 
 If you believe that customization of default settings can improve performance or memory consumption, you can tune them according to the requirements of your application. We recommend customizing these configurations only if you fully understand the impact of such changes on your application behaviour.
 
-You can set a custom GC parameter based on your application requirements via [Environment Variables](/docs/environment-management/environment-variables/environment-variables) (please do not mix them with Java options).
+You can set a custom GC parameter based on your application requirements via [Environment Variables](/environment-management/environment-variables/environment-variables) (please do not mix them with Java options).
 
 <div style={{
     display:'flex',
@@ -150,13 +150,13 @@ You can set a custom GC parameter based on your application requirements via [En
 - **GC_SYS_LOAD_THRESHOLD_RATE** (for openJDK 12/13 only) - custom multiplier to flexibly adjust the G1PeriodicGCSystemLoadThreshold value (0.3 by default), for example G1PERIODIC_GC_SYS_LOAD_THRESHOLD_RATE=0.3
 - **FULL_GC_AGENT_DEBUG** - enables (true) or disables (false) the debug mode to track the Java GC processes in the logs, for example, FULL_GC_AGENT_DEBUG=true
 - **FULL_GC_PERIOD** - Sets the interval (in seconds) between the full GC calls; 900 by default, i.e. 15 minutes, for example FULL_GC_PERIOD=900
-- **MAXPERMSIZE**- automatically defined only for those Java containers, which run JVM version lower than 8th and with an allocated amount of RAM > _800 MiB_. In all other cases (i.e. if container scaling limit is less than 7 [cloudlets](/docs/platform-overview/cloudlet) or it uses Java 8) this parameter is omitted. The actual value of the _MaxPermSize_ setting is calculated based on _Xmx_ memory amount divided by ten, but cannot be set greater than maximum of _256 MiB_. For example, MAXPERMSIZE=163
+- **MAXPERMSIZE**- automatically defined only for those Java containers, which run JVM version lower than 8th and with an allocated amount of RAM > _800 MiB_. In all other cases (i.e. if container scaling limit is less than 7 [cloudlets](/platform-overview/cloudlet) or it uses Java 8) this parameter is omitted. The actual value of the _MaxPermSize_ setting is calculated based on _Xmx_ memory amount divided by ten, but cannot be set greater than maximum of _256 MiB_. For example, MAXPERMSIZE=163
 - **XMINF_DEF-** this parameter controls the minimum free space in the heap and instructs the JVM to expand the heap, if after performing garbage collection it does not have at least _XMINF_DEF_ value of free space. For example, -XMINF_DEF=0.1
 - **XMAXF_DEF** - this parameter controls how the heap is expanded and instructs the JVM to compact the heap if the amount of free space exceeds _XMAXF_DEF_ value. For example, XMAXF_DEF=0.3
 
 Alternatively, all these parameters can be passed to Java process via **variables.conf** in the container.
 
-All of the paths to config, executable or log files can differ based on the Java server you use and can be accessed via [configuration file manager](/docs/application-setting/configuration-file-manager) or [SSH](/docs/deployment-tools/ssh/ssh-overview).
+All of the paths to config, executable or log files can differ based on the Java server you use and can be accessed via [configuration file manager](/application-setting/configuration-file-manager) or [SSH](/deployment-tools/ssh/ssh-overview).
 
 <div style={{
         width: '100%',
@@ -280,7 +280,7 @@ Also, you can control how JVM handles its heap memory with other JAVA options st
 
 </div>
 
-As a result of properly configured options, the GC can be observed in action via the [Statistics](/docs/application-setting/built-in-monitoring/statistics) tab.
+As a result of properly configured options, the GC can be observed in action via the [Statistics](/application-setting/built-in-monitoring/statistics) tab.
 
 <div style={{
     display:'flex',

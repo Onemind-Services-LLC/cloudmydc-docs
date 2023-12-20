@@ -1,5 +1,5 @@
 ---
-title: Cluster orchestrator
+title: Cluster Orchestrator
 slug: cluster-orchestrator
 sidebar_position: 2
 ---

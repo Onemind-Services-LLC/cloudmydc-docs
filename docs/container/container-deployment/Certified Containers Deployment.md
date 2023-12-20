@@ -1,12 +1,12 @@
 ---
-title: Certified containers deployment
+title: Certified Containers Deployment
 slug: certified-containers-deployment
 sidebar_position: 1
 ---
 
-The platform offers the most popular [software stacks](/docs/quickstart/software-stack-versions) as pre-configured and managed solutions for quick deployment and comfortable management. All of these certified containers are thoroughly tested and optimized specifically for use within the platform. Customizations include regular updates to the latest software version and additional integrations (such as auto-optimization based on the assigned resources, automated SSL certificates installation and application deployment, built-in [auto-clustering](/docs/application-setting/scaling-and-clustering/auto-clustering-of-instances), etc.).
+The platform offers the most popular [software stacks](/quickstart/software-stack-versions) as pre-configured and managed solutions for quick deployment and comfortable management. All of these certified containers are thoroughly tested and optimized specifically for use within the platform. Customizations include regular updates to the latest software version and additional integrations (such as auto-optimization based on the assigned resources, automated SSL certificates installation and application deployment, built-in [auto-clustering](/application-setting/scaling-and-clustering/auto-clustering-of-instances), etc.).
 
-1. The deployment of certified containers is performed via the [topology wizard](/docs/environment-management/setting-up-environment), which can be opened by clicking the **New Environment** button.
+1. The deployment of certified containers is performed via the [topology wizard](/environment-management/setting-up-environment), which can be opened by clicking the **New Environment** button.
 
 <div style={{
     display:'flex',
@@ -32,13 +32,13 @@ The platform offers the most popular [software stacks](/docs/quickstart/software
 
 3. Certified containers are added via the topology part on the left of the wizard. Here stacks are grouped by their purpose:
 
-- **[Load Balancers](/docs/load-balancers/load-balancing)** - stacks that operate as an entry point for the environment to distribute incoming requests and create even load on other nodes
-- **[Application Servers](/docs/java/java-app-servers/tomcat-and-tomee/tomcat-server)** (compute nodes) - web servers that run your application
-- **[Databases](/docs/database/database-hosting/db-hosting-overview)** (SQL & NoSQL) - database solutions to store and manage data
-- **[Cache Node](/docs/memcached/memcached-system)** - a Memcached object caching system for speeding up web applications through alleviating database load
-- **[Shared Storage](/docs/data-storage-container/shared-storage-container)** - dedicated storage node with NFSv4 support, enlarged disk space, and optimized performance
-- **[Elastic VPS](/docs/elastic-vps/elastic-vps-overview/general-information)** - virtual private servers on top of the CentOS, Ubuntu, Debian, and Windows OS
-- **[Build Node](/docs/java/build-node/java-vcs-deployment-with-maven)** - a build automation tool for Java projects
+- **[Load Balancers](/load-balancers/load-balancing)** - stacks that operate as an entry point for the environment to distribute incoming requests and create even load on other nodes
+- **[Application Servers](/java/java-app-servers/tomcat-and-tomee/tomcat-server)** (compute nodes) - web servers that run your application
+- **[Databases](/database/database-hosting/db-hosting-overview)** (SQL & NoSQL) - database solutions to store and manage data
+- **[Cache Node](/memcached/memcached-system)** - a Memcached object caching system for speeding up web applications through alleviating database load
+- **[Shared Storage](/data-storage-container/shared-storage-container)** - dedicated storage node with NFSv4 support, enlarged disk space, and optimized performance
+- **[Elastic VPS](/elastic-vps/elastic-vps-overview/general-information)** - virtual private servers on top of the CentOS, Ubuntu, Debian, and Windows OS
+- **[Build Node](/java/build-node/java-vcs-deployment-with-maven)** - a build automation tool for Java projects
 - **Extra** (custom layers) - some extra services or any of the stacks mentioned above
 
 <div style={{
@@ -75,11 +75,11 @@ If you cannot find the required stack, you can check other categories (e.g. appl
 
 :::tip Tip
 
-If the required software is not available as a certified template, you can try installing it as a [custom container](/docs/container/container-deployment/custom-containers-deployment). Click the **Docker Image** option and search for the appropriate image on Docker Hub.
+If the required software is not available as a certified template, you can try installing it as a [custom container](/container/container-deployment/custom-containers-deployment). Click the **Docker Image** option and search for the appropriate image on Docker Hub.
 
 :::
 
-5. You can [configure](/docs/environment-management/setting-up-environment) added nodes (_vertical and horizontal scaling, disk limit, public IPs, etc._) via the central part of the wizard. Certified containers can have additional options, e.g. [Auto-Clustering](/docs/application-setting/scaling-and-clustering/auto-clustering-of-instances).
+5. You can [configure](/environment-management/setting-up-environment) added nodes (_vertical and horizontal scaling, disk limit, public IPs, etc._) via the central part of the wizard. Certified containers can have additional options, e.g. [Auto-Clustering](/application-setting/scaling-and-clustering/auto-clustering-of-instances).
 
 ![Locale Dropdown](./img/CertifiedContainersDeployment/05-environment-with-certified-containers.png)
 

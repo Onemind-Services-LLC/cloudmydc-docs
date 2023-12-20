@@ -1,14 +1,14 @@
 ---
-title: Python connection
+title: Python Connection
 slug: python-connection
 sidebar_position: 3
 ---
 
-## Python Application Connection to MySQL/MariaDB/Percona
+<!-- ## Python Application Connection to MySQL/MariaDB/Percona -->
 
 **MySQL**, **MariaDB**, and **Percona** are highly popular among developers all over the world, when an open source SQL databases are required. In this instruction we’ll show you how to connect your **Python** application, hosted within the platform, to these DB servers.
 
-1. Log into the platform dashboard and [create a new environment](/docs/environment-management/setting-up-environment) with both Python and MySQL (or Python and MariaDB) servers.
+1. Log into the platform dashboard and [create a new environment](/environment-management/setting-up-environment) with both Python and MySQL (or Python and MariaDB) servers.
 
 <div style={{
     display:'flex',
@@ -26,7 +26,7 @@ Locating instances within a single environment is just an example, you can estab
 
 :::
 
-2. After environment creation, access your application server via SSH Gate, e.g. by pressing the **[Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser)** button.
+2. After environment creation, access your application server via SSH Gate, e.g. by pressing the **[Web SSH](/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser)** button.
 
 <div style={{
     display:'flex',

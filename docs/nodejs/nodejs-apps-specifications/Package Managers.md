@@ -1,10 +1,10 @@
 ---
-title: Package managers
+title: Package Managers
 slug: package-managers
 sidebar_position: 1
 ---
 
-## NodeJS Package Managers
+<!-- ## NodeJS Package Managers -->
 
 <div style={{
     display: 'grid',
@@ -29,7 +29,7 @@ Each created Node.js application server within the platform is provisioned with 
 </div>
 </div>
 
-By default, the **_npm_** package manager will be used for [archive](/docs/deployment/deployment-guide#archive-deployment-configurations) or [Git](/docs/deployment/deployment-guide#git--svn-deployment-configurations) deployment operations through the platform dashboard, but it can be easily switched to the **_yarn_** one in case of necessity. For that, access the corresponding Docker container settings frame and set the appropriate **_PACKAGE_MANAGER_** Docker container [variable](/docs/container/container-configuration/variables) to either _npm_ or yarn value.
+By default, the **_npm_** package manager will be used for [archive](/deployment/deployment-guide#archive-deployment-configurations) or [Git](/deployment/deployment-guide#git--svn-deployment-configurations) deployment operations through the platform dashboard, but it can be easily switched to the **_yarn_** one in case of necessity. For that, access the corresponding Docker container settings frame and set the appropriate **_PACKAGE_MANAGER_** Docker container [variable](/container/container-configuration/variables) to either _npm_ or yarn value.
 
 <div style={{
     display:'flex',
@@ -54,7 +54,7 @@ There are two ways to install necessary Node.js packages with _npm_:
 
 1. Specify required ones within the [dependencies](https://docs.npmjs.com/cli/v10/configuring-npm/package-json) section of the NodeJS **_package.json_** file, located in the root directory of your project. Such packages will be automatically downloaded and installed by npm during application server startup. Herewith, the new modules specified in the package.json file will be added after NodeJS node restart.
 
-2. Connect to the container via [SSH Gate](/docs/deployment-tools/ssh/ssh-overview#ssh-gate-overview) and operate your packages manually with the following commands:
+2. Connect to the container via [SSH Gate](/deployment-tools/ssh/ssh-overview#ssh-gate-overview) and operate your packages manually with the following commands:
 
 - **_npm search {package_name}_** - to search for modules by name (or its part)
 - **_npm install {package_name}_** - to install the necessary module
@@ -66,7 +66,7 @@ There are two ways to install necessary Node.js packages with _npm_:
 
 [Yarn](https://classic.yarnpkg.com/en/) is a recently released package manager, which is already highly popular due to its speed, reliability and convenience. Yarn operates the same NodeJS **_package.json_** file as in npm, so no changes are required for the existing applications.
 
-You can use the following list of commands to work with Yarn, while connected over [SSH](/docs/deployment-tools/ssh/ssh-overview#ssh-gate-overview):
+You can use the following list of commands to work with Yarn, while connected over [SSH](/deployment-tools/ssh/ssh-overview#ssh-gate-overview):
 
 - **_yarn_** or **_yarn install_** - to get all dependencies package for the project
 - **_yarn remove {package}_** - to remove the specified package

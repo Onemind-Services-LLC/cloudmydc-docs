@@ -1,12 +1,12 @@
 ---
-title: Non-leaking processes
+title: Non-Leaking Processes
 slug: non-leaking-processes
 sidebar_position: 4
 ---
 
 import obj from './Non-LeakingProcesses.json'
 
-## OOM Killer Resolutions: Non-Leaking Processes
+<!-- ## OOM Killer Resolutions: Non-Leaking Processes -->
 
 Processes, listed in this section, could be terminated by OOM killer in attempt to free RAM for other operations, though commonly they do not cause memory leak problems by themselves:
 

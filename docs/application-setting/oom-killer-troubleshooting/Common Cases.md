@@ -1,12 +1,12 @@
 ---
-title: Common cases
+title: Common Cases
 slug: common-cases
 sidebar_position: 2
 ---
 
 import obj from './CommonCases.json'
 
-## OOM Killer Resolutions: Common Cases
+<!-- ## OOM Killer Resolutions: Common Cases -->
 
 Examine the following table to get resolutions for some of the most common processes being killed by the OOM tool:
 

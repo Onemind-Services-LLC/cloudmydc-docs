@@ -1,10 +1,10 @@
 ---
-title: Encryption in transit add-on
+title: Encryption In Transit Add-On
 slug: encryption-in-transit-add-on
 sidebar_position: 4
 ---
 
-## SSL/TLS Encryption in Transit for Redis
+<!-- ## SSL/TLS Encryption in Transit for Redis -->
 
 The CloudMyDc-certified Redis database is provided with a built-in add-on that implements **_“encryption in transit”_**. The functionality ensures data protection with SSL/TLS encrypted connection while it moves between servers. After the add-on installation, support for a secure connection is configured on a separate port 6380, while maintaining the default port 6379 to accept unencrypted connections for backward compatibility (if needed, it can be disabled via settings).
 
@@ -16,7 +16,7 @@ The add-on can be installed on top of the Redis nodes only.
 
 :::tip Tip
 
-The add-on is also available from the [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace) and can be imported from the appropriate GitHub repository.
+The add-on is also available from the [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace) and can be imported from the appropriate GitHub repository.
 
 :::
 
@@ -58,7 +58,7 @@ Click **Install** to continue.
 
 :::danger Note
 
-Port **_6380_** is used for secure connection by default and is automatically added to the [firewall rules](/docs/application-setting/external-access-to-applications/container-firewall#container-firewall-rules-management) during the add-on installation.
+Port **_6380_** is used for secure connection by default and is automatically added to the [firewall rules](/application-setting/external-access-to-applications/container-firewall#container-firewall-rules-management) during the add-on installation.
 
 <div style={{
     display:'flex',
@@ -238,7 +238,7 @@ The automatic and manual scaling can work incorrectly after the changes due to b
 
 - **multi-regional cluster SSL interconnection**
 
-When working with the [multi-regional Redis cluster](/docs/database/redis/high-availability-cluster/multi-region-cluster#redis-multi-region-cluster), the same root certificate must be used on all the nodes of all the environments for successful interconnection between nodes through the TLS.
+When working with the [multi-regional Redis cluster](/database/redis/high-availability-cluster/multi-region-cluster#redis-multi-region-cluster), the same root certificate must be used on all the nodes of all the environments for successful interconnection between nodes through the TLS.
 
 1. Install the SSL add-on on the first environment of the multi-regional cluster.
 

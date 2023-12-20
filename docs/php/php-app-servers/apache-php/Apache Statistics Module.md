@@ -1,12 +1,10 @@
 ---
-title: Apache statistics module
+title: Apache Statistics Module
 slug: apache-statistics-module
 sidebar_position: 6
 ---
 
-##CONTEXT CODE
-
-## Apache Statistics Module
+<!-- ## Apache Statistics Module -->
 
 The **statistics** (or **status**) **module** provides an interface to view your server’s statistics.
 

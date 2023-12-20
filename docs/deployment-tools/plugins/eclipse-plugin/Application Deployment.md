@@ -1,10 +1,11 @@
 ---
-title: Application deployment
+title: Application Deployment
 slug: application-deployment
 sidebar_position: 4
 ---
 
-## Eclipse Plugin Application Deployment
+<!-- ## Eclipse Plugin Application Deployment -->
+
 To start with, you should notice that for getting the ability to deploy projects from Eclipse to the platform, they should be created as **Dynamic/Static Web Projects**.
 
 A new one can be created through the **File > New > Project** wizard:

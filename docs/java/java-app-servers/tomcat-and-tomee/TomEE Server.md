@@ -1,10 +1,10 @@
 ---
-title: Tomee server
+title: TomEE Server
 slug: tomee-server
 sidebar_position: 2
 ---
 
-## Apache TomEE
+<!-- ## Apache TomEE -->
 
 [**Apache TomEE**](https://cloudmydc.com/) is an enterprise-ready Java server, created based on Apache Tomcat with the implementation of the _MicroProfile_ and Jakarta EE features. The extended [comparison](https://cloudmydc.com/) of the supported functionality is provided on the official documentation page.
 
@@ -89,7 +89,7 @@ Click the **Open in Browser** button to access the server’s default page.
 
 </div>
 
-Now, you can proceed to the [application deployment](/docs/deployment/deployment-guide).
+Now, you can proceed to the [application deployment](/deployment/deployment-guide).
 
 :::tip
 

@@ -1,10 +1,10 @@
 ---
-title: Php versions
+title: PHP Versions
 slug: php-versions
 sidebar_position: 2
 ---
 
-## PHP Versions
+<!-- ## PHP Versions -->
 
 Within the confines of PHP hosting at the platform, the following PHP engine versions are supported:
 
@@ -14,11 +14,11 @@ Within the confines of PHP hosting at the platform, the following PHP engine ver
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/quickstart/software-stack-versions) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/quickstart/software-stack-versions) document.
 
 :::
 
-You can choose the version you need while environment creation and easily [switch between them](/docs/php/php-versions) afterwards via topology wizard. The workflow is the following:
+You can choose the version you need while environment creation and easily [switch between them](/php/php-versions) afterwards via topology wizard. The workflow is the following:
 
 1. Click the **New Environment** button at the top dashboard pane to open the _Environment Wizard_ frame.
 
@@ -44,11 +44,11 @@ You can choose the version you need while environment creation and easily [switc
 
 </div>
 
-Specify the resource limits, select the preferred [region](/docs/environment-management/environment-regions/choosing-a-region), type your environment name (or leave the default one) and click the **Create** button.
+Specify the resource limits, select the preferred [region](/environment-management/environment-regions/choosing-a-region), type your environment name (or leave the default one) and click the **Create** button.
 
 :::tip Tip
 
-For more information on PHP hosting specifics at the platform and the possibilities it provides, refer to the [PHP Developer’s Center](/docs/php/php-apps-specifications/php-extensions) document.
+For more information on PHP hosting specifics at the platform and the possibilities it provides, refer to the [PHP Developer’s Center](/php/php-apps-specifications/php-extensions) document.
 
 :::
 
@@ -80,6 +80,6 @@ Click **Redeploy** to confirm the changes.
 
 :::danger Note
 
-In case of switching the engine version to PHP 7 for legacy PHP containers, you may require to manually [re-define](/docs/php/php-apps-specifications/php-extensions) the included PHP modules, as part of them was turned into dynamic (i.e. to be activated only upon the necessity) in confines of the [PaaS 4.3](/docs/category/platform-overview) release.
+In case of switching the engine version to PHP 7 for legacy PHP containers, you may require to manually [re-define](/php/php-apps-specifications/php-extensions) the included PHP modules, as part of them was turned into dynamic (i.e. to be activated only upon the necessity) in confines of the [PaaS 4.3](/category/platform-overview) release.
 
 :::

@@ -1,5 +1,5 @@
 ---
-title: Api methods
+title: Api Methods
 slug: api-methods
 sidebar_position: 2
 ---

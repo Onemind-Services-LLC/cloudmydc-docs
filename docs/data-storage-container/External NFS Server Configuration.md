@@ -1,10 +1,10 @@
 ---
-title: External nfs server configuration
+title: External NFS Server Configuration
 slug: external-nfs-server-configuration
 sidebar_position: 6
 ---
 
-## External NFS Server Configuration
+<!-- ## External NFS Server Configuration -->
 
 <div style={{
     display: 'grid',

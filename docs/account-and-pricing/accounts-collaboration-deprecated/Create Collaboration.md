@@ -1,10 +1,11 @@
 ---
-title: Create collaboration
+title: Create Collaboration
 slug: create-collaboration
 sidebar_position: 2
 ---
 
-## Create Collaboration (Deprecated)
+<!-- ## Create Collaboration (Deprecated) -->
+
 *This information is relevant for the platforms prior the 7.0 release. See the up-to-date account collaboration feature description.*
 
 In order to create your own collaboration, you need to have a billing PaaS account and invite additional customers/users to use your account. Follow the instruction below to perform this:

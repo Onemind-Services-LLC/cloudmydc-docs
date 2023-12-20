@@ -1,10 +1,11 @@
 ---
-title: Remote access
+title: Remote Access
 slug: remote-access
 sidebar_position: 6
 ---
 
-## Remote Access to MySQL/MariaDB/Percona
+<!-- ## Remote Access to MySQL/MariaDB/Percona -->
+
 You can work with your databases remotely from your computer without having to login to our dashboard. So here are some instructions on how to access with **MySQL**. They can be used both for Java and PHP environments.
 
 :::tip Tip

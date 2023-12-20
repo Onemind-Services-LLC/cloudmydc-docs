@@ -1,5 +1,5 @@
 ---
-title: Traefik v2 ingress controller
+title: Traefik V2 Ingress Controller
 slug: traefik-v2-ingress-controller
 sidebar_position: 6
 ---
@@ -202,4 +202,4 @@ Also, Traefik offers a set of internal services. You can see an example in the c
 
 These are only a few main changes in the new Traefik v2 which is implemented within [Jelastic Kubernetes v1.21.2+](https://github.com/jelastic-jps/kubernetes/tree/v1.21.2). You can check a full list in the official [documentation related to transition from Traefik v1 to v2](https://doc.traefik.io/traefik/migration/v1-to-v2/).
 
-Get started with Kubernetes Service that can be automatically deployed, scaled and updated using Jelastic PaaS and don’t forget to keep an eye on [new releases](/docs/kubernetes-hosting/kubernetes-cluster/cluster-versions#current-versions).
+Get started with Kubernetes Service that can be automatically deployed, scaled and updated using Jelastic PaaS and don’t forget to keep an eye on [new releases](/kubernetes-hosting/kubernetes-cluster/cluster-versions#current-versions).

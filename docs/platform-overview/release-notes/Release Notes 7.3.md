@@ -1,12 +1,10 @@
 ---
-title: Release notes 7.3
+title: Release Notes 7.3
 slug: release-notes-7.3
 sidebar_position: 11
 ---
 
 import obj from './ReleaseNotes7.3.json'
-
-## CloudMyDc Application Platform 7.3
 
 _This document is preliminary and subject to change._
 
@@ -46,7 +44,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.3#dashboard-performance-optimization">
+                <a href="/platform-overview/release-notes/release-notes-7.3#dashboard-performance-optimization">
                     Learn More >>
                 </a>
             </div>
@@ -65,7 +63,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.3#ubuntu-22-support">
+                <a href="/platform-overview/release-notes/release-notes-7.3#ubuntu-22-support">
                     Learn More >>
                 </a>
             </div>
@@ -84,7 +82,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.3#api-to-move-public-ips">
+                <a href="/platform-overview/release-notes/release-notes-7.3#api-to-move-public-ips">
                     Learn More >>
                 </a>
             </div>
@@ -128,7 +126,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.3#platform-optimizations">
+                <a href="/platform-overview/release-notes/release-notes-7.3#platform-optimizations">
                     Learn More >>
                 </a>
             </div>
@@ -147,7 +145,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.3#show-logs-button-in-dashboard-notifications">
+                <a href="/platform-overview/release-notes/release-notes-7.3#show-logs-button-in-dashboard-notifications">
                     Learn More >>
                 </a>
             </div>
@@ -166,7 +164,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.3#api-changes">
+                <a href="/platform-overview/release-notes/release-notes-7.3#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -185,7 +183,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.3#software-stack-versions">
+                <a href="/platform-overview/release-notes/release-notes-7.3#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -229,7 +227,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.3#fixes-compatible-with-prior-versions">
+                <a href="/platform-overview/release-notes/release-notes-7.3#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -248,7 +246,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.3#bug-fixes">
+                <a href="/platform-overview/release-notes/release-notes-7.3#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -259,7 +257,7 @@ Fixed
 
 ## Dashboard Performance Optimization
 
-One of the major benefits the platform is renowned for is a versatile and robust user interface ([dashboard](/docs/quickstart/dashboard-guide)). It provides users with all the necessary tools to track and manage all hosted resources. However, when working with a large number of environments on the account (over 100), the drop in the dashboard’s performance can be noted. In order to resolve the issue and improve customers' experience, several internal optimizations were applied in the 7.3 platform release to boost the operation speed when working with a lot of environments.
+One of the major benefits the platform is renowned for is a versatile and robust user interface ([dashboard](/quickstart/dashboard-guide)). It provides users with all the necessary tools to track and manage all hosted resources. However, when working with a large number of environments on the account (over 100), the drop in the dashboard’s performance can be noted. In order to resolve the issue and improve customers' experience, several internal optimizations were applied in the 7.3 platform release to boost the operation speed when working with a lot of environments.
 
 Among the applied changes, the most notable are:
 
@@ -272,7 +270,7 @@ Among the applied changes, the most notable are:
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -290,14 +288,14 @@ Below you can find a number of optimizations implemented in the current 7.3 rele
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Ubuntu 22 Support
 
-The platform introduces support of the latest Long Term Support release for one of the world’s most popular Linux distributions - **_Ubuntu 22.04_** LTS (Jammy Jellyfish). The update integrates the base [operating system template](/docs/container/container-image-requirements) (for custom Docker containers) and adds the Ubuntu 22.04 VPS stack. Moreover, the distribution support is automatically available for all platform versions since the 6.0.2 release via the appropriate patches.
+The platform introduces support of the latest Long Term Support release for one of the world’s most popular Linux distributions - **_Ubuntu 22.04_** LTS (Jammy Jellyfish). The update integrates the base [operating system template](/container/container-image-requirements) (for custom Docker containers) and adds the Ubuntu 22.04 VPS stack. Moreover, the distribution support is automatically available for all platform versions since the 6.0.2 release via the appropriate patches.
 
 <div style={{
     display:'flex',
@@ -309,14 +307,14 @@ The platform introduces support of the latest Long Term Support release for one 
 
 </div>
 
-[More info](/docs/container/container-image-requirements)
+[More info](/container/container-image-requirements)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -330,14 +328,14 @@ In the current 7.3 platform release, the ability to display the **Show Logs** bu
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## API to Move Public IPs
 
-The new **_MoveExtIP_** API method allows moving external IP addresses from the source node to the target node. It complements the existing [SwapExtIps](/docs/deployment-tools/api-&-cli/platform-cli/swap-public-ips) API, making the management of existing public IPs more flexible. Additionally, the new method supports nodes with multiple IPs and can manage them in a single API call.
+The new **_MoveExtIP_** API method allows moving external IP addresses from the source node to the target node. It complements the existing [SwapExtIps](/deployment-tools/api-&-cli/platform-cli/swap-public-ips) API, making the management of existing public IPs more flexible. Additionally, the new method supports nodes with multiple IPs and can manage them in a single API call.
 
 The following parameters should be specified for the **_MoveExtIP_** method:
 
@@ -360,17 +358,17 @@ The UI implementation of moving public IPs will be provided in future releases.
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## API Changes
 
-Below, you can find a list of all changes to the public API in the 7.3 platform version (compared to the preceding [7.1](/docs/platform-overview/release-notes/release-notes-7.1#api-changes) ones):
+Below, you can find a list of all changes to the public API in the 7.3 platform version (compared to the preceding [7.1](/platform-overview/release-notes/release-notes-7.1#api-changes) ones):
 
-- Implemented a new **_MoveExtIP_** API method (the **binder** service) that can [move external IP addresses](/docs/platform-overview/release-notes/release-notes-7.3#api-to-move-public-ips) between containers and can operate with multiple IPs
-- Added a new **_GetBasicEnvsInfo_** API method (the **control** service) to improve the [dashboard loading speed](/docs/platform-overview/release-notes/release-notes-7.3#platform-optimizations)
+- Implemented a new **_MoveExtIP_** API method (the **binder** service) that can [move external IP addresses](/platform-overview/release-notes/release-notes-7.3#api-to-move-public-ips) between containers and can operate with multiple IPs
+- Added a new **_GetBasicEnvsInfo_** API method (the **control** service) to improve the [dashboard loading speed](/platform-overview/release-notes/release-notes-7.3#platform-optimizations)
 
 [More info](https://cloudmydc.com/)
 
@@ -379,7 +377,7 @@ Below, you can find a list of all changes to the public API in the 7.3 platform 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -498,7 +496,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -507,16 +505,16 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/quickstart/software-stack-versions)
+[More info](/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

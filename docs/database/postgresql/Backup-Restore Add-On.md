@@ -1,10 +1,10 @@
 ---
-title: Backup-restore add-on
+title: Backup-Restore Add-On
 slug: backup-restore-add-on
 sidebar_position: 3
 ---
 
-## Database Backup/Restore Add-On
+<!-- ## Database Backup/Restore Add-On -->
 
 **[Database Backup](https://github.com/jelastic-jps/database-backup-addon)** add-on is compatible with all the MySQL-based (MySQL/MariaDB/Percona), PostgreSQL, and Redis databases in the CloudMyDc Application Platform. It works in tandem with [Backup Storage](https://github.com/jelastic-jps/backup-storage) to help users automatically create and store database backups at the remote storage.
 
@@ -18,7 +18,7 @@ When updating (redeploying) the PostgreSQL instance, it is <u>highly recommended
 
 Before starting the add-on installation, you need to create a dedicated storage instance to keep all the backup data.
 
-1. If you don’t have one, it can be created in a few minutes using the dedicated **Backup Storage** package in the [platform Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
+1. If you don’t have one, it can be created in a few minutes using the dedicated **Backup Storage** package in the [platform Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
 
 <div style={{
     display:'flex',
@@ -35,8 +35,8 @@ If you already have such storage, you can skip to the fourth step.
 2. Within the installation window, you can choose between the **_Standalone_** and **_Cluster_** storage options. Next, specify the preferred **Number of nodes** (for Cluster option) and **Storage size**. Finalize by providing the standard data:
 
 - **Environment** – environment domain name
-- **Display Name** – [environment’s alias](/docs/environment-management/environment-aliases)
-- **Region** – [environment’s region](/docs/environment-management/environment-regions/choosing-a-region#environment-regions) (if multiple ones are available)
+- **Display Name** – [environment’s alias](/environment-management/environment-aliases)
+- **Region** – [environment’s region](/environment-management/environment-regions/choosing-a-region#environment-regions) (if multiple ones are available)
 
 <div style={{
     display:'flex',
@@ -48,7 +48,7 @@ If you already have such storage, you can skip to the fourth step.
 
 </div>
 
-3. Click the Install button and wait several minutes for the storage to be created. It will be automatically added to the “_Backup storage nodes_” [group](/docs/environment-management/environment-groups/overview).
+3. Click the Install button and wait several minutes for the storage to be created. It will be automatically added to the “_Backup storage nodes_” [group](/environment-management/environment-groups/overview).
 
 <div style={{
     display:'flex',

@@ -1,10 +1,10 @@
 ---
-title: Postgis extension
+title: Postgis Extension
 slug: postgis-extension
 sidebar_position: 7
 ---
 
-## PostGIS Extension to PostgreSQL Database for Hosting GeoServer
+<!-- ## PostGIS Extension to PostgreSQL Database for Hosting GeoServer -->
 
 **PostGIS** is an spatial extension for the PostgreSQL object-relational database, which adds support for geographic objects allowing location queries to be run in SQL. With PostGIS extension PostgreSQL can be used as a backend spatial database for GIS.
 

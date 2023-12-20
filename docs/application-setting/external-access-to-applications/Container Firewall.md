@@ -1,10 +1,10 @@
 ---
-title: Container firewall
+title: Container Firewall
 slug: container-firewall
 sidebar_position: 4
 ---
 
-## Container Firewall Rules Management
+<!-- ## Container Firewall Rules Management -->
 
 The platform **Container Firewall** feature provides a possibility to control your nodes availability both from inside and outside of the PaaS. It analyzes various parameters (e.g. incoming request source, protocol, target node port, etc.) to flexibly manage access to your containers through setting the necessary connection rules.
 
@@ -20,13 +20,13 @@ The platform **Container Firewall** feature provides a possibility to control yo
 
 :::tip
 
-If you want to restrict access between the environments on a single account, it can be automatically configured via the [Network Isolation](/docs/environment-management/environment-isolation) feature.
+If you want to restrict access between the environments on a single account, it can be automatically configured via the [Network Isolation](/environment-management/environment-isolation) feature.
 
 :::
 
 ## Container Firewall Management via Platform UI
 
-Each node at the platform (excluding custom [Docker](/docs/container/container-types)- and [Windows](/docs/windows-and-.NET/dot-net-core)-based containers) is provisioned with a set of firewall rules, which can be reviewed and managed through an intuitive graphical user interface. The appropriate section can be accessed by clicking on the **Settings** button next to the required environment and selecting the **Firewall** menu item.
+Each node at the platform (excluding custom [Docker](/container/container-types)- and [Windows](/windows-and-.NET/dot-net-core)-based containers) is provisioned with a set of firewall rules, which can be reviewed and managed through an intuitive graphical user interface. The appropriate section can be accessed by clicking on the **Settings** button next to the required environment and selecting the **Firewall** menu item.
 
 :::tip Note
 
@@ -56,7 +56,7 @@ When you create a new container, the platform automatically fills the _Inbound_ 
 
 :::tip
 
-These rules are automatically fetched based on the **_EXPOSE_** ports from the same-named variable in the [image’s dockerfile](/docs/container/building-custom-container), check the linked guide for more details on building Docker images for the platform.
+These rules are automatically fetched based on the **_EXPOSE_** ports from the same-named variable in the [image’s dockerfile](/container/building-custom-container), check the linked guide for more details on building Docker images for the platform.
 
 :::
 
@@ -92,9 +92,9 @@ While working with the container (e.g. adding mount points, installing FTP add-o
 
 ## Adding Container Default Rules
 
-If needed (e.g. for the [automation solutions](/docs/deployment-tools/cloud-scripting-&-jps/jps-overview)), you can use the **_OPEN_INBOUND_PORTS_** [environment variable](/docs/environment-management/environment-variables/environment-variables) to define custom ports, which should be opened via container firewall during the appropriate nodes' creation.
+If needed (e.g. for the [automation solutions](/deployment-tools/cloud-scripting-&-jps/jps-overview)), you can use the **_OPEN_INBOUND_PORTS_** [environment variable](/environment-management/environment-variables/environment-variables) to define custom ports, which should be opened via container firewall during the appropriate nodes' creation.
 
-1. Click **New Environment** in the dashboard, select the required software stack, and navigate to the [**Variables**](/docs/container/container-configuration/variables) configuration frame.
+1. Click **New Environment** in the dashboard, select the required software stack, and navigate to the [**Variables**](/container/container-configuration/variables) configuration frame.
 
 <div style={{
     display:'flex',
@@ -126,7 +126,7 @@ Here, **_{portN}_** is a particular port (_1234_) or range (_33062-34000_), whic
 
 :::tip Note
 
-Changes due to the **_OPEN_INBOUND_PORTS_** variable are applied just once during nodes' installation. Consequently, the [firewall rules](/docs/application-setting/external-access-to-applications/container-firewall) should be managed manually.
+Changes due to the **_OPEN_INBOUND_PORTS_** variable are applied just once during nodes' installation. Consequently, the [firewall rules](/application-setting/external-access-to-applications/container-firewall) should be managed manually.
 
 :::
 
@@ -201,16 +201,16 @@ Subsequently, if meeting the necessity to **Edit** any default or custom rule, y
 
 Access to your nodes can be controlled based on such request parameters as its source node’s IP address, connection protocol, port and so on. In the guide below, we’ll consider a simple example of blocking access to a container for a particular IP address, applied via either:
 
-- [User Interface](/docs/application-setting/external-access-to-applications/container-firewall#restrict-access-via-user-interface)
-- [SSH connection](/docs/application-setting/external-access-to-applications/container-firewall#restrict-access-via-ssh)
+- [User Interface](/application-setting/external-access-to-applications/container-firewall#restrict-access-via-user-interface)
+- [SSH connection](/application-setting/external-access-to-applications/container-firewall#restrict-access-via-ssh)
 
 :::tip Note
 
-Before following this instruction, ensure that the appropriate container is provided with a [public IP](/docs/application-setting/external-access-to-applications/public-ip) address.
+Before following this instruction, ensure that the appropriate container is provided with a [public IP](/application-setting/external-access-to-applications/public-ip) address.
 
 :::
 
-Also, when preparing some container lifecycle automation solution, you may need to apply the required firewall changes via [platform API](/docs/application-setting/external-access-to-applications/container-firewall) - examine the list of the appropriate methods within the linked reference.
+Also, when preparing some container lifecycle automation solution, you may need to apply the required firewall changes via [platform API](/application-setting/external-access-to-applications/container-firewall) - examine the list of the appropriate methods within the linked reference.
 
 ## Restrict Access via User Interface
 
@@ -270,7 +270,7 @@ This way you can deny access to your containers from any IP address.
 
 ## Restrict Access via SSH
 
-Alternatively, you can configure firewall rules for your container via terminal when accessing the node through [SSH Gate](/docs/deployment-tools/ssh/ssh-overview).
+Alternatively, you can configure firewall rules for your container via terminal when accessing the node through [SSH Gate](/deployment-tools/ssh/ssh-overview).
 
 :::tip Note
 
@@ -278,7 +278,7 @@ Although most of the firewall configurations can be performed via the dedicated 
 
 :::
 
-1. The simplest way to access node via SSH is to call the appropriate [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh) option directly from the platform dashboard - click the same-named button next to the required node. Once connected, check the /**_etc/jelastic/metainf.conf_** file to ensure that container firewall is turned on:
+1. The simplest way to access node via SSH is to call the appropriate [Web SSH](/deployment-tools/ssh/ssh-access/web-ssh) option directly from the platform dashboard - click the same-named button next to the required node. Once connected, check the /**_etc/jelastic/metainf.conf_** file to ensure that container firewall is turned on:
 
 ```bash
 cat /etc/jelastic/metainf.conf

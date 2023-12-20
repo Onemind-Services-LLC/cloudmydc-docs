@@ -1,12 +1,10 @@
 ---
-title: Group creation
+title: Group Creation
 slug: group-creation
 sidebar_position: 2
 ---
 
-## How to Create Environment Group
-
-Setting new [environment group](/docs/environment-management/environment-groups/overview) involves creation of a special tag, that subsequently can be attached to the required environment to logically mark it within the dashboard. You can use any naming paradigm that would be convenient for you - for example, if having development, testing, and production versions of a project, you can apply such tags to the corresponding environments to easily separate them.
+Setting new [environment group](/environment-management/environment-groups/overview) involves creation of a special tag, that subsequently can be attached to the required environment to logically mark it within the dashboard. You can use any naming paradigm that would be convenient for you - for example, if having development, testing, and production versions of a project, you can apply such tags to the corresponding environments to easily separate them.
 
 So, to quickly create an environment group with only a few minutes notice, follow the next steps.
 
@@ -67,8 +65,8 @@ Alternatively, you can access the same option via the expandable **Env Groups** 
 Specify the following data in order to create a new group:
 
 - **Name** - type a name for your group (any letters, numbers and special characters can be used including space)
-- **Parent Group **- optionally, specify nesting for the currently created group to be included to another one as a [subgroup](/docs/environment-management/environment-groups/group-management#add-subgroups)
-- **Environments** - select environments that should belong to the group (shared environments cannot be added to your personal groups); also, it is possible to create an empty group and [fill it up with environments](/docs/environment-management/environment-groups/group-management#assign-group-to-environment) later on
+- **Parent Group **- optionally, specify nesting for the currently created group to be included to another one as a [subgroup](/environment-management/environment-groups/group-management#add-subgroups)
+- **Environments** - select environments that should belong to the group (shared environments cannot be added to your personal groups); also, it is possible to create an empty group and [fill it up with environments](/environment-management/environment-groups/group-management#assign-group-to-environment) later on
 
 :::tip Tip
 
@@ -100,4 +98,4 @@ Once you are finished, click Add.
 
 </div>
 
-Additionally, learn the ways you can [manage your environment groups](/docs/environment-management/environment-groups/group-management) and quickly [navigate between them](/docs/environment-management/environment-groups/navigation-across-groups) within dashboard.
+Additionally, learn the ways you can [manage your environment groups](/environment-management/environment-groups/group-management) and quickly [navigate between them](/environment-management/environment-groups/navigation-across-groups) within dashboard.

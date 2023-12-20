@@ -1,10 +1,10 @@
 ---
-title: Multiple public ip
+title: Multiple Public IP
 slug: multiple-public-ip
 sidebar_position: 3
 ---
 
-## Multiple Public IP Addresses for a Single Container
+<!-- ## Multiple Public IP Addresses for a Single Container -->
 
 <div style={{
     display: 'grid',
@@ -24,16 +24,16 @@ sidebar_position: 3
 </div>
 <div>
 
-The platform supports assigning multiple [public IP](/docs/application-setting/external-access-to-applications/public-ip) addresses (of both IPv4 and IPv6 revisions) to a single container. Herewith, the assigned IPs could be either of one of the versions or both of them simultaneously.
+The platform supports assigning multiple [public IP](/application-setting/external-access-to-applications/public-ip) addresses (of both IPv4 and IPv6 revisions) to a single container. Herewith, the assigned IPs could be either of one of the versions or both of them simultaneously.
 
 </div>
 </div>
 
-For example, if hosting several web-sites on a single node, the multi-IP option allows to handle them as separate production-ready services due to the ability to apply dedicated [custom domain name](/docs/application-setting/domain-name-management/custom-domain-name) and [SSL certificate](/docs/application-setting/ssl/secure-sockets-layer) to each of them. Also, this option can be helpful for operating network appliances (e.g. load balancers) with multiple IP addresses for each network.
+For example, if hosting several web-sites on a single node, the multi-IP option allows to handle them as separate production-ready services due to the ability to apply dedicated [custom domain name](/application-setting/domain-name-management/custom-domain-name) and [SSL certificate](/application-setting/ssl/secure-sockets-layer) to each of them. Also, this option can be helpful for operating network appliances (e.g. load balancers) with multiple IP addresses for each network.
 
 :::tip Note
 
-Both Public IPv4 and IPv6 are paid options, charged separately (either for the same or different price) on hourly basis. The exact cost and allowed number of IPs per node/per environment can be seen within the **[Quotas & Pricing](/docs/account-and-pricing/resource-charging/pricing-faq#how-much-do-resources-cost) > Account Limits** dashboard tab.
+Both Public IPv4 and IPv6 are paid options, charged separately (either for the same or different price) on hourly basis. The exact cost and allowed number of IPs per node/per environment can be seen within the **[Quotas & Pricing](/account-and-pricing/resource-charging/pricing-faq#how-much-do-resources-cost) > Account Limits** dashboard tab.
 
 :::
 
@@ -89,7 +89,7 @@ The very first added Public IP of each type that is added to an instance is cons
 
 :::
 
-Also, all IP addresses, assigned to a container, are shown within environment topology details at terminal upon connecting to an environment via [SSH Gate](/docs/deployment-tools/ssh/ssh-access/overview).
+Also, all IP addresses, assigned to a container, are shown within environment topology details at terminal upon connecting to an environment via [SSH Gate](/deployment-tools/ssh/ssh-access/overview).
 
 <div style={{
     display:'flex',
@@ -105,11 +105,11 @@ Here, all container external addresses are displayed within the **WAN IP** colum
 
 :::tip Note
 
-In case the required type of the newly attached IP is not indicated explicitly (e.g. within [Cloud Scripting](https://docs.cloudscripting.com/) solution or application/add-on package settings at [platform Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace)), the IPv4 is used by default.
+In case the required type of the newly attached IP is not indicated explicitly (e.g. within [Cloud Scripting](https://docs.cloudscripting.com/) solution or application/add-on package settings at [platform Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace)), the IPv4 is used by default.
 
 :::
 
-These is a set of [API methods](/docs/deployment-tools/api-&-cli/api-overview) that you can use to perform tasks related to Public IP. For the detailed API reference on Public IP, please proceed to the following section.
+These is a set of [API methods](/deployment-tools/api-&-cli/api-overview) that you can use to perform tasks related to Public IP. For the detailed API reference on Public IP, please proceed to the following section.
 
 ## API Reference on Multiple Public IPs
 
@@ -117,7 +117,7 @@ In this section, you can find information on platform API methods that are provi
 
 1. To attach or detach a Public IP address via platform API, the **_SetExtIpCount_** method is provided.
 
-_https://[hoster-api-host](/docs/quickstart/hosters-list-&-info)/1.0/environment/control/rest/setextipcount?**envname**=[string]&**session**=[string]&**type**=[string]&**count**=[int]&**nodegroup**=[string]&**nodeid**=[int]_
+_https://[hoster-api-host](/quickstart/hosters-list-&-info)/1.0/environment/control/rest/setextipcount?**envname**=[string]&**session**=[string]&**type**=[string]&**count**=[int]&**nodegroup**=[string]&**nodeid**=[int]_
 
 This method is used with the following parameters:
 
@@ -138,7 +138,7 @@ The **_AttachExtIp_** and **_DetachExtIp_** methods, which were provided earlier
 
 2. To swap Public IP addresses between two nodes within the same or separate environments, you can use the **_SwapExtIps_** method.
 
-_https://{[hoster-api-host](/docs/quickstart/hosters-list-&-info)}/1.0/environment/control/rest/swapextips?**envname**=[string]&**session**=[string]&**sourcenodeid**=[int]&**destnodeid**=[int]&**sourceip**=[string]&**destip**=[string]_
+_https://{[hoster-api-host](/quickstart/hosters-list-&-info)}/1.0/environment/control/rest/swapextips?**envname**=[string]&**session**=[string]&**sourcenodeid**=[int]&**destnodeid**=[int]&**sourceip**=[string]&**destip**=[string]_
 
 This method is used with the following parameters:
 

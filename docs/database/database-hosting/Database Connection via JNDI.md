@@ -1,10 +1,10 @@
 ---
-title: Database connection via jndi
+title: Database Connection Via JNDI
 slug: database-connection-via-jndi
 sidebar_position: 6
 ---
 
-## Connection to DB using JNDI
+<!-- ## Connection to DB using JNDI -->
 
 To connect to DB using JNDI you have to perform the following steps:
 
@@ -29,7 +29,7 @@ Let’s do it step-by-step:
 </div>
 
 2. Create a new user in a database:
-   How to create new user - [click here](/docs/database/mysql-mariadb-percona/connection-to-applications/java-connection#java-connection-to-mariadbmysqlpercona)
+   How to create new user - [click here](/database/mysql-mariadb-percona/connection-to-applications/java-connection#java-connection-to-mariadbmysqlpercona)
 
 ```bash
 Database name : jelasticDb

@@ -1,10 +1,10 @@
 ---
-title: Auto-clustering
+title: Auto-Clustering
 slug: auto-clustering
 sidebar_position: 1
 ---
 
-## OpenSearch Cluster
+<!-- ## OpenSearch Cluster -->
 
 The **[OpenSearch Cluster](https://opensearch.org/)** is a community-driven, open-source search engine. It is most suitable for application search or log analytics cases, as it enables people to easily search, aggregate, view, and analyze data. OpenSearch provides a secure, high-quality search and analytics suite that can be easily modified and extended with additional functionality.
 
@@ -16,21 +16,21 @@ _OpenSearch is derived from Apache 2.0 licensed Elasticsearch 7.10.2, allowing t
 
 This guide provides information on:
 
-- [OpenSearch Cluster Components Overview](/docs/database/opensearch/auto-clustering#opensearch-cluster-components-overview)
-- [OpenSearch Cluster Installation](/docs/database/opensearch/auto-clustering#opensearch-cluster-installation)
-- [OpenSearch vs Elasticsearch Performance](/docs/database/opensearch/auto-clustering#opensearch-vs-elasticsearch-performance)
+- [OpenSearch Cluster Components Overview](/database/opensearch/auto-clustering#opensearch-cluster-components-overview)
+- [OpenSearch Cluster Installation](/database/opensearch/auto-clustering#opensearch-cluster-installation)
+- [OpenSearch vs Elasticsearch Performance](/database/opensearch/auto-clustering#opensearch-vs-elasticsearch-performance)
 
 ## OpenSearch Cluster Components Overview
 
 The platform provides OpenSearch Cluster using three certified stacks that are united into a single auto-clustering solution:
 
-- **[OpenSearch](/docs/database/opensearch/auto-clustering#opensearch)** - a community-driven, open-source search engine that provides a distributed, multitenant-capable full-text search
-- **[OpenSearch Dashboards (optional)](/docs/database/opensearch/auto-clustering#opensearch-dashboards)** - visualization for data stored inside the OpenSearch nodes (derived from Kibana 7.10.2)
-- **[Logstash (optional)](/docs/database/opensearch/auto-clustering#logstash)** - data processing
+- **[OpenSearch](/database/opensearch/auto-clustering#opensearch)** - a community-driven, open-source search engine that provides a distributed, multitenant-capable full-text search
+- **[OpenSearch Dashboards (optional)](/database/opensearch/auto-clustering#opensearch-dashboards)** - visualization for data stored inside the OpenSearch nodes (derived from Kibana 7.10.2)
+- **[Logstash (optional)](/database/opensearch/auto-clustering#logstash)** - data processing
 
 :::tip Tip
 
-Additionally, the **[Beats](/docs/database/opensearch/auto-clustering#beats-add-on)** add-on can be installed for single-purpose data shippers that send data from the client nodes to _Logstash_ or _OpenSearch_.
+Additionally, the **[Beats](/database/opensearch/auto-clustering#beats-add-on)** add-on can be installed for single-purpose data shippers that send data from the client nodes to _Logstash_ or _OpenSearch_.
 
 :::
 
@@ -54,7 +54,7 @@ After being created, the OpenSearch node is available on port 9200 for internal 
 
 The OpenSearch stack benefits from all the functionality available for other certified templates - dashboard file manager, Web SSH, dashboard log viewer, etc.
 
-Also, platform’s [redeploy](/docs/category/container-deployment) functionality provides a simple update process. However, only redeployment to the same or newer version is allowed - a downgrade is restricted.
+Also, platform’s [redeploy](/category/container-deployment) functionality provides a simple update process. However, only redeployment to the same or newer version is allowed - a downgrade is restricted.
 
 ## OpenSearch Dashboards
 
@@ -104,11 +104,11 @@ All the regular functionality of certified templates (dashboard file manager, We
 
 </div>
 
-The input for _[Beats](/docs/database/opensearch/auto-clustering#beats-add-on)_ is assigned on port 5044, and the OpenSearch output is specified by setting the hosts, username, and password for interconnection. [Plugins](https://www.elastic.co/guide/en/logstash/current/working-with-plugins.html) for other types of inputs can be installed by the _logstash-plugin tool_, and configs can be added to the same file (with another port).
+The input for _[Beats](/database/opensearch/auto-clustering#beats-add-on)_ is assigned on port 5044, and the OpenSearch output is specified by setting the hosts, username, and password for interconnection. [Plugins](https://www.elastic.co/guide/en/logstash/current/working-with-plugins.html) for other types of inputs can be installed by the _logstash-plugin tool_, and configs can be added to the same file (with another port).
 
 :::danger Note
 
-The **Logstash** is not a separate stack and cannot be created separately from OpenSearch. You can add as many Logstash nodes as needed - scaling is in [stateful mode](/docs/application-setting/scaling-and-clustering/horizontal-scaling#scaling-modes) to provide initial configs. However, each node can be reconfigured for different data transformations.
+The **Logstash** is not a separate stack and cannot be created separately from OpenSearch. You can add as many Logstash nodes as needed - scaling is in [stateful mode](/application-setting/scaling-and-clustering/horizontal-scaling#scaling-modes) to provide initial configs. However, each node can be reconfigured for different data transformations.
 
 :::
 
@@ -116,7 +116,7 @@ The **Logstash** is not a separate stack and cannot be created separately from O
 
 **Beats** is a free and open platform for single-purpose data shippers. They send data from the client nodes to Logstash or OpenSearch.
 
-You can install [Beats add-on](https://github.com/jelastic-jps/beats-jps-addon) on any node (except alpine-based ones) created inside the platform and specify the credentials to connect to the OpenSearch cluster or [custom Docker](/docs/container/container-types#custom-docker-containers) with the ElasticSearch instance. Two versions of the add-on are available:
+You can install [Beats add-on](https://github.com/jelastic-jps/beats-jps-addon) on any node (except alpine-based ones) created inside the platform and specify the credentials to connect to the OpenSearch cluster or [custom Docker](/container/container-types#custom-docker-containers) with the ElasticSearch instance. Two versions of the add-on are available:
 
 - **_7.12.1_** - to ship data directly to OpenSearch (see [compatibility charts](https://opensearch.org/docs/latest/tools/index/))
 
@@ -130,7 +130,7 @@ compatibility.override_main_response_version: true
 
 :::
 
-- **_latest_** - to ship data to OpenSearch through [Logstash](/docs/database/opensearch/auto-clustering#logstash)
+- **_latest_** - to ship data to OpenSearch through [Logstash](/database/opensearch/auto-clustering#logstash)
 
 <div style={{
     display:'flex',
@@ -179,7 +179,7 @@ These settings can also be edited for the already installed add-on using the **C
 
 ## OpenSearch Cluster Installation
 
-The OpenSearch Cluster creation at the platform is a straightforward and fully automated process that can be performed directly from the [topology wizard](/docs/environment-management/setting-up-environment).
+The OpenSearch Cluster creation at the platform is a straightforward and fully automated process that can be performed directly from the [topology wizard](/environment-management/setting-up-environment).
 
 Select the **OpenSearch** stack at the NoSQL database section.
 
@@ -193,7 +193,7 @@ Select the **OpenSearch** stack at the NoSQL database section.
 
 </div>
 
-The stack is automatically configured as a cluster due to the [auto-clustering](/docs/application-setting/scaling-and-clustering/auto-clustering-of-instances#auto-clustering-of-instances-via-topology-wizard) feature. Also, you have additional options to add the **OpenSearch Dashboards** and **Logstash** components.
+The stack is automatically configured as a cluster due to the [auto-clustering](/application-setting/scaling-and-clustering/auto-clustering-of-instances#auto-clustering-of-instances-via-topology-wizard) feature. Also, you have additional options to add the **OpenSearch Dashboards** and **Logstash** components.
 
 ## OpenSearch vs Elasticsearch Performance
 

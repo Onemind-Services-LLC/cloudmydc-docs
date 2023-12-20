@@ -1,10 +1,10 @@
 ---
-title: Migrating to glusterfs cluster
+title: Migrating To Glusterfs Cluster
 slug: migrating-to-glusterfs-cluster
 sidebar_position: 5
 ---
 
-## Migrating Standalone Storage to GlusterFS Cluster
+<!-- ## Migrating Standalone Storage to GlusterFS Cluster -->
 
 Currently, automatic conversion of the existing standalone storage into the GlusterFS cluster is not supported. You’ll need to recreate the storage from scratch. We recommend creating a temporary Storage node in the extra layer, copy data, and remount any existing shares. Then, recreate the initial Storage node as a GlusterFS cluster and restore data and mount shares back. The instruction below will guide you through the process step-by-step.
 

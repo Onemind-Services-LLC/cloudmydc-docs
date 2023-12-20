@@ -1,13 +1,13 @@
 ---
-title: Setting mail server inside vps
+title: Setting Mail Server Inside Vps
 slug: setting-mail-server-inside-vps
 sidebar_position: 2
 ---
 
-With the platform it is possible to integrate mail server to your virtual private machine. Below, we’ll guide you through the steps required to get one on within the [CentOS VPS](/docs/elastic-vps/elastic-vps-overview/centos-vps). For that, you need to access the required container over SSH protocol using the preferable connection flow (e.g. [web-based client for CentOS](/docs/elastic-vps/elastic-vps-overview/centos-vps) in our case) and carry out the following steps:
+With the platform it is possible to integrate mail server to your virtual private machine. Below, we’ll guide you through the steps required to get one on within the [CentOS VPS](/elastic-vps/elastic-vps-overview/centos-vps). For that, you need to access the required container over SSH protocol using the preferable connection flow (e.g. [web-based client for CentOS](/elastic-vps/elastic-vps-overview/centos-vps) in our case) and carry out the following steps:
 
-- [Install and Test Mail Server](/docs/elastic-vps/linux-vps-use-cases/setting-mail-server-inside-vps#set-up-and-test-mail-server)
-- [Configure Authorized Networks](/docs/elastic-vps/linux-vps-use-cases/setting-mail-server-inside-vps#configure-postfix-authorized-networks)
+- [Install and Test Mail Server](/elastic-vps/linux-vps-use-cases/setting-mail-server-inside-vps#set-up-and-test-mail-server)
+- [Configure Authorized Networks](/elastic-vps/linux-vps-use-cases/setting-mail-server-inside-vps#configure-postfix-authorized-networks)
 
 ## Set Up and Test Mail Server
 

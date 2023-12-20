@@ -1,22 +1,22 @@
 ---
-title: Maven plugin
+title: Maven Plugin
 slug: maven-plugin
 sidebar_position: 4
 ---
 
-## Maven Plugin
+<!-- ## Maven Plugin -->
 
 [Maven plugin](https://github.com/jelastic/jelastic-maven-plugin) by the platform is a tool that can be used for building and managing Java projects. It complements the native Maven features of standardizing and simplifying the build process through implementation of the best deployment and development practices to deploy local projects directly into the cloud.
 
 :::tip Tip
 
-Alternatively, you can manage your project remotely (i.e. from anywhere over the Internet) by creating [Maven build node](/docs/java/build-node/java-vcs-deployment-with-maven) at the platform and storing project at any preferable GIT version control system.
+Alternatively, you can manage your project remotely (i.e. from anywhere over the Internet) by creating [Maven build node](/java/build-node/java-vcs-deployment-with-maven) at the platform and storing project at any preferable GIT version control system.
 
 :::
 
 Follow the next steps to deploy your Java applications into the platform with the help of the Maven plugin:
 
-1. Ensure you have a running Java environment to deploy your project into. If needed, [create](/docs/environment-management/setting-up-environment) a new one by following the linked guide.
+1. Ensure you have a running Java environment to deploy your project into. If needed, [create](/environment-management/setting-up-environment) a new one by following the linked guide.
 
 2. Prepare Java project using the [Maven](https://maven.apache.org/download.cgi) build tool (manually or using any IDE).
 
@@ -51,7 +51,7 @@ Follow the next steps to deploy your Java applications into the platform with th
 
 :::danger Note
 
-You can generate [access token](/docs/account-and-pricing/personal-access-tokens) for **_Maven Plugin_** via the dashboard.
+You can generate [access token](/account-and-pricing/personal-access-tokens) for **_Maven Plugin_** via the dashboard.
 
 <div style={{
     display:'flex',
@@ -79,7 +79,7 @@ Initiates your application deployment, substitute the **_{password}_** placehold
 mvn jelastic:publish
 ```
 
-Builds and uploads **_.war_** file to your account [deployment manager](/docs/deployment/deployment-manager) without actually deploying project.
+Builds and uploads **_.war_** file to your account [deployment manager](/deployment/deployment-manager) without actually deploying project.
 
 ```bash
 mvn clean install jelastic:deploy

@@ -1,10 +1,10 @@
 ---
-title: Multiple domains with public ip
+title: Multiple Domains With Public Ip
 slug: multiple-domains-with-public-ip
 sidebar_position: 6
 ---
 
-## Setting Up Multiple Domains with Public IP
+<!-- ## Setting Up Multiple Domains with Public IP -->
 
 ## The Benefits of Having Multiple Domains
 
@@ -34,7 +34,7 @@ _In order to use a domain name for your application, you need to register it or 
 
 </div>
 
-3. In the **Environment Topology** dialog, pick your application server (for example, [Tomcat](/docs/java/java-app-servers/tomcat-and-tomee/tomcat-server)), switch on **Public IPv4** for your server and type your environment name, for example, _multibinding_.
+3. In the **Environment Topology** dialog, pick your application server (for example, [Tomcat](/java/java-app-servers/tomcat-and-tomee/tomcat-server)), switch on **Public IPv4** for your server and type your environment name, for example, _multibinding_.
 
 <div style={{
     display:'flex',

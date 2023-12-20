@@ -1,12 +1,12 @@
 ---
-title: Swap public ips
+title: Swap Public Ips
 slug: swap-public-ips
 sidebar_position: 11
 ---
 
-## CLI Tutorial: Public IPs (External Addresses) Swap
+<!-- ## CLI Tutorial: Public IPs (External Addresses) Swap -->
 
-The operation of [public IPs](/docs/application-setting/external-access-to-applications/public-ip) swap can come in handy for routing of the incoming requests to the required environment or application. It may be especially useful when, for example, switching testing and production environments.
+The operation of [public IPs](/application-setting/external-access-to-applications/public-ip) swap can come in handy for routing of the incoming requests to the required environment or application. It may be especially useful when, for example, switching testing and production environments.
 
 The appropriate **_SwapExtIps_** CLI method gives you the ability to exchange external IP addresses between two containers. In case only one node has a public IP, it will be moved (reassigned) to the second instance. The method can work with nodes of the same or different environments but only in the confines of a single account.
 
@@ -35,14 +35,14 @@ Here, the following parameters should be specified:
 
 :::danger Notes:
 
-- Before using the **_SwapExtIps_** CLI method, please make sure that the source and destination nodes (environments) are running and belong to the same [region](/docs/environment-management/environment-regions/choosing-a-region).
+- Before using the **_SwapExtIps_** CLI method, please make sure that the source and destination nodes (environments) are running and belong to the same [region](/environment-management/environment-regions/choosing-a-region).
 - <u>Before the PaaS 5.8 release</u>, this method does not support IPv6 and works with IPv4 only.
-- <u>Before the PaaS 6.0 release</u>, IP swap fails if an environment has a [bound](/docs/application-setting/domain-name-management/custom-domain-name#how-to-bind-domain-to-environment) custom domain.
+- <u>Before the PaaS 6.0 release</u>, IP swap fails if an environment has a [bound](/application-setting/domain-name-management/custom-domain-name#how-to-bind-domain-to-environment) custom domain.
 - The process may cause short-term unavailability of the corresponding Public IP address(es) (up to 10 seconds).
-- If you need to swap two specific addresses between nodes with [multiple IPs](/docs/application-setting/external-access-to-applications/multiple-public-ip) on each one, please contact the Support Team for assistance. Support of such cases is currently under development and will be implemented in future releases.
+- If you need to swap two specific addresses between nodes with [multiple IPs](/application-setting/external-access-to-applications/multiple-public-ip) on each one, please contact the Support Team for assistance. Support of such cases is currently under development and will be implemented in future releases.
 - The following node types will be automatically restarted to start listening on the new addresses after the operation: _GlassFish, Apache PHP, Apache Ruby, NGINX PHP, NGINX Ruby_.
-- Based on the comprized services, a manual restart may be required for the [_Elastic VPS_](/docs/elastic-vps/elastic-vps-overview/general-information) and custom [_Docker containers_](/docs/container/container-deployment/custom-containers-deployment) to adapt for the IP address change.
-- We recommend rechecking the [_Access via SLB_](/docs/application-setting/external-access-to-applications/shared-load-balancer#deny-access-via-shared-load-balancer) state for both nodes after swapping IPs.
+- Based on the comprized services, a manual restart may be required for the [_Elastic VPS_](/elastic-vps/elastic-vps-overview/general-information) and custom [_Docker containers_](/container/container-deployment/custom-containers-deployment) to adapt for the IP address change.
+- We recommend rechecking the [_Access via SLB_](/application-setting/external-access-to-applications/shared-load-balancer#deny-access-via-shared-load-balancer) state for both nodes after swapping IPs.
 
 :::
 

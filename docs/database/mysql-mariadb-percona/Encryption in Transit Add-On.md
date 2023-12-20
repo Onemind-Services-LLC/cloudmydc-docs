@@ -1,10 +1,10 @@
 ---
-title: Encryption in transit add-on
+title: Encryption In Transit Add-On
 slug: encryption-in-transit-add-on
 sidebar_position: 5
 ---
 
-## SSL/TLS Encryption in Transit for MySQL/MariaDB/Percona
+<!-- ## SSL/TLS Encryption in Transit for MySQL/MariaDB/Percona -->
 
 MySQL/MariaDB/Percona database solutions are provided with a built-in add-on that implements “**encryption in transit**”. The functionality ensures data protection with SSL/TLS encrypted connection while it moves between servers. After the add-on installation, all the related operations are handled automatically - data encryption before transmission, endpoints authentication, content decryption, and verification upon arrival.
 
@@ -16,7 +16,7 @@ The add-on can be installed on top of the **MySQL/MariaDB/Percona** and **ProxyS
 
 :::tip Tip
 
-The add-on is also available from the [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace) and can be imported from the appropriate GitHub repository.
+The add-on is also available from the [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace) and can be imported from the appropriate GitHub repository.
 
 :::
 
@@ -138,7 +138,7 @@ To remove the add-on from the layer (including custom configs and generated SSL 
 
 ## Secure Connection to MySQL/MariaDB/Percona
 
-1. The “**encryption in transit**” (**_server-side encryption_**) functionality works immediately after the add-on’s installation. You can check it by connecting to the database using the credentials from the email. For remote connection, you can add [endpoint](/docs/application-setting/external-access-to-applications/endpoints#endpoints-a-direct-connection-to-the-cloud) or [public IP](/docs/application-setting/external-access-to-applications/public-ip#public-ip):
+1. The “**encryption in transit**” (**_server-side encryption_**) functionality works immediately after the add-on’s installation. You can check it by connecting to the database using the credentials from the email. For remote connection, you can add [endpoint](/application-setting/external-access-to-applications/endpoints#endpoints-a-direct-connection-to-the-cloud) or [public IP](/application-setting/external-access-to-applications/public-ip#public-ip):
 
 <div style={{
     display:'flex',

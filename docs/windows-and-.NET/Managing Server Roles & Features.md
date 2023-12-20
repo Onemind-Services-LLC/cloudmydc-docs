@@ -1,24 +1,24 @@
 ---
-title: Managing server roles & features
+title: Managing Server Roles & Features
 slug: managing-server-roles-&-features
 sidebar_position: 4
 ---
 
-## Set Windows Roles and Features via Server Manager
+<!-- ## Set Windows Roles and Features via Server Manager -->
 
-[Windows VM](/docs/windows-and-.NET/windows-server-vm) provides a powerful GUI of Windows OS that can be accessed via [remote desktop protocol](/docs/windows-and-.NET/windows-rd-access) (RDP). It allows connect to and manage your Windows instance remotely, for example:
+[Windows VM](/windows-and-.NET/windows-server-vm) provides a powerful GUI of Windows OS that can be accessed via [remote desktop protocol](/windows-and-.NET/windows-rd-access) (RDP). It allows connect to and manage your Windows instance remotely, for example:
 
-- via the [Guacamole](/docs/windows-and-.NET/windows-rd-access#rdp-connection-via-web-client) HTML5 tool directly in your browser
-- via the [local RD client](/docs/windows-and-.NET/windows-rd-access#rdp-connection-via-local-client) (the appropriate credentials for connection establishment can be found in the email, sent after environment creation)
+- via the [Guacamole](/windows-and-.NET/windows-rd-access#rdp-connection-via-web-client) HTML5 tool directly in your browser
+- via the [local RD client](/windows-and-.NET/windows-rd-access#rdp-connection-via-local-client) (the appropriate credentials for connection establishment can be found in the email, sent after environment creation)
 
 For configuring Windows virtual private server via RDP, the inbuilt Server Manager is used. Below we highlight some of the basic functionalities it provides :
 
-- [setting server roles](/docs/windows-and-.NET/managing-server-roles-&-features#set-windows-vm-roles)
-- [adding server features](/docs/windows-and-.NET/managing-server-roles-&-features#add-features-to-windows-server-roles)
+- [setting server roles](/windows-and-.NET/managing-server-roles-&-features#set-windows-vm-roles)
+- [adding server features](/windows-and-.NET/managing-server-roles-&-features#add-features-to-windows-server-roles)
 
 ## Set Windows VM Roles
 
-Once [connected](/docs/windows-and-.NET/windows-rd-access) to the required node’s desktop, you’ll see the **Server Manager** tool opened. As an example, let’s add a new server role with the following steps.
+Once [connected](/windows-and-.NET/windows-rd-access) to the required node’s desktop, you’ll see the **Server Manager** tool opened. As an example, let’s add a new server role with the following steps.
 
 1. Click the **Add roles and features** link located on the manager’s main page.
 

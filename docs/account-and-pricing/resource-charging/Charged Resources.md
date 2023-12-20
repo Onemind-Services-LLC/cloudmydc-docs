@@ -1,16 +1,16 @@
 ---
-title: Charged resources
+title: Charged Resources
 slug: charged-resources
 sidebar_position: 2
 ---
 
 Resource consumption for each environment is charged to the account owner on an hourly basis.
 
-- [Primary Chargeable Resources](/docs/account-and-pricing/resource-charging/charged-resources#primary-chargeable-resources)
-- [Provider-Dependent Charges](/docs/account-and-pricing/resource-charging/charged-resources#provider-dependent-charges)
-- [Optional Extras](/docs/account-and-pricing/resource-charging/charged-resources#optional-extras)
+- [Primary Chargeable Resources](/account-and-pricing/resource-charging/charged-resources#primary-chargeable-resources)
+- [Provider-Dependent Charges](/account-and-pricing/resource-charging/charged-resources#provider-dependent-charges)
+- [Optional Extras](/account-and-pricing/resource-charging/charged-resources#optional-extras)
 
-You can track resource usage (_CPU, RAM, Network, Disk_) in real time via built-in [statistics monitoring](/docs/application-setting/built-in-monitoring/statistics).
+You can track resource usage (_CPU, RAM, Network, Disk_) in real time via built-in [statistics monitoring](/application-setting/built-in-monitoring/statistics).
 
 <div style={{
     display:'flex',
@@ -32,7 +32,7 @@ Resources consumed by environments provided based on the subscriptions are consi
 
 ### RAM & CPU
 
-RAM & CPU are measured in a platform resource unit called a [Cloudlet](/docs/platform-overview/cloudlet). One **Cloudlet** is equivalent to 128 MiB RAM and 400MHz CPU.
+RAM & CPU are measured in a platform resource unit called a [Cloudlet](/platform-overview/cloudlet). One **Cloudlet** is equivalent to 128 MiB RAM and 400MHz CPU.
 
 Resources are charged on an hourly basis:
 
@@ -52,7 +52,7 @@ You are not charged for the RAM used for disk cache and buffers.
 
 :::
 
-More details about cloudlet charges and the differences between Reserved / Dynamic cloudlets can be found in the [Pricing System](/docs/account-and-pricing/pricing-model-overview) and [Automatic Discounts](/docs/account-and-pricing/automatic-discounts#ramcpu) documents.
+More details about cloudlet charges and the differences between Reserved / Dynamic cloudlets can be found in the [Pricing System](/account-and-pricing/pricing-model-overview) and [Automatic Discounts](/account-and-pricing/automatic-discounts#ramcpu) documents.
 
 ## Provider-Dependent Charges
 
@@ -60,17 +60,17 @@ The following resources are charged at some hosting providers, but others includ
 
 ## Disk Space
 
-**Disk Space** usage is measured in GB. Like all platform resources, you only pay for your actual consumption (you do not need to buy extra space “just in case” you need it). More details about charging disk space can be found in the [Pricing System](/docs/account-and-pricing/pricing-model-overview) and [Automatic Discounts](/docs/account-and-pricing/automatic-discounts#disk-space) documents.
+**Disk Space** usage is measured in GB. Like all platform resources, you only pay for your actual consumption (you do not need to buy extra space “just in case” you need it). More details about charging disk space can be found in the [Pricing System](/account-and-pricing/pricing-model-overview) and [Automatic Discounts](/account-and-pricing/automatic-discounts#disk-space) documents.
 
 :::tip Tip
 
-If facing a need to store data in a [separate storage node](/docs/data-storage-container/data-storage-overview), consider using [Master](/docs/data-storage-container/use-cases/master-container) or [Compound](/docs/data-storage-container/use-cases/compound-container) data containers to lower disk space consumption and reduce overall environment cost.
+If facing a need to store data in a [separate storage node](/data-storage-container/data-storage-overview), consider using [Master](/data-storage-container/use-cases/master-container) or [Compound](/data-storage-container/use-cases/compound-container) data containers to lower disk space consumption and reduce overall environment cost.
 
 :::
 
 ## Traffic
 
-**Traffic** usage is measured in GB. Only <u>external traffic</u> is charged - the sum of incoming and outgoing traffic between your environment and the Internet. <u>Internal traffic</u> is absolutely free - traffic within your environment or between environments within the same hosting provider. More details about charging traffic can be found in the [Pricing System](/docs/account-and-pricing/pricing-model-overview) and [Automatic Discounts](/docs/account-and-pricing/automatic-discounts#traffic) documents.
+**Traffic** usage is measured in GB. Only <u>external traffic</u> is charged - the sum of incoming and outgoing traffic between your environment and the Internet. <u>Internal traffic</u> is absolutely free - traffic within your environment or between environments within the same hosting provider. More details about charging traffic can be found in the [Pricing System](/account-and-pricing/pricing-model-overview) and [Automatic Discounts](/account-and-pricing/automatic-discounts#traffic) documents.
 
 ## Optional Extras
 
@@ -80,4 +80,4 @@ With the platform you can add the following optional services to your environmen
 
 - **Built-in SSL** is a protocol which establishes a secure connection between your client and your environment (some hosting providers offer this service free of charge).
 
-More details about charges for optional services can be found in the [Pricing System](/docs/account-and-pricing/pricing-model-overview) and [Automatic Discounts](/docs/account-and-pricing/automatic-discounts#options) documents.
+More details about charges for optional services can be found in the [Pricing System](/account-and-pricing/pricing-model-overview) and [Automatic Discounts](/account-and-pricing/automatic-discounts#options) documents.

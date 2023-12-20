@@ -1,5 +1,5 @@
 ---
-title: Diaspora_ tutorial
+title: Diaspora_ Tutorial
 slug: diaspora_-tutorial
 sidebar_position: 5
 ---

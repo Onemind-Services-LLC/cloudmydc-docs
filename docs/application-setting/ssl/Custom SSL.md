@@ -1,16 +1,16 @@
 ---
-title: Custom ssl
+title: Custom SSL
 slug: custom-ssl
 sidebar_position: 3
 ---
 
-## Custom SSL Certificates
+<!-- ## Custom SSL Certificates -->
 
 **SSL certificates** support gives a significant level of security for your domain names. With the platform, hosting of applications that need SSL becomes fairly easy.
 
-In addition to the [Built-In SSL](/docs/application-setting/ssl/built-in-ssl) and Let’s Encrypt SSL, the platform provides the ability to upload and use **custom SSL certificates** for your environments. The platform supports the following certificate types:
+In addition to the [Built-In SSL](/application-setting/ssl/built-in-ssl) and Let’s Encrypt SSL, the platform provides the ability to upload and use **custom SSL certificates** for your environments. The platform supports the following certificate types:
 
-- [self-signed](/docs/application-setting/ssl/self-signed-custom-ssl)
+- [self-signed](/application-setting/ssl/self-signed-custom-ssl)
 - Wildcard
 - Multi-Domain
 - Extended validation single domain
@@ -36,8 +36,8 @@ Therefore, follow the next instruction:
 
 We’ll use **OpenSSL** as an example. Depending on the operating system you are using, perform the following steps:
 
-- [for Windows](/docs/application-setting/ssl/custom-ssl#for-windows)
-- [for Linux/MacOS/FreeBSD](/docs/application-setting/ssl/custom-ssl#for-linuxmacosfreebsd)
+- [for Windows](/application-setting/ssl/custom-ssl#for-windows)
+- [for Linux/MacOS/FreeBSD](/application-setting/ssl/custom-ssl#for-linuxmacosfreebsd)
 
 ## For Windows
 
@@ -175,7 +175,7 @@ The **Common Name** parameter value has to be equal to your purchased domain nam
 
 :::tip
 
-You can [sign certificates yourself](/docs/application-setting/ssl/self-signed-custom-ssl), follow the link to see the detailed instruction.
+You can [sign certificates yourself](/application-setting/ssl/self-signed-custom-ssl), follow the link to see the detailed instruction.
 
 :::
 
@@ -189,7 +189,7 @@ In order to be secured with a Custom SSL certificate, your environment should ha
 
 :::danger note
 
-Environments based on the **.NET**, **Go**, **Node.js** servers or [**custom Docker containers**](/docs/container/container-types) should include the certified [**load balancer**](/docs/load-balancers/load-balancing) to support custom SSL. In these cases, the external IP address should be attached to the balancer instead of an application server as it becomes the entry point of your environment.
+Environments based on the **.NET**, **Go**, **Node.js** servers or [**custom Docker containers**](/container/container-types) should include the certified [**load balancer**](/load-balancers/load-balancing) to support custom SSL. In these cases, the external IP address should be attached to the balancer instead of an application server as it becomes the entry point of your environment.
 
 :::
 
@@ -239,7 +239,7 @@ Now you need to set an **A Record** in order to point your custom domain name to
 
 2. Then, navigate to **DNS Manager** of the chosen domain registrar system (the one you’ve used for your custom domain name purchase) and set an A Record within it.
 
-Additional information and a detailed example can be found in the appropriate [Custom Domain Name](/docs/application-setting/domain-name-management/custom-domain-name) document.
+Additional information and a detailed example can be found in the appropriate [Custom Domain Name](/application-setting/domain-name-management/custom-domain-name) document.
 
 ## Upload Certificate to the Environment
 

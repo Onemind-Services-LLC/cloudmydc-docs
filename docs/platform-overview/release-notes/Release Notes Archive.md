@@ -1,5 +1,5 @@
 ---
-title: Release notes archive
+title: Release Notes Archive
 slug: release-notes-archive
 sidebar_position: 32
 ---

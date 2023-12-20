@@ -1,12 +1,10 @@
 ---
-title: Ant task
+title: Ant Task
 slug: ant-task
 sidebar_position: 1
 ---
 
-!Content Code incomplete
-
-## Ant Task Plugin
+<!-- ## Ant Task Plugin -->
 
 **[Apache Ant](https://ant.apache.org/)** is an open-source Java-based software tool for the build processes automation. It supplies many built-in tasks allowing to compile, assemble, test and run Java applications. Ant is an extremely flexible building tool, which does not force you to use any specific coding rules, directories layout, etc.
 

@@ -1,15 +1,15 @@
 ---
-title: Jetty security
+title: Jetty Security
 slug: jetty-security
 sidebar_position: 3
 ---
 
-## Security Configs for Jetty Applications
+<!-- ## Security Configs for Jetty Applications -->
 
 This document will help you to configure security realms for your **Jetty** application server in order to level up the protection of your app. Correctly configured realms provide the ability:
 
-- [to set the authentication and access control for your Jetty web application](https://cloudmydc.com/)
-- [to grant access to your app for dedicated IP-addresses](https://cloudmydc.com/)
+- to set the authentication and access control for your Jetty web application
+- to grant access to your app for dedicated IP-addresses
 
 **Realm** is a login service, which is available to all web applications on a server if it is defined in a Jetty config file. Each realm consists of a range of users and has its unique name. Every specified user has the authentication information and a set of roles associated with it. One or many different realms can be configured depending on your needs.
 

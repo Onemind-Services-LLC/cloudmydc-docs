@@ -1,10 +1,10 @@
 ---
-title: Windows server vm
+title: Windows Server VM
 slug: windows-server-vm
 sidebar_position: 2
 ---
 
-## Windows Server VM
+<!-- ## Windows Server VM -->
 
 The platform integrates support of the virtual machines (VMs), which allows offering Windows Server hosting. In this guide, we’ll show how to create a Windows VM server and the VMs hosting specifics compared to the regular containers used on the platform.
 
@@ -40,7 +40,7 @@ The availability and version of the Window VMs (e.g., _Windows Server 2019_ or _
 
 </div>
 
-Also, note that the _[horizontal scaling](/docs/application-setting/scaling-and-clustering/horizontal-scaling)_ and IPv6 options are not available for virtual machines.
+Also, note that the _[horizontal scaling](/application-setting/scaling-and-clustering/horizontal-scaling)_ and IPv6 options are not available for virtual machines.
 
 3. If VM is added to the topology, an additional **_VM Resources_** line appears in the right part of the wizard (just below the cloudlets information for containers).
 
@@ -72,7 +72,7 @@ The cost of the VM Resources is always fixed regardless of the actual consumptio
 
 :::tip Tip
 
-You can hover over the **Usage** column for a comprehensive overview of the current consumption or refer to the node **[Statistics](/docs/application-setting/built-in-monitoring/statistics)** for detailed analysis.
+You can hover over the **Usage** column for a comprehensive overview of the current consumption or refer to the node **[Statistics](/application-setting/built-in-monitoring/statistics)** for detailed analysis.
 
 <div style={{
     display:'flex',
@@ -86,7 +86,7 @@ You can hover over the **Usage** column for a comprehensive overview of the curr
 
 :::
 
-2. Some [node’s function icons](/docs/quickstart/dashboard-guide#function-icons-for-each-instance) for VM are a bit different compared to containers. The following options are available:
+2. Some [node’s function icons](/quickstart/dashboard-guide#function-icons-for-each-instance) for VM are a bit different compared to containers. The following options are available:
 
 - **Add-Ons** - installs available pluggable modules (e.g. _Env Start/Stop Scheduler_)
 - **Restart Node(s)** - restarts a VM
@@ -106,7 +106,7 @@ You can hover over the **Usage** column for a comprehensive overview of the curr
 
 :::danger Note
 
-The **[clone](/docs/environment-management/cloning-environment)** and **[migration](/docs/environment-management/environment-regions/migration-between-regions)** options are automatically disabled for environments with VMs.
+The **[clone](/environment-management/cloning-environment)** and **[migration](/environment-management/environment-regions/migration-between-regions)** options are automatically disabled for environments with VMs.
 
 <div style={{
     display:'flex',
@@ -153,7 +153,7 @@ Let’s overview these options in detail.
 
 5. In addition to the built-in web client, you can connect using any preferred local RDP application. Connect to VM based on its entry point:
 
-- If created <u>without external IP</u>, an [endpoint](/docs/application-setting/external-access-to-applications/endpoints) is created automatically and can be used for RDP connectionWindows VM endpoint for RDP
+- If created <u>without external IP</u>, an [endpoint](/application-setting/external-access-to-applications/endpoints) is created automatically and can be used for RDP connectionWindows VM endpoint for RDP
 
 <div style={{
     display:'flex',

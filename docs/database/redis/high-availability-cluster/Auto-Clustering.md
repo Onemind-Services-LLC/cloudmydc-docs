@@ -1,10 +1,10 @@
 ---
-title: Auto-clustering
+title: Auto-Clustering
 slug: auto-clustering
 sidebar_position: 1
 ---
 
-## Redis Cluster
+<!-- ## Redis Cluster -->
 
 **Redis Cluster** is a distributed implementation of Redis open-source, in-memory data structure store. It is often used for data storage, cache, message broker, and other tasks. The package for Redis Cluster provides a topology of at least three servers. Each such Primary node is complemented with a Secondary one to ensure reads load distribution and auto-recovery if the Primary goes down. Such a structure offers high performance and high availability.
 
@@ -28,7 +28,7 @@ If you want to learn more about the [Redis Cluster specifics](https://redis.io/d
 
 ## Redis Cluster Installation
 
-Automatic installation and configuration is available with the **[Redis Auto-Clustering](/docs/application-setting/scaling-and-clustering/auto-clustering-of-instances#redis)** option in the topology wizard.
+Automatic installation and configuration is available with the **[Redis Auto-Clustering](/application-setting/scaling-and-clustering/auto-clustering-of-instances#redis)** option in the topology wizard.
 
 <div style={{
     display:'flex',
@@ -40,10 +40,10 @@ Automatic installation and configuration is available with the **[Redis Auto-Clu
 
 </div>
 
-Alternatively, you can import the **_Redis Cluster_** [package manifest](https://github.com/jelastic-jps/redis-cluster/blob/main/manifest.jps) or find it in the dashboard’s [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace). Either way, you’ll see the installation frame, where you can provide the following data:
+Alternatively, you can import the **_Redis Cluster_** [package manifest](https://github.com/jelastic-jps/redis-cluster/blob/main/manifest.jps) or find it in the dashboard’s [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace). Either way, you’ll see the installation frame, where you can provide the following data:
 
 - **Nodes count** - sets the total number of Redis nodes in the cluster. The scaling is performed via the Primary-Secondary pairs. The minimal number is **6** (3 Primary and 3 Secondary nodes) and the maximum is **12** (6 Primary and 6 Secondary)
-- **Enable Horizontal Auto-Scaling** - complements cluster with [scaling triggers](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling#triggers-for-automatic-scaling) to perform automatic horizontal scaling. Automatic resharding and rebalancing will be done after adding and before removing the Primary node
+- **Enable Horizontal Auto-Scaling** - complements cluster with [scaling triggers](/application-setting/scaling-and-clustering/automatic-horizontal-scaling#triggers-for-automatic-scaling) to perform automatic horizontal scaling. Automatic resharding and rebalancing will be done after adding and before removing the Primary node
 
 :::tip Tip
 
@@ -64,10 +64,10 @@ The scaling will be performed according to the following conditions by default:
 
 :::
 
-- **Enable External IP Addresses for cluster nodes** - assigns [public IP](/docs/application-setting/external-access-to-applications/public-ip#public-ip) to each node and reconfigures cluster to work via public IP only
+- **Enable External IP Addresses for cluster nodes** - assigns [public IP](/application-setting/external-access-to-applications/public-ip#public-ip) to each node and reconfigures cluster to work via public IP only
 - **Environment** - provides environment name
-- **Display Name** - sets the preferred environment [alias](/docs/environment-management/environment-aliases)
-- **Region** - selects the [environment region](/docs/environment-management/environment-regions/choosing-a-region#environment-regions) from the list of available ones
+- **Display Name** - sets the preferred environment [alias](/environment-management/environment-aliases)
+- **Region** - selects the [environment region](/environment-management/environment-regions/choosing-a-region#environment-regions) from the list of available ones
   Click **Install** when ready.
 
 <div style={{
@@ -104,7 +104,7 @@ The cluster is ready to use. Try connecting to the admin panel to view the clust
 
 </div>
 
-You can also connect via SSH (e.g. [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser)) to make the necessary adjustments. For example, using the [redis-cli tool](https://redis.io/resources/tools/) and password from the email, you can connect to the cluster and verify it is working correctly:
+You can also connect via SSH (e.g. [Web SSH](/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser)) to make the necessary adjustments. For example, using the [redis-cli tool](https://redis.io/resources/tools/) and password from the email, you can connect to the cluster and verify it is working correctly:
 
 ```bash
 redis-cli

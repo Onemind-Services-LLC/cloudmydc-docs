@@ -1,10 +1,10 @@
 ---
-title: Apache as frontend
+title: Apache As Frontend
 slug: apache-as-frontend
 sidebar_position: 8
 ---
 
-## Apache as the Frontend of Tomcat
+<!-- ## Apache as the Frontend of Tomcat -->
 
 **Tomcat** is a reliable and rapid server which is able to operate with a large amount of data. That is the reason it can compete in performance with native web servers. Placing a secure, fast and flexible HTTP **Apache** server in front of Tomcat provides you with some additional functionality, e.g. high availability through performing the load balancing among multiple Tomcat servers, fast processing and delivering of static content, additional security issues available with Apache, extra functions via Apache modules and so on.
 
@@ -12,11 +12,10 @@ In such a way putting Tomcat behind the Apache is widely used in order to improv
 
 In this tutorial we will examine how to interconnect Apache and Tomcat servers using **_mod_proxy_** or **_mod_rewrite_** modules. With such configurations Apache will pass on requests to your Tomcat application server and relay the responses back to the client.
 
-Follow the next instruction to find out three the most popular cases of using such settings.
-
+<!-- Follow the next instruction to find out three the most popular cases of using such settings.
 - [Rewriting links](https://cloudmydc.com/)
 - [Serving static content](https://cloudmydc.com/)
-- [Load balancing](https://cloudmydc.com/)
+- [Load balancing](https://cloudmydc.com/) -->
 
 ## Rewriting Links
 

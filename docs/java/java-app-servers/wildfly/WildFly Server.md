@@ -1,10 +1,10 @@
 ---
-title: Wildfly server
+title: Wildfly Server
 slug: wildfly-server
 sidebar_position: 1
 ---
 
-## WildFly Application Server
+<!-- ## WildFly Application Server -->
 
 <div style={{
     display: 'grid',
@@ -58,7 +58,7 @@ This template utilizes a modern **systemd** initialization daemon.
 
 </div>
 
-2. In the opened environment topology wizard, navigate to the **Java** tab and select **WildFly** (the **_10-16_** versions are supported) from the list of available application servers. Then, specify the allocated resources limit using cloudlet sliders, choose a [region](/docs/environment-management/environment-regions/choosing-a-region) (if several ones are available) and edit the name of your environment.
+2. In the opened environment topology wizard, navigate to the **Java** tab and select **WildFly** (the **_10-16_** versions are supported) from the list of available application servers. Then, specify the allocated resources limit using cloudlet sliders, choose a [region](/environment-management/environment-regions/choosing-a-region) (if several ones are available) and edit the name of your environment.
 
 :::tip Note
 
@@ -107,7 +107,7 @@ Click the **Create** button when ready.
 
 In order to access the WildFly **_Administration Console_**, click the appropriate link (circled in the image above) or get URL from the email (received after server creation) alongside with other access credentials.
 
-Also, you can establish an [SSH connection](/docs/deployment-tools/ssh/ssh-access/overview) to your [WildFly server](https://cloudmydc.com/) and use the WildFly CLI inbuilt utility for managing.
+Also, you can establish an [SSH connection](/deployment-tools/ssh/ssh-access/overview) to your [WildFly server](https://cloudmydc.com/) and use the WildFly CLI inbuilt utility for managing.
 
 ## Standalone Mode
 
@@ -138,4 +138,4 @@ It is highly recommended to change the default auth_value parameter within your 
 
 :::
 
-This concludes our tutorial on the WildFly server installation! Now, you can configure it in a way you need and proceed to the [application deployment](/docs/deployment/deployment-guide).
+This concludes our tutorial on the WildFly server installation! Now, you can configure it in a way you need and proceed to the [application deployment](/deployment/deployment-guide).

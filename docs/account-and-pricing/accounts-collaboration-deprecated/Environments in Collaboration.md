@@ -1,12 +1,12 @@
 ---
-title: Environments in collaboration
+title: Environments In Collaboration
 slug: environments-in-collaboration
 sidebar_position: 4
 ---
 
-## Environments in Collaboration (Deprecated)
+<!-- ## Environments in Collaboration (Deprecated) -->
 
-_This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](/docs/account-and-pricing/accounts-collaboration/collaboration-overview) feature description._
+_This information is relevant for the platforms prior the 7.0 release. See the up-to-date [account collaboration](/account-and-pricing/accounts-collaboration/collaboration-overview) feature description._
 
 Within a collaboration, there is the possibility to create, share and manage environments available at the primary account. The permissions for performing appropriate actions differ based on the type of account you have - primary or user.
 
@@ -24,9 +24,9 @@ A member of collaboration with the user account can:
 
 And now, let’s see how to perform all of these actions within collaboration:
 
-- [Create environment](/docs/account-and-pricing/accounts-collaboration-deprecated/environments-in-collaboration#create-a-new-environment-in-collaboration)
-- [Share environment](/docs/account-and-pricing/accounts-collaboration-deprecated/environments-in-collaboration#share-environment-with-collaboration-users)
-- [Use shared environment](/docs/account-and-pricing/accounts-collaboration-deprecated/environments-in-collaboration#use-shared-environments)
+- [Create environment](/account-and-pricing/accounts-collaboration-deprecated/environments-in-collaboration#create-a-new-environment-in-collaboration)
+- [Share environment](/account-and-pricing/accounts-collaboration-deprecated/environments-in-collaboration#share-environment-with-collaboration-users)
+- [Use shared environment](/account-and-pricing/accounts-collaboration-deprecated/environments-in-collaboration#use-shared-environments)
 
 ## Create a New Environment in Collaboration
 
@@ -45,7 +45,7 @@ You can create a new environment in a collaboration account in two cases:
 
 </div>
 
-In the first case (when you own the **primary account**), the environment is created the usual way, as it is described in the [Setting Up Environment](/docs/environment-management/setting-up-environment) document.
+In the first case (when you own the **primary account**), the environment is created the usual way, as it is described in the [Setting Up Environment](/environment-management/setting-up-environment) document.
 
 When you are a **user with permission** to create an environment, then this process is slightly different. Let’s consider the steps in this case:
 

@@ -1,18 +1,18 @@
 ---
-title: Database connection strings
+title: Database Connection Strings
 slug: database-connection-strings
 sidebar_position: 4
 ---
 
 import obj from './DatabaseConnectionStrings.json'
 
-## Database Connection Strings
+<!-- ## Database Connection Strings -->
 
 All instances, created inside the platform, are operated as independent containers. To establish connection to a database from the application, deployed within application server, you need to set a connection string for it, using either:
 
-- [CNAME](/docs/database/database-hosting/db-hosting-overview#database-admin-panel-url) of database, e.g. _node{node_id}-{environment_name}.{hoster_domain}_
+- [CNAME](/database/database-hosting/db-hosting-overview#database-admin-panel-url) of database, e.g. _node{node_id}-{environment_name}.{hoster_domain}_
 - Private IP address
-- [Public IP](/docs/application-setting/external-access-to-applications/public-ip#public-ip) address (if attached)
+- [Public IP](/application-setting/external-access-to-applications/public-ip#public-ip) address (if attached)
 
 :::danger Note
 
@@ -22,8 +22,8 @@ Specifying localhost within a connection string will not work for establishing c
 
 Depending on the engine that powers your environment, refer to one of the sections below:
 
-- [Java](/docs/database/database-hosting/database-connection-strings#database-connection-for-java-apps)
-- [PHP](/docs/database/database-hosting/database-connection-strings#database-connection-for-php-apps)
+- [Java](/database/database-hosting/database-connection-strings#database-connection-for-java-apps)
+- [PHP](/database/database-hosting/database-connection-strings#database-connection-for-php-apps)
 
 ## Database Connection for Java Apps
 
@@ -110,9 +110,9 @@ _“jdbc:{dbtype}://{dbtype}{node_id}-{environment_name}.{hoster_domain}/{dbname
 
 :::tip Tip
 
-Your hosting provider domain can be found within the last column of the appropriate table in the [Hosters Info](/docs/quickstart/hosters-list-&-info#paas-hosting-providers) page.
+Your hosting provider domain can be found within the last column of the appropriate table in the [Hosters Info](/quickstart/hosters-list-&-info#paas-hosting-providers) page.
 
-In case your hosting provider platform has several [environment regions](/docs/environment-management/environment-regions/choosing-a-region#environment-regions) to choose, the {hoster_domain} value for your environment can differ from the general platform’s one.
+In case your hosting provider platform has several [environment regions](/environment-management/environment-regions/choosing-a-region#environment-regions) to choose, the {hoster_domain} value for your environment can differ from the general platform’s one.
 
 :::
 

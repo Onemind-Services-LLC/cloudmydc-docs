@@ -1,10 +1,10 @@
 ---
-title: Add apache modules
+title: Add Apache Modules
 slug: add-apache-modules
 sidebar_position: 4
 ---
 
-## Adding Custom Apache Modules
+<!-- ## Adding Custom Apache Modules -->
 
 To meet all of the requirements of your application, you might need to add some **custom Apache modules**. Some of these are not listed among the [Apache modules](https://cloudmydc.com/) installed in the platform by default. You can enable your own Apache modules in the environment by following the instructions below:
 

@@ -1,10 +1,10 @@
 ---
-title: Php sessions clustering
+title: PHP Sessions Clustering
 slug: php-sessions-clustering
 sidebar_position: 9
 ---
 
-## PHP Sessions Clustering
+<!-- ## PHP Sessions Clustering -->
 
 The high availability of your PHP application can be achieved by implementing PHP sessions clustering in the cloud. To successfully handle application server failover we create environment with Memcached, several Apache servers, and an NGINX load balancer:
 
@@ -44,7 +44,7 @@ If the original server fails, the next request is routed to another application 
 
 When the server answers the request, it also updates the session in the Memcached node. Thus there is no interruption of the app caused by the original server failure - the failover is successfully handled.
 
-At the same time, the NGINX load balancer is distributing traffic across the cluster containing HTTP resources. You can [check the load balancing](/docs/load-balancers/nginx/testing-load-balancing) in the platform using different load balancing tools.
+At the same time, the NGINX load balancer is distributing traffic across the cluster containing HTTP resources. You can [check the load balancing](/load-balancers/nginx/testing-load-balancing) in the platform using different load balancing tools.
 
 ## How to Configure
 

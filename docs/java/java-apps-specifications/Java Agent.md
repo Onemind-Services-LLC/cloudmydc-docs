@@ -1,10 +1,10 @@
 ---
-title: Java agent
+title: Java Agent
 slug: java-agent
 sidebar_position: 2
 ---
 
-## Java Agent Integration
+<!-- ## Java Agent Integration -->
 
 **Java agent** is an interceptor in front of the application’s main method. Generally, it is a .jar package statically loaded in the _PreMain-Class_ method, which implements a mechanism of re-defining the running classes' content. The platform allows you to automatically launch such an applet at startup (just after the JVM is initialized).
 
@@ -40,7 +40,7 @@ Follow the next steps to add a custom Java agent into a container:
 
 </div>
 
-2. In the opened [configuration file manager](/docs/application-setting/configuration-file-manager), you can **Upload** your Java agent **.jar** file to any preferable location. Use the **Actions** list at the top panel (for the current folder) or the context menu when hovering over the particular directory.
+2. In the opened [configuration file manager](/application-setting/configuration-file-manager), you can **Upload** your Java agent **.jar** file to any preferable location. Use the **Actions** list at the top panel (for the current folder) or the context menu when hovering over the particular directory.
 
 <div style={{
     display:'flex',
@@ -54,7 +54,7 @@ Follow the next steps to add a custom Java agent into a container:
 
 Provide a link to the required file or locate it on the local machine to **Upload**.
 
-3. Next, switch to the [**_variables.conf_**](/docs/environment-management/environment-variables/custom-environment-variables) file (the exact location vary based on the particular software stack) to provide custom variables and [JVM options](/docs/environment-management/environment-variables/java-options-and-arguments). Here, you can specify the javaagent parameter with a path to the required **_jar_** file. For example: _javaagent:/opt/tomcat/temp/my-java-agent.jar_
+3. Next, switch to the [**_variables.conf_**](/environment-management/environment-variables/custom-environment-variables) file (the exact location vary based on the particular software stack) to provide custom variables and [JVM options](/environment-management/environment-variables/java-options-and-arguments). Here, you can specify the javaagent parameter with a path to the required **_jar_** file. For example: _javaagent:/opt/tomcat/temp/my-java-agent.jar_
 
 <div style={{
     display:'flex',

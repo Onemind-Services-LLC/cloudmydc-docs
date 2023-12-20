@@ -1,5 +1,5 @@
 ---
-title: Memcached memory allocation
+title: Memcached Memory Allocation
 slug: memcached-memory-allocation
 sidebar_position: 3
 ---

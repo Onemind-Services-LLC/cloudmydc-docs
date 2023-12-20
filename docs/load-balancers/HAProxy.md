@@ -1,10 +1,10 @@
 ---
-title: Haproxy
+title: HAProxy
 slug: haproxy
 sidebar_position: 4
 ---
 
-## HAProxy
+<!-- ## HAProxy -->
 
 **HAProxy** (which stands for _High Availability Proxy_) is a fast and reliable open-source solution, which is able to handle huge traffic and offers high availability, load balancing, and proxying for TCP and HTTP-based applications. Similar to Nginx-Balancer, it uses a single-process, event-driven model, which consumes a low (and stable) amount of memory, enabling HAProxy to process a large number of concurrent requests simultaneously, ensuring smooth load-balancing with smart persistence and DDOS mitigation.
 
@@ -108,7 +108,7 @@ where the values inside the curly brackets should be substituted with your custo
 - _{server_internal_ip}_ - address of the required server, which can be found through selecting the Additionally button next to it
   Once these configurations are done, **Save** the made changes and **Restart** the load-balancer server to apply them.
 
-2. Through accessing the appropriate HAProxy node via the platform [SSH Gateway](/docs/deployment-tools/ssh/ssh-access/overview):
+2. Through accessing the appropriate HAProxy node via the platform [SSH Gateway](/deployment-tools/ssh/ssh-access/overview):
 
 <div style={{
     display:'flex',

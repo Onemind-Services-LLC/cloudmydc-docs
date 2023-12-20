@@ -1,10 +1,10 @@
 ---
-title: Upgrade & refill account
+title: Upgrade & Refill Account
 slug: upgrade-&-refill-account
 sidebar_position: 11
 ---
 
-After the initial trial period, if you are satisfied with our product and wish to continue to use the platform, your account should be upgraded to the [billing](/docs/account-and-pricing/account-types) one. The conversion will additionally remove any limitations and provide access to all of the available functionality.
+After the initial trial period, if you are satisfied with our product and wish to continue to use the platform, your account should be upgraded to the [billing](/account-and-pricing/account-types) one. The conversion will additionally remove any limitations and provide access to all of the available functionality.
 
 :::tip Tip
 

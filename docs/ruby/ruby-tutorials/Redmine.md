@@ -4,9 +4,6 @@ slug: redmine
 sidebar_position: 1
 ---
 
-##CONTEXT CODE
-##MISSING IMAGE ll Application Server Configurations #1
-
 ## How to Deploy Redmine
 
 **Redmine** is an open-source web-based system for projects managing and bugs tracking. Written using the Ruby on Rails framework, it is cross-platform and cross-database.

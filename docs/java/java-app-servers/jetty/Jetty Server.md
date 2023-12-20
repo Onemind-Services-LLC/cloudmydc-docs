@@ -1,10 +1,10 @@
 ---
-title: Jetty server
+title: Jetty Server
 slug: jetty-server
 sidebar_position: 1
 ---
 
-## Eclipse Jetty
+<!-- ## Eclipse Jetty -->
 
 [**Eclipse Jetty**](https://cloudmydc.com/) is an open source Java-based HTTP (web) server, which provides the latest Java Servlet API, HTTP/2 protocol, WebSocket support and more. Jetty is widely used within various projects and products (both in development and production) due to the following features:
 
@@ -72,4 +72,4 @@ A Jetty server home page will be opened in a new browser page:
 
 </div>
 
-As you can see the Eclipse Jetty server is up and running, so you can proceed to the [application deployment](/docs/deployment/deployment-guide).
+As you can see the Eclipse Jetty server is up and running, so you can proceed to the [application deployment](/deployment/deployment-guide).

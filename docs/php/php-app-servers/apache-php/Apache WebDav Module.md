@@ -1,12 +1,10 @@
 ---
-title: Apache webdav module
+title: Apache WebDAV Module
 slug: apache-webdav-module
 sidebar_position: 5
 ---
 
-##CONTEXT CODE
-
-## Apache WebDav Module
+<!-- ## Apache WebDav Module -->
 
 While setting up a website you can face the need to build some complicated method of viewing and updating the information on the site. There are lots of solutions - using a local copy, using a combination of HTTP and FTP tools to download the original and upload the changes etc. But also as an easy solution you can use **Web-based Distributed Authoring and Versioning (WebDAV)** which is available in the platform.
 

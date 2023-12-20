@@ -1,14 +1,14 @@
 ---
-title: Database configuration files
+title: Database Configuration Files
 slug: database-configuration-files
 sidebar_position: 2
 ---
 
 import obj from './DatabaseConfigurationFiles.json'
 
-## Database Configuration Files
+<!-- ## Database Configuration Files -->
 
-In this guide, we’ll list all the main configuration files in the [platform-managed database](/docs/quickstart/software-stack-versions) servers. Each line of the table corresponds to the folder with configs for the databases listed in the Database Types column.
+In this guide, we’ll list all the main configuration files in the [platform-managed database](/quickstart/software-stack-versions) servers. Each line of the table corresponds to the folder with configs for the databases listed in the Database Types column.
 
 <div style={{
         width: '100%',
@@ -142,7 +142,7 @@ Alternatively, you can override any of the settings in the **_/etc/my.cnf_** fil
 
 The database servers include the **/var/spool/cron** folder with a config file, where cron jobs can be configured.
 
-For example, you can set the [scheduled backups](/docs/database/database-hosting/manual-database-backups#manual-database-backups) of your database. The required cron expression is included in the cron config file by default. You just need to uncomment the appropriate line and, if necessary, adjust it based on your custom requirements.
+For example, you can set the [scheduled backups](/database/database-hosting/manual-database-backups#manual-database-backups) of your database. The required cron expression is included in the cron config file by default. You just need to uncomment the appropriate line and, if necessary, adjust it based on your custom requirements.
 
 <div style={{
     display:'flex',
@@ -154,11 +154,11 @@ For example, you can set the [scheduled backups](/docs/database/database-hosting
 
 </div>
 
-You can find more information in the [Setting Up Cronjob](/docs/application-setting/scheduling-configuration/setting-up-cronjob#setting-up-cronjob) documentation.
+You can find more information in the [Setting Up Cronjob](/application-setting/scheduling-configuration/setting-up-cronjob#setting-up-cronjob) documentation.
 
 ## SCRIPTS
 
-This folder contains the default **_[backup_script.sh](/docs/database/database-hosting/manual-database-backups#manual-database-backups)_** script. You can also use the **/var/lib/jelastic/bin** folder for uploading your custom scripts.
+This folder contains the default **_[backup_script.sh](/database/database-hosting/manual-database-backups#manual-database-backups)_** script. You can also use the **/var/lib/jelastic/bin** folder for uploading your custom scripts.
 
 <div style={{
     display:'flex',
@@ -172,7 +172,7 @@ This folder contains the default **_[backup_script.sh](/docs/database/database-h
 
 ## BACKUP
 
-The **/var/lib/jelastic/backup** folder is used for storing the [database backup](/docs/database/database-hosting/manual-database-backups#manual-database-backups) files. You can use these files for restoring your database data.
+The **/var/lib/jelastic/backup** folder is used for storing the [database backup](/database/database-hosting/manual-database-backups#manual-database-backups) files. You can use these files for restoring your database data.
 
 <div style={{
     display:'flex',

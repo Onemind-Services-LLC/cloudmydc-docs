@@ -1,12 +1,10 @@
 ---
-title: Release notes 8.3
+title: Release Notes 8.3
 slug: release-notes-8.3
 sidebar_position: 2
 ---
 
 import obj from './ReleaseNotes8.3.json'
-
-## CloudMyDc Application Platform 8.3
 
 _This document is preliminary and subject to change._
 
@@ -46,7 +44,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.3#almalinux-9-base-os-image">
+                <a href="/platform-overview/release-notes/release-notes-8.3#almalinux-9-base-os-image">
                     Learn More >>
                 </a>
             </div>
@@ -65,7 +63,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.3#subscription-improvements">
+                <a href="/platform-overview/release-notes/release-notes-8.3#subscription-improvements">
                     Learn More >>
                 </a>
             </div>
@@ -109,7 +107,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.3#action-initiator-for-emails">
+                <a href="/platform-overview/release-notes/release-notes-8.3#action-initiator-for-emails">
                     Learn More >>
                 </a>
             </div>
@@ -128,7 +126,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.3#api-changes">
+                <a href="/platform-overview/release-notes/release-notes-8.3#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -147,7 +145,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.3#software-stack-versions">
+                <a href="/platform-overview/release-notes/release-notes-8.3#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -191,7 +189,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.3#fixes-compatible-with-prior-versions">
+                <a href="/platform-overview/release-notes/release-notes-8.3#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -210,7 +208,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.3#bug-fixes">
+                <a href="/platform-overview/release-notes/release-notes-8.3#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -221,7 +219,7 @@ Fixed
 
 ## AlmaLinux 9 Base OS Image
 
-Starting with the current 8.3 release, CloudMyDc Application Platform starts transitioning to the [software stacks](/docs/quickstart/software-stack-versions) based on the new **_AlmaLinux 9_** images (from the previously used CentOS 7). Such a change ensures support of all the up-to-date functionality, modern security standards, and compatibility with all the latest software solutions.
+Starting with the current 8.3 release, CloudMyDc Application Platform starts transitioning to the [software stacks](/quickstart/software-stack-versions) based on the new **_AlmaLinux 9_** images (from the previously used CentOS 7). Such a change ensures support of all the up-to-date functionality, modern security standards, and compatibility with all the latest software solutions.
 
 The transition process will be gradual and non-intrusive. It follows the next points:
 
@@ -229,8 +227,8 @@ The transition process will be gradual and non-intrusive. It follows the next po
 - All the newly released stack versions will be based on AlmaLinux 9, so the whole pool of images will be seamlessly replaced with the new OS over time.
 - Updates for the CentOS 7 based images will still be provided in case of critical patches and security issues.
 - In the dashboard, tags based on the AlmaLinux 9 will be explicitly highlighted.
-- [Redeployment](/docs/category/container-deployment) from the CentOS 7 to the AlmaLinux 9 version of the stack can be performed without any setbacks. <u>However, downgrading back to CentOS 7 is not supported.</u>
-- The up-to-date list of the [software stacks](/docs/quickstart/software-stack-versions) based on the AlmaLinux 9 image can be checked in the linked document.
+- [Redeployment](/category/container-deployment) from the CentOS 7 to the AlmaLinux 9 version of the stack can be performed without any setbacks. <u>However, downgrading back to CentOS 7 is not supported.</u>
+- The up-to-date list of the [software stacks](/quickstart/software-stack-versions) based on the AlmaLinux 9 image can be checked in the linked document.
 
 <div style={{
     display:'flex',
@@ -242,25 +240,25 @@ The transition process will be gradual and non-intrusive. It follows the next po
 
 </div>
 
-Alongside the AlmaLinux 9 image implementation, some new functionality is introduced, including updated key generation (_rsa-sha2-256_ and _rsa-sha2-512_ signatures support), updated Guacamole ([Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh)) client, and **_[nftables](https://netfilter.org/projects/nftables/)_** netfilter (replaces _iptables_). The _nftables_ solution is a new recommended choice for firewall rules management. It offers unified and consistent syntax (contrary to the _xtables_ utilities), high performance through maps and concatenations, and increased security as rules get translated into bytecode. At the same time, all the dashboard UI and API calls remain the same as before so that the management process is unchanged.
+Alongside the AlmaLinux 9 image implementation, some new functionality is introduced, including updated key generation (_rsa-sha2-256_ and _rsa-sha2-512_ signatures support), updated Guacamole ([Web SSH](/deployment-tools/ssh/ssh-access/web-ssh)) client, and **_[nftables](https://netfilter.org/projects/nftables/)_** netfilter (replaces _iptables_). The _nftables_ solution is a new recommended choice for firewall rules management. It offers unified and consistent syntax (contrary to the _xtables_ utilities), high performance through maps and concatenations, and increased security as rules get translated into bytecode. At the same time, all the dashboard UI and API calls remain the same as before so that the management process is unchanged.
 
-Other stack-related changes include an updated list of [supported OS distributions](/docs/container/container-image-requirements), including **CentOS Stream 9** addition and **Debian 9** deprecation.
+Other stack-related changes include an updated list of [supported OS distributions](/container/container-image-requirements), including **CentOS Stream 9** addition and **Debian 9** deprecation.
 
-[More info](/docs/container/container-image-requirements)
+[More info](/container/container-image-requirements)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Subscription Improvements
 
-The recently implemented **[Subscription-Based Product](/docs/account-and-pricing/subscription-based-products)** solution was further improved in the current release to ensure the best experience for the customers. All the new changes are seamlessly integrated into the dedicated dashboard’s **_Subscription_** section.
+The recently implemented **[Subscription-Based Product](/account-and-pricing/subscription-based-products)** solution was further improved in the current release to ensure the best experience for the customers. All the new changes are seamlessly integrated into the dedicated dashboard’s **_Subscription_** section.
 
 <div style={{
     display:'flex',
@@ -311,37 +309,37 @@ Lastly the ability to enable/disable **Auto Pay** option was implemented, allowi
 
 </div>
 
-[More info](/docs/account-and-pricing/subscription-based-products)
+[More info](/account-and-pricing/subscription-based-products)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Action Initiator for Emails
 
-CloudMyDc Application Platform provides a powerful [collaboration functionality](/docs/account-and-pricing/accounts-collaboration/collaboration-overview#account-collaboration) that allows multiple users to work on the same account. However, with high participants number and active development, it may become difficult to track all the actions performed by individuals and create confusion on whether the account is compromised. In order to help the tracking efforts, the email notifications were extended with the “action initiator” data. Depending on the operation, it can be the email address of the collaboration member or a reference to the internal trigger (e.g., [automatic horizontal scaling](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling)).
+CloudMyDc Application Platform provides a powerful [collaboration functionality](/account-and-pricing/accounts-collaboration/collaboration-overview#account-collaboration) that allows multiple users to work on the same account. However, with high participants number and active development, it may become difficult to track all the actions performed by individuals and create confusion on whether the account is compromised. In order to help the tracking efforts, the email notifications were extended with the “action initiator” data. Depending on the operation, it can be the email address of the collaboration member or a reference to the internal trigger (e.g., [automatic horizontal scaling](/application-setting/scaling-and-clustering/automatic-horizontal-scaling)).
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## API Changes
 
-Below, you can find a list of all changes to the public API in the 8.3 platform version (compared to the preceding [8.2.2](/docs/platform-overview/release-notes/release-notes-8.2#api-changes) ones):
+Below, you can find a list of all changes to the public API in the 8.3 platform version (compared to the preceding [8.2.2](/platform-overview/release-notes/release-notes-8.2#api-changes) ones):
 
-- Added new **_SetAutopay_**, **_MoveProduct_**, **_UpdateSubscription_**, **_UpcomingInvoice_**, and **_DiscardUpdateSubscription_** API methods due to [subscription](/docs/platform-overview/release-notes/release-notes-8.3#subscription-improvements) changes.
+- Added new **_SetAutopay_**, **_MoveProduct_**, **_UpdateSubscription_**, **_UpcomingInvoice_**, and **_DiscardUpdateSubscription_** API methods due to [subscription](/platform-overview/release-notes/release-notes-8.3#subscription-improvements) changes.
 - Added a new **_invalidateSessions_** parameter to all the password reset methods, which allows terminating all active user sessions (except the current one).
 
 The API documentation’s complete review has started in order to provide a comprehensive description of all the methods and their parameters. Currently, most of the **_billing_** and **_environment_** services have been updated. You can expect complete coverage over the course of several future releases.
@@ -353,7 +351,7 @@ The API documentation’s complete review has started in order to provide a comp
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -472,7 +470,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -481,16 +479,16 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/quickstart/software-stack-versions)
+[More info](/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#cloudmydc-application-platform-83">
         Back to the top
     </a>
 </div>

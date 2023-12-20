@@ -1,12 +1,12 @@
 ---
-title: Litespeed web server
+title: Litespeed Web Server
 slug: litespeed-web-server
 sidebar_position: 3
 ---
 
 import obj from './LiteSpeedWebServer.json'
 
-## LiteSpeed Web Server
+<!-- ## LiteSpeed Web Server -->
 
 :::tip
 
@@ -99,7 +99,7 @@ You may want to adjust some [dedicated environment variables](https://cloudmydc.
 
 :::
 
-Configure any other required parameters ([cloudlets](/docs/platform-overview/cloudlet), disk space, [regions](https://cloudmydc.com/), etc.) and proceed with the **Create** button.
+Configure any other required parameters ([cloudlets](/platform-overview/cloudlet), disk space, [regions](https://cloudmydc.com/), etc.) and proceed with the **Create** button.
 
 3. After creation, you can view the default _phpinfo_ data on the server by clicking **Open in Browser** next to your LiteSpeed server:
 

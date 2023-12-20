@@ -1,10 +1,10 @@
 ---
-title: Collaboration overview
+title: Collaboration Overview
 slug: collaboration-overview
 sidebar_position: 1
 ---
 
-## Account Collaboration
+<!-- ## Account Collaboration -->
 
 Every large project is a result of the joint effort of multiple people. However, different team members working in a single account is not an efficient workflow that can cause numerous problems (including security issues). The platform provides a reliable **_account collaboration_** feature that greatly facilitates joint development and management, ensuring successful and efficient collaboration.
 
@@ -20,11 +20,11 @@ The core idea is pretty straightforward - one user (_primary account_) hosts all
 
 </div>
 
-The **primary account** has full access to all hosted environments regardless of whether they are shared or not (including ones created by collaboration members). It is responsible for managing collaboration and its members - inviting users, adjusting shared components, specifying [roles and permissions](/docs/account-and-pricing/accounts-collaboration/collaboration-roles-policies), etc. However, be aware that all charges for the shared environments (including actions performed by collaborators) are applied to this account.
+The **primary account** has full access to all hosted environments regardless of whether they are shared or not (including ones created by collaboration members). It is responsible for managing collaboration and its members - inviting users, adjusting shared components, specifying [roles and permissions](/account-and-pricing/accounts-collaboration/collaboration-roles-policies), etc. However, be aware that all charges for the shared environments (including actions performed by collaborators) are applied to this account.
 
 **Collaboration members** are accounts that have accepted a collaboration invite from the primary account. The members are not charged for the shared environments and can work with them just as with regular ones. However, the list of allowed actions is defined and managed by the primary account (or other collaborators with the appropriate permission).
 
-If provided with sufficient permissions, a member can create new environments on the primary collaboration account. In such a case, limitations ([quotas](/docs/account-and-pricing/quotas-system)) of the primary account will be considered, allowing to bypass any restrictions of the member’s account. Once again, all charges for the environment usage will be applied to the primary account.
+If provided with sufficient permissions, a member can create new environments on the primary collaboration account. In such a case, limitations ([quotas](/account-and-pricing/quotas-system)) of the primary account will be considered, allowing to bypass any restrictions of the member’s account. Once again, all charges for the environment usage will be applied to the primary account.
 
 :::danger Note
 

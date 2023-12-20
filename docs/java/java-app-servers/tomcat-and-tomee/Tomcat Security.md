@@ -1,10 +1,11 @@
 ---
-title: Tomcat security
+title: Tomcat Security
 slug: tomcat-security
 sidebar_position: 5
 ---
 
-## Security Configs for Tomcat Applications
+<!-- ## Security Configs for Tomcat Applications -->
+
 This instructions shows how to protect an application running on a **Tomcat** server in the platform. We recommend two possible solutions on how to restrict access to your app:
 
 - request the user authentication

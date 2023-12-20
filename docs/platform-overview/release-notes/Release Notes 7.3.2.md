@@ -1,12 +1,10 @@
 ---
-title: Release notes 7.3.2
+title: Release Notes 7.3.2
 slug: release-notes-7.3.2
 sidebar_position: 10
 ---
 
 import obj from './ReleaseNotes7.3.2.json'
-
-## CloudMyDc Application Platform 7.3.2
 
 _This document is preliminary and subject to change._
 
@@ -50,7 +48,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.3.2#ssh-gate-cryptography-update">
+                <a href="/platform-overview/release-notes/release-notes-7.3.2#ssh-gate-cryptography-update">
                     Learn More >>
                 </a>
             </div>
@@ -69,7 +67,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.3.2#software-stack-versions">
+                <a href="/platform-overview/release-notes/release-notes-7.3.2#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -113,7 +111,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.3.2#fixes-compatible-with-prior-versions">
+                <a href="/platform-overview/release-notes/release-notes-7.3.2#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -132,7 +130,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.3.2#bug-fixes">
+                <a href="/platform-overview/release-notes/release-notes-7.3.2#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -143,21 +141,21 @@ Fixed
 
 ## SSH Gate Cryptography Update
 
-In the current 7.3.2 release, the platform **[SSH Gate](/docs/deployment-tools/ssh/ssh-overview)** components were updated to support new public key algorithms and the latest SSH versions. The list of changes includes the following improvements:
+In the current 7.3.2 release, the platform **[SSH Gate](/deployment-tools/ssh/ssh-overview)** components were updated to support new public key algorithms and the latest SSH versions. The list of changes includes the following improvements:
 
 - support for RSA SHA-2 host key signatures
 - the server-sig-algs extension support
 - handshake using the ssh-rsa keys signed using the ssh-rsa-sha2-256 (ssh-rsa-sha2-512) algorithm
 - added key exchange method using Curve25519 and Curve448 (curve25519-sha256 only)
 
-[More info](/docs/deployment-tools/ssh/ssh-overview)
+[More info](/deployment-tools/ssh/ssh-overview)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -276,7 +274,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -285,16 +283,16 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/platform-overview/release-notes/release-notes-7.3.2#software-stack-versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/platform-overview/release-notes/release-notes-7.3.2#software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/platform-overview/release-notes/release-notes-7.3.2#software-stack-versions)
+[More info](/platform-overview/release-notes/release-notes-7.3.2#software-stack-versions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

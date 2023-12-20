@@ -1,5 +1,5 @@
 ---
-title: Cloning environment
+title: Cloning Environment
 slug: cloning-environment
 sidebar_position: 4
 ---
@@ -20,18 +20,18 @@ sidebar_position: 4
 
 </div>
 
-Also, if talking about more complex and sophisticated projects (which implies the involvement of the whole development team), multiple copies of your application (dedicated to a specific task) are recommended. The most common application [lifecycle](/docs/application-setting/application-lifecycle-management) implementation involves the following stages:
+Also, if talking about more complex and sophisticated projects (which implies the involvement of the whole development team), multiple copies of your application (dedicated to a specific task) are recommended. The most common application [lifecycle](/application-setting/application-lifecycle-management) implementation involves the following stages:
 
 - **development** - for developers to create and modify features
 - **testing** - for quality assurance to discover and analyze possible issues
 - **production** - the latest actual application version, provisioned for end-customers use
 
-Below, we’ll provide information on [how to make an environment copy](/docs/environment-management/cloning-environment#how-to-clone-environment) and [some common use cases](/docs/environment-management/cloning-environment#common-use-cases).
+Below, we’ll provide information on [how to make an environment copy](/environment-management/cloning-environment#how-to-clone-environment) and [some common use cases](/environment-management/cloning-environment#common-use-cases).
 
 :::tip
 **Take into consideration** the following specific points of environment cloning at the platform:
 
-- based on the layer [scaling mode](/docs/application-setting/scaling-and-clustering/horizontal-scaling), cloned containers will be either created from the appropriate base image (_stateless_) or copied from the master container (_stateful_)
+- based on the layer [scaling mode](/application-setting/scaling-and-clustering/horizontal-scaling), cloned containers will be either created from the appropriate base image (_stateless_) or copied from the master container (_stateful_)
 - you may experience a short-term freeze on source containers due to memory state migration to the cloned nodes (the implementation specifics is similar to live migration)
 - while cloning a Windows-based environment, containers will be temporarily stopped, so be ready for a short downtime
 
@@ -73,7 +73,7 @@ For some specific cases, additional adjustments are required to make your enviro
 
 - nodes' IP addresses and hostnames will differ from the initial ones and, in case of being “hardcoded” within config files, should be re-adjusted manually
 - if you’ve faced a problem when cloning a massive environment (i.e. with more than 1TB of data being stored in containers), please contact your hosting provider for assistance
-- an environment in [collaboration](/docs/account-and-pricing/accounts-collaboration/collaboration-overview) can be cloned only by its owner; herewith, the created copy won’t be available to collaborators by default
+- an environment in [collaboration](/account-and-pricing/accounts-collaboration/collaboration-overview) can be cloned only by its owner; herewith, the created copy won’t be available to collaborators by default
 
 :::
 
@@ -86,8 +86,8 @@ Now, you can re-configure it, deploy new application versions, and apply any top
 Consequently, you can use your environment in the following ways:
 
 - rename (change internal domain) your environment
-- [swap domains](/docs/application-setting/domain-name-management/swap-domains) to redirect your clients to the upgraded project
-- implement [blue-green deployment](/docs/application-setting/traffic-distributor/use-cases/blue-green-deploy) to allow so-called “invisible” updates, which will not cause any downtime for your application
+- [swap domains](/application-setting/domain-name-management/swap-domains) to redirect your clients to the upgraded project
+- implement [blue-green deployment](/application-setting/traffic-distributor/use-cases/blue-green-deploy) to allow so-called “invisible” updates, which will not cause any downtime for your application
 
 <div style={{
     display:'flex',
@@ -99,7 +99,7 @@ Consequently, you can use your environment in the following ways:
 
 </div>
 
-- perform applications [A/B testing](/docs/application-setting/traffic-distributor/use-cases/a-b-testing) (i.e. compare different versions) to designate which one provides better user appeal
+- perform applications [A/B testing](/application-setting/traffic-distributor/use-cases/a-b-testing) (i.e. compare different versions) to designate which one provides better user appeal
 
 <div style={{
     display:'flex',
@@ -111,7 +111,7 @@ Consequently, you can use your environment in the following ways:
 
 </div>
 
-achieve advanced _[failover protection](/docs/application-setting/traffic-distributor/use-cases/failover-protection)_ of your application
+achieve advanced _[failover protection](/application-setting/traffic-distributor/use-cases/failover-protection)_ of your application
 
 <div style={{
     display:'flex',
@@ -123,7 +123,7 @@ achieve advanced _[failover protection](/docs/application-setting/traffic-distri
 
 </div>
 
-- configure data storing from several environments in a single [Dedicated Storage Container](/docs/data-storage-container/use-cases/dedicated-container) to utilize disk space more efficiently
+- configure data storing from several environments in a single [Dedicated Storage Container](/data-storage-container/use-cases/dedicated-container) to utilize disk space more efficiently
 - clone environment to create a “snapshot” of the whole setup
 - you can configure replication or synchronization of data from the production to clone, ensuring that data on your testing/staging environment remains actual
 

@@ -1,14 +1,14 @@
 ---
-title: Websockets support for java
+title: Websockets Support For Java
 slug: websockets-support-for-java
 sidebar_position: 2
 ---
 
-## WebSockets Support for Java
+<!-- ## WebSockets Support for Java -->
 
 The **WebSocket protocol** was implemented to replace the existing bi-directional communication mechanisms that uses HTTP as a transport layer, as HTTP was not initially meant to be used for these purposes. This new technology ensures establishment of a single full-duplex TCP connection between client and server, where messages are instantly transmitted with little overhead, both upstream and downstream at once. At the same time, WebSockets technology is designed to work over the standard HTTP ports (80 and 443) and to support HTTP proxies and intermediaries, representing a trade-off between efficiency and reliability
 
-The platform provides you with an advanced and complemented WebSockets support by means of integrating this technology to the [Shared Load Balancer](/docs/application-setting/external-access-to-applications/shared-load-balancer) and [NGINX balancer node](/docs/load-balancers/load-balancing), so you can use it even without external IP address attached to your server. The easiest way to configure the WebSockets support for your application is to place an NGINX balancer in front of it - the detailed workflow can be seen [here](/docs/deployment-tools/web-sockets/websockets-support).
+The platform provides you with an advanced and complemented WebSockets support by means of integrating this technology to the [Shared Load Balancer](/application-setting/external-access-to-applications/shared-load-balancer) and [NGINX balancer node](/load-balancers/load-balancing), so you can use it even without external IP address attached to your server. The easiest way to configure the WebSockets support for your application is to place an NGINX balancer in front of it - the detailed workflow can be seen [here](/deployment-tools/web-sockets/websockets-support).
 
 Nevertheless, if this method contradicts your requirements, the WebSockets protocol usage is also supported by all the **Java application servers**, provided at the platform. Herewith, implementation of WebSockets for Java is commonly performed through configuring your application itself and does not require any special server configurations, thus you are only limited by your current programming skills, persistence and imagination.
 
@@ -54,7 +54,7 @@ The only exception is **GlassFish**, as it requires some server-side configurati
 
 </div>
 
-5. Now, you can deploy your application, which requires the WebSockets protocol support, to your environment. This can be done via [local archive/URL](/docs/deployment/deployment-guide), or, if you prefer to use the remote VCS repository, simply add the **Maven** node to your environment topology and follow this [guide](/docs/java/build-node/java-vcs-deployment-with-maven).
+5. Now, you can deploy your application, which requires the WebSockets protocol support, to your environment. This can be done via [local archive/URL](/deployment/deployment-guide), or, if you prefer to use the remote VCS repository, simply add the **Maven** node to your environment topology and follow this [guide](/java/build-node/java-vcs-deployment-with-maven).
 
 As a result, your deployed application will be listed in the appropriate panel column:
 

@@ -1,10 +1,10 @@
 ---
-title: Wagtail cms
+title: Wagtail CMS
 slug: wagtail-cms
 sidebar_position: 2
 ---
 
-## Deploy Wagtail Python-Based CMS into Jelastic PaaS
+<!-- ## Deploy Wagtail Python-Based CMS into Jelastic PaaS -->
 
 <div style={{
     display: 'grid',
@@ -58,7 +58,7 @@ To start with, you need to create an environment with the appropriate applicatio
 
 The latest Wagtail CMS versions support the Python 3.x only. On the Python 2.7 instances, run the 1.13 version of the application.
 
-Configure all other settings up to your need (e.g. [cloudlet limit](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling), disk space, [region](/docs/environment-management/environment-regions/choosing-a-region), etc), set the desired domain name and click the Create button.
+Configure all other settings up to your need (e.g. [cloudlet limit](/application-setting/scaling-and-clustering/automatic-vertical-scaling), disk space, [region](/environment-management/environment-regions/choosing-a-region), etc), set the desired domain name and click the Create button.
 
 3. Wait a minute for your environment to be created.
 
@@ -102,7 +102,7 @@ If configuring own deployment archive, please ensure your Wagtail CMS package co
 
 </div>
 
-2. [Deploy this archive](/docs/deployment/deployment-guide) into your **_Python 3.x_** environment.
+2. [Deploy this archive](/deployment/deployment-guide) into your **_Python 3.x_** environment.
 
 <div style={{
     display:'flex',

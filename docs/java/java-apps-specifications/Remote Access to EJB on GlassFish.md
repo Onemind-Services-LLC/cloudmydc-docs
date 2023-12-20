@@ -1,10 +1,10 @@
 ---
-title: Remote access to ejb on glassfish
+title: Remote Access To EJB On Glassfish
 slug: remote-access-to-ejb-on-glassfish
 sidebar_position: 3
 ---
 
-## Remote Access to EJB on GlassFish
+<!-- ## Remote Access to EJB on GlassFish -->
 
 **Enterprise Java Beans** (EJB) is a server-side architecture part of Java EE. Its specification contains two kinds of client views: remote and local ones. In one case, your Java app may require the session and entity beans with local home and component interfaces and in another case - with remote ones.
 

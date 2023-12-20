@@ -1,16 +1,16 @@
 ---
-title: Wordpress project installation
+title: WordPress Project Installation
 slug: wordpress-project-installation
 sidebar_position: 2
 ---
 
-## WordPress Project Installation
+<!-- ## WordPress Project Installation -->
 
 CloudMyDc Application Platform for WordPress provides a quick and automated installation procedure for the new project creation. The built-in production/staging functionality helps implement various DevOps integrations. Let’s see these processes in detail:
 
-- [Installing Project](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation#installing-project)
-- [Staging Project](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation#staging-project)
-- [Deleting Project](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation#deleting-project)
+- [Installing Project](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation#installing-project)
+- [Staging Project](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation#staging-project)
+- [Deleting Project](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation#deleting-project)
 
 ## Installing Project
 
@@ -116,7 +116,7 @@ Click **Continue** to create your new subscription and add the project to with t
 
 </div>
 
-Now you can proceed to the [Project Management](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management) guide.
+Now you can proceed to the [Project Management](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management) guide.
 
 ## Staging Project
 
@@ -188,7 +188,7 @@ You’ll be asked to confirm the action by typing the project’s name.
 
 :::danger Note
 
-Deleting production will remove the whole project, while removing _[staging](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation#staging-project)_ – only the corresponding environment (the production one will remain intact).
+Deleting production will remove the whole project, while removing _[staging](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation#staging-project)_ – only the corresponding environment (the production one will remain intact).
 
 :::
 

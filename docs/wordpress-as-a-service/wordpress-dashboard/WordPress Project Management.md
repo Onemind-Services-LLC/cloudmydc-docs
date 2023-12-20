@@ -1,20 +1,20 @@
 ---
-title: Wordpress project management
+title: WordPress Project Management
 slug: wordpress-project-management
 sidebar_position: 3
 ---
 
-## WordPress Project Management
+<!-- ## WordPress Project Management -->
 
 All WordPress projects on the platform are provided with a dedicated page where you can view all the details, track monitoring data, deploy solutions, and perform other management operations.
 
 Below, we’ve grouped all the functionality available for projects in the WordPress dashboard into the following groups:
 
-- [Settings and Basic Actions](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management#settings-and-basic-actions)
-- [General Data](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management#general-data)
-- [WordPress Plugins](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management#wordpress-plugins)
-- [Application Deployment](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management#application-deployment)
-- [Environment Management](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management#environment-management)
+- [Settings and Basic Actions](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management#settings-and-basic-actions)
+- [General Data](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management#general-data)
+- [WordPress Plugins](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management#wordpress-plugins)
+- [Application Deployment](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management#application-deployment)
+- [Environment Management](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management#environment-management)
 
 ## Settings and Basic Actions
 
@@ -32,7 +32,7 @@ Below, we’ve grouped all the functionality available for projects in the WordP
 
 Just click the required button to perform the appropriate operation.
 
-2. The button with a gear icon will redirect you to the project **Settings** page, which has several sections, including an option to [delete the project](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation#deleting-project) at the bottom.
+2. The button with a gear icon will redirect you to the project **Settings** page, which has several sections, including an option to [delete the project](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation#deleting-project) at the bottom.
 
 <div style={{
     display:'flex',
@@ -44,7 +44,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-2.1. The **Custom Domains** section provides instruction and functionality for binding [custom domains](/docs/application-setting/domain-name-management/custom-domain-name) to your environment.
+2.1. The **Custom Domains** section provides instruction and functionality for binding [custom domains](/application-setting/domain-name-management/custom-domain-name) to your environment.
 
 <div style={{
     display:'flex',
@@ -68,7 +68,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-2.3. The **Backup Storage** section enables automatic backups for your project based on the specified schedule (pre-defined, custom, or crontab). Additionally, you can select backup storage (add it via [account settings](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview#account-settings)) and set a number of latest backups to keep. Learn more about the [backup and restore process](/docs/wordpress-as-a-service/wordpress-backups).
+2.3. The **Backup Storage** section enables automatic backups for your project based on the specified schedule (pre-defined, custom, or crontab). Additionally, you can select backup storage (add it via [account settings](/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview#account-settings)) and set a number of latest backups to keep. Learn more about the [backup and restore process](/wordpress-as-a-service/wordpress-backups).
 
 <div style={{
     display:'flex',
@@ -92,7 +92,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-[Endpoints](/docs/application-setting/external-access-to-applications/endpoints) create a direct connection (over raw TCP or UDP protocol) to one of the project nodes without the mandatory Public IP address. It can be used to set up remote access. For example, one of the most common use cases is gaining remote access to your database instance using a local database client.
+[Endpoints](/application-setting/external-access-to-applications/endpoints) create a direct connection (over raw TCP or UDP protocol) to one of the project nodes without the mandatory Public IP address. It can be used to set up remote access. For example, one of the most common use cases is gaining remote access to your database instance using a local database client.
 
 2.5. The **Subscription Plan** section shows subscription details of the current project and, depending on the hosting provider configurations, can provide the **Change Plan** option. It gives the ability to move the current project to a different plan within the same subscription.
 
@@ -106,7 +106,7 @@ Just click the required button to perform the appropriate operation.
 
 </div>
 
-3. Next to the buttons mentioned above, you can find a drop-down list to switch between _[Production and Staging environments](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation#staging-project)_ for your project.
+3. Next to the buttons mentioned above, you can find a drop-down list to switch between _[Production and Staging environments](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation#staging-project)_ for your project.
 
 <div style={{
     display:'flex',
@@ -132,7 +132,7 @@ The project’s **_Overview_** section provides the most frequently needed data 
 
 </div>
 
-1. The icon at the start shows whether the project is clustered or standalone solution. The colored dot next to it indicates project status (_green_ – active, _yellow_ – in progress, _red_ – stopped). The name that follows defines whether the [environment is production or staging](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation#staging-project). Lastly, you can see the internal domain of the project.
+1. The icon at the start shows whether the project is clustered or standalone solution. The colored dot next to it indicates project status (_green_ – active, _yellow_ – in progress, _red_ – stopped). The name that follows defines whether the [environment is production or staging](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation#staging-project). Lastly, you can see the internal domain of the project.
 
 <div style={{
     display:'flex',
@@ -144,7 +144,7 @@ The project’s **_Overview_** section provides the most frequently needed data 
 
 </div>
 
-You can click the **Edit Domain Name** button to [bind a custom external domain](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management#settings-and-basic-actions).
+You can click the **Edit Domain Name** button to [bind a custom external domain](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management#settings-and-basic-actions).
 
 <div style={{
     display:'flex',
@@ -168,7 +168,7 @@ You can click the **Edit Domain Name** button to [bind a custom external domain]
 
 </div>
 
-Learn more in the dedicated [Application Deployment](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management#application-deployment) section.
+Learn more in the dedicated [Application Deployment](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management#application-deployment) section.
 
 3. Below that, the platform displays the automatically detected **WordPress version** and provides a link to the WordPress admin panel.
 
@@ -206,7 +206,7 @@ Hower over to see the **Redeploy** option that allows updating the PHP version. 
 
 </div>
 
-We recommend performing regular redeployments to the latest version to ensure your project’s container is running the up-to-date operating system and software stacks with all the latest vulnerability fixes. However, be aware that the operation will cause a brief downtime for the project. You can read more on the **[Redeployment](/docs/category/container-deployment)** feature in the linked document.
+We recommend performing regular redeployments to the latest version to ensure your project’s container is running the up-to-date operating system and software stacks with all the latest vulnerability fixes. However, be aware that the operation will cause a brief downtime for the project. You can read more on the **[Redeployment](/category/container-deployment)** feature in the linked document.
 
 5. Click the **Datacenter Info** to check the relevant information.
 
@@ -220,7 +220,7 @@ We recommend performing regular redeployments to the latest version to ensure yo
 
 </div>
 
-6. Click the **SSH/SFTP Info** to see how you can access your project via the [SSH](/docs/deployment-tools/ssh/ssh-access/ssh-gate#ssh-access-to-platform-account) and [SFTP](/docs/deployment-tools/ssh/ssh-protocols) protocols. The drop-down list allows viewing information for different nodes of the cluster.
+6. Click the **SSH/SFTP Info** to see how you can access your project via the [SSH](/deployment-tools/ssh/ssh-access/ssh-gate#ssh-access-to-platform-account) and [SFTP](/deployment-tools/ssh/ssh-protocols) protocols. The drop-down list allows viewing information for different nodes of the cluster.
 
 <div style={{
     display:'flex',
@@ -332,7 +332,7 @@ Confirm the action via pop-up.
 
 </div>
 
-3. Within the opened window, you can select the preferable Git repository from the list of ones added via the [account settings](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview#account-settings). Optionally, tick the “Check and auto-deploy updates (min)” checkbox and provide the preferred period to enable automatic updates of the deployed application (only upon some changes).
+3. Within the opened window, you can select the preferable Git repository from the list of ones added via the [account settings](/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview#account-settings). Optionally, tick the “Check and auto-deploy updates (min)” checkbox and provide the preferred period to enable automatic updates of the deployed application (only upon some changes).
 
 <div style={{
     display:'flex',
@@ -472,4 +472,4 @@ The **Favorites** tab is used for quick access to the main configuration files o
 
 </div>
 
-For [more management options](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management#general-data), connect via SSH or make adjustments via the database and WordPress admin panels.
+For [more management options](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management#general-data), connect via SSH or make adjustments via the database and WordPress admin panels.

@@ -1,16 +1,16 @@
 ---
-title: Php connection to mongodb
+title: PHP Connection To Mongodb
 slug: php-connection-to-mongodb
 sidebar_position: 2
 ---
 
-## PHP Connection to MongoDB
+<!-- ## PHP Connection to MongoDB -->
 
 **MongoDB** is a widely used NoSQL database, implemented based on the document-oriented model and intended for storing semi-structured data. The guide below provides an instruction on how you can easily use it in a bundle with your PHP app, hosted within the platform.
 
 ## Create an Environment
 
-Log into your platform account and [create](/docs/environment-management/setting-up-environment) a new environment with the **MongoDB** node of the preferred version (can be found within the NoSQL wizard section).
+Log into your platform account and [create](/environment-management/setting-up-environment) a new environment with the **MongoDB** node of the preferred version (can be found within the NoSQL wizard section).
 
 <div style={{
     display:'flex',
@@ -142,7 +142,7 @@ Scroll down to the approximately 483rd line and uncomment the string with the re
 
 ## Application Deployment
 
-Now you can proceed to application deployment into the environment you’ve just prepared using the platform [Deployment Manager](/docs/deployment/deployment-guide) (for projects, packed into a single archive or fetched directly from a GIT/SVN repo).
+Now you can proceed to application deployment into the environment you’ve just prepared using the platform [Deployment Manager](/deployment/deployment-guide) (for projects, packed into a single archive or fetched directly from a GIT/SVN repo).
 
 As an example, we’ll use the following simple app, designed to verify the establishment of connection between the corresponding compute node and the specified MongoDB server by means of the latter mongodb.so extension.
 
@@ -286,7 +286,7 @@ Thus, you can navigate to your DB’s admin panel for making sure everything wor
 
 The platform Developer’s Center also contains a number of more specific MongoDB guides, that may come in handy for a variety of different tasks:
 
-- configure a [Replica Set](/docs/database/mongodb/high-availability-cluster/replica-set-manual-setup#mongodb-replication-and-automated-failover-configuration-guide) with an uneven number of MongoDB nodes to simultaneously implement the master-slave replication and automated failover
-- increase your information safety through setting [Backups Scheduling](/docs/database/database-hosting/manual-database-backups#manual-database-backups), which may prevent data loss or minimize its consequences (through recovering) if an unexpected server failure occurs
-- use the [Remote Access](/docs/database/mongodb/remote-access#remote-access-to-mongodb) option for operating with your database directly via the preferred client application, getting rid of the necessity to log in to our dashboard for that
-- examine how to [Import & Export Dump](/docs/database/mongodb/dump-import-export#import-and-export-dump-files-to-mongodb) files using the inbuilt or 3d-party DB management clients for easily backing up your data
+- configure a [Replica Set](/database/mongodb/high-availability-cluster/replica-set-manual-setup#mongodb-replication-and-automated-failover-configuration-guide) with an uneven number of MongoDB nodes to simultaneously implement the master-slave replication and automated failover
+- increase your information safety through setting [Backups Scheduling](/database/database-hosting/manual-database-backups#manual-database-backups), which may prevent data loss or minimize its consequences (through recovering) if an unexpected server failure occurs
+- use the [Remote Access](/database/mongodb/remote-access#remote-access-to-mongodb) option for operating with your database directly via the preferred client application, getting rid of the necessity to log in to our dashboard for that
+- examine how to [Import & Export Dump](/database/mongodb/dump-import-export#import-and-export-dump-files-to-mongodb) files using the inbuilt or 3d-party DB management clients for easily backing up your data

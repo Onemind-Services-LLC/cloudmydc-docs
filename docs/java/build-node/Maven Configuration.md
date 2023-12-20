@@ -1,12 +1,12 @@
 ---
-title: Maven configuration
+title: Maven Configuration
 slug: maven-configuration
 sidebar_position: 2
 ---
 
 import obj from './MavenConfiguration.json'
 
-## Maven Build Node Configuration
+<!-- ## Maven Build Node Configuration -->
 
 **Maven** is a tool for compiling and managing Java projects. At PaaS, it’s provisioned out-of-box to cover all the main stages of your Java application lifecycle - from building & deploying till their pushing onto production.
 
@@ -14,8 +14,8 @@ Herewith, all the adjustable Maven server settings can be set and/or changed wit
 
 Herewith, all the adjustable Maven server settings can be set and/or changed with:
 
-- [configuration files](https://cloudmydc.com/)
-- [environment variables](/docs/container/container-configuration/variables)
+- configuration files
+- [environment variables](/container/container-configuration/variables)
 
 ## Maven Configuration Files
 

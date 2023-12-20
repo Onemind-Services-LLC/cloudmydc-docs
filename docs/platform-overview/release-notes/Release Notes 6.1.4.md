@@ -1,12 +1,10 @@
 ---
-title: Release notes 6.1.4
+title: Release Notes 6.1.4
 slug: release-notes-6.1.4
 sidebar_position: 21
 ---
 
 import obj from './ReleaseNotes6.1.4.json'
-
-## CloudMyDc Application Platform 6.1.4
 
 _This document is preliminary and subject to change._
 
@@ -46,7 +44,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-6.1.4#submit-button-customization-in-cs">
+                <a href="/platform-overview/release-notes/release-notes-6.1.4#submit-button-customization-in-cs">
                     Learn More >>
                 </a>
             </div>
@@ -90,7 +88,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-6.1.4#lets-encrypt-root-certificate-expiration">
+                <a href="/platform-overview/release-notes/release-notes-6.1.4#lets-encrypt-root-certificate-expiration">
                     Learn More >>
                 </a>
             </div>
@@ -109,7 +107,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-6.1.4#api-changes">
+                <a href="/platform-overview/release-notes/release-notes-6.1.4#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -128,7 +126,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-6.1.4#software-stack-versions">
+                <a href="/platform-overview/release-notes/release-notes-6.1.4#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -172,7 +170,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-6.1.4#fixes-compatible-with-prior-versions">
+                <a href="/platform-overview/release-notes/release-notes-6.1.4#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -191,7 +189,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-6.1.4#bug-fixes">
+                <a href="/platform-overview/release-notes/release-notes-6.1.4#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -209,7 +207,7 @@ Due to the [**DST Root CA X3** Let’s Encrypt certificate expiration](https://l
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -244,14 +242,14 @@ The exact list of new options to the buttons and settings configuration is provi
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## API Changes
 
-Below, you can find a list of all changes to the public API in the 6.1.4 platform version (compared to the preceding [6.0](/docs/platform-overview/release-notes/release-notes-6.1.4#api-changes) ones):
+Below, you can find a list of all changes to the public API in the 6.1.4 platform version (compared to the preceding [6.0](/platform-overview/release-notes/release-notes-6.1.4#api-changes) ones):
 
 - The response of the **_[GetSSLCerts](https://cloudmydc.com/)_** method was extended. Now it contains information about linked domains.
 
@@ -262,7 +260,7 @@ Below, you can find a list of all changes to the public API in the 6.1.4 platfor
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -381,7 +379,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -390,16 +388,16 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/quickstart/software-stack-versions)
+[More info](/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

@@ -1,16 +1,12 @@
 ---
-title: Release notes 7.0
+title: Release Notes 7.0
 slug: release-notes-7.0
 sidebar_position: 16
 ---
 
 ---
 
-## sidebar_position: 2
-
 import obj from './ReleaseNotes7.0.json'
-
-## CloudMyDc Application Platform 7.0
 
 _This document is preliminary and subject to change._
 
@@ -50,7 +46,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.0#extended-account-collaboration">
+                <a href="/platform-overview/release-notes/release-notes-7.0#extended-account-collaboration">
                     Learn More >>
                 </a>
             </div>
@@ -97,7 +93,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.0#api-changes">
+                <a href="/platform-overview/release-notes/release-notes-7.0#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -116,7 +112,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.0#software-stack-versions">
+                <a href="/platform-overview/release-notes/release-notes-7.0#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -160,7 +156,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.0#fixes-compatible-with-prior-versions">
+                <a href="/platform-overview/release-notes/release-notes-7.0#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -179,7 +175,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.0#bug-fixes">
+                <a href="/platform-overview/release-notes/release-notes-7.0#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -192,7 +188,7 @@ Fixed
 
 The platform’s **_account collaboration_** feature is a powerful tool that allows multiple users to work on the same project. The core idea is straightforward - you can share your environment with other accounts on the platform. Additionally, different permissions can be provided to the collaboration members to cover various use cases.
 
-In the current 7.0 upgrade, the feature received a major rework, mainly focusing on extending its flexibility. Two focal points are **roles and policies** mechanics for advanced permission management and **integration with [environment groups](/docs/environment-management/environment-groups/overview)** to better organize shared components. All the features are wrapped in a new comprehensive UI:
+In the current 7.0 upgrade, the feature received a major rework, mainly focusing on extending its flexibility. Two focal points are **roles and policies** mechanics for advanced permission management and **integration with [environment groups](/environment-management/environment-groups/overview)** to better organize shared components. All the features are wrapped in a new comprehensive UI:
 
 - **Shared by Me** - collaboration options for the primary account, it has three tabs:
   - **Members** - manages a list of collaboration members (invite new users, suspend or remove existing ones, customize shared environments, groups, roles, etc.)
@@ -214,11 +210,11 @@ The new collaboration flow remains the same in principle but much more configura
 
 You can find information on even more changes to the collaboration feature (ability to temporarily suspend collaboration, role assigning algorithm, direct environment sharing, etc.) in the dedicated documentation:
 
-- [Collaboration Overview](/docs/account-and-pricing/accounts-collaboration/collaboration-overview)
-- [Collaboration Roles & Policies](/docs/account-and-pricing/accounts-collaboration/collaboration-roles-policies)
-- [Create Collaboration](/docs/account-and-pricing/accounts-collaboration/create-collaboration)
-- [Collaboration User Experience](/docs/account-and-pricing/accounts-collaboration/collaboration-user-experience)
-- [Share Environment](/docs/environment-management/share-environment)
+- [Collaboration Overview](/account-and-pricing/accounts-collaboration/collaboration-overview)
+- [Collaboration Roles & Policies](/account-and-pricing/accounts-collaboration/collaboration-roles-policies)
+- [Create Collaboration](/account-and-pricing/accounts-collaboration/create-collaboration)
+- [Collaboration User Experience](/account-and-pricing/accounts-collaboration/collaboration-user-experience)
+- [Share Environment](/environment-management/share-environment)
 
 :::danger Note
 
@@ -226,14 +222,14 @@ During the upgrade, the platform automatically generates configurations equivale
 
 :::
 
-[More info](/docs/account-and-pricing/accounts-collaboration/collaboration-overview)
+[More info](/account-and-pricing/accounts-collaboration/collaboration-overview)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -243,12 +239,12 @@ During the upgrade, the platform automatically generates configurations equivale
 Below, you can find a list of all changes to the public API in the 7.0 platform version (compared to the preceding [6.3](https://cloudmydc.com/) ones):
 
 - in the **users** namespace:
-  - added a new **[collaboration](/docs/account-and-pricing/accounts-collaboration/collaboration-overview)** service
+  - added a new **[collaboration](/account-and-pricing/accounts-collaboration/collaboration-overview)** service
   - removed methods from the **[account](https://docs.jelastic.com/api/#!/api/users.Account)** service: _SetLinkedUserDisplayName_, _SetOwnerUserDisplayName_, _ConfirmLinkRequest_, _UnlinkLinkedUser_, _UnlinkOwnerUser_, _GetLinkedUsers_, _GetOwnerUsers_, _GetLinkedUsersByLogin_, _GetOwnerUsersByLogin_, _GetPayerQuotas_, _HazelcastPartitionsTest_, _LinkUsers_, _SetLinkedUserRole_, _SetLinkedUserDisplayName_, _SetOwnerUserDisplayName_, _ConfirmLinkRequest_, _UnlinkLinkedUser_, _UnlinkOwnerUser_, _GetLinkedUsers_, _GetOwnerUsers_, _SendLinkRequest_, _LinkUsersInner_
 - in the **marketplace** namespace:
   - added new **[favorite](https://docs.jelastic.com/api/#!/api/marketplace.Favorite)**, **[installation](https://docs.jelastic.com/api/#!/api/marketplace.Installation)**, and **[app services](https://docs.jelastic.com/api/#!/api/marketplace.App)**
-  - added the **_GetAppInfo_** and **_GetAppSettings_** methods to the **[jps](https://docs.jelastic.com/api/#!/api/marketplace.Jps)** service
-  - removed the **_AttachAddon_** and **_DetachAddon_** methods from the **[jps](https://docs.jelastic.com/api/#!/api/marketplace.Jps)** service
+  - added the **_GetAppInfo_** and **_GetAppSettings_** methods to the **[jps](https://docs.jelastic.com/api/#!/api/marketplace.JPS)** service
+  - removed the **_AttachAddon_** and **_DetachAddon_** methods from the **[jps](https://docs.jelastic.com/api/#!/api/marketplace.JPS)** service
   - added **_ReadLog_** and **_ClearLog_** methods to the [console](https://docs.jelastic.com/api/#!/api/marketplace.Console) service
 - in the **environment > [control](https://docs.jelastic.com/api/#!/api/environment.Control)** service:
   - added new **_GetSSHAccessInfo_**, **_GetEndpoints_**, and **_Exports_** methods
@@ -271,7 +267,7 @@ Below, you can find a list of all changes to the public API in the 7.0 platform 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -390,7 +386,7 @@ PaaS 7.0
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -399,16 +395,16 @@ PaaS 7.0
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/quickstart/software-stack-versions)
+[More info](/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

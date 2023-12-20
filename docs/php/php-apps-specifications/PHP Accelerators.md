@@ -1,10 +1,10 @@
 ---
-title: Php accelerators
+title: PHP Accelerators
 slug: php-accelerators
 sidebar_position: 2
 ---
 
-## PHP Accelerators
+<!-- ## PHP Accelerators -->
 
 A **PHP accelerator** is a PHP extension designed to improve the performance of software applications written in the PHP programming language.
 
@@ -23,14 +23,14 @@ To activate the accelerator follow the instruction:
 
 1. Click **Config** button for the server in your environment.
 
-2. In the **etc** folder open ***php.ini*** file.
+2. In the **etc** folder open **_php.ini_** file.
 
-3. Uncomment one of the *Accelerators*:
+3. Uncomment one of the _Accelerators_:
 
 ```bash
-extension=apc.so   
-extension=eaccelerator.so   
-extension=xcache.so   
+extension=apc.so
+extension=eaccelerator.so
+extension=xcache.so
 extension=ZendGuardLoader.so
 ```
 

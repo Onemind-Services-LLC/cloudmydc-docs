@@ -1,5 +1,5 @@
 ---
-title: Java options and arguments
+title: Java Options And Arguments
 slug: java-options-and-arguments
 sidebar_position: 2
 ---
@@ -36,7 +36,7 @@ Depending on a particular application server you are working with, the exact loc
 
 </div>
 
-If needed, you can [redefine the main memory options](/docs/environment-management/environment-variables/java-options-and-arguments#redefining-main-java-parameters) via container variables.
+If needed, you can [redefine the main memory options](/environment-management/environment-variables/java-options-and-arguments#redefining-main-java-parameters) via container variables.
 
 2. Don’t forget to **Restart nodes** to apply changes.
 
@@ -54,7 +54,7 @@ That’s it! Now, your application is running with your custom Java options.
 
 ## Redefining Main Java Parameters
 
-Most of the essential memory parameters (_-Xms, -Xmn, -Xmx, -Xminf, -Xmaxf, -XX:MaxPermSize, _-XX:+Use.GC\*) can be redefined using the dedicated environment [Variables](/docs/container/container-configuration/variables).
+Most of the essential memory parameters (_-Xms, -Xmn, -Xmx, -Xminf, -Xmaxf, -XX:MaxPermSize, _-XX:+Use.GC\*) can be redefined using the dedicated environment [Variables](/container/container-configuration/variables).
 
 As an example, you can **Add** the **-Xmx** option (i.e. maximum size for the Java heap memory):
 
@@ -81,7 +81,7 @@ These values are automatically validated - if XMS is bigger than XMX, its actual
 
 ## Spring Boot and Java Engine Specific Variables
 
-When operating with the **Spring Boot** and **Java Engine** templates, you can provide two additional [Variables](/docs/container/container-configuration/variables):
+When operating with the **Spring Boot** and **Java Engine** templates, you can provide two additional [Variables](/container/container-configuration/variables):
 
 - **_JAVA_OPTS_** - to customize Java options for your app (similar to the **_variables.conf_** file)
 - **_JAVA_ARGS_** - to pass some custom arguments to your application main function

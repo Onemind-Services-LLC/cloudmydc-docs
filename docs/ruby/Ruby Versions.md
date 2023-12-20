@@ -1,10 +1,10 @@
 ---
-title: Ruby versions
+title: Ruby Versions
 slug: ruby-versions
 sidebar_position: 2
 ---
 
-## Ruby Versions
+<!-- ## Ruby Versions -->
 
 The platform supports all of the latest major releases of the Ruby engine and provides the regular updates of the appropriate stacks, keeping them up-to-date. Currently, the following Ruby versions are available:
 
@@ -14,11 +14,11 @@ The platform supports all of the latest major releases of the Ruby engine and pr
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/quickstart/software-stack-versions) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/quickstart/software-stack-versions) document.
 
 :::
 
-You can choose the required one during [environment creation](/docs/ruby/ruby-versions#create-ruby-environment) and quickly [switch between](/docs/ruby/ruby-versions#change-ruby-version) them afterward.
+You can choose the required one during [environment creation](/ruby/ruby-versions#create-ruby-environment) and quickly [switch between](/ruby/ruby-versions#change-ruby-version) them afterward.
 
 ## Create Ruby Environment
 
@@ -46,11 +46,11 @@ You can choose the required one during [environment creation](/docs/ruby/ruby-ve
 
 </div>
 
-Configure any other desired customization (e.g. cloudlets limit, [public IP]/docs/application-setting/external-access-to-applications/public-ip#public-ip), [region](/docs/environment-management/environment-regions/choosing-a-region#environment-regions), etc.) and click **Create**.
+Configure any other desired customization (e.g. cloudlets limit, [public IP]/docs/application-setting/external-access-to-applications/public-ip#public-ip), [region](/environment-management/environment-regions/choosing-a-region#environment-regions), etc.) and click **Create**.
 
 ## Change Ruby Version
 
-For the already existing environments, you can change the Ruby version by [redeploying container(s)](/docs/category/container-deployment):
+For the already existing environments, you can change the Ruby version by [redeploying container(s)](/category/container-deployment):
 
 1. There are two options to access container update dialog:
 
@@ -81,8 +81,8 @@ For the already existing environments, you can change the Ruby version by [redep
 2. In the opened window, adjust the following settings:
 
 - **_Tag_** - allows choosing the needed Ruby version
-- **_Keep volumes data_** - saves data in [volumes](/docs/container/container-configuration/volumes)
-- **_Simultaneous_** or **_Sequential deployment with delay_** (for [scaled servers](/docs/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-inside-the-cloud-multi-node) only) - defines whether all containers within a layer should be redeployed at once or one-by-one, to avoid downtime
+- **_Keep volumes data_** - saves data in [volumes](/container/container-configuration/volumes)
+- **_Simultaneous_** or **_Sequential deployment with delay_** (for [scaled servers](/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-inside-the-cloud-multi-node) only) - defines whether all containers within a layer should be redeployed at once or one-by-one, to avoid downtime
 
 <div style={{
     display:'flex',

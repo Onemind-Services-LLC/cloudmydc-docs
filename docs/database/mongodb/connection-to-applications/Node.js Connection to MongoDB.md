@@ -1,14 +1,14 @@
 ---
-title: Node.js connection to mongodb
+title: Node.Js Connection To Mongodb
 slug: node.js-connection-to-mongodb
 sidebar_position: 4
 ---
 
-## Node.js Application Connection to MongoDB
+<!-- ## Node.js Application Connection to MongoDB -->
 
 **MongoDB** is a popular NoSQL database, which is natively supported by the platform and can be easily installed on the Cloud. Below, we’ll consider a simple example of how to connect this DB stack from your **Node.js** application server.
 
-1. In order to follow this guide, you’ll need Node.js and MongoDB servers either within the platform (you can [create](/docs/environment-management/setting-up-environment) it at any time) or on any external resources.
+1. In order to follow this guide, you’ll need Node.js and MongoDB servers either within the platform (you can [create](/environment-management/setting-up-environment) it at any time) or on any external resources.
 
 <div style={{
     display:'flex',
@@ -22,7 +22,7 @@ sidebar_position: 4
 
 In our case, both instances are hosted within a single environment.
 
-2. Connect to your application server via [SSH Gate](/docs/deployment-tools/ssh/ssh-overview#ssh-gate-overview).
+2. Connect to your application server via [SSH Gate](/deployment-tools/ssh/ssh-overview#ssh-gate-overview).
 
 <div style={{
     display:'flex',

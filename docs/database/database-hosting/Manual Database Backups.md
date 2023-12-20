@@ -1,24 +1,24 @@
 ---
-title: Manual database backups
+title: Manual Database Backups
 slug: manual-database-backups
 sidebar_position: 8
 ---
 
-## Manual Database Backups
+<!-- ## Manual Database Backups -->
 
-The platform provides all [certified database stacks](/docs/quickstart/software-stack-versions) with a convenient and straightforward script for backing up the stored data. Thus, the process is as simple as providing the required parameters and can be accomplished in a matter of minutes. Herewith, no specialized knowledge is needed - just follow the [setup steps](/docs/database/database-hosting/manual-database-backups#backups-scheduling) to configure the appropriate cron expression.
+The platform provides all [certified database stacks](/quickstart/software-stack-versions) with a convenient and straightforward script for backing up the stored data. Thus, the process is as simple as providing the required parameters and can be accomplished in a matter of minutes. Herewith, no specialized knowledge is needed - just follow the [setup steps](/database/database-hosting/manual-database-backups#backups-scheduling) to configure the appropriate cron expression.
 
 Additionally, we’ll show how you can work with the created backups:
 
-- [Check Backups](/docs/database/database-hosting/manual-database-backups#check-backups)
-- [Download Backup](/docs/database/database-hosting/manual-database-backups#download-backup)
-- [Restore Database](/docs/database/database-hosting/manual-database-backups#restore-database)
+- [Check Backups](/database/database-hosting/manual-database-backups#check-backups)
+- [Download Backup](/database/database-hosting/manual-database-backups#download-backup)
+- [Restore Database](/database/database-hosting/manual-database-backups#restore-database)
 
 For this tutorial, we’ll use a MySQL database as an example. However, the required steps are similar for all the other databases.
 
 ## Backups Scheduling
 
-Let’s use the default backup script to automate the process of backup creation and configure it up to your specific needs (e.g. frequency, number of old backups to keep, etc.). Herewith, if you don’t have an environment with a database yet, follow the [Database Hosting](/docs/database/database-hosting/db-hosting-overview#database-hosting) guide to create one.
+Let’s use the default backup script to automate the process of backup creation and configure it up to your specific needs (e.g. frequency, number of old backups to keep, etc.). Herewith, if you don’t have an environment with a database yet, follow the [Database Hosting](/database/database-hosting/db-hosting-overview#database-hosting) guide to create one.
 
 1. The source code of the script can be viewed directly within the dashboard. Click the **Config** button next to your database to open the built-in file manager and locate the **_/var/lib/jelastic/bin/backup_script.sh_** file.
 
@@ -34,11 +34,11 @@ Let’s use the default backup script to automate the process of backup creation
 
 :::danger Note
 
-The backup script is not available for the **[Redis](/docs/database/redis/redis-overview#redis)** stack, which is key-value storage, usually used as cache.
+The backup script is not available for the **[Redis](/database/redis/redis-overview#redis)** stack, which is key-value storage, usually used as cache.
 
 :::
 
-2. To automate the script execution, we’ll use the _[cron scheduler](/docs/application-setting/scheduling-configuration/setting-up-cronjob#setting-up-cronjob)_ available within the containers out-of-box. Open the **_/var/spool/cron/mysql_** file and provide a cron expression in the following format:
+2. To automate the script execution, we’ll use the _[cron scheduler](/application-setting/scheduling-configuration/setting-up-cronjob#setting-up-cronjob)_ available within the containers out-of-box. Open the **_/var/spool/cron/mysql_** file and provide a cron expression in the following format:
 
 ```bash
 {frequency} {path-to-script} {script-parameters}
@@ -88,7 +88,7 @@ If your **_{password}_** contains special characters, it should be included in t
 
 **Save** the settings to apply them.
 
-4. To store data on some other node or the remote server, you can configure the appropriate [mount point](/docs/data-storage-container/data-sharing/mount-points) for your database.
+4. To store data on some other node or the remote server, you can configure the appropriate [mount point](/data-storage-container/data-sharing/mount-points) for your database.
 
 <div style={{
     display:'flex',
@@ -128,7 +128,7 @@ If the backup operation is successful, you’ll see the appropriate **_bz2_** ar
 
 There are multiple options to download a file from a container:
 
-1. The most straightforward variant is to use the [configuration file manager](/docs/application-setting/configuration-file-manager#configuration-file-manager) directly in the dashboard.
+1. The most straightforward variant is to use the [configuration file manager](/application-setting/configuration-file-manager#configuration-file-manager) directly in the dashboard.
 
 <div style={{
     display:'flex',
@@ -142,7 +142,7 @@ There are multiple options to download a file from a container:
 
 Locate the required file, hover over it, and select **Download** from the context menu.
 
-2. Another option is to use the [SFTP/FISH protocol](/docs/deployment-tools/ssh/ssh-protocols#sftpfish-protocols) connection.
+2. Another option is to use the [SFTP/FISH protocol](/deployment-tools/ssh/ssh-protocols#sftpfish-protocols) connection.
 
 <div style={{
     display:'flex',
@@ -156,11 +156,11 @@ Locate the required file, hover over it, and select **Download** from the contex
 
 The required access details can be viewed within the dashboard.
 
-3. Also, you can install [FTP add-on](/docs/deployment-tools/ftp-ftps-support#ftpftps-support) for your database to manage files via FTP.
+3. Also, you can install [FTP add-on](/deployment-tools/ftp-ftps-support#ftpftps-support) for your database to manage files via FTP.
 
 :::danger Note
 
-A [public IP](/docs/application-setting/external-access-to-applications/public-ip#public-ip) address is required for this option. If needed, it will be automatically attached to the node during add-on installation.
+A [public IP](/application-setting/external-access-to-applications/public-ip#public-ip) address is required for this option. If needed, it will be automatically attached to the node during add-on installation.
 
 :::
 

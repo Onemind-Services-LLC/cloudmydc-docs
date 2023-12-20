@@ -1,5 +1,5 @@
 ---
-title: Shared storage container
+title: Shared Storage Container
 slug: shared-storage-container
 sidebar_position: 2
 ---

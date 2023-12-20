@@ -1,29 +1,29 @@
 ---
-title: Container volumes
+title: Container Volumes
 slug: container-volumes
 sidebar_position: 8
 ---
 
-## CLI Tutorial: Container Volumes
+<!-- ## CLI Tutorial: Container Volumes -->
 
-[Container (Docker) Volumes](/docs/container/container-configuration/volumes) management functionality at the platform allows creating a persistent [local storage](/docs/data-storage-container/use-cases/local-filesystem), designed to be not affected by various operations during container lifecycle. Creation of such a storage right inside a container helps to ensure high level of integrity and prevent loss of important data.
+[Container (Docker) Volumes](/container/container-configuration/volumes) management functionality at the platform allows creating a persistent [local storage](/data-storage-container/use-cases/local-filesystem), designed to be not affected by various operations during container lifecycle. Creation of such a storage right inside a container helps to ensure high level of integrity and prevent loss of important data.
 
-Using platform CLI, you can set up container volumes in two ways:
+<!-- Using platform CLI, you can set up container volumes in two ways:
 
-- [within topology settings](/docs/deployment-tools/api-&-cli/platform-cli/container-volumes#set-volumes-via-environment-topology)
-- [via direct CLI methods](/docs/deployment-tools/api-&-cli/platform-cli/container-volumes#direct-volumes-management)
+- [within topology settings](/deployment-tools/api-&-cli/platform-cli/container-volumes#set-volumes-via-environment-topology)
+- [via direct CLI methods](/deployment-tools/api-&-cli/platform-cli/container-volumes#direct-volumes-management) -->
 
 ## Set Volumes via Environment Topology
 
-The first way to create container volume we’ll consider is to define it right during the [environment creation](/docs/deployment-tools/api-&-cli/platform-cli/environment-creation) (or when [changing its topology](/docs/deployment-tools/api-&-cli/platform-cli/server-scaling)). So, in order to setup your local container storage, the following [parameters](/docs/deployment-tools/api-&-cli/create-env-params#docker-based-environment-configurations) can be used while executing the appropriate CLI method:
+The first way to create container volume we’ll consider is to define it right during the [environment creation](/deployment-tools/api-&-cli/platform-cli/environment-creation) (or when [changing its topology](/deployment-tools/api-&-cli/platform-cli/server-scaling)). So, in order to setup your local container storage, the following [parameters](/deployment-tools/api-&-cli/create-env-params#docker-based-environment-configurations) can be used while executing the appropriate CLI method:
 
 - **_volumes_** - sets list of local volumes
-- **_volumeMounts_** - allows to configure [mount points](/docs/data-storage-container/data-sharing/mount-points)
+- **_volumeMounts_** - allows to configure [mount points](/data-storage-container/data-sharing/mount-points)
 - **_volumesFrom_** - imports existing volumes from node on your account
 
 :::tip Tip
 
-These parameters can be used within your [JPS](/docs/deployment-tools/cloud-scripting-&-jps/jps-overview) manifests as well.
+These parameters can be used within your [JPS](/deployment-tools/cloud-scripting-&-jps/jps-overview) manifests as well.
 
 :::
 
@@ -75,8 +75,8 @@ The highlighted data should be changed to the appropriate values:
 
 Alternatively to the _“sourceNodeId”_ parameter, you can also use:
 
-- _“sourceNodeGroup”_ - defines [environment layer](/docs/deployment-tools/api-&-cli/create-env-params#docker-based-environment-configurations), which master node will be used as a source for mount operation
-- _“sourceHost”_ - external IP or [custom domain](/docs/application-setting/domain-name-management/custom-domain-name) name of the data storage server (including [external one](/docs/data-storage-container/external-nfs-server-configuration))
+- _“sourceNodeGroup”_ - defines [environment layer](/deployment-tools/api-&-cli/create-env-params#docker-based-environment-configurations), which master node will be used as a source for mount operation
+- _“sourceHost”_ - external IP or [custom domain](/application-setting/domain-name-management/custom-domain-name) name of the data storage server (including [external one](/data-storage-container/external-nfs-server-configuration))
 
 :::
 
@@ -106,7 +106,7 @@ Here:
 
 :::tip Note
 
-Alternatively, it is possible to use _“sourceNodeGroup”_ to define the [environment layer](/docs/deployment-tools/api-&-cli/create-env-params#docker-based-environment-configurations), which master node will be used as a source for mount operation.
+Alternatively, it is possible to use _“sourceNodeGroup”_ to define the [environment layer](/deployment-tools/api-&-cli/create-env-params#docker-based-environment-configurations), which master node will be used as a source for mount operation.
 
 :::
 
@@ -192,7 +192,7 @@ Here, the **_{node_group}_** parameter allows to define a layer in the current e
 
 </div>
 
-In such a way, using these CLI methods, you can easily take control over your container volumes and manage them in a matter of minutes. And in case you are in need of adding some [Mount Points](/docs/deployment-tools/api-&-cli/platform-cli/mount-points) alongside with volumes, use the linked guide for detailed instruction.
+In such a way, using these CLI methods, you can easily take control over your container volumes and manage them in a matter of minutes. And in case you are in need of adding some [Mount Points](/deployment-tools/api-&-cli/platform-cli/mount-points) alongside with volumes, use the linked guide for detailed instruction.
 
 :::tip TIP
 

@@ -1,10 +1,10 @@
 ---
-title: Create collaboration
+title: Create Collaboration
 slug: create-collaboration
 sidebar_position: 3
 ---
 
-In order to create your own [collaboration](/docs/account-and-pricing/accounts-collaboration/collaboration-overview), you just need a billing PaaS account (**primary account**) that will invite additional customers/users (**collaboration members**). You can perform most collaboration-related operations via the dedicated section at the account settings panel.
+In order to create your own [collaboration](/account-and-pricing/accounts-collaboration/collaboration-overview), you just need a billing PaaS account (**primary account**) that will invite additional customers/users (**collaboration members**). You can perform most collaboration-related operations via the dedicated section at the account settings panel.
 
 Click the **Settings** button in the top-right corner of the dashboard.
 
@@ -38,8 +38,8 @@ Within the opened **User Settings** sections, you have the following two collabo
 
 Now, follow the instructions below to set up a collaboration:
 
-- [sent collaboration invite](/docs/account-and-pricing/accounts-collaboration/create-collaboration#send-collaboration-invite) (as primary account)
-- [accept collaboration invite](/docs/account-and-pricing/accounts-collaboration/create-collaboration#accept-collaboration-invite) (as collaboration member)
+- [sent collaboration invite](/account-and-pricing/accounts-collaboration/create-collaboration#send-collaboration-invite) (as primary account)
+- [accept collaboration invite](/account-and-pricing/accounts-collaboration/create-collaboration#accept-collaboration-invite) (as collaboration member)
 
 ## Send Collaboration Invite
 
@@ -64,7 +64,7 @@ Provide the following information within the **_Add Role_** dialog:
 
 </div>
 
-You can learn more about **[Roles & Policies](/docs/account-and-pricing/accounts-collaboration/collaboration-roles-policies)** at the dedicated guide.
+You can learn more about **[Roles & Policies](/account-and-pricing/accounts-collaboration/collaboration-roles-policies)** at the dedicated guide.
 
 2. On the **_Members_** tab, click the **Invite** button.
 
@@ -90,9 +90,9 @@ Fill in the fields of the opened **_Invite Member_** dialog:
 - you can provide different roles for each (sub-)component
 - hover over a role in the list to see a hint with all included policies
 - if needed, you can **_Create New Role_** without closing the invite form
-- you can manage [environment group](/docs/environment-management/environment-groups/overview) structure directly in the invite form - hover over the group and click the gear icon to select the required option (**Add**, **Edit**, **Remove**)
+- you can manage [environment group](/environment-management/environment-groups/overview) structure directly in the invite form - hover over the group and click the gear icon to select the required option (**Add**, **Edit**, **Remove**)
 - to provide an ability to create environments at the account root (i.e. without any group), share the whole Environments category with a role that grants the appropriate permission
-- if you need to [share a single environment](/docs/environment-management/share-environment), it can be done from the appropriate environment configs
+- if you need to [share a single environment](/environment-management/share-environment), it can be done from the appropriate environment configs
 
 ::: 3. The invited member will appear in the list in the **_pending acceptance_** state.
 
@@ -106,7 +106,7 @@ Fill in the fields of the opened **_Invite Member_** dialog:
 
 </div>
 
-Now, you wait for the member to [accept the invitation](/docs/account-and-pricing/accounts-collaboration/create-collaboration#accept-collaboration-invite). Any change to the invitation will be displayed at the **Members** tab. Also, you’ll get the appropriate email notification about the user’s decision.
+Now, you wait for the member to [accept the invitation](/account-and-pricing/accounts-collaboration/create-collaboration#accept-collaboration-invite). Any change to the invitation will be displayed at the **Members** tab. Also, you’ll get the appropriate email notification about the user’s decision.
 
 4. If needed, you can select a collaboration member to perform the necessary adjustments:
 
@@ -149,7 +149,7 @@ For convenience, terminated collaborations (including the case of members leavin
 
 ## Accept Collaboration Invite
 
-Wait for the primary account to [send a collaboration](/docs/account-and-pricing/accounts-collaboration/create-collaboration#send-collaboration-invite) invite for you.
+Wait for the primary account to [send a collaboration](/account-and-pricing/accounts-collaboration/create-collaboration#send-collaboration-invite) invite for you.
 
 1. Check your email inbox for the invite. It should look as follows:
 

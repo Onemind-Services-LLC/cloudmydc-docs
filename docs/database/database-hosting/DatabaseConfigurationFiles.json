@@ -4,43 +4,43 @@
       "Folder": "conf",
       "Path": "/var/lib/pgsql/data",
       "DatabaseTypes": "PostgreSQL",
-      "url": "/docs/database/database-hosting/database-configuration-files#conf"
+      "url": "/database/database-hosting/database-configuration-files#conf"
     },
     {
       "Folder": "etc",
       "Path": "/etc",
       "DatabaseTypes": "all",
-      "url": "/docs/database/database-hosting/database-configuration-files#etc"
+      "url": "/database/database-hosting/database-configuration-files#etc"
     },
     {
       "Folder": "cron",
       "Path": "/var/spool/cron",
       "DatabaseTypes": "all",
-      "url": "/docs/database/database-hosting/database-configuration-files#cron"
+      "url": "/database/database-hosting/database-configuration-files#cron"
     },
     {
       "Folder": "scripts",
       "Path": "/var/lib/jelastic/bin",
       "DatabaseTypes": "all",
-      "url": "/docs/database/database-hosting/database-configuration-files#scripts"
+      "url": "/database/database-hosting/database-configuration-files#scripts"
     },
     {
       "Folder": "backup",
       "Path": "/var/lib/jelastic/backup",
       "DatabaseTypes": "all",
-      "url": "/docs/database/database-hosting/database-configuration-files#backup"
+      "url": "/database/database-hosting/database-configuration-files#backup"
     },
     {
       "Folder": "keys",
       "Path": "/var/lib/jelastic/keys",
       "DatabaseTypes": "all",
-      "url": "/docs/database/database-hosting/database-configuration-files#keys"
+      "url": "/database/database-hosting/database-configuration-files#keys"
     },
     {
       "Folder": "conf.d",
       "Path": "/etc/httpd/conf.d",
       "DatabaseTypes": "MySQL, MariaDB, Percona, PostgreSQL",
-      "url": "/docs/database/database-hosting/database-configuration-files#confd"
+      "url": "/database/database-hosting/database-configuration-files#confd"
     }
   ]
 }

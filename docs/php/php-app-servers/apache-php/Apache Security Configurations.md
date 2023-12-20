@@ -1,10 +1,10 @@
 ---
-title: Apache security configurations
+title: Apache Security Configurations
 slug: apache-security-configurations
 sidebar_position: 2
 ---
 
-## Apache Security Configurations
+<!-- ## Apache Security Configurations -->
 
 In this tutorial we will show how to set up the additional security configurations for your PHP application hosted with Apache application server.
 
@@ -17,12 +17,11 @@ The directives are able to override a subset of the server’s global configurat
 
 **AllowOverride** is valid only in < directory > sections specified without regular expressions. When this directive is set to None - _.htaccess_ files are completely ignored. When this directive is set to All, then any directive which has the _.htaccess_ Context is allowed in _.htaccess_ files.
 
-Let’s examine the every kind of security configs you can apply in order to protect your application:
-
+<!-- Let’s examine the every kind of security configs you can apply in order to protect your application:
 - [Authentication](https://cloudmydc.com/)
 - [Setting up the access criteria](https://cloudmydc.com/)
 - [Configuring mod_security module](https://cloudmydc.com/)
-- [Server version hiding](https://cloudmydc.com/)
+- [Server version hiding](https://cloudmydc.com/) -->
 
 ## Setting Up the Authentication Request
 
@@ -140,7 +139,7 @@ Navigate to the **/etc/httpd/conf** folder and open the **_httpd.conf_** file (o
 
 :::tip Note
 
-Denying access through IP makes sense only if you use [public IP](/docs/application-setting/external-access-to-applications/public-ip) feature.
+Denying access through IP makes sense only if you use [public IP](/application-setting/external-access-to-applications/public-ip) feature.
 
 :::
 

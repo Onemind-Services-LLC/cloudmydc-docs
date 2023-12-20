@@ -1,5 +1,5 @@
 ---
-title: Two-factor authentication
+title: Two-Factor Authentication
 slug: two-factor-authentication
 sidebar_position: 6
 ---
@@ -23,10 +23,10 @@ The platform allows configuring a **two-factor authentication** (2FA) to add an 
 
 Below, we’ll go step-by-step on the two-factor authentication feature management:
 
-- [enable 2FA](/docs/account-and-pricing/two-factor-authentication#enable-two-factor-authentication)
-- [manage recovery codes](/docs/account-and-pricing/two-factor-authentication#manage-recovery-codes)
-- [deactivate 2FA](/docs/account-and-pricing/two-factor-authentication#disable-two-factor-authentication)
-- [working with API](/docs/account-and-pricing/two-factor-authentication)
+- [enable 2FA](/account-and-pricing/two-factor-authentication#enable-two-factor-authentication)
+- [manage recovery codes](/account-and-pricing/two-factor-authentication#manage-recovery-codes)
+- [deactivate 2FA](/account-and-pricing/two-factor-authentication#disable-two-factor-authentication)
+- [working with API](/account-and-pricing/two-factor-authentication)
 
 ## Enable Two-Factor Authentication
 
@@ -192,4 +192,4 @@ That’s it! Your account is now accessible with just the login/password credent
 
 In order to get a valid session for the [API requests](https://cloudmydc.com/) on accounts with enabled 2FA, you need to call an additional **_Verify2FACode_** method after the **_SignIn_** one. In such a way, you’ll be able to provide a six-digit authentication code from the appropriate application on your device.
 
-To avoid such complexity, it is recommended generating and using [personal access tokens](/docs/account-and-pricing/personal-access-tokens) in your API requests and custom automation scripts.
+To avoid such complexity, it is recommended generating and using [personal access tokens](/account-and-pricing/personal-access-tokens) in your API requests and custom automation scripts.

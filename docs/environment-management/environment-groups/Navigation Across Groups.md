@@ -1,12 +1,10 @@
 ---
-title: Navigation across groups
+title: Navigation Across Groups
 slug: navigation-across-groups
 sidebar_position: 3
 ---
 
-## Navigation Across Environment Groups
-
-Organizing applications into [environment groups](/docs/environment-management/environment-groups/overview) allows to make your working process much more comfortable. This is achieved through setting special **Tags**, which are used for environment filtering and are displayed within the same-named column in the main user dashboard screen.
+Organizing applications into [environment groups](/environment-management/environment-groups/overview) allows to make your working process much more comfortable. This is achieved through setting special **Tags**, which are used for environment filtering and are displayed within the same-named column in the main user dashboard screen.
 
 <div style={{
     display:'flex',
@@ -20,8 +18,8 @@ Organizing applications into [environment groups](/docs/environment-management/e
 
 You can switch and navigate between your environment groups with the following UI elements:
 
-- [via the Tags column](/docs/environment-management/environment-groups/navigation-across-groups#navigation-via-tags)
-- [via the Env Groups menu](/docs/environment-management/environment-groups/navigation-across-groups#navigation-via-env-groups-panel)
+- [via the Tags column](/environment-management/environment-groups/navigation-across-groups#navigation-via-tags)
+- [via the Env Groups menu](/environment-management/environment-groups/navigation-across-groups#navigation-via-env-groups-panel)
 
 ## Navigation via Tags
 
@@ -53,7 +51,7 @@ Herewith, the appropriate group name will be temporarily hidden within the **Tag
 
 :::tip Note
 
-In case the currently selected group contains further child items (i.e. [subgroups](/docs/environment-management/environment-groups/group-management#add-subgroups)), their list can viewed at the chosen group’s [management menu](/docs/environment-management/environment-groups/group-management) within the top navigation panel.
+In case the currently selected group contains further child items (i.e. [subgroups](/environment-management/environment-groups/group-management#add-subgroups)), their list can viewed at the chosen group’s [management menu](/environment-management/environment-groups/group-management) within the top navigation panel.
 
 <div style={{
     display:'flex',
@@ -73,7 +71,7 @@ In order to cancel filtering and return back to the overall list of available en
 
 ## Navigation via Env Groups Panel
 
-Upon expanding the main **Env Groups** menu at the top, you’ll be shown the list of all environment groups within your account, including the comprised [subgroups](/docs/environment-management/environment-groups/group-management#add-subgroups) (if are any).
+Upon expanding the main **Env Groups** menu at the top, you’ll be shown the list of all environment groups within your account, including the comprised [subgroups](/environment-management/environment-groups/group-management#add-subgroups) (if are any).
 
 <div style={{
     display:'flex',
@@ -88,7 +86,7 @@ Upon expanding the main **Env Groups** menu at the top, you’ll be shown the li
 Clicking on a particular one will apply the corresponding filtering to your environment list.
 Additionally, here you are provided with two predefined sorting options which are based on the following parameters:
 
-- **Shared with Me** - select this option to access the list of environments [shared](/docs/environment-management/share-environment) with your account
+- **Shared with Me** - select this option to access the list of environments [shared](/environment-management/share-environment) with your account
 
 <div style={{
     display:'flex',
@@ -113,11 +111,11 @@ When hovering over **Shared with Me**, you’ll see the list of collaboration ow
 
 </div>
 
-And if selecting **Manage** at this submenu bottom, the **Account settings > [Shared with Me](/docs/environment-management/share-environment)** tab will be opened.
+And if selecting **Manage** at this submenu bottom, the **Account settings > [Shared with Me](/environment-management/share-environment)** tab will be opened.
 
 :::
 
-- **Region** - use this option to filter environments based on the list of [environment regions](/docs/environment-management/environment-regions/choosing-a-region), available for your account
+- **Region** - use this option to filter environments based on the list of [environment regions](/environment-management/environment-regions/choosing-a-region), available for your account
 
 <div style={{
     display:'flex',
@@ -129,4 +127,4 @@ And if selecting **Manage** at this submenu bottom, the **Account settings > [Sh
 
 </div>
 
-Now, when you know how to easily navigate between different environment groups, check some additional possibilities provided for [group management](/docs/environment-management/environment-groups/group-management) at the platform dashboard.
+Now, when you know how to easily navigate between different environment groups, check some additional possibilities provided for [group management](/environment-management/environment-groups/group-management) at the platform dashboard.

@@ -1,5 +1,5 @@
 ---
-title: App security with nginx balancer
+title: App Security With Nginx Balancer
 slug: app-security-with-nginx-balancer
 sidebar_position: 6
 ---
@@ -31,7 +31,7 @@ As the amount of information shared through the internet is growing from year to
 
 So, in this guide we’ll show you how to set a couple of simple protection mechanisms, that are available for any application that uses **NGINX balancer** as a frontend, and which applying doesn’t require any additional costs.
 
-Primarily the NGINX load balancer server is intended for performing the smart requests distribution between multiple application server nodes and thus ensuring high system availability and reliability. Herewith, it can be used for processing both HTTP and TCP traffic types (details can be found within the [HTTP Load Balancing](/docs/load-balancers/load-balancing) and [TCP Load Balancing](/docs/load-balancers/nginx/tcp-load-balancing) docs).
+Primarily the NGINX load balancer server is intended for performing the smart requests distribution between multiple application server nodes and thus ensuring high system availability and reliability. Herewith, it can be used for processing both HTTP and TCP traffic types (details can be found within the [HTTP Load Balancing](/load-balancers/load-balancing) and [TCP Load Balancing](/load-balancers/nginx/tcp-load-balancing) docs).
 
 Load balancing node is automatically added to an environment if you pick up more than one application server node, and in addition, it can be added manually even for a single server. To do this, just select the Balancing wizard block above the chosen application server in the **Environment Topology** window.
 
@@ -47,9 +47,9 @@ Load balancing node is automatically added to an environment if you pick up more
 
 Now when the environment is ready, you can proceed to configuring the desired protection method using the instructions below:
 
-- [Authentication](/docs/load-balancers/nginx/app-security-with-nginx-balancer#authentication) makes application access protected with a password
-- [IP Address Deny](/docs/load-balancers/nginx/app-security-with-nginx-balancer#ip-address-deny) mechanism is used to forbid application access from a particular IP
-  We’ll also pay the attention to the way of [combining](/docs/load-balancers/nginx/app-security-with-nginx-balancer#methods-combination) the abovementioned methods for being used simultaneously. So, let’s find out how to implement this to your environment. Here we go!
+- [Authentication](/load-balancers/nginx/app-security-with-nginx-balancer#authentication) makes application access protected with a password
+- [IP Address Deny](/load-balancers/nginx/app-security-with-nginx-balancer#ip-address-deny) mechanism is used to forbid application access from a particular IP
+  We’ll also pay the attention to the way of [combining](/load-balancers/nginx/app-security-with-nginx-balancer#methods-combination) the abovementioned methods for being used simultaneously. So, let’s find out how to implement this to your environment. Here we go!
 
 ## Authentication
 

@@ -1,14 +1,14 @@
 ---
-title: Testing load balancing
+title: Testing Load Balancing
 slug: testing-load-balancing
 sidebar_position: 4
 ---
 
-## How to Test Load Balancing
+<!-- ## How to Test Load Balancing -->
 
-When your project becomes highly demanded and visited, you face a problem - necessity to increase your hardware productivity, as it should be able to handle and rapidly serve all the incoming users' requests. Adding more resources will temporarily improve the situation, saving your server from the failure, but won’t solve the root issue. And this results in the need to set up a [clustering solution](/docs/load-balancers/nginx/testing-load-balancing) with an embedded automatic load balancing.
+When your project becomes highly demanded and visited, you face a problem - necessity to increase your hardware productivity, as it should be able to handle and rapidly serve all the incoming users' requests. Adding more resources will temporarily improve the situation, saving your server from the failure, but won’t solve the root issue. And this results in the need to set up a [clustering solution](/load-balancers/nginx/testing-load-balancing) with an embedded automatic load balancing.
 
-Application cluster adjusting is quite easy with the platform - just add a few more application server instances to your environment [via the topology wizard](/docs/application-setting/scaling-and-clustering/horizontal-scaling). In addition, you’ll automatically get the NGINX-balancer server enabled in front of your project. It will be responsible for the even load distribution among the stated number of app server nodes, performed by virtue of the [load balancing](/docs/load-balancers/load-balancing).
+Application cluster adjusting is quite easy with the platform - just add a few more application server instances to your environment [via the topology wizard](/application-setting/scaling-and-clustering/horizontal-scaling). In addition, you’ll automatically get the NGINX-balancer server enabled in front of your project. It will be responsible for the even load distribution among the stated number of app server nodes, performed by virtue of the [load balancing](/load-balancers/load-balancing).
 
 <div style={{
     display:'flex',
@@ -230,7 +230,7 @@ Don’t miss the closing curly braces after those sticky path strings, they shou
 
 ## Testing Balancer and Compare Results
 
-Now let’s proceed directly to [load balancing](/docs/load-balancers/load-balancing) testing.
+Now let’s proceed directly to [load balancing](/load-balancers/load-balancing) testing.
 
 1. Switch back to your terminal and run the **ab** testing again with the same parameters (except the file with results - specify another name for it, e.g. res2.tsv).
 

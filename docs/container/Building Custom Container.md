@@ -1,5 +1,5 @@
 ---
-title: Building custom container
+title: Building Custom Container
 slug: building-custom-container
 sidebar_position: 9
 ---
@@ -21,12 +21,6 @@ With the platform, the process of preparing your own Docker image can be greatly
 The most common way of building Docker images is composing a **_Dockerfile_** - special manifest, which allows achieving the additional automation through listing the desired commands into a simple text file, which will be read and executed by Docker daemon. In such a way, a new template will be created automatically basing on the comprised instructions (while otherwise, you need to call every necessary operation manually, one by one).
 
 Below, we’ll consider all the specifics of a custom image running at our platform, and, as a result, you’ll get the ready-to-work dockerized version of the WildFly server right inside the platform.
-
-So, let’s walk through the required operations step-by-step:
-
-- [composing dockerfile](/docs/container/building-custom-container#composing-dockerfile)
-- [adding image to repository](/docs/container/building-custom-container#adding-image-to-repository)
-- [deploying image at the platform](/docs/container/building-custom-container#deploying-image-at-platform)
 
 ## Composing Dockerfile
 
@@ -123,13 +117,13 @@ chown -R wildfly:wildfly /opt/wildfly-$WILDFLY_VERSION /opt/wildfly /var/log/wil
 RUN /opt/wildfly/bin/add-user.sh --user $ADMIN_USER --password $ADMIN_PASSWORD --silent --enable
 ```
 
-10. Now, we can correct a link to the admin panel itself at the default index.html page by defining the corresponding redirect (as in case our image will be deployed to a container without the [external IP](/docs/application-setting/external-access-to-applications/public-ip) attached, port 4949 and HTTP connection should be used here):
+10. Now, we can correct a link to the admin panel itself at the default index.html page by defining the corresponding redirect (as in case our image will be deployed to a container without the [external IP](/application-setting/external-access-to-applications/public-ip) attached, port 4949 and HTTP connection should be used here):
 
 ```bash
 RUN sed -i "s/<a href=\"\/console\">/<a href=\"\/console\" onclick=\"javascript:event.target.port=4949;event.target.protocol=\'http:\';\">/" /opt/wildfly/welcome-content/index.html
 ```
 
-11. Add the English [locale settings](/docs/application-setting/managing-locale-settings) to the container.
+11. Add the English [locale settings](/application-setting/managing-locale-settings) to the container.
 
 ```bash
 RUN localedef -i en_US -f UTF-8 en_US.UTF-8
@@ -196,7 +190,7 @@ You can log into the registry in advance using the corresponding docker login co
 
 ## Deploying Image at Platform
 
-As soon as your image is successfully stored at the repository, it becomes available for usage at the platform and can be added to an environment through the dedicated Docker board integrated to the [topology wizard](/docs/container/container-deployment/custom-containers-deployment) dashboard sections.
+As soon as your image is successfully stored at the repository, it becomes available for usage at the platform and can be added to an environment through the dedicated Docker board integrated to the [topology wizard](/container/container-deployment/custom-containers-deployment) dashboard sections.
 
 So, select the **New Environment** button at the top of the dashboard, move to the **_Docker_** tab within the opened environment wizard and click on the Select Image button.
 
@@ -244,7 +238,7 @@ We use the public Docker Hub repository, located within the central Registry Hub
 
 </div>
 
-Set the rest of the necessary [configurations](/docs/container/container-deployment/custom-containers-deployment) on your own (the details on the available options can be read in the linked guide) and finish the environment creation.
+Set the rest of the necessary [configurations](/container/container-deployment/custom-containers-deployment) on your own (the details on the available options can be read in the linked guide) and finish the environment creation.
 
 4. Once your environment with the appropriate image inside appears on the dashboard, it can be accessed using the corresponding **Open in Browser** button:
 

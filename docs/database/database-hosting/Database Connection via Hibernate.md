@@ -1,12 +1,12 @@
 ---
-title: Database connection via hibernate
+title: Database Connection Via Hibernate
 slug: database-connection-via-hibernate
 sidebar_position: 7
 ---
 
 import obj from './DatabaseConnectionviaHibernate.json'
 
-## Connection to DB using Hibernate
+<!-- ## Connection to DB using Hibernate -->
 
 To connect to DB using Hibernate users have to make the next steps:
 
@@ -30,7 +30,7 @@ Let’s do it step by step:
 </div>
 
 2. Create a new user in a database:
-   How to create a new user - [click here](/docs/database/mysql-mariadb-percona/connection-to-applications/java-connection#java-connection-to-mariadbmysqlpercona).
+   How to create a new user - [click here](/database/mysql-mariadb-percona/connection-to-applications/java-connection#java-connection-to-mariadbmysqlpercona).
 
 ```bash
 Database name : jelasticDb

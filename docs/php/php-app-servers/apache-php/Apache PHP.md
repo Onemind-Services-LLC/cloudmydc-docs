@@ -1,10 +1,10 @@
 ---
-title: Apache php
+title: Apache PHP
 slug: apache-php
 sidebar_position: 1
 ---
 
-## Apache PHP
+<!-- ## Apache PHP -->
 
 The platform adapts a robust, commercial-grade, and open-source [Apache HTTP Server](https://cloudmydc.com/) ("_httpd_") to create a secure, efficient, and scalable application server for PHP hosting. **Apache PHP** stack by the platform provides out-of-box support of the PHP programming language and HTTP/2 protocol ([SSL](https://cloudmydc.com/) is required) through utilizing the **_php7_module_** and **_http2_module_** modules respectively.
 
@@ -39,7 +39,7 @@ To get your _Apache PHP_ server, follow the steps below:
 
 </div>
 
-2. Within the opened _topology wizard_, switch to the **PHP** tab and select **_Apache_** as your application server. Set other configurations up to your needs (e.g. [cloudlets limit](https://cloudmydc.com/), [public IPs](https://cloudmydc.com/), [region](/docs/environment-management/environment-regions/choosing-a-region), etc.).
+2. Within the opened _topology wizard_, switch to the **PHP** tab and select **_Apache_** as your application server. Set other configurations up to your needs (e.g. [cloudlets limit](https://cloudmydc.com/), [public IPs](https://cloudmydc.com/), [region](/environment-management/environment-regions/choosing-a-region), etc.).
 
 <div style={{
     display:'flex',
@@ -89,7 +89,7 @@ Apache PHP has some main configuration files that you may want to adjust to cust
 
 As an example, we’ll show how you can change the size of the files, which can be uploaded to your application.
 
-1. Click the **Config** button for your Apache server to access the [configuration file manager](/docs/application-setting/configuration-file-manager):
+1. Click the **Config** button for your Apache server to access the [configuration file manager](/application-setting/configuration-file-manager):
 
 <div style={{
     display:'flex',
@@ -118,7 +118,7 @@ As an example, we’ll show how you can change the size of the files, which can 
 
 :::danger Note
 
-Regardless of these settings, the maximum file size that can be uploaded via the platform file manager from the local machine is _150MB_ (may vary based on the hosting provider settings). To operate larger files, use the **URL** option or attach [public IP](/docs/application-setting/external-access-to-applications/public-ip) and use your own manager (for example, [FTP add-on](https://cloudmydc.com/)).
+Regardless of these settings, the maximum file size that can be uploaded via the platform file manager from the local machine is _150MB_ (may vary based on the hosting provider settings). To operate larger files, use the **URL** option or attach [public IP](/application-setting/external-access-to-applications/public-ip) and use your own manager (for example, [FTP add-on](https://cloudmydc.com/)).
 
 <div style={{
     display:'flex',

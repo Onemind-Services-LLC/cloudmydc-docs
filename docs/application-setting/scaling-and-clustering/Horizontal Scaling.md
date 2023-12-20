@@ -1,12 +1,12 @@
 ---
-title: Horizontal scaling
+title: Horizontal Scaling
 slug: horizontal-scaling
 sidebar_position: 2
 ---
 
-## Horizontal Scaling inside the Cloud: Multi Node
+<!-- ## Horizontal Scaling inside the Cloud: Multi Node -->
 
-With the platform, hosting of your applications becomes truly flexible. In addition to [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling), the platform also lets you increase/decrease the number of servers in your environment manually or [automatically](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling).
+With the platform, hosting of your applications becomes truly flexible. In addition to [automatic vertical scaling](/application-setting/scaling-and-clustering/automatic-vertical-scaling), the platform also lets you increase/decrease the number of servers in your environment manually or [automatically](/application-setting/scaling-and-clustering/automatic-horizontal-scaling).
 
 The process of manual scaling is fairly simple - open the environment topology wizard and use the appropriate “**+**” and “**-**” buttons or type the required number in the central panel. Also, you can use the slider, which automatically appears upon making any adjustment.
 
@@ -22,13 +22,13 @@ The process of manual scaling is fairly simple - open the environment topology w
 
 :::tip
 
-- you can automate horizontal scaling based on incoming load with the help of [tunable triggers](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling)
-- you can use the initial (master) node of the layer as your [storage server](/docs/data-storage-container/use-cases/master-container) for sharing data within the whole layer
-- in case of scaling in (i.e decreasing the nodes number), the last container added to the layer is the first one to be removed (unless it is [selected explicitly](/docs/application-setting/scaling-and-clustering/horizontal-scaling#managing-nodes-within-layer))
+- you can automate horizontal scaling based on incoming load with the help of [tunable triggers](/application-setting/scaling-and-clustering/automatic-horizontal-scaling)
+- you can use the initial (master) node of the layer as your [storage server](/data-storage-container/use-cases/master-container) for sharing data within the whole layer
+- in case of scaling in (i.e decreasing the nodes number), the last container added to the layer is the first one to be removed (unless it is [selected explicitly](/application-setting/scaling-and-clustering/horizontal-scaling#managing-nodes-within-layer))
 
 :::
 
-Next, you can select the required [scaling mode](/docs/application-setting/scaling-and-clustering/horizontal-scaling) from the appropriate drop-down list. Also, for additional details refer to the [horizontal scaling specifics](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) section below.
+Next, you can select the required [scaling mode](/application-setting/scaling-and-clustering/horizontal-scaling) from the appropriate drop-down list. Also, for additional details refer to the [horizontal scaling specifics](/application-setting/scaling-and-clustering/automatic-horizontal-scaling) section below.
 
 ## Scaling Modes
 
@@ -53,8 +53,8 @@ While using the **_stateless_** mode, be aware of the following features absence
 
 - **deployments** - the existing project contexts won’t be transferred
 - **custom SSL** - SSL certificates and configs won’t be copied
-- **mount points** - custom [mounts](/docs/data-storage-container/data-sharing/mount-points) will be moved only if the appropriate [volume](/docs/container/container-configuration/volumes) is configured
-- **add-ons** - any [add-ons](/docs/deployment-tools/cloud-scripting-&-jps/marketplace) installed on the layer won’t be available
+- **mount points** - custom [mounts](/data-storage-container/data-sharing/mount-points) will be moved only if the appropriate [volume](/container/container-configuration/volumes) is configured
+- **add-ons** - any [add-ons](/deployment-tools/cloud-scripting-&-jps/marketplace) installed on the layer won’t be available
 
 :::danger tip
 
@@ -66,7 +66,7 @@ Based on these peculiarities, the platform recommends (and applies by default) t
 
 ## Horizontal Scaling Specifics
 
-The maximum number of the same-type servers within a single environment layer depends on a particular hosting provider settings (usually this limit stands for 16 nodes). You can check the exact value within the **_Quotas & Pricing > [Account Limits](/docs/account-and-pricing/quotas-system)_** information frame.
+The maximum number of the same-type servers within a single environment layer depends on a particular hosting provider settings (usually this limit stands for 16 nodes). You can check the exact value within the **_Quotas & Pricing > [Account Limits](/account-and-pricing/quotas-system)_** information frame.
 
 All newly added servers are created at different hardware nodes, providing advanced reliability and high-availability.
 
@@ -82,7 +82,7 @@ All newly added servers are created at different hardware nodes, providing advan
 
 Each environment node group (layer) is provided with the dedicated name, which, if needed, can be manually adjusted. In case there are several instances inside, layer name will be complemented with the **_xN_** label (where **_N_** is the actual nodes number).
 
-Having several same-type nodes within a layer enables their synchronous management. Thus, all containers can be simultaneously [configured](/docs/container/container-configuration/configuration-tools), inspected for logs and statistics, [restarted or redeployed](/docs/category/container-deployment) through the corresponding icons.
+Having several same-type nodes within a layer enables their synchronous management. Thus, all containers can be simultaneously [configured](/container/container-configuration/configuration-tools), inspected for logs and statistics, [restarted or redeployed](/category/container-deployment) through the corresponding icons.
 
 <div style={{
     display:'flex',
@@ -120,16 +120,16 @@ Just double-click at the default **_Node ID: xxx_** value (or hover over it to r
 
 </div>
 
-More information on this labeling feature can be found in the [Environment Aliases](/docs/environment-management/environment-aliases) document.
+More information on this labeling feature can be found in the [Environment Aliases](/environment-management/environment-aliases) document.
 
 While scaling different types of stacks, consider the following specifics:
 
 - upon scaling the application server instance, the load balancer node will be automatically added to the environment topology
-- if enabling the [High-Availability](/docs/application-setting/scaling-and-clustering/session-replication-for-ha) option for application server, the obligatory required NGINX load balancer cannot be scaled horizontally (if several nodes of NGINX were available before, they will be automatically downscaled to a single instance)
-- upon scaling VPS nodes, each one is provided with a separate [public IP](/docs/application-setting/external-access-to-applications/public-ip) address attached
-- [Maven](/docs/java/build-node/java-vcs-deployment-with-maven) is the only node, which cannot be scaled horizontally (as there is no point in such operation)
+- if enabling the [High-Availability](/application-setting/scaling-and-clustering/session-replication-for-ha) option for application server, the obligatory required NGINX load balancer cannot be scaled horizontally (if several nodes of NGINX were available before, they will be automatically downscaled to a single instance)
+- upon scaling VPS nodes, each one is provided with a separate [public IP](/application-setting/external-access-to-applications/public-ip) address attached
+- [Maven](/java/build-node/java-vcs-deployment-with-maven) is the only node, which cannot be scaled horizontally (as there is no point in such operation)
 
-Now, you know how easy it is to horizontally scale instances in the platform and aware of the operation specifics. Also, feel free to configure an [automatic nodes scaling](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) to smoothly overcome high load spikes without overpaying for unused resources.
+Now, you know how easy it is to horizontally scale instances in the platform and aware of the operation specifics. Also, feel free to configure an [automatic nodes scaling](/application-setting/scaling-and-clustering/automatic-horizontal-scaling) to smoothly overcome high load spikes without overpaying for unused resources.
 
 ## Managing Nodes within Layer
 
@@ -175,7 +175,7 @@ In the **Scaling Nodes** window, you can perform the following actions:
 
 :::tip
 
-- In case a [**high availability**](/docs/application-setting/scaling-and-clustering/session-replication-for-ha) option is enabled for the layer (available for the _Tomcat_ and _TomEE_ application servers only), the nodes are added and removed in pairs.
+- In case a [**high availability**](/application-setting/scaling-and-clustering/session-replication-for-ha) option is enabled for the layer (available for the _Tomcat_ and _TomEE_ application servers only), the nodes are added and removed in pairs.
 - The new nodes' icons represent the scaling mode of the layer - empty container for _stateless_ and filled one for _stateful_.
 
 :::
@@ -209,7 +209,7 @@ In the **Scaling Nodes** window, you can perform the following actions:
 
 :::
 
-3. At the bottom of the frame, a redirect to the [Automatic Horizontal Scaling](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) section can be found.
+3. At the bottom of the frame, a redirect to the [Automatic Horizontal Scaling](/application-setting/scaling-and-clustering/automatic-horizontal-scaling) section can be found.
 
 <div style={{
     display:'flex',

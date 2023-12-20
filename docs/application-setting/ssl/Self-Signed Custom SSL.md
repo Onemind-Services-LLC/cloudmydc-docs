@@ -1,12 +1,12 @@
 ---
-title: Self-signed custom ssl
+title: Self-Signed Custom SSL
 slug: self-signed-custom-ssl
 sidebar_position: 6
 ---
 
-## Self-Signed Custom SSL Certificates
+<!-- ## Self-Signed Custom SSL Certificates -->
 
-One of the ways to secure your application is to use SSL-encrypted (Secure Sockets Layer) connection. With the platform, you can use both [Built-In SSL](/docs/application-setting/ssl/built-in-ssl) and [Custom SSL](/docs/application-setting/ssl/custom-ssl) certificates.
+One of the ways to secure your application is to use SSL-encrypted (Secure Sockets Layer) connection. With the platform, you can use both [Built-In SSL](/application-setting/ssl/built-in-ssl) and [Custom SSL](/application-setting/ssl/custom-ssl) certificates.
 
 Herewith, all custom SSL certificates require to be signed, and usually, this is done by the Certificate Authority (CA) companies (e.g. Let’s Encrypt). In this case, your certificate becomes reliable after signing, so others can trust it and any connection to your site or application is performed without issues.
 
@@ -32,10 +32,10 @@ In order to generate a self-signed certificate, you need to buy a **Domain Name*
 
 Once that is done, you are ready to proceed to the generation of your SSL certificate with the help of any preferred tool. We’ll use OpenSSL as an example. Depending on the operating system you are using, perform the following steps:
 
-- [for Windows](/docs/application-setting/ssl/self-signed-custom-ssl#for-windows)
-- [for Linux/MacOS/FreeBSD](/docs/application-setting/ssl/self-signed-custom-ssl#for-linuxmacosfreebsd)
+- [for Windows](/application-setting/ssl/self-signed-custom-ssl#for-windows)
+- [for Linux/MacOS/FreeBSD](/application-setting/ssl/self-signed-custom-ssl#for-linuxmacosfreebsd)
 
-You are also able to generate the required files using our [Elastic Virtual Private Server](/docs/application-setting/ssl/self-signed-custom-ssl#elastic-vps).
+You are also able to generate the required files using our [Elastic Virtual Private Server](/application-setting/ssl/self-signed-custom-ssl#elastic-vps).
 
 ## For Windows
 
@@ -318,22 +318,22 @@ Great! Now you have the self-signed SSL certificate for your application.
 
 ## Elastic VPS
 
-You also have the possibility to create your self-signed certificate using the [Elastic VPS](/docs/elastic-vps/elastic-vps-overview/general-information) server. For that you need to:
+You also have the possibility to create your self-signed certificate using the [Elastic VPS](/elastic-vps/elastic-vps-overview/general-information) server. For that you need to:
 
 - create an environment with Elastic VPS inside
-- connect to it in a preferred way (using [public IP](/docs/application-setting/external-access-to-applications/public-ip) or via [SSH Gateway](/docs/deployment-tools/ssh/ssh-overview))
+- connect to it in a preferred way (using [public IP](/application-setting/external-access-to-applications/public-ip) or via [SSH Gateway](/deployment-tools/ssh/ssh-overview))
 - access the OpenSSL shell with the corresponding **_openssl_** command
-- create a self-signed certificate following the [Linux/MacOS/FreeBSD](/docs/application-setting/ssl/self-signed-custom-ssl#for-linuxmacosfreebsd) section of this guide (the only difference is all the commands should be executed without the **_openssl_** word at their beginning, as you are already inside the OpenSSL shell)
+- create a self-signed certificate following the [Linux/MacOS/FreeBSD](/application-setting/ssl/self-signed-custom-ssl#for-linuxmacosfreebsd) section of this guide (the only difference is all the commands should be executed without the **_openssl_** word at their beginning, as you are already inside the OpenSSL shell)
 
-Once the generation process is finished, you need to download the created certificate files (e.g. via [configuration file manager](/docs/application-setting/configuration-file-manager)) to apply them to the necessary environment afterward.
+Once the generation process is finished, you need to download the created certificate files (e.g. via [configuration file manager](/application-setting/configuration-file-manager)) to apply them to the necessary environment afterward.
 
 ## Attach Certificates
 
 Now, follow the steps as for any other custom SSL upload:
 
-- [Adjust Environment Topology](/docs/application-setting/ssl/custom-ssl)
-- [Domain Name and A Record Settings](/docs/application-setting/ssl/custom-ssl)
-- [Upload Certificate to the Environment](/docs/application-setting/ssl/custom-ssl)
+- [Adjust Environment Topology](/application-setting/ssl/custom-ssl)
+- [Domain Name and A Record Settings](/application-setting/ssl/custom-ssl)
+- [Upload Certificate to the Environment](/application-setting/ssl/custom-ssl)
 
 That’s it! If you enter the bound custom domain name (or the attached external IP address) into your browser’s address bar with the **_https://_** connection protocol, you’ll see the mentioned warning message opened, informing you that the used SSL certificate is not trusted.
 

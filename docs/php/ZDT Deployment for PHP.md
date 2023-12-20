@@ -1,10 +1,10 @@
 ---
-title: Zdt deployment for php
+title: Zdt Deployment For PHP
 slug: zdt-deployment-for-php
 sidebar_position: 5
 ---
 
-## Zero DownTime (ZDT) Deployment for PHP
+<!-- ## Zero DownTime (ZDT) Deployment for PHP -->
 
 <div style={{
     display: 'grid',
@@ -54,9 +54,9 @@ The availability of this functionality depends on your hosting provider’s sett
 
 Below, we’ll explore this mechanism in more detail by describing:
 
-- [ZDT deployment workflow](/docs/php/zdt-deployment-for-php)
-- [how ZDT functionality is ensured at the platform](/docs/php/zdt-deployment-for-php)
-- [atomic and classic deployment modes comparison](/docs/php/zdt-deployment-for-php)
+- [ZDT deployment workflow](/php/zdt-deployment-for-php)
+- [how ZDT functionality is ensured at the platform](/php/zdt-deployment-for-php)
+- [atomic and classic deployment modes comparison](/php/zdt-deployment-for-php)
 
 So, let’s go on!
 
@@ -64,7 +64,7 @@ So, let’s go on!
 
 First of all, we’ll consider more specifically how the above described PHP zero-downtime deployment mechanism actually works on the platform - let’s examine all of these processes step-by-step with a real example.
 
-1. To start with, you’ll need a PHP environment (either a [new](/docs/environment-management/setting-up-environment) or the already existing one) - we’ll use Apache for this example:
+1. To start with, you’ll need a PHP environment (either a [new](/environment-management/setting-up-environment) or the already existing one) - we’ll use Apache for this example:
 
 <div style={{
     display:'flex',
@@ -76,7 +76,7 @@ First of all, we’ll consider more specifically how the above described PHP zer
 
 </div>
 
-2. Next, proceed to the [deployment](/docs/deployment/deployment-guide) of the required application. During this procedure, you need to tick the corresponding checkbox at the appropriate confirmation frame (depending on the project source type used) in order to enable the ZDT deployment option:
+2. Next, proceed to the [deployment](/deployment/deployment-guide) of the required application. During this procedure, you need to tick the corresponding checkbox at the appropriate confirmation frame (depending on the project source type used) in order to enable the ZDT deployment option:
 
 - for deployment via local file or direct URL
 
@@ -134,7 +134,7 @@ As normal, the application is ready to handle requests just after the deployment
 
 If navigating inside the _ROOT_ directory, circled above, the content of the currently used application version will be viewed, i.e. it is changed each time the symlink is switched.
 
-This can be clearly seen if entering your application server’s container [via SSH](/docs/deployment-tools/ssh/ssh-access/overview) and executing the long format file-listing command for your **webroot** folder, i.e.:
+This can be clearly seen if entering your application server’s container [via SSH](/deployment-tools/ssh/ssh-access/overview) and executing the long format file-listing command for your **webroot** folder, i.e.:
 
 <div style={{
     width: '100%',

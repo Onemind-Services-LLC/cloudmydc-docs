@@ -1,10 +1,10 @@
 ---
-title: Compound container
+title: Compound Container
 slug: compound-container
 sidebar_position: 3
 ---
 
-## Storing Data in Compound Container
+<!-- ## Storing Data in Compound Container -->
 The platform provides a possibility to treat any node at account as a data storage server, i.e. assign it an additional storage role beside the main native one. Using such a kind of compound containers suits best for handling simple projects.
 
 <div style={{

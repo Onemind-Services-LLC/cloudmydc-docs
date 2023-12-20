@@ -34,6 +34,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           remarkPlugins: [import('remark-slug')],
+          routeBasePath: '/',
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -83,6 +84,7 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
+            to: '/',
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {

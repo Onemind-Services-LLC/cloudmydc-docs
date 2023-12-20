@@ -1,5 +1,5 @@
 ---
-title: Cluster access levels
+title: Cluster Access Levels
 slug: cluster-access-levels
 sidebar_position: 9
 ---
@@ -8,9 +8,9 @@ PaaS is targeted at a wide audience of developers and SMBs, enterprises and host
 
 There are three levels of access to the PaaS Cluster:
 
-- [administrators](/docs/platform-overview/cluster-access-levels#administrators)
-- [developers or SMBs](/docs/platform-overview/cluster-access-levels#developers-or-smbs)
-- [end users](/docs/platform-overview/cluster-access-levels#end-users)
+- [administrators](/platform-overview/cluster-access-levels#administrators)
+- [developers or SMBs](/platform-overview/cluster-access-levels#developers-or-smbs)
+- [end users](/platform-overview/cluster-access-levels#end-users)
 
 <div style={{
     display:'flex',
@@ -26,7 +26,7 @@ The platform provides two admin panels for accessing the cluster. Cluster Panel 
 
 ## Administrators
 
-The **administrators** of the platform are operations departments of [hosting providers](/docs/quickstart/hosters-list-&-info) or IT departments of enterprise companies. After the platform installation, they become the owner and begin to manage the overall performance via _Cluster Admin Panel_ by setting the main configurations (quotas, tariffs, customization etc.) and supporting all of the required aspects.
+The **administrators** of the platform are operations departments of [hosting providers](/quickstart/hosters-list-&-info) or IT departments of enterprise companies. After the platform installation, they become the owner and begin to manage the overall performance via _Cluster Admin Panel_ by setting the main configurations (quotas, tariffs, customization etc.) and supporting all of the required aspects.
 
 There are four main tasks performed by the administrators during the PaaS Cluster lifecycle:
 
@@ -49,7 +49,7 @@ The platform provides a full set of analytics, documentation and required tools 
 
 ## Developers or SMBs
 
-This group of platform customers can create environments, deploy their applications and perform all the actions required for the successful [lifecycle of their applications](/docs/application-setting/application-lifecycle-management). Environment and application management is performed via the platform’s panel for developers - [PaaS Dashboard](/docs/quickstart/dashboard-guide).
+This group of platform customers can create environments, deploy their applications and perform all the actions required for the successful [lifecycle of their applications](/application-setting/application-lifecycle-management). Environment and application management is performed via the platform’s panel for developers - [PaaS Dashboard](/quickstart/dashboard-guide).
 
 The main activities available for developers or SMBs in the platform are as follows:
 
@@ -84,7 +84,7 @@ Enterprise installations do not have a trial period. In the enterprise private c
 
 The **end-users** are connected to the PaaS Cluster indirectly by **using applications** deployed to the environments created by developers or SMBs or enterprise developers. All of the incoming users' requests are sent to the domain name of an appropriate application and are processed in one of the following ways:
 
-- via **[Global Resolvers](/docs/application-setting/external-access-to-applications/shared-load-balancer)** The platform uses several synchronized Resolvers (SLBs) for receiving requests simultaneously. As a result, there can be several entry points for environments used at the same time.
+- via **[Global Resolvers](/application-setting/external-access-to-applications/shared-load-balancer)** The platform uses several synchronized Resolvers (SLBs) for receiving requests simultaneously. As a result, there can be several entry points for environments used at the same time.
 
 <div style={{
     display:'flex',
@@ -96,7 +96,7 @@ The **end-users** are connected to the PaaS Cluster indirectly by **using applic
 
 </div>
 
-- via [Public IP](/docs/application-setting/external-access-to-applications/public-ip) if it is attached to the entry point of the environment (balancer, app server or database container). This solution provides less risk of being affected by other applications (as in the case with shared Resolvers) and is recommended for production applications. Also Public IP usage makes more features available such as remote debugging, remote backup, JMX, FTP, Custom SSL, websockets and polling etc.
+- via [Public IP](/application-setting/external-access-to-applications/public-ip) if it is attached to the entry point of the environment (balancer, app server or database container). This solution provides less risk of being affected by other applications (as in the case with shared Resolvers) and is recommended for production applications. Also Public IP usage makes more features available such as remote debugging, remote backup, JMX, FTP, Custom SSL, websockets and polling etc.
 
 <div style={{
     display:'flex',

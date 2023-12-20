@@ -1,10 +1,10 @@
 ---
-title: Dot net core
+title: Dot Net Core
 slug: dot-net-core
 sidebar_position: 1
 ---
 
-## .NET Core Application Server
+<!-- ## .NET Core Application Server -->
 
 **[.NET Core](https://learn.microsoft.com/en-us/dotnet/core/introduction)** is an open-source, cross-platform version of .NET for building websites, services, and console applications. Often it is used for cloud applications or refactoring large enterprise applications into microservices.
 
@@ -26,7 +26,7 @@ sidebar_position: 1
 
 1. Log in to the PaaS dashboard and click the **New Environment** button at the top-left corner.
 
-2. Within the opened [topology wizard](/docs/environment-management/setting-up-environment), navigate to the **.NET** tab and select the **_.NET Core_** application server. Configure the other parameters (_[cloudlets](/docs/platform-overview/cloudlet)_,_disk limit_, _[public IPs](/docs/application-setting/external-access-to-applications/public-ip/)_, etc.) up to your needs.
+2. Within the opened [topology wizard](/environment-management/setting-up-environment), navigate to the **.NET** tab and select the **_.NET Core_** application server. Configure the other parameters (_[cloudlets](/platform-overview/cloudlet)_,_disk limit_, _[public IPs](/application-setting/external-access-to-applications/public-ip/)_, etc.) up to your needs.
 
 <div style={{
     display:'flex',
@@ -56,9 +56,9 @@ The application server operates in a separate container (node) - an isolated vir
 
 ## Deploying Application to .NET Core Server
 
-The platform provides multiple options to automatically [deploy projects](/docs/deployment/deployment-guide). In this example, we’ll add a simple .NET project stored on GitHub.
+The platform provides multiple options to automatically [deploy projects](/deployment/deployment-guide). In this example, we’ll add a simple .NET project stored on GitHub.
 
-1. Open the **_Git/SVN_** tab of the **[Deployment Manager](/docs/deployment/deployment-manager#git--svn-projects)** to add a new repository.
+1. Open the **_Git/SVN_** tab of the **[Deployment Manager](/deployment/deployment-manager#git--svn-projects)** to add a new repository.
 
 <div style={{
     display:'flex',
@@ -80,7 +80,7 @@ If you are interested in [creating your own .NET application](https://learn.micr
 
 :::tip Note
 
-.NET Core supports several specific [variables](/docs/container/container-configuration/variables) that can help with application deployment:
+.NET Core supports several specific [variables](/container/container-configuration/variables) that can help with application deployment:
 
 - **_APP_NAME_** - points to the particular folder (if there are multiple applications in a single repository) or runs a specific **_.dll_** file in your project
 - **_ASPNETCORE_URLS_** - configures services to work with the specified URL

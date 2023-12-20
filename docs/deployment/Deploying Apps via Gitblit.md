@@ -1,14 +1,12 @@
 ---
-title: Deploying apps via gitblit
+title: Deploying Apps Via Gitblit
 slug: deploying-apps-via-gitblit
 sidebar_position: 6
 ---
 
 import obj from './DeployingAppsViaGitblit.json'
 
-!incomplete
-
-## Storing and Deploying Apps via Gitblit
+<!-- ## Storing and Deploying Apps via Gitblit -->
 
 <div style={{
     display: 'grid',
@@ -30,11 +28,11 @@ import obj from './DeployingAppsViaGitblit.json'
 
 So, let’s find out how to host Gitblit at the platform and, subsequently, simplify your apps management with its help. You can automatically get a preconfigured ready-to-work **Gitblit** instance up and running within minutes using our one-click installation widget:
 
-Just click **Get it hosted now** and type your email address in order to launch Gitblit and get the ability to proceed directly to the [repository creation](/docs/deployment/deploying-apps-via-gitblit#create-a-gitblit-repository) guide section, skipping the steps of manual installation.
+Just click **Get it hosted now** and type your email address in order to launch Gitblit and get the ability to proceed directly to the [repository creation](/deployment/deploying-apps-via-gitblit#create-a-gitblit-repository) guide section, skipping the steps of manual installation.
 
 :::tip Note
 
-The full list of applications, available for one-click installation, can be found at our [Marketplace page](https://cloudmydc.com/pricing) or within the [corresponding](/docs/deployment-tools/cloud-scripting-&-jps/marketplace) section at the dashboard.
+The full list of applications, available for one-click installation, can be found at our [Marketplace page](https://cloudmydc.com/pricing) or within the [corresponding](/deployment-tools/cloud-scripting-&-jps/marketplace) section at the dashboard.
 
 :::
 
@@ -277,11 +275,11 @@ Now, let’s discover how to deploy your project from a Gitblit repository into 
 
 that the extra Maven node is required for Java projects only, while for the rest of engines build is performed automatically, while adding a project to application server. Refer to the appropriate document below in case you need details on how to accomplish this:
 
-- [Maven for Deploy via Git/SVN](/docs/java/build-node/java-vcs-deployment-with-maven)
-- [Deploy PHP Projects via Git/SVN](/docs/deployment/deployment-guide)
-- [Deploy Ruby Project via Git/SVN](/docs/deployment/deployment-guide)
-- [Deploy Python Projects via Git/SVN](/docs/deployment/deployment-guide)
-- [Deploy Node.js Project via Git/SVN ](/docs/deployment/deployment-guide)
+- [Maven for Deploy via Git/SVN](/java/build-node/java-vcs-deployment-with-maven)
+- [Deploy PHP Projects via Git/SVN](/deployment/deployment-guide)
+- [Deploy Ruby Project via Git/SVN](/deployment/deployment-guide)
+- [Deploy Python Projects via Git/SVN](/deployment/deployment-guide)
+- [Deploy Node.js Project via Git/SVN ](/deployment/deployment-guide)
 
 :::
 

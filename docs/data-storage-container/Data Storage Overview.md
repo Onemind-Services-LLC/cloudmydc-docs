@@ -1,10 +1,10 @@
 ---
-title: Data storage overview
+title: Data Storage Overview
 slug: data-storage-overview
 sidebar_position: 1
 ---
 
-## Data Storage Container Overview
+<!-- ## Data Storage Container Overview -->
 
 Data Storage Container is the commonly used solution for simple data storing and its remote control. Within the terms of the platform, it allows to make multiple environments operating with data in a single storage as easy as if it was kept locally: e.g. share media files, common configs or just store backups, logs, etc.
 

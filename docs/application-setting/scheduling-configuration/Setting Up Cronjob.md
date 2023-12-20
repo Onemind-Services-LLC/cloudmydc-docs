@@ -1,12 +1,12 @@
 ---
-title: Setting up cronjob
+title: Setting Up Cronjob
 slug: setting-up-cronjob
 sidebar_position: 1
 ---
 
 import obj from './SettingUpCronjob.json'
 
-## Setting Up Cronjob
+<!-- ## Setting Up Cronjob -->
 
 **Cron** is the time-based job scheduler in Unix-like computer operating systems. Cron enables users to schedule jobs (commands or shell scripts) to run periodically at certain times or dates. It is commonly used to automate system maintenance or administration, though its general-purpose nature means that it can be used for other purposes, such as connecting to the Internet and downloading emails.
 

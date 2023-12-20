@@ -1,12 +1,10 @@
 ---
-title: Release notes 8.2
+title: Release Notes 8.2
 slug: release-notes-8.2
 sidebar_position: 6
 ---
 
 import obj from './ReleaseNotes8.2.json'
-
-## CloudMyDc Application Platform 8.2.2
 
 _This document is preliminary and subject to change._
 
@@ -46,7 +44,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.2#subscription-based-solutions">
+                <a href="/platform-overview/release-notes/release-notes-8.2#subscription-based-solutions">
                     Learn More >>
                 </a>
             </div>
@@ -90,7 +88,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.2#refilling-with-3ds-cards">
+                <a href="/platform-overview/release-notes/release-notes-8.2#refilling-with-3ds-cards">
                     Learn More >>
                 </a>
             </div>
@@ -109,7 +107,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.2#api-changes">
+                <a href="/platform-overview/release-notes/release-notes-8.2#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -128,7 +126,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.2#software-stack-versions">
+                <a href="/platform-overview/release-notes/release-notes-8.2#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -172,7 +170,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.2#fixes-compatible-with-prior-versions">
+                <a href="/platform-overview/release-notes/release-notes-8.2#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -191,7 +189,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.2#bug-fixes">
+                <a href="/platform-overview/release-notes/release-notes-8.2#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -202,7 +200,7 @@ Fixed
 
 ## Subscription Based Solutions
 
-The 8.2.2 version of the platform implements a native ability to offer products based on the subscription model. The flow is standard to the modern subscription services implementations – a one-time fee to get a designated product for a specified period. The solution gives you a fix-priced alternative to the default [usage-based model](/docs/account-and-pricing/pricing-model-overview).
+The 8.2.2 version of the platform implements a native ability to offer products based on the subscription model. The flow is standard to the modern subscription services implementations – a one-time fee to get a designated product for a specified period. The solution gives you a fix-priced alternative to the default [usage-based model](/account-and-pricing/pricing-model-overview).
 
 :::danger
 
@@ -234,16 +232,16 @@ All the **Subscriptions** are added to the dedicated section in the account sett
 
 </div>
 
-Due to the concept of subscriptions, some actions are restricted for the installed instances (e.g. topology adjustment or environment cloning). Read more about subscriptions in the dedicated **[Subscription-Based Product](/docs/account-and-pricing/subscription-based-products)** document.
+Due to the concept of subscriptions, some actions are restricted for the installed instances (e.g. topology adjustment or environment cloning). Read more about subscriptions in the dedicated **[Subscription-Based Product](/account-and-pricing/subscription-based-products)** document.
 
-[More info](/docs/account-and-pricing/subscription-based-products)
+[More info](/account-and-pricing/subscription-based-products)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.2">
+    <a href="/platform-overview/release-notes/release-notes-8.2">
         Back to the top
     </a>
 </div>
@@ -259,25 +257,25 @@ When refilling the account balance using the saved payment method with the 3DS, 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.2">
+    <a href="/platform-overview/release-notes/release-notes-8.2">
         Back to the top
     </a>
 </div>
 
 ## API Changes
 
-Below, you can find a list of all changes to the public API in the 8.2.2 platform version (compared to the preceding [8.0.2](/docs/platform-overview/release-notes/release-notes-8.2#api-changes) ones):
+Below, you can find a list of all changes to the public API in the 8.2.2 platform version (compared to the preceding [8.0.2](/platform-overview/release-notes/release-notes-8.2#api-changes) ones):
 
-Added a new **[Billing > Subscriptions](https://docs.jelastic.com/api/#!/api/billing.Subscription)** service with API methods to support the [subscriptions](/docs/platform-overview/release-notes/release-notes-8.2#subscription-based-solutions) feature
+Added a new **[Billing > Subscriptions](https://docs.jelastic.com/api/#!/api/billing.Subscription)** service with API methods to support the [subscriptions](/platform-overview/release-notes/release-notes-8.2#subscription-based-solutions) feature
 
-[More info](/docs/deployment-tools/api-&-cli/api-methods)
+[More info](/deployment-tools/api-&-cli/api-methods)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.2">
+    <a href="/platform-overview/release-notes/release-notes-8.2">
         Back to the top
     </a>
 </div>
@@ -396,7 +394,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.2">
+    <a href="/platform-overview/release-notes/release-notes-8.2">
         Back to the top
     </a>
 </div>
@@ -405,16 +403,16 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/quickstart/software-stack-versions)
+[More info](/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.2">
+    <a href="/platform-overview/release-notes/release-notes-8.2">
         Back to the top
     </a>
 </div>
@@ -533,7 +531,7 @@ In the table below, you can see the list of bug fixes applied to the platform st
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.2">
+    <a href="/platform-overview/release-notes/release-notes-8.2">
         Back to the top
     </a>
 </div>

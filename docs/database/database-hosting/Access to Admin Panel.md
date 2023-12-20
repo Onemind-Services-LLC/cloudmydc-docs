@@ -1,10 +1,10 @@
 ---
-title: Access to admin panel
+title: Access To Admin Panel
 slug: access-to-admin-panel
 sidebar_position: 3
 ---
 
-## Managing Access to PHPMyAdmin
+<!-- ## Managing Access to PHPMyAdmin -->
 
 The platform allows to flexibly manage access to the **_phpMyAdmin_** panel for the MySQL, MariaDB and PerconaDB database servers.
 
@@ -27,7 +27,7 @@ By default, all connections to phpMyAdmin are allowed and, if you want to change
 
 Let’s move through it step-by-step:
 
-1. To change the default behavior, which allows all connections, you need to comment/remove the appropriate line, as it is shown in the image below (e.g. using the [file configuration manager](/docs/application-setting/configuration-file-manager#configuration-file-manager) or via [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser)):
+1. To change the default behavior, which allows all connections, you need to comment/remove the appropriate line, as it is shown in the image below (e.g. using the [file configuration manager](/application-setting/configuration-file-manager#configuration-file-manager) or via [Web SSH](/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser)):
 
 <div style={{
     display:'flex',
@@ -41,7 +41,7 @@ Let’s move through it step-by-step:
 
 2. Next, list the allowed IPs, which should be specified in the following format (you can uncomment the provided templates and specify the correct IP address):
 
-- if your database node has _[public IP](/docs/application-setting/external-access-to-applications/public-ip#public-ip)_
+- if your database node has _[public IP](/application-setting/external-access-to-applications/public-ip#public-ip)_
 
 ```bash
 Require ip {ipAddress}

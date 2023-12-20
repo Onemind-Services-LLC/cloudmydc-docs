@@ -1,14 +1,14 @@
 ---
-title: Auto-deploy for multiple containers
+title: Auto-Deploy For Multiple Containers
 slug: auto-deploy-for-multiple-containers
 sidebar_position: 2
 ---
 
 import obj from './Auto-DeployforMultipleContainers.json'
 
-## GIT & SVN Auto-Deploy for Multiple Containers
+<!-- ## GIT & SVN Auto-Deploy for Multiple Containers -->
 
-When handling a highly-visited project, it’s commonly recommended to leverage the platform [Multi-Nodes](/docs/application-setting/scaling-and-clustering/horizontal-scaling) feature for ensuring enough performance for your app. Also, you need to consider that with the [auto-deploy option](/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview) enabled for such a project, all of the containers within your application server layer will be updated <u>simultaneously</u>.
+When handling a highly-visited project, it’s commonly recommended to leverage the platform [Multi-Nodes](/application-setting/scaling-and-clustering/horizontal-scaling) feature for ensuring enough performance for your app. Also, you need to consider that with the [auto-deploy option](/deployment/git-&-svn-auto-deploy/auto-deploy-overview) enabled for such a project, all of the containers within your application server layer will be updated <u>simultaneously</u>.
 
 Nevertheless, in case you’d like to achieve more high-availability (i.e. for the redeployment to be performed implicitly and <u>consequentially</u> at each node), here are a few options this can be ensured through:
 
@@ -24,7 +24,7 @@ Nevertheless, in case you’d like to achieve more high-availability (i.e. for t
 
 </div>
 
-- use the appropriate [CLI method](/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview) for VCS projects' management:
+- use the appropriate [CLI method](/deployment-tools/api-&-cli/platform-cli/platform-cli-overview) for VCS projects' management:
 
 ```bash
 ~/jelastic/environment/vcs/update --envName {env_name} --project {app_context}

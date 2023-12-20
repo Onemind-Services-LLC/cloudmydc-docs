@@ -1,10 +1,10 @@
 ---
-title: Manual primary-secondary replication
+title: Manual Primary-Secondary Replication
 slug: manual-primary-secondary-replication
 sidebar_position: 2
 ---
 
-## MySQL/MariaDB/Percona Database Primary-Secondary Replication
+<!-- ## MySQL/MariaDB/Percona Database Primary-Secondary Replication -->
 
 **_Primary-secondary replication_** is used to solve many different problems with performance, supporting the backup of different databases, and as a part of a larger solution to alleviate system failures. It enables data from one database server (the master) to be replicated to one or more database servers (the slaves). The master logs the updates, which then ripple through to the slaves. The slave outputs a message stating that it has received the update successfully, which allows sending subsequent updates. Master-slave replication can be either synchronous or asynchronous. The difference is simply the timing of propagation of changes. If the changes are made to the master and slave at the same time, it is synchronous. If changes are queued up and written later, it is asynchronous.
 
@@ -38,8 +38,8 @@ Now, let’s examine a simple example of how to configure master-slave replicati
 
 You are able to set a DB cluster in two ways:
 
-- [automatically](/docs/database/mysql-mariadb-percona/high-availability-cluster/manual-primary-secondary-replication#one-click-installation) (via one-click widget)
-- [manually](/docs/database/mysql-mariadb-percona/high-availability-cluster/manual-primary-secondary-replication#manual-installation) (following the step-by-step instruction)
+- [automatically](/database/mysql-mariadb-percona/high-availability-cluster/manual-primary-secondary-replication#one-click-installation) (via one-click widget)
+- [manually](/database/mysql-mariadb-percona/high-availability-cluster/manual-primary-secondary-replication#manual-installation) (following the step-by-step instruction)
 
 ## One-Click Installation
 
@@ -99,7 +99,7 @@ Wait just a minute for your environment to be created.
 
 </div>
 
-3. In the same way, create one more environment with MariaDB or just [clone](/docs/environment-management/cloning-environment) it. Let’s name it slavebase. It will be located on the other hardnode, which is even more secure and reliable for storing your data.
+3. In the same way, create one more environment with MariaDB or just [clone](/environment-management/cloning-environment) it. Let’s name it slavebase. It will be located on the other hardnode, which is even more secure and reliable for storing your data.
 
 Now you have two identical environments with two databases.
 
@@ -290,7 +290,7 @@ $cfg['AllowArbitraryServer'] = true;
 
 </div>
 
-5. Let’s configure our slave database server via a built-in [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser) client. Connect to your database using credentials from the email received after the node creation.
+5. Let’s configure our slave database server via a built-in [Web SSH](/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser) client. Connect to your database using credentials from the email received after the node creation.
 
 ```bash
 mysql -u root -p

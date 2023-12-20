@@ -220,7 +220,7 @@
     {
       "JE": "JE-66758",
       "AffectedVersions": "-",
-      "Desc": "The bindSslCert API method returns “result: 0” instead of the error when the incorrect extDomains parameter is specified"
+      "Desc": "The bindSSLCert API method returns “result: 0” instead of the error when the incorrect extDomains parameter is specified"
     }
   ]
 }

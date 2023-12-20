@@ -1,5 +1,5 @@
 ---
-title: Php tutorials
+title: PHP Tutorials
 slug: php-tutorials
 sidebar_position: 10
 ---
@@ -12,16 +12,16 @@ sidebar_position: 10
         *
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-       <a href="/docs/php/php-tutorials">A</a>
+       <a href="/php/php-tutorials">A</a>
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
               B
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-             <a href="/docs/php/php-tutorials">C</a>
+             <a href="/php/php-tutorials">C</a>
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                     <a href="/docs/php/php-tutorials">D</a>
+                     <a href="/php/php-tutorials">D</a>
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
                             E
@@ -40,11 +40,11 @@ sidebar_position: 10
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                            <a href="/docs/php/php-tutorials">I</a>
+                            <a href="/php/php-tutorials">I</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                                   <a href="/docs/php/php-tutorials">J</a>
+                                   <a href="/php/php-tutorials">J</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
@@ -56,7 +56,7 @@ sidebar_position: 10
 
  </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                              <a href="/docs/php/php-tutorials">M</a>
+                              <a href="/php/php-tutorials">M</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
@@ -64,11 +64,11 @@ sidebar_position: 10
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                              <a href="/docs/php/php-tutorials">O</a>
+                              <a href="/php/php-tutorials">O</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                           <a href="/docs/php/php-tutorials">P</a>
+                           <a href="/php/php-tutorials">P</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
@@ -80,11 +80,11 @@ sidebar_position: 10
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                                   <a href="/docs/php/php-tutorials">S</a>
+                                   <a href="/php/php-tutorials">S</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                           <a href="/docs/php/php-tutorials">T</a>
+                           <a href="/php/php-tutorials">T</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
@@ -96,7 +96,7 @@ sidebar_position: 10
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                         <a href="/docs/php/php-tutorials">W</a>
+                         <a href="/php/php-tutorials">W</a>
 
  </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
@@ -108,7 +108,7 @@ sidebar_position: 10
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                         <a href="/docs/php/php-tutorials">Z</a>
+                         <a href="/php/php-tutorials">Z</a>
 
 </div>
 
@@ -116,52 +116,52 @@ sidebar_position: 10
 
 ## A
 
-[Alto](/docs/category/php)
+[Alto](/category/php)
 
 ## C
 
-[Cloud9](/docs/category/php)
-[Cogear](/docs/category/php)
-[Concrete CMS](/docs/category/php)
-[Contao](/docs/category/php)
-[Coppermine](/docs/category/php)
+[Cloud9](/category/php)
+[Cogear](/category/php)
+[Concrete CMS](/category/php)
+[Contao](/category/php)
+[Coppermine](/category/php)
 
 ## D
 
-[Drupal](/docs/category/php)
+[Drupal](/category/php)
 
 ## J
 
-[Joomla](/docs/category/php)
+[Joomla](/category/php)
 
 ## M
 
-[Magento Cluster](/docs/category/php)
-[Mibew Messenger](/docs/category/php)
+[Magento Cluster](/category/php)
+[Mibew Messenger](/category/php)
 
 ## O
 
-[ownCloud](/docs/category/php)
+[ownCloud](/category/php)
 
 ## P
 
-[phpMyFAQ](/docs/category/php)
-[Piwik](/docs/category/php)
-[PrestaShop](/docs/category/php)
-[Pydio](/docs/category/php)
+[phpMyFAQ](/category/php)
+[Piwik](/category/php)
+[PrestaShop](/category/php)
+[Pydio](/category/php)
 
 ## S
 
-[SendGrid](/docs/category/php)
+[SendGrid](/category/php)
 
 ## T
 
-[Typo3](/docs/category/php)
+[Typo3](/category/php)
 
 ## W
 
-[WordPress](/docs/category/php)
+[WordPress](/category/php)
 
 ## Z
 
-[Zend Framework](/docs/category/php)
+[Zend Framework](/category/php)

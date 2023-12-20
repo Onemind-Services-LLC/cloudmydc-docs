@@ -1,10 +1,10 @@
 ---
-title: Wordpress paas 2.0
+title: WordPress Paas 2.0
 slug: wordpress-paas-2.0
 sidebar_position: 2
 ---
 
-## CloudMyDc Application Platform for WordPress 2.0
+<!-- ## CloudMyDc Application Platform for WordPress 2.0 -->
 
 _This document is preliminary and subject to change._
 
@@ -18,8 +18,8 @@ This document announces the Global Availability of the CloudMyDc Application Pla
 
 You can learn more in our dedicated documentation guides:
 
-- [Dashboard Overview](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview)
-- [Project Installation](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation)
-- [Project Management](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management)
+- [Dashboard Overview](/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview)
+- [Project Installation](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation)
+- [Project Management](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management)
 
 All further improvements to the product will be listed in the scope of the appropriate new releases.

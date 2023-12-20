@@ -1,19 +1,19 @@
 ---
-title: Managing timezone settings
+title: Managing Timezone Settings
 slug: managing-timezone-settings
 sidebar_position: 14
 ---
 
-## Managing Timezone Data
+<!-- ## Managing Timezone Data -->
 
-All containers created within the platform utilize the UTC timezone by default. However, in case of necessity, you can easily change it to any preferable one with the help of the [**_TimeZone Change_**](/docs/application-setting/managing-timezone-settings#timezone-add-on) add-on. Follow the steps provided within the linked section to switch timezones on any of your instances.
+All containers created within the platform utilize the UTC timezone by default. However, in case of necessity, you can easily change it to any preferable one with the help of the [**_TimeZone Change_**](/application-setting/managing-timezone-settings#timezone-add-on) add-on. Follow the steps provided within the linked section to switch timezones on any of your instances.
 
 Alternatively, you can apply the changes manually. For example, all of the Java and PHP application servers at the platform are supplied with special timezone packages, which includes data about the history of local time in different locations around the globe and current timezone rules. This information is required for software, running inside the appropriate containers, and is regularly updated within the corresponding server builds in the confines of the newly released platform versions.
 
 Besides that, you can instantly update the timezone rules manually if necessary, or change the currently used TZ, based on the preferred location. So, below we’ll reveal some specifics of the timezone data management at the platform for the application servers of the programming languagesmentioned above:
 
-- [for Java](/docs/application-setting/managing-timezone-settings#timezone-rules-for-java)
-- [for PHP](/docs/application-setting/managing-timezone-settings#changing-timezone-java)
+- [for Java](/application-setting/managing-timezone-settings#timezone-rules-for-java)
+- [for PHP](/application-setting/managing-timezone-settings#changing-timezone-java)
 
 ## TimeZone Add-On
 
@@ -33,7 +33,7 @@ Besides that, you can instantly update the timezone rules manually if necessary,
 
 As you can see, the _UTC_ zone is used (default for all platform-managed containers).
 
-2. Go to the [TimeZone Change](https://github.com/jelastic-jps/time-zone-change) add-on repository within the JPS Collection at GitHub. Copy a link to the **_manifest.jps_** file and [import](/docs/environment-management/environment-export-and-import/environment-import) it via the dashboard: [_https://github.com/jelastic-jps/time-zone-change/blob/master/manifest.jps._](https://github.com/jelastic-jps/time-zone-change/blob/master/manifest.jps)
+2. Go to the [TimeZone Change](https://github.com/jelastic-jps/time-zone-change) add-on repository within the JPS Collection at GitHub. Copy a link to the **_manifest.jps_** file and [import](/environment-management/environment-export-and-import/environment-import) it via the dashboard: [_https://github.com/jelastic-jps/time-zone-change/blob/master/manifest.jps._](https://github.com/jelastic-jps/time-zone-change/blob/master/manifest.jps)
 
 <div style={{
     display:'flex',
@@ -47,7 +47,7 @@ As you can see, the _UTC_ zone is used (default for all platform-managed contain
 
 :::tip Tip
 
-Based on your particular hosting provider settings add-on can be available via [platform Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace).
+Based on your particular hosting provider settings add-on can be available via [platform Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace).
 
 <div style={{
     display:'flex',
@@ -93,14 +93,14 @@ As you can see, the system time was successfully switched to the _EDT_ (Eastern 
 
 The timezone rules within Java compute nodes are delivered by means of the dedicated **TZdata** package, comprised in each appropriate container. Follow the instructions below to:
 
-- [update timezone data](/docs/application-setting/managing-timezone-settings#updating-timezone-data)
-- [change current timezone](/docs/application-setting/managing-timezone-settings#changing-timezone-java)
+- [update timezone data](/application-setting/managing-timezone-settings#updating-timezone-data)
+- [change current timezone](/application-setting/managing-timezone-settings#changing-timezone-java)
 
-## Updating Timezone Data
+### Updating Timezone Data
 
 Despite the fact the newest TZdata package edition is integrated into a node during its creation, after some time it becomes outdated due to periodical changing of the intrinsic data. Thus, old containers may require the corresponding updating from time to time (particularly, in order not to be recreated each time this is needed). For that, a special embedded **TZUpdater** tool is used, intended for keeping your timezone data accurate and up-to-date. It is fairly simple to use and can be run with a single-line command; you just need to:
 
-1. Connect to your Java environment via SSH, e.g. using the embedded [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh) client:
+1. Connect to your Java environment via SSH, e.g. using the embedded [Web SSH](/deployment-tools/ssh/ssh-access/web-ssh) client:
 
 <div style={{
     display:'flex',
@@ -146,13 +146,13 @@ java -jar /usr/java/utils/tzupdater.jar -u
 
 As you can see, getting the latest timezone package version for Java-powered server is a really simple operation with the platform.
 
-## Changing Timezone Java
+### Changing Timezone Java
 
 Now, let’s discover how to check and change the application server’s local time - we’ll consider this on the example of a _Tomcat 9_ server.
 
 1. Let’s set the current timestamp to be shown at the server start page - this will help to quickly ensure that new timezone settings have been successfully applied and are relevant for now.
 
-For that, paste the code below instead of the **/opt/tomcat/webapps/ROOT/index.jsp** file default content (the easiest way is to use the inbuilt [file manager](/docs/application-setting/configuration-file-manager) for that).
+For that, paste the code below instead of the **/opt/tomcat/webapps/ROOT/index.jsp** file default content (the easiest way is to use the inbuilt [file manager](/application-setting/configuration-file-manager) for that).
 
 ```bash
 <%@page import="java.util.*"%>
@@ -229,7 +229,7 @@ Depending on a particular application server used, the location of this file may
 
 </div>
 
-- for **WildFly** Switch to the **_/opt/wildfly/bin/standalone.conf_** file (or, if a server was [scaled horizontally](/docs/application-setting/scaling-and-clustering/horizontal-scaling), refer to the **_/opt/wildfly/bin/domain.conf_** config) and declare the corresponding variable using the following format: _export JAVA_OPTS="-Duser.timezone=US/Pacific"_
+- for **WildFly** Switch to the **_/opt/wildfly/bin/standalone.conf_** file (or, if a server was [scaled horizontally](/application-setting/scaling-and-clustering/horizontal-scaling), refer to the **_/opt/wildfly/bin/domain.conf_** config) and declare the corresponding variable using the following format: _export JAVA_OPTS="-Duser.timezone=US/Pacific"_
 
 <div style={{
     display:'flex',
@@ -275,10 +275,10 @@ To access it, you need to click the **Config** button next to the required node.
 
 As you can see, this section comprises two options, which can be used to:
 
-- [get the latest timezone data](/docs/application-setting/managing-timezone-settings#checking-timezone-data)
-- [set custom timezone](/docs/application-setting/managing-timezone-settings#changing-timezone-php)
+- [get the latest timezone data](/application-setting/managing-timezone-settings#checking-timezone-data)
+- [set custom timezone](/application-setting/managing-timezone-settings#changing-timezone-php)
 
-## Checking Timezone Data
+### Checking Timezone Data
 
 The first setting allows you to use the alternative external timezone database (namely - the [Olson](https://www.iana.org/time-zones) one) in case the internal one is outdated.
 
@@ -306,7 +306,7 @@ Now, if you click **Open in browser** and scroll until the **_date_** section of
 
 </div>
 
-## Changing Timezone PHP
+### Changing Timezone PHP
 
 The second option in the **_[date]_** section is intended for defining the current timezone location (by default it points to the _UTC_ zone) of a node. For showing this on a real example, we’ll modify the default server’s start page (the **_/var/www/webroot/ROOT/index.php_** file) with the following code:
 

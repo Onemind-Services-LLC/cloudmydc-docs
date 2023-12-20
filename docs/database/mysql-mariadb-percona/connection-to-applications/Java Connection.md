@@ -1,14 +1,14 @@
 ---
-title: Java connection
+title: Java Connection
 slug: java-connection
 sidebar_position: 1
 ---
 
-## Java Connection to MariaDB/MySQL/Percona
+<!-- ## Java Connection to MariaDB/MySQL/Percona -->
 
 **MariaDB**, **MySQL**, and **Percona** are highly popular open source databases, used by developers all over the world. In this instruction we’ll show you how to connect your Java application to these databases, standalone server and clustered solution.
 
-1. Log into your PaaS account and [create an environment](/docs/environment-management/setting-up-environment) with the **MariaDB** (or **MySQL**) database server (available within the **_SQL_** wizard section):
+1. Log into your PaaS account and [create an environment](/environment-management/setting-up-environment) with the **MariaDB** (or **MySQL**) database server (available within the **_SQL_** wizard section):
 
 - for standalone database server
 
@@ -78,7 +78,7 @@ Log into the opened admin panel using credentials from the above-mentioned email
 
 </div>
 
-5. Return to dashboard and click the **Config** button next to the application server (Tomcat, in our case) to access [configuration file manager](/docs/application-setting/configuration-file-manager#configuration-file-manager).
+5. Return to dashboard and click the **Config** button next to the application server (Tomcat, in our case) to access [configuration file manager](/application-setting/configuration-file-manager#configuration-file-manager).
 
 <div style={{
     display:'flex',
@@ -238,9 +238,9 @@ public class DbManager {
 }
 ```
 
-8. [Deploy](/docs/deployment/deployment-guide) our example application to your Tomcat server using the following link:
+8. [Deploy](/deployment/deployment-guide) our example application to your Tomcat server using the following link:
 
-_[https://download.jelastic.com/public.php?service=files&t=b2c6e4e01d487dfd5af953ba31dac848&download](/docs/deployment/deployment-guide)_
+_[https://download.jelastic.com/public.php?service=files&t=b2c6e4e01d487dfd5af953ba31dac848&download](/deployment/deployment-guide)_
 
 <div style={{
     display:'flex',
@@ -322,10 +322,10 @@ You’ll see that the newly created table appeared with the name {date-time of c
 The platform also lets you extend your MariaDB/MySQL servers functionality by following the appropriate instructions in our documentation:
 
 - set up the preferred database replication type with embedded Auto-Clustering feature in order to get the increased DB performance and data loss protection
-- adjust [Backups Scheduling](/docs/database/database-hosting/manual-database-backups#manual-database-backups) for ensuring safety of the information inside your DBs in the case of unexpected server failure
-- see the [Remote Access](/docs/database/mysql-mariadb-percona/remote-access#remote-access-to-mysqlmariadbpercona) instruction and learn how to access your database remotely via the preferred desktop MySQL client
-- use the [Dump Files Import/Export](/docs/database/mysql-mariadb-percona/dump-import-export) guide to find out how to manually backup and restore your data from the previously created dumps
-- see the [Database connection strings](/docs/database/database-hosting/database-connection-strings#database-connection-strings) to get more info how to configure connection to different db types
+- adjust [Backups Scheduling](/database/database-hosting/manual-database-backups#manual-database-backups) for ensuring safety of the information inside your DBs in the case of unexpected server failure
+- see the [Remote Access](/database/mysql-mariadb-percona/remote-access#remote-access-to-mysqlmariadbpercona) instruction and learn how to access your database remotely via the preferred desktop MySQL client
+- use the [Dump Files Import/Export](/database/mysql-mariadb-percona/dump-import-export) guide to find out how to manually backup and restore your data from the previously created dumps
+- see the [Database connection strings](/database/database-hosting/database-connection-strings#database-connection-strings) to get more info how to configure connection to different db types
 
 ## Video Tutorial on MySQL Connection to Java Application
 

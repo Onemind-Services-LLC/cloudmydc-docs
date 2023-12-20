@@ -1,10 +1,10 @@
 ---
-title: Multi-region cluster
+title: Multi-Region Cluster
 slug: multi-region-cluster
 sidebar_position: 4
 ---
 
-## MariaDB Multi-Region Cluster
+<!-- ## MariaDB Multi-Region Cluster -->
 
 **MariaDB Multi-Region Cluster** is a pre-packaged solution that automatically creates an advanced, highly available cluster on top of platform-managed stack templates.
 
@@ -30,7 +30,7 @@ The package provides out-of-box high availability and failover for the database 
 
 ## Cluster Installation
 
-1. Find the **_MariaDB Multi-Region Cluster_** application (the **Clusters** section or use the **Search** field) in the platform [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
+1. Find the **_MariaDB Multi-Region Cluster_** application (the **Clusters** section or use the **Search** field) in the platform [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
 
 <div style={{
     display:'flex',
@@ -46,7 +46,7 @@ The package provides out-of-box high availability and failover for the database 
 
 - **Regions** – choose platform regions where the cluster environments will be deployed. Note that regions order matters, as the first two will have Primary servers and others will be Secondary
 - **Database** version – select the preferred MariaDB version
-- **Environment** – provide a name for the isolation and [grouping](/docs/environment-management/environment-groups/overview) of your database cluster environments
+- **Environment** – provide a name for the isolation and [grouping](/environment-management/environment-groups/overview) of your database cluster environments
 - **Display Name** – set a custom name for the cluster environments
 
 <div style={{

@@ -1,10 +1,10 @@
 ---
-title: Netbeans plugin overview
+title: NetBeans Plugin Overview
 slug: netbeans-plugin-overview
 sidebar_position: 1
 ---
 
-## NetBeans Plugin Overview
+<!-- ## NetBeans Plugin Overview -->
 
 <div style={{
     display: 'grid',
@@ -27,9 +27,9 @@ sidebar_position: 1
 All the functions of the IDE are provided by modules, which allow NetBeans IDE to be extended. Each module provides a well defined function, such as support for the Java language, editing, support for the CVS or SVN versioning system. NetBeans IDE contains all the modules needed for Java development in a single download, allowing the user to start working immediately.
 
 PaaS team has created a plugin for **NetBeans** development platform that simplifies the process of application management and development in the platform.
-
+<!-- 
 Use the following instructions to install the plugin and manage environments through NetBeans IDE:
 
-- [Plugin Installation](/docs/deployment-tools/plugins/netbeans-plugin/netbeans-plugin-installation)
-- [Environment Management](/docs/deployment-tools/plugins/netbeans-plugin/netbeans-plugin-management)
-- [Application Deployment](/docs/deployment-tools/plugins/netbeans-plugin/application-deploy-via-netbeans)
+- [Plugin Installation](/deployment-tools/plugins/netbeans-plugin/netbeans-plugin-installation)
+- [Environment Management](/deployment-tools/plugins/netbeans-plugin/netbeans-plugin-management)
+- [Application Deployment](/deployment-tools/plugins/netbeans-plugin/application-deploy-via-netbeans) -->

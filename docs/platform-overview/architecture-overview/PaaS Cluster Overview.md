@@ -1,8 +1,10 @@
 ---
-title: Paas cluster overview
+title: Paas Cluster Overview
 slug: paas-cluster-overview
 sidebar_position: 1
 ---
+
+Platform as a Service (PaaS) is a comprehensive cluster of servers and resources that functions as a unified system, facilitating the seamless development, debugging, deployment, testing, and maintenance of hosted applications. Consisting of Hardware Nodes storing isolated virtual machines, PaaS clusters are orchestrated by a Cluster Orchestrator, an infrastructure node managing resources and supporting system maintenance. Each environment within PaaS comprises isolated virtual containers on specific hardware nodes. CloudMyDc, a VPS hosting system, utilizes containers to run multiple instances on a single physical server through operating system-level virtualization. This architecture enhances efficiency and scalability for optimal application management.
 
 ## Basic Concepts
 
@@ -40,5 +42,5 @@ PaaS Cluster includes Hardware Nodes where [virtual isolated containers](https:/
 
 Follow the links to get more detailed information on each cluster component:
 
-- [Cluster Orchestrator (Infrastructure node)](/docs/platform-overview/architecture-overview/cluster-orchestrator)
-- [Hardware Node](/docs/platform-overview/architecture-overview/infrastructure-level)
+- [Cluster Orchestrator (Infrastructure node)](/platform-overview/architecture-overview/cluster-orchestrator)
+- [Hardware Node](/platform-overview/architecture-overview/infrastructure-level)

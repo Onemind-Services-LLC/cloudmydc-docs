@@ -1,35 +1,35 @@
 ---
-title: Container redeploy
+title: Container Redeploy
 slug: container-redeploy
 sidebar_position: 3
 ---
 
 import obj from './ContainerRedeploy.json'
 
-The majority of Docker-based solutions (including platform-managed [stacks](/docs/quickstart/software-stack-versions)) are continuously developed, delivering new product versions and fixes. Thus, it is recommended to regularly update your templates to their latest tags, i.e. releases.
+The majority of Docker-based solutions (including platform-managed [stacks](/quickstart/software-stack-versions)) are continuously developed, delivering new product versions and fixes. Thus, it is recommended to regularly update your templates to their latest tags, i.e. releases.
 
 Such an operation is called **redeploy** and has the following specifics when managed on the platform:
 
 - the custom user data and sensitive system files are preserved during the update:
 
-  - content of the **[volumes](/docs/container/container-configuration/volumes)** (default and custom ones)
-  - files listed in **[/etc/jelastic/redeploy.conf](/docs/container/container-redeploy#saving-custom-data-during-container-redeploy)** (specific configs of the stacks), which are required to ensure container operability
+  - content of the **[volumes](/container/container-configuration/volumes)** (default and custom ones)
+  - files listed in **[/etc/jelastic/redeploy.conf](/container/container-redeploy#saving-custom-data-during-container-redeploy)** (specific configs of the stacks), which are required to ensure container operability
   - **AutoFS and NFS** related configurations (_/etc/autofs.jelastic, /etc/auto.master, /etc/exports_)
   - **firewall configurations** (_/etc/sysconfig/iptables-custom, /etc/sysconfig/iptables4-jelastic, /etc/sysconfig/iptables6-jelastic, /etc/iptables/rules.v4_)
   - **SSH access data** (_/root/.ssh/authorized_keys, /root/.ssh/authorized_keys2, /root/.ssh/id_rsa_)
 
-- all the previously specified custom [configurations](/docs/container/container-configuration/configuration-tools) (like run commands, links, variables, etc.) won’t be affected
-- if operating with [multiple](/docs/application-setting/scaling-and-clustering/horizontal-scaling) (horizontally scaled) instances, the update can be performed on containers one by one, i.e. implicitly with no downtime
+- all the previously specified custom [configurations](/container/container-configuration/configuration-tools) (like run commands, links, variables, etc.) won’t be affected
+- if operating with [multiple](/application-setting/scaling-and-clustering/horizontal-scaling) (horizontally scaled) instances, the update can be performed on containers one by one, i.e. implicitly with no downtime
 
-In such a way, you are able to update your Docker-based container to a new tag (version) without affecting the application inside. With the platform, container redeployment can be performed in just a few clicks via the [dashboard UI](/docs/container/container-redeploy#update-container-via-dashboard) or easily automated [via API](/docs/container/container-redeploy#update-container-via-platform-apicscli).
+In such a way, you are able to update your Docker-based container to a new tag (version) without affecting the application inside. With the platform, container redeployment can be performed in just a few clicks via the [dashboard UI](/container/container-redeploy#update-container-via-dashboard) or easily automated [via API](/container/container-redeploy#update-container-via-platform-apicscli).
 
 :::danger Note
 
-When working with the MySQL, MariaDB, or Percona databases, [downgrading](https://dev.mysql.com/doc/refman/8.0/en/downgrading.html) (i.e. redeploying to the lower version) is not supported. In case the operation is necessary, we recommend [creating a backup](/docs/database/database-hosting/manual-database-backups) and restoring a database after redeploy (or in a separate container altogether).
+When working with the MySQL, MariaDB, or Percona databases, [downgrading](https://dev.mysql.com/doc/refman/8.0/en/downgrading.html) (i.e. redeploying to the lower version) is not supported. In case the operation is necessary, we recommend [creating a backup](/database/database-hosting/manual-database-backups) and restoring a database after redeploy (or in a separate container altogether).
 
 :::
 
-To learn about [saving or backing up custom data](/docs/container/container-redeploy#saving-custom-data-during-container-redeploy) during redeploy, refer to the appropriate section below.
+To learn about [saving or backing up custom data](/container/container-redeploy#saving-custom-data-during-container-redeploy) during redeploy, refer to the appropriate section below.
 
 ## Update Container via Dashboard
 
@@ -59,8 +59,8 @@ The most straightforward and user-friendly way to redeploy a template tag is to 
 
 Also, you can adjust some additional options:
 
-- **Keep volumes data** - if enabled, data in the [volumes](/docs/container/container-configuration/volumes) will be protected from erasing and will remain available after redeploy
-- for [horizontally scaled](/docs/application-setting/scaling-and-clustering/horizontal-scaling) containers, you can choose between two deployment options:
+- **Keep volumes data** - if enabled, data in the [volumes](/container/container-configuration/volumes) will be protected from erasing and will remain available after redeploy
+- for [horizontally scaled](/application-setting/scaling-and-clustering/horizontal-scaling) containers, you can choose between two deployment options:
   - **Simultaneous deployment** - redeploys all nodes at once, which is comparatively quicker but causes a brief downtime of your application
   - **Sequential deployment with delay** - redeploys instances one-by-one with a specified delay between operations. This option ensures that there is always a running node to process incoming requests (i.e. no downtime)
 
@@ -86,11 +86,11 @@ Now, you know how to redeploy a container via the platform dashboard.
 
 ## Update Container via Platform API/CS/CLI
 
-The update process can be automated using [platform API](https://cloudmydc.com/), [Cloud Scripting](https://docs.cloudscripting.com/creating-manifest/actions/#api), and [CLI](/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview) (command-line interface).
+The update process can be automated using [platform API](https://cloudmydc.com/), [Cloud Scripting](https://docs.cloudscripting.com/creating-manifest/actions/#api), and [CLI](/deployment-tools/api-&-cli/platform-cli/platform-cli-overview) (command-line interface).
 
 :::tip Tip
 
-A detailed example on [container redeploy via CLI](/docs/deployment-tools/api-&-cli/platform-cli/container-redeploy) is provided in the linked guide.
+A detailed example on [container redeploy via CLI](/deployment-tools/api-&-cli/platform-cli/container-redeploy) is provided in the linked guide.
 
 :::
 
@@ -98,7 +98,7 @@ Container redeploy is performed with the **[environment.Control.RedeployContaine
 
 - **envName** - name of the environment, where container(s) should be redeployed
 
-- **session** - user session (or [token](/docs/account-and-pricing/personal-access-tokens)) identifier, used for authentication
+- **session** - user session (or [token](/account-and-pricing/personal-access-tokens)) identifier, used for authentication
 
 - **nodeGroup** - identifier of the [environment layer](https://docs.cloudscripting.com/creating-manifest/selecting-containers/#all-containers-by-group) to update (optional)
 
@@ -146,7 +146,7 @@ Here, the **{nodeId}** value should be substituted with the ID number of the req
 
 ## Saving Custom Data during Container Redeploy
 
-Each [platform-managed container](/docs/quickstart/software-stack-versions) is provided with a special **/etc/jelastic/redeploy.conf** file, storing a list of critical container configs. These settings are automatically preserved by the platform during the container redeploy. The file can be easily accessed via the [embedded file manager](/docs/application-setting/configuration-file-manager) through the Favorites shortcut.
+Each [platform-managed container](/quickstart/software-stack-versions) is provided with a special **/etc/jelastic/redeploy.conf** file, storing a list of critical container configs. These settings are automatically preserved by the platform during the container redeploy. The file can be easily accessed via the [embedded file manager](/application-setting/configuration-file-manager) through the Favorites shortcut.
 
 <div style={{
     display:'flex',
@@ -158,7 +158,7 @@ Each [platform-managed container](/docs/quickstart/software-stack-versions) is p
 
 </div>
 
-The **redeploy.conf** file is divided into two [system](/docs/container/container-redeploy#system-files-and-folders) and [custom](/docs/container/container-redeploy#custom-files-and-folders) sections and can be used to [backup system files](/docs/container/container-redeploy#creating-file-backup-copy-upon-image-redeployment).
+The **redeploy.conf** file is divided into two [system](/container/container-redeploy#system-files-and-folders) and [custom](/container/container-redeploy#custom-files-and-folders) sections and can be used to [backup system files](/container/container-redeploy#creating-file-backup-copy-upon-image-redeployment).
 
 ## System Files and Folders
 
@@ -175,8 +175,8 @@ Here, container-specific configurations that are required for the correct redepl
 - **/etc/jelastic/redeploy.conf** - the current redeployment config itself (to store the list of required for saving files and directories during each further container redeploy)
 - **${home}/.bash_profile** - contains the default SSH shell settings (e.g. shell introduction message, the required configuration files to be fetched, etc.)
 - **/etc/sysconfig/iptables** - keeps the default firewall rules
-- **/etc/sysconfig/iptables-custom** - contains [custom firewall rules](/docs/application-setting/external-access-to-applications/container-firewall)
-- **/var/lib/jelastic/keys** - stores [uploaded SSH private keys](/docs/deployment-tools/ssh/generate-ssh-key), which are necessary to access the container via SSH and for interaction with other containers
+- **/etc/sysconfig/iptables-custom** - contains [custom firewall rules](/application-setting/external-access-to-applications/container-firewall)
+- **/var/lib/jelastic/keys** - stores [uploaded SSH private keys](/deployment-tools/ssh/generate-ssh-key), which are necessary to access the container via SSH and for interaction with other containers
 
 <u>
 Also, <b>redeploy.conf</b> for each particular node type include different stack-specific files.
@@ -188,7 +188,7 @@ Also, <b>redeploy.conf</b> for each particular node type include different stack
 
 :::danger Tip
 
-When providing “**custom files and folder**”, only add system configuration files that are required to ensure container operability during redeployment. Use [container volumes](/docs/container/container-configuration/volumes) for other cases (e.g. to keep your application data).
+When providing “**custom files and folder**”, only add system configuration files that are required to ensure container operability during redeployment. Use [container volumes](/container/container-configuration/volumes) for other cases (e.g. to keep your application data).
 
 :::
 

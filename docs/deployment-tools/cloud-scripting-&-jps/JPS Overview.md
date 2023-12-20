@@ -1,10 +1,10 @@
 ---
-title: Jps overview
+title: JPS Overview
 slug: jps-overview
 sidebar_position: 2
 ---
 
-## Packaging Standard for CI/CD Automation
+<!-- ## Packaging Standard for CI/CD Automation -->
 
 **Packaging Standard** (also known as JPS) is a tool to prepare ready-to-go application and add-on templates. Such preconfigured solutions can be integrated within any platform in just one click, simplifying installation and configuration for application of any type.
 
@@ -20,7 +20,7 @@ sidebar_position: 2
 
 JPS package is based on JSON installation manifest. This file is used to describe processes of environment creation, application deployment and configuration, allocation of resources and setting scaling limits for each server within an environment.
 
-This technology allows to [automate complex CI/CD scenarios](/docs/deployment-tools/cloud-scripting-&-jps/jps-overview#application-cicd-automation-with-cloud-scripting) and easily distribute your ready-to-go solutions with [one-click installation widgets](/docs/deployment-tools/cloud-scripting-&-jps/jps-overview#widget-for-instant-application-deploy).
+This technology allows to [automate complex CI/CD scenarios](/deployment-tools/cloud-scripting-&-jps/jps-overview#application-cicd-automation-with-cloud-scripting) and easily distribute your ready-to-go solutions with [one-click installation widgets](/deployment-tools/cloud-scripting-&-jps/jps-overview#widget-for-instant-application-deploy).
 
 ## Application CI/CD Automation with Cloud Scripting
 
@@ -79,13 +79,13 @@ To install packaged application into the platform, a user needs to **initiate in
 
 Use the docs below to find out information on how to properly compose application manifest and create such installation widget:
 
-- [Application Manifest](/docs/deployment-tools/cloud-scripting-&-jps/application-manifest)
+- [Application Manifest](/deployment-tools/cloud-scripting-&-jps/application-manifest)
 - [Application Manifest Example](https://docs.cloudscripting.com/samples/)
 - [Placeholders](https://docs.cloudscripting.com/creating-manifest/placeholders/)
 - [JPS Collection](https://github.com/jelastic-jps)
 
 :::tip Note
 
-After packaging your own application due to our instructions, you can contact your hosting provider and negotiate adding your JPS to the set of solutions within [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace) at the dashboard. In such a way, your app will be available for automatic deploy to all users within your hosting platform.
+After packaging your own application due to our instructions, you can contact your hosting provider and negotiate adding your JPS to the set of solutions within [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace) at the dashboard. In such a way, your app will be available for automatic deploy to all users within your hosting platform.
 
 :::

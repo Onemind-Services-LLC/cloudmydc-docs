@@ -1,5 +1,5 @@
 ---
-title: Local filesystem
+title: Local Filesystem
 slug: local-filesystem
 sidebar_position: 1
 ---

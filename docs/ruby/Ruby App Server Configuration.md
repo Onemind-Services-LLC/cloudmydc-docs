@@ -1,10 +1,10 @@
 ---
-title: Ruby app server configuration
+title: Ruby App Server Configuration
 slug: ruby-app-server-configuration
 sidebar_position: 4
 ---
 
-## Ruby Application Server Configuration
+<!-- ## Ruby Application Server Configuration -->
 
 The platform provides Ruby application servers based on the two software stacks:
 
@@ -35,7 +35,7 @@ The **Passenger** module is used for all newly created Ruby environments by defa
 
 </div>
 
-2. Within the opened [configuration file manager](/docs/application-setting/configuration-file-manager#configuration-file-manager) panel, navigate to the **/etc/nginx/** **_nginx.conf_** file. Find the **_include app_servers_** strings:
+2. Within the opened [configuration file manager](/application-setting/configuration-file-manager#configuration-file-manager) panel, navigate to the **/etc/nginx/** **_nginx.conf_** file. Find the **_include app_servers_** strings:
 
 - _include app_servers/nginx-unicorn.conf_
 - _include app_servers/nginx-puma.conf_
@@ -83,7 +83,7 @@ For example, we’ll switch to **_Puma_**.
 
 </div>
 
-5. Access your node via SSH (e.g. using [Web SHH](/docs/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser)) and run the selected module with the appropriate command executed from the project directory:
+5. Access your node via SSH (e.g. using [Web SHH](/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser)) and run the selected module with the appropriate command executed from the project directory:
 
 ```bash
 cd /var/www/webroot/ROOT/

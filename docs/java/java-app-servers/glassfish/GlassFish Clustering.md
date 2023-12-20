@@ -1,10 +1,10 @@
 ---
-title: Glassfish clustering
+title: Glassfish Clustering
 slug: glassfish-clustering
 sidebar_position: 3
 ---
 
-## GlassFish Clustering in the Cloud
+<!-- ## GlassFish Clustering in the Cloud -->
 
 [**GlassFish**](https://cloudmydc.com/) is an open-source enterprise level application server with high reliability and performance, which can run any Java EE project. It provides your application with full clustering capability and has a wide range of additional functions.
 

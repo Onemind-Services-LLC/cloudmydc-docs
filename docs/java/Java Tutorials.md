@@ -1,5 +1,5 @@
 ---
-title: Java tutorials
+title: Java Tutorials
 slug: java-tutorials
 sidebar_position: 8
 ---
@@ -12,28 +12,28 @@ sidebar_position: 8
         *
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-      <a href="/docs/java/java-tutorials#a">A</a>
+      <a href="/java/java-tutorials#a">A</a>
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
         B
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-         <a href="/docs/java/java-tutorials#c">C</a>
+         <a href="/java/java-tutorials#c">C</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-       <a href="/docs/java/java-tutorials#d">D</a>
+       <a href="/java/java-tutorials#d">D</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-         <a href="/docs/java/java-tutorials#e">E</a>
+         <a href="/java/java-tutorials#e">E</a>
 
  </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
         F
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-                <a href="/docs/java/java-tutorials#g">G</a>
+                <a href="/java/java-tutorials#g">G</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
@@ -43,41 +43,41 @@ sidebar_position: 8
         I
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-    <a href="/docs/java/java-tutorials#j">J</a>
+    <a href="/java/java-tutorials#j">J</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
         K
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-           <a href="/docs/java/java-tutorials#l">L</a>
+           <a href="/java/java-tutorials#l">L</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-        <a href="/docs/java/java-tutorials#m">M</a>
+        <a href="/java/java-tutorials#m">M</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-         <a href="/docs/java/java-tutorials#n">N</a>
+         <a href="/java/java-tutorials#n">N</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-       <a href="/docs/java/java-tutorials#o">O</a>
+       <a href="/java/java-tutorials#o">O</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-        <a href="/docs/java/java-tutorials#p">P</a>
+        <a href="/java/java-tutorials#p">P</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
         Q
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-           <a href="/docs/java/java-tutorials#R">R</a>
+           <a href="/java/java-tutorials#R">R</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-         <a href="/docs/java/java-tutorials#S">S</a>
+         <a href="/java/java-tutorials#S">S</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
@@ -87,22 +87,22 @@ sidebar_position: 8
         U
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-         <a href="/docs/java/java-tutorials#v">V</a>
+         <a href="/java/java-tutorials#v">V</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
         W
     </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-        <a href="/docs/java/java-tutorials#x">X</a>
+        <a href="/java/java-tutorials#x">X</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-         <a href="/docs/java/java-tutorials#y">Y</a>
+         <a href="/java/java-tutorials#y">Y</a>
 
 </div>
     <div style={{ minWidth: '15%', display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
-    <a href="/docs/java/java-tutorials#z">Z</a>
+    <a href="/java/java-tutorials#z">Z</a>
 
 </div>
 </div>
@@ -111,19 +111,19 @@ sidebar_position: 8
 
 [Activiti Explorer](https://cloudmydc.com/)
 
-[Alfresco](/docs/category/java)
+[Alfresco](/category/java)
 
-[Ametys CMS](/docs/category/java)
+[Ametys CMS](/category/java)
 
-[Apache Roller](/docs/category/java)
+[Apache Roller](/category/java)
 
-[Apache Solr](/docs/category/java)
+[Apache Solr](/category/java)
 
 [Artifactory](https://cloudmydc.com/)
 
 ## C
 
-[CMDBuild](/docs/category/java)
+[CMDBuild](/category/java)
 
 [Codenvy IDE](https://cloudmydc.com/)
 
@@ -135,7 +135,7 @@ sidebar_position: 8
 
 [CrashFeed](https://cloudmydc.com/)
 
-[Cyclos 3](/docs/category/java)
+[Cyclos 3](/category/java)
 
 [Cyclos 4](https://cloudmydc.com/)
 
@@ -209,86 +209,86 @@ sidebar_position: 8
 
 ## N
 
-[Neo4j](/docs/category/java)
+[Neo4j](/category/java)
 
-[New Relic](/docs/category/java)
+[New Relic](/category/java)
 
-[Nexus Repository Manager](/docs/category/java)
+[Nexus Repository Manager](/category/java)
 
 ## O
 
-[Open Search Server](/docs/category/java)
+[Open Search Server](/category/java)
 
-[OpenAM](/docs/category/java)
+[OpenAM](/category/java)
 
-[OpenCMS](/docs/category/java)
+[OpenCMS](/category/java)
 
-[OpenLayers Orbeon Forms](/docs/category/java)
+[OpenLayers Orbeon Forms](/category/java)
 
 # P
 
-[Pebble](/docs/category/java)
+[Pebble](/category/java)
 
-[Plandora](/docs/category/java)
+[Plandora](/category/java)
 
-[Play 2](/docs/category/java)
+[Play 2](/category/java)
 
-[Play 2: Docker & VPS](/docs/category/java)
+[Play 2: Docker & VPS](/category/java)
 
-[Play!](/docs/category/java)
+[Play!](/category/java)
 
-[PlumbrOpenMRS](/docs/category/java)
+[PlumbrOpenMRS](/category/java)
 
-[Portofino](/docs/category/java)
+[Portofino](/category/java)
 
-[PrimeFaces](/docs/category/java)
+[PrimeFaces](/category/java)
 
-[Pulse](/docs/category/java)
+[Pulse](/category/java)
 
 ## R
 
-[Remote Monitoring with JMX Tools: JConsole](/docs/category/java)
+[Remote Monitoring with JMX Tools: JConsole](/category/java)
 
-[Remote Monitoring with JMX Tools: VisualVM](/docs/category/java)
+[Remote Monitoring with JMX Tools: VisualVM](/category/java)
 
 ## S
 
-[Scala](/docs/category/java)
+[Scala](/category/java)
 
-[Scalatra](/docs/category/java/)
+[Scalatra](/category/java/)
 
-[SendGrid](/docs/category/java)
+[SendGrid](/category/java)
 
-[SixFaceCloud](/docs/category/java)
+[SixFaceCloud](/category/java)
 
-[SmartFoxServer for Mobile Games](/docs/category/java)
+[SmartFoxServer for Mobile Games](/category/java)
 
-[Spring Boot](/docs/category/java)
+[Spring Boot](/category/java)
 
-[Spring Insight](/docs/category/java)
+[Spring Insight](/category/java)
 
-[Struts](/docs/category/java)
+[Struts](/category/java)
 
-[Struts with TomEE](/docs/category/java)
+[Struts with TomEE](/category/java)
 
 ## V
 
-[Vaadin](/docs/category/java)
+[Vaadin](/category/java)
 
 ## X
 
-[xinco DMS](/docs/category/java)
+[xinco DMS](/category/java)
 
-[XWiki](/docs/category/java)
+[XWiki](/category/java)
 
 ## Y
 
-[Yabe](/docs/category/java)
+[Yabe](/category/java)
 
-[Yii](/docs/category/java)
+[Yii](/category/java)
 
-[You Track](/docs/category/java)
+[You Track](/category/java)
 
 ## Z
 
-[ZK](/docs/category/java)
+[ZK](/category/java)

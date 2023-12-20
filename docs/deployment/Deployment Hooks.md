@@ -1,5 +1,5 @@
 ---
-title: Deployment hooks
+title: Deployment Hooks
 slug: deployment-hooks
 sidebar_position: 7
 ---
@@ -23,12 +23,14 @@ sidebar_position: 7
 
 </div>
 
-**Hook** (or [webhook](https://cloudmydc.com/)) is a procedure of code insertion into some standard operation to apply some customization. In confines of the platform, this functionality allows you to execute your custom scripts before and/or after the application deployment operation. Herewith, for [Maven](/docs/java/build-node/java-vcs-deployment-with-maven) build node and Golang application server, the pre- and post- project build hooks can be additionally set up.
+**Hook** (or [webhook](https://cloudmydc.com/)) is a procedure of code insertion into some standard operation to apply some customization. In confines of the platform, this functionality allows you to execute your custom scripts before and/or after the application deployment operation. Herewith, for [Maven](/java/build-node/java-vcs-deployment-with-maven) build node and Golang application server, the pre- and post- project build hooks can be additionally set up.
 
+<!--
 So below we’ll examine how to operate with hooks at the platform and will overview several common use cases with step-by-step instructions this functionality can come in handy for:
 
-- [Hooks Management](/docs/deployment/deployment-hooks#hooks-management)
-- [Hooks Use Cases](/docs/deployment/deployment-hooks#hooks-use-cases)
+- [Hooks Management](/deployment/deployment-hooks#hooks-management)
+- [Hooks Use Cases](/deployment/deployment-hooks#hooks-use-cases)
+-->
 
 ## Hooks Management
 
@@ -185,7 +187,7 @@ fi
 
 </div>
 
-This will add a string into the **_mylog_** file (will be automatically created in the home directory, if not exists), which will identify deployment start and provide the appropriate time stamp. Also, we check if the **_redeploy.conf_** file includes our custom log file and, if not, add the appropriate line - in such a way it will be kept after [container redeploy](/docs/category/container-deployment) operation.
+This will add a string into the **_mylog_** file (will be automatically created in the home directory, if not exists), which will identify deployment start and provide the appropriate time stamp. Also, we check if the **_redeploy.conf_** file includes our custom log file and, if not, add the appropriate line - in such a way it will be kept after [container redeploy](/category/container-deployment) operation.
 
 3. For the **_Post_** hook add the next code:
 

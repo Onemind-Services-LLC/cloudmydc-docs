@@ -1,14 +1,14 @@
 ---
-title: Python connection to mongodb
+title: Python Connection To Mongodb
 slug: python-connection-to-mongodb
 sidebar_position: 3
 ---
 
-## Python Application Connection to MongoDB
+<!-- ## Python Application Connection to MongoDB -->
 
 **MongoDB** is one of the most popular NoSQL databases, which allows developers to easily work with the stored data. This tutorial provides an example of connection to the MongoDB server from your **Python** application.
 
-1. In our case we have an environment with _Python_ and _MongoDB_ containers inside (you can [create](/docs/environment-management/setting-up-environment) such one at any time), but this instruction is suitable for the remote servers as well.
+1. In our case we have an environment with _Python_ and _MongoDB_ containers inside (you can [create](/environment-management/setting-up-environment) such one at any time), but this instruction is suitable for the remote servers as well.
 
 <div style={{
     display:'flex',
@@ -20,7 +20,7 @@ sidebar_position: 3
 
 </div>
 
-2. Connect your compute node via [SSH Gate](/docs/deployment-tools/ssh/ssh-overview#ssh-gate-overview).
+2. Connect your compute node via [SSH Gate](/deployment-tools/ssh/ssh-overview#ssh-gate-overview).
 
 <div style={{
     display:'flex',

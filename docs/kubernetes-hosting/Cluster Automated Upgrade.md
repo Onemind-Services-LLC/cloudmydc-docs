@@ -1,5 +1,5 @@
 ---
-title: Cluster automated upgrade
+title: Cluster Automated Upgrade
 slug: cluster-automated-upgrade
 sidebar_position: 9
 ---
@@ -58,7 +58,7 @@ Before taking the decision regarding the upgrade, you can check a current versio
 
 </div>
 
-Then compare the current cluster version with available auto-upgrade packages which are presented in the [Jelastic Kubernetes versions page](/docs/kubernetes-hosting/kubernetes-cluster/cluster-versions#k8s-package-change-log).
+Then compare the current cluster version with available auto-upgrade packages which are presented in the [Jelastic Kubernetes versions page](/kubernetes-hosting/kubernetes-cluster/cluster-versions#k8s-package-change-log).
 
 <div style={{
     display:'flex',

@@ -1,12 +1,12 @@
 ---
-title: Session replication via memcached
+title: Session Replication Via Memcached
 slug: session-replication-via-memcached
 sidebar_position: 5
 ---
 
-## anchor 42
+## Anchor 42
 
-The platform provides [Session Replication](/docs/application-setting/scaling-and-clustering/session-replication-for-ha) between instances of web-servers with a help of multicast. But also you can use **Session Replication via Memcached**.
+The platform provides [Session Replication](/application-setting/scaling-and-clustering/session-replication-for-ha) between instances of web-servers with a help of multicast. But also you can use **Session Replication via Memcached**.
 
 To use memcached for session replication follow this instruction.
 

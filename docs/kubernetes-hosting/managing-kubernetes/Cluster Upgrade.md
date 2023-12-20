@@ -1,12 +1,12 @@
 ---
-title: Cluster upgrade
+title: Cluster Upgrade
 slug: cluster-upgrade
 sidebar_position: 4
 ---
 
-## Kubernetes Cluster: Upgrade Package
+<!-- ## Kubernetes Cluster: Upgrade Package -->
 
-The platform actively develops the **Kubernetes Cluster** solution and regularly releases new [versions of the package](/docs/kubernetes-hosting/kubernetes-cluster/cluster-versions). Herewith, you don’t need to recreate the whole cluster from scratch to benefit on the new features and tools - the existing environment can be upgraded with a dedicated add-on.
+The platform actively develops the **Kubernetes Cluster** solution and regularly releases new [versions of the package](/kubernetes-hosting/kubernetes-cluster/cluster-versions). Herewith, you don’t need to recreate the whole cluster from scratch to benefit on the new features and tools - the existing environment can be upgraded with a dedicated add-on.
 
 Hover over the Master layer and click the appeared **Add-Ons** button. Then, in the opened section, select the **Upgrade** option for the **Kubernetes Cluster Configuration** add-on panel.
 
@@ -34,6 +34,6 @@ Confirm an action via a pop-up, and the platform will perform an automatic updat
 
 :::tip Tip
 
-Check the [Kubernetes Versions](/docs/kubernetes-hosting/kubernetes-cluster/cluster-versions) documentation page to check the list of the currently available releases and their changelogs.
+Check the [Kubernetes Versions](/kubernetes-hosting/kubernetes-cluster/cluster-versions) documentation page to check the list of the currently available releases and their changelogs.
 
 :::

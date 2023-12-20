@@ -1,10 +1,10 @@
 ---
-title: Php extensions
+title: PHP Extensions
 slug: php-extensions
 sidebar_position: 1
 ---
 
-## PHP Extensions
+<!-- ## PHP Extensions -->
 
 At the platform, PHP application servers are delivered with a number of embedded modules, which allows you to **set different PHP extensions** in _httpd_ (Apache-PHP) and _PHP-FPM_ (NGINX-PHP) daemons. Among these extensions, the following commonly required ones are **_inbuilt_**, i.e. loaded and run with PHP by default:
 

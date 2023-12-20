@@ -1,15 +1,17 @@
 ---
-title: Email via external smtp
+title: Email Via External Smtp
 slug: email-via-external-smtp
 sidebar_position: 1
 ---
 
-## External SMTP for Emails Sending
+<!-- ## External SMTP for Emails Sending -->
 
-**SMTP** (Simple Mail Transfer Protocol) is a standard for sending emails via Internet protocol (IP) networks. Communication between sender and receiver is performed via emanating command strings and delivering data using a reliable data stream channel, a TCP connection usually. In this tutorial we will show how to send emails via SMTP using PaaS PHP hosting. Here we present two ways of performing this settings:
+**SMTP** (Simple Mail Transfer Protocol) is a standard for sending emails via Internet protocol (IP) networks. Communication between sender and receiver is performed via emanating command strings and delivering data using a reliable data stream channel, a TCP connection usually. In this tutorial we will show how to send emails via SMTP using PaaS PHP hosting.
+<!-- 
+ Here we present two ways of performing this settings:
 
-- [by using PHPMailer](/docs/deployment-tools/mailings/email-via-external-smtp#phpmailer-for-email-sending)
-- [by configuring a custom code of the form for email sending](/docs/deployment-tools/mailings/email-via-external-smtp#using-custom-form-for-email-sending)
+- [by using PHPMailer](/deployment-tools/mailings/email-via-external-smtp#phpmailer-for-email-sending)
+- [by configuring a custom code of the form for email sending](/deployment-tools/mailings/email-via-external-smtp#using-custom-form-for-email-sending) -->
 
 ## PHPMailer for Email Sending
 
@@ -81,7 +83,7 @@ PHPMailer is a classic full-featured email sending class for PHP, compatible wit
 
 8. Specify all the necessary data there to configure mailing via localhost or via some specific email account:
 
-## Sending via Localhost
+### Sending via Localhost
 
 You can send emails directly from your app without specifying real email account. In this case you don’t have any restrictions on frequency and quantity of sent emails, but your mailings can be detected as spam.
 
@@ -133,7 +135,7 @@ If you didn’t receive the email in a few minutes, check your _Spam_ mail folde
 
 :::
 
-## Sending via Real Email Account
+### Sending via Real Email Account
 
 In case you have a special email account registered for your mailings, you can use it too. In such a way your emails most likely won’t drop in the spam folder, but you’ll meet some restrictions regarding, for example, amount of emails you can send. In the following example we will use the gmail.com email account.
 

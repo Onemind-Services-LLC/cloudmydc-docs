@@ -1,10 +1,10 @@
 ---
-title: Remote debugging
+title: Remote Debugging
 slug: remote-debugging
 sidebar_position: 16
 ---
 
-## Remote Debugging
+<!-- ## Remote Debugging -->
 
 With Public IPs in the platform, you can use remote debugging. Now you can debug your application running on the platform by connecting it with code in your IDE. First of all, let’s consider the basic aspects of remote debugging.
 

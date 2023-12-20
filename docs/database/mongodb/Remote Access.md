@@ -1,10 +1,10 @@
 ---
-title: Remote access
+title: Remote Access
 slug: remote-access
 sidebar_position: 3
 ---
 
-## Remote Access to MongoDB
+<!-- ## Remote Access to MongoDB -->
 You can work with your databases remotely from your computer without having to login to our dashboard. So here are some instructions on how to do this with MongoDB. They can be used both for Java and PHP environments.
 
 ## Create the Environment

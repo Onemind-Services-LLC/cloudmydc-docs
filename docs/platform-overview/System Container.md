@@ -1,10 +1,8 @@
 ---
-title: System container
+title: System Container
 slug: system-container
 sidebar_position: 4
 ---
-
-## What are System Containers
 
 A **system container** (also known as operating system container) is the oldest container type. It is an operating system (OS) centric solution that behaves like a standalone system, which does not require specialized software or custom images such as Docker. System containers are quite similar to virtual machines (VMs) but with very low overhead and easy management.
 

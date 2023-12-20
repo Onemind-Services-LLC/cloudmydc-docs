@@ -1,16 +1,16 @@
 ---
-title: Litespeed web adc
+title: Litespeed Web Adc
 slug: litespeed-web-adc
 sidebar_position: 3
 ---
 
 import obj from './LiteSpeedWebADC.json'
 
-## LiteSpeed Web ADC
+<!-- ## LiteSpeed Web ADC -->
 
 :::tip Tip
 
-The **LiteSpeed Web ADC** stack is [HTTP/3](/docs/application-setting/external-access-to-applications/http3-support) ready with the feature support enabled by default. However, a [public IP address](/docs/application-setting/external-access-to-applications/public-ip) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
+The **LiteSpeed Web ADC** stack is [HTTP/3](/application-setting/external-access-to-applications/http3-support) ready with the feature support enabled by default. However, a [public IP address](/application-setting/external-access-to-applications/public-ip) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
 
 :::
 
@@ -43,7 +43,7 @@ LiteSpeed Web ADC is suitable for the projects of any scale, being able to handl
 
 :::danger Note
 
-Being a commercial software, LiteSpeed Web Server cannot be distributed freely, i.e. requires the license to be applied to the platform. If working with this application server, you’ll be charged an [additional fee](/docs/load-balancers/litespeed-web-adc#license-pricing) for usage of the license mentioned above.
+Being a commercial software, LiteSpeed Web Server cannot be distributed freely, i.e. requires the license to be applied to the platform. If working with this application server, you’ll be charged an [additional fee](/load-balancers/litespeed-web-adc#license-pricing) for usage of the license mentioned above.
 
 :::
 
@@ -75,7 +75,7 @@ Get your own LiteSpeed Web ADC load balancer server at the platform by following
 
 :::tip Tip
 
-You can apply some customization to your LiteSpeed ADC by adjusting some of the [dedicated environment variables](/docs/environment-management/environment-variables/environment-variables):
+You can apply some customization to your LiteSpeed ADC by adjusting some of the [dedicated environment variables](/environment-management/environment-variables/environment-variables):
 
 - **JELASTIC_AUTOCONFIG** - enables (enabled, by default) or disables (disabled) autoconfiguration of the LiteSpeed worker processes count based on the allocated RAM and number of CPU cores
 - **DEFAULT_CLUSTER** - selects the load balancing type for requests' proxying (HTTP, AJP, FCGI, LSAPI). If working with some custom backends, this logic can be disabled (0, disabled, false)
@@ -124,7 +124,7 @@ Click **Create** to proceed.
 
 There are some specifics while working with the platform implementation of the LiteSpeed via the admin panel:
 
-- to ensure container stability, the [platform-native redeploy feature](/docs/category/container-deployment) should be used instead of the **Actions > Version Manager** functionality
+- to ensure container stability, the [platform-native redeploy feature](/category/container-deployment) should be used instead of the **Actions > Version Manager** functionality
 
 <div style={{
     display:'flex',
@@ -150,7 +150,7 @@ There are some specifics while working with the platform implementation of the L
 
 :::
 
-In case you need to adjust any of the configuration files, you can work over the [dashboard file manager](/docs/application-setting/configuration-file-manager) or establish an [SSH connection](/docs/deployment-tools/ssh/ssh-access/overview).
+In case you need to adjust any of the configuration files, you can work over the [dashboard file manager](/application-setting/configuration-file-manager) or establish an [SSH connection](/deployment-tools/ssh/ssh-access/overview).
 
 ## License Pricing
 
@@ -159,7 +159,7 @@ The platform seamlessly integrates the cost of the LiteSpeed license in accordan
 - new licenses are issued for every newly-created container (e.g. during environment provisioning or horizontal scaling)
 - updated while changing available resource limits within each container
 - decommissioned while stopping the environment or scaling in
-  Based on your needs, you can select the required plan using a dedicated **_LiteSpeed License Manager_** add-on that is automatically installed on all the LiteSpeed-based nodes ([LS Web Server](/docs/php/php-app-servers/litespeed-web-server), LS ADC, [LLSMP](/docs/php/php-app-servers/lemp-&-llsmp)).
+  Based on your needs, you can select the required plan using a dedicated **_LiteSpeed License Manager_** add-on that is automatically installed on all the LiteSpeed-based nodes ([LS Web Server](/php/php-app-servers/litespeed-web-server), LS ADC, [LLSMP](/php/php-app-servers/lemp-&-llsmp)).
 
 <div style={{
     display:'flex',
@@ -290,7 +290,7 @@ The license price is calculated dynamically based on the network traffic process
 
 :::danger Note
 
-The exact cost may vary slightly for the platforms with a currency other than USD; it depends on the conversion rate at the moment of the hourly billing event. All the account charges can be viewed via the **[Billing History](/docs/account-and-pricing/resource-charging/monitoring-consumed-resources#billing-history)** in the dashboard.
+The exact cost may vary slightly for the platforms with a currency other than USD; it depends on the conversion rate at the moment of the hourly billing event. All the account charges can be viewed via the **[Billing History](/account-and-pricing/resource-charging/monitoring-consumed-resources#billing-history)** in the dashboard.
 
 <div style={{
     display:'flex',
@@ -310,6 +310,6 @@ When performing testing of the LiteSpeed Web ADC load balancer, you should take 
 
 1. By default, the load balancer operates in the **Stateful** mode, which tracks sessions associated with each back-end server (also called “Session Affinity”). It means that requests from a single source will always go to the same back-end server (unless it’s not working).
 
-2. If LiteSpeed ADC does not have its own [public IP](/docs/application-setting/external-access-to-applications/public-ip), all the requests go through the platform’s [Shared Load Balancer](/docs/application-setting/external-access-to-applications/shared-load-balancer). In such a case, ADC considers that the load comes from a single IP address (of the Shared Load Balancer).
+2. If LiteSpeed ADC does not have its own [public IP](/application-setting/external-access-to-applications/public-ip), all the requests go through the platform’s [Shared Load Balancer](/application-setting/external-access-to-applications/shared-load-balancer). In such a case, ADC considers that the load comes from a single IP address (of the Shared Load Balancer).
 
 As a result, for the proper testing of the <u>production cluster</u> with LiteSpeed ADC as a load balancer, you need to attach public IP and send requests from multiple sources. Alternatively, you can temporarily switch to the **Stateless** mode, which does not care about sessions (recommended during the <u>development/testing stages</u> only). Check out more about [LiteSpeed ADC testing](https://docs.litespeedtech.com/lsadc/settings/#testing) at the official documentation.

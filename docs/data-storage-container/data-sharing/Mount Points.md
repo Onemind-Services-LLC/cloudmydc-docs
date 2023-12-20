@@ -1,5 +1,5 @@
 ---
-title: Mount points
+title: Mount Points
 slug: mount-points
 sidebar_position: 1
 ---

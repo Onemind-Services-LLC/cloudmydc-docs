@@ -1,12 +1,12 @@
 ---
-title: Container redeploy
+title: Container Redeploy
 slug: container-redeploy
 sidebar_position: 7
 ---
 
-## CLI Tutorial: Container Redeploy
+<!-- ## CLI Tutorial: Container Redeploy -->
 
-In this guide, we’ll show how to [redeploy](/docs/category/container-deployment) a container from one image tag to another. Herewith, if needed, an option for whole layer redeployment is supported.
+In this guide, we’ll show how to [redeploy](/category/container-deployment) a container from one image tag to another. Herewith, if needed, an option for whole layer redeployment is supported.
 
 1. At first, locate the environment name and node ID/layer of the container(s) that should be redeployed. You can either view the required info via the dashboard or use the **_GetEnvs_** and **_GetEnvInfo_** methods to get the data directly from the terminal (for all or particular environment respectively).
 

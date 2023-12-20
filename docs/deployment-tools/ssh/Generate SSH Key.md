@@ -1,10 +1,10 @@
 ---
-title: Generate ssh key
+title: Generate SSH Key
 slug: generate-ssh-key
 sidebar_position: 2
 ---
 
-## Generate SSH Key
+<!-- ## Generate SSH Key -->
 
 The instructions below walk you through the steps of generating an SSH key. Since the _8.0.2_ version, the platform supports the following key types:
 
@@ -12,10 +12,10 @@ The instructions below walk you through the steps of generating an SSH key. Sinc
 - _EdDSA_
 - _RSA_
 
-Follow the steps in one of the following sections (based on your operating system):
+<!-- Follow the steps in one of the following sections (based on your operating system):
 
-- [Linux/MacOS](/docs/deployment-tools/ssh/generate-ssh-key#for-linuxmacos)
-- [Windows](/docs/deployment-tools/ssh/generate-ssh-key#for-windows)
+- [Linux/MacOS](/deployment-tools/ssh/generate-ssh-key#for-linuxmacos)
+- [Windows](/deployment-tools/ssh/generate-ssh-key#for-windows) -->
 
 ## For Linux/MacOS
 
@@ -93,10 +93,10 @@ If needed, adjust the desired keys location and passphrase (we’ll proceed with
 
 </div>
 
-3. Now, you can [add the generated SSH key](/docs/deployment-tools/ssh/add-ssh-key) to your PaaS account:
+3. Now, you can [add the generated SSH key](/deployment-tools/ssh/add-ssh-key) to your PaaS account:
 
-- _the public key_ for access via [SSH Gate](/docs/deployment-tools/ssh/ssh-access/ssh-gate)
-- _the private key_ for [authentication](/docs/deployment/ssh-access-to-git-repository) at your remote GIT repository via SSH
+- _the public key_ for access via [SSH Gate](/deployment-tools/ssh/ssh-access/ssh-gate)
+- _the private key_ for [authentication](/deployment/ssh-access-to-git-repository) at your remote GIT repository via SSH
 
 ## For Windows
 
@@ -131,7 +131,7 @@ Click **Generate**.
 
 3. Now, depending on the type of key you need:
 
-- to get the **_public key_** for SSH access to your account via [local client](/docs/deployment-tools/ssh/ssh-access/ssh-gate) - copy the generated key from the output field at the top of the window
+- to get the **_public key_** for SSH access to your account via [local client](/deployment-tools/ssh/ssh-access/ssh-gate) - copy the generated key from the output field at the top of the window
 
 <div style={{
     display:'flex',
@@ -143,7 +143,7 @@ Click **Generate**.
 
 </div>
 
-- to get the **_private key_** for [authentication](/docs/deployment/ssh-access-to-git-repository) at your remote GIT repository via SSH - expand the **Conversions** menu and select the **Export OpenSSH key** option
+- to get the **_private key_** for [authentication](/deployment/ssh-access-to-git-repository) at your remote GIT repository via SSH - expand the **Conversions** menu and select the **Export OpenSSH key** option
 
 <div style={{
     display:'flex',

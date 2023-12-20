@@ -1,14 +1,12 @@
 ---
-title: Eclipse plugin installation
+title: Eclipse Plugin Installation
 slug: eclipse-plugin-installation
 sidebar_position: 2
 ---
 
-!Image Missing
+<!-- ## Eclipse Plugin Installation -->
 
-## Eclipse Plugin Installation
-
-In order to start working with the Eclipse Plugin, you need to [get it installed](/docs/deployment-tools/plugins/eclipse-plugin/eclipse-plugin-installation) and [authenticated to your PaaS account](/docs/deployment-tools/plugins/eclipse-plugin/eclipse-plugin-installation#authentication-with-account-credentials) within its settings. So, launch your Eclipse IDE and proceed with the instructions below.
+In order to start working with the Eclipse Plugin, you need to [get it installed](/deployment-tools/plugins/eclipse-plugin/eclipse-plugin-installation) and [authenticated to your PaaS account](/deployment-tools/plugins/eclipse-plugin/eclipse-plugin-installation#authentication-with-account-credentials) within its settings. So, launch your Eclipse IDE and proceed with the instructions below.
 
 ## Plugin Installation
 
@@ -91,4 +89,4 @@ In the opened tab, fill in the _Login_ and _Password_ fields with the correspond
 </div>
 
 Select the A**pply and Close** button to confirm the entered data.
-That’s all the required configurations! Now, having the **Eclipse plugin** installed, you can [manage environments](/docs/deployment-tools/plugins/eclipse-plugin/environment-management) and [deploy new projects](/docs/deployment-tools/plugins/eclipse-plugin/application-deployment) easily without switching between IDE and browser.
+That’s all the required configurations! Now, having the **Eclipse plugin** installed, you can [manage environments](/deployment-tools/plugins/eclipse-plugin/environment-management) and [deploy new projects](/deployment-tools/plugins/eclipse-plugin/application-deployment) easily without switching between IDE and browser.

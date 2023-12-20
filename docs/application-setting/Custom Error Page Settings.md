@@ -1,10 +1,10 @@
 ---
-title: Custom error page settings
+title: Custom Error Page Settings
 slug: custom-error-page-settings
 sidebar_position: 13
 ---
 
-## Custom Error Page Settings via NGINX Balancer
+<!-- ## Custom Error Page Settings via NGINX Balancer -->
 
 When an error occurs within a particular environment (e.g. when trying to access non-existing page), a default error page for the server is opened. For example:
 
@@ -128,7 +128,7 @@ location @recycle {
 
 </div>
 
-7. In case of using [SSL](/docs/application-setting/ssl/secure-sockets-layer) for your website (i.e. for connections over HTTPS), some additional configurations are required (otherwise go to the 9th step of this guide). Add the following lines to the **servers** section of the **_/etc/nginx/conf.d/ssl.conf_** file:
+7. In case of using [SSL](/application-setting/ssl/secure-sockets-layer) for your website (i.e. for connections over HTTPS), some additional configurations are required (otherwise go to the 9th step of this guide). Add the following lines to the **servers** section of the **_/etc/nginx/conf.d/ssl.conf_** file:
 
 ```bash
 proxy_intercept_errors on;

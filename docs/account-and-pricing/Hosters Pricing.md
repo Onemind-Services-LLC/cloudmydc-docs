@@ -1,12 +1,12 @@
 ---
-title: Hosters pricing
+title: Hosters Pricing
 slug: hosters-pricing
 sidebar_position: 16
 ---
 
 import obj from './HostersPricing.json'
 
-## Hosters Pricing Pages
+<!-- ## Hosters Pricing Pages -->
 
 <div style={{
         width: '100%',

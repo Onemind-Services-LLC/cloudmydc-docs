@@ -1,10 +1,10 @@
 ---
-title: Vcs project deployment
+title: VCS Project Deployment
 slug: vcs-project-deployment
 sidebar_position: 10
 ---
 
-## CLI Tutorial: VCS Project Deployment
+<!-- ## CLI Tutorial: VCS Project Deployment -->
 
 Deployment via VCS is a rather popular and convenient way for project’s integration into the Cloud, as it simplifies operating with app’s sources and allows to easily update its version (either manually or automatically with a certain interval). And the variety of options, available for the VCS deployment management via CLI, gives you the full control on your app.
 
@@ -24,16 +24,16 @@ Here, the list of parameters can be divided into the following groups:
   - **_{url}_** - link to the appropriate repository
 
 - additional options (their activation is defined with the **_{true/false}_** values)
-  - _autoupdate_ - enables regular [autoupdate](/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview) of your deployed project; if activated, requires the additional **_{interval}_** parameter for setting the frequency of redeployments
+  - _autoupdate_ - enables regular [autoupdate](/deployment/git-&-svn-auto-deploy/auto-deploy-overview) of your deployed project; if activated, requires the additional **_{interval}_** parameter for setting the frequency of redeployments
   - _utoResolveConflict_ - switches on the corresponding same-named option
-  - _zdt_ - allows to activate [ZDT deployment](/docs/php/zdt-deployment-for-php) for PHP projects
+  - _zdt_ - allows to activate [ZDT deployment](/php/zdt-deployment-for-php) for PHP projects
 
 :::tip Note
 
 In case you need to connect to a private repository, the additional authentication parameters [*–login* ***{login}***] _[–password_ **_{password}_**] _[–keyId_ **_{keyId}_**] should be added to the main command. Here, you need to obligatory state the **_{login}_** option (to specify your VCS account login) and append one of the following settings depending on the desired (_password_ or _SSH key_) access types:
 
 - **_{password}_** - the corresponding VCS account password
-- **_{keyId}_** - name of the private SSH key you’ve specified while its addition to the dashboard; this allows to establish a [secure connection](/docs/deployment/ssh-access-to-git-repository) to the repo with the paired public SSH key is attached
+- **_{keyId}_** - name of the private SSH key you’ve specified while its addition to the dashboard; this allows to establish a [secure connection](/deployment/ssh-access-to-git-repository) to the repo with the paired public SSH key is attached
 
 :::
 

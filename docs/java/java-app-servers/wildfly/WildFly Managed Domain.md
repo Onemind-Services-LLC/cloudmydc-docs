@@ -1,10 +1,10 @@
 ---
-title: Wildfly managed domain
+title: Wildfly Managed Domain
 slug: wildfly-managed-domain
 sidebar_position: 2
 ---
 
-## Automatic WildFly Clustering in Managed Domain Mode and Scaling inside Containers
+<!-- ## Automatic WildFly Clustering in Managed Domain Mode and Scaling inside Containers -->
 
 Nowadays it’s easy to get up and running WildFly standalone server in a container. But what if you need to enable clustering in Managed Domain mode which is one of the key features of [Jakarta EE](https://jakarta.ee/) in general. That is not so easy task. Some people claim it’s nearly impossible in the cloud-native world, because Jakarta EE clustering was designed before the containers era. The old question at the official [developers portal](https://developer.jboss.org/thread/249340) is still not answered with any adequate instruction that just proves the presence of the issue.
 
@@ -104,11 +104,11 @@ Please note that each container for handling incoming requests runs 3 Java proce
 
 ## WildFly Managed Domain in Jelastic
 
-In order to facilitate the migration of legacy Jakarta EE applications from VMs to containers, we created a special embedded [Auto-Clustering](/docs/application-setting/scaling-and-clustering/auto-clustering-of-instances) mode for WildFly that can be enabled for new instances.
+In order to facilitate the migration of legacy Jakarta EE applications from VMs to containers, we created a special embedded [Auto-Clustering](/application-setting/scaling-and-clustering/auto-clustering-of-instances) mode for WildFly that can be enabled for new instances.
 
 The main advantage of this solution is an automatic interconnection of multiple application servers upon the environment topology change, which implements the commonly used clustering configuration in managed domain mode.
 
-Below you’ll see how standalone WildFly transforms into the cluster by means of Auto-Clustering feature and a simple [Horizontal Scaling](/docs/application-setting/scaling-and-clustering/horizontal-scaling) with no manual configurations required. Also, we’ll describe infrastructure topology specifics and the way to get the appropriate development and production environments up and running inside Jelastic PaaS.
+Below you’ll see how standalone WildFly transforms into the cluster by means of Auto-Clustering feature and a simple [Horizontal Scaling](/application-setting/scaling-and-clustering/horizontal-scaling) with no manual configurations required. Also, we’ll describe infrastructure topology specifics and the way to get the appropriate development and production environments up and running inside Jelastic PaaS.
 
 ## Create Standalone WildFly
 
@@ -190,7 +190,7 @@ Make sure that your application is up and running, pressing **Open in browser** 
 
 </div>
 
-If you log in to your container via built-in [Web SSH client](/docs/deployment-tools/ssh/ssh-access/web-ssh), you’ll see only one running process of **Standalone** server.
+If you log in to your container via built-in [Web SSH client](/deployment-tools/ssh/ssh-access/web-ssh), you’ll see only one running process of **Standalone** server.
 
 <div style={{
     display:'flex',
@@ -208,7 +208,7 @@ WildFly clustering with domain mode is configured automatically by means of Auto
 
 - Manually
 
-Add new servers via wizard while creating the environment or by [changing its topology](/docs/quickstart/dashboard-guide).
+Add new servers via wizard while creating the environment or by [changing its topology](/quickstart/dashboard-guide).
 
 <div style={{
     display:'flex',
@@ -220,7 +220,7 @@ Add new servers via wizard while creating the environment or by [changing its to
 
 </div>
 
-Just refer to the application server layer within the left-side environment panel, enable Auto-Clustering mode and add **(+)** nodes within the [Horizontal Scaling](/docs/application-setting/scaling-and-clustering/horizontal-scaling) frame.
+Just refer to the application server layer within the left-side environment panel, enable Auto-Clustering mode and add **(+)** nodes within the [Horizontal Scaling](/application-setting/scaling-and-clustering/horizontal-scaling) frame.
 
 <div style={{
     display:'flex',
@@ -234,7 +234,7 @@ Just refer to the application server layer within the left-side environment pane
 
 - Automatically
 
-The number of servers can be changed automatically by setting up [scaling triggers](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) based on the resource consumption within S**ettings > Auto Horizontal Scaling**.
+The number of servers can be changed automatically by setting up [scaling triggers](/application-setting/scaling-and-clustering/automatic-horizontal-scaling) based on the resource consumption within S**ettings > Auto Horizontal Scaling**.
 
 <div style={{
     display:'flex',

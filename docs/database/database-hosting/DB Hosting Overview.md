@@ -1,10 +1,10 @@
 ---
-title: Db hosting overview
+title: Database Hosting Overview
 slug: db-hosting-overview
 sidebar_position: 1
 ---
 
-## Database Hosting
+<!-- ## Database Hosting -->
 
 Platform provides a set of scalable and fully manageable database servers that you can easily install and operate with. The process of a new database creation is fairly simple and can be accomplished in just a few minutes.
 
@@ -39,13 +39,13 @@ Use the drop-down list to choose among the available DB management systems:
 
 :::tip Note
 
-The list of available [database servers](/docs/quickstart/software-stack-versions) can vary and depends on your hosting provider settings. If some of these servers are not available in your wizard, please, contact your hosting provider for activation.
+The list of available [database servers](/quickstart/software-stack-versions) can vary and depends on your hosting provider settings. If some of these servers are not available in your wizard, please, contact your hosting provider for activation.
 
 :::
 
 When the corresponding database server is created, you’ll receive an email notification with credentials (access URL, login and password) to the database administration panel.
 
-3. To launch your database admin panel, click the **Open in Browser** button next to the target database node at the dashboard (or compose the admin panel URL [manually](/docs/database/database-hosting/db-hosting-overview#database-admin-panel-url)).
+3. To launch your database admin panel, click the **Open in Browser** button next to the target database node at the dashboard (or compose the admin panel URL [manually](/database/database-hosting/db-hosting-overview#database-admin-panel-url)).
 
 <div style={{
     display:'flex',
@@ -61,11 +61,11 @@ In the opened page, use credentials from the email to log in and start applying 
 
 :::tip Tip
 
-For containers without [Public IP](/docs/application-setting/external-access-to-applications/public-ip#public-ip) address attached, the database admin console is available via https:// by default.
+For containers without [Public IP](/application-setting/external-access-to-applications/public-ip#public-ip) address attached, the database admin console is available via https:// by default.
 
 :::
 
-When your database server is up and ready, you can [Connect your application to DB](/docs/database/database-hosting/database-connection-strings#database-connection-strings).
+When your database server is up and ready, you can [Connect your application to DB](/database/database-hosting/database-connection-strings#database-connection-strings).
 
 ## Database Password Reset
 
@@ -104,11 +104,11 @@ where
 </div>
 
 - **{environment-name}** - name of the environment you’ve added the server to (e.g. database)
-- **{hoster_domain}**- your hosting provider domain; can be found within the last column of the appropriate table in the [Hosters Info](/docs/quickstart/hosters-list-&-info#paas-hosting-providers) page
+- **{hoster_domain}**- your hosting provider domain; can be found within the last column of the appropriate table in the [Hosters Info](/quickstart/hosters-list-&-info#paas-hosting-providers) page
 
 :::tip Note
 
-In case your hosting provider platform has several [environment regions](/docs/environment-management/environment-regions/choosing-a-region#environment-regions) to choose, the _{hoster_domain}_ value for your environment can differ from the general platform’s one.
+In case your hosting provider platform has several [environment regions](/environment-management/environment-regions/choosing-a-region#environment-regions) to choose, the _{hoster_domain}_ value for your environment can differ from the general platform’s one.
 
 :::
 

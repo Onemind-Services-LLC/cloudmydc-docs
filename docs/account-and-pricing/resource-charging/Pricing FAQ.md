@@ -1,13 +1,13 @@
 ---
-title: Pricing faq
+title: Pricing FAQ
 slug: pricing-faq
 sidebar_position: 1
 ---
 
-- [What is charged?](/docs/account-and-pricing/resource-charging/pricing-faq#what-is-charged)
-- [Where can consumed resources be seen?](/docs/account-and-pricing/resource-charging/pricing-faq#where-the-consumed-resources-can-be-seen)
-- [How much do resources cost?](/docs/account-and-pricing/resource-charging/pricing-faq#how-much-do-resources-cost)
-- [How to decrease the consumption?](/docs/account-and-pricing/resource-charging/pricing-faq#how-to-decrease-the-consumption)
+- [What is charged?](/account-and-pricing/resource-charging/pricing-faq#what-is-charged)
+- [Where can consumed resources be seen?](/account-and-pricing/resource-charging/pricing-faq#where-the-consumed-resources-can-be-seen)
+- [How much do resources cost?](/account-and-pricing/resource-charging/pricing-faq#how-much-do-resources-cost)
+- [How to decrease the consumption?](/account-and-pricing/resource-charging/pricing-faq#how-to-decrease-the-consumption)
 
 ## What is Charged?
 
@@ -16,7 +16,7 @@ Resource consumption for each environment is charged to the account owner on an 
 - **Primary** - fees for the main platform resources (i.e. RAM & CPU), provided within cloudlets
 - **Provider-dependent** - the ones that can be either payable or not, according to the chosen hosting provider settings
 - **Optional extras** - charges for usage of some additional platform features
-  Detailed information on each of these types of charges can be found in the [Charged Resources](/docs/account-and-pricing/resource-charging/charged-resources) document.
+  Detailed information on each of these types of charges can be found in the [Charged Resources](/account-and-pricing/resource-charging/charged-resources) document.
 
 ## Where the Consumed Resources Can be Seen?
 
@@ -27,11 +27,11 @@ The detailed information on the amount of consumed resources can be seen in the 
 - the total usage **Statistics** on all resources types (i.e. RAM, CPU, Storage and Network Bandwidth) can be seen via the appropriate section for the desired node/set of the same-type nodes
 - finally, the **Billing History** section provides any information on all the payable resources, consumed during the stated period, and their costs.
 
-The details on each of these options can be seen in the [Monitor Consumed Resources](/docs/account-and-pricing/resource-charging/monitoring-consumed-resources) document.
+The details on each of these options can be seen in the [Monitor Consumed Resources](/account-and-pricing/resource-charging/monitoring-consumed-resources) document.
 
 ## How Much do Resources Cost?
 
-With the platform, you only pay for consumed resources. The resource pricing is set by your chosen hosting provider. You can find exact cost for each resource unit by going to your hoster’s [Pricing page](/docs/account-and-pricing/hosters-pricing).
+With the platform, you only pay for consumed resources. The resource pricing is set by your chosen hosting provider. You can find exact cost for each resource unit by going to your hoster’s [Pricing page](/account-and-pricing/hosters-pricing).
 
 The prices can also be seen inside your platform dashboard.
 
@@ -47,7 +47,7 @@ Navigate to **Balance > Quotas & Pricing** menu item. Here you’ll see a set of
 
 </div>
 
-Choose the one you are interested in to see the pricing and discount scale offered by your hosting provider. You can find more information about pricing and discount systems in the [Pricing System](/docs/account-and-pricing/pricing-model-overview) and [Automatic Discounts](/docs/account-and-pricing/automatic-discounts) documents.
+Choose the one you are interested in to see the pricing and discount scale offered by your hosting provider. You can find more information about pricing and discount systems in the [Pricing System](/account-and-pricing/pricing-model-overview) and [Automatic Discounts](/account-and-pricing/automatic-discounts) documents.
 
 Note that the various software stacks are provided free of charge in the platform. You only pay for the resources consumed but not for the software itself.
 
@@ -72,4 +72,4 @@ You are going to pay only for **disk space** that you use and for **public IP** 
 Follow the links to get acquainted with useful tips on consuming platform resources in a smart way:
 
 - [Save Your Cloud Money!](https://cloudmydc.com/)
-- [How to Manage the Application Lifecycle in PaaS](/docs/application-setting/application-lifecycle-management)
+- [How to Manage the Application Lifecycle in PaaS](/application-setting/application-lifecycle-management)

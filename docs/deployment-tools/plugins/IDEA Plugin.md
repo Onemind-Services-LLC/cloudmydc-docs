@@ -1,10 +1,10 @@
 ---
-title: Idea plugin
+title: Idea Plugin
 slug: idea-plugin
 sidebar_position: 3
 ---
 
-## Integration with IntelliJ IDEA: The Java IDE for Professional Developers
+<!-- ## Integration with IntelliJ IDEA: The Java IDE for Professional Developers -->
 
 <div style={{
     display: 'grid',
@@ -38,14 +38,14 @@ To learn more on provisioned features and **Ultimate** vs **Community** editions
 IntelliJ IDEA has a robust ecosystem with lots of available plugins, including the dedicated **PaaS plugin** support. It’s compatible with IDEA 107.105 version and higher, of both **Ultimate** and **Community** editions. To get the plugin for IntelliJ IDEA up and running in a matter of minutes, check out a short video tutorial below.
 
 [![Video Title](./img/IDEAPlugin/video1.jpg)](https://youtu.be/6i73wWak1Oc)
-
+<!-- 
 To explore the topic in more details, read the guide below where we’ll describe the platform integration with IntelliJ IDEA through the following steps:
 
-- [Install Plugin](/docs/deployment-tools/plugins/idea-plugin#install-intellij-idea-plugin)
-- [Access PaaS from IDEA](/docs/deployment-tools/plugins/idea-plugin#access-platform-from-idea)
-- [Deploy Application to PaaS](/docs/deployment-tools/plugins/idea-plugin#deploy-application-to-the-cloud)
-- [Work with Environments and Log Files](/docs/deployment-tools/plugins/idea-plugin#work-with-environments-and-view-log-files)
-- [Create Web Project](/docs/deployment-tools/plugins/idea-plugin#create-web-project-in-idea)
+- [Install Plugin](/deployment-tools/plugins/idea-plugin#install-intellij-idea-plugin)
+- [Access PaaS from IDEA](/deployment-tools/plugins/idea-plugin#access-platform-from-idea)
+- [Deploy Application to PaaS](/deployment-tools/plugins/idea-plugin#deploy-application-to-the-cloud)
+- [Work with Environments and Log Files](/deployment-tools/plugins/idea-plugin#work-with-environments-and-view-log-files)
+- [Create Web Project](/deployment-tools/plugins/idea-plugin#create-web-project-in-idea) -->
 
 ## Install IntelliJ IDEA Plugin
 
@@ -69,7 +69,7 @@ To access PaaS from your IDEA, navigate to **Settings > Jelastic**, type your ac
 
 :::danger Note
 
-On accounts with [two-factor authentication](/docs/account-and-pricing/two-factor-authentication) enabled, a dedicated **_IDE Plugins_** [access token](/docs/account-and-pricing/personal-access-tokens) should be used instead of the password.
+On accounts with [two-factor authentication](/account-and-pricing/two-factor-authentication) enabled, a dedicated **_IDE Plugins_** [access token](/account-and-pricing/personal-access-tokens) should be used instead of the password.
 
 <div style={{
     display:'flex',
@@ -89,7 +89,7 @@ When you are finished, proceed to the following section to deploy your applicati
 
 After installing the plugin, you can see a button with the platform logo in the main IDEA toolbar or in the pop-up menu for the **Projects** tool window. Click this button to deploy your Java web project.
 
-In the opened window, choose the appropriate artifact (**_.ear_**, **_.jar_** or **_.war_** archive), state the **Context**, select the destination [environment](/docs/environment-management/setting-up-environment) from the list and confirm your choice.
+In the opened window, choose the appropriate artifact (**_.ear_**, **_.jar_** or **_.war_** archive), state the **Context**, select the destination [environment](/environment-management/setting-up-environment) from the list and confirm your choice.
 
 The selected project will be displayed within the **PaaS Tool Window** in IDEA. Click the **Deploy** button for the plugin to run a build of the provided artifact and deploy it to the platform.
 
@@ -195,7 +195,7 @@ To view the existing artifacts for your project, navigate to **File > Project st
 
 </div>
 
-At this point, the artifacts are built and ready for deployment that you can run as described in the [previous section](/docs/deployment-tools/plugins/idea-plugin#deploy-application-to-the-cloud).
+At this point, the artifacts are built and ready for deployment that you can run as described in the [previous section](/deployment-tools/plugins/idea-plugin#deploy-application-to-the-cloud).
 
 <div style={{
     display:'flex',

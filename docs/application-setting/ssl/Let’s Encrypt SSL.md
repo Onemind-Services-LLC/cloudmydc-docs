@@ -1,12 +1,10 @@
 ---
-title: Let’s encrypt ssl
+title: Let’S Encrypt SSL
 slug: let’s-encrypt-ssl
 sidebar_position: 4
 ---
 
-## work todo
-
-## Free Let’s Encrypt SSL Certificates: Out-of-Box Integration with the Most Popular Software Stacks
+<!-- ## Free Let’s Encrypt SSL Certificates: Out-of-Box Integration with the Most Popular Software Stacks -->
 
 One of the key issues we should deal with while hosting production applications is to ensure its security. The very basic and commonly used approach for secure data exchange is encrypting the application traffic with HTTPS protocol.
 
@@ -28,7 +26,7 @@ A general trend of moving Web to HTTPS implies the complete automation of custom
 
 The key advantage of this solution is a unique out-of-box integration with the most popular load balancer and application server stacks. In such a way, it gives a possibility to freely secure the majority of existing applications that are run in Jelastic.
 
-Being provisioned as an add-on, this solution can be easily installed on top of any container with the [Custom SSL](/docs/application-setting/ssl/custom-ssl) support enabled, namely the following servers (the [list](https://github.com/jelastic-jps/lets-encrypt/blob/f08448d949878cd196e49c996ab8a9e60154c0d8/manifest.jps#L10) is constantly extended):
+Being provisioned as an add-on, this solution can be easily installed on top of any container with the [Custom SSL](/application-setting/ssl/custom-ssl) support enabled, namely the following servers (the [list](https://github.com/jelastic-jps/lets-encrypt/blob/f08448d949878cd196e49c996ab8a9e60154c0d8/manifest.jps#L10) is constantly extended):
 
 - Load Balancers - NGINX, Apache LB, HAProxy, Varnish
 - Java application servers - Tomcat, TomEE, GlassFish, Payara, Jetty
@@ -67,7 +65,7 @@ Despite the long description, all of these operations are handled just in a matt
 
 To get SSL certificate for the environment hostname, perform the following:
 
-1. Log into Jelastic dashboard and click [**Marketplace**](/docs/deployment-tools/cloud-scripting-&-jps/marketplace) at the top of a page. Within the opened frame switch to the **Add-ons** tab and find the _Let's Encrypt Free SSL_ package.
+1. Log into Jelastic dashboard and click [**Marketplace**](/deployment-tools/cloud-scripting-&-jps/marketplace) at the top of a page. Within the opened frame switch to the **Add-ons** tab and find the _Let's Encrypt Free SSL_ package.
 
 <div style={{
     display:'flex',
@@ -81,7 +79,7 @@ To get SSL certificate for the environment hostname, perform the following:
 
 :::tip
 
-Alternatively you can [Import](/docs/environment-management/environment-export-and-import/environment-import) the <b><i>manifest.jps</i></b> file from the appropriate Let's Encrypt add-on repository:
+Alternatively you can [Import](/environment-management/environment-export-and-import/environment-import) the <b><i>manifest.jps</i></b> file from the appropriate Let's Encrypt add-on repository:
 https://github.com/jelastic-jps/lets-encrypt/blob/master/manifest.jpsImporting add-on via JPS tab allows providing customization on a fly.
 
 :::
@@ -93,7 +91,7 @@ Click **Install** to proceed.
 Here, you need to:
 
 - provide **_External Domain(s)_** of the target environment, the possible options are:
-  - leave the field blank to create a dummy SSL certificate, assigned to environment internal URL (_env_name.{[hoster_domain](/docs/quickstart/hosters-list-&-info)}_), for being used in testing
+  - leave the field blank to create a dummy SSL certificate, assigned to environment internal URL (_env_name.{[hoster_domain](/quickstart/hosters-list-&-info)}_), for being used in testing
   - insert the preliminary linked external domain(s) to get a trusted certificate for each of them; if specifying multiple hostnames, separate them with either space, comma, or semicolon
 
 <div style={{
@@ -113,7 +111,7 @@ Finally, click on **Install** to initiate installation of the appropriate SSL ce
 
 :::tip Note
 
-that the add-on requires [public IP](/docs/application-setting/external-access-to-applications/public-ip) address for proper work. So in case, the environment entry point does not have such, it will be automatically attached during installation (be aware that Public IP is a paid option - the cost can be found within the [Quotas & Pricing](/docs/account-and-pricing/resource-charging/pricing-faq) frame).
+that the add-on requires [public IP](/application-setting/external-access-to-applications/public-ip) address for proper work. So in case, the environment entry point does not have such, it will be automatically attached during installation (be aware that Public IP is a paid option - the cost can be found within the [Quotas & Pricing](/account-and-pricing/resource-charging/pricing-faq) frame).
 
 :::
 
@@ -147,17 +145,17 @@ As you can see, the environment is accessible and the established connection is 
 
 ## Add-On Installation via API
 
-Alternatively add-on can be installed with Jelastic [API method install](https://docs.jelastic.com/api/#!/api/marketplace.Jps-method-Install). Api call looks like:
+Alternatively add-on can be installed with Jelastic [API method install](https://docs.jelastic.com/api/#!/api/marketplace.JPS-method-Install). Api call looks like:
 
-\*https://[[hoster-api-host](/docs/quickstart/hosters-list-&-info)]/1.0/marketplace/jps/rest/install?jps=letsencrypt-ssl-addon&session={**_session_**}&envName={**_your_env_name_**}&nodeGroup={**_your_node_group_**}&settings={**_your_addon_settings_**}\*
+\*https://[[hoster-api-host](/quickstart/hosters-list-&-info)]/1.0/marketplace/jps/rest/install?jps=letsencrypt-ssl-addon&session={**_session_**}&envName={**_your_env_name_**}&nodeGroup={**_your_node_group_**}&settings={**_your_addon_settings_**}\*
 
 where:
 
-**{session}** - user’s session or [authentication token ](/docs/account-and-pricing/personal-access-tokens)
+**{session}** - user’s session or [authentication token ](/account-and-pricing/personal-access-tokens)
 
 **{your_env_name}** - name of the target environment
 
-**{your_node_group}** - unique identifier of the [nodeGroup](/docs/application-setting/domain-name-management/container-dns-hostnames)
+**{your_node_group}** - unique identifier of the [nodeGroup](/application-setting/domain-name-management/container-dns-hostnames)
 
 **{your_addon_settings}** - list of add-on specific settings in JSON format (key:value pairs)
 
@@ -200,9 +198,9 @@ Also, your SSL certificates can be updated by add-on re-installation for the sam
 
 ## Certificates Update via API
 
-Similar to Add-On installation the certificate can be forced to update via API call with method **_[executeappaction](https://docs.jelastic.com/api/#/api/marketplace.Jps)_**:
+Similar to Add-On installation the certificate can be forced to update via API call with method **_[executeappaction](https://docs.jelastic.com/api/#/api/marketplace.JPS)_**:
 
-\*https://[[hoster-api-host](/docs/quickstart/hosters-list-&-info)]/1.0/marketplace/jps/rest/executeappaction?session=**_{session}_**&appUniqueName=**_{app_unique_name}_**&action=update\*
+\*https://[[hoster-api-host](/quickstart/hosters-list-&-info)]/1.0/marketplace/jps/rest/executeappaction?session=**_{session}_**&appUniqueName=**_{app_unique_name}_**&action=update\*
 
 where:
 
@@ -248,7 +246,7 @@ To avoid security issues, a new certificate will be issued, even in case of remo
 
 ## Let’s Encrypt Certificates Reconfiguration via API
 
-\*https://[[hoster-api-host](/docs/quickstart/hosters-list-&-info)]/1.0/marketplace/jps/rest/executeappaction?session={session}&appUniqueName=**_{app_unique_name}_**&action=configure&params={"customDomains":"**_{your_new_domain_list}_**"}
+\*https://[[hoster-api-host](/quickstart/hosters-list-&-info)]/1.0/marketplace/jps/rest/executeappaction?session={session}&appUniqueName=**_{app_unique_name}_**&action=configure&params={"customDomains":"**_{your_new_domain_list}_**"}
 
 - where:
 

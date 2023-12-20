@@ -1,5 +1,5 @@
 ---
-title: Run configuration
+title: Run Configuration
 slug: run-configuration
 sidebar_position: 6
 ---

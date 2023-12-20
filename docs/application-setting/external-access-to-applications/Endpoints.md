@@ -6,7 +6,7 @@ sidebar_position: 5
 
 import obj from './EndPoints.json'
 
-## Endpoints: A Direct Connection to the Cloud
+<!-- ## Endpoints: A Direct Connection to the Cloud -->
 
 <div style={{
     display: 'grid',
@@ -30,13 +30,13 @@ The **Endpoints** feature at the platform refers to the possibility of TCP/UDP p
 
 </div>
 </div>
-This is achieved through providing the ability to establish the direct connection (over either raw TCP or UDP protocol) to the corresponding node, without the mandatory <a href="/docs/application-setting/external-access-to-applications/public-ip">public IP</a> address attached.
+This is achieved through providing the ability to establish the direct connection (over either raw TCP or UDP protocol) to the corresponding node, without the mandatory <a href="/application-setting/external-access-to-applications/public-ip">public IP</a> address attached.
 
-Such linking can be used to enable a great variety of different tasks, like remote database management, direct apps' [deployment from IDE](/docs/windows-and-.NET/dot-net-core) (for _IIS_), running multiple project copies on a single instance, accessing a server’s admin panel with no external address bound, etc.
+Such linking can be used to enable a great variety of different tasks, like remote database management, direct apps' [deployment from IDE](/windows-and-.NET/dot-net-core) (for _IIS_), running multiple project copies on a single instance, accessing a server’s admin panel with no external address bound, etc.
 
 :::tip
 
-Beside the increased convenience, with endpoints you can cut your spends for the External IP usage, which, otherwise, would be required for such operations. Obviously, endpoints can’t completely replace them, but may become useful in some elementary jobs, and being combined with other platform features (like automatic [vertical](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) and [horizontal](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) scaling, [discounts tiers](/docs/account-and-pricing/automatic-discounts), etc.) such an approach can help you to significantly save your money.
+Beside the increased convenience, with endpoints you can cut your spends for the External IP usage, which, otherwise, would be required for such operations. Obviously, endpoints can’t completely replace them, but may become useful in some elementary jobs, and being combined with other platform features (like automatic [vertical](/application-setting/scaling-and-clustering/automatic-vertical-scaling) and [horizontal](/application-setting/scaling-and-clustering/automatic-horizontal-scaling) scaling, [discounts tiers](/account-and-pricing/automatic-discounts), etc.) such an approach can help you to significantly save your money.
 
 :::
 
@@ -58,8 +58,8 @@ The list of endpoints can be accessed via the environment **Settings** menu, tha
 
 Within the opened tab, switch to the **Endpoints** menu item. Now you can start working with your mapping’s list:
 
-- [add new endpoint](/docs/application-setting/external-access-to-applications/endpoints#adding-endpoints)
-- [edit/remove the existing endpoint](/docs/application-setting/external-access-to-applications/endpoints#editremove-endpoint)
+- [add new endpoint](/application-setting/external-access-to-applications/endpoints#adding-endpoints)
+- [edit/remove the existing endpoint](/application-setting/external-access-to-applications/endpoints#editremove-endpoint)
 
 ## Adding Endpoints
 
@@ -236,8 +236,8 @@ For more convenience, we provide the embedded list of predefined endpoint config
 **\*Optional** values availability depends on the type of the chosen node:
 
 - _database nodes_ are provided with the default endpoint, named after themselves and with the appropriate port stated
-- _Windows-based containers_ have the additional [_RDP_](/docs/windows-and-.NET/windows-rd-access) (_3389_) connection
-- _IIS application server_ has the _DEPLOY_ (_8172_) connection for the direct project [deployment from IDE](/docs/windows-and-.NET/dot-net-core)
+- _Windows-based containers_ have the additional [_RDP_](/windows-and-.NET/windows-rd-access) (_3389_) connection
+- _IIS application server_ has the _DEPLOY_ (_8172_) connection for the direct project [deployment from IDE](/windows-and-.NET/dot-net-core)
 
 :::
 
@@ -255,7 +255,7 @@ Here you’ll find the **Public port** and **Access URL** actual values already 
 
 :::tip Note
 
-that for linking functionality to work properly with the [VPS](/docs/elastic-vps/elastic-vps-overview/general-information) and [Docker®](/docs/container/container-deployment/custom-containers-deployment) containers, the corresponding private ports (stated during the endpoint addition) at these nodes should be opened by the owner manually.
+that for linking functionality to work properly with the [VPS](/elastic-vps/elastic-vps-overview/general-information) and [Docker®](/container/container-deployment/custom-containers-deployment) containers, the corresponding private ports (stated during the endpoint addition) at these nodes should be opened by the owner manually.
 
 :::
 
@@ -307,7 +307,7 @@ Just after that, the corresponding endpoint will be removed from the list.
 
 Once the required mappings are configured, you can apply them for running different tasks. To make it easier to start, below we’ll describe a few most common endpoints' use-cases that you can benefit from.
 
-As an example, we will use an environment with the **Apache** application server and **MySQL** database (you can create the similar one following [this](/docs/environment-management/setting-up-environment) guide):
+As an example, we will use an environment with the **Apache** application server and **MySQL** database (you can create the similar one following [this](/environment-management/setting-up-environment) guide):
 
 <div style={{
     display:'flex',
@@ -321,12 +321,12 @@ As an example, we will use an environment with the **Apache** application server
 
 Now, let’s learn how to use endpoints for:
 
-- [establishing remote access to your database](/docs/application-setting/external-access-to-applications/endpoints#database-management)
-- [running multiple project copies on a single app server](/docs/application-setting/external-access-to-applications/endpoints#multiple-development-stages-at-a-single-app-server)
+- [establishing remote access to your database](/application-setting/external-access-to-applications/endpoints#database-management)
+- [running multiple project copies on a single app server](/application-setting/external-access-to-applications/endpoints#multiple-development-stages-at-a-single-app-server)
 
 ## Database Management
 
-With endpoints, gaining remote access to your DB instance becomes pretty easy, as using this feature eliminates the necessity to acquire any additional options like a Public IP. To show this, we’ll consider two simple ways of performing this operation: through [embedded OS terminal](/docs/application-setting/external-access-to-applications/endpoints#connection-via-terminal) and [third-party DB client](/docs/application-setting/external-access-to-applications/endpoints#connection-via-local-client).
+With endpoints, gaining remote access to your DB instance becomes pretty easy, as using this feature eliminates the necessity to acquire any additional options like a Public IP. To show this, we’ll consider two simple ways of performing this operation: through [embedded OS terminal](/application-setting/external-access-to-applications/endpoints#connection-via-terminal) and [third-party DB client](/application-setting/external-access-to-applications/endpoints#connection-via-local-client).
 
 ## Connection via Terminal
 
@@ -430,7 +430,7 @@ You can also tick _Save password in keychain_ if you don’t want to enter it ma
 
 Great! Now you can start organizing your data using all the provided benefits of the full-featured management client.
 
-Just in the same way you can connect to any other database server within the platform or, for example, [backup and restore](/docs/database/mysql-mariadb-percona/dump-import-export) your data within dump files.
+Just in the same way you can connect to any other database server within the platform or, for example, [backup and restore](/database/mysql-mariadb-percona/dump-import-export) your data within dump files.
 
 ## Multiple Development Stages at a Single App Server
 
@@ -454,7 +454,7 @@ Do not choose port _80_ as private port for this task, as Apache uses it by defa
 
 :::
 
-2. Now, [deploy](/docs/deployment/deployment-guide) your application twice to different contexts (_e.g. prod and dev_).
+2. Now, [deploy](/deployment/deployment-guide) your application twice to different contexts (_e.g. prod and dev_).
 
 <div style={{
     display:'flex',
@@ -522,7 +522,7 @@ Then adjust the appropriate _DocumentRoot_ locations for both virtual hosts with
 
 </div>
 
-7. Now you can connect to your prod project as usual, e.g. using the **Open in browser** button (or entering the external [custom domain](/docs/application-setting/domain-name-management/custom-domain-name) if one was additionally bound to your app), while for accessing its dev version, you just need to specify the used endpoint’s Access URL.
+7. Now you can connect to your prod project as usual, e.g. using the **Open in browser** button (or entering the external [custom domain](/application-setting/domain-name-management/custom-domain-name) if one was additionally bound to your app), while for accessing its dev version, you just need to specify the used endpoint’s Access URL.
 
 <div style={{
     display:'flex',

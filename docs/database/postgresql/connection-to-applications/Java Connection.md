@@ -1,14 +1,14 @@
 ---
-title: Java connection
+title: Java Connection
 slug: java-connection
 sidebar_position: 1
 ---
 
-## How to Connect PostgreSQL with Java Application
+<!-- ## How to Connect PostgreSQL with Java Application -->
 
 PostgreSQL is a powerful, open source SQL database with the object-relational structure and numerous robust features to ensure excellent performance and reliability. In this tutorial, we’ll show how to connect [PostgreSQL](https://www.postgresql.org/?_gl=1*on0g80*_gcl_au*MTkyNTQ2Mjk4Ny4xNjk0OTczMzMx) database with Java application hosted with Jelastic PaaS.
 
-1. Log into Jelastic dashboard, [create](/docs/environment-management/setting-up-environment) **New Environment** with the **_Java_** application server and the **_PostgreSQL database_**.
+1. Log into Jelastic dashboard, [create](/environment-management/setting-up-environment) **New Environment** with the **_Java_** application server and the **_PostgreSQL database_**.
 
 <div style={{
     display:'flex',
@@ -32,7 +32,7 @@ PostgreSQL is a powerful, open source SQL database with the object-relational st
 
 </div>
 
-3. Click the **Config** button next to your application server (Tomcat in our case) to access the [configuration file manager](/docs/application-setting/configuration-file-manager#configuration-file-manager) and create a new **_mydb.cfg_** file in the **/opt/tomcat/temp** folder.
+3. Click the **Config** button next to your application server (Tomcat in our case) to access the [configuration file manager](/application-setting/configuration-file-manager#configuration-file-manager) and create a new **_mydb.cfg_** file in the **/opt/tomcat/temp** folder.
 
 <div style={{
     display:'flex',
@@ -144,7 +144,7 @@ return result;
 }
 ```
 
-6. [Deploy](/docs/deployment/deployment-guide) our example application to your Tomcat server. Due to different version servlet specifications supported by Tomcat 9 and Tomcat 10 we have prepared the respective applications:
+6. [Deploy](/deployment/deployment-guide) our example application to your Tomcat server. Due to different version servlet specifications supported by Tomcat 9 and Tomcat 10 we have prepared the respective applications:
 
 For Tomcat 9: [https://download.jelastic.com/public.php?service=files&t=18753849900d2461b3162bd4355f834d&download](https://download.jelastic.com/public.php?service=files&t=18753849900d2461b3162bd4355f834d&download)
 

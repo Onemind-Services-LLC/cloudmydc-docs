@@ -1,12 +1,12 @@
 ---
-title: Manual multi-primary replication
+title: Manual Multi-Primary Replication
 slug: manual-multi-primary-replication
 sidebar_position: 3
 ---
 
-## Multi-Primary Replication for MySQL/MariaDB/Percona
+<!-- ## Multi-Primary Replication for MySQL/MariaDB/Percona -->
 
-The platform lets you easily set up two different types of database replication - **primary-secondary** and **primary-primary** - in order to solve a number of different problems with performance, to support database backups, to alleviate system failures and much more. Information on how to configure a master-slave replication for your MySQL database can be found [here](/docs/database/mysql-mariadb-percona/high-availability-cluster/manual-primary-secondary-replication#mysqlmariadbpercona-database-primary-secondary-replication).
+The platform lets you easily set up two different types of database replication - **primary-secondary** and **primary-primary** - in order to solve a number of different problems with performance, to support database backups, to alleviate system failures and much more. Information on how to configure a master-slave replication for your MySQL database can be found [here](/database/mysql-mariadb-percona/high-availability-cluster/manual-primary-secondary-replication#mysqlmariadbpercona-database-primary-secondary-replication).
 
 And in this tutorial we are going to explain how to configure the master-master (multi-master) replication in MySQL, specifically to be applied on environments. The process is rather simple, but requires you to pay attention to some important details.
 
@@ -46,7 +46,7 @@ The first thing that you need in order to configure a database replication is, a
 - **the second master DB environment**
   To create the second environment (**master-mysql-2**) you will be required to repeat the steps of **master-mysql-1** environment creation.
 
-Or, you can just [clone](/docs/environment-management/cloning-environment) the first environment, specifying the proper name in the corresponding frame:
+Or, you can just [clone](/environment-management/cloning-environment) the first environment, specifying the proper name in the corresponding frame:
 
 <div style={{
     display:'flex',

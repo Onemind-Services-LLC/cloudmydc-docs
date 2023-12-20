@@ -1,10 +1,10 @@
 ---
-title: Environment export
+title: Environment Export
 slug: environment-export
 sidebar_position: 2
 ---
 
-Proving the appellation of Cloud Platform with-no-constraints, the platform allows to easily [move environments between Clouds](/docs/environment-management/environment-export-and-import/app-migration-between-clouds) in order to find out which one meets your requirements the best. This procedure consists of 2 main stages - export of the already existing environment (we’ll consider this operation in details below) and its subsequent [import](/docs/environment-management/environment-export-and-import/environment-import) to the target PaaS installation. Both of these operations will take just a few minutes. As a result, you’ll receive an identical ready-to-work copy of your environment being run at another PaaS installation.
+Proving the appellation of Cloud Platform with-no-constraints, the platform allows to easily [move environments between Clouds](/environment-management/environment-export-and-import/app-migration-between-clouds) in order to find out which one meets your requirements the best. This procedure consists of 2 main stages - export of the already existing environment (we’ll consider this operation in details below) and its subsequent [import](/environment-management/environment-export-and-import/environment-import) to the target PaaS installation. Both of these operations will take just a few minutes. As a result, you’ll receive an identical ready-to-work copy of your environment being run at another PaaS installation.
 
 :::tip Note
 
@@ -52,9 +52,9 @@ Once the required for export data is defined, click the **Export** button to pro
 
 Depending on the type of containers your environment contains, you should take into account the following points:
 
-- Data from [Elastic VPS](/docs/elastic-vps/elastic-vps-overview/general-information), [Maven](/docs/java/build-node/java-vcs-deployment-with-maven), [Docker](/docs/container/container-types) and Windows-based containers won’t be exported, though they will be still included to the topology of your imported environment (i.e. created from scratch), so you’ll be able to reconfigure these servers manually afterwards.
+- Data from [Elastic VPS](/elastic-vps/elastic-vps-overview/general-information), [Maven](/java/build-node/java-vcs-deployment-with-maven), [Docker](/container/container-types) and Windows-based containers won’t be exported, though they will be still included to the topology of your imported environment (i.e. created from scratch), so you’ll be able to reconfigure these servers manually afterwards.
 - When exporting an _NGINX_ server (of both load balancer or application server node types), the appropriate node will be briefly stopped and automatically started again to fetch a server dump.
-- [Private SSH key](/docs/deployment/ssh-access-to-git-repository), exported alongside with the rest of GIT repository settings, can’t be deleted from the imported environment and is not shown at the dashboard, though it will still be used for connection. Nevertheless, it will be substituted if choosing a new one within the GIT project’s settings window.
+- [Private SSH key](/deployment/ssh-access-to-git-repository), exported alongside with the rest of GIT repository settings, can’t be deleted from the imported environment and is not shown at the dashboard, though it will still be used for connection. Nevertheless, it will be substituted if choosing a new one within the GIT project’s settings window.
 
 :::
 
@@ -70,4 +70,4 @@ You can create as many exported environments' archives as you need, but **note**
 
 :::
 
-That’s all! You have successfully exported your environment copy. Now, you can proceed to its [importing](/docs/environment-management/environment-export-and-import/environment-import) to the target platform in order to complete the migration.
+That’s all! You have successfully exported your environment copy. Now, you can proceed to its [importing](/environment-management/environment-export-and-import/environment-import) to the target platform in order to complete the migration.

@@ -1,10 +1,10 @@
 ---
-title: Eclipse plugin manual
+title: Eclipse Plugin Manual
 slug: eclipse-plugin-manual
 sidebar_position: 1
 ---
 
-## Eclipse Plugin Overview
+<!-- ## Eclipse Plugin Overview -->
 
 <div style={{
     display: 'grid',
@@ -41,6 +41,6 @@ See the following video tutorial in order to quickly get insights on basics of t
 
 And within the instructions below, you can find out how to install the plugin, manage environments and deploy your projects directly from Eclipse IDE in more details:
 
-- [Plugin Installation](/docs/deployment-tools/plugins/eclipse-plugin/eclipse-plugin-installation)
-- [Environment Management](/docs/deployment-tools/plugins/eclipse-plugin/environment-management)
-- [application deployment](/docs/deployment-tools/plugins/eclipse-plugin/application-deployment)
+- [Plugin Installation](/deployment-tools/plugins/eclipse-plugin/eclipse-plugin-installation)
+- [Environment Management](/deployment-tools/plugins/eclipse-plugin/environment-management)
+- [application deployment](/deployment-tools/plugins/eclipse-plugin/application-deployment)

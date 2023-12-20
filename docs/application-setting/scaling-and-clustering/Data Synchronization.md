@@ -1,10 +1,10 @@
 ---
-title: Data synchronization
+title: Data Synchronization
 slug: data-synchronization
 sidebar_position: 4
 ---
 
-## Workaround of the Data Synchronization
+<!-- ## Workaround of the Data Synchronization -->
 
 If you need several PHP application servers in your environment, you can easily add them without worries about additional configurations.
 
@@ -68,8 +68,8 @@ The newly added instances can be synchronized with the first added node. To achi
 
 - You need to use file manager while deploying your application to achieve the effect of synchronization.
 - No further data configurations and changes are synchronized, just the initial.
-- Also, you can synchronize your data with a help of WebDav module. See the detailed information on activating and using [WebDav module](/docs/php/php-app-servers/apache-php/apache-webdav-module) at the platform.
-- If it is needed to synchronize something in already existing environment, you can scale it in to a single node and then up to a needed number of instances. Also, you can use WebDAV module or perform manual synchronization via [Configuration Manager](/docs/container/container-configuration/configuration-tools#configuration-file-manager).
-- You can use the initial (master) node of the layer as your [storage server](/docs/data-storage-container/use-cases/master-container) for sharing data within the whole layer.
+- Also, you can synchronize your data with a help of WebDav module. See the detailed information on activating and using [WebDav module](/php/php-app-servers/apache-php/apache-webdav-module) at the platform.
+- If it is needed to synchronize something in already existing environment, you can scale it in to a single node and then up to a needed number of instances. Also, you can use WebDAV module or perform manual synchronization via [Configuration Manager](/container/container-configuration/configuration-tools#configuration-file-manager).
+- You can use the initial (master) node of the layer as your [storage server](/data-storage-container/use-cases/master-container) for sharing data within the whole layer.
 
 :::

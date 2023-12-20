@@ -1,16 +1,16 @@
 ---
-title: Wordpress backups
+title: WordPress Backups
 slug: wordpress-backups
 sidebar_position: 5
 ---
 
-## WordPress Backups
+<!-- ## WordPress Backups -->
 
 CloudMyDc Application Platform for WordPress provides a fully automated backup solution (based on the **[Restic](https://restic.readthedocs.io/en/stable/010_introduction.html)** software) for all the supported topologies. The platform lets you set up the process based on your needs via a clear and intuitive user interface.
 
 :::tip Tip
 
-Refer to the linked section if you are interested in the [backup process flow and specifics](/docs/wordpress-as-a-service/wordpress-backups#backup-process-specifics).
+Refer to the linked section if you are interested in the [backup process flow and specifics](/wordpress-as-a-service/wordpress-backups#backup-process-specifics).
 
 :::
 

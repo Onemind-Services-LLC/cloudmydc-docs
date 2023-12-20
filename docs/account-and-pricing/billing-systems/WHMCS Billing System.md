@@ -1,15 +1,15 @@
 ---
-title: Whmcs billing system
+title: WHMCS Billing System
 slug: whmcs-billing-system
 sidebar_position: 4
 ---
 
-## Billing via WHMCS
+<!-- ## Billing via WHMCS -->
 
 This detailed manual describes how to upgrade and refill PaaS account via WHMCS billing system:
 
-- [Upgrade](/docs/account-and-pricing/billing-systems/whmcs-billing-system#trial-account-upgrade-to-billing)
-- [Refill](/docs/account-and-pricing/billing-systems/whmcs-billing-system#refilling-account-via-whmcs)
+- [Upgrade](/account-and-pricing/billing-systems/whmcs-billing-system#trial-account-upgrade-to-billing)
+- [Refill](/account-and-pricing/billing-systems/whmcs-billing-system#refilling-account-via-whmcs)
 
 ## Trial Account Upgrade to Billing
 

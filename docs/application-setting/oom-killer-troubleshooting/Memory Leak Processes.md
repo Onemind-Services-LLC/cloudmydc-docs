@@ -1,19 +1,19 @@
 ---
-title: Memory leak processes
+title: Memory Leak Processes
 slug: memory-leak-processes
 sidebar_position: 3
 ---
 
 import obj from './MemoryLeakProcesses.json'
 
-## OOM Killer Resolutions: Processes with High Risk of Memory Leak
+<!-- ## OOM Killer Resolutions: Processes with High Risk of Memory Leak -->
 
 Pay special attention to the processes in this group as to the most probable cause of your out-of-memory issues (sorted based on server role):
 
-- [Load Balancers](/docs/application-setting/oom-killer-troubleshooting/memory-leak-processes#load-balancers)
-- [Application Servers](/docs/application-setting/oom-killer-troubleshooting/memory-leak-processes#application-servers)
-- [Database Servers](/docs/application-setting/oom-killer-troubleshooting/memory-leak-processes#database-servers)
-- [Common Processes for Different-Type Stacks](/docs/application-setting/oom-killer-troubleshooting/memory-leak-processes#common-processes-for-different-type-stacks)
+- [Load Balancers](/application-setting/oom-killer-troubleshooting/memory-leak-processes#load-balancers)
+- [Application Servers](/application-setting/oom-killer-troubleshooting/memory-leak-processes#application-servers)
+- [Database Servers](/application-setting/oom-killer-troubleshooting/memory-leak-processes#database-servers)
+- [Common Processes for Different-Type Stacks](/application-setting/oom-killer-troubleshooting/memory-leak-processes#common-processes-for-different-type-stacks)
 
 ## Load Balancers
 

@@ -1,14 +1,10 @@
 ---
-title: Api overview
+title: Api Overview
 slug: api-overview
 sidebar_position: 1
 ---
 
-##CONTEXT CODE
-
-##error in executing the text - Note: Signup
-
-## Platform API
+<!-- ## Platform API -->
 
 [Platform API](https://cloudmydc.com/) lets developers automate a set of actions required for an application’s lifecycle and extends our platform functionality by combining other services. Using our API, you can programmatically create environments, deploy apps and perform other tasks that could be earlier accomplished only via the platform’s dashboard, but not limited to them.
 
@@ -28,7 +24,7 @@ Platform API follows REST principles. **REST API** determines a set of functions
 
 All requests of API methods are GET or POST HTTPS-requests to the URL with a set of parameters:
 
-**_https://_**[**_{hoster-api-host}_**](/docs/quickstart/hosters-list-&-info)**_/1.0/_**
+**_https://_**[**_{hoster-api-host}_**](/quickstart/hosters-list-&-info)**_/1.0/_**
 
 The type of the URL which should be used, is stated in the description of each method (REST field).
 
@@ -87,7 +83,7 @@ The request response is UTF-8 encoded. The response for all API functions is giv
 
 To start automation of the required processes with platform API you have to face the following requirements:
 
-- You must be registered on any [hosting provider](/docs/quickstart/hosters-list-&-info)
+- You must be registered on any [hosting provider](/quickstart/hosters-list-&-info)
 - You need to download the appropriate [Platform Client Library](https://mvnrepository.com/artifact/com.jelastic/jelastic-public-j2se) (according to the version of used platform) and add it to classpath
 
 If you are using Maven, add the following dependency to **_pom.xml_**
@@ -133,7 +129,7 @@ private final static String ENV_NAME = "test-api-environment-" + new Random().ne
 
 where:
 
-- URL of your hosting provider (_Hoster’s URL / API_ column in [this](/docs/quickstart/hosters-list-&-info) document)
+- URL of your hosting provider (_Hoster’s URL / API_ column in [this](/quickstart/hosters-list-&-info) document)
 - your PaaS account’s email (login)
 - your PaaS account’s password
 
@@ -178,7 +174,7 @@ if (!arrayResponse.isOK()) {
 }
 ```
 
-5. The next block is devoted to the custom configurations and settings of your new environment and servers it will contain. More details on JSON parameters, used in the platform manifests for defining environment’s topology, can be seen [here](/docs/deployment-tools/cloud-scripting-&-jps/application-manifest).
+5. The next block is devoted to the custom configurations and settings of your new environment and servers it will contain. More details on JSON parameters, used in the platform manifests for defining environment’s topology, can be seen [here](/deployment-tools/cloud-scripting-&-jps/application-manifest).
 
 ```bash
 JSONObject env = new JSONObject()

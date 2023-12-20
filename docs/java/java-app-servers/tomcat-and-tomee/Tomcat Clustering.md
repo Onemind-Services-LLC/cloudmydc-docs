@@ -1,10 +1,10 @@
 ---
-title: Tomcat clustering
+title: Tomcat Clustering
 slug: tomcat-clustering
 sidebar_position: 4
 ---
 
-## Tomcat Cluster in the Cloud
+<!-- ## Tomcat Cluster in the Cloud -->
 
 The platform multicast and redirecting requests to each server with load balancer provides session replication between the pairs of server nodes. This guarantees session exchange between the nodes through the local net and eliminates the need of additional software or Memcached. With this approach you can use a big clustered app hosting.
 

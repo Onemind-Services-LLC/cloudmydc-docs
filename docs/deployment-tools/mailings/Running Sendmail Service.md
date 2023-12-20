@@ -1,12 +1,10 @@
 ---
-title: Running sendmail service
+title: Running Sendmail Service
 slug: running-sendmail-service
 sidebar_position: 2
 ---
 
-!Context code incomplete
-
-## Running Sendmail Inside a Container
+<!-- ## Running Sendmail Inside a Container -->
 
 <div style={{
     display: 'grid',
@@ -33,11 +31,13 @@ sidebar_position: 2
 
 It supports a plenty of mail transfer protocols (such as SMTP, ESMTP and others), being designed to route emails over the Internet and internal networks.
 
-The platform delivers Sendmail included to all of the application servers' builds (except the [IIS](/docs/windows-and-.NET/dot-net-core) ones) by default. However, the ability to run this service in a container depends on a particular hosting providers' settings - at some platforms, it could be available only in case of a bound [public IP](/docs/application-setting/external-access-to-applications/public-ip) address presence. So, let’s consider how to:
+The platform delivers Sendmail included to all of the application servers' builds (except the [IIS](/windows-and-.NET/dot-net-core) ones) by default. However, the ability to run this service in a container depends on a particular hosting providers' settings - at some platforms, it could be available only in case of a bound [public IP](/application-setting/external-access-to-applications/public-ip) address presence. 
 
-- [check the Sendmail availability](/docs/deployment-tools/mailings/running-sendmail-service#check-sendmail-availability)
-- [enable Sendmail in case it is not run](/docs/deployment-tools/mailings/running-sendmail-service#enable-sendmail)
-- [send a test message](/docs/deployment-tools/mailings/running-sendmail-service#send-a-message-via-sendmail)
+<!-- So, let’s consider how to:
+
+- [check the Sendmail availability](/deployment-tools/mailings/running-sendmail-service#check-sendmail-availability)
+- [enable Sendmail in case it is not run](/deployment-tools/mailings/running-sendmail-service#enable-sendmail)
+- [send a test message](/deployment-tools/mailings/running-sendmail-service#send-a-message-via-sendmail) -->
 
 ## Check Sendmail Availability
 
@@ -57,15 +57,15 @@ In order to discover whether your hosting service provider allows to run Sendmai
 
 - or check this manually in a few simple steps for any of your app server containers, following the instruction below:
 
-1. Connect to your account via the platform [SSH Gateway](/docs/deployment-tools/ssh/ssh-overview).
+1. Connect to your account via the platform [SSH Gateway](/deployment-tools/ssh/ssh-overview).
 
 :::tip
 
 In case you haven’t performed similar operations before, you need to:
 
-- [generate](/docs/deployment-tools/ssh/generate-ssh-key) an SSH keypair
-- [add your public SSH key](/docs/deployment-tools/ssh/add-ssh-key) to the dashboard
-- [establish the connection](/docs/deployment-tools/ssh/ssh-access/overview) over SSH protocol
+- [generate](/deployment-tools/ssh/generate-ssh-key) an SSH keypair
+- [add your public SSH key](/deployment-tools/ssh/add-ssh-key) to the dashboard
+- [establish the connection](/deployment-tools/ssh/ssh-access/overview) over SSH protocol
 
 :::
 
@@ -85,7 +85,7 @@ Otherwise, i.e. in case the appropriate line is absent, proceed to the next sect
 
 ## Enable Sendmail
 
-The easiest way to launch Sendmail is to enable [public IP](/docs/application-setting/external-access-to-applications/public-ip) for your application server via the topology wizard (either while [environment creation](/docs/environment-management/setting-up-environment), or, for the already running environment, it can be accessed with the help of the **Change environment topology** button).
+The easiest way to launch Sendmail is to enable [public IP](/application-setting/external-access-to-applications/public-ip) for your application server via the topology wizard (either while [environment creation](/environment-management/setting-up-environment), or, for the already running environment, it can be accessed with the help of the **Change environment topology** button).
 
 Then just turn on the corresponding switcher at the App Server layer and confirm the changes with the **Apply** button at the bottom right corner of the wizard frame.
 
@@ -99,7 +99,7 @@ Then just turn on the corresponding switcher at the App Server layer and confirm
 
 </div>
 
-After the confirmation and external IP address attachment, the Sendmail service will be automatically started, so you can start to [use](/docs/deployment-tools/mailings/running-sendmail-service#send-a-message-via-sendmail) it immediately.
+After the confirmation and external IP address attachment, the Sendmail service will be automatically started, so you can start to [use](/deployment-tools/mailings/running-sendmail-service#send-a-message-via-sendmail) it immediately.
 
 :::tip
 
@@ -111,7 +111,7 @@ As an option, you can appeal to your hoster’s Support team and negotiate getti
 
 You can discover how Sendmail is working by sending a simple test email. This can be accomplished right from the command line - for that:
 
-1. Connect to your application server (with the Sendmail service already running) [via SSH](/docs/deployment-tools/ssh/ssh-access/overview).
+1. Connect to your application server (with the Sendmail service already running) [via SSH](/deployment-tools/ssh/ssh-access/overview).
 
 2. Execute the following line of code in order to send a letter:
 

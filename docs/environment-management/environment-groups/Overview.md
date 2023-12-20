@@ -43,7 +43,7 @@ Such grouping can be implemented through creating special user-defined tags and 
 
 </div>
 
-The main environment group management functionality is provided via the dedicated **Env Groups** menu within the main dashboard screen (right above the environment list). Here you can find the list of all of your already created groups and a set of options for their convenient [management](/docs/environment-management/environment-groups/group-management) and [access](/docs/environment-management/environment-groups/navigation-across-groups).
+The main environment group management functionality is provided via the dedicated **Env Groups** menu within the main dashboard screen (right above the environment list). Here you can find the list of all of your already created groups and a set of options for their convenient [management](/environment-management/environment-groups/group-management) and [access](/environment-management/environment-groups/navigation-across-groups).
 
 When a particular group is chosen, it’s name appears within the top groups panel as a nesting element.
 
@@ -59,7 +59,7 @@ When a particular group is chosen, it’s name appears within the top groups pan
 
 To cancel filtering and return back to the overall list of available environments, just click on the main **_Env Groups_** button.
 
-The overall structure of your environment groups, with all inclusions and nesting levels, can be conveniently viewed via the dedicated Environment Groups box (opened with the **Manage** string in the **_Env Groups_** menu). Here you can also perform all necessary [group adjustments](/docs/environment-management/environment-groups/group-management) using a set of dedicated tools above.
+The overall structure of your environment groups, with all inclusions and nesting levels, can be conveniently viewed via the dedicated Environment Groups box (opened with the **Manage** string in the **_Env Groups_** menu). Here you can also perform all necessary [group adjustments](/environment-management/environment-groups/group-management) using a set of dedicated tools above.
 
 <div style={{
     display:'flex',
@@ -71,8 +71,4 @@ The overall structure of your environment groups, with all inclusions and nestin
 
 </div>
 
-You can create unlimited number of groups based on any naming scheme that makes logic to you (using any letters, numerals, special characters and spaces within their names). Moreover, each group can be parted further into smaller [subgroups](/docs/environment-management/environment-groups/group-management#add-subgroups) if needed, as well as each environment can belong to multiple groups, which makes this approach truly flexible and versatile. To get a hands-on experience with environment groups, follow the next guides and find out how to:
-
-- [Create Environment Group](/docs/environment-management/environment-groups/group-creation)
-- [Navigate Across Environment Groups](/docs/environment-management/environment-groups/navigation-across-groups)
-- [Manage Environment Groups](/docs/environment-management/environment-groups/group-management)
+You can create unlimited number of groups based on any naming scheme that makes logic to you (using any letters, numerals, special characters and spaces within their names). Moreover, each group can be parted further into smaller [subgroups](/environment-management/environment-groups/group-management#add-subgroups) if needed, as well as each environment can belong to multiple groups, which makes this approach truly flexible and versatile.

@@ -1,12 +1,12 @@
 ---
-title: Installing jps
+title: Installing JPS
 slug: installing-jps
 sidebar_position: 12
 ---
 
-## CLI Tutorial: Install JPS
+<!-- ## CLI Tutorial: Install JPS -->
 
-In this tutorial, we’ll show how to install a [JPS package](/docs/deployment-tools/cloud-scripting-&-jps/application-manifest) via CLI. Such a solution can contain steps to create a new environment with predefined customization (e.g. application deployment and configuration) or perform some actions on the existing instances.
+In this tutorial, we’ll show how to install a [JPS package](/deployment-tools/cloud-scripting-&-jps/application-manifest) via CLI. Such a solution can contain steps to create a new environment with predefined customization (e.g. application deployment and configuration) or perform some actions on the existing instances.
 
 Let’s start by learning about the appropriate **_Install_** method that executes the JPS packages and all of its parameters:
 
@@ -16,30 +16,30 @@ Let’s start by learning about the appropriate **_Install_** method that execut
 
 Here, the parameters in square brackets **_[ ]_** are optional:
 
-- **_jps_** - link to your [manifest file](/docs/deployment-tools/cloud-scripting-&-jps/application-manifest) or its body
+- **_jps_** - link to your [manifest file](/deployment-tools/cloud-scripting-&-jps/application-manifest) or its body
 - specific settings for <u>jpsType: install</u> manifests (new environments):
-  - **_[displayName]_** - [alias](/docs/environment-management/environment-aliases) for the created environment
-  - **_[region]_** - unique name of a [region](/docs/environment-management/environment-regions/choosing-a-region) (e.g. get it with the _GetRegions_ method), where an environment should be created
-  - **_[envGroups]_** - list of [env groups](/docs/environment-management/environment-groups/overview) the created environment should be included to (specified as JSON array, e.g. [*“mygroup”, “group/subgroup”*])
+  - **_[displayName]_** - [alias](/environment-management/environment-aliases) for the created environment
+  - **_[region]_** - unique name of a [region](/environment-management/environment-regions/choosing-a-region) (e.g. get it with the _GetRegions_ method), where an environment should be created
+  - **_[envGroups]_** - list of [env groups](/environment-management/environment-groups/overview) the created environment should be included to (specified as JSON array, e.g. [*“mygroup”, “group/subgroup”*])
 - specific settings for <u>jpsType: update</u> manifests (add-ons for existing environments):
-  - **_[nodeGroup]_** - an environment layer the add-on should be applied to (_bl, cp, cache, sqldb, nosqldb, storage, vps, build_ or your custom one for [Docker containers](/docs/container/container-types))
+  - **_[nodeGroup]_** - an environment layer the add-on should be applied to (_bl, cp, cache, sqldb, nosqldb, storage, vps, build_ or your custom one for [Docker containers](/container/container-types))
 - **_envName_** - a name of the newly created/target environment for the application/add-on installation respectively
 - **_[settings]_** - list of settings required by the package (specified as a JSON object with key/value pairs)
-- **_[ownerUid]_** - user ID of the [shared account](/docs/account-and-pricing/accounts-collaboration/collaboration-overview), where JPS package should be installed
+- **_[ownerUid]_** - user ID of the [shared account](/account-and-pricing/accounts-collaboration/collaboration-overview), where JPS package should be installed
 - **_[loggerName]_** - a name displayed next to the timestamp of each operation in the JPS installation log file (learn more about [loggerName](https://docs.cloudscripting.com/troubleshooting/#loggername))
 - **_[logsPath]_** - path to the file to log JPS installation flow (**cs.log** by default)
 - **_[skipNodeEmails]_** - enables (_true_, by default) or disables (_false_) email notifications about new nodes creation by this package (learn more about [skipNodeEmails](https://docs.cloudscripting.com/creating-manifest/basic-configs/#skip-node-emails))
 
 Now, we can proceed to the real case examples:
 
-- [TimeZone Change Add-on Installation via URL](/docs/deployment-tools/api-&-cli/platform-cli/installing-jps#timezone-change-add-on-installation-via-url)
-- [JPS Installation Using Configuration File with Parameters](/docs/deployment-tools/api-&-cli/platform-cli/installing-jps#jps-installation-using-configuration-file-with-parameters)
+- [TimeZone Change Add-on Installation via URL](/deployment-tools/api-&-cli/platform-cli/installing-jps#timezone-change-add-on-installation-via-url)
+- [JPS Installation Using Configuration File with Parameters](/deployment-tools/api-&-cli/platform-cli/installing-jps#jps-installation-using-configuration-file-with-parameters)
 
 ## TimeZone Change Add-on Installation via URL
 
-The [**TimeZone Change**](/docs/application-setting/managing-timezone-settings) add-on allows easily switch timezone on any container to the desired one. The sources and manifest file of the add-on can be found at the [JPS Collection](https://github.com/jelastic-jps) repository at GitHub.
+The [**TimeZone Change**](/application-setting/managing-timezone-settings) add-on allows easily switch timezone on any container to the desired one. The sources and manifest file of the add-on can be found at the [JPS Collection](https://github.com/jelastic-jps) repository at GitHub.
 
-1. Install platform CLI and log into your account, if you haven’t before. The required steps are described in the [overview guide](/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview).
+1. Install platform CLI and log into your account, if you haven’t before. The required steps are described in the [overview guide](/deployment-tools/api-&-cli/platform-cli/platform-cli-overview).
 
 2. Call the **_Install_** method with the required parameters:
 
@@ -62,7 +62,7 @@ Here:
 - **_{jps}_** - link to the TimeZone Change add-on manifest file, i.e. [_https://raw.githubusercontent.com/jelastic-jps/time-zone-change/master/manifest.jps_]
 - **_{envName}_** - name of your existing environment, e.g. _my-app_
 - **_{settings}_** - according to the manifest, this particular add-on requires you to provide one additional parameter - the desired [timezone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), e.g. {_“dashoard_url”_:**_"America/New_York"_**}
-- **_{nodeGroup}_** - target [layer](/docs/platform-overview/basics-&-terminology#layer) of the environment, e.g. _cp_
+- **_{nodeGroup}_** - target [layer](/platform-overview/basics-&-terminology#layer) of the environment, e.g. _cp_
 
 If there are no issues, the script will respond with _“result”_: 0 (i.e. operation success).
 
@@ -119,7 +119,7 @@ If needed, you can provide all the parameters within a single file and refer to 
 
 :::tip Tip
 
-It is possible to provide a URL to your manifest file instead of specifying it explicitly in the **_jps_** parameter (similar to the [TimeZone example](/docs/deployment-tools/api-&-cli/platform-cli/installing-jps#timezone-change-add-on-installation-via-url)).
+It is possible to provide a URL to your manifest file instead of specifying it explicitly in the **_jps_** parameter (similar to the [TimeZone example](/deployment-tools/api-&-cli/platform-cli/installing-jps#timezone-change-add-on-installation-via-url)).
 
 :::
 
@@ -149,7 +149,7 @@ If needed, you can explicitly provide a parameter to redefine the value inside t
 
 :::
 
-3. You can ensure that the value of the provided parameter was successfully logged via the platform console (_https://app._[**_{platformDomain}_**](/docs/quickstart/hosters-list-&-info)_/console_).
+3. You can ensure that the value of the provided parameter was successfully logged via the platform console (_https://app._[**_{platformDomain}_**](/quickstart/hosters-list-&-info)_/console_).
 
 <div style={{
     display:'flex',

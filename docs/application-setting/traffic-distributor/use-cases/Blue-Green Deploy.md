@@ -1,16 +1,16 @@
 ---
-title: Blue-green deploy
+title: Blue-Green Deploy
 slug: blue-green-deploy
 sidebar_position: 1
 ---
 
-## Blue-Green Deployment with TD
+<!-- ## Blue-Green Deployment with TD -->
 
-With the help of [Traffic Distributor](/docs/application-setting/traffic-distributor/traffic-distributor-overview), you are able to perform so-called “invisible” updates using the blue-green deployment method, which will not cause any downtime for your application. This possibility it’s truly essential in the current reality of rapid development and fast growing concurrency, as you need to constantly update your project for it to remain demanded, conquer new users and, generally, not to fall behind your competitors. And if these frequent maintenances will interrupt normal application work and its availability, it will negatively affect your service appeal.
+With the help of [Traffic Distributor](/application-setting/traffic-distributor/traffic-distributor-overview), you are able to perform so-called “invisible” updates using the blue-green deployment method, which will not cause any downtime for your application. This possibility it’s truly essential in the current reality of rapid development and fast growing concurrency, as you need to constantly update your project for it to remain demanded, conquer new users and, generally, not to fall behind your competitors. And if these frequent maintenances will interrupt normal application work and its availability, it will negatively affect your service appeal.
 
 So let’s reveal how to get rid of such problems and apply blue-green updates to your project by means of the proposed traffic routing solution.
 
-1. Let’s assume we have two environments (with the _Blue_ and _Green_ [aliases](/docs/environment-management/environment-aliases) set for each of them for better differentiation) and Traffic Distributor within a separate environment, intended to route traffic between them:
+1. Let’s assume we have two environments (with the _Blue_ and _Green_ [aliases](/environment-management/environment-aliases) set for each of them for better differentiation) and Traffic Distributor within a separate environment, intended to route traffic between them:
 
 <div style={{
     display:'flex',
@@ -22,7 +22,7 @@ So let’s reveal how to get rid of such problems and apply blue-green updates t
 
 </div>
 
-2. In order to update application on backends to the latest version without the whole project downtime, it should be done in turn. So, at first, let’s prevent the traffic from being directed to one of our environments (e.g. _Blue_) by [re-configuring the Traffic Distributor](/docs/application-setting/traffic-distributor/traffic-distributor-installation) add-on.
+2. In order to update application on backends to the latest version without the whole project downtime, it should be done in turn. So, at first, let’s prevent the traffic from being directed to one of our environments (e.g. _Blue_) by [re-configuring the Traffic Distributor](/application-setting/traffic-distributor/traffic-distributor-installation) add-on.
 
 <div style={{
     display:'flex',

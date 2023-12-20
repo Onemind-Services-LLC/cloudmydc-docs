@@ -1,5 +1,5 @@
 ---
-title: Multi-region cluster federation
+title: Multi-Region Cluster Federation
 slug: multi-region-cluster-federation
 sidebar_position: 8
 ---
@@ -53,7 +53,7 @@ Thus we need to decide which payload we want to distribute, and which member clu
 
 So, let’s get down to business and create a Federation in Jelastic PaaS.
 
-Sing in your account and create two Kubernetes clusters in different [regions](/docs/environment-management/environment-regions/choosing-a-region). Actually you may create as many as you need though, but here we create a **Host Cluster** and **Member Cluster 1** only. All of the actions below can be applied to any number of Member Clusters. So, deploy:
+Sing in your account and create two Kubernetes clusters in different [regions](/environment-management/environment-regions/choosing-a-region). Actually you may create as many as you need though, but here we create a **Host Cluster** and **Member Cluster 1** only. All of the actions below can be applied to any number of Member Clusters. So, deploy:
 
 - Federation Host Cluster: **_fedhost.vip.jelastic.cloud_**
 - Federation Member Cluster: **_member1.demo.jelastic.com_**
@@ -72,7 +72,7 @@ Sing in your account and create two Kubernetes clusters in different [regions](/
 
 The next step is to establish [remote access to the clusters](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/).
 
-Log in the master node of the **Host Cluster** via [SSH](/docs/deployment-tools/ssh/ssh-access/ssh-gate) and start with the configuration. Some commands output will be shown to let you be sure you are doing right:
+Log in the master node of the **Host Cluster** via [SSH](/deployment-tools/ssh/ssh-access/ssh-gate) and start with the configuration. Some commands output will be shown to let you be sure you are doing right:
 
 1. First, install the KubeFed chart with [helm](https://kubernetes.io/blog/2016/10/helm-charts-making-it-simple-to-package-and-deploy-apps-on-kubernetes/) in **kube-federation-system** namespace :
    Add repository:
@@ -112,7 +112,7 @@ fedhost~$ tar xvf kubefedctl-0.7.0-linux-amd64.tgz
 fedhost~$ mv kubefedctl /usr/local/bin
 ```
 
-3. To let KubeFed federating deployments, it must be able to interact with all of selected **Member Clusters**. To get this, you can use the following [RBAC](/docs/kubernetes-hosting/managing-kubernetes/access-control) config file to create the necessary role to ensure connection from the **Host Cluster**. Log in the master node of the **Member Cluster** via SSH and create a configuration file for example **member1.yaml** and paste the content below into it.
+3. To let KubeFed federating deployments, it must be able to interact with all of selected **Member Clusters**. To get this, you can use the following [RBAC](/kubernetes-hosting/managing-kubernetes/access-control) config file to create the necessary role to ensure connection from the **Host Cluster**. Log in the master node of the **Member Cluster** via SSH and create a configuration file for example **member1.yaml** and paste the content below into it.
 
 ```bash
 apiVersion: v1
@@ -251,7 +251,7 @@ fedhost~$ kubectl config set clusters.kubefed-remote-member1.certificate-authori
 
 :::tip Note
 
-When the Member Cluster is located on the different Jelastic platform the certificate will be invalid because the [Shared Load Balancer](/docs/application-setting/external-access-to-applications/shared-load-balancer) with its own certificate is in front of the cluster. This certificate should be ignored during negotiation phase between Host Cluster and Member with a command for example:
+When the Member Cluster is located on the different Jelastic platform the certificate will be invalid because the [Shared Load Balancer](/application-setting/external-access-to-applications/shared-load-balancer) with its own certificate is in front of the cluster. This certificate should be ignored during negotiation phase between Host Cluster and Member with a command for example:
 
 ```bash
 fedhost~$ kubectl config set clusters.kubefed-remote-member1.insecure-skip-tls-verify true

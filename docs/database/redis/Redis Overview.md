@@ -1,10 +1,10 @@
 ---
-title: Redis overview
+title: Redis Overview
 slug: redis-overview
 sidebar_position: 1
 ---
 
-## Redis
+<!-- ## Redis -->
 
 **[Redis](https://redis.io/)** is an open-source advanced key-value cache and data storage, which provides a heightened durability. It is often perceived as a data structure server, as far as keys can contain different types of data: strings, hashes, lists, sets, sorted sets, bitmaps and hyperloglogs. All of these data elements can be processed with different atomic operations, such as appending to a string, pushing an element to a list, incrementing the value in a hash, getting the member with the highest ranking in a sorted set, etc.
 

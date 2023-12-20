@@ -1,10 +1,10 @@
 ---
-title: Tomcat server
+title: Tomcat Server
 slug: tomcat-server
 sidebar_position: 1
 ---
 
-## Tomcat Server Cloud Hosting
+<!-- ## Tomcat Server Cloud Hosting -->
 
 Apache Tomcat occupies the leading positions among Java servers for running web applications. Considering the demand, we compiled the main details on the Tomcat web server management on the platform - installation, configuration, load balancing, application deployment, and security enhancement.
 
@@ -116,7 +116,7 @@ For the manual adjustment of the existing Tomcat server(s), click **Change Envir
 
 Automatic vertical scaling is possible due to the platform’s ability to dynamically change allocated resources (RAM and CPU) for a server. Adjustment is performed automatically, according to the Tomcat server’s current demands. This feature guarantees you [never overpay for unused resources](https://cloudmydc.com/) and saves your time by eliminating the necessity of manual handling of the load-related adjustments.
 
-In order to set up automatic resource provisioning for your Tomcat server, open the environment topology wizard and specify the upper scaling limit in [cloudlets](/docs/platform-overview/cloudlet) (128 MiB and 400 MHz each):
+In order to set up automatic resource provisioning for your Tomcat server, open the environment topology wizard and specify the upper scaling limit in [cloudlets](/platform-overview/cloudlet) (128 MiB and 400 MHz each):
 
 <div style={{
     display:'flex',
@@ -128,7 +128,7 @@ In order to set up automatic resource provisioning for your Tomcat server, open 
 
 </div>
 
-Your application will work within these limits reducing resource allocation when the load goes down and increasing when it goes up. Thus, you only pay for the resources that are actually consumed. For more information, please refer to the documentation about [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling).
+Your application will work within these limits reducing resource allocation when the load goes down and increasing when it goes up. Thus, you only pay for the resources that are actually consumed. For more information, please refer to the documentation about [automatic vertical scaling](/application-setting/scaling-and-clustering/automatic-vertical-scaling).
 
 ## Manual Horizontal Scaling
 
@@ -161,9 +161,9 @@ Also, based on your needs, you can select one of the two scaling modes for the l
 
 The maximum number of the same-type servers within a single environment layer depends on a particular hosting provider settings (usually, this limit stands for 16 nodes and can be adjusted by sending a request to support). You can check the exact value within the **Quotas & Pricing > [Account Limits](https://cloudmydc.com/)** information frame.
 
-Upon scaling out a single node, NGINX (you can manually switch to another one) load balancing is added automatically. [load balancer](/docs/load-balancers/load-balancing) represents a frontend that receives all the incoming requests and evenly distributes them between backends (application servers).
+Upon scaling out a single node, NGINX (you can manually switch to another one) load balancing is added automatically. [load balancer](/load-balancers/load-balancing) represents a frontend that receives all the incoming requests and evenly distributes them between backends (application servers).
 
-Please, find more details about manual [Horizontal Scaling](/docs/application-setting/scaling-and-clustering/horizontal-scaling) in the documentation.
+Please, find more details about manual [Horizontal Scaling](/application-setting/scaling-and-clustering/horizontal-scaling) in the documentation.
 
 ## Automatic Horizontal Scaling
 
@@ -328,7 +328,7 @@ This chapter will cover some settings and features that help optimize your work 
 
 ## Environment Variables
 
-In order to make your application more portable and flexible, you can use **environment variables** instead of specifying the required values in the application code each time. The platform provides you with many Tomcat [default environment variables](/docs/environment-management/environment-variables/environment-variables#default-environment-variables) for the most common stack data. You can also add [custom environment variables](/docs/environment-management/environment-variables/custom-environment-variables) for your Tomcat node to make its management even more convenient.
+In order to make your application more portable and flexible, you can use **environment variables** instead of specifying the required values in the application code each time. The platform provides you with many Tomcat [default environment variables](/environment-management/environment-variables/environment-variables#default-environment-variables) for the most common stack data. You can also add [custom environment variables](/environment-management/environment-variables/custom-environment-variables) for your Tomcat node to make its management even more convenient.
 
 ## Configuration Files
 

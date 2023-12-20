@@ -1,10 +1,10 @@
 ---
-title: Debian vps
+title: Debian Vps
 slug: debian-vps
 sidebar_position: 4
 ---
 
-## Elastic Debian VPS
+<!-- ## Elastic Debian VPS -->
 
 <div style={{
     display: 'grid',
@@ -24,7 +24,7 @@ sidebar_position: 4
 
 </div>
 
-The platform delivers Debian with all the benefits of [Elastic VPS](/docs/elastic-vps/elastic-vps-overview/general-information) (security guarantees, cost efficiency, root permissions, etc.).
+The platform delivers Debian with all the benefits of [Elastic VPS](/elastic-vps/elastic-vps-overview/general-information) (security guarantees, cost efficiency, root permissions, etc.).
 
 ## Debian VPS Hosting
 
@@ -44,10 +44,10 @@ Open the topology wizard by clicking the **New Environment** button at the top o
 
 :::danger Note
 
-Elastic VPS instances require [public IP](/docs/application-setting/external-access-to-applications/public-ip) addresses (one per node) by default.
+Elastic VPS instances require [public IP](/application-setting/external-access-to-applications/public-ip) addresses (one per node) by default.
 
 :::
 
-Adjust other options up to your needs ([vertical](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) and [horizontal scaling](/docs/application-setting/scaling-and-clustering/horizontal-scaling), disk limit, etc.) and click the **Create** button.
+Adjust other options up to your needs ([vertical](/application-setting/scaling-and-clustering/automatic-vertical-scaling) and [horizontal scaling](/application-setting/scaling-and-clustering/horizontal-scaling), disk limit, etc.) and click the **Create** button.
 
 In a moment, your fully isolated virtual server with Debian operating system will be ready to work, allowing you to proceed with the required software and services installation.

@@ -1,10 +1,10 @@
 ---
-title: Java vcs deployment with maven
+title: Java VCS Deployment With Maven
 slug: java-vcs-deployment-with-maven
 sidebar_position: 1
 ---
 
-## Java VCS Deployment with Maven
+<!-- ## Java VCS Deployment with Maven -->
 
 **Maven** is a build automation and software comprehension tool, which is primarily used for Java programming. With the platform you can add any _public_ or _private_ project directly from your version control system (VCS) repository using the appropriate link type: _http_, _https_ or _svn_ for **SVN** and _git_, _http_, _https_ or _ftp_ for **Git**. After addition, Java projects can be deployed to the appropriate application servers using the Maven build node.
 
@@ -100,7 +100,7 @@ The project created with this option can be automatically uploaded to the [Deplo
 
 - **Edit project** - opens a form to edit data specified in the project addition frame described in the previous step
 
-- **Config** - opens the build project folder within the [configuration file manager](/docs/application-setting/configuration-file-manager)
+- **Config** - opens the build project folder within the [configuration file manager](/application-setting/configuration-file-manager)
 
 - **Log** - opens the Log section for issues troubleshooting and analysis
 

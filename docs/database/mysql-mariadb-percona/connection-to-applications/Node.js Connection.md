@@ -1,14 +1,14 @@
 ---
-title: Node.js connection
+title: Node.Js Connection
 slug: node.js-connection
 sidebar_position: 4
 ---
 
-## Node.js Application Connection to MySQL/MariaDB/Percona
+<!-- ## Node.js Application Connection to MySQL/MariaDB/Percona -->
 
 **MySQL**, **MariaDB**, and **Percona** are among of the most popular open source SQL databases, used by world’s largest organizations. In this guide we’ll overview a simple example of **Node.js** application connection to MySQL or MariaDB server.
 
-1. Log into your PaaS account and [create an environment](/docs/environment-management/setting-up-environment) with MySQL (or MariaDB) database server, we’ll also add a NodeJS compute node for this tutorial.
+1. Log into your PaaS account and [create an environment](/environment-management/setting-up-environment) with MySQL (or MariaDB) database server, we’ll also add a NodeJS compute node for this tutorial.
 
 <div style={{
     display:'flex',
@@ -20,7 +20,7 @@ sidebar_position: 4
 
 </div>
 
-2. Access your NodeJS server via SSH, e.g. with embedded [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser) client.
+2. Access your NodeJS server via SSH, e.g. with embedded [Web SSH](/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser) client.
 
 <div style={{
     display:'flex',

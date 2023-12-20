@@ -1,5 +1,5 @@
 ---
-title: Infrastructure level
+title: Infrastructure Level
 slug: infrastructure-level
 sidebar_position: 3
 ---

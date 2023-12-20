@@ -1,12 +1,12 @@
 ---
-title: Php app server configuration
+title: PHP App Server Configuration
 slug: php-app-server-configuration
 sidebar_position: 4
 ---
 
 import obj from './PHPAppServerConfiguration.json'
 
-## PHP Application Server Configuration
+<!-- ## PHP Application Server Configuration -->
 
 To perform the necessary configurations, press the **Config** button next to your application server. In the case you have **several application servers** you can configure them together or separately. To do this follow the steps:
 
@@ -137,7 +137,6 @@ Below you can see the list of the configuration files available for editing in t
 </div>
 
 ## NGINX-PHP
-
 
 <div style={{
         width: '100%',

@@ -1,10 +1,10 @@
 ---
-title: Python versions
+title: Python Versions
 slug: python-versions
 sidebar_position: 2
 ---
 
-## Python Versions
+<!-- ## Python Versions -->
 
 The platform provides all the latest versions of the Python programming language and ensures a swift implementation of any further releases. The list of supported engine versions:
 
@@ -16,11 +16,11 @@ The platform provides all the latest versions of the Python programming language
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/quickstart/software-stack-versions) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/quickstart/software-stack-versions) document.
 
 :::
 
-These can be selected during a new [environment creation](/docs/python/python-versions#create-python-environment) and adjusted for [existing Python instances](/docs/python/python-versions#change-python-version).
+These can be selected during a new [environment creation](/python/python-versions#create-python-environment) and adjusted for [existing Python instances](/python/python-versions#change-python-version).
 
 ## Create Python Environment
 
@@ -48,11 +48,11 @@ These can be selected during a new [environment creation](/docs/python/python-ve
 
 </div>
 
-Adjust any other settings (e.g. [cloudlets limits](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling#automatic-vertical-scaling), [public IPs](/docs/application-setting/external-access-to-applications/public-ip#public-ip), [region](/docs/environment-management/environment-regions/choosing-a-region#environment-regions), etc.), provide environment name and click **Create**.
+Adjust any other settings (e.g. [cloudlets limits](/application-setting/scaling-and-clustering/automatic-vertical-scaling#automatic-vertical-scaling), [public IPs](/application-setting/external-access-to-applications/public-ip#public-ip), [region](/environment-management/environment-regions/choosing-a-region#environment-regions), etc.), provide environment name and click **Create**.
 
 ## Change Python Version
 
-The version of the existing Python instances can be changed with the [container redeploy](/docs/category/container-deployment) feature.
+The version of the existing Python instances can be changed with the [container redeploy](/category/container-deployment) feature.
 
 1. The appropriate dialog can be accessed in the following ways:
 
@@ -84,7 +84,7 @@ The version of the existing Python instances can be changed with the [container 
 
 - **Tag** - select the needed Python engine version
 - **Keep volumes data** - protect data in the volumes from erasing during redeploy
-- **Simultaneous** or **Sequential deployment with delay** (for [scaled servers](/docs/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-inside-the-cloud-multi-node) only) - choose whether all containers within a layer should be redeployed at once or one-by-one
+- **Simultaneous** or **Sequential deployment with delay** (for [scaled servers](/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-inside-the-cloud-multi-node) only) - choose whether all containers within a layer should be redeployed at once or one-by-one
 
 <div style={{
     display:'flex',

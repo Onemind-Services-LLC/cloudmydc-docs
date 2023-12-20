@@ -1,10 +1,10 @@
 ---
-title: Multiple domains for glassfish
+title: Multiple Domains For Glassfish
 slug: multiple-domains-for-glassfish
 sidebar_position: 4
 ---
 
-## Running Multiple Custom Domains on GlassFish Server
+<!-- ## Running Multiple Custom Domains on GlassFish Server -->
 
 Let’s see how to easily set up a few domain names for Java application hosted with GlassFish container servlet, which combines enterprise-class facilities and open-source cost efficiency. It’s an enterprise-ready application server with true interoperability and a wide range of features including superior documentation, configuration and administration.
 
@@ -36,7 +36,7 @@ To run multiple domains for your Java site on GlassFish server just follow the n
 
 </div>
 
-4. After that you need to add a CNAME record or set an A Record, as it is described in [Custom Domains](/docs/application-setting/domain-name-management/custom-domain-name) document.
+4. After that you need to add a CNAME record or set an A Record, as it is described in [Custom Domains](/application-setting/domain-name-management/custom-domain-name) document.
 
 5. For binding your custom domain names click the **Settings** button next to your environment and choose the Custom domains setting. Then enter your domains in the appropriate field (we will use _myapplication.com_ and _myapplication.org_ as examples) and click **Bind** button.
 

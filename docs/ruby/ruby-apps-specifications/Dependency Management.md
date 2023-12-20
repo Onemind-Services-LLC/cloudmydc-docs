@@ -1,18 +1,18 @@
 ---
-title: Dependency management
+title: Dependency Management
 slug: dependency-management
 sidebar_position: 1
 ---
 
-## Ruby Dependency Management
+<!-- ## Ruby Dependency Management -->
 
 All Ruby-based application servers (_Apache_ and _NGINX_) are provided with the [**Bundler**](https://bundler.io/) dependency manager by default. It automatically tracks and installs dependencies required by your application. You only need to specify the list of required gems in [**_Gemfile_**](https://bundler.io/guides/gemfile.html), which will resolve all dependencies.
 
 Bundler performs dependency resolving in the following cases:
 
-- [deploying applications](/docs/deployment/deployment-guide)
-- [switching between Ruby versions](/docs/category/container-deployment)
-- [changing deployment type](/docs/ruby/ruby-dev-center#ruby-application-deployment)
+- [deploying applications](/deployment/deployment-guide)
+- [switching between Ruby versions](/category/container-deployment)
+- [changing deployment type](/ruby/ruby-dev-center#ruby-application-deployment)
 
 After any of the actions mentioned above, Bundler searches [RubyGems.org](https://rubygems.org/) (Ruby community’s gem hosting service) for dependencies listed in the config file and, if needed, installs them. By default, Ruby application servers are provided only with gems required for the example application’s work.
 
@@ -32,7 +32,7 @@ Also, if your application uses any special (non-public) dependencies, you need t
 
 :::danger Note
 
-When [redeploying](/docs/category/container-deployment) a Ruby environment, ensure that a new engine version is correctly covered in the Gemfile. Otherwise, you’ll get a discrepancy error after the process.
+When [redeploying](/category/container-deployment) a Ruby environment, ensure that a new engine version is correctly covered in the Gemfile. Otherwise, you’ll get a discrepancy error after the process.
 
 We recommend using a non-strict Ruby version declaration in your **_Gemfile_**, for example **_ruby “~> 2.6.0”_**. Such a flexible form prevents you from interrupting your deployment or CI process while being able to upgrade your Ruby version.
 

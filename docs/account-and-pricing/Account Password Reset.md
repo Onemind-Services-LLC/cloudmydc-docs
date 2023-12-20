@@ -1,12 +1,12 @@
 ---
-title: Account password reset
+title: Account Password Reset
 slug: account-password-reset
 sidebar_position: 5
 ---
 
 The platform makes sure that account passwords are regularly updated through the automatic deprecation mechanism. By default, passwords expire after 180 days (with several heads-up notifications) and need to be renewed to restore access to the account.
 
-If you still retain access to your account, follow the [change password](/docs/account-and-pricing/account-password-reset#change-password) flow. If you’ve forgotten your current password or it has already expired, the platform provides a reliable and secure flow to [reset your password](/docs/account-and-pricing/account-password-reset#reset-password).
+If you still retain access to your account, follow the [change password](/account-and-pricing/account-password-reset#change-password) flow. If you’ve forgotten your current password or it has already expired, the platform provides a reliable and secure flow to [reset your password](/account-and-pricing/account-password-reset#reset-password).
 
 ## Password Requirements
 
@@ -32,7 +32,7 @@ The exact requirements for each platform are defined by the appropriate service 
 
 :::
 
-Also, we recommend configuring **[Two-Factor Authentication](/docs/account-and-pricing/two-factor-authentication)** for an additional layer of protection to drastically increase the account’s security.
+Also, we recommend configuring **[Two-Factor Authentication](/account-and-pricing/two-factor-authentication)** for an additional layer of protection to drastically increase the account’s security.
 
 ## Change Password
 

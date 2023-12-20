@@ -1,5 +1,5 @@
 ---
-title: Memcached configuration
+title: Memcached Configuration
 slug: memcached-configuration
 sidebar_position: 2
 ---
@@ -95,7 +95,7 @@ The following Memcached configuration files are available:
     </div> 
 </div>
 
-More information about Memcached usage you can find in the [Memcached](/docs/memcached/memcached-system) document.
+More information about Memcached usage you can find in the [Memcached](/memcached/memcached-system) document.
 
 ## CONF
 

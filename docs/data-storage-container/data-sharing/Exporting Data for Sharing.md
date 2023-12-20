@@ -1,5 +1,5 @@
 ---
-title: Exporting data for sharing
+title: Exporting Data For Sharing
 slug: exporting-data-for-sharing
 sidebar_position: 2
 ---

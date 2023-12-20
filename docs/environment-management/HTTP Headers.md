@@ -1,5 +1,5 @@
 ---
-title: Http headers
+title: Http Headers
 slug: http-headers
 sidebar_position: 5
 ---
@@ -103,11 +103,11 @@ The main headers used with environments for deploying your applications:
 
 :::tip Tip
 
-Additional [security headers](/docs/environment-management/http-headers#security-headers) are used for some specific stacks.
+Additional [security headers](/environment-management/http-headers#security-headers) are used for some specific stacks.
 
 :::
 
-The list of supported HTTP headers can vary based on the topology of the connected environment. Due to external access specifics (via [resolver/SLB](/docs/application-setting/external-access-to-applications/shared-load-balancer) or [public IP](/docs/application-setting/external-access-to-applications/public-ip)), there are four possible scenarios when working with the platform:
+The list of supported HTTP headers can vary based on the topology of the connected environment. Due to external access specifics (via [resolver/SLB](/application-setting/external-access-to-applications/shared-load-balancer) or [public IP](/application-setting/external-access-to-applications/public-ip)), there are four possible scenarios when working with the platform:
 
 <div style={{
         width: '100%',

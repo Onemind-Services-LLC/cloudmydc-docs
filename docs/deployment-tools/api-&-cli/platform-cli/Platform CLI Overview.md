@@ -1,12 +1,12 @@
 ---
-title: Platform cli overview
+title: Platform CLI Overview
 slug: platform-cli-overview
 sidebar_position: 1
 ---
 
-## Platform CLI Overview
+<!-- ## Platform CLI Overview -->
 
-The platform command-line interface (**CLI**) is designed to simplify interaction with your Cloud Platform account, allowing you to execute required commands via your local machine’s terminal. It can handle the vast majority of available operations remotely, complementing the wide stack of capabilities provided via the [dashboard](/docs/quickstart/dashboard-guide) and [platform API](https://cloudmydc.com/).
+The platform command-line interface (**CLI**) is designed to simplify interaction with your Cloud Platform account, allowing you to execute required commands via your local machine’s terminal. It can handle the vast majority of available operations remotely, complementing the wide stack of capabilities provided via the [dashboard](/quickstart/dashboard-guide) and [platform API](https://cloudmydc.com/).
 
 <div style={{
     display:'flex',
@@ -20,9 +20,9 @@ The platform command-line interface (**CLI**) is designed to simplify interactio
 
 The main benefit here is the advanced and comparatively simple automation tools that CLI provides to developers. Simple text commands can be easily grouped into scripts and, in such a way, mold a powerful mechanism for accomplishing various objectives: from the most common and frequent tasks' automation to monitoring of apps and managing complex DevOps processes.
 
-So, let’s start with the [platform CLI installation](/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview#cli-installation) and reveal some [key points](/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview#getting-started) of its usage before proceeding further.
+So, let’s start with the [platform CLI installation](/deployment-tools/api-&-cli/platform-cli/platform-cli-overview#cli-installation) and reveal some [key points](/deployment-tools/api-&-cli/platform-cli/platform-cli-overview#getting-started) of its usage before proceeding further.
 
-Subsequently, you can dive deeper with the [platform CLI tutorials](/docs/deployment-tools/api-&-cli/platform-cli/platform-cli-overview#cli-tutorials) on particular operations.
+Subsequently, you can dive deeper with the [platform CLI tutorials](/deployment-tools/api-&-cli/platform-cli/platform-cli-overview#cli-tutorials) on particular operations.
 
 ## CLI Installation
 
@@ -59,7 +59,7 @@ The base of the platform CLI is represented with an executable _.jar_ archive an
 
 Just follow the appearing questionnaire, specifying the asked values:
 
-- **_Platform URL_** - PaaS installation URL in the _app.[{hoster_domain}](/docs/quickstart/hosters-list-&-info)_ format
+- **_Platform URL_** - PaaS installation URL in the _app.[{hoster_domain}](/quickstart/hosters-list-&-info)_ format
 - **_Email_** - email (login) bound to your account
 - **_Password_** - your account password
 
@@ -165,17 +165,17 @@ Now, as you have some basic knowledge of platform CLI, you can continue explorin
 
 Ensuring the full-functional remote management, platform CLI works with all types of environments and applications. It supports all of the appropriate actions, from the simplest to the complex ones. To reveal its capabilities with real showcases, we present some of the most common examples of its usage:
 
-- [environment creation](/docs/deployment-tools/api-&-cli/platform-cli/environment-creation)
-- [environment start/stop](/docs/deployment-tools/api-&-cli/platform-cli/environment-start-stop)
-- [environment cloning](/docs/deployment-tools/api-&-cli/platform-cli/environment-cloning)
-- [environment migration](/docs/deployment-tools/api-&-cli/platform-cli/environment-migration)
-- [server scaling](/docs/deployment-tools/api-&-cli/platform-cli/server-scaling)
-- [container redeploy](/docs/category/container-deployment)
-- [container volumes](/docs/container/container-configuration/volumes)
-- [mount points](/docs/deployment-tools/api-&-cli/platform-cli/mount-points)
-- [VCS projects deployment](/docs/deployment-tools/api-&-cli/platform-cli/vcs-project-deployment)
-- [swap Public IPs](/docs/deployment-tools/api-&-cli/platform-cli/swap-public-ips)
-- [install JPS](/docs/deployment-tools/api-&-cli/platform-cli/installing-jps)
+- [environment creation](/deployment-tools/api-&-cli/platform-cli/environment-creation)
+- [environment start/stop](/deployment-tools/api-&-cli/platform-cli/environment-start-stop)
+- [environment cloning](/deployment-tools/api-&-cli/platform-cli/environment-cloning)
+- [environment migration](/deployment-tools/api-&-cli/platform-cli/environment-migration)
+- [server scaling](/deployment-tools/api-&-cli/platform-cli/server-scaling)
+- [container redeploy](/category/container-deployment)
+- [container volumes](/container/container-configuration/volumes)
+- [mount points](/deployment-tools/api-&-cli/platform-cli/mount-points)
+- [VCS projects deployment](/deployment-tools/api-&-cli/platform-cli/vcs-project-deployment)
+- [swap Public IPs](/deployment-tools/api-&-cli/platform-cli/swap-public-ips)
+- [install JPS](/deployment-tools/api-&-cli/platform-cli/installing-jps)
 
 Subsequently, when you catch the idea of how to work with platform CLI and the possibilities it provides, you can start creating your own automation scripts for some frequent environment lifecycle operations.
 

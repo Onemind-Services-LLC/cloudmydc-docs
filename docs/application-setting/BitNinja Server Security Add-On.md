@@ -1,10 +1,10 @@
 ---
-title: Bitninja server security add-on
+title: Bitninja Server Security Add-On
 slug: bitninja-server-security-add-on
 sidebar_position: 11
 ---
 
-## BitNinja Server Security Add-On
+<!-- ## BitNinja Server Security Add-On -->
 
 [**BitNinja**](https://bitninja.com/) is an easy-to-use, security-as-a-service server defense tool. It protects your server from hackers, botnets, attackers, and malicious activities with minimal effort and maintenance required from your side.
 
@@ -14,9 +14,9 @@ In the platform, you can protect your servers with BitNinja security in a few cl
 
 ## BitNinja Installation
 
-The [**BitNinja**](https://github.com/jelastic-jps/bitninja) add-on is available for all certified nodes at the platform (except [VPS](/docs/elastic-vps/elastic-vps-overview/general-information)).
+The [**BitNinja**](https://github.com/jelastic-jps/bitninja) add-on is available for all certified nodes at the platform (except [VPS](/elastic-vps/elastic-vps-overview/general-information)).
 
-1. Open the [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace) in the platform dashboard and search for the **_BitNinja Service_** package or find it in the **Add-Ons** section. Hover over and click **Install** to proceed.
+1. Open the [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace) in the platform dashboard and search for the **_BitNinja Service_** package or find it in the **Add-Ons** section. Hover over and click **Install** to proceed.
 
 <div style={{
     display:'flex',
@@ -70,7 +70,7 @@ All features (modules) are available and can be enabled on all layers. The list 
 
 :::danger Note
 
-As proprietary software, the add-on usage requires a license. You can learn all the [license pricing](/docs/application-setting/bitninja-server-security-add-on#license-pricing) specifics in the dedicated section below.
+As proprietary software, the add-on usage requires a license. You can learn all the [license pricing](/application-setting/bitninja-server-security-add-on#license-pricing) specifics in the dedicated section below.
 
 :::
 
@@ -110,7 +110,7 @@ Each license is charged based on the [1 hosted user](https://bitninja.com/pricin
 
 :::danger Note
 
-The exact cost may vary slightly for the platforms with a currency other than USD; it depends on the conversion rate at the moment of the hourly billing event. You can track all the account charges via the [**Billing History**](/docs/account-and-pricing/resource-charging/monitoring-consumed-resources#billing-history) in the dashboard.
+The exact cost may vary slightly for the platforms with a currency other than USD; it depends on the conversion rate at the moment of the hourly billing event. You can track all the account charges via the [**Billing History**](/account-and-pricing/resource-charging/monitoring-consumed-resources#billing-history) in the dashboard.
 
 :::
 

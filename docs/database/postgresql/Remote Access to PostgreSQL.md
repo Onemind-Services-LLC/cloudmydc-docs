@@ -1,16 +1,16 @@
 ---
-title: Remote access to postgresql
+title: Remote Access To Postgresql
 slug: remote-access-to-postgresql
 sidebar_position: 5
 ---
 
-## Remote Access to PostgreSQL
+<!-- ## Remote Access to PostgreSQL -->
 
 You have an opportunity to work with your databases remotely from your computer without having to login to our dashboard. Here’s a how-to for PostgreSQL users.
 
 ## Create Environment
 
-The database can be accessed either via [public IP](/docs/application-setting/external-access-to-applications/public-ip#public-ip) or [endpoints](/docs/application-setting/external-access-to-applications/endpoints#endpoints-a-direct-connection-to-the-cloud) (no public IP required). Let’s take a look at both options of creating database environment.
+The database can be accessed either via [public IP](/application-setting/external-access-to-applications/public-ip#public-ip) or [endpoints](/application-setting/external-access-to-applications/endpoints#endpoints-a-direct-connection-to-the-cloud) (no public IP required). Let’s take a look at both options of creating database environment.
 
 ## Environment with Public IP
 
@@ -107,7 +107,7 @@ If necessary do the same for the Slave node of the database cluster.
 
 ## Remote Connection to PostgreSQL
 
-Let’s create a new connection to the database using any desktop or web client. Here we use the **pgAdmin4** which is the most popular and feature-rich Open Source administration and development platform for PostgreSQL. You can get client software that meets your platform. See the download page to get the proper link ([https://www.pgadmin.org/download/](https://www.pgadmin.org/download/)) or you may get familiar with this application in the platform by deploying it via [import](/docs/environment-management/environment-export-and-import/environment-import) of corresponding pgAdmin4 [manifest](https://github.com/jelastic-jps/pgadmin/blob/master/manifest.yaml).
+Let’s create a new connection to the database using any desktop or web client. Here we use the **pgAdmin4** which is the most popular and feature-rich Open Source administration and development platform for PostgreSQL. You can get client software that meets your platform. See the download page to get the proper link ([https://www.pgadmin.org/download/](https://www.pgadmin.org/download/)) or you may get familiar with this application in the platform by deploying it via [import](/environment-management/environment-export-and-import/environment-import) of corresponding pgAdmin4 [manifest](https://github.com/jelastic-jps/pgadmin/blob/master/manifest.yaml).
 
 <div style={{
     display:'flex',

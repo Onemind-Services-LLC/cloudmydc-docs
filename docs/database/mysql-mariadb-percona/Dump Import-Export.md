@@ -1,11 +1,12 @@
 ---
-title: Dump import-export
+title: Dump Import-Export
 slug: dump-import-export
 sidebar_position: 7
 ---
 
-# Import and Export Dump Files to MySQL/MariaDB/Percona
-## Dump Import
+<!-- # Import and Export Dump Files to MySQL/MariaDB/Percona -->
+<!-- ## Dump Import -->
+
 1. Create a new server instance using any desktop client for **MySQL/MariaDB/Percona** (we use MySQL Workbench as an example).
 
 <div style={{

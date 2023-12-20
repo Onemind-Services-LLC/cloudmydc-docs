@@ -1,10 +1,10 @@
 ---
-title: Multiple domain for tomcat
+title: Multiple Domain For Tomcat
 slug: multiple-domain-for-tomcat
 sidebar_position: 3
 ---
 
-## Multiple Domain Names on Tomcat Server
+<!-- ## Multiple Domain Names on Tomcat Server -->
 
 Set up multiple domain names on the Tomcat server in order to increase the usability, efficiency and scalability of your application, as well as save your costs without having to configure separate instances. For this, make some minor adjustments within Tomcat configuration files as described below.
 
@@ -20,7 +20,7 @@ Set up multiple domain names on the Tomcat server in order to increase the usabi
 
 </div>
 
-2. In the **Environment Topology** dialog, pick your application server (e.g. [Tomcat 9](/docs/java/java-app-servers/tomcat-and-tomee/tomcat-server)), and type your environment name, for example, _multibinding_.
+2. In the **Environment Topology** dialog, pick your application server (e.g. [Tomcat 9](/java/java-app-servers/tomcat-and-tomee/tomcat-server)), and type your environment name, for example, _multibinding_.
 
 <div style={{
     display:'flex',
@@ -44,7 +44,7 @@ In a minute your environment will be successfully created.
 
 </div>
 
-3. You can buy and set up your own domain names instead of default ones by adding CNAME record or by setting A Records. Read more in the [Custom External Domain Name Binding](/docs/application-setting/domain-name-management/custom-domain-name) document.
+3. You can buy and set up your own domain names instead of default ones by adding CNAME record or by setting A Records. Read more in the [Custom External Domain Name Binding](/application-setting/domain-name-management/custom-domain-name) document.
 
 4. Go back to the platform dashboard, click the **Settings** button for your environment and bind your domains.
 

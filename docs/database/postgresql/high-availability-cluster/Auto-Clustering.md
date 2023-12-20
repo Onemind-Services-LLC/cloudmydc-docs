@@ -1,10 +1,10 @@
 ---
-title: Auto-clustering
+title: Auto-Clustering
 slug: auto-clustering
 sidebar_position: 1
 ---
 
-## PostgreSQL Database Replication
+<!-- ## PostgreSQL Database Replication -->
 
 **Replication** is a fundamental technology for any database server because downtime or data loss can result in reduced accessibility, productivity, and product confidence. Using data replication from a primary to one or more standby servers decreases the possibility of any data loss. With PostgreSQL, you can easily create a database cluster of **Primary-Secondary** (formerly known as master-slave replication) topology with one or more standby servers.
 
@@ -26,12 +26,12 @@ So, let’s see how the Primary-Secondary PostgreSQL database cluster can be ins
 
 The platform provides two automated ways to get a PostgreSQL cluster:
 
-- [Pre-Packaged Marketplace Solution](/docs/database/postgresql/high-availability-cluster/auto-clustering#pre-packaged-marketplace-solution)
-- [Topology Wizard Auto-Clustering](/docs/database/postgresql/high-availability-cluster/auto-clustering#topology-wizard-auto-clustering)
+- [Pre-Packaged Marketplace Solution](/database/postgresql/high-availability-cluster/auto-clustering#pre-packaged-marketplace-solution)
+- [Topology Wizard Auto-Clustering](/database/postgresql/high-availability-cluster/auto-clustering#topology-wizard-auto-clustering)
 
 ## Pre-Packaged Marketplace Solution
 
-The quickest and most straightforward way to create a PostgreSQL cluster is to use the pre-packaged solution from the [marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
+The quickest and most straightforward way to create a PostgreSQL cluster is to use the pre-packaged solution from the [marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
 
 1. Click the **Marketplace** button at the top-left of the dashboard and search for the **_PostgreSQL Primary-Secondary Cluster_** package.
 
@@ -77,7 +77,7 @@ When finished, you’ll be shown the appropriate notification with data for Post
 
 PostgreSQL database cluster can be enabled via the embedded **Auto-Clustering** feature at the dashboard. It provides more customization options compared to the marketplace option while still automating all the configuration processes.
 
-1. Open a new environment [topology wizard](/docs/environment-management/setting-up-environment), pick the **_PostgreSQL_** database software stack and just turn on a dedicated **Auto-Clustering** switch. If needed, you can enable Pgpool-II load balancer for your cluster.
+1. Open a new environment [topology wizard](/environment-management/setting-up-environment), pick the **_PostgreSQL_** database software stack and just turn on a dedicated **Auto-Clustering** switch. If needed, you can enable Pgpool-II load balancer for your cluster.
 
 <div style={{
     display:'flex',
@@ -107,13 +107,13 @@ Next, you can fully utilize the customization power of the wizard to change the 
 
 Below, we’ll provide some helpful information on PostgreSQL cluster management:
 
-- [Cluster Entry Point](/docs/database/postgresql/high-availability-cluster/auto-clustering#cluster-entry-point)
-- [Cluster Admin Panels](/docs/database/postgresql/high-availability-cluster/auto-clustering#cluster-admin-panels)
-- [Primary PostgreSQL Configuration](/docs/database/postgresql/high-availability-cluster/auto-clustering#primary-postgresql-configuration)
-- [Configuring Standby](/docs/database/postgresql/high-availability-cluster/auto-clustering#configuring-standby)
-- [Replication Check](/docs/database/postgresql/high-availability-cluster/auto-clustering#replication-check)
-- [Automatic Failover Scenario](/docs/database/postgresql/high-availability-cluster/auto-clustering#automatic-failover-scenario)
-- [Manual Failover Scenario](/docs/database/postgresql/high-availability-cluster/auto-clustering#manual-failover-scenario)
+- [Cluster Entry Point](/database/postgresql/high-availability-cluster/auto-clustering#cluster-entry-point)
+- [Cluster Admin Panels](/database/postgresql/high-availability-cluster/auto-clustering#cluster-admin-panels)
+- [Primary PostgreSQL Configuration](/database/postgresql/high-availability-cluster/auto-clustering#primary-postgresql-configuration)
+- [Configuring Standby](/database/postgresql/high-availability-cluster/auto-clustering#configuring-standby)
+- [Replication Check](/database/postgresql/high-availability-cluster/auto-clustering#replication-check)
+- [Automatic Failover Scenario](/database/postgresql/high-availability-cluster/auto-clustering#automatic-failover-scenario)
+- [Manual Failover Scenario](/database/postgresql/high-availability-cluster/auto-clustering#manual-failover-scenario)
 
 ## Cluster Entry Point
 
@@ -357,7 +357,7 @@ sudo service postgresql restart
 
 ## Automatic Failover Scenario
 
-The **_automatic failover_** for the PostgreSQL cluster is implemented with the help of the Pgpool-II node and is not available for the topologies without it ([manual configuration](/docs/database/postgresql/high-availability-cluster/auto-clustering#manual-failover-scenario) is required). The load balancing node automatically detects if the primary database is down and promotes one of the available secondaries. Once the problematic node is back, it will be automatically re-added to the cluster (as secondary) with all the missing data restored using the pgrewind utility.
+The **_automatic failover_** for the PostgreSQL cluster is implemented with the help of the Pgpool-II node and is not available for the topologies without it ([manual configuration](/database/postgresql/high-availability-cluster/auto-clustering#manual-failover-scenario) is required). The load balancing node automatically detects if the primary database is down and promotes one of the available secondaries. Once the problematic node is back, it will be automatically re-added to the cluster (as secondary) with all the missing data restored using the pgrewind utility.
 
 ## Manual Failover Scenario
 
@@ -430,7 +430,7 @@ Now your database got back to work and ready to handle read/write requests by th
 
 ## Cluster Restoration
 
-With a new primary address you can easily avoid tuning your application connection string changing IP addresses of the primary database. To do this you have to put a [load balancer](/docs/database/postgresql/high-availability-cluster/auto-clustering#manual-failover-scenario) in front of the cluster that will monitor the status of its components and route traffic to the current primary. Below, we will demonstrate how to restore original cluster topology and thus no changes will be required at the frontend.
+With a new primary address you can easily avoid tuning your application connection string changing IP addresses of the primary database. To do this you have to put a [load balancer](/database/postgresql/high-availability-cluster/auto-clustering#manual-failover-scenario) in front of the cluster that will monitor the status of its components and route traffic to the current primary. Below, we will demonstrate how to restore original cluster topology and thus no changes will be required at the frontend.
 
 Another reason the topology should be restored is related to ensuring a scaling ability of the cluster. Only original topology can be scaled in/out horizontally.
 
@@ -507,7 +507,7 @@ Where:
 - _172.25.2.31_ - IP address of the current primary node.
 - _/var/lib/pgsql/data_ - PostgreSQL data directory.
 
-4. Make sure the IP address in the **_host_** parameter described in thesecond step of [Configuring Standby](/docs/database/postgresql/high-availability-cluster/auto-clustering#configuring-standby) contains proper IP address of the former primary.
+4. Make sure the IP address in the **_host_** parameter described in thesecond step of [Configuring Standby](/database/postgresql/high-availability-cluster/auto-clustering#configuring-standby) contains proper IP address of the former primary.
 
 <div style={{
     display:'flex',

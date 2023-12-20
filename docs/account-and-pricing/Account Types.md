@@ -1,16 +1,16 @@
 ---
-title: Account types
+title: Account Types
 slug: account-types
 sidebar_position: 2
 ---
 
-## Types of Accounts
+<!-- ## Types of Accounts -->
 
 By default, accounts created in the platform are considered to be **trial accounts**. Those accounts, which were created before commercial release, also become trial.
 
 The platform imposes various limits on trial users. Once you change your account to **billing account**, the limits are reduced and the account becomes a paid one.
 
-According to the type of your account you have a particular set of rights and [quotas](/docs/account-and-pricing/quotas-system). If you have a trial account and need more possibilities, you can convert your account to billing one without waiting till the end of trial period.
+According to the type of your account you have a particular set of rights and [quotas](/account-and-pricing/quotas-system). If you have a trial account and need more possibilities, you can convert your account to billing one without waiting till the end of trial period.
 
 ## Trial
 

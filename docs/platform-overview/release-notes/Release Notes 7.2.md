@@ -1,12 +1,10 @@
 ---
-title: Release notes 7.2
+title: Release Notes 7.2
 slug: release-notes-7.2
 sidebar_position: 12
 ---
 
 import obj from './ReleaseNotes7.2.json'
-
-## CloudMyDc Application Platform 7.2
 
 _This document is preliminary and subject to change._
 
@@ -46,7 +44,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.2#platform-rebranding">
+                <a href="/platform-overview/release-notes/release-notes-7.2#platform-rebranding">
                     Learn More >>
                 </a>
             </div>
@@ -65,7 +63,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.2#centos-stream-8-os-support">
+                <a href="/platform-overview/release-notes/release-notes-7.2#centos-stream-8-os-support">
                     Learn More >>
                 </a>
             </div>
@@ -109,7 +107,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.2#collaboration-policy-for-custom-commands">
+                <a href="/platform-overview/release-notes/release-notes-7.2#collaboration-policy-for-custom-commands">
                     Learn More >>
                 </a>
             </div>
@@ -128,7 +126,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.2#environment-selection-field-adjustment">
+                <a href="/platform-overview/release-notes/release-notes-7.2#environment-selection-field-adjustment">
                     Learn More >>
                 </a>
             </div>
@@ -147,7 +145,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.2#software-stack-versions">
+                <a href="/platform-overview/release-notes/release-notes-7.2#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -191,7 +189,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.2#fixes-compatible-with-prior-versions">
+                <a href="/platform-overview/release-notes/release-notes-7.2#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -210,7 +208,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.2#bug-fixes">
+                <a href="/platform-overview/release-notes/release-notes-7.2#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -237,14 +235,14 @@ Continuing the smooth integration of the PaaS (formerly known as Jelastic) with 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Collaboration Policy for Custom Commands
 
-In order to extend the capabilities of the [account collaboration](/docs/account-and-pricing/accounts-collaboration/collaboration-overview) feature even further and ensure the possibility of providing full access to the shared account, a new **Execute CMD** policy was added. If included in the collaboration role, it allows members to execute custom CMD commands on the shared environments. This permission may be required when installing some complex JPS solutions.
+In order to extend the capabilities of the [account collaboration](/account-and-pricing/accounts-collaboration/collaboration-overview) feature even further and ensure the possibility of providing full access to the shared account, a new **Execute CMD** policy was added. If included in the collaboration role, it allows members to execute custom CMD commands on the shared environments. This permission may be required when installing some complex JPS solutions.
 
 <div style={{
     display:'flex',
@@ -261,14 +259,14 @@ In order to extend the capabilities of the [account collaboration](/docs/account
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Environment Selection Field Adjustment
 
-In the current CloudMyDc Application Platform 7.2 release, the dashboard’s combo-boxes for environment selection were improved. For now, the displayed items provide better clarity by showing both the [custom alias](/docs/environment-management/environment-aliases) (if specified) and the environment name. Such implementation uniquely identifies the provided options and helps avoid possible confusion when several environments have similar aliases.
+In the current CloudMyDc Application Platform 7.2 release, the dashboard’s combo-boxes for environment selection were improved. For now, the displayed items provide better clarity by showing both the [custom alias](/environment-management/environment-aliases) (if specified) and the environment name. Such implementation uniquely identifies the provided options and helps avoid possible confusion when several environments have similar aliases.
 
 <div style={{
     display:'flex',
@@ -285,18 +283,18 @@ In the current CloudMyDc Application Platform 7.2 release, the dashboard’s com
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## CentOS Stream 8 OS Support
 
-CloudMyDc Application Platform supports the most popular [operating system templates](/docs/container/container-image-requirements), which allows using multiple different solutions from Docker Hub as [custom containers](/docs/container/container-types). Due to the recent CentOS Linux 8 end of life, the recommended alternative template was added to the platform – **CentOS Stream 8**. You can find a [comparison of these two versions](https://centos.org/cl-vs-cs/) in the official documentation.
+CloudMyDc Application Platform supports the most popular [operating system templates](/container/container-image-requirements), which allows using multiple different solutions from Docker Hub as [custom containers](/container/container-types). Due to the recent CentOS Linux 8 end of life, the recommended alternative template was added to the platform – **CentOS Stream 8**. You can find a [comparison of these two versions](https://centos.org/cl-vs-cs/) in the official documentation.
 
 :::tip Note
 
-Do not confuse OS templates (base image for containers) support with container templates ([stacks](/docs/quickstart/software-stack-versions)).
+Do not confuse OS templates (base image for containers) support with container templates ([stacks](/quickstart/software-stack-versions)).
 
 :::
 
@@ -307,7 +305,7 @@ Do not confuse OS templates (base image for containers) support with container t
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -426,7 +424,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -435,16 +433,16 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/quickstart/software-stack-versions)
+[More info](/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

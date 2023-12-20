@@ -1,12 +1,12 @@
 ---
-title: Apache modules
+title: Apache Modules
 slug: apache-modules
 sidebar_position: 3
 ---
 
 import obj from './ApacheModules.json'
 
-## Apache & NGINX Modules
+<!-- ## Apache & NGINX Modules -->
 
 Here you can see the full list of the Apache and NGINX modules available in the platform by default.
 

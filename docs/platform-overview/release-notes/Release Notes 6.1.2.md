@@ -1,12 +1,10 @@
 ---
-title: Release notes 6.1.2
+title: Release Notes 6.1.2
 slug: release-notes-6.1.2
 sidebar_position: 23
 ---
 
 import obj from './ReleaseNotes6.1.2.json'
-
-## CloudMyDc Application Platform 6.1.2
 
 _This document is preliminary and subject to change._
 
@@ -49,7 +47,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-6.1.2#ubuntu-21-os-template-support">
+                <a href="/platform-overview/release-notes/release-notes-6.1.2#ubuntu-21-os-template-support">
                     Learn More >>
                 </a>
             </div>
@@ -93,7 +91,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-6.1.2#deprecated-password-authentication-for-git">
+                <a href="/platform-overview/release-notes/release-notes-6.1.2#deprecated-password-authentication-for-git">
                     Learn More >>
                 </a>
             </div>
@@ -112,7 +110,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-6.1.2#software-stack-versions">
+                <a href="/platform-overview/release-notes/release-notes-6.1.2#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -156,7 +154,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-6.1.2#fixes-compatible-with-prior-versions">
+                <a href="/platform-overview/release-notes/release-notes-6.1.2#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -169,14 +167,14 @@ Fixed
 
 The platform implements support for the **Ubuntu 21** OS templates on all the PaaS installations regardless of the platform version. The new release offers an updated kernel, toolchain upgrades, security improvements, and more. For detailed information on [Ubuntu 21](https://discourse.ubuntu.com/t/hirsute-hippo-release-notes/19221) refer to the official release notes.
 
-[More info](/docs/container/container-image-requirements)
+[More info](/container/container-image-requirements)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -190,7 +188,7 @@ Due to a recent [security update](https://github.blog/2020-12-15-token-authentic
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -311,7 +309,7 @@ Below, you can find the fixes that were implemented in the PaaS 6.1.2 release an
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -320,16 +318,16 @@ Below, you can find the fixes that were implemented in the PaaS 6.1.2 release an
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/quickstart/software-stack-versions)
+[More info](/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

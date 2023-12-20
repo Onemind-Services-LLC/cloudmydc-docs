@@ -4,7 +4,7 @@ slug: statistics
 sidebar_position: 2
 ---
 
-## Statistics Monitoring
+<!-- ## Statistics Monitoring -->
 
 Statistics monitoring is an easy but powerful tool that helps to manage environments smartly. The information, provided by the platform in-built statistics module, covers all the billable resources' consumption, so it can help to adjust the topology according to your needs and to cut the spends greatly.
 
@@ -29,7 +29,7 @@ In the opened tab you’ll find the statistics on all the types of consumed reso
 - **Network** - internal and external traffic (in _MB_)
 - **Disk** - stored data amount (in _MB_) and I/O operations amount (in _IOPS_)
 
-The _RAM_ and _CPU_ limits depend on the number of [cloudlets](/docs/platform-overview/cloudlet). The Disk can be set within the allowed range, while _Network_ and _IOPS limits_ are defined by your hosting provider. Also, be aware that _Network_ is limited not by the total usage but by the amount of external traffic per second (_Mbps_).
+The _RAM_ and _CPU_ limits depend on the number of [cloudlets](/platform-overview/cloudlet). The Disk can be set within the allowed range, while _Network_ and _IOPS limits_ are defined by your hosting provider. Also, be aware that _Network_ is limited not by the total usage but by the amount of external traffic per second (_Mbps_).
 
 You can further analyze the presented statistics by varying the _Interval_ and _Duration_ settings and enabling/disabling the particular sections at the top tools panel:
 
@@ -45,16 +45,16 @@ You can further analyze the presented statistics by varying the _Interval_ and _
 
 :::danger Note
 
-The platform collects statistics every minute and stores it for an hour to implement an accurate [**_Pay-per-Use_**](/docs/account-and-pricing/pricing-model-overview) charging approach. Afterward, the data is automatically aggregated into the one-hour blocks, using one of the two methods based on the particular resource type:
+The platform collects statistics every minute and stores it for an hour to implement an accurate [**_Pay-per-Use_**](/account-and-pricing/pricing-model-overview) charging approach. Afterward, the data is automatically aggregated into the one-hour blocks, using one of the two methods based on the particular resource type:
 
 - a sum of all values for _CPU, Network, Disk IOPS_ and _Disk IO_
 - the maximum value for _RAM_ and _Disk_
 
 :::
 
-Using the statistics data you can easily track the resources consumption of your application (hover over for the details on a particular time frame), thus analyze and predict your future spends and, as a result, be able to choose the best way to manage your environment. For even more convenience, you can configure the set of [load alerts](/docs/application-setting/built-in-monitoring/load-alerts) to be notified about the consumption level growth or wane to the specified percentage via email. This can greatly help you to save your money!
+Using the statistics data you can easily track the resources consumption of your application (hover over for the details on a particular time frame), thus analyze and predict your future spends and, as a result, be able to choose the best way to manage your environment. For even more convenience, you can configure the set of [load alerts](/application-setting/built-in-monitoring/load-alerts) to be notified about the consumption level growth or wane to the specified percentage via email. This can greatly help you to save your money!
 
-See the linked document to get additional information on [resources charging](/docs/account-and-pricing/resource-charging/pricing-faq).
+See the linked document to get additional information on [resources charging](/account-and-pricing/resource-charging/pricing-faq).
 
 And below we’ll consider the specifics of I/O usage tracking in more details.
 

@@ -1,14 +1,14 @@
 ---
-title: Java engine server
+title: Java Engine Server
 slug: java-engine-server
 sidebar_position: 7
 ---
 
-## Java Engine Server
+<!-- ## Java Engine Server -->
 
 **Java Engine** software stack is an image of a base CentOS template with the preinstalled JDK. It provides a bare minimum required for Java application hosting, while ensuring compatibility with all of the [platform features](https://cloudmydc.com/) (e.g. automated vertical and horizontal scaling, public IP, isolation groups, firewall rules, API and SSH access, etc.).
 
-Java Engine is designed for the deployment and hosting of Java applications based on the fat _JAR / uber JAR_ (i.e. executable JAR with all the classes, resources, and dependencies). It utilized the [Java Memory Agent](/docs/environment-management/environment-variables/custom-environment-variables) to automatically optimize your application by tuning configs according to the load and available resources.
+Java Engine is designed for the deployment and hosting of Java applications based on the fat _JAR / uber JAR_ (i.e. executable JAR with all the classes, resources, and dependencies). It utilized the [Java Memory Agent](/environment-management/environment-variables/custom-environment-variables) to automatically optimize your application by tuning configs according to the load and available resources.
 
 :::tip Note
 
@@ -44,7 +44,7 @@ Follow the next simple steps to create a new environment with Java Engine server
 
 </div>
 
-Customize any other parameter up to your needs, e.g. resources limits, disk space, external IPs, [region](/docs/environment-management/environment-regions/choosing-a-region) (if available), etc. Click **Create** to proceed.
+Customize any other parameter up to your needs, e.g. resources limits, disk space, external IPs, [region](/environment-management/environment-regions/choosing-a-region) (if available), etc. Click **Create** to proceed.
 
 3. Your environment should be ready in a minute.
 

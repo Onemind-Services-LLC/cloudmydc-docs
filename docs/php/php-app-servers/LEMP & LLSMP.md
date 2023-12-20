@@ -1,10 +1,10 @@
 ---
-title: Lemp & llsmp
+title: LEMP & LLSMP
 slug: lemp-&-llsmp
 sidebar_position: 4
 ---
 
-## LEMP (LLSMP) Application Server
+<!-- ## LEMP (LLSMP) Application Server -->
 
 :::tip
 
@@ -101,7 +101,7 @@ Within the LEMP/LLSMP container, you can establish the client connection to the 
 
 Read the linked guide to learn more about [PHP connection to MariaDB](https://cloudmydc.com/).
 
-2. Several [environment variables](/docs/container/container-configuration/variables) can be used to manage your LEMP/LLSMP container:
+2. Several [environment variables](/container/container-configuration/variables) can be used to manage your LEMP/LLSMP container:
 
 - **_ADMINPANEL_ENABLED_** - allows (_true_, by default) or forbids (_false_) access to phpMyAdmin console for the integrated MariaDB database server
 - **_REDIS_ENABLED_** - enables (_true_, by default) or disables (_false_) object caching with Redis
@@ -135,11 +135,11 @@ LLSMP has additional variables (e.g. _WAF, WP_PROTECT, WP_PROTECT_LIMIT_) specif
 
 3. Obviously, all the benefits of the regular platform containers are available for the LEMP and LLSMP stacks as well. For example:
 
-- [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling)
-- [usage-based pricing](/docs/account-and-pricing/pricing-model-overview)
+- [automatic vertical scaling](/application-setting/scaling-and-clustering/automatic-vertical-scaling)
+- [usage-based pricing](/account-and-pricing/pricing-model-overview)
 - [SSH access](https://cloudmydc.com/)
-- [container firewall](/docs/application-setting/external-access-to-applications/container-firewall)
-- [container redeploy](/docs/category/container-deployment)
+- [container firewall](/application-setting/external-access-to-applications/container-firewall)
+- [container redeploy](/category/container-deployment)
 - [statistics monitoring](https://cloudmydc.com/)
 - [deployment automation](https://cloudmydc.com/)
 - and even more at [Platform Documentation](https://cloudmydc.com/)

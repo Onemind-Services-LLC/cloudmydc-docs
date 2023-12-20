@@ -1,10 +1,10 @@
 ---
-title: Application lifecycle management
+title: Application Lifecycle Management
 slug: application-lifecycle-management
 sidebar_position: 17
 ---
 
-## How to Manage Application Lifecycle
+<!-- ## How to Manage Application Lifecycle -->
 
 Complex applications with highly customized logic and user interfaces take time to develop and require more formal practices to ensure that they work as intended and meet users' needs. Your project might not be so large, but you can still benefit from using development and test environments, where you can develop and test your code without affecting end users. Building your own applications requires a thorough understanding of the issues that can take place during the app lifecycle, from development to the production stage.
 
@@ -30,14 +30,15 @@ Application lifecycle management becomes a lot easier thanks to the automation o
 
 </div>
 
+<!-- 
 To realize the schema above we’ll come through the next steps:
-
-- [Create the production environment](/docs/application-setting/application-lifecycle-management#create-the-production-environment)
-- [Create the build environment](/docs/application-setting/application-lifecycle-management#create-the-build-environment)
-- [Build and deploy the project](/docs/application-setting/application-lifecycle-management#build-and-deploy-the-project)
-- [Create database environment](/docs/application-setting/application-lifecycle-management#create-database-environment)
-- [Create the test environment](/docs/application-setting/application-lifecycle-management#create-the-test-environment)
-- [Upgrade application](/docs/application-setting/application-lifecycle-management#upgrade-application)
+- [Create the production environment](/application-setting/application-lifecycle-management#create-the-production-environment)
+- [Create the build environment](/application-setting/application-lifecycle-management#create-the-build-environment)
+- [Build and deploy the project](/application-setting/application-lifecycle-management#build-and-deploy-the-project)
+- [Create database environment](/application-setting/application-lifecycle-management#create-database-environment)
+- [Create the test environment](/application-setting/application-lifecycle-management#create-the-test-environment)
+- [Upgrade application](/application-setting/application-lifecycle-management#upgrade-application)
+  -->
 
 Also here is a video version of the same procedure:
 

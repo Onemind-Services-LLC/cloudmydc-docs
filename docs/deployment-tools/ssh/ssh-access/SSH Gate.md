@@ -1,12 +1,12 @@
 ---
-title: Ssh gate
+title: SSH Gate
 slug: ssh-gate
 sidebar_position: 3
 ---
 
-## Access via SSH Gate
+<!-- ## Access via SSH Gate -->
 
-In order to establish connection via SSH Gate, you need to [generate SSH key pair](/docs/deployment-tools/ssh/generate-ssh-key) and to [add public key](/docs/deployment-tools/ssh/add-ssh-key) to your account at the dashboard (if needed, read the linked step-by-step guides for assistance).
+In order to establish connection via SSH Gate, you need to [generate SSH key pair](/deployment-tools/ssh/generate-ssh-key) and to [add public key](/deployment-tools/ssh/add-ssh-key) to your account at the dashboard (if needed, read the linked step-by-step guides for assistance).
 
 Next, get an SSH connection string for your account by clicking the **Settings** button at the top panel of the dashboard.
 
@@ -34,11 +34,11 @@ In the opened **Account settings** window, the **SSH Keys > SSH Connect** tab wi
 
 :::tip Tip
 
-Within the right part of the section you can establish [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh) connection to any node directly in browser.
+Within the right part of the section you can establish [Web SSH](/deployment-tools/ssh/ssh-access/web-ssh) connection to any node directly in browser.
 
 :::
 
-Now, you can access either [whole PaaS account](/docs/deployment-tools/ssh/ssh-access/ssh-gate#ssh-access-to-platform-account) or just a [particular container](/docs/deployment-tools/ssh/ssh-access/ssh-gate#direct-access-to-container) with your local SSH client.
+Now, you can access either [whole PaaS account](/deployment-tools/ssh/ssh-access/ssh-gate#ssh-access-to-platform-account) or just a [particular container](/deployment-tools/ssh/ssh-access/ssh-gate#direct-access-to-container) with your local SSH client.
 
 ## SSH Access to Platform Account
 
@@ -90,7 +90,7 @@ In order to add your private SSH key with PuTTY, download and run [Pageant](http
 
 :::
 
-1. Once connected, you will see a list of [environment groups](/docs/environment-management/environment-groups/overview) (with a number of containers within provided in brackets) and ungrouped environments available for your account. Select the required point by entering the appropriate number.
+1. Once connected, you will see a list of [environment groups](/environment-management/environment-groups/overview) (with a number of containers within provided in brackets) and ungrouped environments available for your account. Select the required point by entering the appropriate number.
 
 <div style={{
     display:'flex',
@@ -161,4 +161,4 @@ For example, in order to access the Tomcat container, which is shown in the imag
     </div>
 </div>
 
-Such a possibility can be useful for automatization scripts or for setting up application configurations (for example, [Capistrano](/docs/deployment-tools/ssh/capistrano)).
+Such a possibility can be useful for automatization scripts or for setting up application configurations (for example, [Capistrano](/deployment-tools/ssh/capistrano)).

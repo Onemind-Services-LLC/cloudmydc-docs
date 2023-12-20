@@ -1,12 +1,12 @@
 ---
-title: Session replication for ha
+title: Session Replication For Ha
 slug: session-replication-for-ha
 sidebar_position: 7
 ---
 
-## High Availability with Sticky Session Replication
+<!-- ## High Availability with Sticky Session Replication -->
 
-The platform provides automated session replication between [Tomcat](/docs/java/java-app-servers/tomcat-and-tomee/tomcat-server), [GlassFish](/docs/java/java-app-servers/glassfish/glassfish-server) and [Jetty](/docs/java/java-app-servers/jetty/jetty-server) servers to gain web application high availability within Java cluster.
+The platform provides automated session replication between [Tomcat](/java/java-app-servers/tomcat-and-tomee/tomcat-server), [GlassFish](/java/java-app-servers/glassfish/glassfish-server) and [Jetty](/java/java-app-servers/jetty/jetty-server) servers to gain web application high availability within Java cluster.
 
 Session replication is a mechanism used to replicate the data stored in a session between different instances, which have to be a part of the same cluster. When session replication is enabled in a cluster environment, the entire session data is copied on a replicated instance. The session replication operation does not copy the attributes that cannot be serialized in a session and any instance specific data. Session replication provides high reliability, scalability, and perfect failover capabilities.
 

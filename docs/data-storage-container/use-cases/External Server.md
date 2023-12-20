@@ -1,5 +1,5 @@
 ---
-title: External server
+title: External Server
 slug: external-server
 sidebar_position: 5
 ---

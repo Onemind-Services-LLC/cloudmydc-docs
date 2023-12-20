@@ -1,18 +1,18 @@
 ---
-title: Exposing services
+title: Exposing Services
 slug: exposing-services
 sidebar_position: 4
 ---
 
-## Kubernetes Cluster: Exposing Services
+<!-- ## Kubernetes Cluster: Exposing Services -->
 
-While components of your application can communicate with each other by [service names](/docs/kubernetes-hosting/application-deployment/internal-networking) using the internal network, external connections require additional configurations.
+While components of your application can communicate with each other by [service names](/kubernetes-hosting/application-deployment/internal-networking) using the internal network, external connections require additional configurations.
 
 Kubernetes supports three service types to establish an internal and external connections to application:
 
-- [ClusterIP](/docs/kubernetes-hosting/application-deployment/exposing-services#clusterip)
-- [NodePort](/docs/kubernetes-hosting/application-deployment/exposing-services#nodeport)
-- [LoadBalancer](/docs/kubernetes-hosting/application-deployment/exposing-services#loadbalancer)
+- [ClusterIP](/kubernetes-hosting/application-deployment/exposing-services#clusterip)
+- [NodePort](/kubernetes-hosting/application-deployment/exposing-services#nodeport)
+- [LoadBalancer](/kubernetes-hosting/application-deployment/exposing-services#loadbalancer)
 
 ## ClusterIP
 
@@ -42,7 +42,7 @@ The most basic way to establish an external connection to a service is to expose
 
 This method has several downsides that should be considered when configuring the Kubernetes Cluster (one service per port, restricted range of ports, etc.). As a result, the NodePort service type can be used for the demo or other temporary applications. However, the production solutions usually require more complex configuration with ingresses and LoadBalancer service options. Follow our guide(s) to create verified configurations for your application and put in production:
 
-- [Ingresses](/docs/kubernetes-hosting/application-deployment/creating-ingresses)
+- [Ingresses](/kubernetes-hosting/application-deployment/creating-ingresses)
 - Using Public IPs in Kubernetes Service
 
 :::
@@ -80,7 +80,7 @@ Manually provided nodePort value should be from the allowed range (30000-32767) 
 
 :::
 
-In case [public IP](/docs/application-setting/external-access-to-applications/public-ip) is attached to the Kubernetes worker nodes, no additional actions are required.
+In case [public IP](/application-setting/external-access-to-applications/public-ip) is attached to the Kubernetes worker nodes, no additional actions are required.
 
 Otherwise, the obtained port should be exposed from the platform side. Navigate to the Kubernetes environment **Settings > Endpoints** and click **Add**. In the opened frame, provide the following data:
 

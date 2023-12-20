@@ -1,10 +1,8 @@
 ---
-title: Application container
+title: Application Container
 slug: application-container
 sidebar_position: 5
 ---
-
-## What are Application Containers
 
 An **application container** is a relatively new container type. It is an application, service, or even microservice centric solution that usually runs just a single process inside. As a result, application containers promote creating immutable and ephemeral infrastructure. If an application or service needs to be updated, a whole new container is built (with the required adjustments) from the appropriate image. Then, it is provisioned to replace the existing running container instance.
 
@@ -14,7 +12,7 @@ Also, as a stateless solution, application containers cannot natively save state
 
 <u>Nowadays</u>, a lot of supplementary tools are implemented for convenient utilization of services that use application containers. As a result, developers can benefit from the highly specialized units of application containers without the downside of complex management.
 
-Several application container implementations are actively developed: _Docker, CRI-O, containerd_, and some others. At the moment, the platform utilizes Docker as the most widely adopted technology for application containers. The platform provides comprehensive [deployment automation](/docs/container/container-types), [fast server provisioning](/docs/container/container-deployment/custom-containers-deployment), and [stateful data storing/processing tools](/docs/container/container-configuration/volumes) (sessions, logs, configs, etc.) for convenient utilization of application containers.
+Several application container implementations are actively developed: _Docker, CRI-O, containerd_, and some others. At the moment, the platform utilizes Docker as the most widely adopted technology for application containers. The platform provides comprehensive [deployment automation](/container/container-types), [fast server provisioning](/container/container-deployment/custom-containers-deployment), and [stateful data storing/processing tools](/container/container-configuration/volumes) (sessions, logs, configs, etc.) for convenient utilization of application containers.
 
 <div style={{
     display:'flex',
@@ -26,4 +24,4 @@ Several application container implementations are actively developed: _Docker, C
 
 </div>
 
-However, some applications and technologies may still have problems while migrating to application containers (due to lack of proper isolation, statelessness, and single-process requirements). This is especially relevant for the complex application container orchestration tools like Kubernetes. In case of difficulties with migration, [system containers](/docs/platform-overview/system-container) can be considered a better-suited alternative for containerization.
+However, some applications and technologies may still have problems while migrating to application containers (due to lack of proper isolation, statelessness, and single-process requirements). This is especially relevant for the complex application container orchestration tools like Kubernetes. In case of difficulties with migration, [system containers](/platform-overview/system-container) can be considered a better-suited alternative for containerization.

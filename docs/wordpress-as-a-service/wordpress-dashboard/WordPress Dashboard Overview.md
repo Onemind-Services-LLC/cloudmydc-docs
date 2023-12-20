@@ -1,17 +1,17 @@
 ---
-title: Wordpress dashboard overview
+title: WordPress Dashboard Overview
 slug: wordpress-dashboard-overview
 sidebar_position: 1
 ---
 
-## WordPress Dashboard Overview
+<!-- ## WordPress Dashboard Overview -->
 
 CloudMyDc Application Platform for WordPress provides a dedicated dashboard designed and optimized specifically for WordPress hosting. It has a deep integration with the product, offering just enough diagnostic information and management options to perform all the most frequently required operations without cluttering the screen or overwhelming a customer.
 
 Below, we’ll provide an overview of the:
 
-- [WordPress Dashboard](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview#wordpress-dashboard)
-- [Account Settings](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview#account-settings)
+- [WordPress Dashboard](/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview#wordpress-dashboard)
+- [Account Settings](/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview#account-settings)
 
 ## WordPress Dashboard
 
@@ -43,7 +43,7 @@ Below, we’ll provide an overview of the:
 
 </div>
 
-Additionally, at the top-right corner of the home page, you can see the **Create New Project** button. Learn more at the dedicated [WordPress Project Creation](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation) guide.
+Additionally, at the top-right corner of the home page, you can see the **Create New Project** button. Learn more at the dedicated [WordPress Project Creation](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation) guide.
 
 3. Each project has the following options available from the home page:
 
@@ -74,7 +74,7 @@ Additionally, at the top-right corner of the home page, you can see the **Create
 
 </div>
 
-Learn more at the [WordPress Project Management](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management) guide.
+Learn more at the [WordPress Project Management](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management) guide.
 
 ## Account Settings
 
@@ -156,7 +156,7 @@ The platform supports the following key types:
 - EdDSA
 - RSA
 
-In the linked documents, you can learn more about [generating SSH keys](/docs/deployment-tools/ssh/generate-ssh-key) and [connecting via SSH Gate](/docs/deployment-tools/ssh/ssh-access/ssh-gate).
+In the linked documents, you can learn more about [generating SSH keys](/deployment-tools/ssh/generate-ssh-key) and [connecting via SSH Gate](/deployment-tools/ssh/ssh-access/ssh-gate).
 
 2.3. On the **Payment Methods** tab, you can view and manage your payment methods.
 
@@ -224,7 +224,7 @@ Use the drop-down menu at the bottom of each subscription to manage it:
 - _Git Configuration_
 - _Backup Storage_
 
-  3.1. The **SSL Certificates** tab manages SSL certificates on the account. It automatically lists all the Let’s Encrypt certificates issued for your projects and allows manually adding [custom SSL certificates](/docs/application-setting/ssl/custom-ssl) with the **Add SSL** button.
+  3.1. The **SSL Certificates** tab manages SSL certificates on the account. It automatically lists all the Let’s Encrypt certificates issued for your projects and allows manually adding [custom SSL certificates](/application-setting/ssl/custom-ssl) with the **Add SSL** button.
 
 <div style={{
     display:'flex',
@@ -307,7 +307,7 @@ In order to add a new storage, click the **Add Backup** button and provide the f
 
 </div>
 
-Click **Add** when ready. Your new storage product will be created in a few minutes. Learn more about the [backup and restore process](/docs/wordpress-as-a-service/wordpress-backups).
+Click **Add** when ready. Your new storage product will be created in a few minutes. Learn more about the [backup and restore process](/wordpress-as-a-service/wordpress-backups).
 
 4. The Language list allows changing the dashboard localization to the preferred language. The availability and exact options depend on the service hosting provider configurations.
 

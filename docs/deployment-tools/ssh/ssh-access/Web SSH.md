@@ -1,10 +1,10 @@
 ---
-title: Web ssh
+title: Web SSH
 slug: web-ssh
 sidebar_position: 2
 ---
 
-## SSH Access via Web Browser
+<!-- ## SSH Access via Web Browser -->
 
 The platform allows you connect to any container directly through the browser by means of the **Web SSH** client, without the necessity to generate dedicated SSH key pair or apply any other additional configurations.
 
@@ -22,7 +22,7 @@ Just click the **Web SSH** button next to the required layer or a particular nod
 
 Using the options in the tools panel above the editor window, you are able to:
 
-- switch between nodes of the [horizontally-scaled](/docs/application-setting/scaling-and-clustering/horizontal-scaling) layer, choosing a particular one within the **Node ID** drop-down list
+- switch between nodes of the [horizontally-scaled](/application-setting/scaling-and-clustering/horizontal-scaling) layer, choosing a particular one within the **Node ID** drop-down list
 - open one more tab with connection to the current container by clicking on the **Duplicate Session** option (this allows to perform several simultaneous operations on a single node, e.g. to tail logs in one terminal window and to manage an application itself in another one)
 
 Also, web SSH client is provided with the embedded shortcuts for convenient management (their list can be also viewed by hovering over the keyboard icon in the top-right corner of the tab):

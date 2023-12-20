@@ -1,15 +1,15 @@
 ---
-title: Deployment guide
+title: Deployment Guide
 slug: deployment-guide
 sidebar_position: 3
 ---
 
 The platform supports various ways of the applications automatic deployment, allowing to choose the most suitable option, which will suit your specific needs:
 
-- **Dashboard** - corresponds to [deployment via archive](/docs/deployment/deployment-guide#archive-deployment-configurations) (provided either as local file or URL)
-- **VCS** - allows to [deploy from your VCS](/docs/deployment/deployment-guide#git--svn-deployment-configurations) repository (e.g. Git, SVN, Bitbucket)
-- **Hub Registry** - creates a custom container with your application based on the Docker image stored at your _[public](/docs/container/container-deployment/custom-containers-deployment)_ or _private_ registry
-- **Plugins** - deploys a project using one of the popular software development tools (_[Ant Task](/docs/deployment-tools/plugins/ant-task)_, _[Eclipse](/docs/deployment-tools/plugins/eclipse-plugin/eclipse-plugin-manual)_, _[Intellij IDEA](/docs/deployment-tools/plugins/idea-plugin)_, _[Maven](/docs/deployment-tools/plugins/maven-plugin)_ or _[NetBeans](/docs/deployment-tools/plugins/netbeans-plugin/netbeans-plugin-overview)_), which provides integration with platform
+- **Dashboard** - corresponds to [deployment via archive](/deployment/deployment-guide#archive-deployment-configurations) (provided either as local file or URL)
+- **VCS** - allows to [deploy from your VCS](/deployment/deployment-guide#git--svn-deployment-configurations) repository (e.g. Git, SVN, Bitbucket)
+- **Hub Registry** - creates a custom container with your application based on the Docker image stored at your _[public](/container/container-deployment/custom-containers-deployment)_ or _private_ registry
+- **Plugins** - deploys a project using one of the popular software development tools (_[Ant Task](/deployment-tools/plugins/ant-task)_, _[Eclipse](/deployment-tools/plugins/eclipse-plugin/eclipse-plugin-manual)_, _[Intellij IDEA](/deployment-tools/plugins/idea-plugin)_, _[Maven](/deployment-tools/plugins/maven-plugin)_ or _[NetBeans](/deployment-tools/plugins/netbeans-plugin/netbeans-plugin-overview)_), which provides integration with platform
 
 <div style={{
     display:'flex',
@@ -21,7 +21,7 @@ The platform supports various ways of the applications automatic deployment, all
 
 </div>
 
-For more information on the last two options, use the appropriate links, while in this guide we’ll describe deployment via archive and VCS repository. They can be called either from **[Deployment Manager](/docs/deployment/deployment-manager)** or by hovering over the **_Deployments_** record, which is provided for all application servers, and clicking one of the appropriate buttons.
+For more information on the last two options, use the appropriate links, while in this guide we’ll describe deployment via archive and VCS repository. They can be called either from **[Deployment Manager](/deployment/deployment-manager)** or by hovering over the **_Deployments_** record, which is provided for all application servers, and clicking one of the appropriate buttons.
 
 <div style={{
     display:'flex',
@@ -37,8 +37,8 @@ The first two icons (Local file and URL) corresponds to deployment via archive a
 
 :::tip Notes
 
-- the VCS deployment type for Java application servers is performed with a help of the [Maven build node](/docs/java/build-node/java-vcs-deployment-with-maven), refer to the linked guide for additional details
-- [.NET deployment process](/docs/windows-and-.NET/dot-net-core) for the Windows-based IIS application server is different from the standardized flow described in this guide
+- the VCS deployment type for Java application servers is performed with a help of the [Maven build node](/java/build-node/java-vcs-deployment-with-maven), refer to the linked guide for additional details
+- [.NET deployment process](/windows-and-.NET/dot-net-core) for the Windows-based IIS application server is different from the standardized flow described in this guide
 
 :::
 
@@ -51,9 +51,9 @@ Below, we’ve provided a detailed description for all the possible options with
 - **Local file** (or **URL**) - points to the archive file to be deployed (is automatically selected, when installing from Deployment Manager)
 - **Environment** - selects a target environment with the application server (is automatically selected, when installing from application server)
 - **Path** - sets the desired custom context; herewith, the available options may be limited due to the used programming language specifics (e.g. Python and Node.js have a single predefined deployment path only)
-- **Hooks** - applies the provided [scripts](/docs/deployment/deployment-hooks) either before or after deployment process
-- **Deploy Strategy** (for deployments into [scaled server](/docs/application-setting/scaling-and-clustering/horizontal-scaling)) - allows to choose between relatively quicker Simultaneous deployment variant, which causes a brief downtime, and the Sequential deployment with delay option to perform deployment on servers one-by-one with a set delay between operations, which ensures application uptime
-- **Enable zero-downtime deployment** (for PHP servers only) - adjusts (if option is ticked) the deployment flow to [avoid application downtime](/docs/php/zdt-deployment-for-php)
+- **Hooks** - applies the provided [scripts](/deployment/deployment-hooks) either before or after deployment process
+- **Deploy Strategy** (for deployments into [scaled server](/application-setting/scaling-and-clustering/horizontal-scaling)) - allows to choose between relatively quicker Simultaneous deployment variant, which causes a brief downtime, and the Sequential deployment with delay option to perform deployment on servers one-by-one with a set delay between operations, which ensures application uptime
+- **Enable zero-downtime deployment** (for PHP servers only) - adjusts (if option is ticked) the deployment flow to [avoid application downtime](/php/zdt-deployment-for-php)
 
 <div style={{
     display:'flex',
@@ -77,12 +77,12 @@ Below, we’ve provided a detailed description for all the possible options with
 - **Branch** - defines the used repository branch (master by default)
 - **Environment** - selects a target environment with the application server (is automatically selected, when installing from application server)
 - **Path** - sets the desired custom context; herewith, the available options may be limited due to the used programming language specifics (e.g. Python and Node.js have a single predefined deployment path only)
-- **Build** (for Java application deployments) - allows to choose the existing [Maven build node](/docs/java/build-node/java-vcs-deployment-with-maven) (or add one into the target environment) and, if required, to select repository Working Directory
-- **Hooks** - applies the provided [scripts](/docs/deployment/deployment-hooks) either before or after deployment process
-- **Deploy Strategy** (for deployments into [scaled server](/docs/application-setting/scaling-and-clustering/horizontal-scaling)) - allows to choose between relatively quicker Simultaneous deployment variant, which causes a brief downtime, and the Sequential deployment with delay option to perform deployment on servers one-by-one with a set delay between operations, which ensures application uptime
-- **Check and auto-deploy updates** - enables periodical check ups for code changes in your repository (with configurable frequency); if any, project [automatic deployment](/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview) is initiated
+- **Build** (for Java application deployments) - allows to choose the existing [Maven build node](/java/build-node/java-vcs-deployment-with-maven) (or add one into the target environment) and, if required, to select repository Working Directory
+- **Hooks** - applies the provided [scripts](/deployment/deployment-hooks) either before or after deployment process
+- **Deploy Strategy** (for deployments into [scaled server](/application-setting/scaling-and-clustering/horizontal-scaling)) - allows to choose between relatively quicker Simultaneous deployment variant, which causes a brief downtime, and the Sequential deployment with delay option to perform deployment on servers one-by-one with a set delay between operations, which ensures application uptime
+- **Check and auto-deploy updates** - enables periodical check ups for code changes in your repository (with configurable frequency); if any, project [automatic deployment](/deployment/git-&-svn-auto-deploy/auto-deploy-overview) is initiated
 - **Auto-resolve conflicts** - prevents the occurrence of merge conflicts by updating the contradictory files to the repository version (i.e. locally made changes are discarded)
-- **Enable zero-downtime deployment** (for PHP servers only) - adjusts the deployment flow to [avoid application downtime](/docs/php/zdt-deployment-for-php)
+- **Enable zero-downtime deployment** (for PHP servers only) - adjusts the deployment flow to [avoid application downtime](/php/zdt-deployment-for-php)
 
 <div style={{
     display:'flex',
@@ -96,7 +96,7 @@ Below, we’ve provided a detailed description for all the possible options with
 
 Click **Deploy** to initiate the process.
 
-In a few minutes your application will be successfully deployed. Now, you can access it with the **Open in Browser** button, analyzed via [Logs](/docs/application-setting/built-in-monitoring/log-files) or managed with [file manager](/docs/application-setting/configuration-file-manager) / via [SSH access](/docs/deployment-tools/ssh/ssh-access/overview).
+In a few minutes your application will be successfully deployed. Now, you can access it with the **Open in Browser** button, analyzed via [Logs](/application-setting/built-in-monitoring/log-files) or managed with [file manager](/application-setting/configuration-file-manager) / via [SSH access](/deployment-tools/ssh/ssh-access/overview).
 
 ## Editing Git / SVN Projects
 
@@ -126,7 +126,7 @@ Within the opened frame, you can edit the same parameters described above for th
 
 :::tip Note
 
-If access credentials to the project’s repository were changed, you need to provide new ones at the platform to continue working with this project. First, edit authentication for the repository at the **[Deployment Manager](/docs/deployment/deployment-manager)**.
+If access credentials to the project’s repository were changed, you need to provide new ones at the platform to continue working with this project. First, edit authentication for the repository at the **[Deployment Manager](/deployment/deployment-manager)**.
 
 <div style={{
     display:'flex',

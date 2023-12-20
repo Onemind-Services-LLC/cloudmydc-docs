@@ -1,10 +1,10 @@
 ---
-title: Composer dependency manager
+title: Composer Dependency Manager
 slug: composer-dependency-manager
 sidebar_position: 8
 ---
 
-## PHP Composer for Smart Dependency Management of Your Cloud Applications
+<!-- ## PHP Composer for Smart Dependency Management of Your Cloud Applications -->
 
 <div style={{
     display: 'grid',
@@ -29,7 +29,7 @@ sidebar_position: 8
 </div>
 </div>
 
-The **Composer** is integrated into all PHP application servers (_Apache, NGINX, LiteSpeed, LEMP_, and _LSSMP_) by default. It is installed to the **/usr/local/bin** folder, which is added to the PATH variable, making Composer operable from anywhere on the node via the _composer_ shortcut (e.g. _composer about_). Additionally, if the project has a **_composer.json_** file, Composer can manage dependencies directly during the installation using the _Post-Deploy_ [hook script](/docs/deployment/deployment-hooks). All you need to do is move to your project directory and run the _composer install_ command:
+The **Composer** is integrated into all PHP application servers (_Apache, NGINX, LiteSpeed, LEMP_, and _LSSMP_) by default. It is installed to the **/usr/local/bin** folder, which is added to the PATH variable, making Composer operable from anywhere on the node via the _composer_ shortcut (e.g. _composer about_). Additionally, if the project has a **_composer.json_** file, Composer can manage dependencies directly during the installation using the _Post-Deploy_ [hook script](/deployment/deployment-hooks). All you need to do is move to your project directory and run the _composer install_ command:
 
 ```bash
 cd $WEBROOT/{project_name}
@@ -40,7 +40,7 @@ composer install
 
 You are automatically provided with the latest version of Composer during the node creation. However, if a newer version of Composer is released, you can easily get it without the necessity of recreating a whole container. Follow the next steps to install the latest composer version into your PHP container:
 
-1. Connect to the appropriate node via SSH. For example, using the built-in [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh).
+1. Connect to the appropriate node via SSH. For example, using the built-in [Web SSH](/deployment-tools/ssh/ssh-access/web-ssh).
 
 <div style={{
     display:'flex',

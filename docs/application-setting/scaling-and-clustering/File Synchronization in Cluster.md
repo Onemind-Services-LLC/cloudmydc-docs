@@ -1,10 +1,10 @@
 ---
-title: File synchronization in cluster
+title: File Synchronization In Cluster
 slug: file-synchronization-in-cluster
 sidebar_position: 5
 ---
 
-## File Synchronization Between Several Application Servers in a Cluster
+<!-- ## File Synchronization Between Several Application Servers in a Cluster -->
 
 <div style={{
     display: 'grid',
@@ -24,7 +24,7 @@ sidebar_position: 5
 </div>
 <div>
 
-As incoming traffic to your project grows, you need to improve your app performance to keep up with it. Some room of capacities for elastic extension is automatically provisioned in confines of a set server [vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) limit, but eventually you most likely will face the need to enlarge a number of its nodes (i.e. to scale it [horizontally](/docs/application-setting/scaling-and-clustering/horizontal-scaling)) upon your service popularity rises.
+As incoming traffic to your project grows, you need to improve your app performance to keep up with it. Some room of capacities for elastic extension is automatically provisioned in confines of a set server [vertical scaling](/application-setting/scaling-and-clustering/automatic-vertical-scaling) limit, but eventually you most likely will face the need to enlarge a number of its nodes (i.e. to scale it [horizontally](/application-setting/scaling-and-clustering/horizontal-scaling)) upon your service popularity rises.
 
 </div>
 </div>
@@ -33,16 +33,18 @@ For lots of the most widely used apps (like _WordPress, Drupal, Joomla, Liferay,
 
 To help you in getting rid of such content being out-of-sync upon building clustered solution for your application, the platform provides a special **File Synchronization** add-on, intended to keep the uploaded files set similar across multiple web-server instances. Herewith, synchronization could be applied not just in confines of one environment (i.e. for a single horizontally scaled node) but even across application servers in two separate environments, regardless of whether they run the same stack and/or application or different ones.
 
-So, follow the guide below to dive into [implementation specifics](/docs/application-setting/scaling-and-clustering/file-synchronization-in-cluster) of this solution and to discover how it actually works in practice with the next steps:
+<!--
+So, follow the guide below to dive into [implementation specifics](/application-setting/scaling-and-clustering/file-synchronization-in-cluster) of this solution and to discover how it actually works in practice with the next steps:
 
-- [Install Example WordPress Application](/docs/application-setting/scaling-and-clustering/file-synchronization-in-cluster#install-application)
-- [Test File Upload Without Synchronization](/docs/application-setting/scaling-and-clustering/file-synchronization-in-cluster#test-file-upload-without-synchronization)
-- [Apply File Synchronization](/docs/application-setting/scaling-and-clustering/file-synchronization-in-cluster#apply-file-synchronization)
-- [Check Sync Logs](/docs/application-setting/scaling-and-clustering/file-synchronization-in-cluster#check-logs)
+- [Install Example WordPress Application](/application-setting/scaling-and-clustering/file-synchronization-in-cluster#install-application)
+- [Test File Upload Without Synchronization](/application-setting/scaling-and-clustering/file-synchronization-in-cluster#test-file-upload-without-synchronization)
+- [Apply File Synchronization](/application-setting/scaling-and-clustering/file-synchronization-in-cluster#apply-file-synchronization)
+- [Check Sync Logs](/application-setting/scaling-and-clustering/file-synchronization-in-cluster#check-logs)
+-->
 
 ## File Synchronization Add-on Implementation
 
-The **File Sync** solution is provided as a single-click [add-on](/docs/deployment-tools/cloud-scripting-&-jps/marketplace), implemented with a bundle of [**lsyncd**](https://code.google.com/archive/p/lsyncd/) daemon and **cron** utility. Herewith, being wisely coupled with [**inotify**](https://en.wikipedia.org/wiki/Inotify), _lsyncd_ initiates file synchronization only when any actual changes are detected on the system. Such realization notably offloads CPU in comparison to the regular sync calls and keeps your data up-to-date all the time, which makes this solution simultaneously simple to use, powerful, and affordable.
+The **File Sync** solution is provided as a single-click [add-on](/deployment-tools/cloud-scripting-&-jps/marketplace), implemented with a bundle of [**lsyncd**](https://code.google.com/archive/p/lsyncd/) daemon and **cron** utility. Herewith, being wisely coupled with [**inotify**](https://en.wikipedia.org/wiki/Inotify), _lsyncd_ initiates file synchronization only when any actual changes are detected on the system. Such realization notably offloads CPU in comparison to the regular sync calls and keeps your data up-to-date all the time, which makes this solution simultaneously simple to use, powerful, and affordable.
 
 <div style={{
     display:'flex',
@@ -54,7 +56,7 @@ The **File Sync** solution is provided as a single-click [add-on](/docs/deployme
 
 </div>
 
-The **File Sync** add-on can be installed on top of any platform-managed application server stack (i.e. except for [Docker](/docs/container/container-types) containers). Before the appliance, you will be asked to select the folder to synchronize. In this way, you are able to sync only the part of your app server’s file system that actually requires this. Thus, only changes within the selected directory (on any of specified application server instances) will trigger the synchronization.
+The **File Sync** add-on can be installed on top of any platform-managed application server stack (i.e. except for [Docker](/container/container-types) containers). Before the appliance, you will be asked to select the folder to synchronize. In this way, you are able to sync only the part of your app server’s file system that actually requires this. Thus, only changes within the selected directory (on any of specified application server instances) will trigger the synchronization.
 
 Now, let’s see how to put all of this into action step-by-step.
 
@@ -68,7 +70,7 @@ The instruction below is fully appropriate for other similar applications (_Drup
 
 :::
 
-1. You can install your **WordPress** application manually or locate the appropriate one-click package in [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace) to deploy it automatically.
+1. You can install your **WordPress** application manually or locate the appropriate one-click package in [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace) to deploy it automatically.
 
 <div style={{
     display:'flex',
@@ -80,7 +82,7 @@ The instruction below is fully appropriate for other similar applications (_Drup
 
 </div>
 
-Click **Install** and provide the required details, such as _Environment, Display Name_ ([alias](/docs/environment-management/environment-aliases)) and Region (if several [regions](https://cloudmydc.com/) are available).
+Click **Install** and provide the required details, such as _Environment, Display Name_ ([alias](/environment-management/environment-aliases)) and Region (if several [regions](https://cloudmydc.com/) are available).
 
 <div style={{
     display:'flex',
@@ -94,7 +96,7 @@ Click **Install** and provide the required details, such as _Environment, Displa
 
 Confirm the installation and wait a minute for a message with your admin data to be shown (the same information will be simultaneously sent to you via email).
 
-2. Click **Change environment topology** and use the **+** button within the [_Horizontal Scaling_](/docs/application-setting/scaling-and-clustering/horizontal-scaling) section to add one more app server node and, this way, to create a cluster.
+2. Click **Change environment topology** and use the **+** button within the [_Horizontal Scaling_](/application-setting/scaling-and-clustering/horizontal-scaling) section to add one more app server node and, this way, to create a cluster.
 
 <div style={{
     display:'flex',
@@ -110,7 +112,7 @@ When finished, click **Apply**.
 
 :::tip
 
-By using instructions in our documentation, you can easily add [extra app servers](/docs/application-setting/scaling-and-clustering/horizontal-scaling), enable [high availability](/docs/application-setting/scaling-and-clustering/session-replication-for-ha) or even configure a clustered solution.
+By using instructions in our documentation, you can easily add [extra app servers](/application-setting/scaling-and-clustering/horizontal-scaling), enable [high availability](/application-setting/scaling-and-clustering/session-replication-for-ha) or even configure a clustered solution.
 
 In our case, we have simply added one more app server to the environment but you can use a more complex scenario by setting the [clustered solution](https://cloudmydc.com/) for your WordPress application
 
@@ -120,7 +122,7 @@ In our case, we have simply added one more app server to the environment but you
 
 At this point, let’s check how the file upload is processed without synchronization.
 
-1. Access the Wordpress admin panel by adding the _/wp-login.php suffix_ to your environment domain name and **Log In** using credentials you’ve received via email.
+1. Access the WordPress admin panel by adding the _/wp-login.php suffix_ to your environment domain name and **Log In** using credentials you’ve received via email.
 
 <div style={{
     display:'flex',
@@ -187,7 +189,7 @@ As you can see, one of the app server instances (_Node ID 54502_ in our example)
 
 So, to implement content synchronization inside our cluster, let’s apply the **File Synchronization** add-on.
 
-1. Locate and **Install** the **_File Synchronization_** add-on within the platform [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace).
+1. Locate and **Install** the **_File Synchronization_** add-on within the platform [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace).
 
 <div style={{
     display:'flex',
@@ -223,7 +225,7 @@ Here, specify whether file synchronization should run within _One_ environment (
 
 In order to implement synchronization between two different environments, the add-on should be installed to web-servers in both of them (selecting another environment within the appropriate drop-down list each time) with the chosen Two _environments synchronization_ option. Here, the following additional parameters should be specified:
 
-- **2nd environment IP** - address of any application server node within the second environment (you can use internal IP for the case both environments are run on the same Platform and hardware [region](/docs/environment-management/environment-regions/choosing-a-region); otherwise, external IP address is required)
+- **2nd environment IP** - address of any application server node within the second environment (you can use internal IP for the case both environments are run on the same Platform and hardware [region](/environment-management/environment-regions/choosing-a-region); otherwise, external IP address is required)
 - **Password** - optional box to set a password on synchronization (should be stated the same on both instances)
 
 <div style={{

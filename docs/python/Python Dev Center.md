@@ -1,10 +1,10 @@
 ---
-title: Python dev center
+title: Python Dev Center
 slug: python-dev-center
 sidebar_position: 1
 ---
 
-## Python Cloud Hosting
+<!-- ## Python Cloud Hosting -->
 
 <div style={{
     display: 'grid',
@@ -31,21 +31,21 @@ The platform provides an out-of-box integration of the scalable _Apache_ applica
 
 Through this article, you’ll get acquainted with the main tools and features available on the platform to provide the required level of Python cloud hosting. Use the table of content below to find required information within the guide quicker:
 
-- [Python Environment Hosting](/docs/python/python-dev-center#python-environment-hosting)
-- [Python Versioning](/docs/python/python-dev-center#python-versioning)
-- [Python Application Deployment](/docs/python/python-dev-center#python-application-deployment)
-- [Python Packages/Modules Management](/docs/python/python-dev-center#python-packagesmodules-management)
-- [Domains Management](/docs/python/python-dev-center#domains-management)
-- [Automatic Vertical Scaling](/docs/python/python-dev-center#automatic-vertical-scaling)
-- [Manual Horizontal Scaling](/docs/python/python-dev-center#manual-horizontal-scaling)
-- [Automatic Horizontal Scaling](/docs/python/python-dev-center#automatic-horizontal-scaling)
-- [Database Connection to PHP Application](/docs/python/python-dev-center#database-connection-to-python-application)
+- [Python Environment Hosting](/python/python-dev-center#python-environment-hosting)
+- [Python Versioning](/python/python-dev-center#python-versioning)
+- [Python Application Deployment](/python/python-dev-center#python-application-deployment)
+- [Python Packages/Modules Management](/python/python-dev-center#python-packagesmodules-management)
+- [Domains Management](/python/python-dev-center#domains-management)
+- [Automatic Vertical Scaling](/python/python-dev-center#automatic-vertical-scaling)
+- [Manual Horizontal Scaling](/python/python-dev-center#manual-horizontal-scaling)
+- [Automatic Horizontal Scaling](/python/python-dev-center#automatic-horizontal-scaling)
+- [Database Connection to PHP Application](/python/python-dev-center#database-connection-to-python-application)
 
 ## Python Environment Hosting
 
-To start hosting your Python application at the platform, you need to [create](/docs/environment-management/setting-up-environment) the appropriate environment via the powerful _topology wizard_ (accessible through the **New Environment** button at the dashboard’s top panel).
+To start hosting your Python application at the platform, you need to [create](/environment-management/setting-up-environment) the appropriate environment via the powerful _topology wizard_ (accessible through the **New Environment** button at the dashboard’s top panel).
 
-Switch to the **_Python_** language tab and select the desired engine version. _Apache Python_ application server is automatically added in a bundle with the _mod_wsgi_ module. Specify resource limits and nodes' count, as well as add extra [software stacks](/docs/quickstart/software-stack-versions) or options (e.g. Public IPs) if required.
+Switch to the **_Python_** language tab and select the desired engine version. _Apache Python_ application server is automatically added in a bundle with the _mod_wsgi_ module. Specify resource limits and nodes' count, as well as add extra [software stacks](/quickstart/software-stack-versions) or options (e.g. Public IPs) if required.
 
 :::tip Note
 
@@ -65,8 +65,8 @@ This template utilizes a modern **_systemd_** initialization daemon.
 
 :::tip Notes:
 
-- Each instance is a fully independent [isolated container](/docs/platform-overview/system-container).
-- Instances of the same layer are automatically distributed across available hosts ensuring [high availability](/docs/platform-overview/isolated-container#high-availability-for-applications).
+- Each instance is a fully independent [isolated container](/platform-overview/system-container).
+- Instances of the same layer are automatically distributed across available hosts ensuring [high availability](/platform-overview/isolated-container#high-availability-for-applications).
 
 :::
 
@@ -82,7 +82,7 @@ Currently (at the time of this writing), the following Python versions are suppo
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/quickstart/software-stack-versions) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/quickstart/software-stack-versions) document.
 
 :::
 
@@ -96,7 +96,7 @@ The up-to-date list of the releases available on the platform is provided via th
 
 </div>
 
-You can select the required [version of Python](/docs/python/python-versions#python-versions) directly from the topology wizard during the creation of a new environment, as well as adjust it for already existing ones using [container redeployment](/docs/category/container-deployment).
+You can select the required [version of Python](/python/python-versions#python-versions) directly from the topology wizard during the creation of a new environment, as well as adjust it for already existing ones using [container redeployment](/category/container-deployment).
 
 ## Python Application Deployment
 
@@ -115,14 +115,14 @@ Deployment to the managed application servers (_Apache Python_) is automated by 
 
 </div>
 
-Git flow provides a possibility of sequential or simultaneous deploy, as well as [automatic redeployment](/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview#auto-deploy-of-gitsvn-updates) from the repository if new code changes appear.
+Git flow provides a possibility of sequential or simultaneous deploy, as well as [automatic redeployment](/deployment/git-&-svn-auto-deploy/auto-deploy-overview#auto-deploy-of-gitsvn-updates) from the repository if new code changes appear.
 
 Refer to the following guides for the detailed overview of the deployment process and the provided additional options:
 
-- [Deployment Manager](/docs/deployment/deployment-manager)
-- [Deployment Guide](/docs/deployment/deployment-guide)
-- [Auto-Deploy Overview](/docs/deployment/git-&-svn-auto-deploy/auto-deploy-overview#auto-deploy-of-gitsvn-updates)
-- [Deployment Hooks](/docs/deployment/deployment-hooks)
+- [Deployment Manager](/deployment/deployment-manager)
+- [Deployment Guide](/deployment/deployment-guide)
+- [Auto-Deploy Overview](/deployment/git-&-svn-auto-deploy/auto-deploy-overview#auto-deploy-of-gitsvn-updates)
+- [Deployment Hooks](/deployment/deployment-hooks)
 
 Check examples of the Python-based application hosting on the platform:
 
@@ -134,7 +134,7 @@ Check examples of the Python-based application hosting on the platform:
 
 In order to successfully deploy and run a Python application, some additional modules or other packages may be required to be installed. It is a common practice to run Python web applications in isolated [**_virtual environments_**](https://virtualenv.pypa.io/en/stable/), for example using the virtual environment tool, which allows managing projects independently and without the administrator privileges.
 
-1. Connect to the Python environment [via SSH](/docs/deployment-tools/ssh/ssh-access/overview#ssh-access) (using either a _local_ or built-in _Web SSH_ client) to create and start a new virtual environment. Run the following commands:
+1. Connect to the Python environment [via SSH](/deployment-tools/ssh/ssh-access/overview#ssh-access) (using either a _local_ or built-in _Web SSH_ client) to create and start a new virtual environment. Run the following commands:
 
 ```bash
 virtualenv {appName}
@@ -167,12 +167,12 @@ In the case of the preconfigured application packages (archives), all the depend
 
 ## Domains Management
 
-If needed, the default domain name of your Python application can be replaced with a [custom one](/docs/application-setting/domain-name-management/custom-domain-name#custom-domain-name) via:
+If needed, the default domain name of your Python application can be replaced with a [custom one](/application-setting/domain-name-management/custom-domain-name#custom-domain-name) via:
 
 - **CNAME redirect** if using _Shared Load Balancer_; is recommended for **_dev_** and **_test_** environments
 - **DNS A Record** if using _public IP_; can handle high traffic load and is suitable for **_production_** environments
 
-In addition, the platform allows switching traffic between two environments quickly and without downtime (e.g. to seamlessly redirect customers to the newer application version) using the [swap domains](/docs/application-setting/domain-name-management/swap-domains#swap-domains) functionality or with the help of the **_SwapExtIps_** [API](https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps)/[CLI](/docs/deployment-tools/api-&-cli/platform-cli/swap-public-ips#cli-tutorial-public-ips-external-addresses-swap) method.
+In addition, the platform allows switching traffic between two environments quickly and without downtime (e.g. to seamlessly redirect customers to the newer application version) using the [swap domains](/application-setting/domain-name-management/swap-domains#swap-domains) functionality or with the help of the **_SwapExtIps_** [API](https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps)/[CLI](/deployment-tools/api-&-cli/platform-cli/swap-public-ips#cli-tutorial-public-ips-external-addresses-swap) method.
 
 <div style={{
     display:'flex',
@@ -188,7 +188,7 @@ In addition, the platform allows switching traffic between two environments quic
 
 Automatic vertical scaling implemented by the platform provides the exact amount of resources (RAM and CPU) that your application currently requires. As a result, you don’t need to waste your time continuously making load-related adjustments. And in combination with the [Pay-as-You-Use](https://www.virtuozzo.com/company/blog/deceptive-cloud-efficiency-do-you-really-pay-as-you-use/) pricing model, it ensures you never overpay for unused resources.
 
-Just set the upper [cloudlets](/docs/platform-overview/cloudlet#what-is-a-cloudlet) limit (each one equals _128 MiB_ of RAM and _400 MHz_ of CPU) for your Python application server. Everything else will be handled by the platform automatically.
+Just set the upper [cloudlets](/platform-overview/cloudlet#what-is-a-cloudlet) limit (each one equals _128 MiB_ of RAM and _400 MHz_ of CPU) for your Python application server. Everything else will be handled by the platform automatically.
 
 <div style={{
     display:'flex',
@@ -200,11 +200,11 @@ Just set the upper [cloudlets](/docs/platform-overview/cloudlet#what-is-a-cloudl
 
 </div>
 
-Refer to the [automatic vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling#automatic-vertical-scaling) guide for additional details.
+Refer to the [automatic vertical scaling](/application-setting/scaling-and-clustering/automatic-vertical-scaling#automatic-vertical-scaling) guide for additional details.
 
 ## Manual Horizontal Scaling
 
-Horizontal scaling of the Python servers is no different from scaling any other instance at the platform - just specify the required number of nodes with the **+/-** buttons in the central part of the topology wizard. If needed, choose the preferred [scaling mode](/docs/application-setting/scaling-and-clustering/horizontal-scaling#scaling-modes):
+Horizontal scaling of the Python servers is no different from scaling any other instance at the platform - just specify the required number of nodes with the **+/-** buttons in the central part of the topology wizard. If needed, choose the preferred [scaling mode](/application-setting/scaling-and-clustering/horizontal-scaling#scaling-modes):
 
 - **_Stateless_** - simultaneously creates all of the new nodes from the base image template
 - **_Stateful_** - sequentially copies file system of the master container into the new nodes
@@ -221,13 +221,13 @@ Horizontal scaling of the Python servers is no different from scaling any other 
 
 :::tip Tip
 
-For the proper request distribution, a [load balancer](/docs/load-balancers/load-balancing#load-balancing) instance is automatically added to the environment upon Python server scaling. Refer to the [horizontal scaling](/docs/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-specifics) documentation for more specifications.
+For the proper request distribution, a [load balancer](/load-balancers/load-balancing#load-balancing) instance is automatically added to the environment upon Python server scaling. Refer to the [horizontal scaling](/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-specifics) documentation for more specifications.
 
 :::
 
 ## Automatic Horizontal Scaling
 
-Navigate to the environment **Settings >** [**Auto Horizontal Scaling**](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling#automatic-horizontal-scaling) section to set up custom triggers, which allow automatically increase/decrease the number of nodes due to the application load. Just choose a resource type to be monitored (_CPU, RAM, Network, Disk_) and the exact condition of scaling, the rest actions are automated. You’ll be informed about any changes with email notifications if the appropriate option is enabled.
+Navigate to the environment **Settings >** [**Auto Horizontal Scaling**](/application-setting/scaling-and-clustering/automatic-horizontal-scaling#automatic-horizontal-scaling) section to set up custom triggers, which allow automatically increase/decrease the number of nodes due to the application load. Just choose a resource type to be monitored (_CPU, RAM, Network, Disk_) and the exact condition of scaling, the rest actions are automated. You’ll be informed about any changes with email notifications if the appropriate option is enabled.
 
 <div style={{
     display:'flex',
@@ -243,8 +243,8 @@ Navigate to the environment **Settings >** [**Auto Horizontal Scaling**](/docs/a
 
 A set of scalable and fully manageable database servers is available within the platform for you to easily install and use for the Python environment. To establish the connection, adjust your application following the instruction based on the database you require:
 
-- [MySQL Connection](/docs/database/mysql-mariadb-percona/connection-to-applications/python-connection#python-application-connection-to-mysqlmariadbpercona)
-- [MongoDB Connection](/docs/database/mongodb/connection-to-applications/python-connection-to-mongodb#python-application-connection-to-mongodb)
+- [MySQL Connection](/database/mysql-mariadb-percona/connection-to-applications/python-connection#python-application-connection-to-mysqlmariadbpercona)
+- [MongoDB Connection](/database/mongodb/connection-to-applications/python-connection-to-mongodb#python-application-connection-to-mongodb)
 
 Besides, hosting at the platform allows using other built-in tools and features, for example:
 

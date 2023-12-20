@@ -1,5 +1,5 @@
 ---
-title: Environment variables
+title: Environment Variables
 slug: environment-variables
 sidebar_position: 1
 ---
@@ -8,7 +8,7 @@ import obj from './EnvironmentVariables.json'
 
 **Environment variables** are used to store the values of the frequently used parameters that are provided to a software program at runtime. The utilization of such placeholders makes your application more portable and flexible.
 
-The most common use of variables is to make quick adjustments to specific values that are utilized multiple times in your application code. Follow the linked guide if you need to create such [custom environment variables](/docs/environment-management/environment-variables/custom-environment-variables) for your project.
+The most common use of variables is to make quick adjustments to specific values that are utilized multiple times in your application code. Follow the linked guide if you need to create such [custom environment variables](/environment-management/environment-variables/custom-environment-variables) for your project.
 
 Another use case for variables is to configure the application through the set of predefined values (enable/disable features, change behavior, etc.). The platform supplements most of the certified software stacks with a number of default variables, which can be used by developers to help with application hosting.
 
@@ -27,7 +27,7 @@ changes to the container; however, it may break some internal logic.
 
 :::
 
-There are a number of options that can be used with all of the [platform-managed stacks](/docs/quickstart/software-stack-versions):
+There are a number of options that can be used with all of the [platform-managed stacks](/quickstart/software-stack-versions):
 
 <div style={{
         width: '100%',

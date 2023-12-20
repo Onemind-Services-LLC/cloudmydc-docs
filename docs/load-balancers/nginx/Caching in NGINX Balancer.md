@@ -1,10 +1,10 @@
 ---
-title: Caching in nginx balancer
+title: Caching In Nginx Balancer
 slug: caching-in-nginx-balancer
 sidebar_position: 5
 ---
 
-## Caching in NGINX Balancer
+<!-- ## Caching in NGINX Balancer -->
 
 Caching in NGINX is the process of storing data in front of web servers. For example, the files a user automatically requests by looking at a web-page can be stored in your NGINX cache directory. When a user returns to a page he’s recently looked at, the browser can get those files from the NGINX cache directory rather than the original server, saving time and traffic.
 

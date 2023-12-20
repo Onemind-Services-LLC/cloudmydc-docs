@@ -23,7 +23,7 @@ export default function Home(): JSX.Element {
       <main>
         <HomepageFeatures />
         <div className={styles.center_get_started_btn}>
-          <Link to="/docs/quickstart/getting-started">
+          <Link to="/quickstart/getting-started">
             <button className={styles.get_started_btn}>Get Started Now</button>
           </Link>
         </div>

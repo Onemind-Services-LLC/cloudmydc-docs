@@ -1,12 +1,12 @@
 ---
-title: Shared load balancer
+title: Shared Load Balancer
 slug: shared-load-balancer
 sidebar_position: 1
 ---
 
-## Shared Load Balancer
+<!-- ## Shared Load Balancer -->
 
-The platform utilizes several **Shared Load Balancer** (SLB) infrastructure components to process all incoming requests (except direct connections via [public IP](/docs/application-setting/external-access-to-applications/public-ip)) sent to the hosted environments. SLB is an **NGINX proxy server** that connects the client-side (browser, for example) and your applications deployed to the platform.
+The platform utilizes several **Shared Load Balancer** (SLB) infrastructure components to process all incoming requests (except direct connections via [public IP](/application-setting/external-access-to-applications/public-ip)) sent to the hosted environments. SLB is an **NGINX proxy server** that connects the client-side (browser, for example) and your applications deployed to the platform.
 
 <div style={{ 
     display:'flex',
@@ -36,7 +36,7 @@ As a result, there can be several entry points for users' environments, and the 
 
 :::tip Note
 
-We recommend using **SLB** for your **_dev_** and **_test_** environments. As for **_production_** environments, which are intended to handle high traffic, it is more appropriate to use your own [**public IP**](/docs/application-setting/external-access-to-applications/public-ip) for getting and processing the requests. Also, it allows you to apply several additional options to your application, making it more secure (e.g. with [Custom SSL](/docs/application-setting/ssl/custom-ssl)) and responsive (through attaching [Custom Domain](/docs/application-setting/domain-name-management/custom-domain-name)).
+We recommend using **SLB** for your **_dev_** and **_test_** environments. As for **_production_** environments, which are intended to handle high traffic, it is more appropriate to use your own [**public IP**](/application-setting/external-access-to-applications/public-ip) for getting and processing the requests. Also, it allows you to apply several additional options to your application, making it more secure (e.g. with [Custom SSL](/application-setting/ssl/custom-ssl)) and responsive (through attaching [Custom Domain](/application-setting/domain-name-management/custom-domain-name)).
 
 <div style={{
     display:'flex',
@@ -62,7 +62,7 @@ In such a way, all containers are considered “up” after SLB starts. Then the
 
 :::tip
 
-If an environment has several backends (application servers), the [dedicated load balancer nodes](/docs/load-balancers/load-balancing) are automatically added to manage traffic and perform health checks.
+If an environment has several backends (application servers), the [dedicated load balancer nodes](/load-balancers/load-balancing) are automatically added to manage traffic and perform health checks.
 
 :::
 
@@ -97,7 +97,7 @@ You can manually **_disable_** the Access via SLB feature:
 - nodes are inaccessible from the Shared Load Balancer - layer is isolated from the SLB
 - the pages accessible via the **Open in Browser** button in the dashboard return the 403 Forbidden error instead of the intended service
 - nodes' links are excluded from the emails
-- access via [SSH](/docs/deployment-tools/ssh/ssh-overview) and through [endpoints](/docs/application-setting/external-access-to-applications/endpoints) is **_not affected_**
+- access via [SSH](/deployment-tools/ssh/ssh-overview) and through [endpoints](/application-setting/external-access-to-applications/endpoints) is **_not affected_**
 
 For better visibility, layers with the disabled SLB access are provided with the appropriate label in the dashboard.
 
@@ -129,4 +129,4 @@ Below, we’ve prepared some of the most frequent use case examples for the feat
 - forbid access via SLB to nodes with public IP address attached and custom domain configured
 - configure topology that allows connection via environment load balancer but prohibits access via direct URL to containers
 
-In general, you can use the _Access via SLB_ option for your **_development_** and **_testing_** environments. However, we recommend disabling the feature for the application in **_production_** and using [public IP](/docs/application-setting/external-access-to-applications/public-ip) with a [custom domain](/docs/application-setting/domain-name-management/custom-domain-name) instead.
+In general, you can use the _Access via SLB_ option for your **_development_** and **_testing_** environments. However, we recommend disabling the feature for the application in **_production_** and using [public IP](/application-setting/external-access-to-applications/public-ip) with a [custom domain](/application-setting/domain-name-management/custom-domain-name) instead.

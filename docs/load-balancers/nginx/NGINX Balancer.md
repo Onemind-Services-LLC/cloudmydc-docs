@@ -1,14 +1,14 @@
 ---
-title: Nginx balancer
+title: Nginx Balancer
 slug: nginx-balancer
 sidebar_position: 1
 ---
 
-## NGINX Load Balancer
+<!-- ## NGINX Load Balancer -->
 
 :::tip Tip
 
-The NGINX balancer stack is [HTTP/3](/docs/application-setting/external-access-to-applications/http3-support) ready with the feature support enabled by default since the 1.16.1 release. However, a [public IP address](/docs/application-setting/external-access-to-applications/public-ip) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
+The NGINX balancer stack is [HTTP/3](/application-setting/external-access-to-applications/http3-support) ready with the feature support enabled by default since the 1.16.1 release. However, a [public IP address](/application-setting/external-access-to-applications/public-ip) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
 
 :::
 
@@ -46,7 +46,7 @@ The NGINX balancer stack is [HTTP/3](/docs/application-setting/external-access-t
 
 </div>
 
-Next, you need to set the desired configurations for your NGINX balancer ([cloudlets](/docs/platform-overview/cloudlet), disk space, [IP addresses](/docs/application-setting/external-access-to-applications/public-ip), etc.), add any other needed stacks (e.g. application servers or databases), and click **Create**.
+Next, you need to set the desired configurations for your NGINX balancer ([cloudlets](/platform-overview/cloudlet), disk space, [IP addresses](/application-setting/external-access-to-applications/public-ip), etc.), add any other needed stacks (e.g. application servers or databases), and click **Create**.
 
 3. Wait a moment for the platform to set up the environment for you.
 

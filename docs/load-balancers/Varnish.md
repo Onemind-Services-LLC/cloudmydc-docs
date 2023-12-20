@@ -4,15 +4,15 @@ slug: varnish
 sidebar_position: 5
 ---
 
-## Varnish
+<!-- ## Varnish -->
 
 :::tip Tip
 
-The _Varnish_ stack is [HTTP/3](/docs/application-setting/external-access-to-applications/http3-support) ready with the feature support enabled by default since the _5.2.x_ and _6.x.x_ versions. However, a [public IP address](/docs/application-setting/external-access-to-applications/public-ip) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
+The _Varnish_ stack is [HTTP/3](/application-setting/external-access-to-applications/http3-support) ready with the feature support enabled by default since the _5.2.x_ and _6.x.x_ versions. However, a [public IP address](/application-setting/external-access-to-applications/public-ip) is required to bypass the Shared Load Balancer and work directly with the server over HTTP/3.
 
 :::
 
-**Varnish** is a web-application accelerator also known as a caching HTTP reverse proxy for dynamic web-sites with high traffic. Unlike other proxy servers, it was initially designed to be focused exclusively on HTTP. Nevertheless, within the platform implementation, it is delivered in a bundle with the NGINX server (run on the _443rd_ port as a HTTPS proxy), that gives the ability to work with the secured data and the [Custom SSL](/docs/application-setting/ssl/custom-ssl) option in particular. In this case, after the incoming traffic decryption, NGINX redirects it directly to Varnish (run on the port _80_) to be further processed.
+**Varnish** is a web-application accelerator also known as a caching HTTP reverse proxy for dynamic web-sites with high traffic. Unlike other proxy servers, it was initially designed to be focused exclusively on HTTP. Nevertheless, within the platform implementation, it is delivered in a bundle with the NGINX server (run on the _443rd_ port as a HTTPS proxy), that gives the ability to work with the secured data and the [Custom SSL](/application-setting/ssl/custom-ssl) option in particular. In this case, after the incoming traffic decryption, NGINX redirects it directly to Varnish (run on the port _80_) to be further processed.
 
 As an accelerator, Varnish only has basic load balancing support, which, however, still includes _round robin_ and _random redirector_ options, backend _health-checking_ and more. But the emphasis is made on the speed, which is mainly achieved through the caching, that makes the web-site faster by offloading the static objects' delivery.
 
@@ -53,7 +53,7 @@ So, if you want to get Varnish as a load balancer for your environment, just com
 
 </div>
 
-Set any other required configurations (add app server(s) and other instances, state resources limits by means of cloudlets sliders, enable [external IP](/docs/application-setting/external-access-to-applications/public-ip) for nodes, etc.). Then name your new environment (e.g. varnish) and proceed with the **Create** button.
+Set any other required configurations (add app server(s) and other instances, state resources limits by means of cloudlets sliders, enable [external IP](/application-setting/external-access-to-applications/public-ip) for nodes, etc.). Then name your new environment (e.g. varnish) and proceed with the **Create** button.
 
 4. In a couple of minutes your environment will be created.
 
@@ -73,7 +73,7 @@ That’s all about Varnish installation! Now you can proceed to its configuratio
 
 The Varnish load-balancer can be adjusted according to your needs in one of the following ways:
 
-- through accessing the required server via the platform [SSH Gateway](/docs/deployment-tools/ssh/ssh-access/overview):
+- through accessing the required server via the platform [SSH Gateway](/deployment-tools/ssh/ssh-access/overview):
 
 <div style={{
     display:'flex',

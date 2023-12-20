@@ -1,10 +1,10 @@
 ---
-title: Java versions
+title: Java Versions
 slug: java-versions
 sidebar_position: 2
 ---
 
-## Java Versions
+<!-- ## Java Versions -->
 
 When setting up an environment on the platform, you can choose the distribution and version of JDK you want to run:
 
@@ -21,7 +21,7 @@ When setting up an environment on the platform, you can choose the distribution 
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/quickstart/software-stack-versions) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/quickstart/software-stack-versions) document.
 
 :::
 

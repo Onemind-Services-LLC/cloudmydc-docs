@@ -1,12 +1,12 @@
 ---
-title: Environment migration
+title: Environment Migration
 slug: environment-migration
 sidebar_position: 5
 ---
 
-## CLI Tutorial: Environment Migration
+<!-- ## CLI Tutorial: Environment Migration -->
 
-Sometimes, it may be required to move your application to another [environment region](/docs/environment-management/environment-regions/choosing-a-region) with better conditions and\or location or, for example, to distribute several [cloned](/docs/deployment-tools/api-&-cli/platform-cli/environment-cloning) environment copies among different hardware sets to achieve increased availability. To perform this remotely, you’ll need to execute the corresponding **_migrate_** CLI method via your terminal. So, let’s consider it in more details.
+Sometimes, it may be required to move your application to another [environment region](/environment-management/environment-regions/choosing-a-region) with better conditions and\or location or, for example, to distribute several [cloned](/deployment-tools/api-&-cli/platform-cli/environment-cloning) environment copies among different hardware sets to achieve increased availability. To perform this remotely, you’ll need to execute the corresponding **_migrate_** CLI method via your terminal. So, let’s consider it in more details.
 
 1. To start with, you have to get the list of regions which are available at a Platform.
    For that, the **_getregions_** command should be used, with the appropriate search filter being applied in order to shorten the output and simplify the perception:
@@ -62,7 +62,7 @@ Here:
 ~/jelastic/environment/control/migrate --envName {env_name} --hardwareNodeGroup {region_id} --isOnline {true/false}
 ```
 
-The only new parameter here is the _isOnline_ one, which can be set as **_{true/false}_** for using the [live](/docs/environment-management/environment-regions/migration-between-regions#live-migration) or [offline](/docs/environment-management/environment-regions/migration-between-regions#offline-migration) migration mode correspondingly.
+The only new parameter here is the _isOnline_ one, which can be set as **_{true/false}_** for using the [live](/environment-management/environment-regions/migration-between-regions#live-migration) or [offline](/environment-management/environment-regions/migration-between-regions#offline-migration) migration mode correspondingly.
 
 <div style={{
     display:'flex',

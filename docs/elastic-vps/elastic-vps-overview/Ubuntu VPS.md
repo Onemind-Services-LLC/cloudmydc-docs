@@ -1,10 +1,10 @@
 ---
-title: Ubuntu vps
+title: Ubuntu Vps
 slug: ubuntu-vps
 sidebar_position: 3
 ---
 
-## Elastic Ubuntu VPS
+<!-- ## Elastic Ubuntu VPS -->
 
 <div style={{
     display: 'grid',
@@ -24,7 +24,7 @@ sidebar_position: 3
 
 </div>
 
-At the platform, Ubuntu-based Elastic VPS is delivered with all the functionality of [an independent virtual machine](/docs/elastic-vps/elastic-vps-overview/general-information) (like security guarantees, cost efficiency, and root permissions granted), combining it with the Ubuntu’s reliable and robust ecosystem.
+At the platform, Ubuntu-based Elastic VPS is delivered with all the functionality of [an independent virtual machine](/elastic-vps/elastic-vps-overview/general-information) (like security guarantees, cost efficiency, and root permissions granted), combining it with the Ubuntu’s reliable and robust ecosystem.
 
 ## Ubuntu VPS Hosting
 
@@ -42,14 +42,14 @@ Log into your platform dashboard and open the topology wizard by clicking the **
 
 </div>
 
-Adjust the rest options (cloudlet limits, [number](/docs/application-setting/scaling-and-clustering/horizontal-scaling) of server instances and name for your environment) and click the **_Create_** button.
+Adjust the rest options (cloudlet limits, [number](/application-setting/scaling-and-clustering/horizontal-scaling) of server instances and name for your environment) and click the **_Create_** button.
 
 :::danger Note
 
-Working with **VPS** presupposes usage of [external IP](/docs/application-setting/external-access-to-applications/public-ip) addresses (one per instance), which are automatically attached to the corresponding container(s).
+Working with **VPS** presupposes usage of [external IP](/application-setting/external-access-to-applications/public-ip) addresses (one per instance), which are automatically attached to the corresponding container(s).
 
 :::
 
 That’s it! Your fully isolated virtual server is ready to work so that you can proceed with the required software and services set up.
 
-For quick access to container file system, an appliance of some basic configurations and tracking logs via comprehensive UI use the platform dashboard [inbuilt tools](/docs/elastic-vps/elastic-vps-management/vps-configuration#elastic-vps-inbuilt-tools). For the more advanced Ubuntu VPS management, consider connecting to virtual private server via [SSH Gate](/docs/elastic-vps/elastic-vps-management/linux-vps-access-via-ssh-gate) or [Public IP address](/docs/elastic-vps/elastic-vps-management/linux-vps-access-via-public-ip).
+For quick access to container file system, an appliance of some basic configurations and tracking logs via comprehensive UI use the platform dashboard [inbuilt tools](/elastic-vps/elastic-vps-management/vps-configuration#elastic-vps-inbuilt-tools). For the more advanced Ubuntu VPS management, consider connecting to virtual private server via [SSH Gate](/elastic-vps/elastic-vps-management/linux-vps-access-via-ssh-gate) or [Public IP address](/elastic-vps/elastic-vps-management/linux-vps-access-via-public-ip).

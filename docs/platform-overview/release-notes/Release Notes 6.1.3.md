@@ -1,12 +1,10 @@
 ---
-title: Release notes 6.1.3
+title: Release Notes 6.1.3
 slug: release-notes-6.1.3
 sidebar_position: 22
 ---
 
 import obj from './ReleaseNotes6.1.3.json'
-
-## CloudMyDc Application Platform 6.1.3
 
 _This document is preliminary and subject to change._
 
@@ -49,7 +47,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-6.1.3#debian-11-os-template-support">
+                <a href="/platform-overview/release-notes/release-notes-6.1.3#debian-11-os-template-support">
                     Learn More >>
                 </a>
             </div>
@@ -93,7 +91,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-6.1.3#pop-up-notifications-for-interrupted-onbeforeinit-event">
+                <a href="/platform-overview/release-notes/release-notes-6.1.3#pop-up-notifications-for-interrupted-onbeforeinit-event">
                     Learn More >>
                 </a>
             </div>
@@ -112,7 +110,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-6.1.3#software-stack-versions">
+                <a href="/platform-overview/release-notes/release-notes-6.1.3#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -156,7 +154,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-6.1.3#fixes-compatible-with-prior-versions">
+                <a href="/platform-overview/release-notes/release-notes-6.1.3#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -175,7 +173,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-6.1.3#bug-fixes">
+                <a href="/platform-overview/release-notes/release-notes-6.1.3#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -188,7 +186,7 @@ Fixed
 
 The platform implements support for the **Debian 11** “bullseye” OS templates on all the PaaS installations (available for all platforms starting with the PaaS 6.0 release). It is an LTS (Long Term Support) version with an estimated support period of five years. The new release provides a massive update of the default packages list, kernel support for the exFAT filesystem, and many other improvements, optimizations, and security fixes. For detailed information, refer to the official [Debian 11 release notes](https://www.debian.org/releases/bullseye/releasenotes).
 
-Also, Debian 11 was added as an out-of-box [Elastic VPS](/docs/elastic-vps/elastic-vps-overview/general-information) stack in the platform dashboard.
+Also, Debian 11 was added as an out-of-box [Elastic VPS](/elastic-vps/elastic-vps-overview/general-information) stack in the platform dashboard.
 
 <div style={{
     display:'flex',
@@ -200,14 +198,14 @@ Also, Debian 11 was added as an out-of-box [Elastic VPS](/docs/elastic-vps/elast
 
 </div>
 
-[More info](/docs/container/container-image-requirements)
+[More info](/container/container-image-requirements)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -232,14 +230,14 @@ return { type: "info|warning|error", message: "Your custom message." };
 
 </div>
 
-[More info](/docs/quickstart/software-stack-versions)
+[More info](/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -360,7 +358,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -369,16 +367,16 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/quickstart/software-stack-versions)
+[More info](/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

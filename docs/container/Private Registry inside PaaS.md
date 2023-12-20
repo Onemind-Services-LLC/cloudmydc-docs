@@ -1,5 +1,5 @@
 ---
-title: Private registry inside paas
+title: Private Registry Inside Paas
 slug: private-registry-inside-paas
 sidebar_position: 8
 ---
@@ -25,12 +25,7 @@ maxWidth: '30%',
 
 In order to handle your own Docker image, the appropriate registry is needed. The vast majority of dockerized solutions are stored at public registries so that anyone can use them. However, sometimes, it becomes necessary to hide your repository content from the rest of the world, e.g. in case it contains some proprietary code or confidential information. For this purpose, you can create your isolated private registry.
 
-So, let’s discover how to get it at the platform in a matter of minutes through following the next steps:
-
-- [deploying private registry](/docs/container/private-registry-inside-paas#deploy-private-registry)
-- [adding image to registry](/docs/container/private-registry-inside-paas#add-image-to-registry)
-
-Subsequently, you’ll be able to easily deploy the added image from your [private registry](/docs/container/container-deployment/custom-containers-deployment) to the platform.
+Subsequently, you’ll be able to easily deploy the added image from your [private registry](/container/container-deployment/custom-containers-deployment) to the platform.
 
 ## Deploy Private Registry
 
@@ -53,7 +48,7 @@ You can select the required tag for your Docker image at the top of this frame o
 
 Click **Next** to proceed.
 
-3. Provide all other [configurations](/docs/environment-management/setting-up-environment) for the environment (disk limit, name, [region](/docs/environment-management/environment-regions/choosing-a-region), etc.) up to your needs.
+3. Provide all other [configurations](/environment-management/setting-up-environment) for the environment (disk limit, name, [region](/environment-management/environment-regions/choosing-a-region), etc.) up to your needs.
 
 ![Locale Dropdown](./img/PrivateRegistryInsidePaaS/04-configure-environment.png)
 
@@ -65,11 +60,11 @@ The instruction below is written for the [newest registry](https://github.com/di
 
 Click **Create** and wait a minute for the environment to be configured.
 
-4. Now, you need to configure an entry point for external access. We’ll create one, leveraging the platform [endpoints](/docs/application-setting/external-access-to-applications/endpoints) feature, in order to expose the container’s port 5000.
+4. Now, you need to configure an entry point for external access. We’ll create one, leveraging the platform [endpoints](/application-setting/external-access-to-applications/endpoints) feature, in order to expose the container’s port 5000.
 
 :::tip Note
 
-Alternatively, you can attach and work over [public IP](/docs/application-setting/external-access-to-applications/public-ip) (a paid option) without any additional configurations.
+Alternatively, you can attach and work over [public IP](/application-setting/external-access-to-applications/public-ip) (a paid option) without any additional configurations.
 
 :::
 
@@ -121,7 +116,7 @@ where:
 
 :::tip Tip
 
-A [self-signed](/docs/application-setting/ssl/self-signed-custom-ssl) certificate can be applied as well - in this case, you’ll need to manually instruct your Docker daemon to [trust](https://docs.docker.com/registry/#docker-still-complains-about-the-certificate-when-using-authentication) it.
+A [self-signed](/application-setting/ssl/self-signed-custom-ssl) certificate can be applied as well - in this case, you’ll need to manually instruct your Docker daemon to [trust](https://docs.docker.com/registry/#docker-still-complains-about-the-certificate-when-using-authentication) it.
 
 :::
 However, for testing purposes, you can apply a relatively simpler configuration, that allows bypassing this requirement - run your registry in an [insecure mode](https://docs.docker.com/registry/#deploying-a-plain-http-registry), so all the communication will be performed over the plain HTTP (which, although, is <u>highly unrecommended</u> in confines of production usage).
@@ -153,7 +148,7 @@ docker push  {entry_point}/{repository}
 
 That’s all! Shortly, your image will be uploaded to the registry (the exact time depends on image size and the internet connection speed) and will become available for use throughout the Internet.
 
-As a result, you can easily [deploy it within the platform](/docs/container/container-deployment/custom-containers-deployment) just in the similar way we’ve done this at the beginning of the instruction.
+As a result, you can easily [deploy it within the platform](/container/container-deployment/custom-containers-deployment) just in the similar way we’ve done this at the beginning of the instruction.
 
 :::tip
 In case you face any issues while deploying your own registry or adding an image to it, feel free to appeal for our technical experts' assistance at [Stackoverflow](https://stackoverflow.com/questions/tagged/jelastic).

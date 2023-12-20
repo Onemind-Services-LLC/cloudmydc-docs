@@ -1,18 +1,18 @@
 ---
-title: Glassfish environment variables
+title: Glassfish Environment Variables
 slug: glassfish-environment-variables
 sidebar_position: 2
 ---
 
-## Custom Environment Variables
+<!-- ## Custom Environment Variables -->
 
-Environment variables represent a kind of placeholders, where you can store the frequently used parameters values or strings in order not to specify them manually in the code each time they are needed. There is a number of [default environment variables](/docs/environment-management/environment-variables/environment-variables#default-environment-variables) which are preconfigured and can be used in your application code or even adjusted before node creation to apply some customization, making your work with the platform even more convenient.
+Environment variables represent a kind of placeholders, where you can store the frequently used parameters values or strings in order not to specify them manually in the code each time they are needed. There is a number of [default environment variables](/environment-management/environment-variables/environment-variables#default-environment-variables) which are preconfigured and can be used in your application code or even adjusted before node creation to apply some customization, making your work with the platform even more convenient.
 
 In this guide, we’ll describe the most common ways of adding your custom variables for any node within the platform:
 
-- [via a dedicated variables section of the dashboard0](https://cloudmydc.com/)
-- [using the shell configuration files](https://cloudmydc.com/)
-- [through the variables.conf file (for Java only)](https://cloudmydc.com/)
+- via a dedicated variables section of the dashboard
+- using the shell configuration files
+- through the variables.conf file (for Java only)
 
 ## Customize Environment Variables via UI
 
@@ -57,7 +57,7 @@ You are able to provide your custom variables using the shell config files:
 
 In order to help you with maintaining these files, the platform automatically include the sources of the **_.bashrc_** config within **_.bash_profile_**. In such a way, you can provide custom variables through the former file only:
 
-1. Establish [SSH connection](/docs/deployment-tools/ssh/ssh-access/overview) to your container. For example, we’ll use the embedded **Web SSH** client:
+1. Establish [SSH connection](/deployment-tools/ssh/ssh-access/overview) to your container. For example, we’ll use the embedded **Web SSH** client:
 
 <div style={{
     display:'flex',
@@ -113,7 +113,7 @@ As you can see, the changes were successfully applied.
 
 The following simple workflow is identical for all of the platform-managed Java application servers.
 
-1. Click the **Config** button for your application server to access container [file manager](/docs/application-setting/configuration-file-manager).
+1. Click the **Config** button for your application server to access container [file manager](/application-setting/configuration-file-manager).
 
 <div style={{
     display:'flex',

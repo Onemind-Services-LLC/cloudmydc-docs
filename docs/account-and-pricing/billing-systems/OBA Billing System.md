@@ -1,5 +1,5 @@
 ---
-title: Oba billing system
+title: OBA Billing System
 slug: oba-billing-system
 sidebar_position: 2
 ---

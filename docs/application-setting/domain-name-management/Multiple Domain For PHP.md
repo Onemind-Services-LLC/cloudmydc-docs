@@ -1,10 +1,10 @@
 ---
-title: Multiple domain for php
+title: Multiple Domain For PHP
 slug: multiple-domain-for-php
 sidebar_position: 5
 ---
 
-## Running Multiple Domain Names on PHP Server
+<!-- ## Running Multiple Domain Names on PHP Server -->
 
 Using multiple domains provides you with ability to increase the usability, efficiency and scalability of your PHP application and of course saves your money without necessity to set up separate instances.
 
@@ -36,7 +36,7 @@ In some seconds your environment will appear on the platform dashboard.
 
 </div>
 
-4. You need to have the names in DNS, resolving to your IP address. So, buy domain names for your environment. It can be done in two ways: by adding CNAME record or by setting A Records. You can read more [here](/docs/application-setting/domain-name-management/custom-domain-name).
+4. You need to have the names in DNS, resolving to your IP address. So, buy domain names for your environment. It can be done in two ways: by adding CNAME record or by setting A Records. You can read more [here](/application-setting/domain-name-management/custom-domain-name).
 
 5. After that click the **Settings** button for your environment and bind your domains. As an example we use the following URLs: _mydomain.com_ and _myseconddomain.com_.
 

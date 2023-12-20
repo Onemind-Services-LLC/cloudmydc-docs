@@ -1,12 +1,12 @@
 ---
-title: Environment aliases
+title: Environment Aliases
 slug: environment-aliases
 sidebar_position: 8
 ---
 
 Specifying the alias (alternative name) for an environment or a separate node can greatly facilitate the process of their management. It clarifies which item you are working with, so you’ll never make a mistake while choosing the environment/node that needs to be adjusted.
 
-This ability is especially useful while working with numerous nodes of the same type, possibly due to the [multi nodes](/docs/application-setting/scaling-and-clustering/horizontal-scaling) feature. Let’s consider this on the example of defining the master and slave nodes in a DB cluster.
+This ability is especially useful while working with numerous nodes of the same type, possibly due to the [multi nodes](/application-setting/scaling-and-clustering/horizontal-scaling) feature. Let’s consider this on the example of defining the master and slave nodes in a DB cluster.
 
 1. Select the necessary environment with a set of same-type nodes and expand the instances list:
 
@@ -58,7 +58,7 @@ Such a custom name will define the corresponding item in all the appropriate lis
 
 </div>
 
-- in the [SSH](/docs/deployment-tools/ssh/ssh-overview) console
+- in the [SSH](/deployment-tools/ssh/ssh-overview) console
 
 <div style={{
     display:'flex',
@@ -80,6 +80,6 @@ Such a custom name will define the corresponding item in all the appropriate lis
 
 </div>
 
-Also, these labels are visible for other users [in collaboration](/docs/account-and-pricing/accounts-collaboration/collaboration-overview) and remain attached after environment’s [cloning](/docs/environment-management/cloning-environment), [transferring](/docs/environment-management/environment-transferring), etc.
+Also, these labels are visible for other users [in collaboration](/account-and-pricing/accounts-collaboration/collaboration-overview) and remain attached after environment’s [cloning](/environment-management/cloning-environment), [transferring](/environment-management/environment-transferring), etc.
 
 Deleting the alias name anytime will return the default value.

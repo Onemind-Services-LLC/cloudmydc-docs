@@ -1,10 +1,11 @@
 ---
-title: Tcp load balancing
+title: TCP Load Balancing
 slug: tcp-load-balancing
 sidebar_position: 2
 ---
 
-## TCP Load Balancing
+<!-- ## TCP Load Balancing -->
+
 Load balancing ensures high system availability through the distribution of workload across multiple components. Using multiple components with load balancing, instead of a single component, may increase reliability through redundancy. The platform uses NGINX for two types of load balancing: **TCP** and **HTTP**.
 
 Platform clients can use **TCP** for balancing requests to databases, mail servers and other distributable applications with network support. Also TCP can be used instead of HTTP if faster balancing is needed. In this case you just need to note that this fastness is achieved through omitting the process of handling requests.

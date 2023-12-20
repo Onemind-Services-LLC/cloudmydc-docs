@@ -1,12 +1,12 @@
 ---
-title: Log files
+title: Log Files
 slug: log-files
 sidebar_position: 1
 ---
 
 import obj from './LogFiles.json'
 
-## View Log Files
+<!-- ## View Log Files -->
 
 Log files are the main source of the most important information regarding what has happened to your environment. For example, any development or testing task requires access to this crucial information.
 
@@ -26,7 +26,7 @@ So, to view your node’s logs, follow these steps:
 
 </div>
 
-3. The logs tab will appear at the bottom of your dashboard. If your environment contains several [nodes of the same type](/docs/application-setting/scaling-and-clustering/horizontal-scaling), you can choose the one you want to see the logs for in the drop-down list.
+3. The logs tab will appear at the bottom of your dashboard. If your environment contains several [nodes of the same type](/application-setting/scaling-and-clustering/horizontal-scaling), you can choose the one you want to see the logs for in the drop-down list.
 
 <div style={{
     display:'flex',
@@ -72,7 +72,7 @@ In just the same way, you can enable the _Auto refresh_ option again.
 
 </div>
 
-5. Logs can also be downloaded via FTP. To learn more about the FTP module’s installation and usage, see the [FTP/FTPS Support](/docs/deployment-tools/ftp-ftps-support) document.
+5. Logs can also be downloaded via FTP. To learn more about the FTP module’s installation and usage, see the [FTP/FTPS Support](/deployment-tools/ftp-ftps-support) document.
 
 6. Here is a list of available log files you can view depending on the node:
 
@@ -147,7 +147,7 @@ In just the same way, you can enable the _Auto refresh_ option again.
 
 :::tip Tip
 
-If you use the remote [GIT/SVN](/docs/deployment/deployment-guide) repository for deploying your application, a new **vcs_update** pull log file is added to your [Maven](/docs/java/build-node/java-vcs-deployment-with-maven) node (for Java) or [Apache](/docs/php/php-app-servers/apache-php/apache-php)/[NGINX](/docs/php/php-app-servers/nginx-php/nginx-php) application server (for PHP), which contains the information on your project’s building and deploying.
+If you use the remote [GIT/SVN](/deployment/deployment-guide) repository for deploying your application, a new **vcs_update** pull log file is added to your [Maven](/java/build-node/java-vcs-deployment-with-maven) node (for Java) or [Apache](/php/php-app-servers/apache-php/apache-php)/[NGINX](/php/php-app-servers/nginx-php/nginx-php) application server (for PHP), which contains the information on your project’s building and deploying.
 
 <div style={{
     display:'flex',

@@ -1,5 +1,5 @@
 ---
-title: Environment transferring
+title: Environment Transferring
 slug: environment-transferring
 sidebar_position: 7
 ---
@@ -25,9 +25,9 @@ Also, service hosting providers can offer a service of creating the required app
 
 **Any environment** (stopped/running) can be transferred **from any account** (including deactivated ones). However, a target account should meet the following requirements:
 
-- **type** - can be of any [type](/docs/account-and-pricing/account-types) (beta, billing), <u>except trial accounts</u>
-- **status** - should be [active](/docs/account-and-pricing/account-statuses) (i.e. not suspended or deactivated)
-- **quotas** - should have sufficient [quotas](/docs/account-and-pricing/quotas-system) (limitations) to add the environment
+- **type** - can be of any [type](/account-and-pricing/account-types) (beta, billing), <u>except trial accounts</u>
+- **status** - should be [active](/account-and-pricing/account-statuses) (i.e. not suspended or deactivated)
+- **quotas** - should have sufficient [quotas](/account-and-pricing/quotas-system) (limitations) to add the environment
 
 :::danger Note
 
@@ -58,7 +58,7 @@ Environment transferring feature is currently not available between accounts at 
 
 No changes are applied to the environment after transferring. The new owner receives it in the same state, with the same applications deployed, and with the same custom configurations. All the consequent charges for the environment will be applied to the new owner as well.
 
-Also, the transferred environment becomes [unshared](/docs/environment-management/share-environment) from all the users that had access to it.
+Also, the transferred environment becomes [unshared](/environment-management/share-environment) from all the users that had access to it.
 
 ## Transferring Steps
 

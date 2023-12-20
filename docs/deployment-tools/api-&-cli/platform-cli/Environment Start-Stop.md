@@ -1,10 +1,10 @@
 ---
-title: Environment start-stop
+title: Environment Start-Stop
 slug: environment-start-stop
 sidebar_position: 3
 ---
 
-## CLI Tutorial: Environment Start/Stop
+<!-- ## CLI Tutorial: Environment Start/Stop -->
 
 Among the most common operations for environment management provided by CLI, the *start* and *stop* ones can be denoted. Wise usage of these methods can help to significantly cut your spends, especially for development and testing environments (for example, you can stop them for the nighttime, while you are sleeping, and start again at the morning to continue the development).
 

@@ -1,5 +1,5 @@
 ---
-title: Public ip for access to kubernetes
+title: Public Ip For Access To Kubernetes
 slug: public-ip-for-access-to-kubernetes
 sidebar_position: 7
 ---
@@ -22,7 +22,7 @@ sidebar_position: 7
 </div>
 <div>
 
-In this post we’d like to show how to expose applications via a public [IP address](/docs/application-setting/external-access-to-applications/public-ip) attached to one of the nodes of a Kubernetes cluster environment in Jelastic PaaS. It can be done in two possible ways - attaching IP to [Dedicated Load Balancer](/docs/load-balancers/load-balancing) or to K8s Worker node.
+In this post we’d like to show how to expose applications via a public [IP address](/application-setting/external-access-to-applications/public-ip) attached to one of the nodes of a Kubernetes cluster environment in Jelastic PaaS. It can be done in two possible ways - attaching IP to [Dedicated Load Balancer](/load-balancers/load-balancing) or to K8s Worker node.
 
 </div>
 </div>
@@ -43,7 +43,7 @@ In this post we’d like to show how to expose applications via a public [IP add
 
 </div>
 
-Here we use the NGINX load balancer node, but you can choose any other available ([HAProxy](/docs/load-balancers/haproxy), [LS Web ADC](/docs/load-balancers/litespeed-web-adc), [Varnish](/docs/load-balancers/varnish)). Once the topology is changed it should look like as follows:
+Here we use the NGINX load balancer node, but you can choose any other available ([HAProxy](/load-balancers/haproxy), [LS Web ADC](/load-balancers/litespeed-web-adc), [Varnish](/load-balancers/varnish)). Once the topology is changed it should look like as follows:
 
 <div style={{
     display:'flex',
@@ -65,7 +65,7 @@ Here we use the NGINX load balancer node, but you can choose any other available
 
 </div>
 
-3. After that, create an [A record](/docs/application-setting/domain-name-management/custom-domain-name#how-to-configure-dns-record) for a [custom domain](/docs/application-setting/domain-name-management/custom-domain-name) using the IP address added at the previous step. For example **_cargo-tracker.jele.website_**.
+3. After that, create an [A record](/application-setting/domain-name-management/custom-domain-name#how-to-configure-dns-record) for a [custom domain](/application-setting/domain-name-management/custom-domain-name) using the IP address added at the previous step. For example **_cargo-tracker.jele.website_**.
 
 <div style={{
     display:'flex',
@@ -79,7 +79,7 @@ Here we use the NGINX load balancer node, but you can choose any other available
 
 4. Now you may bind the custom domain to the K8s cluster and send a request to issue a trusted Let’s Encrypt SSL certificate to secure applications’ traffic.
 
-- Go to the load balancer [Add-Ons](/docs/deployment-tools/cloud-scripting-&-jps/marketplace) and find **Let’s Encrypt Free SSL**.
+- Go to the load balancer [Add-Ons](/deployment-tools/cloud-scripting-&-jps/marketplace) and find **Let’s Encrypt Free SSL**.
 
 <div style={{
     display:'flex',

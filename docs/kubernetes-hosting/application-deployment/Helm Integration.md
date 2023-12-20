@@ -1,14 +1,14 @@
 ---
-title: Helm integration
+title: Helm Integration
 slug: helm-integration
 sidebar_position: 1
 ---
 
-## Kubernetes Cluster: Helm Integration
+<!-- ## Kubernetes Cluster: Helm Integration -->
 
 Kubernetes provides multiple options to deploy applications. One of the most common methods is to use the **[Helm](https://helm.sh/)** package manager. If you are looking to run a popular or any relatively known solution in your Kubernetes cluster, most likely it can be found as a preconfigured package that can be installed in a matter of minutes. Helm helps you install Kubernetes applications from remote repositories as well as create local Helm charts.
 
-Helm is available on all control plane nodes of the **Kubernetes Cluster** by default and requires no additional configuration. Just connect to the node (e.g. via [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh)), and you can start working with Helm. The package manager version is automatically updated during the [Kubernetes Cluster upgrades](/docs/kubernetes-hosting/managing-kubernetes/cluster-upgrade).
+Helm is available on all control plane nodes of the **Kubernetes Cluster** by default and requires no additional configuration. Just connect to the node (e.g. via [Web SSH](/deployment-tools/ssh/ssh-access/web-ssh)), and you can start working with Helm. The package manager version is automatically updated during the [Kubernetes Cluster upgrades](/kubernetes-hosting/managing-kubernetes/cluster-upgrade).
 
 Helm works with three big concepts:
 
@@ -20,9 +20,9 @@ Helm installs **_charts_** into Kubernetes, creating a new **_release_** for eac
 
 In this guide, we’ll cover all the main stages of working with Helm:
 
-- [searching for charts and working with repositories](/docs/kubernetes-hosting/application-deployment/helm-integration#finding-helm-charts)
-- [installing new Helm applications](/docs/kubernetes-hosting/application-deployment/helm-integration#installing-helm-package)
-- [managing existing applications](/docs/kubernetes-hosting/application-deployment/helm-integration#managing-helm-applications)
+- [searching for charts and working with repositories](/kubernetes-hosting/application-deployment/helm-integration#finding-helm-charts)
+- [installing new Helm applications](/kubernetes-hosting/application-deployment/helm-integration#installing-helm-package)
+- [managing existing applications](/kubernetes-hosting/application-deployment/helm-integration#managing-helm-applications)
 
 :::tip Tip
 
@@ -113,7 +113,7 @@ To install a new package, use the **_helm install_** command. At its simplest, i
 - **_{name}_** - a release name that you pick (e.g. mywordpress)
 - **_{chart}_** - the name of the chart you want to install (e.g. _[bitnami/wordpress](https://github.com/bitnami/charts/tree/main/bitnami/wordpress)_)
 
-Additionally, you can provide chart options to customize the application (see more details in the [managing Helm section](/docs/kubernetes-hosting/application-deployment/helm-integration#managing-helm-applications)). For example, let’s change the blog name with the _--set wordpressBlogName=‘My Blog!'_ parameter.
+Additionally, you can provide chart options to customize the application (see more details in the [managing Helm section](/kubernetes-hosting/application-deployment/helm-integration#managing-helm-applications)). For example, let’s change the blog name with the _--set wordpressBlogName=‘My Blog!'_ parameter.
 
 ```bash
 helm install --set wordpressBlogName='My Blog!' mywordpress bitnami/wordpress
@@ -269,7 +269,7 @@ If needed, you can use the upgrade command with the **--reset-values** flag to r
 
 :::
 
-Due to the specifics of our WordPress chart from the [installing section](/docs/kubernetes-hosting/application-deployment/helm-integration#installing-helm-package), you must provide current passwords when upgrading the release. Let’s add these values into corresponding variables for convenience:
+Due to the specifics of our WordPress chart from the [installing section](/kubernetes-hosting/application-deployment/helm-integration#installing-helm-package), you must provide current passwords when upgrading the release. Let’s add these values into corresponding variables for convenience:
 
 ```bash
 export WORDPRESS_PASSWORD=$(kubectl get secret --namespace "default" mywordpress -o jsonpath="{.data.wordpress-password}" | base64 --decode)

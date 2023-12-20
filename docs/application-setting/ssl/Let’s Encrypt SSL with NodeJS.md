@@ -1,18 +1,18 @@
 ---
-title: Let’s encrypt ssl with nodejs
+title: Let’S Encrypt SSL With Nodejs
 slug: let’s-encrypt-ssl-with-nodejs
 sidebar_position: 5
 ---
 
-## Let’s Encrypt SSL Add-On with NodeJS
+<!-- ## Let’s Encrypt SSL Add-On with NodeJS -->
 
 The platform automates SSL certificate binding for most software stacks when working with the **Let’s Encrypt** add-on. However, the out-of-box automation is difficult for the Node.js nodes due to the stack specifics. In the Node.js application, Let’s Encrypt certificates are issued but are not bound - just stored at the **/var/lib/jelastic/keys** directory. You can manually use them in your application by creating a Web server and reading the certificates directly from the code.
 
 :::tip
 
-As an alternative, you can place a [load balancer](/docs/load-balancers/load-balancing) node in front of your Node.js server to act as a reverse proxy. The _Let’s Encrypt_ SSL add-on can be installed on such a balancer, benefiting from out-of-box automation.
+As an alternative, you can place a [load balancer](/load-balancers/load-balancing) node in front of your Node.js server to act as a reverse proxy. The _Let’s Encrypt_ SSL add-on can be installed on such a balancer, benefiting from out-of-box automation.
 
-Such an approach is preferable for larger projects that want to utilize the [Horizontal Scaling](/docs/application-setting/scaling-and-clustering/horizontal-scaling) feature as it will require a load balancer node anyway.
+Such an approach is preferable for larger projects that want to utilize the [Horizontal Scaling](/application-setting/scaling-and-clustering/horizontal-scaling) feature as it will require a load balancer node anyway.
 
 :::
 
@@ -20,7 +20,7 @@ This guide will provide a basic example of how you can implement the Let’s Enc
 
 ## Using SSL with NodeJS
 
-1. [Create an environment](/docs/environment-management/setting-up-environment) with the **Node.js** application server.
+1. [Create an environment](/environment-management/setting-up-environment) with the **Node.js** application server.
 
 <div style={{
     display:'flex',
@@ -122,7 +122,7 @@ var path = url.parse(req.url).pathname;
 console.log("The HTTPS server has started at: " + serverUrl);
 ```
 
-4. Run your application via [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh). In our example, we use the **_forever_** [process manager](/docs/nodejs/nodejs-apps-specifications/process-managers) (sudo is needed to listen on the privileged port 443).
+4. Run your application via [Web SSH](/deployment-tools/ssh/ssh-access/web-ssh). In our example, we use the **_forever_** [process manager](/nodejs/nodejs-apps-specifications/process-managers) (sudo is needed to listen on the privileged port 443).
 
 ```bash
 cd /home/jelastic/ROOT
@@ -157,7 +157,7 @@ Let’s Encrypt SSL certificates remain valid for 90 days. After that, they shou
 
 The operation can be automated alongside the certificate update by means of the **_webhooks_** – a custom script executed after the default add-on operations.
 
-Go to the **_/var/lib/jelastic/keys/letsencrypt_** folder (create if missing) and add the **_settings-custom_** file. Based on the [Node.js process manager](/docs/nodejs/nodejs-apps-specifications/process-managers), your restart/reload script may vary. For example:
+Go to the **_/var/lib/jelastic/keys/letsencrypt_** folder (create if missing) and add the **_settings-custom_** file. Based on the [Node.js process manager](/nodejs/nodejs-apps-specifications/process-managers), your restart/reload script may vary. For example:
 
 ```bash
 deployHook=sudo forever restart /home/jelastic/ROOT/server.js

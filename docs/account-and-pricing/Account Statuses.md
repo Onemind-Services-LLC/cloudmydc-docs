@@ -1,10 +1,11 @@
 ---
-title: Account statuses
+title: Account Statuses
 slug: account-statuses
 sidebar_position: 3
 ---
 
-## Account Statuses
+<!-- ## Account Statuses -->
+
 Platform accounts can have different statuses:
 
 - **Active**

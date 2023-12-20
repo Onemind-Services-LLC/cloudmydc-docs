@@ -1,15 +1,15 @@
 ---
-title: Cluster access
+title: Cluster Access
 slug: cluster-access
 sidebar_position: 1
 ---
 
-## Kubernetes Cluster Access
+<!-- ## Kubernetes Cluster Access -->
 
-After the successful [installation of a cluster](/docs/kubernetes-hosting/kubernetes-cluster/cluster-installation), there are multiple ways to access it to start management:
+After the successful [installation of a cluster](/kubernetes-hosting/kubernetes-cluster/cluster-installation), there are multiple ways to access it to start management:
 
-- [Kubernetes Dashboard](/docs/kubernetes-hosting/managing-kubernetes/cluster-access#kubernetes-dashboard)
-- [kubectl client](/docs/kubernetes-hosting/managing-kubernetes/cluster-access#kubectl-client)
+- [Kubernetes Dashboard](/kubernetes-hosting/managing-kubernetes/cluster-access#kubernetes-dashboard)
+- [kubectl client](/kubernetes-hosting/managing-kubernetes/cluster-access#kubectl-client)
 
 ## Kubernetes Dashboard
 
@@ -41,11 +41,11 @@ The same information is also provided via the appropriate email notification.
 
 :::tip Tip
 
-It is also possible to log in with the **_kubeconfig_** file; however, you’ll need to install kubectl and set the right context (see the [section](/docs/kubernetes-hosting/managing-kubernetes/cluster-access#kubectl-client) below).
+It is also possible to log in with the **_kubeconfig_** file; however, you’ll need to install kubectl and set the right context (see the [section](/kubernetes-hosting/managing-kubernetes/cluster-access#kubectl-client) below).
 
 :::
 
-3. If you’ve lost an email with the Kubernetes cluster access token, it can be viewed by executing the following command on the master node (e.g. via [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh)):
+3. If you’ve lost an email with the Kubernetes cluster access token, it can be viewed by executing the following command on the master node (e.g. via [Web SSH](/deployment-tools/ssh/ssh-access/web-ssh)):
 
 ```bash
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep fulladmin | awk '{print $1}') | grep 'token:' | sed -e's/token:\| //g'
@@ -65,7 +65,7 @@ Now, you can access the Kubernetes Dashboard once again.
 
 ## Kubectl Client
 
-**[Kubectl](https://kubernetes.io/docs/tasks/tools/)** is a command-line tool to control a Kubernetes cluster. The platform automatically installs it on all master nodes during the environment creation. You can start working with your cluster using kubectl right away, just connect to the required node [over SSH](/docs/deployment-tools/ssh/ssh-access/overview).
+**[Kubectl](https://kubernetes.io/docs/tasks/tools/)** is a command-line tool to control a Kubernetes cluster. The platform automatically installs it on all master nodes during the environment creation. You can start working with your cluster using kubectl right away, just connect to the required node [over SSH](/deployment-tools/ssh/ssh-access/overview).
 
 1. Follow the [installation steps](https://kubernetes.io/docs/tasks/tools/) to use a local kubectl. Next, run a command to establish remote connection:
 

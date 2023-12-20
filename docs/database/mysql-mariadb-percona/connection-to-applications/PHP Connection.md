@@ -1,22 +1,22 @@
 ---
-title: Php connection
+title: PHP Connection
 slug: php-connection
 sidebar_position: 2
 ---
 
-## Connection to MySQL/MariaDB/Percona for PHP
+<!-- ## Connection to MySQL/MariaDB/Percona for PHP -->
 
 **MySQL**, **MariaDB**, and **Percona** are highly popular open source databases, used by developers all over the world. Follow the instruction below to learn how to connect your PHP application, hosted within the platform, to one of these DB servers:
 
-- [create environment](/docs/database/mysql-mariadb-percona/connection-to-applications/php-connection#environment-creation)
-- [connect to database](/docs/database/mysql-mariadb-percona/connection-to-applications/php-connection#connection-to-the-database)
-- [check connection](/docs/database/mysql-mariadb-percona/connection-to-applications/php-connection#checking-the-connection)
-- [execute request](/docs/database/mysql-mariadb-percona/connection-to-applications/php-connection#executing-a-simple-request)
-- [additional configurations](/docs/database/mysql-mariadb-percona/connection-to-applications/php-connection#useful-to-know)
+- [create environment](/database/mysql-mariadb-percona/connection-to-applications/php-connection#environment-creation)
+- [connect to database](/database/mysql-mariadb-percona/connection-to-applications/php-connection#connection-to-the-database)
+- [check connection](/database/mysql-mariadb-percona/connection-to-applications/php-connection#checking-the-connection)
+- [execute request](/database/mysql-mariadb-percona/connection-to-applications/php-connection#executing-a-simple-request)
+- [additional configurations](/database/mysql-mariadb-percona/connection-to-applications/php-connection#useful-to-know)
 
 ## Environment Creation
 
-1. Log into your PaaS account and [create an environment](/docs/environment-management/setting-up-environment) with **MySQL** or **MariaDB** database server (both are available within the **_SQL_** wizard section).
+1. Log into your PaaS account and [create an environment](/environment-management/setting-up-environment) with **MySQL** or **MariaDB** database server (both are available within the **_SQL_** wizard section).
 
 <div style={{
     display:'flex',
@@ -68,7 +68,7 @@ Log into the opened admin panel using credentials you’ve received in the above
 
 </div>
 
-Now, you can [deploy](/docs/quickstart/dashboard-guide) your application (either from archive or GIT/SVN repository) to the created environment.
+Now, you can [deploy](/quickstart/dashboard-guide) your application (either from archive or GIT/SVN repository) to the created environment.
 
 ## Connection to the Database
 
@@ -128,7 +128,7 @@ mysqli_close($link);
 
 :::tip Note
 
-Do not forget to substitute **_{host}_**, **_{user}_**, **_{password}_** and **_{db_name}_** in the connection string with the corresponding values (as it is described in the [Connection to the Database](/docs/database/mysql-mariadb-percona/connection-to-applications/php-connection#connection-to-the-database) section).
+Do not forget to substitute **_{host}_**, **_{user}_**, **_{password}_** and **_{db_name}_** in the connection string with the corresponding values (as it is described in the [Connection to the Database](/database/mysql-mariadb-percona/connection-to-applications/php-connection#connection-to-the-database) section).
 
 :::
 
@@ -198,7 +198,7 @@ Great! Now you can easily connect your PHP application to the **MySQL** or **Mar
 
 The platform also lets you extend your MySQL/MariaDB servers functionality by following the appropriate instructions in our documentation:
 
-- set up the preferred database replication type - [master-slave](/docs/database/mysql-mariadb-percona/high-availability-cluster/manual-primary-secondary-replication#mysqlmariadbpercona-database-primary-secondary-replication) or [master-master](/docs/database/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication#multi-primary-replication-for-mysqlmariadbpercona) - in order to get the increased DB performance and data loss protection
-- adjust [Backups Scheduling](/docs/database/database-hosting/manual-database-backups#manual-database-backups) for ensuring safety of the information inside your DBs in the case of unexpected server failure
-- see the [Remote Access](/docs/database/mysql-mariadb-percona/remote-access#remote-access-to-mysqlmariadbpercona) instruction and learn how to access your database remotely via the preferred desktop MySQL client
-- use the [Dump Files Import/Export](/docs/database/mysql-mariadb-percona/dump-import-export) guide to find out how to manually backup and restore your data from the previously created dumps
+- set up the preferred database replication type - [master-slave](/database/mysql-mariadb-percona/high-availability-cluster/manual-primary-secondary-replication#mysqlmariadbpercona-database-primary-secondary-replication) or [master-master](/database/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication#multi-primary-replication-for-mysqlmariadbpercona) - in order to get the increased DB performance and data loss protection
+- adjust [Backups Scheduling](/database/database-hosting/manual-database-backups#manual-database-backups) for ensuring safety of the information inside your DBs in the case of unexpected server failure
+- see the [Remote Access](/database/mysql-mariadb-percona/remote-access#remote-access-to-mysqlmariadbpercona) instruction and learn how to access your database remotely via the preferred desktop MySQL client
+- use the [Dump Files Import/Export](/database/mysql-mariadb-percona/dump-import-export) guide to find out how to manually backup and restore your data from the previously created dumps

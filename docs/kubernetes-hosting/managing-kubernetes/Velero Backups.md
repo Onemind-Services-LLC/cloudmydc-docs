@@ -1,12 +1,12 @@
 ---
-title: Velero backups
+title: Velero Backups
 slug: velero-backups
 sidebar_position: 5
 ---
 
 import obj from './VeleroBackups.json'
 
-## Kubernetes Cluster: Velero Backups
+<!-- ## Kubernetes Cluster: Velero Backups -->
 
 **[Velero](https://velero.io/)** is an open-source backup and restoration tool for Kubernetes cluster disaster recovery. It also supports the migration of cluster resources and persistent volumes backup. Manual or scheduled backups to the external storage ensure your data safety and protection.
 
@@ -75,7 +75,7 @@ In our example, we’ll upload the velero binary to the Kubernetes Cluster serve
 
 :::
 
-4. Connect to your Kubernetes Cluster control plane via SSH (e.g. [Web SSH](/docs/deployment-tools/ssh/ssh-access/web-ssh)). Download the archive using the link from the previous step and extract the **_velero_** binary to the **_/usr/local/sbin_** directory.
+4. Connect to your Kubernetes Cluster control plane via SSH (e.g. [Web SSH](/deployment-tools/ssh/ssh-access/web-ssh)). Download the archive using the link from the previous step and extract the **_velero_** binary to the **_/usr/local/sbin_** directory.
 
 ```bash
 wget https://github.com/vmware-tanzu/velero/releases/download/v1.8.1/velero-v1.8.1-linux-amd64.tar.gz
@@ -94,7 +94,7 @@ tar -zxvf velero-v1.8.1-linux-amd64.tar.gz -C /usr/local/sbin --strip-components
 
 :::danger Note
 
-If uploading via the [file manager](/docs/application-setting/configuration-file-manager), you’ll need to adjust the file permissions:
+If uploading via the [file manager](/application-setting/configuration-file-manager), you’ll need to adjust the file permissions:
 
 ```bash
 chmod 755 /usr/local/sbin/velero

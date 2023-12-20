@@ -1,5 +1,5 @@
 ---
-title: Cloud scripting
+title: Cloud Scripting
 slug: cloud-scripting
 sidebar_position: 1
 ---

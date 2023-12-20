@@ -1,10 +1,10 @@
 ---
-title: Nginx security configurations
+title: Nginx Security Configurations
 slug: nginx-security-configurations
 sidebar_position: 2
 ---
 
-## Security Configurations for NGINX
+<!-- ## Security Configurations for NGINX -->
 
 In this tutorial we will show how to set up the additional security configurations for your **PHP application** hosted with NGINX application server.
 

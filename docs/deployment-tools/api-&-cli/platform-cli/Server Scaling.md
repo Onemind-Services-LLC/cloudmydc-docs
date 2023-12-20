@@ -1,14 +1,12 @@
 ---
-title: Server scaling
+title: Server Scaling
 slug: server-scaling
 sidebar_position: 6
 ---
 
-##CONTEXT CODE
+<!-- ## CLI Tutorial: Server Scaling -->
 
-## CLI Tutorial: Server Scaling
-
-When the environment is already created, in some cases it may be required to change its topology - for example, to scale a particular server or the whole environment layer (using the [vertical](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling) and/or [horizontal](/docs/application-setting/scaling-and-clustering/automatic-horizontal-scaling) scaling respectively) due to the changed incoming load. This may be accomplished with the corresponding **_changetopology_** CLI method:
+When the environment is already created, in some cases it may be required to change its topology - for example, to scale a particular server or the whole environment layer (using the [vertical](/application-setting/scaling-and-clustering/automatic-vertical-scaling) and/or [horizontal](/application-setting/scaling-and-clustering/automatic-horizontal-scaling) scaling respectively) due to the changed incoming load. This may be accomplished with the corresponding **_changetopology_** CLI method:
 
 ```bash
 ~/jelastic/environment/control/changetopology --envName {env_name} --env '{"engine" : "{engine_type}"}' --nodes ['{"nodeType" : "{node_type}","count" : {nodes_amount}, "fixedCloudlets" : {cloudlets_amount}, "flexibleCloudlets" : {cloudlets_amount}}, {"nodeType" : "{node_type}", "count" : {nodes_amount}, "fixedCloudlets" : {cloudlets_amount}, "flexibleCloudlets" :  {cloudlets_amount}}']
@@ -24,18 +22,18 @@ When the environment is already created, in some cases it may be required to cha
 
 </div>
 
-The whole [set of possible parameters](/docs/deployment-tools/api-&-cli/create-env-params) is the same as for the [createenvironment](/docs/deployment-tools/api-&-cli/platform-cli/environment-creation) method, except the _–envName_ **_{env_name}_** - here it is used to point to the already existing environment, that should be adjusted.
+The whole [set of possible parameters](/deployment-tools/api-&-cli/create-env-params) is the same as for the [createenvironment](/deployment-tools/api-&-cli/platform-cli/environment-creation) method, except the _–envName_ **_{env_name}_** - here it is used to point to the already existing environment, that should be adjusted.
 
 As for the rest of options, in this example we use the following ones:
 
 - **_{engine_type}_** - engine the instances of the chosen environment are powered by (an obligatory string)
-- **_{node_type}_** - stack type identifier, according to the [list](/docs/deployment-tools/cloud-scripting-&-jps/application-manifest)
-- **_{nodes_amount}_** - amount of nodes to be set (applies [Horizontal Scaling](/docs/application-setting/scaling-and-clustering/horizontal-scaling))
-- **_{cloudlets_amount}_** - number of fixed (_fixedCloudlets_) and/or flexible (_flexibleCloudlets_) cloudlets to be allocated for the specified node type (applies [vertical scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling))
+- **_{node_type}_** - stack type identifier, according to the [list](/deployment-tools/cloud-scripting-&-jps/application-manifest)
+- **_{nodes_amount}_** - amount of nodes to be set (applies [Horizontal Scaling](/application-setting/scaling-and-clustering/horizontal-scaling))
+- **_{cloudlets_amount}_** - number of fixed (_fixedCloudlets_) and/or flexible (_flexibleCloudlets_) cloudlets to be allocated for the specified node type (applies [vertical scaling](/application-setting/scaling-and-clustering/automatic-vertical-scaling))
 
 :::danger Note
 
-For the proper work of horizontally scaled application server, do not miss to add a [load balancing node](/docs/load-balancers/load-balancing) to your environment topology beforehand (if it’s absent).
+For the proper work of horizontally scaled application server, do not miss to add a [load balancing node](/load-balancers/load-balancing) to your environment topology beforehand (if it’s absent).
 
 :::
 

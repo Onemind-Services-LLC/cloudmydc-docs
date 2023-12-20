@@ -1,10 +1,10 @@
 ---
-title: Node.js versions
+title: Node.Js Versions
 slug: node.js-versions
 sidebar_position: 2
 ---
 
-## Node.js Versions
+<!-- ## Node.js Versions -->
 
 The platform allows to pre-select any of the latest major NodeJS application server releases and the required _process_ and _package_ managers. Currently, the following versions of this stack are available:
 
@@ -15,11 +15,11 @@ The platform allows to pre-select any of the latest major NodeJS application ser
 
 :::tip
 
-The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/docs/quickstart/software-stack-versions) document.
+The up-to-date list of the releases available on the platform is provided via the dedicated, regularly (weekly) updated [Software Stack Versions](/quickstart/software-stack-versions) document.
 
 :::
 
-The required Node.js version can be selected when creating [a new environment](/docs/nodejs/node.js-versions#create-nodejs-environment), as well as switched for [the already existing](/docs/nodejs/node.js-versions#change-nodejs-version) one.
+The required Node.js version can be selected when creating [a new environment](/nodejs/node.js-versions#create-nodejs-environment), as well as switched for [the already existing](/nodejs/node.js-versions#change-nodejs-version) one.
 
 ## Create Node.js Environment
 
@@ -47,7 +47,7 @@ The required Node.js version can be selected when creating [a new environment](/
 
 </div>
 
-3. Next, you can select the preferred [process manager](/docs/nodejs/nodejs-apps-specifications/process-managers#nodejs-process-managers) (_supervisor_, _forever_,_npm_ or _pm2_) through the _tags_ drop-down list (circled in the image below):
+3. Next, you can select the preferred [process manager](/nodejs/nodejs-apps-specifications/process-managers#nodejs-process-managers) (_supervisor_, _forever_,_npm_ or _pm2_) through the _tags_ drop-down list (circled in the image below):
 
 <div style={{
     display:'flex',
@@ -66,13 +66,13 @@ A Node.js process manager helps to control your application lifecycle, providing
 - **_forever_** - manages node processes (i.e. service start, stop, restart) to save services alive through keeping them run continuously
 - **_pm2_** - provides you with multiple special options (like monitoring, load balancing, deployment, etc.), allowing to manage your application more effectively
 
-Specify the remaining server and environment parameters (e.g. cloudlet limits, [region](/docs/environment-management/environment-regions/choosing-a-region#environment-regions), environment name, etc.) and click the **Create** button in the bottom right frame corner.
+Specify the remaining server and environment parameters (e.g. cloudlet limits, [region](/environment-management/environment-regions/choosing-a-region#environment-regions), environment name, etc.) and click the **Create** button in the bottom right frame corner.
 
 ## Change Node.js Version
 
 You are also able to switch the version of your NodeJS server and process manager afterward, for the already existing environment.
 
-1. Access the [redeploy container(s)](/docs/category/container-deployment) dialog through either:
+1. Access the [redeploy container(s)](/category/container-deployment) dialog through either:
 
 - clicking on the **Change Environment Topology** button next to the appropriate environment.
 
@@ -113,8 +113,8 @@ In the opened frame, select to edit your Nodejs server version or tag (i.e. clic
 2. Within the opened R**_edeploy container(s)_** dialog, re-configure the following options:
 
 - **_Tag_** - provides a choice of needed Node.js version and preferred process manager
-- **_Keep volumes data_** - allows saving data in [volumes](/docs/container/container-configuration/volumes)
-- **_Simultaneous_** or **_Sequential deployment with delay_** (for [scaled servers](/docs/application-setting/scaling-and-clustering/horizontal-scaling) only) - defines whether all containers within a layer should be redeployed at once or one-by-one, to avoid downtime
+- **_Keep volumes data_** - allows saving data in [volumes](/container/container-configuration/volumes)
+- **_Simultaneous_** or **_Sequential deployment with delay_** (for [scaled servers](/application-setting/scaling-and-clustering/horizontal-scaling) only) - defines whether all containers within a layer should be redeployed at once or one-by-one, to avoid downtime
 
 <div style={{
     display:'flex',
@@ -140,6 +140,6 @@ In the opened frame, select to edit your Nodejs server version or tag (i.e. clic
 
 :::tip
 
-For the detailed guidance on Node.js projects hosting, please, refer to the [Node.js Developer’s Center](/docs/nodejs/node.js-dev-center#nodejs-hosting) guide.
+For the detailed guidance on Node.js projects hosting, please, refer to the [Node.js Developer’s Center](/nodejs/node.js-dev-center#nodejs-hosting) guide.
 
 :::

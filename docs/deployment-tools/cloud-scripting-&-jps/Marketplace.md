@@ -6,9 +6,9 @@ sidebar_position: 4
 
 import obj from './Marketplace.json'
 
-## Marketplace
+<!-- ## Marketplace -->
 
-Platform Marketplace is a library of the most popular and requested applications, which are configured and optimized in the most beneficial way via the platform [Packaging Standard](/docs/deployment-tools/cloud-scripting-&-jps/jps-overview). These packaged solutions can be installed automatically directly from the dashboard, skipping many steps of manual deployment and optimization.
+Platform Marketplace is a library of the most popular and requested applications, which are configured and optimized in the most beneficial way via the platform [Packaging Standard](/deployment-tools/cloud-scripting-&-jps/jps-overview). These packaged solutions can be installed automatically directly from the dashboard, skipping many steps of manual deployment and optimization.
 
 You can access the **Marketplace** via the appropriate button at the top-left corner of the dashboard.
 
@@ -270,7 +270,7 @@ For more solution examples refer to the [JPS Collection](https://github.com/jela
 - [Simple Automated CI/CD Pipeline for GitHub and GitLab Projects](https://github.com/jelastic-jps/git-push-deploy)
 - [Java Memory Agent for Container RAM Usage Optimization](https://github.com/jelastic-jps/java-memory-agent)
 
-[import](/docs/environment-management/environment-export-and-import/environment-import) the appropriate manifest file via the dashboard to instantly get your solution. Also, you can explore the source code of any package, fork repository for yourself and customize it up to your particular needs before installation.
+[import](/environment-management/environment-export-and-import/environment-import) the appropriate manifest file via the dashboard to instantly get your solution. Also, you can explore the source code of any package, fork repository for yourself and customize it up to your particular needs before installation.
 
 :::
 
@@ -278,7 +278,7 @@ For more solution examples refer to the [JPS Collection](https://github.com/jela
 
 _This feature availability depends on the particular hosting provider’s settings._
 
-The **Subscription Plans** section of the Marketplace lists all the products that are offered on a subscription-based basis (i.e. for a fixed price). You can learn more in the dedicated [Subscription-Based Products](/docs/account-and-pricing/subscription-based-products) guide.
+The **Subscription Plans** section of the Marketplace lists all the products that are offered on a subscription-based basis (i.e. for a fixed price). You can learn more in the dedicated [Subscription-Based Products](/account-and-pricing/subscription-based-products) guide.
 
 <div style={{
     display:'flex',
@@ -320,7 +320,7 @@ Below, we’ll provide an example of a packaged solution installation.
 
 3. Based on the particular package, you may need to provide some additional data to customize the solution up to your needs. For example, it could be the preferable nodes count or specific option availability.
 
-For a detailed overview of the [WordPress Standalone Hosting](https://cloudmydc.com/) peculiarities, refer to the linked article on our blog. In general, the basic settings (i.e. required by any application) are environment name, [alias](/docs/environment-management/environment-aliases), and, if available, [region](/docs/environment-management/environment-regions/choosing-a-region).
+For a detailed overview of the [WordPress Standalone Hosting](https://cloudmydc.com/) peculiarities, refer to the linked article on our blog. In general, the basic settings (i.e. required by any application) are environment name, [alias](/environment-management/environment-aliases), and, if available, [region](/environment-management/environment-regions/choosing-a-region).
 
 <div style={{
     display:'flex',
@@ -350,7 +350,7 @@ Click **Install** to continue.
 
 You can track the JPS package installation process in detail via the Cloud Scripting console. While logged into your dashboard account, add the **_/console_** suffix to URL:
 
-_https://app._[**_{platformDomain}_**](/docs/quickstart/hosters-list-&-info)_/console_
+_https://app._[**_{platformDomain}_**](/quickstart/hosters-list-&-info)_/console_
 
 <div style={{
     display:'flex',

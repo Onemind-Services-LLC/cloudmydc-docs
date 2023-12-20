@@ -1,12 +1,10 @@
 ---
-title: Release notes 8.0
+title: Release Notes 8.0
 slug: release-notes-8.0
 sidebar_position: 9
 ---
 
 import obj from './ReleaseNotes8.0.json'
-
-## CloudMyDc Application Platform 8.0
 
 _This document is preliminary and subject to change._
 
@@ -47,7 +45,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.0#autofs-downgrade">
+                <a href="/platform-overview/release-notes/release-notes-8.0#autofs-downgrade">
                     Learn More >>
                 </a>
             </div>
@@ -66,7 +64,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.0#software-stack-versions">
+                <a href="/platform-overview/release-notes/release-notes-8.0#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -110,7 +108,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.0#fixes-compatible-with-prior-versions">
+                <a href="/platform-overview/release-notes/release-notes-8.0#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -129,7 +127,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.0#bug-fixes">
+                <a href="/platform-overview/release-notes/release-notes-8.0#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -140,7 +138,7 @@ Fixed
 
 ## AutoFS Downgrade
 
-**AutoFS** is a file system tool to automate [directories mounting](/docs/data-storage-container/data-sharing/mount-points) operations and to achieve the “as-needed” approach. With this directory mounting method, shared folders are mounted only upon access and automatically unmounted after a period of inactivity. The main focus of the implementation is better network efficiency compared to static mounts.
+**AutoFS** is a file system tool to automate [directories mounting](/data-storage-container/data-sharing/mount-points) operations and to achieve the “as-needed” approach. With this directory mounting method, shared folders are mounted only upon access and automatically unmounted after a period of inactivity. The main focus of the implementation is better network efficiency compared to static mounts.
 
 However, some performance issues were detected with the latest AutoFS versions. As a result, it was forcibly downgraded to the stable **_AutoFS 5.1.6_** version for all containers on the platform. The platform will restore regular updates to the newest release as soon as the problem is resolved.
 
@@ -149,7 +147,7 @@ However, some performance issues were detected with the latest AutoFS versions. 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -241,7 +239,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
                 wordBreak: 'break-all',
                 padding: '20px',
             }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+                <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
                     {item.JE}
                 </a>
             </div>
@@ -270,7 +268,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -279,16 +277,16 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/quickstart/software-stack-versions)
+[More info](/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

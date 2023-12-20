@@ -1,12 +1,10 @@
 ---
-title: Migration between regions
+title: Migration Between Regions
 slug: migration-between-regions
 sidebar_position: 2
 ---
 
-## Environment Migration between Regions
-
-Within the confines of the multiple **[environment regions](/docs/environment-management/environment-regions/choosing-a-region)** approach, the initially chosen location of the project can be easily changed using the migration option (obviously, if you have an access to several environment regions). It represents an extremely powerful tool, that can help you to benefit in both cost and productivity - as an example, you can choose cheaper hardware for the development/testing stages and subsequently migrate your production-ready application to the hardware with the best parameters, just before the release.
+Within the confines of the multiple **[environment regions](/environment-management/environment-regions/choosing-a-region)** approach, the initially chosen location of the project can be easily changed using the migration option (obviously, if you have an access to several environment regions). It represents an extremely powerful tool, that can help you to benefit in both cost and productivity - as an example, you can choose cheaper hardware for the development/testing stages and subsequently migrate your production-ready application to the hardware with the best parameters, just before the release.
 
 <div style={{
     display:'flex',
@@ -70,8 +68,8 @@ Pricing policy in different environment regions can vary based on their paramete
 
 Just lower down the tab the **_Live migration_** section is placed, either with the special switcher shown or providing some additional info, depending on the chosen target region. Here you can define which migration type (among the two provided ones) should be used:
 
-- **[live migration](/docs/environment-management/environment-regions/migration-between-regions#live-migration)** - available only between the environment regions, marked with the special LM label within the list (usually, only for regions within the same datacenter)
-- **[offline migration](/docs/environment-management/environment-regions/migration-between-regions#offline-migration)** - can be used for any environment regions
+- **[live migration](/environment-management/environment-regions/migration-between-regions#live-migration)** - available only between the environment regions, marked with the special LM label within the list (usually, only for regions within the same datacenter)
+- **[offline migration](/environment-management/environment-regions/migration-between-regions#offline-migration)** - can be used for any environment regions
 
 <div style={{
     display:'flex',
@@ -125,7 +123,7 @@ Although the benefits of live (online) migration are evident, keep in mind that 
 - _active database containers, [Big Data](https://en.wikipedia.org/wiki/Big_data)_ - possible corruption or loss of the currently processed data due to the nature of online migration and freezes of network connections/disk IO related operations during the migration process
 
 :::
-If the [offline mode](/docs/environment-management/environment-regions/migration-between-regions#offline-migration) is needed - just turn off the corresponding switcher.
+If the [offline mode](/environment-management/environment-regions/migration-between-regions#offline-migration) is needed - just turn off the corresponding switcher.
 
 <div style={{
     display:'flex',

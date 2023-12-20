@@ -1,10 +1,10 @@
 ---
-title: Collaboration user experience
+title: Collaboration User Experience
 slug: collaboration-user-experience
 sidebar_position: 4
 ---
 
-Once the [collaboration is established](/docs/account-and-pricing/accounts-collaboration/create-collaboration), its members can start working with shared environments. In this guide, we’ll go through all the peculiarities of the process.
+Once the [collaboration is established](/account-and-pricing/accounts-collaboration/create-collaboration), its members can start working with shared environments. In this guide, we’ll go through all the peculiarities of the process.
 
 1. The shared environments can be easily distinguished from the regular ones via the dedicated icon and owner tag.
 
@@ -30,7 +30,7 @@ Once the [collaboration is established](/docs/account-and-pricing/accounts-colla
 
 </div>
 
-3. At the **[Env Groups](/docs/environment-management/environment-groups/overview)** **> Shared with Me** tab, you can see the complete list of shared environments and groups.
+3. At the **[Env Groups](/environment-management/environment-groups/overview)** **> Shared with Me** tab, you can see the complete list of shared environments and groups.
 
 <div style={{
     display:'flex',
@@ -72,7 +72,7 @@ Also, the whole groups' tree can be seen when managing environment groups.
 
 </div>
 
-You can check the [role and list of allowed policies](/docs/account-and-pricing/accounts-collaboration/collaboration-roles-policies) for shared resources at the account **Settings > Shared with Me** section.
+You can check the [role and list of allowed policies](/account-and-pricing/accounts-collaboration/collaboration-roles-policies) for shared resources at the account **Settings > Shared with Me** section.
 
 <div style={{
     display:'flex',
@@ -130,7 +130,7 @@ Here, you can select an account and group to create your environment.
 
 :::tip Tip
 
-If you have permission to install packages from the [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace), the **_Owner_** field will be added to the installation window.
+If you have permission to install packages from the [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace), the **_Owner_** field will be added to the installation window.
 
 <div style={{
     display:'flex',
@@ -144,7 +144,7 @@ If you have permission to install packages from the [Marketplace](/docs/deployme
 
 :::
 
-The limitations of the selected owner are automatically applied to the topology wizard or installation window (for [imported](/docs/environment-management/environment-export-and-import/environment-import) and Marketplace packages).
+The limitations of the selected owner are automatically applied to the topology wizard or installation window (for [imported](/environment-management/environment-export-and-import/environment-import) and Marketplace packages).
 
 <div style={{
     display:'flex',

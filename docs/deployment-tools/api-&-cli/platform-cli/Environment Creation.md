@@ -1,10 +1,10 @@
 ---
-title: Environment creation
+title: Environment Creation
 slug: environment-creation
 sidebar_position: 2
 ---
 
-## CLI Tutorial: Environment Creation
+<!-- ## CLI Tutorial: Environment Creation -->
 
 Creation of environments via command line can come in handy for the variety of different solutions (e.g. handling [complex DevOps scenarios](https://cloudmydc.com/)). So, let’s consider the ways this can be accomplished through.
 
@@ -20,12 +20,12 @@ In the example above, the highlighted placeholders should be substituted with th
 
 - **_{env_name}_** - name for the new environment
 - **_{engine_type}_** - engine for being used in this environment
-- **_{node_type}_** - stack type identifier, according to the [list](/docs/deployment-tools/cloud-scripting-&-jps/application-manifest)
+- **_{node_type}_** - stack type identifier, according to the [list](/deployment-tools/cloud-scripting-&-jps/application-manifest)
 - **_{cloudlets_amount}_** - number of fixed and flexible cloudlets to allocate for a particular node
 
 :::tip Tip
 
-The more detailed information on available parameters can be found within the corresponding [API method](https://docs.jelastic.com/api/#!/api/environment.Control-method-CreateEnvironment) description and at the [CreateEnvironment API](/docs/deployment-tools/api-&-cli/create-env-params) overview.
+The more detailed information on available parameters can be found within the corresponding [API method](https://docs.jelastic.com/api/#!/api/environment.Control-method-CreateEnvironment) description and at the [CreateEnvironment API](/deployment-tools/api-&-cli/create-env-params) overview.
 
 :::
 
@@ -81,7 +81,7 @@ In addition, you can redefine or add some of the settings (namely – _shortdoma
 
 </div>
 
-2. Creation of a [Docker-based environment](/docs/container/container-deployment/custom-containers-deployment) is almost similar to the above described methods, but includes a few specific parameters. So, in order to get a Docker container using platform CLI, you need to execute the following line:
+2. Creation of a [Docker-based environment](/container/container-deployment/custom-containers-deployment) is almost similar to the above described methods, but includes a few specific parameters. So, in order to get a Docker container using platform CLI, you need to execute the following line:
 
 ```bash
 ~/jelastic/environment/control/createenvironment --env '{"shortdomain" : "{env_name}"}' --nodes '[{"nodeType" : "docker", "fixedCloudlets" : {cloudlets_amount}, "flexibleCloudlets" : {cloudlets_amount}, "docker" : {"image" : "{image_name}"}}]'
@@ -97,7 +97,7 @@ Herewith:
 
 :::tip Note
 
-The full list of the special Docker parameters can be found at the appropriate [document](/docs/deployment-tools/api-&-cli/create-env-params).
+The full list of the special Docker parameters can be found at the appropriate [document](/deployment-tools/api-&-cli/create-env-params).
 
 :::
 

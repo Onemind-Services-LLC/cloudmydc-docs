@@ -1,15 +1,15 @@
 ---
-title: Automatic discounts
+title: Automatic Discounts
 slug: automatic-discounts
 sidebar_position: 14
 ---
 
 The platform can give you automatic discounts for your resource usage depending on the amount that you consume (so higher volume usage is automatically cheaper). The availability and the level of discount depends on your chosen hosting provider and the specific resource:
 
-- [RAM/CPU (cloudlets);](/docs/account-and-pricing/automatic-discounts#ramcpu)
-- [disk space](/docs/account-and-pricing/automatic-discounts#disk-space)
-- [traffic](/docs/account-and-pricing/automatic-discounts#traffic)
-- [options (Public IP, SSL)](/docs/account-and-pricing/automatic-discounts#options)
+- [RAM/CPU (cloudlets);](/account-and-pricing/automatic-discounts#ramcpu)
+- [disk space](/account-and-pricing/automatic-discounts#disk-space)
+- [traffic](/account-and-pricing/automatic-discounts#traffic)
+- [options (Public IP, SSL)](/account-and-pricing/automatic-discounts#options)
 
 ## RAM/CPU
 

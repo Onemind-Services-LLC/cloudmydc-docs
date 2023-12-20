@@ -1,13 +1,15 @@
 ---
-title: Application deploy via netbeans
+title: Application Deploy Via NetBeans
 slug: application-deploy-via-netbeans
 sidebar_position: 4
 ---
 
-## NetBeans Plugin for Application Deploy
+<!-- ## NetBeans Plugin for Application Deploy -->
+
 You can create own project in NetBeans IDE and deploy it right into your environment.
 
 ## Create New Project
+
 1. Click the **New Project** button in the upper tools panel of NetBeans IDE.
 
 <div style={{
@@ -20,7 +22,7 @@ You can create own project in NetBeans IDE and deploy it right into your environ
 
 </div>
 
-2. Choose the **Java Web** category and the ***Web Application*** project. Click **Next**.
+2. Choose the **Java Web** category and the **_Web Application_** project. Click **Next**.
 
 <div style={{
     display:'flex',
@@ -81,6 +83,7 @@ You can create own project in NetBeans IDE and deploy it right into your environ
 </div>
 
 ## Deploy Project
+
 1. Right-click the name of your project and choose the **Deploy** menu item.
 
 <div style={{
@@ -130,4 +133,3 @@ As a result your application will be opened.
 </div>
 
 With the platform **NetBeans IDE plugin** installed you can easily manage, develop and deploy your applications without switching between the IDE and the browser.
-

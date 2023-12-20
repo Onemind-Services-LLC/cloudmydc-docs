@@ -1,5 +1,5 @@
 ---
-title: Wordpress paas 2.1
+title: WordPress Paas 2.1
 slug: wordpress-paas-2.1
 sidebar_position: 1
 ---
@@ -178,14 +178,14 @@ Another major new feature is the ability to switch subscription plans within the
 
 </div>
 
-[More info](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview)
+[More info](/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -206,14 +206,14 @@ You can find this new feature by selecting a specific project and navigating to 
 
 </div>
 
-[More info](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management)
+[More info](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-management)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -239,14 +239,14 @@ In the current 2.1 platform release, a new **User Information** section was adde
 
 </div>
 
-[More info](/docs/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview#account-settings)
+[More info](/wordpress-as-a-service/wordpress-dashboard/wordpress-dashboard-overview#account-settings)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -272,7 +272,7 @@ Additionally, if the project has another admin panel (e.g., for the LiteSpeed se
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

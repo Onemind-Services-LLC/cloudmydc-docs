@@ -1,15 +1,15 @@
 ---
-title: Dump import-export
+title: Dump Import-Export
 slug: dump-import-export
 sidebar_position: 4
 ---
 
-## Import and Export Dump Files to MongoDB
+<!-- ## Import and Export Dump Files to MongoDB -->
 
 You can import and export dump files to MongoDB in two ways:
 
-- [using any **MongoDB client**](/docs/database/mongodb/dump-import-export#mongodb-client-database-master)
-- [using **RockMongo** administration GUI tool](/docs/database/mongodb/dump-import-export#rockmongo-admin-panel)
+- [using any **MongoDB client**](/database/mongodb/dump-import-export#mongodb-client-database-master)
+- [using **RockMongo** administration GUI tool](/database/mongodb/dump-import-export#rockmongo-admin-panel)
 
 :::tip Note
 

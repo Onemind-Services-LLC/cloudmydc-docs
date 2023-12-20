@@ -1,13 +1,13 @@
 ---
-title: Deployment manager
+title: Deployment Manager
 slug: deployment-manager
 sidebar_position: 2
 ---
 
 The **Deployment Manager** is located at the bottom of the dashboard and is used to store applications to simplify their subsequent deployment into your environments. There are two subsections to provide support for the following deployment types:
 
-- **[Archive](/docs/deployment/deployment-manager#application-archives)** - stores the application packages, which can be uploaded from your local machine or any external link
-- **[Git / SVN](/docs/deployment/deployment-manager#git--svn-projects)** - saves the link to your project within the remote Git / SVN repository and the appropriate access credentials (if needed)
+- **[Archive](/deployment/deployment-manager#application-archives)** - stores the application packages, which can be uploaded from your local machine or any external link
+- **[Git / SVN](/deployment/deployment-manager#git--svn-projects)** - saves the link to your project within the remote Git / SVN repository and the appropriate access credentials (if needed)
 
 ## Application Archives
 
@@ -60,7 +60,7 @@ Fill in the **Comment** field (if required) and **Upload**.
 
 </div>
 
-Within the opened frame you can [configure deployment](/docs/deployment/deployment-guide) up to your needs.
+Within the opened frame you can [configure deployment](/deployment/deployment-guide) up to your needs.
 
 4. The no longer required archives can be removed by selecting them with the appropriate checkboxes before the name and clicking the **Delete** button at the top panel.
 
@@ -132,7 +132,7 @@ Additionally, you can manage the scope of provided permissions during the access
 
 </div>
 
-You can just **Add** this project into Deployment Manager or **Add + Deploy** to immediately initiate [deployment](/docs/deployment/deployment-guide) of this application.
+You can just **Add** this project into Deployment Manager or **Add + Deploy** to immediately initiate [deployment](/deployment/deployment-guide) of this application.
 
 3. Hover over the Git / SVN project in Deployment Manager to access the **Deploy** to, **Edit** and **Delete** options.
 

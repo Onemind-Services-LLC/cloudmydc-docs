@@ -1,10 +1,10 @@
 ---
-title: Windows rd access
+title: Windows Remote Desktop Access
 slug: windows-rd-access
 sidebar_position: 4
 ---
 
-## Windows Remote Desktop Access
+<!-- ## Windows Remote Desktop Access -->
 
 <div style={{
     display: 'grid',
@@ -33,8 +33,8 @@ In order to ensure the maximum convenience while using the Windows hosting servi
 
 Besides this default connection scenario, you can also use your preferred local remote desktop client. So, below we’ll describe both ways of the remote desktop connections' establishment in more details:
 
-- [RDP Connection via Web Client](/docs/windows-and-.NET/windows-rd-access#rdp-connection-via-web-client)
-- [RDP Connection via Local Client](/docs/windows-and-.NET/windows-rd-access#rdp-connection-via-local-client)
+- [RDP Connection via Web Client](/windows-and-.NET/windows-rd-access#rdp-connection-via-web-client)
+- [RDP Connection via Local Client](/windows-and-.NET/windows-rd-access#rdp-connection-via-local-client)
 
 ## RDP Connection via Web Client
 
@@ -54,7 +54,7 @@ Let’s consider it on the example of the Windows VM server.
 
 </div>
 
-The other available options are required for connection via the [local RDP client](/docs/windows-and-.NET/windows-rd-access#rdp-connection-via-local-client):
+The other available options are required for connection via the [local RDP client](/windows-and-.NET/windows-rd-access#rdp-connection-via-local-client):
 
 - **Reset RDP Password** to reset and resend Administrator credentials
 - **Info**, which displays short information on establishing the RDP connection manually
@@ -72,7 +72,7 @@ The other available options are required for connection via the [local RDP clien
 
 </div>
 
-Once the connection is established, you’ll see the **Server Manager** window opened. Now, you can start [managing your server](/docs/windows-and-.NET/managing-server-roles-&-features).
+Once the connection is established, you’ll see the **Server Manager** window opened. Now, you can start [managing your server](/windows-and-.NET/managing-server-roles-&-features).
 
 ## RDP Connection via Local Client
 
@@ -80,8 +80,8 @@ In case you prefer to work with a local remote desktop client, you’ll need to 
 
 Below, we’ll describe the examples of working with the most common RDP clients for Windows and UNIX-based operating systems:
 
-- [For Windows](/docs/windows-and-.NET/windows-rd-access#for-windows)
-- [For Linux/MacOS/FreeBSD](/docs/windows-and-.NET/windows-rd-access#for-linuxmacosfreebsd)
+- [For Windows](/windows-and-.NET/windows-rd-access#for-windows)
+- [For Linux/MacOS/FreeBSD](/windows-and-.NET/windows-rd-access#for-linuxmacosfreebsd)
 
 ## For Windows
 
@@ -99,11 +99,11 @@ Below, we’ll describe the examples of working with the most common RDP clients
 
 </div>
 
-3. Provide the RDP connection link ([endpoint](/docs/application-setting/external-access-to-applications/endpoints)) into the **PC name** field.
+3. Provide the RDP connection link ([endpoint](/application-setting/external-access-to-applications/endpoints)) into the **PC name** field.
 
 :::danger Note
 
-If [public IP](/docs/application-setting/external-access-to-applications/public-ip) is attached to the Windows VM node, it <u>must</u> be used instead of the endpoint.
+If [public IP](/application-setting/external-access-to-applications/public-ip) is attached to the Windows VM node, it <u>must</u> be used instead of the endpoint.
 
 :::
 

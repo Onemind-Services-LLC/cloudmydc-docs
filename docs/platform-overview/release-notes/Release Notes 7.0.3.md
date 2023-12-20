@@ -1,12 +1,10 @@
 ---
-title: Release notes 7.0.3
+title: Release Notes 7.0.3
 slug: release-notes-7.0.3
 sidebar_position: 14
 ---
 
 import obj from './ReleaseNotes7.0.3.json'
-
-## CloudMyDc Application Platform 7.0.3
 
 _This document is preliminary and subject to change._
 
@@ -50,7 +48,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.0.3#software-stack-versions">
+                <a href="/platform-overview/release-notes/release-notes-7.0.3#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -94,7 +92,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.0.3#fixes-compatible-with-prior-versions">
+                <a href="/platform-overview/release-notes/release-notes-7.0.3#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -113,7 +111,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.0.3#bug-fixes">
+                <a href="/platform-overview/release-notes/release-notes-7.0.3#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -236,7 +234,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -245,16 +243,16 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/quickstart/software-stack-versions)
+[More info](/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

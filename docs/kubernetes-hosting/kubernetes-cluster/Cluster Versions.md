@@ -1,10 +1,10 @@
 ---
-title: Cluster versions
+title: Cluster Versions
 slug: cluster-versions
 sidebar_position: 4
 ---
 
-## Kubernetes Cluster: Versions & Change Logs
+<!-- ## Kubernetes Cluster: Versions & Change Logs -->
 
 The platform provides a pre-packages **_Kubernetes (K8s) Cluster_** solution with automatic installation. [Kubernetes](https://kubernetes.io/docs/concepts/overview/) is a portable, extensible, open-source platform for managing container-based workload and services, that facilitates both declarative configuration and automation. It correlates greatly with the PaaS, allowing to set up applications based on the Kubernetes system directly inside the platform.
 

@@ -1,10 +1,8 @@
 ---
-title: Release notes 8.3.2
+title: Release Notes 8.3.2
 slug: release-notes-8.3.2
 sidebar_position: 1
 ---
-
-## Release Notes 8.3.2
 
 import obj from './ReleaseNotes8.3.2.json'
 
@@ -46,7 +44,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.3.2#ssh-gate-improvements">
+                <a href="/platform-overview/release-notes/release-notes-8.3.2#ssh-gate-improvements">
                     Learn More >>
                 </a>
             </div>
@@ -65,7 +63,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.3.2#software-stack-versions">
+                <a href="/platform-overview/release-notes/release-notes-8.3.2#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -108,7 +106,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.3.2#fixes-compatible-with-prior-versions">
+                <a href="/platform-overview/release-notes/release-notes-8.3.2#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -127,7 +125,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-8.3.2#bug-fixes">
+                <a href="/platform-overview/release-notes/release-notes-8.3.2#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -138,7 +136,7 @@ Fixed
 
 ## SSH Gate Improvements
 
-[SSH Gate](/docs/deployment-tools/ssh/ssh-overview) component of the platform that helps connect to environments via SSH protocol. In the current 8.3.2 platform version, several improvements were applied to ensure the security and reliability of the process:
+[SSH Gate](/deployment-tools/ssh/ssh-overview) component of the platform that helps connect to environments via SSH protocol. In the current 8.3.2 platform version, several improvements were applied to ensure the security and reliability of the process:
 
 - Implemented the correct processing of the new [OpenSSH extension](https://github.com/openssh/openssh-portable/blob/V_9_1/PROTOCOL#L288) to the SSH protocol. The OpenSSH 8.5 and newer clients no longer require the “**UpdateHostkeys=no**” directive to connect the gate.
 - Removed support for the obsolete KEX (key exchange protocol) algorithms to ensure the security of the connection.
@@ -149,7 +147,7 @@ Fixed
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3.2#release-notes-832">
+    <a href="/platform-overview/release-notes/release-notes-8.3.2#release-notes-832">
         Back to the top
     </a>
 </div>
@@ -265,7 +263,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3.2#release-notes-832">
+    <a href="/platform-overview/release-notes/release-notes-8.3.2#release-notes-832">
         Back to the top
     </a>
 </div>
@@ -274,16 +272,16 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/quickstart/software-stack-versions)
+[More info](/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-   <a href="/docs/platform-overview/release-notes/release-notes-8.3.2#release-notes-832">
+   <a href="/platform-overview/release-notes/release-notes-8.3.2#release-notes-832">
         Back to the top
     </a>
 </div>
@@ -401,7 +399,7 @@ In the table below, you can see the list of bug fixes applied to the platform st
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3.2#release-notes-832">
+    <a href="/platform-overview/release-notes/release-notes-8.3.2#release-notes-832">
         Back to the top
     </a>
 </div>

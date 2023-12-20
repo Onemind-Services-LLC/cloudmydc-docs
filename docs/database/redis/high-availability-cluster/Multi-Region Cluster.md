@@ -1,10 +1,10 @@
 ---
-title: Multi-region cluster
+title: Multi-Region Cluster
 slug: multi-region-cluster
 sidebar_position: 2
 ---
 
-## Redis Multi-Region Cluster
+<!-- ## Redis Multi-Region Cluster -->
 
 **Redis Multi-Region Cluster** is a pre-packaged distributed implementation of Redis where data is sharded between cluster nodes in different regions. The solution has the following goals:
 
@@ -44,7 +44,7 @@ Both topologies provide out-of-box high availability and failover capabilities f
 
 ## Cluster Installation
 
-1. Find the **_Multi-Region Redis Cluster_** application (the **Clusters** section or use the **Search** field) in the platform [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
+1. Find the **_Multi-Region Redis Cluster_** application (the **Clusters** section or use the **Search** field) in the platform [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
 
 <div style={{
     display:'flex',
@@ -59,10 +59,10 @@ Both topologies provide out-of-box high availability and failover capabilities f
 2. In the opened installation window, specify the following data:
 
 - **Version** - select the preferred Redis version
-- **Environment** - provide a name for [grouping](/docs/environment-management/environment-groups/overview) your database cluster environments
-- **Create separate environment group** – tick to [isolate](/docs/environment-management/environment-isolation#private-network-isolation) the environment group
-- **Enable External IP Addresses for cluster nodes** – tick to add [public IP](/docs/application-setting/external-access-to-applications/public-ip#public-ip) to the cluster nodes (three IPs per region), which is required if the Redis client is located outside the platform
-- **Topology** – choose either **_Maximum Performance_** or **_Maximum Reliability_** topology (details can be found in the [Cluster Topology](/docs/database/redis/high-availability-cluster/multi-region-cluster#database-cluster-topology) section above)
+- **Environment** - provide a name for [grouping](/environment-management/environment-groups/overview) your database cluster environments
+- **Create separate environment group** – tick to [isolate](/environment-management/environment-isolation#private-network-isolation) the environment group
+- **Enable External IP Addresses for cluster nodes** – tick to add [public IP](/application-setting/external-access-to-applications/public-ip#public-ip) to the cluster nodes (three IPs per region), which is required if the Redis client is located outside the platform
+- **Topology** – choose either **_Maximum Performance_** or **_Maximum Reliability_** topology (details can be found in the [Cluster Topology](/database/redis/high-availability-cluster/multi-region-cluster#database-cluster-topology) section above)
 - **Regions** - select platform regions where the cluster environments will be deployed. For the **_Maximum Reliability_** topology, the first region will host primary servers and other - secondary databases (replicas)
 
 <div style={{

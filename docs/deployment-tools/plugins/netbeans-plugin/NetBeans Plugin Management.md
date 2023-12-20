@@ -1,10 +1,10 @@
 ---
-title: Netbeans plugin management
+title: NetBeans Plugin Management
 slug: netbeans-plugin-management
 sidebar_position: 3
 ---
 
-## NetBeans Plugin Management
+<!-- ## NetBeans Plugin Management -->
 
 You can easily manage your existing Java environments through the **Services** tab.
 For that expand your **Cloud** list and choose the desired environment.
@@ -98,4 +98,4 @@ If you have a deployed application, you can right-click on the appropriate conte
 </div>
 
 Also, using this menu you can delete the chosen context.
-In order to learn how to [deploy NetBeans projects](/docs/deployment-tools/plugins/netbeans-plugin/application-deploy-via-netbeans) into the platform directly from IDE read the linked document.
+In order to learn how to [deploy NetBeans projects](/deployment-tools/plugins/netbeans-plugin/application-deploy-via-netbeans) into the platform directly from IDE read the linked document.

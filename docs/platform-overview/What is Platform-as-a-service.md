@@ -1,12 +1,8 @@
 ---
-title: What is platform-as-a-service
+title: What Is Platform-As-A-Service
 slug: what-is-platform-as-a-service
 sidebar_position: 1
 ---
-
-## work todo
-
-## What is PaaS? Platform-as-a-Service Types Explained
 
 There’s no single PaaS for everyone. Even the definition of this cloud computing service model is quite vague today. Commonly, it is described as a cloud hosting platform with a set of deployment and scaling automation, application management and DevOps tools that can be run on shared infrastructure or on-premise. Also, PaaS eliminates the complexity of building and maintaining the underlying infrastructure. Let’s see how PaaSes differ through the prism of their use cases and supported technologies, and how to determine which one will meet specific needs.
 
@@ -44,7 +40,7 @@ There can be considered three levels of PaaS abstraction: low, mid and high.
 
 **_Low abstraction_** level platforms, especially Container-as-a-Service (CaaS) solutions, provide DevOps teams with deep access to infrastructure configurations, as well as granular control over containers and various platform services (e.g. service discovery, logging, security and load balancing).
 
-**_Mid abstraction_** has the primary goal to let developers code without headache of infrastructure configuration and management. These platforms give developers access to a wide range of integrated and optimized development frameworks, middleware software stacks, APIs and services completely abstracted from CaaS and IaaS deployment properties. Very often such PaaS solutions provide [automatic scaling](/docs/application-setting/scaling-and-clustering/automatic-vertical-scaling), load balancing, high-availability, backup, disaster recovery, CI/CD, and other application lifecycle management features out-of-box.
+**_Mid abstraction_** has the primary goal to let developers code without headache of infrastructure configuration and management. These platforms give developers access to a wide range of integrated and optimized development frameworks, middleware software stacks, APIs and services completely abstracted from CaaS and IaaS deployment properties. Very often such PaaS solutions provide [automatic scaling](/application-setting/scaling-and-clustering/automatic-vertical-scaling), load balancing, high-availability, backup, disaster recovery, CI/CD, and other application lifecycle management features out-of-box.
 
 **_High abstraction_** solutions are aimed to abstract even coding process to increase the application delivery speed and reduce the cost of innovations. In this case, developers get the entire technology stack but with full abstraction of application, platform and infrastructure levels. It helps to boost performance of team members and reduce requirements to their technical skills.
 

@@ -1,16 +1,16 @@
 ---
-title: Subscription-based products
+title: Subscription-Based Products
 slug: subscription-based-products
 sidebar_position: 7
 ---
 
 _This feature availability depends on the particular hosting provider’s settings._
 
-The platform can offer some products based on the subscription model. The flow is standard to the modern subscription services implementations – a client is charged once and gets a designated product for a specified period. The solution gives you a fix-priced alternative to the default [usage-based model](/docs/account-and-pricing/pricing-model-overview). Let’s see how it works.
+The platform can offer some products based on the subscription model. The flow is standard to the modern subscription services implementations – a client is charged once and gets a designated product for a specified period. The solution gives you a fix-priced alternative to the default [usage-based model](/account-and-pricing/pricing-model-overview). Let’s see how it works.
 
 ## Purchasing Subscription
 
-1. All products that are available for the user are displayed in the dedicated **_Subscription Plans_** tab of the [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace).
+1. All products that are available for the user are displayed in the dedicated **_Subscription Plans_** tab of the [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace).
 
 <div style={{
     display:'flex',
@@ -56,7 +56,7 @@ Choose the required plan and click **Buy**.
 
 :::danger Note
 
-Although subscription environments are bought separately, they will still be stopped in case of [account deactivation](/docs/account-and-pricing/account-statuses).
+Although subscription environments are bought separately, they will still be stopped in case of [account deactivation](/account-and-pricing/account-statuses).
 
 :::
 
@@ -64,7 +64,7 @@ At the bottom of the frame, you can see the total sum of the configured subscrip
 
 4. An invoice will be generated immediately after clicking the **Subscribe & Pay** button.
 
-After that, your subscription will be added to the dedicated account section, where you can [manage all your subscriptions](/docs/account-and-pricing/subscription-based-products#managing-subscriptions).
+After that, your subscription will be added to the dedicated account section, where you can [manage all your subscriptions](/account-and-pricing/subscription-based-products#managing-subscriptions).
 
 :::tip Tip
 
@@ -126,7 +126,7 @@ The subscription table provides the following information:
 
 The buttons on the tools panel allow to:
 
-- **Buy** [new subscriptions](/docs/account-and-pricing/subscription-based-products#purchasing-subscription), which will redirect to the appropriate Marketplace section (as described in the previous section).
+- **Buy** [new subscriptions](/account-and-pricing/subscription-based-products#purchasing-subscription), which will redirect to the appropriate Marketplace section (as described in the previous section).
 - **Install** packages for the existing subscriptions.
 - **Edit** a subscription to change installation quantity and change the Auto Pay option.
 - **Refresh** information in the list.

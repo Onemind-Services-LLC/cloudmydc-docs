@@ -1,10 +1,10 @@
 ---
-title: Environment import
+title: Environment Import
 slug: environment-import
 sidebar_position: 3
 ---
 
-The the platform’s **Environment Import** feature allows executing the **_.json, .jps, .yml, .yaml_**, or **_.cs_** files on the platform to automatically install and configure projects according to the declared settings. Being initially designed to deploy the previously [exported](/docs/environment-management/environment-export-and-import/environment-export) environment copies (e.g. to transfer an application from another PaaS installation), it can also be used to install your own solutions, declared via JSON, or integrate any ready-to-go package from [JPS Collection](https://github.com/jelastic-jps).
+The the platform’s **Environment Import** feature allows executing the **_.json, .jps, .yml, .yaml_**, or **_.cs_** files on the platform to automatically install and configure projects according to the declared settings. Being initially designed to deploy the previously [exported](/environment-management/environment-export-and-import/environment-export) environment copies (e.g. to transfer an application from another PaaS installation), it can also be used to install your own solutions, declared via JSON, or integrate any ready-to-go package from [JPS Collection](https://github.com/jelastic-jps).
 
 So, let’s consider how to work with the platform import functionality in detail on the example of the exported environment.
 
@@ -52,7 +52,7 @@ For your exported environment to work correctly, it should be migrated to the Pa
 
 </div>
 
-- **JPS** - the built-in editor to either insert and edit code or to compose your own solution from scratch (refer to the [JPS deployment and troubleshooting](/docs/environment-management/environment-export-and-import/environment-import#jps-deployment--troubleshooting) section below for more information)
+- **JPS** - the built-in editor to either insert and edit code or to compose your own solution from scratch (refer to the [JPS deployment and troubleshooting](/environment-management/environment-export-and-import/environment-import#jps-deployment--troubleshooting) section below for more information)
 
 <div style={{
     display:'flex',
@@ -87,8 +87,8 @@ To proceed, click the **Import** button in the bottom-right corner of the needed
 Within the fields inside, you need to specify the following parameters:
 
 - **Environment** - domain name for your new environment
-- **Display Name** - environment [alias](/docs/environment-management/environment-aliases) to be displayed at the dashboard instead of its domain (optional)
-- **Region** - [environment region](/docs/environment-management/environment-regions/choosing-a-region) to host the solution (if several ones are available)
+- **Display Name** - environment [alias](/environment-management/environment-aliases) to be displayed at the dashboard instead of its domain (optional)
+- **Region** - [environment region](/environment-management/environment-regions/choosing-a-region) to host the solution (if several ones are available)
 
 Click **Import** when ready.
 
@@ -130,7 +130,7 @@ That’s all! This way, you can automatically install any required solution to t
 
 ## JPS Deployment & Troubleshooting
 
-The **Import > JPS** option is most frequently used by developers who create [JPS packages](/docs/deployment-tools/cloud-scripting-&-jps/jps-overview) (e.g. for automation of the common tasks or implementation of complex CI/CD flows). Also, it is an excellent tool for the quick tuning and testing of the packages.
+The **Import > JPS** option is most frequently used by developers who create [JPS packages](/deployment-tools/cloud-scripting-&-jps/jps-overview) (e.g. for automation of the common tasks or implementation of complex CI/CD flows). Also, it is an excellent tool for the quick tuning and testing of the packages.
 
 1. Once added into this editor, your code will be automatically parsed for errors. If detected, they will be marked with the red cross icon before the corresponding line (hover over for some additional information on the issue). Besides, your code is safely retained in your browser’s local storage, so you can freely close the whole Import frame (e.g. to perform some other operations at the dashboard) and return to coding later on.
 

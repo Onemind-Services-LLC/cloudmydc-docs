@@ -1,18 +1,18 @@
 ---
-title: Account registration
+title: Account Registration
 slug: account-registration
 sidebar_position: 1
 ---
 
 ## Account Management
 
-- [Sign Up: How to Create an Account](/docs/account-and-pricing/account-registration#sign-up)
-- [Sign In to the Dashboard](/docs/account-and-pricing/account-registration#sign-in)
-- [Sign out](/docs/account-and-pricing/account-registration#sign-out)
+- [Sign Up: How to Create an Account](/account-and-pricing/account-registration#sign-up)
+- [Sign In to the Dashboard](/account-and-pricing/account-registration#sign-in)
+- [Sign out](/account-and-pricing/account-registration#sign-out)
 
 :::tip Tip
 
-If you need to [reset or change password](/docs/account-and-pricing/account-password-reset) for your platform account check out the linked guide.
+If you need to [reset or change password](/account-and-pricing/account-password-reset) for your platform account check out the linked guide.
 
 :::
 
@@ -22,7 +22,7 @@ The PaaS is offered across multiple platforms worldwide, so if you don’t have 
 
 :::tip Tip
 
-Check out our **[Getting Started](/docs/quickstart/getting-started)** guide for general information on how to create a new account.
+Check out our **[Getting Started](/quickstart/getting-started)** guide for general information on how to create a new account.
 
 :::
 
@@ -59,7 +59,7 @@ Also, you can register directly from the main website.
 
 Specify the desired password for your account and confirm it within the appropriate fields.
 
-According to your hosting provider’s settings, this activation form can also contain either [captcha](/docs/account-and-pricing/account-registration#captcha-verification) or [mobile number verification](/docs/account-and-pricing/account-registration#mobile-number-verification) widget:
+According to your hosting provider’s settings, this activation form can also contain either [captcha](/account-and-pricing/account-registration#captcha-verification) or [mobile number verification](/account-and-pricing/account-registration#mobile-number-verification) widget:
 
 ## Captcha Verification
 

@@ -1,12 +1,10 @@
 ---
-title: Release notes 7.1
+title: Release Notes 7.1
 slug: release-notes-7.1
 sidebar_position: 13
 ---
 
 import obj from './ReleaseNotes7.1.json'
-
-## CloudMyDc Application Platform 7.1
 
 _This document is preliminary and subject to change._
 
@@ -46,7 +44,7 @@ New
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.1#send-message-api-with-ip-authorization">
+                <a href="/platform-overview/release-notes/release-notes-7.1#send-message-api-with-ip-authorization">
                     Learn More >>
                 </a>
             </div>
@@ -90,7 +88,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.1#info-for-environment-clone-dialog">
+                <a href="/platform-overview/release-notes/release-notes-7.1#info-for-environment-clone-dialog">
                     Learn More >>
                 </a>
             </div>
@@ -109,7 +107,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.1#api-changes">
+                <a href="/platform-overview/release-notes/release-notes-7.1#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -128,7 +126,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.1#software-stack-versions">
+                <a href="/platform-overview/release-notes/release-notes-7.1#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -172,7 +170,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.1#fixes-compatible-with-prior-versions">
+                <a href="/platform-overview/release-notes/release-notes-7.1#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -191,7 +189,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/docs/platform-overview/release-notes/release-notes-7.1#bug-fixes">
+                <a href="/platform-overview/release-notes/release-notes-7.1#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -216,7 +214,7 @@ Both new methods are part of the **environment > node** service:
   - **name** - title of the message
   - **message** - body of the message
 
-The platform already utilizes these new methods to provide proper notification about changes in containers - for example, automatic notifications due to [smart recovery after the OOM error](/docs/application-setting/smart-auto-configuration/auto-configuration-overview). Developers can benefit from the implementation by extending their custom packages with automatic notification of the container owner based on some specific condition.
+The platform already utilizes these new methods to provide proper notification about changes in containers - for example, automatic notifications due to [smart recovery after the OOM error](/application-setting/smart-auto-configuration/auto-configuration-overview). Developers can benefit from the implementation by extending their custom packages with automatic notification of the container owner based on some specific condition.
 
 [More info](https://cloudmydc.com/)
 
@@ -225,14 +223,14 @@ The platform already utilizes these new methods to provide proper notification a
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## Info for Environment Clone Dialog
 
-The **[Clone Environment](/docs/environment-management/cloning-environment)** is a powerful platform feature that allows you to create an identical copy of the existing environment. For example, it can be helpful during development to create a separate instance of the project where tuning and adjustments can be safely tested without affecting existing customers. However, when utilizing the feature, users should be aware that the IP addresses and hostnames of the clone will differ from the initial environment (i.e. manual re-adjustment of these values may be required). To ensure better awareness of the fact, such information was added to the **_Clone Environment_** dialog.
+The **[Clone Environment](/environment-management/cloning-environment)** is a powerful platform feature that allows you to create an identical copy of the existing environment. For example, it can be helpful during development to create a separate instance of the project where tuning and adjustments can be safely tested without affecting existing customers. However, when utilizing the feature, users should be aware that the IP addresses and hostnames of the clone will differ from the initial environment (i.e. manual re-adjustment of these values may be required). To ensure better awareness of the fact, such information was added to the **_Clone Environment_** dialog.
 
 <div style={{
     display:'flex',
@@ -244,23 +242,23 @@ The **[Clone Environment](/docs/environment-management/cloning-environment)** is
 
 </div>
 
-[More info](/docs/environment-management/cloning-environment)
+[More info](/environment-management/cloning-environment)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
 
 ## API Changes
 
-Below, you can find a list of all changes to the public API in the 7.1 platform version (compared to the preceding [7.0](/docs/platform-overview/release-notes/release-notes-7.0#api-changes) ones).
+Below, you can find a list of all changes to the public API in the 7.1 platform version (compared to the preceding [7.0](/platform-overview/release-notes/release-notes-7.0#api-changes) ones).
 
-Two new API methods were added to the **environment > node** service, implementing a simplified flow to [notify the container owner](/docs/platform-overview/release-notes/release-notes-7.1#send-message-api-with-ip-authorization) (using IP authorization instead of user session):
+Two new API methods were added to the **environment > node** service, implementing a simplified flow to [notify the container owner](/platform-overview/release-notes/release-notes-7.1#send-message-api-with-ip-authorization) (using IP authorization instead of user session):
 
 - **_SendEvent_** - sends a predefined notification based on the specific event inside a container
 - **_SendNotification_** - sends a custom email notification to the node owner
@@ -272,7 +270,7 @@ Two new API methods were added to the **environment > node** service, implementi
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -391,7 +389,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>
@@ -400,16 +398,16 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
 
-The most accurate and up-to-date list of the certified [software stack versions](/docs/quickstart/software-stack-versions) can be found on the dedicated documentation page.
+The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
-[More info](/docs/quickstart/software-stack-versions)
+[More info](/quickstart/software-stack-versions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/docs/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
         Back to the top
     </a>
 </div>

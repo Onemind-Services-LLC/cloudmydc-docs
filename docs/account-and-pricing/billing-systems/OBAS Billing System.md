@@ -1,17 +1,17 @@
 ---
-title: Obas billing system
+title: OBAS Billing System
 slug: obas-billing-system
 sidebar_position: 3
 ---
 
-## Billing via OBAS
+<!-- ## Billing via OBAS -->
 
 This step-by-step instruction shows you how to convert and refill your account if your hosting provider uses **OBAS (Odin Business Automation Standard)** system.
 
 At the moment OBAS system is used by **[Layershift](https://cloudmydc.com/)**, **[Cloudplatform](https://cloudmydc.com/)**, **[Elastx](https://cloudmydc.com/)**, **[DOCKTERA](https://cloudmydc.com/)** and **[Axarnet](https://cloudmydc.com/)**.
 
 - [Conversion](https://hostbillapp.com/feature/jelastic/)
-- [Refilling](/docs/account-and-pricing/billing-systems/oba-billing-system#refilling)
+- [Refilling](/account-and-pricing/billing-systems/oba-billing-system#refilling)
 
 ## Conversion
 

@@ -1,10 +1,11 @@
 ---
-title: Upload jar files
+title: Upload Jar Files
 slug: upload-jar-files
 sidebar_position: 1
 ---
 
-## Upload JAR Files
+<!-- ## Upload JAR Files -->
+
 You can also upload JAR files to your application. All uploaded **JAR files** are available on all of your application nodes. The platform is compatible with all libraries and has no limitations or restrictions on uploading Java files.
 
 To upload **.jar** files:

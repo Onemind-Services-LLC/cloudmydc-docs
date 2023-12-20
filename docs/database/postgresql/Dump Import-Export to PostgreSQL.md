@@ -1,12 +1,12 @@
 ---
-title: Dump import-export to postgresql
+title: Dump Import-Export To Postgresql
 slug: dump-import-export-to-postgresql
 sidebar_position: 6
 ---
 
-## Import and Export Dump Files to PostgreSQL
+<!-- ## Import and Export Dump Files to PostgreSQL -->
 
-Create two database environments and connect to them using any desktop client (we use pgAdmin4 as an example. Learn more in our [tutorial](/docs/database/mysql-mariadb-percona/remote-access)).
+Create two database environments and connect to them using any desktop client (we use pgAdmin4 as an example. Learn more in our [tutorial](/database/mysql-mariadb-percona/remote-access)).
 
 <div style={{
     display:'flex',

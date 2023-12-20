@@ -1,5 +1,5 @@
 ---
-title: Gitlab ci-cd integration
+title: Gitlab Ci-Cd Integration
 slug: gitlab-ci-cd-integration
 sidebar_position: 10
 ---
@@ -60,7 +60,7 @@ All of them may be done with platform automation. Also, we will go through the s
 
 ## Kubernetes and GitLab Installation
 
-Sign in to the Jelastic platform dashboard, go to the [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace), find and install **DevOps Lab - GitLab Server** and **Kubernetes Cluster** applications one by one. The installation sequence is arbitrary. Note that the solution from this guide is available only for billing customers.
+Sign in to the Jelastic platform dashboard, go to the [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace), find and install **DevOps Lab - GitLab Server** and **Kubernetes Cluster** applications one by one. The installation sequence is arbitrary. Note that the solution from this guide is available only for billing customers.
 
 <div style={{
     display:'flex',

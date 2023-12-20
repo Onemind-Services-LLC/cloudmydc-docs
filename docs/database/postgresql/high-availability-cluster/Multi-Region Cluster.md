@@ -1,10 +1,10 @@
 ---
-title: Multi-region cluster
+title: Multi-Region Cluster
 slug: multi-region-cluster
 sidebar_position: 2
 ---
 
-## PostgreSQL Multi-Region Cluster
+<!-- ## PostgreSQL Multi-Region Cluster -->
 
 **PostgreSQL Multi-Region Cluster** is a pre-packaged solution that automatically creates an advanced, highly available database cluster on top of platform-managed stack templates.
 
@@ -28,7 +28,7 @@ The sum of these implementations ensures out-of-box high availability and failov
 
 ## Cluster Installation
 
-1. Find the **_PostgreSQL Multi-Region Cluster_** application (the **Clusters** section or use the **Search** field) in the platform [Marketplace](/docs/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
+1. Find the **_PostgreSQL Multi-Region Cluster_** application (the **Clusters** section or use the **Search** field) in the platform [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
 
 <div style={{
     display:'flex',
@@ -43,8 +43,8 @@ The sum of these implementations ensures out-of-box high availability and failov
 2. In the opened installation window, specify the following data:
 
 - **Version** - select the preferred PostgreSQL version
-- **Environment** - provide a name for [grouping](/docs/environment-management/environment-groups/overview) your database cluster environments
-- **Create separate environment group** – tick to [isolate](/docs/environment-management/environment-isolation#private-network-isolation) the environment group
+- **Environment** - provide a name for [grouping](/environment-management/environment-groups/overview) your database cluster environments
+- **Create separate environment group** – tick to [isolate](/environment-management/environment-isolation#private-network-isolation) the environment group
 - **PostgreSQL Regions** - choose platform regions where the cluster environments will be deployed. Note that regions order matters, as the first one will be the Primary server and the others will be Secondary
 - **Pgpool-II enabled** – enable to add load-balancing, monitoring, and management node (Pgpool-II) in front of database nodes in each region
 - **Pgpool regions** - choose platform regions where the load balancing nodes will be deployed
@@ -75,7 +75,7 @@ To easily view all the related environments, you can switch to the group specifi
 
 </div>
 
-4. The default entry point for your multi-region cluster is a leader Pgpool-II node (the one deployed into the first region). If it fails, you can use any other Pgpool-II node using either [hostname](/docs/application-setting/domain-name-management/container-dns-hostnames#hostnames-for-specific-containers) or IP address.
+4. The default entry point for your multi-region cluster is a leader Pgpool-II node (the one deployed into the first region). If it fails, you can use any other Pgpool-II node using either [hostname](/application-setting/domain-name-management/container-dns-hostnames#hostnames-for-specific-containers) or IP address.
 
 <div style={{
     display:'flex',

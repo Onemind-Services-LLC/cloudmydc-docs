@@ -1,10 +1,10 @@
 ---
-title: Ssh overview
+title: SSH Overview
 slug: ssh-overview
 sidebar_position: 1
 ---
 
-## SSH Gate Overview
+<!-- ## SSH Gate Overview -->
 
 **SSH (Secure Shell)** is a protocol used to connect securely to a remote container and execute the required commands on it. SSH commands are encrypted and secure: client/server connection is authenticated using a digital certificate, and passwords are protected by being encrypted.
 
@@ -41,7 +41,7 @@ With SSH Gate, you can easily access:
 
 </div>
 
-- **separate containers directly** while working with them remotely via additional tools (e.g. [Capistrano](/docs/deployment-tools/ssh/capistrano)) or using SFTP and FISH protocols
+- **separate containers directly** while working with them remotely via additional tools (e.g. [Capistrano](/deployment-tools/ssh/capistrano)) or using SFTP and FISH protocols
 
 <div style={{
     display:'flex',
@@ -77,12 +77,12 @@ An additional secure network protocol is **FISH** (Files transferred over Shell 
 
 Using our documentation you’ll find out how to:
 
-- [generate SSH key](/docs/deployment-tools/ssh/generate-ssh-key)
-- [add SSH key](/docs/deployment-tools/ssh/add-ssh-key)
-- [access environments and containers](/docs/deployment-tools/ssh/ssh-access/overview)
+- [generate SSH key](/deployment-tools/ssh/generate-ssh-key)
+- [add SSH key](/deployment-tools/ssh/add-ssh-key)
+- [access environments and containers](/deployment-tools/ssh/ssh-access/overview)
 - [work via SSH](https://cloudmydc.com/)
-- [use SFTP and FISH protocols](/docs/deployment-tools/ssh/ssh-protocols)
-- [manage containers via SSH with Capistrano](/docs/deployment-tools/ssh/capistrano)
+- [use SFTP and FISH protocols](/deployment-tools/ssh/ssh-protocols)
+- [manage containers via SSH with Capistrano](/deployment-tools/ssh/capistrano)
 
 :::tip Note
 

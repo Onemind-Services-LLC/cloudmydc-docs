@@ -1,10 +1,10 @@
 ---
-title: Dedicated container
+title: Dedicated Container
 slug: dedicated-container
 sidebar_position: 4
 ---
 
-## Dedicated Storage Container
+<!-- ## Dedicated Storage Container -->
 
 For more complex and loaded applications, it is worth to centralize your shared data within a single container to get more simple and flexible exports' management (including access permission control - e.g. read-only for one node type and read-write for another).
 

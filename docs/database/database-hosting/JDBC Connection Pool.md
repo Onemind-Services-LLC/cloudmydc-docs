@@ -1,10 +1,10 @@
 ---
-title: Jdbc connection pool
+title: JDBC Connection Pool
 slug: jdbc-connection-pool
 sidebar_position: 5
 ---
 
-## JDBC Connection Pool
+<!-- ## JDBC Connection Pool -->
 
 **Connection pooling** in JDBC (Java Database Connectivity) is an optimization feature, which caches database connections. Such implementation allows to reuse them, rather than spawning and closing one for each request, namely:
 
@@ -15,10 +15,10 @@ Configuring JDBC pool connection for your application server can reduce delays a
 
 Herewith, both GlassFish and Payara Java application servers provide a native support of the connection pooling mechanism to enhance a database access. Follow the simple steps below to configure JDBC connection pool:
 
-- [Create Environment](/docs/database/database-hosting/jdbc-connection-pool#create-environment)
-- [Prepare Database](/docs/database/database-hosting/jdbc-connection-pool#prepare-database)
-- [Configure Application Server](/docs/database/database-hosting/jdbc-connection-pool#configure-application-server)
-- [Connect from Java Code](/docs/database/database-hosting/jdbc-connection-pool#connect-from-java-code)
+- [Create Environment](/database/database-hosting/jdbc-connection-pool#create-environment)
+- [Prepare Database](/database/database-hosting/jdbc-connection-pool#prepare-database)
+- [Configure Application Server](/database/database-hosting/jdbc-connection-pool#configure-application-server)
+- [Connect from Java Code](/database/database-hosting/jdbc-connection-pool#connect-from-java-code)
 
 ## Create Environment
 

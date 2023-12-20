@@ -1,10 +1,10 @@
 ---
-title: Sticky sessions
+title: Sticky Sessions
 slug: sticky-sessions
 sidebar_position: 2
 ---
 
-## Sticky Sessions Routing for Traffic Distributor
+<!-- ## Sticky Sessions Routing for Traffic Distributor -->
 
 This method is used to achieve server-affinity by sticking user to a particular backend, which allows to work with just one application version. Herewith, on the first visit, customer is routed based on the servers' weights, while assigned backend is remembered, ensuring that all subsequent requests from this user go to the same environment.
 
@@ -20,4 +20,4 @@ Commonly, this is implemented through remembering IP address, which is not optim
 
 </div>
 
-In such a way, Sticky Sessions distribution of a _new users_ is similar to the [round robin](/docs/application-setting/traffic-distributor/routing-methods/round-robin) method and is performed according to the pre-set priority. For example, setting 50% to 50% will make both application versions being visited by the equal amount of unique users, which is useful for [performing A/B Testing](/docs/application-setting/traffic-distributor/use-cases/a-b-testing). But, irrespectively of the server’s weights, the _“old” user’s_ requests will always be redirected to the hosts they are assigned to, until their session is expired or cookie is removed.
+In such a way, Sticky Sessions distribution of a _new users_ is similar to the [round robin](/application-setting/traffic-distributor/routing-methods/round-robin) method and is performed according to the pre-set priority. For example, setting 50% to 50% will make both application versions being visited by the equal amount of unique users, which is useful for [performing A/B Testing](/application-setting/traffic-distributor/use-cases/a-b-testing). But, irrespectively of the server’s weights, the _“old” user’s_ requests will always be redirected to the hosts they are assigned to, until their session is expired or cookie is removed.
