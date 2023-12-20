@@ -1,0 +1,191 @@
+{
+  "data1": [
+    {
+      "JE": "JE-63771",
+      "CompatibleFrom": "any",
+      "Desc": "The “Master/Slave” terms are used instead of “Primary/Secondary” in the success window of the Multi-Region WordPress Cluster package"
+    },
+    {
+      "JE": "JE-64515",
+      "CompatibleFrom": "any",
+      "Desc": "The Open in Browser button in the Redis/PostgreSQL Multi-Regional Cluster installation success window does not work"
+    },
+    {
+      "JE": "JE-64706",
+      "CompatibleFrom": "any",
+      "Desc": "An error occurs if the Let’s Encrypt add-on is installed for the environment with an external domain and incorrectly set up DNS"
+    },
+    {
+      "JE": "JE-64769",
+      "CompatibleFrom": "any",
+      "Desc": "An error occurs when cloning an environment with the BitNinja add-on installed"
+    },
+    {
+      "JE": "WP-247",
+      "CompatibleFrom": "any",
+      "Desc": "The WordPress packages are missing the ability to select the preferred PHP version"
+    },
+    {
+      "JE": "JE-55416",
+      "CompatibleFrom": "3.3",
+      "Desc": "The Let’s Encrypt add-on does not work with environment domain names converted to Punycode"
+    },
+    {
+      "JE": "JE-60130",
+      "CompatibleFrom": "3.3",
+      "Desc": "The Rocket.Chat package does not work after restarting the environment"
+    },
+    {
+      "JE": "JE-64407",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs during the Plesk package installation"
+    },
+    {
+      "JE": "JE-64509",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs after the DjangoCMS package installation"
+    },
+    {
+      "JE": "JE-64824",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when installing the Drupal package with the 8.2 PHP engine version"
+    },
+    {
+      "JE": "JE-64825",
+      "CompatibleFrom": "3.3",
+      "Desc": "An error occurs when installing Moodle package with the 8.2 PHP engine version"
+    },
+    {
+      "JE": "JE-64938",
+      "CompatibleFrom": "3.3",
+      "Desc": "The Let’s Encrypt add-on installation does not return an error when installed with the incorrect domain name"
+    },
+    {
+      "JE": "JE-47650",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The PerconaDB icon is missing on the platform dashboard"
+    },
+    {
+      "JE": "JE-63156",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "Unsupported PostgreSQL version on the NGINX Ruby template"
+    },
+    {
+      "JE": "JE-63923",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The custom environment variables declared via the .jelenv file are unavailable on the NGINX PHP containers"
+    },
+    {
+      "JE": "JE-64529",
+      "CompatibleFrom": "5.0.5",
+      "Desc": "The FTP add-on does not provide access to the home directory on the Spring Boot stack"
+    },
+    {
+      "JE": "JE-64678",
+      "CompatibleFrom": "5.4",
+      "Desc": "The .NET stacks have a weak default password"
+    },
+    {
+      "JE": "JE-63244",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "The Export tab is not working in PHPMyAdmin for the LEMP/LLSMP templates"
+    },
+    {
+      "JE": "JE-64564",
+      "CompatibleFrom": "5.7.4",
+      "Desc": "The Redis module is missing for the LiteSpeed 6 stack with PHP 8 engine"
+    },
+    {
+      "JE": "JE-64574",
+      "CompatibleFrom": "5.8.1",
+      "Desc": "No error message in the Pgpool-II node’s logs upon the followprimary.sh script failure"
+    },
+    {
+      "JE": "JE-64575",
+      "CompatibleFrom": "5.8.1",
+      "Desc": "The Pgpool-II node incorrectly detects the database primary for the two-node cluster"
+    }
+  ],
+  "data2": [
+    {
+      "JE": "JE-65170",
+      "AffectedVersions": "8.2",
+      "Desc": "An error occurs when mounting files from some custom Docker containers"
+    },
+    {
+      "JE": "JE-65227",
+      "AffectedVersions": "-",
+      "Desc": "Errors are logged during projects auto-deploy on containers with enabled sendmail functionality"
+    },
+    {
+      "JE": "JE-65272",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs when executing some commands that include a file download operation"
+    },
+    {
+      "JE": "JE-65325",
+      "AffectedVersions": "-",
+      "Desc": "Custom Docker containers cannot be created from images that use the OCI manifest schema"
+    },
+    {
+      "JE": "JE-65414",
+      "AffectedVersions": "-",
+      "Desc": "A scroll slider appears in the environment configuration settings panel even if there is enough space to fit the content"
+    },
+    {
+      "JE": "JE-65499",
+      "AffectedVersions": "-",
+      "Desc": "The shared files owner is changed to root when resetting a password for the FTP add-on on the Shared Storage node"
+    },
+    {
+      "JE": "JE-65625",
+      "AffectedVersions": "7.2",
+      "Desc": "The URL_DOCS_OOM_KILLER_TROUBLESHOOTING placeholder is not replaced with a link in emails"
+    },
+    {
+      "JE": "JE-61250",
+      "AffectedVersions": "-",
+      "Desc": "Firewall management via the user dashboard becomes too slow after adding the 'Deny Internet Access' rule"
+    },
+    {
+      "JE": "JE-64487",
+      "AffectedVersions": "-",
+      "Desc": "An error occurs during PHP stacks’ ZDT (zero downtime) deployment"
+    },
+    {
+      "JE": "JE-64618",
+      "AffectedVersions": "any",
+      "Desc": "The platform dashboard cannot be accessed using the Safari browser"
+    },
+    {
+      "JE": "JE-64636",
+      "AffectedVersions": "-",
+      "Desc": "A slow response and an incorrect error returned when accessing a non-existing environment on port 4848"
+    },
+    {
+      "JE": "JE-64654",
+      "AffectedVersions": "-",
+      "Desc": "Incorrect custom SSL certificate management on the SLBs after the environment deletion"
+    },
+    {
+      "JE": "JE-64782",
+      "AffectedVersions": "7.0.3",
+      "Desc": "The cloudlets usage is not displayed for the Ubuntu VM environments, and the topology cannot be changed"
+    },
+    {
+      "JE": "JE-64802",
+      "AffectedVersions": "-",
+      "Desc": "Performance degradation after importing an environment into the shared group as a collaborator"
+    },
+    {
+      "JE": "JE-64915",
+      "AffectedVersions": "-",
+      "Desc": "The custom domains field is not updated after the Let’s Encrypt add-on reconfiguration"
+    },
+    {
+      "JE": "JE-64925",
+      "AffectedVersions": "7.3",
+      "Desc": "New account registration does not work if the provided password contains the backslash character"
+    }
+  ]
+}

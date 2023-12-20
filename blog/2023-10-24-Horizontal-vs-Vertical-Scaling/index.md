@@ -1,6 +1,6 @@
 ---
-slug: Horizontal-vs-Vertical-Scaling
 title: Horizontal vs Vertical Scaling
+slug: horizontal-vs-vertical-scaling
 authors: [vishal]
 tags: [vertical scaling, horizontal scaling, scaling]
 ---

@@ -23,131 +23,131 @@ export const FeatureList: FeatureItem[] = [
   {
     title: "Java",
     Svg: require("@site/static/img/home/java-active.svg").default,
-    url: "/docs/Java/Java%20Dev%20Center",
+    url: "/java/java-dev-center",
   },
   {
     title: "PHP",
     Svg: require("@site/static/img/home/php-active.svg").default,
-    url: "/docs/PHP/PHP%20Dev%20Center",
+    url: "/php/php-dev-center",
   },
   {
     title: "Node.js",
     Svg: require("@site/static/img/home/node-active.svg").default,
-    url: "/docs/Nodejs/Node.js%20Dev%20Center",
+    url: "/nodejs/node.js-dev-center",
   },
   {
     title: "Python",
     Svg: require("@site/static/img/home/python-active.svg").default,
-    url: "/docs/Python/Python%20Dev%20Center",
+    url: "/python/python-dev-center",
   },
   {
     title: "Go Lang",
     Svg: require("@site/static/img/home/go-active.svg").default,
-    url: "/docs/Go%20Lang/Go%20Dev%20Center",
+    url: "/go-lang/go-dev-center",
   },
   {
     title: "Ruby",
     Svg: require("@site/static/img/home/ruby-active.svg").default,
-    url: "/docs/Ruby/Ruby%20Dev%20Center",
+    url: "/ruby/ruby-dev-center",
   },
   {
     title: ".NET",
     Svg: require("@site/static/img/home/dotnet.svg").default,
-    url: "/docs/Windows&.NET/DOT%20NET%20Core",
+    url: "/windows-and-.NET/dot-net-core",
   },
   {
     title: "Containers",
     Svg: require("@site/static/img/home/container.svg").default,
-    url: "/docs/Container/Container%20Types",
+    url: "/container/container-types",
   },
   {
     title: "Kubernetes",
     Svg: require("@site/static/img/home/kubernetes-icon-b.svg").default,
-    url: "/docs/Kubernetes%20Hosting/Kubernetes%20Cluster/Kubernetes%20Overview",
+    url: "/kubernetes-hosting/kubernetes-cluster/kubernetes-overview",
   },
   {
     title: "Databases",
     Svg: require("@site/static/img/home/databases.svg").default,
-    url: "/docs/Database/Database%20Hosting/DB%20Hosting%20Overview",
+    url: "/database/database-hosting/db-hosting-overview",
   },
   {
     title: "Load Balancer",
     Svg: require("@site/static/img/home/lb-b.svg").default,
-    url: "/docs/Load%20Balancers/Load%20Balancing",
+    url: "/load-balancers/load-balancing",
   },
   {
     title: "Elastic VPS",
     Svg: require("@site/static/img/home/hosting-b.svg").default,
-    url: "/docs/Elastic%20VPS/Elastic%20VPS%20Overview/General%20Information",
+    url: "/elastic-vps/elastic-vps-overview/general-information",
   },
   {
     title: "Storage",
     Svg: require("@site/static/img/home/storage-b.svg").default,
-    url: "/docs/Data%20Storage%20Container/Data%20Storage%20Overview",
+    url: "/data-storage-container/data-storage-overview",
   },
   {
     title: "Cache",
     Svg: require("@site/static/img/home/cache.svg").default,
-    url: "/docs/Memcached/Memcached%20System",
+    url: "/memcached/memcached-system",
   },
 ];
 
 export const QuickStartList: QuickStartItem[] = [
   {
     title: "Getting Started",
-    url: "/docs/QuickStart/Getting%20Started",
+    url: "/quickstart/getting-started",
   },
   {
     title: "Dashboard Guide",
-    url: "/docs/QuickStart/Dashboard%20Guide",
+    url: "/quickstart/dashboard-guide",
   },
   {
     title: "Deployment Guide",
-    url: "/docs/Deployment/Deployment%20Guide",
+    url: "/deployment/deployment-guide",
   },
   {
     title: "Database Сonnection",
-    url: "/docs/Database/Database%20Hosting/Database%20Connection%20Strings",
+    url: "/database/database-hosting/database-connection-strings",
   },
   {
     title: "Software Stack Versions",
-    url: "/docs/QuickStart/Software%20Stack%20Versions",
+    url: "/quickstart/software-stack-versions",
   },
 ];
 
 export const RecommendedList: RecommendedItem[] = [
   {
     title: "Automatic Vertical Scaling",
-    url: "/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Vertical%20Scaling",
+    url: "/application-setting/scaling-and-clustering/automatic-vertical-scaling",
   },
   {
     title: "Automatic Horizontal Scaling",
-    url: "/docs/ApplicationSetting/Scaling%20And%20Clustering/Automatic%20Horizontal%20Scaling",
+    url: "/application-setting/scaling-and-clustering/automatic-horizontal-scaling",
   },
   {
     title: "Custom Domain Name",
-    url: "/docs/ApplicationSetting/Domain%20Name%20Management/Custom%20Domain%20Name",
+    url: "/application-setting/domain-name-management/custom-domain-name",
   },
   {
     title: "Traffic Distributor",
-    url: "/docs/ApplicationSetting/Traffic%20Distributor/Traffic%20Distributor%20Overview",
+    url: "/application-setting/traffic-distributor/traffic-distributor-overview",
   },
   {
     title: "Accounts Collaboration",
-    url: "/docs/Account&Pricing/Accounts%20Collaboration/Collaboration%20Overview",
+    url: "/account-and-pricing/accounts-collaboration/collaboration-overview",
   },
 ];
 
 export const GettingInfoList: GettingInfoItem[] = [
   {
     title: "Release Notes",
-    url: "/docs/PlatformOverview/Release%20Notes/Release%20Notes%208.3.2",
+    url: "/platform-overview/release-notes/release-notes-8.3.2",
   },
   // { title: "Platform API", url: "#" },
   { title: "Cloud Scripting", url: "https://docs.cloudscripting.com/" },
   {
     title: "Platform CLI",
-    url: "/docs/Deployment%20Tools/API%20&%20CLI/Platform%20CLI/Platform%20CLI%20Overview",
+    url: "/deployment-tools/api-&-cli/platform-cli/platform-cli-overview",
   },
   // { title: "Ops Docs", url: "#" },
 ];

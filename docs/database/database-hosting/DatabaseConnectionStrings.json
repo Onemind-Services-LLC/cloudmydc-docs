@@ -1,0 +1,56 @@
+{
+  "data1": [
+    {
+      "DBType": "MySQL",
+      "ConnectionCode": "String URL = \"jdbc:mysql://node{node_id}-{environment_name}.{hoster_domain}/{dbname}\"; DriverManager.getConnection(URL, user_name, user_password);",
+      "url": "/database/mysql-mariadb-percona/connection-to-applications/java-connection",
+      "required": true
+    },
+    {
+      "DBType": "MySQL Auto-Cluster",
+      "ConnectionCode": "String URL = \"jdbc:mysql://proxy.{environment_name}.{hoster_domain}:3306/{dbname}\"; DriverManager.getConnection(URL, user_name, user_password);",
+      "url": "/application-setting/scaling-and-clustering/auto-clustering-of-instances",
+      "required": true
+    },
+    {
+      "DBType": "MariaDB Auto-Cluster",
+      "ConnectionCode": "String URL = \"jdbc:mariadb://proxy.{environment_name}.{hoster_domain}:3306/{dbname}?usePipelineAuth=false\"; DriverManager.getConnection(URL, user_name, user_password);",
+      "url": "/application-setting/scaling-and-clustering/auto-clustering-of-instances",
+      "required": true
+    },
+    {
+      "DBType": "PostgreSQL",
+      "ConnectionCode": "String URL = \"jdbc:postgresql://node{node_id}-{environment_name}.{hoster_domain}/{dbname}\"; DriverManager.getConnection(URL, user_name, user_password);",
+      "url": "",
+      "required": false
+    },
+    {
+      "DBType": "MongoDB",
+      "ConnectionCode": "Mongo m = new Mongo(\"node{node_id}-{environment_name}.{hoster_domain}\"); DB db = m.getDB(\"{database_name}\"); if (db.authenticate(user_name, user_password.toCharArray())) { System.out.println(\"Connected!\"); }",
+      "url": "/database/mongodb/connection-to-applications/java-connection-to-mongodb",
+      "required": true
+    },
+    {
+      "DBType": "CouchDB",
+      "ConnectionCode": "String host = \"node{node_id}-{environment_name}.{hoster_domain}\"; int port = 80; String username = \"username\"; String password = \"password\"; Session dbSession = new Session(host, port, username, password);",
+      "url": ""
+    }
+  ],
+  "data2": [
+    {
+      "DBType": "MySQL and MariaDB",
+      "ConnectionCode": "mysql_connect(‘HOST’, ‘USERNAME’, ‘PASSWORD’)",
+      "url": "/database/mysql-mariadb-percona/connection-to-applications/php-connection"
+    },
+    {
+      "DBType": "MongoDB",
+      "ConnectionCode": "Mongo(“hostaddress”, array(“username” => “username”, “password” => “password”))",
+      "url": "/database/mongodb/connection-to-applications/php-connection-to-mongodb"
+    },
+    {
+      "DBType": "PostgreSQL",
+      "ConnectionCode": "pg_connect(“host=host_address port=5432 dbname=postgres user=webadmin password=password”)",
+      "url": "/database/postgresql/connection-to-applications/php-connection-to-postgresql"
+    }
+  ]
+}
