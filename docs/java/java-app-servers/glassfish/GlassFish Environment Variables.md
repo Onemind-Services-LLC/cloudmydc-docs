@@ -77,8 +77,8 @@ export  {var_name}= {var_value}
 
 where
 
-- **_{var_name}_** - name of the variable you would like to specify
-- **_{var_value}_** - value of your variable
+- `{var_name}` - name of the variable you would like to specify
+- `{var_value}` - value of your variable
 
 <div style={{
     display:'flex',

@@ -110,8 +110,8 @@ helm repo update
 
 To install a new package, use the **_helm install_** command. At its simplest, it takes two arguments:
 
-- **_{name}_** - a release name that you pick (e.g. mywordpress)
-- **_{chart}_** - the name of the chart you want to install (e.g. _[bitnami/wordpress](https://github.com/bitnami/charts/tree/main/bitnami/wordpress)_)
+- `{name}` - a release name that you pick (e.g. mywordpress)
+- `{chart}` - the name of the chart you want to install (e.g. _[bitnami/wordpress](https://github.com/bitnami/charts/tree/main/bitnami/wordpress)_)
 
 Additionally, you can provide chart options to customize the application (see more details in the [managing Helm section](/kubernetes-hosting/application-deployment/helm-integration#managing-helm-applications)). For example, let’s change the blog name with the _--set wordpressBlogName=‘My Blog!'_ parameter.
 
@@ -218,7 +218,7 @@ For more information on commands, take a look at Helm’s built-in help - **_hel
 
 </div>
 
-To see a description of a specific command and its flags, run **_helm {command} --help_**.
+To see a description of a specific command and its flags, run `helm {command} --help`.
 
 :::
 

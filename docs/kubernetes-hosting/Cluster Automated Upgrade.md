@@ -225,12 +225,14 @@ Kubernetes cluster consists of master and worker nodes. The workloads that these
                 justifyContent: 'flex-start',
                 wordBreak: 'break-all',
                 padding: '20px',
-            }}>Kubelet
+            }}>
+                Kubelet
             </div>
             <div style={{
                 padding: '20px',
                 wordBreak: 'break-all'
-            }}>Kubelet
+            }}>
+                Kubelet
             </div>
         </div> 
         <div style={{
@@ -249,12 +251,14 @@ Kubernetes cluster consists of master and worker nodes. The workloads that these
                 justifyContent: 'flex-start',
                 wordBreak: 'break-all',
                 padding: '20px',
-            }}>API Server
+            }}>
+                API Server
             </div>
             <div style={{
                 padding: '20px',
                 wordBreak: 'break-all'
-            }}>Kube Proxy
+            }}>
+                Kube Proxy
             </div>
         </div> 
         <div style={{
@@ -273,7 +277,8 @@ Kubernetes cluster consists of master and worker nodes. The workloads that these
                 justifyContent: 'flex-start',
                 wordBreak: 'break-all',
                 padding: '20px',
-            }}>Controller Manager
+            }}>
+                Controller Manager
             </div>
             <div style={{
                 padding: '20px',
@@ -297,7 +302,8 @@ Kubernetes cluster consists of master and worker nodes. The workloads that these
                 justifyContent: 'flex-start',
                 wordBreak: 'break-all',
                 padding: '20px',
-            }}>Scheduler
+            }}>
+                Scheduler
             </div>
             <div style={{
                 padding: '20px',
@@ -321,7 +327,8 @@ Kubernetes cluster consists of master and worker nodes. The workloads that these
                 justifyContent: 'flex-start',
                 wordBreak: 'break-all',
                 padding: '20px',
-            }}>Kube Proxy
+            }}>
+                Kube Proxy
             </div>
             <div style={{
                 padding: '20px',
@@ -345,7 +352,8 @@ Kubernetes cluster consists of master and worker nodes. The workloads that these
                 justifyContent: 'flex-start',
                 wordBreak: 'break-all',
                 padding: '20px',
-            }}>CoreDNS
+            }}>
+                CoreDNS
             </div>
             <div style={{
                 padding: '20px',
@@ -369,7 +377,8 @@ Kubernetes cluster consists of master and worker nodes. The workloads that these
                 justifyContent: 'flex-start',
                 wordBreak: 'break-all',
                 padding: '20px',
-            }}>Etcd
+            }}>
+                Etcd
             </div>
             <div style={{
                 padding: '20px',

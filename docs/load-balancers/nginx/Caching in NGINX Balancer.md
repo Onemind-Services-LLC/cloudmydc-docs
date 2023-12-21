@@ -80,7 +80,7 @@ In a minute your environment will be created and appears in the environment list
 - **proxy_temp_path** _/var/lib/nginx/tmp [level1 [level2 [level3]]]_
   This defines a directory for storing temporary files with data received from proxied servers. Up to three-level subdirectory hierarchy can be used underneath the specified directory.
 
-- **proxy_cache_valid** _{number}m_
+- **proxy_cache_valid** `{number}`
   It specify the time during which the NGINX should keep cash. For example 720m.
 
 To find info about other available directives follow the [link](https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_cache_valid).

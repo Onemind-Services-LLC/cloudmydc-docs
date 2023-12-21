@@ -88,7 +88,7 @@ vim ~/.ssh/authorized_keys
 cd /data; rsync -az . {NEW_STORAGE_IP}:/data/ -e "ssh -i $HOME/.ssh/storage"
 ```
 
-Here, the **_{NEW_STORAGE_IP}_** placeholder should be substituted with the internal IP address of your new storage that can be viewed in the dashboard.
+Here, the `{NEW_STORAGE_IP}` placeholder should be substituted with the internal IP address of your new storage that can be viewed in the dashboard.
 
 <div style={{
     display:'flex',

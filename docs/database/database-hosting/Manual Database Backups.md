@@ -56,19 +56,19 @@ The backup script is not available for the **[Redis](/database/redis/redis-overv
 
 Here, you can use the commented examples as a template to define the required parameters:
 
-- **_{frequency}_** - sets the time of the script execution (see the guide linked above for details), e.g. _/10 _ \* \* \* to create backup every 10 minutes
-- **_{path-to-script}_** - points to the required script (default backup script is available at /var/lib/jelastic/bin/backup_script.sh)
-- **_{script-parameters}_** - provides custom parameters for the defined script; the following ones are available in our case:
-  - **_-m {mode}_** to backup whole or part of the database ("_-m dumpall_" or "_-m dump_" respectively)
-  - **_-c {count}_** to set a number of the old backups to keep (e.g. "-c 3" to keep 3 old backups alongside the most recent one)
-  - **_-u {user}_** and **_-p {password}_** to provide access credentials for your database (can be found in the after-creation email)
+- `{frequency}` - sets the time of the script execution (see the guide linked above for details), e.g. _/10 _ \* \* \* to create backup every 10 minutes
+- `{path-to-script}` - points to the required script (default backup script is available at /var/lib/jelastic/bin/backup_script.sh)
+- `{script-parameters}` - provides custom parameters for the defined script; the following ones are available in our case:
+  - `-m {mode}` to backup whole or part of the database ("_-m dumpall_" or "_-m dump_" respectively)
+  - `-c {count}` to set a number of the old backups to keep (e.g. "-c 3" to keep 3 old backups alongside the most recent one)
+  - `-u {user}` and `-p {password}` to provide access credentials for your database (can be found in the after-creation email)
 
 :::danger Note
 
-If your **_{password}_** contains special characters, it should be included in the double quotation. Also, due to the cron specifics, you need to provide additional escaping for the % symbol by adding a backslash before it, for example -p "passw\\%rd".
+If your `{password}` contains special characters, it should be included in the double quotation. Also, due to the cron specifics, you need to provide additional escaping for the % symbol by adding a backslash before it, for example -p "passw\\%rd".
 
 :::
--d {databases} and -t {tables} to optionally specify list of databases ("-d db1[,db2,db3….]") or tables within a database ("-d db -t table1[,table2,table3….]") to backup
+`-d {databases}` and `-t {tables}` to optionally specify list of databases ("-d db1[,db2,db3….]") or tables within a database ("-d db -t table1[,table2,table3….]") to backup
 
 3. <u>For example</u>, if you want to back up a whole database every 10 minutes with the help of the default script, then the string should be as follows:
 

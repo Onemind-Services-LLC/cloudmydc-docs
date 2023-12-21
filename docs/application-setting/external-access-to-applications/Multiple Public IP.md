@@ -138,7 +138,7 @@ The **_AttachExtIp_** and **_DetachExtIp_** methods, which were provided earlier
 
 2. To swap Public IP addresses between two nodes within the same or separate environments, you can use the **_SwapExtIps_** method.
 
-_https://{[hoster-api-host](/quickstart/hosters-list-&-info)}/1.0/environment/control/rest/swapextips?**envname**=[string]&**session**=[string]&**sourcenodeid**=[int]&**destnodeid**=[int]&**sourceip**=[string]&**destip**=[string]_
+`https://{hoster-api-host}/1.0/environment/control/rest/swapextips?envname=[string]&session=[string]&sourcenodeid=[int]&destnodeid=[int]&sourceip**=[string]&destip=[string]`
 
 This method is used with the following parameters:
 

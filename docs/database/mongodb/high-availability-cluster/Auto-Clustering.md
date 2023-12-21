@@ -124,7 +124,9 @@ You can use these credentials to access the admin panel or to establish connecti
 As it is mentioned, any secondary node may become primary in case one fails. Another election will happen if cluster will be restarted and consequently it is quite possible that new primary node will arise. So, the application connection string becomes invalid. To avoid any of these issues the connection string should contain all of the replica set member hostnames, replica set name and [read preferences](https://www.mongodb.com/docs/manual/core/read-preference/) if necessary to unload the primary node to handle the reads or to ensure cluster high availability and failover.
 Here is the connection string example in case of node.js application:
 
-**_client = new MongoClient("mongodb://admin:L3tdH8bT64@node254967-mongo-cluster.jelastic.com:27017,node254968-mongo-cluster.jelastic.com:27017,node254969-mongo-cluster.jelastic.com:27017/admin", {useUnifiedTopology: true, readPreference:'primaryPreferred',replicaSet:'rs0'});_**
+```
+client = new MongoClient("mongodb://admin:L3tdH8bT64@node254967-mongo-cluster.jelastic.com:27017,node254968-mongo-cluster.jelastic.com:27017,node254969-mongo-cluster.jelastic.com:27017/admin", {useUnifiedTopology: true, readPreference:'primaryPreferred',replicaSet:'rs0'});
+```
 
 Where:
 **_useUnifiedTopology: true_** - forces mongodb to use the new Server Discover and Monitoring engine.
@@ -148,7 +150,10 @@ The outlined above application connection is considered to be established within
 </div>
 
 If you need to read from the secondaries you have to customize your application code to perform reading from secondaries in a separate thread as you do it for primary. Anyway, for such cases, you have to remove **_replicaSet_** parameter from the connection string so it can look according to email above:
-**_client = new MongoClient( "mongodb://admin:L3tdH8bT64@node254967-mongo-cluster.jelastic.com:11035/admin", { useUnifiedTopology: true });_**
+
+```
+client = new MongoClient( "mongodb://admin:L3tdH8bT64@node254967-mongo-cluster.jelastic.com:11035/admin", { useUnifiedTopology: true });
+```
 
 4. By default, the auto-cluster utilizes the [Mongo Express](https://github.com/mongo-express/mongo-express) administration panel that provides support for the replica sets.
 
@@ -164,7 +169,9 @@ If you need to read from the secondaries you have to customize your application 
 
 5. Also, you can connect to your database via the mongo shell directly in your terminal (for example, using the built-in **[Web SSH](/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser)** option).
 
-\*mongo -u **{user}** -p **{password} {DB_name}\***
+```bash
+mongo -u {user} -p {password} {DB_name}*
+```
 
 <div style={{
     display:'flex',
@@ -178,9 +185,9 @@ If you need to read from the secondaries you have to customize your application 
 
 Where:
 
-- **_{user}_** – administrator username (sent to your email, admin by default)
-- **_{password}_** – password for the corresponding DB user (can be found within the same email)
-- **_{DB_name}_** – name of the database you would like to access (we’ll use the default admin one)
+- `{user}` – administrator username (sent to your email, admin by default)
+- `{password}` – password for the corresponding DB user (can be found within the same email)
+- `{DB_name}` – name of the database you would like to access (we’ll use the default admin one)
 
 6. You can check the replica set status with the appropriate command:
 

@@ -201,7 +201,7 @@ gradleVersion = '{used_gradle_version}'
 To build an executable JAR file with this script, use the following command:
 
 **_./gradlew clean assemble_**
-The generated archive will be stored upon the **_..build/libs/{app_name}-{app-version}.jar_** path.
+The generated archive will be stored upon the `..build/libs/{app_name}-{app-version}.jar` path.
 
 - The minimal base for pom.xml **Maven** project description includes the following parameters (where parameters in curly braces should be substitutes with your custom values):
 
@@ -243,7 +243,7 @@ To produce an executable JAR with Maven, execute the following command:
 
 **_mvn clean package_**
 
-Your app archive will be placed at the **_...target/{app_name}-{app-version}.jar_** location.
+Your app archive will be placed at the `...target/{app_name}-{app-version}.jar` location.
 
 ## Jelastic Maven Plugin
 
@@ -345,7 +345,7 @@ Herewith, all the newly added nodes will be created at different hardware server
 
 If your project requires some complex configurations for requests handling, like HTTPS and load balancing, feel free to leverage the following security options:
 
-- [built-in SSL](/application-setting/ssl/built-in-ssl) functionality allows to instantly apply traffic encryption for your application internal domain (i.e. _https://{envName}{platformDomain}_) with Jelastic wildcard SSL certificate
+- [built-in SSL](/application-setting/ssl/built-in-ssl) functionality allows to instantly apply traffic encryption for your application internal domain (i.e. `https://{envName}{platformDomain}`) with Jelastic wildcard SSL certificate
 
 <div style={{
     display:'flex',

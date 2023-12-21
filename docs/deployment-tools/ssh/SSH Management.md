@@ -51,7 +51,7 @@ This section is rather for newbies than for an average developer, so the majorit
 
 Once you’ve entered the required container via console, you get to the server home directory by default, which is commonly dedicated for storing your custom data and configs. For navigation between the folders, the **_cd_** command is used, with the following available arguments:
 
-- **_{directory_path}_** - either name of the nested folder (where several slash-separated nesting levels can be specified) or a full path to the required directory relatively to the container root
+- `{directory_path}` - either name of the nested folder (where several slash-separated nesting levels can be specified) or a full path to the required directory relatively to the container root
 - .. - to navigate one level up within the file tree
 - ~ - to instantly switch to your working (server home) directory from any location
 - / - to instantly switch to the container root directory
@@ -88,11 +88,11 @@ The appropriate file tree will be shown in a dedicated tab below.
 
 1. To create a new file or folder, execute the next commands:
 
-- **_touch [path-to/]{file}_** - to create a new file
-- **_mkdir [path-to/]{dir}_** - to create a new folder
+- `touch [path-to/]{file}` - to create a new file
+- `mkdir [path-to/]{dir}` - to create a new folder
   where
 
-**_{file}_** and **_{dir}_** - the preferred file or folder name (if being created in the current directory)
+`{file}` and `{dir}` - the preferred file or folder name (if being created in the current directory)
 
 **_[path-to/]_** - optional parameter for the case this new item should be placed in a different location.
 
@@ -215,9 +215,11 @@ Press Ctrl + C to terminate the command execution and return to the console inpu
 
 </div>
 
-3. Another useful command is **_kill_**, which allows terminating any running process, designated by its **_{pid}_** as an argument (the required process identifier can be found in the previous command’s output):
+3. Another useful command is **_kill_**, which allows terminating any running process, designated by its `{pid}` as an argument (the required process identifier can be found in the previous command’s output):
 
-**_kill {pid}_**
+```
+kill {pid}
+```
 
 <div style={{
     display:'flex',
@@ -235,9 +237,11 @@ As you can see, the run process, shown on the screen within the 2nd step of this
 
 You are able to fetch the necessary files from Internet (for example, your application archive) directly through the console, to store and/or subsequently deploy them within your server.
 
-1. The **_wget_** command allows to download files by the specified **_{link}:_**
+1. The **_wget_** command allows to download files by the specified `{link}:`
 
-**_wget {link}_**
+```
+wget {link}
+```
 
 <div style={{
     display:'flex',
@@ -251,9 +255,9 @@ You are able to fetch the necessary files from Internet (for example, your appli
 
 2. Then, you can **_unzip_** the downloaded archive with the same-named command:
 
-**_unzip {archive}_**
+`unzip {archive}`
 
-where **_{archive}_** is a path to your compressed package.
+where `{archive}` is a path to your compressed package.
 
 <div style={{
     display:'flex',
@@ -297,11 +301,14 @@ As a result, all extracted files will be placed to a same-named (after the archi
 
 3. Here, new variables should be defined in the following format:
 
-**_export {VAR_NAME}={VAR_VALUE}_**
+```
+export {VAR_NAME}={VAR_VALUE}
+```
+
 where:
 
-- **_{VAR_NAME}_** - the name of the variable you would like to create
-- **_{VAR_VALUE}_** - value for the appropriate variable
+- `{VAR_NAME}` - the name of the variable you would like to create
+- `{VAR_VALUE}` - value for the appropriate variable
 
 <div style={{
     display:'flex',
@@ -321,7 +328,9 @@ The .bashrc file is read during the bash initiation so the changes will be autom
 
 4. To check whether your custom variable was successfully applied, execute the following command:
 
-**_echo ${VAR_NAME}_**
+```
+echo ${VAR_NAME}
+```
 
 <div style={{
     display:'flex',
@@ -333,7 +342,7 @@ The .bashrc file is read during the bash initiation so the changes will be autom
 
 </div>
 
-Within the console response, you should see the **_{VAR_VALUE}_** string similar to the value you’ve just assigned to **_${VAR_NAME}_** variable in the **_.bashrc_** file.
+Within the console response, you should see the `{VAR_VALUE}` string similar to the value you’ve just assigned to `${VAR_NAME}` variable in the **_.bashrc_** file.
 
 ## Specifics of Certified Jelastic Containers Remote Management
 
@@ -344,9 +353,9 @@ At Jelastic PaaS, there are 2 types of [software stack](/quickstart/software-sta
 - **_certified_** software templates are based on native stack implementation, adapted by our team according to platform specifics.
   Upon entering such server via SSH, you are logged in as a default server user. To provide enough possibilities for effective container management, we’ve made some additional options available to be executed under a regular user account:
 
-- **_sudo sbin/service {service_name} {start|stop|restart|condrestart|status|reload|upgrade|help}_** - a set of commands to operate the main server process, defined with the {service_name} placeholder (where, depending on a server used, the possible values are: jetty, mysql, tomcat, memcached, mongod, postgresql, couchdb, glassfish-domain1, nginx, php-fpm and httpd)
-- **_sudo usr/bin/jem firewall {fwstart|fwstop}_** - to run/stop container firewall respectively
-- **_sudo usr/bin/jem nscd_** - to control the [name-service caching daemon](https://linux.die.net/man/8/nscd), which stores records for the most common name server requests (like passwd, hosts, group, etc)
-- **_sudo sbin/service rpcbind.service_** - to operate with the [RPC bind](https://linux.die.net/man/8/rpcbind) service, used to map user-readable names to program numbers that handle incoming RPC calls
+- `sudo sbin/service {service_name} {start|stop|restart|condrestart|status|reload|upgrade|help}` - a set of commands to operate the main server process, defined with the `{service_name}` placeholder (where, depending on a server used, the possible values are: jetty, mysql, tomcat, memcached, mongod, postgresql, couchdb, glassfish-domain1, nginx, php-fpm and httpd)
+- `sudo usr/bin/jem firewall {fwstart|fwstop}` - to run/stop container firewall respectively
+- `sudo usr/bin/jem nscd` - to control the [name-service caching daemon](https://linux.die.net/man/8/nscd), which stores records for the most common name server requests (like passwd, hosts, group, etc)
+- `sudo sbin/service rpcbind.service` - to operate with the [RPC bind](https://linux.die.net/man/8/rpcbind) service, used to map user-readable names to program numbers that handle incoming RPC calls
 
 Any of the commands above, despite being run in a sudo mode, does not require entering server admin root password. This allows you to take advantage of all the required container functionality, essential for your application proper work, even with regular account permissions.

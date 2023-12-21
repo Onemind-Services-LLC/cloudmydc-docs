@@ -49,7 +49,7 @@ Now when the environment is ready, you can proceed to configuring the desired pr
 
 - [Authentication](/load-balancers/nginx/app-security-with-nginx-balancer#authentication) makes application access protected with a password
 - [IP Address Deny](/load-balancers/nginx/app-security-with-nginx-balancer#ip-address-deny) mechanism is used to forbid application access from a particular IP
-  We’ll also pay the attention to the way of [combining](/load-balancers/nginx/app-security-with-nginx-balancer#methods-combination) the abovementioned methods for being used simultaneously. So, let’s find out how to implement this to your environment. Here we go!
+  We’ll also pay the attention to the way of [combining](/load-balancers/nginx/app-security-with-nginx-balancer#methods-combination) the above mentioned methods for being used simultaneously. So, let’s find out how to implement this to your environment. Here we go!
 
 ## Authentication
 
@@ -102,7 +102,7 @@ auth_basic           "closed site";
 auth_basic_user_file /etc/nginx/conf.d/{htpasswd_file};
 ```
 
-where **_{htpasswd_file}_** - name of the file you’ve inserted the hash with password(s) to (in our case this file is **_password.htpasswd_**).
+where `{htpasswd_file}` - name of the file you’ve inserted the hash with password(s) to (in our case this file is **_password.htpasswd_**).
 
 <div style={{
     display:'flex',
@@ -168,7 +168,7 @@ If you suddenly notice some harm is caused to your application by a particular u
 deny {IP_ADDRESS};
 ```
 
-where **_{IP_ADDRESS}_** - obviously the address you want to block the ability to open your application for.
+where `{IP_ADDRESS}` - obviously the address you want to block the ability to open your application for.
 
 <div style={{
     display:'flex',

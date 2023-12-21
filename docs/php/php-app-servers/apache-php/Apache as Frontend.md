@@ -282,7 +282,7 @@ Using the following steps you can configure your Apache server for balancing of 
 
 3. Add the hosts of your applications deployed to this newly created file like it is shown below:
 
-*servers {env1_name}.{hoster_domain}|{env2_name}.{hoster_domain}*
+`servers {env1_name}.{hoster_domain}|{env2_name}.{hoster_domain}`
 
 <div style={{
     display:'flex',

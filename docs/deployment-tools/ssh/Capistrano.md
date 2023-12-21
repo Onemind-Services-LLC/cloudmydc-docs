@@ -252,12 +252,12 @@ Save the changes you’ve made.
     #   }
 ```
 
-Firstly, edit three **_role_** : strings in the _Simple Role Syntax_ section by pasting **_{nodeid-uid@your.SSH.host}_** instead of **_{deploy@example.com}_**. Use the following values:
+Firstly, edit three **_role_** : strings in the _Simple Role Syntax_ section by pasting `{nodeid-uid@your.SSH.host}` instead of `{deploy@example.com}`. Use the following values:
 
 - **_nodeid_** - node ID value of the Apache application server container in your environment;
 - **_uid_** - number before @ symbol in your SSH connection string. After that, modify the server settings line (Extended Server Syntax section):
 - specify your SSH host, e.g. **_server ‘gate.jelastic.com’_**
-- enter _{nodeid}\_{uid}_ value for **user** parameter, e.g. **user: ‘190403-136’**
+- enter `{nodeid}_{uid}` value for **user** parameter, e.g. **user: ‘190403-136’**
 
 Thus, your server settings line will look like following:
 

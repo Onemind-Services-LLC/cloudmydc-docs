@@ -130,9 +130,9 @@ tag: {myImage}:{newTag}
 
 Here:
 
-- **{nodeGroup}** - [environment layer (or node group)](https://docs.cloudscripting.com/creating-manifest/selecting-containers/#all-containers-by-group) where all containers should be updated
-- **{myImage}** - name of the image to be deployed
-- **{newTag}** - the required version of the image above
+- `{nodeGroup}` - [environment layer (or node group)](https://docs.cloudscripting.com/creating-manifest/selecting-containers/#all-containers-by-group) where all containers should be updated
+- `{myImage}` - name of the image to be deployed
+- `{newTag}` - the required version of the image above
 
 2. Updating a particular container.
 
@@ -142,7 +142,7 @@ nodeId: {nodeId}
 tag: {myImage}:{newTag}
 ```
 
-Here, the **{nodeId}** value should be substituted with the ID number of the required node (other placeholders are the same as for the example above).
+Here, the `{nodeId}` value should be substituted with the ID number of the required node (other placeholders are the same as for the example above).
 
 ## Saving Custom Data during Container Redeploy
 
@@ -172,11 +172,11 @@ Do not edit the “system files and folders” list unless you know exactly what
 
 Here, container-specific configurations that are required for the correct redeploy operation are listed. Some of the common files are provided on all of the stacks:
 
-- **/etc/jelastic/redeploy.conf** - the current redeployment config itself (to store the list of required for saving files and directories during each further container redeploy)
-- **${home}/.bash_profile** - contains the default SSH shell settings (e.g. shell introduction message, the required configuration files to be fetched, etc.)
-- **/etc/sysconfig/iptables** - keeps the default firewall rules
-- **/etc/sysconfig/iptables-custom** - contains [custom firewall rules](/application-setting/external-access-to-applications/container-firewall)
-- **/var/lib/jelastic/keys** - stores [uploaded SSH private keys](/deployment-tools/ssh/generate-ssh-key), which are necessary to access the container via SSH and for interaction with other containers
+- `/etc/jelastic/redeploy.conf` - the current redeployment config itself (to store the list of required for saving files and directories during each further container redeploy)
+- `${home}/.bash_profile` - contains the default SSH shell settings (e.g. shell introduction message, the required configuration files to be fetched, etc.)
+- `/etc/sysconfig/iptables` - keeps the default firewall rules
+- `/etc/sysconfig/iptables-custom` - contains [custom firewall rules](/application-setting/external-access-to-applications/container-firewall)
+- `/var/lib/jelastic/keys` - stores [uploaded SSH private keys](/deployment-tools/ssh/generate-ssh-key), which are necessary to access the container via SSH and for interaction with other containers
 
 <u>
 Also, <b>redeploy.conf</b> for each particular node type include different stack-specific files.
@@ -217,9 +217,9 @@ For example, all platform-managed PHP application servers create a backup for th
 
 After the container update, you’ll see new and previous versions of the **_php.ini_** or any other backed up files:
 
-- **{file_name}** - file from the redeployment target image (from the new tag)
-- **{file_name}.{time_stamp}** - backup version of the file created just before the redeploy operation (a separate file for each redeployment to a different tag)
-- **{file_name}.backup** - the latest backup of the file (automatically replaces the previous same-named backup)
+- `{file_name}` - file from the redeployment target image (from the new tag)
+- `{file_name}.{time_stamp}` - backup version of the file created just before the redeploy operation (a separate file for each redeployment to a different tag)
+- `{file_name}.backup` - the latest backup of the file (automatically replaces the previous same-named backup)
 
 ![Locale Dropdown](./img/ContainerRedeploy/11-backup-file-successfully-created.png)
 

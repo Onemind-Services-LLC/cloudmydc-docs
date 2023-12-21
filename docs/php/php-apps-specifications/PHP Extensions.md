@@ -274,7 +274,7 @@ Within the opened configuration tab, move to the **etc >** **_php.ini_** file an
 
 3.
 
-Now, locate the required section (they are listed in the alphabetic order) and uncomment the **extension=** **_{module_name}.so_** directive inside (i.e. remove semicolons at the beginning of the corresponding line) to enable it:
+Now, locate the required section (they are listed in the alphabetic order) and uncomment the `extension={module_name}.so` directive inside (i.e. remove semicolons at the beginning of the corresponding line) to enable it:
 
 <div style={{
     display:'flex',
@@ -354,7 +354,7 @@ In addition to all of the modules, available at the platform out-of-box, you hav
 </div>
 
 4. Move to the **etc >** **_php.ini_** file, find the **_Dynamic Extensions_** section and add the next command directive:
-   _extension_ **_={module_name}_**.so
+   `extension={module_name}`.so
 
 <div style={{
     display:'flex',

@@ -416,7 +416,9 @@ Now, application static content is stored in the **~/ROOT/static** directory.
 
 4. Open the **_/var/www/webroot/ROOT/ROOT/local_settings.py_** file and adjust the ALLOWED_HOSTS record by providing your environment domain name:
 
-_ALLOWED_HOSTS = ["{envDomain}"]_
+```
+ALLOWED_HOSTS = ["{envDomain}"]
+```
 
 <div style={{
     display:'flex',

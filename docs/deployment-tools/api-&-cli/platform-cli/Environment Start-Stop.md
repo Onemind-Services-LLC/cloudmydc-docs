@@ -8,7 +8,7 @@ sidebar_position: 3
 
 Among the most common operations for environment management provided by CLI, the *start* and *stop* ones can be denoted. Wise usage of these methods can help to significantly cut your spends, especially for development and testing environments (for example, you can stop them for the nighttime, while you are sleeping, and start again at the morning to continue the development).
 
-1. In order to stop an environment, that is temporarily non-required, execute the following command (where the highlighted ***{env_name}*** placeholder needs to be substituted with the corresponding environment name):
+1. In order to stop an environment, that is temporarily non-required, execute the following command (where the highlighted `{env_name}` placeholder needs to be substituted with the corresponding environment name):
 
 ```bash
 ~/jelastic/environment/control/stopenv --envName {env_name}

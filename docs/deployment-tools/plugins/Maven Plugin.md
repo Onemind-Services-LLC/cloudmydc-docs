@@ -73,7 +73,7 @@ Don’t forget to save the changes.
 mvn jelastic:deploy -Djelastic.password={password}
 ```
 
-Initiates your application deployment, substitute the **_{password}_** placeholder with your actual PaaS account password (token).
+Initiates your application deployment, substitute the `{password}` placeholder with your actual PaaS account password (token).
 
 ```bash
 mvn jelastic:publish

@@ -130,7 +130,7 @@ Click the **Next** button to continue.
 - **Port** - sets port number to _3306_
 - **DatabaseName** - provides your database name (pooling in our case)
 - **Password** - stores a password for the specified user
-- **URL** and **Url** - sets a JDBC connection string in the _jdbc:mysql://**{db_host}**:3306/_ format; the **_{db_host}_** placeholder can be substituted with either node hostname (node166355-gf-pooling.jelastic.com) or IP address (_192.168.2.57_)
+- **URL** and **Url** - sets a JDBC connection string in the `jdbc:mysql://{db_host}:3306/` format; the `{db_host}` placeholder can be substituted with either node hostname (node166355-gf-pooling.jelastic.com) or IP address (_192.168.2.57_)
 
 <div style={{
     display:'flex',
@@ -180,6 +180,6 @@ DataSource ds = (DataSource)ctx.lookup("{resources}");
 Connection conn = ds.getConnection();
 ```
 
-Here, substitute the **_{resources}_** placeholder with the your JNDI name from the previous section (i.e. jdbc/mypool in our case).
+Here, substitute the `{resources}` placeholder with the your JNDI name from the previous section (i.e. jdbc/mypool in our case).
 
 Now, you can deploy your Java application to the platform and enjoy the benefits of GlassFish and Payara Micro connection pooling!

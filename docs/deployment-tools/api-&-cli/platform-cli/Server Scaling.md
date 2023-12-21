@@ -22,14 +22,14 @@ When the environment is already created, in some cases it may be required to cha
 
 </div>
 
-The whole [set of possible parameters](/deployment-tools/api-&-cli/create-env-params) is the same as for the [createenvironment](/deployment-tools/api-&-cli/platform-cli/environment-creation) method, except the _–envName_ **_{env_name}_** - here it is used to point to the already existing environment, that should be adjusted.
+The whole [set of possible parameters](/deployment-tools/api-&-cli/create-env-params) is the same as for the [createenvironment](/deployment-tools/api-&-cli/platform-cli/environment-creation) method, except the _–envName_ `{env_name}` - here it is used to point to the already existing environment, that should be adjusted.
 
 As for the rest of options, in this example we use the following ones:
 
-- **_{engine_type}_** - engine the instances of the chosen environment are powered by (an obligatory string)
-- **_{node_type}_** - stack type identifier, according to the [list](/deployment-tools/cloud-scripting-&-jps/application-manifest)
-- **_{nodes_amount}_** - amount of nodes to be set (applies [Horizontal Scaling](/application-setting/scaling-and-clustering/horizontal-scaling))
-- **_{cloudlets_amount}_** - number of fixed (_fixedCloudlets_) and/or flexible (_flexibleCloudlets_) cloudlets to be allocated for the specified node type (applies [vertical scaling](/application-setting/scaling-and-clustering/automatic-vertical-scaling))
+- `{engine_type}` - engine the instances of the chosen environment are powered by (an obligatory string)
+- `{node_type}` - stack type identifier, according to the [list](/deployment-tools/cloud-scripting-&-jps/application-manifest)
+- `{nodes_amount}` - amount of nodes to be set (applies [Horizontal Scaling](/application-setting/scaling-and-clustering/horizontal-scaling))
+- `{cloudlets_amount}` - number of fixed (_fixedCloudlets_) and/or flexible (_flexibleCloudlets_) cloudlets to be allocated for the specified node type (applies [vertical scaling](/application-setting/scaling-and-clustering/automatic-vertical-scaling))
 
 :::danger Note
 

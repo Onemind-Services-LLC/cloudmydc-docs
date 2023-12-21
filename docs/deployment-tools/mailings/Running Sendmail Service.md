@@ -31,7 +31,7 @@ sidebar_position: 2
 
 It supports a plenty of mail transfer protocols (such as SMTP, ESMTP and others), being designed to route emails over the Internet and internal networks.
 
-The platform delivers Sendmail included to all of the application servers' builds (except the [IIS](/windows-and-.NET/dot-net-core) ones) by default. However, the ability to run this service in a container depends on a particular hosting providers' settings - at some platforms, it could be available only in case of a bound [public IP](/application-setting/external-access-to-applications/public-ip) address presence. 
+The platform delivers Sendmail included to all of the application servers' builds (except the [IIS](/windows-and-.NET/dot-net-core) ones) by default. However, the ability to run this service in a container depends on a particular hosting providers' settings - at some platforms, it could be available only in case of a bound [public IP](/application-setting/external-access-to-applications/public-ip) address presence.
 
 <!-- So, let’s consider how to:
 
@@ -121,9 +121,9 @@ echo "{text}" | sendmail -f {from_address} -v {to_address}
 
 where:
 
-- **_{text}_** - text of your letter, e.g. _Unlimited PaaS_
-- **_{from_address} _**- sender email address in the *mail@example.com* format
-- **_{to_address}_** - recipient email address (in the same *mail@example.com* format)
+- `{text}` - text of your letter, e.g. _Unlimited PaaS_
+- `{from_address}` - sender email address in the *mail@example.com* format
+- `{to_address}` - recipient email address (in the same *mail@example.com* format)
 
 <div style={{
     display:'flex',

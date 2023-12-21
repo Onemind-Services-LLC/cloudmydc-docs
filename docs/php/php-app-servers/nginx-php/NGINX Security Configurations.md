@@ -39,9 +39,10 @@ To provide this, come through the next steps:
 
   - **authentication for the whole application** Modify the location configurations by adding the following strings:
 
-_auth_basic “Restricted area”;_
-
-_auth_basic_user_file /var/www/webroot/ROOT/.htpasswd;_
+```
+auth_basic “Restricted area”;
+auth_basic_user_file /var/www/webroot/ROOT/.htpasswd;
+```
 
 <div style={{
     display:'flex',
@@ -57,13 +58,12 @@ _auth_basic_user_file /var/www/webroot/ROOT/.htpasswd;_
 
 Add the following **location** strings stating the path to the required directory:
 
-_location ~ /directory_path {_
-
-_auth_basic “Restricted”;_
-
-_auth_basic_user_file /var/www/webroot/ROOT/.htpasswd;_
-
-_}_
+```
+location ~ /directory_path {
+    auth_basic “Restricted”;
+    auth_basic_user_file /var/www/webroot/ROOT/.htpasswd;
+}
+```
 
 <div style={{
     display:'flex',
@@ -98,11 +98,11 @@ You can provide security for your application through setting up different crite
 
   - **deny access to the whole application** Modify the **location** configurations using the strings of the following type:
 
-_deny xx.xx.xx.x;_
-
-_allow xx.xx.xx.x;_
-
-_deny all;_
+```
+deny xx.xx.xx.x;
+allow xx.xx.xx.x;
+deny all;
+```
 
 <div style={{
     display:'flex',
@@ -118,15 +118,13 @@ _deny all;_
 
 Add the following **location** strings stating the path to the needed **directory**:
 
-_location /directory_path {_
-
-_deny xx.xx.xx.x;_
-
-_allow xx.xx.xx.x;_
-
-_deny all;_
-
-_}_
+```bash
+location /directory_path {
+    deny xx.xx.xx.x;
+    allow xx.xx.xx.x;
+    deny all;
+}
+```
 
 <div style={{
     display:'flex',

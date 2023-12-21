@@ -180,7 +180,7 @@ redis-cli -p 6380 --tls --cacert /var/lib/jelastic/keys/SSL-TLS/client/root.crt 
 
 </div>
 
-You can execute any preferred **_{command}_** or omit it to connect to the database in the interactive mode.
+You can execute any preferred `{command}` or omit it to connect to the database in the interactive mode.
 
 If the server requires authentication using a client-side certificate, you can specify a certificate and a corresponding private key using **_--cert_** and **_--key_** parameters.
 

@@ -84,10 +84,10 @@ else:
 
 Here, you need to adjust the connection string (all the required information is provided within email for your MySQL / MariaDB node):
 
-- **_{user}_** - username to log into database with
-- **_{password}_** - password for the appropriate user
-- **_{host}_** - link to your MySQL / MariaDB container
-- **_{database}_** - database to be accessed (e.g. the default mysql one)
+- `{user}` - username to log into database with
+- `{password}` - password for the appropriate user
+- `{host}` - link to your MySQL / MariaDB container
+- `{database}` - database to be accessed (e.g. the default mysql one)
 
 <div style={{
     display:'flex',

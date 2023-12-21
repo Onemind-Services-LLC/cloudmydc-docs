@@ -510,8 +510,10 @@ We highly recommend re-creating or [redeploying](/category/container-deployment)
                 borderRight: '1px solid var(--ifm-toc-border-color)',
                 background: 'var(--table-bg-primary-t1)',
             }}>
-                <a href="/">AlmaLinux
-                </a></div>
+                <a href="/">
+                    AlmaLinux
+                </a>
+            </div>
             <div>1.24.0</div>
         </div>
         <div style={{

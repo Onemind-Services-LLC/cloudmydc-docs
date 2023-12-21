@@ -49,7 +49,11 @@ Here is a complete list of parameters, which the platform configures for the [**
 
 Based on the allocated resources (i.e. a number of dynamic [cloudlets](/platform-overview/cloudlet) reserved for the Apache PHP server) and capacity of the CPU provided by your particular hosting provider, the platform automatically adjusts the **_ServerLimit_** and **_MaxRequestWorkers_** parameters:
 
-**_MaxRequestWorkers_** = **_ServerLimit_** = min( **_{containerRam}_** / 30MiB, **_{coresCount}_** \* 5 )
+<!-- **_MaxRequestWorkers_** = **_ServerLimit_** = min( **_{containerRam}_** / 30MiB, **_{coresCount}_** \* 5 ) -->
+
+```bash
+MaxRequestWorkers = ServerLimit = min( {containerRam} / 30MiB, {coresCount} * 5 )
+```
 
 Due to this statement, both directives are stated equal to the lower value between:
 

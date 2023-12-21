@@ -148,12 +148,14 @@ Then substitute the <b>< PORT ></b> value with the corresponding port number (i.
 
 3. That’s all the server configurations you need to do, so the only thing left is to configure your deployed application. For that, access your application’s configuration file, which is responsible for WebSockets settings, and adjust the **ws** path it contains according to the next format:
 
-**_ws://{env_domain}{path_to_ws_file}_**
+```
+ws://{env_domain}{path_to_ws_file}
+```
 
 where
 
-- **_{env_url}_** should be substituted with your environment domain (can be seen under the environment name at the dashboard, apache-websockets.jelastic.com in our case)
-- **_{path_to_ws_file}_** needs to be changed according to the path to the file, that should be accessed upon establishing the WebSockets connection.
+- `{env_url}` should be substituted with your environment domain (can be seen under the environment name at the dashboard, apache-websockets.jelastic.com in our case)
+- `{path_to_ws_file}` needs to be changed according to the path to the file, that should be accessed upon establishing the WebSockets connection.
   It should look similar to the image below:
 
 <div style={{

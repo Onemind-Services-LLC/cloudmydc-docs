@@ -108,7 +108,7 @@ location /ws/ {
 
 where
 
-- **_{appserver_ip}_** - IP address of the application server node with your WebSockets application deployed. It can be found by clicking the **Additionally** button for the required instance.
+- `{appserver_ip}` - IP address of the application server node with your WebSockets application deployed. It can be found by clicking the **Additionally** button for the required instance.
 
 <div style={{
     display:'flex',
@@ -120,7 +120,7 @@ where
 
 </div>
 
-- **_{port}_** - number of the port, listened by your application
+- `{port}` - number of the port, listened by your application
 
 In our case, the required settings will look like at the image below:
 
@@ -172,9 +172,11 @@ Once the WebSockets support is enabled, the only thing that is left to do is to 
 
 Open the file with the WebSockets settings stated and adjust the **_ws_** path according to the next format:
 
-ws://**_{env_domain}{path_to_ws_file}_**
+```
+ws://{env_domain}{path_to_ws_file}
+```
 
-Herewith, the **_{env_domain}_** value should be substituted with your environment domain (can be seen under the environment name at the dashboard) and the **_{path_to_ws_file}_** value should lead to the file, that needs to be accessed upon establishing the WebSockets connection.
+Herewith, the `{env_domain}` value should be substituted with your environment domain (can be seen under the environment name at the dashboard) and the `{path_to_ws_file}` value should lead to the file, that needs to be accessed upon establishing the WebSockets connection.
 
 For example, in our case this string looks like the following:
 

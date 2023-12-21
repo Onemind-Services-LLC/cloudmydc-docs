@@ -110,8 +110,8 @@ For the **_Unicorn_** application server run the **_unicorn_rails -c config/unic
 
 If you would like to switch to the different module, it could be done in the same way, but you need to stop the currently running application server:
 
-- _for Puma_: **_pumactl -F config/puma.rb –pidfile puma.pid -S puma.state stop_**
-- _for Unicorn_: **_ps aux | grep ‘unicorn’ | awk ‘{print $2}’ | xargs kill -QUIT_**
+- _for Puma_: `pumactl -F config/puma.rb –pidfile puma.pid -S puma.state stop`
+- _for Unicorn_: `ps aux | grep ‘unicorn’ | awk ‘{print $2}’ | xargs kill -QUIT`
 
 :::
 

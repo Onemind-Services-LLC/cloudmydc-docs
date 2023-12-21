@@ -72,7 +72,7 @@ Now we can proceed to establishing the SFTP connection.
 
 4. In the opened window, click the **New site** button and specify the following parameters:
 
-- in the **Host** field state your SSH host (_gate.{[hoster_domain](/quickstart/hosters-list-&-info)}_)
+- in the **Host** field state your SSH host (_gate.[`{hoster_domain}`](/quickstart/hosters-list-&-info)_)
 - in the **Port** field enter _3022_ value.
 - choose **SFTP** in the Protocol drop-down list.
 - choose **Normal** Logon Type.
@@ -131,7 +131,7 @@ Let’s look at the example of FISH protocol use via establishing a secure conne
 5. In the opened **Shell link to machine** frame, enter the following values separated with a hyphen:
 
 - Node ID of the desired container (can be seen in the particular environment’s containers list in the separate **_nodeid_** column via SSH console)
-- your SSH connection string ({_user_id}@{ssh_host}:3022_ ) Click **OK**.
+- your SSH connection string (`{user_id}@{ssh_host}:3022`) Click **OK**.
 
 <div style={{
     display:'flex',

@@ -177,7 +177,7 @@ public class QuartzServlet extends HttpServlet {
 
 </div>
 
-3. Open your app in a browser and check the results. In our case we have to navigate to the quartz context (http://{env_name}.{hoster_domain}/quartz, according to Servlet “QuartzServlet” mapping) and check our application logs.
+3. Open your app in a browser and check the results. In our case we have to navigate to the quartz context (`http://{env_name}.{hoster_domain}/quartz`, according to Servlet “QuartzServlet” mapping) and check our application logs.
 
 <div style={{
     display:'flex',

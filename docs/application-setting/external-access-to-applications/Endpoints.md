@@ -348,9 +348,9 @@ mysql -h {host} -P {port} -u {user} -p
 
 where:
 
-- **_{host}_** - endpoint Access URL without the port suffix specified (_node30292-env-with-endpoints.jelastic.com in our case_)
-- **_{port}_** - public port number assigned (_10011_ in this example)
-- **_{user} _**- database user name (the platform has sent it to you via email during the environment creation - by default it stands for _root_ for all the new MySQL servers)
+- `{host}` - endpoint Access URL without the port suffix specified (_node30292-env-with-endpoints.jelastic.com in our case_)
+- `{port}` - public port number assigned (_10011_ in this example)
+- `{user}` - database user name (the platform has sent it to you via email during the environment creation - by default it stands for _root_ for all the new MySQL servers)
 
 After the connection validation, you’ll be requested for the appropriate DB user’s password (it can also be found in the abovementioned email) in order to access your database.
 
@@ -494,7 +494,7 @@ Listen 0.0.0.0:{port}
 
 </div>
 
-Here, the **{port}** parameter should be substituted with the private port number you’ve stated during the addition of the endpoint (we’ve chosen the 81st one).
+Here, the `{port}` parameter should be substituted with the private port number you’ve stated during the addition of the endpoint (we’ve chosen the 81st one).
 
 5. After that, move to the end of the file and duplicate the **VirtualHost** section, specifying the corresponding port number (the same as in the step above - 81st in our case) within its heading.
 

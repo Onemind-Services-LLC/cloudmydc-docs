@@ -164,9 +164,9 @@ If you are working with the MariaDB client, replace the “--ssl-mode=required�
 
 Here:
 
-- **_{user}_** - database username for the connection
-- **_{host}_** - database entry point (endpoint, in our case)
-- **_{port}_** - port for the connection (from the endpoint, in our case)
+- `{user}` - database username for the connection
+- `{host}` - database entry point (endpoint, in our case)
+- `{port}` - port for the connection (from the endpoint, in our case)
   Once connected, run the **_status_** command and check for the SSL line in the output.
 
 <div style={{
@@ -179,7 +179,7 @@ Here:
 
 </div>
 
-2. While connected to the server, you can configure the use of client certificates for authentication to get **_server- and client-side encryption_**. Execute the command below to make SSL auth obligatory for the specified user. For example, we’ll provide “**_user-2700607_**” (replace the **_{user}_** placeholder) from the email received after the environment creation:
+2. While connected to the server, you can configure the use of client certificates for authentication to get **_server- and client-side encryption_**. Execute the command below to make SSL auth obligatory for the specified user. For example, we’ll provide “**_user-2700607_**” (replace the `{user}` placeholder) from the email received after the environment creation:
 
 ```bash
 FLUSH PRIVILEGES;ALTER USER '{user}'@'%' REQUIRE X509;ALTER USER '{user}'@'localhost' REQUIRE X509;FLUSH PRIVILEGES;

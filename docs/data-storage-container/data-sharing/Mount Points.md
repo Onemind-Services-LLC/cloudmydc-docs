@@ -138,9 +138,9 @@ chown {uid}:{gid} {path}
 
 Here:
 
-- **_{uid}_** - user ID, which can be found in the **_/etc/passwd_** file
-- **_{gid}_** - group identifier, that is shown within the **_/etc/group_** file
-- **_{path}_** - path to the directory or file you’d like to change the permissions for
+- `{uid}` - user ID, which can be found in the **_/etc/passwd_** file
+- `{gid}` - group identifier, that is shown within the **_/etc/group_** file
+- `{path}` - path to the directory or file you’d like to change the permissions for
 
 <div style={{
     display:'flex',

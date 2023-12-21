@@ -39,7 +39,7 @@ SetHandler server-status
 
 - Save the changes and restart **Apache**.
 - Click **Open in browser**. Add the location name to the link.
-*http://{env_name}.{hoster_domain}/{location_name}/*
+`http://{env_name}.{hoster_domain}/{location_name}/`
 
 In the opened window the statistics of the server will be shown.
 
@@ -81,6 +81,6 @@ Require valid-user
 
 - Save the changes and restart **Apache**.
 - Click **Open in browser**. Add the location context to the link.
-*http://{env_name}.{hoster_domain}/{location_name}/*
+`http://{env_name}.{hoster_domain}/{location_name}/`
 
 In the opened window you’ll be requested to log in with your credentials. Use the credentials you stated while generating the hash to see the statistics of the server.

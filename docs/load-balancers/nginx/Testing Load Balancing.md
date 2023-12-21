@@ -106,7 +106,7 @@ Detailed information about all the further used ab commands can be found by foll
 ab -n 500 -c 10 -g res1.tsv {URL_to_your_env}
 ```
 
-Substitute the _{URL_to_your_env}_ part with a link to your environment (e.g. *https://balancer.jelastic.com/* in our case). In order to get it, click the **Open in Browser** button next to your environment and copy the corresponding URL from the browser’s address bar.
+Substitute the `{URL_to_your_env}` part with a link to your environment (e.g. *https://balancer.jelastic.com/* in our case). In order to get it, click the **Open in Browser** button next to your environment and copy the corresponding URL from the browser’s address bar.
 
 <div style={{
     display:'flex',

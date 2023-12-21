@@ -45,4 +45,4 @@ spec:
           servicePort: 8080
 ```
 
-This example exposes the myapp service, which is bound to the 8080 port on a path of your Kubernetes environment default domain with the /myapp suffix (i.e. _https://${envName}.${platformDomain.com}/myapp_). For additional information on the ingress rules configuration (including path- and subdomain-based routing), refer to the [official documentation](https://kubernetes.io/docs/concepts/services-networking/ingress/#ingress-rules).
+This example exposes the myapp service, which is bound to the 8080 port on a path of your Kubernetes environment default domain with the /myapp suffix (i.e. `https://${envName}.${platformDomain.com}/myapp`). For additional information on the ingress rules configuration (including path- and subdomain-based routing), refer to the [official documentation](https://kubernetes.io/docs/concepts/services-networking/ingress/#ingress-rules).

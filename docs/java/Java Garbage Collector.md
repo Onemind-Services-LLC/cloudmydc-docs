@@ -77,15 +77,15 @@ By default Jelastic PaaS uses G1 GC for JVM 8+ versions. For lower versions it e
 
 For JVM 12+ versions, the platform provides integrated vertical scaling to ensure G1 triggering with the following pre-set container [Variables](/container/container-configuration/variables):
 
-- **G1PERIODIC_GC_INTERVAL=3000**
+- `G1PERIODIC_GC_INTERVAL=3000`
 
   Interval between garbage collection in milliseconds (15 minutes by default)
 
-- **GC_SYS_LOAD_THRESHOLD_RATE=0.3**
+- `GC_SYS_LOAD_THRESHOLD_RATE=0.3`
 
   Custom multiplier to flexibly adjust the G1PeriodicGCSystemLoadThreshold value
 
-- **G1PERIODIC_GC_SYS_LOAD_THRESHOLD={CPU_cores_number}\*GC_SYS_LOAD_THRESHOLD_RATE**
+- `G1PERIODIC_GC_SYS_LOAD_THRESHOLD={CPU_cores_number}\*GC_SYS_LOAD_THRESHOLD_RATE`
   Activates garbage collection, if the average one-minute system load is below the set value. This condition is ignored if set as zero.
 
 <div style={{
@@ -146,7 +146,7 @@ You can set a custom GC parameter based on your application requirements via [En
 - **XMS_DE**F (or just XMS) - initial java heap size, for example XMS=32M
 - **XMN_DEF**- the size of the heap for the young generation, for example XMN=30M
 - **G1PERIODIC_GC_INTERVAL** (_for openJDK 12/13 only_) - a frequency of the G1 Periodic Collection in milliseconds (G1PeriodicGCInterval - 15 minutes by default); set as 0 to disable, G1PERIODIC_GC_INTERVAL=900
-- **G1PERIODIC_GC_SYS_LOAD_THRESHOLD** (for openJDK 12/13 only) - allows G1 Periodic Collection execution, if the average one-minute system load is below the set value; This condition is ignored if set as zero. By default, it is equal to the {CPU_cores_number}\*{GC_SYS_LOAD_THRESHOLD_RATE}
+- **G1PERIODIC_GC_SYS_LOAD_THRESHOLD** (for openJDK 12/13 only) - allows G1 Periodic Collection execution, if the average one-minute system load is below the set value; This condition is ignored if set as zero. By default, it is equal to the `{CPU_cores_number}*{GC_SYS_LOAD_THRESHOLD_RATE}`
 - **GC_SYS_LOAD_THRESHOLD_RATE** (for openJDK 12/13 only) - custom multiplier to flexibly adjust the G1PeriodicGCSystemLoadThreshold value (0.3 by default), for example G1PERIODIC_GC_SYS_LOAD_THRESHOLD_RATE=0.3
 - **FULL_GC_AGENT_DEBUG** - enables (true) or disables (false) the debug mode to track the Java GC processes in the logs, for example, FULL_GC_AGENT_DEBUG=true
 - **FULL_GC_PERIOD** - Sets the interval (in seconds) between the full GC calls; 900 by default, i.e. 15 minutes, for example FULL_GC_PERIOD=900

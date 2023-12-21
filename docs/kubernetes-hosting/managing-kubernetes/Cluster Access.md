@@ -69,7 +69,7 @@ Now, you can access the Kubernetes Dashboard once again.
 
 1. Follow the [installation steps](https://kubernetes.io/docs/tasks/tools/) to use a local kubectl. Next, run a command to establish remote connection:
 
-```bash
+``` 
 kubectl config set-cluster jelastic --server={api-endpoint} && \
 kubectl config set-context jelastic --cluster=jelastic && \
 kubectl config set-credentials user --token={token} && \
@@ -77,7 +77,7 @@ kubectl config set-context jelastic --user=user && \
 kubectl config use-context jelastic
 ```
 
-Replace the **_{api-endpoint}_** and **_{token}_** placeholders with the Remote API URL and access token respectively.
+Replace the `{api-endpoint}` and `{token}` placeholders with the Remote API URL and access token respectively.
 
 :::tip Tip
 

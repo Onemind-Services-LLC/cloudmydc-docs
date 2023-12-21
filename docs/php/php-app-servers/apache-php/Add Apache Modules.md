@@ -112,7 +112,7 @@ chmod 755 /usr/lib64/httpd/modules/mod_pony.so
 
 3. Go to the **/etc/httpd/conf** folder and edit the **_httpd.conf_** file by adding the LoadModule string in the following format:
 
-_LoadModule {module-name}\_module /usr/lib64/php/modules/{file-name}.so_
+_LoadModule `{module-name}_module /usr/lib64/php/modules/{file-name}`.so_
 
 Example: _LoadModule pony_module /usr/lib64/php/modules/mod_pony.so_
 
@@ -135,11 +135,11 @@ For example, for further configuration of the **mod_pony** module we need:
 - to navigate to the **webroot > ROOT** folder and create a **.htaccess** file;
 - to add the following strings to the **.htaccess** file:
 
-<_Files pony_>
-
-_SetHandler pony_
-
-<*/*Files\*>
+```
+<Files pony>
+    SetHandler pony
+</Files>
+```
 
 **Save** the changes.
 

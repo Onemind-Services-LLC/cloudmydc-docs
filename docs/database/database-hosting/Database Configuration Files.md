@@ -188,7 +188,7 @@ The **/var/lib/jelastic/backup** folder is used for storing the [database backup
 
 The **/var/lib/jelastic/keys** directory is used as a location for uploading private keys that are needed for your application.
 
-Generate the key, save it as a simple file, and upload it to the **keys** folder. You can then use it for different cases by merely stating the path to your key, i.e. _/var/lib/jelastic/keys/{keyName}_.
+Generate the key, save it as a simple file, and upload it to the **keys** folder. You can then use it for different cases by merely stating the path to your key, i.e. `/var/lib/jelastic/keys/{keyName}`.
 
 <div style={{
     display:'flex',

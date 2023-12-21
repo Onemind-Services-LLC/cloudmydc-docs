@@ -181,7 +181,7 @@ After conversion you’ll get emails with information about the state of your ac
 
 :::tip Tip
 
-If you would like to use autorefill option in the platform dashboard, you should tick the “I’d like to use PayPal for future payments to {hoster’s name}” line as it is shown below:
+If you would like to use autorefill option in the platform dashboard, you should tick the “I’d like to use PayPal for future payments to `{hoster's name}`” line as it is shown below:
 
 <div style={{
     display:'flex',

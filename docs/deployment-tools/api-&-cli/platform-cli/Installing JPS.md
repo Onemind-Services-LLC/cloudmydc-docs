@@ -59,10 +59,10 @@ The [**TimeZone Change**](/application-setting/managing-timezone-settings) add-o
 
 Here:
 
-- **_{jps}_** - link to the TimeZone Change add-on manifest file, i.e. [_https://raw.githubusercontent.com/jelastic-jps/time-zone-change/master/manifest.jps_]
-- **_{envName}_** - name of your existing environment, e.g. _my-app_
-- **_{settings}_** - according to the manifest, this particular add-on requires you to provide one additional parameter - the desired [timezone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), e.g. {_“dashoard_url”_:**_"America/New_York"_**}
-- **_{nodeGroup}_** - target [layer](/platform-overview/basics-&-terminology#layer) of the environment, e.g. _cp_
+- `{jps}` - link to the TimeZone Change add-on manifest file, i.e. [_https://raw.githubusercontent.com/jelastic-jps/time-zone-change/master/manifest.jps_]
+- `{envName}` - name of your existing environment, e.g. _my-app_
+- `{settings}` - according to the manifest, this particular add-on requires you to provide one additional parameter - the desired [timezone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), e.g. `{“dashoard_url”:"America/New_York"}`
+- `{nodeGroup}` - target [layer](/platform-overview/basics-&-terminology#layer) of the environment, e.g. _cp_
 
 If there are no issues, the script will respond with _“result”_: 0 (i.e. operation success).
 
@@ -149,7 +149,7 @@ If needed, you can explicitly provide a parameter to redefine the value inside t
 
 :::
 
-3. You can ensure that the value of the provided parameter was successfully logged via the platform console (_https://app._[**_{platformDomain}_**](/quickstart/hosters-list-&-info)_/console_).
+3. You can ensure that the value of the provided parameter was successfully logged via the platform console (`https://app.{platformDomain}/console`).
 
 <div style={{
     display:'flex',

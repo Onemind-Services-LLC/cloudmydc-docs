@@ -40,13 +40,13 @@ check interval={interval} fall={fail_count} rise={rise_count} [timeout={timeout}
 
 where
 
-- {**_interval}_** - delay between two consecutive check requests; is set in milliseconds
-- **_{fail_count}_** - amount of checkup failures, after which the server will be marked as unavailable
-- **_{rise_count}_** - amount of successful checkups, after which the server is marked as up and working
-- **_{timeout}_** - timeout (in milliseconds) the health check module is waiting for reply from backend before the check request is considered as failed
-- **_{true/false}_** - sets the initial state (_down_ or _up_ correspondingly) of both backends (i.e. until the corresponding amount of checkups is passed); states in _true_ by default
-- **_{port}_** - port number to be used while connecting to a backend to perform health check; by default is set to 0, which means that the default server’s port (according to the set protocol) will be used
-- **_{type}_** - protocol type to be used for health check (i.e. to diagnose if backend is up):
+- `{interval}` - delay between two consecutive check requests; is set in milliseconds
+- `{fail_count}` - amount of checkup failures, after which the server will be marked as unavailable
+- `{rise_count}` - amount of successful checkups, after which the server is marked as up and working
+- `{timeout}` - timeout (in milliseconds) the health check module is waiting for reply from backend before the check request is considered as failed
+- `{true/false}` - sets the initial state (_down_ or _up_ correspondingly) of both backends (i.e. until the corresponding amount of checkups is passed); states in _true_ by default
+- `{port}` - port number to be used while connecting to a backend to perform health check; by default is set to 0, which means that the default server’s port (according to the set protocol) will be used
+- `{type}` - protocol type to be used for health check (i.e. to diagnose if backend is up):
   - **tcp** - a simple _TCP_ socket connection
   - **ssl_hello** - sends _Client Hello_ SSL packet, which should be responded with a _Server Hello_ message
   - **http** - sends _HTTP_ request packet to receive and parse the response

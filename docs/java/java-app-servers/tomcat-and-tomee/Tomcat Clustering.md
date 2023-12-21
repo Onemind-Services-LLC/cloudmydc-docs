@@ -141,7 +141,7 @@ The **_channelSendOptions_** flag is attached to every message sent by **_Simple
         dropTime="3000"/>
 ```
 
-**_{MagicPort}_** is a unique port number for the cluster, which is generated on the fly from the Java arguments.
+`{MagicPort}` is a unique port number for the cluster, which is generated on the fly from the Java arguments.
 
 5. Tribes' logic of sending and receiving data includes two components: sender and receiver. The **Receiver** is responsible for data receiving. There is a thread pool in this element which has a **_maxThreads_** and **_minThreads_** setting. The address attribute is the host address that will be broadcasted by the membership component to the other nodes.
 

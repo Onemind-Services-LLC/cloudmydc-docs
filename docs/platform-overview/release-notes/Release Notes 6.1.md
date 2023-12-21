@@ -449,7 +449,7 @@ Additionally, the **[swap domains](/application-setting/domain-name-management/s
 
 ## Apache PHP Redeployment Amendments
 
-Some adjustments were applied to the backups created via the [redeploy functionality](https://cloudmydc.com/) on the **Apache PHP** stacks. In addition to the latest backup (**_{file_name}.backup_**), the platform will create and keep a copy of the required config files for every redeployment to a different tag (**_{file_name}.{time_stamp}_**). Such an improvement allows you to track the changes better, simplifying analysis and rollback in case of necessity.
+Some adjustments were applied to the backups created via the [redeploy functionality](https://cloudmydc.com/) on the **Apache PHP** stacks. In addition to the latest backup (`{file_name}.backup`), the platform will create and keep a copy of the required config files for every redeployment to a different tag (`{file_name}.{time_stamp}`). Such an improvement allows you to track the changes better, simplifying analysis and rollback in case of necessity.
 
 Also, when redeploying to the same tag, the platform won’t overwrite the existing **_php.ini_** file.
 

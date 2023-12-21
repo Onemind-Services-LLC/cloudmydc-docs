@@ -24,7 +24,7 @@ sidebar_position: 1
 </div>
 <div>
 
-With the platform, you have a possibility to set an external domain address for your site, instead of the default environment URL (_i.e. {env_name}_.[_hoster_domain_name_](/quickstart/hosters-list-&-info)). The custom domain allows promoting your unique branding and improves your web application recognition over the Internet.
+With the platform, you have a possibility to set an external domain address for your site, instead of the default environment URL (i.e. `{env_name}`.[_hoster_domain_name_](/quickstart/hosters-list-&-info)). The custom domain allows promoting your unique branding and improves your web application recognition over the Internet.
 
 </div>
 </div>
@@ -227,13 +227,13 @@ _name2.mydomain.com > env2.hosterdomain.com_
 - use **ANAME** if you need to redirect one DNS zone ([root domain](/application-setting/domain-name-management/custom-domain-name#custom-domain-name)) to another with all of its subdomains being resolved over the same subdomains
 
 **mydomain.com > hosterdomain.com**
-As a result, any subdomain on your domain will be pointed to the appropriate one on the service hosting provider: _{subdomain}.mydomain.com > {subdomain}.hosterdomain.com._
+As a result, any subdomain on your domain will be pointed to the appropriate one on the service hosting provider: `{subdomain}.mydomain.com > {subdomain}.hosterdomain.com`.
 
 **mynewcompany.com > myoldcompany.com**
-As a result, you can point all traffic from your old domain to a new one keeping all the subdomains the same: _{subdomain}.mynewcompany.com > {subdomain}.myoldcompany.com._
+As a result, you can point all traffic from your old domain to a new one keeping all the subdomains the same: `{subdomain}.mynewcompany.com > {subdomain}.myoldcompany.com`.
 
 **mydomain.com > env1.hosterdomain.com** (requires [domain binding](/application-setting/domain-name-management/custom-domain-name#how-to-bind-domain-to-environment))
-As a result, subdomains of your custom domain will point to the appropriate ones within the target environment: _{subdomain}.mydomain.com > {subdomain}.env1.hosterdomain.com._
+As a result, subdomains of your custom domain will point to the appropriate ones within the target environment: `{subdomain}.mydomain.com > {subdomain}.env1.hosterdomain.com`.
 
 ## How to Bind Domain to Environment?
 

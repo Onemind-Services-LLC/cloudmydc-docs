@@ -111,7 +111,8 @@ Now, you wait for the member to [accept the invitation](/account-and-pricing/acc
 4. If needed, you can select a collaboration member to perform the necessary adjustments:
 
 - **Edit** - to change shared components and permissions at any time
-  :::danger Note
+
+:::danger Note
 
 If a collaboration member was logged in during the adjustments, they might need to refresh the dashboard to view new shared possibilities.
 

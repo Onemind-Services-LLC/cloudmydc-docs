@@ -163,8 +163,8 @@ sudo docker build -t {image_name} {dockerfile_location}
 
 where
 
-- **_{image_name}_** - image repository appellation; optionally, a version tag could be added after the “:” separator (e.g. jelastic/wildfly:latest)
-- **_{dockerfile_location}_** - either local path or an URL to your dockerfile (could be set as “.” if the file is located in the current directory)
+- `{image_name}` - image repository appellation; optionally, a version tag could be added after the “:” separator (e.g. jelastic/wildfly:latest)
+- `{dockerfile_location}` - either local path or an URL to your dockerfile (could be set as “.” if the file is located in the current directory)
 
 2. You should receive the build success message with the ID of your new image alongside. To ensure it is available at your workstation, you can request the list of all local templates to be output with:
 
@@ -178,7 +178,7 @@ sudo docker images
 sudo docker push {image_name}
 ```
 
-Here, **_{image_name}_** should be stated the same to the one you’ve specified during the image building in the 1st step.
+Here, `{image_name}` should be stated the same to the one you’ve specified during the image building in the 1st step.
 
 You’ll be additionally requested to confirm your account ownership (by specifying the corresponding username, password and email address) in order to complete this operation.
 
@@ -210,7 +210,7 @@ We’ll consider the latter one, so, once inside, choose the necessary environme
 
 2. At the opened **_Add New Image_** frame, type your image identifier within the **Name** field, i.e.:
 
-_<b>{registry_hostname}</b>(can be skipped for official Hub Registry)/<b>{account}</b>/<b>{image_name}</b>_
+`{registry_hostname}`(can be skipped for official Hub Registry)/`{account}`/`{image_name}`
 
 Also, in case of a private repository usage, the appropriate **Username** and **Password** credentials should be specified.
 

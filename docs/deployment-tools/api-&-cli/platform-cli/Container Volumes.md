@@ -43,7 +43,7 @@ These parameters can be used within your [JPS](/deployment-tools/cloud-scripting
 
 </div>
 
-Here, **_{local_volume}_** is a placeholder for the path your local volume should be placed inside a container. You can specify multiple volumes at once using comma separator.
+Here, `{local_volume}` is a placeholder for the path your local volume should be placed inside a container. You can specify multiple volumes at once using comma separator.
 
 E.g., within the image above, we create an environment with the _jelastic/haproxy_ image inside and two local volumes attached, namely: _/my_volume_1 and /my_volume_2_.
 
@@ -65,11 +65,9 @@ E.g., within the image above, we create an environment with the _jelastic/haprox
 
 The highlighted data should be changed to the appropriate values:
 
-- **_{local_path}_** - path to the folder within nodes of the specified environment layer the mounted content should be placed at
-
-- **_{remote_path}_** - the required directory location at the remote container (i.e. address of source data)
-
-- **_{node_ID}_** - unique identifier of the node your data will be mounted from
+- `{local_path}` - path to the folder within nodes of the specified environment layer the mounted content should be placed at
+- `{remote_path}` - the required directory location at the remote container (i.e. address of source data)
+- `{node_ID}` - unique identifier of the node your data will be mounted from
 
 :::tip Note
 
@@ -102,7 +100,7 @@ As an example, using the command on image above, we’ve mounted data from the _
 
 Here:
 
-- **_{node_ID}_** - unique identifier of the node the data should be mounted from
+- `{node_ID}` - unique identifier of the node the data should be mounted from
 
 :::tip Note
 
@@ -110,9 +108,8 @@ Alternatively, it is possible to use _“sourceNodeGroup”_ to define the [envi
 
 :::
 
-- **_{true/false}_** - the appropriate values define _read only_ or _read & write_ rights for client nodes while operating mounted data (_false_ by default)
-
-- **_{local_volume}_** - list of volumes to be mounted (if not specified all of them will be copied)
+- `{true/false}` - the appropriate values define _read only_ or _read & write_ rights for client nodes while operating mounted data (_false_ by default)
+- `{local_volume}` - list of volumes to be mounted (if not specified all of them will be copied)
 
 In such a way, using the command in the image above, we’ve added a new layer with two _jelastic/tomcat8_ Docker images and mounted the volumes to the existing _jelastic/haproxy_ node.
 
@@ -128,9 +125,9 @@ The platform provides you with a number of CLI methods, that are developed speci
 
 where:
 
-- **_{env_name}_** - domain name of the environment you’d like to modify
-- **_{node_ID}_** - unique identifier of the node in chosen environment, a new container volume should be added to
-- **_{path}_** - path in local filesystem to your volume directory
+- `{env_name}` - domain name of the environment you’d like to modify
+- `{node_ID}` - unique identifier of the node in chosen environment, a new container volume should be added to
+- `{path}` - path in local filesystem to your volume directory
 
 <div style={{
     display:'flex',
@@ -160,11 +157,11 @@ where:
 
 3. In case you need to add volumes not to a single node, but to a whole environment layer at once, the **_AddContainerVolumeByGroup_** method will be more suitable:
 
-```bash
+```
 ~/jelastic/environment/control/addcontainervolumebygroup --envName  {env_name} --nodeGroup  {node_group} --path  {path}
 ```
 
-Here, the **_{node_group}_** parameter allows to define a layer in the current environment (e.g. _cp, bl, storage_, etc.), which nodes should be modified with a new volume.
+Here, the `{node_group}` parameter allows to define a layer in the current environment (e.g. _cp, bl, storage_, etc.), which nodes should be modified with a new volume.
 
 <div style={{
     display:'flex',
@@ -178,7 +175,7 @@ Here, the **_{node_group}_** parameter allows to define a layer in the current e
 
 4. Surely, you can remove a volume for the whole layer in a single command as well:
 
-```bash
+```
 ~/jelastic/environment/control/removecontainervolumebygroup --envName  {env_name} --nodeGroup  {node_group} --path  {path}
 ```
 

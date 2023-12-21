@@ -116,7 +116,7 @@ Once your PaaS account is successfully converted to billing, you’ll receive th
 
 :::tip Note
 
-If you would like to use the balance auto-refill option, don’t forget to tick the “I’d like to use PayPal for future payments to {hoster’s name}” line as it is shown below:
+If you would like to use the balance auto-refill option, don’t forget to tick the “I’d like to use PayPal for future payments to `{hoster’s name}`” line as it is shown below:
 
 <div style={{
     display:'flex',

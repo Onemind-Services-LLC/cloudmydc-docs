@@ -142,7 +142,7 @@ The **hooks** folder stores custom scripts (so-called [hooks](https://cloudmydc.
 
 The **keys** directory is used as a location for uploading private keys which are needed for your application.
 
-Just generate your key, save it as a simple file and upload to the **keys** folder. Now, you can use it for different cases (e.g. for authentication between nodes) by simply stating the appropriate **_/var/lib/jelastic/keys/{key}_** path.
+Just generate your key, save it as a simple file and upload to the **keys** folder. Now, you can use it for different cases (e.g. for authentication between nodes) by simply stating the appropriate `/var/lib/jelastic/keys/{key}` path.
 
 <div style={{
     display:'flex',
@@ -170,7 +170,7 @@ The **latest** folder contains all JDK libraries, tools, binaries, etc. Here you
 
 ## vcs
 
-In the **vcs** directory, you can find a list of **_{project_name}.properties_** files, which contain all information about your projects. Herewith, these configuration files are not editable, but can be viewed to inspect parameters for a particular project.
+In the **vcs** directory, you can find a list of `{project_name}.properties` files, which contain all information about your projects. Herewith, these configuration files are not editable, but can be viewed to inspect parameters for a particular project.
 
 <div style={{
     display:'flex',
@@ -212,10 +212,10 @@ In addition to the configuration files, Maven build node can be managed through 
 
 Below, the Maven-specific variables are listed:
 
-- **_MAVEN_OPTS_** - allows to define values for the most essential Java server options, e.g. _-Xmx, -Xms, -Xmn_, etc
-- **_MAVEN_RUN_ARGS_** - specifies additional [Maven command-line parameters](https://cloudmydc.com/), which should be set for all Maven projects (for example, to define the number of process threads)
-- **_MAVEN*RUN_ARGS*{project}_** - sets additional parameters for a particular project; herewith, **note** that the **_{project}_** name should be stated with underscores “\_” instead of spaces and dashes
-- **_MAVEN_DEPLOY_ARTIFACT_** - defines an artifact to be deployed (all projects)
-- **_MAVEN*DEPLOY_ARTIFACT*{project}_** - provides an artifact for a particular project (higher priority than _MAVEN_DEPLOY_ARTIFACT_)
+- `MAVEN_OPTS` - allows to define values for the most essential Java server options, e.g. _-Xmx, -Xms, -Xmn_, etc
+- `MAVEN_RUN_ARGS` - specifies additional [Maven command-line parameters](https://cloudmydc.com/), which should be set for all Maven projects (for example, to define the number of process threads)
+- `MAVEN_RUN_ARGS{project}` - sets additional parameters for a particular project; herewith, **note** that the `{project}` name should be stated with underscores “\_” instead of spaces and dashes
+- `MAVEN_DEPLOY_ARTIFACT` - defines an artifact to be deployed (all projects)
+- `MAVEN_DEPLOY_ARTIFACT{project}` - provides an artifact for a particular project (higher priority than _MAVEN_DEPLOY_ARTIFACT_)
 
 In this way, with the platform you can take a full control over the Maven build node and configure it as required according to your Java project specifics.

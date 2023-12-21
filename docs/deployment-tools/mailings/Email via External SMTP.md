@@ -69,7 +69,7 @@ PHPMailer is a classic full-featured email sending class for PHP, compatible wit
 
 </div>
 
-7. Then click **Config** button next to your application server and open **webroot > {context_name} > config.php** file.
+7. Then click **Config** button next to your application server and open `webroot > {context_name} > config.php` file.
 
 <div style={{
     display:'flex',

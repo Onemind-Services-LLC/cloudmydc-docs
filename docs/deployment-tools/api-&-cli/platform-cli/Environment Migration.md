@@ -43,8 +43,8 @@ To make it more clear, the appropriate _uniqueName_ values are circled in the im
 
 Here:
 
-- **_{env_name}_** - name of the environment you’d like to relocate
-- **_{region_id}_** - unique identifier of the target environment region from the previous step
+- `{env_name}` - name of the environment you’d like to relocate
+- `{region_id}` - unique identifier of the target environment region from the previous step
 
 <div style={{
     display:'flex',

@@ -61,9 +61,9 @@ For this example we’ve created table books with fields book_name and book_auth
 
 Don’t miss to put the correct values to the hibernate.connection.url string instead of the text inside curly brackets.
 
-{obj.data1}
+`{obj.data1}`
 
-where **_{node_id}_** - ID of the container with MySQL server you want to receive the access to. It can be seen at the dashboard:
+where `{node_id}` - ID of the container with MySQL server you want to receive the access to. It can be seen at the dashboard:
 
 <div style={{
     display:'flex',

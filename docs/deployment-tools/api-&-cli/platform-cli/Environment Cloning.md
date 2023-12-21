@@ -14,8 +14,8 @@ The [environment cloning](/environment-management/cloning-environment) feature i
 
 where:
 
-- **_{src_env}_** - name of the environment you’d like to clone
-- **_{new_env}_** - name for your the environment copy
+- `{src_env}` - name of the environment you’d like to clone
+- `{new_env}` - name for your the environment copy
 
 <div style={{
     display:'flex',

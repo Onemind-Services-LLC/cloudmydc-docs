@@ -111,7 +111,7 @@ Script you want to perform should be an executable file. If it isn’t, you can 
 
 ## Cron Event Scheduler
 
-1. In the already opened configurations tab navigate to the **cron** folder and open the *{nodeName}* file.
+1. In the already opened configurations tab navigate to the **cron** folder and open the `{nodeName}` file.
 
 <div style={{
     display:'flex',
@@ -211,13 +211,13 @@ While stating these values you need to follow the next standards:
 **Pay attention** that you should specify a ***full path to your script*** in the cron command. Depending on the location of your script the path can be as one of the following:
 
 - **home** folder for Java compute nodes:
-  - */opt/tomcat/temp/{scriptName}* - Tomcat, TomEE
-  - */opt/jetty/home/{scriptName}* - Jetty
-  - */opt/glassfish3/temp/{scriptName}* - GlassFish
+  - `/opt/tomcat/temp/{scriptName}` - Tomcat, TomEE
+  - `/opt/jetty/home/{scriptName}` - Jetty
+  - `/opt/glassfish3/temp/{scriptName}` - GlassFish
 - folder with your application files & scripts for PHP compute nodes:
-  - */var/www/webroot/{appFolder}/{scriptName}*
+  - `/var/www/webroot/{appFolder}/{scriptName}`
 - **scripts** folder for MySQL/MariaDB databases:
-  - */var/lib/jelastic/bin/{scriptName}*
+  - `/var/lib/jelastic/bin/{scriptName}`
 
 :::
 

@@ -45,8 +45,8 @@ ssh {userName}@{hostname}
 
 where
 
-- **_{userName}_** - login received via email upon environment setup (root by default)
-- **_{hostname}_** - attached Public IP addres
+- `{userName}` - login received via email upon environment setup (root by default)
+- `{hostname}` - attached Public IP addres
 
 <div style={{
     display:'flex',

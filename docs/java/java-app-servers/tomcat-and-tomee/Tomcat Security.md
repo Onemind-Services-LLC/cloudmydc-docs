@@ -32,7 +32,9 @@ To set up the authentication in front of your web-application deployed to Tomcat
 </div>
 
 - Then navigate to the ***web.xml*** file (it is contained in the same ***/opt/tomcat/conf*** folder) and specify the security constraint for the newly created user.
-`<security-constraint>
+
+```bash
+<security-constraint>
 <web-resource-collection>
 `
 - `<url-pattern>/</url-pattern>*
@@ -47,7 +49,8 @@ To set up the authentication in front of your web-application deployed to Tomcat
 *<login-config>*
 *<auth-method>BASIC</auth-method>*
 *<realm-name>Test Realm</realm-name>*
-*</login-config>*`
+*</login-config>*
+```
 
 <div style={{
     display:'flex',

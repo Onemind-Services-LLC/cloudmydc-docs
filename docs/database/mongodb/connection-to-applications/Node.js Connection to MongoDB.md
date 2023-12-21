@@ -67,11 +67,11 @@ if(!err) {
 
 Here, you need to adjust the [connection string](https://www.mongodb.com/docs/manual/reference/connection-string/) (all the required information is provided within email for your MongoDB node):
 
-- **{user}** - username to log into database with
-- **{password}** - password for the appropriate user
-- **{host}** - link to your MongoDB container
-- **{port}** - port to be used for connection (use the default one - 27017)
-- **{database}** - database to be accessed (e.g. the default one - admin)
+- `{user}` - username to log into database with
+- `{password}` - password for the appropriate user
+- `{host}` - link to your MongoDB container
+- `{port}` - port to be used for connection (use the default one - 27017)
+- `{database}` - database to be accessed (e.g. the default one - admin)
 
 <div style={{
     display:'flex',

@@ -62,9 +62,8 @@ Here, the following format should be used:
 
 where:
 
-- **{directory}** - path to the folder (relative to the Root folder) that should be exported
-
-- **{NFS_client}** - [custom domain](https://cloudmydc.com/) name or public IP address of the client node (i.e where the exported files should be mounted)
+- `{directory}` - path to the folder (relative to the Root folder) that should be exported
+- `{NFS_client}` - [custom domain](https://cloudmydc.com/) name or public IP address of the client node (i.e where the exported files should be mounted)
 
 :::tip Note
 
@@ -192,9 +191,9 @@ chown {uid}:{gid} {path}
 
 Here:
 
-- **{uid}** - user name or ID, which can be found in the **_/etc/passwd_** file of your platform container
-- **{gid}** - group name or identifier, that is shown within the **_/etc/group_** file of your node
-- **{path}** - path to the directory you’d like to change the permissions for
+- `{uid}` - user name or ID, which can be found in the **_/etc/passwd_** file of your platform container
+- `{gid}` - group name or identifier, that is shown within the **_/etc/group_** file of your node
+- `{path}` - path to the directory you’d like to change the permissions for
 
 <div style={{
     display:'flex',

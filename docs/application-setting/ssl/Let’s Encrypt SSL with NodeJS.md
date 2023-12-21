@@ -181,7 +181,7 @@ Alternatively, you can provide the **_.sh_** script with the required commands:
 deployHook: /path/to/your/file.sh
 ```
 
-Ensure that your script file is executable (**chmod +x {fileName}**). For example, the script content can be the following:
+Ensure that your script file is executable (`chmod +x {fileName}`). For example, the script content can be the following:
 
 ```bash
 #!/bin/bash

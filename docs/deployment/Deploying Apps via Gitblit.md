@@ -219,8 +219,8 @@ git remote add  {name}  {repo_url}
 
 where:
 
-- **{name}** - appellation for your remote repository
-- **{repo_url}** - link to your GItblit repository, which can be found within the drop-down list on the top of the page from the previous step. The appropriate http:// link can be copied with the button to the right, as it is shown below:
+- `{name}` - appellation for your remote repository
+- `{repo_url}` - link to your GItblit repository, which can be found within the drop-down list on the top of the page from the previous step. The appropriate http:// link can be copied with the button to the right, as it is shown below:
 
 <div style={{
     display:'flex',
@@ -240,8 +240,8 @@ git push -u  {name}  {branch}
 
 where:
 
-- **{name}** - name of the remote Gitblit repository your project should be copied to (state it the same as above)
-- **{branch}** - projects' branch, that should be updated with this new data
+- `{name}` - name of the remote Gitblit repository your project should be copied to (state it the same as above)
+- `{branch}` - projects' branch, that should be updated with this new data
 
 <div style={{
     display:'flex',
