@@ -8,7 +8,7 @@ sidebar_position: 2
 
 **Built-in wildcard SSL** by the platform is an excellent solution for those who are searching for a quick and reliable way to secure their website.
 
-The built-in SSL certificate (can be referred to as **_{hosterName} SSL_** in the dashboard) offers:
+The built-in SSL certificate (can be referred to as `{hosterName}` SSL in the dashboard) offers:
 
 - **Convenient Management** - configured and working SSL with a single click in the topology wizard
 - **Fast Validation** - domain level verification, including your site check and security seal issuing, is performed in a matter of minutes

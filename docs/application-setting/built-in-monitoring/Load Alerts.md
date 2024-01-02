@@ -69,7 +69,7 @@ Let’s consider a case of setting up your own trigger - for that, click on the 
 - **_Name_** - name of the notification trigger
 - **_Nodes_** - type of the environment’s node (you can apply trigger to any node within the chosen environment)
 - **_Whenever_** - type of resources that will be monitored by trigger: _Cloudlets (Memory, CPU), Memory, CPU, Network (out ext. + in ext.), Network (out ext.), Storage_ (disk space amount), _Disk I/O, Disk IOPS_ and _Inodes_
-- **_Is_** - condition for trigger invocation/execution, due to which the resource consumption should be _above_ or _below_ (the “>” or “<” values correspondingly - use the first combo-box) of the stated percentage or _Mbps_ for the _Network monitoring_
+- **_Is_** - condition for trigger invocation/execution, due to which the resource consumption should be _above_ or _below_ (the `“>”` or `“<”` values correspondingly - use the first combo-box) of the stated percentage or _Mbps_ for the _Network monitoring_
 - **_For at least_** - time period before trigger execution, during which it should remains invoked
 - **_Notification frequency_** - delay for the repetitive message to be sent
 

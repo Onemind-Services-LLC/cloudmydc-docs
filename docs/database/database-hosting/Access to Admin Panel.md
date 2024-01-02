@@ -8,7 +8,7 @@ sidebar_position: 3
 
 The platform allows to flexibly manage access to the **_phpMyAdmin_** panel for the MySQL, MariaDB and PerconaDB database servers.
 
-By default, all connections to phpMyAdmin are allowed and, if you want to change such a behaviour, adjust the **_/etc/httpd/conf.d/phpMyAdmin-jel.conf_** file. Just, locate the <Directory /usr/share/phpMyAdmin/> section, where the possible configs are described via comments:
+By default, all connections to phpMyAdmin are allowed and, if you want to change such a behaviour, adjust the **_/etc/httpd/conf.d/phpMyAdmin-jel.conf_** file. Just, locate the `<Directory /usr/share/phpMyAdmin/>` section, where the possible configs are described via comments:
 
 ```bash
 <Directory /usr/share/phpMyAdmin/>
@@ -66,7 +66,7 @@ Require env {varName}
 
 :::danger Note
 
-In this case you should specify the **_{ipAddress}_** in the **_^xxx.xxx.xxx.xxx_** format to be properly processed by Apache. Also, you can use any prefered **_{varName}_** variable name, for example env_allow_1.
+In this case you should specify the `{ipAddress}` in the **_^xxx.xxx.xxx.xxx_** format to be properly processed by Apache. Also, you can use any prefered `{varName}` variable name, for example env_allow_1.
 
 :::
 

@@ -168,7 +168,7 @@ After the PRIMARY database is elected, other replica set members will become ina
 
 6. Access the database, which should be replicated, with the appropriate admin user credentials:
 
-\*mongo -u **{user}** -p **{password} {DB_name}\***
+`mongo -u {user} -p {password} {DB_name}`
 
 <div style={{
     display:'flex',
@@ -182,9 +182,9 @@ After the PRIMARY database is elected, other replica set members will become ina
 
 Where:
 
-- **{user}** – administrator username (sent to your email, usually admin by default)
-- **{password}** – password for the corresponding DB user password (can be found within the same email)
-- **{DB_name}** – name of the database you would like to replicate within this replica set (we’ll use the default admin one)
+- `{user}` – administrator username (sent to your email, usually admin by default)
+- `{password}` – password for the corresponding DB user password (can be found within the same email)
+- `{DB_name}` – name of the database you would like to replicate within this replica set (we’ll use the default admin one)
 
 :::tip Note
 
@@ -194,14 +194,16 @@ In case the new election has occurred the admin user credentials to log into a n
 
 7. Once the connection is established, execute the next lines in order to define parameters for the current MongoDB node and initiate your replica set:
 
-_config = {\_id : "**{replica_set}**", members : [{_id : 0, host:"**{current_db_ip}**:27017"},]}_
+```
+config = {_id : "{replica_set}", members : [{_id : 0, host:"{current_db_ip}:27017"},]}
+```
 
 rs.initiate()
 
 Obviously, the values in brackets should be substituted with the appropriate data, namely:
 
-- **_{replica_set}_** – name of your replicating database group, specified at the beginning of this section (db-replication in our case)
-- **_{current_db_ip}_** – IP address of the chosen database container
+- `{replica_set}` – name of your replicating database group, specified at the beginning of this section (db-replication in our case)
+- `{current_db_ip}` – IP address of the chosen database container
 
 <div style={{
     display:'flex',
@@ -215,7 +217,9 @@ Obviously, the values in brackets should be substituted with the appropriate dat
 
 In our example:
 
-**_config = {\_id : "db-replication", members : [{_id : 0, host:"172.25.2.119:27017"},]}_**
+```
+config = {_id : "db-replication", members : [{_id : 0, host:"172.25.2.119:27017"},]}
+```
 
 <div style={{
     display:'flex',
@@ -239,9 +243,11 @@ In our example:
 
 </div>
 
-8. Execute the following command for the remaining databases where **_{db_ip}_** is IP address of each database:
+8. Execute the following command for the remaining databases where `{db_ip}` is IP address of each database:
 
-_rs.add("**{db_ip}**:27017")_
+```bash
+rs.add("{db_ip}:27017")
+```
 
 <div style={{
     display:'flex',
@@ -324,9 +330,7 @@ Do not restart all the nodes since it will cause a new PRIMARY election unless y
 
 5. Now Arbiter is ready to be added to the replica set. At the PRIMARY node issue command to add arbiter to the cluster:
 
-<!-- *rs.addArb("**{db_ip}**:27017")* -->
-
-Where **_{db_ip}_** is IP address of a newly added node.
+Where `{db_ip}` is IP address of a newly added node.
 
 <div style={{
     display:'flex',
@@ -413,11 +417,11 @@ Obviously, you’ll need an application server for that (e.g. Apache), so either
 
 where the following values should be substituted with the corresponding data:
 
-- **_{replica_set_name}_** – your replica set name
-- **_{db_username}_** – admin user of the chosen primary database (admin, by default)
-- **_{db_password}_** – the above-specified user’s password
-- **_{NodeID}_** – identification number of the corresponding node, that can be found at the Jelastic dashboard
-- **_{environment_domain}_** - environment domain that can be found at the Jelastic dashboard
+- `{replica_set_name}` – your replica set name
+- `{db_username}` – admin user of the chosen primary database (admin, by default)
+- `{db_password}` – the above-specified user’s password
+- `{NodeID}` – identification number of the corresponding node, that can be found at the Jelastic dashboard
+- `{environment_domain}` - environment domain that can be found at the Jelastic dashboard
 
 <div style={{
     display:'flex',

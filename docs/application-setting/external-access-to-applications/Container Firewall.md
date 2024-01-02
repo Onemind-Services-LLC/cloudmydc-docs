@@ -112,7 +112,7 @@ If needed (e.g. for the [automation solutions](/deployment-tools/cloud-scripting
 "OPEN_INBOUND_PORTS": "{port1}, {port2}, ... , {portN}"
 ```
 
-Here, **_{portN}_** is a particular port (_1234_) or range (_33062-34000_), which will be exposed within the inbound firewall rules (via both _tcp_ and _udp_ protocols) after container creation.
+Here, `{portN}` is a particular port (_1234_) or range (_33062-34000_), which will be exposed within the inbound firewall rules (via both _tcp_ and _udp_ protocols) after container creation.
 
 <div style={{
     display:'flex',
@@ -360,8 +360,8 @@ sudo jem firewall list {table} {options}
 
 Here:
 
-- **{table}** - specifies the target iptable (filter, nat, mangle, raw)
-- **{options}** - lists [iptable parameters](https://linux.die.net/man/8/iptables), which should be applied
+- `{table}` - specifies the target iptable (filter, nat, mangle, raw)
+- `{options}` - lists [iptable parameters](https://linux.die.net/man/8/iptables), which should be applied
 
 <div style={{
     display:'flex',

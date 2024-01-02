@@ -51,9 +51,9 @@ genrsa -out {filename} {length}
 
 where
 
-**_{filename} _**- name of the output key file with **.key** extension (_e.g. server.key_)
+`{filename}` - name of the output key file with **.key** extension (_e.g. server.key_)
 
-**_{length} _**- private key length in bits (should be at least 2048 to be considered secure, e.g. _4096_)
+`{length}` - private key length in bits (should be at least 2048 to be considered secure, e.g. _4096_)
 
 :::danger note
 
@@ -79,11 +79,10 @@ req -config {config_path} -new -key {keyname} -out {filename}
 
 where
 
-**_{config_path}_** - path to the _openssl.cnf_ configuration file, located in the directory with extracted OpenSSL files (specified according to the C:_\path\to\openssl.cnf format_)
+`{config_path}` - path to the _openssl.cnf_ configuration file, located in the directory with extracted OpenSSL files (specified according to the C:_\path\to\openssl.cnf format_)
 
-**_{keyname} _**- your server key name (the one you’ve generated in the previous step, server.key in our case)
-
-**_{filename} _**- desired name of the output request file with **.csr** extension (e.g. _server.csr_)
+`{keyname}` - your server key name (the one you’ve generated in the previous step, server.key in our case)
+`{filename}` - desired name of the output request file with **.csr** extension (e.g. _server.csr_)
 
 You’ll see a set of questions appear. Answer them to complete the certificate information with your data.
 
@@ -121,9 +120,8 @@ openssl genrsa -out {filename} {length}
 
 where
 
-**_{filename}_** - name of the output key file with **.key** extension (e.g. _server.key_)
-
-**_{length}_** - private key length in bits (should be at least 2048 to be considered secure, e.g. _4096_)
+`{filename}` - name of the output key file with **.key** extension (e.g. _server.key_)
+`{length}` - private key length in bits (should be at least 2048 to be considered secure, e.g. _4096_)
 
 :::danger note
 
@@ -149,9 +147,8 @@ openssl req -new -key {keyname} -out {filename}
 
 where
 
-**_{keyname} _**- your server key name (the one you’ve generated in the previous step, _server.key_ in our case)
-
-**_{filename}_** - desired name of the output request file with **.csr **extension (e.g. _server.csr_).
+`{keyname}` your server key name (the one you’ve generated in the previous step, _server.key_ in our case)
+`{filename}` - desired name of the output request file with **.csr **extension (e.g. _server.csr_).
 
 You’ll see a set of questions appear. Answer them to complete the certificate information with your data.
 

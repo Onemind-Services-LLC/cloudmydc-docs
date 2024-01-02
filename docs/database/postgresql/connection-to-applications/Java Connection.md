@@ -46,10 +46,12 @@ PostgreSQL is a powerful, open source SQL database with the object-relational st
 
 4. Provide the following connection details in the **_mydb.cfg_** file:
 
-\*host=jdbc:postgresql://**{host}**/**{db_name}\***
-\*username=**{user}\***
-\*password=**{password}\***
-_driver=org.postgresql.Driver_
+```
+host=jdbc:postgresql://{host}/{db_name}
+username={user}
+password={password}
+driver=org.postgresql.Driver
+```
 
 <div style={{
     display:'flex',
@@ -63,9 +65,9 @@ _driver=org.postgresql.Driver_
 
 Here:
 
-- **{host}** - link to your DB node without protocol part
-- **{db_name}** - name of the database (postgres in our case)
-- **{user}** and **{password}** - admin user credentials
+- `{host}` - link to your DB node without protocol part
+- `{db_name}` - name of the database (postgres in our case)
+- `{user}` and `{password}` - admin user credentials
 
 :::tip Note
 
@@ -162,7 +164,7 @@ For Tomcat 10: [https://download.jelastic.com/public.php?service=files&t=503e976
 
 :::tip Note
 
-Our example application already contains the jdbc-connector for the PostgreSQL database access. However, for other projects, you may need to manually upload it to the **_webapps/{app_context}/WEB-INF/lib_** folder on your application server (don’t forget to restart server afterward to apply the changes).
+Our example application already contains the jdbc-connector for the PostgreSQL database access. However, for other projects, you may need to manually upload it to the `webapps/{app_context}/WEB-INF/lib` folder on your application server (don’t forget to restart server afterward to apply the changes).
 
 :::
 

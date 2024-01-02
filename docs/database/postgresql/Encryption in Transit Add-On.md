@@ -226,10 +226,10 @@ psql -U {userName} {dbName} -h {host} -p {port} -W
 
 Here:
 
-- **_{userName}_** - database username for the connection
-- **_{dbName}_** - database name to connect to
-- **_{host}_** - database entry point (endpoint, in our case)
-- **_{port}_** - port for the connection (from the endpoint, in our case)
+- `{userName}` - database username for the connection
+- `{dbName}` - database name to connect to
+- `{host}` - database entry point (endpoint, in our case)
+- `{port}` - port for the connection (from the endpoint, in our case)
 
 <div style={{
     display:'flex',

@@ -153,11 +153,11 @@ source {appName}/bin/activate
 
 2. The management of the required software packages is commonly provided by [**_pip_**](https://pip.pypa.io/en/stable/) - a popular Python package management system for the [PiPI](https://pypi.org/) repository. Below, some of the most common commands are listed:
 
-- **_pip install {packageName}_** - installs a necessary module
-- **_pip uninstall {packageName}_** - removes previously installed module
-- **_pip install -upgrade {packageName}_** - updates the specified module to its latest version
-- **_pip install -r requirements.txt_** - installs all the modules, listed in the _requirements.txt_ file
-- **_pip list_** - shows the set of already installed modules
+- `pip install {packageName}` - installs a necessary module
+- `pip uninstall {packageName}` - removes previously installed module
+- `pip install -upgrade {packageName}` - updates the specified module to its latest version
+- `pip install -r requirements.txt` - installs all the modules, listed in the _requirements.txt_ file
+- `pip list` - shows the set of already installed modules
 
 :::tip Tip
 

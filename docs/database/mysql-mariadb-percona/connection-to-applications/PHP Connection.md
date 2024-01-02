@@ -84,9 +84,9 @@ mysqli_connect('{host}', '{user}', '{password}', '{db_name}');
 
 The appropriate placeholders should be substituted with your connection data from the MySQL or MariaDB node:
 
-- **_{host}_** - link to your DB node without protocol part
-- **_{user}_** and **_{password}_** - database admin credentials (for production usage, it’s recommended to create a dedicated account with the appropriate permissions)
-- **_{db_name}_** - name of required database (e.g. the previously created mysqldb one)
+- `{host}` - link to your DB node without protocol part
+- `{user}` and `{password}` - database admin credentials (for production usage, it’s recommended to create a dedicated account with the appropriate permissions)
+- `{db_name}` - name of required database (e.g. the previously created mysqldb one)
 
 2. For switching to different database within the same server, use the next function:
 
@@ -94,7 +94,7 @@ The appropriate placeholders should be substituted with your connection data fro
 mysql_select_db('{connect}','{db_name}');
 ```
 
-Here, the **_{connect}_** should be substituted with the connection string obtained using the above-described mysqli_connect function.
+Here, the `{connect}` should be substituted with the connection string obtained using the above-described mysqli_connect function.
 
 3. In order to close a connection to your database, execute the following:
 
@@ -128,7 +128,7 @@ mysqli_close($link);
 
 :::tip Note
 
-Do not forget to substitute **_{host}_**, **_{user}_**, **_{password}_** and **_{db_name}_** in the connection string with the corresponding values (as it is described in the [Connection to the Database](/database/mysql-mariadb-percona/connection-to-applications/php-connection#connection-to-the-database) section).
+Do not forget to substitute `{host}`, `{user}`, `{password}` and `{db_name}` in the connection string with the corresponding values (as it is described in the [Connection to the Database](/database/mysql-mariadb-percona/connection-to-applications/php-connection#connection-to-the-database) section).
 
 :::
 

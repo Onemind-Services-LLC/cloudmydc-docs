@@ -95,7 +95,7 @@ Using the following config files, you can perform the actions listed below (thes
 - configure [JavaAgent interceptor](/java/java-apps-specifications/java-agent)
 
 - enable [remote debugging](/application-setting/remote-debugging):
-  _-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address={port_number}_
+  `-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address={port_number}`
 
 **Note** that this file is available only for **Tomcat 6,7** and **TomEE** application servers. For configuring a **GlassFish** server, use the _Admin Panel_.
 
@@ -207,7 +207,9 @@ App servers include a cron folder with the config file, where cronjobs can be co
 
 The **keys** directory is used as a location for uploading any private key which is needed for your application. Generate the key, save it as a simple file and upload to the **key** folder. It can be used for different cases by simply stating the path to your key:
 
-_/var/lib/jelastic/keys/{key_file_name}_
+```bash
+/var/lib/jelastic/keys/{key_file_name}
+```
 
 <div style={{
     display:'flex',

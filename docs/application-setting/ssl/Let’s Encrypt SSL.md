@@ -91,7 +91,7 @@ Click **Install** to proceed.
 Here, you need to:
 
 - provide **_External Domain(s)_** of the target environment, the possible options are:
-  - leave the field blank to create a dummy SSL certificate, assigned to environment internal URL (_env_name.{[hoster_domain](/quickstart/hosters-list-&-info)}_), for being used in testing
+  - leave the field blank to create a dummy SSL certificate, assigned to environment internal URL (`env_name.{[hoster_domain](/quickstart/hosters-list-&-info)}`), for being used in testing
   - insert the preliminary linked external domain(s) to get a trusted certificate for each of them; if specifying multiple hostnames, separate them with either space, comma, or semicolon
 
 <div style={{
@@ -147,17 +147,18 @@ As you can see, the environment is accessible and the established connection is 
 
 Alternatively add-on can be installed with Jelastic [API method install](https://docs.jelastic.com/api/#!/api/marketplace.JPS-method-Install). Api call looks like:
 
-\*https://[[hoster-api-host](/quickstart/hosters-list-&-info)]/1.0/marketplace/jps/rest/install?jps=letsencrypt-ssl-addon&session={**_session_**}&envName={**_your_env_name_**}&nodeGroup={**_your_node_group_**}&settings={**_your_addon_settings_**}\*
+<!-- \*https://[[hoster-api-host](/quickstart/hosters-list-&-info)]/1.0/marketplace/jps/rest/install?jps=letsencrypt-ssl-addon&session={**_session_**}&envName={**_your_env_name_**}&nodeGroup={**_your_node_group_**}&settings={**_your_addon_settings_**}\* -->
+
+```bash
+https://[hoster-api-host]/1.0/marketplace/jps/rest/install?jps=letsencrypt-ssl-addon&session={session}&envName={your_env_name}&nodeGroup={your_node_group}&settings={your_addon_settings}
+```
 
 where:
 
-**{session}** - user’s session or [authentication token ](/account-and-pricing/personal-access-tokens)
-
-**{your_env_name}** - name of the target environment
-
-**{your_node_group}** - unique identifier of the [nodeGroup](/application-setting/domain-name-management/container-dns-hostnames)
-
-**{your_addon_settings}** - list of add-on specific settings in JSON format (key:value pairs)
+`{session}` - user’s session or [authentication token ](/account-and-pricing/personal-access-tokens)
+`{your_env_name}` - name of the target environment
+`{your_node_group}` - unique identifier of the [nodeGroup](/application-setting/domain-name-management/container-dns-hostnames)
+`{your_addon_settings}` - list of add-on specific settings in JSON format (key:value pairs)
 
 Available settings:
 
@@ -174,13 +175,13 @@ Available settings:
 - **test** [*optional*] - obtain a dummy X1 certificate from a staging server. Defaults to: false
   For example:
 
-**_curl -X POST 'https://app.demo.jelastic.com/1.0/marketplace/jps/rest/install' -d session=dedb4acdedb4acdedb4ac4dedb4ace370e0b03 -d jps=letsencrypt-ssl-addon -d envName=application -d nodeGroup=cp --data-urlencode settings='{"customDomains":"application.mycustom-domain.com"}'_**
+**_curl -X POST 'https://app.demo.jelastic.com/1.0/marketplace/jps/rest/install' -d session=dedb4acdedb4acdedb4ac4dedb4ace370e0b03 -d jps=letsencrypt-ssl-addon -d envName=application -d nodeGroup=cp --data-urlencode settings='`{"customDomains":"application.mycustom-domain.com"}`'_**
 
 ## Let's Encrypt Certificates Update
 
 Your Let's Encrypt SSL certificate(s) will remain valid for 90 days. After this period expires, they need to be renewed for the encryption to remain active.
 
-By default, the required updated SSL certificates are requested and applied automatically 30 days before expiration (you'll get the appropriate email notification). Such a checkup is performed once per day based on the appropriate cron job. If needed, the exact time can be specified through adjusting the corresponding "cronTime": "\*_0 ${fn.random(1,6)}_ \* \* \*" setting within this package manifest file.
+By default, the required updated SSL certificates are requested and applied automatically 30 days before expiration (you'll get the appropriate email notification). Such a checkup is performed once per day based on the appropriate cron job. If needed, the exact time can be specified through adjusting the corresponding "cronTime": "\*0 `${fn.random(1,6)}` \* \* \*" setting within this package manifest file.
 
 Also, this operation can be performed manually at any time. For that, click the **Add-ons** button next to the appropriate environment layer and use the **Update Now** button within add-on panel.
 
@@ -200,12 +201,14 @@ Also, your SSL certificates can be updated by add-on re-installation for the sam
 
 Similar to Add-On installation the certificate can be forced to update via API call with method **_[executeappaction](https://docs.jelastic.com/api/#/api/marketplace.JPS)_**:
 
-\*https://[[hoster-api-host](/quickstart/hosters-list-&-info)]/1.0/marketplace/jps/rest/executeappaction?session=**_{session}_**&appUniqueName=**_{app_unique_name}_**&action=update\*
+```bash
+https://[hoster-api-host]/1.0/marketplace/jps/rest/executeappaction?session={session}&appUniqueName={app_unique_name}&action=update\*
+```
 
 where:
 
-- **{session}**- user’s session or authentication token
-- **{app_unique_name}**- unique name of the installed add-on. Could be found as the value of the **_uniqueName_** key in the response of [GetEnvInfo](https://docs.jelastic.com/api/#!/api/environment.Control-method-GetEnvInfo) method.
+- `{session}` - user’s session or authentication token
+- `{app_unique_name}` - unique name of the installed add-on. Could be found as the value of the **_uniqueName_** key in the response of [GetEnvInfo](https://docs.jelastic.com/api/#!/api/environment.Control-method-GetEnvInfo) method.
 
 For example:
 
@@ -246,19 +249,21 @@ To avoid security issues, a new certificate will be issued, even in case of remo
 
 ## Let’s Encrypt Certificates Reconfiguration via API
 
-\*https://[[hoster-api-host](/quickstart/hosters-list-&-info)]/1.0/marketplace/jps/rest/executeappaction?session={session}&appUniqueName=**_{app_unique_name}_**&action=configure&params={"customDomains":"**_{your_new_domain_list}_**"}
+```bash
+https://[hoster-api-host]/1.0/marketplace/jps/rest/executeappaction?session={session}&appUniqueName={app_unique_name}&action=configure&params={"customDomains":"{your_new_domain_list}"}
+```
 
 - where:
 
-* **{session} **- user’s session or authentication token
-* **{app_unique_name}** - unique name of the installed add-on. Could be found as the value of the **_uniqueName_** key in the response of [GetEnvInfo](https://docs.jelastic.com/api/#!/api/environment.Control-method-GetEnvInfo) method
-* **{your_new_domain_list}** - new list of linked external domain(s) to get a SSL certificate for each of them; if specifying multiple hostnames, separate them with either comma or semicolon
+- `{session}` - user’s session or authentication token
+- `{app_unique_name}` - unique name of the installed add-on. Could be found as the value of the **_uniqueName_** key in the response of [GetEnvInfo](https://docs.jelastic.com/api/#!/api/environment.Control-method-GetEnvInfo) method
+- `{your_new_domain_list}` - new list of linked external domain(s) to get a SSL certificate for each of them; if specifying multiple hostnames, separate them with either comma or semicolon
 
 Example:
 
 **_curl -X POST_**
 
-**_'https://app.demo.jelastic.com/1.0/marketplace/jps/rest/executeappaction' -d session=dedb4acdedb4acdedb4ac4dedb4ace370e0b03 -d appUniqueName=f56f5659-f4ff-42fd-8955-1f9a750abcd9 -d action=configure --data-urlencode params='{"customDomains":"sub.example.com"}':_**
+**_'https://app.demo.jelastic.com/1.0/marketplace/jps/rest/executeappaction' -d session=dedb4acdedb4acdedb4ac4dedb4ace370e0b03 -d appUniqueName=f56f5659-f4ff-42fd-8955-1f9a750abcd9 -d action=configure --data-urlencode params='`{"customDomains":"sub.example.com"}`':_**
 
 ## Let's Encrypt SSL Add-On Removal
 

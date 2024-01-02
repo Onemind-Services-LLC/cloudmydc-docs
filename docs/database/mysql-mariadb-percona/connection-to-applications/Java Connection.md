@@ -94,7 +94,7 @@ Log into the opened admin panel using credentials from the above-mentioned email
 
 For standalone database connection, add the following data in the **_mydb.cfg_** file:
 
-```bash
+```
 host=jdbc:mysql://{host}/{db_name}
 username={user}
 password={password}
@@ -103,9 +103,9 @@ driver=com.mysql.jdbc.Driver
 
 All the required info can be found within the MariaDB/MySQL node email:
 
-- **_{host}_** - link to your DB node without protocol part
-- **_{db_name}_** - name of the database (test in our case)
-- **_{user}_** and **_{password}_** - database admin credentials (for production usage, it’s recommended to create a dedicated account with the appropriate permissions)
+- `{host}` - link to your DB node without protocol part
+- `{db_name}` - name of the database (test in our case)
+- `{user}` and `{password}` - database admin credentials (for production usage, it’s recommended to create a dedicated account with the appropriate permissions)
 
 <div style={{
     display:'flex',
@@ -121,17 +121,17 @@ For connection to the cluster, ProxySQL load balancer is used as the entry point
 
 For MariaDB:
 
-```bash
+```
 host=jdbc:mariadb://{hostname}/{db_name}?usePipelineAuth=false
 username={user}
 password={password}
 driver=org.mariadb.jdbc.Driver
 ```
 
-- **_{hostname}_** - link to your DB cluster load balancer (i.e. ProxySQL layer)
-- **_{db_name}_** - name of the database. We chose test in the first step
-- **_usePipelineAuth_** - if activated different queries are executed using pipeline (all queries are sent, only then all results are read), permitting faster connection creation. This value should be set to **_false_**, as such implementation doesn’t work with the ProxySQL in front of the cluster
-- **_{user}_** and **_{password}_** - database credentials received in the email
+- `{hostname}` - link to your DB cluster load balancer (i.e. ProxySQL layer)
+- `{db_name}` - name of the database. We chose test in the first step
+- `usePipelineAuth` - if activated different queries are executed using pipeline (all queries are sent, only then all results are read), permitting faster connection creation. This value should be set to **_false_**, as such implementation doesn’t work with the ProxySQL in front of the cluster
+- `{user}` and `{password}` - database credentials received in the email
 
 <div style={{
     display:'flex',
@@ -145,16 +145,16 @@ driver=org.mariadb.jdbc.Driver
 
 For MySQL:
 
-```bash
+```
 host=jdbc:mysql://{host}/{db_name}
 username={user}
 password={password}
 driver=com.mysql.jdbc.Driver
 ```
 
-- **_{hostname}_** - link to your DB cluster load balancer (i.e. ProxySQL layer)
-- **_{db_name}_** - name of the database (test in our case)
-- **_{user}_** and **_{password}_** - database admin credentials (for production usage, it’s recommended to create a dedicated account with the appropriate permissions)
+- `{hostname}` - link to your DB cluster load balancer (i.e. ProxySQL layer)
+- `{db_name}` - name of the database (test in our case)
+- `{user}` and `{password}` - database admin credentials (for production usage, it’s recommended to create a dedicated account with the appropriate permissions)
   In such a way, all connection settings are saved in a single file, which, subsequently, will be read by the application.
 
 7. For deployment and further connection, we are going to use the following sample application:
@@ -264,7 +264,7 @@ _[https://download.jelastic.com/public.php?service=files&t=b2c6e4e01d487dfd5af95
 
 :::tip Note
 
-- Our example application already contains the jdbc-connectors for [MariaDB](https://mariadb.org/download/?t=mariadb&p=mariadb&r=11.3.0&os=windows&cpu=x86_64&pkg=msi&m=ossplanet)/[MySQL](https://dev.mysql.com/downloads/connector/j/) database access. However, to connect your own project, you need to manually upload them to the **webapps/{app_context}/WEB-INF/lib** folder on your application server.
+- Our example application already contains the jdbc-connectors for [MariaDB](https://mariadb.org/download/?t=mariadb&p=mariadb&r=11.3.0&os=windows&cpu=x86_64&pkg=msi&m=ossplanet)/[MySQL](https://dev.mysql.com/downloads/connector/j/) database access. However, to connect your own project, you need to manually upload them to the `webapps/{app_context}/WEB-INF/lib` folder on your application server.
 - Don’t forget to restart your application server to apply **_mydb.cfg_** changes, by pressing **Restart Node** button.
 
 <div style={{
@@ -315,7 +315,7 @@ _[https://download.jelastic.com/public.php?service=files&t=b2c6e4e01d487dfd5af95
 
 </div>
 
-You’ll see that the newly created table appeared with the name {date-time of creation}, that means the DB has been successfully accessed and modified from your Java application. It’s that easy!
+You’ll see that the newly created table appeared with the name `{date-time of creation}`, that means the DB has been successfully accessed and modified from your Java application. It’s that easy!
 
 ## Useful to Know
 

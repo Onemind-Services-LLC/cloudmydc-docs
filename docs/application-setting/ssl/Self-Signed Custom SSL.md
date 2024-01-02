@@ -49,8 +49,8 @@ genrsa -out {filename} {length}
 
 where:
 
-- **_{filename}_** - name of the output key file with **.key** extension (e.g. _rootCA.key_)
-- **_{length}_** - private key length in bits (e.g. _2048_)
+- `{filename}` - name of the output key file with **.key** extension (e.g. _rootCA.key_)
+- `{length}` - private key length in bits (e.g. _2048_)
 
 <div style={{
     display:'flex',
@@ -70,10 +70,10 @@ req -config {config_path} -x509 -new -key {keyname} -days {days} -out {filename}
 
 where:
 
-- **_{config_path}_** - path to the _openssl.cnf_ configuration file, located in the directory with extracted OpenSSL files (specified according to the _C:\path\to\openssl.cnf_ format)
-- **_{keyname}_** - your root key name (the one you’ve generated in the previous step, _rootCA.key_ in our case)
-- **_{days}_** - number of days the current certificate will be valid
-- **_{filename}_** - the preferred name of the output certificate file with **.crt** extension (e.g. _rootCA.crt_)
+- `{config_path}` - path to the _openssl.cnf_ configuration file, located in the directory with extracted OpenSSL files (specified according to the _C:\path\to\openssl.cnf_ format)
+- `{keyname}` - your root key name (the one you’ve generated in the previous step, _rootCA.key_ in our case)
+- `{days}` - number of days the current certificate will be valid
+- `{filename}` - the preferred name of the output certificate file with **.crt** extension (e.g. _rootCA.crt_)
 
 Set the required information for your CA certificate by answering the appeared question.
 
@@ -97,8 +97,8 @@ genrsa -out {filename} {length}
 
 where:
 
-- **{filename}** - name of the output key file with **.key** extension (e.g. _host.key_)
-- **_{length}_** - private key length in bits (e.g. _2048_)
+- `{filename}` - name of the output key file with **.key** extension (e.g. _host.key_)
+- `{length}` - private key length in bits (e.g. _2048_)
 
 :::danger note
 
@@ -124,9 +124,9 @@ req -config {config_path} -new -key {keyname} -out {filename}
 
 where:
 
-- **_{config_path}_** - path to the openssl.cnf configuration file, located in the directory with extracted OpenSSL files (specified according to the _C:\path\to\openssl.cnf_ format)
-- **_{keyname}_** - your server key name (the one you’ve generated in the previous step, _host.key_ in our case)
-- **_{filename} _**- the desired name of the output request file with **.csr** extension (e.g. _host.csr_)
+- `{config_path}` - path to the openssl.cnf configuration file, located in the directory with extracted OpenSSL files (specified according to the _C:\path\to\openssl.cnf_ format)
+- `{keyname}` - your server key name (the one you’ve generated in the previous step, _host.key_ in our case)
+- `{filename}`\*- the desired name of the output request file with **.csr** extension (e.g. _host.csr_)
   You’ll see a set of questions appear again. Answer them to complete the certificate information with your data.
 
 :::danger note
@@ -156,11 +156,11 @@ x509 -req -in {requestname} -CA {CA_certificate} -CAkey {CA_key} -CAcreateserial
 
 where:
 
-- **_{requestname}_** - name of the input request file (_host.csr_ in our case)
-- **_{CA_certificate}_** - specifies the CA certificate that will be used for signing (_rootCA.crt_ in our case)
-- **_{CA_key}_** - sets the CA private key to sign a certificate with (_rootCA.key_ in our case)
-- **_{filename}_**- the desired name of the output certificate file with **.crt** extension (e.g. _host.crt_)
-- **_{days}_** - number of days the current certificate will be valid
+- `{requestname}` - name of the input request file (_host.csr_ in our case)
+- `{CA_certificate}` - specifies the CA certificate that will be used for signing (_rootCA.crt_ in our case)
+- `{CA_key}` - sets the CA private key to sign a certificate with (_rootCA.key_ in our case)
+- `{filename}` the desired name of the output certificate file with **.crt** extension (e.g. _host.crt_)
+- `{days}` - number of days the current certificate will be valid
 
 <div style={{
     display:'flex',
@@ -192,8 +192,8 @@ openssl genrsa -out {filename} {length}
 
 where:
 
-- **_{filename}_** - name of the output key file with **.key** extension (e.g. _rootCA.key_)
-- **_{length}_** - private key length in bits (e.g. _2048_)
+- `{filename}` - name of the output key file with **.key** extension (e.g. _rootCA.key_)
+- `{length}` - private key length in bits (e.g. _2048_)
 
 <div style={{
     display:'flex',
@@ -213,9 +213,9 @@ openssl req -x509 -new -key {keyname} -days {days} -out {filename}
 
 where:
 
-- **_{keyname}_** - your root key name (the one you’ve generated in the previous step, _rootCA.key_ in our case)
-- **_{days}_** - number of days the current certificate will be valid
-- **_{filename}_** - the preferred name of the output certificate file with **.crt** extension (e.g. _rootCA.crt_)
+- `{keyname}` - your root key name (the one you’ve generated in the previous step, _rootCA.key_ in our case)
+- `{days}` - number of days the current certificate will be valid
+- `{filename}` - the preferred name of the output certificate file with **.crt** extension (e.g. _rootCA.crt_)
 
 Set the required information for your CA certificate by answering the appeared question.
 
@@ -239,8 +239,8 @@ openssl genrsa -out {filename} {length}
 
 where:
 
-- **_{filename}_** - name of the output key file with **.key** extension (e.g. host.key)
-- **_{length}_**- private key length in bits (e.g. _2048_)
+- `{filename}` - name of the output key file with **.key** extension (e.g. host.key)
+- `{length}` - private key length in bits (e.g. _2048_)
 
 :::tip Note
 
@@ -266,8 +266,8 @@ openssl req -new -key {keyname} -out {filename}
 
 where:
 
-- **_{keyname}_** - your server key name (the one you’ve generated in the previous step, _host.key_ in our case)
-- **_{filename}_** - the desired name of the output certificate file with **.csr** extension (e.g. _host.csr_)
+- `{keyname}` - your server key name (the one you’ve generated in the previous step, _host.key_ in our case)
+- `{filename}` - the desired name of the output certificate file with **.csr** extension (e.g. _host.csr_)
 
 You’ll see a set of questions appear again. Answer them to complete the certificate information with your data.
 
@@ -298,11 +298,11 @@ openssl x509 -req -in {requestname} -CA {CA_certificate} -CAkey {CA_key} -CAcrea
 
 where:
 
-- **_{requestname}_** - name of the input request file (_host.csr_ in our case)
-- **_{CA_certificate}_**- specifies the CA certificate that will be used for signing (_rootCA.crt_ in our case)
-- **_{CA_key}_** - sets the CA private key to sign a certificate with (_rootCA.key_ in our case)
-- **_{filename}_** - desired name of the output certificate file with **.crt** extension (e.g. host.crt)
-- **_{days}_** - number of days the current certificate will be valid
+- `{requestname}` - name of the input request file (_host.csr_ in our case)
+- `{CA_certificate}` - specifies the CA certificate that will be used for signing (_rootCA.crt_ in our case)
+- `{CA_key}` - sets the CA private key to sign a certificate with (_rootCA.key_ in our case)
+- `{filename}` - desired name of the output certificate file with **.crt** extension (e.g. host.crt)
+- `{days}` - number of days the current certificate will be valid
 
 <div style={{
     display:'flex',

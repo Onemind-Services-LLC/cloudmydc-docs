@@ -79,12 +79,14 @@ Related processes
                 justifyContent: 'flex-start',
                 wordBreak: 'break-all',
                 padding: '20px',
-            }}>varnishd
+            }}>
+                varnishd
             </div>
             <div style={{
                 padding: '20px',
                 wordBreak: 'break-all'
-            }}>Allocate more RAM to a node - handled services could just require more memory for normal operability
+            }}>
+                Allocate more RAM to a node - handled services could just require more memory for normal operability
             </div>
         </div> 
     </div> 

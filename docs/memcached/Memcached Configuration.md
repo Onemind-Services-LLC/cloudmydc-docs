@@ -117,7 +117,9 @@ The **keys** directory is used as a location for uploading any private key which
 Generate the key, save it as a simple file and upload to the **key** folder.
 Now you can use it for different cases by simply stating the path to your key:
 
-_/var/lib/jelastic/keys/{key_file_name}_
+```
+/var/lib/jelastic/keys/{key_file_name}
+```
 
 <div style={{
     display:'flex',

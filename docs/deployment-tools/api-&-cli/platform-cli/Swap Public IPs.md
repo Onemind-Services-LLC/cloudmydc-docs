@@ -18,10 +18,10 @@ As usual, the operation requires just a single line of code for being executed:
 
 Here, the following parameters should be specified:
 
-- **_{env_name}_** - name of the environment, where the transferred external IP is currently attached
-- **_{source_node_id}_** - identifier of the node from the stated environment, which IP should be swapped/moved
-- **_{target_node_id}_** - ID of the target node (can belong to any environment on the account)
-- **_{source_ip}_** and **_{target_ip}_** - optional parameters for two specific addresses to be swapped (if not specified, all external IPs from source node are transferred to the target and vice versa)
+- `{env_name}` - name of the environment, where the transferred external IP is currently attached
+- `{source_node_id}` - identifier of the node from the stated environment, which IP should be swapped/moved
+- `{target_node_id}` - ID of the target node (can belong to any environment on the account)
+- `{source_ip}` and `{target_ip}` - optional parameters for two specific addresses to be swapped (if not specified, all external IPs from source node are transferred to the target and vice versa)
 
 <div style={{
     display:'flex',

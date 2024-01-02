@@ -42,7 +42,7 @@ sudo localedef -i {language}_{country} -f {codeset} {language}_{country}.{codese
 
 here:
 
-- **_{language}\_{country}_** - provides language and country code
+- `{language}_{country}` - provides language and country code
 
 :::tip Tip
 
@@ -50,7 +50,7 @@ Check the list of the locales available for generation by executing the ls **/us
 
 :::
 
-- **_{codeset}_** - sets the character encoding identifier (e.g. UTF-8)
+- `{codeset}` - sets the character encoding identifier (e.g. UTF-8)
 
 3. Verify the new locale addition by checking the list of all supported ones:
 

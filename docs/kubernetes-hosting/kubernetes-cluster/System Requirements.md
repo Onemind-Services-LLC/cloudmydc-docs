@@ -79,12 +79,14 @@ The minimum and optimal consumption of RAM, CPU, and storage depends on the clus
             <div style={{
                 padding: '20px',
                 wordBreak: 'break-all'
-            }}>14
+            }}>
+                14
             </div>
             <div style={{
                 wordBreak: 'break-all',
                  padding: '20px',
-            }}>33
+            }}>
+                33
             </div>
         </div> 
         <div style={{
@@ -110,12 +112,14 @@ The minimum and optimal consumption of RAM, CPU, and storage depends on the clus
             <div style={{
                 padding: '20px',
                 wordBreak: 'break-all'
-            }}>1.4 GiB RAM, 419 MHz CPU
+            }}>
+                1.4 GiB RAM, 419 MHz CPU
             </div>
             <div style={{
                 wordBreak: 'break-all',
                  padding: '20px',
-            }}>3.6 GiB RAM, 947 MHz CPU
+            }}>
+                3.6 GiB RAM, 947 MHz CPU
             </div>
         </div> 
         <div style={{
@@ -141,12 +145,14 @@ The minimum and optimal consumption of RAM, CPU, and storage depends on the clus
             <div style={{
                 padding: '20px',
                 wordBreak: 'break-all'
-            }}>5.65 GB
+            }}>
+                5.65 GB
             </div>
             <div style={{
                 wordBreak: 'break-all',
                  padding: '20px',
-            }}>15.01 GB
+            }}>
+                15.01 GB
             </div>
         </div> 
     </div> 

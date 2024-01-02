@@ -56,11 +56,11 @@ There are two ways to install necessary Node.js packages with _npm_:
 
 2. Connect to the container via [SSH Gate](/deployment-tools/ssh/ssh-overview#ssh-gate-overview) and operate your packages manually with the following commands:
 
-- **_npm search {package_name}_** - to search for modules by name (or its part)
-- **_npm install {package_name}_** - to install the necessary module
-- **_npm uninstall {package_name}_** - to remove the previously installed module
-- **_npm update {package_name}_** - to update the specified module to its latest version
-- **_npm ls installed_** - to list already installed packages
+- `npm search {package_name}` - to search for modules by name (or its part)
+- `npm install {package_name}` - to install the necessary module
+- `npm uninstall {package_name}` - to remove the previously installed module
+- `npm update {package_name}` - to update the specified module to its latest version
+- `npm ls installed` - to list already installed packages
 
 ## Yarn Package Manager
 
@@ -68,8 +68,8 @@ There are two ways to install necessary Node.js packages with _npm_:
 
 You can use the following list of commands to work with Yarn, while connected over [SSH](/deployment-tools/ssh/ssh-overview#ssh-gate-overview):
 
-- **_yarn_** or **_yarn install_** - to get all dependencies package for the project
-- **_yarn remove {package}_** - to remove the specified package
-- **_yarn add {package}@{version}_** - to add a new package to the dependencies list and install it; optionally, you can specify a particular version as an argument (the latest one will be used by default)
-- **_yarn upgrade {package}@{version}_** - to update package to its latest version; optionally, you can specify a particular version as an argument
-- **_yarn list_** - to list all of the installed packages
+- **_`yarn`_** or **_`yarn install`_** - to get all dependencies package for the project
+- **_`yarn remove {package}`_** - to remove the specified package
+- **_`yarn add {package}@{version}`_** - to add a new package to the dependencies list and install it; optionally, you can specify a particular version as an argument (the latest one will be used by default)
+- **_`yarn upgrade {package}@{version}`_** - to update package to its latest version; optionally, you can specify a particular version as an argument
+- **_`yarn list`_** - to list all of the installed packages

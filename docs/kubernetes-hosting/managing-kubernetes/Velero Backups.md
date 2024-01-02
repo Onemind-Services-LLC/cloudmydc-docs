@@ -122,9 +122,9 @@ aws_secret_access_key = {secretKey}
 
 6. Adjust the command below by providing the correct values and execute it to deploy Velero. The following placeholders need adjustment:
 
-- **_{bucket}_** - a name of the bucket (velero in our case, see the second step)
-- **_{s3Url}_** - an **_http://_** link to your S3 storage (*http://minio.vip.jelastic.cloud/* in our case, see the first step)
-- **_{image}_** - a velero container image (_velero/velero:v1.8.1_ in our case, see the third step)
+- `{bucket}` - a name of the bucket (velero in our case, see the second step)
+- `{s3Url}` - an **_http://_** link to your S3 storage (*http://minio.vip.jelastic.cloud/* in our case, see the first step)
+- `{image}` - a velero container image (_velero/velero:v1.8.1_ in our case, see the third step)
 
 ```bash
 velero install --provider aws --plugins velero/velero-plugin-for-aws:v1.4.1 --bucket {bucket} --secret-file ./credentials-velero --use-volume-snapshots=true  --backup-location-config region=default,s3ForcePathStyle="true",s3Url={s3Url} --image {image} --snapshot-location-config region="default" --use-restic
@@ -409,7 +409,7 @@ For example, to create a backup every six hours:
 velero schedule create myschedule --schedule="0 */6 * * *"
 ```
 
-2. The schedule can also be expressed using the **_@every {duration}_** syntax. The duration can be specified using a combination of _seconds (s), minutes (m)_, and _hours (h)_.
+2. The schedule can also be expressed using the `@every {duration}` syntax. The duration can be specified using a combination of _seconds (s), minutes (m)_, and _hours (h)_.
 
 For example, to create a backup every six hours:
 

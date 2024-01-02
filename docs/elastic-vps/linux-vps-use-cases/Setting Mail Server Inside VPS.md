@@ -57,7 +57,7 @@ In the current guide we are going to leverage the [Postfix](http://www.postfix.o
 echo thisistestmail | mail -s test {your_email}
 ```
 
-Here, the **_{your_email}_** placeholder is an email address, the test email will be sent to.
+Here, the `{your_email}` placeholder is an email address, the test email will be sent to.
 
 4. Now, check the specified email inbox to ensure a letter was sent.
 

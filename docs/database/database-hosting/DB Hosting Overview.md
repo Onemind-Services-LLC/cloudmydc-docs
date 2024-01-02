@@ -87,11 +87,13 @@ As a result, you’ll receive email with a new password to access your database 
 
 The administration panel URL for DB servers should consist of the following parts:
 
-_node{node_id}-{environment_name}.{hoster_domain}_
+```bash
+node{node_id}-{environment_name}.{hoster_domain}
+```
 
 where
 
-- _{node_id}_ - ID of the target database container that can be located at the dashboard (e.g. 35316 for MongoDB)
+- `{node_id}` - ID of the target database container that can be located at the dashboard (e.g. 35316 for MongoDB)
 
 <div style={{
     display:'flex',
@@ -103,12 +105,12 @@ where
 
 </div>
 
-- **{environment-name}** - name of the environment you’ve added the server to (e.g. database)
-- **{hoster_domain}**- your hosting provider domain; can be found within the last column of the appropriate table in the [Hosters Info](/quickstart/hosters-list-&-info#paas-hosting-providers) page
+- `{environment-name}` - name of the environment you’ve added the server to (e.g. database)
+- `{hoster_domain}` - your hosting provider domain; can be found within the last column of the appropriate table in the [Hosters Info](/quickstart/hosters-list-&-info#paas-hosting-providers) page
 
 :::tip Note
 
-In case your hosting provider platform has several [environment regions](/environment-management/environment-regions/choosing-a-region#environment-regions) to choose, the _{hoster_domain}_ value for your environment can differ from the general platform’s one.
+In case your hosting provider platform has several [environment regions](/environment-management/environment-regions/choosing-a-region#environment-regions) to choose, the `{hoster_domain}` value for your environment can differ from the general platform’s one.
 
 :::
 

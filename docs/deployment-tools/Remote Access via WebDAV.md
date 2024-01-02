@@ -206,7 +206,7 @@ Tomcat implements the WebDAV specification using WebDAV Servlet, which is includ
 
 </div>
 
-2. Enter the URL of your server (_http://{your_env_name}.{[hoster_domain](https://cloudmydc.com/)}/{context}/webdav_), specify login and password to your Tomcat user (in our case credentials are test/tomcat).
+2. Enter the URL of your server (`http://{your_env_name}.{hoster_domain}/{context}/webdav`), specify login and password to your Tomcat user (in our case credentials are test/tomcat).
 
 <div style={{
     display:'flex',

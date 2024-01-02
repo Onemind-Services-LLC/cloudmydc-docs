@@ -79,7 +79,9 @@ Configure the remaining Environment, [Display Name](/environment-management/envi
 
 4. After a successful installation, you can access the Hasura console to ensure that everything works properly.
 
-_http://**{envDomain}**:8080/console_
+```bash
+http://{envDomain}:8080/console
+```
 
 <div style={{
     display:'flex',

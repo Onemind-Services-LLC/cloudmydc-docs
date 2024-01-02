@@ -84,13 +84,13 @@ Add the **extension=pgsql.so** line like it is shown in the image below.
 4. There are two main **[PG functions](https://www.php.net/manual/en/ref.pgsql.php)** for operating with a database server:
 
 - opening PostgreSQL connection:
-  _pg_connect(“host=**{host}** port=**{port}** dbname=**{dbname}** user=**{user}** password=**{password}**");_ where:
+  `pg_connect(“host={host} port={port} dbname={dbname} user={user} password={password}");` where:
 
-- **{host}** - the PostgreSQL server Host (i.e. access URL **_without http://_**) that you’ve received via email, for example node171206-php-postgresql.jelastic.com
-- **{port}** - a connection port (the default one is 5432)
-- **{dbname}** - a name of your database
-- **{user}** - an account name to access database with (we’ll use the default webadmin one)
-- **{password}** - a password for the appropriate user
+- `{host}` - the PostgreSQL server Host (i.e. access URL **_without http://_**) that you’ve received via email, for example node171206-php-postgresql.jelastic.com
+- `{port}` - a connection port (the default one is 5432)
+- `{dbname}` - a name of your database
+- `{user}` - an account name to access database with (we’ll use the default webadmin one)
+- `{password}` - a password for the appropriate user
 - closing PostgreSQL connection: pg_close()
 
 5. You need to write the necessary functions in every **\*.php** page, which should be connected to the database.

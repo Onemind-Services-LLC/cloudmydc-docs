@@ -48,23 +48,19 @@ In our case, a list of tags for the _jelastic/redis_ image is displayed.
 
 The following parameters are used:
 
-- **_{envName}_** - name of the environment, where container(s) should be redeployed
-
-- **_{nodeGroup}_** - identifier of the [environment layer](https://docs.cloudscripting.com/creating-manifest/selecting-containers/#all-containers-by-group) to update (_optional_)
-
-- **_{nodeId}_** - identification number of the particular container to be redeployed (_optional_)
+- `{envName}` - name of the environment, where container(s) should be redeployed
+- `{nodeGroup}` - identifier of the [environment layer](https://docs.cloudscripting.com/creating-manifest/selecting-containers/#all-containers-by-group) to update (_optional_)
+- `{nodeId}` - identification number of the particular container to be redeployed (_optional_)
 
 :::danger Note
 
-You need to state either **_{nodeGroup}_** or **_{nodeId}_** parameter to define the operation target. The method ignores **_{nodeGroup}_** if both are provided and fails if neither is specified.
+You need to state either `{nodeGroup}` or `{nodeId}` parameter to define the operation target. The method ignores `{nodeGroup}` if both are provided and fails if neither is specified.
 
 :::
 
-- **_{tag}_** - image version to be deployed
-
-- **_{useExistingVolumes}_** - set it to true to keep data in the mounted volumes present within the updated container(s) (_optional_)
-
-- **_{login}_** and **_{password}_** - credentials to access an image from the private registry (_optional_)
+- `{tag}` - image version to be deployed
+- `{useExistingVolumes}` - set it to true to keep data in the mounted volumes present within the updated container(s) (_optional_)
+- `{login}` and `{password}` - credentials to access an image from the private registry (_optional_)
 
 <div style={{
     display:'flex',

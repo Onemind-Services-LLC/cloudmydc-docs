@@ -141,7 +141,7 @@ After successful installation, you’ll receive a number of emails with the clus
 
 </div>
 
-- **Entry Point for Connections to Database Cluster** - [hostname and credentials for connecting](/application-setting/domain-name-management/container-dns-hostnames#hostnames-for-specific-layers) an application to the database cluster.These nodes form a proxy layer referred to as the entry point for the database cluster with hostname as follows: **_proxy.${envName}.${platformDomain}_**.
+- **Entry Point for Connections to Database Cluster** - [hostname and credentials for connecting](/application-setting/domain-name-management/container-dns-hostnames#hostnames-for-specific-layers) an application to the database cluster.These nodes form a proxy layer referred to as the entry point for the database cluster with hostname as follows: `proxy.${envName}.${platformDomain}`.
 
 <div style={{
     display:'flex',

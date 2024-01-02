@@ -103,7 +103,7 @@ After conversion you’ll get emails with information about the state of your ac
 
 :::tip Tip
 
-If you would like to use auto-refill option in the platform dashboard, you should tick the “_I’d like to use PayPal for future payments to {hoster’s name}_” line as it is shown below:
+If you would like to use auto-refill option in the platform dashboard, you should tick the “_I’d like to use PayPal for future payments to `{hoster's name}`_” line as it is shown below:
 
 <div style={{
     display:'flex',

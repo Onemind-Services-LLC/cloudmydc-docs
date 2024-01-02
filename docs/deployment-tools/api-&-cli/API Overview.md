@@ -24,7 +24,9 @@ Platform API follows REST principles. **REST API** determines a set of functions
 
 All requests of API methods are GET or POST HTTPS-requests to the URL with a set of parameters:
 
-**_https://_**[**_{hoster-api-host}_**](/quickstart/hosters-list-&-info)**_/1.0/_**
+```bash
+https://{hoster-api-host}/1.0/
+```
 
 The type of the URL which should be used, is stated in the description of each method (REST field).
 
@@ -148,7 +150,7 @@ final String session = authenticationResponse.getSession();
 
 After authentication, a new unique session is created. It will be used for performing the necessary operations within user’s account. All the further API function calls should be performed within this session, which remains valid until Signout method calling.
 
-3. The next step is getting the list of engines available for the specified **_<engine_type>_** (can be _java, php, ruby, js_, etc.).
+3. The next step is getting the list of engines available for the specified `<engine_type>` (can be _java, php, ruby, js_, etc.).
 
 ```bash
 System.out.println("Getting list of engines...");
@@ -159,7 +161,7 @@ if (!arrayResponse.isOK()) {
 }
 ```
 
-4. After that get the list of available node templates according to the specified **_<templates_type>_**, which can be:
+4. After that get the list of available node templates according to the specified `<templates_type>`, which can be:
 
 - ALL - all available at platform templates, i.e. native and cartridges
 - NATIVE - default node templates

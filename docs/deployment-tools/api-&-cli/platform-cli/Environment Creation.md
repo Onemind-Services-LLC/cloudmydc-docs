@@ -18,10 +18,10 @@ Creation of environments via command line can come in handy for the variety of d
 
 In the example above, the highlighted placeholders should be substituted with the following data:
 
-- **_{env_name}_** - name for the new environment
-- **_{engine_type}_** - engine for being used in this environment
-- **_{node_type}_** - stack type identifier, according to the [list](/deployment-tools/cloud-scripting-&-jps/application-manifest)
-- **_{cloudlets_amount}_** - number of fixed and flexible cloudlets to allocate for a particular node
+- `{env_name}` - name for the new environment
+- `{engine_type}` - engine for being used in this environment
+- `{node_type}` - stack type identifier, according to the [list](/deployment-tools/cloud-scripting-&-jps/application-manifest)
+- `{cloudlets_amount}` - number of fixed and flexible cloudlets to allocate for a particular node
 
 :::tip Tip
 
@@ -87,7 +87,7 @@ In addition, you can redefine or add some of the settings (namely – _shortdoma
 ~/jelastic/environment/control/createenvironment --env '{"shortdomain" : "{env_name}"}' --nodes '[{"nodeType" : "docker", "fixedCloudlets" : {cloudlets_amount}, "flexibleCloudlets" : {cloudlets_amount}, "docker" : {"image" : "{image_name}"}}]'
 ```
 
-According to the command above, the _nodeType_ parameter needs to be stated in **_docker_** and the newly added **_{image_name}_** placeholder should be replaced with the address of Docker template you’d like to deploy (in the _server.com/images/image_name:tag_ format).
+According to the command above, the _nodeType_ parameter needs to be stated in **_docker_** and the newly added `{image_name}` placeholder should be replaced with the address of Docker template you’d like to deploy (in the _server.com/images/image_name:tag_ format).
 
 Herewith:
 

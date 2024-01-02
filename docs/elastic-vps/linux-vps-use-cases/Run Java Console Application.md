@@ -23,7 +23,7 @@ In order to install Java to your VPS container, carry out the next steps, while 
 wget {utility_address}
 ```
 
-Where **_{utility_address}_** is a link to the required Java download source.
+Where `{utility_address}` is a link to the required Java download source.
 
 :::tip Note
 
@@ -47,7 +47,7 @@ The appropriate AuthParam parameter should be specified in the URL, which indica
 rpm -ivh {java_rpm_package}
 ```
 
-Where **_{java_rpm_package}_** is downloaded Java package with AuthParam parameter indicated.
+Where `{java_rpm_package}` is downloaded Java package with AuthParam parameter indicated.
 
 <div style={{
     display:'flex',

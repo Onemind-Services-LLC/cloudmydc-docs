@@ -80,10 +80,10 @@ con.end();
 
 The placeholders in the code above should be adjusted using the appropriate connection information (is provided within email for your MySQL / MariaDB container):
 
-- **_{user}_** - username to log into database with
-- **_{password}_** - password for the appropriate user
-- **_{host}_** - link to your MySQL / MariaDB container
-- **_{database}_** - database to be accessed (e.g. the default one - mysql)
+- `{user}` - username to log into database with
+- `{password}` - password for the appropriate user
+- `{host}` - link to your MySQL / MariaDB container
+- `{database}` - database to be accessed (e.g. the default one - mysql)
 
 <div style={{
     display:'flex',

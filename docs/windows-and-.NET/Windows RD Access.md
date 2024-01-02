@@ -194,7 +194,7 @@ Then open your terminal emulator and follow the next steps:
 rdesktop {access_url}
 ```
 
-where **_{access_url}_** is a connection URL for RDP access (can be seen at the dashboard or inside the received email), specified without the protocol-defining part.
+where `{access_url}` is a connection URL for RDP access (can be seen at the dashboard or inside the received email), specified without the protocol-defining part.
 
 <div style={{
     display:'flex',

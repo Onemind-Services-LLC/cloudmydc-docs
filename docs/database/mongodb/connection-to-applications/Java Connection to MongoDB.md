@@ -81,7 +81,9 @@ Click **Save** to continue.
 
 Then type the following command within the input frame above:
 
-db.createUser({ user: **_“user_name”_**, pwd: **_“password”_**, roles:[{ role: “readWrite”, db: “db_name"}]})
+```
+db.createUser({ user: “user_name”, pwd: “password”, roles:[{ role: “readWrite”, db: “db_name"}]})
+```
 
 where:
 
@@ -131,10 +133,10 @@ password={password}
 
 where
 
-- **_{db_access_url}_** - link to the database admin panel (find it within the corresponding email or click **Open in browser** next to your MongoDB node and copy it from the address bar) without https:// part
-- **_{db_name}_** - name of the created database (mongodb-connect in our case)
-- **_{user_name}_** - name of the DB user you’ve assigned to this database (dbuser in our case)
-- **_{password}_** - the corresponding user’s password
+- `{db_access_url}` - link to the database admin panel (find it within the corresponding email or click **Open in browser** next to your MongoDB node and copy it from the address bar) without https:// part
+- `{db_name}` - name of the created database (mongodb-connect in our case)
+- `{user_name}` - name of the DB user you’ve assigned to this database (dbuser in our case)
+- `{password}` - the corresponding user’s password
   Do not forget to **Save** the changes.
 
 ## Application Deployment
@@ -214,7 +216,7 @@ For testing, you can try our ready-to-use mongoclient.war project, which already
 
 :::tip Note
 
-To connect your own project to your MongoDB database, you need to upload the appropriate [mongo-java-driver](https://mongodb.github.io/mongo-java-driver/) .jar library to the **webapps/{app_context}/WEB-INF/lib** folder of your app server with the deployed application.
+To connect your own project to your MongoDB database, you need to upload the appropriate [mongo-java-driver](https://mongodb.github.io/mongo-java-driver/) .jar library to the `webapps/{app_context}/WEB-INF/lib` folder of your app server with the deployed application.
 
 :::
 

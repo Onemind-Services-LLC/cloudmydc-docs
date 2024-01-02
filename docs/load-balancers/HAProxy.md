@@ -104,8 +104,8 @@ server webserver{n} {server_intenal_ip}:80 cookie S{n} check
 
 where the values inside the curly brackets should be substituted with your custom ones:
 
-- _{n}_ - preferred identifier of the linking server
-- _{server_internal_ip}_ - address of the required server, which can be found through selecting the Additionally button next to it
+- `{n}` - preferred identifier of the linking server
+- `{server_internal_ip}` - address of the required server, which can be found through selecting the Additionally button next to it
   Once these configurations are done, **Save** the made changes and **Restart** the load-balancer server to apply them.
 
 2. Through accessing the appropriate HAProxy node via the platform [SSH Gateway](/deployment-tools/ssh/ssh-access/overview):

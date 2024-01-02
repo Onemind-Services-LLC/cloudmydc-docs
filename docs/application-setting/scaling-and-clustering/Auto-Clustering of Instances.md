@@ -440,7 +440,9 @@ After being configured, auto-clustering cannot be disabled from the topology wiz
 
 4. If needed, you can track the cluster configuration logs via the platform console:
 
-`https://app.{platformDomain}/console`
+```
+https://app.{platformDomain}/console
+```
 
 <div style={{
     display:'flex',

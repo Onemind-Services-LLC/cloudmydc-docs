@@ -43,12 +43,12 @@ Depending on a type of the created node, the set of hostnames for it could diffe
 
 Each container at the platform can be accessed by its internal IP address with an URL of one of the following formats:
 
-- **_node${nodeId}-${envName}.${platformDomain}_**
-- **_node${nodeId}.${envName}.${platformDomain}_**
+- `node${nodeId}-${envName}.${platformDomain}`
+- `node${nodeId}.${envName}.${platformDomain}`
 
 Herewith, the placeholders should be replaced with the next values:
 
-- **_${nodeId}_** - an automatically generated unique digit identifier, assigned to every container within a Platform
+- `${nodeId}` - an automatically generated unique digit identifier, assigned to every container within a Platform
 
 <div style={{
     display:'flex',
@@ -60,8 +60,8 @@ Herewith, the placeholders should be replaced with the next values:
 
 </div>
 
-- **_${envName}_** - environment name (not an [alias](/environment-management/environment-aliases)), specified during its creation
-- **_${platformDomain}_** - domain name of a PaaS installation [hosting service provider](/quickstart/hosters-list-&-info)
+- `${envName}` - environment name (not an [alias](/environment-management/environment-aliases)), specified during its creation
+- `${platformDomain}` - domain name of a PaaS installation [hosting service provider](/quickstart/hosters-list-&-info)
 
 Both variants can be used for refering to the nodes from inside or outside of the platform (i.e. allowing to establish both internal and external connections).
 
@@ -227,13 +227,13 @@ All alternative domain strings, shown in the table above, can be utilized simila
 
 For the new environments, you can get all internal IP addresses of containers within one node layer using the following hostname:
 
-- **_${nodeGroup}.${envName}.${platformDomain}_**
+- `${nodeGroup}.${envName}.${platformDomain}`
 
-Here, **_${nodeGroup}_** placeholder is a name of a particular layer the required container belongs to. By default, layers are named in accordance with the appropriate nodeGroup specific role.
+Here, `${nodeGroup}` placeholder is a name of a particular layer the required container belongs to. By default, layers are named in accordance with the appropriate nodeGroup specific role.
 
 :::tip Note
 
-Node groups added via the extra layers in the topology wizard are named in the same way, but with the appropriate **_${N}_** index. Herewith, the default layers in topology wizard (e.g. _bl, cp, sqldb,_ etc.) are considered as the first index, so the enumeration in extra layers starts with the second one, e.g. _cp2, cp3, cp4_, … (except of the _extra, extra2, extra3_, …). For example:
+Node groups added via the extra layers in the topology wizard are named in the same way, but with the appropriate `${N}` index. Herewith, the default layers in topology wizard (e.g. _bl, cp, sqldb,_ etc.) are considered as the first index, so the enumeration in extra layers starts with the second one, e.g. _cp2, cp3, cp4_, … (except of the _extra, extra2, extra3_, …). For example:
 
 <div style={{
     display:'flex',
@@ -271,8 +271,8 @@ Herewith, every time a new container is created (removed) in a system, the appro
 
 All the newly created Docker containers and dockerized platform-managed stacks are provisioned with the specific DNS rules, which allow usage of the additional simplified hostnames:
 
-- **_node${nodeId}_** - alias to refer to a container in confines of a single environment
-- **_${nodeGroup}_** - alias to refer to a layer in confines of a single environment
+- `node${nodeId}` - alias to refer to a container in confines of a single environment
+- `${nodeGroup}` - alias to refer to a layer in confines of a single environment
 
 Utilizing such short hostnames in server configuration files, application source code and [SSH](/deployment-tools/ssh/ssh-overview) console (within often used commands like _ping, host, dig_, etc.) makes operating with Dockerized stacks via Platform internal network much more convenient. Additionally, such approach enables painless [environment migration](/environment-management/environment-regions/migration-between-regions) to another [hardware region](/environment-management/environment-regions/choosing-a-region) through eliminating the necessity to adjust your application code due to the changed server location.
 
@@ -280,12 +280,12 @@ Utilizing such short hostnames in server configuration files, application source
 
 Upon [linking](/container/container-configuration/links) two Docker-based environment layers, a set of dedicated DNS records are automatically added to the global platform database. This allows to refer to the nodes within a _target_ layer from the _source_ ones (but not vice versa) when working in confines of these two layers using the following hostname aliases:
 
-- **${linkAlias}** - to refer to a random node within a target layer; an exact node to respond is chosen by means of the Round-Robin algorithm - this ensures even load distribution
-- **_${linkAlias}_${N}\_** - to access a particular container within a target layer
+- `${linkAlias}` - to refer to a random node within a target layer; an exact node to respond is chosen by means of the Round-Robin algorithm - this ensures even load distribution
+- `${linkAlias}_${N}` - to access a particular container within a target layer
 
 Here, the appropriate placeholders are to be substituted with:
 
-- **_${linkAlias}_** - link name you’ve specified during its setting (e.g. tomcat in the image below)
+- `${linkAlias}` - link name you’ve specified during its setting (e.g. tomcat in the image below)
 
 <div style={{
     display:'flex',
@@ -297,7 +297,7 @@ Here, the appropriate placeholders are to be substituted with:
 
 </div>
 
-- **_${N}_** - nominal index number (in a _1…N_ range) of a particular container within the target linking layer (e.g. _tomcat_1, tomcat_2_), etc; herewith, master container is always considered the 1st instance, whilst the rest of layer nodes are assigned numbers according to their nodeID values, being sorted in ascending order (starting with the _\_2_ index, then _\_3, \_4_, etc.)
+- `${N}` - nominal index number (in a _1…N_ range) of a particular container within the target linking layer (e.g. _tomcat_1, tomcat_2_), etc; herewith, master container is always considered the 1st instance, whilst the rest of layer nodes are assigned numbers according to their nodeID values, being sorted in ascending order (starting with the _\_2_ index, then _\_3, \_4_, etc.)
 
 For example, if there are three containers on a layer - with the _123, 124_ (master) and _125_ IDs. According to the above-described implementation, the aliases will be assigned as follows:
 
@@ -307,7 +307,7 @@ For example, if there are three containers on a layer - with the _123, 124_ (mas
 
 :::tip Tip
 
-By appending an environment domain to the alias **_${linkAlias}.${envName}.${platformDomain}_**, the corresponding linked layer name can be resolved and accessed externally, i.e. from anywhere over the Internet. And by **_${linkAlias}_${N}\_** corresponding container of a linked layer can be resolved internally only, within the linked layers network.
+By appending an environment domain to the alias `${linkAlias}.${envName}.${platformDomain}`, the corresponding linked layer name can be resolved and accessed externally, i.e. from anywhere over the Internet. And by `${linkAlias}_${N}` corresponding container of a linked layer can be resolved internally only, within the linked layers network.
 
 :::
 

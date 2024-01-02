@@ -68,7 +68,9 @@ In the opened browser tab, you’ll see the **_Sign in_** form for the MongoDB a
 
 4. The next step is to create a separate DB user for working with our newly added database. Thus, switch to the **Execute** tab and paste the following command inside the shown input field:
 
-_db.createUser({ user: **“user_name”**, pwd: **“password”**, roles:[{ role: “readWrite”, db: **“db_name**"}]})_
+```
+db.createUser({ user: “user_name”, pwd: “password”, roles:[{ role: “readWrite”, db: “db_name"}]})
+```
 
 where
 

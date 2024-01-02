@@ -10,7 +10,7 @@ import obj from './DatabaseConnectionStrings.json'
 
 All instances, created inside the platform, are operated as independent containers. To establish connection to a database from the application, deployed within application server, you need to set a connection string for it, using either:
 
-- [CNAME](/database/database-hosting/db-hosting-overview#database-admin-panel-url) of database, e.g. _node{node_id}-{environment_name}.{hoster_domain}_
+- [CNAME](/database/database-hosting/db-hosting-overview#database-admin-panel-url) of database, e.g. `node{node_id}-{environment_name}.{hoster_domain}`
 - Private IP address
 - [Public IP](/application-setting/external-access-to-applications/public-ip#public-ip) address (if attached)
 
@@ -106,13 +106,15 @@ Look through the table of database types to find the appropriate DB connection c
 
 For the UTF-8 encoding, modify your connection string according to this:
 
-_“jdbc:{dbtype}://{dbtype}{node_id}-{environment_name}.{hoster_domain}/{dbname}?useUnicode=yes&characterEncoding=UTF-8”_
+```bash
+“jdbc:{dbtype}://{dbtype}{node_id}-{environment_name}.{hoster_domain}/{dbname}?useUnicode=yes&characterEncoding=UTF-8”
+```
 
 :::tip Tip
 
 Your hosting provider domain can be found within the last column of the appropriate table in the [Hosters Info](/quickstart/hosters-list-&-info#paas-hosting-providers) page.
 
-In case your hosting provider platform has several [environment regions](/environment-management/environment-regions/choosing-a-region#environment-regions) to choose, the {hoster_domain} value for your environment can differ from the general platform’s one.
+In case your hosting provider platform has several [environment regions](/environment-management/environment-regions/choosing-a-region#environment-regions) to choose, the `{hoster_domain}` value for your environment can differ from the general platform’s one.
 
 :::
 

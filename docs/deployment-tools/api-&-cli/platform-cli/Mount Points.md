@@ -13,9 +13,7 @@ Below, we’ll observe all of the available commands for the mount points manage
 1. First of all, you can get the list of existing mount points with the corresponding **_GetMountPoints_** CLI command:
 
 ```bash
-
 ~/jelastic/environment/file/getmountpoints --envName  {env_name} --nodeId  {node_ID}
-
 ```
 
 <div style={{
@@ -30,8 +28,8 @@ Below, we’ll observe all of the available commands for the mount points manage
 
 where
 
-- **_{env_name}_** - domain name of environment, where you want to check for mount points
-- **_{node_ID}_** - unique identifier of the node to be checked
+- `{env_name}` - domain name of environment, where you want to check for mount points
+- `{node_ID}` - unique identifier of the node to be checked
 
 :::tip Note
 
@@ -73,12 +71,12 @@ Also, it is possible to use _“nodeGroup”_ instead of “nodeId” to select 
 
 where
 
-- **_{env_name}_** - domain name of environment, where you want to add mount point
-- **_{node_ID}_** - unique identifier of the node within the selected environment data will be mounted to
-- **_{local_path}_** - path to folder on client node data will be shown at
-- **_{protocol}_** - protocol to be used (the **nfs** one is required)
-- **_{source_path}_** - path to the files on your data storage server
-- **_{source_node_ID}_** - identifier of the source node
+- `{env_name}` - domain name of environment, where you want to add mount point
+- `{node_ID}` - unique identifier of the node within the selected environment data will be mounted to
+- `{local_path}` - path to folder on client node data will be shown at
+- `{protocol}` - protocol to be used (the **nfs** one is required)
+- `{source_path}` - path to the files on your data storage server
+- `{source_node_ID}` - identifier of the source node
 
 :::tip Note
 
@@ -144,11 +142,11 @@ As you can see in the image above, there will be cross mount (i.e. **_true_** va
 
 where
 
-- **_{env_name}_** - domain name of environment, where you want to add mount point
-- **_{env_layer}_** - name of the environment layer, data will be mounted to -**_{local_path}_** - path to folder on a client node, where data will be displayed
-- **_{protocol}_** - protocol to be used (the **nfs** one is required)
-- **_{source_path}_** - path to the files on data storage server
-- **_{source_node_ID}_** - identifier of the source node
+- `{env_name}` - domain name of environment, where you want to add mount point
+- `{env_layer}` - name of the environment layer, data will be mounted to -`{local_path}` - path to folder on a client node, where data will be displayed
+- `{protocol}` - protocol to be used (the **nfs** one is required)
+- `{source_path}` - path to the files on data storage server
+- `{source_node_ID}` - identifier of the source node
 
 :::tip Note
 

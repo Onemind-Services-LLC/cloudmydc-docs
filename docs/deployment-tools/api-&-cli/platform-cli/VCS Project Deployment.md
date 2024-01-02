@@ -18,22 +18,22 @@ Here, the list of parameters can be divided into the following groups:
 
 - main configurations
 
-  - **_{env_name}_** - name of your environment
-  - **_{type}_** - VCS type, either _git or svn_; in the first case, the additional **_{branch}_** parameter is needed to point to the corresponding projects' version
-  - **_{context}_** - context name for a new project
-  - **_{url}_** - link to the appropriate repository
+  - `{env_name}` - name of your environment
+  - `{type}` - VCS type, either _git or svn_; in the first case, the additional `{branch}` parameter is needed to point to the corresponding projects' version
+  - `{context}` - context name for a new project
+  - `{url}` - link to the appropriate repository
 
-- additional options (their activation is defined with the **_{true/false}_** values)
-  - _autoupdate_ - enables regular [autoupdate](/deployment/git-&-svn-auto-deploy/auto-deploy-overview) of your deployed project; if activated, requires the additional **_{interval}_** parameter for setting the frequency of redeployments
+- additional options (their activation is defined with the `{true/false}` values)
+  - _autoupdate_ - enables regular [autoupdate](/deployment/git-&-svn-auto-deploy/auto-deploy-overview) of your deployed project; if activated, requires the additional `{interval}` parameter for setting the frequency of redeployments
   - _utoResolveConflict_ - switches on the corresponding same-named option
   - _zdt_ - allows to activate [ZDT deployment](/php/zdt-deployment-for-php) for PHP projects
 
 :::tip Note
 
-In case you need to connect to a private repository, the additional authentication parameters [*–login* ***{login}***] _[–password_ **_{password}_**] _[–keyId_ **_{keyId}_**] should be added to the main command. Here, you need to obligatory state the **_{login}_** option (to specify your VCS account login) and append one of the following settings depending on the desired (_password_ or _SSH key_) access types:
+In case you need to connect to a private repository, the additional authentication parameters `[–login {login}] [–password {password}] [–keyId {keyId}]` should be added to the main command. Here, you need to obligatory state the `{login}` option (to specify your VCS account login) and append one of the following settings depending on the desired (_password_ or _SSH key_) access types:
 
-- **_{password}_** - the corresponding VCS account password
-- **_{keyId}_** - name of the private SSH key you’ve specified while its addition to the dashboard; this allows to establish a [secure connection](/deployment/ssh-access-to-git-repository) to the repo with the paired public SSH key is attached
+- `{password}` - the corresponding VCS account password
+- `{keyId}` - name of the private SSH key you’ve specified while its addition to the dashboard; this allows to establish a [secure connection](/deployment/ssh-access-to-git-repository) to the repo with the paired public SSH key is attached
 
 :::
 
@@ -81,10 +81,10 @@ Subsequently, this command can be also used for manual redeployment of your app 
 ~/jelastic/environment/vcs/editproject --envName  {env_name} --type  {type} --oldcontext  {oldcontext} --newcontext  {newcontext} --url  {url} [--branch  {branch}] --autoupdate {true/false} [--interval  {interval}] --autoResolveConflict {true/false} --zdt {true/false}
 ```
 
-The majority of parameters are already familiar for you, except the following ones that have substituted the previously used {project} property:
+The majority of parameters are already familiar for you, except the following ones that have substituted the previously used `{project}` property:
 
-- **_{oldcontext}_** - name of the project (i.e. context) that should be changed
-- **_{newcontext}_** - new context for the project (it’s obligatory for specifying; however, could be stated the same as **_{oldcontext}_**)
+- `{oldcontext}` - name of the project (i.e. context) that should be changed
+- `{newcontext}` - new context for the project (it’s obligatory for specifying; however, could be stated the same as `{oldcontext}`)
 
 The rest of options' values can be changed based on your needs.
 
