@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require('prism-react-renderer').themes.github;
+const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -10,7 +10,7 @@ const config = {
   tagline: 'Easy, accessible, affordable cloud for all Hyperconverged, production- ready OpenStack for service providers, enabling lower cost IaaS, PaaS and XaaS for businesses everywhere',
   favicon: 'img/favicon.ico',
 
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://docs.cloudmydc.com/',
   baseUrl: '/',
 
   organizationName: 'Onemind Services LLC',
@@ -33,6 +33,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          remarkPlugins: [require('remark-slug')],
+          routeBasePath: '/',
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -57,7 +59,7 @@ const config = {
       // customCss: [require.resolve('./src/css/custom-dark-theme.css')],
       image: 'img/docusaurus-social-card.jpg',
       algolia: {
-        apiKey: 'd34b31960c127a6cbcc57d2e5a9f96c2',
+        apiKey: 'c2220d2a3515d7d4629b7e8ef22bb78c',
         indexName: 'vishal_sir_onemindservices',
         contextualSearch: true,
         placeholder: 'Search',
@@ -82,6 +84,7 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
+            to: '/',
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
