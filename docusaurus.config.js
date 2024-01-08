@@ -66,13 +66,13 @@ const config = {
       // Replace with your project's social card
       // customCss: [require.resolve('./src/css/custom-dark-theme.css')],
       image: "img/docusaurus-social-card.jpg",
-      // algolia: {
-      //   apiKey: "c2220d2a3515d7d4629b7e8ef22bb78c",
-      //   indexName: "vishal_sir_onemindservices",
-      //   contextualSearch: true,
-      //   placeholder: "Search",
-      //   appId: "HU6H0HSM3W",
-      // },
+      algolia: {
+        apiKey: "c2220d2a3515d7d4629b7e8ef22bb78c",
+        indexName: "vishal_sir_onemindservices",
+        contextualSearch: true,
+        placeholder: "Search",
+        appId: "HU6H0HSM3W",
+      },
       announcementBar: {
         id: "important_announcement",
         content:
