@@ -1,0 +1,63 @@
+---
+name: ✨ Feature Request
+description: Propose a new feature or enhancement
+labels: [ "type: feature" ]
+assignees: "VKumar786"
+body:
+  - type: markdown
+    attributes:
+      value: >
+        **NOTE:** This form is exclusively for submitting well-considered proposals to expand or refine
+        website's functionality. If you're grappling with a problem or still refining your feature idea,
+        please initiate a discussion instead.
+
+  - type: input
+    attributes:
+      label: Current Website Version
+      description: What version of website are you currently running?
+      placeholder: v1.0.0
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Feature Type
+      options:
+        - Add a new functionality
+        - Remove an existing functionality
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Proposed Functionality
+      description: >
+        Provide a comprehensive description of the new feature or behavior you are suggesting. Include specific changes
+        to workflows, data models, and dependencies. The more detailed your proposal, the higher the chance it will be discussed.
+        Feature requests without a clear implementation plan may be declined.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Use Case
+      description: >
+        What problem does it address?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: External Dependencies
+      description: >
+        Enumerate any new external libraries or services that this feature would necessitate.
+        For example, does it require installing a new NPM package? (Not all new features introduce dependencies.)
+
+  - type: input
+    attributes:
+      label: Resolve By
+      description: Please specify a date by which you expect this change to be implemented.
+      placeholder: '2021-01-01'
+    validations:
+      required: true
