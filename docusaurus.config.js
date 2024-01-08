@@ -87,7 +87,6 @@ const config = {
             label: "Tutorial",
             to: "/",
           },
-          { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/Onemind-Services-LLC/cloudmydc-docs",
             label: "GitHub",
