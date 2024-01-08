@@ -113,7 +113,7 @@ const config = {
               {
                 html: `
                   <div>
-                    <a target="_blank" rel="noopener noreferrer" href="https://vercel.com?utm_source=authjs&utm_campaign=oss">
+                    <a target="_blank" rel="noopener noreferrer" href="https://cloudmydc.com/">
                       <img
                         alt="Powered by Vercel"
                         style="margin-top: 8px"
