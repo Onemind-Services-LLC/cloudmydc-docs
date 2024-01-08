@@ -41,7 +41,7 @@ FROM jelasticdocker/jelastic-centos7-base:latest
 2. Next, you can specify the general image information (like metadata or some internal variables), which will be required during the further configurations. Use the example below to set the needed values:
 
 ```
-LABEL maintainer="Virtuozzo"
+LABEL maintainer="CloudMyLab"
 ENV WILDFLY_VERSION 13.0.0.Final
 
 ENV ADMIN_USER jelastic
