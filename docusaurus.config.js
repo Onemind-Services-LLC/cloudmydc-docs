@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer').themes.github;
-const darkCodeTheme = require('prism-react-renderer').themes.dracula;
+const lightCodeTheme = require("prism-react-renderer").themes.github;
+const darkCodeTheme = require("prism-react-renderer").themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -52,20 +52,27 @@ const config = {
       }),
     ],
   ],
-
+  plugins: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      ({
+        hashed: true,
+      }),
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       // customCss: [require.resolve('./src/css/custom-dark-theme.css')],
       image: "img/docusaurus-social-card.jpg",
-      algolia: {
-        apiKey: "c2220d2a3515d7d4629b7e8ef22bb78c",
-        indexName: "vishal_sir_onemindservices",
-        contextualSearch: true,
-        placeholder: "Search",
-        appId: "HU6H0HSM3W",
-      },
+      // algolia: {
+      //   apiKey: "c2220d2a3515d7d4629b7e8ef22bb78c",
+      //   indexName: "vishal_sir_onemindservices",
+      //   contextualSearch: true,
+      //   placeholder: "Search",
+      //   appId: "HU6H0HSM3W",
+      // },
       announcementBar: {
         id: "important_announcement",
         content:
