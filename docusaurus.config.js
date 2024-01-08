@@ -94,12 +94,6 @@ const config = {
             label: "Tutorial",
             to: "/",
           },
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/Onemind-Services-LLC/cloudmydc-docs",
-            label: "GitHub",
-            position: "right",
-          },
         ],
       },
       footer: {
@@ -180,12 +174,8 @@ const config = {
                 to: "https://cloudmydc.com/advance-network",
               },
               {
-                label: "Advanced Network",
-                to: "https://cloudmydc.com/advance-network",
-              },
-              {
-                label: "Blog",
-                to: "https://cloudmydc.com/blog",
+                label: 'Blog',
+                to: 'https://cloudmydc.com/blog',
               },
             ],
           },
