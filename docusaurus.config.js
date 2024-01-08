@@ -172,10 +172,6 @@ const config = {
                 to: 'https://cloudmydc.com/advance-network',
               },
               {
-                label: 'Advanced Network',
-                to: 'https://cloudmydc.com/advance-network',
-              },
-              {
                 label: 'Blog',
                 to: 'https://cloudmydc.com/blog',
               },
