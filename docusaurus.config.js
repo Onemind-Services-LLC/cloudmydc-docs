@@ -68,11 +68,6 @@ const config = {
       },
       metadata: [
         { name: "og:title", content: "CloudMyDc Documentation" },
-        {
-          name: "og:description",
-          content:
-            "Essential guides for deploying and optimizing virtualization and cloud solutions",
-        },
         { name: "og:image", content: "img/footer/cmdc.png" },
         { name: "og:url", content: "https://docs.cloudmydc.com" },
       ],
