@@ -31,7 +31,7 @@ The details on each of these options can be seen in the [Monitor Consumed Resour
 
 ## How Much do Resources Cost?
 
-With the platform, you only pay for consumed resources. The resource pricing is set by your chosen hosting provider. You can find exact cost for each resource unit by going to your hoster’s [Pricing page](/account-and-pricing/hosters-pricing).
+With the platform, you only pay for consumed resources. The resource pricing is set by your chosen hosting provider. You can find exact cost for each resource unit by going to your hoster’s Pricing page.
 
 The prices can also be seen inside your platform dashboard.
 
