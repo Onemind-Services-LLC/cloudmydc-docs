@@ -1,7 +1,7 @@
 ---
 title: Release Notes 8.2.5
 slug: release-notes-8.2.5
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 _This document is preliminary and subject to change._
