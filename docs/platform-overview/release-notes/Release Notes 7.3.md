@@ -1,7 +1,7 @@
 ---
 title: Release Notes 7.3
 slug: release-notes-7.3
-sidebar_position: 11
+sidebar_position: 12
 ---
 
 import obj from './ReleaseNotes7.3.json'

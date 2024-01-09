@@ -1,14 +1,14 @@
 ---
-title: Release Notes 7.1
-slug: release-notes-7.1
-sidebar_position: 14
+title: Release Notes 8.4
+slug: release-notes-8.4
+sidebar_position: 1
 ---
 
-import obj from './ReleaseNotes7.1.json'
+import obj from './ReleaseNotes8.4.json'
 
-_This document is preliminary and subject to change._
+This document is preliminary and subject to change.
 
-In this document, you will find all of the new features, enhancements and visible changes included to the **CloudMyDc PaaS 7.1** release.
+In this document, you will find all of the new features, enhancements and visible changes included to the **CloudMyDc PaaS 8.4** release.
 
 <hr/>
 <div style={{
@@ -24,13 +24,16 @@ In this document, you will find all of the new features, enhancements and visibl
         justifyContent: 'flex-start',
     }}>
 
-![Locale Dropdown](./img/ReleaseNotes8.3/download.png)
+![Locale Dropdown](./img/ReleaseNotes8.4/download.png)
 
 New
 
 </div>
-    <div>
+    <div style={{
+        width:'100%',
+    }}>
         <div style={{
+            width:'100%',
             background: '#e4ffee',
             padding: '20px',
             margin: '10px 0',
@@ -38,13 +41,53 @@ New
             <h3 style={{
                 fontSize: '23px',
                 fontWeight: '500',
-        }}>Send Message API with IP Authorization</h3>
-            <p>Added two new API methods that can send email notification to container owner using IP authorization (without user session)</p>
+        }}>Ubuntu 23 Support</h3>
+            <p>Implemented base OS template to support images based on the Ubuntu 23.04 version</p>
             <div style={{
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/platform-overview/release-notes/release-notes-7.1#send-message-api-with-ip-authorization">
+                <a href="/platform-overview/release-notes/release-notes-8.4#ubuntu-23-support">
+                    Learn More >>
+                </a>
+            </div>
+        </div>
+        <div style={{
+            width:'100%',
+            background: '#e4ffee',
+            padding: '20px',
+            margin: '10px 0',
+        }}>
+            <h3 style={{
+                fontSize: '23px',
+                fontWeight: '500',
+        }}>Debian 12 Support</h3>
+            <p>Implemented base OS template to support images based on the Debian 12 version</p>
+            <div style={{
+            display: 'flex',
+            flexDirection: 'row-reverse',
+        }}>
+                <a href="/platform-overview/release-notes/release-notes-8.4#debian-12-support">
+                    Learn More >>
+                </a>
+            </div>
+        </div>
+        <div style={{
+            width:'100%',
+            background: '#e4ffee',
+            padding: '20px',
+            margin: '10px 0',
+        }}>
+            <h3 style={{
+                fontSize: '23px',
+                fontWeight: '500',
+        }}>Excluding Nodes from DNS during Sequential Actions</h3>
+            <p>Added an option to exclude node from DNS when managing layers with scaled nodes</p>
+            <div style={{
+            display: 'flex',
+            flexDirection: 'row-reverse',
+        }}>
+                <a href="/platform-overview/release-notes/release-notes-8.4#excluding-nodes-from-dns-during-sequential-actions">
                     Learn More >>
                 </a>
             </div>
@@ -68,7 +111,7 @@ New
         justifyContent: 'flex-start',
     }}>
 
-![Locale Dropdown](./img/ReleaseNotes8.3.2/download.png)
+![Locale Dropdown](<./img/ReleaseNotes8.4/download%20(1).png>)
 
 Changed
 
@@ -82,13 +125,51 @@ Changed
             <h3 style={{
                 fontSize: '23px',
                 fontWeight: '500',
-        }}>Info for Environment Clone Dialog</h3>
-            <p>Added notification to the Clone Environment dialog that manual adjustment may be needed due to IP addresses and hostnames changes</p>
+        }}>Firewall ICMP Restriction</h3>
+            <p>Configured firewall rules to block potentially harmful ICMP Timestamp requests</p>
             <div style={{
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/platform-overview/release-notes/release-notes-7.1#info-for-environment-clone-dialog">
+                <a href="/platform-overview/release-notes/release-notes-8.4#firewall-icmp-restriction">
+                    Learn More >>
+                </a>
+            </div>
+        </div>
+        <div style={{
+            background: '#def6ff',
+            padding: '20px',
+            margin: '10px 0',
+        }}>
+            <h3 style={{
+                fontSize: '23px',
+                fontWeight: '500',
+        }}>Environment-Associated Scripts</h3>
+            <p>Implemented functionality to create persistent associations between the environments and deployed add-ons</p>
+            <div style={{
+            display: 'flex',
+            flexDirection: 'row-reverse',
+        }}>
+                <a href="/platform-overview/release-notes/release-notes-8.4#environment-associated-scripts">
+                    Learn More >>
+                </a>
+            </div>
+        </div>
+        <div style={{
+            background: '#def6ff',
+            padding: '20px',
+            margin: '10px 0',
+        }}>
+            <h3 style={{
+                fontSize: '23px',
+                fontWeight: '500',
+        }}>Deactivated Account Improvements</h3>
+            <p>Provided an ability for the deactivated users to remove their environment</p>
+            <div style={{
+            display: 'flex',
+            flexDirection: 'row-reverse',
+        }}>
+                <a href="/platform-overview/release-notes/release-notes-8.4#deactivated-account-improvements">
                     Learn More >>
                 </a>
             </div>
@@ -107,7 +188,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/platform-overview/release-notes/release-notes-7.1#api-changes">
+                <a href="/platform-overview/release-notes/release-notes-8.4#api-changes">
                     Learn More >>
                 </a>
             </div>
@@ -126,7 +207,7 @@ Changed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/platform-overview/release-notes/release-notes-7.1#software-stack-versions">
+                <a href="/platform-overview/release-notes/release-notes-8.4#software-stack-versions">
                     Learn More >>
                 </a>
             </div>
@@ -135,10 +216,9 @@ Changed
 
 </div>
 
-<hr/>
-
 <div style={{
         display: 'flex',
+        borderTop: '1px solid #ddd',
         padding: '10px 0 10px 0',
     }}>
     <div style={{
@@ -150,7 +230,7 @@ Changed
         justifyContent: 'flex-start',
     }}>
 
-![Locale Dropdown](<./img/ReleaseNotes8.3.2/download%20(1).png>)
+![Locale Dropdown](<./img/ReleaseNotes8.4/download%20(2).png>)
 
 Fixed
 
@@ -170,7 +250,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/platform-overview/release-notes/release-notes-7.1#fixes-compatible-with-prior-versions">
+                <a href="/platform-overview/release-notes/release-notes-8.4#fixes-compatible-with-prior-versions">
                     Learn More >>
                 </a>
             </div>
@@ -189,7 +269,7 @@ Fixed
             display: 'flex',
             flexDirection: 'row-reverse',
         }}>
-                <a href="/platform-overview/release-notes/release-notes-7.1#bug-fixes">
+                <a href="/platform-overview/release-notes/release-notes-8.4#bug-fixes">
                     Learn More >>
                 </a>
             </div>
@@ -198,39 +278,33 @@ Fixed
 
 </div>
 
-## Send Message API with IP Authorization
+## Ubuntu 23 Support
 
-In the current 7.1 PaaS release, two new API methods were implemented for sending email notifications from the container to its owner. These methods provide automatic authentication based on the container IP address so that user session (password and login) is not required. Such implementation significantly simplifies notification of the container owner based on the events inside the node, which allows automating various scenarios that previously were difficult in realization.
+The platform introduces support for the latest version of one of the most popular Linux distributions - **Ubuntu 23.04** (Lunar Lobster). The release introduces a lot of software updates, security improvements, and bug fixes for those who need the most up-to-date patches. However, if you prefer Long Term Support, it is recommended to stick with Ubuntu 22.04 LTS.
 
-Both new methods are part of the **environment > node** service:
+The Ubuntu 23.04 distribution support is automatically available through the appropriate [base operating system](/container/container-image-requirements#supported-os-distributions) template (for custom Docker containers).
 
-- **_SendEvent_** - sends a predefined event using IP authorization
-  - **eventName** - the name of the required event; currently, the following values are supported:
-    - _SEND_NOTIFICATION_ - sends an email notification to the node owner
-    - _OOM_KILLER_ - sends a message after OOM Killer invocation
-    - _CUSTOM_NODE_EVENT_ - a user-defined custom event
-  - **params** - JSON object with parameters for Cloud Scripting
-- **_SendNotification_** - sends an email notification to the node owner using IP authorization
-  - **name** - title of the message
-  - **message** - body of the message
+:::tip Tip
 
-The platform already utilizes these new methods to provide proper notification about changes in containers - for example, automatic notifications due to [smart recovery after the OOM error](/application-setting/smart-auto-configuration/auto-configuration-overview). Developers can benefit from the implementation by extending their custom packages with automatic notification of the container owner based on some specific condition.
+Also, the Ubuntu 22.10 template was deprecated due to the version’s official end of life.
 
-[More info](https://cloudmydc.com/)
+:::
+
+[More info](/container/container-image-requirements#supported-os-distributions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
-        padding: '10px 0',
+        margin: '0 0 -2rem 0'
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.4">
         Back to the top
     </a>
 </div>
 
-## Info for Environment Clone Dialog
+## Debian 12 Support
 
-The **[Clone Environment](/environment-management/cloning-environment)** is a powerful platform feature that allows you to create an identical copy of the existing environment. For example, it can be helpful during development to create a separate instance of the project where tuning and adjustments can be safely tested without affecting existing customers. However, when utilizing the feature, users should be aware that the IP addresses and hostnames of the clone will differ from the initial environment (i.e. manual re-adjustment of these values may be required). To ensure better awareness of the fact, such information was added to the **_Clone Environment_** dialog.
+The platform implements support for the **Debian 12** “bookworm” OS templates on all the PaaS installations (available for all platforms starting with the 8.4 release). It is the latest LTS (Long Term Support) version with an estimated support period of at least five years. The new release is focused on performance, stability, and ease of use. It provides a massive update of the default packages, creates a separate package archive for non-free firmware, extends architectures and kernel support, and introduces many other improvements, optimizations, and security fixes. For detailed information, refer to the official [Debian 12 release notes](https://www.debian.org/releases/bookworm/releasenotes).
 
 <div style={{
     display:'flex',
@@ -238,50 +312,136 @@ The **[Clone Environment](/environment-management/cloning-environment)** is a po
     margin: '0 0 1rem 0'
 }}>
 
-![Locale Dropdown](./img/ReleaseNotes7.1/01-clone-environment-dialog.png)
+![Locale Dropdown](./img/ReleaseNotes8.4/01-debian-12-vps.png)
 
 </div>
 
-[More info](/environment-management/cloning-environment)
+Also, **Debian 12** was added as an out-of-box [Elastic VPS](/elastic-vps/elastic-vps-overview/debian-vps) stack in the platform dashboard.
+
+[More info](/container/container-image-requirements#supported-os-distributions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
-        padding: '10px 0',
+     margin: '0 0 -2rem 0'
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.4">
+        Back to the top
+    </a>
+</div>
+
+## Firewall ICMP Restriction
+
+The Internet Control Message Protocol (ICMP) is used for reporting errors and performing network diagnostics. However, some ICMP request types can be considered a minor security vulnerability that allows attackers to gain information on the remote host.
+
+In the 8.4 release, the Virtuozzo Application Platform added rules to the default firewall configurations that block **ICMP Timestamp** request messages. Such an adjustment resolves a vulnerability that can potentially be exploited to probe the network to find live hosts, gather time/date information on the target host, or generate shared traffic to trick the intrusion detection system.
+
+<div style={{
+        display: 'flex',
+        flexDirection: 'row-reverse',
+      margin: '0 0 -2rem 0'
+    }}>
+    <a href="/platform-overview/release-notes/release-notes-8.4">
+        Back to the top
+    </a>
+</div>
+
+## Excluding Nodes from DNS during Sequential Actions
+
+Virtuozzo Application Platform provides an easy-to-use [horizontal scaling](/application-setting/scaling-and-clustering/horizontal-scaling) functionality for the containers, i.e. offering a quick high-availability option for users. Combined with the sequential configuration option that allows performing actions on nodes successively (so that at least one node remains operable), even intrusive operations like restart and redeploy can be performed without disrupting end-user experience.
+
+However, even with the sequential option enabled, some connections can be lost in case of high traffic. In order to ensure application availability for all incoming requests, an additional suboption to “Temporarily remove node(s) from DNS” was implemented. If enabled, a node will be excluded from the DNS tables (internal and external) during the intrusive operation.
+
+<div style={{
+    display:'flex',
+    justifyContent: 'center',
+    margin: '0 0 1rem 0'
+}}>
+
+![Locale Dropdown](./img/ReleaseNotes8.4/02-remove-from-dns.png)
+
+</div>
+
+This new option is available during the following operations:
+
+- nodes restart on the multi-node layer
+- nodes redeploy on the multi-node layer
+
+<div style={{
+        display: 'flex',
+        flexDirection: 'row-reverse',
+      margin: '0 0 -2rem 0'
+    }}>
+    <a href="/platform-overview/release-notes/release-notes-8.4">
+        Back to the top
+    </a>
+</div>
+
+## Environment-Associated Scripts
+
+In the present 8.4 release, functionality to create a more firm association between the environment and deployed add-ons was implemented. The implementation creates the necessary persistence to support such cases as:
+
+- all collaboration members can view and manage add-ons of the [shared environment](/environment-management/share-environment)
+- add-ons' management is available to the new owner after [environment transferring](/environment-management/environment-transferring)
+
+The following add-ons are already updated to benefit from this association functionality: Git-Push-Deploy, Start/Stop Scheduler, and Let’s Encrypt add-ons. However, please note that the change affects the new installations only.
+
+<div style={{
+        display: 'flex',
+        flexDirection: 'row-reverse',
+    margin: '0 0 -2rem 0'
+    }}>
+    <a href="/platform-overview/release-notes/release-notes-8.4">
+        Back to the top
+    </a>
+</div>
+
+## Deactivated Account Improvements
+
+The platform automatically deactivates an account after the trial period expires or if it runs out of funds. In **_deactivated_** [status](/account-and-pricing/account-statuses), all the environments are forcibly stopped till the balance is replenished to a positive value.
+
+Starting with the current 8.4 PaaS release, the ability to manually delete environments on the deactivated account was added. It allows cleaning up an account before re-activation and removing environments immediately (no need to wait for automatic removal upon account destruction).
+
+Also, the account activations process was improved as well. Now, it triggers immediately after refilling the balance (to a positive value) and automatically starts all the stopped environments.
+
+<div style={{
+        display: 'flex',
+        flexDirection: 'row-reverse',
+      margin: '0 0 -2rem 0'
+    }}>
+    <a href="/platform-overview/release-notes/release-notes-8.4">
         Back to the top
     </a>
 </div>
 
 ## API Changes
 
-Below, you can find a list of all changes to the public API in the 7.1 platform version (compared to the preceding [7.0](/platform-overview/release-notes/release-notes-7.0#api-changes) ones).
+Below, you can find a list of all changes to the public API in the 8.4 platform version (compared to the preceding [8.3](/platform-overview/release-notes/release-notes-8.3) ones):
 
-Two new API methods were added to the **environment > node** service, implementing a simplified flow to [notify the container owner](/platform-overview/release-notes/release-notes-7.1#send-message-api-with-ip-authorization) (using IP authorization instead of user session):
+- Extended response of the GetSSLCerts method to provide information on SSL type. The new sslType parameter has two values:
+  - _CUSTOM_ – for any certificates added via the dashboard or AddSslCert API call
+  - _LETSENCRYPT_ – for certificates issued for resellers or regions
+    The public API documentation review has been completed. All the services, methods, and parameters were provided with comprehensive descriptions to help new and existing users start using the platform’s API.
 
-- **_SendEvent_** - sends a predefined notification based on the specific event inside a container
-- **_SendNotification_** - sends a custom email notification to the node owner
-
-[More info](https://cloudmydc.com/)
+[More info](/container/container-image-requirements#supported-os-distributions)
 
 <div style={{
         display: 'flex',
         flexDirection: 'row-reverse',
-        padding: '10px 0',
+        margin: '0 0 -2rem 0'
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.4">
         Back to the top
     </a>
 </div>
 
 ## Fixes Compatible with Prior Versions
 
-Below, you can find the fixes that were implemented in the CloudMyDc Application Platform 8.3 release and also integrated into previous platform versions by means of the appropriate patches.
+Below, you can find the fixes that were implemented in the Virtuozzo Application Platform 8.4 release and also integrated into previous platform versions by means of the appropriate patches.
 
 <div style={{
         width: '100%',
-        margin: '0 0 5rem 0',
+        margin: '0 0 2rem 0',
         borderRadius: '7px',
         overflow: 'hidden',
     }} >
@@ -298,7 +458,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         color: 'var(--table-color-primary)',
         background: 'var(--table-bg-primary-t3)'
     }}>
-        CloudMyDc Application Platform 8.3
+        CloudMyDc Application Platform 8.4
     </div>
     <div>
         <div style={{
@@ -368,10 +528,11 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
                 display: 'flex', 
                 alignItems: 'center', 
                 justifyContent: 'center',
+                borderRight: '1px solid var(--ifm-toc-border-color)',
                 padding: '20px',
                 wordBreak: 'break-all'
             }}>
-                    {item.CompatibleFrom}
+                {item.CompatibleFrom}
             </div>
             <div style={{
                 wordBreak: 'break-all',
@@ -385,40 +546,8 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 </div>
 
 <div style={{
-        display: 'flex',
-        flexDirection: 'row-reverse',
-        padding: '10px 0',
-    }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
-        Back to the top
-    </a>
-</div>
-
-## Software Stack Versions
-
-The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
-
-The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
-
-[More info](/quickstart/software-stack-versions)
-
-<div style={{
-        display: 'flex',
-        flexDirection: 'row-reverse',
-        padding: '10px 0',
-    }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
-        Back to the top
-    </a>
-</div>
-
-## Bug Fixes
-
-In the table below, you can see the list of bug fixes applied to the platform starting from CloudMyDc Application Platform 8.3 release:
-
-<div style={{
         width: '100%',
-        margin: '0 0 5rem 0',
+        margin: '0 0 2rem 0',
         borderRadius: '7px',
         overflow: 'hidden',
     }} >
@@ -435,7 +564,7 @@ In the table below, you can see the list of bug fixes applied to the platform st
         color: 'var(--table-color-primary)',
         background: 'var(--table-bg-primary-t3)'
     }}>
-        CloudMyDc Application Platform 8.3
+        CloudMyDc Application Platform 8.4.2
     </div>
     <div>
         <div style={{
@@ -467,7 +596,7 @@ In the table below, you can see the list of bug fixes applied to the platform st
                 borderRight: '1px solid var(--ifm-toc-border-color)',
                 wordBreak: 'break-all'
             }}>
-               Affected Versions
+               Compatible from
             </div>
             <div style={{
                 display: 'flex', 
@@ -505,10 +634,11 @@ In the table below, you can see the list of bug fixes applied to the platform st
                 display: 'flex', 
                 alignItems: 'center', 
                 justifyContent: 'center',
+                borderRight: '1px solid var(--ifm-toc-border-color)',
                 padding: '20px',
                 wordBreak: 'break-all'
             }}>
-                {item.AffectedVersions}
+                {item.CompatibleFrom}
             </div>
             <div style={{
                 wordBreak: 'break-all',
@@ -522,8 +652,40 @@ In the table below, you can see the list of bug fixes applied to the platform st
 </div>
 
 <div style={{
+        display: 'flex',
+        flexDirection: 'row-reverse',
+        margin: '0 0 -2rem 0'
+    }}>
+    <a href="/platform-overview/release-notes/release-notes-8.4">
+        Back to the top
+    </a>
+</div>
+
+## Software Stack Versions
+
+The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into Virtuozzo Application Platform.
+
+The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
+
+[More info](/container/container-image-requirements#supported-os-distributions)
+
+<div style={{
+        display: 'flex',
+        flexDirection: 'row-reverse',
+        margin: '0 0 -2rem 0'
+    }}>
+    <a href="/platform-overview/release-notes/release-notes-8.4">
+        Back to the top
+    </a>
+</div>
+
+## Bug Fixes
+
+In the table below, you can see the list of bug fixes applied to the platform starting from Virtuozzo Application Platform 8.4 release:
+
+<div style={{
         width: '100%',
-        margin: '0 0 5rem 0',
+        margin: '0 0 1rem 0',
         borderRadius: '7px',
         overflow: 'hidden',
     }} >
@@ -540,7 +702,7 @@ In the table below, you can see the list of bug fixes applied to the platform st
         color: 'var(--table-color-primary)',
         background: 'var(--table-bg-primary-t3)'
     }}>
-        PaaS 7.1.2
+        CloudMyDc Application Platform 8.4
     </div>
     <div>
         <div style={{
@@ -610,6 +772,7 @@ In the table below, you can see the list of bug fixes applied to the platform st
                 display: 'flex', 
                 alignItems: 'center', 
                 justifyContent: 'center',
+                borderRight: '1px solid var(--ifm-toc-border-color)',
                 padding: '20px',
                 wordBreak: 'break-all'
             }}>
@@ -624,4 +787,14 @@ In the table below, you can see the list of bug fixes applied to the platform st
         </div>
         })}
     </div>
+</div>
+
+<div style={{
+        display: 'flex',
+        flexDirection: 'row-reverse',
+        margin: '0 0 -2rem 0'
+    }}>
+    <a href="/platform-overview/release-notes/release-notes-8.4">
+        Back to the top
+    </a>
 </div>
