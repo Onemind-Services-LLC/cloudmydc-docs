@@ -66,13 +66,6 @@ const config = {
         placeholder: "Search",
         appId: "HU6H0HSM3W",
       },
-      announcementBar: {
-        id: "important_announcement",
-        content:
-          "🚀 New feature alert: We have launched a new feature! Check it out in our latest blog posts.",
-        textColor: "#333",
-        isCloseable: true,
-      },
       navbar: {
         title: "CloudMyDC",
         logo: {
