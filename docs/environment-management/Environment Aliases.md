@@ -1,7 +1,7 @@
 ---
 title: Environment Aliases
 slug: environment-aliases
-sidebar_position: 8
+sidebar_position: 7
 ---
 
 Specifying the alias (alternative name) for an environment or a separate node can greatly facilitate the process of their management. It clarifies which item you are working with, so you’ll never make a mistake while choosing the environment/node that needs to be adjusted.

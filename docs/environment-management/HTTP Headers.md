@@ -1,7 +1,7 @@
 ---
 title: Http Headers
 slug: http-headers
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 import obj from './HTTPHeaders.json'
