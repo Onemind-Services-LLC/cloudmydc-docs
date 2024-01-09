@@ -1,7 +1,7 @@
 ---
 title: Environment Transferring
 slug: environment-transferring
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 Environment transferring allows you to move any environment to another PaaS account within the same platform (confirmation on both sides is required).
