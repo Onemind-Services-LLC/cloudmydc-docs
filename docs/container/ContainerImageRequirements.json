@@ -54,6 +54,11 @@
       "Distribution": "Ubuntu",
       "Version": "ubuntu 22.04",
       "VZTemplate": "ubuntu-22.04-x86_64"
+    },
+    {
+      "Distribution": "Ubuntu",
+      "Version": "ubuntu 23.04*",
+      "VZTemplate": "ubuntu-22.04-x86_64"
     }
   ]
 }
