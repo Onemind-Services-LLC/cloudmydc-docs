@@ -2,6 +2,12 @@
 title: App Migration Between Clouds
 slug: app-migration-between-clouds
 sidebar_position: 1
+description: PaaS & CaaS is designed to provide a real freedom of choice to developers no proprietary APIs, no necessity to adjust your applications' code before hosting, a wide variety of stacks and features available.
+keywords:
+  - Environment Management
+  - Environment Export And Import
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{

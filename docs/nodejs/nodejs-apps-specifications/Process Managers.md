@@ -2,6 +2,13 @@
 title: Process Managers
 slug: process-managers
 sidebar_position: 2
+description: Node.js process manager is a tool, which provides an ability to control application lifecycle, monitor the running services and facilitate common system admin tasks to maintain your project operability.
+keywords:
+  - Node.js
+  - Node.js Apps Specification
+  - Process Managers
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## NodeJS Process Managers -->

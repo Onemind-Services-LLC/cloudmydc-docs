@@ -2,6 +2,12 @@
 title: PHP Tutorials
 slug: php-tutorials
 sidebar_position: 10
+description: Indexing of content
+keywords:
+  - PHP
+  - PHP Tutorials
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{

@@ -2,11 +2,15 @@
 title: Java Garbage Collector
 slug: java-garbage-collector
 sidebar_position: 5
+description: Performance and price are two big considerations in application hosting that always matter.
+keywords:
+  - Java
+  - Java Garbage Collector
+  - CloudMyDc
+  - Documentation
 ---
 
 import obj from './JavaGarbageCollector.json'
-
-<!-- ## Java Garbage Collection Types and Settings in Jelastic PaaS -->
 
 <div style={{
     display: 'grid',

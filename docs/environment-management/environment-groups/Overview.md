@@ -2,6 +2,12 @@
 title: Overview
 slug: overview
 sidebar_position: 1
+description: Organizing Environments Into Groups - How to Smartly Structure Your Projects Environment Groups are designed to categorize environments within your platform dashboard.
+keywords:
+  - Environment Management
+  - Environment Groups
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{

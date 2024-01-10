@@ -2,6 +2,12 @@
 title: Python Dev Center
 slug: python-dev-center
 sidebar_position: 1
+description: The platform provides an out-of-box integration of the scalable Apache application server dedicated specially for the Python-based applications hosting.
+keywords:
+  - Python
+  - Python Dev Center
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Python Cloud Hosting -->

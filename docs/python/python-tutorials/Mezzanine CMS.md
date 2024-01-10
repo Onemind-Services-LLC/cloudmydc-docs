@@ -2,6 +2,13 @@
 title: Mezzanine CMS
 slug: mezzanine-cms
 sidebar_position: 1
+description: Mezzanine CMS (content management system) is an open source, powerful and easy-to-use solution for content management and blogging.
+keywords:
+  - Python
+  - Python Dev Center
+  - Mezzanine CMS
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Mezzanine CMS: Python-Based Hosting with Jelastic PaaS -->

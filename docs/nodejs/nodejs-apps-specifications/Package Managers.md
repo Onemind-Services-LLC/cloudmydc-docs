@@ -2,6 +2,13 @@
 title: Package Managers
 slug: package-managers
 sidebar_position: 1
+description: Each created Node.js application server within the platform is provisioned with out-of-box support of two main package managers for this language - Yarn and npm.
+keywords:
+  - Node.js
+  - Node.js Apps Specification
+  - Package Managers
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## NodeJS Package Managers -->

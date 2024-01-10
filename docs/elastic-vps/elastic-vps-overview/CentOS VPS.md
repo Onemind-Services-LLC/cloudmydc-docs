@@ -2,6 +2,13 @@
 title: Centos Vps
 slug: centos-vps
 sidebar_position: 2
+description: CentOS (Community ENTerprise Operating System) is a free community-driven project, with open source code delivered from RHEL Linux distribution.
+keywords:
+  - Elastic VPS
+  - Elastic VPS Overview
+  - CentOS VPS
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Elastic CentOS VPS -->

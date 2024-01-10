@@ -2,6 +2,13 @@
 title: Exporting Data For Sharing
 slug: exporting-data-for-sharing
 sidebar_position: 2
+description: The platform provides extended support for data sharing between instances inside of the same account. 
+keywords:
+  - Data Storage Container
+  - Data Sharing
+  - Exporting Data For Sharing
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{

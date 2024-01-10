@@ -2,6 +2,13 @@
 title: Wildfly Server
 slug: wildfly-server
 sidebar_position: 1
+description: WildFly is a modern, flexible, lightweight and managed application runtime, which is written in Java and implements the latest standards and technology of the Java Platform Enterprise Edition (Java EE) specification.
+keywords:
+  - Java
+  - Java App Server
+  - WildFly
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## WildFly Application Server -->

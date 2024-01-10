@@ -2,6 +2,13 @@
 title: Custom Domain Name
 slug: custom-domain-name
 sidebar_position: 1
+description: As incoming traffic to your project grows, you need to improve your app performance to keep up with it.
+keywords:
+  - Application Setting
+  - Domain Name Management
+  - Custom Domain Name
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Custom Domain Name -->
@@ -52,7 +59,8 @@ Before diving in, let’s deal with some basic concepts for better understanding
 The platform also provides the full [gTLD + IDN Domain Names](/application-setting/domain-name-management/gtld-+-idn-domain-names-support) support so that you can use both internationalized and generic top-level names for your external domains.
 
 :::
-<!-- 
+
+<!--
 To attach the custom domain you should follow the next steps:
 
 - [purchase custom domain](/application-setting/domain-name-management/custom-domain-name#how-to-buy-a-domain-name)

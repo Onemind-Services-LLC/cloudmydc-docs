@@ -2,6 +2,12 @@
 title: Java Tutorials
 slug: java-tutorials
 sidebar_position: 8
+description: Document lists diverse software tools for development, collaboration, and content management, offering brief descriptions of each for quick reference.
+keywords:
+  - Java
+  - Java Tutorials
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{
