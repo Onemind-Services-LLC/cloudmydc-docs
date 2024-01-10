@@ -16,15 +16,20 @@ The minimum and optimal consumption of RAM, CPU, and storage depends on the clus
         width: "max-content",
         margin: "0 auto",
         maxWidth: "500px"
+    }}> 
+    <tr style={{
+        color: 'var(--table-color-primary)',
+        background: 'var(--table-bg-primary-t2)'
     }}>
-    <tr>
         <th>Resources</th>
         <th>Development</th>
         <th>Production</th>
     </tr>
     {obj.data1.map((item, index) => {
         return <tr key={index}>
-        <td>{item.Resource}</td>
+        <td style={{
+            background: 'var(--table-bg-primary-t1)',
+        }}>{item.Resource}</td>
         <td>{item.Development}</td>
         <td>{item.Production}</td>
     </tr>
