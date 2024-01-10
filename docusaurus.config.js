@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer').themes.github;
-const darkCodeTheme = require('prism-react-renderer').themes.dracula;
+const lightCodeTheme = require("prism-react-renderer").themes.github;
+const darkCodeTheme = require("prism-react-renderer").themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -49,7 +49,7 @@ const config = {
     ({
       // Replace with your project's social card
       // customCss: [require.resolve('./src/css/custom-dark-theme.css')],
-      image: "img/docusaurus-social-card.jpg",
+      image: "img/footer/cmdc.png",
       algolia: {
         apiKey: "c2220d2a3515d7d4629b7e8ef22bb78c",
         indexName: "vishal_sir_onemindservices",
@@ -57,21 +57,23 @@ const config = {
         placeholder: "Search",
         appId: "HU6H0HSM3W",
       },
+      metadata: [
+        { name: "og:title", content: "CloudMyDc Documentation" },
+        {
+          name: "og:description",
+          content:
+            "Essential guides for deploying and optimizing virtualization and cloud solutions",
+        },
+        { name: "og:image", content: "img/footer/cmdc.png" },
+        { name: "og:url", content: "https://docs.cloudmydc.com" },
+      ],
       navbar: {
         title: "CloudMyDC",
         logo: {
           alt: "My Site Logo",
           src: "img/ThumbnailSquare.png",
         },
-        items: [
-          {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "Tutorial",
-            to: "/",
-          },
-        ],
+        items: [],
       },
       footer: {
         // style: 'dark',
@@ -151,8 +153,8 @@ const config = {
                 to: "https://cloudmydc.com/advance-network",
               },
               {
-                label: 'Blog',
-                to: 'https://cloudmydc.com/blog',
+                label: "Blog",
+                to: "https://cloudmydc.com/blog",
               },
             ],
           },
