@@ -49,7 +49,7 @@ const config = {
     ({
       // Replace with your project's social card
       // customCss: [require.resolve('./src/css/custom-dark-theme.css')],
-      image: "img/docusaurus-social-card.jpg",
+      image: "img/footer/cmdc.png",
       algolia: {
         apiKey: "c2220d2a3515d7d4629b7e8ef22bb78c",
         indexName: "vishal_sir_onemindservices",
@@ -57,6 +57,16 @@ const config = {
         placeholder: "Search",
         appId: "HU6H0HSM3W",
       },
+      metadata: [
+        { name: "og:title", content: "CloudMyDc Documentation" },
+        {
+          name: "og:description",
+          content:
+            "Essential guides for deploying and optimizing virtualization and cloud solutions",
+        },
+        { name: "og:image", content: "img/footer/cmdc.png" },
+        { name: "og:url", content: "https://docs.cloudmydc.com" },
+      ],
       navbar: {
         title: "CloudMyDC",
         logo: {
