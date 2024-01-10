@@ -2,6 +2,13 @@
 title: Auto-Clustering
 slug: auto-clustering
 sidebar_position: 1
+description: Building and running complex applications, able to handle unstructured data and serve lots of concurrent globally-distributed users, is what enterprises need to be agile and robust.
+keywords:
+  - Database
+  - Couchbase
+  - Auto-Clustering
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Auto-Scalable Couchbase Cluster in Containers: One-Click Deploy to the Cloud -->

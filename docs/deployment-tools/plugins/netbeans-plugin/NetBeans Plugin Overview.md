@@ -2,6 +2,14 @@
 title: NetBeans Plugin Overview
 slug: netbeans-plugin-overview
 sidebar_position: 1
+description: NetBeans is a free and open-source integrated development environment (IDE). 
+keywords:
+  - Deployment Tools
+  - Plugins
+  - NetBeans Plugin
+  - NetBeans Plugin Overview
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## NetBeans Plugin Overview -->

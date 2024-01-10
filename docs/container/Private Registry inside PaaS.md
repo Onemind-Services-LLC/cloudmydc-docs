@@ -2,6 +2,12 @@
 title: Private Registry Inside Paas
 slug: private-registry-inside-paas
 sidebar_position: 8
+description: Docker solution is designed for comfortable application distribution using fast and lightweight templates, which allows running your projects almost everywhere.
+keywords:
+  - Container
+  - Private Registry Inside PaaS
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{

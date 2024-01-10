@@ -2,6 +2,12 @@
 title: Java Dev Center
 slug: java-dev-center
 sidebar_position: 1
+description: Currently multilingual, the platform was initially created as pure Java Cloud and still maintains a primary focus on this programming language.
+keywords:
+  - Java
+  - Java Dev Center
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Java Developer’s Center -->

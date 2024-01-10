@@ -2,6 +2,12 @@
 title: Public Ip For Access To Kubernetes
 slug: public-ip-for-access-to-kubernetes
 sidebar_position: 7
+description: In this post we’d like to show how to expose applications via a public IP address attached to one of the nodes of a Kubernetes cluster environment in Jelastic PaaS.
+keywords:
+  - Kubernetes Hosting
+  - Public Ip For Access To Kubernetes
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{

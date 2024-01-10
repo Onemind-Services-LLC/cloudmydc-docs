@@ -2,6 +2,12 @@
 title: Deployment Hooks
 slug: deployment-hooks
 sidebar_position: 7
+description: Gitblit is one of the most popular tools for managing, viewing and serving your repositories within Git - a widely spread VCS (version control system) for software elaboration.
+keywords:
+  - Deployment
+  - Deployment Hooks
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{

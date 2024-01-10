@@ -2,6 +2,13 @@
 title: Container DNS Hostnames
 slug: container-dns-hostnames
 sidebar_position: 8
+description: Being able to easily connect to Cloud services is a criteria of great importance for all of the developers
+keywords:
+  - Application Setting
+  - Domain Name Management
+  - Container DNS Hostnames
+  - CloudMyDc
+  - Documentation
 ---
 
 import obj from './ContainerDNSHostnames.json'

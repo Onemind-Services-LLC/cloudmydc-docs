@@ -2,6 +2,12 @@
 title: Windows Remote Desktop Access
 slug: windows-rd-access
 sidebar_position: 3
+description: All the Windows-based nodes at the platform provide the embedded Remote Desktop Protocol support, which allows you to connect to the virtual desktop of your Windows machine and perform any required server configurations through it.
+keywords:
+  - Window And .NET
+  - Window RD Access
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Windows Remote Desktop Access -->

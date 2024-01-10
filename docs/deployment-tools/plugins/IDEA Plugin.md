@@ -2,6 +2,13 @@
 title: Idea Plugin
 slug: idea-plugin
 sidebar_position: 3
+description: IntelliJ IDEA is a code-centric IDE focused on developer productivity.
+keywords:
+  - Deployment Tools
+  - Plugin
+  - IDEA Plugin
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Integration with IntelliJ IDEA: The Java IDE for Professional Developers -->

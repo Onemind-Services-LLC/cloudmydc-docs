@@ -2,6 +2,13 @@
 title: Auto-Deploy Overview
 slug: auto-deploy-overview
 sidebar_position: 1
+description: To greatly increase your productivity as a developer, the platform provides you with the possibility to set periodical automatic deployment of your project and, in such a way, ensure its continuous integration to the corresponding application server.
+keywords:
+  - Deployment
+  - Git And SVN Auto Deploy
+  - Auto-Deploy Overview
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Auto-Deploy of Git/SVN Updates -->

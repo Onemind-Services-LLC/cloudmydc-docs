@@ -2,6 +2,13 @@
 title: WordPress Paas 2.1
 slug: wordpress-paas-2.1
 sidebar_position: 1
+description: Several improvements to the subscription management were implemented in the current 2.1 release to ensure the best experience for the customers.
+keywords:
+  - WordPress As A Service
+  - WordPress PaaS Release Notes
+  - WordPress Paas 2.1
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{

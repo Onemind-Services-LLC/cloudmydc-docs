@@ -2,9 +2,13 @@
 title: Composer Dependency Manager
 slug: composer-dependency-manager
 sidebar_position: 8
+description: Composer is one of PHP’s most popular dependency management tools inspired by the node’s npm and ruby’s bundler. 
+keywords:
+  - PHP
+  - Composer Dependency Manager
+  - CloudMyDc
+  - Documentation
 ---
-
-<!-- ## PHP Composer for Smart Dependency Management of Your Cloud Applications -->
 
 <div style={{
     display: 'grid',

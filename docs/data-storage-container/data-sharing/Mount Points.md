@@ -2,6 +2,13 @@
 title: Mount Points
 slug: mount-points
 sidebar_position: 1
+description: Mount points is a data-sharing functionality between instances inside of the same account.
+keywords:
+  - Data Storage Container
+  - Data Sharing
+  - Mount Points
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{

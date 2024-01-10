@@ -2,6 +2,12 @@
 title: Personal Access Tokens
 slug: personal-access-tokens
 sidebar_position: 8
+description: Personal Access Tokens are an alternative approach to authenticate API requests in the platform, which, in comparison to the default session-based method, provides greater versatility and reliability.
+keywords:
+  - Account And Pricing
+  - Personal Access Tokens
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{

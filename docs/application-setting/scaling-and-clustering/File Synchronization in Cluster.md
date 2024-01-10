@@ -2,6 +2,13 @@
 title: File Synchronization In Cluster
 slug: file-synchronization-in-cluster
 sidebar_position: 5
+description: As incoming traffic to your project grows, you need to improve your app performance to keep up with it.
+keywords:
+  - Application Setting
+  - Scaling And Clustering
+  - File Synchronization In Cluster
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## File Synchronization Between Several Application Servers in a Cluster -->
