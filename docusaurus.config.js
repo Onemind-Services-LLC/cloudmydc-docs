@@ -63,15 +63,6 @@ const config = {
           alt: "My Site Logo",
           src: "img/ThumbnailSquare.png",
         },
-        items: [
-          {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "Tutorial",
-            to: "/",
-          },
-        ],
       },
       footer: {
         // style: 'dark',
