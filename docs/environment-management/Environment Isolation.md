@@ -1,7 +1,7 @@
 ---
 title: Environment Isolation
 slug: environment-isolation
-sidebar_position: 12
+sidebar_position: 11
 ---
 
 :::danger

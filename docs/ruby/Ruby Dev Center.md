@@ -2,6 +2,12 @@
 title: Ruby Dev Center
 slug: ruby-dev-center
 sidebar_position: 1
+description: Ruby is a popular, open source programming language with a powerful and practical, yet natural and easy to read/write syntax.
+keywords:
+  - Ruby
+  - Ruby Dev Center
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Ruby PaaS Hosting -->

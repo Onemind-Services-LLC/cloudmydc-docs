@@ -2,6 +2,12 @@
 title: Deploying Apps Via Gitblit
 slug: deploying-apps-via-gitblit
 sidebar_position: 6
+description: Gitblit is one of the most popular tools for managing, viewing and serving your repositories within Git - a widely spread VCS (version control system) for software elaboration.
+keywords:
+  - Deployment
+  - Deploying Apps Via Gitblit
+  - CloudMyDc
+  - Documentation
 ---
 
 import obj from './DeployingAppsViaGitblit.json'

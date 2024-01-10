@@ -2,6 +2,13 @@
 title: Running Sendmail Service
 slug: running-sendmail-service
 sidebar_position: 2
+description: Sendmail is a highly popular open source mail transfer agent for UNIX systems, which is commonly delivered in a bundle with the majority of Linux distributions.
+keywords:
+  - Deployment Tools
+  - Mailing
+  - Running Sendmail Service
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Running Sendmail Inside a Container -->

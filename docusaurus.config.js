@@ -36,15 +36,6 @@ const config = {
           // Remove this to remove the "edit this page" links.
           remarkPlugins: [require("remark-slug")],
           routeBasePath: "/",
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -76,34 +67,13 @@ const config = {
         { name: "og:image", content: "img/footer/cmdc.png" },
         { name: "og:url", content: "https://docs.cloudmydc.com" },
       ],
-      announcementBar: {
-        id: "important_announcement",
-        content:
-          "🚀 New feature alert: We have launched a new feature! Check it out in our latest blog posts.",
-        textColor: "#333",
-        isCloseable: true,
-      },
       navbar: {
         title: "CloudMyDC",
         logo: {
           alt: "My Site Logo",
           src: "img/ThumbnailSquare.png",
         },
-        items: [
-          {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "Tutorial",
-            to: "/",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/Onemind-Services-LLC/cloudmydc-docs",
-            label: "GitHub",
-            position: "right",
-          },
-        ],
+        items: [],
       },
       footer: {
         // style: 'dark',
@@ -177,10 +147,6 @@ const config = {
               {
                 label: "Data Centers",
                 to: "https://cloudmydc.com/data-center",
-              },
-              {
-                label: "Advanced Network",
-                to: "https://cloudmydc.com/advance-network",
               },
               {
                 label: "Advanced Network",

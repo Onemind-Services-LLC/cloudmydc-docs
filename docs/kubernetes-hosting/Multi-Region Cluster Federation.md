@@ -2,6 +2,12 @@
 title: Multi-Region Cluster Federation
 slug: multi-region-cluster-federation
 sidebar_position: 8
+description: If you have multiple Kubernetes (K8s) clusters in different regions and need to run the same application across all of them, it is reasonable to use the so-called Kubernetes Cluster Federation or KubeFed.
+keywords:
+  - Kubernetes Hosting
+  - Multi-Region Cluster Federation
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{

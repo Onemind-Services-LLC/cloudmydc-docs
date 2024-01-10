@@ -1,7 +1,7 @@
 ---
 title: Pricing Model Overview
 slug: pricing-model-overview
-sidebar_position: 13
+sidebar_position: 12
 ---
 
 <!-- ## Platform Usage-Based Pricing (Pay-per-Use) -->

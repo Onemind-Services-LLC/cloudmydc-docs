@@ -2,6 +2,13 @@
 title: Multiple Public IP
 slug: multiple-public-ip
 sidebar_position: 3
+description: The platform supports assigning multiple public IP addresses (of both IPv4 and IPv6 revisions) to a single container.
+keywords:
+  - Application Setting
+  - External Access To Application
+  - Multiple Public IP
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Multiple Public IP Addresses for a Single Container -->

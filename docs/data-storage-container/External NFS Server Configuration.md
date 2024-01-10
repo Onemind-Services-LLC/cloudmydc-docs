@@ -2,6 +2,12 @@
 title: External NFS Server Configuration
 slug: external-nfs-server-configuration
 sidebar_position: 6
+description: The platform allows sharing data between servers (where the files are physically located) and clients (gain access to the remote data as if it was kept locally)
+keywords:
+  - Data Storage Container
+  - External NFS Server Configuration
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## External NFS Server Configuration -->

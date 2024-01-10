@@ -2,6 +2,13 @@
 title: Payara
 slug: payara
 sidebar_position: 4
+description: Ensuring trouble-proof 24/7 service delivery is among of the most discussed areas in cloud hosting for the last few years.
+keywords:
+  - Java
+  - Java App Server
+  - Payara
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Out-of-Box GlassFish & Payara Clustering: Running Java EE Highly-Available Applications in the Cloud -->

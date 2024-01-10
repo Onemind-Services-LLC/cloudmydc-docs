@@ -2,6 +2,12 @@
 title: Python Dev Center
 slug: python-dev-center
 sidebar_position: 1
+description: The platform provides an out-of-box integration of the scalable Apache application server dedicated specially for the Python-based applications hosting.
+keywords:
+  - Python
+  - Python Dev Center
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Python Cloud Hosting -->
@@ -186,7 +192,7 @@ In addition, the platform allows switching traffic between two environments quic
 
 ## Automatic Vertical Scaling
 
-Automatic vertical scaling implemented by the platform provides the exact amount of resources (RAM and CPU) that your application currently requires. As a result, you don’t need to waste your time continuously making load-related adjustments. And in combination with the [Pay-as-You-Use](https://www.virtuozzo.com/company/blog/deceptive-cloud-efficiency-do-you-really-pay-as-you-use/) pricing model, it ensures you never overpay for unused resources.
+Automatic vertical scaling implemented by the platform provides the exact amount of resources (RAM and CPU) that your application currently requires. As a result, you don’t need to waste your time continuously making load-related adjustments. And in combination with the Pay-as-You-Use pricing model, it ensures you never overpay for unused resources.
 
 Just set the upper [cloudlets](/platform-overview/cloudlet#what-is-a-cloudlet) limit (each one equals _128 MiB_ of RAM and _400 MHz_ of CPU) for your Python application server. Everything else will be handled by the platform automatically.
 

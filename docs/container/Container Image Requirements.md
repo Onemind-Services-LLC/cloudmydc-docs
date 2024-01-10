@@ -110,7 +110,8 @@ The following Linux distributions are supported as a base of containers that cou
 
 :::danger Notes
 
-- Containers based on the **Debian 11** OS template are not supported on the platforms below the 6.0 version.
+- Containers based on the **[Ubuntu 23](/platform-overview/release-notes/release-notes-8.4#ubuntu-23-support)** OS template are supported since the 8.4.1 platform version.
+- The **[debian-12.0-x86_64](/platform-overview/release-notes/release-notes-8.4#debian-12-support)** template is supported since the 8.4.1 platform version (kernel version 3.10.0-1160.90.1.vz7.200.7, Virtuozzo Hybrid Server 7.5 Update 5 Hotfix 1).
 - The **[almalinux-8-x86_64](/platform-overview/release-notes/release-notes-8.2.4)** template is supported since the 8.2.4 platform version (kernel version 3.10.0-1160.80.1.vz7.191.4).
 - The **[almalinux-9-x86_64](/platform-overview/release-notes/release-notes-8.3#almalinux-9-base-os-image)** template is supported since the 8.3.1 platform version (kernel version 3.10.0-1160.80.1.vz7.191.4).
 

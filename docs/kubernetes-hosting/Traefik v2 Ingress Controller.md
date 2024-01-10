@@ -2,6 +2,12 @@
 title: Traefik V2 Ingress Controller
 slug: traefik-v2-ingress-controller
 sidebar_position: 6
+description: Jelastic Kubernetes cluster can be installed with NGINX, Traefik, or HAProxy ingress controllers. In this post, we will take a closer look at Traefik and its evolution in Jelastic Kubernetes Service (Jelastic KS).
+keywords:
+  - Kubernetes Hosting
+  - Traefik V2 Ingress Controller
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{

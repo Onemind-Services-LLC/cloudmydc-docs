@@ -6,8 +6,6 @@ sidebar_position: 4
 
 import obj from './Marketplace.json'
 
-<!-- ## Marketplace -->
-
 Platform Marketplace is a library of the most popular and requested applications, which are configured and optimized in the most beneficial way via the platform [Packaging Standard](/deployment-tools/cloud-scripting-&-jps/jps-overview). These packaged solutions can be installed automatically directly from the dashboard, skipping many steps of manual deployment and optimization.
 
 You can access the **Marketplace** via the appropriate button at the top-left corner of the dashboard.
@@ -273,22 +271,6 @@ For more solution examples refer to the [JPS Collection](https://github.com/jela
 [import](/environment-management/environment-export-and-import/environment-import) the appropriate manifest file via the dashboard to instantly get your solution. Also, you can explore the source code of any package, fork repository for yourself and customize it up to your particular needs before installation.
 
 :::
-
-## Subscription Products
-
-_This feature availability depends on the particular hosting provider’s settings._
-
-The **Subscription Plans** section of the Marketplace lists all the products that are offered on a subscription-based basis (i.e. for a fixed price). You can learn more in the dedicated [Subscription-Based Products](/account-and-pricing/subscription-based-products) guide.
-
-<div style={{
-    display:'flex',
-    justifyContent: 'center',
-    margin: '0 0 1rem 0'
-}}>
-
-![Locale Dropdown](./img/Marketplace/02-install-subscription-product.png)
-
-</div>
 
 ## Installing Solution from Marketplace
 

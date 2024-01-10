@@ -2,6 +2,13 @@
 title: Hasura Graphql Installation
 slug: hasura-graphql-installation
 sidebar_position: 8
+description: Hasura is an open-source engine based on the GraphQL query language for API. It allows you to create a connection, manage, and configure event triggers for the PostgreSQL database in minutes.
+keywords:
+  - Database
+  - PostgreSQL
+  - Hasura Graphql Installation
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## How to Install Hasura GraphQL Engine -->
