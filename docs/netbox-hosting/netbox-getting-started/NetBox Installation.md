@@ -34,18 +34,6 @@ Within the opened installation frame, customize the available options to get a c
 
 The default scaling strategy is set to `Low Load`, providing a conservative approach to scaling that suits most environments with regular traffic patterns.
 
-``Development Type``
-
-<div style={{
-    display:'flex',
-    justifyContent: 'center',
-    margin: '0 0 1rem 0'
-}}>
-
-![Locale Dropdown](./img/NetBoxInstallation/netbox-install-02.png)
-
-</div>
-
 ``Production Type``
 
 <div style={{
