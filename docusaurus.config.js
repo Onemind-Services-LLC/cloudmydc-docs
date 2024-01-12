@@ -43,20 +43,26 @@ const config = {
       }),
     ],
   ],
-
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,
+        indexBlog: false,
+        docsRouteBasePath: "/",
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 10,
+        searchBarPosition: "right"
+      })
+    ]
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       // customCss: [require.resolve('./src/css/custom-dark-theme.css')],
       image: "img/footer/cmdc.png",
-      algolia: {
-        apiKey: "c2220d2a3515d7d4629b7e8ef22bb78c",
-        indexName: "vishal_sir_onemindservices",
-        contextualSearch: true,
-        placeholder: "Search",
-        appId: "HU6H0HSM3W",
-      },
       metadata: [
         { name: "og:title", content: "CloudMyDc Documentation" },
         {

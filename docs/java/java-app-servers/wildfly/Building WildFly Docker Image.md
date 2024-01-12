@@ -121,7 +121,7 @@ RUN /opt/wildfly/bin/add-user.sh --user $ADMIN_USER --password $ADMIN_PASSWORD -
 RUN sed -i "s/<a href=\"\/console\">/<a href=\"\/console\" onclick=\"javascript:event.target.port=4949;event.target.protocol=\'http:\';\">/" /opt/wildfly/welcome-content/index.html
 ```
 
-11. Add the English [locale settings](application-setting/managing-locale-settings) to the container.
+11. Add the English [locale settings](/application-setting/managing-locale-settings) to the container.
 
 ```
 RUN localedef -i en_US -f UTF-8 en_US.UTF-8
@@ -188,7 +188,7 @@ You can log into the registry in advance using the corresponding docker login co
 
 ## Deploying Image at Platform
 
-As soon as your image is successfully stored at the repository, it becomes available for usage at the platform and can be added to an environment through the dedicated Docker board integrated to the [topology wizard](container/container-deployment/custom-containers-deployment) dashboard sections.
+As soon as your image is successfully stored at the repository, it becomes available for usage at the platform and can be added to an environment through the dedicated Docker board integrated to the [topology wizard](/container/container-deployment/custom-containers-deployment) dashboard sections.
 
 So, select the **New Environment** button at the top of the dashboard, move to the **_Docker_** tab within the opened environment wizard and click on the Select Image button.
 
@@ -238,7 +238,7 @@ We use the public Docker Hub repository, located within the central Registry Hub
 
 </div>
 
-Set the rest of the necessary [configurations](container/container-deployment/custom-containers-deployment) on your own (the details on the available options can be read in the linked guide) and finish the environment creation.
+Set the rest of the necessary [configurations](/container/container-deployment/custom-containers-deployment) on your own (the details on the available options can be read in the linked guide) and finish the environment creation.
 
 4. Once your environment with the appropriate image inside appears on the dashboard, it can be accessed using the corresponding **Open in Browser** button:
 
