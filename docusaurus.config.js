@@ -18,7 +18,9 @@ const config = {
   projectName: "cloudmydc-docs",
 
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenMarkdownLinks: "throw",
+  onBrokenAnchors: "throw",
+  onDuplicateRoutes: "throw",
 
   i18n: {
     defaultLocale: "en",
