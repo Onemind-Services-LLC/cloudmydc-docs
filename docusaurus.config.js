@@ -43,7 +43,20 @@ const config = {
       }),
     ],
   ],
-  plugins: ["@easyops-cn/docusaurus-search-local"],
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,
+        indexBlog: false,
+        docsRouteBasePath: "/",
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 10,
+        searchBarPosition: "right"
+      })
+    ]
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
