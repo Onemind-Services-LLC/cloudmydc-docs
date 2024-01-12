@@ -6,6 +6,16 @@ sidebar_position: 1
 
 NetBox is a comprehensive solution for network automation, blending traditional IP address management (IPAM) and datacenter infrastructure management (DCIM) with robust APIs and extensions. As an open-source tool under the Apache 2.0 license, NetBox is essential for network automation in many organizations.
 
+<div style={{
+    display:'flex',
+    justifyContent: 'center',
+    margin: '0 0 1rem 0'
+}}>
+
+![Locale Dropdown](./img/Overview/overview.png)
+
+</div>
+
 ## Key Features:
 
 - **Physical Infrastructure:** Model everything from global regions to individual racks.
