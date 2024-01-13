@@ -30,10 +30,10 @@ export default function HomepageFeatures(): JSX.Element {
       <div className="container">
         <div className={styles.home_content}>
           <h1 className={styles.home_content_heading}>
-            Welcome to the Cloudmydc PaaS Documentation
+            Welcome to the CloudMyDC PaaS Documentation
           </h1>
           <p>
-            Learn about Cloudmydc Application Platform features, supported
+            Learn about CloudMyDC Application Platform features, supported
             technologies, architecture, pricing model, and other specifics. Find
             out how to manage your accounts, create environments with
             preferrable topology and share them with the team, deploy
