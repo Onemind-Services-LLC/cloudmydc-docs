@@ -53,7 +53,6 @@ const config = {
         hashed: true,
         indexBlog: false,
         docsRouteBasePath: "/",
-        highlightSearchTermsOnTargetPage: true,
         searchResultLimits: 10,
         searchBarPosition: "right"
       })
