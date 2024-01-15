@@ -38,7 +38,7 @@ Consult the [NetBox Documentation](https://docs.netbox.dev).
 
 ## Step 5: Consult Built-in Monitoring
 
-Our built-in monitoring tools can offer insights and are detailed in the [documentation](https://github.com/application-setting/built-in-monitoring/log-files).
+Our built-in monitoring tools can offer insights and are detailed in the [documentation](/application-setting/built-in-monitoring/log-files).
 
 ## Step 6: Contact Support
 
