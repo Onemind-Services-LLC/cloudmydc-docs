@@ -1,5 +1,5 @@
 {
-  "data1": [
+  "Applications": [
     "NetBox",
     "Alfresco",
     "Ametys",
@@ -72,7 +72,7 @@
     "WordPress Standalone Kit",
     "XWiki"
   ],
-  "data2":[
+  "AddOns":[
     "Database Backup/Restore Add-On",
     "Database Cluster Recovery",
     "Database Corruption Diagnostic",

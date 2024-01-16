@@ -70,7 +70,7 @@ Within the opened section, you can find a list of categorized solutions to insta
                 padding: '20px',
             }}>
                 <ul>
-                    {obj.data1.slice(0, Math.ceil(obj.data1.length / 3)).map((item) => {
+                    {obj.Applications.slice(0, Math.ceil(obj.Applications.length / 3)).map((item) => {
                         return <li>{item}</li>
                     })}
                 </ul>
@@ -80,7 +80,7 @@ Within the opened section, you can find a list of categorized solutions to insta
                 wordBreak: 'break-all'
             }}>
                 <ul>
-                    {obj.data1.slice(Math.ceil(obj.data1.length / 3), 2*Math.ceil(obj.data1.length / 3)).map((item) => {
+                    {obj.Applications.slice(Math.ceil(obj.Applications.length / 3), 2*Math.ceil(obj.Applications.length / 3)).map((item) => {
                         return <li>{item}</li>
                     })}
                 </ul>
@@ -90,7 +90,7 @@ Within the opened section, you can find a list of categorized solutions to insta
                  padding: '20px',
             }}>
             <ul>
-                {obj.data1.slice(2*Math.ceil(obj.data1.length / 3)).map((item) => {
+                {obj.Applications.slice(2*Math.ceil(obj.Applications.length / 3)).map((item) => {
                     return <li>{item}</li>
                 })}
             </ul>
@@ -147,7 +147,7 @@ Within the opened section, you can find a list of categorized solutions to insta
                 padding: '20px',
             }}>
                 <ul>
-                    {obj.data2.slice(0, Math.ceil(obj.data2.length / 3)).map((item) => {
+                    {obj.AddOns.slice(0, Math.ceil(obj.AddOns.length / 3)).map((item) => {
                         return <li>{item}</li>
                     })}
                 </ul>
@@ -157,7 +157,7 @@ Within the opened section, you can find a list of categorized solutions to insta
                 wordBreak: 'break-all'
             }}>
                 <ul>
-                    {obj.data2.slice(Math.ceil(obj.data2.length / 3), 2*Math.ceil(obj.data2.length / 3)).map((item) => {
+                    {obj.AddOns.slice(Math.ceil(obj.AddOns.length / 3), 2*Math.ceil(obj.AddOns.length / 3)).map((item) => {
                         return <li>{item}</li>
                     })}
                 </ul>
@@ -167,7 +167,7 @@ Within the opened section, you can find a list of categorized solutions to insta
                  padding: '20px',
             }}>
                 <ul>
-                    {obj.data2.slice(2*Math.ceil(obj.data2.length / 3)).map((item) => {
+                    {obj.AddOns.slice(2*Math.ceil(obj.AddOns.length / 3)).map((item) => {
                         return <li>{item}</li>
                     })}
                 </ul>
