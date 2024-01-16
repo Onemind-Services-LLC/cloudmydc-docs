@@ -47,7 +47,7 @@ The required Node.js version can be selected when creating [a new environment](/
 
 </div>
 
-3. Next, you can select the preferred [process manager](/nodejs/nodejs-apps-specifications/process-managers#nodejs-process-managers) (_supervisor_, _forever_,_npm_ or _pm2_) through the _tags_ drop-down list (circled in the image below):
+3. Next, you can select the preferred [process manager](/nodejs/nodejs-apps-specifications/process-managers) (_supervisor_, _forever_,_npm_ or _pm2_) through the _tags_ drop-down list (circled in the image below):
 
 <div style={{
     display:'flex',
@@ -66,7 +66,7 @@ A Node.js process manager helps to control your application lifecycle, providing
 - **_forever_** - manages node processes (i.e. service start, stop, restart) to save services alive through keeping them run continuously
 - **_pm2_** - provides you with multiple special options (like monitoring, load balancing, deployment, etc.), allowing to manage your application more effectively
 
-Specify the remaining server and environment parameters (e.g. cloudlet limits, [region](/environment-management/environment-regions/choosing-a-region#environment-regions), environment name, etc.) and click the **Create** button in the bottom right frame corner.
+Specify the remaining server and environment parameters (e.g. cloudlet limits, [region](/environment-management/environment-regions/choosing-a-region), environment name, etc.) and click the **Create** button in the bottom right frame corner.
 
 ## Change Node.js Version
 
@@ -140,6 +140,6 @@ In the opened frame, select to edit your Nodejs server version or tag (i.e. clic
 
 :::tip
 
-For the detailed guidance on Node.js projects hosting, please, refer to the [Node.js Developer’s Center](/nodejs/node.js-dev-center#nodejs-hosting) guide.
+For the detailed guidance on Node.js projects hosting, please, refer to the [Node.js Developer’s Center](/nodejs/node.js-dev-center) guide.
 
 :::

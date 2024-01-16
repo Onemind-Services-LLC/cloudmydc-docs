@@ -52,7 +52,7 @@ The platform provides [certified containers](/quickstart/software-stack-versions
 
 The layers are designed to perform different actions with the same type of containers at once. For example, the nodes can be simultaneously restarted or redeployed, as well as horizontally [scaled](/application-setting/scaling-and-clustering/horizontal-scaling):
 
-- manually via [dashboard](/quickstart/dashboard-guide), platform [API](/deployment-tools/api-&-cli/api-overview#platform-api), [CLI](/deployment-tools/api-&-cli/platform-cli/platform-cli-overview)
+- manually via [dashboard](/quickstart/dashboard-guide), platform [API](/deployment-tools/api-&-cli/api-overview), [CLI](/deployment-tools/api-&-cli/platform-cli/platform-cli-overview)
 - automatically based on the [load triggers](/application-setting/scaling-and-clustering/automatic-horizontal-scaling)
 
 Also, it is possible to check the common logs and stats, or make the required configurations via file manager for all containers in a layer.

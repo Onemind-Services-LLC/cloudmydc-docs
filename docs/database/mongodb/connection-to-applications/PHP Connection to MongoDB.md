@@ -288,7 +288,7 @@ Thus, you can navigate to your DB’s admin panel for making sure everything wor
 
 The platform Developer’s Center also contains a number of more specific MongoDB guides, that may come in handy for a variety of different tasks:
 
-- configure a [Replica Set](/database/mongodb/high-availability-cluster/replica-set-manual-setup#mongodb-replication-and-automated-failover-configuration-guide) with an uneven number of MongoDB nodes to simultaneously implement the master-slave replication and automated failover
-- increase your information safety through setting [Backups Scheduling](/database/database-hosting/manual-database-backups#manual-database-backups), which may prevent data loss or minimize its consequences (through recovering) if an unexpected server failure occurs
-- use the [Remote Access](/database/mongodb/remote-access#remote-access-to-mongodb) option for operating with your database directly via the preferred client application, getting rid of the necessity to log in to our dashboard for that
-- examine how to [Import & Export Dump](/database/mongodb/dump-import-export#import-and-export-dump-files-to-mongodb) files using the inbuilt or 3d-party DB management clients for easily backing up your data
+- configure a [Replica Set](/database/mongodb/high-availability-cluster/replica-set-manual-setup) with an uneven number of MongoDB nodes to simultaneously implement the master-slave replication and automated failover
+- increase your information safety through setting [Backups Scheduling](/database/database-hosting/manual-database-backups), which may prevent data loss or minimize its consequences (through recovering) if an unexpected server failure occurs
+- use the [Remote Access](/database/mongodb/remote-access) option for operating with your database directly via the preferred client application, getting rid of the necessity to log in to our dashboard for that
+- examine how to [Import & Export Dump](/database/mongodb/dump-import-export) files using the inbuilt or 3d-party DB management clients for easily backing up your data

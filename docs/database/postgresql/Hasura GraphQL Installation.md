@@ -38,7 +38,7 @@ In this tutorial, we’ll overview two examples of the Hasura GraphQL engine ins
 
 ## Automatic Deployment with Local PostgreSQL Database
 
-1. Log in the dashboard and click **[Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace)** at the top-left corner.
+1. Log in the dashboard and click **[Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace)** at the top-left corner.
 
 <div style={{
     display:'flex',
@@ -78,11 +78,11 @@ _[https://raw.githubusercontent.com/hasura/graphql-engine/master/install-manifes
 
 :::danger Note
 
-The installation requires a [public IP](/application-setting/external-access-to-applications/public-ip#public-ip), which is a paid option available for billing users only.
+The installation requires a [public IP](/application-setting/external-access-to-applications/public-ip), which is a paid option available for billing users only.
 
 :::
 
-Configure the remaining Environment, [Display Name](/environment-management/environment-aliases), [Region](/environment-management/environment-regions/choosing-a-region#environment-regions) (if available) fields up to your needs, and click **Install**.
+Configure the remaining Environment, [Display Name](/environment-management/environment-aliases), [Region](/environment-management/environment-regions/choosing-a-region) (if available) fields up to your needs, and click **Install**.
 
 4. After a successful installation, you can access the Hasura console to ensure that everything works properly.
 
@@ -106,7 +106,7 @@ That’s it! Now, you can provide **Data** for your database via the same-named 
 
 In case you already have a database, you can connect to it with the Hasura GraphQL engine.
 
-1. Create a clean standalone **_Docker Engine CE_** via [platform Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
+1. Create a clean standalone **_Docker Engine CE_** via [platform Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace).
 
 <div style={{
     display:'flex',
@@ -118,7 +118,7 @@ In case you already have a database, you can connect to it with the Hasura Graph
 
 </div>
 
-2. After creation connect to the container via [Web SSH](/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser) and create a file with the following content (e.g. **_nano docker-run.sh_**):
+2. After creation connect to the container via [Web SSH](/deployment-tools/ssh/ssh-access/web-ssh) and create a file with the following content (e.g. **_nano docker-run.sh_**):
 
 ```bash
 docker run -d --restart=always -p 80:8080 \

@@ -124,7 +124,7 @@ Once you have your [own domain](/application-setting/domain-name-management/cust
 There are [various types of DNS records](/application-setting/domain-name-management/custom-domain-name#which-dns-record-to-use), which can be used to point to your environment:
 
 - [**_CNAME_**](https://en.wikipedia.org/wiki/CNAME_record) - maps your custom domain to environment domain (requires additional [domain binding](/application-setting/domain-name-management/custom-domain-name#how-to-bind-domain-to-environment) via the platform dashboard)
-- [**_ANAME_**](https://en.wikipedia.org/wiki/CNAME_record#ANAME_record) (if supported by your DNS server) - maps whole [root domain](/application-setting/domain-name-management/custom-domain-name#custom-domain-name) (e.g. example.com) to your environment domain or other root domain
+- [**_ANAME_**](https://en.wikipedia.org/wiki/CNAME_record#ANAME_record) (if supported by your DNS server) - maps whole [root domain](/application-setting/domain-name-management/custom-domain-name) (e.g. example.com) to your environment domain or other root domain
 - **_A Record_** - maps your custom domain to a public IP (requires external IP address attached to the environment)
 
 :::tip Note
@@ -232,7 +232,7 @@ _name1.mydomain.com > env1.hosterdomain.com_
 
 _name2.mydomain.com > env2.hosterdomain.com_
 
-- use **ANAME** if you need to redirect one DNS zone ([root domain](/application-setting/domain-name-management/custom-domain-name#custom-domain-name)) to another with all of its subdomains being resolved over the same subdomains
+- use **ANAME** if you need to redirect one DNS zone ([root domain](/application-setting/domain-name-management/custom-domain-name)) to another with all of its subdomains being resolved over the same subdomains
 
 **mydomain.com > hosterdomain.com**
 As a result, any subdomain on your domain will be pointed to the appropriate one on the service hosting provider: `{subdomain}.mydomain.com > {subdomain}.hosterdomain.com`.

@@ -28,7 +28,7 @@ The sum of these implementations ensures out-of-box high availability and failov
 
 ## Cluster Installation
 
-1. Find the **_PostgreSQL Multi-Region Cluster_** application (the **Clusters** section or use the **Search** field) in the platform [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
+1. Find the **_PostgreSQL Multi-Region Cluster_** application (the **Clusters** section or use the **Search** field) in the platform [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace).
 
 <div style={{
     display:'flex',
