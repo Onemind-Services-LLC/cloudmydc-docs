@@ -61,11 +61,11 @@ In the opened page, use credentials from the email to log in and start applying 
 
 :::tip Tip
 
-For containers without [Public IP](/application-setting/external-access-to-applications/public-ip#public-ip) address attached, the database admin console is available via https:// by default.
+For containers without [Public IP](/application-setting/external-access-to-applications/public-ip) address attached, the database admin console is available via https:// by default.
 
 :::
 
-When your database server is up and ready, you can [Connect your application to DB](/database/database-hosting/database-connection-strings#database-connection-strings).
+When your database server is up and ready, you can [Connect your application to DB](/database/database-hosting/database-connection-strings).
 
 ## Database Password Reset
 
@@ -110,7 +110,7 @@ where
 
 :::tip Note
 
-In case your hosting provider platform has several [environment regions](/environment-management/environment-regions/choosing-a-region#environment-regions) to choose, the `{hoster_domain}` value for your environment can differ from the general platform’s one.
+In case your hosting provider platform has several [environment regions](/environment-management/environment-regions/choosing-a-region) to choose, the `{hoster_domain}` value for your environment can differ from the general platform’s one.
 
 :::
 

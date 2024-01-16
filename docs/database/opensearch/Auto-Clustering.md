@@ -193,7 +193,7 @@ Select the **OpenSearch** stack at the NoSQL database section.
 
 </div>
 
-The stack is automatically configured as a cluster due to the [auto-clustering](/application-setting/scaling-and-clustering/auto-clustering-of-instances#auto-clustering-of-instances-via-topology-wizard) feature. Also, you have additional options to add the **OpenSearch Dashboards** and **Logstash** components.
+The stack is automatically configured as a cluster due to the [auto-clustering](/application-setting/scaling-and-clustering/auto-clustering-of-instances) feature. Also, you have additional options to add the **OpenSearch Dashboards** and **Logstash** components.
 
 ## OpenSearch vs Elasticsearch Performance
 

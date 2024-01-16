@@ -22,7 +22,7 @@ sidebar_position: 4
 
 In our case, both instances are hosted within a single environment.
 
-2. Connect to your application server via [SSH Gate](/deployment-tools/ssh/ssh-overview#ssh-gate-overview).
+2. Connect to your application server via [SSH Gate](/deployment-tools/ssh/ssh-overview).
 
 <div style={{
     display:'flex',
