@@ -18,7 +18,7 @@ When updating (redeploying) the PostgreSQL instance, it is <u>highly recommended
 
 Before starting the add-on installation, you need to create a dedicated storage instance to keep all the backup data.
 
-1. If you don’t have one, it can be created in a few minutes using the dedicated **Backup Storage** package in the [platform Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
+1. If you don’t have one, it can be created in a few minutes using the dedicated **Backup Storage** package in the [platform Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace).
 
 <div style={{
     display:'flex',
@@ -36,7 +36,7 @@ If you already have such storage, you can skip to the fourth step.
 
 - **Environment** – environment domain name
 - **Display Name** – [environment’s alias](/environment-management/environment-aliases)
-- **Region** – [environment’s region](/environment-management/environment-regions/choosing-a-region#environment-regions) (if multiple ones are available)
+- **Region** – [environment’s region](/environment-management/environment-regions/choosing-a-region) (if multiple ones are available)
 
 <div style={{
     display:'flex',

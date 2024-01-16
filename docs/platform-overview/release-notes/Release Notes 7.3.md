@@ -270,7 +270,7 @@ Among the applied changes, the most notable are:
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -288,7 +288,7 @@ Below you can find a number of optimizations implemented in the current 7.3 rele
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -314,7 +314,7 @@ The platform introduces support of the latest Long Term Support release for one 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -328,7 +328,7 @@ In the current 7.3 platform release, the ability to display the **Show Logs** bu
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -358,7 +358,7 @@ The UI implementation of moving public IPs will be provided in future releases.
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -377,7 +377,7 @@ Below, you can find a list of all changes to the public API in the 7.3 platform 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -496,7 +496,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -514,7 +514,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>

@@ -20,7 +20,7 @@ sidebar_position: 3
 
 </div>
 
-2. Connect your compute node via [SSH Gate](/deployment-tools/ssh/ssh-overview#ssh-gate-overview).
+2. Connect your compute node via [SSH Gate](/deployment-tools/ssh/ssh-overview).
 
 <div style={{
     display:'flex',

@@ -6,7 +6,7 @@ sidebar_position: 3
 
 <!-- ## Multi-Primary Replication for MySQL/MariaDB/Percona -->
 
-The platform lets you easily set up two different types of database replication - **primary-secondary** and **primary-primary** - in order to solve a number of different problems with performance, to support database backups, to alleviate system failures and much more. Information on how to configure a master-slave replication for your MySQL database can be found [here](/database/mysql-mariadb-percona/high-availability-cluster/manual-primary-secondary-replication#mysqlmariadbpercona-database-primary-secondary-replication).
+The platform lets you easily set up two different types of database replication - **primary-secondary** and **primary-primary** - in order to solve a number of different problems with performance, to support database backups, to alleviate system failures and much more. Information on how to configure a master-slave replication for your MySQL database can be found [here](/database/mysql-mariadb-percona/high-availability-cluster/manual-primary-secondary-replication).
 
 And in this tutorial we are going to explain how to configure the master-master (multi-master) replication in MySQL, specifically to be applied on environments. The process is rather simple, but requires you to pay attention to some important details.
 

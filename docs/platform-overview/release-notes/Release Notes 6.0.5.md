@@ -157,7 +157,7 @@ the platform’s **_[Auto-Clustering](/application-setting/scaling-and-clusterin
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -276,7 +276,7 @@ Below, you can find the fixes that were implemented in the PaaS 6.0.5 release an
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -294,7 +294,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>

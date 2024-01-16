@@ -48,7 +48,7 @@ These can be selected during a new [environment creation](/python/python-version
 
 </div>
 
-Adjust any other settings (e.g. [cloudlets limits](/application-setting/scaling-and-clustering/automatic-vertical-scaling#automatic-vertical-scaling), [public IPs](/application-setting/external-access-to-applications/public-ip#public-ip), [region](/environment-management/environment-regions/choosing-a-region#environment-regions), etc.), provide environment name and click **Create**.
+Adjust any other settings (e.g. [cloudlets limits](/application-setting/scaling-and-clustering/automatic-vertical-scaling), [public IPs](/application-setting/external-access-to-applications/public-ip), [region](/environment-management/environment-regions/choosing-a-region), etc.), provide environment name and click **Create**.
 
 ## Change Python Version
 
@@ -84,7 +84,7 @@ The version of the existing Python instances can be changed with the [container 
 
 - **Tag** - select the needed Python engine version
 - **Keep volumes data** - protect data in the volumes from erasing during redeploy
-- **Simultaneous** or **Sequential deployment with delay** (for [scaled servers](/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-inside-the-cloud-multi-node) only) - choose whether all containers within a layer should be redeployed at once or one-by-one
+- **Simultaneous** or **Sequential deployment with delay** (for [scaled servers](/application-setting/scaling-and-clustering/horizontal-scaling) only) - choose whether all containers within a layer should be redeployed at once or one-by-one
 
 <div style={{
     display:'flex',
