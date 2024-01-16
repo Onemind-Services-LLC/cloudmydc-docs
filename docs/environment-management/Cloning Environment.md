@@ -1,7 +1,13 @@
 ---
 title: Cloning Environment
 slug: cloning-environment
-sidebar_position: 4
+sidebar_position: 3
+description: Sooner or later, every developer faces the necessity to branch the application he is working on, e.g. to try out new functionality before actually implementing it into production.
+keywords:
+  - Environment Management
+  - Cloning Environment
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{

@@ -2,6 +2,14 @@
 title: Eclipse Plugin Manual
 slug: eclipse-plugin-manual
 sidebar_position: 1
+description: The most valuable about Eclipse is that it provides an open source platform for creating an extensible integrated development environment (IDE).
+keywords:
+  - Deployment Tools
+  - Plugins
+  - Eclipse Plugin
+  - Eclipse Plugin Manual
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Eclipse Plugin Overview -->

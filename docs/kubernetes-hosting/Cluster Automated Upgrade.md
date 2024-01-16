@@ -2,6 +2,12 @@
 title: Cluster Automated Upgrade
 slug: cluster-automated-upgrade
 sidebar_position: 9
+description: Flexibility, accelerated development and delivery, improved scalability and high availability are the main reasons companies are adopting Kubernetes (K8s) technology.
+keywords:
+  - Kubernetes Hosting
+  - Cluster Automated Upgrade
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{

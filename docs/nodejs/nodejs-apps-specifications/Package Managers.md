@@ -2,6 +2,13 @@
 title: Package Managers
 slug: package-managers
 sidebar_position: 1
+description: Each created Node.js application server within the platform is provisioned with out-of-box support of two main package managers for this language - Yarn and npm.
+keywords:
+  - Node.js
+  - Node.js Apps Specification
+  - Package Managers
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## NodeJS Package Managers -->
@@ -54,7 +61,7 @@ There are two ways to install necessary Node.js packages with _npm_:
 
 1. Specify required ones within the [dependencies](https://docs.npmjs.com/cli/v10/configuring-npm/package-json) section of the NodeJS **_package.json_** file, located in the root directory of your project. Such packages will be automatically downloaded and installed by npm during application server startup. Herewith, the new modules specified in the package.json file will be added after NodeJS node restart.
 
-2. Connect to the container via [SSH Gate](/deployment-tools/ssh/ssh-overview#ssh-gate-overview) and operate your packages manually with the following commands:
+2. Connect to the container via [SSH Gate](/deployment-tools/ssh/ssh-overview) and operate your packages manually with the following commands:
 
 - `npm search {package_name}` - to search for modules by name (or its part)
 - `npm install {package_name}` - to install the necessary module
@@ -66,7 +73,7 @@ There are two ways to install necessary Node.js packages with _npm_:
 
 [Yarn](https://classic.yarnpkg.com/en/) is a recently released package manager, which is already highly popular due to its speed, reliability and convenience. Yarn operates the same NodeJS **_package.json_** file as in npm, so no changes are required for the existing applications.
 
-You can use the following list of commands to work with Yarn, while connected over [SSH](/deployment-tools/ssh/ssh-overview#ssh-gate-overview):
+You can use the following list of commands to work with Yarn, while connected over [SSH](/deployment-tools/ssh/ssh-overview):
 
 - **_`yarn`_** or **_`yarn install`_** - to get all dependencies package for the project
 - **_`yarn remove {package}`_** - to remove the specified package

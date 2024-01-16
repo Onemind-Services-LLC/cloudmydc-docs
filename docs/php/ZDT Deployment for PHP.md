@@ -2,6 +2,12 @@
 title: Zdt Deployment For PHP
 slug: zdt-deployment-for-php
 sidebar_position: 5
+description: The majority of modern web-services should be accessible for users at all times.
+keywords:
+  - PHP
+  - Zdt Deployment For PHP
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Zero DownTime (ZDT) Deployment for PHP -->

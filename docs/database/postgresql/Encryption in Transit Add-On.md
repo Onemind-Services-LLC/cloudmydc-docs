@@ -16,7 +16,7 @@ The add-on can only be installed on top of the **PostgreSQL** and **Pgpool-II** 
 
 :::tip Tip
 
-The solution is also available from the [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace) or can be imported from the [repository](https://github.com/jelastic-jps/postgres-ssl-addon/tree/main) on GitHub.
+The solution is also available from the [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace) or can be imported from the [repository](https://github.com/jelastic-jps/postgres-ssl-addon/tree/main) on GitHub.
 
 :::
 
@@ -195,7 +195,7 @@ After the installation, the add-on can be found under the **Add-Ons** tab for th
 The available configuration options are straightforward:
 
 - **Re-issue certificates** – generates SSL certificates for secure connection anew (e.g. if compromised or accidentally removed)
-- **Configuration Tutorial** – opens the manual guide on _[Establishing SSL Connection to PostgreSQL](/database/postgresql/connection-to-applications/ssl-connection-to-postgresql#establishing-ssl-connection-to-postgresql-db-server)_
+- **Configuration Tutorial** – opens the manual guide on _[Establishing SSL Connection to PostgreSQL](/database/postgresql/connection-to-applications/ssl-connection-to-postgresql)_
 - **Uninstall** (in the add-on’s menu in the top-right corner) - removes the add-on, custom configs, and generated SSL certificates from the layer
 
 ## Secure Connection to PostgreSQL
@@ -204,7 +204,7 @@ The available configuration options are straightforward:
 
 :::tip Tip
 
-You can use an [endpoint](/application-setting/external-access-to-applications/endpoints#endpoints-a-direct-connection-to-the-cloud) or [public IP](/application-setting/external-access-to-applications/public-ip#public-ip) as your database entry point for external connection. Let’s check the endpoint example (to the Pgpool-II node for the cluster):
+You can use an [endpoint](/application-setting/external-access-to-applications/endpoints) or [public IP](/application-setting/external-access-to-applications/public-ip) as your database entry point for external connection. Let’s check the endpoint example (to the Pgpool-II node for the cluster):
 
 <div style={{
     display:'flex',

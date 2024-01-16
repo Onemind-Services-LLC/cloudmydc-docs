@@ -1,7 +1,7 @@
 ---
 title: Automatic Discounts
 slug: automatic-discounts
-sidebar_position: 14
+sidebar_position: 13
 ---
 
 The platform can give you automatic discounts for your resource usage depending on the amount that you consume (so higher volume usage is automatically cheaper). The availability and the level of discount depends on your chosen hosting provider and the specific resource:

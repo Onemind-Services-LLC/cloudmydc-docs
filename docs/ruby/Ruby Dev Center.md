@@ -2,6 +2,12 @@
 title: Ruby Dev Center
 slug: ruby-dev-center
 sidebar_position: 1
+description: Ruby is a popular, open source programming language with a powerful and practical, yet natural and easy to read/write syntax.
+keywords:
+  - Ruby
+  - Ruby Dev Center
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Ruby PaaS Hosting -->
@@ -74,7 +80,7 @@ All instances are [completely isolated](/platform-overview/isolated-container) a
 
 ## Ruby Application Servers
 
-The platform provides [Ruby application servers](/ruby/ruby-app-server-configuration#ruby-application-server-configuration) based on the _Apache_ and _NGINX_ software stacks. Both ones are configured to utilize the _Ruby on Rails_ framework for implementing web applications and the **Passenger** application server by default.
+The platform provides [Ruby application servers](/ruby/ruby-app-server-configuration) based on the _Apache_ and _NGINX_ software stacks. Both ones are configured to utilize the _Ruby on Rails_ framework for implementing web applications and the **Passenger** application server by default.
 
 If needed, the _NGINX Ruby_ stack can be easily configured to work with different inbuilt servers:
 
@@ -96,7 +102,7 @@ The up-to-date list of the releases available on the platform is provided via th
 
 :::
 
-You can select the required [version of Ruby](/ruby/ruby-versions#ruby-versions) via the topology wizard during the creation of a new environment, as well as adjust it for the existing instances via [container redeployment](/category/container-deployment).
+You can select the required [version of Ruby](/ruby/ruby-versions) via the topology wizard during the creation of a new environment, as well as adjust it for the existing instances via [container redeployment](/category/container-deployment).
 
 ## Ruby Application Deployment
 
@@ -137,7 +143,7 @@ Read the related documents to learn more about the deployment of the Ruby applic
 
 - [Deployment Manager](/deployment/deployment-manager)
 - [Deployment Guide](/deployment/deployment-guide)
-- [Auto-Deploy Overview](/deployment/git-&-svn-auto-deploy/auto-deploy-overview#auto-deploy-of-gitsvn-updates)
+- [Auto-Deploy Overview](/deployment/git-&-svn-auto-deploy/auto-deploy-overview)
 - [Deployment Hooks](/deployment/deployment-hooks)
 
 ## Ruby Dependency Management
@@ -146,22 +152,22 @@ All Ruby instances within the platform are provided with the [**_Bundler_**](htt
 
 Also, if needed, you can include any Ruby framework into your Gemfile (_Sinatra, Rack, therubyracer, Ramaze_, etc.) or utilize [**_Ruby on Rails_**](https://rubyonrails.org/) - one of the most popular frameworks for developing and implementing web applications, which is available by default.
 
-Refer to the [Ruby Dependency Management](/ruby/ruby-apps-specifications/dependency-management#ruby-dependency-management) documentation for additional information.
+Refer to the [Ruby Dependency Management](/ruby/ruby-apps-specifications/dependency-management) documentation for additional information.
 
 ## Ruby Post Deploy Configuration
 
 In order to automate the repetitive actions that Ruby projects need to perform after the application is deployed (e.g. _db:migrate_), a **_rake_deploy_** file (located in the root folder of the project) can be created.
 
-The file should contain a list of commands (each one from a new line) that will be executed consecutively via the [**_rake_**](https://ruby.github.io/rake/) tool after each restart of the Apache/NGINX node. After successful execution, the **_rake_deploy_** file is automatically removed. Refer to the [Ruby Post Deploy Configuration](/ruby/ruby-apps-specifications/post-deploy-configuration#ruby-post-deploy-configuration) documentation for additional information.
+The file should contain a list of commands (each one from a new line) that will be executed consecutively via the [**_rake_**](https://ruby.github.io/rake/) tool after each restart of the Apache/NGINX node. After successful execution, the **_rake_deploy_** file is automatically removed. Refer to the [Ruby Post Deploy Configuration](/ruby/ruby-apps-specifications/post-deploy-configuration) documentation for additional information.
 
 ## Domains Management
 
-You can provide a [custom domain](/application-setting/domain-name-management/custom-domain-name#custom-domain-name) name for your Ruby application to be used instead of the default one. Based on the environment topology, you should use:
+You can provide a [custom domain](/application-setting/domain-name-management/custom-domain-name) name for your Ruby application to be used instead of the default one. Based on the environment topology, you should use:
 
 - **CNAME redirect** if using _Shared Load Balancer_; is recommended for **_dev_** and **_test_** environments
 - **DNS A Record** if using _public IP_; can handle high traffic load and is suitable for **_production_** environments
 
-To switch traffic from one environment to another (e.g. to redirect customers to the newer application version without downtime), the [swap domains](/application-setting/domain-name-management/swap-domains#swap-domains) functionality should be used. It is also available as the **_SwapExtIps_** [API](https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps)/[CLI](/deployment-tools/api-&-cli/platform-cli/swap-public-ips#cli-tutorial-public-ips-external-addresses-swap) method.
+To switch traffic from one environment to another (e.g. to redirect customers to the newer application version without downtime), the [swap domains](/application-setting/domain-name-management/swap-domains#swap-domains) functionality should be used. It is also available as the **_SwapExtIps_** [API](https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps)/[CLI](/deployment-tools/api-&-cli/platform-cli/swap-public-ips) method.
 
 <div style={{
     display:'flex',
@@ -175,7 +181,7 @@ To switch traffic from one environment to another (e.g. to redirect customers to
 
 ## Automatic Vertical Scaling
 
-One of the key-features of the platform is dynamic provisioning of the exact amount of resources (RAM and CPU) required by your nodes according to the current load with no manual intervention. Just set the required [cloudlets](/platform-overview/cloudlet#what-is-a-cloudlet) limit (_128 MiB_ of RAM and _400 MHz_ of CPU each) for your Ruby application server and everything else will be handled by the platform automatically.
+One of the key-features of the platform is dynamic provisioning of the exact amount of resources (RAM and CPU) required by your nodes according to the current load with no manual intervention. Just set the required [cloudlets](/platform-overview/cloudlet) limit (_128 MiB_ of RAM and _400 MHz_ of CPU each) for your Ruby application server and everything else will be handled by the platform automatically.
 
 <div style={{
     display:'flex',
@@ -187,7 +193,7 @@ One of the key-features of the platform is dynamic provisioning of the exact amo
 
 </div>
 
-As a result, you automatically benefit on a truly user-oriented [**_Pay-per-Use_**](/account-and-pricing/pricing-model-overview#platform-usage-based-pricing-pay-per-use) charging approach and don’t need to guess or predict the incoming load. It ensures that you never overpay for unused resources and save your time because the platform eliminates the need to handle the load-related adjustments or perform architectural changes manually.
+As a result, you automatically benefit on a truly user-oriented [**_Pay-per-Use_**](/account-and-pricing/pricing-model-overview) charging approach and don’t need to guess or predict the incoming load. It ensures that you never overpay for unused resources and save your time because the platform eliminates the need to handle the load-related adjustments or perform architectural changes manually.
 
 <div style={{
     display:'flex',
@@ -199,11 +205,11 @@ As a result, you automatically benefit on a truly user-oriented [**_Pay-per-Use_
 
 </div>
 
-Refer to the [automatic vertical scaling](/application-setting/scaling-and-clustering/automatic-vertical-scaling#automatic-vertical-scaling) documentation for additional information.
+Refer to the [automatic vertical scaling](/application-setting/scaling-and-clustering/automatic-vertical-scaling) documentation for additional information.
 
 ## Manual Horizontal Scaling
 
-[Horizontal scaling](/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-inside-the-cloud-multi-node) with the platform is as simple as selecting the required number of nodes via the corresponding section in the topology wizard. Additionally, you can choose between two scaling modes:
+[Horizontal scaling](/application-setting/scaling-and-clustering/horizontal-scaling) with the platform is as simple as selecting the required number of nodes via the corresponding section in the topology wizard. Additionally, you can choose between two scaling modes:
 
 - **_Stateless_** - simultaneously creates all new nodes from the base image template
 - **_Stateful_** - sequentially copies file system of the master container into the new nodes
@@ -220,7 +226,7 @@ Refer to the [automatic vertical scaling](/application-setting/scaling-and-clust
 
 :::tip Note
 
-For the proper distribution of requests, a [load balancer](/load-balancers/load-balancing#load-balancing) instance is automatically added upon Ruby server scaling.
+For the proper distribution of requests, a [load balancer](/load-balancers/load-balancing) instance is automatically added upon Ruby server scaling.
 
 :::
 
@@ -228,7 +234,7 @@ The maximum number of the same-type servers within a single environment layer de
 
 ## Automatic Horizontal Scaling
 
-You can configure [automatic horizontal scaling](/application-setting/scaling-and-clustering/automatic-horizontal-scaling#automatic-horizontal-scaling) for your Ruby environment through tunable triggers, which monitor the changes in the nodes load and increase/decrease their number appropriately.
+You can configure [automatic horizontal scaling](/application-setting/scaling-and-clustering/automatic-horizontal-scaling) for your Ruby environment through tunable triggers, which monitor the changes in the nodes load and increase/decrease their number appropriately.
 
 The process is simple, access the environment **Settings > Monitoring > Auto Horizontal Scaling** section, choose the required layer and resource to be monitored (_CPU, RAM, Network, Disk I/O, Disk IOPS_). Set the exact condition and specifics of scaling via the intuitive UI form.
 
@@ -244,14 +250,14 @@ The process is simple, access the environment **Settings > Monitoring > Auto Hor
 
 In addition, hosting at the PaaS allows using other built-in tools and features, for example:
 
-- [Built-in](/application-setting/ssl/built-in-ssl#built-in-ssl-certificates) or [Custom SSL](/application-setting/ssl/custom-ssl#custom-ssl-certificates)
-- [Public IPv4 and IPv6](/application-setting/external-access-to-applications/public-ip#public-ip)
+- [Built-in](/application-setting/ssl/built-in-ssl) or [Custom SSL](/application-setting/ssl/custom-ssl)
+- [Public IPv4 and IPv6](/application-setting/external-access-to-applications/public-ip)
 - A wide range of complementary [software stacks](/quickstart/software-stack-versions), including SQL and NoSQL databases
-- [Container firewalls](/application-setting/external-access-to-applications/container-firewall#container-firewall-rules-management), [endpoints](/application-setting/external-access-to-applications/endpoints#endpoints-a-direct-connection-to-the-cloud) and [environment network isolation](/environment-management/environment-isolation#environment-network-isolation)
-- [User-friendly UI](/quickstart/dashboard-guide) and [SSH access](/deployment-tools/ssh/ssh-access/overview#ssh-access)
-- [Open API](/deployment-tools/api-&-cli/api-overview#platform-api) and [Cloud Scripting](https://docs.cloudscripting.com/) for automation
-- [Pay-per-use pricing model](/account-and-pricing/pricing-model-overview#platform-usage-based-pricing-pay-per-use)
-- [Collaboration for teamwork](/account-and-pricing/accounts-collaboration/collaboration-overview#account-collaboration)
-- [Multi-cloud distribution](/environment-management/environment-regions/choosing-a-region#environment-regions)
+- [Container firewalls](/application-setting/external-access-to-applications/container-firewall), [endpoints](/application-setting/external-access-to-applications/endpoints) and [environment network isolation](/environment-management/environment-isolation)
+- [User-friendly UI](/quickstart/dashboard-guide) and [SSH access](/deployment-tools/ssh/ssh-access/overview)
+- [Open API](/deployment-tools/api-&-cli/api-overview) and [Cloud Scripting](https://docs.cloudscripting.com/) for automation
+- [Pay-per-use pricing model](/account-and-pricing/pricing-model-overview)
+- [Collaboration for teamwork](/account-and-pricing/accounts-collaboration/collaboration-overview)
+- [Multi-cloud distribution](/environment-management/environment-regions/choosing-a-region)
 
 Explore Ruby hosting benefits within the platform!

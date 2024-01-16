@@ -1,7 +1,7 @@
 ---
 title: Release Notes 7.1
 slug: release-notes-7.1
-sidebar_position: 13
+sidebar_position: 14
 ---
 
 import obj from './ReleaseNotes7.1.json'
@@ -223,7 +223,7 @@ The platform already utilizes these new methods to provide proper notification a
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -249,7 +249,7 @@ The **[Clone Environment](/environment-management/cloning-environment)** is a po
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -270,7 +270,7 @@ Two new API methods were added to the **environment > node** service, implementi
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -389,7 +389,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -407,7 +407,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>

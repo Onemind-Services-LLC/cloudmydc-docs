@@ -2,6 +2,13 @@
 title: Ubuntu Vps
 slug: ubuntu-vps
 sidebar_position: 3
+description: Ubuntu appears to be one of the most popular operating systems for running virtual private servers inside the Cloud.
+keywords:
+  - Elastic VPS
+  - Elastic VPS Overview
+  - Ubuntu Vps
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Elastic Ubuntu VPS -->

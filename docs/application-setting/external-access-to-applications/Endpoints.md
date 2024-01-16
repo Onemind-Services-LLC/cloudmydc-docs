@@ -2,6 +2,13 @@
 title: Endpoints
 slug: endpoints
 sidebar_position: 5
+description: The Endpoints feature at the platform refers to the possibility of TCP/UDP ports mapping via the Shared Load Balancer, which is intended to simplify the instances' collaboration with third-party tools and resources.
+keywords:
+  - Application Setting
+  - External Access To Application
+  - EndPoints
+  - CloudMyDc
+  - Documentation
 ---
 
 import obj from './EndPoints.json'

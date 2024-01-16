@@ -2,6 +2,12 @@
 title: Two-Factor Authentication
 slug: two-factor-authentication
 sidebar_position: 6
+description: The platform allows configuring a **two-factor authentication** (2FA) to add an extra security layer for your account.
+keywords:
+  - Account And Pricing
+  - Two-Factor Authentication
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{

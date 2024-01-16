@@ -1,7 +1,7 @@
 ---
 title: Release Notes 8.2.4
 slug: release-notes-8.2.4
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 _This document is preliminary and subject to change._
@@ -117,7 +117,7 @@ Note: CloudMyDc Application Platform no longer supports the previously used _Cen
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -135,7 +135,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>

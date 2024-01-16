@@ -6,8 +6,6 @@ sidebar_position: 4
 
 import obj from './Marketplace.json'
 
-<!-- ## Marketplace -->
-
 Platform Marketplace is a library of the most popular and requested applications, which are configured and optimized in the most beneficial way via the platform [Packaging Standard](/deployment-tools/cloud-scripting-&-jps/jps-overview). These packaged solutions can be installed automatically directly from the dashboard, skipping many steps of manual deployment and optimization.
 
 You can access the **Marketplace** via the appropriate button at the top-left corner of the dashboard.
@@ -72,30 +70,9 @@ Within the opened section, you can find a list of categorized solutions to insta
                 padding: '20px',
             }}>
                 <ul>
-                <li>Alfresco</li>
-                <li>Ametys</li>
-                <li>Auto-Scalable Couchbase CE Cluster</li>
-                <li>Auto-Scalable GlassFish Cluster</li>
-                <li>Auto-Scalable Magento Cluster v2</li>
-                <li>Auto-Scalable Spring Boot Cluster</li>
-                <li>Backup Storage</li>
-                <li>Cyclos 4 PRO</li>
-                <li>DevOps Lab - GitLab Server</li>
-                <li>DjangoCMS</li>
-                <li>Docker Engine CE</li>
-                <li>Docker Swarm Cluster</li>
-                <li>DokuWiki</li>
-                <li>DropWizard Fat Jar Builder</li>
-                <li>Drupal</li>
-                <li>Eclipse Che</li>
-                <li>Eclipse Mosquitto</li>
-                <li>Eclipse Vert.x Fat Jar Builder</li>
-                <li>Eclipse Vert.x Thin Jar Builder</li>
-                <li>Ghost</li>
-                <li>Gitblit</li>
-                <li>IOTA Node</li>
-                <li>Jenkins DevOps Pack</li>
-                <li>Jira Software</li>
+                    {obj.Applications.slice(0, Math.ceil(obj.Applications.length / 3)).map((item) => {
+                        return <li>{item}</li>
+                    })}
                 </ul>
             </div>
             <div style={{
@@ -103,60 +80,20 @@ Within the opened section, you can find a list of categorized solutions to insta
                 wordBreak: 'break-all'
             }}>
                 <ul>
-  <li>Jitsi Video Conferencing</li>
-  <li>Joomla</li>
-  <li>Kubernetes Cluster</li>
-  <li>Laravel</li>
-  <li>Liferay</li>
-  <li>LimeSurvey</li>
-  <li>Magento Standalone</li>
-  <li>Magnolia CMS</li>
-  <li>Maian Cart</li>
-  <li>MariaDB Multi-Region Cluster</li>
-  <li>MariaDB Multi-Region Galera Cluster</li>
-  <li>Mattermost Chat Service</li>
-  <li>Minio Cluster</li>
-  <li>MODX</li>
-  <li>MongoDB Replica Set</li>
-  <li>Moodle</li>
-  <li>Multi-Region Redis Cluster</li>
-  <li>Multi-Region WordPress Cluster v1 (Alpha)</li>
-  <li>Multi-Region WordPress Standalone</li>
-  <li>MySQL/MariaDB/Percona Cluster</li>
-  <li>Nexus Repository Manager</li>
-  <li>Node-RED Dev</li>
-  <li>Odoo Community Edition</li>
-</ul>
+                    {obj.Applications.slice(Math.ceil(obj.Applications.length / 3), 2*Math.ceil(obj.Applications.length / 3)).map((item) => {
+                        return <li>{item}</li>
+                    })}
+                </ul>
             </div>
             <div style={{
                 wordBreak: 'break-all',
                  padding: '20px',
             }}>
             <ul>
-  <li>Open Liberty in Kubernetes</li>
-  <li>OpenCart</li>
-  <li>OpenCMS</li>
-  <li>OpenVPN Access Server</li>
-  <li>osTicket</li>
-  <li>ownCloud</li>
-  <li>Plesk Hosting Platform</li>
-  <li>PostgreSQL Multi-Region Cluster</li>
-  <li>PostgreSQL Primary-Secondary Cluster</li>
-  <li>PrestaShop</li>
-  <li>qdPM</li>
-  <li>Redis Cluster</li>
-  <li>Redmine</li>
-  <li>Spring Boot Fat Jar Builder</li>
-  <li>Spring Boot Thin Jar Builder</li>
-  <li>Tomcat/TomEE Cluster with High Availability</li>
-  <li>Traffic Distributor</li>
-  <li>WebMail Lite</li>
-  <li>WildFly Continuous Deployment</li>
-  <li>WildFly Managed Domain Cluster</li>
-  <li>WordPress Cluster Kit v2</li>
-  <li>WordPress Standalone Kit</li>
-  <li>XWiki</li>
-</ul>
+                {obj.Applications.slice(2*Math.ceil(obj.Applications.length / 3)).map((item) => {
+                    return <li>{item}</li>
+                })}
+            </ul>
             </div>
         </div>
     </div>
@@ -209,37 +146,31 @@ Within the opened section, you can find a list of categorized solutions to insta
                 wordBreak: 'break-all',
                 padding: '20px',
             }}>
-            <ul>
-  <li>Database Backup/Restore Add-On</li>
-  <li>Database Cluster Recovery</li>
-  <li>Database Corruption Diagnostic</li>
-  <li>Env Start/Stop Scheduler</li>
-  <li>File Synchronization</li>
-  <li>Git-Push-Deploy Add-On</li>
-</ul>
+                <ul>
+                    {obj.AddOns.slice(0, Math.ceil(obj.AddOns.length / 3)).map((item) => {
+                        return <li>{item}</li>
+                    })}
+                </ul>
             </div>
             <div style={{
                 padding: '20px',
                 wordBreak: 'break-all'
-            }}><ul>
-  <li>HTTP/3 Premium CDN*</li>
-  <li>ionCube Add-On</li>
-  <li>Let's Encrypt Free SSL</li>
-  <li>Load Alerts to Slack (BETA)</li>
-  <li>MySQL-based SSL/TLS Encrypted Connection (MySQL/MariaDB/Percona)</li>
-  <li>New Relic APM</li>
-</ul>
+            }}>
+                <ul>
+                    {obj.AddOns.slice(Math.ceil(obj.AddOns.length / 3), 2*Math.ceil(obj.AddOns.length / 3)).map((item) => {
+                        return <li>{item}</li>
+                    })}
+                </ul>
             </div>
             <div style={{
                 wordBreak: 'break-all',
                  padding: '20px',
-            }}><ul>
-  <li>NGINX Amplify</li>
-  <li>Postgres SSL/TLS Encrypted Connection</li>
-  <li>Redis Encrypted Connection</li>
-  <li>TimeZone Change</li>
-  <li>WordPress Backup/Restore for the filesystem and the databases</li>
-</ul>
+            }}>
+                <ul>
+                    {obj.AddOns.slice(2*Math.ceil(obj.AddOns.length / 3)).map((item) => {
+                        return <li>{item}</li>
+                    })}
+                </ul>
             </div>
         </div>
     </div>
@@ -273,22 +204,6 @@ For more solution examples refer to the [JPS Collection](https://github.com/jela
 [import](/environment-management/environment-export-and-import/environment-import) the appropriate manifest file via the dashboard to instantly get your solution. Also, you can explore the source code of any package, fork repository for yourself and customize it up to your particular needs before installation.
 
 :::
-
-## Subscription Products
-
-_This feature availability depends on the particular hosting provider’s settings._
-
-The **Subscription Plans** section of the Marketplace lists all the products that are offered on a subscription-based basis (i.e. for a fixed price). You can learn more in the dedicated [Subscription-Based Products](/account-and-pricing/subscription-based-products) guide.
-
-<div style={{
-    display:'flex',
-    justifyContent: 'center',
-    margin: '0 0 1rem 0'
-}}>
-
-![Locale Dropdown](./img/Marketplace/02-install-subscription-product.png)
-
-</div>
 
 ## Installing Solution from Marketplace
 
@@ -351,7 +266,7 @@ Click **Install** to continue.
 You can track the JPS package installation process in detail via the Cloud Scripting console. While logged into your dashboard account, add the **_/console_** suffix to URL:
 
 ```bash
-https://app.platformDomain/console
+https://app.xapp.cloudmydc.com/console
 ```
 
 <div style={{

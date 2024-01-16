@@ -2,6 +2,13 @@
 title: gTLD + IDN Domain Names Support
 slug: gtld-+-idn-domain-names-support
 sidebar_position: 7
+description: Many efforts were involved in the Internet community to make domain names available in many languages other than those based on the Latin script.
+keywords:
+  - Application Setting
+  - Domain Name Management
+  - gTLD + IDN Domain Names Support
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## gTLD + IDN Domain Names Support -->

@@ -1,7 +1,7 @@
 ---
 title: Release Notes 6.1
 slug: release-notes-6.1
-sidebar_position: 24
+sidebar_position: 25
 ---
 
 import obj from './ReleaseNotes6.1.json'
@@ -369,7 +369,7 @@ Other adjustments of the topology wizard include:
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -406,7 +406,7 @@ You can learn more about the [architecture implementation](https://docs.gluster.
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -442,7 +442,7 @@ Additionally, the **[swap domains](/application-setting/domain-name-management/s
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -460,7 +460,7 @@ Also, when redeploying to the same tag, the platform won’t overwrite the exist
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -474,7 +474,7 @@ Starting with the PaaS 6.1 release, file permissions for containers after an env
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -488,7 +488,7 @@ In order to allow a straightforward use of the Java keytool utility, a small adj
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -502,7 +502,7 @@ JEM (Jelastic Environment Manager) is a platform component responsible for all o
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -520,7 +520,7 @@ Additionally, a new trigger condition was added for the onBeforeInit event. For 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -536,7 +536,7 @@ D**ebian 8 “Jessie”** software stack [LTS support](https://wiki.debian.org/L
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -550,7 +550,7 @@ In the current 6.1 platform version, error notifications for the failed VCS depl
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -669,7 +669,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -687,7 +687,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -806,7 +806,7 @@ In the table below, you can see the list of bug fixes applied to the platform st
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>

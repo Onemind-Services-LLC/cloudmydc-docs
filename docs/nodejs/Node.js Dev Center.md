@@ -20,7 +20,7 @@ The platform provides an out-of-box integration of the fast, lightweight and hig
 
 Use the table of content below to find required information within the guide quicker:
 
-- [Node.js Environment Hosting](/nodejs/node.js-dev-center#nodejs-hosting)
+- [Node.js Environment Hosting](/nodejs/node.js-dev-center)
 - [Node.js Versioning](/nodejs/node.js-dev-center#nodejs-versioning)
 - [Node.js Application Deployment](/nodejs/node.js-dev-center#nodejs-application-deployment)
 - [Node.js Package Managers](/nodejs/node.js-dev-center#nodejs-package-managers)
@@ -75,7 +75,7 @@ The up-to-date list of the releases available on the platform is provided via th
 
 </div>
 
-You can select the required [version of Node.js](/nodejs/node.js-versions#nodejs-versions) directly from the topology wizard during the creation of a new environment and adjust it for the existing one via [container redeployment](/category/container-deployment).
+You can select the required [version of Node.js](/nodejs/node.js-versions) directly from the topology wizard during the creation of a new environment and adjust it for the existing one via [container redeployment](/category/container-deployment).
 
 ## Node.js Application Deployment
 
@@ -109,7 +109,7 @@ You can read the appropriate documents to learn more about the deployment of the
 
 ## Node.js Package Managers
 
-For greater convenience, each NodeJS application server contains a built-in development tool called [**Package Manager**](/nodejs/nodejs-apps-specifications/process-managers#nodejs-package-managers), which provides standardization and automation of the installation, update, configuration, and removal processes.
+For greater convenience, each NodeJS application server contains a built-in development tool called [**Package Manager**](/nodejs/nodejs-apps-specifications/process-managers), which provides standardization and automation of the installation, update, configuration, and removal processes.
 
 The platform supports two types of package managers:
 
@@ -130,7 +130,7 @@ By default, the npm package manager is used for the NodeJS application servers, 
 
 ## Node.js Process Managers
 
-[**Process Managers**](/nodejs/nodejs-apps-specifications/process-managers#nodejs-process-managers) provide the ability to control application lifecycle, monitor running services and maintain the project operability. The platform provides support of the following process managers for the NodeJS stack:
+[**Process Managers**](/nodejs/nodejs-apps-specifications/process-managers) provide the ability to control application lifecycle, monitor running services and maintain the project operability. The platform provides support of the following process managers for the NodeJS stack:
 
 - [**_npm_**](https://docs.npmjs.com/cli/v8/commands/npm-run-script) - provides the ability to start the application
 - [**_pm2_**](https://pm2.keymetrics.io/) - provides a huge variety of application management features, including the launched Node.js processes monitoring
@@ -141,12 +141,12 @@ Users can choose the necessary process manager during container [redeployment](/
 
 ## Domains Management
 
-Your Node.js application can be easily supplemented with the [custom domain](/application-setting/domain-name-management/custom-domain-name#custom-domain-name) name to be used instead of the default one. There are two options based on your environment topology:
+Your Node.js application can be easily supplemented with the [custom domain](/application-setting/domain-name-management/custom-domain-name) name to be used instead of the default one. There are two options based on your environment topology:
 
 - **CNAME redirect** if using Shared Load Balancer; is recommended for **_dev_** and **_test_** environments
 - **DNS A Record** if using Public IP; can handle high traffic load and is suitable for **_production_** environments
 
-Also, you can quickly switch traffic between your environments (e.g. to redirect customers to the newer application version without downtime) by utilizing the [swap domains](/application-setting/domain-name-management/swap-domains#swap-domains) functionality or with the help of the **_SwapExtIps_** [API](https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps)/[CLI](/deployment-tools/api-&-cli/platform-cli/swap-public-ips#cli-tutorial-public-ips-external-addresses-swap) method.
+Also, you can quickly switch traffic between your environments (e.g. to redirect customers to the newer application version without downtime) by utilizing the [swap domains](/application-setting/domain-name-management/swap-domains#swap-domains) functionality or with the help of the **_SwapExtIps_** [API](https://docs.jelastic.com/api/#!/api/environment.Binder-method-SwapExtIps)/[CLI](/deployment-tools/api-&-cli/platform-cli/swap-public-ips) method.
 
 <div style={{
     display:'flex',
@@ -162,7 +162,7 @@ Also, you can quickly switch traffic between your environments (e.g. to redirect
 
 The platform dynamically provides the exact amount of resources (RAM and CPU) required by your nodes according to the current load with no manual intervention required. As a result, you never overpay for unused resources and save your time as the platform eliminates the need to handle the load-related adjustments or architectural changes.
 
-You just need to set the upper [cloudlets](/platform-overview/cloudlet#what-is-a-cloudlet) limit (each one equals to _128 MiB_ of RAM and _400 MHz_ of CPU) for your NodeJS application server and everything else will be handled by platform automatically.
+You just need to set the upper [cloudlets](/platform-overview/cloudlet) limit (each one equals to _128 MiB_ of RAM and _400 MHz_ of CPU) for your NodeJS application server and everything else will be handled by platform automatically.
 
 <div style={{
     display:'flex',
@@ -174,7 +174,7 @@ You just need to set the upper [cloudlets](/platform-overview/cloudlet#what-is-a
 
 </div>
 
-Refer to the [automatic vertical scaling](/application-setting/scaling-and-clustering/automatic-vertical-scaling#automatic-vertical-scaling) documentation for more information.
+Refer to the [automatic vertical scaling](/application-setting/scaling-and-clustering/automatic-vertical-scaling) documentation for more information.
 
 ## Manual Horizontal Scaling
 
@@ -195,7 +195,7 @@ To scale out/in NodeJS application servers, you need to access the topology wiza
 
 The maximum number of the same-type servers within a single environment layer depends on a particular hosting provider settings (usually this limit stands for 16 nodes and can be enlarged by sending the appropriate request to support).
 
-Also, for the proper requests distribution, a [load balancer](/load-balancers/load-balancing#load-balancing) instance is automatically added upon NodeJS server scaling. Refer to the [horizontal scaling](/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-inside-the-cloud-multi-node) documentation for more details.
+Also, for the proper requests distribution, a [load balancer](/load-balancers/load-balancing) instance is automatically added upon NodeJS server scaling. Refer to the [horizontal scaling](/application-setting/scaling-and-clustering/horizontal-scaling) documentation for more details.
 
 ## Automatic Horizontal Scaling
 
@@ -211,7 +211,7 @@ Access the environment **Settings > Monitoring > Auto Horizontal** Scaling secti
 
 </div>
 
-Learn more about [automatic horizontal scaling](/application-setting/scaling-and-clustering/automatic-horizontal-scaling#automatic-horizontal-scaling) in the linked document.
+Learn more about [automatic horizontal scaling](/application-setting/scaling-and-clustering/automatic-horizontal-scaling) in the linked document.
 
 In addition, hosting at the platform allows using other inbuilt tools and features, for example:
 

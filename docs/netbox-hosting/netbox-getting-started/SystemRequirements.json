@@ -1,0 +1,29 @@
+{
+  "data1": [
+    {
+      "Resource": "NetBox Cloudlets",
+      "Development": 8,
+      "Production": "2 x 16"
+    },
+    {
+      "Resource": "Worker Cloudlets",
+      "Development": 8,
+      "Production": 8
+    },
+    {
+      "Resource": "Postgresql Cloudlets",
+      "Development": 32,
+      "Production": "2 x 16"
+    },
+    {
+      "Resource": "Redis Cloudlets",
+      "Development": 8,
+      "Production": 8
+    },
+    {
+      "Resource": "NGINX Cloudlets",
+      "Development": 8,
+      "Production": 8
+    }
+  ]
+}

@@ -2,6 +2,12 @@
 title: Personal Access Tokens
 slug: personal-access-tokens
 sidebar_position: 8
+description: Personal Access Tokens are an alternative approach to authenticate API requests in the platform, which, in comparison to the default session-based method, provides greater versatility and reliability.
+keywords:
+  - Account And Pricing
+  - Personal Access Tokens
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{
@@ -152,12 +158,11 @@ The usage of access tokens majorly simplifies API requests authentication, as it
 For example, you can [stop an environment](https://docs.jelastic.com/api/#!/api/environment.Control-method-StopEnv) by entering the following URL into a browser:
 
 ```bash
-https://app.${platformDomain}/1.0/environment/control/rest/stopenv?envName=${envName}&session=${token}
+https://app.xapp.cloudmydc.com/1.0/environment/control/rest/stopenv?envName=${envName}&session=${token}
 ```
 
 Here:
 
-- `${platformDomain}` - platform URL (domain name)
 - `${envName}` - name of the target environment (e.g. _my-project_)
 - `${token}` - value of the token (ensure it has a permission for the called operation)
 

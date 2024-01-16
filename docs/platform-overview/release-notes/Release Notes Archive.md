@@ -1,7 +1,7 @@
 ---
 title: Release Notes Archive
 slug: release-notes-archive
-sidebar_position: 32
+sidebar_position: 33
 ---
 
 ## CloudMyDc Application Platform 5.x

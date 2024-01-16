@@ -52,7 +52,7 @@ The platform provides [certified containers](/quickstart/software-stack-versions
 
 The layers are designed to perform different actions with the same type of containers at once. For example, the nodes can be simultaneously restarted or redeployed, as well as horizontally [scaled](/application-setting/scaling-and-clustering/horizontal-scaling):
 
-- manually via [dashboard](/quickstart/dashboard-guide), platform [API](/deployment-tools/api-&-cli/api-overview#platform-api), [CLI](/deployment-tools/api-&-cli/platform-cli/platform-cli-overview)
+- manually via [dashboard](/quickstart/dashboard-guide), platform [API](/deployment-tools/api-&-cli/api-overview), [CLI](/deployment-tools/api-&-cli/platform-cli/platform-cli-overview)
 - automatically based on the [load triggers](/application-setting/scaling-and-clustering/automatic-horizontal-scaling)
 
 Also, it is possible to check the common logs and stats, or make the required configurations via file manager for all containers in a layer.
@@ -112,11 +112,3 @@ The **Platform** is a group of [environment regions](/platform-overview/basics-&
 ![Locale Dropdown](./img/BasicsTerminology/09-platform-orchestrator-environment-regions.png)
 
 As a result, you get a multi-data center or even multi-cloud solution for running your applications within a single panel. Moreover, each Platform is maintained by a separate hosting service provider with its local support team.
-
-## Cloud Union
-
-The platform has a unique business model of distributing its cloud product globally through hosting providers that form our **Cloud Union**. There is a rich choice of the platform vendors regulated by local government and laws. In other words, our hosting partners speak your language and understand your specific needs.
-
-![Locale Dropdown](./img/BasicsTerminology/10-cloud-union-paas-hosting-providers.png)
-
-Cloud Union already includes [100 data centres](https://cloudmydc.com/) available in 38 countries (more than offered by cloud giants). This partner community provides the freedom of choice, while hosting your application with no vendor lock-in and no compromise on data centre location, support level, performance or pricing.

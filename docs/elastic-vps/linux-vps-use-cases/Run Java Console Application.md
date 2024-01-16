@@ -10,7 +10,7 @@ In the current tutorial we’ll overview how to install a sample of Java console
 
 - [install Java](/elastic-vps/linux-vps-use-cases/run-java-console-application#install-java-to-vps)
 - [upload application](/elastic-vps/linux-vps-use-cases/run-java-console-application#upload-application-to-vps)
-- [access application via SSH](/elastic-vps/linux-vps-use-cases/run-java-console-application#a%D1%81%D1%81ess-application-via-ssh)
+- [access application via SSH](/elastic-vps/linux-vps-use-cases/run-java-console-application)
 - [check app operability](/elastic-vps/linux-vps-use-cases/run-java-console-application#check-application-operability)
 
 ## Install Java to VPS

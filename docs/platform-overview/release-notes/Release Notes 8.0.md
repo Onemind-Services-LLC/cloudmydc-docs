@@ -1,7 +1,7 @@
 ---
 title: Release Notes 8.0
 slug: release-notes-8.0
-sidebar_position: 9
+sidebar_position: 10
 ---
 
 import obj from './ReleaseNotes8.0.json'
@@ -147,7 +147,7 @@ However, some performance issues were detected with the latest AutoFS versions. 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -239,7 +239,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
                 wordBreak: 'break-all',
                 padding: '20px',
             }}>
-                <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+                <a href="/platform-overview/release-notes/release-notes-8.3">
                     {item.JE}
                 </a>
             </div>
@@ -268,7 +268,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -286,7 +286,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>

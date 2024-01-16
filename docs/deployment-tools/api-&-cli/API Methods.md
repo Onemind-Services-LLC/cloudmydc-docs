@@ -2,6 +2,13 @@
 title: Api Methods
 slug: api-methods
 sidebar_position: 2
+description: Api Methods are Public API for Developers & Private API for Cluster Admins
+keywords:
+  - Deployment Tools
+  - Api & Cli
+  - Api Methods
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{
@@ -55,8 +62,8 @@ sidebar_position: 2
 ![Locale Dropdown](./img/APIMethods/Paas_icon-02.svg)
 
 </div>
-        <h3>Public API for Developers</h3>
-        <p>Lets manage hosted environments and automate applications lifecycle within the platform. Using these API methods, you can create new workloads, deploy applications, automatically perform tasks available via CloudMyDc Application Platform dashboard.</p>
+        <h3>Private API for Cluster Admins</h3>
+        <p>Gives full platform access, which allows managing every aspect of the cloud hosting. Only cluster admins can perform sensitive methods that can potentially influence the whole installation (e.g. billing, security, infrastructure and accounts management).</p>
     </div>
 </a>
 

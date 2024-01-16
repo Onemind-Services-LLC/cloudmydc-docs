@@ -2,6 +2,13 @@
 title: Process Managers
 slug: process-managers
 sidebar_position: 2
+description: Node.js process manager is a tool, which provides an ability to control application lifecycle, monitor the running services and facilitate common system admin tasks to maintain your project operability.
+keywords:
+  - Node.js
+  - Node.js Apps Specification
+  - Process Managers
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## NodeJS Process Managers -->
@@ -64,7 +71,7 @@ Below, we’ll consider each of the available managers to help you select one:
 
 ## Process Manager (npm)
 
-Alongside [package management](/nodejs/nodejs-apps-specifications/process-managers#nodejs-package-managers), the NPM provides the ability to start the application. The “n*pm start*” (which is the “_npm run start_” alias) is performed if **NPM** is chosen as a value for the **_PROCESS_MANAGER_** variable on the NodeJS container. As a result, the script defined in _“start”_ of **_package.json_** is launched.
+Alongside [package management](/nodejs/nodejs-apps-specifications/process-managers), the NPM provides the ability to start the application. The “n*pm start*” (which is the “_npm run start_” alias) is performed if **NPM** is chosen as a value for the **_PROCESS_MANAGER_** variable on the NodeJS container. As a result, the script defined in _“start”_ of **_package.json_** is launched.
 
 Refer to the [official documentation](https://docs.npmjs.com/cli/v8/commands/npm-run-script) for additional information.
 
@@ -110,7 +117,7 @@ Also, PM2 provides users the ability to create the configuration files where all
 
 :::tip Note
 
-By default, the supervisor process manager monitors file changes in the application directory and, if any, automatically restarts NodeJS. Herewith, during the VCS deployment (including [auto-deploy](/deployment/git-&-svn-auto-deploy/auto-deploy-overview#auto-deploy-of-gitsvn-updates)), your application server will be restarted even if there are no project changes (due to modification of the **.git** folder).
+By default, the supervisor process manager monitors file changes in the application directory and, if any, automatically restarts NodeJS. Herewith, during the VCS deployment (including [auto-deploy](/deployment/git-&-svn-auto-deploy/auto-deploy-overview)), your application server will be restarted even if there are no project changes (due to modification of the **.git** folder).
 
 To avoid the unnecessary restarts, you can disable file changes monitoring by adding the -i parameter into the **_PROCESS_MANAGER_OPTS_** [variable](/environment-management/environment-variables/environment-variables).
 
@@ -180,6 +187,6 @@ where:
 
 - **uid** - sets unique name for your app
 - **append** - selects if logs should be supplemented (_true_) or overwritten (_false_)
-- **watch** - allows enabling or disabling automatic restart of a child process upon the appropriate application code changes; set to _“false”_, if you want to avoid unexpected restart after deployment from VCS (including [auto-deploy](/deployment/git-&-svn-auto-deploy/auto-deploy-overview#auto-deploy-of-gitsvn-updates/))
+- **watch** - allows enabling or disabling automatic restart of a child process upon the appropriate application code changes; set to _“false”_, if you want to avoid unexpected restart after deployment from VCS (including [auto-deploy](/deployment/git-&-svn-auto-deploy/auto-deploy-overview/))
 - **script** - defines a name of the executable **_.js_** file
 - **sourceDir** - provides an absolute path to the specified script

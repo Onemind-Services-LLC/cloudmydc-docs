@@ -6,7 +6,7 @@ sidebar_position: 5
 
 <!-- ## Database Cluster Recovery Add-On -->
 
-The platform has several popular out-of-box clustering options for the MariaDB/MySQL databases, which can be automatically implemented via the [auto-clustering](/application-setting/scaling-and-clustering/auto-clustering-of-instances#auto-clustering-of-instances-via-topology-wizard) feature. Such database clusters offer an advanced high availability and auto-scalability while remaining accessible to any user through automation.
+The platform has several popular out-of-box clustering options for the MariaDB/MySQL databases, which can be automatically implemented via the [auto-clustering](/application-setting/scaling-and-clustering/auto-clustering-of-instances) feature. Such database clusters offer an advanced high availability and auto-scalability while remaining accessible to any user through automation.
 
 In order to make the solution even more alluring, the platform offers a free diagnostic and recovery add-on to help with database maintenance. Currently, the **Database Cluster Recovery** add-on supports the following database clusters:
 
@@ -121,7 +121,7 @@ In case some problems are discovered, you can try to resolve them automatically 
 
 :::danger Note
 
-We recommend [making a backup](/database/database-hosting/manual-database-backups#manual-database-backups) of the database before the recovery.
+We recommend [making a backup](/database/database-hosting/manual-database-backups) of the database before the recovery.
 
 :::
 
@@ -135,4 +135,4 @@ We recommend [making a backup](/database/database-hosting/manual-database-backup
 
 </div>
 
-For additional details or in case of recovery failure, you can check the **_db_recovery_** [log](/application-setting/built-in-monitoring/log-files#view-log-files) mentioned above. Also, check the **[Manual Recovery](https://github.com/jelastic-jps/mysql-cluster/blob/master/addons/recovery/docs/ManualRecoveryGuide.md#configuration-file-restoration)** guide if the problem is not resolved.
+For additional details or in case of recovery failure, you can check the **_db_recovery_** [log](/application-setting/built-in-monitoring/log-files) mentioned above. Also, check the **[Manual Recovery](https://github.com/jelastic-jps/mysql-cluster/blob/master/addons/recovery/docs/ManualRecoveryGuide.md#configuration-file-restoration)** guide if the problem is not resolved.

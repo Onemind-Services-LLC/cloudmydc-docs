@@ -2,6 +2,13 @@
 title: Debian Vps
 slug: debian-vps
 sidebar_position: 4
+description: Debian VPS logoDebian is a free operating system that commits to the principles of open-source software and offers a continually developing solution with flexible, secure, and versatile performance capabilities.
+keywords:
+  - Elastic VPS
+  - Elastic VPS Overview
+  - Debian Vps
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Elastic Debian VPS -->

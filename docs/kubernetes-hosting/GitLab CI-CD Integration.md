@@ -2,6 +2,12 @@
 title: Gitlab Ci-Cd Integration
 slug: gitlab-ci-cd-integration
 sidebar_position: 10
+description: In the article “Private GitLab Server Automatic Installation with Jelastic PaaS” we looked at the GitLab installation, its initial setup, and the basics required for the project’s lifecycle (git project importing and docker registry accessing).
+keywords:
+  - Kubernetes Hosting
+  - Gitlab Ci-Cd Integration
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{

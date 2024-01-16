@@ -2,6 +2,13 @@
 title: Wagtail CMS
 slug: wagtail-cms
 sidebar_position: 2
+description: Wagtail CMS (content management system) is a simple and agile Django-powered CMS, which offers a convenient and intuitive interface for editors to create and structure website content.
+keywords:
+  - Python
+  - Python Dev Center
+  - Wagtail CMS
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## Deploy Wagtail Python-Based CMS into Jelastic PaaS -->
@@ -12,7 +19,16 @@ sidebar_position: 2
 }}>
 <div>
 
+<div style={{
+    display:'flex',
+    justifyContent: 'center',
+    margin: '0 0 1rem 0',
+    height: "100%"
+}}>
+
 ![Locale Dropdown](./img/WagtailCMS/wagtail-logo-e1539242515373.png)
+
+</div>
 
 </div>
 

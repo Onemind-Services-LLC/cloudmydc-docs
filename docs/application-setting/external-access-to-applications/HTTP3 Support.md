@@ -2,6 +2,13 @@
 title: Http3 Support
 slug: http3-support
 sidebar_position: 6
+description: HTTP/3 (formerly known as “HTTP over QUIC") is the to-become third major version of the Hypertext Transfer Protocol family.
+keywords:
+  - Application Setting
+  - External Access To Application
+  - HTTP3 Support
+  - CloudMyDc
+  - Documentation
 ---
 
 <!-- ## HTTP/3 (QUIC) Support -->

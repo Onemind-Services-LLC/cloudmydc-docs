@@ -1,7 +1,7 @@
 ---
 title: Release Notes 6.1.2
 slug: release-notes-6.1.2
-sidebar_position: 23
+sidebar_position: 24
 ---
 
 import obj from './ReleaseNotes6.1.2.json'
@@ -174,7 +174,7 @@ The platform implements support for the **Ubuntu 21** OS templates on all the Pa
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -188,7 +188,7 @@ Due to a recent [security update](https://github.blog/2020-12-15-token-authentic
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -309,7 +309,7 @@ Below, you can find the fixes that were implemented in the PaaS 6.1.2 release an
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -327,7 +327,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>

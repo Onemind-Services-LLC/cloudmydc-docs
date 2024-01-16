@@ -2,9 +2,15 @@
 title: Windows Remote Desktop Access
 slug: windows-rd-access
 sidebar_position: 4
+description: All the Windows-based nodes at the platform provide the embedded Remote Desktop Protocol support, which allows you to connect to the virtual desktop of your Windows machine and perform any required server configurations through it.
+keywords:
+  - Elastic VPS
+  - Elastic VPS Management
+  - Windows Remote Desktop Access
+  - CloudMyDc
+  - Documentation
 ---
 
-<!-- ## Windows Remote Desktop Access -->
 
 <div style={{
     display: 'grid',

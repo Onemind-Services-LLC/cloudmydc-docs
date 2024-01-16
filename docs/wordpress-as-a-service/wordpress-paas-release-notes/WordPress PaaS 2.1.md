@@ -2,6 +2,13 @@
 title: WordPress Paas 2.1
 slug: wordpress-paas-2.1
 sidebar_position: 1
+description: Several improvements to the subscription management were implemented in the current 2.1 release to ensure the best experience for the customers.
+keywords:
+  - WordPress As A Service
+  - WordPress PaaS Release Notes
+  - WordPress Paas 2.1
+  - CloudMyDc
+  - Documentation
 ---
 
 <div style={{
@@ -185,7 +192,7 @@ Another major new feature is the ability to switch subscription plans within the
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -213,7 +220,7 @@ You can find this new feature by selecting a specific project and navigating to 
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -246,7 +253,7 @@ In the current 2.1 platform release, a new **User Information** section was adde
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
@@ -272,7 +279,7 @@ Additionally, if the project has another admin panel (e.g., for the LiteSpeed se
         flexDirection: 'row-reverse',
         padding: '10px 0',
     }}>
-    <a href="/platform-overview/release-notes/release-notes-8.3#CloudMyDc-application-platform-83">
+    <a href="/platform-overview/release-notes/release-notes-8.3">
         Back to the top
     </a>
 </div>
