@@ -35,7 +35,7 @@ Before you begin, create a personal access token in VAP with full API access. Th
 
 3. Optionally, you can add any comments in the **Comments** section to record notes or additional information regarding the configuration.
 
-4. **Environment Name** under **Backup** can only be accessed after submitting the initial configuration. You can read more about it in the [Database Backups/Restores](https://github.com/Onemind-Services-LLC/cloudmydc-docs/issues/add-link-here) section.
+4. **Environment Name** under **Backup** can only be accessed after submitting the initial configuration. You can read more about it in the [Database Backups/Restores](/netbox-hosting/netbox-plugins/netbox-cloud-pilot/database-backups-restores) section.
 
 By completing these steps, you'll enable the NetBox Cloud Pilot plugin to manage and automate tasks within your NetBox instance, enhancing your overall efficiency.
 

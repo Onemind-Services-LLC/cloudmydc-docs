@@ -35,7 +35,7 @@ This form allows you to configure all NetBox settings that are supported for you
 
 :::danger Important Note
 
-- Ensure that at least one worker is running for the "default" queue before making changes. This is necessary because modifying settings will require a restart of all NetBox containers which is trigger in a background task.
+- Ensure that at least one worker is running for the "default" queue before making changes. This is necessary because modifying settings will require a restart of all NetBox containers which is triggered in a background task
 - Avoid executing other actions on the environment during this process to prevent task failure.
 
 :::

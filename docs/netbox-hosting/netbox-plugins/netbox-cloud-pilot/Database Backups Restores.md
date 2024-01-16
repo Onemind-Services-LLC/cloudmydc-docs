@@ -10,8 +10,8 @@ Ensure your NetBox instance's data is secure by setting up regular database back
 
 A backup storage must be connected to your NetBox environment. You can do this in one of two ways:
 
-- [Connect Existing](https://github.com/option1) backup storage
-- [Add new](https://github.com/option2) backup storage
+- [Connect Existing](/netbox-hosting/netbox-plugins/netbox-cloud-pilot/database-backups-restores#connecting-existing-backup-storage) backup storage
+- [Add new](/netbox-hosting/netbox-plugins/netbox-cloud-pilot/database-backups-restores#creating-new-backup-storage) backup storage
 
 ## Connecting Existing Backup Storage
 

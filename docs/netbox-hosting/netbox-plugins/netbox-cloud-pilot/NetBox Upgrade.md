@@ -61,7 +61,7 @@ Upgrade your NetBox instance to the latest version or downgrade within the same 
 
 :::warning
 
-- It is advisable to set up [database backups](https://github.com/Onemind-Services-LLC/cloudmydc-docs/issues/add-link-here) for your environment. The upgrade routine looks for a backup configuration and initiates a backup before proceeding with the upgrade, ensuring a recovery point is available in case of failure.
+- It is advisable to set up [database backups](/netbox-hosting/netbox-plugins/netbox-cloud-pilot/database-backups-restores) for your environment. The upgrade routine looks for a backup configuration and initiates a backup before proceeding with the upgrade, ensuring a recovery point is available in case of failure.
 - A successful job completion message indicates that the main NetBox container upgrade and restart were successful. Subsequent upgrades and restarts of worker containers will occur afterward and can be monitored through the VAP dashboard.
 
 :::
