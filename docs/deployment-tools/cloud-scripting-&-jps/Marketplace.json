@@ -1,6 +1,5 @@
 {
   "Applications": [
-    "NetBox",
     "Alfresco",
     "Ametys",
     "Auto-Scalable Couchbase CE Cluster",
@@ -45,6 +44,7 @@
     "Multi-Region WordPress Cluster v1 (Alpha)",
     "Multi-Region WordPress Standalone",
     "MySQL/MariaDB/Percona Cluster",
+    "NetBox",
     "Nexus Repository Manager",
     "Node-RED Dev",
     "Odoo Community Edition",
@@ -72,7 +72,7 @@
     "WordPress Standalone Kit",
     "XWiki"
   ],
-  "AddOns":[
+  "AddOns": [
     "Database Backup/Restore Add-On",
     "Database Cluster Recovery",
     "Database Corruption Diagnostic",
@@ -92,4 +92,3 @@
     "WordPress Backup/Restore for the filesystem and the databases"
   ]
 }
-
