@@ -4,7 +4,7 @@ slug: paas-cluster-overview
 sidebar_position: 1
 ---
 
-Platform as a Service (PaaS) is a comprehensive cluster of servers and resources that functions as a unified system, facilitating the seamless development, debugging, deployment, testing, and maintenance of hosted applications. Consisting of Hardware Nodes storing isolated virtual machines, PaaS clusters are orchestrated by a Cluster Orchestrator, an infrastructure node managing resources and supporting system maintenance. Each environment within PaaS comprises isolated virtual containers on specific hardware nodes. CloudMyDc, a VPS hosting system, utilizes containers to run multiple instances on a single physical server through operating system-level virtualization. This architecture enhances efficiency and scalability for optimal application management.
+Platform as a Service (PaaS) is a comprehensive cluster of servers and resources that functions as a unified system, facilitating the seamless development, debugging, deployment, testing, and maintenance of hosted applications. Consisting of Hardware Nodes storing isolated virtual machines, PaaS clusters are orchestrated by a Cluster Orchestrator, an infrastructure node managing resources and supporting system maintenance. Each environment within PaaS comprises isolated virtual containers on specific hardware nodes. CloudMyDC, a VPS hosting system, utilizes containers to run multiple instances on a single physical server through operating system-level virtualization. This architecture enhances efficiency and scalability for optimal application management.
 
 ## Basic Concepts
 
@@ -28,9 +28,9 @@ Environment is a collection of isolated virtual containers that provides all the
 
 Node or container is a virtual isolated machine provisioned for the environment and stored on the particular hardware node.
 
-**CloudMyDc**
+**CloudMyDC**
 
-CloudMyDc is a system used to host a VPS (Virtual Private Server). CloudMyDc Containers can support several containers on a single physical server by using operating system-level virtualization.
+CloudMyDC is a system used to host a VPS (Virtual Private Server). CloudMyDC Containers can support several containers on a single physical server by using operating system-level virtualization.
 
 ## General Cluster Overview
 

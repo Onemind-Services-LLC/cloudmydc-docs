@@ -6,7 +6,7 @@ description: Indexing of content
 keywords:
   - PHP
   - PHP Tutorials
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

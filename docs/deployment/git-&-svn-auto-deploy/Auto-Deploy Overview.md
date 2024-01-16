@@ -7,7 +7,7 @@ keywords:
   - Deployment
   - Git And SVN Auto Deploy
   - Auto-Deploy Overview
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

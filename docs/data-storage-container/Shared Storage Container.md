@@ -82,7 +82,7 @@ Upon enabling **[Auto-Clustering](https://cloudmydc.com/)** switcher for the Sha
 Consider the following specifics:
 
 - Currently, automatic conversion of the existing standalone storage into the GlusterFS cluster is not supported. Follow the manual [migration guide](https://cloudmydc.com/).
-- Shared Storage auto-clustering requires the latest [CloudMyDc 7](https://cloudmydc.com/) virtualization used on the [environment region](https://cloudmydc.com/) (depends on your hosting provider)
+- Shared Storage auto-clustering requires the latest [CloudMyDC 7](https://cloudmydc.com/) virtualization used on the [environment region](https://cloudmydc.com/) (depends on your hosting provider)
 - storage auto-cluster requires 3 or more nodes and cannot be disabled after creation
 - scaling is performed with two nodes step to maintain working quorum
 

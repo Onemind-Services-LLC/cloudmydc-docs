@@ -6,7 +6,7 @@ description: Composer is one of PHP’s most popular dependency management tools
 keywords:
   - PHP
   - Composer Dependency Manager
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

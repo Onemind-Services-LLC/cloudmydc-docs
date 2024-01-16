@@ -8,7 +8,7 @@ import obj from './ReleaseNotes7.2.json'
 
 _This document is preliminary and subject to change._
 
-In this document, you will find all of the new features, enhancements and visible changes included to the **CloudMyDc PaaS 7.2** release.
+In this document, you will find all of the new features, enhancements and visible changes included to the **CloudMyDC PaaS 7.2** release.
 
 <hr/>
 <div style={{
@@ -39,7 +39,7 @@ New
                 fontSize: '23px',
                 fontWeight: '500',
         }}>Platform Rebranding</h3>
-            <p>Updated the PaaS name (formerly known as Jelastic) to CloudMyDc Application Platform</p>
+            <p>Updated the PaaS name (formerly known as Jelastic) to CloudMyDC Application Platform</p>
             <div style={{
             display: 'flex',
             flexDirection: 'row-reverse',
@@ -218,7 +218,7 @@ Fixed
 
 ## Platform Rebranding
 
-Continuing the smooth integration of the PaaS (formerly known as Jelastic) with the CloudMyDc family, the platform name was changed to **Vitruozzo Application Platform**. The appropriate changes are integrated into the platform dashboard default images, labeling, documentation references, Hello World application, etc.
+Continuing the smooth integration of the PaaS (formerly known as Jelastic) with the CloudMyDC family, the platform name was changed to **Vitruozzo Application Platform**. The appropriate changes are integrated into the platform dashboard default images, labeling, documentation references, Hello World application, etc.
 
 <div style={{
     display:'flex',
@@ -266,7 +266,7 @@ In order to extend the capabilities of the [account collaboration](/account-and-
 
 ## Environment Selection Field Adjustment
 
-In the current CloudMyDc Application Platform 7.2 release, the dashboard’s combo-boxes for environment selection were improved. For now, the displayed items provide better clarity by showing both the [custom alias](/environment-management/environment-aliases) (if specified) and the environment name. Such implementation uniquely identifies the provided options and helps avoid possible confusion when several environments have similar aliases.
+In the current CloudMyDC Application Platform 7.2 release, the dashboard’s combo-boxes for environment selection were improved. For now, the displayed items provide better clarity by showing both the [custom alias](/environment-management/environment-aliases) (if specified) and the environment name. Such implementation uniquely identifies the provided options and helps avoid possible confusion when several environments have similar aliases.
 
 <div style={{
     display:'flex',
@@ -290,7 +290,7 @@ In the current CloudMyDc Application Platform 7.2 release, the dashboard’s com
 
 ## CentOS Stream 8 OS Support
 
-CloudMyDc Application Platform supports the most popular [operating system templates](/container/container-image-requirements), which allows using multiple different solutions from Docker Hub as [custom containers](/container/container-types). Due to the recent CentOS Linux 8 end of life, the recommended alternative template was added to the platform – **CentOS Stream 8**. You can find a [comparison of these two versions](https://centos.org/cl-vs-cs/) in the official documentation.
+CloudMyDC Application Platform supports the most popular [operating system templates](/container/container-image-requirements), which allows using multiple different solutions from Docker Hub as [custom containers](/container/container-types). Due to the recent CentOS Linux 8 end of life, the recommended alternative template was added to the platform – **CentOS Stream 8**. You can find a [comparison of these two versions](https://centos.org/cl-vs-cs/) in the official documentation.
 
 :::tip Note
 
@@ -312,7 +312,7 @@ Do not confuse OS templates (base image for containers) support with container t
 
 ## Fixes Compatible with Prior Versions
 
-Below, you can find the fixes that were implemented in the CloudMyDc Application Platform 7.2 release and also integrated into previous platform versions by means of the appropriate patches.
+Below, you can find the fixes that were implemented in the CloudMyDC Application Platform 7.2 release and also integrated into previous platform versions by means of the appropriate patches.
 
 <div style={{
         width: '100%',
@@ -333,7 +333,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         color: 'var(--table-color-primary)',
         background: 'var(--table-bg-primary-t3)'
     }}>
-        CloudMyDc Application Platform 7.2
+        CloudMyDC Application Platform 7.2
     </div>
     <div>
         <div style={{
@@ -431,7 +431,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 ## Software Stack Versions
 
-The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
+The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDC Application Platform.
 
 The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 
@@ -449,7 +449,7 @@ The most accurate and up-to-date list of the certified [software stack versions]
 
 ## Bug Fixes
 
-In the table below, you can see the list of bug fixes applied to the platform starting from CloudMyDc Application Platform 7.2 release:
+In the table below, you can see the list of bug fixes applied to the platform starting from CloudMyDC Application Platform 7.2 release:
 
 <div style={{
         width: '100%',
@@ -470,7 +470,7 @@ In the table below, you can see the list of bug fixes applied to the platform st
         color: 'var(--table-color-primary)',
         background: 'var(--table-bg-primary-t3)'
     }}>
-        CloudMyDc Application Platform 7.2
+        CloudMyDC Application Platform 7.2
     </div>
     <div>
         <div style={{

@@ -7,7 +7,7 @@ keywords:
   - Node.js
   - Node.js Apps Specification
   - Process Managers
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

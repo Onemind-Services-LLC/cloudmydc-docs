@@ -7,7 +7,7 @@ keywords:
   - Database
   - PostgreSQL
   - Hasura Graphql Installation
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

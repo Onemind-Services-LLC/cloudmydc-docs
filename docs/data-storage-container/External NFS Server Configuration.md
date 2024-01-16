@@ -6,7 +6,7 @@ description: The platform allows sharing data between servers (where the files a
 keywords:
   - Data Storage Container
   - External NFS Server Configuration
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

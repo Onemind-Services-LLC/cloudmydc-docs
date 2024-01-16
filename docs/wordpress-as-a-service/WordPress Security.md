@@ -10,7 +10,7 @@ Website safety is one of the main pillars of successful WordPress hosting. When 
 
 ## Cloud Hosting Security
 
-Being a reliable cloud hosting provider with multiple years of experience and a solid reputation, the CloudMyDc Application Platform for WordPress takes care of numerous security implementations. Cloud hosting provides an excellent solution against data infringement on your website called data segmentation. How does it work? Let’s say one of the servers is hacked. Data segmentation gives the cloud hosting the flexibility to separate this infiltration from the rest of your website before anything else is affected.
+Being a reliable cloud hosting provider with multiple years of experience and a solid reputation, the CloudMyDC Application Platform for WordPress takes care of numerous security implementations. Cloud hosting provides an excellent solution against data infringement on your website called data segmentation. How does it work? Let’s say one of the servers is hacked. Data segmentation gives the cloud hosting the flexibility to separate this infiltration from the rest of your website before anything else is affected.
 
 An extension to your site’s safety, cloud hosting helps safeguard against information loss with a robust data replication feature. It utilizes a network of interlinked servers making your website’s data available to be cloned and stored into as many servers as necessary.
 

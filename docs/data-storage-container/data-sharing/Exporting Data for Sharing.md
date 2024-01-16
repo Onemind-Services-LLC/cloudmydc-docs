@@ -7,7 +7,7 @@ keywords:
   - Data Storage Container
   - Data Sharing
   - Exporting Data For Sharing
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

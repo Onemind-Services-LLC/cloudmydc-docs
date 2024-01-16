@@ -6,7 +6,7 @@ description: Docker solution is designed for comfortable application distributio
 keywords:
   - Container
   - Private Registry Inside PaaS
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

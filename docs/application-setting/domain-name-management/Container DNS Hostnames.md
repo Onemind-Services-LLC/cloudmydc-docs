@@ -7,7 +7,7 @@ keywords:
   - Application Setting
   - Domain Name Management
   - Container DNS Hostnames
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

@@ -6,7 +6,7 @@ sidebar_position: 5
 
 <!-- ## WordPress Backups -->
 
-CloudMyDc Application Platform for WordPress provides a fully automated backup solution (based on the **[Restic](https://restic.readthedocs.io/en/stable/010_introduction.html)** software) for all the supported topologies. The platform lets you set up the process based on your needs via a clear and intuitive user interface.
+CloudMyDC Application Platform for WordPress provides a fully automated backup solution (based on the **[Restic](https://restic.readthedocs.io/en/stable/010_introduction.html)** software) for all the supported topologies. The platform lets you set up the process based on your needs via a clear and intuitive user interface.
 
 :::tip Tip
 
@@ -22,7 +22,7 @@ The order of operation is the following:
 
 Let’s go through the required steps in detail:
 
-1. Log in to your CloudMyDc Application Platform for WordPress account and go to the System Settings in the top-right corner.
+1. Log in to your CloudMyDC Application Platform for WordPress account and go to the System Settings in the top-right corner.
 
 <div style={{
     display:'flex',

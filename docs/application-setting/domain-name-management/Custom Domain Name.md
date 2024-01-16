@@ -7,7 +7,7 @@ keywords:
   - Application Setting
   - Domain Name Management
   - Custom Domain Name
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

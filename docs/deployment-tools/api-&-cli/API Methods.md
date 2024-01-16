@@ -7,7 +7,7 @@ keywords:
   - Deployment Tools
   - Api & Cli
   - Api Methods
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 
@@ -39,7 +39,7 @@ keywords:
 
 </div>
         <h3>Public API for Developers</h3>
-        <p>Lets manage hosted environments and automate applications lifecycle within the platform. Using these API methods, you can create new workloads, deploy applications, automatically perform tasks available via CloudMyDc Application Platform dashboard.</p>
+        <p>Lets manage hosted environments and automate applications lifecycle within the platform. Using these API methods, you can create new workloads, deploy applications, automatically perform tasks available via CloudMyDC Application Platform dashboard.</p>
     </div>
 </a>
 

@@ -132,7 +132,7 @@ import obj from './HostersList&Info.json'
 
 :::tip Tip
 
-For running native Docker containers, a platform should contain an [environment region](/environment-management/environment-regions/choosing-a-region) with [CloudMyDc 7](https://cloudmydc.com/) virtualization being integrated.
+For running native Docker containers, a platform should contain an [environment region](/environment-management/environment-regions/choosing-a-region) with [CloudMyDC 7](https://cloudmydc.com/) virtualization being integrated.
 
 :::
 

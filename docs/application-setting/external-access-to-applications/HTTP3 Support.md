@@ -7,7 +7,7 @@ keywords:
   - Application Setting
   - External Access To Application
   - HTTP3 Support
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

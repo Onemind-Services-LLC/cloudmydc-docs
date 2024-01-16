@@ -6,7 +6,7 @@ description: The platform provides an out-of-box integration of the scalable Apa
 keywords:
   - Python
   - Python Dev Center
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

@@ -6,7 +6,7 @@ description: Personal Access Tokens are an alternative approach to authenticate 
 keywords:
   - Account And Pricing
   - Personal Access Tokens
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

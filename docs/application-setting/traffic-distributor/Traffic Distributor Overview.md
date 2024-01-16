@@ -7,7 +7,7 @@ keywords:
   - Application Setting
   - Traffic-Distributor
   - Traffic Distributor Overview
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

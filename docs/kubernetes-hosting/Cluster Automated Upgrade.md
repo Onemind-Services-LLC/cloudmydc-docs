@@ -6,7 +6,7 @@ description: Flexibility, accelerated development and delivery, improved scalabi
 keywords:
   - Kubernetes Hosting
   - Cluster Automated Upgrade
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

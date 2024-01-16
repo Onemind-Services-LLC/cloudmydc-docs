@@ -8,7 +8,7 @@ import obj from './ReleaseNotes6.0.3.json'
 
 _This document is preliminary and subject to change._
 
-In this document, you will find all of the new features, enhancements and visible changes included to the **CloudMyDc PaaS 6.0.3** release.
+In this document, you will find all of the new features, enhancements and visible changes included to the **CloudMyDC PaaS 6.0.3** release.
 
 <hr/>
 
@@ -238,7 +238,7 @@ Below, you can find the fixes that were implemented in the PaaS 6.0.3 release an
 
 ## Software Stack Versions
 
-The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
+The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDC Application Platform.
 
 The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 

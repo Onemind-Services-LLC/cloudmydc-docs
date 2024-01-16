@@ -7,7 +7,7 @@ keywords:
   - Application Setting
   - Domain Name Management
   - gTLD + IDN Domain Names Support
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

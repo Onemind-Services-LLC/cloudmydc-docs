@@ -6,7 +6,7 @@ description: Currently multilingual, the platform was initially created as pure 
 keywords:
   - Java
   - Java Dev Center
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

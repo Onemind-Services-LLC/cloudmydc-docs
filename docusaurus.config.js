@@ -62,7 +62,7 @@ const config = {
       // customCss: [require.resolve('./src/css/custom-dark-theme.css')],
       image: "img/footer/cmdc.png",
       metadata: [
-        { name: "og:title", content: "CloudMyDc Documentation" },
+        { name: "og:title", content: "CloudMyDC Documentation" },
         {
           name: "og:description",
           content:

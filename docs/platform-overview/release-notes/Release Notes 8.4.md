@@ -8,7 +8,7 @@ import obj from './ReleaseNotes8.4.json'
 
 This document is preliminary and subject to change.
 
-In this document, you will find all of the new features, enhancements and visible changes included to the **CloudMyDc PaaS 8.4** release.
+In this document, you will find all of the new features, enhancements and visible changes included to the **CloudMyDC PaaS 8.4** release.
 
 <hr/>
 <div style={{
@@ -458,7 +458,7 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
         color: 'var(--table-color-primary)',
         background: 'var(--table-bg-primary-t3)'
     }}>
-        CloudMyDc Application Platform 8.4
+        CloudMyDC Application Platform 8.4
     </div>
     <div>
         <div style={{
@@ -564,7 +564,7 @@ Below, you can find the fixes that were implemented in the Virtuozzo Application
         color: 'var(--table-color-primary)',
         background: 'var(--table-bg-primary-t3)'
     }}>
-        CloudMyDc Application Platform 8.4.2
+        CloudMyDC Application Platform 8.4.2
     </div>
     <div>
         <div style={{
@@ -702,7 +702,7 @@ In the table below, you can see the list of bug fixes applied to the platform st
         color: 'var(--table-color-primary)',
         background: 'var(--table-bg-primary-t3)'
     }}>
-        CloudMyDc Application Platform 8.4
+        CloudMyDC Application Platform 8.4
     </div>
     <div>
         <div style={{

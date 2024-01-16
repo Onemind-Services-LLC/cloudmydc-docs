@@ -6,7 +6,7 @@ sidebar_position: 2
 
 <!-- ## WordPress Project Installation -->
 
-CloudMyDc Application Platform for WordPress provides a quick and automated installation procedure for the new project creation. The built-in production/staging functionality helps implement various DevOps integrations. Let’s see these processes in detail:
+CloudMyDC Application Platform for WordPress provides a quick and automated installation procedure for the new project creation. The built-in production/staging functionality helps implement various DevOps integrations. Let’s see these processes in detail:
 
 - [Installing Project](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation#installing-project)
 - [Staging Project](/wordpress-as-a-service/wordpress-dashboard/wordpress-project-installation#staging-project)

@@ -7,7 +7,7 @@ keywords:
   - Data Storage Container
   - Data Sharing
   - Mount Points
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

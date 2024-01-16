@@ -6,7 +6,7 @@ description: In the article “Private GitLab Server Automatic Installation with
 keywords:
   - Kubernetes Hosting
   - Gitlab Ci-Cd Integration
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

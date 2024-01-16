@@ -7,7 +7,7 @@ keywords:
   - Database
   - Couchbase
   - Auto-Clustering
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

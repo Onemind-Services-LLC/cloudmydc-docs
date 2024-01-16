@@ -145,7 +145,7 @@ We use AWS emulation to work with S3 and **_[restic](https://restic.net/)_** add
 7. Let’s deploy a test application with storage and mounts to test how Velero can perform backups. We’ll use the following example application:
 
 ```bash
-wget https://www.CloudMyDc.com/application-platform-docs/kubernetes-velero-backups/test-instance.yaml
+wget https://www.CloudMyDC.com/application-platform-docs/kubernetes-velero-backups/test-instance.yaml
 kubectl apply -f test-instance.yaml
 ```
 

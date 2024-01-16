@@ -6,7 +6,7 @@ description: In this post we’d like to show how to expose applications via a p
 keywords:
   - Kubernetes Hosting
   - Public Ip For Access To Kubernetes
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

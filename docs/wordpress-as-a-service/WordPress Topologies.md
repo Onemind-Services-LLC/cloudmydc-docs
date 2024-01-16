@@ -6,7 +6,7 @@ sidebar_position: 4
 
 <!-- ## WordPress Topologies -->
 
-Each CloudMyDc Application Platform for WordPress can provide a different combination of packages with varying specifics. The list below provides an overview of some standard solutions that may be available on the platform.
+Each CloudMyDC Application Platform for WordPress can provide a different combination of packages with varying specifics. The list below provides an overview of some standard solutions that may be available on the platform.
 
 :::danger Note
 
@@ -16,7 +16,7 @@ The list of offered WordPress packages and their specifics may vary for each pla
 
 ## WordPress Standalone
 
-The **WordPress Standalone** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LEMP](/php/php-app-servers/lemp-&-llsmp) (Linux + NGINX + MariaDB + PHP) template with a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
+The **WordPress Standalone** package has an efficient single node topology based on the CloudMyDC Application Platform certified [LEMP](/php/php-app-servers/lemp-&-llsmp) (Linux + NGINX + MariaDB + PHP) template with a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
 
 <div style={{
     display:'flex',
@@ -30,7 +30,7 @@ The **WordPress Standalone** package has an efficient single node topology based
 
 ## WordPress Standalone Pro
 
-The **WordPress Standalone Pro** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LLSMP](/php/php-app-servers/lemp-&-llsmp) (Linux + LiteSpeed + MariaDB + PHP) template with a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
+The **WordPress Standalone Pro** package has an efficient single node topology based on the CloudMyDC Application Platform certified [LLSMP](/php/php-app-servers/lemp-&-llsmp) (Linux + LiteSpeed + MariaDB + PHP) template with a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
 
 <div style={{
     display:'flex',
@@ -50,7 +50,7 @@ Learn about _*LiteSpeed Benefits Over Other Servers for WordPress Hosting*_ in t
 
 ## WordPress WooCommerce
 
-The **WordPress WooCommerce** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LEMP](/php/php-app-servers/lemp-&-llsmp) (Linux + NGINX + MariaDB + PHP) template with the [WooCommerce](https://wordpress.org/plugins/woocommerce/) plugin and a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
+The **WordPress WooCommerce** package has an efficient single node topology based on the CloudMyDC Application Platform certified [LEMP](/php/php-app-servers/lemp-&-llsmp) (Linux + NGINX + MariaDB + PHP) template with the [WooCommerce](https://wordpress.org/plugins/woocommerce/) plugin and a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
 
 <div style={{
     display:'flex',
@@ -66,7 +66,7 @@ WooCommerce is a free, open-source e-commerce plugin designed specifically for W
 
 ## WordPress WooCommerce Pro
 
-The **WordPress WooCommerce Pro** package has an efficient single node topology based on the CloudMyDc Application Platform certified [LLSMP](/php/php-app-servers/lemp-&-llsmp) (Linux + LiteSpeed + MariaDB + PHP) template with the [WooCommerce](https://wordpress.org/plugins/woocommerce/) plugin and a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
+The **WordPress WooCommerce Pro** package has an efficient single node topology based on the CloudMyDC Application Platform certified [LLSMP](/php/php-app-servers/lemp-&-llsmp) (Linux + LiteSpeed + MariaDB + PHP) template with the [WooCommerce](https://wordpress.org/plugins/woocommerce/) plugin and a set of built-in advanced features. The packaged structure makes this solution optimal for running small- and medium-size projects and development environments that do not require scalability or high availability.
 
 <div style={{
     display:'flex',
@@ -128,7 +128,7 @@ WooCommerce is a free, open-source e-commerce plugin designed specifically for W
 
 ## WordPress Multi-Region Standalone
 
-CloudMyDc Application Platform for WordPress provides a multi-region geographic distribution approach for WordPress CMS deployment. The application will be distributed as standalone instances across several [regions](/environment-management/environment-regions/choosing-a-region) within one cloud to ensure automatic fault-tolerance and low latency read operations for the users based on their location.
+CloudMyDC Application Platform for WordPress provides a multi-region geographic distribution approach for WordPress CMS deployment. The application will be distributed as standalone instances across several [regions](/environment-management/environment-regions/choosing-a-region) within one cloud to ensure automatic fault-tolerance and low latency read operations for the users based on their location.
 
 Such implementation provides a high availability level and ensures business continuity even in case of a data center outage. Additionally, having several WordPress instances in different locations over the globe can significantly improve website ranking from search engine side by decreasing response time and consequently attracting more customers worldwide.
 

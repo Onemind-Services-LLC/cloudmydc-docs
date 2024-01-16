@@ -7,7 +7,7 @@ keywords:
   - Deployment Tools
   - Plugin
   - IDEA Plugin
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

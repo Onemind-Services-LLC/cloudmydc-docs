@@ -6,7 +6,7 @@ description: The majority of modern web-services should be accessible for users 
 keywords:
   - PHP
   - Zdt Deployment For PHP
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

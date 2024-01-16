@@ -7,7 +7,7 @@ keywords:
   - Node.js
   - Node.js Apps Specification
   - Package Managers
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

@@ -7,7 +7,7 @@ keywords:
   - Application Setting
   - External Access To Application
   - EndPoints
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

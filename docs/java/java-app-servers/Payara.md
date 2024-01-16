@@ -7,7 +7,7 @@ keywords:
   - Java
   - Java App Server
   - Payara
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

@@ -6,7 +6,7 @@ description: Organizing Environments Into Groups - How to Smartly Structure Your
 keywords:
   - Environment Management
   - Environment Groups
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

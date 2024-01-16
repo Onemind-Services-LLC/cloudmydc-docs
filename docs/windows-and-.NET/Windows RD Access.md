@@ -6,7 +6,7 @@ description: All the Windows-based nodes at the platform provide the embedded Re
 keywords:
   - Window And .NET
   - Window RD Access
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

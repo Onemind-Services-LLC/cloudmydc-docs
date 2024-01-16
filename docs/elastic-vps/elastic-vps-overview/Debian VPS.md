@@ -7,7 +7,7 @@ keywords:
   - Elastic VPS
   - Elastic VPS Overview
   - Debian Vps
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

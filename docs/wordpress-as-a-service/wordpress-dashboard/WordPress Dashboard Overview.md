@@ -6,7 +6,7 @@ sidebar_position: 1
 
 <!-- ## WordPress Dashboard Overview -->
 
-CloudMyDc Application Platform for WordPress provides a dedicated dashboard designed and optimized specifically for WordPress hosting. It has a deep integration with the product, offering just enough diagnostic information and management options to perform all the most frequently required operations without cluttering the screen or overwhelming a customer.
+CloudMyDC Application Platform for WordPress provides a dedicated dashboard designed and optimized specifically for WordPress hosting. It has a deep integration with the product, offering just enough diagnostic information and management options to perform all the most frequently required operations without cluttering the screen or overwhelming a customer.
 
 Below, we’ll provide an overview of the:
 
@@ -78,7 +78,7 @@ Learn more at the [WordPress Project Management](/wordpress-as-a-service/wordpre
 
 ## Account Settings
 
-In the top-right corner of the dashboard, you can find a menu for managing your CloudMyDc Application Platform for WordPress account.
+In the top-right corner of the dashboard, you can find a menu for managing your CloudMyDC Application Platform for WordPress account.
 
 1. The first part is informational. It shows the account email address and balance (can be manually refreshed if needed).
 
@@ -329,6 +329,6 @@ Use the **Dark Mode** toggle to switch between dashboard’s light and dark them
 - Terms Of Use
 - Privacy Policy
 
-6. The last **Log Out** option will end your current session with the CloudMyDc Application Platform for WordPress.
+6. The last **Log Out** option will end your current session with the CloudMyDC Application Platform for WordPress.
 
 You’ll need to log in again to continue your work with the dashboard.

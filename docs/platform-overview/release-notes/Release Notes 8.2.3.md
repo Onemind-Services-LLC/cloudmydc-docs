@@ -8,7 +8,7 @@ import obj from './ReleaseNotes8.2.3.json'
 
 _This document is preliminary and subject to change._
 
-In this document, you will find all of the new features, enhancements and visible changes included to the **CloudMyDc PaaS 8.2.3** release.
+In this document, you will find all of the new features, enhancements and visible changes included to the **CloudMyDC PaaS 8.2.3** release.
 
 <hr/>
 
@@ -103,7 +103,7 @@ Fixed
 
 ## Fixes Compatible with Prior Versions
 
-Below, you can find the fixes that were implemented in the CloudMyDc Application Platform 8.2.3 release and also integrated into previous platform versions by means of the appropriate patches.
+Below, you can find the fixes that were implemented in the CloudMyDC Application Platform 8.2.3 release and also integrated into previous platform versions by means of the appropriate patches.
 
 <div style={{
         width: '100%',
@@ -124,7 +124,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
         color: 'var(--table-color-primary)',
         background: 'var(--table-bg-primary-t3)'
     }}>
-        CloudMyDc Application Platform 8.3
+        CloudMyDC Application Platform 8.3
     </div>
     <div>
         <div style={{
@@ -222,7 +222,7 @@ Below, you can find the fixes that were implemented in the CloudMyDc Application
 
 ## Software Stack Versions
 
-The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
+The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDC Application Platform.
 
 The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 

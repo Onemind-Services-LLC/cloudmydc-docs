@@ -6,7 +6,7 @@ description: The platform allows configuring a **two-factor authentication** (2F
 keywords:
   - Account And Pricing
   - Two-Factor Authentication
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

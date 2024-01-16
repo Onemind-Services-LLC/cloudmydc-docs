@@ -6,7 +6,7 @@ description: Ruby is a popular, open source programming language with a powerful
 keywords:
   - Ruby
   - Ruby Dev Center
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

@@ -7,7 +7,7 @@ keywords:
   - Python
   - Python Dev Center
   - Mezzanine CMS
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

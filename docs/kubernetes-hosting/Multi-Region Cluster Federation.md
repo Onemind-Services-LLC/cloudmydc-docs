@@ -6,7 +6,7 @@ description: If you have multiple Kubernetes (K8s) clusters in different regions
 keywords:
   - Kubernetes Hosting
   - Multi-Region Cluster Federation
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

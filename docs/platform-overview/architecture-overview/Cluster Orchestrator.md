@@ -8,7 +8,7 @@ sidebar_position: 2
 
 For high availability, the platform is running on **two infrastructure nodes**. With a help of synchronization each server is running as an independent identical copy of the platform infrastructure.
 
-The components of infra node are running in a separate virtual CloudMyDc Containers for Linux on CentOS and are responsible for:
+The components of infra node are running in a separate virtual CloudMyDC Containers for Linux on CentOS and are responsible for:
 
 - Provisioning
 - Templates configuration and clustering binding

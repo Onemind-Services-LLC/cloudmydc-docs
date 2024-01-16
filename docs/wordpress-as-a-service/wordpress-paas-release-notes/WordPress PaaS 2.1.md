@@ -7,7 +7,7 @@ keywords:
   - WordPress As A Service
   - WordPress PaaS Release Notes
   - WordPress Paas 2.1
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 
@@ -260,7 +260,7 @@ In the current 2.1 platform release, a new **User Information** section was adde
 
 ## UI Improvements
 
-The CloudMyDc Application Platform for WordPress dashboard is designed to provide the best user experience for the customers. In the current 2.1 platform upgrade, a direct link to the project’s WordPress admin panel was added directly to the dashboard, allowing quick access to the panel.
+The CloudMyDC Application Platform for WordPress dashboard is designed to provide the best user experience for the customers. In the current 2.1 platform upgrade, a direct link to the project’s WordPress admin panel was added directly to the dashboard, allowing quick access to the panel.
 
 <div style={{
     display:'flex',
@@ -286,7 +286,7 @@ Additionally, if the project has another admin panel (e.g., for the LiteSpeed se
 
 ## Dashboard Localization
 
-The CloudMyDc Application Platform for WordPress implements support for custom dashboard localizations (in addition to the default English one). However, the exact list of languages for each particular platform depends on the corresponding hosting provider’s settings. A new **Language** drop-down list will be displayed in the account settings menu if multiple options are available.
+The CloudMyDC Application Platform for WordPress implements support for custom dashboard localizations (in addition to the default English one). However, the exact list of languages for each particular platform depends on the corresponding hosting provider’s settings. A new **Language** drop-down list will be displayed in the account settings menu if multiple options are available.
 
 <div style={{
     display:'flex',

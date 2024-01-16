@@ -8,7 +8,7 @@ keywords:
   - Plugins
   - NetBeans Plugin
   - NetBeans Plugin Overview
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

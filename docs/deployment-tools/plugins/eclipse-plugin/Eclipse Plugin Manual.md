@@ -8,7 +8,7 @@ keywords:
   - Plugins
   - Eclipse Plugin
   - Eclipse Plugin Manual
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

@@ -6,7 +6,7 @@ description: Gitblit is one of the most popular tools for managing, viewing and 
 keywords:
   - Deployment
   - Deploying Apps Via Gitblit
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

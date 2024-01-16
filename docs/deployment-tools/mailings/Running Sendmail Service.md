@@ -7,7 +7,7 @@ keywords:
   - Deployment Tools
   - Mailing
   - Running Sendmail Service
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

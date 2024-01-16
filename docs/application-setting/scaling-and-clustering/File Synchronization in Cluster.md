@@ -7,7 +7,7 @@ keywords:
   - Application Setting
   - Scaling And Clustering
   - File Synchronization In Cluster
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

@@ -6,7 +6,7 @@ description: Performance and price are two big considerations in application hos
 keywords:
   - Java
   - Java Garbage Collector
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

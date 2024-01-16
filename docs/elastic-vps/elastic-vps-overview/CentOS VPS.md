@@ -7,7 +7,7 @@ keywords:
   - Elastic VPS
   - Elastic VPS Overview
   - CentOS VPS
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

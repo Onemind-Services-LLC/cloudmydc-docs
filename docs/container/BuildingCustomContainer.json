@@ -1,6 +1,6 @@
 {
   "data1": [
-    "LABEL maintainer='CloudMyDc'",
+    "LABEL maintainer='CloudMyDC'",
     "ENV WILDFLY_VERSION 13.0.0.Final",
     "",
     "ENV ADMIN_USER jelastic",

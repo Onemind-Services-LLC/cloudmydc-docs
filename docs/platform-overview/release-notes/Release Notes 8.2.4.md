@@ -6,7 +6,7 @@ sidebar_position: 5
 
 _This document is preliminary and subject to change._
 
-In this document, you will find all of the new features, enhancements and visible changes included to the **CloudMyDc PaaS 8.2.4** release.
+In this document, you will find all of the new features, enhancements and visible changes included to the **CloudMyDC PaaS 8.2.4** release.
 
 <hr/>
 
@@ -106,7 +106,7 @@ Starting with the current 8.2.4 PaaS release, the alternative OS template for th
 
 :::danger
 
-Note: CloudMyDc Application Platform no longer supports the previously used _CentOS Stream 8_ operating system template.
+Note: CloudMyDC Application Platform no longer supports the previously used _CentOS Stream 8_ operating system template.
 
 :::
 
@@ -124,7 +124,7 @@ Note: CloudMyDc Application Platform no longer supports the previously used _Cen
 
 ## Software Stack Versions
 
-The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDc Application Platform.
+The software stack provisioning process is independent of the platform release, which allows new software solutions to be delivered as soon as they are ready. However, due to the necessity to adapt and test new stack versions, there is a small delay between software release by its respective upstream maintainer and integration into CloudMyDC Application Platform.
 
 The most accurate and up-to-date list of the certified [software stack versions](/quickstart/software-stack-versions) can be found on the dedicated documentation page.
 

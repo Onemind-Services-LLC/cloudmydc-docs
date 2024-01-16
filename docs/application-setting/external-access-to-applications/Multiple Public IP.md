@@ -7,7 +7,7 @@ keywords:
   - Application Setting
   - External Access To Application
   - Multiple Public IP
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

@@ -7,7 +7,7 @@ keywords:
   - Java
   - Java App Server
   - WildFly
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

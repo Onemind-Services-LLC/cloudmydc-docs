@@ -6,7 +6,7 @@ description: Jelastic Kubernetes cluster can be installed with NGINX, Traefik, o
 keywords:
   - Kubernetes Hosting
   - Traefik V2 Ingress Controller
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

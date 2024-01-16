@@ -7,7 +7,7 @@ keywords:
   - Elastic VPS
   - Elastic VPS Management
   - Windows Remote Desktop Access
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

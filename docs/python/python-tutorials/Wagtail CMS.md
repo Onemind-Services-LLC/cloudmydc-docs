@@ -7,7 +7,7 @@ keywords:
   - Python
   - Python Dev Center
   - Wagtail CMS
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

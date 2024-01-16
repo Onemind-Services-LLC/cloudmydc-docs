@@ -7,7 +7,7 @@ keywords:
   - Elastic VPS
   - Elastic VPS Overview
   - Ubuntu Vps
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

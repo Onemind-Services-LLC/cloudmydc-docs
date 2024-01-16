@@ -6,7 +6,7 @@ description: Sooner or later, every developer faces the necessity to branch the 
 keywords:
   - Environment Management
   - Cloning Environment
-  - CloudMyDc
+  - CloudMyDC
   - Documentation
 ---
 

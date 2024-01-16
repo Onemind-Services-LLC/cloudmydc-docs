@@ -4,11 +4,11 @@ slug: wordpress-paas-2.0
 sidebar_position: 2
 ---
 
-<!-- ## CloudMyDc Application Platform for WordPress 2.0 -->
+<!-- ## CloudMyDC Application Platform for WordPress 2.0 -->
 
 _This document is preliminary and subject to change._
 
-This document announces the Global Availability of the CloudMyDc Application Platform for WordPress. It is the first publicly available release that introduces multiple neatly tailored features for the most convenient WordPress hosting experience without any distractions:
+This document announces the Global Availability of the CloudMyDC Application Platform for WordPress. It is the first publicly available release that introduces multiple neatly tailored features for the most convenient WordPress hosting experience without any distractions:
 
 - a **modern dashboard** solely dedicated to the WordPress hosting
 - multiple **standalone and clustered WordPress** packages with automated installation
