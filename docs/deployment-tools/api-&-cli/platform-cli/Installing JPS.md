@@ -149,7 +149,7 @@ If needed, you can explicitly provide a parameter to redefine the value inside t
 
 :::
 
-3. You can ensure that the value of the provided parameter was successfully logged via the platform console (`https://app.{platformDomain}/console`).
+3. You can ensure that the value of the provided parameter was successfully logged via the platform console (`https://app.xapp.cloudmydc.com/console`).
 
 <div style={{
     display:'flex',

@@ -88,7 +88,7 @@ When you access the platform dashboard for the first time, a short tutorial (can
 
 ## Application Marketplace
 
-You can access [platform Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace) directly from the dashboard to install various popular solutions in one click.
+You can access [platform Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace) directly from the dashboard to install various popular solutions in one click.
 
 1. Click the **Marketplace** button at the top of the dashboard.
 

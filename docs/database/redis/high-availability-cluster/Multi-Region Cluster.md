@@ -44,7 +44,7 @@ Both topologies provide out-of-box high availability and failover capabilities f
 
 ## Cluster Installation
 
-1. Find the **_Multi-Region Redis Cluster_** application (the **Clusters** section or use the **Search** field) in the platform [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
+1. Find the **_Multi-Region Redis Cluster_** application (the **Clusters** section or use the **Search** field) in the platform [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace).
 
 <div style={{
     display:'flex',
@@ -61,7 +61,7 @@ Both topologies provide out-of-box high availability and failover capabilities f
 - **Version** - select the preferred Redis version
 - **Environment** - provide a name for [grouping](/environment-management/environment-groups/overview) your database cluster environments
 - **Create separate environment group** – tick to [isolate](/environment-management/environment-isolation#private-network-isolation) the environment group
-- **Enable External IP Addresses for cluster nodes** – tick to add [public IP](/application-setting/external-access-to-applications/public-ip#public-ip) to the cluster nodes (three IPs per region), which is required if the Redis client is located outside the platform
+- **Enable External IP Addresses for cluster nodes** – tick to add [public IP](/application-setting/external-access-to-applications/public-ip) to the cluster nodes (three IPs per region), which is required if the Redis client is located outside the platform
 - **Topology** – choose either **_Maximum Performance_** or **_Maximum Reliability_** topology (details can be found in the [Cluster Topology](/database/redis/high-availability-cluster/multi-region-cluster#database-cluster-topology) section above)
 - **Regions** - select platform regions where the cluster environments will be deployed. For the **_Maximum Reliability_** topology, the first region will host primary servers and other - secondary databases (replicas)
 

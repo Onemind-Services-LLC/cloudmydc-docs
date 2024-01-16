@@ -290,7 +290,7 @@ $cfg['AllowArbitraryServer'] = true;
 
 </div>
 
-5. Let’s configure our slave database server via a built-in [Web SSH](/deployment-tools/ssh/ssh-access/web-ssh#ssh-access-via-web-browser) client. Connect to your database using credentials from the email received after the node creation.
+5. Let’s configure our slave database server via a built-in [Web SSH](/deployment-tools/ssh/ssh-access/web-ssh) client. Connect to your database using credentials from the email received after the node creation.
 
 ```bash
 mysql -u root -p

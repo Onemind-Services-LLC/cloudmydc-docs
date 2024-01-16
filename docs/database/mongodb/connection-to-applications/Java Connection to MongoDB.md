@@ -200,7 +200,7 @@ public class MongoManager {
 }
 ```
 
-2. Any application can be deployed using either platform [Deployment Manager](/deployment/deployment-guide) (with a local file/URL as a source) or [Maven](/java/build-node/java-vcs-deployment-with-maven#java-vcs-deployment-with-maven) (for deployment from GIT/SVN).
+2. Any application can be deployed using either platform [Deployment Manager](/deployment/deployment-guide) (with a local file/URL as a source) or [Maven](/java/build-node/java-vcs-deployment-with-maven) (for deployment from GIT/SVN).
 
 For testing, you can try our ready-to-use mongoclient.war project, which already contains the appropriate connector driver (or download its sources and adjust it in any preferred way).
 
@@ -268,7 +268,7 @@ As you can see, everything works fine, as an application could connect to our DB
 
 The platform documentation also contains a number of auxiliary guides for the MongoDB server, that may become useful even for the subject-familiar and experienced users:
 
-- configure a [Replica Set](/database/mongodb/high-availability-cluster/replica-set-manual-setup#mongodb-replication-and-automated-failover-configuration-guide) with an uneven number of MongoDB nodes to simultaneously implement the master-slave replication and automated failover
-- ensure information safety through adjusting the [Backups Scheduling](/database/database-hosting/manual-database-backups#manual-database-backups) - this prevents data loss and allows to restore it in case of an unexpected server failure
-- learn how to establish the [Remote Access](/database/mongodb/remote-access#remote-access-to-mongodb) to your database for getting the ability to work with it via any suitable client application, even without the necessity to log in to our dashboard
-- read the [Dump Import/Export](/database/mongodb/dump-import-export#import-and-export-dump-files-to-mongodb) guide to discover how to manually backup your data within dump files and subsequently restore it from the previously created dumps if necessary
+- configure a [Replica Set](/database/mongodb/high-availability-cluster/replica-set-manual-setup) with an uneven number of MongoDB nodes to simultaneously implement the master-slave replication and automated failover
+- ensure information safety through adjusting the [Backups Scheduling](/database/database-hosting/manual-database-backups) - this prevents data loss and allows to restore it in case of an unexpected server failure
+- learn how to establish the [Remote Access](/database/mongodb/remote-access) to your database for getting the ability to work with it via any suitable client application, even without the necessity to log in to our dashboard
+- read the [Dump Import/Export](/database/mongodb/dump-import-export) guide to discover how to manually backup your data within dump files and subsequently restore it from the previously created dumps if necessary

@@ -198,7 +198,7 @@ Great! Now you can easily connect your PHP application to the **MySQL** or **Mar
 
 The platform also lets you extend your MySQL/MariaDB servers functionality by following the appropriate instructions in our documentation:
 
-- set up the preferred database replication type - [master-slave](/database/mysql-mariadb-percona/high-availability-cluster/manual-primary-secondary-replication#mysqlmariadbpercona-database-primary-secondary-replication) or [master-master](/database/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication#multi-primary-replication-for-mysqlmariadbpercona) - in order to get the increased DB performance and data loss protection
-- adjust [Backups Scheduling](/database/database-hosting/manual-database-backups#manual-database-backups) for ensuring safety of the information inside your DBs in the case of unexpected server failure
-- see the [Remote Access](/database/mysql-mariadb-percona/remote-access#remote-access-to-mysqlmariadbpercona) instruction and learn how to access your database remotely via the preferred desktop MySQL client
+- set up the preferred database replication type - [master-slave](/database/mysql-mariadb-percona/high-availability-cluster/manual-primary-secondary-replication) or [master-master](/database/mysql-mariadb-percona/high-availability-cluster/manual-multi-primary-replication) - in order to get the increased DB performance and data loss protection
+- adjust [Backups Scheduling](/database/database-hosting/manual-database-backups) for ensuring safety of the information inside your DBs in the case of unexpected server failure
+- see the [Remote Access](/database/mysql-mariadb-percona/remote-access) instruction and learn how to access your database remotely via the preferred desktop MySQL client
 - use the [Dump Files Import/Export](/database/mysql-mariadb-percona/dump-import-export) guide to find out how to manually backup and restore your data from the previously created dumps
