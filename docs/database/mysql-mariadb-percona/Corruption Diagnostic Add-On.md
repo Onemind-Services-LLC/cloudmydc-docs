@@ -18,7 +18,7 @@ The list of supported stacks for corruption diagnostic:
 
 ## Add-On Installtion
 
-The add-on can be installed either automatically along with database cluster installation or manually from [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
+The add-on can be installed either automatically along with database cluster installation or manually from [Marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace).
 
 1. Go to the **Add-Ons** section in the Marketplace and pick the **Database Corruption Diagnostic** add-on.
 

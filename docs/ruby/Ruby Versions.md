@@ -46,7 +46,7 @@ You can choose the required one during [environment creation](/ruby/ruby-version
 
 </div>
 
-Configure any other desired customization (e.g. cloudlets limit, [public IP]/docs/application-setting/external-access-to-applications/public-ip#public-ip), [region](/environment-management/environment-regions/choosing-a-region#environment-regions), etc.) and click **Create**.
+Configure any other desired customization (e.g. cloudlets limit, [public IP]/docs/application-setting/external-access-to-applications/public-ip), [region](/environment-management/environment-regions/choosing-a-region), etc.) and click **Create**.
 
 ## Change Ruby Version
 
@@ -82,7 +82,7 @@ For the already existing environments, you can change the Ruby version by [redep
 
 - **_Tag_** - allows choosing the needed Ruby version
 - **_Keep volumes data_** - saves data in [volumes](/container/container-configuration/volumes)
-- **_Simultaneous_** or **_Sequential deployment with delay_** (for [scaled servers](/application-setting/scaling-and-clustering/horizontal-scaling#horizontal-scaling-inside-the-cloud-multi-node) only) - defines whether all containers within a layer should be redeployed at once or one-by-one, to avoid downtime
+- **_Simultaneous_** or **_Sequential deployment with delay_** (for [scaled servers](/application-setting/scaling-and-clustering/horizontal-scaling) only) - defines whether all containers within a layer should be redeployed at once or one-by-one, to avoid downtime
 
 <div style={{
     display:'flex',

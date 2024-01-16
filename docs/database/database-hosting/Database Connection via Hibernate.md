@@ -30,7 +30,7 @@ Let’s do it step by step:
 </div>
 
 2. Create a new user in a database:
-   How to create a new user - [click here](/database/mysql-mariadb-percona/connection-to-applications/java-connection#java-connection-to-mariadbmysqlpercona).
+   How to create a new user - [click here](/database/mysql-mariadb-percona/connection-to-applications/java-connection).
 
 ```bash
 Database name : jelasticDb

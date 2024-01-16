@@ -31,7 +31,7 @@ The platform provides two automated ways to get a PostgreSQL cluster:
 
 ## Pre-Packaged Marketplace Solution
 
-The quickest and most straightforward way to create a PostgreSQL cluster is to use the pre-packaged solution from the [marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace#marketplace).
+The quickest and most straightforward way to create a PostgreSQL cluster is to use the pre-packaged solution from the [marketplace](/deployment-tools/cloud-scripting-&-jps/marketplace).
 
 1. Click the **Marketplace** button at the top-left of the dashboard and search for the **_PostgreSQL Primary-Secondary Cluster_** package.
 
