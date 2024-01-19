@@ -12,8 +12,7 @@ After installing the NetBox Cloud Pilot plugin, you need to configure it to mana
 
 ## Prerequisites
 
-Before you begin, create a personal access token in VAP with full API access. This token will allow NetBox Cloud Pilot to interact with your NetBox instance. Learn how to create one [here](/account-and-pricing/personal-access-tokens).
-
+Before setting up the NetBox Cloud Pilot, it's essential to generate an **Extended Access** token within the Virtual Application Platform (VAP) that has full API access. This specific type of access token is necessary for the plugin to function correctly, enabling it to communicate effectively with your NetBox instance. Follow the [provided instructions](/account-and-pricing/personal-access-tokens) to create an Extended Access token.
 ## Configuration Process
 
 1. Navigate to the **NetBox Cloud Pilot** section on the sidebar menu and click on "Manage." This action opens the configuration form.
