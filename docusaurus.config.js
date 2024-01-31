@@ -43,17 +43,9 @@ const config = {
     ],
   ],
   themes: [
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-      ({
-        hashed: true,
-        indexBlog: false,
-        docsRouteBasePath: "/",
-        searchResultLimits: 10,
-        searchBarPosition: "right"
-      })
-    ]
+    "@inkeep/docusaurus/chatButton",
+    // require.resolve("@inkeep/docusaurus/chatButton"),
+    "@inkeep/docusaurus/searchBar",
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -228,6 +220,32 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      inkeepConfig: {
+        baseSettings: {
+          apiKey: "130cc7aeea62964fd815f8a017ac1651a2dffdcc2efbcb57",
+          integrationId: "clrzsnjn6003i11ndy0dq54ax",
+          organizationId: "org_wPLq0gqphYeQMbTh",
+          primaryBrandColor: "#003F70",
+        },
+        aiChatSettings: {
+          chatSubjectName: "CloudMyDC",
+          botAvatarSrcUrl: "https://docs.cloudmydc.com/img/favicon.ico",
+          quickQuestions: [
+            "How is scaling managed?",
+            "How do I add caching to my project?",
+            "How do I add 2FA?",
+          ],
+          getHelpCallToActions: [
+            {
+              url: "mailto:support@cloudmydc.com",
+              name: "Support",
+              icon: {
+                builtIn: "IoMail",
+              },
+            },
+          ],
+        },
       },
     }),
 };
