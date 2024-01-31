@@ -1991,6 +1991,11 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
+"@inkeep/docusaurus@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/@inkeep/docusaurus/-/docusaurus-1.0.6.tgz"
+  integrity sha512-1kBoHVS1CPVwliGNmgIzJwfShpDi+z6xGrxNCeIiE4OE0L6ij12QmIewZkkdyGnXtdznwtXdDpd8lxXuUO7lPA==
+
 "@jest/schemas@^29.6.3":
   version "29.6.3"
   resolved "https://registry.npmjs.org/@jest/schemas/-/schemas-29.6.3.tgz"
