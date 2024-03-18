@@ -22,7 +22,8 @@ keywords:
 <div style={{
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'cetner',
+    justifyContent: 'center',
+    height: '100%',
 }}>
 
 ![Locale Dropdown](./img/WildFlyServer/01-wildfly-logo.png)
