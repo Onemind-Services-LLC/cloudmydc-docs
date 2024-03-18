@@ -16,7 +16,12 @@ keywords:
     gridTemplateColumns: '0.15fr 1fr',
     gap: '10px'
 }}>
-<div>
+<div style={{
+  display: 'flex',
+  alignItems: 'center',
+  height: '100%',
+  width: '100%'
+}}>
 
 ![Locale Dropdown](./img/MountPoints/01-mount-points-logo.png)
 
