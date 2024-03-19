@@ -14,17 +14,16 @@ keywords:
     display: 'grid',
     gridTemplateColumns: '0.23fr 1fr'
 }}>
-<div>
 
 <div style={{
-    display:'flex',
+    display: 'flex',
+    alignItems: 'center',
+    height: '100%',
     justifyContent: 'center',
-    margin: '0 0 1rem 0'
+    width: '100%',
 }}>
 
 ![Locale Dropdown](./img/overview/01.png)
-
-</div>
 
 </div>
 
