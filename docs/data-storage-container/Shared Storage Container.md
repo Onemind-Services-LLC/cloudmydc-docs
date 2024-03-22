@@ -77,6 +77,8 @@ Upon enabling **[Auto-Clustering](https://cloudmydc.com/)** switcher for the Sha
 
 </div>
 
+:::
+
 :::tip Tip
 
 Consider the following specifics:
