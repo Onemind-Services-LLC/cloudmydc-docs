@@ -17,7 +17,12 @@ keywords:
     display: 'grid',
     gridTemplateColumns: '0.15fr 1fr'
 }}>
-<div>
+<div style={{
+    width:'100%',
+    height: '100%',
+    display: 'flex',
+    alignItems: 'center',
+}}>
 
 ![Locale Dropdown](./img/MezzanineCMS/mezzanine-e1538405188862.png)
 
