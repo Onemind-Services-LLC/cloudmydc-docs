@@ -16,7 +16,7 @@ The **LiteSpeed Web ADC** stack is [HTTP/3](/application-setting/external-access
 
 <div style={{
     display: 'grid',
-    gridTemplateColumns: '0.5fr 1fr',
+    gridTemplateColumns: '0.5fr 1.65fr',
     gap: '10px'
 }}>
 <div>
