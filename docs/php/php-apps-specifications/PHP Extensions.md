@@ -244,9 +244,7 @@ The inbuilt extensions _<u>should not</u>_ be loaded manually, as they are const
 
 Below, you can find out how this can be accomplished:
 
-1.
-
-Click the **Config** button for your app server.
+1. Click the **Config** button for your app server.
 
 <div style={{
     display:'flex',
@@ -258,9 +256,7 @@ Click the **Config** button for your app server.
 
 </div>
 
-2.
-
-Within the opened configuration tab, move to the **etc >** **_php.ini_** file and scroll down to the **_Extensions provided by PaaS_** section. Here, each dynamic extension has its own sub-section, where it can be enabled and configured.
+2. Within the opened configuration tab, move to the **etc >** **_php.ini_** file and scroll down to the **_Extensions provided by PaaS_** section. Here, each dynamic extension has its own sub-section, where it can be enabled and configured.
 
 <div style={{
     display:'flex',
