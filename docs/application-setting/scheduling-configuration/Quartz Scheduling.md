@@ -185,7 +185,7 @@ public class QuartzServlet extends HttpServlet {
     margin: '0 0 1rem 0'
 }}>
 
-![Locale Dropdown](./img/QuartzScheduling/05-tomcat-log.png)
+![Locale Dropdown](./img/QuartzScheduling/05-tomcat-log.JPG)
 
 </div>
 
