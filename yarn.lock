@@ -2109,11 +2109,6 @@
   resolved "https://registry.npmjs.org/@node-rs/jieba-linux-x64-gnu/-/jieba-linux-x64-gnu-1.9.1.tgz"
   integrity sha512-pUCs0tMrREZv1qmvF8lwcfXM7Jpzp5gBkUDt+C8c6bC5KF/1PtpSG4bvw/O2fixzmnTq3zFCMyvM2AREX6OVmg==
 
-"@node-rs/jieba-linux-x64-musl@1.9.1":
-  version "1.9.1"
-  resolved "https://registry.npmjs.org/@node-rs/jieba-linux-x64-musl/-/jieba-linux-x64-musl-1.9.1.tgz"
-  integrity sha512-wIImcaWbkHwqATv1/e3lhl4jny9IO2QQC0xmJAO5syZwzDAlJGDbGUi1fh7+6CVEm0h0E6C1n9yfGSenpd3Iag==
-
 "@node-rs/jieba@^1.6.0":
   version "1.9.1"
   resolved "https://registry.npmjs.org/@node-rs/jieba/-/jieba-1.9.1.tgz"
