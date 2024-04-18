@@ -22,7 +22,7 @@ Let’s walk through all of the tutorial steps.
 
 1. Guide starts with an introductory presentation. The first frame is named **The Benefits of PaaS**, which provides a list of the central features of the platform.
 
-![Locale Dropdown](./img/WelcomeTutorial/02-tutorial-paas-benefits.jpeg)
+![Locale Dropdown](./img/WelcomeTutorial/02-tutorial-paas-benefits.png)
 
 Hover over a particular point within the list to view an explanatory illustration. Click it to open the dedicated documentation page for even more details.
 
