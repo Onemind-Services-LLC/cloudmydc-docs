@@ -337,7 +337,7 @@ Also, you can make sure that the cluster provides high availability. For this, p
     margin: '0 0 1rem 0'
 }}>
 
-![Locale Dropdown](./img/WildFlyManagedDomain/clsuter-topology-restart.png)
+![Locale Dropdown](./img/WildFlyManagedDomain/cluster-topology-restart.png)
 
 </div>
 
