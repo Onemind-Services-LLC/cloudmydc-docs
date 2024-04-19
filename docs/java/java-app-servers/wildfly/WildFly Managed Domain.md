@@ -266,7 +266,7 @@ You can check how WildFly topology is changed from standalone mode to managed do
     margin: '0 0 1rem 0'
 }}>
 
-![Locale Dropdown](./img/WildFlyManagedDomain/clsuter-topology.png)
+![Locale Dropdown](./img/WildFlyManagedDomain/cluster-topology.png)
 
 </div>
 
