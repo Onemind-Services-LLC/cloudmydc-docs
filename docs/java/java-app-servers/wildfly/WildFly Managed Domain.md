@@ -325,7 +325,7 @@ The application deployed to the standalone server is redeployed to all server in
     margin: '0 0 1rem 0'
 }}>
 
-![Locale Dropdown](./img/WildFlyManagedDomain/clsuter-topology-deployment-app.png)
+![Locale Dropdown](./img/WildFlyManagedDomain/cluster-topology-deployment-app.png)
 
 </div>
 
