@@ -15,7 +15,8 @@ sidebar_position: 6
 <div style={{
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'cetner',
+    justifyContent: 'center',
+    height: '100%'
 }}>
 
 ![Locale Dropdown](./img/AppSecuritywithNGINXBalancer/cloud.png)
