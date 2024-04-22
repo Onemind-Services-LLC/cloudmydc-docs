@@ -29,29 +29,7 @@ In this document, you will find all of the new features, enhancements and visibl
 New
 
 </div>
-    <div>
-        <div style={{
-            background: '#e4ffee',
-            padding: '20px',
-            margin: '10px 0',
-        }}>
-            <h3 style={{
-                fontSize: '23px',
-                fontWeight: '500',
-        }}>Subscription Based Solutions</h3>
-            <p>Implemented a native support of the subscription-based solutions with a fixed pricing</p>
-            <div style={{
-            display: 'flex',
-            flexDirection: 'row-reverse',
-        }}>
-                <a href="/platform-overview/release-notes/release-notes-8.2#subscription-based-solutions">
-                    Learn More >>
-                </a>
-            </div>
-        </div>
     </div>
-
-</div>
 
 <hr/>
 
@@ -198,54 +176,6 @@ Fixed
 
 </div>
 
-## Subscription Based Solutions
-
-The 8.2.2 version of the platform implements a native ability to offer products based on the subscription model. The flow is standard to the modern subscription services implementations – a one-time fee to get a designated product for a specified period. The solution gives you a fix-priced alternative to the default [usage-based model](/account-and-pricing/pricing-model-overview).
-
-:::danger
-
-Note: This feature availability depends on the particular hosting provider’s settings.
-
-:::
-
-All the available subscriptions are available at the Marketplace under a new **_Subscription Plans_** section. Upon selecting, you’ll see several plans to choose from (e.g. offering a different quantity of resources, additional features, etc.). Click the **Buy** button for the preferred option to see the purchase dialog. You can pay monthly or annually, enable auto pay with your default payment method, and set the required number of product instances in your subscription.
-
-<div style={{
-    display:'flex',
-    justifyContent: 'center',
-    margin: '0 0 1rem 0'
-}}>
-
-![Locale Dropdown](./img/ReleaseNotes8.2/01-get-subscription-plan.png)
-
-</div>
-
-All the **Subscriptions** are added to the dedicated section in the account settings. Here, you can see all the relevant information on the subscriptions (including invoices), install/remove instances, and terminate the subscription.
-
-<div style={{
-    display:'flex',
-    justifyContent: 'center',
-    margin: '0 0 1rem 0'
-}}>
-
-![Locale Dropdown](./img/ReleaseNotes8.2/02-dashboard-subscriptions-section.png)
-
-</div>
-
-Due to the concept of subscriptions, some actions are restricted for the installed instances (e.g. topology adjustment or environment cloning). Read more about subscriptions in the dedicated **[Subscription-Based Product](/account-and-pricing/subscription-based-products)** document.
-
-[More info](/account-and-pricing/subscription-based-products)
-
-<div style={{
-        display: 'flex',
-        flexDirection: 'row-reverse',
-        padding: '10px 0',
-    }}>
-    <a href="/platform-overview/release-notes/release-notes-8.2">
-        Back to the top
-    </a>
-</div>
-
 ## Refilling with 3DS Cards
 
 **3D Secure (3DS)** protocol adds an extra layer of payment authentication for additional fraud protection during an online transaction. If used, the cardholder is asked to provide proof of identity by entering a unique password, an SMS code, or a temporary PIN. 3DS can be mandatory in some regions (e.g. Europe due to the _Strong Customer Authentication regulation_) and optional in others (but still can be used to reduce fraud).
@@ -265,8 +195,6 @@ When refilling the account balance using the saved payment method with the 3DS, 
 ## API Changes
 
 Below, you can find a list of all changes to the public API in the 8.2.2 platform version (compared to the preceding [8.0.2](/platform-overview/release-notes/release-notes-8.2#api-changes) ones):
-
-Added a new **[Billing > Subscriptions](https://docs.jelastic.com/api/#!/api/billing.Subscription)** service with API methods to support the [subscriptions](/platform-overview/release-notes/release-notes-8.2#subscription-based-solutions) feature
 
 [More info](/deployment-tools/api-&-cli/api-methods)
 
