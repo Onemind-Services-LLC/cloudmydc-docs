@@ -4,7 +4,7 @@ slug: ruby-app-server-configuration
 sidebar_position: 4
 ---
 
-<!-- ## Ruby Application Server Configuration -->
+# Ruby Application Server Configuration
 
 The platform provides Ruby application servers based on the two software stacks:
 
