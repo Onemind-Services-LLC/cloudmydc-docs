@@ -99,12 +99,14 @@ For more convenience, we provide the embedded list of predefined endpoint config
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    margin: '0 0 2.5rem 0',
 }}>
 
 <div style={{
         width: '80%',
         borderRadius: '7px',
         overflow: 'hidden',
+    background: "white",
     }} >
     <div>
         <div style={{
@@ -183,6 +185,7 @@ For more convenience, we provide the embedded list of predefined endpoint config
         width: '80%',
         borderRadius: '7px',
         overflow: 'hidden',
+    background: "white",
     }} >
     <div>
         <div style={{

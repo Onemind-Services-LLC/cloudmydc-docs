@@ -22,6 +22,7 @@ keywords:
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'cetner',
+    height: "100%",
 }}>
 
 ![Locale Dropdown](./img/ZDTDeploymentforPHP/01-zdt-redeploy-logo.png)
