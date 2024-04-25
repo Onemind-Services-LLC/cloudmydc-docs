@@ -266,7 +266,7 @@ You can check how WildFly topology is changed from standalone mode to managed do
     margin: '0 0 1rem 0'
 }}>
 
-![Locale Dropdown](./img/WildFlyManagedDomain/clsuter-topology.png)
+![Locale Dropdown](./img/WildFlyManagedDomain/cluster-topology.png)
 
 </div>
 
@@ -325,7 +325,7 @@ The application deployed to the standalone server is redeployed to all server in
     margin: '0 0 1rem 0'
 }}>
 
-![Locale Dropdown](./img/WildFlyManagedDomain/clsuter-topology-deployment-app.png)
+![Locale Dropdown](./img/WildFlyManagedDomain/cluster-topology-deployment-app.png)
 
 </div>
 
@@ -337,7 +337,7 @@ Also, you can make sure that the cluster provides high availability. For this, p
     margin: '0 0 1rem 0'
 }}>
 
-![Locale Dropdown](./img/WildFlyManagedDomain/clsuter-topology-restart.png)
+![Locale Dropdown](./img/WildFlyManagedDomain/cluster-topology-restart.png)
 
 </div>
 
