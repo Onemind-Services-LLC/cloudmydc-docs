@@ -15,7 +15,12 @@ keywords:
     gridTemplateColumns: '0.23fr 1fr',
     gap: '10px'
 }}>
-<div>
+<div style={{
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '100%'
+}}>
 
 ![Locale Dropdown](./img/Two-FactorAuthentication/01--two-factor-authentication-logo.png)
 

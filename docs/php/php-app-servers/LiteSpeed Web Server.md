@@ -23,7 +23,8 @@ The **LiteSpeed Web ADC** stack is [HTTP/3](https://cloudmydc.com/) ready with t
 <div style={{
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'cetner',
+    justifyContent: 'center',
+    height: '100%',
 }}>
 
 ![Locale Dropdown](./img/LiteSpeedWebServer/01-litespeed-web-server-logo.png)

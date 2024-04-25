@@ -18,7 +18,12 @@ keywords:
     gridTemplateColumns: '0.15fr 1fr',
     gap: '10px'
 }}>
-<div>
+<div style={{
+    display: 'flex',
+    alignItems: 'center',
+    height: '100%',
+    justifyContent: 'center',
+}}>
 <div style={{
     display: 'flex',
     alignItems: 'center',
