@@ -36,7 +36,7 @@ Let’s see now how Quarts works in the cloud!
     margin: '0 0 1rem 0'
 }}>
 
-![Locale Dropdown](./img/QuartzScheduling/02-environment-wizard.png)
+![Locale Dropdown](./img/QuartzScheduling/02-environment-wizard.jpeg)
 
 </div>
 
@@ -185,7 +185,7 @@ public class QuartzServlet extends HttpServlet {
     margin: '0 0 1rem 0'
 }}>
 
-![Locale Dropdown](./img/QuartzScheduling/05-tomcat-log.png)
+![Locale Dropdown](./img/QuartzScheduling/05-tomcat-log.JPG)
 
 </div>
 
