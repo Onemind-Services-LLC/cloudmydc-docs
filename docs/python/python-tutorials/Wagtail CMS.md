@@ -15,13 +15,15 @@ keywords:
 
 <div style={{
     display: 'grid',
-    gridTemplateColumns: '0.15fr 1fr'
+    gridTemplateColumns: '0.15fr 1fr',
+    gap:'15px',
 }}>
 <div>
 
 <div style={{
     display:'flex',
     justifyContent: 'center',
+    alignItems: 'center',
     margin: '0 0 1rem 0',
     height: "100%"
 }}>

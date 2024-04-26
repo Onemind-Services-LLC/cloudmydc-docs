@@ -14,9 +14,15 @@ keywords:
 
 <div style={{
     display: 'grid',
-    gridTemplateColumns: '0.15fr 1fr'
+    gridTemplateColumns: '0.15fr 1fr',
+    gap: '10px'
 }}>
-<div>
+<div style={{
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    alignItems: 'center',
+}}>
 
 ![Locale Dropdown](./img/ExternalNFSServerConfiguration/01-external-storage-server.png)
 
