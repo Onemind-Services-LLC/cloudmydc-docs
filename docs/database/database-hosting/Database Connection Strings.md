@@ -112,7 +112,7 @@ For the UTF-8 encoding, modify your connection string according to this:
 
 :::tip Tip
 
-Your hosting provider domain can be found within the last column of the appropriate table in the [Hosters Info](/quickstart/hosters-list-&-info#paas-hosting-providers) page.
+Your hosting provider domain can be found within the last column of the appropriate table in the Hosters Info page.
 
 In case your hosting provider platform has several [environment regions](/environment-management/environment-regions/choosing-a-region) to choose, the `{hoster_domain}` value for your environment can differ from the general platform’s one.
 

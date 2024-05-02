@@ -106,7 +106,7 @@ where
 </div>
 
 - `{environment-name}` - name of the environment you’ve added the server to (e.g. database)
-- `{hoster_domain}` - your hosting provider domain; can be found within the last column of the appropriate table in the [Hosters Info](/quickstart/hosters-list-&-info#paas-hosting-providers) page
+- `{hoster_domain}` - your hosting provider domain; can be found within the last column of the appropriate table in the Hosters Info page
 
 :::tip Note
 

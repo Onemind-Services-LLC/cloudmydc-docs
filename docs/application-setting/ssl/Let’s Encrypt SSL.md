@@ -91,7 +91,7 @@ Click **Install** to proceed.
 Here, you need to:
 
 - provide **_External Domain(s)_** of the target environment, the possible options are:
-  - leave the field blank to create a dummy SSL certificate, assigned to environment internal URL (`env_name.{[hoster_domain](/quickstart/hosters-list-&-info)}`), for being used in testing
+  - leave the field blank to create a dummy SSL certificate, assigned to environment internal URL (`env_name.{hoster_domain}`), for being used in testing
   - insert the preliminary linked external domain(s) to get a trusted certificate for each of them; if specifying multiple hostnames, separate them with either space, comma, or semicolon
 
 <div style={{
@@ -146,8 +146,6 @@ As you can see, the environment is accessible and the established connection is 
 ## Add-On Installation via API
 
 Alternatively add-on can be installed with Jelastic [API method install](https://docs.jelastic.com/api/#!/api/marketplace.JPS-method-Install). Api call looks like:
-
-<!-- \*https://[[hoster-api-host](/quickstart/hosters-list-&-info)]/1.0/marketplace/jps/rest/install?jps=letsencrypt-ssl-addon&session={**_session_**}&envName={**_your_env_name_**}&nodeGroup={**_your_node_group_**}&settings={**_your_addon_settings_**}\* -->
 
 ```bash
 https://[hoster-api-host]/1.0/marketplace/jps/rest/install?jps=letsencrypt-ssl-addon&session={session}&envName={your_env_name}&nodeGroup={your_node_group}&settings={your_addon_settings}

@@ -59,7 +59,7 @@ The base of the platform CLI is represented with an executable _.jar_ archive an
 
 Just follow the appearing questionnaire, specifying the asked values:
 
-- **_Platform URL_** - PaaS installation URL in the _app.[`{hoster_domain}`](/quickstart/hosters-list-&-info)_ format
+- **_Platform URL_** - PaaS installation URL in the _app.hoster_domain_ format
 - **_Email_** - email (login) bound to your account
 - **_Password_** - your account password
 
