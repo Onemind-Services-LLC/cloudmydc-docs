@@ -85,7 +85,7 @@ The request response is UTF-8 encoded. The response for all API functions is giv
 
 To start automation of the required processes with platform API you have to face the following requirements:
 
-- You must be registered on any hosting provider
+- You must be registered on any [hosting provider](/quickstart/hosters-list-&-info)
 - You need to download the appropriate [Platform Client Library](https://mvnrepository.com/artifact/com.jelastic/jelastic-public-j2se) (according to the version of used platform) and add it to classpath
 
 If you are using Maven, add the following dependency to **_pom.xml_**
@@ -131,7 +131,7 @@ private final static String ENV_NAME = "test-api-environment-" + new Random().ne
 
 where:
 
-- URL of your hosting provider (_Hoster’s URL / API_ column in this document)
+- URL of your hosting provider (_Hoster’s URL / API_ column in [this](/quickstart/hosters-list-&-info) document)
 - your PaaS account’s email (login)
 - your PaaS account’s password
 

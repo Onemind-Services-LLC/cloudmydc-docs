@@ -124,7 +124,7 @@ In this section, you can find information on platform API methods that are provi
 
 1. To attach or detach a Public IP address via platform API, the **_SetExtIpCount_** method is provided.
 
-_https://hoster-api-host/1.0/environment/control/rest/setextipcount?**envname**=[string]&**session**=[string]&**type**=[string]&**count**=[int]&**nodegroup**=[string]&**nodeid**=[int]_
+_https://[hoster-api-host](/quickstart/hosters-list-&-info)/1.0/environment/control/rest/setextipcount?**envname**=[string]&**session**=[string]&**type**=[string]&**count**=[int]&**nodegroup**=[string]&**nodeid**=[int]_
 
 This method is used with the following parameters:
 
