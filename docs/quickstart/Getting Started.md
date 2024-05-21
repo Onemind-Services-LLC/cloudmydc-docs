@@ -49,7 +49,7 @@ That’s it, check your inbox for the confirmation email.
 
 ## Platform Dashboard
 
-Access particular platform via hoster domain.
+Access particular platform via [hoster domain](/quickstart/hosters-list-&-info#paas-hosting-providers).
 
 1. Expand the menu at the bottom-left corner and select the Signup](https://cloudmydc.com/) option.
 

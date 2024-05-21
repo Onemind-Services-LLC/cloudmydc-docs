@@ -68,7 +68,7 @@ Herewith, the placeholders should be replaced with the next values:
 </div>
 
 - `${envName}` - environment name (not an [alias](/environment-management/environment-aliases)), specified during its creation
-- `${platformDomain}` - domain name of a PaaS installation hosting service provider
+- `${platformDomain}` - domain name of a PaaS installation [hosting service provider](/quickstart/hosters-list-&-info)
 
 Both variants can be used for refering to the nodes from inside or outside of the platform (i.e. allowing to establish both internal and external connections).
 

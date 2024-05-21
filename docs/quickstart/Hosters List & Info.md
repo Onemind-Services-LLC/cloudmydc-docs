@@ -1,33 +1,12 @@
 ---
-title: Database Connection Strings
-slug: database-connection-strings
-sidebar_position: 4
+title: Hosters List & Info
+slug: hosters-list-&-info
+sidebar_position: 5
 ---
 
-import obj from './DatabaseConnectionStrings.json'
+import obj from './HostersList&Info.json'
 
-<!-- ## Database Connection Strings -->
-
-All instances, created inside the platform, are operated as independent containers. To establish connection to a database from the application, deployed within application server, you need to set a connection string for it, using either:
-
-- [CNAME](/database/database-hosting/db-hosting-overview#database-admin-panel-url) of database, e.g. `node{node_id}-{environment_name}.{hoster_domain}`
-- Private IP address
-- [Public IP](/application-setting/external-access-to-applications/public-ip) address (if attached)
-
-:::danger Note
-
-Specifying localhost within a connection string will not work for establishing connection between application and database.
-
-:::
-
-Depending on the engine that powers your environment, refer to one of the sections below:
-
-- [Java](/database/database-hosting/database-connection-strings#database-connection-for-java-apps)
-- [PHP](/database/database-hosting/database-connection-strings#database-connection-for-php-apps)
-
-## Database Connection for Java Apps
-
-Look through the table of database types to find the appropriate DB connection code for your application:
+## PaaS Hosting Providers
 
 <div style={{
         width: '100%',
@@ -44,7 +23,7 @@ Look through the table of database types to find the appropriate DB connection c
             fontWeight: '500',
             color: 'var(--table-color-primary)',
             background: 'var(--table-bg-primary-t2)', 
-            gridTemplateColumns: '1fr 2fr',
+            gridTemplateColumns: '1fr 0.6fr 1fr 1fr 1fr',
             overflow: 'hidden',
         }}>
             <div style={{
@@ -55,7 +34,7 @@ Look through the table of database types to find the appropriate DB connection c
                 wordBreak: 'break-all',
                 borderRight: '1px solid var(--ifm-toc-border-color)',
             }}>
-                DB Type
+                Hoster
             </div>
             <div style={{
                 display: 'flex', 
@@ -63,18 +42,48 @@ Look through the table of database types to find the appropriate DB connection c
                 justifyContent: 'center',
                 padding: '20px',
                 borderRight: '1px solid var(--ifm-toc-border-color)',
-                wordBreak: 'break-all'
+                wordBreak: 'break-word'
             }}>
-               Connection code
+               Country
+            </div>
+            <div style={{
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center',
+                padding: '20px',
+                borderRight: '1px solid var(--ifm-toc-border-color)',
+                wordBreak: 'break-word'
+            }}>
+                Hoster Domain
+            </div> 
+            <div style={{
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center',
+                padding: '20px',
+                borderRight: '1px solid var(--ifm-toc-border-color)',
+                wordBreak: 'break-word'
+            }}>
+                User Environment Domain(s)
+            </div>
+            <div style={{
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center',
+                padding: '0 20px',
+                borderRight: '1px solid var(--ifm-toc-border-color)',
+                wordBreak: 'break-word'
+            }}>
+                Region(s) with Native Docker*
             </div>
         </div>
-        {obj.data1.map((item, idx) => {
+        {obj.PaaSHostingProviders.map((item, idx) => {
           return <div key={idx} style={{
             width: '100%',
             height: 'auto',
             border: '1px solid var(--ifm-toc-border-color)',
             display: 'grid', 
-            gridTemplateColumns: '1fr 2fr',
+           gridTemplateColumns: '1fr 0.6fr 1fr 1fr 1fr',
             fontWeight: '400',
         }}>
             <div style={{
@@ -87,40 +96,47 @@ Look through the table of database types to find the appropriate DB connection c
                 wordBreak: 'break-all',
                 padding: '20px',
             }}>
-                {item.required ? <a href={item.url}>
-                    {item.DBType}
-                </a> : <a>
-                    {item.DBType}
-                </a>}
+                <i>{item.Hoster}</i>
             </div>
             <div style={{
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center',
                 padding: '20px',
                 wordBreak: 'break-all'
             }}>
-                {item.ConnectionCode}
+                {item.country}
             </div>
-        </div> 
+            <div style={{
+                wordBreak: 'break-all',
+                 padding: '20px',
+            }}>
+                {item.Domain}
+            </div>
+            <div style={{
+                wordBreak: 'break-all',
+                 padding: '20px',
+            }}>
+                {item.Env}
+            </div>
+            <div style={{
+                wordBreak: 'break-all',
+                padding: '20px',
+            }}>
+                {item.Docker}
+            </div>
+        </div>
         })}
-    </div> 
+    </div>
 </div>
-
-For the UTF-8 encoding, modify your connection string according to this:
-
-```bash
-“jdbc:{dbtype}://{dbtype}{node_id}-{environment_name}.{hoster_domain}/{dbname}?useUnicode=yes&characterEncoding=UTF-8”
-```
 
 :::tip Tip
 
-Your hosting provider domain can be found within the last column of the appropriate table in the [Hosters Info](/quickstart/hosters-list-&-info#paas-hosting-providers) page.
-
-In case your hosting provider platform has several [environment regions](/environment-management/environment-regions/choosing-a-region) to choose, the `{hoster_domain}` value for your environment can differ from the general platform’s one.
+For running native Docker containers, a platform should contain an [environment region](/environment-management/environment-regions/choosing-a-region) with [CloudMyDC 7](https://cloudmydc.com/) virtualization being integrated.
 
 :::
 
-## Database Connection for PHP Apps
-
-Based on the used DB type, check out the connection code examples below and adjust your application appropriately:
+## Information for Domain Binding
 
 <div style={{
         width: '100%',
@@ -137,7 +153,7 @@ Based on the used DB type, check out the connection code examples below and adju
             fontWeight: '500',
             color: 'var(--table-color-primary)',
             background: 'var(--table-bg-primary-t2)', 
-            gridTemplateColumns: '1fr 2fr',
+            gridTemplateColumns: '1fr 2fr 1fr',
             overflow: 'hidden',
         }}>
             <div style={{
@@ -148,7 +164,7 @@ Based on the used DB type, check out the connection code examples below and adju
                 wordBreak: 'break-all',
                 borderRight: '1px solid var(--ifm-toc-border-color)',
             }}>
-                DB Type
+                Hoster
             </div>
             <div style={{
                 display: 'flex', 
@@ -158,16 +174,26 @@ Based on the used DB type, check out the connection code examples below and adju
                 borderRight: '1px solid var(--ifm-toc-border-color)',
                 wordBreak: 'break-all'
             }}>
-               Connection code
+               CNAME
             </div>
+            <div style={{
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center',
+                padding: '20px',
+                borderRight: '1px solid var(--ifm-toc-border-color)',
+                wordBreak: 'break-all'
+            }}>
+                A Record
+            </div> 
         </div>
-        {obj.data2.map((item, idx) => {
+        {obj.InformationForDomainBinding.map((item, idx) => {
           return <div key={idx} style={{
             width: '100%',
             height: 'auto',
             border: '1px solid var(--ifm-toc-border-color)',
             display: 'grid', 
-            gridTemplateColumns: '1fr 2fr',
+            gridTemplateColumns: '1fr 2fr 1fr',
             fontWeight: '400',
         }}>
             <div style={{
@@ -180,23 +206,21 @@ Based on the used DB type, check out the connection code examples below and adju
                 wordBreak: 'break-all',
                 padding: '20px',
             }}>
-                <a href={item.url}>
-                    {item.DBType}
-                </a>
+                {item.Hoster}
             </div>
             <div style={{
                 padding: '20px',
                 wordBreak: 'break-all'
             }}>
-                {item.ConnectionCode}
+                {item.Cname}
+            </div>
+            <div style={{
+                wordBreak: 'break-all',
+                 padding: '20px',
+            }}>
+                {item.Record}
             </div>
         </div> 
         })}
     </div> 
 </div>
-
-:::tip Note
-
-It is required to specify the host string without http://. The appropriate address and credentials are located in the email you’ve received upon database creation.
-
-:::

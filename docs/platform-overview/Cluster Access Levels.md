@@ -26,7 +26,7 @@ The platform provides two admin panels for accessing the cluster. Cluster Panel 
 
 ## Administrators
 
-The **administrators** of the platform are operations departments of hosting providers or IT departments of enterprise companies. After the platform installation, they become the owner and begin to manage the overall performance via _Cluster Admin Panel_ by setting the main configurations (quotas, tariffs, customization etc.) and supporting all of the required aspects.
+The **administrators** of the platform are operations departments of [hosting providers](/quickstart/hosters-list-&-info) or IT departments of enterprise companies. After the platform installation, they become the owner and begin to manage the overall performance via _Cluster Admin Panel_ by setting the main configurations (quotas, tariffs, customization etc.) and supporting all of the required aspects.
 
 There are four main tasks performed by the administrators during the PaaS Cluster lifecycle:
 
