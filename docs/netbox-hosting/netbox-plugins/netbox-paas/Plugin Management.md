@@ -4,7 +4,7 @@ slug: plugin-management
 sidebar_position: 7
 ---
 
-In the NetBox Cloud Pilot, the `Plugins Store` is your central hub for managing plugins.
+In the NetBox PaaS, the `Plugins Store` is your central hub for managing plugins.
 
 <div style={{
     display:'flex',
@@ -18,7 +18,7 @@ In the NetBox Cloud Pilot, the `Plugins Store` is your central hub for managing 
 
 ## Overview of the Store
 
-When accessing the `Plugins Store` for the first time, the `netbox-cloud-pilot` plugin will be listed under installed plugins. The store is categorized into three main sections:
+When accessing the `Plugins Store` for the first time, the `netbox-paas` plugin will be listed under installed plugins. The store is categorized into three main sections:
 
 1. **Installed Plugins:** Displays plugins that are currently installed and active within your environment.
 2. **Subscription Store:** Reserved for paid or enterprise plugins. All users can view these plugins, but installation is exclusive to users with a valid license.
@@ -71,7 +71,7 @@ Use the Plugin Store to enhance your NetBox instance with new features, ensuring
 
 Enhance your NetBox instance by adding new functionalities through plugins.
 
-1. Navigate to **NetBox Cloud Pilot > Plugins Store**.
+1. Navigate to **NetBox PaaS > Plugins Store**.
 2. Select the plugin you wish to install and click on **Install**.
 3. On the installation page, choose the desired version from the dropdown menu.
 4. Enter any required configurations in the provided field. Refer to the plugin documentation for specific configuration requirements.
@@ -125,9 +125,9 @@ Once the installation is complete and master NetBox node is restarted, the plugi
 
 ## Configure Plugin
 
-Customizing your installed plugins to meet your specific needs is straightforward in the NetBox Cloud Pilot.
+Customizing your installed plugins to meet your specific needs is straightforward in the NetBox PaaS.
 
-1. Navigate to **NetBox Cloud Pilot > Plugins Store**.
+1. Navigate to **NetBox PaaS > Plugins Store**.
 2. From the list of installed plugins, select the plugin you wish to configure.
 3. Click on the **Configure** button associated with the plugin.
 4. Follow the same installation steps by choosing the version and specifying any required configuration parameters as per the plugin's documentation.
@@ -139,7 +139,7 @@ The system will apply your configuration changes and, if necessary, perform a se
 
 If you need to temporarily turn off a plugin without uninstalling it, you can easily disable it.
 
-1. Go to **NetBox Cloud Pilot > Plugins Store** in your NetBox dashboard.
+1. Go to **NetBox PaaS > Plugins Store** in your NetBox dashboard.
 2. Identify the plugin you want to disable from the list of installed plugins.
 3. Click the **Disable** button for that plugin. A confirmation dialog box will appear asking if you are sure you want to disable the plugin.
 4. Confirm by clicking **Disable** in the dialog box. This will schedule a job to disable the plugin.
@@ -165,7 +165,7 @@ Disabling a plugin retains its configuration, making it easy to enable it back w
 ## Enable Plugin
 Reactivate a plugin that was previously disabled to bring its functionality back to your NetBox instance.
 
-1. In your NetBox dashboard, navigate to **NetBox Cloud Pilot > Plugins Store**.
+1. In your NetBox dashboard, navigate to **NetBox PaaS > Plugins Store**.
 2. Locate the disabled plugin in the list of installed plugins.
 3. Click the **Enable** button associated with the plugin. You may be prompted to confirm your action.
 4. Confirm the action if prompted. This will schedule a job to enable the plugin.
@@ -192,7 +192,7 @@ Enabling a plugin restores its previous configuration, so you can continue using
 
 Removing a plugin from your NetBox instance is straightforward and removes all associated configurations.
 
-1. Navigate to **NetBox Cloud Pilot > Plugins Store** within the NetBox dashboard.
+1. Navigate to **NetBox PaaS > Plugins Store** within the NetBox dashboard.
 2. Find the plugin you wish to remove in the list of installed plugins.
 3. Click on the **Uninstall** button for the targeted plugin. A confirmation prompt will appear to ensure you want to proceed with the removal.
 4. Confirm the uninstallation by clicking **Uninstall** in the prompt. This action schedules a job to remove the plugin from the environment.

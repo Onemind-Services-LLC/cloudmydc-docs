@@ -4,11 +4,11 @@ slug: overview
 sidebar_position: 1
 ---
 
-**NetBox Cloud Pilot**, developed by [Onemind Services LLC](https://github.com/Onemind-Services-LLC), is a specialized plugin for NetBox users on the CloudMyDC public Cloud platform (VAP). This plugin enhances the functionality of NetBox, providing a streamlined and integrated experience for efficient network management.
+**NetBox PaaS**, developed by [Onemind Services LLC](https://github.com/Onemind-Services-LLC/netbox-paas), is a specialized plugin for NetBox users on the CloudMyDC public Cloud platform (VAP). This plugin enhances the functionality of NetBox, providing a streamlined and integrated experience for efficient network management.
 
 **Key Features**
 
-NetBox Cloud Pilot introduces a range of features that enhance the usability and management capabilities of NetBox:
+NetBox PaaS introduces a range of features that enhance the usability and management capabilities of NetBox:
 
 - **Comprehensive Setting Management:** Provides extensive control over various settings, including Database (DB), Redis, System settings, and security configurations, ensuring a tailored and secure environment.
 
@@ -20,4 +20,4 @@ NetBox Cloud Pilot introduces a range of features that enhance the usability and
 
 - **Plugin Store Integration:** Offers a unique plugin store, simplifying the process of managing NetBox plugins, including installation, uninstallation, and configuration of both free and paid plugins for our Enterprise customers.
 
-NetBox Cloud Pilot, with its comprehensive suite of tools, significantly enhances the NetBox experience on the CloudMyDC platform, catering to the needs of modern network management.
+NetBox PaaS, with its comprehensive suite of tools, significantly enhances the NetBox experience on the CloudMyDC platform, catering to the needs of modern network management.
