@@ -10,12 +10,12 @@ Ensure your NetBox instance's data is secure by setting up regular database back
 
 A backup storage must be connected to your NetBox environment. You can do this in one of two ways:
 
-- [Connect Existing](/netbox-hosting/netbox-plugins/netbox-cloud-pilot/database-backups-restores#connecting-existing-backup-storage) backup storage
-- [Add new](/netbox-hosting/netbox-plugins/netbox-cloud-pilot/database-backups-restores#creating-new-backup-storage) backup storage
+- [Connect Existing](/netbox-hosting/netbox-plugins/netbox-paas/database-backups-restores#connecting-existing-backup-storage) backup storage
+- [Add new](/netbox-hosting/netbox-plugins/netbox-paas/database-backups-restores#creating-new-backup-storage) backup storage
 
 ## Connecting Existing Backup Storage
 
-1. Navigate to **NetBox Cloud Pilot > Manage** and select **Edit**.
+1. Navigate to **NetBox PaaS > Manage** and select **Edit**.
 
 <div style={{
     display:'flex',
@@ -43,7 +43,7 @@ A backup storage must be connected to your NetBox environment. You can do this i
 
 ## Creating New Backup Storage
 
-1. Go to **NetBox Cloud Pilot > Manage**.
+1. Go to **NetBox PaaS > Manage**.
 2. Click on **+ Add Backup Storage** in the "Overview" section.
 
 <div style={{
@@ -109,7 +109,7 @@ Once set up, the storage overview will be visible under "Manage."
 
 ## Backup Process
 
-1. Navigate to **NetBox Cloud Pilot > DB Backups** to open the backup form.
+1. Navigate to **NetBox PaaS > DB Backups** to open the backup form.
 2. Select your environment from the dropdown.
 3. Enter the **webadmin** password, which was sent to your email.
 4. Set the cron schedule for backups using [crontab.guru](https://crontab.guru/) for guidance on cron expressions.
@@ -131,12 +131,12 @@ This process installs a backup plugin and configures scheduled backups in your e
 
 ## Database Backups
 
-NetBox Cloud Pilot provides two modes of database backup:
+NetBox PaaS provides two modes of database backup:
 
 ### 1. Manual Backup
 Manual backups can be initiated at any time through the UI:
 
-- Navigate to **NetBox Cloud Pilot > DB Backups**.
+- Navigate to **NetBox PaaS > DB Backups**.
 - Click on the **Backup Now** button to start the backup process immediately.
 
 <div style={{
@@ -178,11 +178,11 @@ Automated backups run according to a schedule you define using a cron expression
 - The automatic backup schedule is set up during the backup configuration process.
 - The job will run at the scheduled times, ensuring regular, unattended backups of your NetBox database.
 
-Only manually triggered create a job entry that you can monitor in the **Jobs** section of NetBox Cloud Pilot. Successful completion will be indicated in the job's status.
+Only manually triggered create a job entry that you can monitor in the **Jobs** section of NetBox PaaS. Successful completion will be indicated in the job's status.
 
 ## List Backups
 
-You can view all backups listed under **NetBox Cloud Pilot > DB Backups**
+You can view all backups listed under **NetBox PaaS > DB Backups**
 
 <div style={{
     display:'flex',
@@ -200,7 +200,7 @@ To ensure data integrity, consider scheduling frequent automated backups and sup
 
 If you need to roll back your NetBox instance to a previous state, you can easily restore from a backup.
 
-1. In the NetBox dashboard, go to **NetBox Cloud Pilot > DB Backups**.
+1. In the NetBox dashboard, go to **NetBox PaaS > DB Backups**.
 2. You'll see a list of available backups, each with a corresponding **Restore** button.
 3. Identify the desired backup you wish to restore from. This can be based on the date, time, and whether it was an auto or manual backup.
 4. Click the **Restore** button next to the backup you want to use as the restore point.

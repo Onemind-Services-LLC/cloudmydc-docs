@@ -4,11 +4,11 @@ slug: manage-netbox-settings
 sidebar_position: 4
 ---
 
-After configuring your NetBox Cloud Pilot plugin, you can manage your NetBox settings directly through the VAP interface.
+After configuring your NetBox PaaS plugin, you can manage your NetBox settings directly through the PaaS interface.
 
 ## Managing Settings
 
-1. In your NetBox dashboard, go to the **NetBox Cloud Pilot** section.
+1. In your NetBox dashboard, go to the **NetBox PaaS** section.
 2. Select **Manage** and click on **Edit NetBox Settings** to access the settings form.
 
 <div style={{
