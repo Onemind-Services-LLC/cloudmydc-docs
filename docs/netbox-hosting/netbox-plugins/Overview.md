@@ -10,9 +10,9 @@ sidebar_position: 1
 
 Onemind Services offers a range of plugins to enhance your NetBox experience. Below are descriptions of some key plugins that are provided free of cost:
 
-## Cloud Pilot
+## PaaS
 
-**Description:** The Cloud Pilot plugin significantly enhances NetBox when used on CloudMyDC's Virtual Application Platform (VAP). It provides advanced management and control features, making it easier to manage and visualize your cloud resources within NetBox.
+**Description:** The PaaS plugin significantly enhances NetBox when used on CloudMyDC's Platform-as-a-Service (PaaS). It provides advanced management and control features, making it easier to manage and visualize your cloud resources within NetBox.
 
 **Key Features:**
 

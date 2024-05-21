@@ -4,7 +4,7 @@ slug: manage-netbox-settings
 sidebar_position: 4
 ---
 
-After configuring your NetBox PaaS plugin, you can manage your NetBox settings directly through the VAP interface.
+After configuring your NetBox PaaS plugin, you can manage your NetBox settings directly through the PaaS interface.
 
 ## Managing Settings
 

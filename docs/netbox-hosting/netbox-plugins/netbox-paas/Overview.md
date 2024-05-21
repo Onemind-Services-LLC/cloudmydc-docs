@@ -4,7 +4,7 @@ slug: overview
 sidebar_position: 1
 ---
 
-**NetBox PaaS**, developed by [Onemind Services LLC](https://github.com/Onemind-Services-LLC/netbox-paas), is a specialized plugin for NetBox users on the CloudMyDC public Cloud platform (VAP). This plugin enhances the functionality of NetBox, providing a streamlined and integrated experience for efficient network management.
+**NetBox PaaS**, developed by [Onemind Services LLC](https://github.com/Onemind-Services-LLC/netbox-paas), is a specialized plugin for NetBox users on the CloudMyDC Platform-as-a-Service (PaaS). This plugin enhances the functionality of NetBox, providing a streamlined and integrated experience for efficient network management.
 
 **Key Features**
 

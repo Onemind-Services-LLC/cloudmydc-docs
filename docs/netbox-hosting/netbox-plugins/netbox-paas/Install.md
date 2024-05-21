@@ -14,7 +14,7 @@ Ensure your NetBox version is compatible with the NetBox PaaS plugin before proc
 
 1. Verify the compatible release for your NetBox version at the [Onemind-Services-LLC/netbox-paas](https://github.com/Onemind-Services-LLC/netbox-paas?tab=readme-ov-file#compatibility).
 
-2. Ensure you have access to the NetBox infrastructure on the Virtual Application Platform (VAP) to execute commands inside the containers.
+2. Ensure you have access to the NetBox infrastructure on the PaaS to execute commands inside the containers.
 
 ## Installation Process
 

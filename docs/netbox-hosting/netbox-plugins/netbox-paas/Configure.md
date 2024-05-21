@@ -8,11 +8,11 @@ sidebar_position: 3
 
 # Configure NetBox PaaS
 
-After installing the NetBox PaaS plugin, you need to configure it to manage NetBox within the VAP (Virtual Application Platform).
+After installing the NetBox PaaS plugin, you need to configure it to manage NetBox within the PaaS.
 
 ## Prerequisites
 
-Before setting up the NetBox PaaS, it's essential to generate an **Extended Access** token within the Virtual Application Platform (VAP) that has full API access. This specific type of access token is necessary for the plugin to function correctly, enabling it to communicate effectively with your NetBox instance. Follow the [provided instructions](/account-and-pricing/personal-access-tokens) to create an Extended Access token.
+Before setting up the NetBox PaaS, it's essential to generate an **Extended Access** token within the PaaS that has full API access. This specific type of access token is necessary for the plugin to function correctly, enabling it to communicate effectively with your NetBox instance. Follow the [provided instructions](/account-and-pricing/personal-access-tokens) to create an Extended Access token.
 ## Configuration Process
 
 1. Navigate to the **NetBox PaaS** section on the sidebar menu and click on "Manage." This action opens the configuration form.
@@ -28,7 +28,7 @@ Before setting up the NetBox PaaS, it's essential to generate an **Extended Acce
 </div>
 
 2. In the configuration form:
-   - Enter your VAP access token in the **Key** field. This token is essential for the NetBox PaaS plugin to communicate with the VAP API.
+   - Enter your PaaS access token in the **Key** field. This token is essential for the NetBox PaaS plugin to communicate with the PaaS API.
    - Provide a **Description** for your configuration to help identify the purpose or scope of the access.
    - For Enterprise customers, input your **License** key in the designated field to unlock access to paid plugins.
 
