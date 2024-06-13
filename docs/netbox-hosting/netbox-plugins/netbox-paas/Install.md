@@ -34,7 +34,7 @@ Ensure your NetBox version is compatible with the NetBox PaaS plugin before proc
 
 ```bash
 echo "netbox-paas==<VERSION>" >> /etc/netbox/plugin_requirements.txt
-echo "netbox_cloud_pilot: {}" >> /etc/netbox/config/plugins.yaml
+echo "netbox_paas: {}" >> /etc/netbox/config/plugins.yaml
 ```
 
 This will update the plugin requirements and configuration files, making them accessible to other NetBox containers in the environment.
