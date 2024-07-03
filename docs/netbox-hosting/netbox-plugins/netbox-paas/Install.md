@@ -6,15 +6,15 @@ sidebar_position: 2
 
 # 
 
-# Install NetBox Cloud Pilot
+# Install NetBox PaaS
 
-Ensure your NetBox version is compatible with the NetBox Cloud Pilot plugin before proceeding with the installation.
+Ensure your NetBox version is compatible with the NetBox PaaS plugin before proceeding with the installation.
 
 ## Prerequisites
 
-1. Verify the compatible release for your NetBox version at the [Onemind-Services-LLC/netbox-cloud-pilot](https://github.com/Onemind-Services-LLC/netbox-cloud-pilot?tab=readme-ov-file#compatibility).
+1. Verify the compatible release for your NetBox version at the [Onemind-Services-LLC/netbox-paas](https://github.com/Onemind-Services-LLC/netbox-paas?tab=readme-ov-file#compatibility).
 
-2. Ensure you have access to the NetBox infrastructure on the Virtual Application Platform (VAP) to execute commands inside the containers.
+2. Ensure you have access to the NetBox infrastructure on the PaaS to execute commands inside the containers.
 
 ## Installation Process
 
@@ -33,8 +33,8 @@ Ensure your NetBox version is compatible with the NetBox Cloud Pilot plugin befo
 2. In the Web SSH terminal, enter the following commands, replacing `<VERSION>` with the compatible version number for your NetBox:
 
 ```bash
-echo "netbox-cloud-pilot==<VERSION>" >> /etc/netbox/plugin_requirements.txt
-echo "netbox_cloud_pilot: {}" >> /etc/netbox/config/plugins.yaml
+echo "netbox-paas==<VERSION>" >> /etc/netbox/plugin_requirements.txt
+echo "netbox_paas: {}" >> /etc/netbox/config/plugins.yaml
 ```
 
 This will update the plugin requirements and configuration files, making them accessible to other NetBox containers in the environment.
@@ -94,7 +94,7 @@ By following these guidelines, you can maintain service availability even as you
 
 </div>
 
-5. Once you have logged back into NetBox, you should see the **NetBox Cloud Pilot** section in the bottom left corner of the sidebar, confirming the successful installation of the plugin.
+5. Once you have logged back into NetBox, you should see the **NetBox PaaS** section in the bottom left corner of the sidebar, confirming the successful installation of the plugin.
 
 <div style={{
     display:'flex',
@@ -106,4 +106,4 @@ By following these guidelines, you can maintain service availability even as you
 
 </div>
 
-After completing these steps, the NetBox Cloud Pilot plugin will be installed and ready for use on your NetBox installation.
+After completing these steps, the NetBox PaaS plugin will be installed and ready for use on your NetBox installation.

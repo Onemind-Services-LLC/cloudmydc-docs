@@ -8,7 +8,7 @@ Upgrade your NetBox instance to the latest version or downgrade within the same 
 
 ## Upgrade Process
 
-1. Navigate to the **NetBox Cloud Pilot** section in your NetBox dashboard and select **Manage**.
+1. Navigate to the **NetBox PaaS** section in your NetBox dashboard and select **Manage**.
 2. If an upgrade is available, a button indicating this will appear in the top right corner of the management screen.
 
 <div style={{
@@ -61,7 +61,7 @@ Upgrade your NetBox instance to the latest version or downgrade within the same 
 
 :::warning
 
-- It is advisable to set up [database backups](/netbox-hosting/netbox-plugins/netbox-cloud-pilot/database-backups-restores) for your environment. The upgrade routine looks for a backup configuration and initiates a backup before proceeding with the upgrade, ensuring a recovery point is available in case of failure.
-- A successful job completion message indicates that the main NetBox container upgrade and restart were successful. Subsequent upgrades and restarts of worker containers will occur afterward and can be monitored through the VAP dashboard.
+- It is advisable to set up [database backups](/netbox-hosting/netbox-plugins/netbox-paas/database-backups-restores) for your environment. The upgrade routine looks for a backup configuration and initiates a backup before proceeding with the upgrade, ensuring a recovery point is available in case of failure.
+- A successful job completion message indicates that the main NetBox container upgrade and restart were successful. Subsequent upgrades and restarts of worker containers will occur afterward and can be monitored through the PaaS dashboard.
 
 :::
