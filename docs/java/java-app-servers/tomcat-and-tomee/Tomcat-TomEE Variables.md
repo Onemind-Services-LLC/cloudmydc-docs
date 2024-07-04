@@ -159,7 +159,7 @@ After all the desired parameters are set, click the **Save** button.
     margin: '0 0 1rem 0'
 }}>
 
-![Locale Dropdown](<./img/Tomcat-TomEEVariables/restart-(2).png>)
+![Locale Dropdown](./img/Tomcat-TomEEVariables/restart-(2).png)
 
 </div>
 
