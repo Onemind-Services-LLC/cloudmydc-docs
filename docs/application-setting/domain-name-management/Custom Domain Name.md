@@ -31,7 +31,7 @@ keywords:
 </div>
 <div>
 
-With the platform, you have a possibility to set an external domain address for your site, instead of the default environment URL (i.e. `{env_name}`.**hoster_domain_name**). The custom domain allows promoting your unique branding and improves your web application recognition over the Internet.
+With the platform, you have a possibility to set an external domain address for your site, instead of the default environment URL (i.e. `{env_name}`.hoster_domain_name). The custom domain allows promoting your unique branding and improves your web application recognition over the Internet.
 
 </div>
 </div>
