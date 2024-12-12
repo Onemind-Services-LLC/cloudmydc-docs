@@ -14,7 +14,7 @@ const config = {
   url: "https://docs.cloudmydc.com/",
   baseUrl: "/",
 
-  organizationName: "Onemind Services LLC",
+  organizationName: "OneMind Services LLC",
   projectName: "cloudmydc-docs",
 
   onBrokenLinks: "throw",
@@ -44,14 +44,11 @@ const config = {
   ],
   themes: [
     "@inkeep/docusaurus/chatButton",
-    // require.resolve("@inkeep/docusaurus/chatButton"),
     "@inkeep/docusaurus/searchBar",
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      // customCss: [require.resolve('./src/css/custom-dark-theme.css')],
       image: "img/footer/cmdc.png",
       metadata: [
         { name: "og:title", content: "CloudMyDC Documentation" },
@@ -72,7 +69,6 @@ const config = {
         items: [],
       },
       footer: {
-        // style: 'dark',
         links: [
           {
             items: [
