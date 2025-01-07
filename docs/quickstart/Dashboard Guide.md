@@ -349,7 +349,8 @@ The last two sections of the dashboard are **Help** and **Account** (email addre
 
 - **Settings:** Redirects you to the [User Settings](/quickstart/dashboard-guide#user-settings) section
 - **Change Password:** Opens a dialog box where you can enter the required fields (_Current Password, New Password, and Confirm Password_)
-  ![Locale Dropdown](./img/DashboardGuide/48-reset-pssword-window.png)
+
+![Locale Dropdown](./img/DashboardGuide/48-reset-pssword-window.png)
 
 - **Sign out:** Logs out of the current account.
 
