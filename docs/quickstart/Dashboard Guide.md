@@ -40,7 +40,7 @@ An interactive tutorial is accessible within the dashboard under **Help >** [Tut
 
 - **Name** - Displays the name (or [alias](/environment-management/environment-aliases) if specified) of the environment along with its domain. You can expand the list of nodes by clicking the arrow icon next to the environment name.
 - **Status** - Indicates the current state of your environments (e.g., Running, Sleeping, Stopped, Creating, Launching, Stopping, Cloning, Redeploying, Exporting, Installing, Migrating, Deleting).
-- **Tags** - Shows [Environment Groups](/quickstart/dashboard-guide#environment-groups) the [region](/environment-management/environment-regions/choosing-a-region) of the environment, versions (tags) , and the name of the deployed project.
+- **Tags** - Shows Environment groups the [region](/environment-management/environment-regions/choosing-a-region) of the environment, versions (tags) , and the name of the deployed project.
 - **Usage** - Reflects the current load, including cloudlet and disk space usage. .
 
 ## Function Icons for Environments
@@ -63,7 +63,7 @@ Hover over a running environment to see various management icons: _Set Alias, Op
 
 - To delete the environment, click the ![Locale Dropdown](./img/DashboardGuide/14-delete-environment-icon.png) icon in the dropdown menu and confirm the action by entering your password.
 
-- Hover over the Tags column to manage [environment groups](/quickstart/dashboard-guide#environment-groups) using the **Env Groups** ![Locale Dropdown](./img/DashboardGuide/15-manage-env-group-icon.png) dropdown menu .
+- Hover over the Tags column to manage environment groups using the **Env Groups** ![Locale Dropdown](./img/DashboardGuide/15-manage-env-group-icon.png) dropdown menu .
 
 <div style={{
     display:'flex',
