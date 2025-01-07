@@ -344,13 +344,26 @@ The last two sections of the dashboard are **Help** and **Account** (email addre
 - **Tutorial:** starts a short, [interactive guide](/quickstart/welcome-tutorial), that explains the basics of using with the platform
 - **How do I..?** Displays a list of documents relevant to your request.
 
-  2.In the **Account** (email address) drop-down menu, you can find the following options
+2. In the **Account** (email address) drop-down menu, you can find the following options.
+
+<div style={{
+    display:'flex',
+    justifyContent: 'center',
+    margin: '0 0 1rem 0'
+}}>
   ![Locale Dropdown](./img/DashboardGuide/47-general-account-sections.png)
+  </div>
 
 - **Settings:** Redirects you to the [User Settings](/quickstart/dashboard-guide#user-settings) section
 - **Change Password:** Opens a dialog box where you can enter the required fields (_Current Password, New Password, and Confirm Password_)
 
+<div style={{
+    display:'flex',
+    justifyContent: 'center',
+    margin: '0 0 1rem 0'
+}}>
 ![Locale Dropdown](./img/DashboardGuide/48-reset-pssword-window.png)
+</div>
 
 - **Sign out:** Logs out of the current account.
 
